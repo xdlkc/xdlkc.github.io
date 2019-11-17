@@ -50,19 +50,19 @@
   };
 </script>
 
-  <meta name="description" content="JOIN 三种算法：  Nested Loop Join：常用 Hash Join Merge Sort Join  类型：  JOIN: 如果表中有至少一个匹配，则返回行 LEFT JOIN: 即使右表中没有匹配，也从左表返回所有的行 RIGHT JOIN: 即使左表中没有匹配，也从右表返回所有的行 FULL JOIN: 只要其中一个表中存在匹配，就返回行  查询优化 left join 优化：">
+  <meta name="description" content="JOIN三种算法：  Nested Loop Join：常用 Hash Join Merge Sort Join  类型：  JOIN: 如果表中有至少一个匹配，则返回行 LEFT JOIN: 即使右表中没有匹配，也从左表返回所有的行 RIGHT JOIN: 即使左表中没有匹配，也从右表返回所有的行 FULL JOIN: 只要其中一个表中存在匹配，就返回行  查询优化left join 优化：引擎">
 <meta name="keywords" content="tech, blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL知识点">
 <meta property="og:url" content="http://yoursite.com/2019/08/27/MySQL知识点/index.html">
 <meta property="og:site_name" content="Unknown Exception Throw">
-<meta property="og:description" content="JOIN 三种算法：  Nested Loop Join：常用 Hash Join Merge Sort Join  类型：  JOIN: 如果表中有至少一个匹配，则返回行 LEFT JOIN: 即使右表中没有匹配，也从左表返回所有的行 RIGHT JOIN: 即使左表中没有匹配，也从右表返回所有的行 FULL JOIN: 只要其中一个表中存在匹配，就返回行  查询优化 left join 优化：">
+<meta property="og:description" content="JOIN三种算法：  Nested Loop Join：常用 Hash Join Merge Sort Join  类型：  JOIN: 如果表中有至少一个匹配，则返回行 LEFT JOIN: 即使右表中没有匹配，也从左表返回所有的行 RIGHT JOIN: 即使左表中没有匹配，也从右表返回所有的行 FULL JOIN: 只要其中一个表中存在匹配，就返回行  查询优化left join 优化：引擎">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6ly1g6m7mllo88j30um0diank.jpg">
-<meta property="og:updated_time" content="2019-10-30T02:48:52.944Z">
+<meta property="og:updated_time" content="2019-11-11T10:46:44.246Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL知识点">
-<meta name="twitter:description" content="JOIN 三种算法：  Nested Loop Join：常用 Hash Join Merge Sort Join  类型：  JOIN: 如果表中有至少一个匹配，则返回行 LEFT JOIN: 即使右表中没有匹配，也从左表返回所有的行 RIGHT JOIN: 即使左表中没有匹配，也从右表返回所有的行 FULL JOIN: 只要其中一个表中存在匹配，就返回行  查询优化 left join 优化：">
+<meta name="twitter:description" content="JOIN三种算法：  Nested Loop Join：常用 Hash Join Merge Sort Join  类型：  JOIN: 如果表中有至少一个匹配，则返回行 LEFT JOIN: 即使右表中没有匹配，也从左表返回所有的行 RIGHT JOIN: 即使左表中没有匹配，也从右表返回所有的行 FULL JOIN: 只要其中一个表中存在匹配，就返回行  查询优化left join 优化：引擎">
 <meta name="twitter:image" content="https://tva1.sinaimg.cn/large/006y8mN6ly1g6m7mllo88j30um0diank.jpg">
 
 <link rel="canonical" href="http://yoursite.com/2019/08/27/MySQL知识点/">
@@ -224,7 +224,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-30 10:48:52" itemprop="dateModified" datetime="2019-10-30T10:48:52+08:00">2019-10-30</time>
+                <time title="修改时间：2019-11-11 18:46:44" itemprop="dateModified" datetime="2019-11-11T18:46:44+08:00">2019-11-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -249,8 +249,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3>JOIN</h3>
-<p>三种算法：</p>
+        <h3 id="JOIN"><a href="#JOIN" class="headerlink" title="JOIN"></a>JOIN</h3><p>三种算法：</p>
 <ul>
 <li>Nested Loop Join：常用</li>
 <li>Hash Join</li>
@@ -263,19 +262,17 @@
 <li>RIGHT JOIN: 即使左表中没有匹配，也从右表返回所有的行</li>
 <li>FULL JOIN: 只要其中一个表中存在匹配，就返回行</li>
 </ul>
-<h3>查询优化</h3>
-<p>left join 优化：引擎使用nested loop join算法，通过驱动表的结果集作为循环基础数据，一条条地通过该结果集作为过滤条件到下一个表中查询数据，然后合并结果。left join左边的表一般为大表，所以以其为驱动表时查询效率会很低，方案是使用join，引擎一般会选择小表作为驱动表来查询。</p>
-<h2>索引</h2>
-<p>三星：将相关的记录放在一起，索引的数据顺序与查询的排列顺序一致，索引中的列包含了查询中需要的全部列</p>
+<h3 id="查询优化"><a href="#查询优化" class="headerlink" title="查询优化"></a>查询优化</h3><p>left join 优化：引擎使用nested loop join算法，通过驱动表的结果集作为循环基础数据，一条条地通过该结果集作为过滤条件到下一个表中查询数据，然后合并结果。left join左边的表一般为大表，所以以其为驱动表时查询效率会很低，方案是使用join，引擎一般会选择小表作为驱动表来查询。</p>
+<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><p>三星：将相关的记录放在一起，索引的数据顺序与查询的排列顺序一致，索引中的列包含了查询中需要的全部列</p>
 <p>全文索引，哈希索引</p>
-<h3>聚簇索引</h3>
-<p>叶子结点存储的是整行数据，且InnoDB只支持用主键做聚簇索引，非主键的索引的叶子结点的值是主键的值</p>
+<h3 id="聚簇索引"><a href="#聚簇索引" class="headerlink" title="聚簇索引"></a>聚簇索引</h3><p>叶子结点存储的是整行数据，且InnoDB只支持用主键做聚簇索引，非主键的索引的叶子结点的值是主键的值</p>
 <p>Innodb_autoinc_lock_mode</p>
-<h3>覆盖索引</h3>
-<h2>主从复制</h2>
-<p>bin_log</p>
+<h3 id="覆盖索引"><a href="#覆盖索引" class="headerlink" title="覆盖索引"></a>覆盖索引</h3><h2 id="主从复制"><a href="#主从复制" class="headerlink" title="主从复制"></a>主从复制</h2><p>bin_log</p>
 <p>master IO线程，slave IO线程，SQL线程</p>
 <p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g6m7mllo88j30um0diank.jpg" alt="image-20190903122054120"></p>
+<h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><p>redo log：保证crash safe能力，InnoDB提供</p>
+<p>binlog：MySQL Server层提供的归档日志</p>
+<p>两阶段提交保证数据恢复</p>
 
     </div>
 
@@ -338,7 +335,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">JOIN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">查询优化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number"></span> <span class="nav-text">索引</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">聚簇索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">覆盖索引</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number"></span> <span class="nav-text">主从复制</span></a></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JOIN"><span class="nav-number">1.</span> <span class="nav-text">JOIN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询优化"><span class="nav-number">2.</span> <span class="nav-text">查询优化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#索引"><span class="nav-number"></span> <span class="nav-text">索引</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#聚簇索引"><span class="nav-number">1.</span> <span class="nav-text">聚簇索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#覆盖索引"><span class="nav-number">2.</span> <span class="nav-text">覆盖索引</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主从复制"><span class="nav-number"></span> <span class="nav-text">主从复制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日志"><span class="nav-number"></span> <span class="nav-text">日志</span></a></div>
       </div>
       <!--/noindex-->
 
@@ -354,14 +351,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">32</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">

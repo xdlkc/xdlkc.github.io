@@ -50,18 +50,18 @@
   };
 </script>
 
-  <meta name="description" content="网络 DNS解析过程  浏览器输入域名http://www.baidu.com ，操作系统会先检查hosts文件是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果hosts里面没有，则查找本地DNS解析器缓存，是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果还是没有，则会查找TCP/IP参数中设置的首选DNS服务器，此服务器收到查询时，如果要查询的域名，包">
+  <meta name="description" content="网络DNS解析过程 浏览器输入域名http://www.baidu.com ，操作系统会先检查hosts文件是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果hosts里面没有，则查找本地DNS解析器缓存，是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果还是没有，则会查找TCP/IP参数中设置的首选DNS服务器，此服务器收到查询时，如果要查询的域名，包含在">
 <meta name="keywords" content="tech, blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机基础">
 <meta property="og:url" content="http://yoursite.com/2019/09/02/计算机基础/index.html">
 <meta property="og:site_name" content="Unknown Exception Throw">
-<meta property="og:description" content="网络 DNS解析过程  浏览器输入域名http://www.baidu.com ，操作系统会先检查hosts文件是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果hosts里面没有，则查找本地DNS解析器缓存，是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果还是没有，则会查找TCP/IP参数中设置的首选DNS服务器，此服务器收到查询时，如果要查询的域名，包">
+<meta property="og:description" content="网络DNS解析过程 浏览器输入域名http://www.baidu.com ，操作系统会先检查hosts文件是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果hosts里面没有，则查找本地DNS解析器缓存，是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果还是没有，则会查找TCP/IP参数中设置的首选DNS服务器，此服务器收到查询时，如果要查询的域名，包含在">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-10-17T11:50:48.912Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机基础">
-<meta name="twitter:description" content="网络 DNS解析过程  浏览器输入域名http://www.baidu.com ，操作系统会先检查hosts文件是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果hosts里面没有，则查找本地DNS解析器缓存，是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果还是没有，则会查找TCP/IP参数中设置的首选DNS服务器，此服务器收到查询时，如果要查询的域名，包">
+<meta name="twitter:description" content="网络DNS解析过程 浏览器输入域名http://www.baidu.com ，操作系统会先检查hosts文件是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果hosts里面没有，则查找本地DNS解析器缓存，是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析 如果还是没有，则会查找TCP/IP参数中设置的首选DNS服务器，此服务器收到查询时，如果要查询的域名，包含在">
 
 <link rel="canonical" href="http://yoursite.com/2019/09/02/计算机基础/">
 
@@ -236,22 +236,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2>网络</h2>
-<h3>DNS解析过程</h3>
-<ol>
-<li>浏览器输入域名http://www.baidu.com ，操作系统会先检查hosts文件是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析</li>
+        <h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><h3 id="DNS解析过程"><a href="#DNS解析过程" class="headerlink" title="DNS解析过程"></a>DNS解析过程</h3><ol>
+<li>浏览器输入域名<a href="http://www.baidu.com" target="_blank" rel="noopener">http://www.baidu.com</a> ，操作系统会先检查hosts文件是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析</li>
 <li>如果hosts里面没有，则查找本地DNS解析器缓存，是否有这个网址的映射关系，如果有，就先调用这个IP，完成域名解析</li>
 <li>如果还是没有，则会查找TCP/IP参数中设置的首选DNS服务器，此服务器收到查询时，如果要查询的域名，包含在本地配置的区域资源中，则返回解析结果给客户机，完成域名解析，此解析具有权威性</li>
 <li>如果要查询的域名不由本地DNS服务器区域解析，但该服务器已经缓存了此网址映射关系，则调用这个IP地址映射，此解析不具有权威性</li>
-<li>如果本地DNS服务器区域解析与缓存都失效，则根据本地服务器的设置（是否设置转发器）进行查询，如果未用转发器模式，本地DNS就把请求发送给13台根DNS，根DNS收到请求后会判断这个域名（.com）是谁来授权管理，并返回一个负责该顶级域名服务器的一个IP。本地DNS服务器收到IP后，将会请求这台服务器，如果这台服务器自己无法解析，它就会找一个管理.com域名的下一级DNS服务器地址（http://baidu.com）给本地DNS服务器。当本地服务器收到地址后，就会找http://baidu.com域服务器，重复上面的动作，进行查询，知道找到www.baidu.com的主机</li>
+<li>如果本地DNS服务器区域解析与缓存都失效，则根据本地服务器的设置（是否设置转发器）进行查询，如果未用转发器模式，本地DNS就把请求发送给13台根DNS，根DNS收到请求后会判断这个域名（.com）是谁来授权管理，并返回一个负责该顶级域名服务器的一个IP。本地DNS服务器收到IP后，将会请求这台服务器，如果这台服务器自己无法解析，它就会找一个管理.com域名的下一级DNS服务器地址（<a href="http://baidu.com）给本地DNS服务器。当本地服务器收到地址后，就会找http://baidu.com域服务器，重复上面的动作，进行查询，知道找到www.baidu.com的主机" target="_blank" rel="noopener">http://baidu.com）给本地DNS服务器。当本地服务器收到地址后，就会找http://baidu.com域服务器，重复上面的动作，进行查询，知道找到www.baidu.com的主机</a></li>
 <li>如果用的是转发模式，此DNS服务器就会把请求转发给上一级服务器，由上一级服务器进行解析，上一级服务器如果不能解析，或找根DNS或把请求转发给上上级，以此循环。不管本地DNS服务器用的是转发，还是根提示，最后都是把结果返回给本地DNS服务器，再由本地DNS服务器返回给客户机。</li>
 </ol>
 <p><strong>请求过程用的是UDP还是TCP？</strong></p>
-<p>UDP，UDP发送快</p>
+<p> UDP，UDP发送快</p>
 <p><strong>为什么是13台根服务器？</strong></p>
 <p>为了做<code>Prime Query</code>查<code>Root Servers</code>性价比达到最高，肯定是一个包能放多少东西就塞多少东西，所以把所有<code>Root Servers</code>的结果都塞进去，刚好能塞14个，不全用就塞13个吧，留下一点东西以备后患，留待扩展。</p>
-<h3>I/O</h3>
-<p>同步、异步：消息通信机制</p>
+<h3 id="I-O"><a href="#I-O" class="headerlink" title="I/O"></a>I/O</h3><p>同步、异步：消息通信机制</p>
 <p>阻塞，非阻塞：等待状态</p>
 <p>五种I/O模型：</p>
 <ul>
@@ -261,25 +258,22 @@
 <li>信号驱动I/O</li>
 <li>异步I/O</li>
 </ul>
-<h3>select函数</h3>
-<p>多路复用I/O</p>
-<p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">select</span><span class="params">(<span class="keyword">int</span> maxfdp1,fd_set *readset,fd_set *writeset,fd_set *exceptset,<span class="keyword">const</span> struct timeval *timeout)</span></span>;</span><br></pre></td></tr></table></figure></p>
-<h4>机制</h4>
-<p>select提供一个fd_set数据结构，实际上是一个long型的数组，里面的每个元素都与能打开的文件句柄建立联系，当调用select时，由内核根据IO状态修改fd_set的内容，由此通知select()的进程某个socket或文件可读</p>
-<h4>优点</h4>
-<p>一个线程处理多个I/O请求</p>
-<h4>问题</h4>
-<ol>
-<li>每次调用select时，都要把fd_set集合	从用户态拷贝到内核态，开销大</li>
+<h3 id="select函数"><a href="#select函数" class="headerlink" title="select函数"></a>select函数</h3><p>多路复用I/O</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">select</span><span class="params">(<span class="keyword">int</span> maxfdp1,fd_set *readset,fd_set *writeset,fd_set *exceptset,<span class="keyword">const</span> struct timeval *timeout)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="机制"><a href="#机制" class="headerlink" title="机制"></a>机制</h4><p>select提供一个fd_set数据结构，实际上是一个long型的数组，里面的每个元素都与能打开的文件句柄建立联系，当调用select时，由内核根据IO状态修改fd_set的内容，由此通知select()的进程某个socket或文件可读</p>
+<h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><p>一个线程处理多个I/O请求</p>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><ol>
+<li>每次调用select时，都要把fd_set集合    从用户态拷贝到内核态，开销大</li>
 <li>每次调用select时，都要遍历一遍fd_set集合，时间长</li>
 <li>为了减少数据拷贝带来的性能损耗，fd_set的集合大小有限制，限制为1024（不可改变）</li>
 </ol>
-<h3>poll函数</h3>
-<p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">poll</span><span class="params">(struct pollfd *fds, <span class="keyword">nfds_t</span> nfds, <span class="keyword">int</span> timeout)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">pollfd</span> &#123;</span></span><br><span class="line">        <span class="keyword">int</span> fd;                         <span class="comment">// 需要被检测或选择的文件描述符</span></span><br><span class="line">        <span class="keyword">short</span> events;                   <span class="comment">// 对文件描述符fd上感兴趣的事件</span></span><br><span class="line">        <span class="keyword">short</span> revents;                  <span class="comment">// 文件描述符fd上当前实际发生的事件</span></span><br><span class="line">&#125; <span class="keyword">pollfd_t</span>;</span><br></pre></td></tr></table></figure></p>
+<h3 id="poll函数"><a href="#poll函数" class="headerlink" title="poll函数"></a>poll函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">poll</span><span class="params">(struct pollfd *fds, <span class="keyword">nfds_t</span> nfds, <span class="keyword">int</span> timeout)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">pollfd</span> &#123;</span></span><br><span class="line">        <span class="keyword">int</span> fd;                         <span class="comment">// 需要被检测或选择的文件描述符</span></span><br><span class="line">        <span class="keyword">short</span> events;                   <span class="comment">// 对文件描述符fd上感兴趣的事件</span></span><br><span class="line">        <span class="keyword">short</span> revents;                  <span class="comment">// 文件描述符fd上当前实际发生的事件</span></span><br><span class="line">&#125; <span class="keyword">pollfd_t</span>;</span><br></pre></td></tr></table></figure>
+
 <p>与select类似，但是没有大小限制</p>
-<h3>epoll函数</h3>
-<p>事件驱动I/O</p>
-<p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建一个epoll句柄，size代表描述符数量，成功时返回epoll句柄描述符，失败时返回-1</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">epoll_create</span><span class="params">(<span class="keyword">int</span> size)</span></span>;</span><br><span class="line"><span class="comment">// 注册要监听的事件类型：注册，修改，删除</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">epoll_ctl</span><span class="params">(<span class="keyword">int</span> epfd, <span class="keyword">int</span> op, <span class="keyword">int</span> fd, struct epoll_event *event)</span></span>;</span><br><span class="line"><span class="comment">// 等待事件的就绪，成功时返回就绪的事件数目，失败时返回-1，等待超时返回0</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">epoll_wait</span><span class="params">(<span class="keyword">int</span> epfd, struct epoll_event * events, <span class="keyword">int</span> maxevents, <span class="keyword">int</span> timeout)</span></span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">epoll_event</span> &#123;</span></span><br><span class="line">    <span class="keyword">__uint32_t</span> events;  <span class="comment">/* Epoll events */</span></span><br><span class="line">    <span class="keyword">epoll_data_t</span> data;  <span class="comment">/* User data variable */</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">union</span> epoll_data &#123;</span><br><span class="line">    <span class="keyword">void</span> *ptr;</span><br><span class="line">    <span class="keyword">int</span> fd;</span><br><span class="line">    <span class="keyword">__uint32_t</span> u32;</span><br><span class="line">    <span class="keyword">__uint64_t</span> u64;</span><br><span class="line">&#125; <span class="keyword">epoll_data_t</span>;</span><br></pre></td></tr></table></figure></p>
+<h3 id="epoll函数"><a href="#epoll函数" class="headerlink" title="epoll函数"></a>epoll函数</h3><p>事件驱动I/O</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建一个epoll句柄，size代表描述符数量，成功时返回epoll句柄描述符，失败时返回-1</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">epoll_create</span><span class="params">(<span class="keyword">int</span> size)</span></span>;</span><br><span class="line"><span class="comment">// 注册要监听的事件类型：注册，修改，删除</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">epoll_ctl</span><span class="params">(<span class="keyword">int</span> epfd, <span class="keyword">int</span> op, <span class="keyword">int</span> fd, struct epoll_event *event)</span></span>;</span><br><span class="line"><span class="comment">// 等待事件的就绪，成功时返回就绪的事件数目，失败时返回-1，等待超时返回0</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">epoll_wait</span><span class="params">(<span class="keyword">int</span> epfd, struct epoll_event * events, <span class="keyword">int</span> maxevents, <span class="keyword">int</span> timeout)</span></span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">epoll_event</span> &#123;</span></span><br><span class="line">    <span class="keyword">__uint32_t</span> events;  <span class="comment">/* Epoll events */</span></span><br><span class="line">    <span class="keyword">epoll_data_t</span> data;  <span class="comment">/* User data variable */</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">union</span> epoll_data &#123;</span><br><span class="line">    <span class="keyword">void</span> *ptr;</span><br><span class="line">    <span class="keyword">int</span> fd;</span><br><span class="line">    <span class="keyword">__uint32_t</span> u32;</span><br><span class="line">    <span class="keyword">__uint64_t</span> u64;</span><br><span class="line">&#125; <span class="keyword">epoll_data_t</span>;</span><br></pre></td></tr></table></figure>
+
 <p>epoll没有描述符个数限制，使用一个文件描述符管理多个描述符，将用户关心的文件描述符的事件存放到内核的一个事件表中，这样用户态和内核态的空间拷贝只需一次</p>
 <p>触发方式：</p>
 <ul>
@@ -348,7 +342,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.</span> <span class="nav-text">DNS解析过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.2.</span> <span class="nav-text">I/O</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.3.</span> <span class="nav-text">select函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.3.1.</span> <span class="nav-text">机制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.3.2.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.3.3.</span> <span class="nav-text">问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.4.</span> <span class="nav-text">poll函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.5.</span> <span class="nav-text">epoll函数</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#网络"><span class="nav-number">1.</span> <span class="nav-text">网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DNS解析过程"><span class="nav-number">1.1.</span> <span class="nav-text">DNS解析过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#I-O"><span class="nav-number">1.2.</span> <span class="nav-text">I/O</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#select函数"><span class="nav-number">1.3.</span> <span class="nav-text">select函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#机制"><span class="nav-number">1.3.1.</span> <span class="nav-text">机制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#优点"><span class="nav-number">1.3.2.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#问题"><span class="nav-number">1.3.3.</span> <span class="nav-text">问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#poll函数"><span class="nav-number">1.4.</span> <span class="nav-text">poll函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#epoll函数"><span class="nav-number">1.5.</span> <span class="nav-text">epoll函数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -364,14 +358,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">32</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">

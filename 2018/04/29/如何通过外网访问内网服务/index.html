@@ -248,20 +248,18 @@
 
       
         <p>在进行某些网站的爬虫时，由于可能需要爬取的量特别大，比如像一些电商网站，这时我们可能加入一些分布式的东西，比如scrapy_redis组件实现了redis缓存的一些功能，但是可能由于一台主机的内存有限，任务量又太大，速率还是过慢，我们可能想到利用服务器和本机同时爬取，服务器端将爬取的内容存入主机的数据库，这时问题就来了，由于我的主机是处于路由器环境下，外网无法访问，如何能让外网连接到主机呢？经过一番查找和朋友的告知，可以利用ssh实现端口转发来达到目的。</p>
-<p>&lt;!--more--&gt;</p>
-<h2>什么是SSH？</h2>
-<p>SSH 为建立在应用层基础上的安全协议。SSH 是目前较可靠，专为<a href="https://baike.baidu.com/item/%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95" target="_blank" rel="noopener">远程登录</a>会话和其他网络服务提供安全性的协议。--百度百科</p>
+<a id="more"></a>
+
+<h2 id="什么是SSH？"><a href="#什么是SSH？" class="headerlink" title="什么是SSH？"></a>什么是SSH？</h2><p>SSH 为建立在应用层基础上的安全协议。SSH 是目前较可靠，专为<a href="https://baike.baidu.com/item/%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95" target="_blank" rel="noopener">远程登录</a>会话和其他网络服务提供安全性的协议。–百度百科</p>
 <p>SSH由服务端和客户端组成，服务端是守护进程，在后台运行并相应来自客户端的连接请求。客户端包含一些ssh程序。</p>
 <p>客户端和服务端建立请求之后，客户端就可以将一些数据转发到服务端上，那么我们就可以访问客户端来实现端口转发。</p>
-<h2>操作SSH</h2>
-<ol>
-<li>
-<p>本地主机为Deepin系统，可以直接通过apt-get来安装</p>
-<p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo apt-get install openssh-server</span><br></pre></td></tr></table></figure></p>
+<h2 id="操作SSH"><a href="#操作SSH" class="headerlink" title="操作SSH"></a>操作SSH</h2><ol>
+<li><p>本地主机为Deepin系统，可以直接通过apt-get来安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo apt-get install openssh-server</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>安装好后，利用ssh与服务器建立连接</p>
-<p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ssh -fCNR 54321:localhost:54322 lkc@ip</span><br></pre></td></tr></table></figure></p>
+<li><p>安装好后，利用ssh与服务器建立连接</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ssh -fCNR 54321:localhost:54322 lkc@ip</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>-f 后台执行ssh指令</li>
 <li>-C 允许压缩数据</li>
@@ -272,8 +270,7 @@
 <li>ip 为服务器地址</li>
 </ul>
 </li>
-<li>
-<p>成功后我们就将内网的54322端口映射到了服务器的54321端口</p>
+<li><p>成功后我们就将内网的54322端口映射到了服务器的54321端口</p>
 </li>
 </ol>
 <p>关于ssh其他的用途在接下来有需要的时候会记录</p>
@@ -339,7 +336,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">什么是SSH？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">操作SSH</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是SSH？"><span class="nav-number">1.</span> <span class="nav-text">什么是SSH？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作SSH"><span class="nav-number">2.</span> <span class="nav-text">操作SSH</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -355,14 +352,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">32</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">

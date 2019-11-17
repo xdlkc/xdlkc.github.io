@@ -50,13 +50,13 @@
   };
 </script>
 
-  <meta name="description" content="[TOC] STP（Spanning Tree Protocol）协议 生成树协议，逻辑上断开环路，防止二层网络的广播风暴产生  Root Bridge（根交换机）：根 Designated Bridges（指定交换机）：树枝 Bridge Protocol Data Unit（网桥协议数据单元） Priority Vector（优先级向量）  网桥端口状态：阻塞、侦听、学习、转发、禁用   IC">
+  <meta name="description" content="[TOC] STP（Spanning Tree Protocol）协议生成树协议，逻辑上断开环路，防止二层网络的广播风暴产生  Root Bridge（根交换机）：根 Designated Bridges（指定交换机）：树枝 Bridge Protocol Data Unit（网桥协议数据单元） Priority Vector（优先级向量）  网桥端口状态：阻塞、侦听、学习、转发、禁用   ICM">
 <meta name="keywords" content="tech, blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机网络知识点">
 <meta property="og:url" content="http://yoursite.com/2019/08/27/计算机网络知识点/index.html">
 <meta property="og:site_name" content="Unknown Exception Throw">
-<meta property="og:description" content="[TOC] STP（Spanning Tree Protocol）协议 生成树协议，逻辑上断开环路，防止二层网络的广播风暴产生  Root Bridge（根交换机）：根 Designated Bridges（指定交换机）：树枝 Bridge Protocol Data Unit（网桥协议数据单元） Priority Vector（优先级向量）  网桥端口状态：阻塞、侦听、学习、转发、禁用   IC">
+<meta property="og:description" content="[TOC] STP（Spanning Tree Protocol）协议生成树协议，逻辑上断开环路，防止二层网络的广播风暴产生  Root Bridge（根交换机）：根 Designated Bridges（指定交换机）：树枝 Bridge Protocol Data Unit（网桥协议数据单元） Priority Vector（优先级向量）  网桥端口状态：阻塞、侦听、学习、转发、禁用   ICM">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/006y8mN6ly1g67sbb57fdj314a0m6tco.jpg">
 <meta property="og:image" content="http://ww4.sinaimg.cn/large/006y8mN6ly1g67sckj6wfj30py0c03zo.jpg">
@@ -72,7 +72,7 @@
 <meta property="og:updated_time" content="2019-10-17T11:50:48.912Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机网络知识点">
-<meta name="twitter:description" content="[TOC] STP（Spanning Tree Protocol）协议 生成树协议，逻辑上断开环路，防止二层网络的广播风暴产生  Root Bridge（根交换机）：根 Designated Bridges（指定交换机）：树枝 Bridge Protocol Data Unit（网桥协议数据单元） Priority Vector（优先级向量）  网桥端口状态：阻塞、侦听、学习、转发、禁用   IC">
+<meta name="twitter:description" content="[TOC] STP（Spanning Tree Protocol）协议生成树协议，逻辑上断开环路，防止二层网络的广播风暴产生  Root Bridge（根交换机）：根 Designated Bridges（指定交换机）：树枝 Bridge Protocol Data Unit（网桥协议数据单元） Priority Vector（优先级向量）  网桥端口状态：阻塞、侦听、学习、转发、禁用   ICM">
 <meta name="twitter:image" content="http://ww1.sinaimg.cn/large/006y8mN6ly1g67sbb57fdj314a0m6tco.jpg">
 
 <link rel="canonical" href="http://yoursite.com/2019/08/27/计算机网络知识点/">
@@ -249,8 +249,7 @@
 
       
         <p>[TOC]</p>
-<h2>STP（Spanning Tree Protocol）协议</h2>
-<p>生成树协议，逻辑上断开环路，防止二层网络的广播风暴产生</p>
+<h2 id="STP（Spanning-Tree-Protocol）协议"><a href="#STP（Spanning-Tree-Protocol）协议" class="headerlink" title="STP（Spanning Tree Protocol）协议"></a>STP（Spanning Tree Protocol）协议</h2><p>生成树协议，逻辑上断开环路，防止二层网络的广播风暴产生</p>
 <ul>
 <li>Root Bridge（根交换机）：根</li>
 <li>Designated Bridges（指定交换机）：树枝</li>
@@ -260,15 +259,12 @@
 <p>网桥端口状态：阻塞、侦听、学习、转发、禁用</p>
 <p><img src="http://ww1.sinaimg.cn/large/006y8mN6ly1g67sbb57fdj314a0m6tco.jpg" alt></p>
 <p><img src="http://ww4.sinaimg.cn/large/006y8mN6ly1g67sckj6wfj30py0c03zo.jpg" alt></p>
-<h2>ICMP（Internet Control Message Protocol）协议</h2>
-<p>互联网控制报文协议</p>
+<h2 id="ICMP（Internet-Control-Message-Protocol）协议"><a href="#ICMP（Internet-Control-Message-Protocol）协议" class="headerlink" title="ICMP（Internet Control Message Protocol）协议"></a>ICMP（Internet Control Message Protocol）协议</h2><p>互联网控制报文协议</p>
 <p>报文类型：查询报文类型，差错报文类型</p>
 <p><img src="http://ww3.sinaimg.cn/large/006y8mN6ly1g68i46cxlyj31fk0gcdor.jpg" alt="image-20190822154552693"></p>
-<h3>查询报文</h3>
-<p>ping命令：ICMP ECHO REQUEST + ICMP ECHO REPLY</p>
+<h3 id="查询报文"><a href="#查询报文" class="headerlink" title="查询报文"></a>查询报文</h3><p>ping命令：ICMP ECHO REQUEST + ICMP ECHO REPLY</p>
 <p><img src="http://ww1.sinaimg.cn/large/006y8mN6ly1g68iouipx3j31b00u0dnn.jpg" alt="image-20190822160546458"></p>
-<h3>差错报文</h3>
-<p>终点不可达（3）</p>
+<h3 id="差错报文"><a href="#差错报文" class="headerlink" title="差错报文"></a>差错报文</h3><p>终点不可达（3）</p>
 <ul>
 <li>网络不可达</li>
 <li>主机不可达</li>
@@ -284,20 +280,16 @@
 <li>故意设置特殊的TTL，来追踪去往目的地时经过的路由器</li>
 <li>故意设置不分片，从而确定路径的MTU（Maximum Transmission Unit）</li>
 </ul>
-<h3>提问</h3>
-<ul>
+<h3 id="提问"><a href="#提问" class="headerlink" title="提问"></a>提问</h3><ul>
 <li>当发送的报文出问题的时候，会发送一个ICMP的差错报文来报告错误，但是如果ICMP的差错报文 也出问题了呢?</li>
 <li>这一节只说了一个局域网互相ping的情况。如果跨路由器、跨网关的过程会是什么样的呢?</li>
 </ul>
-<h2>如何上网</h2>
-<p>网关Gateway：往往是路由器，三层转发设备（把MAC头和IP头都取下来，根据内容决定往哪里转发的设备）</p>
+<h2 id="如何上网"><a href="#如何上网" class="headerlink" title="如何上网"></a>如何上网</h2><p>网关Gateway：往往是路由器，三层转发设备（把MAC头和IP头都取下来，根据内容决定往哪里转发的设备）</p>
 <p>路由器是一个设备，有多个网卡，每个网卡都是一个网关</p>
 <p>静态路由、动态路由</p>
 <p>不改变IP地址的网关，我们称为转发网 关;改变IP地址的网关，我们称为NAT网关。</p>
 <p>NAT网关（Network Address Translation）：IP会变</p>
-<h2>UDP协议</h2>
-<h2>TCP协议</h2>
-<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g74z3svf9vj31b00kwe6i.jpg" alt="image-20190919175146155"></p>
+<h2 id="UDP协议"><a href="#UDP协议" class="headerlink" title="UDP协议"></a>UDP协议</h2><h2 id="TCP协议"><a href="#TCP协议" class="headerlink" title="TCP协议"></a>TCP协议</h2><p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g74z3svf9vj31b00kwe6i.jpg" alt="image-20190919175146155"></p>
 <p>解决5个问题：</p>
 <ul>
 <li>顺序问题</li>
@@ -311,8 +303,7 @@
 <p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g74zawnmbuj31gw0dm120.jpg" alt="image-20190919175838450"></p>
 <p>接收端窗口状态：</p>
 <p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g74zc0s27mj31ke0g4dps.jpg" alt="image-20190919175942574"></p>
-<h2>Socket</h2>
-<p>基于TCP的socket连接协议</p>
+<h2 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h2><p>基于TCP的socket连接协议</p>
 <p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g7d9ixx6pxj30uk0u0doc.jpg" alt="image-20190926215649617"></p>
 <p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g7d9m2insej30u00vb0y1.jpg" alt="image-20190926215951462"></p>
 <p>基于UDP的socket连接协议</p>
@@ -379,7 +370,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">STP（Spanning Tree Protocol）协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">ICMP（Internet Control Message Protocol）协议</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">2.1.</span> <span class="nav-text">查询报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">2.2.</span> <span class="nav-text">差错报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">2.3.</span> <span class="nav-text">提问</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">如何上网</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">4.</span> <span class="nav-text">UDP协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">5.</span> <span class="nav-text">TCP协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">6.</span> <span class="nav-text">Socket</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#STP（Spanning-Tree-Protocol）协议"><span class="nav-number">1.</span> <span class="nav-text">STP（Spanning Tree Protocol）协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ICMP（Internet-Control-Message-Protocol）协议"><span class="nav-number">2.</span> <span class="nav-text">ICMP（Internet Control Message Protocol）协议</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#查询报文"><span class="nav-number">2.1.</span> <span class="nav-text">查询报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#差错报文"><span class="nav-number">2.2.</span> <span class="nav-text">差错报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提问"><span class="nav-number">2.3.</span> <span class="nav-text">提问</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何上网"><span class="nav-number">3.</span> <span class="nav-text">如何上网</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UDP协议"><span class="nav-number">4.</span> <span class="nav-text">UDP协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TCP协议"><span class="nav-number">5.</span> <span class="nav-text">TCP协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Socket"><span class="nav-number">6.</span> <span class="nav-text">Socket</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -395,14 +386,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">32</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
