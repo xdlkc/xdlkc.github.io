@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.2',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="(&amp;lt;深入分析Java Web技术内幕&amp;gt;笔记)java语言在宣传时打出的名号就是”一次编译,到处运行”, 也就是支持跨平台运行,其实这是java文件编译成class文件来实现的,那么class文件是怎么生成的?clss文件又有哪些内容?本篇笔记就是记录相关的学习内容的.">
+<meta name="keywords" content="tech, blog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java的class文件结构">
+<meta property="og:url" content="http://yoursite.com/2019/11/18/java的class文件结构/index.html">
+<meta property="og:site_name" content="UET">
+<meta property="og:description" content="(&amp;lt;深入分析Java Web技术内幕&amp;gt;笔记)java语言在宣传时打出的名号就是”一次编译,到处运行”, 也就是支持跨平台运行,其实这是java文件编译成class文件来实现的,那么class文件是怎么生成的?clss文件又有哪些内容?本篇笔记就是记录相关的学习内容的.">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-b965f406dda0f787.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-e007abd5d081112a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-16ae4e70fdd98b81.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-fe990fcd019fb8c1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-06efaeb87d03d0cb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-9e07d353290d84fd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-3999ff561b51620a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-b2393039979543bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-75cd28215401e710.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-b95ced1b692abbe8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1890983-dfad25390c85da30.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-11-18T08:08:39.631Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="java的class文件结构">
+<meta name="twitter:description" content="(&amp;lt;深入分析Java Web技术内幕&amp;gt;笔记)java语言在宣传时打出的名号就是”一次编译,到处运行”, 也就是支持跨平台运行,其实这是java文件编译成class文件来实现的,那么class文件是怎么生成的?clss文件又有哪些内容?本篇笔记就是记录相关的学习内容的.">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1890983-b965f406dda0f787.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+<link rel="canonical" href="http://yoursite.com/2019/11/18/java的class文件结构/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>java的class文件结构 | UET</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">UET</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">期待你的分享</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/18/java的class文件结构/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="lkc">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="UET">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          java的class文件结构
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-18 16:07:10 / 修改时间：16:08:39" itemprop="dateCreated datePublished" datetime="2019-11-18T16:07:10+08:00">2019-11-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>(&lt;深入分析Java Web技术内幕&gt;笔记)<br>java语言在宣传时打出的名号就是”一次编译,到处运行”, 也就是支持跨平台运行,其实这是java文件编译成class文件来实现的,那么class文件是怎么生成的?clss文件又有哪些内容?本篇笔记就是记录相关的学习内容的.</p>
+<a id="more"></a>
+
+<h2 id="JVM指令集"><a href="#JVM指令集" class="headerlink" title="JVM指令集"></a>JVM指令集</h2><p>先来一段几乎每个人入门一门语言都会写的代码:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassLearn</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"hello world!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>就是一个类有一个main方法,方法内部打印了”hello world!”,我们先将其编译为class文件,再运行:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// oolong是一种汇编语言,可以编译class文件为.j</span><br><span class="line">java  COM.sootNsmoke.oolong.Gnoloo ClassLearn.class</span><br></pre></td></tr></table></figure>
+
+<p>会生成一个ClassLearn.j文件,查看一下文件内容:<br><img src="http://upload-images.jianshu.io/upload_images/1890983-b965f406dda0f787.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p>以”.”符号开头表示是一个基本的属性项,就是一个java的基本概念(一个类,方法,属性,对象或者一个接口)</p>
+<h3 id="与类相关的指令"><a href="#与类相关的指令" class="headerlink" title="与类相关的指令"></a>与类相关的指令</h3><ul>
+<li><code>.source ClassLearn.java</code>表示代码的源文件是ClassLearn.java</li>
+<li><code>.class public super ClassLearn</code>表示这是一个类且公有的类名是ClassLearn</li>
+<li><code>.super java/lang/Object</code>表示这个类的父类是Object</li>
+</ul>
+<p>与类相关的指令:</p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>参数</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>checkcast</td>
+<td>class</td>
+<td>检验类型转换(ClassCastException)</td>
+</tr>
+<tr>
+<td>getfield</td>
+<td>class/field desc</td>
+<td>获取类的实例域,并将值压入栈顶</td>
+</tr>
+<tr>
+<td>getstatic</td>
+<td>class/field desc</td>
+<td>获取类的静态域,并将值压入栈顶</td>
+</tr>
+<tr>
+<td>instanceof</td>
+<td>class</td>
+<td>检查对象是否是类的实例,是1压入栈顶,否0压入栈顶</td>
+</tr>
+<tr>
+<td>new</td>
+<td>class</td>
+<td>创建一个对象,将其引入值压入栈顶</td>
+</tr>
+</tbody></table>
+<h3 id="方法定义"><a href="#方法定义" class="headerlink" title="方法定义"></a>方法定义</h3><ul>
+<li><code>.method public &lt;init&gt; ()V</code> 表示是一个公有方法,没有参数,返回值是<code>void</code>,<code>&lt;init&gt;</code>表示是构造方法</li>
+<li><code>.method public static main([Ljava/lang/String;)V</code>与上一条类似,<code>[</code>表示数组,<code>L</code>表示是一个类形式而不是基本数据类型(int,char等),凡是<code>L</code>最后都以<code>;</code>结尾,表示类结束</li>
+</ul>
+<p>与方法相关的JVM指令:</p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>操作数</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>invokeinterface</td>
+<td>class/method desc n</td>
+<td>调用接口方法</td>
+</tr>
+<tr>
+<td>invokespecial</td>
+<td>class/method desc</td>
+<td>调用超类构造方法,实例初始化方法,私有方法</td>
+</tr>
+<tr>
+<td>invokestatic</td>
+<td>class/method desc</td>
+<td>调用静态方法</td>
+</tr>
+<tr>
+<td>invokevirtual</td>
+<td>class/method desc</td>
+<td>调用实例方法</td>
+</tr>
+</tbody></table>
+<h3 id="类的属性的定义"><a href="#类的属性的定义" class="headerlink" title="类的属性的定义"></a>类的属性的定义</h3><p>数据类型:</p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>表示方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数组</td>
+<td>[</td>
+</tr>
+<tr>
+<td>类</td>
+<td>L;</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>B</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Z</td>
+</tr>
+<tr>
+<td>char</td>
+<td>C</td>
+</tr>
+<tr>
+<td>double</td>
+<td>D</td>
+</tr>
+<tr>
+<td>float</td>
+<td>F</td>
+</tr>
+<tr>
+<td>int</td>
+<td>I</td>
+</tr>
+<tr>
+<td>long</td>
+<td>J</td>
+</tr>
+<tr>
+<td>short</td>
+<td>S</td>
+</tr>
+<tr>
+<td>void</td>
+<td>V</td>
+</tr>
+</tbody></table>
+<p>修饰属性:</p>
+<table>
+<thead>
+<tr>
+<th>修饰符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public</td>
+<td>公有</td>
+</tr>
+<tr>
+<td>private</td>
+<td>私有</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>子类和包可见</td>
+</tr>
+<tr>
+<td>static</td>
+<td>静态</td>
+</tr>
+<tr>
+<td>final</td>
+<td>不可修改</td>
+</tr>
+<tr>
+<td>volatile</td>
+<td>弱引用</td>
+</tr>
+<tr>
+<td>transient</td>
+<td>临时属性</td>
+</tr>
+</tbody></table>
+<h2 id="class文件头的表示形式"><a href="#class文件头的表示形式" class="headerlink" title="class文件头的表示形式"></a>class文件头的表示形式</h2><p>看一看之前的代码字节码形式是怎么样的:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java COM.sootNsmoke.oolong.DumpClass ClassLearn.class</span><br></pre></td></tr></table></figure>
+
+<p>输出:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">000000</span> cafebabe          magic = ca fe ba be</span><br><span class="line"><span class="number">000004</span> <span class="number">0000</span>              minor version = <span class="number">0</span></span><br><span class="line"><span class="number">000006</span> <span class="number">0034</span>              major version = <span class="number">52</span></span><br><span class="line"><span class="number">000008</span> <span class="number">001</span>d              <span class="number">29</span> constants</span><br><span class="line"><span class="number">00000</span>a <span class="number">0</span>a0006000f           <span class="number">1</span>. Methodref <span class="class"><span class="keyword">class</span> #6 <span class="title">name</span>-<span class="title">and</span>-<span class="title">type</span> #15</span></span><br><span class="line"><span class="class">00000<span class="title">f</span> 0900100011           2. <span class="title">Fieldref</span> <span class="title">class</span> #16 <span class="title">name</span>-<span class="title">and</span>-<span class="title">type</span> #17</span></span><br><span class="line"><span class="class">000014 080012               3. <span class="title">String</span> #18</span></span><br><span class="line"><span class="class">000017 0<span class="title">a00130014</span>           4. <span class="title">Methodref</span> <span class="title">class</span> #19 <span class="title">name</span>-<span class="title">and</span>-<span class="title">type</span> #20</span></span><br><span class="line"><span class="class">00001<span class="title">c</span> 070015               5. <span class="title">Class</span> <span class="title">name</span> #21</span></span><br><span class="line"><span class="class">00001<span class="title">f</span> 070016               6. <span class="title">Class</span> <span class="title">name</span> #22</span></span><br><span class="line"><span class="class">000022 010006               7. <span class="title">UTF</span> <span class="title">length</span></span>=<span class="number">6</span></span><br><span class="line"><span class="number">000025</span> <span class="number">3</span>c696e69743e                       &lt;init&gt;</span><br><span class="line"><span class="number">00002</span>b <span class="number">010003</span>               <span class="number">8</span>. UTF length=<span class="number">3</span></span><br><span class="line"><span class="number">00002</span>e <span class="number">282956</span>                             ()V</span><br><span class="line"><span class="number">000031</span> <span class="number">010004</span>               <span class="number">9</span>. UTF length=<span class="number">4</span></span><br><span class="line"><span class="number">000034</span> <span class="number">436f</span>6465                           Code</span><br><span class="line"><span class="number">000038</span> <span class="number">01000f</span>               <span class="number">10</span>. UTF length=<span class="number">15</span></span><br><span class="line"><span class="number">00003</span>b <span class="number">4</span>c696e654e756d6265725461626c65     LineNumberTable</span><br><span class="line"><span class="number">00004</span>a <span class="number">010004</span>               <span class="number">11</span>. UTF length=<span class="number">4</span></span><br><span class="line"><span class="number">00004</span>d <span class="number">6</span>d61696e                           main</span><br><span class="line"><span class="number">000051</span> <span class="number">010016</span>               <span class="number">12</span>. UTF length=<span class="number">22</span></span><br><span class="line"><span class="number">000054</span> <span class="number">285</span>b4c6a6176612f6c616e672f537472   ([Ljava/lang/Str</span><br><span class="line"><span class="number">000064</span> <span class="number">696e673</span>b2956                       ing;)V</span><br><span class="line"><span class="number">00006</span>a <span class="number">01000</span>a               <span class="number">13</span>. UTF length=<span class="number">10</span></span><br><span class="line"><span class="number">00006</span>d <span class="number">536f</span>7572636546696c65               SourceFile</span><br><span class="line"><span class="number">000077</span> <span class="number">01000f</span>               <span class="number">14</span>. UTF length=<span class="number">15</span></span><br><span class="line"><span class="number">00007</span>a <span class="number">436</span>c6173734c6561726e2e6a617661     ClassLearn.java</span><br><span class="line">000089 0c00070008           15. NameAndType name #7 descriptor #8</span><br><span class="line">00008e 070017               16. Class name #23</span><br><span class="line">000091 0c00180019           17. NameAndType name #24 descriptor #25</span><br><span class="line"><span class="number">000096</span> <span class="number">01000</span>c               <span class="number">18</span>. UTF length=<span class="number">12</span></span><br><span class="line"><span class="number">000099</span> <span class="number">68656</span>c6c6f20776f726c6421           hello world!</span><br><span class="line">0000a5 07001a               19. Class name #26</span><br><span class="line">0000a8 0c001b001c           20. NameAndType name #27 descriptor #28</span><br><span class="line"><span class="number">0000</span>ad <span class="number">01000</span>a               <span class="number">21</span>. UTF length=<span class="number">10</span></span><br><span class="line"><span class="number">0000</span>b0 <span class="number">436</span>c6173734c6561726e               ClassLearn</span><br><span class="line"><span class="number">0000</span>ba <span class="number">010010</span>               <span class="number">22</span>. UTF length=<span class="number">16</span></span><br><span class="line"><span class="number">0000</span>bd <span class="number">6</span>a6176612f6c616e672f4f626a656374   java/lang/Object</span><br><span class="line"><span class="number">0000</span>cd <span class="number">010010</span>               <span class="number">23</span>. UTF length=<span class="number">16</span></span><br><span class="line"><span class="number">0000</span>d0 <span class="number">6</span>a6176612f6c616e672f53797374656d   java/lang/System</span><br><span class="line"><span class="number">0000e0</span> <span class="number">010003</span>               <span class="number">24</span>. UTF length=<span class="number">3</span></span><br><span class="line"><span class="number">0000e3</span> <span class="number">6f</span>7574                             out</span><br><span class="line"><span class="number">0000e6</span> <span class="number">010015</span>               <span class="number">25</span>. UTF length=<span class="number">21</span></span><br><span class="line"><span class="number">0000e9</span> <span class="number">4</span>c6a6176612f696f2f5072696e745374   Ljava/io/PrintSt</span><br><span class="line"><span class="number">0000f</span>9 <span class="number">7265616</span>d3b                         ream;</span><br><span class="line"><span class="number">0000f</span>e <span class="number">010013</span>               <span class="number">26</span>. UTF length=<span class="number">19</span></span><br><span class="line"><span class="number">000101</span> <span class="number">6</span>a6176612f696f2f5072696e74537472   java/io/PrintStr</span><br><span class="line"><span class="number">000111</span> <span class="number">65616</span>d                             eam</span><br><span class="line"><span class="number">000114</span> <span class="number">010007</span>               <span class="number">27</span>. UTF length=<span class="number">7</span></span><br><span class="line"><span class="number">000117</span> <span class="number">7072696e746</span>c6e                     println</span><br><span class="line"><span class="number">00011</span>e <span class="number">010015</span>               <span class="number">28</span>. UTF length=<span class="number">21</span></span><br><span class="line"><span class="number">000121</span> <span class="number">284</span>c6a6176612f6c616e672f53747269   (Ljava/lang/Stri</span><br><span class="line"><span class="number">000131</span> <span class="number">6e673</span>b2956                         ng;)V</span><br><span class="line"><span class="number">000136</span> <span class="number">0021</span>              access_flags = <span class="number">33</span></span><br><span class="line">000138 0005              this = #5</span><br><span class="line">00013a 0006              super = #6</span><br><span class="line"><span class="number">00013</span>c <span class="number">0000</span>              <span class="number">0</span> interfaces</span><br><span class="line"><span class="number">00013</span>e <span class="number">0000</span>              <span class="number">0</span> fields</span><br><span class="line"><span class="number">000140</span> <span class="number">0002</span>              <span class="number">2</span> methods</span><br><span class="line">                         Method <span class="number">0</span>:</span><br><span class="line"><span class="number">000142</span> <span class="number">0001</span>                 access flags = <span class="number">1</span></span><br><span class="line">000144 0007                 name = #7&lt;&lt;init&gt;&gt;</span><br><span class="line">000146 0008                 descriptor = #8&lt;()V&gt;</span><br><span class="line"><span class="number">000148</span> <span class="number">0001</span>                 <span class="number">1</span> field/method attributes:</span><br><span class="line">                            field/method attribute <span class="number">0</span></span><br><span class="line">00014a 0009                    name = #9&lt;Code&gt;</span><br><span class="line"><span class="number">00014</span>c <span class="number">0000001</span>d                length = <span class="number">29</span></span><br><span class="line"><span class="number">000150</span> <span class="number">0001</span>                    max stack: <span class="number">1</span></span><br><span class="line"><span class="number">000152</span> <span class="number">0001</span>                    max locals: <span class="number">1</span></span><br><span class="line"><span class="number">000154</span> <span class="number">00000005</span>                code length: <span class="number">5</span></span><br><span class="line"><span class="number">000158</span> <span class="number">2</span>a                      <span class="number">0</span> aload_0</span><br><span class="line">000159 b70001                  1 invokespecial #1</span><br><span class="line"><span class="number">00015</span>c b1                      <span class="number">4</span> <span class="keyword">return</span></span><br><span class="line"><span class="number">00015</span>d <span class="number">0000</span>                    <span class="number">0</span> exception table entries:</span><br><span class="line"><span class="number">00015f</span> <span class="number">0001</span>                    <span class="number">1</span> code attributes:</span><br><span class="line">                               code attribute <span class="number">0</span>:</span><br><span class="line">000161 000a                       name = #10&lt;LineNumberTable&gt;</span><br><span class="line"><span class="number">000163</span> <span class="number">00000006</span>                   length = <span class="number">6</span></span><br><span class="line">                                  Line number table:</span><br><span class="line"><span class="number">000167</span> <span class="number">0001</span>                       length = <span class="number">1</span></span><br><span class="line"><span class="number">000169</span> <span class="number">00000008</span>                      start pc: <span class="number">0</span> line number: <span class="number">8</span></span><br><span class="line">                         Method <span class="number">1</span>:</span><br><span class="line"><span class="number">00016</span>d <span class="number">0009</span>                 access flags = <span class="number">9</span></span><br><span class="line">00016f 000b                 name = #11&lt;main&gt;</span><br><span class="line">000171 000c                 descriptor = #12&lt;([Ljava/lang/String;)V&gt;</span><br><span class="line"><span class="number">000173</span> <span class="number">0001</span>                 <span class="number">1</span> field/method attributes:</span><br><span class="line">                            field/method attribute <span class="number">0</span></span><br><span class="line">000175 0009                    name = #9&lt;Code&gt;</span><br><span class="line"><span class="number">000177</span> <span class="number">00000025</span>                length = <span class="number">37</span></span><br><span class="line"><span class="number">00017</span>b <span class="number">0002</span>                    max stack: <span class="number">2</span></span><br><span class="line"><span class="number">00017</span>d <span class="number">0001</span>                    max locals: <span class="number">1</span></span><br><span class="line"><span class="number">00017f</span> <span class="number">00000009</span>                code length: <span class="number">9</span></span><br><span class="line">000183 b20002                  0 getstatic #2</span><br><span class="line">000186 1203                    3 ldc #3</span><br><span class="line">000188 b60004                  5 invokevirtual #4</span><br><span class="line"><span class="number">00018</span>b b1                      <span class="number">8</span> <span class="keyword">return</span></span><br><span class="line"><span class="number">00018</span>c <span class="number">0000</span>                    <span class="number">0</span> exception table entries:</span><br><span class="line"><span class="number">00018</span>e <span class="number">0001</span>                    <span class="number">1</span> code attributes:</span><br><span class="line">                               code attribute <span class="number">0</span>:</span><br><span class="line">000190 000a                       name = #10&lt;LineNumberTable&gt;</span><br><span class="line"><span class="number">000192</span> <span class="number">0000000</span>a                   length = <span class="number">10</span></span><br><span class="line">                                  Line number table:</span><br><span class="line"><span class="number">000196</span> <span class="number">0002</span>                       length = <span class="number">2</span></span><br><span class="line"><span class="number">000198</span> <span class="number">0000000</span>a                      start pc: <span class="number">0</span> line number: <span class="number">10</span></span><br><span class="line"><span class="number">00019</span>c <span class="number">0008000</span>b                      start pc: <span class="number">8</span> line number: <span class="number">11</span></span><br><span class="line"><span class="number">0001</span>a0 <span class="number">0001</span>              <span class="number">1</span> classfile attributes</span><br><span class="line">                         Attribute <span class="number">0</span>:</span><br><span class="line">0001a2 000d                 name = #13&lt;SourceFile&gt;</span><br><span class="line"><span class="number">0001</span>a4 <span class="number">00000002</span>             length = <span class="number">2</span></span><br><span class="line">0001a8 000e                 sourcefile index = #14</span><br><span class="line">Done.</span><br></pre></td></tr></table></figure>
+
+<p>看起来特别长,但是真正需要理解的并不是很多,先看头部信息:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">000000</span> cafebabe          magic = ca fe ba be</span><br><span class="line"><span class="number">000004</span> <span class="number">0000</span>              minor version = <span class="number">0</span></span><br><span class="line"><span class="number">000006</span> <span class="number">0034</span>              major version = <span class="number">52</span></span><br></pre></td></tr></table></figure>
+
+<p>第一行是一个标识符,表示是一个标准的class文件,由一个32位无符号整数表示,<code>cafebabe</code>是其16进制表示形式,如果不是这个,JVM就不认为这是一个class文件,也就不会加载,后面两个字节表示说最大版本和最小版本的范围,从最初的Java到Java8是45.3~53.0,JVM在加载时也会检查这个是否符合条件</p>
+<h2 id="常量池"><a href="#常量池" class="headerlink" title="常量池"></a>常量池</h2><p>根据输出显示,共有29个常量,但是看显示只有1~28,是因为0是保留常量,每个常量都由3个字节描述:<br><img src="http://upload-images.jianshu.io/upload_images/1890983-e007abd5d081112a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>第一个表示这个常量是什么类型的,JVM中定义了12种类型常量,每个都会对应一个数值<br><img src="http://upload-images.jianshu.io/upload_images/1890983-16ae4e70fdd98b81.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br><img src="http://upload-images.jianshu.io/upload_images/1890983-fe990fcd019fb8c1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>接下来分别说明几个较重要的</p>
+<h3 id="UTF8常量"><a href="#UTF8常量" class="headerlink" title="UTF8常量"></a>UTF8常量</h3><p>字符编码格式,存储多个字节长度的字符串值(类名,方法名等)<br><img src="http://upload-images.jianshu.io/upload_images/1890983-06efaeb87d03d0cb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<h3 id="Fieldref-Methodref常量"><a href="#Fieldref-Methodref常量" class="headerlink" title="Fieldref,Methodref常量"></a>Fieldref,Methodref常量</h3><p>描述Class中的属性项和方法的<br><img src="http://upload-images.jianshu.io/upload_images/1890983-9e07d353290d84fd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>第一个字节09代表是Fieldref类型,10则代表Methodref类型;后面两个字节代表属于哪个类;最后两个字表示常量的name和type</p>
+<h3 id="Class常量"><a href="#Class常量" class="headerlink" title="Class常量"></a>Class常量</h3><p>表示该类的名称,会指向另一个UTF8类型的常量(之前提到了UTF8就是表示类名和方法名等的字符串)<br><img src="http://upload-images.jianshu.io/upload_images/1890983-3999ff561b51620a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>利用之前的输出</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">00008e 070017               16. Class name #23</span><br></pre></td></tr></table></figure>
+
+<p>第一个字节07就代表该常量是Class类型,后面两个字节0017指向第23个常量,而第23个常量是:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0000</span>cd <span class="number">010010</span>               <span class="number">23</span>. UTF length=<span class="number">16</span></span><br><span class="line"><span class="number">0000</span>d0 <span class="number">6</span>a6176612f6c616e672f53797374656d   java/lang/System</span><br></pre></td></tr></table></figure>
+
+<p>就是一个UTF8常量,存储的是<code>java/lang/System</code>,也就是类名</p>
+<h3 id="NameAndType常量"><a href="#NameAndType常量" class="headerlink" title="NameAndType常量"></a>NameAndType常量</h3><p>为了表示<code>Methodref</code>和<code>Fieldref</code>的名称和类型描述做进一步说明存在的,名称也是通常由<code>UTF8</code>常量描述,类型也由<code>UTF8</code>描述<br><img src="http://upload-images.jianshu.io/upload_images/1890983-b2393039979543bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>0007指向第7个常量,表示<code>Methodref</code>或<code>Fieldref</code>的名称,而0008则表示<code>Methodref</code>的返回类型或<code>Fieldref</code>参数类型</p>
+<p>##类信息<br>常量列表后面就是类本身的信息描述了,如访问控制,名称,类型,是否有父类,是否实现了接口等</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">000136</span> <span class="number">0021</span>              access_flags = <span class="number">33</span></span><br><span class="line">000138 0005              this = #5</span><br><span class="line">00013a 0006              super = #6</span><br><span class="line"><span class="number">00013</span>c <span class="number">0000</span>              <span class="number">0</span> interfaces</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1890983-75cd28215401e710.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>两个字节只使用了5bit,<code>ACC_PUBLIC</code>代表类是否是public类(是为1,否为0),<code>ACC_FINAL</code>代表是否是final类,<code>ACC_SUPER</code>代表是否存在父类(除了Obejct其他类都有父类),<code>ACC_INTERFACE</code>代表是否是接口类,<code>ACC_ABSTRACT</code>代表是否是抽象类;后面两个字节0005代表该类名称,指向第5个常量;后面的0006代表父类的名称,指向第6个常量;0000代表没有实现接口类</p>
+<h2 id="Fields和Methods定义"><a href="#Fields和Methods定义" class="headerlink" title="Fields和Methods定义"></a>Fields和Methods定义</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">00013</span>e <span class="number">0000</span>              <span class="number">0</span> fields</span><br><span class="line"><span class="number">000140</span> <span class="number">0002</span>              <span class="number">2</span> methods</span><br><span class="line">                         Method <span class="number">0</span>:</span><br><span class="line"><span class="number">000142</span> <span class="number">0001</span>                 access flags = <span class="number">1</span></span><br><span class="line">000144 0007                 name = #7&lt;&lt;init&gt;&gt;</span><br><span class="line">000146 0008                 descriptor = #8&lt;()V&gt;</span><br><span class="line"><span class="number">000148</span> <span class="number">0001</span>                 <span class="number">1</span> field/method attributes:</span><br><span class="line">                            field/method attribute <span class="number">0</span></span><br><span class="line">00014a 0009                    name = #9&lt;Code&gt;</span><br><span class="line"><span class="number">00014</span>c <span class="number">0000001</span>d                length = <span class="number">29</span></span><br><span class="line"><span class="number">000150</span> <span class="number">0001</span>                    max stack: <span class="number">1</span></span><br><span class="line"><span class="number">000152</span> <span class="number">0001</span>                    max locals: <span class="number">1</span></span><br><span class="line"><span class="number">000154</span> <span class="number">00000005</span>                code length: <span class="number">5</span></span><br><span class="line"><span class="number">000158</span> <span class="number">2</span>a                      <span class="number">0</span> aload_0</span><br><span class="line">000159 b70001                  1 invokespecial #1</span><br><span class="line"><span class="number">00015</span>c b1                      <span class="number">4</span> <span class="keyword">return</span></span><br><span class="line"><span class="number">00015</span>d <span class="number">0000</span>                    <span class="number">0</span> exception table entries:</span><br><span class="line"><span class="number">00015f</span> <span class="number">0001</span>                    <span class="number">1</span> code attributes:</span><br><span class="line">                               code attribute <span class="number">0</span>:</span><br><span class="line">000161 000a                       name = #10&lt;LineNumberTable&gt;</span><br><span class="line"><span class="number">000163</span> <span class="number">00000006</span>                   length = <span class="number">6</span></span><br><span class="line">                                  Line number table:</span><br><span class="line"><span class="number">000167</span> <span class="number">0001</span>                       length = <span class="number">1</span></span><br><span class="line"><span class="number">000169</span> <span class="number">00000008</span>                      start pc: <span class="number">0</span> line number: <span class="number">8</span></span><br></pre></td></tr></table></figure>
+
+<p>Method1与Method0类似,就不粘过来了<br>前4个字节表示该类有几个属性,几个方法,后面就是每个属性和类的具体定义了<br>方法当然也有访问控制,也由两个字节定义:<br><img src="http://upload-images.jianshu.io/upload_images/1890983-b95ced1b692abbe8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>与类描述基本一致,就不列举说明了</p>
+<p>接下来4个字节:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">000144 0007                 name = #7&lt;&lt;init&gt;&gt;</span><br><span class="line">000146 0008                 descriptor = #8&lt;()V&gt;</span><br></pre></td></tr></table></figure>
+
+<p>定义了方法的名称和类型描述(NameAndType)</p>
+<p>接下来是具体的代码实现的定义了,包括代码长度(最长64K字节长度)</p>
+<p>接下来:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">000150</span> <span class="number">0001</span>                    max stack: <span class="number">1</span></span><br><span class="line"><span class="number">000152</span> <span class="number">0001</span>                    max locals: <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>定义了该方法使用的栈的深度及本地常量的最大个数,会在JVM类加载做检查,超过这两个值,会拒绝加载</p>
+<p>接下来:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">000154</span> <span class="number">00000005</span>                code length: <span class="number">5</span></span><br><span class="line"><span class="number">000158</span> <span class="number">2</span>a                      <span class="number">0</span> aload_0</span><br><span class="line">000159 b70001                  1 invokespecial #1</span><br><span class="line"><span class="number">00015</span>c b1                      <span class="number">4</span> <span class="keyword">return</span></span><br></pre></td></tr></table></figure>
+
+<p>表示这个方法的代码对应的JVM指令,00000005代表命令有5个字节</p>
+<p>接下来:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">00015</span>d <span class="number">0000</span>                    <span class="number">0</span> exception table entries:</span><br></pre></td></tr></table></figure>
+
+<p>定义了使用的异常,0000代表没有定义抛出的异常</p>
+<p>接下来是方法存在的一些代码属性的描述,描述的是代码本身的一些额外信息</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">00015f</span> <span class="number">0001</span>                    <span class="number">1</span> code attributes:</span><br><span class="line">                               code attribute <span class="number">0</span>:</span><br><span class="line">000161 000a                       name = #10&lt;LineNumberTable&gt;</span><br><span class="line"><span class="number">000163</span> <span class="number">00000006</span>                   length = <span class="number">6</span></span><br><span class="line">                                  Line number table:</span><br><span class="line"><span class="number">000167</span> <span class="number">0001</span>                       length = <span class="number">1</span></span><br><span class="line"><span class="number">000169</span> <span class="number">00000008</span>                      start pc: <span class="number">0</span> line number: <span class="number">8</span></span><br></pre></td></tr></table></figure>
+
+<p>0001代表只有一行对应关系,指向0000和0008,0000指向运行时的行指针,0008指向实际源代码的行数,每个都是两个字节,所以可知Java代码最大行数到65535,超过class就没办法表示出来了</p>
+<h2 id="Javap生成class文件"><a href="#Javap生成class文件" class="headerlink" title="Javap生成class文件"></a>Javap生成class文件</h2><p>之前所有介绍的内容都是靠oolong生成的class文件的二进制表示,还可以通过JDK自带的javap来生成class文件,而且更易理解:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javap -verbose ClassLearn &gt;  ClassLearn.txt</span><br></pre></td></tr></table></figure>
+
+<p>查看输出:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  <span class="number">1</span> Classfile /Users/lkc/Desktop/Code/Learn/out/production/TechCollect/ClassLearn.class</span><br><span class="line">  <span class="number">2</span>   Last modified <span class="number">2017</span>-<span class="number">8</span>-<span class="number">7</span>; size <span class="number">672</span> bytes</span><br><span class="line">  <span class="number">3</span>   MD5 checksum <span class="number">733971818278f</span>d4709847bba1a9720bd</span><br><span class="line">  <span class="number">4</span>   Compiled from <span class="string">"ClassLearn.java"</span></span><br><span class="line">  <span class="number">5</span> <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassLearn</span></span></span><br><span class="line">  6   minor version: 0</span><br><span class="line">  <span class="number">7</span>   major version: <span class="number">52</span></span><br><span class="line">  <span class="number">8</span>   flags: ACC_PUBLIC, ACC_SUPER</span><br><span class="line">  <span class="number">9</span> Constant pool:</span><br><span class="line"> 10    #1 = Methodref          #6.#26         // java/lang/Object."&lt;init&gt;":()V</span><br><span class="line"> 11    #2 = String             #27            // hello,world!</span><br><span class="line"> 12    #3 = Fieldref           #28.#29        // java/lang/System.out:Ljava/io/PrintStream;</span><br><span class="line"> 13    #4 = Methodref          #30.#31        // java/io/PrintStream.println:(Ljava/lang/String;)V</span><br><span class="line"> 14    #5 = Class              #32            // ClassLearn</span><br><span class="line"> 15    #6 = Class              #33            // java/lang/Object</span><br><span class="line"> 16    #7 = Utf8               &lt;init&gt;</span><br><span class="line"> 17    #8 = Utf8               ()V</span><br><span class="line"> 18    #9 = Utf8               Code</span><br><span class="line"> 19   #10 = Utf8               LineNumberTable</span><br><span class="line"> 20   #11 = Utf8               LocalVariableTable</span><br><span class="line"> 21   #12 = Utf8               this</span><br><span class="line"> 22   #13 = Utf8               LClassLearn;</span><br><span class="line"> 23   #14 = Utf8               main</span><br><span class="line"> 24   #15 = Utf8               ([Ljava/lang/String;)V</span><br><span class="line"> 25   #16 = Utf8               i</span><br><span class="line"> 26   #17 = Utf8               I</span><br><span class="line"> 27   #18 = Utf8               args</span><br><span class="line"> 28   #19 = Utf8               [Ljava/lang/String;</span><br><span class="line"> 29   #20 = Utf8               str</span><br><span class="line"> 30   #21 = Utf8               Ljava/lang/String;</span><br><span class="line"> 31   #22 = Utf8               StackMapTable</span><br><span class="line"> 32   #23 = Class              #34            // java/lang/String</span><br><span class="line"> 33   #24 = Utf8               SourceFile</span><br><span class="line"> 34   #25 = Utf8               ClassLearn.java</span><br><span class="line"> 35   #26 = NameAndType        #7:#8          // "&lt;init&gt;":()V</span><br><span class="line"> 36   #27 = Utf8               hello,world!</span><br><span class="line"> 37   #28 = Class              #35            // java/lang/System</span><br><span class="line"> 38   #29 = NameAndType        #36:#37        // out:Ljava/io/PrintStream;</span><br><span class="line"> 39   #30 = Class              #38            // java/io/PrintStream</span><br><span class="line"> 40   #31 = NameAndType        #39:#40        // println:(Ljava/lang/String;)V</span><br><span class="line"> 41   #32 = Utf8               ClassLearn</span><br><span class="line"> 42   #33 = Utf8               java/lang/Object</span><br><span class="line">  43   #34 = Utf8               java/lang/String</span><br><span class="line"> 44   #35 = Utf8               java/lang/System</span><br><span class="line"> 45   #36 = Utf8               out</span><br><span class="line"> 46   #37 = Utf8               Ljava/io/PrintStream;</span><br><span class="line"> 47   #38 = Utf8               java/io/PrintStream</span><br><span class="line"> 48   #39 = Utf8               println</span><br><span class="line"> 49   #40 = Utf8               (Ljava/lang/String;)V</span><br><span class="line"> <span class="number">50</span> &#123;</span><br><span class="line"> <span class="number">51</span>   <span class="function"><span class="keyword">public</span> <span class="title">ClassLearn</span><span class="params">()</span></span>;</span><br><span class="line"> <span class="number">52</span>     descriptor: ()V</span><br><span class="line"> <span class="number">53</span>     flags: ACC_PUBLIC</span><br><span class="line"> <span class="number">54</span>     Code:</span><br><span class="line"> <span class="number">55</span>       stack=<span class="number">1</span>, locals=<span class="number">1</span>, args_size=<span class="number">1</span></span><br><span class="line"> <span class="number">56</span>          <span class="number">0</span>: aload_0</span><br><span class="line"> 57          1: invokespecial #1                  // Method java/lang/Object."&lt;init&gt;":()V</span><br><span class="line"> <span class="number">58</span>          <span class="number">4</span>: <span class="keyword">return</span></span><br><span class="line"> <span class="number">59</span>       LineNumberTable:</span><br><span class="line"> <span class="number">60</span>         line <span class="number">8</span>: <span class="number">0</span></span><br><span class="line"> <span class="number">61</span>       LocalVariableTable:</span><br><span class="line"> <span class="number">62</span>         Start  Length  Slot  Name   Signature</span><br><span class="line"> <span class="number">63</span>             <span class="number">0</span>       <span class="number">5</span>     <span class="number">0</span>  <span class="keyword">this</span>   LClassLearn;</span><br><span class="line"> <span class="number">64</span></span><br><span class="line"> <span class="number">65</span>   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(java.lang.String[])</span></span>;</span><br><span class="line"> <span class="number">66</span>     descriptor: ([Ljava/lang/String;)V</span><br><span class="line"> <span class="number">67</span>     flags: ACC_PUBLIC, ACC_STATIC</span><br><span class="line"> <span class="number">68</span>     Code:</span><br><span class="line"> <span class="number">69</span>       stack=<span class="number">2</span>, locals=<span class="number">3</span>, args_size=<span class="number">1</span></span><br><span class="line"> 70          0: ldc           #2                  // String hello,world!</span><br><span class="line"> <span class="number">71</span>          <span class="number">2</span>: astore_1</span><br><span class="line"> <span class="number">72</span>          <span class="number">3</span>: iconst_0</span><br><span class="line"> <span class="number">73</span>          <span class="number">4</span>: istore_2</span><br><span class="line"> <span class="number">74</span>          <span class="number">5</span>: iload_2</span><br><span class="line"> <span class="number">75</span>          <span class="number">6</span>: iconst_3</span><br><span class="line"> <span class="number">76</span>          <span class="number">7</span>: if_icmpge     <span class="number">23</span></span><br><span class="line"> 77         10: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;</span><br><span class="line"> <span class="number">78</span>         <span class="number">13</span>: aload_1</span><br><span class="line"> 79         14: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V</span><br><span class="line"> <span class="number">80</span>         <span class="number">17</span>: iinc          <span class="number">2</span>, <span class="number">1</span></span><br><span class="line"> <span class="number">81</span>         <span class="number">20</span>: goto          <span class="number">5</span></span><br><span class="line"> <span class="number">82</span>         <span class="number">23</span>: <span class="keyword">return</span></span><br><span class="line"> <span class="number">83</span>       LineNumberTable:</span><br><span class="line"> <span class="number">84</span>         line <span class="number">10</span>: <span class="number">0</span></span><br><span class="line">  <span class="number">85</span>         line <span class="number">11</span>: <span class="number">3</span></span><br><span class="line"> <span class="number">86</span>         line <span class="number">12</span>: <span class="number">10</span></span><br><span class="line"> <span class="number">87</span>         line <span class="number">11</span>: <span class="number">17</span></span><br><span class="line"> <span class="number">88</span>         line <span class="number">14</span>: <span class="number">23</span></span><br><span class="line"> <span class="number">89</span>       LocalVariableTable:</span><br><span class="line"> <span class="number">90</span>         Start  Length  Slot  Name   Signature</span><br><span class="line"> <span class="number">91</span>             <span class="number">5</span>      <span class="number">18</span>     <span class="number">2</span>     i   I</span><br><span class="line"> <span class="number">92</span>             <span class="number">0</span>      <span class="number">24</span>     <span class="number">0</span>  args   [Ljava/lang/String;</span><br><span class="line"> <span class="number">93</span>             <span class="number">3</span>      <span class="number">21</span>     <span class="number">1</span>   str   Ljava/lang/String;</span><br><span class="line"> <span class="number">94</span>       StackMapTable: number_of_entries = <span class="number">2</span></span><br><span class="line"> <span class="number">95</span>         frame_type = <span class="number">253</span> <span class="comment">/* append */</span></span><br><span class="line"> <span class="number">96</span>           offset_delta = <span class="number">5</span></span><br><span class="line"> 97           locals = [ class java/lang/String, int ]</span><br><span class="line"> <span class="number">98</span>         frame_type = <span class="number">250</span> <span class="comment">/* chop */</span></span><br><span class="line"> <span class="number">99</span>           offset_delta = <span class="number">17</span></span><br><span class="line"><span class="number">100</span> &#125;</span><br><span class="line"><span class="number">101</span> SourceFile: <span class="string">"ClassLearn.java"</span></span><br></pre></td></tr></table></figure>
+
+<p>三个地方LineNumberTable,LocalVariableTable,StackMapTable</p>
+<h3 id="LineNumberTable"><a href="#LineNumberTable" class="headerlink" title="LineNumberTable"></a>LineNumberTable</h3><p>LineNumberTable下面有多个line a:b,每个line表示一行,a表示在类文件的第几行,b表示在JVM指令中的pc偏移量<br><img src="http://upload-images.jianshu.io/upload_images/1890983-dfad25390c85da30.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>拿line 14:23举例,14就对应return这一句,23代表偏移地址,也就是指:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">82</span>         <span class="number">23</span>: <span class="keyword">return</span></span><br></pre></td></tr></table></figure>
+
+<p>可以发现是一致的</p>
+<h3 id="LocalVariableTable"><a href="#LocalVariableTable" class="headerlink" title="LocalVariableTable"></a>LocalVariableTable</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">89</span>       LocalVariableTable:</span><br><span class="line"><span class="number">90</span>         Start  Length  Slot  Name   Signature</span><br><span class="line"><span class="number">91</span>             <span class="number">5</span>      <span class="number">18</span>     <span class="number">2</span>     i   I</span><br><span class="line"><span class="number">92</span>             <span class="number">0</span>      <span class="number">24</span>     <span class="number">0</span>  args   [Ljava/lang/String;</span><br><span class="line"><span class="number">93</span>             <span class="number">3</span>      <span class="number">21</span>     <span class="number">1</span>   str   Ljava/lang/String;</span><br></pre></td></tr></table></figure>
+
+<p>可以很容易看出,LocalVariableTable由五部分组成,Start和Length表示变量有效作用域的偏移地址;Start表示变量被赋值到某个Slot中的指令的下一条指令的偏移地址;Length表示变量作用域总共占用的指令数对应的偏移量,所以作用域就是[Start,Start+Length];Slot表示该变量占用的Slot编号;Name表示该变量的名称;Signature表示该变量的类型<br>拿出一个来举例:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">90</span>         Start  Length  Slot  Name   Signature</span><br><span class="line"><span class="number">91</span>             <span class="number">5</span>      <span class="number">18</span>     <span class="number">2</span>     i   I</span><br></pre></td></tr></table></figure>
+
+<p>这里就表示变量”i”的类型是int,作用域是[5,23],也就是这一段:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">74</span>          <span class="number">5</span>: iload_2</span><br><span class="line"><span class="number">75</span>          <span class="number">6</span>: iconst_3</span><br><span class="line"><span class="number">76</span>          <span class="number">7</span>: if_icmpge     <span class="number">23</span></span><br><span class="line">77         10: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;</span><br><span class="line"><span class="number">78</span>         <span class="number">13</span>: aload_1</span><br><span class="line">79         14: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V</span><br><span class="line"><span class="number">80</span>         <span class="number">17</span>: iinc          <span class="number">2</span>, <span class="number">1</span></span><br><span class="line"><span class="number">81</span>         <span class="number">20</span>: goto          <span class="number">5</span></span><br><span class="line"><span class="number">82</span>         <span class="number">23</span>: <span class="keyword">return</span></span><br></pre></td></tr></table></figure>
+
+<p>与实际代码比较,也就是整个for循环体直到方法结束,所以符合我们预期;还需要提一句的是其实Slot是可以出现重复的,只要实际代码中作用域不重合Slot的编号是可以复用的.</p>
+<h3 id="StackMapTable"><a href="#StackMapTable" class="headerlink" title="StackMapTable"></a>StackMapTable</h3><p>这里在我阅读本书时发现没有StackMapTable,因此特地查了下资料<br>这里是由Java6引入的一个叫做栈图的概念,Java7中开始强制使用,实例说明:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">94</span>       StackMapTable: number_of_entries = <span class="number">2</span></span><br><span class="line"><span class="number">95</span>         frame_type = <span class="number">253</span> <span class="comment">/* append */</span></span><br><span class="line"><span class="number">96</span>           offset_delta = <span class="number">5</span></span><br><span class="line">97           locals = [ class java/lang/String, int ]</span><br><span class="line"><span class="number">98</span>         frame_type = <span class="number">250</span> <span class="comment">/* chop */</span></span><br><span class="line"><span class="number">99</span>           offset_delta = <span class="number">17</span></span><br></pre></td></tr></table></figure>
+
+<p><code>number_of_entries</code>代表frame的个数,这里也就是2个,分别是<code>frame_type = 253 /* append */</code> 和 <code>frame_type = 250 /* chop */</code>, 这里注释的<code>append</code>就代表栈中局部变量或类增加1个,<code>chop</code>相反代表减少一个,还有一个<code>same</code>代表没有变化;offset_delta代表每个frame的增量偏移量,第一个的偏移量就是offset_delta本身,其他帧的偏移量计算方法是前一帧的偏移量加上此帧的offset_delta+1;目前仅了解这么多,想详细了解StackMapTable相关或者其他的class文件信息可以参照&lt; Java虚拟机规范 se7 &gt;</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/18/Java日志工具笔记/" rel="next" title="Java日志工具笔记">
+                  <i class="fa fa-chevron-left"></i> Java日志工具笔记
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2019/11/18/mysql查询语句类型转换/" rel="prev" title="mysql查询语句类型转换">
+                  mysql查询语句类型转换 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JVM指令集"><span class="nav-number">1.</span> <span class="nav-text">JVM指令集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#与类相关的指令"><span class="nav-number">1.1.</span> <span class="nav-text">与类相关的指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法定义"><span class="nav-number">1.2.</span> <span class="nav-text">方法定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类的属性的定义"><span class="nav-number">1.3.</span> <span class="nav-text">类的属性的定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#class文件头的表示形式"><span class="nav-number">2.</span> <span class="nav-text">class文件头的表示形式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常量池"><span class="nav-number">3.</span> <span class="nav-text">常量池</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#UTF8常量"><span class="nav-number">3.1.</span> <span class="nav-text">UTF8常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Fieldref-Methodref常量"><span class="nav-number">3.2.</span> <span class="nav-text">Fieldref,Methodref常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Class常量"><span class="nav-number">3.3.</span> <span class="nav-text">Class常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NameAndType常量"><span class="nav-number">3.4.</span> <span class="nav-text">NameAndType常量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fields和Methods定义"><span class="nav-number">4.</span> <span class="nav-text">Fields和Methods定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Javap生成class文件"><span class="nav-number">5.</span> <span class="nav-text">Javap生成class文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LineNumberTable"><span class="nav-number">5.1.</span> <span class="nav-text">LineNumberTable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LocalVariableTable"><span class="nav-number">5.2.</span> <span class="nav-text">LocalVariableTable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#StackMapTable"><span class="nav-number">5.3.</span> <span class="nav-text">StackMapTable</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="lkc"
+    src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">lkc</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xdlkc" title="GitHub &rarr; https://github.com/xdlkc" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wimness@163.com" title="E-Mail &rarr; mailto:wimness@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-163"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.douban.com/people/188153877" title="豆瓣 &rarr; https://www.douban.com/people/188153877" rel="noopener" target="_blank"><i class="fa fa-fw fa-豆瓣"></i>豆瓣</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lkc</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.2
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="http://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

@@ -20,7 +20,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Pisces',
     version: '7.4.2',
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
@@ -55,7 +55,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="ansible-多台服务器管理工具">
 <meta property="og:url" content="http://yoursite.com/2018/05/03/ansible-多台服务器管理工具/index.html">
-<meta property="og:site_name" content="Unknown Exception Throw">
+<meta property="og:site_name" content="UET">
 <meta property="og:description" content="ansible-多台服务器管理工具最近爬虫又遇到了麻烦事，起因是在顺（jian）利（nan）搭起多台服务器执行爬虫任务时发现每次代码更新后，都需要进入每台服务器执行git拉取命令，而且执行任务时需要每台都执行一遍相同的命令如：scrapy crawl xxx很是费力，尤其当出现问题时还要重新输入一遍，这时经过多方百度，查到了ansible这个运维工具，">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://otzriul1v.bkt.clouddn.com/18-5-3/93227311.jpg">
@@ -80,7 +80,7 @@
   };
 </script>
 
-  <title>ansible-多台服务器管理工具 | Unknown Exception Throw</title>
+  <title>ansible-多台服务器管理工具 | UET</title>
   
 
 
@@ -124,11 +124,11 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Unknown Exception Throw</span>
+        <span class="site-title">UET</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">lkc's blog</p>
+        <p class="site-subtitle">期待你的分享</p>
   </div>
 
   <div class="site-nav-toggle">
@@ -204,7 +204,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Unknown Exception Throw">
+      <meta itemprop="name" content="UET">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -243,16 +243,16 @@
 <a id="more"></a>
 
 <h2 id="安装ansible"><a href="#安装ansible" class="headerlink" title="安装ansible"></a>安装ansible</h2><p>安装可以通过apt直接安装：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo apt-get update</span><br><span class="line"><span class="meta">$</span> sudo apt-get install ansible</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt-get update</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt-get install ansible</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="配置ansible"><a href="#配置ansible" class="headerlink" title="配置ansible"></a>配置ansible</h2><ol>
 <li><p>首先将服务器的ip地址加入 到<code>/etc/ansible/hosts</code>文件中<br><img src="http://otzriul1v.bkt.clouddn.com/18-5-3/93227311.jpg" alt></p>
 </li>
 <li><p>生成rsa密钥</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh-keygen -t rsa</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>将密钥复制到服务器上以便免密登录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ssh-copy-id -i ~/.ssh/id_rsa.pub '服务器用户名'@服务器ip'</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh-copy-id -i ~/.ssh/id_rsa.pub <span class="string">'服务器用户名'</span>@服务器ip<span class="string">'</span></span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>测试一下</p>
 <p><img src="http://otzriul1v.bkt.clouddn.com/18-5-5/94494715.jpg" alt></p>
@@ -337,14 +337,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-count">34</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -393,7 +393,7 @@
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.2
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.2
   </div>
 
         

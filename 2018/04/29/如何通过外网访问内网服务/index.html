@@ -20,7 +20,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Pisces',
     version: '7.4.2',
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
@@ -55,10 +55,10 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何通过外网访问内网服务">
 <meta property="og:url" content="http://yoursite.com/2018/04/29/如何通过外网访问内网服务/index.html">
-<meta property="og:site_name" content="Unknown Exception Throw">
+<meta property="og:site_name" content="UET">
 <meta property="og:description" content="在进行某些网站的爬虫时，由于可能需要爬取的量特别大，比如像一些电商网站，这时我们可能加入一些分布式的东西，比如scrapy_redis组件实现了redis缓存的一些功能，但是可能由于一台主机的内存有限，任务量又太大，速率还是过慢，我们可能想到利用服务器和本机同时爬取，服务器端将爬取的内容存入主机的数据库，这时问题就来了，由于我的主机是处于路由器环境下，外网无法访问，如何能让外网连接到主机呢？经过一">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-17T11:50:48.910Z">
+<meta property="og:updated_time" content="2019-11-18T08:02:16.736Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何通过外网访问内网服务">
 <meta name="twitter:description" content="在进行某些网站的爬虫时，由于可能需要爬取的量特别大，比如像一些电商网站，这时我们可能加入一些分布式的东西，比如scrapy_redis组件实现了redis缓存的一些功能，但是可能由于一台主机的内存有限，任务量又太大，速率还是过慢，我们可能想到利用服务器和本机同时爬取，服务器端将爬取的内容存入主机的数据库，这时问题就来了，由于我的主机是处于路由器环境下，外网无法访问，如何能让外网连接到主机呢？经过一">
@@ -77,7 +77,7 @@
   };
 </script>
 
-  <title>如何通过外网访问内网服务 | Unknown Exception Throw</title>
+  <title>如何通过外网访问内网服务 | UET</title>
   
 
 
@@ -121,11 +121,11 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Unknown Exception Throw</span>
+        <span class="site-title">UET</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">lkc's blog</p>
+        <p class="site-subtitle">期待你的分享</p>
   </div>
 
   <div class="site-nav-toggle">
@@ -201,7 +201,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Unknown Exception Throw">
+      <meta itemprop="name" content="UET">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -222,7 +222,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-17 19:50:48" itemprop="dateModified" datetime="2019-10-17T19:50:48+08:00">2019-10-17</time>
+                <time title="修改时间：2019-11-18 16:02:16" itemprop="dateModified" datetime="2019-11-18T16:02:16+08:00">2019-11-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -230,8 +230,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
                   </a>
                 </span>
             </span>
@@ -255,10 +255,10 @@
 <p>客户端和服务端建立请求之后，客户端就可以将一些数据转发到服务端上，那么我们就可以访问客户端来实现端口转发。</p>
 <h2 id="操作SSH"><a href="#操作SSH" class="headerlink" title="操作SSH"></a>操作SSH</h2><ol>
 <li><p>本地主机为Deepin系统，可以直接通过apt-get来安装</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo apt-get install openssh-server</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt-get install openssh-server</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>安装好后，利用ssh与服务器建立连接</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ssh -fCNR 54321:localhost:54322 lkc@ip</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh -fCNR 54321:localhost:54322 lkc@ip</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>-f 后台执行ssh指令</li>
@@ -352,14 +352,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-count">34</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -408,7 +408,7 @@
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.2
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.2
   </div>
 
         

@@ -20,7 +20,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Pisces',
     version: '7.4.2',
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
@@ -50,18 +50,18 @@
   };
 </script>
 
-  <meta name="description" content="JMMjava内存模型试图屏蔽不同硬件与操作系统的内存访问差异，以实现java在不同平台都能达到一致的内存访问效果（跨平台） 处理器上的寄存器的读写速度比内存快几个数量级，为了解决这种速度矛盾，在之间加了高速缓存，这时会带来另一个问题：缓存一致性，如果多个缓存共享同一块    主内存区域，那么多个缓存的数据可能会不一致，需要一个协议来解决这个问题。 所有变量都存储在主内存中，每个线程还有自己的工作">
+  <meta name="description" content="JMMjava内存模型试图屏蔽不同硬件与操作系统的内存访问差异，以实现java在不同平台都能达到一致的内存访问效果（跨平台）">
 <meta name="keywords" content="tech, blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java面试知识点">
 <meta property="og:url" content="http://yoursite.com/2019/08/27/Java面试知识点/index.html">
-<meta property="og:site_name" content="Unknown Exception Throw">
-<meta property="og:description" content="JMMjava内存模型试图屏蔽不同硬件与操作系统的内存访问差异，以实现java在不同平台都能达到一致的内存访问效果（跨平台） 处理器上的寄存器的读写速度比内存快几个数量级，为了解决这种速度矛盾，在之间加了高速缓存，这时会带来另一个问题：缓存一致性，如果多个缓存共享同一块    主内存区域，那么多个缓存的数据可能会不一致，需要一个协议来解决这个问题。 所有变量都存储在主内存中，每个线程还有自己的工作">
+<meta property="og:site_name" content="UET">
+<meta property="og:description" content="JMMjava内存模型试图屏蔽不同硬件与操作系统的内存访问差异，以实现java在不同平台都能达到一致的内存访问效果（跨平台）">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-30T02:48:46.041Z">
+<meta property="og:updated_time" content="2019-11-18T08:02:55.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java面试知识点">
-<meta name="twitter:description" content="JMMjava内存模型试图屏蔽不同硬件与操作系统的内存访问差异，以实现java在不同平台都能达到一致的内存访问效果（跨平台） 处理器上的寄存器的读写速度比内存快几个数量级，为了解决这种速度矛盾，在之间加了高速缓存，这时会带来另一个问题：缓存一致性，如果多个缓存共享同一块    主内存区域，那么多个缓存的数据可能会不一致，需要一个协议来解决这个问题。 所有变量都存储在主内存中，每个线程还有自己的工作">
+<meta name="twitter:description" content="JMMjava内存模型试图屏蔽不同硬件与操作系统的内存访问差异，以实现java在不同平台都能达到一致的内存访问效果（跨平台）">
 
 <link rel="canonical" href="http://yoursite.com/2019/08/27/Java面试知识点/">
 
@@ -77,7 +77,7 @@
   };
 </script>
 
-  <title>Java面试知识点 | Unknown Exception Throw</title>
+  <title>Java面试知识点 | UET</title>
   
 
 
@@ -121,11 +121,11 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Unknown Exception Throw</span>
+        <span class="site-title">UET</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">lkc's blog</p>
+        <p class="site-subtitle">期待你的分享</p>
   </div>
 
   <div class="site-nav-toggle">
@@ -201,7 +201,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Unknown Exception Throw">
+      <meta itemprop="name" content="UET">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -222,7 +222,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-30 10:48:46" itemprop="dateModified" datetime="2019-10-30T10:48:46+08:00">2019-10-30</time>
+                <time title="修改时间：2019-11-18 16:02:55" itemprop="dateModified" datetime="2019-11-18T16:02:55+08:00">2019-11-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -230,8 +230,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
                   </a>
                 </span>
             </span>
@@ -248,6 +248,8 @@
 
       
         <h2 id="JMM"><a href="#JMM" class="headerlink" title="JMM"></a>JMM</h2><p>java内存模型试图屏蔽不同硬件与操作系统的内存访问差异，以实现java在不同平台都能达到一致的内存访问效果（跨平台）</p>
+<a id="more"></a>
+
 <p>处理器上的寄存器的读写速度比内存快几个数量级，为了解决这种速度矛盾，在之间加了高速缓存，这时会带来另一个问题：缓存一致性，如果多个缓存共享同一块    主内存区域，那么多个缓存的数据可能会不一致，需要一个协议来解决这个问题。</p>
 <p>所有变量都存储在主内存中，每个线程还有自己的工作内存，工作内存存储在高速缓存或寄存器中，保存了该线程使用的变量的主内存副本拷贝。</p>
 <p>内存间交互操作：</p>
@@ -408,8 +410,8 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/07/18/搭建hexo/" rel="next" title="搭建hexo">
-                  <i class="fa fa-chevron-left"></i> 搭建hexo
+                <a href="/2018/05/03/linux命令组合/" rel="next" title="linux命令组合">
+                  <i class="fa fa-chevron-left"></i> linux命令组合
                 </a>
             </div>
 
@@ -473,14 +475,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-count">34</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -529,7 +531,7 @@
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.2
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.2
   </div>
 
         
