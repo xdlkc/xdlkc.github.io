@@ -252,7 +252,7 @@
 
 <ol>
 <li><p>获取eth0的ip地址</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ifconfig eth0 | grep <span class="string">"inet"</span> | awk <span class="string">'&#123; print $2&#125;'</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ifconfig eth0 | grep "inet" | awk '&#123; print $2&#125;'</span><br></pre></td></tr></table></figure>
 
 
 

@@ -243,16 +243,16 @@
 <a id="more"></a>
 
 <h2 id="安装ansible"><a href="#安装ansible" class="headerlink" title="安装ansible"></a>安装ansible</h2><p>安装可以通过apt直接安装：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt-get update</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt-get install ansible</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo apt-get update</span><br><span class="line"><span class="meta">$</span> sudo apt-get install ansible</span><br></pre></td></tr></table></figure>
 
 <h2 id="配置ansible"><a href="#配置ansible" class="headerlink" title="配置ansible"></a>配置ansible</h2><ol>
 <li><p>首先将服务器的ip地址加入 到<code>/etc/ansible/hosts</code>文件中<br><img src="http://otzriul1v.bkt.clouddn.com/18-5-3/93227311.jpg" alt></p>
 </li>
 <li><p>生成rsa密钥</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh-keygen -t rsa</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>将密钥复制到服务器上以便免密登录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh-copy-id -i ~/.ssh/id_rsa.pub <span class="string">'服务器用户名'</span>@服务器ip<span class="string">'</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ssh-copy-id -i ~/.ssh/id_rsa.pub '服务器用户名'@服务器ip'</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>测试一下</p>
 <p><img src="http://otzriul1v.bkt.clouddn.com/18-5-5/94494715.jpg" alt></p>
