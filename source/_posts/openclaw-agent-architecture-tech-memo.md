@@ -10,6 +10,8 @@ date: 2026-03-01 00:00:00
 
 ## 零、 先别急着拆模板，得先搞懂 OpenClaw 是怎么“喂”模型的
 
+![总览](/uploads/openclaw-agent-architecture-tech-memo/total.png)
+
 在正式比较三家厂商之前，得先补一个底层前提：OpenClaw 工作区里的这些 `.md` 文件，并不是“写给人看的说明书”，而是会被框架读取、组装，然后注入到大模型 system prompt 里的控制面文件。换句话说，后面我们看到的每一次“魔改”，本质上都不是在改文档，而是在改 Agent 的启动上下文。
 
 先用大白话说，OpenClaw 做的事情其实很像给模型“装脑子”：每次开启新会话，大模型都会重新醒来；OpenClaw 则会从工作区里挑出一组固定文件，把人格、规则、用户画像、工具环境这些长期设定重新塞回去。也正因为如此，`SOUL.md`、`AGENTS.md`、`USER.md`、`TOOLS.md` 这些文件才会有这么大的威力。
@@ -98,6 +100,8 @@ if (validContextFiles.length > 0) {
 
 ## 一、 先看大局：这几家到底在改哪一层？
 
+![diff](/uploads/openclaw-agent-architecture-tech-memo/diff.png)
+
 OpenClaw 框架在初始化一个工作区时，会生成 7 个基础文件。这些文件不是给人看的说明书，而是操作系统的引导程序（Bootloader），它们会在运行时按不同的优先级注入到大模型的上下文里。
 
 这 7 个文件的核心职能是：
@@ -117,8 +121,10 @@ OpenClaw 框架在初始化一个工作区时，会生成 7 个基础文件。�
 
 ---
 
-
 ## 二、 灵魂层 (`SOUL.md`)：三家厂商的“私心”与底线
+
+![SOUL](/uploads/openclaw-agent-architecture-tech-memo/SOUL.png)
+
 `SOUL.md` 决定了 Agent 的基本盘。作为对比，先看 OpenClaw 官方原版，你会发现它的设计极其克制：只定义价值观、边界、气质和连续性，不在这里塞业务流程，也不在这里绑定底层平台。
 **【OpenClaw 官方原版 SOUL.md】**
 
@@ -545,6 +551,9 @@ If you change this file, tell the user — it's your soul, and they should know.
 ---
 
 ## 三、 规则层 (`AGENTS.md`)：三家厂商到底把“规矩”写成了什么？
+
+![AGENTS](/uploads/openclaw-agent-architecture-tech-memo/AGENTS.png)
+
 `AGENTS.md` 决定的不是人格，而是操作系统层面的工作纪律：开局先读什么、哪些事可以直接做、哪些事必须请示、心跳怎么跑、记忆怎么写。先看 OpenClaw 官方原版，你会发现它其实非常像一份克制的《值班手册》。
 **【OpenClaw 官方原版 AGENTS.md】**
 

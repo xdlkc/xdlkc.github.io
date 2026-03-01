@@ -62,6 +62,32 @@ def remove_first_h1(text: str) -> str:
     return re.sub(r"^#\s+.+?\n+", "", text, count=1, flags=re.MULTILINE).lstrip()
 
 
+def is_remote_asset(path: str) -> bool:
+    return path.startswith(("http://", "https://", "//", "/"))
+
+
+def sync_local_images(body: str, source_path: Path, repo: Path, slug: str) -> str:
+    uploads_dir = repo / "source" / "uploads" / slug
+    uploads_dir.mkdir(parents=True, exist_ok=True)
+
+    def replace(match: re.Match[str]) -> str:
+        alt = match.group(1)
+        raw_path = match.group(2).strip()
+        if is_remote_asset(raw_path):
+            return match.group(0)
+
+        source_asset = (source_path.parent / raw_path).resolve()
+        if not source_asset.exists() or not source_asset.is_file():
+            return match.group(0)
+
+        target_asset = uploads_dir / source_asset.name
+        shutil.copy2(source_asset, target_asset)
+        new_path = f"/uploads/{slug}/{target_asset.name}"
+        return f"![{alt}]({new_path})"
+
+    return re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", replace, body)
+
+
 def slugify(value: str) -> str:
     normalized = unicodedata.normalize("NFKD", value)
     ascii_only = normalized.encode("ascii", "ignore").decode("ascii")
@@ -93,7 +119,7 @@ def run_git(repo: Path, args: list[str]) -> None:
 
 
 def commit_and_push(repo: Path, post_path: Path, title: str, push: bool, proxy: str) -> None:
-    run_git(repo, ["add", str(post_path), "source", "themes", "_config.yml", "package.json", ".github", ".gitignore", "scaffolds", "scripts"])
+    run_git(repo, ["add", str(post_path), "source", "themes", "_config.yml", "package.json", ".github", ".gitignore", "scaffolds", "tools"])
     run_git(repo, ["commit", "-m", f"Publish {title}"])
     if push:
         result = subprocess.run(
@@ -125,6 +151,7 @@ def main() -> None:
     title = args.title or extract_title(text)
     slug = args.slug or slugify(title)
     body = remove_first_h1(text)
+    body = sync_local_images(body, source, repo, slug)
 
     target_dir = repo / "source" / "_posts"
     target_dir.mkdir(parents=True, exist_ok=True)
@@ -134,6 +161,7 @@ def main() -> None:
         shutil.copy2(source, post_path)
         text = strip_existing_front_matter(read_text(post_path))
         body = remove_first_h1(text)
+        body = sync_local_images(body, source, repo, slug)
 
     write_text(post_path, build_post_markdown(title, published, body))
 
