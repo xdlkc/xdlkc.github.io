@@ -193,6 +193,75 @@
         <p><strong>文档目的</strong>：这篇深度笔记，是基于对 Kimi、智谱 GLM、MiniMax 几家头部大厂在 OpenClaw 框架下生成的真实 Workspace 源码（隐藏的工作区 <code>.md</code> 配置文件树）进行逆向工程后的技术拆解。
 <strong>核心发现</strong>：大家表面上在评测“谁家的 AI 说话更像人”，但在系统工程的底层，这其实是一场关于**“提示词架构（Prompt Architecture）”**的较量。换句话说，决定一个 Agent 能力上限和鲁棒性的，是厂商选择把复杂的业务逻辑、平台约束和人设“私货”，塞进了这棵文件树的哪一层。</p>
 <hr />
+<h2>零、 先别急着拆模板，得先搞懂 OpenClaw 是怎么“喂”模型的</h2>
+<p>在正式比较三家厂商之前，得先补一个底层前提：OpenClaw 工作区里的这些 <code>.md</code> 文件，并不是“写给人看的说明书”，而是会被框架读取、组装，然后注入到大模型 system prompt 里的控制面文件。换句话说，后面我们看到的每一次“魔改”，本质上都不是在改文档，而是在改 Agent 的启动上下文。</p>
+<p>先用大白话说，OpenClaw 做的事情其实很像给模型“装脑子”：每次开启新会话，大模型都会重新醒来；OpenClaw 则会从工作区里挑出一组固定文件，把人格、规则、用户画像、工具环境这些长期设定重新塞回去。也正因为如此，<code>SOUL.md</code>、<code>AGENTS.md</code>、<code>USER.md</code>、<code>TOOLS.md</code> 这些文件才会有这么大的威力。</p>
+<pre><code class="language-mermaid">flowchart LR
+  A[工作区文件] --&gt; B[OpenClaw 读取与组装]
+  B --&gt; C[System Prompt]
+  C --&gt; D[Agent 当前行为]
+
+  A1[SOUL.md] --&gt; A
+  A2[AGENTS.md] --&gt; A
+  A3[USER.md] --&gt; A
+  A4[TOOLS.md 等] --&gt; A
+</code></pre>
+<p>更关键的是，OpenClaw 并不是把整个文件夹里所有 Markdown 一股脑全读进去，而是有明确的“白名单入口”。这一点在工作区加载逻辑里写得很死：</p>
+<pre><code class="language-typescript">export async function loadWorkspaceBootstrapFiles(dir: string): Promise&lt;WorkspaceBootstrapFile[]&gt; {
+  const resolvedDir = resolveUserPath(dir);
+
+  const entries = [
+    { name: DEFAULT_AGENTS_FILENAME, filePath: path.join(resolvedDir, DEFAULT_AGENTS_FILENAME) },
+    { name: DEFAULT_SOUL_FILENAME, filePath: path.join(resolvedDir, DEFAULT_SOUL_FILENAME) },
+    { name: DEFAULT_TOOLS_FILENAME, filePath: path.join(resolvedDir, DEFAULT_TOOLS_FILENAME) },
+    { name: DEFAULT_IDENTITY_FILENAME, filePath: path.join(resolvedDir, DEFAULT_IDENTITY_FILENAME) },
+    { name: DEFAULT_USER_FILENAME, filePath: path.join(resolvedDir, DEFAULT_USER_FILENAME) },
+    { name: DEFAULT_HEARTBEAT_FILENAME, filePath: path.join(resolvedDir, DEFAULT_HEARTBEAT_FILENAME) },
+    { name: DEFAULT_BOOTSTRAP_FILENAME, filePath: path.join(resolvedDir, DEFAULT_BOOTSTRAP_FILENAME) },
+  ];
+
+  entries.push(...(await resolveMemoryBootstrapEntries(resolvedDir)));
+}
+</code></pre>
+<p>这段代码至少说明三件事。第一，真正能稳定影响 Agent 的，不是任意自定义文件，而是这几个框架承认的标准入口。第二，<code>AGENTS.md</code>、<code>SOUL.md</code>、<code>USER.md</code> 这些文件的重要性，不是社区习惯，而是源码层面真的给了它们注入资格。第三，记忆也是分层的：<code>MEMORY.md</code> / <code>memory.md</code> 会进入这条链路，但 <code>memory/*.md</code> 这类按日期拆分的记录，更接近按需读取的外部材料，而不是默认全量注入。</p>
+<pre><code class="language-mermaid">flowchart TD
+  W[Workspace] --&gt; L{白名单加载}
+  L --&gt; F1[AGENTS.md]
+  L --&gt; F2[SOUL.md]
+  L --&gt; F3[TOOLS.md]
+  L --&gt; F4[IDENTITY.md]
+  L --&gt; F5[USER.md]
+  L --&gt; F6[HEARTBEAT.md]
+  L --&gt; F7[BOOTSTRAP.md]
+  L -. 条件追加 .-&gt; F8[MEMORY.md / memory.md]
+  L -. 非白名单 .-&gt; X[其他自定义 md 不自动进入]
+</code></pre>
+<p>然后还有一个最值得注意的源码细节：<code>SOUL.md</code> 不是普通文件，它在 system prompt 组装时带“特权”。</p>
+<pre><code class="language-typescript">if (validContextFiles.length &gt; 0) {
+  const hasSoulFile = validContextFiles.some((file) =&gt; {
+    const normalizedPath = file.path.trim().replace(/\\/g, &quot;/&quot;);
+    const baseName = normalizedPath.split(&quot;/&quot;).pop() ?? normalizedPath;
+    return baseName.toLowerCase() === &quot;soul.md&quot;;
+  });
+
+  lines.push(&quot;# Project Context&quot;, &quot;&quot;, &quot;The following project context files have been loaded:&quot;);
+
+  if (hasSoulFile) {
+    lines.push(
+      &quot;If SOUL.md is present, embody its persona and tone. Avoid stiff, generic replies; follow its guidance unless higher-priority instructions override it.&quot;,
+    );
+  }
+
+  for (const file of validContextFiles) {
+    lines.push(`## ${file.path}`, &quot;&quot;, file.content, &quot;&quot;);
+  }
+}
+</code></pre>
+<p>这段逻辑的意思非常直白：只要系统检测到 <code>SOUL.md</code>，就会额外补一句高权重说明，要求模型体现它的人格和语气。所以 <code>SOUL.md</code> 影响大，不只是因为它写的是人格设定，更是因为框架源码本身给了它一层额外解释权。</p>
+<p>从这里开始，后面很多现象就都能解释通了：为什么改 <code>SOUL.md</code> 往往最容易让 Agent “像换了个人”；为什么 <code>AGENTS.md</code> 特别容易被厂商写成几百行的“大杂烩”；为什么 <code>TOOLS.md</code> 一旦塞进路径、参数、平台私货，就会直接污染模型对环境的认知。</p>
+<p>但这里还要补一个现实限制：<strong>不是“注入了”就一定“稳定生效”。</strong> 这些文件虽然会进入 system prompt，但仍然要和对话历史、工具输出一起抢上下文窗口；文件过长时会被截断，特殊场景下还会被压缩、裁剪，甚至在子代理场景里只加载一部分。所以后面分析三家模板时，不能只看“它写了什么”，还得看“它有没有资格进入上下文”“进去以后会不会被稀释掉”。</p>
+<p>所以，第零章节真正想说明的只有一句话：<strong>OpenClaw 的厉害之处，不是写出了一段很花的 Prompt，而是把人格、规则、画像、工具边界做成了一套可读写的文件控制面，再在运行时把它们重新拼进模型脑子里。</strong> 理解了这一点，后面看 Kimi、GLM、MiniMax 的所有“魔改”，就不再只是看文风，而是在看它们各自怎么改这套控制面的不同层级。</p>
+<hr />
 <h2>一、 先看大局：这几家到底在改哪一层？</h2>
 <p>OpenClaw 框架在初始化一个工作区时，会生成 7 个基础文件。这些文件不是给人看的说明书，而是操作系统的引导程序（Bootloader），它们会在运行时按不同的优先级注入到大模型的上下文里。</p>
 <p>这 7 个文件的核心职能是：</p>
@@ -771,14 +840,15 @@ Default heartbeat prompt:
 </code></pre>
 <p><strong>判断</strong>：这才像 <code>HEARTBEAT.md</code> 该干的事。心跳文件就是一个轻量调度清单，不应该承载人格、不应该承载业务 SOP，更不应该承载底层接口常量。从这个角度看，MiniMax 虽然在 <code>AGENTS.md</code> 里乱得一塌糊涂，但它至少在心跳层面还保留了基本的克制。</p>
 <hr />
-<h2>五、 总结：咱们能避开哪些坑？（三大铁律）</h2>
-<p>这篇几千字的拆解，把 Kimi、GLM、MiniMax 的底牌翻了个底朝天。基于它们的踩坑实录，如果咱们自己要搭下一代复杂智能体架构，必须死守以下<strong>三条铁律</strong>：</p>
-<ol>
-<li><strong>别在 Prompt 里写业务代码（意图与逻辑隔离）</strong>：像 MiniMax 那样写 700 行排版格式纯属“脱裤子放屁”。复杂的逻辑（发飞书卡片、数据清洗）必须沉淀进 Python 插件（Skill）里。Prompt 里只留一句话的高层路由即可，让语言模型处理语言，让代码处理数据。</li>
-<li><strong>消灭魔法字符串（别在 Prompt 里写底层参数）</strong>：像 Kimi 这样让 AI 记 JSON 键名，或者像 GLM 这样记物理机路径 <code>/home/wuying</code>，都是埋雷。底层通信的常量必须放在代码配置文件里对大模型透明屏蔽。</li>
-<li><strong>灵魂要稳，插件要活</strong>：MiniMax 锁死灵魂层（<code>SOUL.md</code>）的做法非常值得学习。但在具体场景下，可以像 Kimi 那样用独立的 <code>IDENTITY.md</code> 注入剧本，或者用动态调度的技能库来承接变化。</li>
-</ol>
-<p><strong>最后总结</strong>：Kimi 赢在了体验与情怀，MiniMax 赢在了量产的工程直觉（虽然有些粗糙），GLM 赢在了防守。但它们在工程实现上，其实都暴露了用 Prompt “硬刚”系统架构的弊病。真正的顶尖 Agent，一定是<strong>用最干净的自然语言做意图分发，用最扎实的代码接口做业务兜底。</strong></p>
+<h2>五、 总结：真正的分水岭，不在“谁更像人”，而在“谁更懂分层”</h2>
+<p>把 Kimi、GLM、MiniMax 这三套 OpenClaw 工作区拆完之后，会发现一个很有意思的事实：表面上大家都在卷人格、卷语气、卷 Agent 的“人味”，但真正拉开差距的，从来不是文风，而是架构判断。谁把什么东西放进 <code>SOUL.md</code>，谁把什么东西塞进 <code>AGENTS.md</code>，谁又忍不住把接口细节、平台私货、运维路径写进 <code>TOOLS.md</code>，这些选择背后，其实反映的是厂商对 Agent 这件事的根本理解。</p>
+<p>Kimi 的思路最鲜明，它想把 Agent 做成一个有情绪、有审美、有戏感的“电子损友”。所以它重写灵魂层，强化身份层，甚至愿意让系统带上一点日记感和陪伴感。这种路线的优点，是用户一上手就能感到“这个东西是活的”；缺点也很明显，一旦灵魂层背上过多角色包袱，Prompt 很容易从“行为原则”滑向“表演脚本”，最后牺牲掉系统的稳定性和可迁移性。</p>
+<p>GLM 走的是另一条路。它并不执着于把 Agent 塑造成多么鲜活的人，而是更在意把系统稳稳锁在自己的平台边界里。所以它在高层文件里不断强调品牌归属、搜索能力和平台规则，在低层文件里又塞进大量环境路径和调用方式。这个策略的本质，不是增强智能，而是在加厚护城河。它的好处是可控、保守、不容易失守；它的问题是把“平台约束”伪装成了“通用能力”，最后让 Prompt 承担了本来应该由工程配置承担的责任。</p>
+<p>MiniMax 则最像一个典型的大规模生产团队。它对灵魂层近乎冷漠，几乎懒得碰官方模板；真正下重手的地方，是 <code>AGENTS.md</code> 这种最接近业务编排的位置。它想要的不是一个有趣的 Agent，而是一套能快速复制、快速套壳、快速落地的“专家流水线”。这套思路里其实有很强的工程直觉，因为它知道哪些东西没必要折腾；但它的问题同样致命：一旦把太多业务逻辑、格式约束、流程判断直接写进 Prompt，模板就会迅速膨胀，最终变成一坨看似灵活、实则难以维护的半结构化代码。</p>
+<p>所以，三家真正的区别，不是谁更聪明，而是谁把“Prompt 能做什么、不能做什么”这件事想得更明白。Kimi 过度相信 Prompt 能承载人格，GLM 过度相信 Prompt 能承载平台控制，MiniMax 过度相信 Prompt 能承载业务编排。它们各自都抓对了一部分东西，但也都踩进了同一个坑：<strong>试图用自然语言去顶替本该由系统分层解决的问题。</strong></p>
+<p>而 OpenClaw 这个框架本身，恰恰把答案已经摆在台面上了。<code>SOUL.md</code> 适合放长期稳定的价值观、边界与协作气质；<code>IDENTITY.md</code> 适合放角色包装与场景人设；<code>AGENTS.md</code> 适合放规则、权限和工作流约束；真正的业务逻辑、接口参数、调用路径、数据处理，则应该沉到 Skill、脚本、配置文件和外部服务里。也就是说，Prompt 架构真正考验的不是“你能写多少字”，而是“你有没有能力忍住不把不该写的东西写进去”。</p>
+<p>如果从这个角度回看三家厂商，其实都很有代表性。Kimi 代表的是产品体验驱动的 Agent 想象力，GLM 代表的是平台控制驱动的系统保守主义，MiniMax 代表的是模板工业化驱动的交付思维。它们都不是没有价值，相反，它们各自都暴露了今天行业里最真实的张力：我们一边想让 Agent 更像人，一边又想让它更像系统；一边想要 Prompt 的灵活，一边又想要工程的稳定；一边在追求“智能涌现”，一边又不得不回到最朴素的软件分层。</p>
+<p><strong>最后落一句最实在的话</strong>：下一代 Agent 的竞争，表面看是在比谁更会写 Prompt，实际上比的是谁更清楚 Prompt 的边界。真正成熟的系统，不会让语言模型去死记硬背 JSON 键名、服务器路径和业务分支，也不会把人格、规则、逻辑、接口全糊成一锅。最好的架构，一定是让自然语言负责理解与决策，让规则文件负责约束与组织，让代码和工具负责执行与兜底。谁能把这三层拆干净，谁才是真的在做 Agent；其余很多花活，说到底都只是“把 Prompt 写得更像代码”而已。</p>
 
       </article>
     </main>
