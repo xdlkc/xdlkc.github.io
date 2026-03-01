@@ -1,3 +1,4 @@
+<% const postToc = toc(page.content, { class: 'toc-nav', max_depth: 3, list_number: false }); %>
 <article class="article-shell container">
   <nav class="article-nav">
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
@@ -16,9 +17,26 @@
     <% } %>
   </header>
 
-  <main class="article-card">
-    <article class="article-content"><%- page.content %></article>
-  </main>
+  <div class="article-layout">
+    <main class="article-card">
+      <% if (postToc && postToc.trim()) { %>
+        <details class="toc-mobile">
+          <summary>查看大纲</summary>
+          <div class="toc-mobile-body">
+            <%- postToc %>
+          </div>
+        </details>
+      <% } %>
+      <article class="article-content"><%- page.content %></article>
+    </main>
+
+    <% if (postToc && postToc.trim()) { %>
+      <aside class="toc-card">
+        <p class="toc-title">大纲</p>
+        <%- postToc %>
+      </aside>
+    <% } %>
+  </div>
 </article>
 
 <script type="module">
