@@ -1,0 +1,36 @@
+<%
+const posts = site.posts.sort('date', -1).toArray();
+const grouped = {};
+posts.forEach((post) => {
+  const year = date(post.date, 'YYYY');
+  grouped[year] = grouped[year] || [];
+  grouped[year].push(post);
+});
+const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
+%>
+<div class="archive-shell container">
+  <nav class="article-nav">
+    <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
+    <div class="nav-links">
+      <a href="<%- url_for('/about/') %>">About</a>
+    </div>
+  </nav>
+
+  <section class="archive-card">
+    <h1>Archives</h1>
+    <p class="archive-total">目前共计 <%= posts.length %> 篇日志。</p>
+
+    <% years.forEach((year) => { %>
+      <div class="archive-year">
+        <h2><%= year %></h2>
+        <% grouped[year].forEach((post) => { %>
+          <article class="archive-item">
+            <time datetime="<%= date_xml(post.date) %>"><%= date(post.date, 'MM-DD') %></time>
+            <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+          </article>
+        <% }) %>
+      </div>
+    <% }) %>
+  </section>
+</div>
+

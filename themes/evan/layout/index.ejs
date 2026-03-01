@@ -1,0 +1,84 @@
+<%
+const posts = (page.posts ? page.posts.toArray() : site.posts.sort('date', -1).toArray());
+const latestPost = posts[0];
+const summarize = (input, limit = 140) => {
+  const plain = String(input || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return plain.length > limit ? `${plain.slice(0, limit).trim()}...` : plain;
+};
+%>
+<header class="hero">
+  <nav class="nav container">
+    <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
+    <div class="nav-links">
+      <a href="<%- url_for('/archives/') %>">Archives</a>
+      <a href="<%- url_for('/about/') %>">About</a>
+    </div>
+  </nav>
+
+  <section class="hero-content container">
+    <p class="tag">HELLO</p>
+    <h1>I am Evan Zhang,<br />an Agent Application Engineer (Full Stack)</h1>
+    <p class="subtitle">Previously a Java backend engineer, now focused on Agent application development and full stack engineering at Alibaba Group (Beijing).</p>
+    <div class="actions">
+      <a class="btn primary" href="#writing">Latest Writing</a>
+      <a class="btn ghost" href="https://github.com/xdlkc" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </section>
+</header>
+
+<main>
+  <section id="projects" class="section container">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>AgentForge</h3>
+        <p>An engineering-focused project for Agent applications, covering end-to-end practices from backend capability encapsulation to frontend interaction delivery.</p>
+        <a href="https://github.com/xdlkc/AgentForge" target="_blank" rel="noreferrer">View Repository</a>
+      </article>
+
+      <article class="card">
+        <h3>skills-manager</h3>
+        <p>A tool for managing Agent skill configurations and version evolution, improving consistency and delivery efficiency in multi-skill collaboration.</p>
+        <a href="https://github.com/xdlkc/skills-manager" target="_blank" rel="noreferrer">View Repository</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="writing" class="section container">
+    <h2>Latest Writing</h2>
+    <div class="grid">
+      <% posts.slice(0, 6).forEach((post) => { %>
+        <article class="card">
+          <h3><%= post.title %></h3>
+          <p><%= summarize(post.excerpt || post.content) %></p>
+          <a href="<%- url_for(post.path) %>">Read Article</a>
+        </article>
+      <% }) %>
+    </div>
+  </section>
+
+  <% if (latestPost) { %>
+  <section class="section container about">
+    <h2>Current Focus</h2>
+    <p><%= summarize(latestPost.excerpt || latestPost.content, 220) %></p>
+  </section>
+  <% } %>
+
+  <section id="about" class="section container about">
+    <h2>About</h2>
+    <p>
+      I studied at Xidian University from 2014 to 2018 for my bachelor's degree and currently work at Alibaba Group (Beijing).
+      I started as a Java backend engineer and now focus on Agent application development and full stack engineering, with an emphasis on engineering quality and delivery efficiency.
+    </p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:wimness@163.com">wimness@163.com</a></p>
+    <p>GitHub: <a href="https://github.com/xdlkc" target="_blank" rel="noreferrer">@xdlkc</a></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <%= new Date().getFullYear() %> <%= config.title %>. All rights reserved.</p>
+</footer>

@@ -1,0 +1,81 @@
+<article class="article-shell container">
+  <nav class="article-nav">
+    <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
+    <div class="nav-links">
+      <a href="<%- url_for('/archives/') %>">Archives</a>
+      <a href="<%- url_for('/about/') %>">About</a>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <p class="tag">LATEST WRITING</p>
+    <h1><%= page.title %></h1>
+    <p class="article-meta">发布于 <%= date(page.date, 'YYYY-MM-DD') %></p>
+    <% if (page.excerpt) { %>
+      <p class="article-summary"><%= strip_html(page.excerpt) %></p>
+    <% } %>
+  </header>
+
+  <main class="article-card">
+    <article class="article-content"><%- page.content %></article>
+  </main>
+</article>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const directBlocks = Array.from(document.querySelectorAll("pre > code.language-mermaid"));
+  const hexoBlocks = Array.from(document.querySelectorAll("figure.highlight.plaintext"));
+  const mermaidLeadings = [
+    "flowchart",
+    "graph",
+    "sequenceDiagram",
+    "classDiagram",
+    "stateDiagram",
+    "erDiagram",
+    "journey",
+    "gantt",
+    "pie",
+    "mindmap",
+    "timeline"
+  ];
+
+  const blocks = [...directBlocks];
+
+  hexoBlocks.forEach((figure) => {
+    const lines = Array.from(figure.querySelectorAll(".line"))
+      .map((line) => line.textContent || "")
+      .join("\n")
+      .trim();
+
+    if (!lines) return;
+    if (!mermaidLeadings.some((prefix) => lines.startsWith(prefix))) return;
+
+    blocks.push({
+      isHexoFigure: true,
+      source: lines,
+      element: figure
+    });
+  });
+
+  blocks.forEach((block, index) => {
+    const container = document.createElement("div");
+    container.className = "mermaid";
+    container.id = `mermaid-diagram-${index}`;
+    if (block.isHexoFigure) {
+      container.textContent = block.source;
+      block.element.parentElement?.replaceChild(container, block.element);
+      return;
+    }
+
+    const pre = block.parentElement;
+    if (!pre || !pre.parentElement) return;
+    container.textContent = block.textContent || "";
+    pre.parentElement.replaceChild(container, pre);
+  });
+
+  if (blocks.length > 0) {
+    mermaid.initialize({ startOnLoad: false, theme: "default" });
+    await mermaid.run({ querySelector: ".mermaid" });
+  }
+</script>

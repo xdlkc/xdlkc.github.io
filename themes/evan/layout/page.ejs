@@ -1,0 +1,18 @@
+<article class="article-shell container">
+  <nav class="article-nav">
+    <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
+    <div class="nav-links">
+      <a href="<%- url_for('/archives/') %>">Archives</a>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <p class="tag">PAGE</p>
+    <h1><%= page.title %></h1>
+  </header>
+
+  <main class="article-card">
+    <article class="article-content"><%- page.content %></article>
+  </main>
+</article>
+
