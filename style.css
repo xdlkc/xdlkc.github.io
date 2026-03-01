@@ -65,7 +65,8 @@ h1 {
 
 .subtitle {
   color: var(--muted);
-  max-width: 42ch;
+  max-width: 100%;
+  width: min(100%, 72ch);
 }
 
 .actions {
