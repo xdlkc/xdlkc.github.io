@@ -16,3 +16,13 @@ test('estimateReadingMinutes: counts English words at 200 words/min', () => {
 test('estimateReadingMinutes: strips HTML and defaults to 1 minute for empty content', () => {
   assert.equal(estimateReadingMinutes('<p><br/></p>'), 1);
 });
+
+test('estimateReadingMinutes: ignores code and pre blocks', () => {
+  const content = '<p>' + Array.from({ length: 180 }, () => 'word').join(' ') + '</p><pre><code>' + Array.from({ length: 500 }, () => 'token').join(' ') + '</code></pre>';
+  assert.equal(estimateReadingMinutes(content), 1);
+});
+
+test('estimateReadingMinutes: code-only content still returns minimum 1 minute', () => {
+  const content = '<pre><code>' + Array.from({ length: 1200 }, () => 'token').join(' ') + '</code></pre>';
+  assert.equal(estimateReadingMinutes(content), 1);
+});

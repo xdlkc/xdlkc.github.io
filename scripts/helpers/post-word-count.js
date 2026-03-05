@@ -1,5 +1,11 @@
-function stripHtml(input) {
+function stripCodeBlocks(input) {
   return String(input || '')
+    .replace(/<pre\b[^>]*>[\s\S]*?<\/pre>/gi, ' ')
+    .replace(/<code\b[^>]*>[\s\S]*?<\/code>/gi, ' ');
+}
+
+function stripHtml(input) {
+  return stripCodeBlocks(input)
     .replace(/<[^>]+>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
