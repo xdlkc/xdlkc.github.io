@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <% const social = social_meta(); %>
   <meta name="description" content="<%= meta_description() %>" />
   <link rel="canonical" href="<%= canonical_url() %>" />
+  <meta property="og:title" content="<%= social.title %>" />
+  <meta property="og:description" content="<%= social.description %>" />
+  <meta property="og:url" content="<%= social.url %>" />
+  <meta property="og:type" content="<%= social.type %>" />
+  <meta property="og:image" content="<%= social.image %>" />
+  <meta name="twitter:card" content="<%= social.twitterCard %>" />
+  <meta name="twitter:title" content="<%= social.title %>" />
+  <meta name="twitter:description" content="<%= social.description %>" />
+  <meta name="twitter:image" content="<%= social.image %>" />
   <title><%= page.title ? `${page.title} | ${config.title}` : config.title %></title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
