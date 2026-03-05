@@ -11,7 +11,7 @@
   <header class="article-hero">
     <p class="tag">LATEST WRITING</p>
     <h1><%= page.title %></h1>
-    <p class="article-meta">发布于 <%= date(page.date, 'YYYY-MM-DD') %> · 预计阅读 <%= reading_time(page.content) %> 分钟</p>
+    <p class="article-meta">发布于 <%= date(page.date, 'YYYY-MM-DD') %><%= updated_label() %> · 预计阅读 <%= reading_time(page.content) %> 分钟</p>
     <% if (page.excerpt) { %>
       <p class="article-summary"><%= strip_html(page.excerpt) %></p>
     <% } %>
