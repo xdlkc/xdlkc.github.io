@@ -22,6 +22,26 @@ function toAbsoluteUrl(value, siteUrl) {
   }
 }
 
+function toIso8601(value) {
+  if (!value) return '';
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return '';
+  return date.toISOString();
+}
+
+function normalizeLocale(language) {
+  const input = Array.isArray(language) ? language[0] : language;
+  const value = String(input || '').trim();
+  if (!value) return '';
+
+  const parts = value.replace('_', '-').split('-').filter(Boolean);
+  if (parts.length === 0) return '';
+
+  const lang = parts[0].toLowerCase();
+  const region = parts[1] ? parts[1].toUpperCase() : '';
+  return region ? `${lang}_${region}` : lang;
+}
+
 function detectType(page = {}) {
   if (page.layout === 'post' || page.type === 'post') return 'article';
   if (page.date) return 'article';
@@ -68,7 +88,10 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
     url: canonicalUrl || toAbsoluteUrl('/', site.url),
     type,
     image,
-    twitterCard: fromDefault ? 'summary' : 'summary_large_image'
+    twitterCard: fromDefault ? 'summary' : 'summary_large_image',
+    locale: normalizeLocale(site.language),
+    articlePublishedTime: type === 'article' ? toIso8601(page.date) : '',
+    articleModifiedTime: type === 'article' ? toIso8601(page.updated) : ''
   };
 }
 

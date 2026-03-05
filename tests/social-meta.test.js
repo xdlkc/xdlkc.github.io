@@ -14,6 +14,7 @@ test('buildSocialMeta: uses cover image and large twitter card', () => {
     site: {
       title: 'Site title',
       description: 'Site desc',
+      language: 'zh-CN',
       url: 'https://xdlkc.github.io'
     },
     canonicalUrl: 'https://xdlkc.github.io/2026/03/06/demo/'
@@ -22,6 +23,7 @@ test('buildSocialMeta: uses cover image and large twitter card', () => {
   assert.equal(result.image, 'https://xdlkc.github.io/images/post-cover.png');
   assert.equal(result.twitterCard, 'summary_large_image');
   assert.equal(result.type, 'article');
+  assert.equal(result.locale, 'zh_CN');
 });
 
 test('buildSocialMeta: extracts first image from content when cover is missing', () => {
@@ -42,6 +44,28 @@ test('buildSocialMeta: extracts first image from content when cover is missing',
   assert.equal(result.twitterCard, 'summary_large_image');
 });
 
+test('buildSocialMeta: includes article published/modified time in ISO-8601', () => {
+  const result = buildSocialMeta({
+    page: {
+      title: 'Post title',
+      layout: 'post',
+      date: '2026-03-01 08:00:00',
+      updated: '2026-03-05 18:30:15'
+    },
+    site: {
+      title: 'Site title',
+      description: 'Site desc',
+      language: 'en-us',
+      url: 'https://xdlkc.github.io'
+    },
+    canonicalUrl: 'https://xdlkc.github.io/2026/03/06/demo/'
+  });
+
+  assert.equal(result.locale, 'en_US');
+  assert.match(result.articlePublishedTime, /^\d{4}-\d{2}-\d{2}T/);
+  assert.match(result.articleModifiedTime, /^\d{4}-\d{2}-\d{2}T/);
+});
+
 test('buildSocialMeta: falls back to default avatar image and summary card', () => {
   const result = buildSocialMeta({
     page: {
@@ -50,6 +74,7 @@ test('buildSocialMeta: falls back to default avatar image and summary card', () 
     site: {
       title: 'Site title',
       description: 'Site desc',
+      language: 'zh-CN',
       url: 'https://xdlkc.github.io'
     },
     canonicalUrl: 'https://xdlkc.github.io/'
@@ -58,4 +83,7 @@ test('buildSocialMeta: falls back to default avatar image and summary card', () 
   assert.equal(result.image, 'https://xdlkc.github.io/images/avatar.jpg');
   assert.equal(result.twitterCard, 'summary');
   assert.equal(result.type, 'website');
+  assert.equal(result.locale, 'zh_CN');
+  assert.equal(result.articlePublishedTime, '');
+  assert.equal(result.articleModifiedTime, '');
 });
