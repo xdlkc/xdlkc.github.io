@@ -64,6 +64,7 @@
 
 <script src="<%- url_for('/js/toc-scrollspy.js') %>" defer></script>
 <script src="<%- url_for('/js/reading-progress.js') %>" defer></script>
+<script src="<%- url_for('/js/heading-anchor-copy.js') %>" defer></script>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
@@ -125,4 +126,5 @@
   window.CodeCopy?.initCodeCopy();
   window.TocScrollSpy?.initTocScrollSpy();
   window.ReadingProgress?.initReadingProgress();
+  window.HeadingAnchorCopy?.initHeadingAnchorCopy();
 </script>

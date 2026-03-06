@@ -385,6 +385,45 @@ h2 {
   overflow-wrap: anywhere;
 }
 
+.article-content .heading-anchor-host {
+  position: relative;
+}
+
+.heading-anchor-button {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.05rem 0.45rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  opacity: 0.25;
+  transform: translateY(-1px);
+  transition: opacity 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.article-content h1:hover .heading-anchor-button,
+.article-content h2:hover .heading-anchor-button,
+.article-content h3:hover .heading-anchor-button,
+.article-content h4:hover .heading-anchor-button,
+.article-content h5:hover .heading-anchor-button,
+.article-content h6:hover .heading-anchor-button {
+  opacity: 1;
+}
+
+.heading-anchor-button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.heading-anchor-button.is-copied {
+  opacity: 1;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .article-content blockquote {
   margin: 1.5rem 0;
   padding: 0.75rem 1rem;
