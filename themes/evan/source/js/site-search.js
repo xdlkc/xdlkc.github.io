@@ -207,6 +207,22 @@
     return [];
   }
 
+  function isEditableTarget(target) {
+    const el = target && target.nodeType === 1 ? target : null;
+    if (!el) return false;
+
+    if (el.isContentEditable) return true;
+
+    const tag = String(el.tagName || '').toUpperCase();
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return true;
+
+    // If an element is inside an editable container.
+    const editableAncestor = el.closest?.('[contenteditable=""],[contenteditable="true"]');
+    if (editableAncestor) return true;
+
+    return false;
+  }
+
   function initSiteSearch({ root = document } = {}) {
     if (!root?.querySelectorAll) return;
 
@@ -273,6 +289,23 @@
     root.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && dialog.classList.contains('is-open')) {
         handleClose();
+        return;
+      }
+
+      // Keyboard shortcuts: /, Cmd+K, Ctrl+K
+      if (dialog.classList.contains('is-open')) return;
+      if (isEditableTarget(event.target)) return;
+
+      const key = String(event.key || '');
+      const isSlash = key === '/';
+      const isK = key.toLowerCase() === 'k';
+      const isMetaOrCtrlK = isK && (event.metaKey || event.ctrlKey);
+
+      if (isSlash || isMetaOrCtrlK) {
+        event.preventDefault();
+        handleOpen();
+        // Best-effort prefetch of DB index.
+        ensureDb().catch(() => {});
       }
     });
 
