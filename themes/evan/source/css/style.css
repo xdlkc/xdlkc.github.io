@@ -46,6 +46,12 @@ a {
   color: var(--accent);
 }
 
+:where(a, button, [role="button"], input, textarea, select, summary):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
 .container {
   width: min(1080px, 92%);
   margin: 0 auto;
