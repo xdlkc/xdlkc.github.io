@@ -7,9 +7,13 @@ const format = (iso) => {
 };
 const normalizeTags = (region) => {
   if (!region) return [];
-  if (Array.isArray(region)) return region;
-  if (typeof region === 'string') return [region];
-  return [];
+  const arr = Array.isArray(region) ? region : (typeof region === 'string' ? [region] : []);
+  return arr.map((t) => {
+    const v = String(t).toUpperCase();
+    if (v === 'INT') return '国际';
+    if (v === 'CN') return '国内';
+    return String(t);
+  });
 };
 %>
 
@@ -18,15 +22,15 @@ const normalizeTags = (region) => {
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
     <div class="nav-links">
       <a href="<%- url_for('/archives/') %>">Archives</a>
-      <a href="<%- url_for('/news/') %>">News</a>
+      <a href="<%- url_for('/news/') %>">新闻</a>
       <button class="site-search-trigger" data-site-search-trigger aria-label="站内搜索">搜索</button>
       <button class="theme-toggle" data-theme-toggle aria-label="切换深色/浅色模式" aria-pressed="false">主题</button>
     </div>
   </nav>
 
   <header class="article-hero">
-    <p class="tag">NEWS</p>
-    <h1><%= page.title || 'News' %></h1>
+    <p class="tag">快讯</p>
+    <h1><%= page.title || '新闻看板' %></h1>
   </header>
 
   <main id="main-content" class="article-card" tabindex="-1">
