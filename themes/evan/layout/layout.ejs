@@ -30,10 +30,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="<%- url_for('/css/style.css') %>" />
+  <script>
+    // Apply theme as early as possible to reduce flash.
+    (function () {
+      try {
+        var key = 'xdlkc:theme';
+        var saved = localStorage.getItem(key);
+        var theme = saved === 'dark' || saved === 'light'
+          ? saved
+          : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+      } catch (e) {
+        // ignore
+      }
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">跳转到正文</a>
   <%- body %>
+  <script src="<%- url_for('/js/theme-toggle.js') %>" defer></script>
 </body>
 </html>
 

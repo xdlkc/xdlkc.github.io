@@ -8,6 +8,23 @@
   --border: #d7dfdd;
 }
 
+html[data-theme="dark"] {
+  --bg: #0b0f14;
+  --text: #e6edf3;
+  --muted: #9aa4af;
+  --accent: #2dd4bf;
+  --accent-dark: #14b8a6;
+  --card: #111823;
+  --border: #263241;
+}
+
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(27, 72, 91, 0.55) 0%, transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(120, 68, 8, 0.35) 0%, transparent 35%),
+    var(--bg);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -96,6 +113,20 @@ a {
 .nav-links a {
   text-decoration: none;
   font-weight: 600;
+}
+
+.theme-toggle {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
 }
 
 .brand {
