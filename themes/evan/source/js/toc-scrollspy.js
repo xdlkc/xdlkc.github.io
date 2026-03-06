@@ -44,6 +44,18 @@
     return rect.top + scrollY;
   }
 
+  function toNumber(value, fallback = 0) {
+    const n = Number(value);
+    return Number.isFinite(n) ? n : fallback;
+  }
+
+  function computeScrollTop({ targetTop, headerHeight, margin = 12 } = {}) {
+    const top = toNumber(targetTop, 0);
+    const header = toNumber(headerHeight, 0);
+    const m = toNumber(margin, 12);
+    return Math.max(0, Math.round(top - header - m));
+  }
+
   function ensureHeadingIds(headings) {
     const used = new Set();
 
@@ -83,7 +95,9 @@
     const tocLinks = Array.from(toc.querySelectorAll('a[href^="#"]'));
     if (tocLinks.length === 0) return;
 
-    // Smooth scroll on click (keep default anchor behavior as fallback).
+    const header = document.querySelector('.article-nav');
+
+    // Smooth scroll on click with header offset (keep default anchor behavior as fallback).
     tocLinks.forEach((link) => {
       link.addEventListener('click', (event) => {
         const href = link.getAttribute('href') || '';
@@ -94,8 +108,15 @@
         if (!target) return;
 
         event.preventDefault();
+
+        const headerHeight = header?.getBoundingClientRect
+          ? header.getBoundingClientRect().height
+          : 0;
+        const targetTop = getHeadingTopInDocument(target);
+        const scrollTop = computeScrollTop({ targetTop, headerHeight });
+
         try {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          window.scrollTo({ top: scrollTop, behavior: 'smooth' });
           history.pushState(null, '', `#${id}`);
         } catch (e) {
           // Unsupported: fall back to default jump.
@@ -171,6 +192,7 @@
   return {
     slugifyHeading,
     pickActiveHeadingId,
+    computeScrollTop,
     initTocScrollSpy
   };
 });
