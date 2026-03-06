@@ -50,10 +50,15 @@ const normalizeTags = (region) => {
                 <span> · <%= n.source %></span>
               <% } %>
             </div>
-            <% if (n.summary) { %>
-              <p style="margin: 0.4rem 0 0 0;"><%= n.summary %></p>
+            <% const summaryText = (n.summary && String(n.summary).trim()) || ''; %>
+            <% const contextText = (n.context && String(n.context).trim()) || ''; %>
+            <% if (summaryText) { %>
+              <p style="margin: 0.4rem 0 0 0;"><%= summaryText %></p>
             <% } %>
-            <% const tags = normalizeTags(n.region); if (tags.length) { %>
+            <% if (contextText) { %>
+              <p style="margin: 0.35rem 0 0 0; opacity: 0.82;">背景：<%= contextText %></p>
+            <% } %>
+            <% const tags = normalizeTags(n.region || n.tags); if (tags.length) { %>
               <p style="margin: 0.35rem 0 0 0; opacity: 0.75;">
                 <% tags.forEach((t) => { %>
                   <code style="margin-right: 0.4rem;">#<%= t %></code>

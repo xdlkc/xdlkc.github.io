@@ -213,7 +213,7 @@ h2 {
 .card,
 .article-card,
 .archive-card {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 1rem;
@@ -268,7 +268,7 @@ h2 {
   position: sticky;
   top: 1rem;
   width: 100%;
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 1rem;
