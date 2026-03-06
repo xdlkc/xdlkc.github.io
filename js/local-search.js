@@ -111,6 +111,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     let resultItems = [];
     if (searchText.length > 0) {
+      // Search index may still be loading (e.g. user types before fetch completes).
+      if (!Array.isArray(datas)) return;
+
       // Perform local searching
       datas.forEach(data => {
         // Only match articles with not empty titles
@@ -211,10 +214,40 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+    const renderNoResult = query => {
+      const tokens = [...new Set(query.split(/[-\s]+/).filter(Boolean))];
+      const chips = tokens.map(token => {
+        return `<button type="button" class="search-suggest-chip" data-keyword="${token}">${token}</button>`;
+      }).join('');
+
+      resultContent.innerHTML = `
+        <div id="no-result" class="search-no-result">
+          <div class="search-no-result__icon"><i class="fa fa-frown-o fa-5x"></i></div>
+          <div class="search-no-result__title">没有找到相关结果</div>
+          <div class="search-no-result__tips">
+            <ul>
+              <li>试试减少关键词，或只搜索其中一个词</li>
+              <li>检查拼写，或使用空格分隔不同关键词</li>
+            </ul>
+          </div>
+          ${tokens.length ? `<div class="search-no-result__suggest">试试这些关键词：${chips}</div>` : ''}
+        </div>
+      `;
+
+      // Delegate chip clicks
+      resultContent.querySelectorAll('[data-keyword]').forEach(el => {
+        el.addEventListener('click', () => {
+          input.value = el.getAttribute('data-keyword');
+          inputEventFunction();
+          input.focus();
+        });
+      });
+    };
+
     if (keywords.length === 1 && keywords[0] === '') {
       resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>';
     } else if (resultItems.length === 0) {
-      resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>';
+      renderNoResult(searchText);
     } else {
       resultItems.sort((resultLeft, resultRight) => {
         if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
