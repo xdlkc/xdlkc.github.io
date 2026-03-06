@@ -1,1 +1,137 @@
-[]
+[
+  {
+    "title": "Croatia to re-launch mandatory military service after 17 years",
+    "summary": "克罗地亚将恢复义务兵役，体现欧洲安全焦虑与军备动员趋势。",
+    "url": "https://www.reuters.com/business/aerospace-defense/croatia-re-launch-mandatory-military-service-after-17-years-2026-03-06/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-06T14:51:44.852Z",
+    "importance": 3,
+    "region": "INT",
+    "tags": [
+      "欧洲",
+      "国防",
+      "兵役"
+    ],
+    "id": "1772808704852-9"
+  },
+  {
+    "title": "Swiss expect to purchase 30 F-35 jets after cost increases",
+    "summary": "瑞士称因成本上升将减少F-35采购规模，影响军备与预算安排。",
+    "url": "https://www.reuters.com/business/aerospace-defense/swiss-expect-purchase-30-f-35-jets-after-cost-increases-2026-03-06/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-06T14:51:44.852Z",
+    "importance": 3,
+    "region": "INT",
+    "tags": [
+      "军工",
+      "航空",
+      "欧洲"
+    ],
+    "id": "1772808704852-8"
+  },
+  {
+    "title": "Russia warns Finland it will be more vulnerable if it hosts nuclear weapons",
+    "summary": "俄方警告芬兰若部署核武将提高风险，牵动北约边境安全格局。",
+    "url": "https://www.reuters.com/world/europe/russia-says-it-will-respond-if-finland-hosts-nuclear-weapons-accuses-helsinki-2026-03-06/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-06T14:51:44.852Z",
+    "importance": 4,
+    "region": "INT",
+    "tags": [
+      "欧洲",
+      "北约",
+      "核政策"
+    ],
+    "id": "1772808704852-7"
+  },
+  {
+    "title": "Russia and Ukraine swap 300 soldiers each on second day of exchange",
+    "summary": "俄乌继续大规模战俘交换，反映冲突态势与谈判空间变化。",
+    "url": "https://www.reuters.com/world/europe/ukraine-returns-300-soldiers-second-day-pow-swaps-with-russia-zelenskiy-says-2026-03-06/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-06T14:51:44.852Z",
+    "importance": 4,
+    "region": "INT",
+    "tags": [
+      "俄乌",
+      "安全",
+      "谈判"
+    ],
+    "id": "1772808704852-6"
+  },
+  {
+    "title": "Trump says there will be no deal with Iran except 'unconditional surrender'",
+    "summary": "特朗普就伊朗问题表态，释放进一步升级/谈判条件信号。",
+    "url": "https://www.reuters.com/world/us/trump-says-there-will-be-no-deal-with-iran-except-unconditional-surrender-2026-03-06/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-06T14:51:44.852Z",
+    "importance": 5,
+    "region": "INT",
+    "tags": [
+      "地缘政治",
+      "中东",
+      "美国"
+    ],
+    "id": "1772808704852-5"
+  },
+  {
+    "title": "逾百名中国公民自以色列撤至埃及",
+    "summary": "中东局势升级背景下，中国公民撤离行动进展披露。",
+    "url": "https://www.news.cn/world/20260306/abbd7652b3c84588a97c8cd09d864877/c.html",
+    "source": "新华网",
+    "publishedAt": "2026-03-06T14:51:44.852Z",
+    "importance": 4,
+    "region": "CN",
+    "tags": [
+      "外交",
+      "安全",
+      "中东"
+    ],
+    "id": "1772808704852-4"
+  },
+  {
+    "title": "中国散裂中子源二期工程首个线站成功出束",
+    "summary": "重大科研装置二期取得阶段性进展，支持基础研究与产业应用。",
+    "url": "https://www.news.cn/tech/20260306/14fa14a4e3ac41c1a19477922630f31c/c.html",
+    "source": "新华网",
+    "publishedAt": "2026-03-06T14:51:44.852Z",
+    "importance": 3,
+    "region": "CN",
+    "tags": [
+      "科技",
+      "大科学装置",
+      "科研"
+    ],
+    "id": "1772808704852-3"
+  },
+  {
+    "title": "商务部回应欧盟《工业加速器法案》",
+    "summary": "商务部就欧盟相关法案表态，涉及产业政策与经贸关系预期。",
+    "url": "https://www.news.cn/politics/20260306/a51d051070984b85a4f2a5a27b9c4b8f/c.html",
+    "source": "新华网",
+    "publishedAt": "2026-03-06T14:51:44.852Z",
+    "importance": 4,
+    "region": "CN",
+    "tags": [
+      "经贸",
+      "欧盟",
+      "产业政策"
+    ],
+    "id": "1772808704852-2"
+  },
+  {
+    "title": "国办印发《关于加强基层消防工作的意见》",
+    "summary": "国务院办公厅发布文件，要求加强基层消防工作体系与能力建设。",
+    "url": "https://www.gov.cn/zhengce/content/202603/content_7061164.htm",
+    "source": "中国政府网",
+    "publishedAt": "2026-03-06T14:51:44.852Z",
+    "importance": 5,
+    "region": "CN",
+    "tags": [
+      "政策",
+      "安全",
+      "消防"
+    ],
+    "id": "1772808704852-1"
+  }
+]
