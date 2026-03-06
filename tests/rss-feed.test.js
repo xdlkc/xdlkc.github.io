@@ -31,6 +31,15 @@ test('build generates rss.xml with at least one item', async () => {
     const content = fs.readFileSync(rssPath, 'utf8');
     assert.match(content, /<rss\b/i);
     assert.match(content, /<item\b/i);
+
+    // Feed contains full HTML content so RSS readers can show the whole post.
+    assert.match(content, /<content:encoded>/i);
+
+    // Enhancement: browser-friendly preview (XSL).
+    assert.match(content, /<\?xml-stylesheet\s+[^>]*href="\/rss\.xsl"/i);
+
+    const xslPath = path.join(outDir, 'rss.xsl');
+    assert.ok(fs.existsSync(xslPath), `expected ${xslPath} to exist`);
   } finally {
     try {
       await hexo.exit();
