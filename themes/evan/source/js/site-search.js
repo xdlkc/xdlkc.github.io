@@ -301,7 +301,24 @@
     return false;
   }
 
-  function initSiteSearch({ root = document } = {}) {
+  function openFirstResult({ root = document, location = globalThis.location } = {}) {
+    const dialog = root.querySelector?.('[data-site-search-dialog]');
+    if (!dialog?.classList?.contains?.('is-open')) return false;
+
+    const link = dialog.querySelector?.('.site-search-link');
+    const href = link?.href || link?.getAttribute?.('href');
+    if (!href) return false;
+
+    if (location?.assign) {
+      location.assign(href);
+    } else if (location) {
+      location.href = href;
+    }
+
+    return true;
+  }
+
+  function initSiteSearch({ root = document, location = globalThis.location } = {}) {
     if (!root?.querySelectorAll) return;
 
     const dialog = ensureDialog({ root });
@@ -398,6 +415,16 @@
       }
     });
 
+    input?.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter') return;
+      if (event.isComposing) return;
+
+      const didOpen = openFirstResult({ root, location });
+      if (didOpen) {
+        event.preventDefault();
+      }
+    });
+
     let debounce = null;
     input?.addEventListener('input', () => {
       window.clearTimeout(debounce);
@@ -427,6 +454,7 @@
     searchPosts,
     ensureDialog,
     renderResults,
+    openFirstResult,
     initSiteSearch
   };
 });
