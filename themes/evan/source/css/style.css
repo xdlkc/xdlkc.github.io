@@ -489,6 +489,49 @@ h2 {
   overflow-x: auto;
 }
 
+.related-posts {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.related-posts-title {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+
+.related-posts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.related-posts-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.related-posts-link {
+  flex: 1;
+  min-width: 0;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.related-posts-link:hover {
+  text-decoration: underline;
+}
+
+.related-posts-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
 .archive-year {
   margin-top: 2rem;
 }
