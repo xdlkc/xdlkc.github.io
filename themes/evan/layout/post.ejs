@@ -1,5 +1,9 @@
 <% const postToc = toc(page.content, { class: 'toc-nav', max_depth: 3, list_number: false }); %>
 <article class="article-shell container">
+  <div class="reading-progress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="reading-progress-bar"></div>
+  </div>
+
   <nav class="article-nav">
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
     <div class="nav-links">
@@ -39,6 +43,7 @@
   </div>
 </article>
 
+<script src="<%- url_for('/js/reading-progress.js') %>" defer></script>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
@@ -160,4 +165,6 @@
 
     pre.appendChild(button);
   });
+
+  window.ReadingProgress?.initReadingProgress();
 </script>

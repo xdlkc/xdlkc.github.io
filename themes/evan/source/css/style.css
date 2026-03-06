@@ -23,6 +23,23 @@ body {
   line-height: 1.6;
 }
 
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 1200;
+  background: rgba(31, 35, 40, 0.12);
+}
+
+.reading-progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  transition: width 0.08s linear;
+}
+
 .skip-link {
   position: absolute;
   left: 1rem;
