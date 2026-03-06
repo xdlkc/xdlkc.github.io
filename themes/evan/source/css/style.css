@@ -45,16 +45,41 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 22px;
   z-index: 1200;
-  background: rgba(31, 35, 40, 0.12);
+  background: transparent;
+  pointer-events: none;
 }
 
 .reading-progress-bar {
-  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
   width: 0;
   background: linear-gradient(90deg, var(--accent), var(--accent-dark));
   transition: width 0.08s linear;
+}
+
+.reading-progress-label {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(31, 35, 40, 0.8);
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(31, 35, 40, 0.12);
+  border-radius: 999px;
+  padding: 2px 8px;
+  line-height: 1.2;
+}
+
+[data-theme="dark"] .reading-progress-label {
+  color: rgba(255, 255, 255, 0.82);
+  background: rgba(0, 0, 0, 0.32);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .skip-link {

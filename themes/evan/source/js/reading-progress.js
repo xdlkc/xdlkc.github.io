@@ -22,12 +22,22 @@
 
   function initReadingProgress({
     containerSelector = '.reading-progress',
-    barSelector = '.reading-progress-bar'
+    barSelector = '.reading-progress-bar',
+    labelSelector = '.reading-progress-label'
   } = {}) {
     const container = document.querySelector(containerSelector);
     if (!container) return;
     const bar = container.querySelector(barSelector) || document.querySelector(barSelector);
     if (!bar) return;
+
+    // Ensure an always-visible percent label for better UX.
+    let label = container.querySelector(labelSelector);
+    if (!label) {
+      label = document.createElement('span');
+      label.className = labelSelector.replace(/^\./, '');
+      label.setAttribute('aria-hidden', 'true');
+      container.appendChild(label);
+    }
 
     let scheduled = false;
 
@@ -40,6 +50,8 @@
       });
       bar.style.width = percent + '%';
       container.setAttribute('aria-valuenow', String(percent));
+      container.setAttribute('aria-valuetext', `阅读进度 ${percent}%`);
+      label.textContent = `${percent}%`;
     };
 
     const onScroll = () => {
