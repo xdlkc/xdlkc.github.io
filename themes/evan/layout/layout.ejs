@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <% const social = social_meta(); %>
   <% const structured = structured_data(); %>
+  <% const breadcrumb = breadcrumb_structured_data(); %>
   <meta name="description" content="<%= meta_description() %>" />
   <meta name="robots" content="<%= robots_meta() %>" />
   <link rel="canonical" href="<%= canonical_url() %>" />
@@ -25,6 +26,7 @@
   <meta name="twitter:description" content="<%= social.description %>" />
   <meta name="twitter:image" content="<%= social.image %>" />
   <% if (structured) { %><script type="application/ld+json"><%- JSON.stringify(structured) %></script><% } %>
+  <% if (breadcrumb) { %><script type="application/ld+json"><%- JSON.stringify(breadcrumb) %></script><% } %>
   <title><%= page.title ? `${page.title} | ${config.title}` : config.title %></title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
