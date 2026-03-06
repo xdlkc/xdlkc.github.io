@@ -96,4 +96,68 @@
     mermaid.initialize({ startOnLoad: false, theme: "default" });
     await mermaid.run({ querySelector: ".mermaid" });
   }
+
+  const toast = document.createElement("div");
+  toast.className = "code-copy-toast";
+  toast.setAttribute("role", "status");
+  toast.setAttribute("aria-live", "polite");
+  document.body.appendChild(toast);
+
+  const showToast = (message) => {
+    toast.textContent = message;
+    toast.classList.add("is-visible");
+    window.clearTimeout(showToast.timer);
+    showToast.timer = window.setTimeout(() => {
+      toast.classList.remove("is-visible");
+    }, 1400);
+  };
+
+  const fallbackCopy = (text) => {
+    const area = document.createElement("textarea");
+    area.value = text;
+    area.setAttribute("readonly", "readonly");
+    area.style.position = "fixed";
+    area.style.opacity = "0";
+    document.body.appendChild(area);
+    area.select();
+    const success = document.execCommand("copy");
+    document.body.removeChild(area);
+    if (!success) throw new Error("copy failed");
+  };
+
+  const copyText = async (text) => {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+      return;
+    }
+    fallbackCopy(text);
+  };
+
+  Array.from(document.querySelectorAll(".article-content pre")).forEach((pre) => {
+    if (pre.querySelector(".code-copy-button")) return;
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "code-copy-button";
+    button.textContent = "复制代码";
+    button.setAttribute("aria-label", "复制当前代码块");
+
+    button.addEventListener("click", async () => {
+      const text = pre.textContent || "";
+      if (!text.trim()) return;
+
+      try {
+        await copyText(text);
+        showToast("复制成功");
+        button.textContent = "已复制";
+        window.setTimeout(() => {
+          button.textContent = "复制代码";
+        }, 1200);
+      } catch (error) {
+        showToast("复制失败，请手动复制");
+      }
+    });
+
+    pre.appendChild(button);
+  });
 </script>

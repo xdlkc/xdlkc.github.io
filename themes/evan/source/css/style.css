@@ -363,13 +363,52 @@ h2 {
 }
 
 .article-content pre {
+  position: relative;
   max-width: 100%;
   background: #172026;
   color: #f3f7f7;
-  padding: 1rem;
+  padding: 2.8rem 1rem 1rem;
   border-radius: 16px;
   overflow-x: auto;
   line-height: 1.55;
+}
+
+.code-copy-button {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(19, 31, 39, 0.75);
+  color: #f3f7f7;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.code-copy-button:hover {
+  background: rgba(19, 31, 39, 0.95);
+}
+
+.code-copy-toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1200;
+  background: #0f766e;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.85rem;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.code-copy-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .article-content code {
