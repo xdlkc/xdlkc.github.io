@@ -1,0 +1,64 @@
+<%
+const newsItems = (typeof news_sorted === 'function' ? news_sorted() : []);
+const format = (iso) => {
+  if (!iso) return '';
+  const d = new Date(iso);
+  return Number.isFinite(d.getTime()) ? d.toLocaleString('zh-CN', { hour12: false }) : String(iso);
+};
+const normalizeTags = (region) => {
+  if (!region) return [];
+  if (Array.isArray(region)) return region;
+  if (typeof region === 'string') return [region];
+  return [];
+};
+%>
+
+<article class="article-shell container">
+  <nav class="article-nav">
+    <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
+    <div class="nav-links">
+      <a href="<%- url_for('/archives/') %>">Archives</a>
+      <a href="<%- url_for('/news/') %>">News</a>
+      <button class="site-search-trigger" data-site-search-trigger aria-label="站内搜索">搜索</button>
+      <button class="theme-toggle" data-theme-toggle aria-label="切换深色/浅色模式" aria-pressed="false">主题</button>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <p class="tag">NEWS</p>
+    <h1><%= page.title || 'News' %></h1>
+  </header>
+
+  <main id="main-content" class="article-card" tabindex="-1">
+    <% if (!newsItems.length) { %>
+      <p>暂无新闻数据。请在 <code>source/_data/news.json</code> 中添加条目。</p>
+    <% } else { %>
+      <div class="article-content">
+        <% newsItems.forEach((n) => { %>
+          <section style="margin: 1.2rem 0;">
+            <h2 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">
+              <a href="<%= n.url %>" target="_blank" rel="noreferrer"><%= n.title %></a>
+            </h2>
+            <div style="opacity: 0.75; font-size: 0.95rem;">
+              <span><%= format(n.publishedAt) %></span>
+              <% if (n.source) { %>
+                <span> · <%= n.source %></span>
+              <% } %>
+            </div>
+            <% if (n.summary) { %>
+              <p style="margin: 0.4rem 0 0 0;"><%= n.summary %></p>
+            <% } %>
+            <% const tags = normalizeTags(n.region); if (tags.length) { %>
+              <p style="margin: 0.35rem 0 0 0; opacity: 0.75;">
+                <% tags.forEach((t) => { %>
+                  <code style="margin-right: 0.4rem;">#<%= t %></code>
+                <% }) %>
+              </p>
+            <% } %>
+          </section>
+          <hr />
+        <% }) %>
+      </div>
+    <% } %>
+  </main>
+</article>

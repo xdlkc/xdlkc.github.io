@@ -49,5 +49,8 @@ index_generator:
 
 theme: evan
 
+news:
+  home_limit: 5
+
 deploy: {}
 

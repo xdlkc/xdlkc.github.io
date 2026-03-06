@@ -14,6 +14,7 @@ const summarize = (input, limit = 140) => {
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
     <div class="nav-links">
       <a href="<%- url_for('/archives/') %>">Archives</a>
+      <a href="<%- url_for('/news/') %>">News</a>
       <a href="<%- url_for('/about/') %>">About</a>
       <button class="site-search-trigger" data-site-search-trigger aria-label="站内搜索">搜索</button>
       <button class="theme-toggle" data-theme-toggle aria-label="切换深色/浅色模式" aria-pressed="false">主题</button>
@@ -61,6 +62,30 @@ const summarize = (input, limit = 140) => {
       <% }) %>
     </div>
   </section>
+
+  <%
+  const latestNews = (typeof latest_news === 'function' ? latest_news() : []);
+  const formatNewsTime = (iso) => {
+    if (!iso) return '';
+    const d = new Date(iso);
+    return Number.isFinite(d.getTime()) ? d.toLocaleDateString('zh-CN') : String(iso).slice(0, 10);
+  };
+  %>
+  <% if (latestNews.length) { %>
+    <section id="news" class="section container">
+      <h2>最新新闻</h2>
+      <div class="grid">
+        <% latestNews.forEach((n) => { %>
+          <article class="card">
+            <h3 style="margin-bottom: 0.4rem;"><a href="<%= n.url %>" target="_blank" rel="noreferrer"><%= n.title %></a></h3>
+            <p style="opacity: 0.75; margin: 0 0 0.5rem 0;"><%= formatNewsTime(n.publishedAt) %><% if (n.source) { %> · <%= n.source %><% } %></p>
+            <% if (n.summary) { %><p><%= n.summary %></p><% } %>
+          </article>
+        <% }) %>
+      </div>
+      <p style="margin-top: 0.75rem;"><a href="<%- url_for('/news/') %>">查看全部新闻 →</a></p>
+    </section>
+  <% } %>
 
   <% if (latestPost) { %>
   <section class="section container about">
