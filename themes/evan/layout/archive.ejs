@@ -13,6 +13,7 @@ const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
     <div class="nav-links">
       <a href="<%- url_for('/about/') %>">About</a>
+      <button class="site-search-trigger" data-site-search-trigger aria-label="站内搜索">搜索</button>
       <button class="theme-toggle" data-theme-toggle aria-label="切换深色/浅色模式" aria-pressed="false">主题</button>
     </div>
   </nav>
