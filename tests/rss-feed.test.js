@@ -35,6 +35,9 @@ test('build generates rss.xml with at least one item', async () => {
     // Feed contains full HTML content so RSS readers can show the whole post.
     assert.match(content, /<content:encoded>/i);
 
+    // Enhancement: media thumbnails for RSS readers.
+    assert.match(content, /xmlns:media="http:\/\/search\.yahoo\.com\/mrss\/"/i);
+
     // Enhancement: browser-friendly preview (XSL).
     assert.match(content, /<\?xml-stylesheet\s+[^>]*href="\/rss\.xsl"/i);
 
