@@ -426,6 +426,31 @@ h2 {
   line-height: 1.55;
 }
 
+.article-content figure.highlight {
+  position: relative;
+  max-width: 100%;
+  background: #172026;
+  color: #f3f7f7;
+  padding: 2.8rem 1rem 1rem;
+  border-radius: 16px;
+  overflow-x: auto;
+  margin: 1.8rem 0;
+}
+
+.article-content figure.highlight table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.article-content figure.highlight td {
+  padding: 0;
+  border: none;
+}
+
+.article-content figure.highlight .line {
+  display: block;
+}
+
 .code-copy-button {
   position: absolute;
   top: 0.65rem;

@@ -7,13 +7,12 @@ function read(relativePath) {
   return fs.readFileSync(path.join(__dirname, '..', relativePath), 'utf8');
 }
 
-test('post template injects copy button enhancement for code blocks', () => {
+test('theme loads CodeCopy script and post template initializes it', () => {
+  const layout = read('themes/evan/layout/layout.ejs');
+  assert.match(layout, /\/js\/code-copy\.js/);
+
   const template = read('themes/evan/layout/post.ejs');
-  assert.match(template, /querySelectorAll\("\.article-content pre"\)/);
-  assert.match(template, /code-copy-button/);
-  assert.match(template, /navigator\.clipboard\.writeText/);
-  assert.match(template, /code-copy-toast/);
-  assert.match(template, /复制成功/);
+  assert.match(template, /window\.CodeCopy\?\.initCodeCopy\(\)/);
 });
 
 test('stylesheet contains copy button and toast styles', () => {
