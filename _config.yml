@@ -52,5 +52,10 @@ theme: evan
 news:
   home_limit: 5
 
+feed:
+  type: rss2
+  path: rss.xml
+  limit: 20
+
 deploy: {}
 
