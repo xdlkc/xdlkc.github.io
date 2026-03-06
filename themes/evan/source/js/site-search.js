@@ -31,10 +31,22 @@
     if (!q) return escapeHtml(raw);
 
     const escaped = escapeHtml(raw);
-    const qEscaped = escapeHtml(q);
+
+    const keywords = splitKeywords(q)
+      .map((kw) => escapeHtml(kw))
+      .filter(Boolean);
+
+    if (keywords.length === 0) return escaped;
 
     // Highlight on escaped strings to avoid XSS.
-    const re = new RegExp(qEscaped.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'ig');
+    // For multi-keyword queries, highlight each keyword.
+    const parts = keywords
+      .slice()
+      // Longer first to reduce partial-overlap surprises.
+      .sort((a, b) => b.length - a.length)
+      .map((kw) => kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+
+    const re = new RegExp(`(${parts.join('|')})`, 'ig');
     return escaped.replace(re, (match) => `<mark>${match}</mark>`);
   }
 
@@ -77,21 +89,44 @@
     };
   }
 
-  function scorePost(post, queryLower) {
+  function scorePost(post, queryTokensLower) {
     const title = (post.title || '').toLowerCase();
     const tags = (post.tags || []).map((t) => String(t).toLowerCase());
 
+    const tokens = Array.isArray(queryTokensLower)
+      ? queryTokensLower.filter(Boolean)
+      : [String(queryTokensLower || '').toLowerCase()].filter(Boolean);
+
+    if (tokens.length === 0) return 0;
+
     let score = 0;
-    if (title.includes(queryLower)) score += 10;
-    tags.forEach((t) => {
-      if (t.includes(queryLower)) score += 3;
+    let matchedTokens = 0;
+
+    tokens.forEach((token) => {
+      let matchedThis = false;
+
+      if (title.includes(token)) {
+        score += 10;
+        matchedThis = true;
+
+        // More occurrences in title gets slightly higher.
+        const titleMatches = title.split(token).length - 1;
+        score += Math.min(5, titleMatches);
+      }
+
+      tags.forEach((t) => {
+        if (t.includes(token)) {
+          score += 3;
+          matchedThis = true;
+        }
+      });
+
+      if (matchedThis) matchedTokens += 1;
     });
 
-    // Tie-breaker: more occurrences in title gets slightly higher.
-    if (score > 0) {
-      const titleMatches = title.split(queryLower).length - 1;
-      score += Math.min(5, titleMatches);
-    }
+    // Bonus for matching more distinct keywords.
+    if (matchedTokens > 1) score += matchedTokens * 2;
+    if (matchedTokens === tokens.length && tokens.length > 1) score += 6;
 
     return score;
   }
@@ -100,14 +135,15 @@
     const q = String(query || '').trim();
     if (!q) return [];
 
-    const queryLower = q.toLowerCase();
+    const tokensLower = splitKeywords(q).map((t) => String(t).toLowerCase());
+    if (tokensLower.length === 0) return [];
 
     const normalized = (posts || [])
       .map(normalizePost)
       .filter(Boolean);
 
     const scored = normalized
-      .map((post) => ({ post, score: scorePost(post, queryLower) }))
+      .map((post) => ({ post, score: scorePost(post, tokensLower) }))
       .filter((row) => row.score > 0)
       .sort((a, b) => {
         if (b.score !== a.score) return b.score - a.score;

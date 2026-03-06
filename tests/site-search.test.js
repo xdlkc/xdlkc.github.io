@@ -39,6 +39,24 @@ test('SiteSearch highlights query and returns ordered results', () => {
   assert.match(highlighted, /<mark>World<\/mark>/i);
 });
 
+test('SiteSearch multi-keyword query highlights each keyword and ranks by matched keywords', () => {
+  const SiteSearch = require('../themes/evan/source/js/site-search.js');
+
+  const posts = [
+    { title: 'Hello World', path: '2026/hello-world/', tags: ['intro'] },
+    { title: 'World of Agents', path: '2026/agents/', tags: ['agent', 'world'] },
+    { title: 'Agent Notes', path: '2026/agent-notes/', tags: ['notes'] }
+  ];
+
+  const results = SiteSearch.searchPosts(posts, 'world agent');
+  assert.equal(results.length, 3);
+  assert.equal(results[0].title, 'World of Agents');
+
+  const highlighted = SiteSearch.highlightText('World of Agents', 'world agent');
+  assert.match(highlighted, /<mark>World<\/mark>/i);
+  assert.match(highlighted, /<mark>Agent(s)?<\/mark>/i);
+});
+
 test('SiteSearch renders empty state with Archives suggestion', () => {
   const SiteSearch = require('../themes/evan/source/js/site-search.js');
 
