@@ -38,6 +38,28 @@
     return escaped.replace(re, (match) => `<mark>${match}</mark>`);
   }
 
+  function splitKeywords(query) {
+    const q = String(query || '').trim();
+    if (!q) return [];
+
+    const tokens = q
+      .split(/\s+/)
+      .map((t) => String(t || '').trim())
+      .filter(Boolean);
+
+    // Dedupe while keeping order.
+    const uniq = [];
+    const seen = new Set();
+    tokens.forEach((t) => {
+      const key = t.toLowerCase();
+      if (seen.has(key)) return;
+      seen.add(key);
+      uniq.push(t);
+    });
+
+    return uniq.slice(0, 6);
+  }
+
   function normalizePost(raw) {
     if (!raw) return null;
 
@@ -150,9 +172,29 @@
     if (!q) return;
 
     if (!results || results.length === 0) {
+      const keywords = splitKeywords(q);
+      const hasKeywordChips = keywords.length > 1;
+
+      const chipsHtml = hasKeywordChips
+        ? `
+          <div class="site-search-suggest" data-site-search-suggest>
+            <p class="site-search-suggest-title">试试拆分关键词：</p>
+            <div class="site-search-suggest-chips">
+              ${keywords
+                .map((kw) => {
+                  const safe = escapeHtml(kw);
+                  return `<button class="site-search-suggest-chip" type="button" data-site-search-keyword="${safe}">${safe}</button>`;
+                })
+                .join('')}
+            </div>
+          </div>
+        `.trim()
+        : '';
+
       container.innerHTML = `
         <div class="site-search-empty" data-site-search-empty>
           <p>无结果：<strong>${escapeHtml(q)}</strong></p>
+          ${chipsHtml}
           <ul>
             <li>试试缩短关键词或换个说法</li>
             <li>去 <a href="/archives/">Archives</a> 按时间浏览</li>
@@ -283,7 +325,18 @@
 
     dialog.addEventListener('click', (event) => {
       // Click outside modal closes.
-      if (event.target === dialog) handleClose();
+      if (event.target === dialog) {
+        handleClose();
+        return;
+      }
+
+      // Keyword chip: replace query and trigger search.
+      const chip = event.target?.closest?.('[data-site-search-keyword]');
+      if (chip) {
+        const keyword = chip.getAttribute('data-site-search-keyword') || '';
+        input.value = keyword;
+        input.dispatchEvent(new window.Event('input', { bubbles: true }));
+      }
     });
 
     root.addEventListener('keydown', (event) => {
@@ -334,6 +387,7 @@
   return {
     escapeHtml,
     highlightText,
+    splitKeywords,
     searchPosts,
     ensureDialog,
     renderResults,

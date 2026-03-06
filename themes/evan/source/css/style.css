@@ -810,3 +810,32 @@ h2 {
 .site-search-empty a {
   color: var(--link);
 }
+
+.site-search-suggest {
+  margin: 0.65rem 0 0.75rem;
+}
+
+.site-search-suggest-title {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+}
+
+.site-search-suggest-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.site-search-suggest-chip {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: rgba(15, 118, 110, 0.06);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+}
+
+.site-search-suggest-chip:hover {
+  background: rgba(15, 118, 110, 0.12);
+}
