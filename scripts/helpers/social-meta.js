@@ -48,6 +48,32 @@ function detectType(page = {}) {
   return 'website';
 }
 
+function normalizeArticleTags(tags, limit = 5) {
+  if (!tags) return [];
+
+  const raw = Array.isArray(tags)
+    ? tags
+    : Array.isArray(tags.data)
+      ? tags.data
+      : [];
+
+  const seen = new Set();
+  const result = [];
+
+  for (const tag of raw) {
+    const name = cleanText(typeof tag === 'string' ? tag : tag && tag.name);
+    if (!name) continue;
+    if (seen.has(name)) continue;
+
+    seen.add(name);
+    result.push(name);
+
+    if (result.length >= limit) break;
+  }
+
+  return result;
+}
+
 function pickImage(page = {}, site = {}) {
   const candidates = [
     page.cover,
@@ -82,6 +108,8 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
   const type = detectType(page);
   const { image, fromDefault } = pickImage(page, site);
 
+  const articleTags = type === 'article' ? normalizeArticleTags(page.tags) : [];
+
   return {
     title,
     description,
@@ -91,7 +119,8 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
     twitterCard: fromDefault ? 'summary' : 'summary_large_image',
     locale: normalizeLocale(site.language),
     articlePublishedTime: type === 'article' ? toIso8601(page.date) : '',
-    articleModifiedTime: type === 'article' ? toIso8601(page.updated) : ''
+    articleModifiedTime: type === 'article' ? toIso8601(page.updated) : '',
+    articleTags
   };
 }
 

@@ -86,4 +86,31 @@ test('buildSocialMeta: falls back to default avatar image and summary card', () 
   assert.equal(result.locale, 'zh_CN');
   assert.equal(result.articlePublishedTime, '');
   assert.equal(result.articleModifiedTime, '');
+  assert.deepEqual(result.articleTags, []);
+});
+
+test('buildSocialMeta: normalizes article tags and limits to top 5', () => {
+  const result = buildSocialMeta({
+    page: {
+      title: 'Post title',
+      layout: 'post',
+      tags: [
+        { name: ' Hexo ' },
+        'SEO',
+        { name: 'TDD' },
+        'SEO',
+        'Performance',
+        'UX',
+        'Observability'
+      ]
+    },
+    site: {
+      title: 'Site title',
+      description: 'Site desc',
+      url: 'https://xdlkc.github.io'
+    },
+    canonicalUrl: 'https://xdlkc.github.io/2026/03/06/demo/'
+  });
+
+  assert.deepEqual(result.articleTags, ['Hexo', 'SEO', 'TDD', 'Performance', 'UX']);
 });
