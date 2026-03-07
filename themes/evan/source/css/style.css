@@ -870,3 +870,39 @@ h2 {
 .site-search-suggest-chip:hover {
   background: rgba(15, 118, 110, 0.12);
 }
+
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1100;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 900;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+html[data-theme="dark"] .back-to-top {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(17, 24, 35, 0.72);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.42);
+}
+
+.back-to-top:hover {
+  transform: translateY(-1px);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
+}
+

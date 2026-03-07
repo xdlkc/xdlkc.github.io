@@ -52,10 +52,12 @@
   <a class="skip-link" href="#main-content">跳转到正文</a>
   <%- body %>
   <script src="<%- url_for('/js/theme-toggle.js') %>" defer></script>
+  <script src="<%- url_for('/js/back-to-top.js') %>" defer></script>
   <script src="<%- url_for('/js/code-copy.js') %>" defer></script>
   <script src="<%- url_for('/js/site-search.js') %>" defer></script>
   <script>
     window.addEventListener('DOMContentLoaded', function() {
+      window.BackToTop && window.BackToTop.initBackToTop && window.BackToTop.initBackToTop();
       window.CodeCopy && window.CodeCopy.initCodeCopy && window.CodeCopy.initCodeCopy();
     });
   </script>
