@@ -87,6 +87,28 @@ test('buildSocialMeta: extracts first image from content when cover is missing',
   assert.equal(result.twitterCard, 'summary_large_image');
 });
 
+test('buildSocialMeta: uses banner/photos as og image candidates when cover is missing', () => {
+  const result = buildSocialMeta({
+    page: {
+      title: 'Post title',
+      layout: 'post',
+      banner: '/images/banner.png',
+      photos: ['https://cdn.example.com/photo-1.png', '/images/photo-2.png'],
+      content: '<p>hello</p><img src="/images/inline.jpg" /><p>end</p>'
+    },
+    site: {
+      title: 'Site title',
+      description: 'Site desc',
+      url: 'https://xdlkc.github.io'
+    },
+    canonicalUrl: 'https://xdlkc.github.io/2026/03/07/demo/'
+  });
+
+  // Priority: banner should win over photos/content when cover is missing.
+  assert.equal(result.image, 'https://xdlkc.github.io/images/banner.png');
+  assert.equal(result.twitterCard, 'summary_large_image');
+});
+
 test('buildSocialMeta: includes article published/modified time in ISO-8601', () => {
   const result = buildSocialMeta({
     page: {

@@ -74,6 +74,17 @@ function normalizeArticleTags(tags, limit = 5) {
   return result;
 }
 
+function firstPhotoFromPhotosField(photos) {
+  if (!photos) return '';
+  if (typeof photos === 'string') return photos;
+  if (Array.isArray(photos)) return String(photos[0] || '').trim();
+
+  // Some Hexo plugins might store { data: [...] }.
+  if (Array.isArray(photos.data)) return String(photos.data[0] || '').trim();
+
+  return '';
+}
+
 function pickImage(page = {}, site = {}) {
   const candidates = [
     // Explicit Open Graph image fields (front-matter) should win.
@@ -83,6 +94,9 @@ function pickImage(page = {}, site = {}) {
     page.openGraphImage,
     page.cover,
     page.thumbnail,
+    page.banner,
+    firstPhotoFromPhotosField(page.photos),
+    firstPhotoFromPhotosField(page.photo),
     firstImageFromHtml(page.content),
     '/images/avatar.jpg'
   ];
