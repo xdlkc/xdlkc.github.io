@@ -56,6 +56,34 @@
     return Math.max(0, Math.round(top - header - m));
   }
 
+  // Compute next scrollTop for a scrollable TOC container so that the active link is visible.
+  // All coordinates are relative to the container's scroll content (not the page).
+  function computeTocScrollTopToReveal({
+    containerScrollTop = 0,
+    containerHeight = 0,
+    linkTop = 0,
+    linkHeight = 0
+  } = {}) {
+    const scrollTop = toNumber(containerScrollTop, 0);
+    const height = Math.max(0, toNumber(containerHeight, 0));
+    const top = Math.max(0, toNumber(linkTop, 0));
+    const h = Math.max(0, toNumber(linkHeight, 0));
+
+    if (height <= 0) return scrollTop;
+
+    const viewTop = scrollTop;
+    const viewBottom = scrollTop + height;
+    const linkBottom = top + h;
+
+    // Above the visible window: align link top to view top.
+    if (top < viewTop) return top;
+
+    // Below the visible window: align link bottom to view bottom.
+    if (linkBottom > viewBottom) return Math.max(0, linkBottom - height);
+
+    return scrollTop;
+  }
+
   function ensureHeadingIds(headings) {
     const used = new Set();
 
@@ -212,6 +240,24 @@
       if (!link) return;
       link.classList.add('is-active');
       link.setAttribute('aria-current', 'true');
+
+      // Keep the active TOC entry visible inside a long TOC container.
+      try {
+        const height = toc.clientHeight || 0;
+        if (height > 0 && toc.scrollHeight > height) {
+          const nextScrollTop = computeTocScrollTopToReveal({
+            containerScrollTop: toc.scrollTop || 0,
+            containerHeight: height,
+            linkTop: link.offsetTop || 0,
+            linkHeight: link.offsetHeight || 0
+          });
+          if (Number.isFinite(nextScrollTop) && Math.abs(nextScrollTop - (toc.scrollTop || 0)) > 1) {
+            toc.scrollTop = nextScrollTop;
+          }
+        }
+      } catch {
+        // ignore
+      }
     };
 
     const update = () => {
@@ -249,6 +295,7 @@
     slugifyHeading,
     pickActiveHeadingId,
     computeScrollTop,
+    computeTocScrollTopToReveal,
     initTocScrollSpy
   };
 });
