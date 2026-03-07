@@ -26,6 +26,49 @@ test('buildSocialMeta: uses cover image and large twitter card', () => {
   assert.equal(result.locale, 'zh_CN');
 });
 
+test('buildSocialMeta: prefers og_image/open graph image field over cover/inline images', () => {
+  const result = buildSocialMeta({
+    page: {
+      title: 'Post title',
+      layout: 'post',
+      og_image: '/images/og.png',
+      cover: '/images/post-cover.png',
+      content: '<p>hello</p><img src="/images/inline.jpg" /><p>end</p>'
+    },
+    site: {
+      title: 'Site title',
+      description: 'Site desc',
+      language: 'zh-CN',
+      url: 'https://xdlkc.github.io'
+    },
+    canonicalUrl: 'https://xdlkc.github.io/2026/03/07/demo/'
+  });
+
+  assert.equal(result.image, 'https://xdlkc.github.io/images/og.png');
+  assert.equal(result.twitterCard, 'summary_large_image');
+});
+
+test('buildSocialMeta: ignores invalid og_image and falls back to cover', () => {
+  const result = buildSocialMeta({
+    page: {
+      title: 'Post title',
+      layout: 'post',
+      ogImage: '   ',
+      open_graph_image: 'http://',
+      cover: '/images/post-cover.png'
+    },
+    site: {
+      title: 'Site title',
+      description: 'Site desc',
+      url: 'https://xdlkc.github.io'
+    },
+    canonicalUrl: 'https://xdlkc.github.io/2026/03/07/demo/'
+  });
+
+  assert.equal(result.image, 'https://xdlkc.github.io/images/post-cover.png');
+  assert.equal(result.twitterCard, 'summary_large_image');
+});
+
 test('buildSocialMeta: extracts first image from content when cover is missing', () => {
   const result = buildSocialMeta({
     page: {

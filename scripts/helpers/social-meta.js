@@ -76,6 +76,11 @@ function normalizeArticleTags(tags, limit = 5) {
 
 function pickImage(page = {}, site = {}) {
   const candidates = [
+    // Explicit Open Graph image fields (front-matter) should win.
+    page.og_image,
+    page.ogImage,
+    page.open_graph_image,
+    page.openGraphImage,
     page.cover,
     page.thumbnail,
     firstImageFromHtml(page.content),
