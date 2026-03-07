@@ -151,6 +151,38 @@
     return score;
   }
 
+  function getTopTags(posts, { limit = 10, minCount = 2 } = {}) {
+    const counts = new Map();
+    const display = new Map();
+
+    (posts || []).forEach((raw) => {
+      const post = normalizePost(raw);
+      if (!post) return;
+      (post.tags || []).forEach((tag) => {
+        if (typeof tag !== 'string') return;
+        const trimmed = tag.trim();
+        if (!trimmed) return;
+        const key = trimmed.toLowerCase();
+        counts.set(key, (counts.get(key) || 0) + 1);
+        if (!display.has(key)) display.set(key, key);
+      });
+    });
+
+    const rows = Array.from(counts.entries())
+      .filter(([, count]) => count >= Number(minCount || 0))
+      .map(([key, count]) => ({ key, count, name: display.get(key) || key }));
+
+    rows.sort((a, b) => {
+      if (b.count !== a.count) return b.count - a.count;
+      return String(a.name).localeCompare(String(b.name));
+    });
+
+    return rows
+      .slice(0, Math.max(0, Number(limit) || 10))
+      .map((row) => row.name);
+  }
+
+
   function searchPosts(posts, query) {
     const q = String(query || '').trim();
     if (!q) return [];
@@ -217,7 +249,7 @@
     dialog.classList.remove('is-open');
   }
 
-  function renderResults({ root = document, query, results } = {}) {
+  function renderResults({ root = document, query, results, suggestions } = {}) {
     const dialog = root.querySelector?.('[data-site-search-dialog]');
     const container = dialog?.querySelector?.('[data-site-search-results]');
     if (!container) return;
@@ -225,7 +257,31 @@
     container.innerHTML = '';
 
     const q = String(query || '').trim();
-    if (!q) return;
+    if (!q) {
+      const topTags = suggestions && Array.isArray(suggestions.topTags)
+        ? suggestions.topTags.filter(Boolean)
+        : [];
+
+      if (topTags.length > 0) {
+        container.innerHTML =                     `
+          <div class="site-search-hint">输入关键词开始搜索，或点击热门标签：</div>
+          <div class="site-search-suggest" data-site-search-top-tags>
+            <p class="site-search-suggest-title">热门标签</p>
+            <div class="site-search-suggest-chips">
+              ${topTags
+                .slice(0, 10)
+                .map((tag) => {
+                  const safe = escapeHtml(tag);
+                  return `<button class=\"site-search-suggest-chip\" type=\"button\" data-site-search-keyword=\"${safe}\">${safe}</button>`;
+                })
+                .join('')}
+            </div>
+          </div>
+        `.trim();
+      }
+
+      return;
+    }
 
     if (!results || results.length === 0) {
       const keywords = splitKeywords(q);
@@ -360,6 +416,7 @@
 
     let cachedDb = null;
     let dbLoading = null;
+    let cachedTopTags = null;
 
     async function ensureDb() {
       if (cachedDb) return cachedDb;
@@ -367,6 +424,12 @@
       dbLoading = fetchDbJson()
         .then((db) => {
           cachedDb = db;
+          try {
+            const posts = extractPostsFromDb(db);
+            cachedTopTags = getTopTags(posts, { limit: 10, minCount: 2 });
+          } catch {
+            cachedTopTags = null;
+          }
           return db;
         })
         .finally(() => {
@@ -378,7 +441,7 @@
     function handleOpen() {
       openDialog(dialog);
       input.value = '';
-      renderResults({ root, query: '', results: [] });
+      renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [] } });
       resetSelection();
     }
 
@@ -391,6 +454,7 @@
         handleOpen();
         try {
           await ensureDb();
+          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [] } });
         } catch (err) {
           const container = dialog.querySelector('[data-site-search-results]');
           if (container) {
@@ -530,7 +594,7 @@
       debounce = win.setTimeout(async () => {
         const q = String(input.value || '').trim();
         if (!q) {
-          renderResults({ root, query: '', results: [] });
+          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [] } });
           resetSelection();
           return;
         }
@@ -553,6 +617,7 @@
     escapeHtml,
     highlightText,
     splitKeywords,
+    getTopTags,
     searchPosts,
     ensureDialog,
     renderResults,
