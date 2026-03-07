@@ -366,6 +366,39 @@ h2 {
   margin-top: 0.45rem;
 }
 
+.toc-collapse-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.15rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.toc-collapse-btn::before {
+  content: '▾';
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.toc-collapse-btn[aria-expanded="false"]::before {
+  content: '▸';
+}
+
+.toc-collapse-btn:hover {
+  color: var(--accent);
+}
+
+.toc-nav li.is-collapsed > ol,
+.toc-nav li.is-collapsed > ul {
+  display: none;
+}
+
 .toc-nav a {
   text-decoration: none;
   color: var(--muted);
