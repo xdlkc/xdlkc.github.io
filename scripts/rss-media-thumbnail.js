@@ -40,17 +40,38 @@ function itemHasThumbnail(itemXml) {
   return /<media:thumbnail\b/i.test(String(itemXml || ''));
 }
 
-function injectThumbnailIntoItem(itemXml, url) {
+function itemHasMediaContent(itemXml) {
+  return /<media:content\b/i.test(String(itemXml || ''));
+}
+
+function extractEnclosureUrlFromItem(itemXml) {
+  const item = String(itemXml || '');
+  if (!item) return '';
+
+  // Typical: <enclosure url="..." type="image/png" />
+  const m = item.match(/<enclosure\b[^>]*\burl=("([^"]+)"|'([^']+)')[^>]*>/i);
+  if (!m) return '';
+  return (m[2] || m[3] || '').trim();
+}
+
+function injectMediaIntoItem(itemXml, url) {
   const item = String(itemXml || '');
   const safeUrl = String(url || '').trim();
   if (!item) return item;
   if (!safeUrl) return item;
-  if (itemHasThumbnail(item)) return item;
 
-  // Insert right before </item> with indentation similar to other fields.
-  return item.replace(/\s*<\/item>\s*$/i, (tail) => {
+  // Idempotent: only inject missing pieces.
+  const needThumb = !itemHasThumbnail(item);
+  const needContent = !itemHasMediaContent(item);
+  if (!needThumb && !needContent) return item;
+
+  const lines = [];
+  if (needContent) lines.push(`      <media:content url="${safeUrl}" medium="image" />`);
+  if (needThumb) lines.push(`      <media:thumbnail url="${safeUrl}" />`);
+
+  return item.replace(/\s*<\/item>\s*$/i, () => {
     const newline = item.includes('\n') ? '\n' : '';
-    return `${newline}      <media:thumbnail url="${safeUrl}" />${newline}    </item>`;
+    return `${newline}${lines.join(newline)}${newline}    </item>`;
   });
 }
 
@@ -59,10 +80,11 @@ function enhanceRssXml(xml) {
 
   // Process each <item>...</item> block.
   out = out.replace(/<item>([\s\S]*?)<\/item>/gi, (full) => {
-    if (itemHasThumbnail(full)) return full;
-    const url = extractFirstImageUrlFromItem(full);
+    // Prefer explicit enclosure (cover image) when present.
+    const enclosureUrl = extractEnclosureUrlFromItem(full);
+    const url = enclosureUrl || extractFirstImageUrlFromItem(full);
     if (!url) return full;
-    return injectThumbnailIntoItem(full, url);
+    return injectMediaIntoItem(full, url);
   });
 
   return out;
@@ -102,5 +124,7 @@ module.exports = {
   MEDIA_NS,
   ensureMediaNamespace,
   extractFirstImageUrlFromItem,
-  enhanceRssXml
+  enhanceRssXml,
+  // exported for tests
+  extractEnclosureUrlFromItem
 };
