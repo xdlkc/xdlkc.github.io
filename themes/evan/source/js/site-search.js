@@ -282,6 +282,10 @@
     if (Array.isArray(db)) return db;
     if (Array.isArray(db.data)) return db.data;
 
+    // Hexo db.json (e.g. hexo-generator-searchdb) often emits:
+    // { meta: {...}, models: { Post: [...], Tag: [...], ... } }
+    if (db.models && Array.isArray(db.models.Post)) return db.models.Post;
+
     return [];
   }
 
