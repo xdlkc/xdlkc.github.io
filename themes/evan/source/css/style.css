@@ -802,6 +802,12 @@ h2 {
   background: var(--card-hover, rgba(15, 118, 110, 0.06));
 }
 
+.site-search-item.is-selected .site-search-link {
+  background: rgba(15, 118, 110, 0.12);
+  outline: 3px solid rgba(15, 118, 110, 0.35);
+  outline-offset: -3px;
+}
+
 .site-search-title mark,
 .site-search-tag mark {
   background: rgba(15, 118, 110, 0.22);

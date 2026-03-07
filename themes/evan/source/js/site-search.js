@@ -321,6 +321,9 @@
   function initSiteSearch({ root = document, location = globalThis.location } = {}) {
     if (!root?.querySelectorAll) return;
 
+    // In Node test environment, `window` may be undefined. Prefer the document's defaultView.
+    const win = root.defaultView || globalThis;
+
     const dialog = ensureDialog({ root });
     const input = dialog.querySelector('[data-site-search-input]');
     const closeBtn = dialog.querySelector('[data-site-search-close]');
@@ -346,6 +349,7 @@
       openDialog(dialog);
       input.value = '';
       renderResults({ root, query: '', results: [] });
+      resetSelection();
     }
 
     function handleClose() {
@@ -388,7 +392,7 @@
       if (chip) {
         const keyword = chip.getAttribute('data-site-search-keyword') || '';
         input.value = keyword;
-        input.dispatchEvent(new window.Event('input', { bubbles: true }));
+        input.dispatchEvent(new win.Event('input', { bubbles: true }));
       }
     });
 
@@ -415,11 +419,76 @@
       }
     });
 
+    let selectedIndex = -1;
+
+    function getResultItems() {
+      return Array.from(dialog.querySelectorAll('.site-search-item'));
+    }
+
+    function clearSelection() {
+      getResultItems().forEach((item) => item.classList.remove('is-selected'));
+    }
+
+    function applySelection(index) {
+      const items = getResultItems();
+      if (items.length === 0) {
+        selectedIndex = -1;
+        return;
+      }
+
+      const next = Math.max(0, Math.min(items.length - 1, index));
+      selectedIndex = next;
+      items.forEach((item, i) => {
+        if (i === next) item.classList.add('is-selected');
+        else item.classList.remove('is-selected');
+      });
+    }
+
+    function resetSelection() {
+      selectedIndex = -1;
+      clearSelection();
+    }
+
+    function openSelectedResult() {
+      const items = getResultItems();
+      const item = selectedIndex >= 0 ? items[selectedIndex] : null;
+      const link = item?.querySelector?.('.site-search-link');
+      const href = link?.href || link?.getAttribute?.('href');
+      if (!href) return false;
+
+      if (location?.assign) {
+        location.assign(href);
+      } else if (location) {
+        location.href = href;
+      }
+
+      return true;
+    }
+
     input?.addEventListener('keydown', (event) => {
-      if (event.key !== 'Enter') return;
       if (event.isComposing) return;
 
-      const didOpen = openFirstResult({ root, location });
+      if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+        const items = getResultItems();
+        if (items.length === 0) return;
+
+        event.preventDefault();
+
+        if (event.key === 'ArrowDown') {
+          applySelection(selectedIndex + 1);
+        } else {
+          applySelection(selectedIndex <= 0 ? 0 : selectedIndex - 1);
+        }
+
+        return;
+      }
+
+      if (event.key !== 'Enter') return;
+
+      const didOpen = selectedIndex >= 0
+        ? openSelectedResult()
+        : openFirstResult({ root, location });
+
       if (didOpen) {
         event.preventDefault();
       }
@@ -427,11 +496,12 @@
 
     let debounce = null;
     input?.addEventListener('input', () => {
-      window.clearTimeout(debounce);
-      debounce = window.setTimeout(async () => {
+      win.clearTimeout?.(debounce);
+      debounce = win.setTimeout(async () => {
         const q = String(input.value || '').trim();
         if (!q) {
           renderResults({ root, query: '', results: [] });
+          resetSelection();
           return;
         }
 
@@ -440,8 +510,10 @@
           const posts = extractPostsFromDb(db);
           const results = searchPosts(posts, q);
           renderResults({ root, query: q, results });
+          resetSelection();
         } catch (err) {
           renderResults({ root, query: q, results: [] });
+          resetSelection();
         }
       }, 120);
     });
