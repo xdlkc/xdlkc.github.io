@@ -21,6 +21,7 @@
     <p class="tag">LATEST WRITING</p>
     <h1><%= page.title %></h1>
     <p class="article-meta">发布于 <%= date(page.date, 'YYYY-MM-DD') %><%= updated_label() %> · 预计阅读 <%= reading_time(page.content) %> 分钟 · 字数 <%= post_word_count(page.content) %></p>
+    <button class="article-link-copy" type="button" data-article-link-copy aria-label="复制文章链接">复制链接</button>
     <% if (page.excerpt) { %>
       <p class="article-summary"><%= strip_html(page.excerpt) %></p>
     <% } %>
@@ -67,6 +68,7 @@
 <script src="<%- url_for('/js/toc-scrollspy.js') %>" defer></script>
 <script src="<%- url_for('/js/reading-progress.js') %>" defer></script>
 <script src="<%- url_for('/js/heading-anchor-copy.js') %>" defer></script>
+<script src="<%- url_for('/js/article-link-copy.js') %>" defer></script>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
@@ -129,4 +131,5 @@
   window.TocScrollSpy?.initTocScrollSpy();
   window.ReadingProgress?.initReadingProgress();
   window.HeadingAnchorCopy?.initHeadingAnchorCopy();
+  window.ArticleLinkCopy?.initArticleLinkCopy();
 </script>

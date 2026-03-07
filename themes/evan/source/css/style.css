@@ -282,6 +282,24 @@ h2 {
   font-size: 0.95rem;
 }
 
+.article-link-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.article-link-copy:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .article-summary {
   color: var(--muted);
   font-size: 1.05rem;
