@@ -48,7 +48,8 @@ body {
   height: 22px;
   z-index: 1200;
   background: transparent;
-  pointer-events: none;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .reading-progress-bar {

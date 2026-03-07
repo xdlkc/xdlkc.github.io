@@ -63,6 +63,17 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll, { passive: true });
 
+    // Quick "back to top" affordance.
+    container.addEventListener('click', () => {
+      if (typeof window.scrollTo !== 'function') return;
+      try {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } catch {
+        // Older browsers may not support the object form.
+        window.scrollTo(0, 0);
+      }
+    });
+
     update();
   }
 
