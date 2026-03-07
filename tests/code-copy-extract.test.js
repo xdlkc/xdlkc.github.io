@@ -36,6 +36,27 @@ test('extractFromHighlightFigure: joins .line text and trims final newline', () 
   assert.equal(result, 'line1\nline2');
 });
 
+test('extractFromHighlightFigure: ignores gutter line numbers when .code column exists', () => {
+  const dom = new JSDOM(`<!doctype html><body>
+    <figure class="highlight javascript">
+      <table><tr>
+        <td class="gutter"><pre>
+          <span class="line">1</span>
+          <span class="line">2</span>
+        </pre></td>
+        <td class="code"><pre>
+          <span class="line">const a = 1;</span>
+          <span class="line">console.log(a)</span>
+        </pre></td>
+      </tr></table>
+    </figure>
+  </body>`);
+
+  const figure = dom.window.document.querySelector('figure');
+  const result = extractFromHighlightFigure(figure);
+  assert.equal(result, 'const a = 1;\nconsole.log(a)');
+});
+
 test('findCodeBlocks: returns both pre and highlight blocks inside .article-content', () => {
   const dom = new JSDOM(`<!doctype html><body>
     <div class="article-content">

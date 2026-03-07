@@ -27,7 +27,13 @@
 
   function extractFromHighlightFigure(figure) {
     if (!figure) return '';
-    const lines = Array.from(figure.querySelectorAll?.('.line') || [])
+
+    // Prefer the code column when present (Hexo highlight often renders a gutter column
+    // with line numbers that also uses `.line`).
+    const codeLines = figure.querySelectorAll?.('.code .line');
+    const selector = codeLines && codeLines.length ? '.code .line' : '.line';
+
+    const lines = Array.from(figure.querySelectorAll?.(selector) || [])
       .map((line) => line.textContent || '');
 
     // Some highlight renderers keep an extra trailing empty line; keep internal empties
