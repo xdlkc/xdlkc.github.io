@@ -80,6 +80,7 @@
 <script src="<%- url_for('/js/reading-progress.js') %>" defer></script>
 <script src="<%- url_for('/js/heading-anchor-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/article-link-copy.js') %>" defer></script>
+<script src="<%- url_for('/js/image-open.js') %>" defer></script>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
@@ -143,4 +144,5 @@
   window.ReadingProgress?.initReadingProgress();
   window.HeadingAnchorCopy?.initHeadingAnchorCopy();
   window.ArticleLinkCopy?.initArticleLinkCopy();
+  window.ImageOpen?.initImageOpen();
 </script>

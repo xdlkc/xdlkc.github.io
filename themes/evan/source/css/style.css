@@ -600,6 +600,11 @@ h2 {
   border-radius: 12px;
 }
 
+/* Click-to-open original image affordance */
+.article-content img[data-image-open="1"] {
+  cursor: zoom-in;
+}
+
 .article-content :not(pre) > code {
   background: #eef8f6;
   color: #0b5d57;
