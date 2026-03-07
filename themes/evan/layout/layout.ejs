@@ -34,14 +34,20 @@
   <link rel="stylesheet" href="<%- url_for('/css/style.css') %>" />
   <script>
     // Apply theme as early as possible to reduce flash.
+    // Modes: system | light | dark
     (function () {
       try {
         var key = 'xdlkc:theme';
-        var saved = localStorage.getItem(key);
-        var theme = saved === 'dark' || saved === 'light'
-          ? saved
-          : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        var savedMode = localStorage.getItem(key);
+        var mode = (savedMode === 'dark' || savedMode === 'light' || savedMode === 'system')
+          ? savedMode
+          : 'system';
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = (mode === 'dark' || mode === 'light')
+          ? mode
+          : (prefersDark ? 'dark' : 'light');
         document.documentElement.dataset.theme = theme;
+        document.documentElement.dataset.themeMode = mode;
       } catch (e) {
         // ignore
       }
