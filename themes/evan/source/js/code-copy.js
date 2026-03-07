@@ -99,6 +99,38 @@
     fallbackCopy(text);
   }
 
+  function bindDoubleClickCopy({ block, toast } = {}) {
+    if (!block || !block.element) return;
+
+    const container = block.element;
+    // Idempotent: avoid binding twice.
+    if (container.getAttribute?.('data-code-copy-dblclick') === '1') return;
+    container.setAttribute?.('data-code-copy-dblclick', '1');
+
+    container.addEventListener('dblclick', async () => {
+      // If user is selecting text, don't hijack.
+      try {
+        const selected = window.getSelection?.()?.toString?.() || '';
+        if (String(selected).trim()) return;
+      } catch {
+        // ignore
+      }
+
+      const text = block.type === 'highlight'
+        ? extractFromHighlightFigure(container)
+        : extractFromPre(container);
+
+      if (!text.trim()) return;
+
+      try {
+        await copyText(text);
+        showToast(toast, '复制成功');
+      } catch (error) {
+        showToast(toast, '复制失败，请手动复制');
+      }
+    });
+  }
+
   function injectButton({ block, toast } = {}) {
     if (!block || !block.element) return;
 
@@ -139,7 +171,10 @@
     const toast = ensureToast();
 
     const blocks = findCodeBlocks({ root });
-    blocks.forEach((block) => injectButton({ block, toast }));
+    blocks.forEach((block) => {
+      injectButton({ block, toast });
+      bindDoubleClickCopy({ block, toast });
+    });
   }
 
   return {
