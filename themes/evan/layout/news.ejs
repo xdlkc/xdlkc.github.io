@@ -3,7 +3,9 @@ const newsItems = (typeof news_sorted === 'function' ? news_sorted() : []);
 const format = (iso) => {
   if (!iso) return '';
   const d = new Date(iso);
-  return Number.isFinite(d.getTime()) ? d.toLocaleString('zh-CN', { hour12: false }) : String(iso);
+  return Number.isFinite(d.getTime())
+    ? d.toLocaleString('zh-CN', { hour12: false, timeZone: 'Asia/Shanghai' })
+    : String(iso);
 };
 const normalizeTags = (region) => {
   if (!region) return [];

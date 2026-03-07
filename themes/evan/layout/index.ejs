@@ -69,7 +69,9 @@ const summarize = (input, limit = 140) => {
   const formatNewsTime = (iso) => {
     if (!iso) return '';
     const d = new Date(iso);
-    return Number.isFinite(d.getTime()) ? d.toLocaleDateString('zh-CN') : String(iso).slice(0, 10);
+    return Number.isFinite(d.getTime())
+      ? d.toLocaleDateString('zh-CN', { timeZone: 'Asia/Shanghai' })
+      : String(iso).slice(0, 10);
   };
   %>
   <% if (latestNews.length) { %>
