@@ -92,7 +92,12 @@ function pickImage(page = {}, site = {}) {
     page.ogImage,
     page.open_graph_image,
     page.openGraphImage,
+    // Theme-level cover should keep higher priority.
     page.cover,
+    // Common front-matter fields used by many themes.
+    page.image,
+    page.featured_image,
+    page.featuredImage,
     page.thumbnail,
     page.banner,
     firstPhotoFromPhotosField(page.photos),

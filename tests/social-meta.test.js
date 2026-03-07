@@ -87,6 +87,25 @@ test('buildSocialMeta: extracts first image from content when cover is missing',
   assert.equal(result.twitterCard, 'summary_large_image');
 });
 
+test('buildSocialMeta: uses front-matter image/featured_image when cover is missing', () => {
+  const result = buildSocialMeta({
+    page: {
+      title: 'Post title',
+      layout: 'post',
+      image: '/images/featured.png',
+    },
+    site: {
+      title: 'Site title',
+      description: 'Site desc',
+      url: 'https://xdlkc.github.io'
+    },
+    canonicalUrl: 'https://xdlkc.github.io/2026/03/08/demo/'
+  });
+
+  assert.equal(result.image, 'https://xdlkc.github.io/images/featured.png');
+  assert.equal(result.twitterCard, 'summary_large_image');
+});
+
 test('buildSocialMeta: uses banner/photos as og image candidates when cover is missing', () => {
   const result = buildSocialMeta({
     page: {
