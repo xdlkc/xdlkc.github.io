@@ -6,6 +6,17 @@
   --accent-dark: #0b5d57;
   --card: #ffffff;
   --border: #d7dfdd;
+
+  /* Article font scaling (controlled by html[data-font-size]). */
+  --content-font-scale: 1;
+}
+
+html[data-font-size="lg"] {
+  --content-font-scale: 1.08;
+}
+
+html[data-font-size="sm"] {
+  --content-font-scale: 0.95;
 }
 
 html[data-theme="dark"] {
@@ -141,7 +152,8 @@ a {
   font-weight: 600;
 }
 
-.theme-toggle {
+.theme-toggle,
+.font-size-toggle {
   border: 1px solid var(--border);
   background: transparent;
   color: var(--text);
@@ -151,7 +163,8 @@ a {
   cursor: pointer;
 }
 
-.theme-toggle:hover {
+.theme-toggle:hover,
+.font-size-toggle:hover {
   border-color: var(--accent);
 }
 
@@ -421,6 +434,7 @@ h2 {
 .article-content {
   max-width: 100%;
   overflow-wrap: anywhere;
+  font-size: calc(1rem * var(--content-font-scale));
 }
 
 .article-content h1,

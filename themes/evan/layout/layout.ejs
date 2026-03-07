@@ -58,6 +58,7 @@
   <a class="skip-link" href="#main-content">跳转到正文</a>
   <%- body %>
   <script src="<%- url_for('/js/theme-toggle.js') %>" defer></script>
+  <script src="<%- url_for('/js/font-size-toggle.js') %>" defer></script>
   <script src="<%- url_for('/js/back-to-top.js') %>" defer></script>
   <script src="<%- url_for('/js/code-copy.js') %>" defer></script>
   <script src="<%- url_for('/js/scroll-restore.js') %>" defer></script>
@@ -67,6 +68,7 @@
       window.BackToTop && window.BackToTop.initBackToTop && window.BackToTop.initBackToTop();
       window.CodeCopy && window.CodeCopy.initCodeCopy && window.CodeCopy.initCodeCopy();
       window.ScrollRestore && window.ScrollRestore.initScrollRestore && window.ScrollRestore.initScrollRestore();
+      window.FontSizeToggle && window.FontSizeToggle.init && window.FontSizeToggle.init();
     });
   </script>
 </body>
