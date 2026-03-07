@@ -109,6 +109,13 @@
 
         event.preventDefault();
 
+        // Mobile TOC is wrapped in <details class="toc-mobile">.
+        // After choosing a section, auto-close it to avoid covering content.
+        const mobileDetails = link.closest?.('details.toc-mobile');
+        if (mobileDetails?.hasAttribute?.('open')) {
+          mobileDetails.removeAttribute('open');
+        }
+
         const headerHeight = header?.getBoundingClientRect
           ? header.getBoundingClientRect().height
           : 0;
