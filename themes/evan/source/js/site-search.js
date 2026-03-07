@@ -72,6 +72,23 @@
     return uniq.slice(0, 6);
   }
 
+  function formatPostDate(input) {
+    const raw = String(input || '').trim();
+    if (!raw) return '';
+
+    // Fast path for ISO-ish strings.
+    const m = raw.match(/^(\d{4}-\d{2}-\d{2})/);
+    if (m) return m[1];
+
+    try {
+      const d = new Date(raw);
+      if (Number.isNaN(d.getTime())) return '';
+      return d.toISOString().slice(0, 10);
+    } catch {
+      return '';
+    }
+  }
+
   function normalizePost(raw) {
     if (!raw) return null;
 
@@ -82,10 +99,13 @@
       ? raw.tags
       : (Array.isArray(raw.tag) ? raw.tag : []);
 
+    const date = formatPostDate(raw.date || raw.publishedAt || raw.published_at);
+
     return {
       title,
       path,
-      tags: tags.filter((t) => typeof t === 'string')
+      tags: tags.filter((t) => typeof t === 'string'),
+      date
     };
   }
 
@@ -255,9 +275,15 @@
           .join('')}</div>`
         : '';
 
+      const formattedDate = formatPostDate(post.date);
+      const metaHtml = formattedDate
+        ? `<div class="site-search-meta">${escapeHtml(formattedDate)}</div>`
+        : '';
+
       item.innerHTML = `
         <a class="site-search-link" href="/${String(post.path || '').replace(/^\//, '')}">
           <div class="site-search-title">${highlightText(post.title, q)}</div>
+          ${metaHtml}
           ${tagHtml}
         </a>
       `.trim();

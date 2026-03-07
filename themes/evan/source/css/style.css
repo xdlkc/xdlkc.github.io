@@ -861,6 +861,12 @@ html[data-theme="dark"] .related-posts-tag {
   border-radius: 6px;
 }
 
+.site-search-meta {
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
 .site-search-tags {
   margin-top: 0.55rem;
   display: flex;
