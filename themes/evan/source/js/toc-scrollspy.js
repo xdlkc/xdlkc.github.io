@@ -150,24 +150,75 @@
     toc.appendChild(list);
   }
 
-  function enhanceCollapsibleToc(toc, { document: doc = document } = {}) {
+  function enhanceCollapsibleToc(
+    toc,
+    {
+      document: doc = document,
+      storage = globalThis.localStorage,
+      storageKey = 'xdlkc:toc:collapsed'
+    } = {}
+  ) {
     if (!toc || !toc.querySelectorAll || !doc?.createElement) return;
+
+    const safeKey = String(storageKey || 'xdlkc:toc:collapsed');
+
+    const readCollapsedSet = () => {
+      try {
+        const raw = storage?.getItem?.(safeKey);
+        if (!raw) return new Set();
+        const parsed = JSON.parse(raw);
+        if (!Array.isArray(parsed)) return new Set();
+        return new Set(parsed.map((x) => String(x)).filter(Boolean));
+      } catch {
+        return new Set();
+      }
+    };
+
+    const writeCollapsedSet = (set) => {
+      try {
+        if (!storage?.setItem) return;
+        storage.setItem(safeKey, JSON.stringify(Array.from(set)));
+      } catch {
+        // ignore
+      }
+    };
+
+    const collapsedSet = readCollapsedSet();
 
     const items = Array.from(toc.querySelectorAll('li'));
 
-    items.forEach((li) => {
+    items.forEach((li, idx) => {
       // Only items with nested list should have a collapse button.
       const childList = li.querySelector(':scope > ol, :scope > ul');
       if (!childList) return;
 
+      const firstLink = li.querySelector(':scope > a');
+      const href = String(firstLink?.getAttribute?.('href') || '').trim();
+      const id = href.startsWith('#') ? href : `idx:${idx}`;
+
       // Idempotent: avoid inserting twice.
-      if (li.querySelector(':scope > .toc-collapse-btn')) return;
+      const existingBtn = li.querySelector(':scope > .toc-collapse-btn');
+
+      const applyCollapsed = (collapsed, btn) => {
+        if (collapsed) li.classList.add('is-collapsed');
+        else li.classList.remove('is-collapsed');
+        btn?.setAttribute?.('aria-expanded', collapsed ? 'false' : 'true');
+      };
+
+      // Restore persisted state (even if button already exists).
+      const shouldCollapse = collapsedSet.has(id);
+
+      if (existingBtn) {
+        applyCollapsed(shouldCollapse, existingBtn);
+        return;
+      }
 
       const btn = doc.createElement('button');
       btn.type = 'button';
       btn.className = 'toc-collapse-btn';
       btn.setAttribute('aria-label', '折叠/展开子标题');
-      btn.setAttribute('aria-expanded', 'true');
+
+      applyCollapsed(shouldCollapse, btn);
 
       btn.addEventListener('click', (event) => {
         event.preventDefault();
@@ -175,10 +226,14 @@
 
         const collapsed = li.classList.toggle('is-collapsed');
         btn.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+
+        if (collapsed) collapsedSet.add(id);
+        else collapsedSet.delete(id);
+
+        writeCollapsedSet(collapsedSet);
       });
 
       // Insert before the first link so the button is the first focusable in the item.
-      const firstLink = li.querySelector(':scope > a');
       if (firstLink?.parentNode) {
         li.insertBefore(btn, firstLink);
       } else {
