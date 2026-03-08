@@ -45,6 +45,28 @@
     return clamp(Math.round(x * 100), 0, 100);
   }
 
+  function computeNextPercentFromKey({
+    key,
+    currentPercent,
+    step = 5,
+  } = {}) {
+    const p = clamp(Number(currentPercent) || 0, 0, 100);
+    const s = Math.max(1, Number(step) || 5);
+
+    switch (String(key || '')) {
+      case 'ArrowLeft':
+        return clamp(p - s, 0, 100);
+      case 'ArrowRight':
+        return clamp(p + s, 0, 100);
+      case 'Home':
+        return 0;
+      case 'End':
+        return 100;
+      default:
+        return p;
+    }
+  }
+
   function initReadingProgress({
     containerSelector = '.reading-progress',
     barSelector = '.reading-progress-bar',
@@ -64,7 +86,15 @@
       container.appendChild(label);
     }
 
+    // Make it keyboard-focusable for a11y / power users.
+    try {
+      if (!container.hasAttribute('tabindex')) container.setAttribute('tabindex', '0');
+    } catch {
+      // ignore
+    }
+
     let scheduled = false;
+    let currentPercent = 0;
 
     const update = () => {
       scheduled = false;
@@ -73,6 +103,7 @@
         docHeight: document.documentElement.scrollHeight || document.body.scrollHeight || 0,
         winHeight: window.innerHeight || document.documentElement.clientHeight || 0
       });
+      currentPercent = percent;
       bar.style.width = percent + '%';
       container.setAttribute('aria-valuenow', String(percent));
       container.setAttribute('aria-valuetext', `阅读进度 ${percent}%`);
@@ -87,6 +118,44 @@
 
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll, { passive: true });
+
+    // Keyboard seek: ArrowLeft/ArrowRight/Home/End when the bar is focused.
+    container.addEventListener('keydown', (event) => {
+      const key = event?.key;
+      if (!key) return;
+
+      // Ignore when modifiers are held (avoid conflicting shortcuts).
+      if (event.altKey || event.ctrlKey || event.metaKey) return;
+
+      const next = computeNextPercentFromKey({
+        key,
+        currentPercent,
+        step: 5,
+      });
+
+      if (next === currentPercent) return;
+
+      // Only handle keys we support.
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(String(key))) return;
+
+      try {
+        event.preventDefault();
+      } catch {
+        // ignore
+      }
+
+      const scrollTop = computeScrollTopForPercent({
+        percent: next,
+        docHeight: document.documentElement.scrollHeight || document.body.scrollHeight || 0,
+        winHeight: window.innerHeight || document.documentElement.clientHeight || 0
+      });
+
+      try {
+        window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+      } catch {
+        window.scrollTo(0, scrollTop);
+      }
+    });
 
     const seekToPointer = (event, { behavior = 'smooth' } = {}) => {
       if (typeof window.scrollTo !== 'function') return;
@@ -183,6 +252,7 @@
     computeReadingProgressPercent,
     computeScrollTopForPercent,
     computePercentFromPointer,
+    computeNextPercentFromKey,
     initReadingProgress
   };
 });
