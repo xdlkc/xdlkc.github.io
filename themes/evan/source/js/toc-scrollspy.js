@@ -250,6 +250,54 @@
     const toc = document.querySelector(tocSelector);
     if (!toc) return;
 
+    // Keyboard shortcut: press `t` to toggle the TOC visibility.
+    // Idempotent: avoid binding multiple times if init runs again.
+    try {
+      const rootEl = document.documentElement;
+      if (rootEl && rootEl.dataset && rootEl.dataset.xdlkcTocKeyToggleBound !== '1') {
+        rootEl.dataset.xdlkcTocKeyToggleBound = '1';
+
+        window.addEventListener('keydown', (event) => {
+          const key = String(event.key || '');
+          if (key !== 't' && key !== 'T') return;
+          if (event.metaKey || event.ctrlKey || event.altKey) return;
+
+          const target = event.target;
+          const isTypingTarget = !!(
+            target &&
+            (target.matches?.('input, textarea, select') ||
+              target.isContentEditable ||
+              target.closest?.('[contenteditable="true"]'))
+          );
+          if (isTypingTarget) return;
+
+          // Prefer mobile TOC drawer if present.
+          const mobileDetails = document.querySelector('details.toc-mobile');
+          if (mobileDetails) {
+            event.preventDefault();
+            if (mobileDetails.hasAttribute('open')) mobileDetails.removeAttribute('open');
+            else mobileDetails.setAttribute('open', 'open');
+            return;
+          }
+
+          // Desktop TOC: toggle hidden/aria-hidden.
+          const desktopToc = document.querySelector('.toc-card .toc-nav') || document.querySelector('.toc-nav');
+          if (!desktopToc) return;
+
+          event.preventDefault();
+          if (desktopToc.hasAttribute('hidden')) {
+            desktopToc.removeAttribute('hidden');
+            desktopToc.removeAttribute('aria-hidden');
+          } else {
+            desktopToc.setAttribute('hidden', 'hidden');
+            desktopToc.setAttribute('aria-hidden', 'true');
+          }
+        });
+      }
+    } catch {
+      // ignore
+    }
+
     const content = document.querySelector(contentSelector) || document;
     const headingElements = Array.from(content.querySelectorAll(headingSelector));
     if (headingElements.length === 0) return;
