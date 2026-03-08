@@ -312,6 +312,17 @@
 
   function openDialog(dialog) {
     if (!dialog) return;
+
+    // Remember the current focus so we can restore it when closing.
+    // This improves keyboard UX without implementing a full focus-trap.
+    try {
+      const doc = dialog.ownerDocument || globalThis.document;
+      const active = doc?.activeElement;
+      dialog._xdlkcPrevFocus = active && active !== doc?.body ? active : null;
+    } catch {
+      dialog._xdlkcPrevFocus = null;
+    }
+
     dialog.setAttribute('aria-hidden', 'false');
     dialog.classList.add('is-open');
 
@@ -353,6 +364,22 @@
     if (!dialog) return;
     dialog.setAttribute('aria-hidden', 'true');
     dialog.classList.remove('is-open');
+
+    // Best-effort focus restore.
+    try {
+      const prev = dialog._xdlkcPrevFocus;
+      const doc = dialog.ownerDocument || globalThis.document;
+      dialog._xdlkcPrevFocus = null;
+
+      if (prev && typeof prev.focus === 'function') {
+        const connected = prev.isConnected
+          ? prev.isConnected
+          : (doc?.contains ? doc.contains(prev) : true);
+        if (connected) prev.focus();
+      }
+    } catch {
+      // ignore
+    }
   }
 
   function renderResults({ root = document, query, results, suggestions } = {}) {
