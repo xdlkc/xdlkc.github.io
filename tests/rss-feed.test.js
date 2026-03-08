@@ -39,7 +39,7 @@ test('build generates rss.xml with at least one item', async () => {
     assert.match(content, /xmlns:media="http:\/\/search\.yahoo\.com\/mrss\/"/i);
 
     // Enhancement: browser-friendly preview (XSL).
-    assert.match(content, /<\?xml-stylesheet\s+[^>]*href="\/rss\.xsl"/i);
+    assert.match(content, /<\?xml-stylesheet\s+[^>]*href="(?:https?:\/\/[^\"]+)?\/rss\.xsl"/i);
 
     const xslPath = path.join(outDir, 'rss.xsl');
     assert.ok(fs.existsSync(xslPath), `expected ${xslPath} to exist`);

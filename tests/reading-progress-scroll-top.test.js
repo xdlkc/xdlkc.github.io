@@ -4,7 +4,7 @@ const { JSDOM } = require('jsdom');
 
 const ReadingProgress = require('../themes/evan/source/js/reading-progress');
 
-test('clicking .reading-progress scrolls back to top', () => {
+test('double clicking .reading-progress scrolls back to top', () => {
   const dom = new JSDOM(`<!doctype html><html><body>
     <div class="reading-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
       <div class="reading-progress-bar"></div>
@@ -29,7 +29,7 @@ test('clicking .reading-progress scrolls back to top', () => {
   ReadingProgress.initReadingProgress();
 
   const container = document.querySelector('.reading-progress');
-  container.dispatchEvent(new window.Event('click', { bubbles: true }));
+  container.dispatchEvent(new window.Event('dblclick', { bubbles: true }));
 
   assert.ok(called, 'should call window.scrollTo on click');
   assert.ok(args, 'should capture scrollTo arguments');

@@ -20,6 +20,31 @@
     return clamp(Math.round(raw), 0, 100);
   }
 
+  /**
+   * Given a target percent (0-100) and page dimensions, compute scrollTop to reach.
+   * For non-scrollable pages, returns 0.
+   */
+  function computeScrollTopForPercent({ percent, docHeight, winHeight }) {
+    const totalScrollable = Number(docHeight) - Number(winHeight);
+    if (!Number.isFinite(totalScrollable) || totalScrollable <= 0) return 0;
+
+    const p = clamp(Number(percent) || 0, 0, 100) / 100;
+    return clamp(Math.round(totalScrollable * p), 0, Math.round(totalScrollable));
+  }
+
+  /**
+   * Compute percent (0-100) from a pointer position.
+   * `clientX` is the pointer's x in viewport coordinates.
+   * `left` and `width` are the bar's boundingClientRect values.
+   */
+  function computePercentFromPointer({ clientX, left, width }) {
+    const w = Number(width);
+    if (!Number.isFinite(w) || w <= 0) return 0;
+
+    const x = (Number(clientX) - Number(left)) / w;
+    return clamp(Math.round(x * 100), 0, 100);
+  }
+
   function initReadingProgress({
     containerSelector = '.reading-progress',
     barSelector = '.reading-progress-bar',
@@ -63,13 +88,38 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll, { passive: true });
 
-    // Quick "back to top" affordance.
-    container.addEventListener('click', () => {
+    // Seek-bar behavior: click jumps to the clicked progress position.
+    // Keep the old "back to top" behavior on double click.
+    container.addEventListener('click', (event) => {
+      if (typeof window.scrollTo !== 'function') return;
+
+      const rect = container.getBoundingClientRect?.();
+      const percent = rect
+        ? computePercentFromPointer({
+          clientX: event?.clientX,
+          left: rect.left,
+          width: rect.width
+        })
+        : 0;
+
+      const scrollTop = computeScrollTopForPercent({
+        percent,
+        docHeight: document.documentElement.scrollHeight || document.body.scrollHeight || 0,
+        winHeight: window.innerHeight || document.documentElement.clientHeight || 0
+      });
+
+      try {
+        window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+      } catch {
+        window.scrollTo(0, scrollTop);
+      }
+    });
+
+    container.addEventListener('dblclick', () => {
       if (typeof window.scrollTo !== 'function') return;
       try {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } catch {
-        // Older browsers may not support the object form.
         window.scrollTo(0, 0);
       }
     });
@@ -79,6 +129,8 @@
 
   return {
     computeReadingProgressPercent,
+    computeScrollTopForPercent,
+    computePercentFromPointer,
     initReadingProgress
   };
 });
