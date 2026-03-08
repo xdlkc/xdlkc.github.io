@@ -436,10 +436,32 @@
         `.trim()
         : '';
 
+      const topTags = suggestions && Array.isArray(suggestions.topTags)
+        ? suggestions.topTags.filter(Boolean)
+        : [];
+
+      const topTagsHtml = topTags.length > 0
+        ? `
+          <div class="site-search-suggest" data-site-search-top-tags>
+            <p class="site-search-suggest-title">也可以试试热门标签：</p>
+            <div class="site-search-suggest-chips">
+              ${topTags
+                .slice(0, 10)
+                .map((tag) => {
+                  const safe = escapeHtml(tag);
+                  return `<button class="site-search-suggest-chip" type="button" data-site-search-keyword="${safe}">${safe}</button>`;
+                })
+                .join('')}
+            </div>
+          </div>
+        `.trim()
+        : '';
+
       container.innerHTML = `
         <div class="site-search-empty" data-site-search-empty>
           <p>无结果：<strong>${escapeHtml(q)}</strong></p>
           ${chipsHtml}
+          ${topTagsHtml}
           <ul>
             <li>试试缩短关键词或换个说法</li>
             <li>去 <a href="/archives/">Archives</a> 按时间浏览</li>
@@ -781,10 +803,10 @@
           const db = await ensureDb();
           const posts = extractPostsFromDb(db);
           const results = searchPosts(posts, q);
-          renderResults({ root, query: q, results });
+          renderResults({ root, query: q, results, suggestions: { topTags: cachedTopTags || [] } });
           resetSelection();
         } catch (err) {
-          renderResults({ root, query: q, results: [] });
+          renderResults({ root, query: q, results: [], suggestions: { topTags: cachedTopTags || [] } });
           resetSelection();
         }
       }, 120);
