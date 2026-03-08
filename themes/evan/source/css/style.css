@@ -907,7 +907,8 @@ html[data-theme="dark"] .related-posts-tag {
 }
 
 .site-search-title mark,
-.site-search-tag mark {
+.site-search-tag mark,
+.site-search-snippet mark {
   background: rgba(15, 118, 110, 0.22);
   color: inherit;
   padding: 0 0.15em;
@@ -917,6 +918,13 @@ html[data-theme="dark"] .related-posts-tag {
 .site-search-meta {
   margin-top: 0.25rem;
   font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.site-search-snippet {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
   color: var(--muted);
 }
 

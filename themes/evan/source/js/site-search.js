@@ -50,6 +50,75 @@
     return escaped.replace(re, (match) => `<mark>${match}</mark>`);
   }
 
+  function stripHtmlToText(input, { document } = {}) {
+    const html = String(input || '');
+    if (!html) return '';
+
+    // Prefer DOM when available (better entity decoding, robust tag stripping).
+    const doc = document || globalThis.document;
+    if (doc?.createElement) {
+      try {
+        const div = doc.createElement('div');
+        div.innerHTML = html;
+        return String(div.textContent || '').replace(/\s+/g, ' ').trim();
+      } catch {
+        // fall through
+      }
+    }
+
+    // Fallback: naive tag strip.
+    return html
+      .replace(/<[^>]*>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function makeSnippet(post, query, { document } = {}) {
+    const q = String(query || '').trim();
+    const keywords = splitKeywords(q).map((t) => String(t).toLowerCase());
+
+    const source = post
+      ? (post.excerpt || post.content || post.raw || '')
+      : '';
+
+    const text = stripHtmlToText(source, { document });
+    if (!text) return '';
+
+    const maxLen = 90;
+    const before = 24;
+    const after = 56;
+
+    let start = 0;
+    let end = Math.min(text.length, maxLen);
+
+    if (keywords.length > 0) {
+      const lower = text.toLowerCase();
+      let hit = -1;
+
+      for (const kw of keywords) {
+        if (!kw) continue;
+        const idx = lower.indexOf(kw);
+        if (idx >= 0 && (hit < 0 || idx < hit)) hit = idx;
+      }
+
+      if (hit >= 0) {
+        start = Math.max(0, hit - before);
+        end = Math.min(text.length, hit + after);
+      }
+    }
+
+    let snippet = text.slice(start, end).trim();
+    if (!snippet) return '';
+
+    const prefixEllipsis = start > 0 ? '…' : '';
+    const suffixEllipsis = end < text.length ? '…' : '';
+
+    snippet = `${prefixEllipsis}${snippet}${suffixEllipsis}`;
+
+    // Highlight using existing mechanism (safe HTML output).
+    return highlightText(snippet, q);
+  }
+
   function splitKeywords(query) {
     const q = String(query || '').trim();
     if (!q) return [];
@@ -101,11 +170,18 @@
 
     const date = formatPostDate(raw.date || raw.publishedAt || raw.published_at);
 
+    const excerpt = typeof raw.excerpt === 'string' ? raw.excerpt : '';
+    const content = typeof raw.content === 'string' ? raw.content : '';
+    const rawText = typeof raw.raw === 'string' ? raw.raw : '';
+
     return {
       title,
       path,
       tags: tags.filter((t) => typeof t === 'string'),
-      date
+      date,
+      excerpt,
+      content,
+      raw: rawText
     };
   }
 
@@ -336,10 +412,16 @@
         ? `<div class="site-search-meta">${escapeHtml(formattedDate)}</div>`
         : '';
 
+      const snippet = makeSnippet(post, q, { document: root });
+      const snippetHtml = snippet
+        ? `<div class="site-search-snippet">${snippet}</div>`
+        : '';
+
       item.innerHTML = `
         <a class="site-search-link" href="/${String(post.path || '').replace(/^\//, '')}">
           <div class="site-search-title">${highlightText(post.title, q)}</div>
           ${metaHtml}
+          ${snippetHtml}
           ${tagHtml}
         </a>
       `.trim();
@@ -616,6 +698,8 @@
   return {
     escapeHtml,
     highlightText,
+    stripHtmlToText,
+    makeSnippet,
     splitKeywords,
     getTopTags,
     searchPosts,
