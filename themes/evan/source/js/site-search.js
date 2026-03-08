@@ -28,6 +28,9 @@
   function highlightText(text, query) {
     const raw = String(text || '');
     const q = String(query || '').trim();
+    const highlightQuery = q.startsWith('#')
+      ? q.replace(/^#+/, '').trim()
+      : q;
     if (!q) return escapeHtml(raw);
 
     const escaped = escapeHtml(raw);
@@ -141,6 +144,24 @@
     return uniq.slice(0, 6);
   }
 
+  // Parse user query and support a lightweight tag-only mode.
+  // Syntax: #tag (or multiple tokens like "#ai agent").
+  function parseQuery(query) {
+    const raw = String(query || '');
+    const trimmed = raw.trim();
+    if (!trimmed) return { mode: 'all', query: '', tokensLower: [] };
+
+    // Tag-only query mode: leading '#'.
+    if (trimmed.startsWith('#')) {
+      const q = trimmed.replace(/^#+/, '').trim();
+      const tokensLower = splitKeywords(q).map((t) => String(t).toLowerCase()).filter(Boolean);
+      return { mode: 'tag', query: q, tokensLower };
+    }
+
+    const tokensLower = splitKeywords(trimmed).map((t) => String(t).toLowerCase()).filter(Boolean);
+    return { mode: 'all', query: trimmed, tokensLower };
+  }
+
   function formatPostDate(input) {
     const raw = String(input || '').trim();
     if (!raw) return '';
@@ -185,7 +206,7 @@
     };
   }
 
-  function scorePost(post, queryTokensLower) {
+  function scorePost(post, queryTokensLower, { mode = 'all' } = {}) {
     const title = (post.title || '').toLowerCase();
     const tags = (post.tags || []).map((t) => String(t).toLowerCase());
 
@@ -195,13 +216,15 @@
 
     if (tokens.length === 0) return 0;
 
+    const isTagOnly = String(mode || 'all') === 'tag';
+
     let score = 0;
     let matchedTokens = 0;
 
     tokens.forEach((token) => {
       let matchedThis = false;
 
-      if (title.includes(token)) {
+      if (!isTagOnly && title.includes(token)) {
         score += 10;
         matchedThis = true;
 
@@ -212,7 +235,8 @@
 
       tags.forEach((t) => {
         if (t.includes(token)) {
-          score += 3;
+          // Tag match: slightly lower than title, but meaningful.
+          score += isTagOnly ? 6 : 3;
           matchedThis = true;
         }
       });
@@ -260,10 +284,8 @@
 
 
   function searchPosts(posts, query) {
-    const q = String(query || '').trim();
-    if (!q) return [];
-
-    const tokensLower = splitKeywords(q).map((t) => String(t).toLowerCase());
+    const parsed = parseQuery(query);
+    const tokensLower = parsed.tokensLower;
     if (tokensLower.length === 0) return [];
 
     const normalized = (posts || [])
@@ -271,7 +293,7 @@
       .filter(Boolean);
 
     const scored = normalized
-      .map((post) => ({ post, score: scorePost(post, tokensLower) }))
+      .map((post) => ({ post, score: scorePost(post, tokensLower, { mode: parsed.mode }) }))
       .filter((row) => row.score > 0)
       .sort((a, b) => {
         if (b.score !== a.score) return b.score - a.score;
@@ -390,6 +412,9 @@
     container.innerHTML = '';
 
     const q = String(query || '').trim();
+    const highlightQuery = q.startsWith('#')
+      ? q.replace(/^#+/, '').trim()
+      : q;
     if (!q) {
       const topTags = suggestions && Array.isArray(suggestions.topTags)
         ? suggestions.topTags.filter(Boolean)
@@ -482,7 +507,7 @@
       const tagHtml = tags.length
         ? `<div class="site-search-tags">${tags
           .slice(0, 6)
-          .map((t) => `<span class="site-search-tag">${highlightText(t, q)}</span>`)
+          .map((t) => `<span class="site-search-tag">${highlightText(t, highlightQuery)}</span>`)
           .join('')}</div>`
         : '';
 
@@ -491,14 +516,14 @@
         ? `<div class="site-search-meta">${escapeHtml(formattedDate)}</div>`
         : '';
 
-      const snippet = makeSnippet(post, q, { document: root });
+      const snippet = makeSnippet(post, highlightQuery, { document: root });
       const snippetHtml = snippet
         ? `<div class="site-search-snippet">${snippet}</div>`
         : '';
 
       item.innerHTML = `
         <a class="site-search-link" href="/${String(post.path || '').replace(/^\//, '')}">
-          <div class="site-search-title">${highlightText(post.title, q)}</div>
+          <div class="site-search-title">${highlightText(post.title, highlightQuery)}</div>
           ${metaHtml}
           ${snippetHtml}
           ${tagHtml}
@@ -819,6 +844,7 @@
     stripHtmlToText,
     makeSnippet,
     splitKeywords,
+    parseQuery,
     getTopTags,
     searchPosts,
     ensureDialog,
