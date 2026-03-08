@@ -298,7 +298,7 @@
           <input class="site-search-input" data-site-search-input type="search" placeholder="搜索标题 / 标签…" autocomplete="off" />
           <button class="site-search-close" data-site-search-close type="button" aria-label="关闭">关闭</button>
         </div>
-        <div class="site-search-body">
+        <div class="site-search-body" data-site-search-scroll>
           <div class="site-search-hint">输入关键词开始搜索</div>
           <div class="site-search-results" data-site-search-results></div>
         </div>
@@ -317,6 +317,36 @@
 
     const input = dialog.querySelector('[data-site-search-input]');
     input?.focus?.();
+  }
+
+  function toNumber(value, fallback = 0) {
+    const n = Number(value);
+    return Number.isFinite(n) ? n : fallback;
+  }
+
+  // Keep a scrollable container positioned so an item stays visible.
+  // Coordinates are relative to the scroll content of the container.
+  function computeScrollTopToReveal({
+    containerScrollTop = 0,
+    containerHeight = 0,
+    itemTop = 0,
+    itemHeight = 0,
+  } = {}) {
+    const scrollTop = toNumber(containerScrollTop, 0);
+    const height = Math.max(0, toNumber(containerHeight, 0));
+    const top = Math.max(0, toNumber(itemTop, 0));
+    const h = Math.max(0, toNumber(itemHeight, 0));
+
+    if (height <= 0) return scrollTop;
+
+    const viewTop = scrollTop;
+    const viewBottom = scrollTop + height;
+    const itemBottom = top + h;
+
+    if (top < viewTop) return top;
+    if (itemBottom > viewBottom) return Math.max(0, itemBottom - height);
+
+    return scrollTop;
   }
 
   function closeDialog(dialog) {
@@ -605,6 +635,23 @@
       getResultItems().forEach((item) => item.classList.remove('is-selected'));
     }
 
+    function getItemTopWithinContainer(container, item) {
+      if (!container || !item) return 0;
+
+      try {
+        const c = container.getBoundingClientRect?.();
+        const r = item.getBoundingClientRect?.();
+        if (c && r && Number.isFinite(c.top) && Number.isFinite(r.top)) {
+          return (r.top - c.top) + (container.scrollTop || 0);
+        }
+      } catch {
+        // ignore
+      }
+
+      // Fallback: offsetTop is relative to offsetParent; good enough for our modal.
+      return toNumber(item.offsetTop, 0);
+    }
+
     function applySelection(index) {
       const items = getResultItems();
       if (items.length === 0) {
@@ -618,6 +665,28 @@
         if (i === next) item.classList.add('is-selected');
         else item.classList.remove('is-selected');
       });
+
+      // Keep selection visible within the modal scroll container.
+      try {
+        const selectedItem = items[next];
+        const scrollContainer = dialog.querySelector?.('[data-site-search-scroll]')
+          || dialog.querySelector?.('[data-site-search-results]');
+
+        const height = scrollContainer?.clientHeight || 0;
+        if (scrollContainer && height > 0) {
+          const itemTop = getItemTopWithinContainer(scrollContainer, selectedItem);
+          const itemHeight = selectedItem?.offsetHeight || 0;
+          const nextScrollTop = computeScrollTopToReveal({
+            containerScrollTop: scrollContainer.scrollTop || 0,
+            containerHeight: height,
+            itemTop,
+            itemHeight,
+          });
+          if (Number.isFinite(nextScrollTop)) scrollContainer.scrollTop = nextScrollTop;
+        }
+      } catch {
+        // ignore
+      }
     }
 
     function resetSelection() {
@@ -705,6 +774,7 @@
     searchPosts,
     ensureDialog,
     renderResults,
+    computeScrollTopToReveal,
     openFirstResult,
     initSiteSearch
   };

@@ -868,6 +868,9 @@ html[data-theme="dark"] .related-posts-tag {
 
 .site-search-body {
   padding: 0.85rem;
+  /* Make long result lists scroll inside the modal (better keyboard nav UX). */
+  max-height: min(68vh, 520px);
+  overflow: auto;
 }
 
 .site-search-results {
