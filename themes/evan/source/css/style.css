@@ -598,6 +598,29 @@ h2 {
   cursor: pointer;
 }
 
+.code-collapse-button {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(19, 31, 39, 0.75);
+  color: #f3f7f7;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.code-collapse-button:hover {
+  background: rgba(19, 31, 39, 0.95);
+}
+
+.article-content pre.is-collapsed,
+.article-content figure.highlight.is-collapsed {
+  max-height: 22rem;
+  overflow-y: hidden;
+}
+
 .code-copy-button:hover {
   background: rgba(19, 31, 39, 0.95);
 }
