@@ -1,5 +1,74 @@
 [
   {
+    "title": "以军称将追击伊朗哈梅内伊所有继任者",
+    "url": "https://www.reuters.com/world/middle-east/israeli-military-says-it-will-pursue-every-successor-irans-khamenei-2026-03-08/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-08T15:47:00+08:00",
+    "region": "international",
+    "tags": [
+      "Iran",
+      "Israel",
+      "MiddleEast",
+      "geopolitics",
+      "risk"
+    ],
+    "summary": "路透报道称，以色列军方表示将持续追击伊朗被杀最高领袖哈梅内伊的任何继任者，并警告参与继任安排者也可能成为目标。表态强化了冲突长期化、升级化预期，抬升地区安全与能源供给的风险溢价。",
+    "importance": "地缘冲突预期上升会直接影响油价、避险资产与航运/航空风险定价；同时增加中东政策不确定性，对全球通胀与央行路径形成外生扰动。",
+    "context": "在美以与伊朗冲突背景下，伊朗正讨论新领导人安排。以方公开把“继任者”纳入打击框架，意味着政治过渡期的风险可能进一步外溢到能源与金融市场。",
+    "id": "2026030816-300e27f69a"
+  },
+  {
+    "title": "伊朗第一副总统称战略目标是推动美军撤出并关闭其中东基地",
+    "url": "https://www.cls.cn/detail/2306360",
+    "source": "财联社",
+    "publishedAt": "2026-03-08T16:28:03+08:00",
+    "region": "domestic",
+    "tags": [
+      "MiddleEast",
+      "geopolitics",
+      "energy",
+      "risk"
+    ],
+    "summary": "财联社电报援引央视新闻称，伊朗第一副总统阿雷夫表示，伊朗的主要战略目标是推动美国完全撤出中东并关闭其在该地区的军事基地，并称当前局势是对伊朗官员的考验；只要后方保障加强，伊朗战斗人员将以更坚定决心对抗。",
+    "importance": "该表态强化“长期对抗”叙事，市场会继续交易地缘风险溢价（原油、航运、避险资产）。对国内而言，能源价格与化工、航空运输成本敏感行业可能出现波动，同时也会影响政策对冲预期。",
+    "context": "中东冲突牵动全球原油与风险偏好。伊朗高层把目标上升到“撤出美军基地”，意味着谈判空间可能收窄，冲突外溢风险上升。",
+    "id": "2026030816-de29da7fda"
+  },
+  {
+    "title": "格林美与中国恩菲签署战略合作协议，推进关键矿产资源开发",
+    "url": "https://www.cls.cn/detail/2306354",
+    "source": "财联社",
+    "publishedAt": "2026-03-08T16:10:00+08:00",
+    "region": "domestic",
+    "tags": [
+      "criticalMinerals",
+      "supplyChain",
+      "EV",
+      "policy"
+    ],
+    "summary": "财联社电报称，格林美公告与中国恩菲签署战略合作协议，双方将在关键矿产资源开发、绿色低碳高效利用及全球化布局等方面深化合作，协议有效期至2030年末。合作意在提升中国企业全球竞争力，并服务关键矿产资源战略安全与关键技术自主。",
+    "importance": "关键矿产与新能源产业链（电池材料、回收）属于政策与资本市场高关注领域。中长期合作框架若落地，可能影响相关公司订单、产能规划与海外资源布局预期，也与“资源安全/低碳”政策主线共振。",
+    "context": "在全球资源竞争与供应链重构下，国内企业更强调“资源—冶炼—材料—回收”的闭环能力。央企/工程技术方参与，有助于项目执行与海外合规能力。",
+    "id": "2026030816-dd05e58882"
+  },
+  {
+    "title": "海思科子公司创新药HSK39297片上市许可申请获受理",
+    "url": "https://www.cls.cn/detail/2306328",
+    "source": "财联社",
+    "publishedAt": "2026-03-08T15:55:00+08:00",
+    "region": "domestic",
+    "tags": [
+      "biopharma",
+      "NMPA",
+      "innovationDrug",
+      "healthcare"
+    ],
+    "summary": "财联社电报称，海思科公告其子公司收到国家药监局对创新药HSK39297片上市许可申请的《受理通知书》。该药为补体B因子小分子抑制剂，用于阵发性睡眠性血红蛋白尿症（PNH）成人患者治疗，公司提示审评周期长、环节多，存在不确定性。",
+    "importance": "创新药受理与后续审评进展会影响医药板块风险偏好与公司估值预期；同时“临床价值+支付可及性”仍是政策与市场共同关注点。若后续数据与审评顺利，可能带来产品管线与商业化预期的重估。",
+    "context": "PNH属罕见病领域，存量治疗以单抗等生物药为主。小分子抑制剂若能体现疗效与给药便利性优势，可能改变竞争格局，但仍需关注审评、医保与商业化不确定性。",
+    "id": "2026030816-d5865b1be9"
+  },
+  {
     "title": "Two Kuwait fire officers killed 'while performing duties,' Fire Force says",
     "url": "https://www.reuters.com/world/middle-east/two-kuwait-fire-officers-killed-while-performing-duties-fire-force-says-2026-03-08/",
     "source": "Reuters",
