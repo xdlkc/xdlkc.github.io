@@ -254,6 +254,31 @@
     const headingElements = Array.from(content.querySelectorAll(headingSelector));
     if (headingElements.length === 0) return;
 
+    // UX: if the article is too short (only one section heading), a TOC provides
+    // no meaningful navigation value. Hide it to reduce visual noise.
+    // Note: do not hide the mobile TOC (<details class="toc-mobile">), because
+    // its main UX value is “pick a section then auto-close the drawer”, even when
+    // there is only one entry.
+    const isMobileToc = !!toc.closest?.('details.toc-mobile');
+
+    if (!isMobileToc && headingElements.length < 2) {
+      try {
+        toc.setAttribute('hidden', 'hidden');
+        toc.setAttribute('aria-hidden', 'true');
+      } catch {
+        // ignore
+      }
+      return;
+    }
+
+    // Ensure visible when there are enough headings.
+    try {
+      toc.removeAttribute('hidden');
+      toc.removeAttribute('aria-hidden');
+    } catch {
+      // ignore
+    }
+
     // Ensure heading ids exist so TOC anchors have targets.
     ensureHeadingIds(headingElements);
 
