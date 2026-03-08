@@ -20,6 +20,7 @@
 
   <header class="article-hero">
     <p class="tag">LATEST WRITING</p>
+    <nav data-breadcrumb data-breadcrumb-title="<%- page.title %>"></nav>
     <h1><%= page.title %></h1>
     <p class="article-meta">发布于 <%= date(page.date, 'YYYY-MM-DD') %><%= updated_label() %> · 预计阅读 <%= reading_time(page.content) %> 分钟 · 字数 <%= post_word_count(page.content) %></p>
     <button class="article-link-copy" type="button" data-article-link-copy aria-label="复制文章链接">复制链接</button>
@@ -78,6 +79,7 @@
 
 <script src="<%- url_for('/js/toc-scrollspy.js') %>" defer></script>
 <script src="<%- url_for('/js/reading-progress.js') %>" defer></script>
+<script src="<%- url_for('/js/breadcrumb.js') %>" defer></script>
 <script src="<%- url_for('/js/heading-anchor-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/article-link-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/image-open.js') %>" defer></script>
@@ -141,6 +143,7 @@
 
   window.CodeCopy?.initCodeCopy();
   window.CodeCollapse?.initCodeCollapse();
+  window.Breadcrumb?.initBreadcrumb?.();
   window.TocScrollSpy?.initTocScrollSpy();
   window.ReadingProgress?.initReadingProgress();
   window.HeadingAnchorCopy?.initHeadingAnchorCopy();
