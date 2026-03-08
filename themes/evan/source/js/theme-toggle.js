@@ -63,9 +63,9 @@ function applyThemeToDocument({ document, theme, mode }) {
   }
 }
 
-function getPrefersDark() {
+function getPrefersDark(matchMedia = globalThis.matchMedia) {
   try {
-    return !!globalThis.matchMedia?.('(prefers-color-scheme: dark)')?.matches;
+    return !!matchMedia?.('(prefers-color-scheme: dark)')?.matches;
   } catch {
     return false;
   }
@@ -88,13 +88,14 @@ function saveMode(storage, mode) {
 }
 
 function initThemeToggle({
+  window = globalThis.window,
   document = globalThis.document,
   storage = globalThis.localStorage,
   matchMedia = globalThis.matchMedia,
 } = {}) {
   if (!document?.querySelector) return;
 
-  const prefersDark = getPrefersDark();
+  const prefersDark = getPrefersDark(matchMedia);
   const savedMode = readSavedMode(storage);
   const initialTheme = resolveInitialTheme({ savedMode, prefersDark });
   const initialMode = normalizeThemeMode(savedMode) || 'system';
@@ -139,6 +140,27 @@ function initThemeToggle({
 
   if (initialMode === 'system') attachSystemListener();
 
+  // Cross-tab sync: when another tab updates STORAGE_KEY, reflect it here.
+  if (window?.addEventListener) {
+    window.addEventListener('storage', (event) => {
+      if (!event || event.key !== STORAGE_KEY) return;
+
+      const mode = normalizeThemeMode(event.newValue)
+        || normalizeThemeMode(readSavedMode(storage))
+        || 'system';
+
+      // Update listener binding.
+      if (mode === 'system') attachSystemListener();
+      else detachSystemListener();
+
+      const theme = mode === 'system'
+        ? (getPrefersDark(matchMedia) ? 'dark' : 'light')
+        : mode;
+
+      applyThemeToDocument({ document, theme, mode });
+    });
+  }
+
   toggle.addEventListener('click', () => {
     const currentMode = normalizeThemeMode(readSavedMode(storage))
       || normalizeThemeMode(document.documentElement.dataset.themeMode)
@@ -154,7 +176,7 @@ function initThemeToggle({
     }
 
     const nextTheme = nextMode === 'system'
-      ? (getPrefersDark() ? 'dark' : 'light')
+      ? (getPrefersDark(matchMedia) ? 'dark' : 'light')
       : nextMode;
 
     applyThemeToDocument({ document, theme: nextTheme, mode: nextMode });
@@ -176,5 +198,6 @@ if (typeof module !== 'undefined') {
     resolveInitialTheme,
     toggleThemeMode,
     applyThemeToDocument,
+    initThemeToggle,
   };
 }
