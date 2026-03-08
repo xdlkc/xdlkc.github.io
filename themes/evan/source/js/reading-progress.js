@@ -88,9 +88,7 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll, { passive: true });
 
-    // Seek-bar behavior: click jumps to the clicked progress position.
-    // Keep the old "back to top" behavior on double click.
-    container.addEventListener('click', (event) => {
+    const seekToPointer = (event, { behavior = 'smooth' } = {}) => {
       if (typeof window.scrollTo !== 'function') return;
 
       const rect = container.getBoundingClientRect?.();
@@ -109,9 +107,63 @@
       });
 
       try {
-        window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+        window.scrollTo({ top: scrollTop, behavior });
       } catch {
         window.scrollTo(0, scrollTop);
+      }
+    };
+
+    // Seek-bar behavior: click jumps to the clicked progress position.
+    // Keep the old "back to top" behavior on double click.
+    container.addEventListener('click', (event) => {
+      seekToPointer(event, { behavior: 'smooth' });
+    });
+
+    // Drag-to-seek (desktop): hold mouse and drag to scrub.
+    let isDragging = false;
+
+    const stopDragging = () => {
+      if (!isDragging) return;
+      isDragging = false;
+      container.classList.remove('is-dragging');
+
+      window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('mouseup', onMouseUp);
+      window.removeEventListener('blur', onWindowBlur);
+    };
+
+    const onMouseMove = (event) => {
+      if (!isDragging) return;
+      seekToPointer(event, { behavior: 'auto' });
+    };
+
+    const onMouseUp = () => {
+      stopDragging();
+    };
+
+    const onWindowBlur = () => {
+      stopDragging();
+    };
+
+    container.addEventListener('mousedown', (event) => {
+      // Only left click.
+      if (event && typeof event.button === 'number' && event.button !== 0) return;
+      if (typeof window.scrollTo !== 'function') return;
+
+      isDragging = true;
+      container.classList.add('is-dragging');
+      seekToPointer(event, { behavior: 'auto' });
+
+      // Listen on window so dragging continues even if pointer leaves the bar.
+      window.addEventListener('mousemove', onMouseMove);
+      window.addEventListener('mouseup', onMouseUp);
+      window.addEventListener('blur', onWindowBlur);
+
+      // Avoid text selection while dragging.
+      try {
+        event.preventDefault();
+      } catch {
+        // ignore
       }
     });
 

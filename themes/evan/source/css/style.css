@@ -60,7 +60,11 @@ body {
   z-index: 1200;
   background: transparent;
   pointer-events: auto;
-  cursor: pointer;
+  cursor: ew-resize;
+}
+
+.reading-progress.is-dragging {
+  cursor: ew-resize;
 }
 
 .reading-progress-bar {
