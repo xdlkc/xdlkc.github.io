@@ -78,6 +78,35 @@
     }, 1400);
   }
 
+  function flashCopiedClass(container, { durationMs = 1200 } = {}) {
+    if (!container?.classList) return;
+
+    // Avoid stacking timers when users click repeatedly.
+    try {
+      const prev = Number(container.getAttribute('data-code-copy-flash-timer') || '0');
+      if (prev) window.clearTimeout(prev);
+    } catch {
+      // ignore
+    }
+
+    container.classList.add('is-copied');
+
+    const timer = window.setTimeout(() => {
+      container.classList.remove('is-copied');
+      try {
+        container.removeAttribute('data-code-copy-flash-timer');
+      } catch {
+        // ignore
+      }
+    }, Math.max(0, Number(durationMs) || 1200));
+
+    try {
+      container.setAttribute('data-code-copy-flash-timer', String(timer));
+    } catch {
+      // ignore
+    }
+  }
+
   function fallbackCopy(text) {
     const area = document.createElement('textarea');
     area.value = text;
@@ -125,6 +154,7 @@
       try {
         await copyText(text);
         showToast(toast, '复制成功');
+        flashCopiedClass(container, { durationMs: 1200 });
       } catch (error) {
         showToast(toast, '复制失败，请手动复制');
       }
@@ -153,6 +183,7 @@
       try {
         await copyText(text);
         showToast(toast, '复制成功');
+        flashCopiedClass(container, { durationMs: 1200 });
         button.textContent = '已复制';
         window.setTimeout(() => {
           button.textContent = '复制代码';
