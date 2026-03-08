@@ -242,6 +242,31 @@
     });
   }
 
+  function expandTocAncestorsForLink(link) {
+    if (!link || !link.closest) return;
+
+    // If the active entry is inside a collapsed parent section, expand ancestors
+    // so the user can always see where they are in the TOC.
+    // Note: this is a DOM-only change; persistence is handled elsewhere.
+    let li = link.closest('li');
+    while (li) {
+      if (li.classList && li.classList.contains('is-collapsed')) {
+        li.classList.remove('is-collapsed');
+        // Best-effort aria sync for existing collapse buttons.
+        try {
+          const btn = li.querySelector?.(':scope > .toc-collapse-btn');
+          btn?.setAttribute?.('aria-expanded', 'true');
+        } catch {
+          // ignore
+        }
+      }
+
+      li = li.parentElement && li.parentElement.closest
+        ? li.parentElement.closest('li')
+        : null;
+    }
+  }
+
   function initTocScrollSpy({
     tocSelector = '.toc-nav',
     contentSelector = '.article-content',
@@ -409,6 +434,8 @@
       link.classList.add('is-active');
       link.setAttribute('aria-current', 'true');
 
+      expandTocAncestorsForLink(link);
+
       // Keep the active TOC entry visible inside a long TOC container.
       try {
         const height = toc.clientHeight || 0;
@@ -465,6 +492,7 @@
     computeScrollTop,
     computeTocScrollTopToReveal,
     enhanceCollapsibleToc,
+    expandTocAncestorsForLink,
     initTocScrollSpy
   };
 });
