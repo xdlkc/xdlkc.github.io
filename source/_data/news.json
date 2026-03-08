@@ -1,5 +1,85 @@
 [
   {
+    "title": "于东来披露胖东来近40亿元资产分配方案",
+    "summary": "财联社电报称，胖东来创始人于东来分享公司“把利润按岗位分配给全体员工”的做法，并披露集团资产总额约379290万元（约37.93亿元）及面向管理、技术与一线员工的分配明细。其表述强调员工与管理层各占利润分配的约50%，并提出资产将作为公司股本、未来利润按50%团队奖金+50%股东收益的思路。",
+    "url": "https://www.cls.cn/detail/2306475",
+    "source": "财联社",
+    "publishedAt": "2026-03-08T23:49:45+08:00",
+    "importance": "反映线下零售龙头的治理与激励模式，对消费复苏预期、民企经营信心与“共同富裕/员工持股”讨论有示范效应。",
+    "region": "CN",
+    "tags": [
+      "消费",
+      "公司治理",
+      "员工激励"
+    ],
+    "context": "在消费修复与就业/收入预期仍偏谨慎背景下，企业以分配与激励方式提振组织效率的案例更受市场关注。该事件也容易被资本市场解读为“经营质量/现金流”与扩张节奏的信号。",
+    "id": "ee1f42372fdf"
+  },
+  {
+    "title": "豫能控股：如股价进一步异常上涨 公司可能申请停牌核查",
+    "summary": "财联社电报援引豫能控股公告称，公司股票交易已累积极大交易风险，若股价进一步异常上涨，可能向深交所申请停牌核查。公告提示股价短期波动幅度严重偏离大盘与行业指数、基本面未发生重大变化但价格明显脱离基本面，存在较高炒作风险，并提到控股股东未来36个月内不会将相关资产装入上市公司。",
+    "url": "https://www.cls.cn/detail/2306469",
+    "source": "财联社",
+    "publishedAt": "2026-03-08T22:58:00+08:00",
+    "importance": "属于风险提示与潜在监管动作预期，影响短线资金情绪、题材炒作溢价与相关板块波动，也可能牵动交易所对异常交易的口径。",
+    "region": "CN",
+    "tags": [
+      "A股",
+      "风险提示",
+      "停牌核查"
+    ],
+    "context": "在题材轮动与高波动阶段，交易所与上市公司风险提示往往会直接改变资金的持仓周期与风险偏好。停牌核查预期也会改变可交易性与流动性定价。",
+    "id": "32da16494353"
+  },
+  {
+    "title": "中国驻卡塔尔大使馆：卡塔尔航空赴华航班开放售票",
+    "summary": "财联社电报称，中国驻卡塔尔大使馆发文表示，经核实卡塔尔航空已在官网开放2026年3月9日多哈—北京大兴航班机票销售，并提醒有回国需求的旅客尽快通过官网或正规渠道购票，以免错过行程安排。该信息与近期中东局势紧张背景下航线供给、转运与回国通道安排密切相关。",
+    "url": "https://www.cls.cn/detail/2306454",
+    "source": "财联社",
+    "publishedAt": "2026-03-08T22:34:00+08:00",
+    "importance": "涉及中东冲突导致的航线与出入境通行风险，对航空出行、机场运营、保险与外贸人员流动预期有边际影响。",
+    "region": "CN",
+    "tags": [
+      "民航",
+      "中东局势",
+      "出行"
+    ],
+    "context": "地区冲突往往引发航路调整、油价与保险成本上行，并对国际航班供给产生扰动。使馆信息能为企业人员与居民出行提供确定性，也间接反映区域风险水平。",
+    "id": "7a33e622081a"
+  },
+  {
+    "title": "Israeli strike kills two Palestinians in a car in Gaza, medics say",
+    "summary": "Reuters报道，加沙当地医务人员称，以色列空袭击中加沙城一辆汽车，造成至少两名巴勒斯坦人死亡，并称这是在美以对伊朗发动战争一周后加沙地区最致命的事件之一。报道提到近期此类袭击虽较美以对伊朗行动开始时有所减少，但加沙仍几乎每日发生暴力事件，且各方互相指责对方破坏停火安排。",
+    "url": "https://www.reuters.com/world/middle-east/israeli-strike-kills-two-palestinians-car-gaza-medics-say-2026-03-08/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-08T23:37:00+08:00",
+    "importance": "中东冲突升级同时外溢至加沙与黎以方向，会抬升能源与航运风险溢价，影响避险资产、油价与通胀预期，也增加政策不确定性。",
+    "region": "INTL",
+    "tags": [
+      "Middle East",
+      "Geopolitics",
+      "Energy"
+    ],
+    "context": "市场当前对“地区冲突→能源供给/航运受扰→通胀回升→央行路径再定价”链条高度敏感。局部冲突加剧也会影响跨境资金风险偏好。",
+    "id": "79ee1ce8d1ec"
+  },
+  {
+    "title": "Zelenskiy says Ukraine has unique drone experience, discusses joint production with Dutch PM",
+    "summary": "Reuters报道，乌克兰总统泽连斯基表示乌克兰在无人机作战与应用方面拥有独特经验，并与荷兰首相讨论联合生产事宜。该表态凸显欧洲在防务产业链与产能扩张上的加速趋势，尤其是在无人机、反无人机与弹药等高消耗领域，可能带来跨国合作与订单机会。",
+    "url": "https://www.reuters.com/world/europe/zelenskiy-says-ukraine-has-unique-drone-experience-discusses-joint-production-2026-03-08/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-08T23:00:00+08:00",
+    "importance": "欧洲防务开支与军工产能投资可能持续，对产业链（电子、材料、航空航天）与财政路径有影响，也会影响部分国家的债务与通胀结构。",
+    "region": "INTL",
+    "tags": [
+      "Ukraine",
+      "Defense",
+      "Europe"
+    ],
+    "context": "俄乌长期化促使欧洲从“库存援助”转向“产能建设”，对军工资本开支、出口管制与技术合作格局产生持续影响。",
+    "id": "ac648ef90e5d"
+  },
+  {
     "title": "Colombians vote in legislative contest, presidential primaries",
     "url": "https://www.reuters.com/world/americas/colombians-vote-legislative-contest-presidential-primaries-2026-03-08/",
     "source": "Reuters",
