@@ -154,7 +154,7 @@
     toc,
     {
       document: doc = document,
-      storage = globalThis.localStorage,
+      storage = (globalThis.window && globalThis.window.localStorage) || globalThis.localStorage,
       storageKey = 'xdlkc:toc:collapsed'
     } = {}
   ) {
@@ -270,10 +270,31 @@
   function initTocScrollSpy({
     tocSelector = '.toc-nav',
     contentSelector = '.article-content',
-    headingSelector = 'h2, h3, h4'
+    headingSelector = 'h2, h3, h4',
+    storage = globalThis.localStorage,
+    hiddenStorageKey = 'xdlkc:toc:hidden'
   } = {}) {
     const toc = document.querySelector(tocSelector);
     if (!toc) return;
+
+    const safeHiddenKey = String(hiddenStorageKey || 'xdlkc:toc:hidden');
+
+    const readPersistedHidden = () => {
+      try {
+        return String(storage?.getItem?.(safeHiddenKey) || '') === '1';
+      } catch {
+        return false;
+      }
+    };
+
+    const writePersistedHidden = (hidden) => {
+      try {
+        if (!storage?.setItem) return;
+        storage.setItem(safeHiddenKey, hidden ? '1' : '0');
+      } catch {
+        // ignore
+      }
+    };
 
     // Keyboard shortcut: press `t` to toggle the TOC visibility.
     // Idempotent: avoid binding multiple times if init runs again.
@@ -310,13 +331,19 @@
           if (!desktopToc) return;
 
           event.preventDefault();
+          let nowHidden = false;
           if (desktopToc.hasAttribute('hidden')) {
             desktopToc.removeAttribute('hidden');
             desktopToc.removeAttribute('aria-hidden');
+            nowHidden = false;
           } else {
             desktopToc.setAttribute('hidden', 'hidden');
             desktopToc.setAttribute('aria-hidden', 'true');
+            nowHidden = true;
           }
+
+          // Persist desktop TOC visibility preference.
+          writePersistedHidden(nowHidden);
         });
       }
     } catch {
@@ -350,6 +377,16 @@
       toc.removeAttribute('aria-hidden');
     } catch {
       // ignore
+    }
+
+    // Apply persisted desktop visibility preference (when article is long enough to show TOC).
+    if (!isMobileToc && readPersistedHidden()) {
+      try {
+        toc.setAttribute('hidden', 'hidden');
+        toc.setAttribute('aria-hidden', 'true');
+      } catch {
+        // ignore
+      }
     }
 
     // Ensure heading ids exist so TOC anchors have targets.
