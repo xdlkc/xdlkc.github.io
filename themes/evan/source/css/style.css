@@ -1085,6 +1085,12 @@ html[data-theme="dark"] .related-posts-keyword {
   margin-top: 0.75rem;
 }
 
+.site-search-count {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 0.65rem;
+}
+
 .site-search-list {
   list-style: none;
   padding: 0;

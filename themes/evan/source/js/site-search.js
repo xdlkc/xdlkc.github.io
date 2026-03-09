@@ -424,7 +424,12 @@
       tryTopTags: langMode === 'zh' ? '也可以试试热门标签：' : 'You can also try popular tags:',
       noResult: langMode === 'zh' ? '无结果' : 'No results',
       retryHint: langMode === 'zh' ? '试试缩短关键词或换个说法' : 'Try shorter keywords or another phrase',
-      browseArchives: langMode === 'zh' ? '去 <a href="/archives/">归档</a> 按时间浏览' : 'Browse by time in <a href="/archives/">Archives</a>'
+      browseArchives: langMode === 'zh' ? '去 <a href="/archives/">归档</a> 按时间浏览' : 'Browse by time in <a href="/archives/">Archives</a>',
+      foundCount: (n) => {
+        const count = Math.max(0, Number(n) || 0);
+        if (langMode === 'zh') return `找到 ${count} 篇`;
+        return `Found ${count} ${count === 1 ? 'result' : 'results'}`;
+      }
     };
 
     container.innerHTML = '';
@@ -513,6 +518,12 @@
       `.trim();
       return;
     }
+
+    const count = root.createElement('div');
+    count.className = 'site-search-count';
+    count.setAttribute('data-site-search-count', '');
+    count.textContent = i18n.foundCount(results.length);
+    container.appendChild(count);
 
     const list = root.createElement('ul');
     list.className = 'site-search-list';
