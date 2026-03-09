@@ -31,6 +31,27 @@ function joinUrl(base, pathname) {
   return `${b}/${p}`;
 }
 
+function pickPrimaryCategory(page = {}) {
+  const raw = page && page.categories;
+  const list = Array.isArray(raw)
+    ? raw
+    : Array.isArray(raw && raw.data)
+      ? raw.data
+      : [];
+
+  const first = list && list.length ? list[0] : null;
+  if (!first) return null;
+
+  const name = cleanText(first.name);
+  if (!name) return null;
+
+  const path = String(first.path || '').trim();
+  return {
+    name,
+    path: path || null
+  };
+}
+
 function buildBreadcrumbStructuredData({
   page = {},
   site = {},
@@ -63,12 +84,34 @@ function buildBreadcrumbStructuredData({
       item: archivesUrl
     });
 
-    items.push({
-      '@type': 'ListItem',
-      position: 3,
-      name: cleanText(page.title) || 'Post',
-      item: canonical
-    });
+    const category = pickPrimaryCategory(page);
+    if (category) {
+      const categoryPath = category.path
+        ? (category.path.startsWith('/') ? category.path : `${root}${category.path}`)
+        : `${root}categories/${encodeURIComponent(category.name)}/`;
+      const categoryUrl = base ? joinUrl(base, categoryPath) : categoryPath;
+
+      items.push({
+        '@type': 'ListItem',
+        position: 3,
+        name: category.name,
+        item: categoryUrl
+      });
+
+      items.push({
+        '@type': 'ListItem',
+        position: 4,
+        name: cleanText(page.title) || 'Post',
+        item: canonical
+      });
+    } else {
+      items.push({
+        '@type': 'ListItem',
+        position: 3,
+        name: cleanText(page.title) || 'Post',
+        item: canonical
+      });
+    }
   } else {
     items.push({
       '@type': 'ListItem',

@@ -1,6 +1,6 @@
-/* Visible breadcrumb navigation (Home → Archives → current post).
+/* Visible breadcrumb navigation (Home → Archives → (Category) → current post).
  *
- * Note: JSON-LD BreadcrumbList is already handled by theme helpers in layout.ejs.
+ * Note: JSON-LD BreadcrumbList is handled by Hexo helpers in layout.ejs.
  * This module only renders the **UI breadcrumb** on post pages.
  *
  * Exposes window.Breadcrumb in browser; exports for Node tests.
@@ -16,14 +16,26 @@
     return document?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
   }
 
-  function buildBreadcrumbItems({ title } = {}) {
+  function buildBreadcrumbItems({ title, categoryName, categoryUrl } = {}) {
     const mode = lang(globalThis.document);
-    // Prefer root-relative URLs so the site works consistently across origin/dev builds.
-    return [
+
+    const items = [
       { name: mode === 'zh' ? '首页' : 'Home', url: '/' },
-      { name: mode === 'zh' ? '归档' : 'Archives', url: '/archives/' },
-      { name: String(title || '').trim() || (mode === 'zh' ? '当前文章' : 'Current Post'), url: null }
+      { name: mode === 'zh' ? '归档' : 'Archives', url: '/archives/' }
     ];
+
+    const catName = String(categoryName || '').trim();
+    const catUrl = String(categoryUrl || '').trim();
+    if (catName && catUrl) {
+      items.push({ name: catName, url: catUrl });
+    }
+
+    items.push({
+      name: String(title || '').trim() || (mode === 'zh' ? '当前文章' : 'Current Post'),
+      url: null
+    });
+
+    return items;
   }
 
   function clearElement(el) {
@@ -74,7 +86,7 @@
     container.appendChild(list);
   }
 
-  function initBreadcrumb({ document = globalThis.document, location = globalThis.location } = {}) {
+  function initBreadcrumb({ document = globalThis.document } = {}) {
     if (!document?.querySelector) return;
 
     const container = document.querySelector('[data-breadcrumb]');
@@ -88,7 +100,10 @@
       || document.title
       || '当前文章';
 
-    const items = buildBreadcrumbItems({ title });
+    const categoryName = container.getAttribute('data-breadcrumb-category') || '';
+    const categoryUrl = container.getAttribute('data-breadcrumb-category-url') || '';
+
+    const items = buildBreadcrumbItems({ title, categoryName, categoryUrl });
 
     renderBreadcrumb({ document, container, items });
   }

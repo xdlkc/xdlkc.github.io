@@ -2,6 +2,15 @@
 <% const relatedPosts = related_posts_detailed(page, site, { limit: 6, sharedTagsLimit: 3 }); %>
 <% const comments = config.comments || {}; %>
 <% const utterances = comments.utterances || {}; %>
+<% const primaryCategory = (page.categories && page.categories.data && page.categories.data.length)
+  ? page.categories.data[0]
+  : (Array.isArray(page.categories) && page.categories.length ? page.categories[0] : null);
+%>
+<% const primaryCategoryName = primaryCategory && primaryCategory.name ? String(primaryCategory.name) : ''; %>
+<% const primaryCategoryUrl = primaryCategory
+  ? (primaryCategory.path ? url_for(primaryCategory.path) : url_for('/categories/' + primaryCategoryName + '/'))
+  : '';
+%>
 <article class="article-shell container">
   <div class="reading-progress" data-reading-minutes="<%= reading_time(page.content) %>" role="progressbar" tabindex="0" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <div class="reading-progress-bar"></div>
@@ -23,7 +32,13 @@
 
   <header class="article-hero">
     <p class="tag">LATEST WRITING</p>
-    <nav data-breadcrumb data-breadcrumb-title="<%- page.title %>"></nav>
+    <nav data-breadcrumb
+      data-breadcrumb-title="<%- page.title %>"
+      <% if (primaryCategoryName && primaryCategoryUrl) { %>
+        data-breadcrumb-category="<%- primaryCategoryName %>"
+        data-breadcrumb-category-url="<%- primaryCategoryUrl %>"
+      <% } %>
+    ></nav>
     <h1><%= page.title %></h1>
     <p class="article-meta"><span data-i18n-key="post.published">Published</span> <%= date(page.date, 'YYYY-MM-DD') %><%= updated_label() %> · <span data-i18n-key="post.reading">Reading</span> <%= reading_time(page.content) %> <span data-i18n-key="post.min">min</span> · <span data-i18n-key="post.words">Words</span> <%= post_word_count(page.content) %></p>
     <button class="article-link-copy" type="button" data-article-link-copy data-i18n-key="post.copyLink" data-i18n-aria-label-key="post.copyLink" aria-label="Copy article link">Copy Link</button>
