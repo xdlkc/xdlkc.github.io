@@ -1,6 +1,6 @@
 /* Lightweight site search modal.
  *
- * Data source: /db.json (generated/checked-in)
+ * Data source: /search.json (generated) with /db.json fallback
  * Searches: title + tags
  * Highlights: <mark>
  *
@@ -14,7 +14,7 @@
     root.SiteSearch?.initSiteSearch?.();
   }
 })(typeof self !== 'undefined' ? self : this, function() {
-  const DB_URL = '/db.json';
+  const DB_URLS = ['/search.json', '/db.json'];
 
   function escapeHtml(input) {
     return String(input || '')
@@ -555,9 +555,19 @@
   }
 
   async function fetchDbJson() {
-    const res = await fetch(DB_URL, { credentials: 'same-origin' });
-    if (!res.ok) throw new Error(`db fetch failed: ${res.status}`);
-    return await res.json();
+    let lastStatus = null;
+
+    for (const url of DB_URLS) {
+      try {
+        const res = await fetch(url, { credentials: 'same-origin' });
+        lastStatus = res.status;
+        if (res.ok) return await res.json();
+      } catch {
+        // try next source
+      }
+    }
+
+    throw new Error(`db fetch failed: ${lastStatus || 'network'}`);
   }
 
   function extractPostsFromDb(db) {
