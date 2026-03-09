@@ -590,30 +590,30 @@ h2 {
 .article-content pre {
   position: relative;
   max-width: 100%;
-  background: #0f172a;
-  color: #e2e8f0;
-  padding: 2.6rem 1.25rem 1.1rem;
+  background: #0b1020;
+  color: #f1f5f9;
+  padding: 2.2rem 1.15rem 1rem;
   border-radius: 16px;
   border: 1px solid rgba(148, 163, 184, 0.22);
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.28);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.25);
   overflow: auto;
-  line-height: 1.7;
-  font-size: 0.95rem;
+  line-height: 1.75;
+  font-size: 0.98rem;
 }
 
 .article-content figure.highlight {
   position: relative;
   max-width: 100%;
-  background: #0f172a;
-  color: #e2e8f0;
-  padding: 2.6rem 1.25rem 1.1rem;
+  background: #0b1020;
+  color: #f1f5f9;
+  padding: 2.2rem 1.15rem 1rem;
   border-radius: 16px;
   border: 1px solid rgba(148, 163, 184, 0.22);
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.28);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.25);
   overflow: auto;
   margin: 1.8rem 0;
-  line-height: 1.7;
-  font-size: 0.95rem;
+  line-height: 1.75;
+  font-size: 0.98rem;
 }
 
 .article-content figure.highlight table {
@@ -630,6 +630,17 @@ h2 {
   display: block;
 }
 
+.article-content pre::before,
+.article-content figure.highlight::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2.05rem;
+  height: 1px;
+  background: rgba(148, 163, 184, 0.18);
+}
+
 .article-content pre::selection,
 .article-content figure.highlight ::selection {
   background: rgba(56, 189, 248, 0.28);
@@ -643,44 +654,44 @@ h2 {
 
 .article-content pre::-webkit-scrollbar-thumb,
 .article-content figure.highlight::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.35);
+  background: rgba(148, 163, 184, 0.45);
   border-radius: 999px;
 }
 
 .article-content pre::-webkit-scrollbar-track,
 .article-content figure.highlight::-webkit-scrollbar-track {
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(2, 6, 23, 0.5);
   border-radius: 999px;
 }
 
 .code-copy-button {
   position: absolute;
-  top: 0.6rem;
-  right: 0.6rem;
+  top: 0.5rem;
+  right: 0.5rem;
   border: 1px solid rgba(148, 163, 184, 0.35);
-  background: rgba(15, 23, 42, 0.8);
-  color: #e2e8f0;
+  background: rgba(2, 6, 23, 0.75);
+  color: #f1f5f9;
   border-radius: 999px;
-  padding: 0.25rem 0.65rem;
+  padding: 0.22rem 0.6rem;
   font-size: 0.8rem;
   cursor: pointer;
 }
 
 .code-collapse-button {
   position: absolute;
-  top: 0.6rem;
-  left: 0.6rem;
+  top: 0.5rem;
+  left: 0.5rem;
   border: 1px solid rgba(148, 163, 184, 0.35);
-  background: rgba(15, 23, 42, 0.8);
-  color: #e2e8f0;
+  background: rgba(2, 6, 23, 0.75);
+  color: #f1f5f9;
   border-radius: 999px;
-  padding: 0.25rem 0.65rem;
+  padding: 0.22rem 0.6rem;
   font-size: 0.8rem;
   cursor: pointer;
 }
 
 .code-collapse-button:hover {
-  background: rgba(30, 41, 59, 0.95);
+  background: rgba(15, 23, 42, 0.95);
 }
 
 .article-content pre.is-collapsed,
@@ -690,7 +701,7 @@ h2 {
 }
 
 .code-copy-button:hover {
-  background: rgba(30, 41, 59, 0.95);
+  background: rgba(15, 23, 42, 0.95);
 }
 
 .article-content pre,
@@ -700,7 +711,7 @@ h2 {
 
 .article-content pre.is-copied,
 .article-content figure.highlight.is-copied {
-  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.55), 0 14px 40px rgba(15, 23, 42, 0.35);
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.5), 0 12px 32px rgba(15, 23, 42, 0.28);
 }
 
 .code-copy-toast {
