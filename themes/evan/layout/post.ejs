@@ -88,7 +88,10 @@
 
     <% if (postToc && postToc.trim()) { %>
       <aside class="toc-card">
-        <p class="toc-title" data-i18n-key="post.outline">Outline</p>
+        <div class="toc-header">
+          <p class="toc-title" data-i18n-key="post.outline">Outline</p>
+          <button class="toc-visibility-toggle" type="button" data-toc-visibility-toggle aria-label="隐藏目录" aria-pressed="false">Hide</button>
+        </div>
         <%- postToc %>
       </aside>
     <% } %>

@@ -296,6 +296,46 @@
       }
     };
 
+    const findDesktopToggleButton = () => {
+      try {
+        const card = toc.closest?.('.toc-card');
+        return card?.querySelector?.('[data-toc-visibility-toggle]') || null;
+      } catch {
+        return null;
+      }
+    };
+
+    const syncDesktopToggleButtonState = (btn, hidden) => {
+      if (!btn?.setAttribute) return;
+      const isHidden = !!hidden;
+      btn.setAttribute('aria-pressed', isHidden ? 'true' : 'false');
+
+      // Best-effort i18n: keep labels simple.
+      try {
+        const label = isHidden ? '显示目录' : '隐藏目录';
+        btn.setAttribute('aria-label', label);
+      } catch {
+        // ignore
+      }
+    };
+
+    const applyDesktopTocHiddenState = (desktopToc, hidden) => {
+      if (!desktopToc) return;
+
+      if (hidden) {
+        desktopToc.setAttribute('hidden', 'hidden');
+        desktopToc.setAttribute('aria-hidden', 'true');
+      } else {
+        desktopToc.removeAttribute('hidden');
+        desktopToc.removeAttribute('aria-hidden');
+      }
+
+      writePersistedHidden(hidden);
+
+      const btn = findDesktopToggleButton();
+      syncDesktopToggleButtonState(btn, hidden);
+    };
+
     // Keyboard shortcut: press `t` to toggle the TOC visibility.
     // Idempotent: avoid binding multiple times if init runs again.
     try {
@@ -331,19 +371,10 @@
           if (!desktopToc) return;
 
           event.preventDefault();
-          let nowHidden = false;
-          if (desktopToc.hasAttribute('hidden')) {
-            desktopToc.removeAttribute('hidden');
-            desktopToc.removeAttribute('aria-hidden');
-            nowHidden = false;
-          } else {
-            desktopToc.setAttribute('hidden', 'hidden');
-            desktopToc.setAttribute('aria-hidden', 'true');
-            nowHidden = true;
-          }
+          const nowHidden = !desktopToc.hasAttribute('hidden');
 
-          // Persist desktop TOC visibility preference.
-          writePersistedHidden(nowHidden);
+          // Persist + sync button.
+          applyDesktopTocHiddenState(desktopToc, nowHidden);
         });
       }
     } catch {
@@ -386,6 +417,26 @@
         toc.setAttribute('aria-hidden', 'true');
       } catch {
         // ignore
+      }
+    }
+
+    // Visible TOC toggle button (desktop only).
+    if (!isMobileToc) {
+      const btn = findDesktopToggleButton();
+      if (btn && btn.getAttribute?.('data-toc-visibility-bound') !== '1') {
+        btn.setAttribute?.('data-toc-visibility-bound', '1');
+
+        // Initial state sync.
+        syncDesktopToggleButtonState(btn, toc.hasAttribute('hidden'));
+
+        btn.addEventListener('click', (event) => {
+          event.preventDefault();
+          const nowHidden = !toc.hasAttribute('hidden');
+          applyDesktopTocHiddenState(toc, nowHidden);
+        });
+      } else {
+        // Best-effort: keep state in sync even if already bound.
+        syncDesktopToggleButtonState(btn, toc.hasAttribute('hidden'));
       }
     }
 
