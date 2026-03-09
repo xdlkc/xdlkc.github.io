@@ -626,6 +626,34 @@ h2 {
   margin: 0;
 }
 
+html[data-theme="dark"] .article-content table {
+  background: transparent;
+}
+
+html[data-theme="dark"] .article-content th,
+html[data-theme="dark"] .article-content td {
+  background: #0f1722;
+  color: var(--text);
+  border-color: #253042;
+}
+
+html[data-theme="dark"] .article-content th {
+  background: #121c28;
+}
+
+html[data-theme="dark"] .article-content pre,
+html[data-theme="dark"] .article-content figure.highlight pre {
+  background: #0f1722;
+  color: #e6edf3;
+  border-color: #253042;
+}
+
+html[data-theme="dark"] .article-content :not(pre) > code {
+  background: #0f1722;
+  color: #e6edf3;
+  border-color: #253042;
+}
+
 .article-content figure.highlight .gutter {
   display: none;
 }
@@ -762,6 +790,25 @@ h2 {
   padding: 1rem;
   margin: 1.5rem 0;
   overflow-x: auto;
+}
+
+html[data-theme="dark"] .article-content blockquote {
+  background: #0f1722;
+  color: #cbd5e1;
+}
+
+html[data-theme="dark"] .article-content th {
+  background: #121c28;
+}
+
+html[data-theme="dark"] .mermaid {
+  background: #0f1722;
+  border-color: #253042;
+}
+
+html[data-theme="dark"] .toc-mobile {
+  background: #0f1722;
+  border-color: #253042;
 }
 
 .related-posts {
