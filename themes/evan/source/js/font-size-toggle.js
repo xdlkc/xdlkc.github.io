@@ -75,6 +75,8 @@ function initFontSizeToggle({
 
   const toggle = document.querySelector('[data-font-size-toggle]');
   if (!toggle) return;
+  if (toggle.dataset?.fontSizeBound === '1') return;
+  if (toggle.dataset) toggle.dataset.fontSizeBound = '1';
 
   toggle.addEventListener('click', () => {
     const currentMode = readSavedMode(storage)

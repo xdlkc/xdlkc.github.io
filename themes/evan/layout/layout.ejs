@@ -66,6 +66,7 @@
   <script src="<%- url_for('/js/site-search.js') %>" defer></script>
   <script>
     window.addEventListener('DOMContentLoaded', function() {
+      window.SiteSearch && window.SiteSearch.initSiteSearch && window.SiteSearch.initSiteSearch();
       window.BackToTop && window.BackToTop.initBackToTop && window.BackToTop.initBackToTop();
       window.CodeCopy && window.CodeCopy.initCodeCopy && window.CodeCopy.initCodeCopy();
       window.CodeCollapse && window.CodeCollapse.initCodeCollapse && window.CodeCollapse.initCodeCollapse();
@@ -75,4 +76,3 @@
   </script>
 </body>
 </html>
-

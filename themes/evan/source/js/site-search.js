@@ -592,6 +592,8 @@
 
   function initSiteSearch({ root = document, location = globalThis.location } = {}) {
     if (!root?.querySelectorAll) return;
+    if (root.__siteSearchBound) return;
+    root.__siteSearchBound = true;
 
     // In Node test environment, `window` may be undefined. Prefer the document's defaultView.
     const win = root.defaultView || globalThis;
