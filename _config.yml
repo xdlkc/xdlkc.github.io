@@ -49,6 +49,18 @@ index_generator:
 
 theme: evan
 
+comments:
+  enable: true
+  provider: utterances
+  utterances:
+    repo: xdlkc/xdlkc.github.io
+    issue_term: pathname
+    label: comment
+    loading: lazy
+    theme:
+      light: github-light
+      dark: github-dark
+
 news:
   home_limit: 5
 
@@ -60,4 +72,3 @@ feed:
   content: true
 
 deploy: {}
-

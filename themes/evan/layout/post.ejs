@@ -1,5 +1,7 @@
 <% const postToc = toc(page.content, { class: 'toc-nav', max_depth: 3, list_number: false }); %>
 <% const relatedPosts = related_posts_detailed(page, site, { limit: 6, sharedTagsLimit: 3 }); %>
+<% const comments = config.comments || {}; %>
+<% const utterances = comments.utterances || {}; %>
 <article class="article-shell container">
   <div class="reading-progress" role="progressbar" tabindex="0" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <div class="reading-progress-bar"></div>
@@ -41,6 +43,14 @@
       <% } %>
       <article class="article-content"><%- page.content %></article>
 
+      <% if (comments.enable && comments.provider === 'utterances' && utterances.repo) { %>
+        <section class="post-comments" aria-label="评论区">
+          <h2 class="post-comments-title">评论</h2>
+          <div class="post-comments-box" data-comments-root></div>
+          <noscript>请启用 JavaScript 后查看评论。</noscript>
+        </section>
+      <% } %>
+
       <% if (relatedPosts && relatedPosts.length) { %>
         <section class="related-posts" aria-label="相关阅读">
           <h2 class="related-posts-title">相关阅读</h2>
@@ -76,6 +86,60 @@
     <% } %>
   </div>
 </article>
+
+<% if (comments.enable && comments.provider === 'utterances' && utterances.repo) { %>
+<script>
+  (function initPostComments() {
+    const mount = document.querySelector('[data-comments-root]');
+    if (!mount) return;
+
+    const commentsConfig = {
+      repo: '<%- utterances.repo %>',
+      issueTerm: '<%- utterances.issue_term || "pathname" %>',
+      label: '<%- utterances.label || "comment" %>',
+      loading: '<%- utterances.loading || "lazy" %>',
+      themeLight: '<%- ((utterances.theme || {}).light) || "github-light" %>',
+      themeDark: '<%- ((utterances.theme || {}).dark) || "github-dark" %>'
+    };
+
+    function resolveTheme() {
+      return document.documentElement.dataset.theme === 'dark'
+        ? commentsConfig.themeDark
+        : commentsConfig.themeLight;
+    }
+
+    function mountUtterances() {
+      const script = document.createElement('script');
+      script.src = 'https://utteranc.es/client.js';
+      script.async = true;
+      script.crossOrigin = 'anonymous';
+      script.setAttribute('repo', commentsConfig.repo);
+      script.setAttribute('issue-term', commentsConfig.issueTerm);
+      script.setAttribute('label', commentsConfig.label);
+      script.setAttribute('theme', resolveTheme());
+      script.setAttribute('loading', commentsConfig.loading);
+      mount.appendChild(script);
+    }
+
+    function syncUtterancesTheme() {
+      const iframe = mount.querySelector('iframe.utterances-frame');
+      if (!iframe || !iframe.contentWindow) return;
+      iframe.contentWindow.postMessage(
+        { type: 'set-theme', theme: resolveTheme() },
+        'https://utteranc.es'
+      );
+    }
+
+    mountUtterances();
+
+    const observer = new MutationObserver(syncUtterancesTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
+  })();
+</script>
+<% } %>
 
 <script src="<%- url_for('/js/toc-scrollspy.js') %>" defer></script>
 <script src="<%- url_for('/js/reading-progress.js') %>" defer></script>
