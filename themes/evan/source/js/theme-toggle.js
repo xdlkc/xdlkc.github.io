@@ -30,10 +30,19 @@ function toggleThemeMode(currentMode) {
   return 'system';
 }
 
-function modeLabel(mode) {
-  if (mode === 'dark') return '深色';
-  if (mode === 'light') return '浅色';
-  return '跟随系统';
+function resolveLang(document) {
+  return document?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
+}
+
+function modeLabel(mode, { lang = 'en' } = {}) {
+  if (lang === 'zh') {
+    if (mode === 'dark') return '深色';
+    if (mode === 'light') return '浅色';
+    return '跟随系统';
+  }
+  if (mode === 'dark') return 'Dark';
+  if (mode === 'light') return 'Light';
+  return 'System';
 }
 
 function applyThemeToDocument({ document, theme, mode }) {
@@ -46,17 +55,18 @@ function applyThemeToDocument({ document, theme, mode }) {
 
   const toggle = document.querySelector?.('[data-theme-toggle]');
   if (toggle) {
+    const lang = resolveLang(document);
     if (toggle.setAttribute) {
       toggle.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
-      if (!toggle.getAttribute?.('aria-label')) {
-        toggle.setAttribute('aria-label', '切换主题（跟随系统/浅色/深色）');
-      }
+      toggle.setAttribute('aria-label', lang === 'zh' ? '切换主题' : 'Theme mode');
       toggle.setAttribute('type', 'button');
     }
 
     // Visible label (user-perceivable).
     try {
-      toggle.textContent = `主题：${modeLabel(m)}`;
+      toggle.textContent = lang === 'zh'
+        ? `主题：${modeLabel(m, { lang })}`
+        : `Theme: ${modeLabel(m, { lang })}`;
     } catch {
       // ignore
     }
@@ -104,6 +114,8 @@ function initThemeToggle({
 
   const toggle = document.querySelector('[data-theme-toggle]');
   if (!toggle) return;
+  if (toggle.dataset?.themeBound === '1') return;
+  if (toggle.dataset) toggle.dataset.themeBound = '1';
 
   let mql = null;
   let onSystemChange = null;
@@ -157,6 +169,17 @@ function initThemeToggle({
         ? (getPrefersDark(matchMedia) ? 'dark' : 'light')
         : mode;
 
+      applyThemeToDocument({ document, theme, mode });
+    });
+  }
+
+  if (window?.addEventListener) {
+    window.addEventListener('xdlkc:lang-change', () => {
+      const mode = normalizeThemeMode(readSavedMode(storage))
+        || normalizeThemeMode(document.documentElement.dataset.themeMode)
+        || 'system';
+      const theme = normalizeTheme(document.documentElement.dataset.theme)
+        || resolveInitialTheme({ savedMode: mode, prefersDark: getPrefersDark(matchMedia) });
       applyThemeToDocument({ document, theme, mode });
     });
   }

@@ -157,7 +157,8 @@ a {
 }
 
 .theme-toggle,
-.font-size-toggle {
+.font-size-toggle,
+.lang-toggle {
   border: 1px solid var(--border);
   background: transparent;
   color: var(--text);
@@ -168,7 +169,8 @@ a {
 }
 
 .theme-toggle:hover,
-.font-size-toggle:hover {
+.font-size-toggle:hover,
+.lang-toggle:hover {
   border-color: var(--accent);
 }
 

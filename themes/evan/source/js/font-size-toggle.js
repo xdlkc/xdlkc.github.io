@@ -19,9 +19,13 @@ function toggleFontSizeMode(currentMode) {
 }
 
 function modeLabel(mode) {
-  if (mode === 'lg') return '大';
-  if (mode === 'sm') return '小';
-  return '标准';
+  if (mode === 'lg') return { en: 'Large', zh: '大' };
+  if (mode === 'sm') return { en: 'Small', zh: '小' };
+  return { en: 'Normal', zh: '标准' };
+}
+
+function resolveLang(document) {
+  return document?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
 }
 
 function readSavedMode(storage) {
@@ -48,15 +52,17 @@ function applyFontSizeToDocument({ document, mode }) {
 
   const toggle = document.querySelector?.('[data-font-size-toggle]');
   if (toggle) {
+    const lang = resolveLang(document);
     if (toggle.setAttribute) {
-      if (!toggle.getAttribute?.('aria-label')) {
-        toggle.setAttribute('aria-label', '调整文章字号（标准/大/小）');
-      }
+      toggle.setAttribute('aria-label', lang === 'zh' ? '调整文章字号' : 'Adjust font size');
       toggle.setAttribute('type', 'button');
     }
 
     try {
-      toggle.textContent = `字号：${modeLabel(m)}`;
+      const label = modeLabel(m);
+      toggle.textContent = lang === 'zh'
+        ? `字号：${label.zh}`
+        : `Font: ${label.en}`;
     } catch {
       // ignore
     }
@@ -66,6 +72,7 @@ function applyFontSizeToDocument({ document, mode }) {
 function initFontSizeToggle({
   document = globalThis.document,
   storage = globalThis.localStorage,
+  window = globalThis.window,
 } = {}) {
   if (!document?.querySelector) return;
 
@@ -86,6 +93,15 @@ function initFontSizeToggle({
     applyFontSizeToDocument({ document, mode: nextMode });
     saveMode(storage, nextMode);
   });
+
+  if (window?.addEventListener) {
+    window.addEventListener('xdlkc:lang-change', () => {
+      const mode = readSavedMode(storage)
+        || normalizeMode(document.documentElement.dataset.fontSize)
+        || 'normal';
+      applyFontSizeToDocument({ document, mode });
+    });
+  }
 }
 
 // Auto-init in browsers.

@@ -46,7 +46,7 @@ test('applyFontSizeToDocument sets dataset.fontSize and button label', () => {
   applyFontSizeToDocument({ document: documentStub, mode: 'lg' });
 
   assert.equal(documentStub.documentElement.dataset.fontSize, 'lg');
-  assert.match(buttonStub.textContent, /字号：/);
+  assert.match(buttonStub.textContent, /(字号：|Font: )/);
 });
 
 test('initFontSizeToggle wires click handler and persists to storage', () => {

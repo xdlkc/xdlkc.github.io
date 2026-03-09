@@ -68,7 +68,7 @@ test('applyThemeToDocument: sets dataset theme + themeMode, updates aria-pressed
   assert.equal(documentStub.documentElement.dataset.theme, 'dark');
   assert.equal(documentStub.documentElement.dataset.themeMode, 'system');
   assert.equal(buttonStub._attrs['aria-pressed'], 'true');
-  assert.match(buttonStub.textContent, /主题：/);
+  assert.match(buttonStub.textContent, /(主题：|Theme: )/);
 });
 
 test('STORAGE_KEY: remains stable', () => {

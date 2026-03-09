@@ -10,13 +10,14 @@
   <nav class="article-nav">
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
     <div class="nav-links">
-      <a href="<%- url_for('/archives/') %>">归档</a>
-      <a href="<%- url_for('/news/') %>">新闻</a>
-      <a href="<%- url_for('/about/') %>">关于</a>
+      <a href="<%- url_for('/archives/') %>" data-i18n-key="nav.archives">Archives</a>
+      <a href="<%- url_for('/news/') %>" data-i18n-key="nav.news">News</a>
+      <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about">About</a>
       <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
-      <button class="site-search-trigger" data-site-search-trigger aria-label="站内搜索">搜索</button>
-      <button class="font-size-toggle" data-font-size-toggle aria-label="调整文章字号">字号</button>
-      <button class="theme-toggle" data-theme-toggle aria-label="切换深色/浅色模式" aria-pressed="false">主题</button>
+      <button class="site-search-trigger" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
+      <button class="font-size-toggle" data-font-size-toggle data-i18n-key="nav.font" data-i18n-aria-label-key="nav.font" aria-label="Font size">Font</button>
+      <button class="theme-toggle" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
+      <button class="lang-toggle" data-lang-toggle data-i18n-key="nav.lang" aria-label="切换为中文">中文</button>
     </div>
   </nav>
 
@@ -24,8 +25,8 @@
     <p class="tag">LATEST WRITING</p>
     <nav data-breadcrumb data-breadcrumb-title="<%- page.title %>"></nav>
     <h1><%= page.title %></h1>
-    <p class="article-meta">发布于 <%= date(page.date, 'YYYY-MM-DD') %><%= updated_label() %> · 预计阅读 <%= reading_time(page.content) %> 分钟 · 字数 <%= post_word_count(page.content) %></p>
-    <button class="article-link-copy" type="button" data-article-link-copy aria-label="复制文章链接">复制链接</button>
+    <p class="article-meta"><span data-i18n-key="post.published">Published</span> <%= date(page.date, 'YYYY-MM-DD') %><%= updated_label() %> · <span data-i18n-key="post.reading">Reading</span> <%= reading_time(page.content) %> <span data-i18n-key="post.min">min</span> · <span data-i18n-key="post.words">Words</span> <%= post_word_count(page.content) %></p>
+    <button class="article-link-copy" type="button" data-article-link-copy data-i18n-key="post.copyLink" data-i18n-aria-label-key="post.copyLink" aria-label="Copy article link">Copy Link</button>
     <% if (page.excerpt) { %>
       <p class="article-summary"><%= strip_html(page.excerpt) %></p>
     <% } %>
@@ -35,7 +36,7 @@
     <main id="main-content" class="article-card" tabindex="-1">
       <% if (postToc && postToc.trim()) { %>
         <details class="toc-mobile">
-          <summary>查看大纲</summary>
+          <summary data-i18n-key="post.toc">Outline</summary>
           <div class="toc-mobile-body">
             <%- postToc %>
           </div>
@@ -44,16 +45,16 @@
       <article class="article-content"><%- page.content %></article>
 
       <% if (comments.enable && comments.provider === 'utterances' && utterances.repo) { %>
-        <section class="post-comments" aria-label="评论区">
-          <h2 class="post-comments-title">评论</h2>
+        <section class="post-comments" aria-label="comments">
+          <h2 class="post-comments-title" data-i18n-key="post.comments">Comments</h2>
           <div class="post-comments-box" data-comments-root></div>
-          <noscript>请启用 JavaScript 后查看评论。</noscript>
+          <noscript data-i18n-key="post.commentsNoscript">Enable JavaScript to view comments.</noscript>
         </section>
       <% } %>
 
       <% if (relatedPosts && relatedPosts.length) { %>
-        <section class="related-posts" aria-label="相关阅读">
-          <h2 class="related-posts-title">相关阅读</h2>
+        <section class="related-posts" aria-label="related posts">
+          <h2 class="related-posts-title" data-i18n-key="post.related">Related Posts</h2>
           <ul class="related-posts-list">
             <% relatedPosts.forEach(function(row) { %>
               <% const post = row.post; %>
@@ -80,7 +81,7 @@
 
     <% if (postToc && postToc.trim()) { %>
       <aside class="toc-card">
-        <p class="toc-title">大纲</p>
+        <p class="toc-title" data-i18n-key="post.outline">Outline</p>
         <%- postToc %>
       </aside>
     <% } %>

@@ -23,23 +23,24 @@ const normalizeTags = (region) => {
   <nav class="article-nav">
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
     <div class="nav-links">
-      <a href="<%- url_for('/archives/') %>">归档</a>
-      <a href="<%- url_for('/news/') %>">新闻</a>
+      <a href="<%- url_for('/archives/') %>" data-i18n-key="nav.archives">Archives</a>
+      <a href="<%- url_for('/news/') %>" data-i18n-key="nav.news">News</a>
       <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
-      <button class="site-search-trigger" data-site-search-trigger aria-label="站内搜索">搜索</button>
-      <button class="font-size-toggle" data-font-size-toggle aria-label="调整文章字号">字号</button>
-      <button class="theme-toggle" data-theme-toggle aria-label="切换深色/浅色模式" aria-pressed="false">主题</button>
+      <button class="site-search-trigger" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
+      <button class="font-size-toggle" data-font-size-toggle data-i18n-key="nav.font" data-i18n-aria-label-key="nav.font" aria-label="Font size">Font</button>
+      <button class="theme-toggle" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
+      <button class="lang-toggle" data-lang-toggle data-i18n-key="nav.lang" aria-label="切换为中文">中文</button>
     </div>
   </nav>
 
   <header class="article-hero">
-    <p class="tag">快讯</p>
-    <h1><%= page.title || '新闻看板' %></h1>
+    <p class="tag" data-i18n-key="news.flash">Flash</p>
+    <h1><%= page.title || 'News Board' %></h1>
   </header>
 
   <main id="main-content" class="article-card" tabindex="-1">
     <% if (!newsItems.length) { %>
-      <p>暂无新闻数据。请在 <code>source/_data/news.json</code> 中添加条目。</p>
+      <p data-i18n-key="news.empty">No news data yet. Add items to source/_data/news.json.</p>
     <% } else { %>
       <div class="article-content">
         <% newsItems.forEach((n) => { %>
@@ -59,7 +60,7 @@ const normalizeTags = (region) => {
               <p style="margin: 0.4rem 0 0 0;"><%= summaryText %></p>
             <% } %>
             <% if (contextText) { %>
-              <p style="margin: 0.35rem 0 0 0; opacity: 0.82;">背景：<%= contextText %></p>
+              <p style="margin: 0.35rem 0 0 0; opacity: 0.82;"><span data-i18n-key="news.context">Context:</span> <%= contextText %></p>
             <% } %>
             <% const tags = normalizeTags(n.region || n.tags); if (tags.length) { %>
               <p style="margin: 0.35rem 0 0 0; opacity: 0.75;">

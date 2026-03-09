@@ -12,6 +12,21 @@
     root.ArticleLinkCopy = factory();
   }
 })(typeof self !== 'undefined' ? self : this, function() {
+  function lang(document) {
+    return document?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
+  }
+
+  function t(document, key) {
+    const map = {
+      copied: { en: 'Link copied', zh: '链接已复制' },
+      copiedBtn: { en: 'Copied', zh: '已复制' },
+      copyBtn: { en: 'Copy Link', zh: '复制链接' },
+      copyFailed: { en: 'Copy failed, please copy manually', zh: '复制失败，请手动复制' }
+    };
+    const row = map[key] || map.copyBtn;
+    return lang(document) === 'zh' ? row.zh : row.en;
+  }
+
   function ensureToast({ document } = {}) {
     const existing = document.querySelector('.code-copy-toast');
     if (existing) return existing;
@@ -86,14 +101,14 @@
 
       try {
         await copyText(url, { navigator, document });
-        showToast(toast, '链接已复制', { window });
+        showToast(toast, t(document, 'copied'), { window });
         const previous = button.textContent;
-        button.textContent = '已复制';
+        button.textContent = t(document, 'copiedBtn');
         (window || globalThis).setTimeout(() => {
-          button.textContent = previous || '复制链接';
+          button.textContent = previous || t(document, 'copyBtn');
         }, 1200);
       } catch {
-        showToast(toast, '复制失败，请手动复制', { window });
+        showToast(toast, t(document, 'copyFailed'), { window });
       }
     });
   }

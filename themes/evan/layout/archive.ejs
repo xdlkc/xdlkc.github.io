@@ -12,17 +12,18 @@ const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
   <nav class="article-nav">
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
     <div class="nav-links">
-      <a href="<%- url_for('/about/') %>">关于</a>
+      <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about">About</a>
       <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
-      <button class="site-search-trigger" data-site-search-trigger aria-label="站内搜索">搜索</button>
-      <button class="font-size-toggle" data-font-size-toggle aria-label="调整文章字号">字号</button>
-      <button class="theme-toggle" data-theme-toggle aria-label="切换深色/浅色模式" aria-pressed="false">主题</button>
+      <button class="site-search-trigger" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
+      <button class="font-size-toggle" data-font-size-toggle data-i18n-key="nav.font" data-i18n-aria-label-key="nav.font" aria-label="Font size">Font</button>
+      <button class="theme-toggle" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
+      <button class="lang-toggle" data-lang-toggle data-i18n-key="nav.lang" aria-label="切换为中文">中文</button>
     </div>
   </nav>
 
   <section class="archive-card">
-    <h1>Archives</h1>
-    <p class="archive-total">目前共计 <%= posts.length %> 篇日志。</p>
+    <h1 data-i18n-key="nav.archives">Archives</h1>
+    <p class="archive-total"><span data-i18n-key="archive.totalPrefix">Total</span> <%= posts.length %> <span data-i18n-key="archive.totalSuffix">posts.</span></p>
 
     <% years.forEach((year) => { %>
       <div class="archive-year">

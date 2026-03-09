@@ -13,13 +13,14 @@ const summarize = (input, limit = 140) => {
   <nav class="nav container">
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
     <div class="nav-links">
-      <a href="<%- url_for('/archives/') %>">归档</a>
-      <a href="<%- url_for('/news/') %>">新闻</a>
-      <a href="<%- url_for('/about/') %>">关于</a>
+      <a href="<%- url_for('/archives/') %>" data-i18n-key="nav.archives">Archives</a>
+      <a href="<%- url_for('/news/') %>" data-i18n-key="nav.news">News</a>
+      <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about">About</a>
       <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
-      <button class="site-search-trigger" data-site-search-trigger aria-label="站内搜索">搜索</button>
-      <button class="font-size-toggle" data-font-size-toggle aria-label="调整文章字号">字号</button>
-      <button class="theme-toggle" data-theme-toggle aria-label="切换深色/浅色模式" aria-pressed="false">主题</button>
+      <button class="site-search-trigger" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
+      <button class="font-size-toggle" data-font-size-toggle data-i18n-key="nav.font" data-i18n-aria-label-key="nav.font" aria-label="Font size">Font</button>
+      <button class="theme-toggle" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
+      <button class="lang-toggle" data-lang-toggle data-i18n-key="nav.lang" aria-label="切换为中文">中文</button>
     </div>
   </nav>
 
@@ -36,30 +37,30 @@ const summarize = (input, limit = 140) => {
 
 <main id="main-content" tabindex="-1">
   <section id="projects" class="section container">
-    <h2>Projects</h2>
+    <h2 data-i18n-key="index.projects">Projects</h2>
     <div class="grid">
       <article class="card">
         <h3>AgentForge</h3>
         <p>An engineering-focused project for Agent applications, covering end-to-end practices from backend capability encapsulation to frontend interaction delivery.</p>
-        <a href="https://github.com/xdlkc/AgentForge" target="_blank" rel="noreferrer">View Repository</a>
+        <a href="https://github.com/xdlkc/AgentForge" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
       </article>
 
       <article class="card">
         <h3>skills-manager</h3>
         <p>A tool for managing Agent skill configurations and version evolution, improving consistency and delivery efficiency in multi-skill collaboration.</p>
-        <a href="https://github.com/xdlkc/skills-manager" target="_blank" rel="noreferrer">View Repository</a>
+        <a href="https://github.com/xdlkc/skills-manager" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
       </article>
     </div>
   </section>
 
   <section id="writing" class="section container">
-    <h2>Latest Writing</h2>
+    <h2 data-i18n-key="index.latestWriting">Latest Writing</h2>
     <div class="grid">
       <% posts.slice(0, 6).forEach((post) => { %>
         <article class="card">
           <h3><%= post.title %></h3>
           <p><%= summarize(post.excerpt || post.content) %></p>
-          <a href="<%- url_for(post.path) %>">Read Article</a>
+          <a href="<%- url_for(post.path) %>" data-i18n-key="index.readArticle">Read Article</a>
         </article>
       <% }) %>
     </div>
@@ -77,7 +78,7 @@ const summarize = (input, limit = 140) => {
   %>
   <% if (latestNews.length) { %>
     <section id="news" class="section container">
-      <h2>最新新闻</h2>
+      <h2 data-i18n-key="index.news.latest">Latest News</h2>
       <div class="grid">
         <% latestNews.forEach((n) => { %>
           <article class="card">
@@ -87,29 +88,29 @@ const summarize = (input, limit = 140) => {
           </article>
         <% }) %>
       </div>
-      <p style="margin-top: 0.75rem;"><a href="<%- url_for('/news/') %>">查看全部新闻 →</a></p>
+      <p style="margin-top: 0.75rem;"><a href="<%- url_for('/news/') %>" data-i18n-key="index.news.all">View all news -></a></p>
     </section>
   <% } %>
 
   <% if (latestPost) { %>
   <section class="section container about">
-    <h2>Current Focus</h2>
+    <h2 data-i18n-key="index.currentFocus">Current Focus</h2>
     <p><%= summarize(latestPost.excerpt || latestPost.content, 220) %></p>
   </section>
   <% } %>
 
   <section id="about" class="section container about">
-    <h2>About</h2>
+    <h2 data-i18n-key="index.about">About</h2>
     <p>
       I studied at Xidian University from 2014 to 2018 for my bachelor's degree and currently work at Alibaba Group (Beijing).
       I started as a Java backend engineer and now focus on Agent application development and full stack engineering, with an emphasis on engineering quality and delivery efficiency.
     </p>
-    <h2>Contact</h2>
+    <h2 data-i18n-key="index.contact">Contact</h2>
     <p>Email: <a href="mailto:wimness@163.com">wimness@163.com</a></p>
     <p>GitHub: <a href="https://github.com/xdlkc" target="_blank" rel="noreferrer">@xdlkc</a></p>
   </section>
 </main>
 
 <footer class="footer">
-  <p>© <%= new Date().getFullYear() %> <%= config.title %>. All rights reserved.</p>
+  <p>© <%= new Date().getFullYear() %> <%= config.title %>. <span data-i18n-key="footer.copyright">All rights reserved.</span></p>
 </footer>

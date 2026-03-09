@@ -12,12 +12,17 @@
     root.Breadcrumb = factory();
   }
 })(typeof self !== 'undefined' ? self : this, function() {
+  function lang(document) {
+    return document?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
+  }
+
   function buildBreadcrumbItems({ title } = {}) {
+    const mode = lang(globalThis.document);
     // Prefer root-relative URLs so the site works consistently across origin/dev builds.
     return [
-      { name: 'Home', url: '/' },
-      { name: 'Archives', url: '/archives/' },
-      { name: String(title || '').trim() || '当前文章', url: null }
+      { name: mode === 'zh' ? '首页' : 'Home', url: '/' },
+      { name: mode === 'zh' ? '归档' : 'Archives', url: '/archives/' },
+      { name: String(title || '').trim() || (mode === 'zh' ? '当前文章' : 'Current Post'), url: null }
     ];
   }
 
@@ -32,7 +37,7 @@
     clearElement(container);
 
     container.classList.add('breadcrumb');
-    container.setAttribute('aria-label', '面包屑导航');
+    container.setAttribute('aria-label', lang(doc) === 'zh' ? '面包屑导航' : 'Breadcrumb');
 
     const list = doc.createElement('ol');
     list.className = 'breadcrumb-list';

@@ -33,6 +33,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="<%- url_for('/css/style.css') %>" />
   <script>
+    // Apply language as early as possible.
+    // Modes: en | zh
+    (function () {
+      try {
+        var key = 'xdlkc:lang';
+        var saved = localStorage.getItem(key);
+        var mode = (saved === 'en' || saved === 'zh') ? saved : 'en';
+        document.documentElement.dataset.langMode = mode;
+        document.documentElement.lang = mode === 'zh' ? 'zh-CN' : 'en';
+      } catch (e) {
+        // ignore
+      }
+    })();
+  </script>
+  <script>
     // Apply theme as early as possible to reduce flash.
     // Modes: system | light | dark
     (function () {
@@ -55,8 +70,9 @@
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">跳转到正文</a>
+  <a class="skip-link" href="#main-content" data-i18n-key="skip.main">Skip to content</a>
   <%- body %>
+  <script src="<%- url_for('/js/lang-toggle.js') %>" defer></script>
   <script src="<%- url_for('/js/theme-toggle.js') %>" defer></script>
   <script src="<%- url_for('/js/font-size-toggle.js') %>" defer></script>
   <script src="<%- url_for('/js/back-to-top.js') %>" defer></script>
@@ -66,6 +82,7 @@
   <script src="<%- url_for('/js/site-search.js') %>" defer></script>
   <script>
     window.addEventListener('DOMContentLoaded', function() {
+      window.LangToggle && window.LangToggle.initLangToggle && window.LangToggle.initLangToggle();
       window.SiteSearch && window.SiteSearch.initSiteSearch && window.SiteSearch.initSiteSearch();
       window.BackToTop && window.BackToTop.initBackToTop && window.BackToTop.initBackToTop();
       window.CodeCopy && window.CodeCopy.initCodeCopy && window.CodeCopy.initCodeCopy();

@@ -309,19 +309,27 @@
     const existing = root.querySelector?.('[data-site-search-dialog]');
     if (existing) return existing;
 
+    const langMode = root?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
+    const i18n = {
+      dialogLabel: langMode === 'zh' ? '站内搜索' : 'Site Search',
+      placeholder: langMode === 'zh' ? '搜索标题 / 标签…' : 'Search titles / tags...',
+      close: langMode === 'zh' ? '关闭' : 'Close',
+      hintStart: langMode === 'zh' ? '输入关键词开始搜索' : 'Type to start searching',
+    };
+
     const overlay = root.createElement('div');
     overlay.className = 'site-search-overlay';
     overlay.setAttribute('data-site-search-dialog', '');
     overlay.setAttribute('aria-hidden', 'true');
 
     overlay.innerHTML = `
-      <div class="site-search-modal" role="dialog" aria-modal="true" aria-label="站内搜索">
+      <div class="site-search-modal" role="dialog" aria-modal="true" aria-label="${i18n.dialogLabel}">
         <div class="site-search-header">
-          <input class="site-search-input" data-site-search-input type="search" placeholder="搜索标题 / 标签…" autocomplete="off" />
-          <button class="site-search-close" data-site-search-close type="button" aria-label="关闭">关闭</button>
+          <input class="site-search-input" data-site-search-input type="search" placeholder="${i18n.placeholder}" autocomplete="off" />
+          <button class="site-search-close" data-site-search-close type="button" aria-label="${i18n.close}">${i18n.close}</button>
         </div>
         <div class="site-search-body" data-site-search-scroll>
-          <div class="site-search-hint">输入关键词开始搜索</div>
+          <div class="site-search-hint">${i18n.hintStart}</div>
           <div class="site-search-results" data-site-search-results></div>
         </div>
       </div>
@@ -408,6 +416,16 @@
     const dialog = root.querySelector?.('[data-site-search-dialog]');
     const container = dialog?.querySelector?.('[data-site-search-results]');
     if (!container) return;
+    const langMode = root?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
+    const i18n = {
+      hintStart: langMode === 'zh' ? '输入关键词开始搜索，或点击热门标签：' : 'Type to search, or pick a popular tag:',
+      topTags: langMode === 'zh' ? '热门标签' : 'Popular Tags',
+      trySplit: langMode === 'zh' ? '试试拆分关键词：' : 'Try splitting keywords:',
+      tryTopTags: langMode === 'zh' ? '也可以试试热门标签：' : 'You can also try popular tags:',
+      noResult: langMode === 'zh' ? '无结果' : 'No results',
+      retryHint: langMode === 'zh' ? '试试缩短关键词或换个说法' : 'Try shorter keywords or another phrase',
+      browseArchives: langMode === 'zh' ? '去 <a href="/archives/">归档</a> 按时间浏览' : 'Browse by time in <a href="/archives/">Archives</a>'
+    };
 
     container.innerHTML = '';
 
@@ -422,9 +440,9 @@
 
       if (topTags.length > 0) {
         container.innerHTML =                     `
-          <div class="site-search-hint">输入关键词开始搜索，或点击热门标签：</div>
+          <div class="site-search-hint">${i18n.hintStart}</div>
           <div class="site-search-suggest" data-site-search-top-tags>
-            <p class="site-search-suggest-title">热门标签</p>
+            <p class="site-search-suggest-title">${i18n.topTags}</p>
             <div class="site-search-suggest-chips">
               ${topTags
                 .slice(0, 10)
@@ -448,7 +466,7 @@
       const chipsHtml = hasKeywordChips
         ? `
           <div class="site-search-suggest" data-site-search-suggest>
-            <p class="site-search-suggest-title">试试拆分关键词：</p>
+            <p class="site-search-suggest-title">${i18n.trySplit}</p>
             <div class="site-search-suggest-chips">
               ${keywords
                 .map((kw) => {
@@ -468,7 +486,7 @@
       const topTagsHtml = topTags.length > 0
         ? `
           <div class="site-search-suggest" data-site-search-top-tags>
-            <p class="site-search-suggest-title">也可以试试热门标签：</p>
+            <p class="site-search-suggest-title">${i18n.tryTopTags}</p>
             <div class="site-search-suggest-chips">
               ${topTags
                 .slice(0, 10)
@@ -484,12 +502,12 @@
 
       container.innerHTML = `
         <div class="site-search-empty" data-site-search-empty>
-          <p>无结果：<strong>${escapeHtml(q)}</strong></p>
+          <p>${i18n.noResult}: <strong>${escapeHtml(q)}</strong></p>
           ${chipsHtml}
           ${topTagsHtml}
           <ul>
-            <li>试试缩短关键词或换个说法</li>
-            <li>去 <a href="/archives/">Archives</a> 按时间浏览</li>
+            <li>${i18n.retryHint}</li>
+            <li>${i18n.browseArchives}</li>
           </ul>
         </div>
       `.trim();
@@ -602,6 +620,24 @@
     const input = dialog.querySelector('[data-site-search-input]');
     const closeBtn = dialog.querySelector('[data-site-search-close]');
 
+    function applyDialogI18n() {
+      const langMode = root?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
+      const dialogLabel = langMode === 'zh' ? '站内搜索' : 'Site Search';
+      const placeholder = langMode === 'zh' ? '搜索标题 / 标签…' : 'Search titles / tags...';
+      const closeText = langMode === 'zh' ? '关闭' : 'Close';
+      const hintStart = langMode === 'zh' ? '输入关键词开始搜索' : 'Type to start searching';
+      dialog.querySelector('.site-search-modal')?.setAttribute('aria-label', dialogLabel);
+      if (input) input.setAttribute('placeholder', placeholder);
+      if (closeBtn) {
+        closeBtn.textContent = closeText;
+        closeBtn.setAttribute('aria-label', closeText);
+      }
+      const hint = dialog.querySelector('.site-search-hint');
+      if (hint) hint.textContent = hintStart;
+    }
+
+    applyDialogI18n();
+
     let cachedDb = null;
     let dbLoading = null;
     let cachedTopTags = null;
@@ -646,12 +682,18 @@
         } catch (err) {
           const container = dialog.querySelector('[data-site-search-results]');
           if (container) {
+            const langMode = root?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
+            const loadFail = langMode === 'zh' ? '搜索索引加载失败' : 'Failed to load search index';
+            const retryLater = langMode === 'zh' ? '你可以稍后重试' : 'You can retry later';
+            const archivesHint = langMode === 'zh'
+              ? '或直接去 <a href="/archives/">归档</a>'
+              : 'Or jump to <a href="/archives/">Archives</a>';
             container.innerHTML = `
               <div class="site-search-empty" data-site-search-empty>
-                <p>搜索索引加载失败</p>
+                <p>${loadFail}</p>
                 <ul>
-                  <li>你可以稍后重试</li>
-                  <li>或直接去 <a href="/archives/">Archives</a></li>
+                  <li>${retryLater}</li>
+                  <li>${archivesHint}</li>
                 </ul>
               </div>
             `.trim();
@@ -700,6 +742,12 @@
         ensureDb().catch(() => {});
       }
     });
+
+    if (win?.addEventListener) {
+      win.addEventListener('xdlkc:lang-change', () => {
+        applyDialogI18n();
+      });
+    }
 
     let selectedIndex = -1;
 

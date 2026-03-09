@@ -49,5 +49,5 @@ test('ArticleLinkCopy: clicking button copies page URL without hash and shows to
 
   assert.equal(copied, 'https://example.test/posts/hello-world/?utm=1');
   assert.ok(toast.classList.contains('is-visible'), 'toast should become visible');
-  assert.equal(toast.textContent, '链接已复制');
+  assert.match(toast.textContent, /(链接已复制|Link copied)/);
 });
