@@ -64,10 +64,10 @@ test('clicking copy button uses navigator.clipboard.writeText and shows success 
   await new Promise((r) => setTimeout(r, 0));
 
   assert.equal(copied, "let a = 1;\nlet b = 2;");
-  assert.equal(button.textContent, '已复制');
+  assert.equal(button.textContent, '已复制（2 行）');
 
   const toast = document.querySelector('.code-copy-toast');
   assert.ok(toast);
-  assert.equal(toast.textContent, '复制成功');
+  assert.equal(toast.textContent, '已复制 2 行');
   assert.ok(toast.classList.contains('is-visible'));
 });

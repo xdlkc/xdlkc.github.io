@@ -78,6 +78,22 @@
     }, 1400);
   }
 
+  function countCopiedLines(text) {
+    const normalized = normalizeNewlines(text).trimEnd();
+    if (!normalized) return 0;
+    return normalized.split('\n').length;
+  }
+
+  function formatCopiedLineMessage(lineCount) {
+    const count = Math.max(0, Number(lineCount) || 0);
+    return `已复制 ${count} 行`;
+  }
+
+  function formatCopiedButtonLabel(lineCount) {
+    const count = Math.max(0, Number(lineCount) || 0);
+    return `已复制（${count} 行）`;
+  }
+
   function flashCopiedClass(container, { durationMs = 1200 } = {}) {
     if (!container?.classList) return;
 
@@ -182,9 +198,10 @@
 
       try {
         await copyText(text);
-        showToast(toast, '复制成功');
+        const lineCount = countCopiedLines(text);
+        showToast(toast, formatCopiedLineMessage(lineCount));
         flashCopiedClass(container, { durationMs: 1200 });
-        button.textContent = '已复制';
+        button.textContent = formatCopiedButtonLabel(lineCount);
         window.setTimeout(() => {
           button.textContent = '复制代码';
         }, 1200);
@@ -213,6 +230,9 @@
     extractFromPre,
     extractFromHighlightFigure,
     findCodeBlocks,
+    countCopiedLines,
+    formatCopiedLineMessage,
+    formatCopiedButtonLabel,
     initCodeCopy
   };
 });
