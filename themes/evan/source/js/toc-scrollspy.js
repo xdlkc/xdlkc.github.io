@@ -105,6 +105,25 @@
     });
   }
 
+  function enhanceTocLinkTitles(toc) {
+    if (!toc || !toc.querySelectorAll) return;
+
+    const links = Array.from(toc.querySelectorAll('a[href^="#"]'));
+    links.forEach((link) => {
+      try {
+        const existing = String(link.getAttribute('title') || '').trim();
+        if (existing) return;
+
+        const text = String(link.textContent || '').trim();
+        if (!text) return;
+
+        link.setAttribute('title', text);
+      } catch {
+        // ignore
+      }
+    });
+  }
+
   function buildTocIntoContainer(toc, headingElements) {
     if (!toc || !toc.querySelector) return;
 
@@ -142,6 +161,7 @@
       a.className = 'toc-nav-link';
       a.setAttribute('href', `#${id}`);
       a.textContent = text;
+      a.setAttribute('title', text);
 
       li.appendChild(a);
       list.appendChild(li);
@@ -447,6 +467,9 @@
     // If `.toc-nav` exists but contains no anchors, auto-generate a minimal TOC.
     buildTocIntoContainer(toc, headingElements);
 
+    // UX: long headings might get visually truncated; add hover tooltips.
+    enhanceTocLinkTitles(toc);
+
     // Enhance TOC UX: allow collapsing nested sections.
     enhanceCollapsibleToc(toc);
 
@@ -579,6 +602,7 @@
     pickActiveHeadingId,
     computeScrollTop,
     computeTocScrollTopToReveal,
+    enhanceTocLinkTitles,
     enhanceCollapsibleToc,
     expandTocAncestorsForLink,
     initTocScrollSpy
