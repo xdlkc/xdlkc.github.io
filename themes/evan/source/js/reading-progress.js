@@ -96,6 +96,35 @@
     let scheduled = false;
     let currentPercent = 0;
 
+    const getTotalReadingMinutes = () => {
+      const raw = container.getAttribute('data-reading-minutes');
+      const minutes = Number(raw);
+      return Number.isFinite(minutes) && minutes > 0 ? minutes : 0;
+    };
+
+    const computeRemainingMinutes = ({ totalMinutes, percent } = {}) => {
+      const total = Number(totalMinutes);
+      const p = clamp(Number(percent) || 0, 0, 100);
+      if (!Number.isFinite(total) || total <= 0) return 0;
+      const remaining = Math.ceil(total * (1 - p / 100));
+      return Math.max(0, remaining);
+    };
+
+    const formatRemainingText = (remaining) => {
+      const mode = document.documentElement?.dataset?.langMode;
+      const isEn = mode === 'en';
+      if (isEn) return `~${remaining} min left`;
+      return `剩余 ${remaining} 分钟`;
+    };
+
+    const formatValueText = ({ percent, remaining, hasEstimate }) => {
+      const mode = document.documentElement?.dataset?.langMode;
+      const isEn = mode === 'en';
+      if (!hasEstimate) return isEn ? `Reading progress ${percent}%` : `阅读进度 ${percent}%`;
+      if (isEn) return `Reading progress ${percent}%, ~${remaining} min left`;
+      return `阅读进度 ${percent}%，剩余 ${remaining} 分钟`;
+    };
+
     const update = () => {
       scheduled = false;
       const percent = computeReadingProgressPercent({
@@ -104,10 +133,19 @@
         winHeight: window.innerHeight || document.documentElement.clientHeight || 0
       });
       currentPercent = percent;
+
+      const totalMinutes = getTotalReadingMinutes();
+      const hasEstimate = totalMinutes > 0;
+      const remaining = hasEstimate
+        ? computeRemainingMinutes({ totalMinutes, percent })
+        : 0;
+
       bar.style.width = percent + '%';
       container.setAttribute('aria-valuenow', String(percent));
-      container.setAttribute('aria-valuetext', `阅读进度 ${percent}%`);
-      label.textContent = `${percent}%`;
+      container.setAttribute('aria-valuetext', formatValueText({ percent, remaining, hasEstimate }));
+      label.textContent = hasEstimate
+        ? `${percent}% · ${formatRemainingText(remaining)}`
+        : `${percent}%`;
     };
 
     const onScroll = () => {

@@ -3,7 +3,7 @@
 <% const comments = config.comments || {}; %>
 <% const utterances = comments.utterances || {}; %>
 <article class="article-shell container">
-  <div class="reading-progress" role="progressbar" tabindex="0" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div class="reading-progress" data-reading-minutes="<%= reading_time(page.content) %>" role="progressbar" tabindex="0" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <div class="reading-progress-bar"></div>
   </div>
 
