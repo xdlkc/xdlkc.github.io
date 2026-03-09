@@ -68,6 +68,13 @@
                       <% }); %>
                     </div>
                   <% } %>
+                  <% if (row.sharedKeywords && row.sharedKeywords.length) { %>
+                    <div class="related-posts-keywords" aria-label="共享关键词">
+                      <% row.sharedKeywords.forEach(function(keyword) { %>
+                        <span class="related-posts-keyword"><%= keyword %></span>
+                      <% }); %>
+                    </div>
+                  <% } %>
                 </div>
                 <% if (post.date) { %>
                   <span class="related-posts-meta"><%= date(post.date, 'YYYY-MM-DD') %></span>

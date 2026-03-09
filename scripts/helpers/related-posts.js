@@ -11,6 +11,38 @@ function normalizeTags(tags) {
     .filter(Boolean);
 }
 
+const STOP_WORDS = new Set([
+  'a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'for', 'from', 'how', 'in',
+  'into', 'of', 'on', 'or', 'the', 'to', 'vs', 'with', 'without', 'your', 'you'
+]);
+
+function tokenizeTitle(text) {
+  return String(text || '')
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .map((token) => token.trim())
+    .filter((token) => token.length >= 3 && !STOP_WORDS.has(token));
+}
+
+function collectSharedKeywords(currentPost, post, limit = 3) {
+  const currentTokens = tokenizeTitle(currentPost && currentPost.title);
+  const candidateTokens = tokenizeTitle(post && post.title);
+  if (!currentTokens.length || !candidateTokens.length) return [];
+
+  const candidateSet = new Set(candidateTokens);
+  const shared = [];
+  const seen = new Set();
+
+  currentTokens.forEach((token) => {
+    if (!candidateSet.has(token) || seen.has(token)) return;
+    seen.add(token);
+    shared.push(token);
+  });
+
+  shared.sort((a, b) => a.localeCompare(b));
+  return shared.slice(0, Math.max(0, limit | 0));
+}
+
 function computeRelatedPosts({ currentPost, posts, limit = 6 }) {
   const currentPath = currentPost && currentPost.path ? String(currentPost.path) : '';
   const currentTags = new Set(normalizeTags(currentPost && currentPost.tags));
@@ -45,12 +77,10 @@ function computeRelatedPosts({ currentPost, posts, limit = 6 }) {
   return scored.slice(0, limit).map(({ post }) => post);
 }
 
-function computeRelatedPostsDetailed({ currentPost, posts, limit = 6, sharedTagsLimit = 3 }) {
+function computeRelatedPostsDetailed({ currentPost, posts, limit = 6, sharedTagsLimit = 3, sharedKeywordsLimit = 3 }) {
   const currentPath = currentPost && currentPost.path ? String(currentPost.path) : '';
   const currentTags = normalizeTags(currentPost && currentPost.tags);
   const currentSet = new Set(currentTags);
-  if (currentSet.size === 0) return [];
-
   const candidates = Array.isArray(posts) ? posts : Array.from(posts || []);
 
   const scored = candidates
@@ -68,18 +98,20 @@ function computeRelatedPostsDetailed({ currentPost, posts, limit = 6, sharedTags
         shared.push(tag);
       });
 
-      // Stable: sort for deterministic rendering and tests.
       shared.sort((a, b) => String(a).localeCompare(String(b)));
+      const sharedKeywords = shared.length > 0
+        ? []
+        : collectSharedKeywords(currentPost, post, sharedKeywordsLimit);
 
       return {
         post,
-        score: shared.length,
-        sharedTags: shared.slice(0, Math.max(0, sharedTagsLimit | 0))
+        score: shared.length > 0 ? shared.length * 100 : sharedKeywords.length,
+        sharedTags: shared.slice(0, Math.max(0, sharedTagsLimit | 0)),
+        sharedKeywords
       };
     })
     .filter((row) => row.score > 0);
 
-  // Keep the same ordering semantics as computeRelatedPosts.
   scored.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;
 
@@ -92,7 +124,7 @@ function computeRelatedPostsDetailed({ currentPost, posts, limit = 6, sharedTags
     return aPath.localeCompare(bPath);
   });
 
-  return scored.slice(0, limit).map(({ post, sharedTags }) => ({ post, sharedTags }));
+  return scored.slice(0, limit).map(({ post, sharedTags, sharedKeywords }) => ({ post, sharedTags, sharedKeywords }));
 }
 
 if (typeof hexo !== 'undefined' && hexo.extend && hexo.extend.helper) {
