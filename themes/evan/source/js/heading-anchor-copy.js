@@ -76,6 +76,13 @@
     return lang === 'en' ? 'Link copied' : '链接已复制';
   }
 
+  function toastSuccessWithTitleText({ title, lang = 'zh' } = {}) {
+    const t = String(title || '').trim();
+    if (!t) return toastSuccessText({ lang });
+    if (lang === 'en') return `Link copied: ${t}`;
+    return `已复制：${t}`;
+  }
+
   function toastFailureText({ lang = 'zh' } = {}) {
     return lang === 'en' ? 'Copy failed, please copy manually' : '复制失败，请手动复制';
   }
@@ -152,7 +159,8 @@
             // ignore
           }
           const lang = resolveLang(document);
-          showToast(toast, toastSuccessText({ lang }), { window });
+          const title = String(heading.textContent || '').replace(/#/g, '').trim();
+          showToast(toast, toastSuccessWithTitleText({ title, lang }), { window });
           button.classList.add('is-copied');
           (window || globalThis).setTimeout(() => button.classList.remove('is-copied'), 1200);
         } catch {

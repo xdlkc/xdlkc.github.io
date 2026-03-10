@@ -90,6 +90,44 @@ test('HeadingAnchorCopy: aria-label and toast messages follow langMode (en)', as
   const toast = dom.window.document.querySelector('.code-copy-toast');
   toastText = String(toast?.textContent || '');
   assert.match(toastText, /copied/i);
+  assert.match(toastText, /Section/);
+});
+
+test('HeadingAnchorCopy: toast includes heading title (zh)', async () => {
+  const { initHeadingAnchorCopy } = require('../themes/evan/source/js/heading-anchor-copy');
+
+  const dom = new JSDOM(`<!doctype html><html><body>
+    <article class="article-content">
+      <h2 id="s1">小节标题</h2>
+    </article>
+  </body></html>`, { url: 'https://example.test/p/' });
+
+  dom.window.document.documentElement.dataset.langMode = 'zh';
+
+  dom.window.navigator.clipboard = {
+    writeText: async () => {
+      // success
+    }
+  };
+
+  initHeadingAnchorCopy({
+    document: dom.window.document,
+    navigator: dom.window.navigator,
+    location: dom.window.location,
+    history: dom.window.history,
+    window: dom.window,
+  });
+
+  const button = dom.window.document.querySelector('.heading-anchor-button');
+  assert.ok(button);
+
+  button.click();
+  await new Promise(resolve => dom.window.setTimeout(resolve, 0));
+
+  const toast = dom.window.document.querySelector('.code-copy-toast');
+  const toastText = String(toast?.textContent || '');
+  assert.match(toastText, /小节标题/);
+  assert.match(toastText, /(复制|已复制)/);
 });
 
 test('HeadingAnchorCopy: updates aria-label on xdlkc:lang-change', () => {
