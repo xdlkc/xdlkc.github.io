@@ -67,6 +67,18 @@
     }
   }
 
+  function stripProgressPrefixFromTitle(title) {
+    const raw = String(title || '').trim();
+    // Matches: "[12%] " prefix.
+    return raw.replace(/^\[\s*\d{1,3}\s*%\s*\]\s*/i, '');
+  }
+
+  function formatTitleWithProgress({ title, percent } = {}) {
+    const base = stripProgressPrefixFromTitle(title);
+    const p = clamp(Math.round(Number(percent) || 0), 0, 100);
+    return `[${p}%] ${base}`.trim();
+  }
+
   function initReadingProgress({
     containerSelector = '.reading-progress',
     barSelector = '.reading-progress-bar',
@@ -95,6 +107,9 @@
 
     let scheduled = false;
     let currentPercent = 0;
+
+    // Keep the original title stable so repeated updates won't stack prefixes.
+    const baseTitle = stripProgressPrefixFromTitle(document.title);
 
     const getTotalReadingMinutes = () => {
       const raw = container.getAttribute('data-reading-minutes');
@@ -146,6 +161,13 @@
       label.textContent = hasEstimate
         ? `${percent}% · ${formatRemainingText(remaining)}`
         : `${percent}%`;
+
+      // Also mirror progress into the tab title for better multi-tab UX.
+      try {
+        document.title = formatTitleWithProgress({ title: baseTitle, percent });
+      } catch {
+        // ignore
+      }
     };
 
     const onScroll = () => {
@@ -291,6 +313,8 @@
     computeScrollTopForPercent,
     computePercentFromPointer,
     computeNextPercentFromKey,
+    stripProgressPrefixFromTitle,
+    formatTitleWithProgress,
     initReadingProgress
   };
 });
