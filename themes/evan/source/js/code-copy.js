@@ -47,6 +47,9 @@
     const blocks = [];
 
     Array.from(root.querySelectorAll('.article-content pre')).forEach((pre) => {
+      // Avoid double-injecting for Hexo highlight blocks: <figure.highlight> often contains a <pre>.
+      // In that case we treat the whole figure as the copy container.
+      if (pre.closest && pre.closest('figure.highlight')) return;
       blocks.push({ type: 'pre', element: pre });
     });
 
