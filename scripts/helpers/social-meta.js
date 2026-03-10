@@ -122,6 +122,22 @@ function pickImage(page = {}, site = {}) {
   };
 }
 
+function pickImageAlt(page = {}) {
+  const candidates = [
+    page.og_image_alt,
+    page.ogImageAlt,
+    page.image_alt,
+    page.imageAlt
+  ];
+
+  for (const candidate of candidates) {
+    const value = cleanText(candidate);
+    if (value) return value;
+  }
+
+  return '';
+}
+
 function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
   const title = cleanText(page.title) || cleanText(site.title);
   const description =
@@ -131,6 +147,7 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
     cleanText(site.description);
   const type = detectType(page);
   const { image, fromDefault } = pickImage(page, site);
+  const imageAlt = pickImageAlt(page);
 
   const articleTags = type === 'article' ? normalizeArticleTags(page.tags) : [];
 
@@ -140,6 +157,7 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
     url: canonicalUrl || toAbsoluteUrl('/', site.url),
     type,
     image,
+    imageAlt,
     twitterCard: fromDefault ? 'summary' : 'summary_large_image',
     locale: normalizeLocale(site.language),
     articlePublishedTime: type === 'article' ? toIso8601(page.date) : '',

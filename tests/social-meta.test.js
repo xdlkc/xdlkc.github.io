@@ -198,3 +198,21 @@ test('buildSocialMeta: normalizes article tags and limits to top 5', () => {
 
   assert.deepEqual(result.articleTags, ['Hexo', 'SEO', 'TDD', 'Performance', 'UX']);
 });
+
+test('buildSocialMeta: supports og image alt text from front-matter', () => {
+  const result = buildSocialMeta({
+    page: {
+      title: 'Post title',
+      layout: 'post',
+      og_image_alt: '  <b>架构图预览</b>（含主流程）  '
+    },
+    site: {
+      title: 'Site title',
+      description: 'Site desc',
+      url: 'https://xdlkc.github.io'
+    },
+    canonicalUrl: 'https://xdlkc.github.io/2026/03/10/demo/'
+  });
+
+  assert.equal(result.imageAlt, '架构图预览 （含主流程）');
+});
