@@ -512,10 +512,17 @@
         ? suggestions.recentQueries.map((s) => String(s || '').trim()).filter(Boolean)
         : [];
 
+      const recentTitle = langMode === 'zh' ? '最近搜索' : 'Recent searches';
+      const recentClearText = langMode === 'zh' ? '清空' : 'Clear';
+      const recentClearAria = langMode === 'zh' ? '清空最近搜索' : 'Clear recent searches';
+
       const recentHtml = recent.length > 0
         ? `
           <div class="site-search-suggest" data-site-search-recent>
-            <p class="site-search-suggest-title">${langMode === 'zh' ? '最近搜索' : 'Recent searches'}</p>
+            <div class="site-search-suggest-title-row">
+              <p class="site-search-suggest-title">${recentTitle}</p>
+              <button class="site-search-clear-recent" type="button" data-site-search-clear-recent aria-label="${recentClearAria}">${recentClearText}</button>
+            </div>
             <div class="site-search-suggest-chips">
               ${recent
                 .slice(0, 5)
@@ -841,6 +848,24 @@
       // Click outside modal closes.
       if (event.target === dialog) {
         handleClose();
+        return;
+      }
+
+      // Clear recent searches.
+      const clearRecent = event.target?.closest?.('[data-site-search-clear-recent]');
+      if (clearRecent) {
+        saveRecentQueries(storageRef, []);
+        if (input) input.value = '';
+        renderResults({
+          root,
+          query: '',
+          results: [],
+          suggestions: {
+            topTags: cachedTopTags || [],
+            recentQueries: []
+          }
+        });
+        resetSelection();
         return;
       }
 
