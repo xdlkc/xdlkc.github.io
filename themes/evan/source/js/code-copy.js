@@ -229,6 +229,52 @@
     });
   }
 
+  function bindLongPressCopy({ block, toast, longPressMs = 450 } = {}) {
+    if (!block || !block.element) return;
+
+    const container = block.element;
+    // Idempotent: avoid binding twice.
+    if (container.getAttribute?.('data-code-copy-longpress') === '1') return;
+    container.setAttribute?.('data-code-copy-longpress', '1');
+
+    // Only for touch interactions (mobile). touchmove cancels.
+    let timer = null;
+    const clear = () => {
+      if (timer) window.clearTimeout(timer);
+      timer = null;
+    };
+
+    container.addEventListener('touchstart', () => {
+      clear();
+      timer = window.setTimeout(async () => {
+        timer = null;
+
+        const text = block.type === 'highlight'
+          ? extractFromHighlightFigure(container)
+          : extractFromPre(container);
+
+        if (!text.trim()) return;
+
+        const doc = container?.ownerDocument || document;
+        try {
+          await copyText(text);
+          const lang = resolveLang(doc);
+          const lineCount = countCopiedLines(text);
+          showToast(toast, formatCopiedLineMessage(lineCount, { lang }));
+          flashCopiedClass(container, { durationMs: 1200 });
+        } catch {
+          selectCodeContent(container, { type: block.type });
+          const lang = resolveLang(doc);
+          showToast(toast, copyFailureToastText({ lang }));
+        }
+      }, Math.max(0, Number(longPressMs) || 0));
+    }, { passive: true });
+
+    container.addEventListener('touchend', clear, { passive: true });
+    container.addEventListener('touchcancel', clear, { passive: true });
+    container.addEventListener('touchmove', clear, { passive: true });
+  }
+
   function injectButton({ block, toast } = {}) {
     if (!block || !block.element) return;
 
@@ -276,7 +322,7 @@
     container.appendChild(button);
   }
 
-  function initCodeCopy({ root = document } = {}) {
+  function initCodeCopy({ root = document, longPressMs = 450 } = {}) {
     if (!root?.querySelectorAll) return;
 
     const toast = ensureToast();
@@ -285,6 +331,7 @@
     blocks.forEach((block) => {
       injectButton({ block, toast });
       bindDoubleClickCopy({ block, toast });
+      bindLongPressCopy({ block, toast, longPressMs });
     });
 
     // React to language mode changes (LangToggle dispatches xdlkc:lang-change).
