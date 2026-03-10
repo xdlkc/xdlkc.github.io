@@ -79,14 +79,27 @@
                   <% if (row.sharedTags && row.sharedTags.length) { %>
                     <div class="related-posts-tags" aria-label="共享标签">
                       <% row.sharedTags.forEach(function(tag) { %>
-                        <span class="related-posts-tag"><%= tag %></span>
+                        <button
+                          class="related-posts-tag"
+                          type="button"
+                          data-site-search-open
+                          data-site-search-keyword="<%= tag %>"
+                          data-site-search-keyword-mode="tag"
+                          aria-label="Search tag: <%= tag %>"
+                        ><%= tag %></button>
                       <% }); %>
                     </div>
                   <% } %>
                   <% if (row.sharedKeywords && row.sharedKeywords.length) { %>
                     <div class="related-posts-keywords" aria-label="共享关键词">
                       <% row.sharedKeywords.forEach(function(keyword) { %>
-                        <span class="related-posts-keyword"><%= keyword %></span>
+                        <button
+                          class="related-posts-keyword"
+                          type="button"
+                          data-site-search-open
+                          data-site-search-keyword="<%= keyword %>"
+                          aria-label="Search keyword: <%= keyword %>"
+                        ><%= keyword %></button>
                       <% }); %>
                     </div>
                   <% } %>

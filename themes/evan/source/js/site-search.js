@@ -849,6 +849,43 @@
 
     closeBtn?.addEventListener('click', handleClose);
 
+    // Page keyword chips (outside the modal): open the dialog and run a search.
+    // Usage: <button data-site-search-open data-site-search-keyword="AI" data-site-search-keyword-mode="tag">AI</button>
+    root.addEventListener('click', (event) => {
+      const chip = event.target?.closest?.('[data-site-search-open][data-site-search-keyword]');
+      if (!chip) return;
+
+      // If the chip is inside the modal, let the modal's own handler deal with it.
+      if (dialog?.contains?.(chip)) return;
+
+      // Avoid hijacking clicks while typing in editable fields.
+      if (isEditableTarget(event.target)) return;
+
+      try {
+        event.preventDefault?.();
+        event.stopPropagation?.();
+      } catch {
+        // ignore
+      }
+
+      const keyword = String(chip.getAttribute('data-site-search-keyword') || '').trim();
+      const mode = String(chip.getAttribute('data-site-search-keyword-mode') || '').trim();
+      if (!keyword) return;
+
+      openDialog(dialog);
+
+      const next = mode === 'tag'
+        ? (keyword.startsWith('#') ? keyword : `#${keyword}`)
+        : keyword;
+
+      input.value = next;
+      input.dispatchEvent(new win.Event('input', { bubbles: true }));
+      input.focus?.();
+
+      // Best-effort warm-up: don't block UI.
+      ensureDb().catch(() => {});
+    });
+
     dialog.addEventListener('click', (event) => {
       // Click outside modal closes.
       if (event.target === dialog) {

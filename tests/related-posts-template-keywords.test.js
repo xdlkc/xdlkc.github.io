@@ -12,4 +12,8 @@ test('post template renders keyword chips for keyword-based related posts', () =
   assert.match(template, /sharedKeywords/);
   assert.match(template, /related-posts-keywords/);
   assert.match(template, /related-posts-keyword/);
+
+  // Keyword chips should be clickable to open site search.
+  assert.match(template, /data-site-search-open/);
+  assert.match(template, /data-site-search-keyword/);
 });

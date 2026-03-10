@@ -13,4 +13,8 @@ test('post template renders Related Posts section via related_posts_detailed hel
   assert.match(template, /related-posts/);
   assert.match(template, /相关阅读|Related Posts/);
   assert.match(template, /related-posts-tags/);
+
+  // Chips should be clickable and able to open the site search modal.
+  assert.match(template, /data-site-search-open/);
+  assert.match(template, /data-site-search-keyword/);
 });

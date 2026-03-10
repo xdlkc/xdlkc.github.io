@@ -941,6 +941,12 @@ html[data-theme="dark"] .toc-mobile {
   border: 1px solid var(--border);
   padding: 0.1rem 0.45rem;
   border-radius: 999px;
+
+  /* When rendered as <button>, keep it looking like a chip. */
+  appearance: none;
+  font-family: inherit;
+  line-height: 1.2;
+  cursor: pointer;
 }
 
 .related-posts-keyword {
