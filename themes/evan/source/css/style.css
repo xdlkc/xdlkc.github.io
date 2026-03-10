@@ -1195,6 +1195,18 @@ html[data-theme="dark"] .related-posts-keyword {
   border-radius: 999px;
   border: 1px solid var(--border);
   background: rgba(15, 118, 110, 0.06);
+  color: inherit;
+  cursor: pointer;
+  appearance: none;
+}
+
+.site-search-tag:hover {
+  border-color: rgba(15, 118, 110, 0.55);
+}
+
+.site-search-tag:focus-visible {
+  outline: 2px solid rgba(15, 118, 110, 0.55);
+  outline-offset: 2px;
 }
 
 .site-search-empty {

@@ -545,7 +545,7 @@
                 .slice(0, 10)
                 .map((tag) => {
                   const safe = escapeHtml(tag);
-                  return `<button class=\"site-search-suggest-chip\" type=\"button\" data-site-search-keyword=\"${safe}\">${safe}</button>`;
+                  return `<button class=\"site-search-suggest-chip\" type=\"button\" data-site-search-keyword=\"${safe}\" data-site-search-keyword-mode=\"tag\">${safe}</button>`;
                 })
                 .join('')}
             </div>
@@ -597,7 +597,7 @@
                 .slice(0, 10)
                 .map((tag) => {
                   const safe = escapeHtml(tag);
-                  return `<button class="site-search-suggest-chip" type="button" data-site-search-keyword="${safe}">${safe}</button>`;
+                  return `<button class="site-search-suggest-chip" type="button" data-site-search-keyword="${safe}" data-site-search-keyword-mode="tag">${safe}</button>`;
                 })
                 .join('')}
             </div>
@@ -636,7 +636,11 @@
       const tagHtml = tags.length
         ? `<div class="site-search-tags">${tags
           .slice(0, 6)
-          .map((t) => `<span class="site-search-tag">${highlightText(t, highlightQuery)}</span>`)
+          .map((t) => {
+            const raw = String(t || '').trim();
+            const safeRaw = escapeHtml(raw);
+            return `<button class="site-search-tag" type="button" data-site-search-keyword="${safeRaw}" data-site-search-keyword-mode="tag">${highlightText(raw, highlightQuery)}</button>`;
+          })
           .join('')}</div>`
         : '';
 
@@ -650,13 +654,14 @@
         ? `<div class="site-search-snippet">${snippet}</div>`
         : '';
 
+      // Note: keep tags outside the <a> so chips can be clickable without triggering navigation.
       item.innerHTML = `
         <a class="site-search-link" href="/${String(post.path || '').replace(/^\//, '')}">
           <div class="site-search-title">${highlightText(post.title, highlightQuery)}</div>
           ${metaHtml}
           ${snippetHtml}
-          ${tagHtml}
         </a>
+        ${tagHtml}
       `.trim();
 
       list.appendChild(item);
@@ -879,8 +884,21 @@
       // Keyword chip: replace query and trigger search.
       const chip = event.target?.closest?.('[data-site-search-keyword]');
       if (chip) {
-        const keyword = chip.getAttribute('data-site-search-keyword') || '';
-        input.value = keyword;
+        try {
+          event.preventDefault?.();
+          event.stopPropagation?.();
+        } catch {
+          // ignore
+        }
+
+        const keyword = String(chip.getAttribute('data-site-search-keyword') || '').trim();
+        const mode = String(chip.getAttribute('data-site-search-keyword-mode') || '').trim();
+
+        const next = mode === 'tag'
+          ? (keyword.startsWith('#') ? keyword : `#${keyword}`)
+          : keyword;
+
+        input.value = next;
         input.dispatchEvent(new win.Event('input', { bubbles: true }));
       }
     });

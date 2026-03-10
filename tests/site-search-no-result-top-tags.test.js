@@ -53,7 +53,7 @@ test('SiteSearch: no-result state also suggests top tags when available', async 
 
   // Clicking the chip should update query.
   chip.click();
-  assert.equal(input.value, 'agent');
+  assert.equal(input.value, '#agent');
 
   delete global.fetch;
   delete global.window;
