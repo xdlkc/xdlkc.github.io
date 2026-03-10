@@ -63,6 +63,23 @@
     return Array.from(root.querySelectorAll(selector));
   }
 
+  function resolveLang(document) {
+    const mode = document?.documentElement?.dataset?.langMode;
+    return mode === 'en' ? 'en' : 'zh';
+  }
+
+  function ariaLabelText({ lang = 'zh' } = {}) {
+    return lang === 'en' ? 'Copy section link' : '复制本节链接';
+  }
+
+  function toastSuccessText({ lang = 'zh' } = {}) {
+    return lang === 'en' ? 'Link copied' : '链接已复制';
+  }
+
+  function toastFailureText({ lang = 'zh' } = {}) {
+    return lang === 'en' ? 'Copy failed, please copy manually' : '复制失败，请手动复制';
+  }
+
   function injectButtonIntoHeading({ heading, document } = {}) {
     if (!heading || !document) return null;
     if (heading.querySelector('.heading-anchor-button')) return null;
@@ -71,12 +88,26 @@
     button.type = 'button';
     button.className = 'heading-anchor-button';
     button.textContent = '#';
-    button.setAttribute('aria-label', '复制本节链接');
+
+    const lang = resolveLang(document);
+    button.setAttribute('aria-label', ariaLabelText({ lang }));
 
     heading.classList.add('heading-anchor-host');
     heading.appendChild(button);
 
     return button;
+  }
+
+  function updateAllButtonAriaLabels({ document } = {}) {
+    if (!document?.querySelectorAll) return;
+    const lang = resolveLang(document);
+    document.querySelectorAll('.heading-anchor-button').forEach((button) => {
+      try {
+        button.setAttribute('aria-label', ariaLabelText({ lang }));
+      } catch {
+        // ignore
+      }
+    });
   }
 
   function buildUrlWithHash({ location, headingId } = {}) {
@@ -120,14 +151,25 @@
           } catch {
             // ignore
           }
-          showToast(toast, '链接已复制', { window });
+          const lang = resolveLang(document);
+          showToast(toast, toastSuccessText({ lang }), { window });
           button.classList.add('is-copied');
           (window || globalThis).setTimeout(() => button.classList.remove('is-copied'), 1200);
         } catch {
-          showToast(toast, '复制失败，请手动复制', { window });
+          const lang = resolveLang(document);
+          showToast(toast, toastFailureText({ lang }), { window });
         }
       });
     });
+
+    if (document?.documentElement && window?.addEventListener) {
+      if (document.documentElement.getAttribute('data-heading-anchor-lang-bound') !== '1') {
+        document.documentElement.setAttribute('data-heading-anchor-lang-bound', '1');
+        window.addEventListener('xdlkc:lang-change', () => {
+          updateAllButtonAriaLabels({ document });
+        });
+      }
+    }
   }
 
   // Auto-init in browsers.
