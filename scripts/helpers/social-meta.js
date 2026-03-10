@@ -122,7 +122,7 @@ function pickImage(page = {}, site = {}) {
   };
 }
 
-function pickImageAlt(page = {}) {
+function pickImageAlt(page = {}, { fallbackText = '' } = {}) {
   const candidates = [
     page.og_image_alt,
     page.ogImageAlt,
@@ -135,7 +135,10 @@ function pickImageAlt(page = {}) {
     if (value) return value;
   }
 
-  return '';
+  // Fallback: use a human-readable title when author didn't provide alt.
+  // This improves share card accessibility without changing image selection logic.
+  const fallback = cleanText(fallbackText);
+  return fallback || '';
 }
 
 function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
@@ -147,7 +150,17 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
     cleanText(site.description);
   const type = detectType(page);
   const { image, fromDefault } = pickImage(page, site);
-  const imageAlt = pickImageAlt(page);
+
+  // If author didn't provide an explicit alt, fall back to a reasonable title.
+  // - article pages: use post title
+  // - non-article pages: use site title
+  const fallbackAlt = type === 'article'
+    ? cleanText(page.title)
+    : cleanText(site.title);
+
+  const imageAlt = image
+    ? pickImageAlt(page, { fallbackText: fallbackAlt })
+    : '';
 
   const articleTags = type === 'article' ? normalizeArticleTags(page.tags) : [];
 
