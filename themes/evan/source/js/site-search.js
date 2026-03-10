@@ -887,6 +887,31 @@
 
     root.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && dialog.classList.contains('is-open')) {
+        // UX: Esc clears current query first; a second Esc closes the dialog.
+        const activeInput = dialog.querySelector?.('[data-site-search-input]');
+        const value = String(activeInput?.value || '');
+        if (value.trim()) {
+          try {
+            event.preventDefault();
+            event.stopPropagation();
+          } catch {
+            // ignore
+          }
+
+          activeInput.value = '';
+          // Trigger an input event to refresh suggestions to the "empty query" state.
+          try {
+            const doc = dialog.ownerDocument || root;
+            const win = doc?.defaultView || globalThis;
+            activeInput.dispatchEvent(new win.Event('input', { bubbles: true }));
+          } catch {
+            // ignore
+          }
+
+          activeInput.focus?.();
+          return;
+        }
+
         handleClose();
         return;
       }
