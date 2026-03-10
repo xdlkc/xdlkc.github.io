@@ -16,6 +16,60 @@
 })(typeof self !== 'undefined' ? self : this, function() {
   const DB_URLS = ['/search.json', '/db.json'];
 
+  // Recent search history (stored when user actually opens a result).
+  const RECENT_STORAGE_KEY = 'xdlkc:site-search:recent';
+  const RECENT_LIMIT = 5;
+
+  function safeJsonParse(raw, fallback) {
+    try {
+      return JSON.parse(raw);
+    } catch {
+      return fallback;
+    }
+  }
+
+  function loadRecentQueries(storage) {
+    if (!storage?.getItem) return [];
+    try {
+      const raw = storage.getItem(RECENT_STORAGE_KEY);
+      const arr = safeJsonParse(raw, []);
+      return Array.isArray(arr)
+        ? arr.map((s) => String(s || '').trim()).filter(Boolean).slice(0, RECENT_LIMIT)
+        : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function saveRecentQueries(storage, queries) {
+    if (!storage?.setItem) return;
+    try {
+      storage.setItem(RECENT_STORAGE_KEY, JSON.stringify((queries || []).slice(0, RECENT_LIMIT)));
+    } catch {
+      // ignore
+    }
+  }
+
+  function addRecentQuery(storage, query) {
+    const q = String(query || '').trim();
+    if (!q) return;
+
+    const current = loadRecentQueries(storage);
+    const next = [q];
+
+    const seen = new Set([q.toLowerCase()]);
+    current.forEach((item) => {
+      const v = String(item || '').trim();
+      if (!v) return;
+      const key = v.toLowerCase();
+      if (seen.has(key)) return;
+      seen.add(key);
+      next.push(v);
+    });
+
+    saveRecentQueries(storage, next.slice(0, RECENT_LIMIT));
+  }
+
   function escapeHtml(input) {
     return String(input || '')
       .replace(/&/g, '&amp;')
@@ -443,9 +497,29 @@
         ? suggestions.topTags.filter(Boolean)
         : [];
 
-      if (topTags.length > 0) {
-        container.innerHTML =                     `
-          <div class="site-search-hint">${i18n.hintStart}</div>
+      const recent = suggestions && Array.isArray(suggestions.recentQueries)
+        ? suggestions.recentQueries.map((s) => String(s || '').trim()).filter(Boolean)
+        : [];
+
+      const recentHtml = recent.length > 0
+        ? `
+          <div class="site-search-suggest" data-site-search-recent>
+            <p class="site-search-suggest-title">${langMode === 'zh' ? '最近搜索' : 'Recent searches'}</p>
+            <div class="site-search-suggest-chips">
+              ${recent
+                .slice(0, 5)
+                .map((kw) => {
+                  const safe = escapeHtml(kw);
+                  return `<button class=\"site-search-suggest-chip\" type=\"button\" data-site-search-keyword=\"${safe}\">${safe}</button>`;
+                })
+                .join('')}
+            </div>
+          </div>
+        `.trim()
+        : '';
+
+      const topTagsHtml = topTags.length > 0
+        ? `
           <div class="site-search-suggest" data-site-search-top-tags>
             <p class="site-search-suggest-title">${i18n.topTags}</p>
             <div class="site-search-suggest-chips">
@@ -458,6 +532,14 @@
                 .join('')}
             </div>
           </div>
+        `.trim()
+        : '';
+
+      if (recentHtml || topTagsHtml) {
+        container.innerHTML = `
+          <div class="site-search-hint">${i18n.hintStart}</div>
+          ${recentHtml}
+          ${topTagsHtml}
         `.trim();
       }
 
@@ -612,13 +694,19 @@
     return false;
   }
 
-  function openFirstResult({ root = document, location = globalThis.location } = {}) {
+  function openFirstResult({ root = document, location = globalThis.location, onBeforeNavigate } = {}) {
     const dialog = root.querySelector?.('[data-site-search-dialog]');
     if (!dialog?.classList?.contains?.('is-open')) return false;
 
     const link = dialog.querySelector?.('.site-search-link');
     const href = link?.href || link?.getAttribute?.('href');
     if (!href) return false;
+
+    try {
+      if (typeof onBeforeNavigate === 'function') onBeforeNavigate(href);
+    } catch {
+      // ignore
+    }
 
     if (location?.assign) {
       location.assign(href);
@@ -629,13 +717,18 @@
     return true;
   }
 
-  function initSiteSearch({ root = document, location = globalThis.location } = {}) {
+  function initSiteSearch({ root = document, location = globalThis.location, storage } = {}) {
     if (!root?.querySelectorAll) return;
     if (root.__siteSearchBound) return;
     root.__siteSearchBound = true;
 
     // In Node test environment, `window` may be undefined. Prefer the document's defaultView.
     const win = root.defaultView || globalThis;
+
+    const storageRef = storage
+      || win?.localStorage
+      || root.defaultView?.localStorage
+      || globalThis.localStorage;
 
     const dialog = ensureDialog({ root });
     const input = dialog.querySelector('[data-site-search-input]');
@@ -686,7 +779,15 @@
     function handleOpen() {
       openDialog(dialog);
       input.value = '';
-      renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [] } });
+      renderResults({
+        root,
+        query: '',
+        results: [],
+        suggestions: {
+          topTags: cachedTopTags || [],
+          recentQueries: loadRecentQueries(storageRef)
+        }
+      });
       resetSelection();
     }
 
@@ -699,7 +800,7 @@
         handleOpen();
         try {
           await ensureDb();
-          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [] } });
+          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], recentQueries: loadRecentQueries(storageRef) } });
         } catch (err) {
           const container = dialog.querySelector('[data-site-search-results]');
           if (container) {
@@ -729,6 +830,13 @@
       // Click outside modal closes.
       if (event.target === dialog) {
         handleClose();
+        return;
+      }
+
+      // Clicking a result link should also store the query.
+      const resultLink = event.target?.closest?.('.site-search-link');
+      if (resultLink) {
+        addRecentQuery(storageRef, input?.value || '');
         return;
       }
 
@@ -846,6 +954,9 @@
       const href = link?.href || link?.getAttribute?.('href');
       if (!href) return false;
 
+      // Store query only when user actually navigates.
+      addRecentQuery(storageRef, input?.value || '');
+
       if (location?.assign) {
         location.assign(href);
       } else if (location) {
@@ -877,7 +988,11 @@
 
       const didOpen = selectedIndex >= 0
         ? openSelectedResult()
-        : openFirstResult({ root, location });
+        : openFirstResult({
+            root,
+            location,
+            onBeforeNavigate: () => addRecentQuery(storageRef, input?.value || '')
+          });
 
       if (didOpen) {
         event.preventDefault();
@@ -890,7 +1005,7 @@
       debounce = win.setTimeout(async () => {
         const q = String(input.value || '').trim();
         if (!q) {
-          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [] } });
+          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], recentQueries: loadRecentQueries(storageRef) } });
           resetSelection();
           return;
         }
