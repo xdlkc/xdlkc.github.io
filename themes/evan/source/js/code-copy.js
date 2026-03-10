@@ -162,6 +162,29 @@
     if (!success) throw new Error('copy failed');
   }
 
+  function selectCodeContent(container, { type } = {}) {
+    if (!container) return;
+
+    const doc = container?.ownerDocument || document;
+    const win = doc?.defaultView || window;
+
+    const target = type === 'highlight'
+      ? (container.querySelector?.('.code') || container)
+      : (container.querySelector?.('code') || container);
+
+    try {
+      const selection = win?.getSelection?.();
+      const range = doc?.createRange?.();
+      if (!selection || !range || !range.selectNodeContents) return;
+
+      range.selectNodeContents(target);
+      selection.removeAllRanges?.();
+      selection.addRange?.(range);
+    } catch {
+      // ignore
+    }
+  }
+
   async function copyText(text) {
     if (navigator.clipboard?.writeText) {
       await navigator.clipboard.writeText(text);
@@ -243,6 +266,8 @@
           button.setAttribute('aria-label', copyButtonAriaLabel({ lang: nextLang }));
         }, 1200);
       } catch (error) {
+        // Permission-denied or unsupported clipboard: select code so user can Ctrl/Cmd+C.
+        selectCodeContent(container, { type: block.type });
         const lang = resolveLang(doc);
         showToast(toast, copyFailureToastText({ lang }));
       }
