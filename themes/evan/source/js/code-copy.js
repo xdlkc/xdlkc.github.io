@@ -87,14 +87,37 @@
     return normalized.split('\n').length;
   }
 
-  function formatCopiedLineMessage(lineCount) {
+  function resolveLang(doc = document) {
+    const mode = doc?.documentElement?.dataset?.langMode;
+    return mode === 'en' ? 'en' : 'zh';
+  }
+
+  function formatCopiedLineMessage(lineCount, { lang = 'zh' } = {}) {
     const count = Math.max(0, Number(lineCount) || 0);
+    if (lang === 'en') return `Copied ${count} ${count === 1 ? 'line' : 'lines'}`;
     return `已复制 ${count} 行`;
   }
 
-  function formatCopiedButtonLabel(lineCount) {
+  function formatCopiedButtonLabel(lineCount, { lang = 'zh' } = {}) {
     const count = Math.max(0, Number(lineCount) || 0);
+    if (lang === 'en') return `Copied (${count} ${count === 1 ? 'line' : 'lines'})`;
     return `已复制（${count} 行）`;
+  }
+
+  function copyButtonText({ lang = 'zh' } = {}) {
+    return lang === 'en' ? 'Copy code' : '复制代码';
+  }
+
+  function copyButtonAriaLabel({ lang = 'zh' } = {}) {
+    return lang === 'en' ? 'Copy code' : '复制代码';
+  }
+
+  function copySuccessToastText({ lang = 'zh' } = {}) {
+    return lang === 'en' ? 'Copied' : '复制成功';
+  }
+
+  function copyFailureToastText({ lang = 'zh' } = {}) {
+    return lang === 'en' ? 'Copy failed, please copy manually' : '复制失败，请手动复制';
   }
 
   function flashCopiedClass(container, { durationMs = 1200 } = {}) {
@@ -170,12 +193,15 @@
 
       if (!text.trim()) return;
 
+      const doc = container?.ownerDocument || document;
       try {
         await copyText(text);
-        showToast(toast, '复制成功');
+        const lang = resolveLang(doc);
+        showToast(toast, copySuccessToastText({ lang }));
         flashCopiedClass(container, { durationMs: 1200 });
       } catch (error) {
-        showToast(toast, '复制失败，请手动复制');
+        const lang = resolveLang(doc);
+        showToast(toast, copyFailureToastText({ lang }));
       }
     });
   }
@@ -189,8 +215,12 @@
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'code-copy-button';
-    button.textContent = '复制代码';
-    button.setAttribute('aria-label', '复制代码');
+    {
+      const doc = container?.ownerDocument || document;
+      const lang = resolveLang(doc);
+      button.textContent = copyButtonText({ lang });
+      button.setAttribute('aria-label', copyButtonAriaLabel({ lang }));
+    }
 
     button.addEventListener('click', async () => {
       const text = block.type === 'highlight'
@@ -199,17 +229,22 @@
 
       if (!text.trim()) return;
 
+      const doc = container?.ownerDocument || document;
       try {
         await copyText(text);
+        const lang = resolveLang(doc);
         const lineCount = countCopiedLines(text);
-        showToast(toast, formatCopiedLineMessage(lineCount));
+        showToast(toast, formatCopiedLineMessage(lineCount, { lang }));
         flashCopiedClass(container, { durationMs: 1200 });
-        button.textContent = formatCopiedButtonLabel(lineCount);
+        button.textContent = formatCopiedButtonLabel(lineCount, { lang });
         window.setTimeout(() => {
-          button.textContent = '复制代码';
+          const nextLang = resolveLang(doc);
+          button.textContent = copyButtonText({ lang: nextLang });
+          button.setAttribute('aria-label', copyButtonAriaLabel({ lang: nextLang }));
         }, 1200);
       } catch (error) {
-        showToast(toast, '复制失败，请手动复制');
+        const lang = resolveLang(doc);
+        showToast(toast, copyFailureToastText({ lang }));
       }
     });
 
@@ -226,6 +261,27 @@
       injectButton({ block, toast });
       bindDoubleClickCopy({ block, toast });
     });
+
+    // React to language mode changes (LangToggle dispatches xdlkc:lang-change).
+    // Keep it idempotent across repeated init calls.
+    const doc = root?.nodeType === 9 ? root : root?.ownerDocument;
+    const win = doc?.defaultView || window;
+    if (doc?.documentElement && win?.addEventListener) {
+      if (doc.documentElement.getAttribute('data-code-copy-lang-bound') !== '1') {
+        doc.documentElement.setAttribute('data-code-copy-lang-bound', '1');
+        win.addEventListener('xdlkc:lang-change', () => {
+          const lang = resolveLang(doc);
+          doc.querySelectorAll('.code-copy-button').forEach((btn) => {
+            try {
+              btn.textContent = copyButtonText({ lang });
+              btn.setAttribute('aria-label', copyButtonAriaLabel({ lang }));
+            } catch {
+              // ignore
+            }
+          });
+        });
+      }
+    }
   }
 
   return {
