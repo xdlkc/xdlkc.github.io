@@ -77,7 +77,15 @@ function computeRelatedPosts({ currentPost, posts, limit = 6 }) {
   return scored.slice(0, limit).map(({ post }) => post);
 }
 
-function computeRelatedPostsDetailed({ currentPost, posts, limit = 6, sharedTagsLimit = 3, sharedKeywordsLimit = 3 }) {
+function computeRelatedPostsDetailed({
+  currentPost,
+  posts,
+  limit = 6,
+  sharedTagsLimit = 3,
+  sharedKeywordsLimit = 3,
+  // When enabled, if no related matches are found, fall back to showing recent posts.
+  fallbackRecent = false
+}) {
   const currentPath = currentPost && currentPost.path ? String(currentPost.path) : '';
   const currentTags = normalizeTags(currentPost && currentPost.tags);
   const currentSet = new Set(currentTags);
@@ -112,6 +120,21 @@ function computeRelatedPostsDetailed({ currentPost, posts, limit = 6, sharedTags
     })
     .filter((row) => row.score > 0);
 
+  // Optional: if no matches at all, fall back to recent posts (still excluding current).
+  if (scored.length === 0 && fallbackRecent) {
+    return candidates
+      .filter((post) => post && post.path && String(post.path) !== currentPath)
+      .map((post) => ({ post, time: post.date ? new Date(post.date).getTime() : 0 }))
+      .sort((a, b) => {
+        if (b.time !== a.time) return b.time - a.time;
+        const aPath = String(a.post.path || '');
+        const bPath = String(b.post.path || '');
+        return aPath.localeCompare(bPath);
+      })
+      .slice(0, Math.max(0, limit | 0))
+      .map(({ post }) => ({ post, sharedTags: [], sharedKeywords: [] }));
+  }
+
   scored.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;
 
@@ -142,11 +165,20 @@ if (typeof hexo !== 'undefined' && hexo.extend && hexo.extend.helper) {
       : 3;
     const posts = site && site.posts ? site.posts : [];
 
+    const sharedKeywordsLimit = options && typeof options.sharedKeywordsLimit === 'number'
+      ? options.sharedKeywordsLimit
+      : 3;
+    const fallbackRecent = options && typeof options.fallbackRecent === 'boolean'
+      ? options.fallbackRecent
+      : false;
+
     return computeRelatedPostsDetailed({
       currentPost: page,
       posts,
       limit,
-      sharedTagsLimit
+      sharedTagsLimit,
+      sharedKeywordsLimit,
+      fallbackRecent
     });
   });
 }

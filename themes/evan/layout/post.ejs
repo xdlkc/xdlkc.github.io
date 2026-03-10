@@ -1,5 +1,5 @@
 <% const postToc = toc(page.content, { class: 'toc-nav', max_depth: 3, list_number: false }); %>
-<% const relatedPosts = related_posts_detailed(page, site, { limit: 6, sharedTagsLimit: 3 }); %>
+<% const relatedPosts = related_posts_detailed(page, site, { limit: 6, sharedTagsLimit: 3, fallbackRecent: true }); %>
 <% const comments = config.comments || {}; %>
 <% const utterances = comments.utterances || {}; %>
 <% const primaryCategory = (page.categories && page.categories.data && page.categories.data.length)
