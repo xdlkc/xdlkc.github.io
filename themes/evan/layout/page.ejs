@@ -1,5 +1,9 @@
 <% const pageToc = toc(page.content, { class: 'toc-nav', max_depth: 3, list_number: false }); %>
 <article class="article-shell container">
+  <div class="reading-progress" data-reading-minutes="<%= reading_time(page.content) %>" role="progressbar" tabindex="0" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="reading-progress-bar"></div>
+  </div>
+
   <nav class="article-nav">
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
     <div class="nav-links">
@@ -46,9 +50,11 @@
 
 <script src="<%- url_for('/js/toc-scrollspy.js') %>" defer></script>
 <script src="<%- url_for('/js/heading-anchor-copy.js') %>" defer></script>
+<script src="<%- url_for('/js/reading-progress.js') %>" defer></script>
 <script>
   window.addEventListener('DOMContentLoaded', function() {
     window.TocScrollSpy?.initTocScrollSpy();
     window.HeadingAnchorCopy?.initHeadingAnchorCopy?.();
+    window.ReadingProgress?.initReadingProgress?.();
   });
 </script>
