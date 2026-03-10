@@ -86,7 +86,34 @@
     }
   }
 
-  function bindToggle({ container, button } = {}) {
+  function buildStorageKey({ pathname = '', index = 0 } = {}) {
+    const safePath = String(pathname || '/');
+    const i = Number.isFinite(Number(index)) ? Number(index) : 0;
+    return `xdlkc:code-collapse:${safePath}:${i}`;
+  }
+
+  function readSavedState({ storage, pathname, index } = {}) {
+    try {
+      const key = buildStorageKey({ pathname, index });
+      const value = storage?.getItem?.(key);
+      return value === 'expanded' || value === 'collapsed' ? value : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function saveState({ storage, pathname, index, state } = {}) {
+    try {
+      const key = buildStorageKey({ pathname, index });
+      if (state === 'expanded' || state === 'collapsed') {
+        storage?.setItem?.(key, state);
+      }
+    } catch {
+      // ignore
+    }
+  }
+
+  function bindToggle({ container, button, storage, pathname, index } = {}) {
     if (!container || !button) return;
 
     // Idempotent: avoid binding twice.
@@ -95,16 +122,30 @@
 
     button.addEventListener('click', () => {
       const expanded = button.getAttribute('aria-expanded') === 'true';
-      setExpandedState({ container, button, expanded: !expanded });
+      const nextExpanded = !expanded;
+      setExpandedState({ container, button, expanded: nextExpanded });
+      saveState({
+        storage,
+        pathname,
+        index,
+        state: nextExpanded ? 'expanded' : 'collapsed'
+      });
     });
   }
 
-  function initCodeCollapse({ root = document, minLines = DEFAULT_MIN_LINES } = {}) {
+  function initCodeCollapse({
+    root = document,
+    minLines = DEFAULT_MIN_LINES,
+    storage = (typeof sessionStorage !== 'undefined' ? sessionStorage : null),
+    location = (typeof window !== 'undefined' ? window.location : null),
+  } = {}) {
     if (!root?.querySelectorAll) return;
+
+    const pathname = String(location?.pathname || '/');
 
     const blocks = findCodeBlocks({ root });
 
-    blocks.forEach((block) => {
+    blocks.forEach((block, index) => {
       const container = block.element;
       if (!container) return;
 
@@ -118,12 +159,20 @@
       const button = ensureToggleButton(container);
       if (!button) return;
 
-      // default: collapsed
-      if (button.getAttribute('aria-expanded') !== 'true') {
+      const saved = readSavedState({ storage, pathname, index });
+
+      if (saved === 'expanded') {
+        setExpandedState({ container, button, expanded: true });
+      } else if (saved === 'collapsed') {
         setExpandedState({ container, button, expanded: false });
+      } else {
+        // default: collapsed
+        if (button.getAttribute('aria-expanded') !== 'true') {
+          setExpandedState({ container, button, expanded: false });
+        }
       }
 
-      bindToggle({ container, button });
+      bindToggle({ container, button, storage, pathname, index });
     });
   }
 
@@ -134,6 +183,7 @@
     extractFromHighlightFigure,
     countLines,
     findCodeBlocks,
+    buildStorageKey,
     initCodeCollapse,
   };
 });
