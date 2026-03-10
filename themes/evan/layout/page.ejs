@@ -1,3 +1,4 @@
+<% const pageToc = toc(page.content, { class: 'toc-nav', max_depth: 3, list_number: false }); %>
 <article class="article-shell container">
   <nav class="article-nav">
     <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
@@ -17,7 +18,37 @@
     <h1><%= page.title %></h1>
   </header>
 
-  <main id="main-content" class="article-card" tabindex="-1">
-    <article class="article-content"><%- page.content %></article>
-  </main>
+  <div class="article-layout">
+    <main id="main-content" class="article-card" tabindex="-1">
+      <% if (pageToc && pageToc.trim()) { %>
+        <details class="toc-mobile">
+          <summary data-i18n-key="post.toc">Outline</summary>
+          <div class="toc-mobile-body">
+            <%- pageToc %>
+          </div>
+        </details>
+      <% } %>
+
+      <article class="article-content"><%- page.content %></article>
+    </main>
+
+    <% if (pageToc && pageToc.trim()) { %>
+      <aside class="toc-card">
+        <div class="toc-header">
+          <p class="toc-title" data-i18n-key="post.outline">Outline</p>
+          <button class="toc-visibility-toggle" type="button" data-toc-visibility-toggle aria-label="隐藏目录" aria-pressed="false">Hide</button>
+        </div>
+        <%- pageToc %>
+      </aside>
+    <% } %>
+  </div>
 </article>
+
+<script src="<%- url_for('/js/toc-scrollspy.js') %>" defer></script>
+<script src="<%- url_for('/js/heading-anchor-copy.js') %>" defer></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    window.TocScrollSpy?.initTocScrollSpy();
+    window.HeadingAnchorCopy?.initHeadingAnchorCopy?.();
+  });
+</script>
