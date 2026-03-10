@@ -92,6 +92,43 @@ body {
   line-height: 1.2;
 }
 
+.reading-progress-toggle {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  height: 16px;
+  min-width: 26px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(31, 35, 40, 0.14);
+  background: rgba(255, 255, 255, 0.76);
+  color: rgba(31, 35, 40, 0.8);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+}
+
+[data-theme="dark"] .reading-progress-toggle {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.32);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.reading-progress.is-collapsed {
+  height: 12px;
+}
+
+.reading-progress.is-collapsed .reading-progress-label {
+  display: none;
+}
+
+.reading-progress.is-collapsed .reading-progress-toggle {
+  top: -2px;
+  height: 14px;
+  padding: 0 6px;
+}
+
 [data-theme="dark"] .reading-progress-label {
   color: rgba(255, 255, 255, 0.82);
   background: rgba(0, 0, 0, 0.32);

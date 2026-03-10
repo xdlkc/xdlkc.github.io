@@ -82,7 +82,8 @@
   function initReadingProgress({
     containerSelector = '.reading-progress',
     barSelector = '.reading-progress-bar',
-    labelSelector = '.reading-progress-label'
+    labelSelector = '.reading-progress-label',
+    storage = globalThis.localStorage
   } = {}) {
     const container = document.querySelector(containerSelector);
     if (!container) return;
@@ -103,6 +104,110 @@
       if (!container.hasAttribute('tabindex')) container.setAttribute('tabindex', '0');
     } catch {
       // ignore
+    }
+
+    // Collapse/expand reading progress bar (persisted).
+    const COLLAPSE_KEY = 'xdlkc:reading-progress:collapsed';
+
+    const isEditableTarget = (target) => {
+      const el = target && target.nodeType === 1 ? target : null;
+      if (!el) return false;
+      if (el.isContentEditable) return true;
+      const tag = String(el.tagName || '').toUpperCase();
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return true;
+      const editableAncestor = el.closest?.('[contenteditable=""],[contenteditable="true"]');
+      return !!editableAncestor;
+    };
+
+    const readCollapsed = () => {
+      try {
+        return String(storage?.getItem?.(COLLAPSE_KEY) || '') === '1';
+      } catch {
+        return false;
+      }
+    };
+
+    const writeCollapsed = (collapsed) => {
+      try {
+        storage?.setItem?.(COLLAPSE_KEY, collapsed ? '1' : '0');
+      } catch {
+        // ignore
+      }
+    };
+
+    const applyCollapsed = (collapsed, { toggleButton } = {}) => {
+      if (collapsed) container.classList.add('is-collapsed');
+      else container.classList.remove('is-collapsed');
+
+      if (toggleButton?.setAttribute) {
+        toggleButton.setAttribute('aria-pressed', collapsed ? 'true' : 'false');
+
+        const mode = document.documentElement?.dataset?.langMode;
+        const isEn = mode === 'en';
+        const label = collapsed
+          ? (isEn ? 'Expand reading progress' : '展开阅读进度')
+          : (isEn ? 'Collapse reading progress' : '折叠阅读进度');
+        toggleButton.setAttribute('aria-label', label);
+      }
+
+      try {
+        if (toggleButton) toggleButton.textContent = collapsed ? '▴' : '▾';
+      } catch {
+        // ignore
+      }
+    };
+
+    const ensureToggleButton = () => {
+      const existing = container.querySelector('.reading-progress-toggle');
+      if (existing) return existing;
+
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'reading-progress-toggle';
+      btn.setAttribute('aria-pressed', 'false');
+      // Use a minimal visual, rely on aria-label for SR.
+      btn.textContent = '▾';
+      container.appendChild(btn);
+      return btn;
+    };
+
+    const toggleBtn = ensureToggleButton();
+    const initialCollapsed = readCollapsed();
+    applyCollapsed(initialCollapsed, { toggleButton: toggleBtn });
+
+    // Click toggle.
+    if (toggleBtn && toggleBtn.getAttribute('data-reading-progress-toggle-bound') !== '1') {
+      toggleBtn.setAttribute('data-reading-progress-toggle-bound', '1');
+      toggleBtn.addEventListener('click', (event) => {
+        // Avoid triggering the seek-bar click handler on the container.
+        try {
+          event?.preventDefault?.();
+          event?.stopPropagation?.();
+        } catch {
+          // ignore
+        }
+
+        const next = !container.classList.contains('is-collapsed');
+        applyCollapsed(next, { toggleButton: toggleBtn });
+        writeCollapsed(next);
+      });
+    }
+
+    // Keyboard shortcut: press "p" to collapse/expand (when not typing).
+    if (document.documentElement?.getAttribute('data-reading-progress-p-bound') !== '1') {
+      document.documentElement?.setAttribute('data-reading-progress-p-bound', '1');
+      window.addEventListener('keydown', (event) => {
+        if (!event || event.isComposing) return;
+        if (event.metaKey || event.ctrlKey || event.altKey) return;
+        if (String(event.key || '').toLowerCase() !== 'p') return;
+        if (isEditableTarget(event.target)) return;
+
+        try { event.preventDefault(); } catch { /* ignore */ }
+
+        const next = !container.classList.contains('is-collapsed');
+        applyCollapsed(next, { toggleButton: toggleBtn });
+        writeCollapsed(next);
+      });
     }
 
     let scheduled = false;
