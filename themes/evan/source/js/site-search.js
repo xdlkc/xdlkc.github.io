@@ -199,7 +199,9 @@
   }
 
   // Parse user query and support a lightweight tag-only mode.
-  // Syntax: #tag (or multiple tokens like "#ai agent").
+  // Supported syntax:
+  //   - #tag
+  //   - tag:foo / tags:foo (case-insensitive)
   function parseQuery(query) {
     const raw = String(query || '');
     const trimmed = raw.trim();
@@ -208,6 +210,15 @@
     // Tag-only query mode: leading '#'.
     if (trimmed.startsWith('#')) {
       const q = trimmed.replace(/^#+/, '').trim();
+      const tokensLower = splitKeywords(q).map((t) => String(t).toLowerCase()).filter(Boolean);
+      return { mode: 'tag', query: q, tokensLower };
+    }
+
+    // Tag-only query mode: tag: / tags: prefix.
+    // Examples: "tag:foo", "tags: foo bar".
+    const tagPrefixMatch = trimmed.match(/^(tags?):\s*(.*)$/i);
+    if (tagPrefixMatch) {
+      const q = String(tagPrefixMatch[2] || '').trim();
       const tokensLower = splitKeywords(q).map((t) => String(t).toLowerCase()).filter(Boolean);
       return { mode: 'tag', query: q, tokensLower };
     }
