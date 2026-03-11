@@ -13,6 +13,7 @@
   <meta property="og:description" content="<%= social.description %>" />
   <meta property="og:url" content="<%= social.url %>" />
   <meta property="og:type" content="<%= social.type %>" />
+  <% if (social.siteName) { %><meta property="og:site_name" content="<%= social.siteName %>" /><% } %>
   <meta property="og:image" content="<%= social.image %>" />
   <% if (social.imageType) { %><meta property="og:image:type" content="<%= social.imageType %>" /><% } %>
   <% if (social.imageWidth && social.imageHeight) { %>

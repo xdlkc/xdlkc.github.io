@@ -242,6 +242,8 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '', rootDir = ''
   return {
     title,
     description,
+    // og:site_name
+    siteName: cleanText(site.title),
     url: canonicalUrl || toAbsoluteUrl('/', site.url),
     type,
     image,
