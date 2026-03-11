@@ -88,10 +88,12 @@
   <script src="<%- url_for('/js/scroll-restore.js') %>" defer></script>
   <script src="<%- url_for('/js/external-links.js') %>" defer></script>
   <script src="<%- url_for('/js/site-search.js') %>" defer></script>
+  <script src="<%- url_for('/js/shortcut-help.js') %>" defer></script>
   <script>
     window.addEventListener('DOMContentLoaded', function() {
       window.LangToggle && window.LangToggle.initLangToggle && window.LangToggle.initLangToggle();
       window.SiteSearch && window.SiteSearch.initSiteSearch && window.SiteSearch.initSiteSearch();
+      window.ShortcutHelp && window.ShortcutHelp.initShortcutHelp && window.ShortcutHelp.initShortcutHelp();
       window.BackToTop && window.BackToTop.initBackToTop && window.BackToTop.initBackToTop();
       window.CodeCopy && window.CodeCopy.initCodeCopy && window.CodeCopy.initCodeCopy();
       window.CodeCollapse && window.CodeCollapse.initCodeCollapse && window.CodeCollapse.initCodeCollapse();
