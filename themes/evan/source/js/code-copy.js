@@ -116,8 +116,15 @@
     return lang === 'en' ? 'Copied' : '复制成功';
   }
 
-  function copyFailureToastText({ lang = 'zh' } = {}) {
-    return lang === 'en' ? 'Copy failed, please copy manually' : '复制失败，请手动复制';
+  function copyFailureToastText({ lang = 'zh', withHint = false } = {}) {
+    if (lang === 'en') {
+      return withHint
+        ? 'Copy failed. Code selected — press Ctrl/Cmd+C'
+        : 'Copy failed, please copy manually';
+    }
+    return withHint
+      ? '复制失败，已选中代码，按 Ctrl/Cmd+C'
+      : '复制失败，请手动复制';
   }
 
   function flashCopiedClass(container, { durationMs = 1200 } = {}) {
@@ -223,8 +230,10 @@
         showToast(toast, copySuccessToastText({ lang }));
         flashCopiedClass(container, { durationMs: 1200 });
       } catch (error) {
+        // On failure, select code so user can Ctrl/Cmd+C.
+        selectCodeContent(container, { type: block.type });
         const lang = resolveLang(doc);
-        showToast(toast, copyFailureToastText({ lang }));
+        showToast(toast, copyFailureToastText({ lang, withHint: true }));
       }
     });
   }
@@ -265,7 +274,7 @@
         } catch {
           selectCodeContent(container, { type: block.type });
           const lang = resolveLang(doc);
-          showToast(toast, copyFailureToastText({ lang }));
+          showToast(toast, copyFailureToastText({ lang, withHint: true }));
         }
       }, Math.max(0, Number(longPressMs) || 0));
     }, { passive: true });
@@ -329,7 +338,7 @@
       } catch {
         selectCodeContent(container, { type: block.type });
         const lang = resolveLang(doc);
-        showToast(toast, copyFailureToastText({ lang }));
+        showToast(toast, copyFailureToastText({ lang, withHint: true }));
       }
     });
   }
@@ -374,7 +383,7 @@
         // Permission-denied or unsupported clipboard: select code so user can Ctrl/Cmd+C.
         selectCodeContent(container, { type: block.type });
         const lang = resolveLang(doc);
-        showToast(toast, copyFailureToastText({ lang }));
+        showToast(toast, copyFailureToastText({ lang, withHint: true }));
       }
     });
 
