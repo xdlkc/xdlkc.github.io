@@ -220,6 +220,19 @@ window.addEventListener('DOMContentLoaded', () => {
         return `<button type="button" class="search-suggest-chip" data-keyword="${token}">${token}</button>`;
       }).join('');
 
+      const hostname = (window.location && window.location.hostname) ? window.location.hostname : '';
+      const siteQuery = hostname ? `site:${hostname} ${query}`.trim() : query;
+      const encoded = encodeURIComponent(siteQuery);
+      const externalLinks = hostname ? `
+        <div class="search-no-result__external">
+          <div class="search-no-result__external-title">也可以用外部搜索引擎试试（限定本站）：</div>
+          <div class="search-no-result__external-links">
+            <a data-external-search="google" class="search-external-link" href="https://www.google.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">Google</a>
+            <a data-external-search="bing" class="search-external-link" href="https://www.bing.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">Bing</a>
+          </div>
+        </div>
+      ` : '';
+
       resultContent.innerHTML = `
         <div id="no-result" class="search-no-result">
           <div class="search-no-result__icon"><i class="fa fa-frown-o fa-5x"></i></div>
@@ -231,6 +244,7 @@ window.addEventListener('DOMContentLoaded', () => {
             </ul>
           </div>
           ${tokens.length ? `<div class="search-no-result__suggest">试试这些关键词：${chips}</div>` : ''}
+          ${externalLinks}
         </div>
       `;
 
