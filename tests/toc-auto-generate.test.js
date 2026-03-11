@@ -45,6 +45,21 @@ test('TocScrollSpy: auto-generates TOC links when .toc-nav is empty', () => {
   const links = Array.from(document.querySelectorAll('.toc-nav a[href^="#"]'));
   assert.equal(links.length, 2);
 
+  // Should preserve heading hierarchy as nested lists: h3 should be nested under h2.
+  const topOl = document.querySelector('.toc-nav > ol');
+  assert.ok(topOl, 'expected .toc-nav to contain a top-level <ol>');
+
+  const topItems = Array.from(topOl.children).filter((el) => el && el.tagName === 'LI');
+  assert.equal(topItems.length, 1, 'expected a single top-level li for h2');
+  assert.ok(topItems[0].classList.contains('toc-nav-level-2'));
+
+  const nestedOl = Array.from(topItems[0].children).find((el) => el && el.tagName === 'OL');
+  assert.ok(nestedOl, 'expected h3 entries to be nested inside h2 li > ol');
+
+  const nestedItems = Array.from(nestedOl.children).filter((el) => el && el.tagName === 'LI');
+  assert.equal(nestedItems.length, 1);
+  assert.ok(nestedItems[0].classList.contains('toc-nav-level-3'));
+
   // Should create ids for headings.
   assert.ok(document.querySelector('h2').id);
   assert.ok(document.querySelector('h3').id);

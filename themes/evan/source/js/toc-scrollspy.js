@@ -239,7 +239,29 @@
       // ignore
     }
 
-    const list = document.createElement('ol');
+    // Build a nested <ol> structure based on heading levels.
+    // H3 nests under the nearest H2, H4 nests under the nearest H3 (or H2 if no H3).
+    const topOl = document.createElement('ol');
+
+    const toSafeLevel = (heading) => {
+      const tag = String(heading?.tagName || '').toUpperCase();
+      const level = tag.startsWith('H') ? Number(tag.slice(1)) : 2;
+      if (level === 2 || level === 3 || level === 4) return level;
+      return 2;
+    };
+
+    // Stack entries: { level, li, ol }
+    // `ol` is the list to append children into (created lazily on the li).
+    const stack = [{ level: 1, li: null, ol: topOl }];
+
+    const ensureChildOl = (li) => {
+      if (!li) return null;
+      const existing = li.querySelector?.(':scope > ol');
+      if (existing) return existing;
+      const ol = document.createElement('ol');
+      li.appendChild(ol);
+      return ol;
+    };
 
     headings.forEach((heading) => {
       const id = heading.getAttribute('id');
@@ -248,9 +270,25 @@
       const text = String(heading.textContent || '').trim();
       if (!text) return;
 
-      const tag = String(heading.tagName || '').toUpperCase();
-      const level = tag.startsWith('H') ? Number(tag.slice(1)) : 2;
-      const safeLevel = level === 2 || level === 3 || level === 4 ? level : 2;
+      // Normalize unexpected levels into a safe range.
+      const safeLevel = toSafeLevel(heading);
+
+      // If the document starts with h3/h4 (or has jumps), still produce a usable TOC.
+      // Pop until we find a parent level smaller than the current level.
+      while (stack.length > 1 && stack[stack.length - 1].level >= safeLevel) {
+        stack.pop();
+      }
+
+      const parent = stack[stack.length - 1];
+      let parentOl = parent.ol;
+
+      // If parent is a real heading item, we may need to append into its child <ol>.
+      if (parent.li && parent.level >= 2) {
+        parentOl = ensureChildOl(parent.li);
+      }
+
+      // Safety fallback.
+      if (!parentOl) parentOl = topOl;
 
       const li = document.createElement('li');
       li.className = `toc-nav-level-${safeLevel}`;
@@ -262,10 +300,13 @@
       a.setAttribute('title', text);
 
       li.appendChild(a);
-      list.appendChild(li);
+      parentOl.appendChild(li);
+
+      // Push current item to stack so deeper headings can nest under it.
+      stack.push({ level: safeLevel, li, ol: null });
     });
 
-    toc.appendChild(list);
+    toc.appendChild(topOl);
   }
 
   function enhanceCollapsibleToc(
