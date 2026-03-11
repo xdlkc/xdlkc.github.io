@@ -62,9 +62,20 @@
       try {
         var key = 'xdlkc:theme';
         var savedMode = localStorage.getItem(key);
-        var mode = (savedMode === 'dark' || savedMode === 'light' || savedMode === 'system')
+
+        // URL override: ?theme=dark|light|system (page-only, does not persist).
+        var urlMode = null;
+        try {
+          var params = new URLSearchParams(window.location && window.location.search ? window.location.search : '');
+          var raw = params.get('theme');
+          urlMode = (raw === 'dark' || raw === 'light' || raw === 'system') ? raw : null;
+        } catch (e2) {
+          urlMode = null;
+        }
+
+        var mode = urlMode || ((savedMode === 'dark' || savedMode === 'light' || savedMode === 'system')
           ? savedMode
-          : 'system';
+          : 'system');
         var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
         var theme = (mode === 'dark' || mode === 'light')
           ? mode

@@ -97,6 +97,20 @@ function saveMode(storage, mode) {
   }
 }
 
+function readUrlThemeOverride(location) {
+  // URL param override: ?theme=dark|light|system
+  // Invalid values are ignored.
+  try {
+    const search = String(location?.search || '');
+    if (!search) return null;
+    const params = new URLSearchParams(search);
+    const value = String(params.get('theme') || '').trim();
+    return normalizeThemeMode(value);
+  } catch {
+    return null;
+  }
+}
+
 function initThemeToggle({
   window = globalThis.window,
   document = globalThis.document,
@@ -107,8 +121,12 @@ function initThemeToggle({
 
   const prefersDark = getPrefersDark(matchMedia);
   const savedMode = readSavedMode(storage);
-  const initialTheme = resolveInitialTheme({ savedMode, prefersDark });
-  const initialMode = normalizeThemeMode(savedMode) || 'system';
+  const overrideMode = readUrlThemeOverride(window?.location);
+
+  // URL override applies to this page only; do not persist.
+  const effectiveMode = overrideMode || savedMode;
+  const initialTheme = resolveInitialTheme({ savedMode: effectiveMode, prefersDark });
+  const initialMode = normalizeThemeMode(effectiveMode) || 'system';
 
   applyThemeToDocument({ document, theme: initialTheme, mode: initialMode });
 
@@ -125,7 +143,9 @@ function initThemeToggle({
     try {
       mql = matchMedia('(prefers-color-scheme: dark)');
       onSystemChange = () => {
-        const mode = normalizeThemeMode(readSavedMode(storage)) || (document.documentElement.dataset.themeMode || 'system');
+        const mode = normalizeThemeMode(document.documentElement.dataset.themeMode)
+          || normalizeThemeMode(readSavedMode(storage))
+          || 'system';
         if (mode !== 'system') return;
         const theme = mql.matches ? 'dark' : 'light';
         applyThemeToDocument({ document, theme, mode: 'system' });
@@ -157,6 +177,9 @@ function initThemeToggle({
     window.addEventListener('storage', (event) => {
       if (!event || event.key !== STORAGE_KEY) return;
 
+      // If this page is URL-overridden, keep it stable.
+      if (readUrlThemeOverride(window?.location)) return;
+
       const mode = normalizeThemeMode(event.newValue)
         || normalizeThemeMode(readSavedMode(storage))
         || 'system';
@@ -175,8 +198,9 @@ function initThemeToggle({
 
   if (window?.addEventListener) {
     window.addEventListener('xdlkc:lang-change', () => {
-      const mode = normalizeThemeMode(readSavedMode(storage))
-        || normalizeThemeMode(document.documentElement.dataset.themeMode)
+      const mode = normalizeThemeMode(document.documentElement.dataset.themeMode)
+        || readUrlThemeOverride(window?.location)
+        || normalizeThemeMode(readSavedMode(storage))
         || 'system';
       const theme = normalizeTheme(document.documentElement.dataset.theme)
         || resolveInitialTheme({ savedMode: mode, prefersDark: getPrefersDark(matchMedia) });
@@ -185,8 +209,9 @@ function initThemeToggle({
   }
 
   toggle.addEventListener('click', () => {
-    const currentMode = normalizeThemeMode(readSavedMode(storage))
-      || normalizeThemeMode(document.documentElement.dataset.themeMode)
+    const currentMode = normalizeThemeMode(document.documentElement.dataset.themeMode)
+      || readUrlThemeOverride(window?.location)
+      || normalizeThemeMode(readSavedMode(storage))
       || 'system';
 
     const nextMode = toggleThemeMode(currentMode);
