@@ -86,6 +86,7 @@
   <script src="<%- url_for('/js/code-copy.js') %>" defer></script>
   <script src="<%- url_for('/js/code-collapse.js') %>" defer></script>
   <script src="<%- url_for('/js/scroll-restore.js') %>" defer></script>
+  <script src="<%- url_for('/js/external-links.js') %>" defer></script>
   <script src="<%- url_for('/js/site-search.js') %>" defer></script>
   <script>
     window.addEventListener('DOMContentLoaded', function() {
@@ -95,6 +96,7 @@
       window.CodeCopy && window.CodeCopy.initCodeCopy && window.CodeCopy.initCodeCopy();
       window.CodeCollapse && window.CodeCollapse.initCodeCollapse && window.CodeCollapse.initCodeCollapse();
       window.ScrollRestore && window.ScrollRestore.initScrollRestore && window.ScrollRestore.initScrollRestore();
+      window.ExternalLinks && window.ExternalLinks.initExternalLinks && window.ExternalLinks.initExternalLinks();
       window.FontSizeToggle && window.FontSizeToggle.init && window.FontSizeToggle.init();
     });
   </script>

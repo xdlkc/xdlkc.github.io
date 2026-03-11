@@ -639,6 +639,14 @@ h2 {
   font-size: calc(1rem * var(--content-font-scale));
 }
 
+.article-content a.external-link::after {
+  content: '↗';
+  display: inline-block;
+  margin-left: 0.15em;
+  font-size: 0.78em;
+  opacity: 0.55;
+}
+
 .article-content h1,
 .article-content h2,
 .article-content h3 {
