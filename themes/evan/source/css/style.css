@@ -987,6 +987,28 @@ html[data-theme="dark"] .toc-mobile {
   gap: 0.35rem;
 }
 
+.related-posts-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.related-posts-reason {
+  font-size: 0.72rem;
+  color: var(--muted);
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--border);
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+html[data-theme="dark"] .related-posts-reason {
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .related-posts-tags,
 .related-posts-keywords {
   display: flex;

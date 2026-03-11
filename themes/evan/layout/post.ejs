@@ -76,7 +76,16 @@
               <% const post = row.post; %>
               <li class="related-posts-item">
                 <div class="related-posts-main">
-                  <a class="related-posts-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+                  <div class="related-posts-head">
+                    <a class="related-posts-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+                    <% if (row.reason === 'tags') { %>
+                      <span class="related-posts-reason" data-i18n-key="post.relatedReason.tags">Shared tags</span>
+                    <% } else if (row.reason === 'keywords') { %>
+                      <span class="related-posts-reason" data-i18n-key="post.relatedReason.keywords">Shared keywords</span>
+                    <% } else if (row.reason === 'recent') { %>
+                      <span class="related-posts-reason" data-i18n-key="post.relatedReason.recent">Recent</span>
+                    <% } %>
+                  </div>
                   <% if (row.sharedTags && row.sharedTags.length) { %>
                     <div class="related-posts-tags" aria-label="共享标签">
                       <% row.sharedTags.forEach(function(tag) { %>

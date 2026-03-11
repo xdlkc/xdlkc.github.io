@@ -111,9 +111,14 @@ function computeRelatedPostsDetailed({
         ? []
         : collectSharedKeywords(currentPost, post, sharedKeywordsLimit);
 
+      const reason = shared.length > 0
+        ? 'tags'
+        : (sharedKeywords.length > 0 ? 'keywords' : null);
+
       return {
         post,
         score: shared.length > 0 ? shared.length * 100 : sharedKeywords.length,
+        reason,
         sharedTags: shared.slice(0, Math.max(0, sharedTagsLimit | 0)),
         sharedKeywords
       };
@@ -132,7 +137,7 @@ function computeRelatedPostsDetailed({
         return aPath.localeCompare(bPath);
       })
       .slice(0, Math.max(0, limit | 0))
-      .map(({ post }) => ({ post, sharedTags: [], sharedKeywords: [] }));
+      .map(({ post }) => ({ post, reason: 'recent', sharedTags: [], sharedKeywords: [] }));
   }
 
   scored.sort((a, b) => {
@@ -147,7 +152,7 @@ function computeRelatedPostsDetailed({
     return aPath.localeCompare(bPath);
   });
 
-  return scored.slice(0, limit).map(({ post, sharedTags, sharedKeywords }) => ({ post, sharedTags, sharedKeywords }));
+  return scored.slice(0, limit).map(({ post, reason, sharedTags, sharedKeywords }) => ({ post, reason, sharedTags, sharedKeywords }));
 }
 
 if (typeof hexo !== 'undefined' && hexo.extend && hexo.extend.helper) {
