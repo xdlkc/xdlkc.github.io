@@ -347,6 +347,125 @@
       .map((row) => row.name);
   }
 
+  function getAllTags(posts) {
+    const display = new Map();
+
+    (posts || []).forEach((raw) => {
+      const post = normalizePost(raw);
+      if (!post) return;
+      (post.tags || []).forEach((tag) => {
+        if (typeof tag !== 'string') return;
+        const trimmed = tag.trim();
+        if (!trimmed) return;
+        const key = trimmed.toLowerCase();
+        if (!display.has(key)) display.set(key, trimmed);
+      });
+    });
+
+    return Array.from(display.values());
+  }
+
+  // Levenshtein edit distance (small strings only).
+  function levenshtein(a, b) {
+    const s = String(a || '');
+    const t = String(b || '');
+    if (s === t) return 0;
+    if (!s) return t.length;
+    if (!t) return s.length;
+
+    const m = s.length;
+    const n = t.length;
+
+    // DP with two rows to save memory.
+    let prev = new Array(n + 1);
+    let curr = new Array(n + 1);
+
+    for (let j = 0; j <= n; j++) prev[j] = j;
+
+    for (let i = 1; i <= m; i++) {
+      curr[0] = i;
+      const sc = s.charCodeAt(i - 1);
+      for (let j = 1; j <= n; j++) {
+        const cost = sc === t.charCodeAt(j - 1) ? 0 : 1;
+        curr[j] = Math.min(
+          prev[j] + 1,      // deletion
+          curr[j - 1] + 1,  // insertion
+          prev[j - 1] + cost // substitution
+        );
+      }
+      const tmp = prev;
+      prev = curr;
+      curr = tmp;
+    }
+
+    return prev[n];
+  }
+
+  function suggestSimilarTags(allTags, queryTokensLower, { limit = 8, maxDistance = 2 } = {}) {
+    const tags = Array.isArray(allTags) ? allTags : [];
+    const tokens = Array.isArray(queryTokensLower)
+      ? queryTokensLower.map((t) => String(t || '').toLowerCase()).filter(Boolean)
+      : [String(queryTokensLower || '').toLowerCase()].filter(Boolean);
+
+    if (tags.length === 0 || tokens.length === 0) return [];
+
+    // De-dupe tags case-insensitively while preserving first-seen casing.
+    const uniq = [];
+    const seen = new Set();
+    tags.forEach((tag) => {
+      const name = String(tag || '').trim();
+      if (!name) return;
+      const key = name.toLowerCase();
+      if (seen.has(key)) return;
+      seen.add(key);
+      uniq.push(name);
+    });
+
+    const rows = [];
+
+    uniq.forEach((tag) => {
+      const lower = tag.toLowerCase();
+
+      // Substring match if any token is contained.
+      let hasSubstring = false;
+      for (const token of tokens) {
+        if (token && lower.includes(token)) {
+          hasSubstring = true;
+          break;
+        }
+      }
+
+      if (hasSubstring) {
+        rows.push({ tag, kind: 'substr', distance: 0 });
+        return;
+      }
+
+      // Edit distance against the first token (best-effort).
+      // This is intentionally lightweight and avoids heavy fuzzy-search libs.
+      const token = tokens[0] || '';
+      if (!token) return;
+
+      // Quick prune for very different lengths.
+      if (Math.abs(lower.length - token.length) > Math.max(3, maxDistance + 1)) return;
+
+      const d = levenshtein(lower, token);
+      if (d <= Math.max(0, Number(maxDistance) || 0)) {
+        rows.push({ tag, kind: 'edit', distance: d });
+      }
+    });
+
+    rows.sort((a, b) => {
+      // substring first
+      if (a.kind !== b.kind) return a.kind === 'substr' ? -1 : 1;
+      // smaller distance first
+      if (a.distance !== b.distance) return a.distance - b.distance;
+      return String(a.tag).localeCompare(String(b.tag));
+    });
+
+    return rows
+      .slice(0, Math.max(0, Number(limit) || 8))
+      .map((r) => r.tag);
+  }
 
   function searchPosts(posts, query) {
     const parsed = parseQuery(query);
@@ -605,10 +724,35 @@
         `.trim()
         : '';
 
+      const allTags = suggestions && Array.isArray(suggestions.allTags)
+        ? suggestions.allTags.filter(Boolean)
+        : topTags;
+
+      const parsed = parseQuery(q);
+      const similarTags = suggestSimilarTags(allTags, parsed.tokensLower, { limit: 8, maxDistance: 2 });
+      const didYouMean = langMode === 'zh' ? '你是不是想找：' : 'Did you mean:';
+      const similarHtml = similarTags.length > 0
+        ? `
+          <div class="site-search-suggest" data-site-search-similar-tags>
+            <p class="site-search-suggest-title">${didYouMean}</p>
+            <div class="site-search-suggest-chips">
+              ${similarTags
+                .slice(0, 8)
+                .map((tag) => {
+                  const safe = escapeHtml(tag);
+                  return `<button class="site-search-suggest-chip" type="button" data-site-search-keyword="${safe}" data-site-search-keyword-mode="tag">${highlightText(tag, highlightQuery)}</button>`;
+                })
+                .join('')}
+            </div>
+          </div>
+        `.trim()
+        : '';
+
       container.innerHTML = `
         <div class="site-search-empty" data-site-search-empty>
           <p>${i18n.noResult}: <strong>${escapeHtml(q)}</strong></p>
           ${chipsHtml}
+          ${similarHtml}
           ${topTagsHtml}
           <ul>
             <li>${i18n.retryHint}</li>
@@ -778,6 +922,7 @@
     let cachedDb = null;
     let dbLoading = null;
     let cachedTopTags = null;
+    let cachedAllTags = null;
 
     async function ensureDb() {
       if (cachedDb) return cachedDb;
@@ -788,8 +933,10 @@
           try {
             const posts = extractPostsFromDb(db);
             cachedTopTags = getTopTags(posts, { limit: 10, minCount: 2 });
+            cachedAllTags = getAllTags(posts);
           } catch {
             cachedTopTags = null;
+            cachedAllTags = null;
           }
           return db;
         })
@@ -823,7 +970,7 @@
         handleOpen();
         try {
           await ensureDb();
-          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], recentQueries: loadRecentQueries(storageRef) } });
+          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [], recentQueries: loadRecentQueries(storageRef) } });
         } catch (err) {
           const container = dialog.querySelector('[data-site-search-results]');
           if (container) {
@@ -1121,7 +1268,7 @@
       debounce = win.setTimeout(async () => {
         const q = String(input.value || '').trim();
         if (!q) {
-          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], recentQueries: loadRecentQueries(storageRef) } });
+          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [], recentQueries: loadRecentQueries(storageRef) } });
           resetSelection();
           return;
         }
@@ -1130,10 +1277,10 @@
           const db = await ensureDb();
           const posts = extractPostsFromDb(db);
           const results = searchPosts(posts, q);
-          renderResults({ root, query: q, results, suggestions: { topTags: cachedTopTags || [] } });
+          renderResults({ root, query: q, results, suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [] } });
           resetSelection();
         } catch (err) {
-          renderResults({ root, query: q, results: [], suggestions: { topTags: cachedTopTags || [] } });
+          renderResults({ root, query: q, results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [] } });
           resetSelection();
         }
       }, 120);
@@ -1148,6 +1295,8 @@
     splitKeywords,
     parseQuery,
     getTopTags,
+    getAllTags,
+    suggestSimilarTags,
     searchPosts,
     ensureDialog,
     renderResults,
