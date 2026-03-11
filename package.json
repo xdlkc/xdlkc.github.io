@@ -8,7 +8,7 @@
     "build": "hexo generate",
     "server": "hexo server",
     "new": "hexo new",
-    "test": "node --test tests/**/*.test.js",
+    "test": "node --test tests/*.test.js tests/ui/*.test.js",
     "news:digest": "node tools/generate-news-digest.js"
   },
   "hexo": {

@@ -107,14 +107,53 @@
       });
 
       doc.addEventListener('keydown', (event) => {
-        if (String(event?.key || '') !== 'Escape') return;
+        const key = String(event?.key || '');
         if (!overlay.classList.contains('is-open')) return;
-        closeOverlay(overlay);
+
+        if (key === 'Escape') {
+          closeOverlay(overlay);
+          return;
+        }
+
+        // Keyboard navigation when open.
+        if (key !== 'ArrowLeft' && key !== 'ArrowRight') return;
+
+        const list = overlay.__xdlkcLightboxImages;
+        if (!Array.isArray(list) || list.length <= 1) return;
+
+        const rawIdx = Number(overlay.__xdlkcLightboxIndex);
+        const current = Number.isFinite(rawIdx) ? rawIdx : 0;
+        const delta = key === 'ArrowRight' ? 1 : -1;
+
+        // Wrap around.
+        const nextIndex = (current + delta + list.length) % list.length;
+        const nextImg = list[nextIndex];
+        if (!nextImg?.getAttribute) return;
+
+        try {
+          event.preventDefault?.();
+          event.stopPropagation?.();
+        } catch {
+          // ignore
+        }
+
+        overlay.__xdlkcLightboxIndex = nextIndex;
+        openOverlay(overlay, {
+          src: nextImg.getAttribute('src') || '',
+          alt: nextImg.getAttribute('alt') || ''
+        });
       });
     }
 
     // Bind click for article images.
+    // Also keep an ordered list for keyboard navigation.
     const imgs = Array.from(doc.querySelectorAll('.article-content img'));
+    const eligibleImgs = imgs.filter((img) => {
+      if (!img?.closest) return true;
+      return !img.closest('a');
+    });
+    overlay.__xdlkcLightboxImages = eligibleImgs;
+
     imgs.forEach((img) => {
       if (!img?.getAttribute) return;
       if (img.getAttribute('data-image-lightbox') === '1') return;
@@ -131,6 +170,9 @@
         } catch {
           // ignore
         }
+
+        const idx = eligibleImgs.indexOf(img);
+        overlay.__xdlkcLightboxIndex = idx >= 0 ? idx : 0;
 
         const src = img.getAttribute('src') || '';
         const alt = img.getAttribute('alt') || '';
