@@ -42,6 +42,7 @@
     <h1><%= page.title %></h1>
     <p class="article-meta"><span data-i18n-key="post.published">Published</span> <%= date(page.date, 'YYYY-MM-DD') %><%= updated_label() %> · <span data-i18n-key="post.reading">Reading</span> <%= reading_time(page.content) %> <span data-i18n-key="post.min">min</span> · <span data-i18n-key="post.words">Words</span> <%= post_word_count(page.content) %></p>
     <button class="article-link-copy" type="button" data-article-link-copy data-i18n-key="post.copyLink" data-i18n-aria-label-key="post.copyLink" aria-label="Copy article link">Copy Link</button>
+    <button class="post-like" type="button" data-post-like aria-pressed="false">👍 Like (0)</button>
     <% if (page.excerpt) { %>
       <p class="article-summary"><%= strip_html(page.excerpt) %></p>
     <% } %>
@@ -186,6 +187,7 @@
 <script src="<%- url_for('/js/breadcrumb.js') %>" defer></script>
 <script src="<%- url_for('/js/heading-anchor-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/article-link-copy.js') %>" defer></script>
+<script src="<%- url_for('/js/post-like.js') %>" defer></script>
 <script src="<%- url_for('/js/image-open.js') %>" defer></script>
 <script src="<%- url_for('/js/mermaid-enhance.js') %>" defer></script>
 <script type="module">
@@ -253,5 +255,6 @@
   window.ReadingProgress?.initReadingProgress();
   window.HeadingAnchorCopy?.initHeadingAnchorCopy();
   window.ArticleLinkCopy?.initArticleLinkCopy();
+  window.PostLike?.initPostLike();
   window.ImageOpen?.initImageOpen();
 </script>
