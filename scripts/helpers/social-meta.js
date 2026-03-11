@@ -1,3 +1,7 @@
+const path = require('node:path');
+
+const { inferMimeTypeFromPath, readImageSizeFromFile } = require('./image-dimensions');
+
 function cleanText(input) {
   return String(input || '')
     .replace(/<[^>]+>/g, ' ')
@@ -20,6 +24,73 @@ function toAbsoluteUrl(value, siteUrl) {
   } catch (_) {
     return '';
   }
+}
+
+function isSameOrigin(urlA, urlB) {
+  try {
+    const a = new URL(urlA);
+    const b = new URL(urlB);
+    return a.origin === b.origin;
+  } catch (_) {
+    return false;
+  }
+}
+
+function safeResolveLocalFile({ imageUrl, siteUrl, rootDir }) {
+  const base = String(rootDir || '').trim();
+  if (!base) return '';
+
+  const image = String(imageUrl || '').trim();
+  if (!image) return '';
+
+  let pathname = '';
+
+  // Only resolve local assets:
+  // - root-relative (/images/xx)
+  // - same-origin absolute URLs (https://site/...)
+  if (image.startsWith('/')) {
+    pathname = image;
+  } else if (siteUrl && isSameOrigin(image, siteUrl)) {
+    try {
+      pathname = new URL(image).pathname;
+    } catch (_) {
+      pathname = '';
+    }
+  }
+
+  if (!pathname) return '';
+
+  // Only consider common static assets directory.
+  if (!pathname.startsWith('/images/')) return '';
+
+  const resolved = path.resolve(base, pathname.replace(/^\/+/, ''));
+  const rootResolved = path.resolve(base);
+
+  // Prevent path traversal.
+  if (!resolved.startsWith(rootResolved + path.sep) && resolved !== rootResolved) return '';
+
+  return resolved;
+}
+
+function computeImageMeta({ imageUrl, rootDir, siteUrl }) {
+  const imageType = inferMimeTypeFromPath(imageUrl);
+
+  const filepath = safeResolveLocalFile({ imageUrl, rootDir, siteUrl });
+  if (!filepath) {
+    return {
+      imageType,
+      imageWidth: 0,
+      imageHeight: 0
+    };
+  }
+
+  const { width, height, type } = readImageSizeFromFile(filepath);
+
+  return {
+    imageType: type || imageType,
+    imageWidth: Number.isInteger(width) ? width : 0,
+    imageHeight: Number.isInteger(height) ? height : 0
+  };
 }
 
 function toIso8601(value) {
@@ -141,7 +212,7 @@ function pickImageAlt(page = {}, { fallbackText = '' } = {}) {
   return fallback || '';
 }
 
-function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
+function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '', rootDir = '' } = {}) {
   const title = cleanText(page.title) || cleanText(site.title);
   const description =
     cleanText(page.description) ||
@@ -164,6 +235,10 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
 
   const articleTags = type === 'article' ? normalizeArticleTags(page.tags) : [];
 
+  const { imageType, imageWidth, imageHeight } = image
+    ? computeImageMeta({ imageUrl: image, rootDir, siteUrl: site.url })
+    : { imageType: '', imageWidth: 0, imageHeight: 0 };
+
   return {
     title,
     description,
@@ -171,6 +246,9 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '' } = {}) {
     type,
     image,
     imageAlt,
+    imageType,
+    imageWidth,
+    imageHeight,
     twitterCard: fromDefault ? 'summary' : 'summary_large_image',
     locale: normalizeLocale(site.language),
     articlePublishedTime: type === 'article' ? toIso8601(page.date) : '',
@@ -184,7 +262,8 @@ if (typeof hexo !== 'undefined' && hexo.extend && hexo.extend.helper) {
     return buildSocialMeta({
       page: this.page,
       site: this.config,
-      canonicalUrl: this.canonical_url()
+      canonicalUrl: this.canonical_url(),
+      rootDir: hexo.base_dir
     });
   });
 }

@@ -14,6 +14,11 @@
   <meta property="og:url" content="<%= social.url %>" />
   <meta property="og:type" content="<%= social.type %>" />
   <meta property="og:image" content="<%= social.image %>" />
+  <% if (social.imageType) { %><meta property="og:image:type" content="<%= social.imageType %>" /><% } %>
+  <% if (social.imageWidth && social.imageHeight) { %>
+    <meta property="og:image:width" content="<%= social.imageWidth %>" />
+    <meta property="og:image:height" content="<%= social.imageHeight %>" />
+  <% } %>
   <% if (social.imageAlt) { %><meta property="og:image:alt" content="<%= social.imageAlt %>" /><% } %>
   <% if (social.locale) { %><meta property="og:locale" content="<%= social.locale %>" /><% } %>
   <% if (social.articlePublishedTime) { %><meta property="article:published_time" content="<%= social.articlePublishedTime %>" /><% } %>
