@@ -246,6 +246,15 @@
       return { mode: 'tag', query: q, tokensLower };
     }
 
+    // Category-only query mode: cat: / cats: / category: / categories: prefix.
+    // Examples: "cat:life", "category: life notes".
+    const catPrefixMatch = trimmed.match(/^(cats?|cat|categories?|category):\s*(.*)$/i);
+    if (catPrefixMatch) {
+      const q = String(catPrefixMatch[2] || '').trim();
+      const tokensLower = splitKeywords(q).map((t) => String(t).toLowerCase()).filter(Boolean);
+      return { mode: 'category', query: q, tokensLower };
+    }
+
     const tokensLower = splitKeywords(trimmed).map((t) => String(t).toLowerCase()).filter(Boolean);
     return { mode: 'all', query: trimmed, tokensLower };
   }
@@ -277,6 +286,12 @@
       ? raw.tags
       : (Array.isArray(raw.tag) ? raw.tag : []);
 
+    const categories = Array.isArray(raw.categories)
+      ? raw.categories
+      : (Array.isArray(raw.category) ? raw.category
+        : (typeof raw.category === 'string' ? [raw.category]
+          : (typeof raw.categories === 'string' ? [raw.categories] : [])));
+
     const date = formatPostDate(raw.date || raw.publishedAt || raw.published_at);
 
     const excerpt = typeof raw.excerpt === 'string' ? raw.excerpt : '';
@@ -287,6 +302,7 @@
       title,
       path,
       tags: tags.filter((t) => typeof t === 'string'),
+      categories: categories.filter((c) => typeof c === 'string'),
       date,
       excerpt,
       content,
@@ -297,6 +313,7 @@
   function scorePost(post, queryTokensLower, { mode = 'all' } = {}) {
     const title = (post.title || '').toLowerCase();
     const tags = (post.tags || []).map((t) => String(t).toLowerCase());
+    const categories = (post.categories || []).map((c) => String(c).toLowerCase());
 
     const tokens = Array.isArray(queryTokensLower)
       ? queryTokensLower.filter(Boolean)
@@ -304,7 +321,9 @@
 
     if (tokens.length === 0) return 0;
 
-    const isTagOnly = String(mode || 'all') === 'tag';
+    const modeName = String(mode || 'all');
+    const isTagOnly = modeName === 'tag';
+    const isCategoryOnly = modeName === 'category';
 
     let score = 0;
     let matchedTokens = 0;
@@ -312,7 +331,7 @@
     tokens.forEach((token) => {
       let matchedThis = false;
 
-      if (!isTagOnly && title.includes(token)) {
+      if (!isTagOnly && !isCategoryOnly && title.includes(token)) {
         score += 10;
         matchedThis = true;
 
@@ -320,11 +339,20 @@
         const titleMatches = title.split(token).length - 1;
         score += Math.min(5, titleMatches);
       }
+      if (!isCategoryOnly) {
+        tags.forEach((t) => {
+          if (t.includes(token)) {
+            // Tag match: slightly lower than title, but meaningful.
+            score += isTagOnly ? 6 : 3;
+            matchedThis = true;
+          }
+        });
+      }
 
-      tags.forEach((t) => {
-        if (t.includes(token)) {
-          // Tag match: slightly lower than title, but meaningful.
-          score += isTagOnly ? 6 : 3;
+      categories.forEach((c) => {
+        if (c.includes(token)) {
+          // Category match: between title and tag.
+          score += isCategoryOnly ? 8 : 4;
           matchedThis = true;
         }
       });
@@ -799,6 +827,18 @@
       const item = root.createElement('li');
       item.className = 'site-search-item';
 
+      const categories = Array.isArray(post.categories) ? post.categories : [];
+      const categoryHtml = categories.length
+        ? `<div class="site-search-categories">${categories
+          .slice(0, 3)
+          .map((c) => {
+            const raw = String(c || '').trim();
+            const safeRaw = escapeHtml(raw);
+            return `<button class="site-search-category" type="button" data-site-search-keyword="${safeRaw}" data-site-search-keyword-mode="category">${highlightText(raw, highlightQuery)}</button>`;
+          })
+          .join('')}</div>`
+        : '';
+
       const tags = Array.isArray(post.tags) ? post.tags : [];
       const tagHtml = tags.length
         ? `<div class="site-search-tags">${tags
@@ -828,6 +868,7 @@
           ${metaHtml}
           ${snippetHtml}
         </a>
+        ${categoryHtml}
         ${tagHtml}
       `.trim();
 
@@ -927,7 +968,7 @@
     function applyDialogI18n() {
       const langMode = root?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
       const dialogLabel = langMode === 'zh' ? '站内搜索' : 'Site Search';
-      const placeholder = langMode === 'zh' ? '搜索标题 / 标签…' : 'Search titles / tags...';
+      const placeholder = langMode === 'zh' ? '搜索标题 / 标签 / 分类…' : 'Search titles / tags / categories...';
       const closeText = langMode === 'zh' ? '关闭' : 'Close';
       const hintStart = langMode === 'zh' ? '输入关键词开始搜索' : 'Type to start searching';
       dialog.querySelector('.site-search-modal')?.setAttribute('aria-label', dialogLabel);
@@ -1064,7 +1105,7 @@
 
       const next = mode === 'tag'
         ? (keyword.startsWith('#') ? keyword : `#${keyword}`)
-        : keyword;
+        : (mode === 'category' ? `cat:${keyword}` : keyword);
 
       input.value = next;
       input.dispatchEvent(new win.Event('input', { bubbles: true }));
@@ -1121,7 +1162,7 @@
 
         const next = mode === 'tag'
           ? (keyword.startsWith('#') ? keyword : `#${keyword}`)
-          : keyword;
+          : (mode === 'category' ? `cat:${keyword}` : keyword);
 
         input.value = next;
         input.dispatchEvent(new win.Event('input', { bubbles: true }));
