@@ -664,7 +664,12 @@
         const count = Math.max(0, Number(n) || 0);
         if (langMode === 'zh') return `找到 ${count} 篇`;
         return `Found ${count} ${count === 1 ? 'result' : 'results'}`;
-      }
+      },
+      copyLink: langMode === 'zh' ? '复制链接' : 'Copy link',
+      copied: langMode === 'zh' ? '已复制' : 'Copied',
+      copyLinkAria: langMode === 'zh' ? '复制该条结果链接' : 'Copy link for this result',
+      toastCopied: langMode === 'zh' ? '链接已复制' : 'Link copied',
+      toastCopyFailed: langMode === 'zh' ? '复制失败，请手动复制' : 'Copy failed, please copy manually',
     };
 
     container.innerHTML = '';
@@ -861,13 +866,19 @@
         ? `<div class="site-search-snippet">${snippet}</div>`
         : '';
 
+      const href = `/${String(post.path || '').replace(/^\//, '')}`;
+      const safeHref = escapeHtml(href);
+
       // Note: keep tags outside the <a> so chips can be clickable without triggering navigation.
       item.innerHTML = `
-        <a class="site-search-link" href="/${String(post.path || '').replace(/^\//, '')}">
-          <div class="site-search-title">${highlightText(post.title, highlightQuery)}</div>
-          ${metaHtml}
-          ${snippetHtml}
-        </a>
+        <div class="site-search-row">
+          <a class="site-search-link" href="${safeHref}">
+            <div class="site-search-title">${highlightText(post.title, highlightQuery)}</div>
+            ${metaHtml}
+            ${snippetHtml}
+          </a>
+          <button class="site-search-copy-link" type="button" data-site-search-copy-link="${safeHref}" aria-label="${escapeHtml(i18n.copyLinkAria)}">${escapeHtml(i18n.copyLink)}</button>
+        </div>
         ${categoryHtml}
         ${tagHtml}
       `.trim();
@@ -876,6 +887,124 @@
     });
 
     container.appendChild(list);
+  }
+
+  function resolveLangMode(document = globalThis.document) {
+    return document?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
+  }
+
+  function ensureToast({ document = globalThis.document } = {}) {
+    const existing = document?.querySelector?.('.code-copy-toast');
+    if (existing) return existing;
+
+    const toast = document.createElement('div');
+    toast.className = 'code-copy-toast';
+    toast.setAttribute('role', 'status');
+    toast.setAttribute('aria-live', 'polite');
+    document.body?.appendChild?.(toast);
+    return toast;
+  }
+
+  function showToast({ toast, message, window = globalThis.window } = {}) {
+    if (!toast) return;
+    try {
+      toast.textContent = String(message || '');
+      toast.classList.add('is-visible');
+      window?.clearTimeout?.(showToast._timer);
+      showToast._timer = window?.setTimeout?.(() => {
+        toast.classList.remove('is-visible');
+      }, 1400);
+    } catch {
+      // ignore
+    }
+  }
+
+  function fallbackCopy({ text, document = globalThis.document } = {}) {
+    const area = document.createElement('textarea');
+    area.value = String(text || '');
+    area.setAttribute('readonly', 'readonly');
+    area.style.position = 'fixed';
+    area.style.opacity = '0';
+    document.body.appendChild(area);
+    area.select();
+    const ok = document.execCommand && document.execCommand('copy');
+    document.body.removeChild(area);
+    if (!ok) throw new Error('copy failed');
+  }
+
+  async function copyText({ text, navigator = globalThis.navigator, document = globalThis.document } = {}) {
+    if (navigator?.clipboard?.writeText) {
+      await navigator.clipboard.writeText(String(text || ''));
+      return;
+    }
+    fallbackCopy({ text, document });
+  }
+
+  function bindCopyLinkButtons({
+    root = document,
+    document = root,
+    window = document?.defaultView || globalThis.window,
+    navigator = window?.navigator || globalThis.navigator,
+    location = window?.location || globalThis.location,
+  } = {}) {
+    const dialog = root.querySelector?.('[data-site-search-dialog]');
+    if (!dialog) return;
+    if (dialog.getAttribute?.('data-site-search-copy-bound') === '1') return;
+    dialog.setAttribute?.('data-site-search-copy-bound', '1');
+
+    const toast = ensureToast({ document });
+
+    dialog.addEventListener('click', async (event) => {
+      const target = event?.target;
+      const btn = target?.closest?.('[data-site-search-copy-link]');
+      if (!btn) return;
+
+      // Avoid triggering navigation via surrounding <a>.
+      try {
+        event.preventDefault?.();
+        event.stopPropagation?.();
+      } catch {
+        // ignore
+      }
+
+      const href = btn.getAttribute('data-site-search-copy-link');
+      if (!href) return;
+
+      // Build absolute URL from origin + path.
+      let absolute = null;
+      try {
+        const origin = location?.origin || (location?.href ? new URL(location.href).origin : '');
+        absolute = new URL(String(href), origin || 'https://example.invalid').href;
+      } catch {
+        absolute = String(href);
+      }
+
+      const langMode = resolveLangMode(document);
+      const copiedText = langMode === 'zh' ? '已复制' : 'Copied';
+      const copyTextLabel = langMode === 'zh' ? '复制链接' : 'Copy link';
+      const toastCopied = langMode === 'zh' ? '链接已复制' : 'Link copied';
+      const toastCopyFailed = langMode === 'zh' ? '复制失败，请手动复制' : 'Copy failed, please copy manually';
+
+      try {
+        await copyText({ text: absolute, navigator, document });
+        showToast({ toast, message: toastCopied, window });
+
+        // Transient button feedback.
+        const prev = btn.textContent;
+        btn.textContent = copiedText;
+        window?.setTimeout?.(() => {
+          try {
+            // If user already changed language, reflect it.
+            const lang2 = resolveLangMode(document);
+            btn.textContent = lang2 === 'zh' ? '复制链接' : 'Copy link';
+          } catch {
+            btn.textContent = prev || copyTextLabel;
+          }
+        }, 1200);
+      } catch {
+        showToast({ toast, message: toastCopyFailed, window });
+      }
+    });
   }
 
   async function fetchDbJson() {
@@ -982,6 +1111,7 @@
     }
 
     applyDialogI18n();
+    bindCopyLinkButtons({ root, document: root, window: win, navigator: win?.navigator, location });
 
     let cachedDb = null;
     let dbLoading = null;
@@ -1384,6 +1514,7 @@
     searchPosts,
     ensureDialog,
     renderResults,
+    bindCopyLinkButtons,
     computeScrollTopToReveal,
     openFirstResult,
     initSiteSearch

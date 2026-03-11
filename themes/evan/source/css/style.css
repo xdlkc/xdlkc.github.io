@@ -1239,6 +1239,37 @@ html[data-theme="dark"] .related-posts-keyword {
   overflow: hidden;
 }
 
+.site-search-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.site-search-row .site-search-link {
+  flex: 1;
+}
+
+.site-search-copy-link {
+  flex: none;
+  border: 0;
+  border-left: 1px solid var(--border);
+  background: var(--card);
+  color: var(--muted);
+  padding: 0 0.85rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.site-search-copy-link:hover {
+  background: var(--card-hover, rgba(15, 118, 110, 0.06));
+  color: var(--text);
+}
+
+.site-search-copy-link:focus-visible {
+  outline: 2px solid rgba(15, 118, 110, 0.55);
+  outline-offset: -2px;
+}
+
 .site-search-link {
   display: block;
   padding: 0.85rem;
