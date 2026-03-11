@@ -275,6 +275,65 @@
     container.addEventListener('touchmove', clear, { passive: true });
   }
 
+  function ensureFocusable(container) {
+    if (!container?.setAttribute) return;
+
+    // Make code blocks keyboard focusable for shortcut usage.
+    // Only set when no explicit tabindex exists.
+    try {
+      if (container.getAttribute('tabindex') == null) {
+        container.setAttribute('tabindex', '0');
+      }
+    } catch {
+      // ignore
+    }
+  }
+
+  function bindKeyboardShortcutCopy({ block, toast } = {}) {
+    if (!block || !block.element) return;
+
+    const container = block.element;
+    if (container.getAttribute?.('data-code-copy-shortcut') === '1') return;
+    container.setAttribute?.('data-code-copy-shortcut', '1');
+
+    container.addEventListener('keydown', async (event) => {
+      const key = String(event?.key || '');
+      const isC = key === 'c' || key === 'C';
+      const hasModifier = !!(event?.ctrlKey || event?.metaKey);
+      const isShortcut = isC && hasModifier && !!event?.shiftKey;
+      if (!isShortcut) return;
+
+      // Avoid interfering with IME.
+      if (event?.isComposing) return;
+
+      try {
+        event.preventDefault?.();
+        event.stopPropagation?.();
+      } catch {
+        // ignore
+      }
+
+      const text = block.type === 'highlight'
+        ? extractFromHighlightFigure(container)
+        : extractFromPre(container);
+
+      if (!text.trim()) return;
+
+      const doc = container?.ownerDocument || document;
+      try {
+        await copyText(text);
+        const lang = resolveLang(doc);
+        const lineCount = countCopiedLines(text);
+        showToast(toast, formatCopiedLineMessage(lineCount, { lang }));
+        flashCopiedClass(container, { durationMs: 1200 });
+      } catch {
+        selectCodeContent(container, { type: block.type });
+        const lang = resolveLang(doc);
+        showToast(toast, copyFailureToastText({ lang }));
+      }
+    });
+  }
+
   function injectButton({ block, toast } = {}) {
     if (!block || !block.element) return;
 
@@ -329,9 +388,11 @@
 
     const blocks = findCodeBlocks({ root });
     blocks.forEach((block) => {
+      ensureFocusable(block.element);
       injectButton({ block, toast });
       bindDoubleClickCopy({ block, toast });
       bindLongPressCopy({ block, toast, longPressMs });
+      bindKeyboardShortcutCopy({ block, toast });
     });
 
     // React to language mode changes (LangToggle dispatches xdlkc:lang-change).
