@@ -20,11 +20,34 @@
   const RECENT_STORAGE_KEY = 'xdlkc:site-search:recent';
   const RECENT_LIMIT = 5;
 
+  // Last query (persisted on close so reopen can restore the previous search).
+  const LAST_QUERY_KEY = 'xdlkc:site-search:last';
+
   function safeJsonParse(raw, fallback) {
     try {
       return JSON.parse(raw);
     } catch {
       return fallback;
+    }
+  }
+
+  function loadLastQuery(storage) {
+    if (!storage?.getItem) return '';
+    try {
+      return String(storage.getItem(LAST_QUERY_KEY) || '').trim();
+    } catch {
+      return '';
+    }
+  }
+
+  function saveLastQuery(storage, query) {
+    if (!storage?.setItem) return;
+    try {
+      const q = String(query || '').trim();
+      // Keep behavior simple: empty string clears.
+      storage.setItem(LAST_QUERY_KEY, q);
+    } catch {
+      // ignore
     }
   }
 
@@ -948,10 +971,13 @@
 
     function handleOpen() {
       openDialog(dialog);
-      input.value = '';
+
+      const lastQuery = loadLastQuery(storageRef);
+      input.value = lastQuery || '';
+
       renderResults({
         root,
-        query: '',
+        query: input.value,
         results: [],
         suggestions: {
           topTags: cachedTopTags || [],
@@ -959,9 +985,24 @@
         }
       });
       resetSelection();
+
+      // If we have a persisted query, trigger a best-effort search render.
+      // This reuses the existing input handler (incl. ensureDb).
+      if (input.value) {
+        try {
+          input.dispatchEvent(new win.Event('input', { bubbles: true }));
+        } catch {
+          // ignore
+        }
+      }
     }
 
     function handleClose() {
+      try {
+        saveLastQuery(storageRef, input?.value || '');
+      } catch {
+        // ignore
+      }
       closeDialog(dialog);
     }
 
@@ -1101,6 +1142,8 @@
           }
 
           activeInput.value = '';
+          // Persist clear so next open doesn't restore the old query.
+          saveLastQuery(storageRef, '');
           // Trigger an input event to refresh suggestions to the "empty query" state.
           try {
             const doc = dialog.ownerDocument || root;
