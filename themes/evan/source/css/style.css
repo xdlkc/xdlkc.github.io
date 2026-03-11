@@ -578,6 +578,43 @@ h2 {
   font-weight: 700;
 }
 
+.toc-link-copy-button {
+  margin-left: 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1;
+  padding: 0.1rem 0.28rem;
+  cursor: pointer;
+}
+
+.toc-link-copy-button:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.toc-link-copy-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.4rem;
+  transform: translateX(-50%);
+  background: rgba(17, 24, 39, 0.9);
+  color: #fff;
+  font-size: 0.82rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 40;
+}
+
+.toc-link-copy-toast.is-visible {
+  opacity: 1;
+}
+
 .toc-mobile {
   display: none;
   margin-bottom: 1rem;

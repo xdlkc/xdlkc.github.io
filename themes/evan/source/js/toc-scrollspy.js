@@ -124,6 +124,104 @@
     });
   }
 
+  function resolveLangMode(doc = document) {
+    const mode = doc?.documentElement?.dataset?.langMode;
+    return mode === 'zh' ? 'zh' : 'en';
+  }
+
+  function ensureTocCopyToast(doc = document) {
+    const existing = doc.querySelector?.('.toc-link-copy-toast');
+    if (existing) return existing;
+
+    const toast = doc.createElement('div');
+    toast.className = 'toc-link-copy-toast';
+    toast.setAttribute('role', 'status');
+    toast.setAttribute('aria-live', 'polite');
+    doc.body?.appendChild?.(toast);
+    return toast;
+  }
+
+  function showTocCopyToast(toast, message) {
+    if (!toast) return;
+    toast.textContent = message;
+    toast.classList.add('is-visible');
+    window.clearTimeout(showTocCopyToast._timer);
+    showTocCopyToast._timer = window.setTimeout(() => {
+      toast.classList.remove('is-visible');
+    }, 1400);
+  }
+
+  function fallbackCopyText(text, doc = document) {
+    const area = doc.createElement('textarea');
+    area.value = String(text || '');
+    area.setAttribute('readonly', 'readonly');
+    area.style.position = 'fixed';
+    area.style.opacity = '0';
+    doc.body.appendChild(area);
+    area.select();
+    const ok = doc.execCommand?.('copy');
+    doc.body.removeChild(area);
+    if (!ok) throw new Error('copy failed');
+  }
+
+  async function copyText(text, doc = document) {
+    const clipboard = window?.navigator?.clipboard || globalThis?.navigator?.clipboard;
+    if (clipboard?.writeText) {
+      await clipboard.writeText(String(text || ''));
+      return;
+    }
+    fallbackCopyText(text, doc);
+  }
+
+  function injectTocLinkCopyButtons(toc, { document: doc = document } = {}) {
+    if (!toc?.querySelectorAll) return;
+
+    const toast = ensureTocCopyToast(doc);
+
+    Array.from(toc.querySelectorAll('a[href^="#"]')).forEach((link) => {
+      const href = String(link.getAttribute('href') || '');
+      if (!href.startsWith('#')) return;
+
+      // Idempotent: avoid injecting twice.
+      const parent = link.parentElement || link;
+      if (parent.querySelector?.('.toc-link-copy-button')) return;
+
+      const lang = resolveLangMode(doc);
+      const label = lang === 'zh' ? '复制目录链接' : 'Copy TOC link';
+      const copiedMsg = lang === 'zh' ? '已复制目录链接' : 'Copied TOC link';
+      const failedMsg = lang === 'zh' ? '复制失败，请手动复制' : 'Copy failed, please copy manually';
+
+      const btn = doc.createElement('button');
+      btn.type = 'button';
+      btn.className = 'toc-link-copy-button';
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', label);
+      btn.textContent = '⧉';
+
+      btn.addEventListener('click', async (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const base = String(window.location?.href || '').split('#')[0];
+        const url = base + href;
+
+        try {
+          await copyText(url, doc);
+          showTocCopyToast(toast, copiedMsg);
+        } catch {
+          showTocCopyToast(toast, failedMsg);
+        }
+      });
+
+      try {
+        link.insertAdjacentElement('afterend', btn);
+      } catch {
+        parent.appendChild(btn);
+      }
+    });
+  }
+
+
   function buildTocIntoContainer(toc, headingElements) {
     if (!toc || !toc.querySelector) return;
 
@@ -469,6 +567,9 @@
 
     // UX: long headings might get visually truncated; add hover tooltips.
     enhanceTocLinkTitles(toc);
+
+    // TOC: allow one-click copy of section links.
+    injectTocLinkCopyButtons(toc, { document });
 
     // Enhance TOC UX: allow collapsing nested sections.
     enhanceCollapsibleToc(toc);
