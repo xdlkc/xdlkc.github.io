@@ -87,6 +87,12 @@
                       <span class="related-posts-reason" data-i18n-key="post.relatedReason.recent">Recent</span>
                     <% } %>
                   </div>
+
+                  <% const relatedExcerpt = related_posts_excerpt(post, { maxLength: 120 }); %>
+                  <% if (relatedExcerpt) { %>
+                    <p class="related-posts-excerpt"><%= relatedExcerpt %></p>
+                  <% } %>
+
                   <% if (row.sharedTags && row.sharedTags.length) { %>
                     <div class="related-posts-tags" aria-label="共享标签">
                       <% row.sharedTags.forEach(function(tag) { %>
