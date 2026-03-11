@@ -40,7 +40,11 @@
 
   function getHeadingTopInDocument(element) {
     const rect = element.getBoundingClientRect();
-    const scrollY = window.scrollY || window.pageYOffset || 0;
+
+    // In Node/JSDOM tests, `window` may be missing as a global after cleanup.
+    const win = (typeof window !== 'undefined' ? window : (globalThis.window || globalThis));
+    const scrollY = win?.scrollY || win?.pageYOffset || 0;
+
     return rect.top + scrollY;
   }
 
@@ -628,6 +632,43 @@
       } catch {
         // ignore
       }
+
+      // Even if TOC is hidden for short articles, deep-links (#hash) should still
+      // land with a header offset so the heading isn't covered.
+      try {
+        const win = (typeof window !== 'undefined' ? window : (document.defaultView || globalThis));
+        const doc = document;
+        const loc = win?.location || globalThis?.location;
+        const raw = String(loc?.hash || '');
+        if (raw && raw !== '#') {
+          let id = raw.startsWith('#') ? raw.slice(1) : raw;
+          try {
+            id = decodeURIComponent(id);
+          } catch {
+            // ignore
+          }
+
+          const isHeadingTarget = headingElements.some((h) => String(h?.id || '') === id);
+          const target = isHeadingTarget ? doc.getElementById(id) : null;
+
+          if (target) {
+            const header = doc.querySelector('.article-nav');
+            const headerHeight = header?.getBoundingClientRect
+              ? header.getBoundingClientRect().height
+              : 0;
+            const targetTop = getHeadingTopInDocument(target);
+            const scrollTop = computeScrollTop({ targetTop, headerHeight });
+            try {
+              win.scrollTo({ top: scrollTop, behavior: 'auto' });
+            } catch {
+              try { win.scrollTo(0, scrollTop); } catch {}
+            }
+          }
+        }
+      } catch {
+        // ignore
+      }
+
       return;
     }
 
@@ -692,7 +733,9 @@
     let tocLinks = Array.from(toc.querySelectorAll('a[href^="#"]'));
     if (tocLinks.length === 0) return;
 
-    const header = document.querySelector('.article-nav');
+    const win = (typeof window !== 'undefined' ? window : (document.defaultView || globalThis));
+    const doc = document;
+    const header = doc.querySelector('.article-nav');
 
     // Smooth scroll on click with header offset (keep default anchor behavior as fallback).
     tocLinks.forEach((link) => {
@@ -701,7 +744,7 @@
         const id = href.startsWith('#') ? href.slice(1) : '';
         if (!id) return;
 
-        const target = document.getElementById(id);
+        const target = doc.getElementById(id);
         if (!target) return;
 
         event.preventDefault();
@@ -720,13 +763,67 @@
         const scrollTop = computeScrollTop({ targetTop, headerHeight });
 
         try {
-          window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+          win.scrollTo({ top: scrollTop, behavior: 'smooth' });
           history.pushState(null, '', `#${id}`);
         } catch (e) {
           // Unsupported: fall back to default jump.
-          location.hash = `#${id}`;
+          win.location.hash = `#${id}`;
         }
       });
+    });
+
+    // Deep links: when opening a page with #hash, the browser will jump the heading
+    // to the top of viewport, which may be covered by the fixed .article-nav.
+    // Re-apply an offset scroll for initial load + hashchange.
+    const scrollToHashTarget = ({ behavior = 'auto' } = {}) => {
+      const loc = win?.location || globalThis?.location;
+      const raw = String(loc?.hash || '');
+      if (!raw || raw === '#') return false;
+
+      let id = raw.startsWith('#') ? raw.slice(1) : raw;
+      try {
+        id = decodeURIComponent(id);
+      } catch {
+        // ignore
+      }
+      if (!id) return false;
+
+      // Only handle headings inside the article (avoid unexpected scroll for other widgets).
+      const isHeadingTarget = headingElements.some((h) => String(h?.id || '') === id);
+      if (!isHeadingTarget) return false;
+
+      const target = doc.getElementById(id);
+      if (!target) return false;
+
+      const headerHeight = header?.getBoundingClientRect
+        ? header.getBoundingClientRect().height
+        : 0;
+      const targetTop = getHeadingTopInDocument(target);
+      const scrollTop = computeScrollTop({ targetTop, headerHeight });
+
+      try {
+        win.scrollTo({ top: scrollTop, behavior });
+        return true;
+      } catch {
+        try {
+          // Fallback: best-effort immediate jump.
+          win.scrollTo(0, scrollTop);
+          return true;
+        } catch {
+          return false;
+        }
+      }
+    };
+
+    // Initial deep-link: if the page is opened with a hash, apply an offset scroll once.
+    try {
+      scrollToHashTarget({ behavior: 'auto' });
+    } catch {
+      // ignore
+    }
+
+    win.addEventListener?.('hashchange', () => {
+      scrollToHashTarget({ behavior: 'smooth' });
     });
 
     const headingMeta = headingElements.map((el) => ({
