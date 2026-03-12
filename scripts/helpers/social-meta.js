@@ -239,6 +239,16 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '', rootDir = ''
     ? computeImageMeta({ imageUrl: image, rootDir, siteUrl: site.url })
     : { imageType: '', imageWidth: 0, imageHeight: 0 };
 
+  let imageSecureUrl = '';
+  if (image) {
+    try {
+      const u = new URL(image);
+      if (u.protocol === 'https:') imageSecureUrl = u.toString();
+    } catch {
+      imageSecureUrl = '';
+    }
+  }
+
   return {
     title,
     description,
@@ -247,6 +257,7 @@ function buildSocialMeta({ page = {}, site = {}, canonicalUrl = '', rootDir = ''
     url: canonicalUrl || toAbsoluteUrl('/', site.url),
     type,
     image,
+    imageSecureUrl,
     imageAlt,
     imageType,
     imageWidth,

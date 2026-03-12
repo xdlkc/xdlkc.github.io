@@ -15,6 +15,7 @@
   <meta property="og:type" content="<%= social.type %>" />
   <% if (social.siteName) { %><meta property="og:site_name" content="<%= social.siteName %>" /><% } %>
   <meta property="og:image" content="<%= social.image %>" />
+  <% if (social.imageSecureUrl) { %><meta property="og:image:secure_url" content="<%= social.imageSecureUrl %>" /><% } %>
   <% if (social.imageType) { %><meta property="og:image:type" content="<%= social.imageType %>" /><% } %>
   <% if (social.imageWidth && social.imageHeight) { %>
     <meta property="og:image:width" content="<%= social.imageWidth %>" />
