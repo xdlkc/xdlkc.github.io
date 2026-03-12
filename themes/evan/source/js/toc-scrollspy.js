@@ -822,6 +822,25 @@
           // ignore
         }
       });
+
+      // Sync URL hash to the active heading while scrolling.
+      // Use replaceState to avoid polluting back/forward history.
+      // Guard: if current hash points to a non-heading anchor, don't override it.
+      try {
+        if (!id) return;
+        const loc = win?.location || globalThis?.location;
+        const rawHash = String(loc?.hash || '');
+        const currentId = rawHash && rawHash.startsWith('#') ? rawHash.slice(1) : '';
+        const headingIds = new Set(headingMeta.map((h) => String(h?.id || '')));
+
+        if (currentId && !headingIds.has(currentId)) return;
+
+        if (rawHash !== `#${id}`) {
+          history.replaceState(null, '', `#${id}`);
+        }
+      } catch {
+        // ignore
+      }
     };
 
     // Deep links (#hash): apply an offset scroll so the heading isn't covered by fixed header.
