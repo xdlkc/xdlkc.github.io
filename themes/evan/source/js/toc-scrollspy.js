@@ -475,6 +475,135 @@
     });
   }
 
+  function resolveLangModeForDoc(doc = document) {
+    const mode = doc?.documentElement?.dataset?.langMode;
+    return mode === 'zh' ? 'zh' : 'en';
+  }
+
+  function injectTocCollapseAllToggle(
+    toc,
+    {
+      document: doc = document,
+      storage = (globalThis.window && globalThis.window.localStorage) || globalThis.localStorage,
+      storageKey = 'xdlkc:toc:collapsed'
+    } = {}
+  ) {
+    if (!toc || !toc.querySelectorAll || !doc?.querySelector) return;
+
+    // Desktop-only: requires toc-card header.
+    const header = toc.closest?.('.toc-card')?.querySelector?.('.toc-header');
+    if (!header) return;
+
+    // Only show when there is at least one collapsible entry.
+    const allLis = Array.from(toc.querySelectorAll('li'));
+    const collapsible = allLis.filter((li) => li.querySelector(':scope > ol, :scope > ul'));
+    if (collapsible.length === 0) return;
+
+    const safeKey = String(storageKey || 'xdlkc:toc:collapsed');
+
+    const readCollapsedSet = () => {
+      try {
+        const raw = storage?.getItem?.(safeKey);
+        if (!raw) return new Set();
+        const parsed = JSON.parse(raw);
+        if (!Array.isArray(parsed)) return new Set();
+        return new Set(parsed.map((x) => String(x)).filter(Boolean));
+      } catch {
+        return new Set();
+      }
+    };
+
+    const writeCollapsedSet = (set) => {
+      try {
+        if (!storage?.setItem) return;
+        storage.setItem(safeKey, JSON.stringify(Array.from(set)));
+      } catch {
+        // ignore
+      }
+    };
+
+    const resolveIdForLi = (li, idx) => {
+      const firstLink = li.querySelector(':scope > a');
+      const href = String(firstLink?.getAttribute?.('href') || '').trim();
+      return href.startsWith('#') ? href : `idx:${idx}`;
+    };
+
+    const lang = resolveLangModeForDoc(doc);
+    const labels = {
+      collapseAll: lang === 'zh' ? '收起全部' : 'Collapse all',
+      expandAll: lang === 'zh' ? '展开全部' : 'Expand all',
+      aria: lang === 'zh' ? '收起或展开全部目录子标题' : 'Collapse or expand all TOC sections'
+    };
+
+    const getButton = () => header.querySelector?.('.toc-collapse-all');
+
+    const setButtonLabel = (btn, { allCollapsed } = {}) => {
+      if (!btn) return;
+      btn.textContent = allCollapsed ? labels.expandAll : labels.collapseAll;
+      try {
+        btn.setAttribute('aria-label', labels.aria);
+      } catch {
+        // ignore
+      }
+    };
+
+    const areAllCollapsed = () => collapsible.every((li) => li.classList.contains('is-collapsed'));
+
+    let btn = getButton();
+    if (!btn) {
+      btn = doc.createElement('button');
+      btn.type = 'button';
+      btn.className = 'toc-collapse-all';
+      btn.setAttribute('data-toc-collapse-all', '');
+      btn.setAttribute('aria-label', labels.aria);
+
+      // Place it in the header row (after title, before the visibility toggle when present).
+      const visibilityBtn = header.querySelector?.('.toc-visibility-toggle');
+      if (visibilityBtn && visibilityBtn.parentNode === header) {
+        header.insertBefore(btn, visibilityBtn);
+      } else {
+        header.appendChild(btn);
+      }
+    }
+
+    // Idempotent binding.
+    if (btn.getAttribute('data-toc-collapse-all-bound') !== '1') {
+      btn.setAttribute('data-toc-collapse-all-bound', '1');
+
+      btn.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const collapse = !areAllCollapsed();
+        const set = readCollapsedSet();
+
+        collapsible.forEach((li, idx) => {
+          const id = resolveIdForLi(li, idx);
+          if (collapse) {
+            li.classList.add('is-collapsed');
+            set.add(id);
+          } else {
+            li.classList.remove('is-collapsed');
+            set.delete(id);
+          }
+
+          // Sync aria for per-item toggle buttons when present.
+          try {
+            const itemBtn = li.querySelector?.(':scope > .toc-collapse-btn');
+            itemBtn?.setAttribute?.('aria-expanded', collapse ? 'false' : 'true');
+          } catch {
+            // ignore
+          }
+        });
+
+        writeCollapsedSet(set);
+        setButtonLabel(btn, { allCollapsed: collapse });
+      });
+    }
+
+    // Initial label based on current DOM state.
+    setButtonLabel(btn, { allCollapsed: areAllCollapsed() });
+  }
+
   function expandTocAncestorsForLink(link) {
     if (!link || !link.closest) return;
 
@@ -687,7 +816,10 @@
       injectTocLinkCopyButtons(toc, { document });
 
       // Enhance TOC UX: allow collapsing nested sections.
-      enhanceCollapsibleToc(toc);
+      enhanceCollapsibleToc(toc, { document });
+
+      // Desktop TOC: provide a one-click collapse/expand all toggle.
+      injectTocCollapseAllToggle(toc, { document });
 
       const tocLinks = Array.from(toc.querySelectorAll('a[href^="#"]'));
       if (tocLinks.length === 0) return;
@@ -927,6 +1059,7 @@
     computeTocScrollTopToReveal,
     enhanceTocLinkTitles,
     enhanceCollapsibleToc,
+    injectTocCollapseAllToggle,
     expandTocAncestorsForLink,
     initTocScrollSpy
   };
