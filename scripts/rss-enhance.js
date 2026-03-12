@@ -90,6 +90,30 @@ function ensureItemCreators(xml, { author } = {}) {
   });
 }
 
+function ensureItemGuids(xml) {
+  const out = String(xml || '');
+  if (!out) return out;
+
+  // Replace each <item>...</item> block.
+  return out.replace(/<item>([\s\S]*?)<\/item>/gi, (full, body) => {
+    // Already has guid.
+    if (/<guid\b/i.test(body)) return full;
+
+    // Must have <link>...</link> to use as permalink.
+    const m = body.match(/<link>([\s\S]*?)<\/link>/i);
+    if (!m) return full;
+
+    const linkValue = String(m[1] || '').trim();
+    if (!linkValue) return full;
+
+    const guidNode = `      <guid isPermaLink="true">${escapeXml(linkValue)}</guid>`;
+
+    // Prefer insert right after <link>..</link>.
+    const injected = body.replace(/(<link>[\s\S]*?<\/link>\s*)/i, `$1${guidNode}\n`);
+    return `<item>${injected}</item>`;
+  });
+}
+
 function enhanceRssXml(xml, { siteUrl, root = '/', feedPath = 'rss.xml', author } = {}) {
   let out = String(xml || '');
   if (!out) return out;
@@ -101,6 +125,7 @@ function enhanceRssXml(xml, { siteUrl, root = '/', feedPath = 'rss.xml', author 
   out = ensureChannelAtomSelfLink(out, { href });
 
   out = ensureItemCreators(out, { author });
+  out = ensureItemGuids(out);
 
   return out;
 }
@@ -148,6 +173,7 @@ module.exports = {
   buildFeedSelfHref,
   ensureChannelAtomSelfLink,
   ensureItemCreators,
+  ensureItemGuids,
   enhanceRssXml,
   registerHexoHook,
 };
