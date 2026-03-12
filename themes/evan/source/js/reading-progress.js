@@ -237,12 +237,64 @@
       return `剩余 ${remaining} 分钟`;
     };
 
-    const formatValueText = ({ percent, remaining, hasEstimate }) => {
+    const truncateHeading = (text, { maxLen = 24 } = {}) => {
+      const raw = String(text || '').replace(/\s+/g, ' ').trim();
+      if (!raw) return '';
+      const m = Math.max(1, Number(maxLen) || 24);
+      if (raw.length <= m) return raw;
+      return raw.slice(0, Math.max(1, m - 1)).trimEnd() + '…';
+    };
+
+    const getActiveHeadingText = ({ scrollY, thresholdPx = 96 } = {}) => {
+      const headings = Array.from(document.querySelectorAll?.('.article-content h2, .article-content h3') || []);
+      if (headings.length === 0) return '';
+
+      const y = Number(scrollY) || 0;
+      const threshold = Math.max(0, Number(thresholdPx) || 0);
+      const targetY = y + threshold;
+
+      let active = null;
+      for (const h of headings) {
+        if (!h) continue;
+        let absTop = null;
+        try {
+          const rect = h.getBoundingClientRect?.();
+          if (rect && Number.isFinite(rect.top)) absTop = y + Number(rect.top);
+        } catch {
+          // ignore
+        }
+
+        // JSDOM/no-layout fallback.
+        if (absTop == null) {
+          try {
+            if (Number.isFinite(h.offsetTop)) absTop = Number(h.offsetTop);
+          } catch {
+            // ignore
+          }
+        }
+
+        if (absTop == null) continue;
+        if (absTop <= targetY) active = h;
+        else break;
+      }
+
+      if (!active) return '';
+      return truncateHeading(active.textContent || '');
+    };
+
+    const formatValueText = ({ percent, remaining, hasEstimate, headingText }) => {
       const mode = document.documentElement?.dataset?.langMode;
       const isEn = mode === 'en';
-      if (!hasEstimate) return isEn ? `Reading progress ${percent}%` : `阅读进度 ${percent}%`;
-      if (isEn) return `Reading progress ${percent}%, ~${remaining} min left`;
-      return `阅读进度 ${percent}%，剩余 ${remaining} 分钟`;
+      const head = String(headingText || '').trim();
+
+      const base = !hasEstimate
+        ? (isEn ? `Reading progress ${percent}%` : `阅读进度 ${percent}%`)
+        : (isEn
+          ? `Reading progress ${percent}%, ~${remaining} min left`
+          : `阅读进度 ${percent}%，剩余 ${remaining} 分钟`);
+
+      if (!head) return base;
+      return `${base} · ${head}`;
     };
 
     const update = () => {
@@ -260,12 +312,18 @@
         ? computeRemainingMinutes({ totalMinutes, percent })
         : 0;
 
+      const headingText = getActiveHeadingText({ scrollY: window.scrollY || window.pageYOffset || 0, thresholdPx: 96 });
+
       bar.style.width = percent + '%';
       container.setAttribute('aria-valuenow', String(percent));
-      container.setAttribute('aria-valuetext', formatValueText({ percent, remaining, hasEstimate }));
-      label.textContent = hasEstimate
+      container.setAttribute('aria-valuetext', formatValueText({ percent, remaining, hasEstimate, headingText }));
+
+      const baseLabel = hasEstimate
         ? `${percent}% · ${formatRemainingText(remaining)}`
         : `${percent}%`;
+      label.textContent = headingText
+        ? `${percent}% · ${headingText}`
+        : baseLabel;
 
       // Also mirror progress into the tab title for better multi-tab UX.
       try {
