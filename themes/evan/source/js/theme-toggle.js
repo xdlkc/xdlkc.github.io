@@ -111,6 +111,34 @@ function readUrlThemeOverride(location) {
   }
 }
 
+function isTypingTarget(target) {
+  if (!target) return false;
+  const el = target;
+
+  try {
+    if (el.matches?.('input, textarea, select')) return true;
+  } catch {
+    // ignore
+  }
+
+  try {
+    if (el.isContentEditable) return true;
+  } catch {
+    // ignore
+  }
+
+  try {
+    if (el.closest?.('[contenteditable="true"]')) return true;
+  } catch {
+    // ignore
+  }
+
+  const tag = String(el.tagName || '').toLowerCase();
+  if (tag === 'input' || tag === 'textarea' || tag === 'select') return true;
+
+  return false;
+}
+
 function initThemeToggle({
   window = globalThis.window,
   document = globalThis.document,
@@ -134,6 +162,36 @@ function initThemeToggle({
   if (!toggle) return;
   if (toggle.dataset?.themeBound === '1') return;
   if (toggle.dataset) toggle.dataset.themeBound = '1';
+
+  // Keyboard shortcut: press `d` to cycle theme mode (system -> light -> dark -> system).
+  // Bind at most once per document.
+  if (window?.addEventListener && document?.documentElement?.dataset) {
+    if (document.documentElement.dataset.themeShortcutBound !== '1') {
+      document.documentElement.dataset.themeShortcutBound = '1';
+
+      window.addEventListener('keydown', (event) => {
+        if (!event) return;
+        if (event.defaultPrevented) return;
+        if (event.repeat) return;
+
+        // Ignore modified key combos.
+        if (event.metaKey || event.ctrlKey || event.altKey) return;
+
+        const key = String(event.key || '').toLowerCase();
+        if (key !== 'd') return;
+
+        // Do not hijack typing.
+        if (isTypingTarget(event.target) || isTypingTarget(document?.activeElement)) return;
+
+        // Trigger the same behavior as click.
+        try {
+          toggle.click();
+        } catch {
+          // ignore
+        }
+      });
+    }
+  }
 
   let mql = null;
   let onSystemChange = null;
