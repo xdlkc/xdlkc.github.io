@@ -1542,6 +1542,43 @@
 
       if (event.key !== 'Enter') return;
 
+      const openInNewTab = !!(event.ctrlKey || event.metaKey);
+
+      // Ctrl/Cmd+Enter: open in new tab (window.open) and close dialog.
+      if (openInNewTab) {
+        let href = '';
+
+        if (selectedIndex >= 0) {
+          const items = getResultItems();
+          const item = items[selectedIndex];
+          const link = item?.querySelector?.('.site-search-link');
+          href = String(link?.href || link?.getAttribute?.('href') || '');
+        } else {
+          const link = dialog.querySelector?.('.site-search-link');
+          href = String(link?.href || link?.getAttribute?.('href') || '');
+        }
+
+        if (!href) return;
+
+        // Store query only when user actually opens a result.
+        addRecentQuery(storageRef, input?.value || '');
+
+        try {
+          win?.open?.(href, '_blank', 'noopener');
+        } catch {
+          // ignore
+        }
+
+        try {
+          event.preventDefault?.();
+        } catch {
+          // ignore
+        }
+
+        closeDialog(dialog);
+        return;
+      }
+
       const didOpen = selectedIndex >= 0
         ? openSelectedResult()
         : openFirstResult({
