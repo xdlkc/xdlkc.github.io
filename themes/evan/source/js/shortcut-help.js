@@ -63,6 +63,8 @@
           <li><kbd>/</kbd> — ${lang === 'zh' ? '打开站内搜索' : 'Open site search'}</li>
           <li><kbd>t</kbd> — ${lang === 'zh' ? '切换目录（TOC）显示' : 'Toggle TOC'}</li>
           <li><kbd>p</kbd> — ${lang === 'zh' ? '折叠/展开阅读进度条' : 'Collapse/expand reading progress'}</li>
+          <li><kbd>g</kbd> <kbd>h</kbd> — ${lang === 'zh' ? '回到首页' : 'Go Home'}</li>
+          <li><kbd>g</kbd> <kbd>a</kbd> — ${lang === 'zh' ? '打开归档' : 'Open Archives'}</li>
           <li><kbd>Esc</kbd> — ${lang === 'zh' ? '关闭弹窗' : 'Close dialog'}</li>
         </ul>
       </div>
@@ -150,11 +152,13 @@
       <li><kbd>/</kbd> — ${nextLang === 'zh' ? '打开站内搜索' : 'Open site search'}</li>
       <li><kbd>t</kbd> — ${nextLang === 'zh' ? '切换目录（TOC）显示' : 'Toggle TOC'}</li>
       <li><kbd>p</kbd> — ${nextLang === 'zh' ? '折叠/展开阅读进度条' : 'Collapse/expand reading progress'}</li>
+      <li><kbd>g</kbd> <kbd>h</kbd> — ${nextLang === 'zh' ? '回到首页' : 'Go Home'}</li>
+      <li><kbd>g</kbd> <kbd>a</kbd> — ${nextLang === 'zh' ? '打开归档' : 'Open Archives'}</li>
       <li><kbd>Esc</kbd> — ${nextLang === 'zh' ? '关闭弹窗' : 'Close dialog'}</li>
     `.trim();
   }
 
-  function initShortcutHelp({ root = document } = {}) {
+  function initShortcutHelp({ root = document, location, now } = {}) {
     if (!root?.querySelector) return;
 
     const dialog = ensureDialog({ root });
@@ -186,6 +190,18 @@
       trigger.addEventListener('click', () => toggleDialog(dialog, { trigger }));
     }
 
+
+    const resolveNow = typeof now === 'function' ? now : (() => Date.now());
+    const resolveLocation = () => (
+      location
+      || root?.location
+      || root?.defaultView?.location
+      || globalThis.location
+      || null
+    );
+
+    // g-prefix navigation state
+    let gPrefixAt = 0;
     // Keyboard shortcut.
     if (root.documentElement?.getAttribute('data-shortcut-help-key-bound') !== '1') {
       root.documentElement?.setAttribute('data-shortcut-help-key-bound', '1');
@@ -206,6 +222,27 @@
         }
 
         if (isTypingTarget(event.target)) return;
+
+        // g-prefix navigation: gh => Home, ga => Archives (within 800ms).
+        const tNow = resolveNow();
+        const hasGPrefix = gPrefixAt > 0 && (tNow - gPrefixAt) <= 800;
+        if (key === 'g') {
+          gPrefixAt = tNow;
+          return;
+        }
+
+        if (hasGPrefix && (key === 'h' || key === 'a')) {
+          const loc = resolveLocation();
+          if (loc && typeof loc.assign === 'function') {
+            event.preventDefault?.();
+            loc.assign(key === 'h' ? '/' : '/archives/');
+          }
+          gPrefixAt = 0;
+          return;
+        }
+
+        // Any other key cancels prefix (or timeout).
+        if (!hasGPrefix) gPrefixAt = 0;
 
         // '?' can arrive as '?' (key) in jsdom; in some browsers Shift+/ => key='?'.
         // Also accept Shift+/'/' just in case.
