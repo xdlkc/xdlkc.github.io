@@ -4,6 +4,9 @@
  * - Hidden until scrollY >= threshold (default 420px).
  * - Click scrolls smoothly to top when supported.
  *
+ * Enhancement:
+ * - When visible, show reading progress percent in the button label.
+ *
  * Exposes window.BackToTop in browser; exports for Node tests.
  */
 (function(root, factory) {
@@ -59,6 +62,34 @@
     }
   }
 
+  function clampNumber(value, { min = 0, max = 100 } = {}) {
+    const n = Number(value);
+    if (!Number.isFinite(n)) return min;
+    return Math.min(max, Math.max(min, n));
+  }
+
+  function computeReadingPercent({ scrollY = 0, scrollHeight = 0, clientHeight = 0 } = {}) {
+    const y = Math.max(0, Number(scrollY) || 0);
+    const sh = Math.max(0, Number(scrollHeight) || 0);
+    const ch = Math.max(0, Number(clientHeight) || 0);
+
+    const maxScroll = sh - ch;
+    if (maxScroll <= 0) return 0;
+
+    const percent = Math.round((y / maxScroll) * 100);
+    return clampNumber(percent, { min: 0, max: 100 });
+  }
+
+  function applyBackToTopProgressLabel(button, percent) {
+    if (!button) return;
+    const p = clampNumber(percent, { min: 0, max: 100 });
+    try {
+      button.textContent = `↑ ${p}%`;
+    } catch {
+      // ignore
+    }
+  }
+
   function initBackToTop({ threshold = DEFAULT_THRESHOLD, root = document } = {}) {
     if (!root?.querySelector) return;
 
@@ -69,6 +100,24 @@
       const y = win?.scrollY ?? win?.pageYOffset ?? 0;
       const show = shouldShowBackToTop({ scrollY: y, threshold });
       applyBackToTopVisibility(btn, show);
+
+      if (!show) {
+        // Keep it minimal while hidden.
+        try { btn.textContent = '↑'; } catch { /* ignore */ }
+        return;
+      }
+
+      // Compute reading progress percent from document metrics.
+      const doc = root;
+      const de = doc.documentElement;
+      const body = doc.body;
+      const scrollHeight = Math.max(
+        Number(de?.scrollHeight || 0),
+        Number(body?.scrollHeight || 0)
+      );
+      const clientHeight = Number(de?.clientHeight || win?.innerHeight || 0);
+      const percent = computeReadingPercent({ scrollY: y, scrollHeight, clientHeight });
+      applyBackToTopProgressLabel(btn, percent);
     };
 
     btn.addEventListener('click', () => scrollToTop(win));
@@ -94,6 +143,8 @@
     shouldShowBackToTop,
     applyBackToTopVisibility,
     scrollToTop,
+    computeReadingPercent,
+    applyBackToTopProgressLabel,
     initBackToTop
   };
 });
