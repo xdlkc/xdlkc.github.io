@@ -367,6 +367,81 @@
     return score;
   }
 
+  function findFirstContaining(list, tokensLower) {
+    const arr = Array.isArray(list) ? list : [];
+    const tokens = Array.isArray(tokensLower) ? tokensLower.filter(Boolean) : [];
+    if (arr.length === 0 || tokens.length === 0) return '';
+
+    for (const item of arr) {
+      const raw = String(item || '').trim();
+      if (!raw) continue;
+      const lower = raw.toLowerCase();
+      for (const token of tokens) {
+        if (token && lower.includes(token)) return raw;
+      }
+    }
+
+    return '';
+  }
+
+  function hasSubstringMatch(text, tokensLower) {
+    const raw = String(text || '');
+    const lower = raw.toLowerCase();
+    const tokens = Array.isArray(tokensLower) ? tokensLower.filter(Boolean) : [];
+    if (!lower || tokens.length === 0) return false;
+    return tokens.some((t) => t && lower.includes(t));
+  }
+
+  function buildMatchBadgesHtml(post, parsed, { langMode = 'en', highlightQuery = '' } = {}) {
+    if (!post || !parsed) return '';
+
+    const mode = String(parsed.mode || 'all');
+    const tokensLower = Array.isArray(parsed.tokensLower) ? parsed.tokensLower : [];
+    if (tokensLower.length === 0) return '';
+
+    const badges = [];
+
+    const titleLabel = langMode === 'zh' ? '标题' : 'Title';
+
+    // Requirement: tag-only query does not emit Title badge.
+    // Requirement: category-only query does not emit Title or Tag badge.
+    const allowTitle = mode !== 'tag' && mode !== 'category';
+    const allowTag = mode !== 'category';
+
+    if (allowTitle && hasSubstringMatch(post.title, tokensLower)) {
+      badges.push({ kind: 'title', html: escapeHtml(titleLabel) });
+    }
+
+    if (allowTag) {
+      const matchedTag = findFirstContaining(post.tags, tokensLower);
+      if (matchedTag) {
+        badges.push({
+          kind: 'tag',
+          html: `#${highlightText(matchedTag, highlightQuery)}`
+        });
+      }
+    }
+
+    const matchedCategory = findFirstContaining(post.categories, tokensLower);
+    if (matchedCategory) {
+      badges.push({
+        kind: 'category',
+        html: `${highlightText(matchedCategory, highlightQuery)}`
+      });
+    }
+
+    const limited = badges.slice(0, 3);
+    if (limited.length === 0) return '';
+
+    return `
+      <div class="site-search-match-badges" data-site-search-match-badges>
+        ${limited
+          .map((b) => `<span class="site-search-match-badge site-search-match-badge-${escapeHtml(b.kind)}">${b.html}</span>`)
+          .join('')}
+      </div>
+    `.trim();
+  }
+
   function getTopTags(posts, { limit = 10, minCount = 2 } = {}) {
     const counts = new Map();
     const display = new Map();
@@ -678,6 +753,8 @@
     const highlightQuery = q.startsWith('#')
       ? q.replace(/^#+/, '').trim()
       : q;
+
+    const parsedQuery = parseQuery(q);
     if (!q) {
       const topTags = suggestions && Array.isArray(suggestions.topTags)
         ? suggestions.topTags.filter(Boolean)
@@ -784,8 +861,7 @@
         ? suggestions.allTags.filter(Boolean)
         : topTags;
 
-      const parsed = parseQuery(q);
-      const similarTags = suggestSimilarTags(allTags, parsed.tokensLower, { limit: 8, maxDistance: 2 });
+      const similarTags = suggestSimilarTags(allTags, parsedQuery.tokensLower, { limit: 8, maxDistance: 2 });
       const didYouMean = langMode === 'zh' ? '你是不是想找：' : 'Did you mean:';
       const similarHtml = similarTags.length > 0
         ? `
@@ -856,6 +932,8 @@
           .join('')}</div>`
         : '';
 
+      const badgesHtml = buildMatchBadgesHtml(post, parsedQuery, { langMode, highlightQuery });
+
       const formattedDate = formatPostDate(post.date);
       const metaHtml = formattedDate
         ? `<div class="site-search-meta">${escapeHtml(formattedDate)}</div>`
@@ -874,6 +952,7 @@
         <div class="site-search-row">
           <a class="site-search-link" href="${safeHref}">
             <div class="site-search-title">${highlightText(post.title, highlightQuery)}</div>
+            ${badgesHtml}
             ${metaHtml}
             ${snippetHtml}
           </a>

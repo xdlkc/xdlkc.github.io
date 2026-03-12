@@ -1385,6 +1385,36 @@ html[data-theme="dark"] .related-posts-keyword {
   color: var(--muted);
 }
 
+.site-search-match-badges {
+  margin-top: 0.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.site-search-match-badge {
+  font-size: 0.76rem;
+  line-height: 1.1;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(148, 163, 184, 0.14);
+  color: var(--muted);
+}
+
+.site-search-match-badge-tag,
+.site-search-match-badge-category {
+  background: rgba(15, 118, 110, 0.08);
+  color: inherit;
+}
+
+.site-search-match-badge mark {
+  background: rgba(15, 118, 110, 0.22);
+  color: inherit;
+  padding: 0 0.12em;
+  border-radius: 6px;
+}
+
 .site-search-snippet {
   margin-top: 0.35rem;
   font-size: 0.9rem;
