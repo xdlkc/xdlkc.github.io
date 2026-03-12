@@ -112,6 +112,13 @@
     return lang === 'en' ? 'Copy code' : '复制代码';
   }
 
+  function copyButtonTitle({ lang = 'zh' } = {}) {
+    // Keep the literal stable for easy recognition and tests.
+    const shortcut = 'Shift+Ctrl/Cmd+C';
+    if (lang === 'en') return `Copy code (Shortcut: ${shortcut})`;
+    return `复制代码（快捷键：${shortcut}）`;
+  }
+
   function copySuccessToastText({ lang = 'zh' } = {}) {
     return lang === 'en' ? 'Copied' : '复制成功';
   }
@@ -357,6 +364,7 @@
       const lang = resolveLang(doc);
       button.textContent = copyButtonText({ lang });
       button.setAttribute('aria-label', copyButtonAriaLabel({ lang }));
+      button.setAttribute('title', copyButtonTitle({ lang }));
     }
 
     button.addEventListener('click', async () => {
@@ -378,6 +386,7 @@
           const nextLang = resolveLang(doc);
           button.textContent = copyButtonText({ lang: nextLang });
           button.setAttribute('aria-label', copyButtonAriaLabel({ lang: nextLang }));
+          button.setAttribute('title', copyButtonTitle({ lang: nextLang }));
         }, 1200);
       } catch (error) {
         // Permission-denied or unsupported clipboard: select code so user can Ctrl/Cmd+C.
@@ -417,6 +426,7 @@
             try {
               btn.textContent = copyButtonText({ lang });
               btn.setAttribute('aria-label', copyButtonAriaLabel({ lang }));
+              btn.setAttribute('title', copyButtonTitle({ lang }));
             } catch {
               // ignore
             }
