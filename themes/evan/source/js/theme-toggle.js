@@ -73,6 +73,35 @@ function applyThemeToDocument({ document, theme, mode }) {
   }
 }
 
+function ensureThemeToast({ document } = {}) {
+  if (!document?.querySelector || !document?.createElement) return null;
+  const existing = document.querySelector('.theme-toggle-toast');
+  if (existing) return existing;
+
+  const toast = document.createElement('div');
+  toast.className = 'theme-toggle-toast';
+  toast.setAttribute('role', 'status');
+  toast.setAttribute('aria-live', 'polite');
+  document.body?.appendChild?.(toast);
+  return toast;
+}
+
+function showThemeToast(toast, message, { window } = {}) {
+  if (!toast) return;
+  toast.textContent = String(message || '').trim();
+  toast.classList.add('is-visible');
+
+  const w = window || globalThis.window;
+  try {
+    w?.clearTimeout?.(showThemeToast.timer);
+    showThemeToast.timer = w?.setTimeout?.(() => {
+      toast.classList.remove('is-visible');
+    }, 1400);
+  } catch {
+    // ignore
+  }
+}
+
 function getPrefersDark(matchMedia = globalThis.matchMedia) {
   try {
     return !!matchMedia?.('(prefers-color-scheme: dark)')?.matches;
@@ -287,6 +316,11 @@ function initThemeToggle({
 
     applyThemeToDocument({ document, theme: nextTheme, mode: nextMode });
     saveMode(storage, nextMode);
+
+    // User-perceivable feedback (also covers keyboard shortcut, which triggers click()).
+    const toast = ensureThemeToast({ document });
+    const message = String(toggle.textContent || '').trim();
+    if (message) showThemeToast(toast, message, { window });
   });
 }
 
@@ -305,5 +339,9 @@ if (typeof module !== 'undefined') {
     toggleThemeMode,
     applyThemeToDocument,
     initThemeToggle,
+
+    // exported for tests / stability
+    ensureThemeToast,
+    showThemeToast,
   };
 }

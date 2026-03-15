@@ -898,6 +898,28 @@ html[data-theme="dark"] .article-content :not(pre) > code {
   transform: translateY(0);
 }
 
+/* Theme toggle toast */
+.theme-toggle-toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 3.5rem; /* avoid overlapping code-copy toast */
+  z-index: 1200;
+  background: #1d4ed8;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.85rem;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .article-content code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 0.94em;
