@@ -1328,6 +1328,34 @@ html[data-theme="dark"] .related-posts-keyword {
   margin-top: 0.75rem;
 }
 
+.site-search-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.45rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.site-search-summary-kind {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.site-search-summary-query {
+  color: var(--text);
+}
+
+.site-search-summary-sep {
+  color: var(--border);
+}
+
 .site-search-count {
   font-size: 0.9rem;
   color: var(--muted);

@@ -722,6 +722,32 @@
     }
   }
 
+  function buildQuerySummaryHtml(parsedQuery, { query = '', resultCount = 0, langMode = 'en' } = {}) {
+    const raw = String(parsedQuery?.query || query || '').trim();
+    const count = Math.max(0, Number(resultCount) || 0);
+    if (!raw) return '';
+
+    const mode = String(parsedQuery?.mode || 'all');
+    const label = mode === 'tag'
+      ? (langMode === 'zh' ? '标签' : 'Tag')
+      : mode === 'category'
+        ? (langMode === 'zh' ? '分类' : 'Category')
+        : (langMode === 'zh' ? '搜索' : 'Search');
+
+    const countText = langMode === 'zh'
+      ? `找到 ${count} 篇`
+      : `Found ${count} ${count === 1 ? 'result' : 'results'}`;
+
+    return `
+      <div class="site-search-summary" data-site-search-summary>
+        <span class="site-search-summary-kind">${escapeHtml(label)}</span>
+        <strong class="site-search-summary-query">${escapeHtml(raw)}</strong>
+        <span class="site-search-summary-sep" aria-hidden="true">·</span>
+        <span class="site-search-summary-count">${escapeHtml(countText)}</span>
+      </div>
+    `.trim();
+  }
+
   function renderResults({ root = document, query, results, suggestions } = {}) {
     const dialog = root.querySelector?.('[data-site-search-dialog]');
     const container = dialog?.querySelector?.('[data-site-search-results]');
@@ -820,6 +846,11 @@
     }
 
     if (!results || results.length === 0) {
+      const querySummaryHtml = buildQuerySummaryHtml(parsedQuery, {
+        query: q,
+        resultCount: 0,
+        langMode,
+      });
       const keywords = splitKeywords(q);
       const hasKeywordChips = keywords.length > 1;
 
@@ -906,6 +937,7 @@
 
       container.innerHTML = `
         <div class="site-search-empty" data-site-search-empty>
+          ${querySummaryHtml}
           <p>${i18n.noResult}: <strong>${escapeHtml(q)}</strong></p>
           ${chipsHtml}
           ${similarHtml}
@@ -918,6 +950,16 @@
         </div>
       `.trim();
       return;
+    }
+
+    const summary = root.createElement('div');
+    summary.innerHTML = buildQuerySummaryHtml(parsedQuery, {
+      query: q,
+      resultCount: results.length,
+      langMode,
+    });
+    if (summary.firstElementChild) {
+      container.appendChild(summary.firstElementChild);
     }
 
     const count = root.createElement('div');
