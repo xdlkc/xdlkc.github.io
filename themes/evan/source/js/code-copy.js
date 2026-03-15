@@ -104,6 +104,12 @@
     return `已复制（${count} 行）`;
   }
 
+  function formatCopiedSingleLineMessage(lineNumber, { lang = 'zh' } = {}) {
+    const n = Math.max(1, Number(lineNumber) || 1);
+    if (lang === 'en') return `Copied line ${n}`;
+    return `已复制第 ${n} 行`;
+  }
+
   function copyButtonText({ lang = 'zh' } = {}) {
     return lang === 'en' ? 'Copy code' : '复制代码';
   }
@@ -390,6 +396,55 @@
     });
   }
 
+  function bindGutterLineClickCopy({ block, toast } = {}) {
+    if (!block || !block.element) return;
+    if (block.type !== 'highlight') return;
+
+    const container = block.element;
+    if (container.getAttribute?.('data-code-copy-gutter-click') === '1') return;
+    container.setAttribute?.('data-code-copy-gutter-click', '1');
+
+    container.addEventListener('click', async (event) => {
+      const target = event?.target;
+      const gutterLine = target?.closest?.('.gutter .line');
+      if (!gutterLine) return;
+
+      const gutterLines = Array.from(container.querySelectorAll?.('.gutter .line') || []);
+      const index = gutterLines.indexOf(gutterLine);
+      if (index < 0) return;
+
+      const codeLines = Array.from(container.querySelectorAll?.('.code .line') || []);
+      const codeLine = codeLines[index];
+      const text = String(codeLine?.textContent || '').replace(/\r\n?/g, '\n').trimEnd();
+      if (!text.trim()) return;
+
+      const doc = container?.ownerDocument || document;
+      const lang = resolveLang(doc);
+
+      try {
+        await copyText(text);
+        showToast(toast, formatCopiedSingleLineMessage(index + 1, { lang }));
+        flashCopiedClass(container, { durationMs: 1200 });
+      } catch {
+        // Best-effort: select the target code line so user can Ctrl/Cmd+C.
+        try {
+          const win = doc?.defaultView || window;
+          const selection = win?.getSelection?.();
+          const range = doc?.createRange?.();
+          if (selection && range && codeLine) {
+            range.selectNodeContents(codeLine);
+            selection.removeAllRanges?.();
+            selection.addRange?.(range);
+          }
+        } catch {
+          // ignore
+        }
+
+        showToast(toast, copyFailureToastText({ lang, withHint: true }));
+      }
+    });
+  }
+
   function injectButton({ block, toast } = {}) {
     if (!block || !block.element) return;
 
@@ -464,6 +519,7 @@
       bindDoubleClickCopy({ block, toast });
       bindLongPressCopy({ block, toast, longPressMs });
       bindKeyboardShortcutCopy({ block, toast });
+      bindGutterLineClickCopy({ block, toast });
     });
 
     // React to language mode changes (LangToggle dispatches xdlkc:lang-change).
