@@ -735,6 +735,9 @@
       noResult: langMode === 'zh' ? '无结果' : 'No results',
       retryHint: langMode === 'zh' ? '试试缩短关键词或换个说法' : 'Try shorter keywords or another phrase',
       browseArchives: langMode === 'zh' ? '去 <a href="/archives/">归档</a> 按时间浏览' : 'Browse by time in <a href="/archives/">Archives</a>',
+      externalSearchTitle: langMode === 'zh' ? '站外搜索：' : 'Search the web:',
+      externalSearchGoogle: 'Google',
+      externalSearchBing: 'Bing',
       foundCount: (n) => {
         const count = Math.max(0, Number(n) || 0);
         if (langMode === 'zh') return `找到 ${count} 篇`;
@@ -880,11 +883,33 @@
         `.trim()
         : '';
 
+      let host = '';
+      try {
+        host = root?.location?.host || '';
+      } catch {
+        host = '';
+      }
+
+      const sitePrefix = host ? `site:${host} ` : '';
+      const externalEncoded = encodeURIComponent(`${sitePrefix}${q}`.trim());
+      const externalHtml = q
+        ? `
+          <div class="site-search-suggest" data-site-search-external-links>
+            <p class="site-search-suggest-title">${i18n.externalSearchTitle}</p>
+            <div class="site-search-suggest-chips">
+              <a class="site-search-suggest-chip site-search-external-link" href="https://www.google.com/search?q=${externalEncoded}" target="_blank" rel="noopener noreferrer" data-site-search-external-link="google">${i18n.externalSearchGoogle}</a>
+              <a class="site-search-suggest-chip site-search-external-link" href="https://www.bing.com/search?q=${externalEncoded}" target="_blank" rel="noopener noreferrer" data-site-search-external-link="bing">${i18n.externalSearchBing}</a>
+            </div>
+          </div>
+        `.trim()
+        : '';
+
       container.innerHTML = `
         <div class="site-search-empty" data-site-search-empty>
           <p>${i18n.noResult}: <strong>${escapeHtml(q)}</strong></p>
           ${chipsHtml}
           ${similarHtml}
+          ${externalHtml}
           ${topTagsHtml}
           <ul>
             <li>${i18n.retryHint}</li>

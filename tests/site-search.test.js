@@ -78,7 +78,7 @@ test('SiteSearch renders empty state with Archives suggestion', () => {
   assert.ok(empty);
   assert.match(empty.textContent, /(无结果|No results)/);
 
-  const archivesLink = root.querySelector('[data-site-search-empty] a');
+  const archivesLink = root.querySelector('[data-site-search-empty] a[href="/archives/"]');
   assert.ok(archivesLink);
   assert.equal(archivesLink.getAttribute('href'), '/archives/');
 
