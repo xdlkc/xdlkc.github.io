@@ -695,6 +695,45 @@
       syncDesktopToggleButtonState(btn, hidden);
     };
 
+    // Mobile TOC <details> open-state persistence.
+    // Key: xdlkc:toc:mobile-open => '1' (open) | '0' (closed)
+    const MOBILE_OPEN_KEY = 'xdlkc:toc:mobile-open';
+    const readPersistedMobileOpen = () => {
+      try {
+        return String(storage?.getItem?.(MOBILE_OPEN_KEY) || '') === '1';
+      } catch {
+        return false;
+      }
+    };
+    const writePersistedMobileOpen = (open) => {
+      try {
+        if (!storage?.setItem) return;
+        storage.setItem(MOBILE_OPEN_KEY, open ? '1' : '0');
+      } catch {
+        // ignore
+      }
+    };
+
+    try {
+      const mobileDetails = document.querySelector('details.toc-mobile');
+      if (mobileDetails) {
+        // Restore persisted state (no-op when key missing).
+        if (readPersistedMobileOpen()) {
+          mobileDetails.setAttribute('open', 'open');
+        }
+
+        // Bind once: keep storage in sync on user toggle.
+        if (mobileDetails.getAttribute('data-toc-mobile-open-bound') !== '1') {
+          mobileDetails.setAttribute('data-toc-mobile-open-bound', '1');
+          mobileDetails.addEventListener('toggle', () => {
+            writePersistedMobileOpen(mobileDetails.hasAttribute('open'));
+          });
+        }
+      }
+    } catch {
+      // ignore
+    }
+
     // Keyboard shortcut: press `t` to toggle the TOC visibility.
     // Idempotent: avoid binding multiple times if init runs again.
     try {
@@ -720,8 +759,13 @@
           const mobileDetails = document.querySelector('details.toc-mobile');
           if (mobileDetails) {
             event.preventDefault();
-            if (mobileDetails.hasAttribute('open')) mobileDetails.removeAttribute('open');
-            else mobileDetails.setAttribute('open', 'open');
+            if (mobileDetails.hasAttribute('open')) {
+              mobileDetails.removeAttribute('open');
+              writePersistedMobileOpen(false);
+            } else {
+              mobileDetails.setAttribute('open', 'open');
+              writePersistedMobileOpen(true);
+            }
             return;
           }
 
