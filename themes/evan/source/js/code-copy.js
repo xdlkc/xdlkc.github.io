@@ -134,6 +134,46 @@
       : '复制失败，请手动复制';
   }
 
+  function copyMarkdownToastText({ lang = 'zh' } = {}) {
+    return lang === 'en' ? 'Copied as Markdown' : '已复制 Markdown';
+  }
+
+  function extractLanguageHint({ block } = {}) {
+    if (!block || !block.element) return '';
+
+    const container = block.element;
+
+    // 1) <pre><code class="language-js">...</code></pre>
+    if (block.type === 'pre') {
+      const code = container.querySelector?.('code');
+      const cls = String(code?.className || '');
+      const m = cls.match(/(?:^|\s)(?:language-|lang-)([\w-]+)(?=\s|$)/i);
+      if (m && m[1]) return String(m[1]).toLowerCase();
+    }
+
+    // 2) <figure class="highlight js">...
+    if (block.type === 'highlight') {
+      const cls = Array.from(container.classList || [])
+        .map((c) => String(c || '').trim())
+        .filter(Boolean);
+
+      // Ignore known non-language classes.
+      const candidates = cls.filter((c) => c !== 'highlight' && c !== 'table' && c !== 'gutter' && c !== 'code');
+      if (candidates.length) return String(candidates[0]).toLowerCase();
+    }
+
+    return '';
+  }
+
+  function wrapAsMarkdownFencedCode(codeText, { langHint = '' } = {}) {
+    const code = normalizeNewlines(codeText).trimEnd();
+    const lang = String(langHint || '').trim();
+    const fenceInfo = lang ? lang : '';
+    return `\
+\
+\`\`\`${fenceInfo}\n${code}\n\`\`\``.trimStart();
+  }
+
   function flashCopiedClass(container, { durationMs = 1200 } = {}) {
     if (!container?.classList) return;
 
@@ -367,18 +407,32 @@
       button.setAttribute('title', copyButtonTitle({ lang }));
     }
 
-    button.addEventListener('click', async () => {
-      const text = block.type === 'highlight'
+    button.addEventListener('click', async (event) => {
+      const rawText = block.type === 'highlight'
         ? extractFromHighlightFigure(container)
         : extractFromPre(container);
 
-      if (!text.trim()) return;
+      if (!rawText.trim()) return;
 
       const doc = container?.ownerDocument || document;
+      const lang = resolveLang(doc);
+
+      const copyAsMarkdown = !!event?.altKey;
+      const text = copyAsMarkdown
+        ? wrapAsMarkdownFencedCode(rawText, { langHint: extractLanguageHint({ block }) })
+        : rawText;
+
       try {
         await copyText(text);
-        const lang = resolveLang(doc);
-        const lineCount = countCopiedLines(text);
+        const lineCount = countCopiedLines(rawText);
+
+        if (copyAsMarkdown) {
+          showToast(toast, copyMarkdownToastText({ lang }));
+          flashCopiedClass(container, { durationMs: 1200 });
+          button.textContent = copyButtonText({ lang });
+          return;
+        }
+
         showToast(toast, formatCopiedLineMessage(lineCount, { lang }));
         flashCopiedClass(container, { durationMs: 1200 });
         button.textContent = formatCopiedButtonLabel(lineCount, { lang });
@@ -391,7 +445,6 @@
       } catch (error) {
         // Permission-denied or unsupported clipboard: select code so user can Ctrl/Cmd+C.
         selectCodeContent(container, { type: block.type });
-        const lang = resolveLang(doc);
         showToast(toast, copyFailureToastText({ lang, withHint: true }));
       }
     });
