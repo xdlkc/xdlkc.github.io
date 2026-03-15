@@ -109,7 +109,34 @@ body {
   cursor: pointer;
 }
 
+.reading-progress-copy {
+  position: absolute;
+  top: 3px;
+  left: 46px;
+  height: 16px;
+  min-width: 26px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(31, 35, 40, 0.14);
+  background: rgba(255, 255, 255, 0.76);
+  color: rgba(31, 35, 40, 0.8);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.reading-progress-copy:hover {
+  background: rgba(255, 255, 255, 0.92);
+}
+
 [data-theme="dark"] .reading-progress-toggle {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.32);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+[data-theme="dark"] .reading-progress-copy {
   border-color: rgba(255, 255, 255, 0.12);
   background: rgba(0, 0, 0, 0.32);
   color: rgba(255, 255, 255, 0.82);
@@ -124,6 +151,12 @@ body {
 }
 
 .reading-progress.is-collapsed .reading-progress-toggle {
+  top: -2px;
+  height: 14px;
+  padding: 0 6px;
+}
+
+.reading-progress.is-collapsed .reading-progress-copy {
   top: -2px;
   height: 14px;
   padding: 0 6px;
@@ -916,6 +949,28 @@ html[data-theme="dark"] .article-content :not(pre) > code {
 }
 
 .theme-toggle-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reading progress: copy link toast */
+.reading-progress-copy-toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 5.5rem; /* avoid overlapping code-copy and theme-toggle toasts */
+  z-index: 1200;
+  background: #111827;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.85rem;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.reading-progress-copy-toast.is-visible {
   opacity: 1;
   transform: translateY(0);
 }

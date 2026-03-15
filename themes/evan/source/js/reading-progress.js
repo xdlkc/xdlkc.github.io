@@ -171,9 +171,83 @@
       return btn;
     };
 
+    const ensureCopyButton = () => {
+      const existing = container.querySelector('.reading-progress-copy');
+      if (existing) return existing;
+
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'reading-progress-copy';
+      btn.setAttribute('aria-label', '复制当前段落链接');
+      btn.textContent = '⧉';
+      container.appendChild(btn);
+      return btn;
+    };
+
+    const ensureCopyToast = () => {
+      const existing = document.querySelector('.reading-progress-copy-toast');
+      if (existing) return existing;
+
+      const toast = document.createElement('div');
+      toast.className = 'reading-progress-copy-toast';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      document.body?.appendChild?.(toast);
+      return toast;
+    };
+
+    const showCopyToast = (toast, message) => {
+      if (!toast) return;
+      toast.textContent = String(message || '').trim();
+      toast.classList.add('is-visible');
+      window.clearTimeout(showCopyToast._timer);
+      showCopyToast._timer = window.setTimeout(() => {
+        toast.classList.remove('is-visible');
+      }, 1400);
+    };
+
+    const fallbackCopyText = (text) => {
+      const area = document.createElement('textarea');
+      area.value = String(text || '');
+      area.setAttribute('readonly', 'readonly');
+      area.style.position = 'fixed';
+      area.style.opacity = '0';
+      document.body.appendChild(area);
+      area.select();
+      const ok = document.execCommand?.('copy');
+      document.body.removeChild(area);
+      if (!ok) throw new Error('copy failed');
+    };
+
     const toggleBtn = ensureToggleButton();
+    const copyBtn = ensureCopyButton();
     const initialCollapsed = readCollapsed();
     applyCollapsed(initialCollapsed, { toggleButton: toggleBtn });
+
+    const resolveLangMode = () => {
+      const mode = document.documentElement?.dataset?.langMode;
+      return mode === 'en' ? 'en' : 'zh';
+    };
+
+    const copyButtonAriaLabel = () => {
+      const lang = resolveLangMode();
+      return lang === 'en' ? 'Copy current section link' : '复制当前段落链接';
+    };
+
+    try {
+      copyBtn?.setAttribute?.('aria-label', copyButtonAriaLabel());
+    } catch {
+      // ignore
+    }
+
+    // React to language switch.
+    window.addEventListener?.('xdlkc:lang-change', () => {
+      try {
+        copyBtn?.setAttribute?.('aria-label', copyButtonAriaLabel());
+      } catch {
+        // ignore
+      }
+    });
 
     // Click toggle.
     if (toggleBtn && toggleBtn.getAttribute('data-reading-progress-toggle-bound') !== '1') {
@@ -190,6 +264,49 @@
         const next = !container.classList.contains('is-collapsed');
         applyCollapsed(next, { toggleButton: toggleBtn });
         writeCollapsed(next);
+      });
+    }
+
+    // Copy current reading link (best-effort: include active heading hash).
+    if (copyBtn && copyBtn.getAttribute('data-reading-progress-copy-bound') !== '1') {
+      copyBtn.setAttribute('data-reading-progress-copy-bound', '1');
+      copyBtn.addEventListener('click', async (event) => {
+        try { event?.preventDefault?.(); } catch { /* ignore */ }
+        try { event?.stopPropagation?.(); } catch { /* ignore */ }
+
+        const base = new URL(String(window.location.href || ''), window.location.origin);
+        const activeId = getActiveHeadingId({
+          scrollY: window.scrollY || window.pageYOffset || 0,
+          thresholdPx: 96
+        });
+
+        // Requirement: when no active heading id, copy without hash.
+        base.hash = activeId ? `#${activeId}` : '';
+
+        const text = base.toString();
+
+        let ok = false;
+        try {
+          await window.navigator?.clipboard?.writeText?.(text);
+          ok = true;
+        } catch {
+          ok = false;
+        }
+
+        if (!ok) {
+          try {
+            fallbackCopyText(text);
+            ok = true;
+          } catch {
+            ok = false;
+          }
+        }
+
+        if (ok) {
+          const toast = ensureCopyToast();
+          const lang = resolveLangMode();
+          showCopyToast(toast, lang === 'en' ? 'Link copied' : '已复制链接');
+        }
       });
     }
 
@@ -245,9 +362,9 @@
       return raw.slice(0, Math.max(1, m - 1)).trimEnd() + '…';
     };
 
-    const getActiveHeadingText = ({ scrollY, thresholdPx = 96 } = {}) => {
+    const getActiveHeadingElement = ({ scrollY, thresholdPx = 96 } = {}) => {
       const headings = Array.from(document.querySelectorAll?.('.article-content h2, .article-content h3') || []);
-      if (headings.length === 0) return '';
+      if (headings.length === 0) return null;
 
       const y = Number(scrollY) || 0;
       const threshold = Math.max(0, Number(thresholdPx) || 0);
@@ -278,8 +395,19 @@
         else break;
       }
 
+      return active;
+    };
+
+    const getActiveHeadingText = ({ scrollY, thresholdPx = 96 } = {}) => {
+      const active = getActiveHeadingElement({ scrollY, thresholdPx });
       if (!active) return '';
       return truncateHeading(active.textContent || '');
+    };
+
+    const getActiveHeadingId = ({ scrollY, thresholdPx = 96 } = {}) => {
+      const active = getActiveHeadingElement({ scrollY, thresholdPx });
+      const id = String(active?.getAttribute?.('id') || '').trim();
+      return id || '';
     };
 
     const formatValueText = ({ percent, remaining, hasEstimate, headingText }) => {
