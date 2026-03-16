@@ -764,6 +764,7 @@
       externalSearchTitle: langMode === 'zh' ? '站外搜索：' : 'Search the web:',
       externalSearchGoogle: 'Google',
       externalSearchBing: 'Bing',
+      externalSearchDuckDuckGo: 'DuckDuckGo',
       foundCount: (n) => {
         const count = Math.max(0, Number(n) || 0);
         if (langMode === 'zh') return `找到 ${count} 篇`;
@@ -930,6 +931,7 @@
             <div class="site-search-suggest-chips">
               <a class="site-search-suggest-chip site-search-external-link" href="https://www.google.com/search?q=${externalEncoded}" target="_blank" rel="noopener noreferrer" data-site-search-external-link="google">${i18n.externalSearchGoogle}</a>
               <a class="site-search-suggest-chip site-search-external-link" href="https://www.bing.com/search?q=${externalEncoded}" target="_blank" rel="noopener noreferrer" data-site-search-external-link="bing">${i18n.externalSearchBing}</a>
+              <a class="site-search-suggest-chip site-search-external-link" href="https://duckduckgo.com/?q=${externalEncoded}" target="_blank" rel="noopener noreferrer" data-site-search-external-link="duckduckgo">${i18n.externalSearchDuckDuckGo}</a>
             </div>
           </div>
         `.trim()

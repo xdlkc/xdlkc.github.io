@@ -41,22 +41,29 @@ test('SiteSearch: no-result state shows external search links (Google/Bing) with
 
   const google = document.querySelector('[data-site-search-external-link="google"]');
   const bing = document.querySelector('[data-site-search-external-link="bing"]');
+  const ddg = document.querySelector('[data-site-search-external-link="duckduckgo"]');
 
   assert.ok(google);
   assert.ok(bing);
+  assert.ok(ddg);
 
   assert.match(google.getAttribute('href') || '', /^https:\/\/www\.google\.com\/search\?q=/);
   assert.match(bing.getAttribute('href') || '', /^https:\/\/www\.bing\.com\/search\?q=/);
+  assert.match(ddg.getAttribute('href') || '', /^https:\/\/duckduckgo\.com\/\?q=/);
 
   const encoded = encodeURIComponent('site:example.com foo bar');
   assert.ok((google.getAttribute('href') || '').includes(encoded));
   assert.ok((bing.getAttribute('href') || '').includes(encoded));
+  assert.ok((ddg.getAttribute('href') || '').includes(encoded));
 
   assert.equal(google.getAttribute('target'), '_blank');
   assert.match(google.getAttribute('rel') || '', /noopener/);
 
   assert.equal(bing.getAttribute('target'), '_blank');
   assert.match(bing.getAttribute('rel') || '', /noopener/);
+
+  assert.equal(ddg.getAttribute('target'), '_blank');
+  assert.match(ddg.getAttribute('rel') || '', /noopener/);
 
   delete global.window;
   delete global.document;

@@ -11,7 +11,7 @@ function loadScriptInto(dom, filePath) {
   vm.runInContext(code, context, { filename: filePath });
 }
 
-test('local-search: no-result panel includes external site-search links (Google/Bing)', async () => {
+test('local-search: no-result panel includes external site-search links (Google/Bing/DuckDuckGo)', async () => {
   const dom = new JSDOM(
     `<!doctype html>
     <html><body>
@@ -58,19 +58,28 @@ test('local-search: no-result panel includes external site-search links (Google/
   input.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
 
   const links = [...result.querySelectorAll('[data-external-search]')];
-  assert.equal(links.length, 2);
+  assert.equal(links.length, 3);
 
   const google = result.querySelector('[data-external-search="google"]');
   const bing = result.querySelector('[data-external-search="bing"]');
+  const ddg = result.querySelector('[data-external-search="duckduckgo"]');
   assert.ok(google);
   assert.ok(bing);
+  assert.ok(ddg);
 
   const expected = encodeURIComponent('site:example.test foo bar');
   assert.match(google.getAttribute('href'), new RegExp(expected));
   assert.match(bing.getAttribute('href'), new RegExp(expected));
+  assert.match(ddg.getAttribute('href'), new RegExp(expected));
+
+  assert.match(google.getAttribute('href') || '', /^https:\/\/www\.google\.com\/search\?q=/);
+  assert.match(bing.getAttribute('href') || '', /^https:\/\/www\.bing\.com\/search\?q=/);
+  assert.match(ddg.getAttribute('href') || '', /^https:\/\/duckduckgo\.com\//);
 
   assert.equal(google.getAttribute('target'), '_blank');
   assert.match(google.getAttribute('rel') || '', /noopener/);
   assert.equal(bing.getAttribute('target'), '_blank');
   assert.match(bing.getAttribute('rel') || '', /noopener/);
+  assert.equal(ddg.getAttribute('target'), '_blank');
+  assert.match(ddg.getAttribute('rel') || '', /noopener/);
 });

@@ -229,6 +229,7 @@ window.addEventListener('DOMContentLoaded', () => {
           <div class="search-no-result__external-links">
             <a data-external-search="google" class="search-external-link" href="https://www.google.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">Google</a>
             <a data-external-search="bing" class="search-external-link" href="https://www.bing.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">Bing</a>
+            <a data-external-search="duckduckgo" class="search-external-link" href="https://duckduckgo.com/?q=${encoded}" target="_blank" rel="noopener noreferrer">DuckDuckGo</a>
           </div>
         </div>
       ` : '';
