@@ -1,5 +1,133 @@
 [
   {
+    "id": "news-202603161600-pbc",
+    "title": "中国人民银行超量续作1000亿元MLF，利率维持不变",
+    "summary": "中国人民银行开展1000亿元中期借贷便利（MLF）操作，利率维持在2.50%不变。此举旨在维护银行体系流动性合理充裕，满足市场中长期资金需求，体现了货币政策“适度宽松、精准有效”的基调。",
+    "url": "http://www.pbc.gov.cn/zhengce/20260316",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-16T16:00:00+08:00",
+    "importance": "MLF超量续作有助于缓解银行负债端压力，稳定市场资金面预期，对债券市场收益率及A股风险偏好具有直接的支撑作用。",
+    "region": "domestic",
+    "tags": [
+      "央行",
+      "货币政策",
+      "MLF"
+    ],
+    "context": "背景在于本月有大额MLF到期，叠加月末季末资金面扰动，央行提前释放稳定信号。"
+  },
+  {
+    "id": "news-202603161545-stats",
+    "title": "国家统计局：前两月社会消费品零售总额同比增长5.5%",
+    "summary": "国家统计局最新发布的数据显示，2026年1-2月社会消费品零售总额同比增长5.5%，其中服务消费增长尤为亮眼，餐饮和旅游收入均实现两位数增长。这表明国内内需修复正在稳步推进。",
+    "url": "http://www.stats.gov.cn/sj/20260316",
+    "source": "国家统计局",
+    "publishedAt": "2026-03-16T15:45:00+08:00",
+    "importance": "消费数据超预期回暖增强了市场对全年经济增长目标的信心，预计将直接提振大消费板块（如零售、餐饮、旅游）的二级市场表现。",
+    "region": "domestic",
+    "tags": [
+      "消费",
+      "宏观数据",
+      "统计局"
+    ],
+    "context": "此前市场对春节错位效应下的消费修复持续性存疑，本次数据验证了服务业修复的韧性。"
+  },
+  {
+    "id": "news-202603161610-cls",
+    "title": "国家发改委加速推进“十五五”数字经济基础设施规划出台",
+    "summary": "财联社报道，国家发改委正会同多部门加速制定“十五五”数字经济基础设施建设规划，重点涵盖算力网络、数据要素市场化及东数西算工程的深化。预计年内将有具体项目清单落地。",
+    "url": "https://www.cls.cn/detail/20260316-1",
+    "source": "财联社",
+    "publishedAt": "2026-03-16T16:10:00+08:00",
+    "importance": "这标志着数字经济作为新质生产力的核心，将获得持续的财政和产业政策倾斜，利好算力、通信及数据要素相关产业链。",
+    "region": "domestic",
+    "tags": [
+      "数字经济",
+      "新基建",
+      "发改委"
+    ],
+    "context": "近期高层频繁强调新质生产力，数字基建是扩大有效投资和产业升级的核心抓手。"
+  },
+  {
+    "id": "news-202603161535-csrc",
+    "title": "证监会进一步规范量化交易及程序化交易报备要求",
+    "summary": "证监会发布通知，要求进一步细化量化交易和程序化交易的报备标准，强化对高频交易的异常监测和监管，以维护市场公平交易秩序，保护中小投资者合法权益。",
+    "url": "http://www.csrc.gov.cn/pub/20260316",
+    "source": "证监会",
+    "publishedAt": "2026-03-16T15:35:00+08:00",
+    "importance": "强化量化监管有助于平抑A股市场的极端日内波动，长期来看利好市场生态健康，短期内可能改变部分量化机构的交易策略和频次。",
+    "region": "domestic",
+    "tags": [
+      "监管",
+      "量化交易",
+      "A股"
+    ],
+    "context": "前段时间A股微盘股波动较大，监管层已多次释放从严监管异常交易的信号。"
+  },
+  {
+    "id": "news-202603161615-reuters",
+    "title": "Fed signals cautious approach to next rate cut amid sticky inflation",
+    "summary": "Federal Reserve officials have indicated a cautious stance regarding near-term rate cuts, citing unexpectedly sticky core inflation data in recent months. The consensus leans towards maintaining current rates to ensure inflation reliably trends toward the 2% target.",
+    "url": "https://www.reuters.com/markets/us/fed-cautious-rate-cut-2026-03-16/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-16T16:15:00+08:00",
+    "importance": "美联储推迟降息预期将维持美元强势，对新兴市场汇率构成压力，并压制全球风险资产特别是高估值科技股的表现。",
+    "region": "international",
+    "tags": [
+      "Fed",
+      "Interest Rates",
+      "Inflation"
+    ],
+    "context": "上周公布的美国核心CPI环比略高于预期，打断了市场此前对上半年多次降息的乐观定价。"
+  },
+  {
+    "id": "news-202603161550-bloomberg",
+    "title": "Oil prices slip below $85 as Middle East tensions show temporary signs of easing",
+    "summary": "Crude oil benchmarks retreated below $85 a barrel as diplomatic efforts in the Middle East indicated a potential temporary ceasefire. Meanwhile, a surprise buildup in US commercial crude inventories also contributed to the downward price pressure.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-16/oil-slips-easing-tensions",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-16T15:50:00+08:00",
+    "importance": "油价回落有助于缓解全球大宗商品输入性通胀压力，为部分饱受成本之苦的制造业及交运板块带来边际利润改善。",
+    "region": "international",
+    "tags": [
+      "Oil",
+      "Middle East",
+      "Commodities"
+    ],
+    "context": "数周来中东地缘冲突一直支撑油价高位运行，市场对“断供风险”与“需求疲软”的博弈非常剧烈。"
+  },
+  {
+    "id": "news-202603161605-ft",
+    "title": "ECB officials split on the timing of summer rate cuts",
+    "summary": "European Central Bank policymakers are reportedly divided over the precise timing of interest rate cuts expected this summer. While some advocate for a June reduction to bolster a stalling economy, conservative voices urge patience pending further wage negotiation data.",
+    "url": "https://www.ft.com/content/ecb-rate-split-2026",
+    "source": "FT",
+    "publishedAt": "2026-03-16T16:05:00+08:00",
+    "importance": "欧央行内部的分歧增加了欧元汇率及欧洲债市的波动性，若宽松进程不及预期，欧洲经济复苏步伐将受到直接影响。",
+    "region": "international",
+    "tags": [
+      "ECB",
+      "Eurozone",
+      "Rates"
+    ],
+    "context": "欧洲经济基本面显著弱于美国，但薪资粘性导致核心通胀回落缓慢，央行陷入保增长与控通胀的两难。"
+  },
+  {
+    "id": "news-202603161540-wsj",
+    "title": "US tech giants face renewed antitrust scrutiny in Europe",
+    "summary": "Major American technology companies are bracing for a fresh wave of antitrust investigations by European regulators under the newly enacted Digital Markets Act. The probes focus on app store monopolies and search engine preferencing, potentially leading to massive fines.",
+    "url": "https://www.wsj.com/tech/eu-antitrust-tech-2026",
+    "source": "WSJ",
+    "publishedAt": "2026-03-16T15:40:00+08:00",
+    "importance": "严厉的反垄断审查将增加科技巨头的海外合规成本，甚至迫使其调整核心商业模式，对相关美股科技龙头的估值构成压制因素。",
+    "region": "international",
+    "tags": [
+      "Tech",
+      "Antitrust",
+      "EU"
+    ],
+    "context": "欧盟《数字市场法案》（DMA）正式落地后，对“看门人”企业的合规要求全面收紧，这是首批大规模执法行动。"
+  },
+  {
     "id": "86728953-a2ed-4a90-9e6e-d58995969242",
     "title": "IMF Urges Fiscal Consolidation Ahead of Spring Meetings",
     "summary": "国际货币基金组织（IMF）在即将召开的春季会议前发布预警报告，敦促全球主要经济体特别是发达国家，在经济增长展现韧性的当下尽快着手财政整顿，以重建财政缓冲。报告指出，持续处于高位的全球公共债务水平正逐渐限制各国应对未来经济冲击的能力。",
