@@ -42,6 +42,8 @@
     'post.outline': { en: 'Outline', zh: '大纲' },
     'post.comments': { en: 'Comments', zh: '评论' },
     'post.commentsNoscript': { en: 'Enable JavaScript to view comments.', zh: '请启用 JavaScript 后查看评论。' },
+    'post.previous': { en: '← Previous', zh: '← 上一篇' },
+    'post.next': { en: 'Next →', zh: '下一篇 →' },
     'post.related': { en: 'Related Posts', zh: '相关阅读' },
     'post.relatedReason.tags': { en: 'Shared tags', zh: '共享标签' },
     'post.relatedReason.keywords': { en: 'Shared keywords', zh: '共享关键词' },

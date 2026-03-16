@@ -69,6 +69,27 @@
         </section>
       <% } %>
 
+      <% if (page.prev || page.next) { %>
+        <nav class="post-navigation" aria-label="article navigation">
+          <% if (page.prev) { %>
+            <a class="post-navigation-prev" href="<%- url_for(page.prev.path) %>" aria-label="Previous article: <%= page.prev.title %>">
+              <span class="post-navigation-label" data-i18n-key="post.previous">← Previous</span>
+              <span class="post-navigation-title"><%= page.prev.title %></span>
+            </a>
+          <% } else { %>
+            <div class="post-navigation-placeholder"></div>
+          <% } %>
+          <% if (page.next) { %>
+            <a class="post-navigation-next" href="<%- url_for(page.next.path) %>" aria-label="Next article: <%= page.next.title %>">
+              <span class="post-navigation-title"><%= page.next.title %></span>
+              <span class="post-navigation-label" data-i18n-key="post.next">Next →</span>
+            </a>
+          <% } else { %>
+            <div class="post-navigation-placeholder"></div>
+          <% } %>
+        </nav>
+      <% } %>
+
       <% if (relatedPosts && relatedPosts.length) { %>
         <section class="related-posts" aria-label="related posts">
           <h2 class="related-posts-title" data-i18n-key="post.related">Related Posts</h2>

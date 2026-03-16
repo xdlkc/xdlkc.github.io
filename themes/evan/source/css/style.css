@@ -609,6 +609,14 @@ h2 {
   opacity: 0.9;
 }
 
+.toc-index {
+  display: inline-block;
+  margin-right: 0.35rem;
+  color: var(--muted);
+  opacity: 0.8;
+  font-variant-numeric: tabular-nums;
+}
+
 .toc-nav a:hover {
   color: var(--accent);
 }
@@ -1732,4 +1740,205 @@ html[data-theme="dark"] .back-to-top {
   border: 1px solid var(--border);
   background: rgba(127, 127, 127, 0.08);
   font-weight: 800;
+}
+
+/* Print optimization */
+@media print {
+  /* Hide non-essential elements */
+  .article-nav,
+  .toc-card,
+  .toc-mobile,
+  .post-comments,
+  .article-link-copy,
+  .post-like,
+  .back-to-top,
+  .site-search-trigger,
+  .theme-toggle,
+  .lang-toggle,
+  .font-size-toggle,
+  .shortcut-help-trigger,
+  .site-search-dialog,
+  .code-copy-button {
+    display: none !important;
+  }
+
+  /* Set white background and black text for readability */
+  body,
+  .article-shell,
+  .article-card {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Remove shadows and borders for cleaner print */
+  .article-hero,
+  .article-card {
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Ensure content is readable */
+  .article-content {
+    color: #000000 !important;
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Code blocks - keep syntax highlighting visible */
+  pre,
+  code {
+    background: #f5f5f5 !important;
+    border: 1px solid #cccccc !important;
+    color: #000000 !important;
+  }
+
+  /* Fit images to page width */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+  }
+
+  /* Show URLs for links */
+  a[href^="http"]:not([data-site-search-copy-link])::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666666;
+    word-break: break-all;
+  }
+
+  /* Avoid page breaks inside headings and code blocks */
+  h1, h2, h3, h4, h5, h6,
+  pre,
+  blockquote {
+    page-break-inside: avoid;
+  }
+
+  /* Page breaks before major sections */
+  h1, h2 {
+    page-break-before: always;
+  }
+
+  /* Add print footer with article source */
+  body::after {
+    content: "Source: " attr(data-print-source) " | Printed from https://xdlkc.github.io";
+    display: block;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #cccccc;
+    font-size: 0.9em;
+    color: #666666;
+  }
+
+  /* Optimize article hero for print */
+  .article-hero p.tag {
+    color: #666666 !important;
+    border-color: #cccccc !important;
+  }
+
+  .article-meta {
+    color: #666666 !important;
+  }
+
+  /* Related posts - keep title but simplify */
+  .related-posts-title {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 2rem;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .related-posts-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .related-posts-item {
+    margin: 0.5rem 0;
+    page-break-inside: avoid;
+  }
+}
+
+/* Post Navigation */
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.post-navigation-placeholder {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-navigation-prev,
+.post-navigation-next {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.post-navigation-prev:hover,
+.post-navigation-next:hover {
+  border-color: var(--accent);
+  background: var(--card);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.1);
+}
+
+.post-navigation-prev:focus,
+.post-navigation-next:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.post-navigation-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.post-navigation-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .post-navigation {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .post-navigation-prev,
+  .post-navigation-next {
+    text-align: center;
+    padding: 1.25rem;
+  }
+
+  .post-navigation-title {
+    font-size: 0.95rem;
+  }
 }
