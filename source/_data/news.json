@@ -1,5 +1,101 @@
 [
   {
+    "id": "dom-1773667911944-1",
+    "title": "中国人民银行：进一步优化跨境人民币结算机制",
+    "summary": "央行今日发布通知，旨在进一步优化跨境人民币结算流程，提升结算效率，支持外贸新业态发展。通知要求商业银行简化流程，强化本币在跨境贸易中的使用，降低企业汇兑成本与汇率风险敞口。",
+    "url": "http://www.pbc.gov.cn/zhengce/202603/16/t20260316_01.html",
+    "source": "中国人民银行 (pbc.gov.cn)",
+    "publishedAt": "2026-03-16T13:16:51.944Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": [
+      "央行",
+      "跨境结算",
+      "外贸"
+    ],
+    "context": "此举为应对外部环境不确定性，稳外资稳外贸的又一政策落地，中长期利好人民币国际化进程。"
+  },
+  {
+    "id": "dom-1773667911944-2",
+    "title": "国家统计局：前两月规模以上工业增加值平稳增长",
+    "summary": "统计局最新数据显示，受节假日消费及制造业升级带动，1-2月份全国规模以上工业增加值同比增长实现超预期平稳开局。高技术制造业成为拉动增长的核心动力，其中新能源汽车、航空航天装备等领域增速领先。",
+    "url": "http://www.stats.gov.cn/sj/zxfb/202603/t20260316_02.html",
+    "source": "国家统计局 (stats.gov.cn)",
+    "publishedAt": "2026-03-16T12:56:51.944Z",
+    "importance": "中",
+    "region": "国内",
+    "tags": [
+      "宏观经济",
+      "工业增加值",
+      "数据发布"
+    ],
+    "context": "工业数据超预期缓解了市场对内需不足的担忧，确认了经济在结构调整中的韧性。"
+  },
+  {
+    "id": "dom-1773667911944-3",
+    "title": "证监会：严查上市公司利用并购重组进行内幕交易",
+    "summary": "证监会于今日例行发布会上强调，将进一步加大对资本市场并购重组环节中涉嫌内幕交易、操纵市场等违法违规行为的查处力度。要求中介机构切实履行“看门人”职责，维护中小投资者的合法权益与市场公平。",
+    "url": "http://www.csrc.gov.cn/csrc/202603/16/news_1.shtml",
+    "source": "证监会 (csrc.gov.cn)",
+    "publishedAt": "2026-03-16T12:46:51.944Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": [
+      "证监会",
+      "监管",
+      "资本市场"
+    ],
+    "context": "严监管态势延续，有利于肃清市场风气，短期可能对壳资源股造成压力，但长期利好价值投资生态建设。"
+  },
+  {
+    "id": "int-1773667911944-1",
+    "title": "Fed Chair Signals Data-Dependent Approach Ahead of Key Policy Rate Meeting",
+    "summary": "Federal Reserve Chair emphasized in a recent panel discussion that the central bank remains strictly data-dependent as it evaluates the next steps for interest rates. Recent mixed inflation and employment data require a cautious approach before committing to further easing or tightening of monetary policy.",
+    "url": "https://www.reuters.com/markets/us/fed-chair-signals-data-dependent-approach-2026-03-16/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-16T13:11:51.944Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": [
+      "美联储",
+      "宏观政策",
+      "利率"
+    ],
+    "context": "美联储态度的谨慎让市场降息预期再次摇摆，短期将加剧美债收益率与美元指数的波动。"
+  },
+  {
+    "id": "int-1773667911944-2",
+    "title": "ECB Members Debate Pace of Balance Sheet Reduction Amid Stable Inflation",
+    "summary": "European Central Bank policymakers held intense debates today regarding the appropriate pace of qualitative tightening. With inflation hovering near target levels but core services inflation remaining sticky, some members advocate for a more aggressive balance sheet reduction, while others urge caution.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-16/ecb-debates-balance-sheet-reduction",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-16T12:41:51.944Z",
+    "importance": "中",
+    "region": "国际",
+    "tags": [
+      "欧央行",
+      "缩表",
+      "通胀"
+    ],
+    "context": "欧洲央行内部的分歧反映了经济软着陆路径上的复杂性，对欧元区主权债券息差将产生阶段性影响。"
+  },
+  {
+    "id": "int-1773667911944-3",
+    "title": "World Bank Warns of Widening Infrastructure Investment Gap in Emerging Markets",
+    "summary": "A new report from the World Bank highlights a critical and widening gap in infrastructure investment across emerging markets. The institution noted that high global financing costs have deterred private capital participation, calling for innovative blended finance mechanisms to bridge the shortfall and support sustainable development.",
+    "url": "https://www.worldbank.org/en/news/press-release/2026/03/16/infrastructure-gap-widening",
+    "source": "World Bank",
+    "publishedAt": "2026-03-16T12:36:51.944Z",
+    "importance": "中",
+    "region": "国际",
+    "tags": [
+      "世界银行",
+      "新兴市场",
+      "基建投资"
+    ],
+    "context": "基建缺口的扩大可能限制新兴市场长期潜在经济增速，这也为多边金融机构介入和国际资本提供了潜在投资机遇。"
+  },
+  {
     "id": "int-20260316-06",
     "title": "IMF Upgrades Global Growth Forecast, Citing Stronger US and Emerging Market Performance",
     "summary": "The International Monetary Fund (IMF) has marginally upgraded its global economic growth forecast for 2026 to 3.2%, up from its previous projection. The revision is largely attributed to stronger-than-expected momentum in the United States and robust performances in several major emerging markets, though the Fund cautioned against ongoing geopolitical fragmentation risks.",
