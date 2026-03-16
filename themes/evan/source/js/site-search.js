@@ -20,6 +20,10 @@
   const RECENT_STORAGE_KEY = 'xdlkc:site-search:recent';
   const RECENT_LIMIT = 5;
 
+  // Search history (all queries, up to 10).
+  const SEARCH_HISTORY_KEY = 'xdlkc:search-history';
+  const SEARCH_HISTORY_LIMIT = 10;
+
   // Last query (persisted on close so reopen can restore the previous search).
   const LAST_QUERY_KEY = 'xdlkc:site-search:last';
 
@@ -91,6 +95,77 @@
     });
 
     saveRecentQueries(storage, next.slice(0, RECENT_LIMIT));
+  }
+
+  function loadSearchHistory(storage) {
+    if (!storage?.getItem) return [];
+    try {
+      const raw = storage.getItem(SEARCH_HISTORY_KEY);
+      const arr = safeJsonParse(raw, []);
+      return Array.isArray(arr)
+        ? arr.filter((item) => item && item.query && item.timestamp)
+        : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function saveSearchHistory(storage, history) {
+    if (!storage?.setItem) return;
+    try {
+      storage.setItem(SEARCH_HISTORY_KEY, JSON.stringify((history || []).slice(0, SEARCH_HISTORY_LIMIT)));
+    } catch {
+      // ignore
+    }
+  }
+
+  function addSearchHistory(storage, query) {
+    const q = String(query || '').trim();
+    if (!q) return;
+
+    const current = loadSearchHistory(storage);
+    const timestamp = Date.now();
+
+    // Remove existing query if present
+    const filtered = current.filter((item) => item.query.toLowerCase() !== q.toLowerCase());
+
+    // Add new query at the top
+    const next = [{ query: q, timestamp }, ...filtered];
+
+    saveSearchHistory(storage, next);
+  }
+
+  function clearSearchHistory(storage) {
+    if (!storage?.removeItem) return;
+    try {
+      storage.removeItem(SEARCH_HISTORY_KEY);
+    } catch {
+      // ignore
+    }
+  }
+
+  function formatRelativeTime(timestamp, langMode = 'en') {
+    const now = Date.now();
+    const diff = now - timestamp;
+    const minutes = Math.floor(diff / 60000);
+    const hours = Math.floor(diff / 3600000);
+    const days = Math.floor(diff / 86400000);
+
+    if (minutes < 1) {
+      return langMode === 'zh' ? '刚刚' : 'just now';
+    } else if (minutes < 60) {
+      return langMode === 'zh' ? `${minutes}分钟前` : `${minutes}m ago`;
+    } else if (hours < 24) {
+      return langMode === 'zh' ? `${hours}小时前` : `${hours}h ago`;
+    } else if (days < 7) {
+      return langMode === 'zh' ? `${days}天前` : `${days}d ago`;
+    } else {
+      const date = new Date(timestamp);
+      const formatted = langMode === 'zh'
+        ? `${date.getMonth() + 1}月${date.getDate()}日`
+        : date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      return formatted;
+    }
   }
 
   function escapeHtml(input) {
@@ -748,7 +823,7 @@
     `.trim();
   }
 
-  function renderResults({ root = document, query, results, suggestions } = {}) {
+  function renderResults({ root = document, query, results, suggestions, storage } = {}) {
     const dialog = root.querySelector?.('[data-site-search-dialog]');
     const container = dialog?.querySelector?.('[data-site-search-results]');
     if (!container) return;
@@ -790,27 +865,48 @@
         ? suggestions.topTags.filter(Boolean)
         : [];
 
-      const recent = suggestions && Array.isArray(suggestions.recentQueries)
+      // Prefer recent queries from suggestions for backward compatibility
+      const recentFromSuggestions = suggestions && Array.isArray(suggestions.recentQueries)
         ? suggestions.recentQueries.map((s) => String(s || '').trim()).filter(Boolean)
         : [];
 
-      const recentTitle = langMode === 'zh' ? '最近搜索' : 'Recent searches';
-      const recentClearText = langMode === 'zh' ? '清空' : 'Clear';
-      const recentClearAria = langMode === 'zh' ? '清空最近搜索' : 'Clear recent searches';
-
-      const recentHtml = recent.length > 0
+      const recentHtml = recentFromSuggestions.length > 0
         ? `
           <div class="site-search-suggest" data-site-search-recent>
             <div class="site-search-suggest-title-row">
-              <p class="site-search-suggest-title">${recentTitle}</p>
-              <button class="site-search-clear-recent" type="button" data-site-search-clear-recent aria-label="${recentClearAria}">${recentClearText}</button>
+              <p class="site-search-suggest-title">${langMode === 'zh' ? '最近搜索' : 'Recent searches'}</p>
+              <button class="site-search-clear-recent" type="button" data-site-search-clear-recent aria-label="${langMode === 'zh' ? '清空最近搜索' : 'Clear recent searches'}">${langMode === 'zh' ? '清空' : 'Clear'}</button>
             </div>
             <div class="site-search-suggest-chips">
-              ${recent
+              ${recentFromSuggestions
                 .slice(0, 5)
                 .map((kw) => {
                   const safe = escapeHtml(kw);
-                  return `<button class=\"site-search-suggest-chip\" type=\"button\" data-site-search-keyword=\"${safe}\">${safe}</button>`;
+                  return `<button class="site-search-suggest-chip" type="button" data-site-search-keyword="${safe}">${safe}</button>`;
+                })
+                .join('')}
+            </div>
+          </div>
+        `.trim()
+        : '';
+
+      // Load search history from localStorage
+      const searchHistory = loadSearchHistory(storage);
+
+      const historyHtml = searchHistory.length > 0
+        ? `
+          <div class="site-search-suggest" data-site-search-history>
+            <div class="site-search-suggest-title-row">
+              <p class="site-search-suggest-title">${langMode === 'zh' ? '搜索历史' : 'Search history'}</p>
+              <button class="site-search-clear-history" type="button" data-site-search-history-clear aria-label="${langMode === 'zh' ? '清除搜索历史' : 'Clear search history'}">${langMode === 'zh' ? '清除历史' : 'Clear history'}</button>
+            </div>
+            <div class="site-search-history-list">
+              ${searchHistory
+                .slice(0, 10)
+                .map((item) => {
+                  const query = escapeHtml(item.query);
+                  const relativeTime = formatRelativeTime(item.timestamp, langMode);
+                  return `<button class="site-search-history-item" type="button" data-site-search-history-item="${query}">${query}<span class="site-search-history-time">${relativeTime}</span></button>`;
                 })
                 .join('')}
             </div>
@@ -835,10 +931,11 @@
         `.trim()
         : '';
 
-      if (recentHtml || topTagsHtml) {
+      if (recentHtml || historyHtml || topTagsHtml) {
         container.innerHTML = `
           <div class="site-search-hint">${i18n.hintStart}</div>
           ${recentHtml}
+          ${historyHtml}
           ${topTagsHtml}
         `.trim();
       }
@@ -1301,7 +1398,8 @@
         suggestions: {
           topTags: cachedTopTags || [],
           recentQueries: loadRecentQueries(storageRef)
-        }
+        },
+        storage: storageRef
       });
       resetSelection();
 
@@ -1330,7 +1428,7 @@
         handleOpen();
         try {
           await ensureDb();
-          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [], recentQueries: loadRecentQueries(storageRef) } });
+          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [], recentQueries: loadRecentQueries(storageRef) }, storage: storageRef });
         } catch (err) {
           const container = dialog.querySelector('[data-site-search-results]');
           if (container) {
@@ -1415,6 +1513,44 @@
           }
         });
         resetSelection();
+        return;
+      }
+
+      // Clear search history.
+      const clearHistory = event.target?.closest?.('[data-site-search-history-clear]');
+      if (clearHistory) {
+        clearSearchHistory(storageRef);
+        if (input) input.value = '';
+        renderResults({
+          root,
+          query: '',
+          results: [],
+          suggestions: {
+            topTags: cachedTopTags || [],
+            allTags: cachedAllTags || []
+          },
+          storage: storageRef
+        });
+        resetSelection();
+        return;
+      }
+
+      // Click on search history item.
+      const historyItem = event.target?.closest?.('[data-site-search-history-item]');
+      if (historyItem) {
+        try {
+          event.preventDefault?.();
+          event.stopPropagation?.();
+        } catch {
+          // ignore
+        }
+
+        const query = String(historyItem.getAttribute('data-site-search-history-item') || '').trim();
+        if (query) {
+          input.value = query;
+          input.dispatchEvent(new win.Event('input', { bubbles: true }));
+          input.focus?.();
+        }
         return;
       }
 
@@ -1667,7 +1803,7 @@
       debounce = win.setTimeout(async () => {
         const q = String(input.value || '').trim();
         if (!q) {
-          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [], recentQueries: loadRecentQueries(storageRef) } });
+          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [], recentQueries: loadRecentQueries(storageRef) }, storage: storageRef });
           resetSelection();
           return;
         }
@@ -1676,10 +1812,12 @@
           const db = await ensureDb();
           const posts = extractPostsFromDb(db);
           const results = searchPosts(posts, q);
-          renderResults({ root, query: q, results, suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [] } });
+          // Save to search history whenever a search is executed
+          addSearchHistory(storageRef, q);
+          renderResults({ root, query: q, results, suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [] }, storage: storageRef });
           resetSelection();
         } catch (err) {
-          renderResults({ root, query: q, results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [] } });
+          renderResults({ root, query: q, results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [] }, storage: storageRef });
           resetSelection();
         }
       }, 120);
@@ -1702,6 +1840,9 @@
     bindCopyLinkButtons,
     computeScrollTopToReveal,
     openFirstResult,
-    initSiteSearch
+    initSiteSearch,
+    loadSearchHistory,
+    addSearchHistory,
+    clearSearchHistory
   };
 });
