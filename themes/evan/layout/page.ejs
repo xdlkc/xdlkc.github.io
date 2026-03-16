@@ -10,6 +10,7 @@
       <a href="<%- url_for('/archives/') %>" data-i18n-key="nav.archives">Archives</a>
       <a href="<%- url_for('/news/') %>" data-i18n-key="nav.news">News</a>
       <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
+      <button class="random-post-button" data-random-post data-i18n-key="nav.random" data-i18n-aria-label-key="nav.random" aria-label="Random post" data-posts='<%- JSON.stringify(site.posts.map(p => ({ path: p.path, title: p.title }))) %>'>Random</button>
       <button class="site-search-trigger" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
       <button class="font-size-toggle" data-font-size-toggle data-i18n-key="nav.font" data-i18n-aria-label-key="nav.font" aria-label="Font size">Font</button>
       <button class="theme-toggle" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>

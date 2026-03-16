@@ -23,6 +23,7 @@
       <a href="<%- url_for('/news/') %>" data-i18n-key="nav.news">News</a>
       <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about">About</a>
       <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
+      <button class="random-post-button" data-random-post data-i18n-key="nav.random" data-i18n-aria-label-key="nav.random" aria-label="Random post" data-posts='<%- JSON.stringify(site.posts.map(p => ({ path: p.path, title: p.title }))) %>'>Random</button>
       <button class="site-search-trigger" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
       <button class="font-size-toggle" data-font-size-toggle data-i18n-key="nav.font" data-i18n-aria-label-key="nav.font" aria-label="Font size">Font</button>
       <button class="theme-toggle" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
@@ -44,6 +45,14 @@
     <p class="article-meta"><span data-i18n-key="post.published">Published</span> <%= date(page.date, 'YYYY-MM-DD') %><%= updated_label() %> · <span data-i18n-key="post.reading">Reading</span> <%= reading_time(page.content) %> <span data-i18n-key="post.min">min</span> · <span data-i18n-key="post.words">Words</span> <%= post_word_count(page.content) %></p>
     <button class="article-link-copy" type="button" data-article-link-copy data-i18n-key="post.copyLink" data-i18n-aria-label-key="post.copyLink" aria-label="Copy article link">Copy Link</button>
     <button class="post-like" type="button" data-post-like aria-pressed="false">👍 Like (0)</button>
+
+    <div class="article-share" data-article-share data-article-title="<%= page.title %>" data-article-url="<%= url_for(page.path, { external: true }) %>">
+      <span class="article-share-label" data-i18n-key="post.share">Share:</span>
+      <a class="article-share-link article-share-twitter" href="#" data-share-platform="twitter" aria-label="Share to Twitter">Twitter</a>
+      <a class="article-share-link article-share-weibo" href="#" data-share-platform="weibo" aria-label="Share to Weibo">Weibo</a>
+      <a class="article-share-link article-share-linkedin" href="#" data-share-platform="linkedin" aria-label="Share to LinkedIn">LinkedIn</a>
+      <button class="article-share-link article-share-wechat" type="button" data-share-platform="wechat" aria-label="Share to WeChat">WeChat</button>
+    </div>
     <% if (page.excerpt) { %>
       <p class="article-summary"><%= strip_html(page.excerpt) %></p>
     <% } %>

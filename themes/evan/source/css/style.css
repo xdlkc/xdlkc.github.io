@@ -229,7 +229,8 @@ a {
 .theme-toggle,
 .font-size-toggle,
 .lang-toggle,
-.shortcut-help-trigger {
+.shortcut-help-trigger,
+.random-post-button {
   border: 1px solid var(--border);
   background: transparent;
   color: var(--text);
@@ -242,7 +243,8 @@ a {
 .theme-toggle:hover,
 .font-size-toggle:hover,
 .lang-toggle:hover,
-.shortcut-help-trigger:hover {
+.shortcut-help-trigger:hover,
+.random-post-button:hover {
   border-color: var(--accent);
 }
 
