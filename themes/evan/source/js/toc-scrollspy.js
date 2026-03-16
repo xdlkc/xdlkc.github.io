@@ -198,6 +198,56 @@
     });
   }
 
+  function enhanceTocAutoNumbering(toc, { document: doc = document } = {}) {
+    if (!toc?.querySelectorAll || !doc?.querySelectorAll) return;
+
+    const links = Array.from(toc.querySelectorAll('a[href^="#"]'));
+    if (links.length === 0) return;
+
+    const computeIndex = (link) => {
+      const li = link.closest('li');
+      if (!li) return '';
+
+      const segments = [];
+      let currentLi = li;
+
+      while (currentLi) {
+        const parentList = currentLi.parentElement;
+        if (!parentList) break;
+
+        const siblings = Array.from(parentList.children).filter((node) => {
+          if (!node || node.tagName !== 'LI') return false;
+          return !!node.querySelector(':scope > a[href^="#"]');
+        });
+
+        const pos = siblings.indexOf(currentLi);
+        if (pos < 0) break;
+        segments.unshift(String(pos + 1));
+
+        const parentLi = parentList.closest('li');
+        currentLi = parentLi || null;
+      }
+
+      return segments.join('.');
+    };
+
+    links.forEach((link) => {
+      const index = computeIndex(link);
+      if (!index) return;
+
+      const existing = link.querySelector(':scope > .toc-index');
+      if (existing) {
+        existing.textContent = index;
+        return;
+      }
+
+      const span = doc.createElement('span');
+      span.className = 'toc-index';
+      span.textContent = index;
+      link.insertBefore(span, link.firstChild);
+    });
+  }
+
   function resolveLangMode(doc = document) {
     const mode = doc?.documentElement?.dataset?.langMode;
     return mode === 'zh' ? 'zh' : 'en';
@@ -853,6 +903,9 @@
       // If `.toc-nav` exists but contains no anchors, auto-generate a minimal TOC.
       buildTocIntoContainer(toc, headingElements);
 
+      // TOC readability: show hierarchical index numbers (1 / 1.1 / 1.1.1).
+      enhanceTocAutoNumbering(toc, { document });
+
       // UX: long headings might get visually truncated; add hover tooltips.
       enhanceTocLinkTitles(toc);
 
@@ -1102,6 +1155,7 @@
     computeScrollTop,
     computeTocScrollTopToReveal,
     enhanceTocLinkTitles,
+    enhanceTocAutoNumbering,
     enhanceCollapsibleToc,
     injectTocCollapseAllToggle,
     expandTocAncestorsForLink,
