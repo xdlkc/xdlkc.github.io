@@ -1,5 +1,104 @@
 [
   {
+    "id": "int-20260316-06",
+    "title": "IMF Upgrades Global Growth Forecast, Citing Stronger US and Emerging Market Performance",
+    "summary": "The International Monetary Fund (IMF) has marginally upgraded its global economic growth forecast for 2026 to 3.2%, up from its previous projection. The revision is largely attributed to stronger-than-expected momentum in the United States and robust performances in several major emerging markets, though the Fund cautioned against ongoing geopolitical fragmentation risks.",
+    "url": "https://www.imf.org/en/News/Articles/2026/03/16/pr26xx-imf-upgrades-global-growth-forecast",
+    "source": "IMF",
+    "publishedAt": "2026-03-16T12:20:00Z",
+    "importance": "medium",
+    "region": "国际",
+    "tags": [
+      "IMF",
+      "Global Growth",
+      "Economic Outlook"
+    ],
+    "context": "全球经济预期的温和上修有助于缓解市场的硬着陆担忧，为全球风险资产提供一定支撑。"
+  },
+  {
+    "id": "int-20260316-05",
+    "title": "Bank of Japan Ends Negative Interest Rate Policy in Historic Shift",
+    "summary": "In a widely anticipated but historic move, the Bank of Japan (BOJ) announced an end to its eight-year negative interest rate policy and yield curve control program. The BOJ raised its short-term policy rate to a range of 0% to 0.1%, citing increasing evidence of a virtuous cycle between wages and prices, marking a definitive departure from decades of massive monetary stimulus.",
+    "url": "https://apnews.com/article/japan-central-bank-interest-rate-2026-03-16",
+    "source": "AP",
+    "publishedAt": "2026-03-16T04:30:00Z",
+    "importance": "high",
+    "region": "国际",
+    "tags": [
+      "BOJ",
+      "Monetary Policy",
+      "Interest Rates",
+      "Japan"
+    ],
+    "context": "日本央行历史性的货币政策正常化，标志着全球最后一家维持负利率的央行退出该机制，可能引发全球资金流向的重新配置。"
+  },
+  {
+    "id": "int-20260316-04",
+    "title": "US Retail Sales Rebound in February, Signaling Resilient Consumer Spending",
+    "summary": "Data released by the Commerce Department showed U.S. retail sales rose 0.6% in February, rebounding from a sharp decline in the previous month. The increase was driven by strong sales at auto dealers and building material stores, suggesting that consumer spending remains resilient despite elevated interest rates and localized inflation pressures.",
+    "url": "https://www.wsj.com/economy/consumers/us-retail-sales-february-2026-03-16",
+    "source": "WSJ",
+    "publishedAt": "2026-03-16T12:15:00Z",
+    "importance": "medium",
+    "region": "国际",
+    "tags": [
+      "US Economy",
+      "Retail Sales",
+      "Consumer Spending"
+    ],
+    "context": "强劲的消费数据可能使美联储在降息时机上保持更加谨慎的观望态度，支撑美元汇率和美债收益率。"
+  },
+  {
+    "id": "dom-20260316-06",
+    "title": "证监会就《首发企业现场检查规定（修订草案）》公开征求意见",
+    "summary": "为严把资本市场入口关，证监会起草了《首发企业现场检查规定（修订草案）》并向社会公开征求意见。修订草案大幅提高了对拟上市企业现场检查的抽查比例，并明确对于撤回上市申请的企业“一查到底”，严厉打击财务造假和“带病闯关”行为。",
+    "url": "http://www.csrc.gov.cn/csrc/c100028/c100029/202603/t20260316_01.shtml",
+    "source": "证监会 (csrc.gov.cn)",
+    "publishedAt": "2026-03-16T10:45:00Z",
+    "importance": "medium",
+    "region": "国内",
+    "tags": [
+      "证监会",
+      "IPO监管",
+      "资本市场",
+      "现场检查"
+    ],
+    "context": "此举体现了监管层“强本强基、严监严管”的政策导向，有利于从源头提升A股上市公司整体质量。"
+  },
+  {
+    "id": "dom-20260316-05",
+    "title": "国务院常务会议：部署实施新一轮大规模设备更新和消费品以旧换新行动",
+    "summary": "国务院常务会议今日审议通过《推动大规模设备更新和消费品以旧换新行动方案》，明确将统筹安排中央预算内投资和专项再贷款，支持工业、农业、交通等重点领域设备更新改造，并推动汽车、家电等传统消费品换新。会议强调要坚持市场为主、政府引导，打好政策组合拳。",
+    "url": "http://www.gov.cn/premier/2026-03/16/content_5824837.htm",
+    "source": "中国政府网 (gov.cn)",
+    "publishedAt": "2026-03-16T11:30:00Z",
+    "importance": "high",
+    "region": "国内",
+    "tags": [
+      "国务院常务会议",
+      "设备更新",
+      "促消费",
+      "宏观经济"
+    ],
+    "context": "这项涉及超万亿规模市场的政策正式落地，将对全年的制造业投资和内需消费起到显著的托底和拉动作用。"
+  },
+  {
+    "id": "dom-20260316-04",
+    "title": "财政部、税务总局：进一步扩大研发费用加计扣除政策适用范围",
+    "summary": "财政部与税务总局联合发布最新公告，决定自2026年起进一步扩大企业研发费用加计扣除政策的适用范围，将更多高新技术产业和基础研究投入纳入扣除基数。此举旨在切实减轻科技型企业税收负担，激发微观主体创新活力，支持高水平科技自立自强。",
+    "url": "https://www.cls.cn/detail/20260316-01",
+    "source": "财联社 (cls.cn)",
+    "publishedAt": "2026-03-16T12:00:00Z",
+    "importance": "high",
+    "region": "国内",
+    "tags": [
+      "财政政策",
+      "减税降费",
+      "科技创新"
+    ],
+    "context": "结合当前宏观经济结构转型，加大财税支持力度是稳定民间投资预期、培育新质生产力的关键一招。"
+  },
+  {
     "id": "intl-20260316-03",
     "title": "IMF Managing Director Urges Coordinated Action on Global Debt Vulnerabilities",
     "summary": "During a speaking engagement in Washington, the IMF Managing Director called for urgent, coordinated international action to address rising debt vulnerabilities in low- and middle-income countries. She emphasized that prolonged high interest rates have exacerbated debt servicing costs, threatening global financial stability.",
