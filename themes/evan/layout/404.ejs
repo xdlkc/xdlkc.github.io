@@ -1,0 +1,36 @@
+<%- partial('_partial/header') %>
+
+<div class="page-container">
+  <div class="page-content">
+    <div class="not-found-container">
+      <h1 class="not-found-title" data-i18n-key="404.title">404</h1>
+      <h2 class="not-found-subtitle" data-i18n-key="404.subtitle">页面未找到</h2>
+      <p class="not-found-description" data-i18n-key="404.description">
+        抱歉，您访问的页面不存在或已被移除。
+      </p>
+
+      <div class="not-found-search">
+        <button class="site-search-trigger" data-site-search-trigger data-i18n-key="404.search" aria-label="Search">
+          🔍 搜索
+        </button>
+      </div>
+
+      <div class="not-found-links">
+        <a class="not-found-link" href="/" data-i18n-key="404.goHome">
+          🏠 返回首页
+        </a>
+        <a class="not-found-link" href="/archives/" data-i18n-key="404.archives">
+          📅 浏览归档
+        </a>
+        <a class="not-found-link" href="/tags/" data-i18n-key="404.tags">
+          🏷️ 查看标签
+        </a>
+        <a class="not-found-link" href="/about/" data-i18n-key="404.about">
+          👤 关于作者
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- partial('_partial/footer') %>
