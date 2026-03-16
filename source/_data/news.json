@@ -1,5 +1,101 @@
 [
   {
+    "id": "int-20260316-1506",
+    "title": "Tech Giants Face Renewed Antitrust Scrutiny Over AI Partnerships",
+    "summary": "European and US antitrust regulators have announced a coordinated preliminary investigation into several high-profile partnerships between dominant tech companies and leading artificial intelligence startups. Authorities are examining whether these exclusive licensing and funding deals effectively stifle competition and concentrate power in the emerging AI sector.",
+    "url": "https://www.ft.com/content/tech-giants-antitrust-ai-partnerships-20260316",
+    "source": "FT",
+    "publishedAt": "2026-03-16T14:30:00Z",
+    "importance": "中",
+    "region": "国际",
+    "tags": [
+      "Antitrust",
+      "AI",
+      "Tech Regulation"
+    ],
+    "context": "随着AI领域步入商业化深水区，全球监管趋严可能重塑大型科技公司的并购与投资战略。"
+  },
+  {
+    "id": "int-20260316-1505",
+    "title": "Oil Prices Surge Past $85 Amid Supply Disruptions in the Middle East",
+    "summary": "Global crude oil benchmark Brent surged past $85 a barrel in afternoon trading as renewed geopolitical tensions and supply disruptions in key Middle Eastern transit routes stoked fears of a supply deficit. Energy analysts warn that a prolonged disruption could complicate global central banks' efforts to tame inflation.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-16/oil-prices-surge-middle-east-supply-risks",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-16T15:15:00Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": [
+      "Oil",
+      "Commodities",
+      "Geopolitics"
+    ],
+    "context": "能源价格的反弹可能成为全球抗通胀进程中的最大变数，推高了下半年二次通胀的尾部风险。"
+  },
+  {
+    "id": "int-20260316-1504",
+    "title": "Bank of England Signals Caution on Rate Cuts Amid Sticky Wage Growth",
+    "summary": "Bank of England officials suggested on Monday afternoon that the central bank remains cautious about initiating interest rate cuts. Despite headline inflation easing, persistent high wage growth in the services sector poses upside risks, prompting policymakers to maintain a restrictive stance for longer than previously anticipated.",
+    "url": "https://www.reuters.com/markets/europe/boe-signals-caution-on-rate-cuts-2026-03-16/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-16T14:55:00Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": [
+      "BoE",
+      "Interest Rates",
+      "UK Economy"
+    ],
+    "context": "英国央行的鹰派表态与欧洲央行的鸽派倾向形成对比，可能导致英镑对欧元汇率在短期内走强。"
+  },
+  {
+    "id": "dom-20260316-1503",
+    "title": "证监会：依法从严打击“伪市值管理”，重点查处涉嫌操纵市场等违法行为",
+    "summary": "证监会今日通报多起专项执法行动进展，强调将依法从严打击以“市值管理”为名行操纵市场、内幕交易之实的违法违规行为。监管部门表示，将强化线索发现能力，压实上市公司及实控人主体责任，坚决维护资本市场“三公”秩序。",
+    "url": "http://www.csrc.gov.cn/csrc/c100028/202603/t20260316_02.shtml",
+    "source": "证监会 (csrc.gov.cn)",
+    "publishedAt": "2026-03-16T15:20:00Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": [
+      "证监会",
+      "市值管理",
+      "市场监管"
+    ],
+    "context": "监管层持续亮剑，释放了“零容忍”的强烈信号，有利于引导上市公司聚焦主业，提升投资价值。"
+  },
+  {
+    "id": "dom-20260316-1502",
+    "title": "财联社：多地中小银行密集下调存款利率，息差保卫战持续",
+    "summary": "财联社记者获悉，今日下午多家城商行、农商行发布公告，宣布下调人民币存款挂牌利率，活期及各期限整存整取利率下调幅度在5至15个基点不等。业内人士指出，此举旨在缓解净息差收窄压力，为实体经济进一步让利拓宽空间。",
+    "url": "https://www.cls.cn/detail/20260316-02",
+    "source": "财联社 (cls.cn)",
+    "publishedAt": "2026-03-16T14:45:00Z",
+    "importance": "中",
+    "region": "国内",
+    "tags": [
+      "中小银行",
+      "存款利率",
+      "净息差"
+    ],
+    "context": "银行体系负债端成本的压降，为后续LPR（贷款市场报价利率）可能的进一步下调提供了缓冲垫。"
+  },
+  {
+    "id": "dom-20260316-1501",
+    "title": "国家发改委：抓紧出台2026年版全国和自贸试验区外资准入负面清单",
+    "summary": "国家发改委今日下午召开新闻发布会表示，正会同有关部门抓紧出台2026年版全国和自贸试验区外资准入负面清单，全面取消制造业领域外资准入限制措施，进一步放宽电信、医疗等服务业市场准入，以更大力度吸引和利用外资。",
+    "url": "https://www.ndrc.gov.cn/xwdt/tzgg/202603/t20260316_02.html",
+    "source": "国家发改委 (ndrc.gov.cn)",
+    "publishedAt": "2026-03-16T15:10:00Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": [
+      "发改委",
+      "外资准入",
+      "宏观政策"
+    ],
+    "context": "进一步扩大高水平对外开放是稳外资的关键，特别是在服务业领域放宽准入，有望吸引更多跨国企业投资。"
+  },
+  {
     "id": "dom-1773667911944-1",
     "title": "中国人民银行：进一步优化跨境人民币结算机制",
     "summary": "央行今日发布通知，旨在进一步优化跨境人民币结算流程，提升结算效率，支持外贸新业态发展。通知要求商业银行简化流程，强化本币在跨境贸易中的使用，降低企业汇兑成本与汇率风险敞口。",
