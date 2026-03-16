@@ -1,456 +1,62 @@
 [
   {
-    "id": "int-20260316-1506",
-    "title": "Tech Giants Face Renewed Antitrust Scrutiny Over AI Partnerships",
-    "summary": "European and US antitrust regulators have announced a coordinated preliminary investigation into several high-profile partnerships between dominant tech companies and leading artificial intelligence startups. Authorities are examining whether these exclusive licensing and funding deals effectively stifle competition and concentrate power in the emerging AI sector.",
-    "url": "https://www.ft.com/content/tech-giants-antitrust-ai-partnerships-20260316",
-    "source": "FT",
-    "publishedAt": "2026-03-16T14:30:00Z",
-    "importance": "中",
-    "region": "国际",
-    "tags": [
-      "Antitrust",
-      "AI",
-      "Tech Regulation"
-    ],
-    "context": "随着AI领域步入商业化深水区，全球监管趋严可能重塑大型科技公司的并购与投资战略。"
-  },
-  {
-    "id": "int-20260316-1505",
-    "title": "Oil Prices Surge Past $85 Amid Supply Disruptions in the Middle East",
-    "summary": "Global crude oil benchmark Brent surged past $85 a barrel in afternoon trading as renewed geopolitical tensions and supply disruptions in key Middle Eastern transit routes stoked fears of a supply deficit. Energy analysts warn that a prolonged disruption could complicate global central banks' efforts to tame inflation.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-16/oil-prices-surge-middle-east-supply-risks",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-16T15:15:00Z",
-    "importance": "高",
-    "region": "国际",
-    "tags": [
-      "Oil",
-      "Commodities",
-      "Geopolitics"
-    ],
-    "context": "能源价格的反弹可能成为全球抗通胀进程中的最大变数，推高了下半年二次通胀的尾部风险。"
-  },
-  {
-    "id": "int-20260316-1504",
-    "title": "Bank of England Signals Caution on Rate Cuts Amid Sticky Wage Growth",
-    "summary": "Bank of England officials suggested on Monday afternoon that the central bank remains cautious about initiating interest rate cuts. Despite headline inflation easing, persistent high wage growth in the services sector poses upside risks, prompting policymakers to maintain a restrictive stance for longer than previously anticipated.",
-    "url": "https://www.reuters.com/markets/europe/boe-signals-caution-on-rate-cuts-2026-03-16/",
+    "id": "int-20260316-1805",
+    "title": "Wall St rises on tech strength; Middle East conflict limits gains",
+    "summary": "科技股带动华尔街三大股指上涨，道指涨0.92%，标普500涨1.15%，纳指涨1.43%。Meta大涨2.6%因报告称其计划裁员20%以上以应对AI投资成本；英伟达涨2.6%并将在GTC大会上发布新产品；台积电发布超预期财报。与此同时，中东冲突持续限制了市场涨幅，油价从100美元以上回落。美国2月工业生产增长0.2%略超预期。市场预期美联储本周维持利率不变。",
+    "url": "https://www.reuters.com/business/wall-st-futures-rise-tech-stocks-gain-middle-east-conflict-focus-2026-03-16/",
     "source": "Reuters",
-    "publishedAt": "2026-03-16T14:55:00Z",
+    "publishedAt": "2026-03-16T10:21:00Z",
     "importance": "高",
     "region": "国际",
-    "tags": [
-      "BoE",
-      "Interest Rates",
-      "UK Economy"
-    ],
-    "context": "英国央行的鹰派表态与欧洲央行的鸽派倾向形成对比，可能导致英镑对欧元汇率在短期内走强。"
+    "tags": ["美股", "科技股", "美联储", "中东冲突"],
+    "context": "尽管地缘政治风险持续，美股在科技股强劲表现下保持韧性，显示投资者对科技巨头AI前景仍持乐观态度。"
   },
   {
-    "id": "dom-20260316-1503",
-    "title": "证监会：依法从严打击“伪市值管理”，重点查处涉嫌操纵市场等违法行为",
-    "summary": "证监会今日通报多起专项执法行动进展，强调将依法从严打击以“市值管理”为名行操纵市场、内幕交易之实的违法违规行为。监管部门表示，将强化线索发现能力，压实上市公司及实控人主体责任，坚决维护资本市场“三公”秩序。",
-    "url": "http://www.csrc.gov.cn/csrc/c100028/202603/t20260316_02.shtml",
-    "source": "证监会 (csrc.gov.cn)",
-    "publishedAt": "2026-03-16T15:20:00Z",
-    "importance": "高",
-    "region": "国内",
-    "tags": [
-      "证监会",
-      "市值管理",
-      "市场监管"
-    ],
-    "context": "监管层持续亮剑，释放了“零容忍”的强烈信号，有利于引导上市公司聚焦主业，提升投资价值。"
-  },
-  {
-    "id": "dom-20260316-1502",
-    "title": "财联社：多地中小银行密集下调存款利率，息差保卫战持续",
-    "summary": "财联社记者获悉，今日下午多家城商行、农商行发布公告，宣布下调人民币存款挂牌利率，活期及各期限整存整取利率下调幅度在5至15个基点不等。业内人士指出，此举旨在缓解净息差收窄压力，为实体经济进一步让利拓宽空间。",
-    "url": "https://www.cls.cn/detail/20260316-02",
+    "id": "dom-20260317-0236",
+    "title": "英伟达发布NVIDIA DLSS 5 黄仁勋将其比作图形学领域的GPT时刻",
+    "summary": "英伟达在DLSS 5引入了一种全新的实时神经渲染模型，能够为每一个像素注入具有照片级真实感的光照和材质属性。这是自2018年实时光线追踪技术首秀以来，该公司在计算机图形领域取得的最具深远意义的突破。该公司创始人兼首席执行官黄仁勋表示，DLSS 5是图形学领域的GPT时刻，将手工渲染与生成式AI完美融合，在大幅飞跃视觉真实感的同时，依然保留了艺术家进行创意表达所需的控制力。",
+    "url": "https://www.cls.cn/detail/2314808",
     "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-16T14:45:00Z",
-    "importance": "中",
-    "region": "国内",
-    "tags": [
-      "中小银行",
-      "存款利率",
-      "净息差"
-    ],
-    "context": "银行体系负债端成本的压降，为后续LPR（贷款市场报价利率）可能的进一步下调提供了缓冲垫。"
-  },
-  {
-    "id": "dom-20260316-1501",
-    "title": "国家发改委：抓紧出台2026年版全国和自贸试验区外资准入负面清单",
-    "summary": "国家发改委今日下午召开新闻发布会表示，正会同有关部门抓紧出台2026年版全国和自贸试验区外资准入负面清单，全面取消制造业领域外资准入限制措施，进一步放宽电信、医疗等服务业市场准入，以更大力度吸引和利用外资。",
-    "url": "https://www.ndrc.gov.cn/xwdt/tzgg/202603/t20260316_02.html",
-    "source": "国家发改委 (ndrc.gov.cn)",
-    "publishedAt": "2026-03-16T15:10:00Z",
+    "publishedAt": "2026-03-16T18:36:50Z",
     "importance": "高",
     "region": "国内",
-    "tags": [
-      "发改委",
-      "外资准入",
-      "宏观政策"
-    ],
-    "context": "进一步扩大高水平对外开放是稳外资的关键，特别是在服务业领域放宽准入，有望吸引更多跨国企业投资。"
+    "tags": ["英伟达", "AI", "图形学", "DLSS", "黄仁勋"],
+    "context": "英伟达持续在AI图形渲染领域保持领先地位，此次技术突破或将推动游戏、虚拟现实等应用场景的视觉体验跃升。"
   },
   {
-    "id": "dom-1773667911944-1",
-    "title": "中国人民银行：进一步优化跨境人民币结算机制",
-    "summary": "央行今日发布通知，旨在进一步优化跨境人民币结算流程，提升结算效率，支持外贸新业态发展。通知要求商业银行简化流程，强化本币在跨境贸易中的使用，降低企业汇兑成本与汇率风险敞口。",
-    "url": "http://www.pbc.gov.cn/zhengce/202603/16/t20260316_01.html",
-    "source": "中国人民银行 (pbc.gov.cn)",
-    "publishedAt": "2026-03-16T13:16:51.944Z",
-    "importance": "高",
-    "region": "国内",
-    "tags": [
-      "央行",
-      "跨境结算",
-      "外贸"
-    ],
-    "context": "此举为应对外部环境不确定性，稳外资稳外贸的又一政策落地，中长期利好人民币国际化进程。"
-  },
-  {
-    "id": "dom-1773667911944-2",
-    "title": "国家统计局：前两月规模以上工业增加值平稳增长",
-    "summary": "统计局最新数据显示，受节假日消费及制造业升级带动，1-2月份全国规模以上工业增加值同比增长实现超预期平稳开局。高技术制造业成为拉动增长的核心动力，其中新能源汽车、航空航天装备等领域增速领先。",
-    "url": "http://www.stats.gov.cn/sj/zxfb/202603/t20260316_02.html",
-    "source": "国家统计局 (stats.gov.cn)",
-    "publishedAt": "2026-03-16T12:56:51.944Z",
-    "importance": "中",
-    "region": "国内",
-    "tags": [
-      "宏观经济",
-      "工业增加值",
-      "数据发布"
-    ],
-    "context": "工业数据超预期缓解了市场对内需不足的担忧，确认了经济在结构调整中的韧性。"
-  },
-  {
-    "id": "dom-1773667911944-3",
-    "title": "证监会：严查上市公司利用并购重组进行内幕交易",
-    "summary": "证监会于今日例行发布会上强调，将进一步加大对资本市场并购重组环节中涉嫌内幕交易、操纵市场等违法违规行为的查处力度。要求中介机构切实履行“看门人”职责，维护中小投资者的合法权益与市场公平。",
-    "url": "http://www.csrc.gov.cn/csrc/202603/16/news_1.shtml",
-    "source": "证监会 (csrc.gov.cn)",
-    "publishedAt": "2026-03-16T12:46:51.944Z",
-    "importance": "高",
-    "region": "国内",
-    "tags": [
-      "证监会",
-      "监管",
-      "资本市场"
-    ],
-    "context": "严监管态势延续，有利于肃清市场风气，短期可能对壳资源股造成压力，但长期利好价值投资生态建设。"
-  },
-  {
-    "id": "int-1773667911944-1",
-    "title": "Fed Chair Signals Data-Dependent Approach Ahead of Key Policy Rate Meeting",
-    "summary": "Federal Reserve Chair emphasized in a recent panel discussion that the central bank remains strictly data-dependent as it evaluates the next steps for interest rates. Recent mixed inflation and employment data require a cautious approach before committing to further easing or tightening of monetary policy.",
-    "url": "https://www.reuters.com/markets/us/fed-chair-signals-data-dependent-approach-2026-03-16/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-16T13:11:51.944Z",
-    "importance": "高",
-    "region": "国际",
-    "tags": [
-      "美联储",
-      "宏观政策",
-      "利率"
-    ],
-    "context": "美联储态度的谨慎让市场降息预期再次摇摆，短期将加剧美债收益率与美元指数的波动。"
-  },
-  {
-    "id": "int-1773667911944-2",
-    "title": "ECB Members Debate Pace of Balance Sheet Reduction Amid Stable Inflation",
-    "summary": "European Central Bank policymakers held intense debates today regarding the appropriate pace of qualitative tightening. With inflation hovering near target levels but core services inflation remaining sticky, some members advocate for a more aggressive balance sheet reduction, while others urge caution.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-16/ecb-debates-balance-sheet-reduction",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-16T12:41:51.944Z",
-    "importance": "中",
-    "region": "国际",
-    "tags": [
-      "欧央行",
-      "缩表",
-      "通胀"
-    ],
-    "context": "欧洲央行内部的分歧反映了经济软着陆路径上的复杂性，对欧元区主权债券息差将产生阶段性影响。"
-  },
-  {
-    "id": "int-1773667911944-3",
-    "title": "World Bank Warns of Widening Infrastructure Investment Gap in Emerging Markets",
-    "summary": "A new report from the World Bank highlights a critical and widening gap in infrastructure investment across emerging markets. The institution noted that high global financing costs have deterred private capital participation, calling for innovative blended finance mechanisms to bridge the shortfall and support sustainable development.",
-    "url": "https://www.worldbank.org/en/news/press-release/2026/03/16/infrastructure-gap-widening",
-    "source": "World Bank",
-    "publishedAt": "2026-03-16T12:36:51.944Z",
-    "importance": "中",
-    "region": "国际",
-    "tags": [
-      "世界银行",
-      "新兴市场",
-      "基建投资"
-    ],
-    "context": "基建缺口的扩大可能限制新兴市场长期潜在经济增速，这也为多边金融机构介入和国际资本提供了潜在投资机遇。"
-  },
-  {
-    "id": "int-20260316-06",
-    "title": "IMF Upgrades Global Growth Forecast, Citing Stronger US and Emerging Market Performance",
-    "summary": "The International Monetary Fund (IMF) has marginally upgraded its global economic growth forecast for 2026 to 3.2%, up from its previous projection. The revision is largely attributed to stronger-than-expected momentum in the United States and robust performances in several major emerging markets, though the Fund cautioned against ongoing geopolitical fragmentation risks.",
-    "url": "https://www.imf.org/en/News/Articles/2026/03/16/pr26xx-imf-upgrades-global-growth-forecast",
-    "source": "IMF",
-    "publishedAt": "2026-03-16T12:20:00Z",
-    "importance": "medium",
-    "region": "国际",
-    "tags": [
-      "IMF",
-      "Global Growth",
-      "Economic Outlook"
-    ],
-    "context": "全球经济预期的温和上修有助于缓解市场的硬着陆担忧，为全球风险资产提供一定支撑。"
-  },
-  {
-    "id": "int-20260316-05",
-    "title": "Bank of Japan Ends Negative Interest Rate Policy in Historic Shift",
-    "summary": "In a widely anticipated but historic move, the Bank of Japan (BOJ) announced an end to its eight-year negative interest rate policy and yield curve control program. The BOJ raised its short-term policy rate to a range of 0% to 0.1%, citing increasing evidence of a virtuous cycle between wages and prices, marking a definitive departure from decades of massive monetary stimulus.",
-    "url": "https://apnews.com/article/japan-central-bank-interest-rate-2026-03-16",
-    "source": "AP",
-    "publishedAt": "2026-03-16T04:30:00Z",
-    "importance": "high",
-    "region": "国际",
-    "tags": [
-      "BOJ",
-      "Monetary Policy",
-      "Interest Rates",
-      "Japan"
-    ],
-    "context": "日本央行历史性的货币政策正常化，标志着全球最后一家维持负利率的央行退出该机制，可能引发全球资金流向的重新配置。"
-  },
-  {
-    "id": "int-20260316-04",
-    "title": "US Retail Sales Rebound in February, Signaling Resilient Consumer Spending",
-    "summary": "Data released by the Commerce Department showed U.S. retail sales rose 0.6% in February, rebounding from a sharp decline in the previous month. The increase was driven by strong sales at auto dealers and building material stores, suggesting that consumer spending remains resilient despite elevated interest rates and localized inflation pressures.",
-    "url": "https://www.wsj.com/economy/consumers/us-retail-sales-february-2026-03-16",
-    "source": "WSJ",
-    "publishedAt": "2026-03-16T12:15:00Z",
-    "importance": "medium",
-    "region": "国际",
-    "tags": [
-      "US Economy",
-      "Retail Sales",
-      "Consumer Spending"
-    ],
-    "context": "强劲的消费数据可能使美联储在降息时机上保持更加谨慎的观望态度，支撑美元汇率和美债收益率。"
-  },
-  {
-    "id": "dom-20260316-06",
-    "title": "证监会就《首发企业现场检查规定（修订草案）》公开征求意见",
-    "summary": "为严把资本市场入口关，证监会起草了《首发企业现场检查规定（修订草案）》并向社会公开征求意见。修订草案大幅提高了对拟上市企业现场检查的抽查比例，并明确对于撤回上市申请的企业“一查到底”，严厉打击财务造假和“带病闯关”行为。",
-    "url": "http://www.csrc.gov.cn/csrc/c100028/c100029/202603/t20260316_01.shtml",
-    "source": "证监会 (csrc.gov.cn)",
-    "publishedAt": "2026-03-16T10:45:00Z",
-    "importance": "medium",
-    "region": "国内",
-    "tags": [
-      "证监会",
-      "IPO监管",
-      "资本市场",
-      "现场检查"
-    ],
-    "context": "此举体现了监管层“强本强基、严监严管”的政策导向，有利于从源头提升A股上市公司整体质量。"
-  },
-  {
-    "id": "dom-20260316-05",
-    "title": "国务院常务会议：部署实施新一轮大规模设备更新和消费品以旧换新行动",
-    "summary": "国务院常务会议今日审议通过《推动大规模设备更新和消费品以旧换新行动方案》，明确将统筹安排中央预算内投资和专项再贷款，支持工业、农业、交通等重点领域设备更新改造，并推动汽车、家电等传统消费品换新。会议强调要坚持市场为主、政府引导，打好政策组合拳。",
-    "url": "http://www.gov.cn/premier/2026-03/16/content_5824837.htm",
-    "source": "中国政府网 (gov.cn)",
-    "publishedAt": "2026-03-16T11:30:00Z",
-    "importance": "high",
-    "region": "国内",
-    "tags": [
-      "国务院常务会议",
-      "设备更新",
-      "促消费",
-      "宏观经济"
-    ],
-    "context": "这项涉及超万亿规模市场的政策正式落地，将对全年的制造业投资和内需消费起到显著的托底和拉动作用。"
-  },
-  {
-    "id": "dom-20260316-04",
-    "title": "财政部、税务总局：进一步扩大研发费用加计扣除政策适用范围",
-    "summary": "财政部与税务总局联合发布最新公告，决定自2026年起进一步扩大企业研发费用加计扣除政策的适用范围，将更多高新技术产业和基础研究投入纳入扣除基数。此举旨在切实减轻科技型企业税收负担，激发微观主体创新活力，支持高水平科技自立自强。",
-    "url": "https://www.cls.cn/detail/20260316-01",
+    "id": "dom-20260317-0209",
+    "title": "李成钢：中美就一些议题取得初步共识",
+    "summary": "当地时间3月15日至16日，中美双方在法国巴黎举行经贸磋商。中国商务部国际贸易谈判代表兼副部长李成钢表示，过去一天半，双方团队进行了坦诚、深入、建设性的磋商，就一些议题取得初步共识，下一步双方将继续保持磋商进程。李成钢表示，中美讨论的议题包括新形势下双边关税水平、双边关税及相关非关税措施有关安排可能的进一步延期等。美方介绍他们最新关税措施的调整以及下一步考虑，中方对由此造成的不确定性表达关注。针对美方出台对中国贸易投资的限制措施，特别是近期美方连续启动两起涉及中方的301调查，李成钢说，中方在磋商中进行严肃交涉，表达严正关切。",
+    "url": "https://www.cls.cn/detail/2314800",
     "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-16T12:00:00Z",
-    "importance": "high",
-    "region": "国内",
-    "tags": [
-      "财政政策",
-      "减税降费",
-      "科技创新"
-    ],
-    "context": "结合当前宏观经济结构转型，加大财税支持力度是稳定民间投资预期、培育新质生产力的关键一招。"
-  },
-  {
-    "id": "intl-20260316-03",
-    "title": "IMF Managing Director Urges Coordinated Action on Global Debt Vulnerabilities",
-    "summary": "During a speaking engagement in Washington, the IMF Managing Director called for urgent, coordinated international action to address rising debt vulnerabilities in low- and middle-income countries. She emphasized that prolonged high interest rates have exacerbated debt servicing costs, threatening global financial stability.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-16/imf-chief-warns-on-global-debt-risks",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-16T11:28:32.851Z",
-    "importance": "high",
-    "region": "international",
-    "tags": [
-      "IMF",
-      "Global Debt",
-      "Financial Stability"
-    ],
-    "context": "The warning highlights the growing divergence between advanced economies and developing nations, underscoring the need for robust sovereign debt restructuring mechanisms."
-  },
-  {
-    "id": "intl-20260316-02",
-    "title": "ECB Revises Eurozone Growth Forecast Slightly Upward for 2026",
-    "summary": "The European Central Bank has revised its economic growth forecast for the Eurozone slightly upward to 1.4% for 2026, citing resilient consumer spending and a gradual recovery in the manufacturing sector. However, the ECB warned that geopolitical fragmentation remains a key downside risk.",
-    "url": "https://www.ft.com/content/ecb-growth-forecast-revision-20260316",
-    "source": "FT",
-    "publishedAt": "2026-03-16T11:28:32.851Z",
-    "importance": "medium",
-    "region": "international",
-    "tags": [
-      "ECB",
-      "Eurozone",
-      "Economic Growth"
-    ],
-    "context": "The improved outlook suggests the Eurozone might avoid a prolonged stagnation, providing a modest tailwind for European equities and the Euro."
-  },
-  {
-    "id": "intl-20260316-01",
-    "title": "Fed Signals Potential Rate Cut in Upcoming FOMC Meeting Amid Softening Inflation Data",
-    "summary": "Federal Reserve officials have hinted at the possibility of a 25 basis point interest rate cut at the upcoming FOMC meeting. Recent inflation data showing a consistent downward trend towards the 2% target has provided policymakers with the confidence to consider easing monetary policy to support labor market stability.",
-    "url": "https://www.reuters.com/markets/us/fed-rate-cut-prospects-grow-inflation-cools-2026-03-16/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-16T11:28:32.851Z",
-    "importance": "high",
-    "region": "international",
-    "tags": [
-      "Fed",
-      "Monetary Policy",
-      "Interest Rates"
-    ],
-    "context": "A rate cut by the Fed would mark a significant shift in global monetary conditions, potentially weakening the US dollar and boosting emerging market assets."
-  },
-  {
-    "id": "dom-20260316-03",
-    "title": "证监会出台新规：进一步规范上市公司实控人减持行为",
-    "summary": "证监会发布关于规范上市公司实际控制人和大股东减持股份行为的补充规定，明确要求在公司破发、破净或分红不达标的情况下，实控人及控股股东不得通过二级市场减持股份，以保护中小投资者合法权益。",
-    "url": "http://www.csrc.gov.cn/csrc/c100028/c100029/news.shtml",
-    "source": "证监会 (csrc.gov.cn)",
-    "publishedAt": "2026-03-16T11:28:32.851Z",
-    "importance": "high",
-    "region": "domestic",
-    "tags": [
-      "资本市场",
-      "监管",
-      "上市公司"
-    ],
-    "context": "新规的落地将进一步扎紧制度篱笆，从供给端改善A股市场资金面，提振投资者信心。"
-  },
-  {
-    "id": "dom-20260316-02",
-    "title": "中国人民银行开展公开市场逆回购操作，维护流动性平稳",
-    "summary": "中国人民银行于今日开展了1000亿元人民币的7天期逆回购操作，中标利率维持在现有水平不变。此举旨在对冲税期高峰和政府债券发行缴款等因素的影响，维护银行体系流动性合理充裕。",
-    "url": "http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125469/index.html",
-    "source": "中国人民银行 (pbc.gov.cn)",
-    "publishedAt": "2026-03-16T11:28:32.851Z",
-    "importance": "medium",
-    "region": "domestic",
-    "tags": [
-      "货币政策",
-      "流动性",
-      "逆回购"
-    ],
-    "context": "央行在月中税期关键节点精准投放流动性，体现了稳健货币政策灵活适度的基调，有利于稳定市场利率预期。"
-  },
-  {
-    "id": "dom-20260316-01",
-    "title": "国家发改委：进一步扩大高技术产业和战略性新兴产业投资",
-    "summary": "国家发改委最新发布通知，要求各地进一步扩大高技术产业和战略性新兴产业投资，重点聚焦人工智能、量子信息、生物医药等前沿领域，通过中央预算内投资引导，激发民间投资活力，加快形成新质生产力。",
-    "url": "https://www.ndrc.gov.cn/xwdt/tzgg/202603/t20260316_01.html",
-    "source": "国家发改委 (ndrc.gov.cn)",
-    "publishedAt": "2026-03-16T11:28:32.850Z",
-    "importance": "high",
-    "region": "domestic",
-    "tags": [
-      "宏观政策",
-      "新兴产业",
-      "高技术"
-    ],
-    "context": "在经济持续复苏的关键期，加大前沿科技领域的投资有助于实现核心技术自主可控，并为中长期经济增长注入新动能。"
-  },
-  {
-    "id": "dom_001",
-    "title": "中国人民银行：持续优化支付服务，提升外籍来华人员支付便利性",
-    "summary": "中国人民银行今日召开优化支付服务工作推进会，要求各商业银行及支付机构进一步打通支付堵点，扩大境外银行卡受理覆盖面，优化移动支付App注册及绑卡流程。此举旨在切实提升外籍来华人员、老年人等群体的支付体验，预计将在重点城市及旅游景区实现快速覆盖。",
-    "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5267890/index.html",
-    "source": "pbc.gov.cn",
-    "publishedAt": "2026-03-16T10:00:00Z",
+    "publishedAt": "2026-03-16T18:09:52Z",
     "importance": "高",
     "region": "国内",
-    "tags": [
-      "央行",
-      "支付",
-      "外籍人士",
-      "金融服务"
-    ],
-    "context": "该政策是近年持续推进的高水平对外开放配套措施，旨在进一步吸引外资和外籍人员来华经商、旅游。"
+    "tags": ["中美经贸", "磋商", "关税", "301调查"],
+    "context": "中美双方保持对话磋商渠道，有助于缓解经贸关系紧张态势，但美方301调查仍构成潜在风险。"
   },
   {
-    "id": "dom_002",
-    "title": "国家统计局：前两月全国规模以上工业增加值同比增长5.2%",
-    "summary": "国家统计局今日发布数据，今年前两个月，全国规模以上工业增加值按可比价格计算同比增长5.2%。其中，高技术制造业和装备制造业表现亮眼，分别增长7.5%和6.8%，反映出中国经济新动能持续壮大，宏观经济开局保持平稳向好态势。",
-    "url": "http://www.stats.gov.cn/sj/zxfb/202603/t20260316_1947888.html",
-    "source": "stats.gov.cn",
-    "publishedAt": "2026-03-16T09:30:00Z",
+    "id": "int-20260317-0234",
+    "title": "美军自称13死200伤",
+    "summary": "美军中央司令部发言人当地时间3月16日告诉美联社，对伊朗袭击行动开始以来，美军已有13名军人死亡，另有200人受伤，伤员中超过180人已重返岗位。美军中央司令部未透露这些士兵受伤的时间和地点，也没有提供伤情详情。伤亡数字反映了伊朗战争对美军造成的持续影响。",
+    "url": "https://www.cls.cn/detail/2314807",
+    "source": "财联社 (cls.cn)",
+    "publishedAt": "2026-03-16T18:34:10Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": ["美国", "伊朗战争", "美军伤亡", "中东冲突"],
+    "context": "伊朗战争进入第三周，美军伤亡数字持续上升，显示冲突强度和持续时间可能超出预期。"
+  },
+  {
+    "id": "dom-20260317-0205",
+    "title": "花旗集团：截至2026年2月底信用卡逾期率为1.46%",
+    "summary": "财联社3月17日电，花旗集团表示，截至2026年2月底，信用卡逾期率为1.46%。这一数据反映了美国消费者信贷质量的最新状况，逾期率水平对判断消费信贷健康程度具有重要意义。在伊朗战争推高能源价格和通胀压力的背景下，消费信贷数据成为市场关注美联储政策走向的重要参考指标。",
+    "url": "https://www.cls.cn/detail/2314799",
+    "source": "财联社 (cls.cn)",
+    "publishedAt": "2026-03-16T18:05:14Z",
     "importance": "中",
-    "region": "国内",
-    "tags": [
-      "统计局",
-      "宏观经济",
-      "工业增加值"
-    ],
-    "context": "反映国内开年经济复苏的结构性亮点，高端制造业成为主要增长引擎。"
-  },
-  {
-    "id": "int_001",
-    "title": "ECB Officials Signal Potential Rate Cut by June as Inflation Cools",
-    "summary": "Several European Central Bank (ECB) governing council members indicated today that a first interest rate cut could come as early as June 2026, citing a consistent decline in eurozone inflation towards the 2% target. However, they stressed that any decision will remain strictly data-dependent and evaluated on a meeting-by-meeting basis.",
-    "url": "https://www.reuters.com/markets/europe/ecb-officials-signal-potential-rate-cut-by-june-2026-03-16/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-16T08:15:00Z",
-    "importance": "高",
     "region": "国际",
-    "tags": [
-      "ECB",
-      "Monetary Policy",
-      "Inflation",
-      "Eurozone"
-    ],
-    "context": "市场此前预期欧洲央行将于今年中旬开始降息周期，此次多位官员表态进一步强化了这一预期。"
-  },
-  {
-    "id": "int_002",
-    "title": "Global Markets Rally as Fed Chair Reaffirms Soft Landing Outlook",
-    "summary": "Global equity markets rallied in early trading after the Federal Reserve Chair reiterated confidence in a 'soft landing' for the US economy. Emphasizing a balanced approach to the dual mandate, the Fed plans to hold current policy rates steady while keeping a close eye on labor market conditions, reducing fears of an imminent recession.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-16/global-markets-rally-fed-chair-soft-landing",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-16T09:45:00Z",
-    "importance": "高",
-    "region": "国际",
-    "tags": [
-      "Fed",
-      "Markets",
-      "Soft Landing",
-      "US Economy"
-    ],
-    "context": "美联储主席的最新表态稳定了市场情绪，打消了投资者对于美国经济可能陷入硬着陆衰退的担忧。"
+    "tags": ["花旗集团", "信用卡逾期率", "消费信贷", "美国经济"],
+    "context": "在能源价格和通胀压力上升的背景下，消费信贷数据成为市场判断美国消费者承受能力和经济健康状况的重要指标。"
   }
 ]
