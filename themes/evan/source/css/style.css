@@ -1969,3 +1969,41 @@ html[data-theme="dark"] .back-to-top {
 [data-theme="dark"] .reading-progress-bar {
   background-color: var(--primary-color, #5dade2);
 }
+
+/* Code block language label */
+.article-content .code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  margin: -0.5rem -0.5rem 0.5rem -0.5rem;
+  background: rgba(127, 127, 127, 0.05);
+  border-bottom: 1px solid var(--border, rgba(0, 0, 0, 0.1));
+}
+
+.article-content .code-language-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary, rgba(0, 0, 0, 0.6));
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 0.5rem;
+}
+
+/* 暗色模式 */
+[data-theme="dark"] .code-block-header {
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom-color: var(--border-dark, rgba(255, 255, 255, 0.1));
+}
+
+[data-theme="dark"] .code-language-label {
+  color: var(--text-secondary-dark, rgba(255, 255, 255, 0.6));
+}
+
+/* 移动端隐藏语言标签 */
+@media (max-width: 767px) {
+  .code-language-label {
+    display: none;
+  }
+}
+
