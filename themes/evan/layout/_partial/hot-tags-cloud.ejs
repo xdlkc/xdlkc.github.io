@@ -1,0 +1,52 @@
+<%
+  /**
+   * Hot Tags Cloud Component
+   *
+   * Displays the most popular tags with font size based on post count
+   */
+
+  // Configuration
+  const maxTags = 15;          // Maximum number of tags to display
+  const minFontSize = 12;      // Minimum font size in pixels
+  const maxFontSize = 20;      // Maximum font size in pixels
+
+  // Get all tags and sort by post count (descending)
+  const tags = site.tags.sort('posts.length', -1).limit(maxTags).toArray();
+
+  // Calculate font size range
+  let minCount = 0;
+  let maxCount = 0;
+
+  if (tags.length > 0) {
+    minCount = tags[tags.length - 1].posts.length;
+    maxCount = tags[0].posts.length;
+  }
+
+  // Function to calculate tag font size
+  function calculateTagSize(postCount) {
+    if (postCount <= minCount) return minFontSize;
+    if (postCount >= maxCount) return maxFontSize;
+
+    const ratio = (postCount - minCount) / (maxCount - minCount);
+    return Math.round(minFontSize + ratio * (maxFontSize - minFontSize));
+  }
+%>
+
+<% if (tags.length > 0) { %>
+  <div class="hot-tags-cloud">
+    <h3><%= __('Hot Tags') %></h3>
+    <div class="tags-cloud">
+      <% tags.forEach((tag) => { %>
+        <% const size = calculateTagSize(tag.posts.length); %>
+        <a
+          href="<%- url_for(tag.path) %>"
+          class="tag-cloud-item"
+          style="font-size: <%= size %>px;"
+          title="<%= tag.name %> (<%= tag.posts.length %>)"
+        >
+          <%= tag.name %>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+<% } %>

@@ -39,6 +39,8 @@ const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
         </div>
       </div>
     <% }) %>
+
+    <%- partial('_partial/hot-tags-cloud') %>
   </section>
 
   <script src="<%- url_for('/js/archive-year-collapsible.js') %>" defer></script>
