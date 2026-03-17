@@ -122,13 +122,11 @@
   }
 
   // Exports for tests (CommonJS).
-  if (typeof module !== 'undefined') {
-    module.exports = {
-      STORAGE_KEY,
-      readCollapsedYears,
-      writeCollapsedYears,
-      toggleYearCollapsed,
-      initArchiveYearCollapsible,
-    };
-  }
+  return {
+    STORAGE_KEY,
+    readCollapsedYears,
+    writeCollapsedYears,
+    toggleYearCollapsed,
+    initArchiveYearCollapsible,
+  };
 });

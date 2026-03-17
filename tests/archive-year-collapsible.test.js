@@ -146,11 +146,8 @@ test('ArchiveYearCollapsible: persists collapsed state to localStorage', () => {
   global.window = dom.window;
   global.document = dom.window.document;
 
-  const storage = new dom.window.Storage();
-  global.localStorage = storage;
-
   const ArchiveYearCollapsible = require('../themes/evan/source/js/archive-year-collapsible.js');
-  ArchiveYearCollapsible.initArchiveYearCollapsible({ root: document, storage });
+  ArchiveYearCollapsible.initArchiveYearCollapsible({ root: document, storage: dom.window.localStorage });
 
   const yearDiv = document.querySelector('.archive-year');
   const btn = yearDiv.querySelector('.archive-year-collapse-btn');
@@ -159,7 +156,7 @@ test('ArchiveYearCollapsible: persists collapsed state to localStorage', () => {
   btn.click();
 
   // Check localStorage
-  const saved = storage.getItem('xdlkc:archive:collapsed');
+  const saved = dom.window.localStorage.getItem('xdlkc:archive:collapsed');
   assert.ok(saved, 'Should save collapsed state to localStorage');
 
   const collapsed = JSON.parse(saved);
@@ -168,7 +165,6 @@ test('ArchiveYearCollapsible: persists collapsed state to localStorage', () => {
 
   delete global.window;
   delete global.document;
-  delete global.localStorage;
 });
 
 test('ArchiveYearCollapsible: restores collapsed state from localStorage', () => {
@@ -197,15 +193,13 @@ test('ArchiveYearCollapsible: restores collapsed state from localStorage', () =>
   global.window = dom.window;
   global.document = dom.window.document;
 
-  const storage = new dom.window.Storage();
-  storage.setItem('xdlkc:archive:collapsed', JSON.stringify(['2026']));
-  global.localStorage = storage;
+  dom.window.localStorage.setItem('xdlkc:archive:collapsed', JSON.stringify(['2026']));
 
   const ArchiveYearCollapsible = require('../themes/evan/source/js/archive-year-collapsible.js');
-  ArchiveYearCollapsible.initArchiveYearCollapsible({ root: document, storage });
+  ArchiveYearCollapsible.initArchiveYearCollapsible({ root: document, storage: dom.window.localStorage });
 
-  const year2026 = document.querySelector('.archive-year:nth-child(2)');
-  const year2025 = document.querySelector('.archive-year:nth-child(3)');
+  const year2026 = document.querySelector('.archive-year:nth-child(1)');
+  const year2025 = document.querySelector('.archive-year:nth-child(2)');
 
   // 2026 should be collapsed
   assert.equal(year2026.classList.contains('is-collapsed'), true);
@@ -217,7 +211,6 @@ test('ArchiveYearCollapsible: restores collapsed state from localStorage', () =>
 
   delete global.window;
   delete global.document;
-  delete global.localStorage;
 });
 
 test('ArchiveYearCollapsible: init is idempotent', () => {
