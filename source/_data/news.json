@@ -535,5 +535,105 @@
       "Growth Forecast"
     ],
     "context": "This revision reflects a more optimistic outlook for the global economy, reducing fears of a widespread recession previously anticipated by many analysts."
+  },
+  {
+    "id": "dom-20260317-2245",
+    "title": "央行、外汇局联合召开重点金融机构座谈会，强调坚决防范汇率超调风险",
+    "summary": "中国人民银行、国家外汇管理局今晚联合召开重点金融机构座谈会。会议指出，近期受外部环境变化影响，人民币汇率波动有所加大，但我国经济基本面稳中向好，外汇市场具有坚实的基础。会议强调，金融机构要切实承担起维护外汇市场平稳运行的责任，坚决防范汇率超调风险，有关部门将综合施策，稳定市场预期。",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5277801/index.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-17T14:45:00Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": [
+      "央行",
+      "外汇",
+      "人民币汇率",
+      "宏观经济"
+    ],
+    "context": "在美元指数近期走强的背景下，央行夜间发声意在打消市场单边贬值预期，维护金融体系稳定。"
+  },
+  {
+    "id": "dom-20260317-2310",
+    "title": "新华社受权发布：国务院关于进一步深化国资国企改革的指导意见",
+    "summary": "新华社今晚受权发布《国务院关于进一步深化国资国企改革的指导意见》。意见提出，要围绕增强核心功能、提高核心竞争力，深入实施国有企业改革深化提升行动。重点包括完善中国特色现代企业制度、推进国有经济布局优化和结构调整、健全市场化经营机制等，力争到2028年底在重点领域取得实质性突破。",
+    "url": "http://www.xinhuanet.com/politics/2026-03/17/c_1129487654.htm",
+    "source": "新华社",
+    "publishedAt": "2026-03-17T15:10:00Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": [
+      "国企改革",
+      "国务院",
+      "宏观政策"
+    ],
+    "context": "新一轮国企改革不仅关乎国有资产保值增值，更是激发经济体制活力、构建现代化产业体系的关键一环。"
+  },
+  {
+    "id": "dom-20260317-2320",
+    "title": "证监会深夜发文：从严打击上市公司财务造假与虚假信披",
+    "summary": "为进一步净化资本市场生态，证监会今晚发布《关于从严打击上市公司财务造假的若干意见》。文件明确提出，将建立多部门联合惩戒机制，大幅提高违法违规成本，对重大财务造假案件实行“零容忍”并依法从重处罚。同时，鼓励内部人举报，并压实会计师事务所等中介机构的“看门人”责任。",
+    "url": "http://www.csrc.gov.cn/csrc/c100028/c7467682/content.shtml",
+    "source": "证监会",
+    "publishedAt": "2026-03-17T15:20:00Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": [
+      "证监会",
+      "A股市场",
+      "财务造假",
+      "监管"
+    ],
+    "context": "提升上市公司质量是活跃资本市场的前提，监管层重拳出击意在重塑投资者信心，推动市场长期健康发展。"
+  },
+  {
+    "id": "int-20260317-2250",
+    "title": "U.S. Tech Stocks Rally in Late Trading as Fed Hints at Soft Landing",
+    "summary": "美国科技股在周二尾盘交易中出现强劲反弹，纳斯达克100指数收涨逾1.5%。此前，美联储一位高级官员在晚间讲话中暗示，近期的数据表明美国经济正稳步迈向“软着陆”，且通胀压力已得到有效控制，为年内的温和降息敞开了大门。受此提振，芯片和软件巨头领涨大盘。",
+    "url": "https://www.reuters.com/markets/us/us-tech-stocks-rally-late-trading-fed-hints-soft-landing-2026-03-17/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-17T14:50:00Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": [
+      "美股",
+      "美联储",
+      "科技股",
+      "降息预期"
+    ],
+    "context": "市场对宏观经济衰退风险的担忧进一步缓解，风险偏好的回升使得资金重新涌入高弹性的科技板块。"
+  },
+  {
+    "id": "int-20260317-2305",
+    "title": "BOJ Governor Affirms Gradual Normalization Path in Evening Address",
+    "summary": "日本央行行长在周二晚间的公开演讲中重申，尽管央行已经结束了负利率政策，但未来的加息路径将是非常渐进的。他强调，日本经济仍需要宽松金融环境的支持以确保薪资-通胀良性循环的稳固。这一表态缓解了市场对日本央行激进紧缩的担忧，日元兑美元汇率在演讲后小幅走软。",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-17/boj-governor-affirms-gradual-normalization-path",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-17T15:05:00Z",
+    "importance": "中",
+    "region": "国际",
+    "tags": [
+      "日本央行",
+      "日元",
+      "货币政策"
+    ],
+    "context": "作为全球最后一个退出负利率的主要央行，日本央行的政策节奏将深刻影响全球资本流动与套息交易的重构。"
+  },
+  {
+    "id": "int-20260317-2325",
+    "title": "Global Supply Chains Brace for Disruption After Major Cyberattack on Logistics Hub",
+    "summary": "全球供应链面临新一轮考验，欧洲一个关键物流枢纽的IT系统遭遇了大规模且复杂的网络攻击，导致大量货物滞留和港口运营中断。网络安全专家指出，此次攻击可能由具有国家背景的黑客组织发起。受此影响，全球主要航运公司的股价在盘后交易中出现波动，市场担忧物流成本可能因此飙升。",
+    "url": "https://www.wsj.com/business/logistics/global-supply-chains-brace-for-disruption-cyberattack-2026-03-17",
+    "source": "WSJ",
+    "publishedAt": "2026-03-17T15:25:00Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": [
+      "供应链",
+      "网络安全",
+      "物流",
+      "黑客攻击"
+    ],
+    "context": "地缘政治紧张局势正越来越多地向网络空间蔓延，基础设施的脆弱性已成为威胁全球经济稳定运行的黑天鹅因素。"
   }
 ]
