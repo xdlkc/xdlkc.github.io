@@ -1,0 +1,224 @@
+/* 打印样式优化 (Print-Friendly Styles)
+ *
+ * 优化打印输出，隐藏无关元素，提高可读性
+ */
+
+@media print {
+  /* 隐藏导航栏 */
+  .article-nav,
+  .skip-link {
+    display: none !important;
+  }
+
+  /* 隐藏返回顶部按钮 */
+  .back-to-top,
+  [data-back-to-top] {
+    display: none !important;
+  }
+
+  /* 隐藏分享按钮 */
+  .article-share,
+  [data-article-share] {
+    display: none !important;
+  }
+
+  /* 隐藏文章链接复制按钮 */
+  .article-link-copy,
+  [data-article-link-copy] {
+    display: none !important;
+  }
+
+  /* 隐藏点赞按钮 */
+  .post-like,
+  [data-post-like] {
+    display: none !important;
+  }
+
+  /* 隐藏评论区域 */
+  .post-comments {
+    display: none !important;
+  }
+
+  /* 隐藏上一篇/下一篇导航 */
+  .post-navigation {
+    display: none !important;
+  }
+
+  /* 隐藏 TOC 目录 */
+  .toc-card,
+  .toc-mobile,
+  details.toc-mobile {
+    display: none !important;
+  }
+
+  /* 隐藏 Related Posts */
+  .related-posts {
+    display: none !important;
+  }
+
+  /* 隐藏阅读进度条 */
+  .reading-progress {
+    display: none !important;
+  }
+
+  /* 隐藏搜索按钮 */
+  .site-search-trigger,
+  [data-site-search-trigger] {
+    display: none !important;
+  }
+
+  /* 隐藏主题切换按钮 */
+  .theme-toggle,
+  [data-theme-toggle] {
+    display: none !important;
+  }
+
+  /* 隐藏字体切换按钮 */
+  .font-size-toggle,
+  [data-font-size-toggle] {
+    display: none !important;
+  }
+
+  /* 隐藏快捷键帮助按钮 */
+  .shortcut-help-trigger,
+  [data-shortcut-help-trigger] {
+    display: none !important;
+  }
+
+  /* 隐藏语言切换按钮 */
+  .lang-toggle,
+  [data-lang-toggle] {
+    display: none !important;
+  }
+
+  /* 隐藏随机文章按钮 */
+  .random-post-button,
+  [data-random-post] {
+    display: none !important;
+  }
+
+  /* 移除背景色，减少墨水使用 */
+  body,
+  .article-shell,
+  .article-card,
+  .article-hero,
+  .archive-shell,
+  .archive-card,
+  .page-shell,
+  .page-card,
+  .news-shell,
+  .news-card,
+  .nav-links a:hover,
+  .nav-links button:hover {
+    background: none !important;
+    background-color: white !important;
+    background-image: none !important;
+  }
+
+  /* 使用黑色文字，提高可读性 */
+  body,
+  .article-shell,
+  .article-content,
+  .article-meta,
+  .archive-item,
+  .archive-year h2,
+  .page-content,
+  .news-content {
+    color: black !important;
+  }
+
+  /* 优化字体大小 */
+  body {
+    font-size: 12pt !important;
+    line-height: 1.6 !important;
+  }
+
+  /* 代码块样式 */
+  .article-content pre,
+  .article-content code {
+    background-color: #f5f5f5 !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* 图片适配宽度，避免溢出 */
+  .article-content img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* 链接显示 URL（可选） */
+  .article-content a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* 避免在元素内部分页 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .article-content p,
+  .article-content li,
+  .article-content pre,
+  .article-content img,
+  blockquote {
+    page-break-inside: avoid !important;
+  }
+
+  /* 避免标题后立即分页 */
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid !important;
+  }
+
+  /* 调整边距 */
+  .article-shell,
+  .page-shell,
+  .news-shell,
+  .archive-shell {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .article-card,
+  .page-card,
+  .news-card,
+  .archive-card {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+  }
+
+  /* 文章元数据优化 */
+  .article-meta {
+    font-size: 10pt !important;
+    color: #666 !important;
+    margin-bottom: 1em !important;
+  }
+
+  /* 打印元数据 - 在页面底部显示文章信息 */
+  .print-meta {
+    display: block !important;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
+    font-size: 9pt;
+    color: #666;
+    page-break-inside: avoid !important;
+  }
+
+  .print-meta::before {
+    content: "来源: " attr(data-print-url) " | 打印日期: " attr(data-print-date);
+    display: block;
+    margin-bottom: 0.5em;
+  }
+}

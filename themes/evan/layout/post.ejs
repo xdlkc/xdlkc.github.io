@@ -159,6 +159,11 @@
           </ul>
         </section>
       <% } %>
+
+      <!-- 打印元数据：打印时在文章底部显示来源和日期 -->
+      <div class="print-meta"
+           data-print-url="<%= url_for(page.path, { external: true }) %>"
+           data-print-date="<%= date(Date.now(), 'YYYY-MM-DD') %>"></div>
     </main>
 
     <% if (postToc && postToc.trim()) { %>
