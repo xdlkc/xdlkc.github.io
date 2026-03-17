@@ -46,3 +46,30 @@
 .code-line-numbers-toast.is-visible {
   opacity: 1;
 }
+
+/* Print Button */
+.print-button {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.print-button:hover {
+  background: var(--border);
+}
+
+.print-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media print {
+  .print-button {
+    display: none !important;
+  }
+}
