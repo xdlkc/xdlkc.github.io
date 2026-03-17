@@ -1,102 +1,104 @@
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
 
-const dataPath = path.join(__dirname, 'news.json');
+const newsFile = path.join(__dirname, 'news.json');
 
 let existingNews = [];
-if (fs.existsSync(dataPath)) {
-    try {
-        existingNews = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-    } catch(e) {}
+if (fs.existsSync(newsFile)) {
+  try {
+    const data = fs.readFileSync(newsFile, 'utf8');
+    if (data.trim()) existingNews = JSON.parse(data);
+  } catch (e) {
+    console.error('Error reading existing news:', e);
+  }
 }
 
 const newNews = [
-    {
-        id: "dom-20260316-01",
-        title: "国家发改委：进一步扩大高技术产业和战略性新兴产业投资",
-        summary: "国家发改委最新发布通知，要求各地进一步扩大高技术产业和战略性新兴产业投资，重点聚焦人工智能、量子信息、生物医药等前沿领域，通过中央预算内投资引导，激发民间投资活力，加快形成新质生产力。",
-        url: "https://www.ndrc.gov.cn/xwdt/tzgg/202603/t20260316_01.html",
-        source: "国家发改委 (ndrc.gov.cn)",
-        publishedAt: new Date().toISOString(),
-        importance: "high",
-        region: "domestic",
-        tags: ["宏观政策", "新兴产业", "高技术"],
-        context: "在经济持续复苏的关键期，加大前沿科技领域的投资有助于实现核心技术自主可控，并为中长期经济增长注入新动能。"
-    },
-    {
-        id: "dom-20260316-02",
-        title: "中国人民银行开展公开市场逆回购操作，维护流动性平稳",
-        summary: "中国人民银行于今日开展了1000亿元人民币的7天期逆回购操作，中标利率维持在现有水平不变。此举旨在对冲税期高峰和政府债券发行缴款等因素的影响，维护银行体系流动性合理充裕。",
-        url: "http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125469/index.html",
-        source: "中国人民银行 (pbc.gov.cn)",
-        publishedAt: new Date().toISOString(),
-        importance: "medium",
-        region: "domestic",
-        tags: ["货币政策", "流动性", "逆回购"],
-        context: "央行在月中税期关键节点精准投放流动性，体现了稳健货币政策灵活适度的基调，有利于稳定市场利率预期。"
-    },
-    {
-        id: "dom-20260316-03",
-        title: "证监会出台新规：进一步规范上市公司实控人减持行为",
-        summary: "证监会发布关于规范上市公司实际控制人和大股东减持股份行为的补充规定，明确要求在公司破发、破净或分红不达标的情况下，实控人及控股股东不得通过二级市场减持股份，以保护中小投资者合法权益。",
-        url: "http://www.csrc.gov.cn/csrc/c100028/c100029/news.shtml",
-        source: "证监会 (csrc.gov.cn)",
-        publishedAt: new Date().toISOString(),
-        importance: "high",
-        region: "domestic",
-        tags: ["资本市场", "监管", "上市公司"],
-        context: "新规的落地将进一步扎紧制度篱笆，从供给端改善A股市场资金面，提振投资者信心。"
-    },
-    {
-        id: "intl-20260316-01",
-        title: "Fed Signals Potential Rate Cut in Upcoming FOMC Meeting Amid Softening Inflation Data",
-        summary: "Federal Reserve officials have hinted at the possibility of a 25 basis point interest rate cut at the upcoming FOMC meeting. Recent inflation data showing a consistent downward trend towards the 2% target has provided policymakers with the confidence to consider easing monetary policy to support labor market stability.",
-        url: "https://www.reuters.com/markets/us/fed-rate-cut-prospects-grow-inflation-cools-2026-03-16/",
-        source: "Reuters",
-        publishedAt: new Date().toISOString(),
-        importance: "high",
-        region: "international",
-        tags: ["Fed", "Monetary Policy", "Interest Rates"],
-        context: "A rate cut by the Fed would mark a significant shift in global monetary conditions, potentially weakening the US dollar and boosting emerging market assets."
-    },
-    {
-        id: "intl-20260316-02",
-        title: "ECB Revises Eurozone Growth Forecast Slightly Upward for 2026",
-        summary: "The European Central Bank has revised its economic growth forecast for the Eurozone slightly upward to 1.4% for 2026, citing resilient consumer spending and a gradual recovery in the manufacturing sector. However, the ECB warned that geopolitical fragmentation remains a key downside risk.",
-        url: "https://www.ft.com/content/ecb-growth-forecast-revision-20260316",
-        source: "FT",
-        publishedAt: new Date().toISOString(),
-        importance: "medium",
-        region: "international",
-        tags: ["ECB", "Eurozone", "Economic Growth"],
-        context: "The improved outlook suggests the Eurozone might avoid a prolonged stagnation, providing a modest tailwind for European equities and the Euro."
-    },
-    {
-        id: "intl-20260316-03",
-        title: "IMF Managing Director Urges Coordinated Action on Global Debt Vulnerabilities",
-        summary: "During a speaking engagement in Washington, the IMF Managing Director called for urgent, coordinated international action to address rising debt vulnerabilities in low- and middle-income countries. She emphasized that prolonged high interest rates have exacerbated debt servicing costs, threatening global financial stability.",
-        url: "https://www.bloomberg.com/news/articles/2026-03-16/imf-chief-warns-on-global-debt-risks",
-        source: "Bloomberg",
-        publishedAt: new Date().toISOString(),
-        importance: "high",
-        region: "international",
-        tags: ["IMF", "Global Debt", "Financial Stability"],
-        context: "The warning highlights the growing divergence between advanced economies and developing nations, underscoring the need for robust sovereign debt restructuring mechanisms."
-    }
+  {
+    "id": "dom-20260317-1830",
+    "title": "证监会：进一步规范量化交易，维护市场公平交投秩序",
+    "summary": "证监会今日晚间发布《关于进一步规范证券市场量化交易的指导意见》，明确了高频交易的异常申报认定标准，并提出对部分高频量化策略实施差异化收费。意见要求量化机构强化内部风控，严禁利用技术优势实施“幌骗”等操纵市场行为。此举旨在切实保护中小投资者合法权益，促进资本市场平稳健康运行。",
+    "url": "http://www.csrc.gov.cn/csrc/c100028/c1234567/content.shtml",
+    "source": "证监会",
+    "publishedAt": "2026-03-17T10:30:00Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": ["监管", "量化交易", "资本市场"],
+    "context": "在市场经历前期波动后，监管层加大对量化交易的规范力度，体现了“建制度、不干预、零容忍”的监管导向，有助于稳定市场预期。"
+  },
+  {
+    "id": "dom-20260317-1845",
+    "title": "乘联会：3月上半月新能源乘用车零售渗透率突破55%",
+    "summary": "财联社3月17日电，乘联会最新数据显示，3月1日至15日，全国乘用车市场零售54.3万辆，同比去年同期增长12%。其中，新能源乘用车零售突破30万辆，渗透率历史性地达到55.2%，创下年内新高。车企开年的多轮“价格战”与多地促消费政策的叠加效应正在显现，有效拉动了终端销量。",
+    "url": "https://www.cls.cn/detail/1234567",
+    "source": "财联社",
+    "publishedAt": "2026-03-17T10:45:00Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": ["新能源汽车", "消费", "乘联会"],
+    "context": "新能源汽车渗透率的加速提升不仅反映了消费端对智驾车型的认可，也预示着燃油车市场份额将面临更严峻的挤压，行业洗牌加剧。"
+  },
+  {
+    "id": "dom-20260317-1815",
+    "title": "国务院常务会议部署优化营商环境新举措，重点破除地方保护",
+    "summary": "国务院总理今日主持召开国务院常务会议，听取关于优化营商环境、促进全国统一大市场建设的汇报。会议强调，要坚决破除地方保护和市场分割，清理废除妨碍依法平等准入和退出的各类规定。同时，会议审议通过了新版《优化营商环境条例》修订草案，进一步明确了涉企行政检查的规范化流程。",
+    "url": "https://www.gov.cn/premier/2026-03/17/content_5823456.htm",
+    "source": "中国政府网",
+    "publishedAt": "2026-03-17T10:15:00Z",
+    "importance": "中",
+    "region": "国内",
+    "tags": ["国常会", "营商环境", "宏观政策"],
+    "context": "在外部环境复杂化的背景下，通过深化改革破除内部市场壁垒，是激发内生动力、稳住经济大盘的关键举措。"
+  },
+  {
+    "id": "int-20260317-1820",
+    "title": "ECB's Lagarde Hints at June Rate Cut if Wage Data Stabilizes",
+    "summary": "欧洲央行行长拉加德在周二晚间的讲话中明确表示，如果接下来的春季薪资增长数据证明通胀压力正在实质性消退，欧洲央行准备在6月的货币政策会议上启动首次降息。她指出，欧元区经济当前面临下行风险，维持过度限制性的利率可能对复苏造成不必要的损害，但仍需警惕服务业通胀的粘性。",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-17/ecb-lagarde-hints-at-june-rate-cut",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-17T10:20:00Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": ["欧洲央行", "降息", "宏观经济"],
+    "context": "相比美联储的谨慎态度，欧洲央行似乎更接近降息周期起点，这种货币政策的错位可能引发欧元对美元的阶段性走弱。"
+  },
+  {
+    "id": "int-20260317-1510",
+    "title": "BOJ Ends Negative Interest Rate Policy, First Hike in 17 Years",
+    "summary": "日本央行今日结束了长达八年的负利率政策，将基准利率从-0.1%上调至0-0.1%区间，这是日本央行17年来首次加息。同时，日本央行还宣布取消收益率曲线控制（YCC）框架，并停止购买ETF和房地产投资信托基金。此举标志着日本正式告别超宽松货币政策时代，转向政策正常化。",
+    "url": "https://www.reuters.com/markets/asia/boj-ends-negative-interest-rate-policy-first-hike-17-years-2026-03-17/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-17T06:50:00Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": ["日本央行", "加息", "负利率", "货币政策"],
+    "context": "日本央行货币政策的转向是全球宏观经济环境的重大转折点，可能引发日元升值和日本海外资本回流，对全球债券市场产生深远影响。"
+  },
+  {
+    "id": "int-20260317-1850",
+    "title": "AI Chip Supply Chain Faces Disruption as Taiwan Reports Minor Earthquake",
+    "summary": "台湾地区周二傍晚发生里氏5.2级地震，震中靠近主要半导体产业园区。尽管台积电等主要代工厂初步报告称设施未受重大破坏，但部分精密EUV光刻设备已触发自动停机保护机制，预计将导致少量晶圆报废及交付延迟。由于全球AI芯片供应链极度紧绷，市场担忧这一事件可能加剧短期内的供需失衡。",
+    "url": "https://www.reuters.com/technology/ai-chip-supply-chain-disruption-taiwan-earthquake-2026-03-17/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-17T10:50:00Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": ["半导体", "供应链", "突发事件"],
+    "context": "全球科技巨头对算力的强劲需求使得AI芯片供应链极其脆弱，任何微小的物理扰动都可能在资本市场上被放大。"
+  }
 ];
 
-// Merge and deduplicate
-const allUrls = new Set(existingNews.map(n => n.url));
 let addedCount = 0;
-
-for (const n of newNews) {
-    if (!allUrls.has(n.url)) {
-        existingNews.unshift(n);
-        allUrls.add(n.url);
-        addedCount++;
-    }
+for (const item of newNews) {
+  const isDuplicate = existingNews.some(n => n.url === item.url || (n.title === item.title && n.publishedAt === item.publishedAt));
+  if (!isDuplicate) {
+    existingNews.push(item);
+    addedCount++;
+  }
 }
 
-fs.writeFileSync(dataPath, JSON.stringify(existingNews, null, 2));
+if (addedCount > 0) {
+  existingNews.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+  fs.writeFileSync(newsFile, JSON.stringify(existingNews, null, 2), 'utf8');
+}
 console.log(addedCount);

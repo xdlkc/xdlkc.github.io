@@ -102,6 +102,33 @@
     return lineCount > 1;
   }
 
+  function removeLineNumbers(container) {
+    container.querySelectorAll('.code-line-numbers-wrapper').forEach(wrapper => {
+      const originalCodeBlock = wrapper.querySelector('pre, figure.highlight');
+      if (originalCodeBlock) {
+        // Move original code block back to its parent
+        wrapper.parentNode.insertBefore(originalCodeBlock, wrapper);
+        originalCodeBlock.removeAttribute(DATA_ATTR_PROCESSED);
+      }
+      wrapper.remove();
+    });
+    // Remove processed attribute from any remaining original blocks
+    container.querySelectorAll(`[${DATA_ATTR_PROCESSED}]`).forEach(el => el.removeAttribute(DATA_ATTR_PROCESSED));
+  }
+
+  function refreshCodeLineNumbers(options = {}) {
+    const { containerSelector = 'body', document = typeof window !== 'undefined' ? window.document : null } = options;
+    if (!document) return;
+    const container = containerSelector ? document.querySelector(containerSelector) : document.body;
+    if (!container) return;
+
+    // First, remove all existing line numbers and wrappers
+    removeLineNumbers(container);
+
+    // Then, re-initialize to apply based on current localStorage state
+    initCodeLineNumbers(options);
+  }
+
   function initCodeLineNumbers(options = {}) {
     const { containerSelector = 'body', document = typeof window !== 'undefined' ? window.document : null } = options;
 
@@ -149,6 +176,7 @@
 
   return {
     initCodeLineNumbers,
-    STORAGE_KEY_LINE_NUMBERS
+    STORAGE_KEY_LINE_NUMBERS,
+    refreshCodeLineNumbers
   };
 });
