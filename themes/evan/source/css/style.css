@@ -2110,3 +2110,50 @@ html[data-theme="dark"] .back-to-top {
   background-color: var(--primary-color, #5dade2);
   color: #fff;
 }
+
+/* Code line numbers */
+.code-line-numbers-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.code-line-numbers {
+  display: flex;
+  flex-direction: column;
+  padding: 0.95rem 0.5rem 0.95rem 0;
+  border-right: 1px solid var(--border);
+  background: #f6f7f9;
+  color: #999999;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  user-select: none;
+  min-width: 2.5rem;
+  text-align: right;
+}
+
+[data-theme="dark"] .code-line-numbers {
+  background: #0f1722;
+  border-right-color: #253042;
+  color: #6b7280;
+}
+
+.code-line-number {
+  display: block;
+  height: 1.6em;
+  line-height: 1.6em;
+}
+
+/* Adjust code blocks when line numbers are present */
+.code-line-numbers-wrapper pre,
+.code-line-numbers-wrapper figure.highlight {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Hide line numbers on mobile to save space */
+@media (max-width: 640px) {
+  .code-line-numbers {
+    display: none;
+  }
+}
+
