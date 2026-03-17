@@ -232,11 +232,36 @@
     const q = String(query || '').trim();
     const keywords = splitKeywords(q).map((t) => String(t).toLowerCase());
 
-    const source = post
-      ? (post.excerpt || post.content || post.raw || '')
-      : '';
+    // Try content first, then excerpt, then raw
+    const sources = [
+      post?.content || '',
+      post?.excerpt || '',
+      post?.raw || ''
+    ];
 
-    const text = stripHtmlToText(source, { document });
+    let text = '';
+    let sourceIndex = -1;
+
+    // Find the first source that contains any keyword
+    for (let i = 0; i < sources.length; i++) {
+      const source = sources[i];
+      const sourceText = stripHtmlToText(source, { document });
+      if (!sourceText) continue;
+
+      const lower = sourceText.toLowerCase();
+      const hasMatch = keywords.some((kw) => kw && lower.includes(kw));
+      if (hasMatch) {
+        text = sourceText;
+        sourceIndex = i;
+        break;
+      }
+    }
+
+    // If no match found, use the first available source
+    if (!text && sources.length > 0) {
+      text = stripHtmlToText(sources[0], { document });
+    }
+
     if (!text) return '';
 
     const maxLen = 90;
@@ -389,6 +414,8 @@
     const title = (post.title || '').toLowerCase();
     const tags = (post.tags || []).map((t) => String(t).toLowerCase());
     const categories = (post.categories || []).map((c) => String(c).toLowerCase());
+    const content = stripHtmlToText(post.content || '', {}).toLowerCase();
+    const excerpt = stripHtmlToText(post.excerpt || '', {}).toLowerCase();
 
     const tokens = Array.isArray(queryTokensLower)
       ? queryTokensLower.filter(Boolean)
@@ -402,6 +429,11 @@
 
     let score = 0;
     let matchedTokens = 0;
+    let hasTitleMatch = false;
+    let hasTagOrCategoryMatch = false;
+    let contentScore = 0;
+    let excerptScore = 0;
+    let titleMatchedTokens = new Set();
 
     tokens.forEach((token) => {
       let matchedThis = false;
@@ -409,6 +441,8 @@
       if (!isTagOnly && !isCategoryOnly && title.includes(token)) {
         score += 10;
         matchedThis = true;
+        hasTitleMatch = true;
+        titleMatchedTokens.add(token);
 
         // More occurrences in title gets slightly higher.
         const titleMatches = title.split(token).length - 1;
@@ -420,6 +454,7 @@
             // Tag match: slightly lower than title, but meaningful.
             score += isTagOnly ? 6 : 3;
             matchedThis = true;
+            hasTagOrCategoryMatch = true;
           }
         });
       }
@@ -429,15 +464,49 @@
           // Category match: between title and tag.
           score += isCategoryOnly ? 8 : 4;
           matchedThis = true;
+          hasTagOrCategoryMatch = true;
         }
       });
+
+      // Content search: lower priority than title/tags/categories
+      // Only count content matches for tokens NOT already matched in title
+      if (!isTagOnly && !isCategoryOnly && !titleMatchedTokens.has(token) && content.includes(token)) {
+        const contentMatches = content.split(token).length - 1;
+        contentScore += Math.min(4, Math.max(2, contentMatches));
+        matchedThis = true;
+      }
+
+      // Excerpt search: lowest priority, but still useful
+      // Only count excerpt matches for tokens NOT already matched in title
+      if (!isTagOnly && !isCategoryOnly && !titleMatchedTokens.has(token) && excerpt.includes(token)) {
+        const excerptMatches = excerpt.split(token).length - 1;
+        excerptScore += Math.min(2, Math.max(1, excerptMatches));
+        matchedThis = true;
+      }
 
       if (matchedThis) matchedTokens += 1;
     });
 
-    // Bonus for matching more distinct keywords.
-    if (matchedTokens > 1) score += matchedTokens * 2;
-    if (matchedTokens === tokens.length && tokens.length > 1) score += 6;
+    // Cap content and excerpt scores to ensure they don't exceed reasonable limits
+    contentScore = Math.min(contentScore, 4);
+    excerptScore = Math.min(excerptScore, 2);
+
+    // Add content and excerpt scores only if no higher-priority matches
+    if (!hasTitleMatch && !hasTagOrCategoryMatch) {
+      score += contentScore + excerptScore;
+    } else if (hasTitleMatch || hasTagOrCategoryMatch) {
+      // Bonus for matching more distinct keywords (only for title/tag/category matches)
+      // But reduce or remove bonus when content/excerpt matches are also present
+      const hasContentMatch = contentScore > 0 || excerptScore > 0;
+      if (matchedTokens > 1) {
+        const bonus = matchedTokens * 2;
+        score += hasContentMatch ? 1 : bonus;
+      }
+      if (matchedTokens === tokens.length && tokens.length > 1) {
+        const bonus = 6;
+        score += hasContentMatch ? 0 : bonus;
+      }
+    }
 
     return score;
   }
@@ -1847,6 +1916,7 @@
     getTopTags,
     getAllTags,
     suggestSimilarTags,
+    scorePost,
     searchPosts,
     ensureDialog,
     renderResults,
