@@ -1,17 +1,16 @@
-// 简单的 TOC 生成脚本
-function generateTOC(containerId, tocContainerId) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    const headers = container.querySelectorAll('h1, h2, h3, h4, h5, h6');
-    const toc = document.getElementById(tocContainerId);
-    if (!toc) return;
-    
-    let html = '<ul>';
+// Auto TOC Generator
+document.addEventListener('DOMContentLoaded', () => {
+    const content = document.querySelector('.post-content');
+    if (!content) return;
+    const headers = content.querySelectorAll('h1, h2, h3, h4');
+    const toc = document.createElement('div');
+    toc.className = 'article-toc';
     headers.forEach((h, i) => {
-        const id = h.id || `toc-header-${i}`;
-        h.id = id;
-        html += `<li><a href="#${id}">${h.innerText}</a></li>`;
+        if (!h.id) h.id = `heading-${i}`;
+        const link = document.createElement('a');
+        link.href = `#${h.id}`;
+        link.textContent = h.textContent;
+        toc.appendChild(link);
     });
-    html += '</ul>';
-    toc.innerHTML = html;
-}
+    document.body.appendChild(toc);
+});
