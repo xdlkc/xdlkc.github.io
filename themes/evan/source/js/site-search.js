@@ -1319,6 +1319,12 @@
       location.href = href;
     }
 
+    try {
+      saveLastQuery(storageRef, input?.value || '');
+    } catch {
+      // ignore
+    }
+    closeDialog(dialog);
     return true;
   }
 
@@ -1554,10 +1560,11 @@
         return;
       }
 
-      // Clicking a result link should also store the query.
+      // Clicking a result link should also store the query and close the dialog.
       const resultLink = event.target?.closest?.('.site-search-link');
       if (resultLink) {
         addRecentQuery(storageRef, input?.value || '');
+        handleClose();
         return;
       }
 
@@ -1724,6 +1731,12 @@
         location.href = href;
       }
 
+      try {
+        saveLastQuery(storageRef, input?.value || '');
+      } catch {
+        // ignore
+      }
+      closeDialog(dialog);
       return true;
     }
 
