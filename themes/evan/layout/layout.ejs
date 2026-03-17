@@ -91,6 +91,16 @@
   </script>
 </head>
 <body>
+    <div id="reading-progress-bar" style="position: fixed; top: 0; left: 0; height: 3px; background: #007bff; width: 0%; z-index: 9999; transition: width 0.1s;"></div>
+    <script>
+      window.addEventListener("scroll", () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        const bar = document.getElementById("reading-progress-bar");
+        if (bar) bar.style.width = progress + "%";
+      });
+    </script>
   <a class="skip-link" href="#main-content" data-i18n-key="skip.main">Skip to content</a>
   <%- body %>
   <script src="<%- url_for('/js/lang-toggle.js') %>" defer></script>
