@@ -86,17 +86,49 @@
     return modal;
   }
 
-  function openQrModal(modal, url) {
+  async function openQrModal(modal, url) {
     if (!modal) return;
     const img = modal.querySelector('[data-article-share-qr-img]');
     if (!img) return;
 
-    // Use QR Server API for simplicity
-    const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(url)}`;
-    img.src = qrApiUrl;
+    // Validate URL
+    if (!url || typeof url !== 'string') {
+      console.error('Invalid URL for QR code generation:', url);
+      throw new Error('URL is required and must be a string');
+    }
 
-    modal.style.display = 'block';
-    modal.setAttribute('aria-hidden', 'false');
+    try {
+      // Use qrcode library to generate QR code locally
+      let QRCode;
+      if (typeof require === 'function') {
+        QRCode = require('qrcode');
+      } else if (typeof window !== 'undefined' && window.QRCode) {
+        QRCode = window.QRCode;
+      } else {
+        throw new Error('qrcode library not available');
+      }
+
+      const dataUrl = await QRCode.toDataURL(url, {
+        width: 200,
+        margin: 1,
+        errorCorrectionLevel: 'M'
+      });
+
+      img.src = dataUrl;
+
+      modal.style.display = 'block';
+      modal.setAttribute('aria-hidden', 'false');
+      modal.classList.add('is-open');
+    } catch (error) {
+      console.error('QR Code generation failed:', error);
+      // Fallback to external API if local generation fails
+      const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(url)}`;
+      img.src = qrApiUrl;
+
+      modal.style.display = 'block';
+      modal.setAttribute('aria-hidden', 'false');
+      modal.classList.add('is-open');
+    }
   }
 
   function closeQrModal(modal) {
@@ -137,7 +169,11 @@
       const modal = ensureQrModal({ document: root });
 
       wechatBtn.addEventListener('click', () => {
-        const url = wechatBtn.getAttribute('data-article-url');
+        // Try to get URL from button first, then from parent container
+        let url = wechatBtn.getAttribute('data-article-url');
+        if (!url) {
+          url = container.getAttribute('data-article-url');
+        }
         openQrModal(modal, url);
       });
     }
