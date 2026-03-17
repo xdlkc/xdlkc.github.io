@@ -439,5 +439,101 @@
       "美联储"
     ],
     "context": "消费作为美国经济的最大支柱，其韧性为“软着陆”叙事提供了强力支撑，但这同时也是通胀难以快速回落的核心原因。"
+  },
+  {
+    "id": "dom-1",
+    "title": "中国人民银行关于规范信贷政策实施的通知",
+    "summary": "为进一步规范信贷市场秩序，防范化解系统性金融风险，中国人民银行今日发布通知，要求各金融机构严格落实差别化信贷政策，重点支持实体经济和高新技术产业发展，坚决遏制资金违规流入房地产和地方政府融资平台，促进经济高质量发展。",
+    "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5277800/index.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-17T13:00:00Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": [
+      "信贷政策",
+      "央行",
+      "宏观经济"
+    ],
+    "context": "当前宏观经济正处于复苏关键期，央行需通过结构性货币政策工具引导资金流向实体经济。"
+  },
+  {
+    "id": "dom-2",
+    "title": "国家统计局：前两月全国规模以上工业增加值同比增长6.8%",
+    "summary": "国家统计局最新发布的数据显示，1-2月份，全国规模以上工业增加值同比增长6.8%，比上年12月份加快0.2个百分点。其中，高技术制造业和装备制造业表现亮眼，增速均保持在两位数以上，显示出中国工业经济在年初呈现平稳回升向好态势。",
+    "url": "http://www.stats.gov.cn/sj/zxfb/202603/t20260317_1950431.html",
+    "source": "国家统计局",
+    "publishedAt": "2026-03-17T02:00:00Z",
+    "importance": "高",
+    "region": "国内",
+    "tags": [
+      "工业数据",
+      "宏观经济",
+      "统计局"
+    ],
+    "context": "年初经济数据往往是全年经济走势的风向标，工业稳健增长有助于稳定市场预期。"
+  },
+  {
+    "id": "dom-3",
+    "title": "证监会出台新规：进一步严格规范上市公司减持行为",
+    "summary": "为保护中小投资者合法权益，维护资本市场公平公正秩序，证监会今日正式发布《上市公司股东减持股份管理暂行办法》。新规明确规定，大股东在破发、破净或分红不达标等情形下，将面临严格的减持限制，同时加大了对违规减持的处罚力度。",
+    "url": "http://www.csrc.gov.cn/csrc/c100028/c7467681/content.shtml",
+    "source": "证监会",
+    "publishedAt": "2026-03-17T08:00:00Z",
+    "importance": "中",
+    "region": "国内",
+    "tags": [
+      "证监会",
+      "A股",
+      "减持新规"
+    ],
+    "context": "A股市场长期受大股东违规减持困扰，新规旨在重塑市场信心，提升资本市场内在稳定性。"
+  },
+  {
+    "id": "int-1",
+    "title": "Federal Reserve Signals Potential Rate Cut in Upcoming Meeting",
+    "summary": "Federal Reserve Chair Jerome Powell indicated in a recent speech that the central bank is closely monitoring inflation data and may consider a modest interest rate cut if current disinflationary trends continue, aiming to balance economic growth with price stability.",
+    "url": "https://www.reuters.com/markets/us/fed-powell-signals-rate-cut-2026-03-17/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-17T12:00:00Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": [
+      "Fed",
+      "Interest Rates",
+      "Monetary Policy"
+    ],
+    "context": "Global markets have been anticipating a shift in US monetary policy amid easing inflationary pressures and signs of economic moderation."
+  },
+  {
+    "id": "int-2",
+    "title": "ECB Maintains Rates Amid Persistent Services Inflation",
+    "summary": "The European Central Bank elected to hold its benchmark interest rates steady, citing persistent inflation in the services sector despite overall headline inflation approaching the 2% target. Officials stressed the need for further data before considering policy easing.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-17/ecb-holds-rates-steady",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-17T10:30:00Z",
+    "importance": "中",
+    "region": "国际",
+    "tags": [
+      "ECB",
+      "Eurozone",
+      "Inflation"
+    ],
+    "context": "The Eurozone economy remains sluggish, but the ECB is prioritizing bringing inflation firmly back to target over stimulating short-term growth."
+  },
+  {
+    "id": "int-3",
+    "title": "World Bank Revises Global Growth Forecast Upward for 2026",
+    "summary": "The World Bank has slightly raised its global economic growth forecast for 2026 to 2.8%, up from 2.6%, driven by stronger-than-expected performances in the US and several key emerging markets, though it warned of ongoing geopolitical risks.",
+    "url": "https://www.worldbank.org/en/news/press-release/2026/03/17/global-growth-forecast",
+    "source": "WorldBank",
+    "publishedAt": "2026-03-17T09:00:00Z",
+    "importance": "高",
+    "region": "国际",
+    "tags": [
+      "World Bank",
+      "Global Economy",
+      "Growth Forecast"
+    ],
+    "context": "This revision reflects a more optimistic outlook for the global economy, reducing fears of a widespread recession previously anticipated by many analysts."
   }
 ]
