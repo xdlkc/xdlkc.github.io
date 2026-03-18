@@ -45,6 +45,7 @@
     <p class="article-meta"><span data-i18n-key="post.published">Published</span> <%= date(page.date, 'YYYY-MM-DD') %><%= updated_label() %> · <span data-i18n-key="post.reading">Reading</span> <%= reading_time(page.content) %> <span data-i18n-key="post.min">min</span> · <span data-i18n-key="post.words">Words</span> <%= post_word_count(page.content) %></p>
     <button class="code-line-numbers-toggle" type="button" data-code-line-numbers-toggle aria-pressed="false" title="Toggle code line numbers (l)">行号：开</button>
     <button class="article-link-copy" type="button" data-article-link-copy data-i18n-key="post.copyLink" data-i18n-aria-label-key="post.copyLink" aria-label="Copy article link">Copy Link</button>
+    <button class="post-bookmark" type="button" data-post-bookmark data-i18n-key="post.bookmark" data-i18n-aria-label-key="post.bookmark" aria-label="Bookmark this article" data-post-path="<%= page.path %>" data-post-title="<%= page.title %>">🔖 Bookmark (0)</button>
     <button class="post-like" type="button" data-post-like aria-pressed="false">👍 Like (0)</button>
 
     <div class="article-share" data-article-share data-article-title="<%= page.title %>" data-article-url="<%= url_for(page.path, { external: true }) %>">
@@ -244,6 +245,8 @@
 <script src="<%- url_for('/js/heading-anchor-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/article-link-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/post-like.js') %>" defer></script>
+<script src="<%- url_for('/js/post-bookmark.js') %>" defer></script>
+<script src="<%- url_for('/js/post-bookmark-ui.js') %>" defer></script>
 <script src="<%- url_for('/js/image-lightbox.js') %>" defer></script>
 <script src="<%- url_for('/js/mermaid-enhance.js') %>" defer></script>
 <script src="<%- url_for('/js/code-language-label.js') %>" defer></script>
@@ -319,6 +322,7 @@
   window.HeadingAnchorCopy?.initHeadingAnchorCopy();
   window.ArticleLinkCopy?.initArticleLinkCopy();
   window.PostLike?.initPostLike();
+  window.PostBookmarkUI?.initPostBookmark?.();
   window.ImageLightbox?.initImageLightbox();
   window.CodeLanguageLabel?.initCodeLanguageLabel();
   window.CodeLineNumbers?.initCodeLineNumbers();

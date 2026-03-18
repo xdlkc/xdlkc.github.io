@@ -2630,3 +2630,49 @@ pre.highlight,
     height: 28px;
   }
 }
+
+/* Post Bookmark Button */
+.post-bookmark {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.post-bookmark:hover {
+  background: var(--border);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-bookmark:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.post-bookmark.is-bookmarked {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent-dark);
+}
+
+.post-bookmark.is-bookmarked:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-darker);
+}
+
+@media (max-width: 768px) {
+  .post-bookmark {
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+}
+
