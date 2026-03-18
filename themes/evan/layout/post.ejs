@@ -62,12 +62,14 @@
   <div class="article-layout">
     <main id="main-content" class="article-card" tabindex="-1">
       <% if (postToc && postToc.trim()) { %>
-        <details class="toc-mobile">
-          <summary data-i18n-key="post.toc">Outline</summary>
-          <div class="toc-mobile-body">
-            <%- postToc %>
-          </div>
-        </details>
+        <div class="toc-sidebar-mobile"> <!-- Wrap for mobile-specific styles if needed -->
+          <details class="toc-mobile">
+            <summary data-i18n-key="post.toc">Outline</summary>
+            <div class="toc-mobile-body">
+              <%- postToc %>
+            </div>
+          </details>
+        </div>
       <% } %>
       <article class="article-content"><%- page.content %></article>
 
@@ -168,12 +170,14 @@
     </main>
 
     <% if (postToc && postToc.trim()) { %>
-      <aside class="toc-card">
+      <aside class="toc-card toc-sidebar" data-toc-sidebar>
         <div class="toc-header">
           <p class="toc-title" data-i18n-key="post.outline">Outline</p>
-          <button class="toc-visibility-toggle" type="button" data-toc-visibility-toggle aria-label="隐藏目录" aria-pressed="false">Hide</button>
+          <button class="toc-toggle-button" type="button" data-toc-toggle aria-expanded="true" aria-controls="toc-content-desktop">折叠目录</button>
         </div>
-        <%- postToc %>
+        <div class="toc-content" id="toc-content-desktop">
+          <%- postToc %>
+        </div>
       </aside>
     <% } %>
   </div>
@@ -245,6 +249,7 @@
 <script src="<%- url_for('/js/code-language-label.js') %>" defer></script>
 <script src="<%- url_for('/js/code-line-numbers.js') %>" defer></script>
 <script src="<%- url_for('/js/image-lazy-loading.js') %>" defer></script>
+<script src="<%- url_for('/js/font-size-toggle.js') %>" defer></script>
 <script src="<%- url_for('/js/code-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/code-collapse.js') %>" defer></script>
 <script src="<%- url_for('/js/print-button.js') %>" defer></script>

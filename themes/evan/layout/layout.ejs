@@ -41,6 +41,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="<%- url_for('/css/style.css') %>" />
+  <link rel="stylesheet" href="<%- url_for('/css/_partial/_font-size.css') %>" />
   <link rel="stylesheet" href="<%- url_for('/css/print.css') %>" media="print" />
   <script>
     // Apply language as early as possible.
@@ -118,6 +119,7 @@
   <script src="<%- url_for('/js/external-links.js') %>" defer></script>
   <script src="<%- url_for('/js/site-search.js') %>" defer></script>
   <script src="<%- url_for('/js/shortcut-help.js') %>" defer></script>
+  <script src="<%- url_for('/js/toc-toggle.js') %>" defer></script>
   <script>
     window.addEventListener('DOMContentLoaded', function() {
       window.LangToggle && window.LangToggle.initLangToggle && window.LangToggle.initLangToggle();
@@ -130,6 +132,7 @@
       window.ScrollRestore && window.ScrollRestore.initScrollRestore && window.ScrollRestore.initScrollRestore();
       window.ExternalLinks && window.ExternalLinks.initExternalLinks && window.ExternalLinks.initExternalLinks();
       window.FontSizeToggle && window.FontSizeToggle.init && window.FontSizeToggle.init();
+      window.TocToggle && window.TocToggle.init(); // Initialize TOC toggle functionality
     });
   </script>
 </body>
