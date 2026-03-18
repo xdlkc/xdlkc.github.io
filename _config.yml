@@ -67,6 +67,7 @@ news:
 feed:
   type: rss2
   path: rss.xml
+  template: themes/evan/layout/rss2.xml
   limit: 20
   # Include full post content in RSS (better for readers)
   content: true
