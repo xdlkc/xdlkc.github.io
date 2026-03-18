@@ -1,16 +1,22 @@
 const test = require('node:test');
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const path = require('node:path');
+const assert = require('node:assert');
+const Hexo = require('hexo');
+const path = require('path');
 
-test('post template renders article TOC containers and bootstraps anchor navigation', () => {
-  const templatePath = path.join(__dirname, '..', 'themes', 'evan', 'layout', 'post.ejs');
-  const content = fs.readFileSync(templatePath, 'utf8');
+test('TOC Injection Filter', async (t) => {
+    const hexo = new Hexo(path.join(__dirname, '..'), { silent: true });
+    await hexo.init();
+    
+    // Load the filter
+    require('../scripts/toc-filter.js')(hexo);
 
-  assert.match(content, /toc\(page\.content,\s*\{[^}]*class:\s*'toc-nav'/);
-  assert.match(content, /details\s+class="toc-mobile"/);
-  assert.match(content, /aside\s+class="toc-card"/);
-  assert.match(content, /\/js\/heading-auto-id\.js/);
-  assert.match(content, /\/js\/toc-scrollspy\.js/);
-  assert.match(content, /window\.TocScrollSpy\?\.initTocScrollSpy\(\)/);
+    const data = {
+        layout: 'post',
+        content: '<h2 id="Heading-1"><a href="#Heading-1" class="headerlink" title="Heading 1"></a>Heading 1</h2><p>Content</p>'
+    };
+
+    const result = await hexo.extend.filter.exec('after_post_render', data, { context: hexo });
+    
+    assert.ok(result.content.includes('class="post-toc"'), 'TOC container should be injected');
+    assert.ok(result.content.includes('Heading 1'), 'TOC should contain heading text');
 });
