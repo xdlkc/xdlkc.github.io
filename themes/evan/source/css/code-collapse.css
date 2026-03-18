@@ -1,0 +1,55 @@
+/* Code Block Collapse Styles */
+
+.code-collapse-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s ease;
+}
+
+.code-collapse-button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .code-collapse-button {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .code-collapse-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Collapsed state */
+.highlight.is-collapsed {
+  position: relative;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.highlight.is-collapsed::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--card-bg, #fff));
+  pointer-events: none;
+}
+
+[data-theme='dark'] .highlight.is-collapsed::after {
+  background: linear-gradient(to bottom, transparent, var(--card-bg, #1a1a1a));
+}
+
+/* Ensure code blocks have relative positioning for absolute button */
+figure.highlight,
+pre.highlight {
+  position: relative;
+}
