@@ -97,6 +97,11 @@
       throw new Error('URL is required and must be a string');
     }
 
+    // Show modal immediately, before async QR generation
+    modal.style.display = 'block';
+    modal.setAttribute('aria-hidden', 'false');
+    modal.classList.add('is-open');
+
     try {
       // Use qrcode library to generate QR code locally
       let QRCode;
@@ -115,19 +120,11 @@
       });
 
       img.src = dataUrl;
-
-      modal.style.display = 'block';
-      modal.setAttribute('aria-hidden', 'false');
-      modal.classList.add('is-open');
     } catch (error) {
       console.error('QR Code generation failed:', error);
       // Fallback to external API if local generation fails
       const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(url)}`;
       img.src = qrApiUrl;
-
-      modal.style.display = 'block';
-      modal.setAttribute('aria-hidden', 'false');
-      modal.classList.add('is-open');
     }
   }
 

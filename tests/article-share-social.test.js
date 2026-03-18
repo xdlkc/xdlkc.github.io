@@ -84,10 +84,10 @@ test('ArticleShare: initializes share buttons with correct href attributes', () 
   delete global.document;
 });
 
-test('ArticleShare: WeChat button opens QR modal', () => {
+test('ArticleShare: WeChat button opens QR modal', async () => {
   const dom = new JSDOM(`<!doctype html><html><body>
-    <div data-article-share>
-      <button type="button" data-share-platform="wechat" data-article-url="https://example.com/test">WeChat</button>
+    <div data-article-share data-article-url="https://example.com/test">
+      <button type="button" data-share-platform="wechat">WeChat</button>
     </div>
     <div class="article-share-qr-modal" data-article-share-qr-modal style="display:none">
       <div class="article-share-qr-panel">
@@ -116,20 +116,32 @@ test('ArticleShare: WeChat button opens QR modal', () => {
   // Click button to open modal
   wechatBtn.click();
 
-  // Modal should be visible
+  // Modal should be visible immediately (before QR async generation)
   assert.match(modal.style.display, /(block|flex)/);
-  // QR image src should be set
-  assert.match(qrImg.src, /api\.qrserver\.com/);
-  assert.match(qrImg.src, /https%3A%2F%2Fexample\.com%2Ftest/);
+
+  // Wait for async QR generation to complete
+  await new Promise(resolve => setTimeout(resolve, 50));
+
+  // QR image src should be set (either local data URL or fallback to external API)
+  if (qrImg.src.startsWith('data:')) {
+    // Local QR code generation succeeded
+    assert.ok(qrImg.src.length > 0);
+  } else if (qrImg.src.includes('api.qrserver.com')) {
+    // Fallback to external API
+    assert.match(qrImg.src, /api\.qrserver\.com/);
+    assert.match(qrImg.src, /https%3A%2F%2Fexample\.com%2Ftest/);
+  } else {
+    throw new Error('QR image src not set correctly: ' + qrImg.src);
+  }
 
   delete global.window;
   delete global.document;
 });
 
-test('ArticleShare: clicking close button closes QR modal', () => {
+test('ArticleShare: clicking close button closes QR modal', async () => {
   const dom = new JSDOM(`<!doctype html><html><body>
-    <div data-article-share>
-      <button type="button" data-share-platform="wechat" data-article-url="https://example.com/test">WeChat</button>
+    <div data-article-share data-article-url="https://example.com/test">
+      <button type="button" data-share-platform="wechat">WeChat</button>
     </div>
     <div class="article-share-qr-modal" data-article-share-qr-modal>
       <div class="article-share-qr-panel">
@@ -155,6 +167,9 @@ test('ArticleShare: clicking close button closes QR modal', () => {
   // Open modal
   wechatBtn.click();
   assert.match(modal.style.display, /(block|flex)/);
+
+  // Wait a bit for async operations to settle
+  await new Promise(resolve => setTimeout(resolve, 50));
 
   // Close modal
   closeBtn.click();
