@@ -109,7 +109,7 @@
       "流动性",
       "宏观政策"
     ],
-    "context": "近期市场资金面面临税期等扰动，央行适时加大投放对冲。"
+    "context": "上下文/背景：近期市场资金面面临税期等扰动，央行适时加大投放对冲。"
   },
   {
     "id": "gov-1773822798256-2",
@@ -125,7 +125,7 @@
       "外资",
       "高水平开放"
     ],
-    "context": "全球外商直接投资（FDI）竞争加剧，国内出台配套政策稳住基本盘。"
+    "context": "上下文/背景：全球外商直接投资（FDI）竞争加剧，国内出台配套政策稳住基本盘。"
   },
   {
     "id": "reuters-1773822798256-3",
@@ -141,12 +141,12 @@
       "降息",
       "通胀"
     ],
-    "context": "美国核心CPI连续三个月回落，市场对货币政策转向的预期强化。"
+    "context": "上下文/背景：美国核心CPI连续三个月回落，市场对货币政策转向的预期强化。"
   },
   {
     "id": "bloomberg-1773822798256-4",
     "title": "ECB maintains current policy amid mixed economic signals",
-    "summary": "The European Central Bank opted to keep interest rates steady, citing a balance between sluggish economic growth in the Eurozone and sticky services inflation that requires ongoing vigilance.",
+    "summary": "The European Central Bank opted to keep interest rates steady, citing a balance between sluggish economic growth in Eurozone and sticky services inflation that requires ongoing vigilance.",
     "url": "https://www.bloomberg.com/news/articles/2026-03-18/ecb-decision",
     "source": "Bloomberg",
     "publishedAt": "2026-03-18T08:33:18.256Z",
@@ -157,7 +157,7 @@
       "利率",
       "欧元区经济"
     ],
-    "context": "德国等核心经济体增长乏力，但劳动力市场依然趋紧支撑了服务业价格。"
+    "context": "上下文/背景：德国等核心经济体增长乏力，但劳动力市场依然趋紧支撑了服务业价格。"
   },
   {
     "id": "csrc-1773822798257-1",
@@ -174,7 +174,7 @@
       "资本市场",
       "强监管"
     ],
-    "context": "上下文/背景：新“国九条”发布后，监管层持续推进全链条严监管，清退“僵尸空壳”公司成为提升市场内在稳定性的关键环节。"
+    "context": "上下文/背景：新"国九条"发布后，监管层持续推进全链条严监管，清退"僵尸空壳"公司成为提升市场内在稳定性的关键环节。"
   },
   {
     "id": "stats-1773822798257-2",
@@ -263,7 +263,7 @@
   {
     "id": "cls-1773829000001",
     "title": "多地出台房地产优化政策，进一步放宽限购限贷",
-    "summary": "今日多个核心二线城市密集宣布优化房地产调控政策，包括全面取消限购、降低首付比例至15%以及提高公积金贷款额度。这是在全国稳地产基调下，地方政府“因城施策”实质性落地的关键举措，旨在提振居民购房意愿。",
+    "summary": "今日多个核心二线城市密集宣布优化房地产调控政策，包括全面取消限购、降低首付比例至15%以及提高公积金贷款额度。这是在全国稳地产基调下，地方政府"因城施策"实质性落地的关键举措，旨在提振居民购房意愿。",
     "url": "https://www.cls.cn/detail/1628198",
     "source": "财联社 (cls.cn)",
     "publishedAt": "2026-03-18T10:15:00.000Z",
@@ -283,7 +283,7 @@
     "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5239102/index.html",
     "source": "中国人民银行 (pbc.gov.cn)",
     "publishedAt": "2026-03-18T10:30:00.000Z",
-    "importance": "明确了二季度货币政策“稳中求进”的基调，消除了市场对流动性过快收紧的担忧。",
+    "importance": "明确了二季度货币政策"稳中求进"的基调，消除了市场对流动性过快收紧的担忧。",
     "region": "国内",
     "tags": [
       "央行",
@@ -326,7 +326,7 @@
   },
   {
     "id": "ft-1773829000005",
-    "title": "Tech giants face renewed antitrust scrutiny in the EU",
+    "title": "Tech giants face renewed antitrust scrutiny in EU",
     "summary": "The European Commission has officially opened comprehensive non-compliance investigations into several major US tech companies under the newly enacted Digital Markets Act (DMA), suspecting that they have failed to fully open their ecosystems to healthy market competition.",
     "url": "https://www.ft.com/content/12345678-abcd-1234-abcd-1234567890ab",
     "source": "FT",
@@ -344,7 +344,7 @@
   {
     "id": "bloomberg-1773829000006",
     "title": "Global bond yields drop as investors bet on synchronized rate cuts",
-    "summary": "Benchmark sovereign bond yields across the US, UK, and Germany saw a coordinated decline today as weak economic data and dovish central bank rhetoric fueled investor speculation that a global wave of interest rate cuts is imminent before the third quarter.",
+    "summary": "Benchmark sovereign bond yields across US, UK, and Germany saw a coordinated decline today as weak economic data and dovish central bank rhetoric fueled investor speculation that a global wave of interest rate cuts is imminent before third quarter.",
     "url": "https://www.bloomberg.com/news/articles/2026-03-18/global-bonds-rally-rate-cuts",
     "source": "Bloomberg",
     "publishedAt": "2026-03-18T09:45:00.000Z",
@@ -356,5 +356,102 @@
       "央行"
     ],
     "context": "上下文/背景：连续两周的不及预期的欧美宏观经济指标，让市场确信高利率环境的维持时间已接近极限。"
+  },
+  {
+    "id": "cls-1773830000001",
+    "title": "美联储维持利率不变 连续第二次按兵不动",
+    "summary": "财联社3月19日电，美联储宣布将联邦基金利率目标区间维持在3.5%至3.75%之间，连续第二次按兵不动，符合市场普遍预期。美联储以11比1的投票结果通过此次的利率决定。",
+    "url": "https://www.cls.cn/detail/2317369",
+    "source": "财联社 (cls.cn)",
+    "publishedAt": "2026-03-19T02:00:00.000Z",
+    "importance": "美联储利率决定直接影响全球资本流动，对中国A股、人民币汇率和货币政策都有重要影响，按兵不动符合市场预期。",
+    "region": "国内",
+    "tags": [
+      "美联储",
+      "利率决议",
+      "全球央行"
+    ],
+    "context": "上下文/背景：中东地缘冲突升级导致油价上涨，市场关注美联储如何应对通胀重新抬升的风险。"
+  },
+  {
+    "id": "cls-1773830000002",
+    "title": "据悉以色列最大机场受导弹袭击波及 三架飞机受损",
+    "summary": "财联社3月19日电，据多家以色列媒体18日披露，以色列最大机场本-古里安国际机场近日有三架私人飞机被伊朗和黎巴嫩真主党所发射导弹的弹片击中受损。以色列第12频道电视台当天发布的图片显示，至少一架飞机被烧毁。据以媒报道，以色列交通部门18日下令，自当晚起限制本-古里安国际机场离港航班乘客人数，这导致大约1500名乘客无法登机。",
+    "url": "https://www.cls.cn/detail/2317366",
+    "source": "财联社 (cls.cn)",
+    "publishedAt": "2026-03-19T01:49:00.000Z",
+    "importance": "中东冲突持续升级，重要民用基础设施受损可能引发更大规模的地缘政治风险，影响全球能源供应和航运安全。",
+    "region": "国内",
+    "tags": [
+      "中东冲突",
+      "以色列",
+      "地缘政治"
+    ],
+    "context": "上下文/背景：伊朗与以色列的军事对峙加剧，胡塞武装等地区势力也可能卷入，霍尔木兹海峡安全受到威胁。"
+  },
+  {
+    "id": "cls-1773830000003",
+    "title": "委内瑞拉任命新国防部长",
+    "summary": "财联社3月19日电，委内瑞拉政府宣布任命新的国防部长，此次人事调整被视为加强军方的内部管理和作战准备能力。",
+    "url": "https://www.cls.cn/detail/2317368",
+    "source": "财联社 (cls.cn)",
+    "publishedAt": "2026-03-19T01:54:00.000Z",
+    "importance": "委内瑞拉作为重要产油国，其国防和安全部门人事变动可能影响该国石油政策和与美国的双边关系。",
+    "region": "国内",
+    "tags": [
+      "委内瑞拉",
+      "国防部长",
+      "人事变动"
+    ],
+    "context": "上下文/背景：委内瑞拉近期面临国际压力，其军事和外交动向对拉美地区稳定有重要影响。"
+  },
+  {
+    "id": "reuters-1773830000004",
+    "title": "Fed holds rates steady, sticks with single rate cut in 2026 despite higher inflation",
+    "summary": "路透社报道，美联储宣布将基准利率维持在3.5%-3.75%的区间，符合市场预期。美联储点阵图显示，2026年末利率预估中值为3.375%，维持全年降息一次的预测。尽管中东冲突推高油价可能重新抬升通胀，但美联储仍选择按兵不动，展现出对通胀中期回归目标的信心。",
+    "url": "https://www.reuters.com/business/fed-likely-hold-rates-steady-iran-war-shocks-policy-debate-2026-03-18/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-19T01:55:00.000Z",
+    "importance": "美联储政策路径直接影响全球金融资产定价，按兵不动符合市场预期，有助于稳定全球资本流动和新兴市场汇率。",
+    "region": "国际",
+    "tags": [
+      "美联储",
+      "利率决议",
+      "货币政策"
+    ],
+    "context": "上下文/背景：市场此前预期美联储可能在油价冲击下改变立场，但最终决策显示央行对中期通胀前景保持乐观。"
+  },
+  {
+    "id": "reuters-1773830000005",
+    "title": "BMG sues Anthropic for using Bruno Mars, Rolling Stones lyrics in AI training",
+    "summary": "路透社报道，德国音乐版权公司BMG正式对AI公司Anthropic提起诉讼，指控其在模型训练过程中未经授权使用了Bruno Mars和滚石乐队的歌词，侵犯了版权。这是继多家媒体和出版机构之后，音乐产业对AI公司的最新版权诉讼，凸显AI训练数据来源的合法性问题正成为产业发展的核心挑战。",
+    "url": "https://www.reuters.com/legal/litigation/bmg-sues-anthropic-using-bruno-mars-rolling-stones-lyrics-ai-training-2026-03-18/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-19T01:00:00.000Z",
+    "importance": "AI版权争议持续升温，涉及训练数据的合法性问题，对整个AI产业和内容创作行业都有深远影响。",
+    "region": "国际",
+    "tags": [
+      "人工智能",
+      "版权诉讼",
+      "AI训练数据"
+    ],
+    "context": "上下文/背景：随着AI技术快速发展，版权所有者与AI公司之间的法律纠纷日益增多，各国监管机构开始关注这一新兴领域。"
+  },
+  {
+    "id": "reuters-1773830000006",
+    "title": "Iran threatens Gulf energy targets after huge gas field is struck",
+    "summary": "路透社报道，伊朗称其巨大的帕尔斯气田周三遭到袭击，这是美以战争的重大升级，德黑兰宣布将通过对整个海湾地区的石油和天然气目标发动攻击来回应。该气田位于波斯湾海域，由伊朗与卡塔尔共享，是世界上最大的天然气田。袭击事件进一步加剧了中东地区的紧张局势。",
+    "url": "https://www.reuters.com/world/china/trump-criticises-allies-over-rejection-hormuz-request-iran-israel-trade-2026-03-17/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-19T01:50:00.000Z",
+    "importance": "伊朗威胁攻击海湾能源设施可能导致全球能源供应中断，推高油价，进而加剧全球通胀压力，影响各国央行的降息决策。",
+    "region": "国际",
+    "tags": [
+      "伊朗",
+      "中东冲突",
+      "能源安全",
+      "地缘政治"
+    ],
+    "context": "上下文/背景：伊朗与以色列的军事对抗持续升级，霍尔木兹海峡作为全球重要能源运输通道面临封锁风险，引发国际社会高度关注。"
   }
 ]
