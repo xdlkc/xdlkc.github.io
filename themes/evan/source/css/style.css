@@ -147,6 +147,11 @@
   transition: all 0.3s ease-in-out;
   max-width: 300px; /* Added max-width for better layout control */
   flex-shrink: 0; /* Prevent shrinking */
+  /* Sticky positioning for better UX on long articles */
+  position: sticky;
+  top: 80px; /* Offset from top (aligned with nav bar) */
+  max-height: calc(100vh - 100px); /* Prevent overflow viewport */
+  overflow-y: auto; /* Enable scrolling within sidebar */
 }
 
 /* Hide desktop TOC on small screens */
