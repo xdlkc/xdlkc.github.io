@@ -2446,3 +2446,187 @@ ul.breadcrumb li + li:last-child {
 .links-of-blogroll-item {
   padding: 0;
 }
+
+/* Code Copy Button Styles */
+
+/* Code Copy Button Styles */
+
+/* Base copy button styling */
+.code-copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--card, #ffffff);
+  border: 1px solid var(--border, #e0e0e0);
+  color: var(--text, #333333);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 10;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.code-copy-button:hover {
+  background: var(--border, #e0e0e0);
+  border-color: var(--accent, #007bff);
+  color: var(--accent, #007bff);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.code-copy-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.code-copy-button:focus {
+  outline: 2px solid var(--accent, #007bff);
+  outline-offset: 2px;
+}
+
+/* Copied state */
+.code-copy-button.copied,
+.code-copy-button.is-copied {
+  background: var(--success, #28a745);
+  border-color: var(--success-dark, #1e7e34);
+  color: white;
+}
+
+.code-copy-button.copied:hover,
+.code-copy-button.is-copied:hover {
+  background: var(--success-dark, #1e7e34);
+}
+
+/* Error state */
+.code-copy-button.error {
+  background: var(--danger, #dc3545);
+  border-color: var(--danger-dark, #bd2130);
+  color: white;
+}
+
+.code-copy-button.error:hover {
+  background: var(--danger-dark, #bd2130);
+}
+
+/* Code block container positioning */
+figure.highlight,
+pre.highlight,
+.article-content pre {
+  position: relative;
+}
+
+/* Ensure code blocks have proper positioning for button placement */
+.article-content figure.highlight,
+.article-content pre.highlight,
+.article-content > pre {
+  position: relative;
+}
+
+/* Code copy toast notification */
+.code-copy-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10000;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.code-copy-toast.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Flash effect on code block when copied */
+.is-copied {
+  position: relative;
+}
+
+.is-copied::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(40, 167, 69, 0.1);
+  pointer-events: none;
+  animation: flashFade 1.2s ease-out forwards;
+}
+
+@keyframes flashFade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Dark mode support */
+[data-theme="dark"] .code-copy-button {
+  background: var(--card-dark, #2d2d2d);
+  border-color: var(--border-dark, #444444);
+  color: var(--text-dark, #e0e0e0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .code-copy-button:hover {
+  background: var(--border-dark, #444444);
+  border-color: var(--accent-dark, #4dabf7);
+  color: var(--accent-dark, #4dabf7);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .code-copy-button.copied,
+[data-theme="dark"] .code-copy-button.is-copied {
+  background: var(--success-dark, #40c057);
+  border-color: var(--success-darker, #2f9e44);
+}
+
+[data-theme="dark"] .code-copy-button.error {
+  background: var(--danger-dark, #fa5252);
+  border-color: var(--danger-darker, #e03131);
+}
+
+[data-theme="dark"] .is-copied::after {
+  background: rgba(64, 192, 87, 0.15);
+}
+
+/* Print styles - hide copy button when printing */
+@media print {
+  .code-copy-button,
+  .code-copy-toast {
+    display: none !important;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .code-copy-button {
+    top: 6px;
+    right: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+    min-width: 28px;
+    height: 28px;
+  }
+}
