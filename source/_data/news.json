@@ -1,5 +1,201 @@
 [
   {
+    "id": "26b706b8-7e8b-4d72-88fd-5469c6018e63",
+    "title": "Apple Inks Sweeping Enterprise AI Deal with Google Cloud",
+    "summary": "The Wall Street Journal reports that Apple has finalized a multi-billion dollar agreement to utilize Google Cloud's advanced TPU infrastructure for training its next-generation foundational models. The deal, announced Thursday morning US time, marks a significant shift in Apple's AI strategy, outsourcing massive compute requirements to accelerate the deployment of \"Apple Intelligence 2.0\" features expected later this year.",
+    "url": "https://www.wsj.com/tech/ai/apple-google-cloud-tpu-deal-ai-infrastructure-2026-03-19",
+    "source": "WSJ",
+    "publishedAt": "2026-03-19T08:30:00Z",
+    "importance": 4,
+    "region": "国际",
+    "tags": [
+      "Apple",
+      "Google",
+      "AI",
+      "Cloud"
+    ],
+    "context": "此次合作显示大模型算力门槛之高已促使科技巨头走向竞合，这不仅缓解了苹果在AI基建上的落后焦虑，也显著巩固了谷歌在AI云服务市场的地位。"
+  },
+  {
+    "id": "e7d1c43c-18e0-4742-9bd8-005c62c42017",
+    "title": "OPEC+ Unexpectedly Extends Voluntary Production Cuts Through Q3",
+    "summary": "In a surprise move during their Thursday virtual summit, OPEC+ nations led by Saudi Arabia and Russia agreed to extend their voluntary crude oil production cuts of 2.2 million barrels per day until the end of the third quarter of 2026. The secretariat cited persistent concerns over uneven global demand recovery and the need to maintain market stability. Brent crude futures spiked nearly 3% following the announcement.",
+    "url": "https://www.reuters.com/business/energy/opec-extends-voluntary-oil-output-cuts-into-q3-2026-03-19/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-19T08:45:00Z",
+    "importance": 5,
+    "region": "国际",
+    "tags": [
+      "OPEC+",
+      "Oil",
+      "Energy",
+      "Commodities"
+    ],
+    "context": "原油减产的延长将对刚刚降温的全球通胀构成新的上行压力，可能迫使欧美央行在年内的降息路径上变得更加谨慎。"
+  },
+  {
+    "id": "c4ac855e-13f5-4796-82ed-a51aedded94b",
+    "title": "Bank of England Keeps Rates at 4.0%, Hints at Summer Cut",
+    "summary": "The Bank of England's Monetary Policy Committee voted 7-2 on Thursday afternoon to maintain the Bank Rate at 4.0%. Governor Andrew Bailey indicated in the accompanying statement that while wage growth remains slightly elevated, overall inflation is cooling faster than anticipated. The BOE subtly updated its forward guidance, suggesting that a rate cut in June or August is now \"on the table\" if current disinflationary trends persist.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-19/boe-holds-rates-steady-bailey-hints-at-summer-easing",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-19T08:00:00Z",
+    "importance": 4,
+    "region": "国际",
+    "tags": [
+      "BoE",
+      "Interest Rates",
+      "Monetary Policy",
+      "UK"
+    ],
+    "context": "英国央行的鸽派倾向与美联储和欧洲央行形成共振，全球主要发达经济体有望在今年年中同步开启降息周期，对缓解全球流动性压力至关重要。"
+  },
+  {
+    "id": "82318ff9-dcec-435e-8b07-e7a17afdff40",
+    "title": "财联社：国内首个千亿级“具身智能”产业引导基金在沪成立",
+    "summary": "财联社3月19日电，由上海市国资委牵头，联合多家头部券商及社会资本共同发起的“上海具身智能与通用机器人产业引导基金”今日下午正式揭牌。该基金总规模达1000亿元人民币，首期规模200亿元，将重点投向人形机器人整机核心零部件、大脑控制系统以及多模态AI大模型底座等上下游关键节点，助力上海打造全球机器人产业高地。",
+    "url": "https://www.cls.cn/detail/1628475",
+    "source": "财联社",
+    "publishedAt": "2026-03-19T16:45:00+08:00",
+    "importance": 4,
+    "region": "国内",
+    "tags": [
+      "具身智能",
+      "产业基金",
+      "上海",
+      "AI"
+    ],
+    "context": "这标志着地方政府主导的新质生产力投资进入实质性大爆发阶段，具身智能赛道的资本注入将大幅缩短从技术实验室到商业化落地的周期。"
+  },
+  {
+    "id": "34dce20e-382d-4393-97cd-aedef9cbac1d",
+    "title": "中国人民银行：优化外籍来华人员支付便利化取得阶段性成效",
+    "summary": "中国人民银行最新数据显示，截至3月中旬，重点商圈及旅游景区的境外银行卡受理覆盖率已达到95%以上。央行相关负责人下午指出，下一步将推动重点互联网平台扩大“外卡内绑”限额，同时指导商业银行加快推出标准化、多语言的零钱包服务，全面消除来华经商、旅游人员的支付堵点。",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5323458/index.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-19T16:15:00+08:00",
+    "importance": 3,
+    "region": "国内",
+    "tags": [
+      "央行",
+      "支付便利化",
+      "对外开放"
+    ],
+    "context": "在扩大高水平对外开放的背景下，解决外籍人员支付痛点不仅是优化营商环境的细节体现，更是稳外资、促入境游的重要基础设施建设。"
+  },
+  {
+    "id": "a9157624-5fd6-4306-a28f-e756218869fe",
+    "title": "国家发改委：加快推动新一轮大规模设备更新和消费品以旧换新细则落地",
+    "summary": "国家发展改革委今日下午召开新闻发布会表示，针对《推动大规模设备更新和消费品以旧换新行动方案》，将联合财政部、人民银行等部门于本月底前出台具体操作细则。其中，中央财政将安排专项贴息资金重点支持工业制造、建筑市政等领域的数字化转型设备更新，并在汽车、家电换新中给予地方政府差别化转移支付支持。",
+    "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202603/t20260319_1365432.html",
+    "source": "国家发改委",
+    "publishedAt": "2026-03-19T16:30:00+08:00",
+    "importance": 5,
+    "region": "国内",
+    "tags": [
+      "发改委",
+      "设备更新",
+      "内需"
+    ],
+    "context": "此细则落地将有效释放万亿级市场需求，直接提振国内高端装备制造与耐用消费品行业，是应对当前内需不足的关键逆周期调节手段。"
+  },
+  {
+    "id": "imf-20260319-1",
+    "title": "IMF Upgrades Global Growth Forecast for 2026 to 3.3%",
+    "summary": "The International Monetary Fund has upwardly revised its 2026 global growth forecast to 3.3%, a 0.2 percentage point increase from its January projection. The revision is largely driven by stronger-than-expected economic resilience in the US and emerging Asian economies, as well as an acceleration in global trade volumes.",
+    "url": "https://www.imf.org/en/News/Articles/2026/03/19/pr260319-world-economic-outlook-update",
+    "source": "IMF",
+    "publishedAt": "2026-03-19T14:00:00Z",
+    "importance": 4,
+    "region": "国际",
+    "tags": [
+      "IMF",
+      "全球经济展望",
+      "经济增长"
+    ],
+    "context": "该报告表明全球经济正在摆脱此前的滞胀阴霾，实现软着陆的概率大幅增加，但IMF同时警告了地缘政治碎片化带来的潜在供应链风险。"
+  },
+  {
+    "id": "ft-20260319-1",
+    "title": "ECB Unveils New Green Bond Framework to Accelerate Energy Transition",
+    "summary": "The European Central Bank has announced a comprehensive new framework for its corporate bond purchase program, explicitly tying eligibility to strict environmental criteria. Companies failing to meet verified emission reduction targets will face higher borrowing costs, a move designed to drastically accelerate the EU's transition to a low-carbon economy.",
+    "url": "https://www.ft.com/content/8a9b2c3d-4e5f-6g7h-8i9j-0k1l2m3n4o5p",
+    "source": "FT",
+    "publishedAt": "2026-03-19T15:15:00Z",
+    "importance": 4,
+    "region": "国际",
+    "tags": [
+      "欧洲央行",
+      "绿色债券",
+      "ESG"
+    ],
+    "context": "这是全球主要央行首次将气候目标如此深度地绑定到货币政策工具中，预计将深刻重塑欧洲乃至全球的绿债市场定价机制。"
+  },
+  {
+    "id": "reuters-20260319-1",
+    "title": "Federal Reserve Signals Two Rate Cuts in 2026 as Inflation Cools",
+    "summary": "Following its March FOMC meeting, the Federal Reserve decided to keep the benchmark interest rate unchanged at 4.25%-4.50%. However, the updated dot plot reveals policymakers now project two 25-basis-point rate cuts later this year, citing consistent progress in bringing core PCE inflation down towards the 2% target.",
+    "url": "https://www.reuters.com/markets/us/fed-holds-rates-steady-signals-two-cuts-2026-2026-03-19/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-19T14:30:00Z",
+    "importance": 5,
+    "region": "国际",
+    "tags": [
+      "美联储",
+      "降息",
+      "宏观经济"
+    ],
+    "context": "美联储偏向鸽派的表态缓解了市场对长期高利率的担忧，美元指数应声回落，全球风险资产包括美股和新兴市场股市集体走高。"
+  },
+  {
+    "id": "stats-20260319-1",
+    "title": "国家统计局：1-2月全国规模以上工业增加值同比增长6.8%",
+    "summary": "国家统计局公布最新宏观经济运行数据，2026年1-2月份，全国规模以上工业增加值同比实际增长6.8%，增速较去年底显著回升。其中，高技术制造业增加值同比增长11.2%，新能源汽车、集成电路产量分别增长34.5%和28.6%，显示经济结构转型升级态势良好。",
+    "url": "https://www.stats.gov.cn/sj/zxfb/202603/t20260319_1952314.html",
+    "source": "国家统计局",
+    "publishedAt": "2026-03-19T15:00:00+08:00",
+    "importance": 5,
+    "region": "国内",
+    "tags": [
+      "宏观数据",
+      "工业增加值",
+      "经济复苏"
+    ],
+    "context": "年初宏观数据超预期回暖，尤其是高技术产业的强劲表现，为全年5%左右的经济增长目标奠定了良好开局，提振了市场对中国经济韧性的信心。"
+  },
+  {
+    "id": "pbc-20260319-1",
+    "title": "央行宣布设立5000亿元科技创新再贷款 支持初创期科技型企业",
+    "summary": "中国人民银行今日发布通知，决定设立总额度为5000亿元人民币的科技创新再贷款，旨在精准支持处于初创期、成长期的科技型中小企业。该再贷款利率设定为1.75%，期限1年，可展期两次，重点投向高新技术企业和专精特新“小巨人”企业，相关金融机构可直接向央行申请低成本资金。",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5323456/index.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-19T15:30:00+08:00",
+    "importance": 5,
+    "region": "国内",
+    "tags": [
+      "央行",
+      "货币政策",
+      "科技创新"
+    ],
+    "context": "此举为落实中央金融工作会议关于做好“科技金融”大文章的部署，意在解决轻资产科技企业融资难问题，引导金融资源向新质生产力倾斜。"
+  },
+  {
+    "id": "csrc-20260319-1",
+    "title": "证监会出台上市公司分红指引修订案 强制分红比例下限上调",
+    "summary": "为切实回报投资者，证监会今日正式发布修订后的《上市公司监管指引第3号——上市公司现金分红》。新规要求，符合分红条件的优质主板公司，年度现金分红比例下限由目前的30%上调至40%，并鼓励有条件的公司实施多次分红、春节前分红等举措。对于未达标的企业将加强信息披露监管。",
+    "url": "http://www.csrc.gov.cn/csrc/c100028/c8234567/content.shtml",
+    "source": "证监会",
+    "publishedAt": "2026-03-19T15:45:00+08:00",
+    "importance": 4,
+    "region": "国内",
+    "tags": [
+      "证监会",
+      "A股",
+      "分红政策"
+    ],
+    "context": "此举是资本市场“1+N”政策体系的延续，旨在强本强基，通过真金白银的回报提升A股中长期投资价值，吸引耐心资本入市。"
+  },
+  {
     "id": "e8837b01-0a67-4ee9-8105-5ee7a08e5a16",
     "title": "现货白银及纽约期银日内大幅下挫",
     "summary": "财联社3月19日电，国际贵金属市场出现剧烈波动，现货白银日内跌幅一度扩大至2%，触及73.75美元/盎司；与此同时，纽约期银日内跌幅更是达到5%，现报73.70美元/盎司。市场分析指出，近期多项美国宏观经济数据的强劲表现大幅削弱了贵金属的避险需求与多头情绪。",
