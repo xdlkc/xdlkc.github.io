@@ -61,53 +61,41 @@ function buildBreadcrumbStructuredData({
   if (!canonical) return null;
 
   const base = normalizeBaseUrl(site.url);
-  const root = normalizeRoot(site.root);
-
-  const homeName = cleanText(site.title) || 'Home';
-  const homeUrl = base ? joinUrl(base, root) : canonical.replace(/(\/[^/]*$)/, '/');
+  const homeUrl = base || canonical.replace(/(\/[^/]*$)/, '/');
 
   const items = [];
   items.push({
     '@type': 'ListItem',
     position: 1,
-    name: homeName,
+    name: cleanText(site.title) || 'Home',
     item: homeUrl
   });
 
   if (isPostPage(page)) {
-    const archivesUrl = base ? joinUrl(base, `${root}archives/`) : '/archives/';
-
-    items.push({
-      '@type': 'ListItem',
-      position: 2,
-      name: 'Archives',
-      item: archivesUrl
-    });
-
     const category = pickPrimaryCategory(page);
     if (category) {
       const categoryPath = category.path
-        ? (category.path.startsWith('/') ? category.path : `${root}${category.path}`)
-        : `${root}categories/${encodeURIComponent(category.name)}/`;
-      const categoryUrl = base ? joinUrl(base, categoryPath) : categoryPath;
+        ? (category.path.startsWith('/') ? category.path.substring(1) : category.path)
+        : `categories/${encodeURIComponent(category.name)}/`;
+      const categoryUrl = base ? `${base}/${categoryPath}` : `/${categoryPath}`;
 
       items.push({
         '@type': 'ListItem',
-        position: 3,
+        position: 2,
         name: category.name,
         item: categoryUrl
       });
 
       items.push({
         '@type': 'ListItem',
-        position: 4,
+        position: 3,
         name: cleanText(page.title) || 'Post',
         item: canonical
       });
     } else {
       items.push({
         '@type': 'ListItem',
-        position: 3,
+        position: 2,
         name: cleanText(page.title) || 'Post',
         item: canonical
       });

@@ -1,3 +1,5 @@
+const { buildBreadcrumbStructuredData } = require('./breadcrumb-structured-data');
+
 function cleanText(input) {
   return String(input || '')
     .replace(/<[^>]+>/g, ' ')
@@ -49,18 +51,29 @@ function buildStructuredData({
   if (dateModified) result.dateModified = dateModified;
   if (Number.isFinite(wordCount) && wordCount > 0) result.wordCount = wordCount;
 
+  // Add BreadcrumbList if available
+  const breadcrumbList = buildBreadcrumbStructuredData({
+    page,
+    site,
+    canonicalUrl
+  });
+  if (breadcrumbList) {
+    result.breadcrumbList = breadcrumbList;
+  }
+
   return result;
 }
 
 if (typeof hexo !== 'undefined' && hexo.extend && hexo.extend.helper) {
   hexo.extend.helper.register('structured_data', function structuredData() {
     const social = this.social_meta();
+    const image = social ? social.image : '';
 
     return buildStructuredData({
       page: this.page,
       site: this.config,
       canonicalUrl: this.canonical_url(),
-      image: social.image,
+      image: image,
       wordCount: this.post_word_count(this.page && this.page.content)
     });
   });

@@ -282,5 +282,6 @@ if (typeof hexo !== 'undefined' && hexo.extend && hexo.extend.helper) {
 }
 
 module.exports = {
-  buildSocialMeta
+  buildSocialMeta,
+  toAbsoluteUrl
 };
