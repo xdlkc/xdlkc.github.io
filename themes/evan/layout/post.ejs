@@ -265,6 +265,7 @@
 <script src="<%- url_for('/js/code-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/code-collapse.js') %>" defer></script>
 <script src="<%- url_for('/js/print-button.js') %>" defer></script>
+<script src="<%- url_for('/js/article-title-double-click-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/quote-copy.js') %>" defer></script>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
@@ -339,4 +340,6 @@
   window.CodeLineNumbers?.initCodeLineNumbers();
   window.ImageLazyLoading?.initImageLazyLoading?.();
   window.PrintButton?.initPrintButton?.();
+  window.ArticleTitleDoubleClickCopy?.init();
+  window.ArticleTitleDoubleClickCopy?.init();
 </script>

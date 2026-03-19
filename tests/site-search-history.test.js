@@ -6,11 +6,21 @@ const SiteSearch = require('../themes/evan/source/js/site-search.js');
 
 const STORAGE_KEY = 'xdlkc:search-history';
 
-function setupDom({ savedHistory = [] } = {}) {
+function setupDom({ savedHistory = [], langMode = 'en' } = {}) {
   const dom = new JSDOM(
-    `<!doctype html><html>
+    `<!doctype html><html data-lang-mode="${langMode}">
       <body>
         <button data-site-search-trigger>Search</button>
+        <div data-site-search-dialog>
+          <div class="site-search-header">
+            <input class="site-search-input" data-site-search-input type="search" />
+            <button class="site-search-close" data-site-search-close type="button"></button>
+          </div>
+          <div class="site-search-body" data-site-search-scroll>
+            <div class="site-search-hint"></div>
+            <div class="site-search-results" data-site-search-results></div>
+          </div>
+        </div>
       </body>
     </html>`,
     { url: 'https://example.com/', runScripts: 'outside-only' }
@@ -49,6 +59,9 @@ test('site-search-history: initial state with empty history', () => {
 
     const history = dom.window.localStorage.getItem(STORAGE_KEY);
     assert.equal(history, '[]');
+
+    const historySection = dom.window.document.querySelector('[data-site-search-history]');
+    assert.equal(historySection, null, 'should not render history section when empty');
   } finally {
     teardownDom();
   }
@@ -166,7 +179,44 @@ test('site-search-history: maximum 10 records', async () => {
   }
 });
 
-test('site-search-history: clear history removes all records', async () => {
+test('site-search-history: renders history items with clear button when history exists', async () => {
+  const dom = setupDom({
+    savedHistory: [
+      { query: 'query 1', timestamp: Date.now() - 5000 },
+      { query: 'query 2', timestamp: Date.now() - 10000 }
+    ]
+  });
+
+  try {
+    SiteSearch.initSiteSearch({ root: dom.window.document });
+
+    const button = dom.window.document.querySelector('[data-site-search-trigger]');
+    button.click();
+
+    await new Promise((r) => setTimeout(r, 0));
+
+    const historySection = dom.window.document.querySelector('[data-site-search-history]');
+    assert.ok(historySection, 'should render history section');
+
+    const title = historySection.querySelector('.site-search-suggest-title');
+    assert.equal(title.textContent, 'Search history');
+
+    const clearButton = historySection.querySelector('[data-site-search-history-clear]');
+    assert.ok(clearButton, 'should render clear button');
+    assert.equal(clearButton.textContent, 'Clear');
+    assert.equal(clearButton.getAttribute('aria-label'), 'Clear search history');
+
+    const historyItems = historySection.querySelectorAll('[data-site-search-history-item]');
+    assert.equal(historyItems.length, 2);
+    assert.equal(historyItems[0].textContent, 'query 1just now'); // Check relative time too
+    assert.equal(historyItems[1].textContent, 'query 2just now'); // Check relative time too
+
+  } finally {
+    teardownDom();
+  }
+});
+
+test('site-search-history: clear history removes all records and updates UI', async () => {
   const dom = setupDom({
     savedHistory: [
       { query: 'query 1', timestamp: Date.now() },
@@ -191,6 +241,9 @@ test('site-search-history: clear history removes all records', async () => {
     const historyJson = dom.window.localStorage.getItem(STORAGE_KEY);
     const history = historyJson ? JSON.parse(historyJson) : [];
     assert.equal(history.length, 0);
+
+    const historySection = dom.window.document.querySelector('[data-site-search-history]');
+    assert.equal(historySection, null, 'history section should be removed from UI');
   } finally {
     teardownDom();
   }
@@ -224,6 +277,41 @@ test('site-search-history: click history item triggers search', async () => {
     const results = dom.window.document.querySelectorAll('.site-search-item');
     const empty = dom.window.document.querySelector('[data-site-search-empty]');
     assert.ok(results.length > 0 || empty, 'should trigger search and show results or empty state');
+  } finally {
+    teardownDom();
+  }
+});
+
+test('site-search-history: internationalization for history section (zh)', async () => {
+  const dom = setupDom({
+    savedHistory: [
+      { query: '测试', timestamp: Date.now() }
+    ],
+    langMode: 'zh'
+  });
+
+  try {
+    SiteSearch.initSiteSearch({ root: dom.window.document });
+
+    const button = dom.window.document.querySelector('[data-site-search-trigger]');
+    button.click();
+
+    await new Promise((r) => setTimeout(r, 0));
+
+    const historySection = dom.window.document.querySelector('[data-site-search-history]');
+    assert.ok(historySection, 'should render history section');
+
+    const title = historySection.querySelector('.site-search-suggest-title');
+    assert.equal(title.textContent, '搜索历史');
+
+    const clearButton = historySection.querySelector('[data-site-search-history-clear]');
+    assert.ok(clearButton, 'should render clear button');
+    assert.equal(clearButton.textContent, '清空');
+    assert.equal(clearButton.getAttribute('aria-label'), '清除搜索历史');
+
+    const historyItems = historySection.querySelectorAll('[data-site-search-history-item]');
+    assert.equal(historyItems.length, 1);
+    assert.equal(historyItems[0].textContent, '测试刚刚');
   } finally {
     teardownDom();
   }

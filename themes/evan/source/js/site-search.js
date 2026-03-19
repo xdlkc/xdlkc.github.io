@@ -199,7 +199,7 @@
       .slice()
       // Longer first to reduce partial-overlap surprises.
       .sort((a, b) => b.length - a.length)
-      .map((kw) => kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+      .map((kw) => kw.replace(/[.*+?^${}()|[\]\\]/g, '\\\\$&'));
 
     const re = new RegExp(`(${parts.join('|')})`, 'ig');
     return escaped.replace(re, (match) => `<mark>${match}</mark>`);
@@ -919,6 +919,9 @@
       copyLinkAria: langMode === 'zh' ? '复制该条结果链接' : 'Copy link for this result',
       toastCopied: langMode === 'zh' ? '链接已复制' : 'Link copied',
       toastCopyFailed: langMode === 'zh' ? '复制失败，请手动复制' : 'Copy failed, please copy manually',
+      searchHistory: langMode === 'zh' ? '搜索历史' : 'Search history',
+      clearHistory: langMode === 'zh' ? '清空' : 'Clear',
+      clearHistoryAria: langMode === 'zh' ? '清除搜索历史' : 'Clear search history',
     };
 
     container.innerHTML = '';
@@ -966,8 +969,8 @@
         ? `
           <div class="site-search-suggest" data-site-search-history>
             <div class="site-search-suggest-title-row">
-              <p class="site-search-suggest-title">${langMode === 'zh' ? '搜索历史' : 'Search history'}</p>
-              <button class="site-search-clear-history" type="button" data-site-search-history-clear aria-label="${langMode === 'zh' ? '清除搜索历史' : 'Clear search history'}">${langMode === 'zh' ? '清除历史' : 'Clear history'}</button>
+              <p class="site-search-suggest-title">${i18n.searchHistory}</p>
+              <button class="site-search-clear-history" type="button" data-site-search-history-clear aria-label="${i18n.clearHistoryAria}">${i18n.clearHistory}</button>
             </div>
             <div class="site-search-history-list">
               ${searchHistory
@@ -992,7 +995,7 @@
                 .slice(0, 10)
                 .map((tag) => {
                   const safe = escapeHtml(tag);
-                  return `<button class=\"site-search-suggest-chip\" type=\"button\" data-site-search-keyword=\"${safe}\" data-site-search-keyword-mode=\"tag\">${safe}</button>`;
+                  return `<button class="site-search-suggest-chip" type="button" data-site-search-keyword="${safe}" data-site-search-keyword-mode="tag">${safe}</button>`;
                 })
                 .join('')}
             </div>
@@ -1484,6 +1487,7 @@
         try {
           input.dispatchEvent(new win.Event('input', { bubbles: true }));
         } catch {
+
           // ignore
         }
       }
@@ -1585,7 +1589,8 @@
           suggestions: {
             topTags: cachedTopTags || [],
             recentQueries: []
-          }
+          },
+          storage: storageRef
         });
         resetSelection();
         return;
@@ -1696,7 +1701,7 @@
       if (dialog.classList.contains('is-open')) return;
       if (isEditableTarget(event.target)) return;
 
-      const key = String(event.key || '');
+      const key = String(event.key || '').toLowerCase();
       const isSlash = key === '/';
       const isK = key.toLowerCase() === 'k';
       const isMetaOrCtrlK = isK && (event.metaKey || event.ctrlKey);
