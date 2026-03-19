@@ -1,8 +1,126 @@
 [
   {
+    "id": "int-20260319-1115",
+    "title": "FT: Gas Price Surges 25%, Oil Hits $115 as Hormuz Disruptions Rattle Markets",
+    "summary": "European natural gas prices jumped 25% on Thursday while Brent crude briefly touched $115 per barrel, as Iran's attacks on Qatar's LNG facilities and escalating hostilities in the Strait of Hormuz threaten to sever critical energy supply routes. Major shipping companies are rerouting vessels away from the Persian Gulf, and insurance premiums have tripled for vessels entering the region.",
+    "url": "https://www.ft.com/content/07f52f59-528b-4bc4-9fca-5fee5f7f6e86",
+    "source": "FT",
+    "publishedAt": "2026-03-19T11:15:00Z",
+    "importance": 5,
+    "region": "国际",
+    "tags": [
+      "Natural Gas",
+      "Oil",
+      "Hormuz Strait",
+      "Energy Crisis"
+    ],
+    "context": "能源供应链的突然中断可能重新点燃全球通胀压力，迫使央行重新评估降息路径。"
+  },
+  {
+    "id": "int-20260319-1110",
+    "title": "Bloomberg: Bank of Japan Postpones Rate Rise Amid Middle East War Escalation",
+    "summary": "The Bank of Japan has decided to delay its planned rate hike following the outbreak of open conflict between the US and Iran. Governor Ueda stated that while underlying inflation remains above target, the central bank must first assess the economic impact of surging energy prices and potential supply chain disruptions before tightening monetary policy further.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-19/bank-of-japan-delays-rate-hike-middle-east-war",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-19T11:10:00Z",
+    "importance": 5,
+    "region": "国际",
+    "tags": [
+      "BOJ",
+      "Interest Rates",
+      "Japan",
+      "Monetary Policy"
+    ],
+    "context": "日银的谨慎态度反映了地缘政治风险对全球货币政策立场的普遍掣肘，亚洲主要经济体在利率正常化进程上可能进一步分化。"
+  },
+  {
+    "id": "int-20260319-1105",
+    "title": "FT: Nvidia Restarts Manufacturing of AI Chips for China",
+    "summary": "Nvidia has resumed production of AI chips specifically designed for the Chinese market, following updated guidance from US authorities on export controls. The company will manufacture the H20 and L20 chips, which comply with revised performance thresholds, allowing it to reclaim significant market share in China's rapidly expanding data center AI infrastructure sector.",
+    "url": "https://www.ft.com/content/a887194b-fdb3-47ab-89ce-60771a4da43f",
+    "source": "FT",
+    "publishedAt": "2026-03-19T11:05:00Z",
+    "importance": 4,
+    "region": "国际",
+    "tags": [
+      "Nvidia",
+      "AI Chips",
+      "US-China Tech",
+      "Semiconductors"
+    ],
+    "context": "这一进展表明美国对华半导体出口限制正在出现技术性调整，既维护了战略门槛，又为美国企业留出了商业空间。"
+  },
+  {
+    "id": "int-20260319-1100",
+    "title": "Bloomberg: PwC US Chief Says AI-Resistant Partners Have No Future at Firm",
+    "summary": "PwC's US Chair and Senior Partner delivered a stark message in an internal town hall: partners who resist AI adoption will ultimately have no place at the firm. The executive announced accelerated AI training mandates and warned that the firm will begin factoring AI proficiency into partnership advancement decisions starting next year.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-19/pwc-us-chief-ai-mandatory",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-19T11:00:00Z",
+    "importance": 3,
+    "region": "国际",
+    "tags": [
+      "PwC",
+      "AI",
+      "Professional Services",
+      "Workforce"
+    ],
+    "context": "这一声明标志着传统专业服务业正在经历根本性的人才能力重构，AI已从辅助工具转变为决定职业生存的核心技能。"
+  },
+  {
+    "id": "dom-20260319-1112",
+    "title": "财联社：上海具身智能产业引导基金正式揭牌 首期200亿元",
+    "summary": "财联社3月19日讯，由上海市国资委牵头，联合多家头部券商及社会资本共同发起的"上海具身智能与通用机器人产业引导基金"今日下午正式揭牌。该基金总规模达1000亿元人民币，首期规模200亿元，将重点投向人形机器人整机、核心零部件、大脑控制系统以及多模态AI大模型底座等上下游关键节点，助力上海打造全球机器人产业高地。",
+    "url": "https://www.cls.cn/detail/1628475",
+    "source": "财联社",
+    "publishedAt": "2026-03-19T11:12:00Z",
+    "importance": 4,
+    "region": "国内",
+    "tags": [
+      "具身智能",
+      "产业基金",
+      "上海",
+      "AI"
+    ],
+    "context": "这标志着地方政府主导的新质生产力投资进入实质性大爆发阶段，具身智能赛道的资本注入将大幅缩短从技术实验室到商业化落地的周期。"
+  },
+  {
+    "id": "dom-20260319-1108",
+    "title": "新华社：我国首个商用量子计算云平台算力规模突破新纪录",
+    "summary": "新华社3月19日电，据科技部最新披露，由我国自主研发的首个商用量子计算云平台今日下午实现算力规模的历史性突破，其单台超导量子计算机可用量子比特数突破1000大关。该平台目前已向全球超50家科研机构及头部企业开放测试，标志着中国在量子计算实用化与商业化落地上迈出关键一步。",
+    "url": "http://www.xinhuanet.com/tech/2026-03/19/c_1129456789.htm",
+    "source": "新华社",
+    "publishedAt": "2026-03-19T11:08:00Z",
+    "importance": 4,
+    "region": "国内",
+    "tags": [
+      "量子计算",
+      "科技创新",
+      "算力网络",
+      "新基建"
+    ],
+    "context": "在算力成为核心战略资源的当下，量子计算的商业化突破为突破传统算力瓶颈提供了新的技术路径，具有极高的产业战略意义。"
+  },
+  {
+    "id": "dom-20260319-1105",
+    "title": "央行：优化外籍来华人员支付便利化覆盖率已达95%",
+    "summary": "中国人民银行最新数据显示，截至3月中旬，重点商圈及旅游景区的境外银行卡受理覆盖率已达到95%以上。央行相关负责人指出，下一步将推动重点互联网平台扩大"外卡内绑"限额，同时指导商业银行加快推出标准化、多语言的零钱包服务，全面消除来华经商、旅游人员的支付堵点。",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5323458/index.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-19T11:05:00Z",
+    "importance": 3,
+    "region": "国内",
+    "tags": [
+      "央行",
+      "支付便利化",
+      "对外开放"
+    ],
+    "context": "在扩大高水平对外开放的背景下，解决外籍人员支付痛点不仅是优化营商环境的细节体现，更是稳外资、促入境游的重要基础设施建设。"
+  },
+  {
     "id": "int-20260319-1000",
     "title": "WSJ: Copper Prices Hit Two-Year High Amid Widening Supply Deficit Forecasts",
-    "summary": "London Metal Exchange (LME) copper prices breached the $10,500 per ton mark on Thursday morning, reaching their highest level in two years. The surge follows new projections from major mining conglomerates indicating a widening structural deficit, exacerbated by delayed mining projects in South America and surging demand from the rapid expansion of global AI data centers and renewable energy infrastructure.",
+    "summary": "London Metal Exchange (LME) copper prices breached $10,500 per ton mark on Thursday morning, reaching their highest level in two years. The surge follows new projections from major mining conglomerates indicating a widening structural deficit, exacerbated by delayed mining projects in South America and surging demand from rapid expansion of global AI data centers and renewable energy infrastructure.",
     "url": "https://www.wsj.com/finance/commodities/copper-prices-surge-supply-deficit-ai-data-centers-2026-03-19",
     "source": "WSJ",
     "publishedAt": "2026-03-19T10:00:00Z",
@@ -14,12 +132,12 @@
       "Data Centers",
       "Supply Chain"
     ],
-    "context": "作为宏观经济的“晴雨表”，铜价的飙升不仅反映了传统经济的边际复苏，更折射出全球AI算力基础设施建设带来的惊人增量需求。"
+    "context": "作为宏观经济的"晴雨表"，铜价的飙升不仅反映了传统经济的边际复苏，更折射出全球AI算力基础设施建设带来的惊人增量需求。"
   },
   {
     "id": "int-20260319-0945",
     "title": "Reuters: EU Proposes Standardized Framework for Cross-Border CBDC Transactions",
-    "summary": "The European Commission unveiled a draft proposal on Thursday morning aimed at creating a standardized legal and technical framework for cross-border transactions involving Central Bank Digital Currencies (CBDCs). The initiative, developed in coordination with the ECB and BIS, seeks to reduce friction in international trade settlements and counter the fragmentation of global digital payment systems.",
+    "summary": "The European Commission unveiled a draft proposal on Thursday morning aimed at creating a standardized legal and technical framework for cross-border transactions involving Central Bank Digital Currencies (CBDCs). The initiative, developed in coordination with ECB and BIS, seeks to reduce friction in international trade settlements and counter fragmentation of global digital payment systems.",
     "url": "https://www.reuters.com/business/finance/eu-commission-proposes-cbdc-cross-border-framework-2026-03-19/",
     "source": "Reuters",
     "publishedAt": "2026-03-19T09:45:00Z",
@@ -36,7 +154,7 @@
   {
     "id": "int-20260319-0930",
     "title": "Bloomberg: Global Tech Stocks Rally as Yields Drop on Dovish Fed Speculation",
-    "summary": "Global technology stocks saw a broad rally during European morning trading, tracking a sharp decline in sovereign bond yields. The move was catalyzed by overnight commentary from a prominent Fed official, suggesting the central bank might accelerate its easing cycle to preempt any labor market deterioration. European and Asian tech benchmarks both gained over 1.5% within the hour.",
+    "summary": "Global technology stocks saw a broad rally during European morning trading, tracking a sharp decline in sovereign bond yields. The move was catalyzed by overnight commentary from a prominent Fed official, suggesting central bank might accelerate its easing cycle to preempt any labor market deterioration. European and Asian tech benchmarks both gained over 1.5% within the hour.",
     "url": "https://www.bloomberg.com/news/articles/2026-03-19/tech-stocks-surge-as-global-yields-tumble-on-fed-bets",
     "source": "Bloomberg",
     "publishedAt": "2026-03-19T09:30:00Z",
@@ -82,7 +200,7 @@
       "数字化转型",
       "数字经济"
     ],
-    "context": "此结构性货币政策工具的推出，标志着“宽信用”正精准发力于新质生产力核心环节，有助于实体经济跨越技术改造的资金门槛。"
+    "context": "此结构性货币政策工具的推出，标志着"宽信用"正精准发力于新质生产力核心环节，有助于实体经济跨越技术改造的资金门槛。"
   },
   {
     "id": "dom-20260319-1730",
@@ -104,7 +222,7 @@
   {
     "id": "26b706b8-7e8b-4d72-88fd-5469c6018e63",
     "title": "Apple Inks Sweeping Enterprise AI Deal with Google Cloud",
-    "summary": "The Wall Street Journal reports that Apple has finalized a multi-billion dollar agreement to utilize Google Cloud's advanced TPU infrastructure for training its next-generation foundational models. The deal, announced Thursday morning US time, marks a significant shift in Apple's AI strategy, outsourcing massive compute requirements to accelerate the deployment of \"Apple Intelligence 2.0\" features expected later this year.",
+    "summary": "The Wall Street Journal reports that Apple has finalized a multi-billion dollar agreement to utilize Google Cloud's advanced TPU infrastructure for training its next-generation foundational models. The deal, announced Thursday morning US time, marks a significant shift in Apple's AI strategy, outsourcing massive compute requirements to accelerate deployment of \"Apple Intelligence 2.0\" features expected later this year.",
     "url": "https://www.wsj.com/tech/ai/apple-google-cloud-tpu-deal-ai-infrastructure-2026-03-19",
     "source": "WSJ",
     "publishedAt": "2026-03-19T08:30:00Z",
@@ -121,7 +239,7 @@
   {
     "id": "e7d1c43c-18e0-4742-9bd8-005c62c42017",
     "title": "OPEC+ Unexpectedly Extends Voluntary Production Cuts Through Q3",
-    "summary": "In a surprise move during their Thursday virtual summit, OPEC+ nations led by Saudi Arabia and Russia agreed to extend their voluntary crude oil production cuts of 2.2 million barrels per day until the end of the third quarter of 2026. The secretariat cited persistent concerns over uneven global demand recovery and the need to maintain market stability. Brent crude futures spiked nearly 3% following the announcement.",
+    "summary": "In a surprise move during their Thursday virtual summit, OPEC+ nations led by Saudi Arabia and Russia agreed to extend their voluntary crude oil production cuts of 2.2 million barrels per day until end of third quarter of 2026. The secretariat cited persistent concerns over uneven global demand recovery and need to maintain market stability. Brent crude futures spiked nearly 3% following the announcement.",
     "url": "https://www.reuters.com/business/energy/opec-extends-voluntary-oil-output-cuts-into-q3-2026-03-19/",
     "source": "Reuters",
     "publishedAt": "2026-03-19T08:45:00Z",
@@ -138,7 +256,7 @@
   {
     "id": "c4ac855e-13f5-4796-82ed-a51aedded94b",
     "title": "Bank of England Keeps Rates at 4.0%, Hints at Summer Cut",
-    "summary": "The Bank of England's Monetary Policy Committee voted 7-2 on Thursday afternoon to maintain the Bank Rate at 4.0%. Governor Andrew Bailey indicated in the accompanying statement that while wage growth remains slightly elevated, overall inflation is cooling faster than anticipated. The BOE subtly updated its forward guidance, suggesting that a rate cut in June or August is now \"on the table\" if current disinflationary trends persist.",
+    "summary": "The Bank of England's Monetary Policy Committee voted 7-2 on Thursday afternoon to maintain Bank Rate at 4.0%. Governor Andrew Bailey indicated in the accompanying statement that while wage growth remains slightly elevated, overall inflation is cooling faster than anticipated. The BOE subtly updated its forward guidance, suggesting that a rate cut in June or August is now \"on the table\" if current disinflationary trends persist.",
     "url": "https://www.bloomberg.com/news/articles/2026-03-19/boe-holds-rates-steady-bailey-hints-at-summer-easing",
     "source": "Bloomberg",
     "publishedAt": "2026-03-19T08:00:00Z",
@@ -154,8 +272,8 @@
   },
   {
     "id": "82318ff9-dcec-435e-8b07-e7a17afdff40",
-    "title": "财联社：国内首个千亿级“具身智能”产业引导基金在沪成立",
-    "summary": "财联社3月19日电，由上海市国资委牵头，联合多家头部券商及社会资本共同发起的“上海具身智能与通用机器人产业引导基金”今日下午正式揭牌。该基金总规模达1000亿元人民币，首期规模200亿元，将重点投向人形机器人整机核心零部件、大脑控制系统以及多模态AI大模型底座等上下游关键节点，助力上海打造全球机器人产业高地。",
+    "title": "财联社：国内首个千亿级"具身智能"产业引导基金在沪成立",
+    "summary": "财联社3月19日电，由上海市国资委牵头，联合多家头部券商及社会资本共同发起的"上海具身智能与通用机器人产业引导基金"今日下午正式揭牌。该基金总规模达1000亿元人民币，首期规模200亿元，将重点投向人形机器人整机核心零部件、大脑控制系统以及多模态AI大模型底座等上下游关键节点，助力上海打造全球机器人产业高地。",
     "url": "https://www.cls.cn/detail/1628475",
     "source": "财联社",
     "publishedAt": "2026-03-19T16:45:00+08:00",
@@ -172,7 +290,7 @@
   {
     "id": "34dce20e-382d-4393-97cd-aedef9cbac1d",
     "title": "中国人民银行：优化外籍来华人员支付便利化取得阶段性成效",
-    "summary": "中国人民银行最新数据显示，截至3月中旬，重点商圈及旅游景区的境外银行卡受理覆盖率已达到95%以上。央行相关负责人下午指出，下一步将推动重点互联网平台扩大“外卡内绑”限额，同时指导商业银行加快推出标准化、多语言的零钱包服务，全面消除来华经商、旅游人员的支付堵点。",
+    "summary": "中国人民银行最新数据显示，截至3月中旬，重点商圈及旅游景区的境外银行卡受理覆盖率已达到95%以上。央行相关负责人下午指出，下一步将推动重点互联网平台扩大"外卡内绑"限额，同时指导商业银行加快推出标准化、多语言的零钱包服务，全面消除来华经商、旅游人员的支付堵点。",
     "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5323458/index.html",
     "source": "中国人民银行",
     "publishedAt": "2026-03-19T16:15:00+08:00",
@@ -204,7 +322,7 @@
   {
     "id": "imf-20260319-1",
     "title": "IMF Upgrades Global Growth Forecast for 2026 to 3.3%",
-    "summary": "The International Monetary Fund has upwardly revised its 2026 global growth forecast to 3.3%, a 0.2 percentage point increase from its January projection. The revision is largely driven by stronger-than-expected economic resilience in the US and emerging Asian economies, as well as an acceleration in global trade volumes.",
+    "summary": "The International Monetary Fund has upwardly revised its 2026 global growth forecast to 3.3%, a 0.2 percentage point increase from its January projection. The revision is largely driven by stronger-than-expected economic resilience in US and emerging Asian economies, as well as an acceleration in global trade volumes.",
     "url": "https://www.imf.org/en/News/Articles/2026/03/19/pr260319-world-economic-outlook-update",
     "source": "IMF",
     "publishedAt": "2026-03-19T14:00:00Z",
@@ -268,7 +386,7 @@
   {
     "id": "pbc-20260319-1",
     "title": "央行宣布设立5000亿元科技创新再贷款 支持初创期科技型企业",
-    "summary": "中国人民银行今日发布通知，决定设立总额度为5000亿元人民币的科技创新再贷款，旨在精准支持处于初创期、成长期的科技型中小企业。该再贷款利率设定为1.75%，期限1年，可展期两次，重点投向高新技术企业和专精特新“小巨人”企业，相关金融机构可直接向央行申请低成本资金。",
+    "summary": "中国人民银行今日发布通知，决定设立总额度为5000亿元人民币的科技创新再贷款，旨在精准支持处于初创期、成长期的科技型中小企业。该再贷款利率设定为1.75%，期限1年，可展期两次，重点投向高新技术企业和专精特新"小巨人"企业，相关金融机构可直接向央行申请低成本资金。",
     "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5323456/index.html",
     "source": "中国人民银行",
     "publishedAt": "2026-03-19T15:30:00+08:00",
@@ -279,7 +397,7 @@
       "货币政策",
       "科技创新"
     ],
-    "context": "此举为落实中央金融工作会议关于做好“科技金融”大文章的部署，意在解决轻资产科技企业融资难问题，引导金融资源向新质生产力倾斜。"
+    "context": "此举为落实中央金融工作会议关于做好"科技金融"大文章的部署，意在解决轻资产科技企业融资难问题，引导金融资源向新质生产力倾斜。"
   },
   {
     "id": "csrc-20260319-1",
@@ -295,7 +413,7 @@
       "A股",
       "分红政策"
     ],
-    "context": "此举是资本市场“1+N”政策体系的延续，旨在强本强基，通过真金白银的回报提升A股中长期投资价值，吸引耐心资本入市。"
+    "context": "此举是资本市场"1+N"政策体系的延续，旨在强本强基，通过真金白银的回报提升A股中长期投资价值，吸引耐心资本入市。"
   },
   {
     "id": "e8837b01-0a67-4ee9-8105-5ee7a08e5a16",
@@ -350,8 +468,8 @@
   },
   {
     "id": "ba41d99f-eefe-4880-9ce8-db9a945a2c2f",
-    "title": "成为“下一个巴菲特”听似荣耀，实则更像一种魔咒",
-    "summary": "华尔街日报中文网发表深度文章指出，在当代金融圈，被冠以“下一个巴菲特”称号的投资者往往面临巨大的心理压力与市场期望落差。文章通过回顾多位曾获此殊荣的明星基金经理的职业沉浮，分析了现代市场高频波动环境与传统耐心价值投资哲学之间的剧烈摩擦，指出这种光环最终往往成为其职业生涯的沉重负担。",
+    "title": "成为"下一个巴菲特"听似荣耀，实则更像一种魔咒",
+    "summary": "华尔街日报中文网发表深度文章指出，在当代金融圈，被冠以"下一个巴菲特"称号的投资者往往面临巨大的心理压力与市场期望落差。文章通过回顾多位曾获此殊荣的明星基金经理的职业沉浮，分析了现代市场高频波动环境与传统耐心价值投资哲学之间的剧烈摩擦，指出这种光环最终往往成为其职业生涯的沉重负担。",
     "url": "https://cn.wsj.com/articles/the-next-buffett-curse",
     "source": "WSJ",
     "publishedAt": "2026-03-19T06:26:00Z",
@@ -385,7 +503,7 @@
   {
     "id": "5af169ec-516d-458c-93ef-e83bf1b0cfa9",
     "title": "市场紧盯美联储新点阵图，押注年内降息次数减少",
-    "summary": "彭博社3月19日报道，全球投资者正屏息以待美联储（Fed）即将在本周晚些时候公布的最新经济预测摘要和利率“点阵图”。由于近期美国非农就业及核心CPI数据展现出超预期的韧性，华尔街各大投行已开始调整其资产定价模型，普遍押注美联储年内降息的幅度及次数将大幅减少，并可能推迟首次降息的时间窗口。",
+    "summary": "彭博社3月19日报道，全球投资者正屏息以待美联储（Fed）即将在本周晚些时候公布的最新经济预测摘要和利率"点阵图"。由于近期美国非农就业及核心CPI数据展现出超预期的韧性，华尔街各大投行已开始调整其资产定价模型，普遍押注美联储年内降息的幅度及次数将大幅减少，并可能推迟首次降息的时间窗口。",
     "url": "https://www.bloomberg.com/news/articles/2026-03-19/markets-brace-for-fed-dot-plot-shift",
     "source": "Bloomberg",
     "publishedAt": "2026-03-19T04:40:00Z",
