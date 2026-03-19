@@ -12,7 +12,9 @@ function buildUpdatedLabel({ date, updated }) {
   if (!updatedDay) return '';
   if (publishedDay && publishedDay === updatedDay) return '';
 
-  return ` · 更新于 ${updatedDay}`;
+  // Include ISO date for relative time display
+  const updatedIso = updated instanceof Date ? updated.toISOString() : new Date(updated).toISOString();
+  return ` · 更新于 ${updatedDay} (<span data-update-date="${updatedIso}">加载中...</span>)`;
 }
 
 if (typeof hexo !== 'undefined' && hexo.extend && hexo.extend.helper) {

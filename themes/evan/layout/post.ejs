@@ -42,7 +42,7 @@
       <% } %>
     ></nav>
     <h1><%= page.title %></h1>
-    <p class="article-meta"><span data-i18n-key="post.published">Published</span> <%= date(page.date, 'YYYY-MM-DD') %><%= updated_label() %> · <span class="article-meta-word-count" data-i18n-key="post.words"><%= post_word_count(page.content) %> 字</span> · <span class="article-meta-reading-time"><%= reading_time(page.content) %> 分钟阅读</span> <span class="article-meta-reading-time-countdown" data-reading-time-countdown aria-live="polite"></span></p>
+    <p class="article-meta"><span data-i18n-key="post.published">Published</span> <%= date(page.date, 'YYYY-MM-DD') %> (<span data-publish-date="<%= date(page.date, 'YYYY-MM-DDTHH:mm:ssZ') %>">加载中...</span>)<%= updated_label() %> · <span class="article-meta-word-count" data-i18n-key="post.words"><%= post_word_count(page.content) %> 字</span> · <span class="article-meta-reading-time"><%= reading_time(page.content) %> 分钟阅读</span> <span class="article-meta-reading-time-countdown" data-reading-time-countdown aria-live="polite"></span></p>
     <% if (page.tags && page.tags.length > 0) { %>
       <div class="article-meta-tags" aria-label="Tags">
         <% page.tags.forEach(function(tag, index) { %>
@@ -267,6 +267,7 @@
 <script src="<%- url_for('/js/print-button.js') %>" defer></script>
 <script src="<%- url_for('/js/article-title-double-click-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/quote-copy.js') %>" defer></script>
+<script src="<%- url_for('/js/relative-time-display.js') %>" defer></script>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
@@ -325,6 +326,7 @@
     await window.MermaidEnhance?.initMermaidEnhance?.({ mermaid });
   }
 
+  window.RelativeTimeDisplay?.initRelativeTimeDisplay?.();
   window.CodeCopy?.initCodeCopy();
   window.CodeCollapse?.initCodeCollapse();
   window.Breadcrumb?.initBreadcrumb?.();
