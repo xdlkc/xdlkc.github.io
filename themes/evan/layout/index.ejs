@@ -27,12 +27,38 @@ const summarize = (input, limit = 140) => {
   </nav>
 
   <section class="hero-content container">
-    <p class="tag">HELLO</p>
-    <h1>I am Evan Zhang,<br />an Agent Application Engineer (Full Stack)</h1>
-    <p class="subtitle">Previously a Java backend engineer, now focused on Agent application development and full stack engineering at Alibaba Group (Beijing).</p>
-    <div class="actions">
-      <a class="btn primary" href="#writing">Latest Writing</a>
-      <a class="btn ghost" href="https://github.com/xdlkc" target="_blank" rel="noreferrer">GitHub</a>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="tag">HELLO</p>
+        <h1>I am Evan Zhang,<br />an Agent Application Engineer (Full Stack)</h1>
+        <p class="subtitle">Previously a Java backend engineer, now focused on Agent application development and full stack engineering at Alibaba Group (Beijing).</p>
+        <div class="actions">
+          <a class="btn primary" href="#writing">Latest Writing</a>
+          <a class="btn ghost" href="https://github.com/xdlkc" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <p class="hero-panel-eyebrow">PROFILE</p>
+        <div class="hero-panel-item">
+          <span class="hero-panel-label">Focus</span>
+          <strong>Agent Apps</strong>
+        </div>
+        <div class="hero-panel-item">
+          <span class="hero-panel-label">Stack</span>
+          <strong>Full Stack + Engineering</strong>
+        </div>
+        <div class="hero-panel-item">
+          <span class="hero-panel-label">Base</span>
+          <strong>Beijing</strong>
+        </div>
+        <% if (latestPost) { %>
+          <div class="hero-panel-feature">
+            <span class="hero-panel-label">Latest</span>
+            <a href="<%- url_for(latestPost.path) %>"><%= latestPost.title %></a>
+          </div>
+        <% } %>
+      </aside>
     </div>
   </section>
 </header>
@@ -94,22 +120,34 @@ const summarize = (input, limit = 140) => {
     </section>
   <% } %>
 
-  <% if (latestPost) { %>
-  <section class="section container about">
-    <h2 data-i18n-key="index.currentFocus">Current Focus</h2>
-    <p><%= summarize(latestPost.excerpt || latestPost.content, 220) %></p>
-  </section>
-  <% } %>
-
-  <section id="about" class="section container about">
+  <section id="about" class="section container">
     <h2 data-i18n-key="index.about">About</h2>
-    <p>
-      I studied at Xidian University from 2014 to 2018 for my bachelor's degree and currently work at Alibaba Group (Beijing).
-      I started as a Java backend engineer and now focus on Agent application development and full stack engineering, with an emphasis on engineering quality and delivery efficiency.
-    </p>
-    <h2 data-i18n-key="index.contact">Contact</h2>
-    <p>Email: <a href="mailto:wimness@163.com">wimness@163.com</a></p>
-    <p>GitHub: <a href="https://github.com/xdlkc" target="_blank" rel="noreferrer">@xdlkc</a></p>
+    <div class="grid info-grid">
+      <% if (latestPost) { %>
+        <article class="card info-card info-card-focus">
+          <p class="info-card-eyebrow" data-i18n-key="index.currentFocus">Current Focus</p>
+          <h3><%= latestPost.title %></h3>
+          <p><%= summarize(latestPost.excerpt || latestPost.content, 220) %></p>
+          <a href="<%- url_for(latestPost.path) %>" data-i18n-key="index.readArticle">Read Article</a>
+        </article>
+      <% } %>
+
+      <article class="card info-card">
+        <p class="info-card-eyebrow" data-i18n-key="index.about">About</p>
+        <h3>Agent Application Engineer</h3>
+        <p>
+          I studied at Xidian University from 2014 to 2018 for my bachelor's degree and currently work at Alibaba Group (Beijing).
+          I started as a Java backend engineer and now focus on Agent application development and full stack engineering, with an emphasis on engineering quality and delivery efficiency.
+        </p>
+      </article>
+
+      <article class="card info-card info-card-contact">
+        <p class="info-card-eyebrow" data-i18n-key="index.contact">Contact</p>
+        <h3>Find Me</h3>
+        <p>Email: <a href="mailto:wimness@163.com">wimness@163.com</a></p>
+        <p>GitHub: <a href="https://github.com/xdlkc" target="_blank" rel="noreferrer">@xdlkc</a></p>
+      </article>
+    </div>
   </section>
 </main>
 

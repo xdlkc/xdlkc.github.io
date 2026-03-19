@@ -90,6 +90,17 @@ body {
   animation: slide-up 0.7s ease-out both;
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 1.4rem;
+  align-items: stretch;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
 .tag {
   letter-spacing: 0.15em;
   font-size: 0.8rem;
@@ -143,6 +154,46 @@ h1 {
   background: #ffffffc9;
 }
 
+.hero-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.25rem;
+  border-radius: 28px;
+  border: 1px solid rgba(31, 35, 40, 0.08);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.46)),
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.14), transparent 38%);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+.hero-panel-eyebrow,
+.hero-panel-label {
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.hero-panel-item,
+.hero-panel-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  padding: 0.85rem 0.9rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(31, 35, 40, 0.06);
+}
+
+.hero-panel-item strong,
+.hero-panel-feature a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 .section {
   padding: 2.4rem 0;
 }
@@ -154,8 +205,9 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1rem;
+  align-items: stretch;
 }
 
 .card {
@@ -164,6 +216,7 @@ h2 {
   border-radius: 14px;
   padding: 1rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  height: 100%;
 }
 
 .card h3 {
@@ -180,9 +233,48 @@ h2 {
   font-weight: 600;
 }
 
-.about p,
-.contact p {
-  max-width: 70ch;
+.info-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 100%;
+}
+
+.info-card-eyebrow {
+  margin: 0;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.info-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.info-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.info-card a {
+  margin-top: auto;
+}
+
+.info-card-focus {
+  background:
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.12), transparent 38%),
+    var(--card);
+}
+
+.info-card-contact p + p {
+  margin-top: 0.2rem;
 }
 
 .footer {
@@ -1061,6 +1153,10 @@ h2 {
 
   .nav-links {
     justify-content: flex-start;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
   }
 
   .shortcut-help-panel {
