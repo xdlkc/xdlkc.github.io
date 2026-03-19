@@ -1,10 +1,15 @@
-(function(root, factory) {
+(function(global, factory) {
   if (typeof module === 'object' && module.exports) {
-    module.exports = factory();
+    module.exports = function(doc, win) {
+      return factory(doc, win);
+    };
   } else {
-    root.TocScrollSpy = factory();
+    global.TocScrollSpy = factory(global.document, global.window);
   }
-})(typeof self !== 'undefined' ? self : this, function() {
+})(typeof self !== 'undefined' ? self : this, function(doc, win) { // Factory now explicitly takes doc and win
+  // All functions within this closure will now use 'doc' and 'win' directly
+  // No more `globalThis.document` or `typeof window !== 'undefined' ? window : ...` checks needed within functions
+
   function slugifyHeading(text) {
     return String(text || '')
       .trim()
@@ -40,11 +45,7 @@
 
   function getHeadingTopInDocument(element) {
     const rect = element.getBoundingClientRect();
-
-    // In Node/JSDOM tests, `window` may be missing as a global after cleanup.
-    const win = (typeof window !== 'undefined' ? window : (globalThis.window || globalThis));
     const scrollY = win?.scrollY || win?.pageYOffset || 0;
-
     return rect.top + scrollY;
   }
 
@@ -106,6 +107,32 @@
       }
       heading.setAttribute('id', id);
       used.add(id);
+    });
+  }
+
+  function injectHeadingAnchorLinks(headingElements) {
+    if (!doc?.createElement) return;
+
+    const lang = resolveLangMode(); // Use closure-scoped doc
+    const label = lang === 'zh' ? '本节永久链接' : 'Permalink to this section';
+
+    headingElements.forEach((heading) => {
+      const id = heading.getAttribute('id');
+      if (!id) return;
+
+      // Idempotent: avoid injecting twice.
+      if (heading.querySelector?.(':scope > .heading-anchor')) return;
+
+      const a = doc.createElement('a');
+      a.className = 'heading-anchor';
+      a.setAttribute('href', `#${id}`);
+      a.setAttribute('aria-label', label);
+      a.setAttribute('title', label);
+      a.textContent = '#'; // Or an SVG icon if desired
+
+      // Append the anchor right after the heading text.
+      // E.g., <h2>Title <a...>#</a></h2>
+      heading.appendChild(a);
     });
   }
 
@@ -198,7 +225,7 @@
     });
   }
 
-  function enhanceTocAutoNumbering(toc, { document: doc = document } = {}) {
+  function enhanceTocAutoNumbering(toc) { // Removed doc = document
     if (!toc?.querySelectorAll || !doc?.querySelectorAll) return;
 
     const links = Array.from(toc.querySelectorAll('a[href^="#"]'));
@@ -248,12 +275,12 @@
     });
   }
 
-  function resolveLangMode(doc = document) {
+  function resolveLangMode() { // No doc = document
     const mode = doc?.documentElement?.dataset?.langMode;
     return mode === 'zh' ? 'zh' : 'en';
   }
 
-  function ensureTocCopyToast(doc = document) {
+  function ensureTocCopyToast() { // No doc = document
     const existing = doc.querySelector?.('.toc-link-copy-toast');
     if (existing) return existing;
 
@@ -269,13 +296,13 @@
     if (!toast) return;
     toast.textContent = message;
     toast.classList.add('is-visible');
-    window.clearTimeout(showTocCopyToast._timer);
-    showTocCopyToast._timer = window.setTimeout(() => {
+    win.clearTimeout(showTocCopyToast._timer); // Use win.clearTimeout
+    showTocCopyToast._timer = win.setTimeout(() => { // Use win.setTimeout
       toast.classList.remove('is-visible');
     }, 1400);
   }
 
-  function fallbackCopyText(text, doc = document) {
+  function fallbackCopyText(text) { // No doc = document
     const area = doc.createElement('textarea');
     area.value = String(text || '');
     area.setAttribute('readonly', 'readonly');
@@ -288,19 +315,19 @@
     if (!ok) throw new Error('copy failed');
   }
 
-  async function copyText(text, doc = document) {
-    const clipboard = window?.navigator?.clipboard || globalThis?.navigator?.clipboard;
+  async function copyText(text) { // No doc = document
+    const clipboard = win?.navigator?.clipboard; // Use win.navigator
     if (clipboard?.writeText) {
       await clipboard.writeText(String(text || ''));
       return;
     }
-    fallbackCopyText(text, doc);
+    fallbackCopyText(text); // Pass no doc param, it uses closure doc
   }
 
-  function injectTocLinkCopyButtons(toc, { document: doc = document } = {}) {
+  function injectTocLinkCopyButtons(toc) { // No doc = document
     if (!toc?.querySelectorAll) return;
 
-    const toast = ensureTocCopyToast(doc);
+    const toast = ensureTocCopyToast(); // Use closure doc
 
     Array.from(toc.querySelectorAll('a[href^="#"]')).forEach((link) => {
       const href = String(link.getAttribute('href') || '');
@@ -310,7 +337,7 @@
       const parent = link.parentElement || link;
       if (parent.querySelector?.('.toc-link-copy-button')) return;
 
-      const lang = resolveLangMode(doc);
+      const lang = resolveLangMode(); // Use closure doc
       const label = lang === 'zh' ? '复制目录链接' : 'Copy TOC link';
       const copiedMsg = lang === 'zh' ? '已复制目录链接' : 'Copied TOC link';
       const failedMsg = lang === 'zh' ? '复制失败，请手动复制' : 'Copy failed, please copy manually';
@@ -326,11 +353,11 @@
         event.preventDefault();
         event.stopPropagation();
 
-        const base = String(window.location?.href || '').split('#')[0];
+        const base = String(win.location?.href || '').split('#')[0]; // Use win.location
         const url = base + href;
 
         try {
-          await copyText(url, doc);
+          await copyText(url); // Pass no doc param
           showTocCopyToast(toast, copiedMsg);
         } catch {
           showTocCopyToast(toast, failedMsg);
@@ -348,7 +375,7 @@
 
   function buildTocIntoContainer(toc, headingElements) {
     if (!toc || !toc.querySelector) return;
-    const doc = toc.ownerDocument || globalThis.document;
+    // doc is already closure-scoped, no need for ownerDocument or globalThis.document
     if (!doc?.createElement) return;
 
     // If TOC already has anchors, respect existing markup (likely generated by Hexo helper).
@@ -435,14 +462,10 @@
     toc.appendChild(topOl);
   }
 
-  function enhanceCollapsibleToc(
-    toc,
-    {
-      document: doc = document,
-      storage = (globalThis.window && globalThis.window.localStorage) || globalThis.localStorage,
-      storageKey = 'xdlkc:toc:collapsed'
-    } = {}
-  ) {
+  function enhanceCollapsibleToc(toc, {
+    storage = win.localStorage, // Use win.localStorage
+    storageKey = 'xdlkc:toc:collapsed'
+  } = {}) {
     if (!toc || !toc.querySelectorAll || !doc?.createElement) return;
 
     const safeKey = String(storageKey || 'xdlkc:toc:collapsed');
@@ -527,19 +550,15 @@
     });
   }
 
-  function resolveLangModeForDoc(doc = document) {
+  function resolveLangModeForDoc() { // No doc = document
     const mode = doc?.documentElement?.dataset?.langMode;
     return mode === 'zh' ? 'zh' : 'en';
   }
 
-  function injectTocCollapseAllToggle(
-    toc,
-    {
-      document: doc = document,
-      storage = (globalThis.window && globalThis.window.localStorage) || globalThis.localStorage,
-      storageKey = 'xdlkc:toc:collapsed'
-    } = {}
-  ) {
+  function injectTocCollapseAllToggle(toc, {
+    storage = win.localStorage, // Use win.localStorage
+    storageKey = 'xdlkc:toc:collapsed'
+  } = {}) {
     if (!toc || !toc.querySelectorAll || !doc?.querySelector) return;
 
     // Desktop-only: requires toc-card header.
@@ -580,7 +599,7 @@
       return href.startsWith('#') ? href : `idx:${idx}`;
     };
 
-    const lang = resolveLangModeForDoc(doc);
+    const lang = resolveLangModeForDoc(); // Use closure doc
     const labels = {
       collapseAll: lang === 'zh' ? '收起全部' : 'Collapse all',
       expandAll: lang === 'zh' ? '展开全部' : 'Expand all',
@@ -675,9 +694,9 @@
         }
       }
 
-      li = li.parentElement && li.parentElement.closest
-        ? li.parentElement.closest('li')
-        : null;
+      li = li.parentElement && li.parentElement.closest ?
+        li.parentElement.closest('li') :
+        null;
     }
   }
 
@@ -685,19 +704,17 @@
     tocSelector = '.toc-nav',
     contentSelector = '.article-content',
     headingSelector = 'h2, h3, h4',
-    storage = globalThis.localStorage,
+    storage = win.localStorage, // Use closure-scoped win.localStorage
     hiddenStorageKey = 'xdlkc:toc:hidden'
   } = {}) {
-    const tocs = Array.from(document.querySelectorAll(tocSelector));
+    const tocs = Array.from(doc.querySelectorAll(tocSelector));
     if (tocs.length === 0) return;
 
-    const content = document.querySelector(contentSelector) || document;
+    const content = doc.querySelector(contentSelector) || doc;
     const headingElements = Array.from(content.querySelectorAll(headingSelector));
     if (headingElements.length === 0) return;
 
-    const win = (typeof window !== 'undefined' ? window : (document.defaultView || globalThis));
-    const doc = document;
-    const header = doc.querySelector('.article-nav');
+    const header = doc.querySelector('.article-nav'); // Use closure-scoped doc
 
     const safeHiddenKey = String(hiddenStorageKey || 'xdlkc:toc:hidden');
 
@@ -767,7 +784,7 @@
     };
 
     try {
-      const mobileDetails = document.querySelector('details.toc-mobile');
+      const mobileDetails = doc.querySelector('details.toc-mobile'); // Use closure doc
       if (mobileDetails) {
         // Restore persisted state (no-op when key missing).
         if (readPersistedMobileOpen()) {
@@ -789,11 +806,11 @@
     // Keyboard shortcut: press `t` to toggle the TOC visibility.
     // Idempotent: avoid binding multiple times if init runs again.
     try {
-      const rootEl = document.documentElement;
+      const rootEl = doc.documentElement; // Use closure doc
       if (rootEl && rootEl.dataset && rootEl.dataset.xdlkcTocKeyToggleBound !== '1') {
         rootEl.dataset.xdlkcTocKeyToggleBound = '1';
 
-        window.addEventListener('keydown', (event) => {
+        win.addEventListener('keydown', (event) => { // Use closure win
           const key = String(event.key || '');
           if (key !== 't' && key !== 'T') return;
           if (event.metaKey || event.ctrlKey || event.altKey) return;
@@ -807,8 +824,7 @@
           );
           if (isTypingTarget) return;
 
-          // Prefer mobile TOC drawer if present.
-          const mobileDetails = document.querySelector('details.toc-mobile');
+          const mobileDetails = doc.querySelector('details.toc-mobile'); // Use closure doc
           if (mobileDetails) {
             event.preventDefault();
             if (mobileDetails.hasAttribute('open')) {
@@ -821,8 +837,7 @@
             return;
           }
 
-          // Desktop TOC: toggle hidden/aria-hidden.
-          const desktopToc = document.querySelector('.toc-card .toc-nav') || document.querySelector('.toc-nav');
+          const desktopToc = doc.querySelector('.toc-card .toc-nav') || doc.querySelector('.toc-nav'); // Use closure doc
           if (!desktopToc) return;
 
           const btn = desktopToc.closest?.('.toc-card')?.querySelector?.('[data-toc-visibility-toggle]') || null;
@@ -836,17 +851,14 @@
       // ignore
     }
 
-    // Ensure heading ids exist so TOC anchors have targets.
     ensureHeadingIds(headingElements);
+    injectHeadingAnchorLinks(headingElements);
 
     const states = [];
 
     tocs.forEach((toc) => {
       if (!toc) return;
 
-      // UX: if the article is too short (only one section heading), a TOC provides
-      // no meaningful navigation value. Hide it to reduce visual noise.
-      // Note: do not hide the mobile TOC (<details class="toc-mobile">).
       const isMobileToc = !!toc.closest?.('details.toc-mobile');
 
       if (!isMobileToc && headingElements.length < 2) {
@@ -859,7 +871,6 @@
         return;
       }
 
-      // Ensure visible when there are enough headings.
       try {
         toc.removeAttribute('hidden');
         toc.removeAttribute('aria-hidden');
@@ -867,7 +878,6 @@
         // ignore
       }
 
-      // Apply persisted desktop visibility preference.
       if (!isMobileToc && readPersistedHidden()) {
         try {
           toc.setAttribute('hidden', 'hidden');
@@ -877,15 +887,12 @@
         }
       }
 
-      // Visible TOC toggle button (desktop only).
       if (!isMobileToc) {
         const btn = toc.closest?.('.toc-card')?.querySelector?.('[data-toc-visibility-toggle]') || null;
         if (btn) {
           if (btn.getAttribute?.('data-toc-visibility-bound') !== '1') {
             btn.setAttribute?.('data-toc-visibility-bound', '1');
-
             syncDesktopToggleButtonState(btn, toc.hasAttribute('hidden'));
-
             btn.addEventListener('click', (event) => {
               event.preventDefault();
               const nowHidden = !toc.hasAttribute('hidden');
@@ -897,33 +904,13 @@
         }
       }
 
-      // If TOC already has anchors (e.g. from Hexo helper), sync those ids onto
-      // headings so the TOC links always have real targets.
       syncHeadingIdsWithToc(toc, headingElements);
-
-      // Fallback: some pages may not have TOC markup generated by the template.
-      // If `.toc-nav` exists but contains no anchors, auto-generate a minimal TOC.
       buildTocIntoContainer(toc, headingElements);
-
-      // TOC readability: show hierarchical index numbers (1 / 1.1 / 1.1.1).
-      enhanceTocAutoNumbering(toc, { document });
-
-      // UX: long headings might get visually truncated; add hover tooltips.
       enhanceTocLinkTitles(toc);
-
-      // TOC: allow one-click copy of section links.
-      injectTocLinkCopyButtons(toc, { document });
-
-      // Enhance TOC UX: allow collapsing nested sections.
-      enhanceCollapsibleToc(toc, { document });
-
-      // Desktop TOC: provide a one-click collapse/expand all toggle.
-      injectTocCollapseAllToggle(toc, { document });
 
       const tocLinks = Array.from(toc.querySelectorAll('a[href^="#"]'));
       if (tocLinks.length === 0) return;
 
-      // Smooth scroll on click with header offset (keep default anchor behavior as fallback).
       if (toc.getAttribute?.('data-toc-smooth-scroll-bound') !== '1') {
         toc.setAttribute?.('data-toc-smooth-scroll-bound', '1');
 
@@ -938,22 +925,18 @@
 
             event.preventDefault();
 
-            // Mobile TOC is wrapped in <details class="toc-mobile">.
-            // After choosing a section, auto-close it to avoid covering content.
             const mobileDetails = link.closest?.('details.toc-mobile');
             if (mobileDetails?.hasAttribute?.('open')) {
               mobileDetails.removeAttribute('open');
             }
 
-            const headerHeight = header?.getBoundingClientRect
-              ? header.getBoundingClientRect().height
-              : 0;
+            const headerHeight = header?.getBoundingClientRect ? header.getBoundingClientRect().height : 0;
             const targetTop = getHeadingTopInDocument(target);
             const scrollTop = computeScrollTop({ targetTop, headerHeight });
 
             try {
               win.scrollTo({ top: scrollTop, behavior: 'smooth' });
-              history.pushState(null, '', `#${id}`);
+              win.history.pushState(null, '', `#${id}`);
             } catch (e) {
               win.location.hash = `#${id}`;
             }
@@ -989,7 +972,6 @@
 
         expandTocAncestorsForLink(link);
 
-        // Keep the active TOC entry visible inside a long TOC container.
         try {
           const height = toc.clientHeight || 0;
           if (height > 0 && toc.scrollHeight > height) {
@@ -1011,10 +993,6 @@
       states.push({ toc, tocLinks, setActive });
     });
 
-    // Store states so a single global listener can update all TOCs.
-    // Note: for very short articles we may choose to hide desktop TOC(s), which
-    // makes `states` empty. We still need deep-link (#hash) offset scroll to work,
-    // so do NOT early-return when states.length === 0.
     try {
       win.__xdlkcTocScrollSpy = win.__xdlkcTocScrollSpy || {};
       win.__xdlkcTocScrollSpy.states = states;
@@ -1033,7 +1011,6 @@
       const headingMeta = Array.isArray(bag.headingMeta) ? bag.headingMeta : [];
       const states2 = Array.isArray(bag.states) ? bag.states : [];
 
-      // Recompute tops on resize/font load.
       for (let i = 0; i < headingMeta.length; i++) {
         const el = doc.getElementById(headingMeta[i].id);
         if (!el) continue;
@@ -1054,30 +1031,26 @@
         }
       });
 
-      // Sync URL hash to the active heading while scrolling.
-      // Use replaceState to avoid polluting back/forward history.
-      // Guard: if current hash points to a non-heading anchor, don't override it.
       try {
         if (!id) return;
-        const loc = win?.location || globalThis?.location;
-        const rawHash = String(loc?.hash || '');
+        const loc = win?.location;
+        const rawHash = String(loc?.hash || '').trim();
         const currentId = rawHash && rawHash.startsWith('#') ? rawHash.slice(1) : '';
         const headingIds = new Set(headingMeta.map((h) => String(h?.id || '')));
 
         if (currentId && !headingIds.has(currentId)) return;
 
         if (rawHash !== `#${id}`) {
-          history.replaceState(null, '', `#${id}`);
+          win.history.replaceState(null, '', `#${id}`);
         }
       } catch {
         // ignore
       }
     };
 
-    // Deep links (#hash): apply an offset scroll so the heading isn't covered by fixed header.
     const scrollToHashTarget = ({ behavior = 'auto' } = {}) => {
-      const loc = win?.location || globalThis?.location;
-      const raw = String(loc?.hash || '');
+      const loc = win?.location;
+      const raw = String(loc?.hash || '').trim();
       if (!raw || raw === '#') return false;
 
       let id = raw.startsWith('#') ? raw.slice(1) : raw;
@@ -1094,9 +1067,7 @@
       const target = doc.getElementById(id);
       if (!target) return false;
 
-      const headerHeight = header?.getBoundingClientRect
-        ? header.getBoundingClientRect().height
-        : 0;
+      const headerHeight = header?.getBoundingClientRect ? header.getBoundingClientRect().height : 0;
       const targetTop = getHeadingTopInDocument(target);
       const scrollTop = computeScrollTop({ targetTop, headerHeight });
 
@@ -1113,20 +1084,18 @@
       }
     };
 
-    // Global listeners (idempotent).
     try {
       const rootEl = doc.documentElement;
       if (rootEl && rootEl.dataset && rootEl.dataset.xdlkcTocGlobalBound !== '1') {
         rootEl.dataset.xdlkcTocGlobalBound = '1';
 
-        // Initial deep-link.
         try {
           scrollToHashTarget({ behavior: 'auto' });
         } catch {
           // ignore
         }
 
-        win.addEventListener?.('hashchange', () => {
+        win.addEventListener('hashchange', () => {
           scrollToHashTarget({ behavior: 'smooth' });
         });
 
@@ -1147,7 +1116,6 @@
       // ignore
     }
 
-    // Initial active sync.
     updateAll();
   }
 

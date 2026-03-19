@@ -42,7 +42,15 @@
       <% } %>
     ></nav>
     <h1><%= page.title %></h1>
-    <p class="article-meta"><span data-i18n-key="post.published">Published</span> <%= date(page.date, 'YYYY-MM-DD') %> (<span data-publish-date="<%= date(page.date, 'YYYY-MM-DDTHH:mm:ssZ') %>">加载中...</span>)<%= updated_label() %> · <span class="article-meta-word-count" data-i18n-key="post.words"><%= post_word_count(page.content) %> 字</span> · <span class="article-meta-reading-time"><%= reading_time(page.content) %> 分钟阅读</span> <span class="article-meta-reading-time-countdown" data-reading-time-countdown aria-live="polite"></span></p>
+    <p class="article-meta">
+      <span data-i18n-key="post.published">Published</span>
+      <span class="article-meta-date"><%= date(page.date, 'YYYY-MM-DD') %></span>
+      (<span data-publish-date="<%= date(page.date, 'YYYY-MM-DDTHH:mm:ssZ') %>">加载中...</span>)
+      <%- updated_label() %>
+      · <span class="article-meta-word-count"><span data-i18n-key="post.words">Words</span> · <%= post_word_count(page.content) %></span>
+      · <span class="article-meta-reading-time"><span data-i18n-key="post.reading">Reading</span> · <%= reading_time(page.content) %> <span data-i18n-key="post.min">min</span></span>
+      · <span class="article-meta-reading-time-countdown" data-reading-time-countdown aria-live="polite"></span>
+    </p>
     <% if (page.tags && page.tags.length > 0) { %>
       <div class="article-meta-tags" aria-label="Tags">
         <% page.tags.forEach(function(tag, index) { %>
@@ -245,7 +253,6 @@
 </script>
 <% } %>
 
-<script src="<%- url_for('/js/heading-auto-id.js') %>" defer></script>
 <script src="<%- url_for('/js/toc-scrollspy.js') %>" defer></script>
 <script src="<%- url_for('/js/reading-progress.js') %>" defer></script>
 <script src="<%- url_for('/js/reading-time-countdown.js') %>" defer></script>
@@ -255,7 +262,7 @@
 <script src="<%- url_for('/js/post-like.js') %>" defer></script>
 <script src="<%- url_for('/js/post-bookmark.js') %>" defer></script>
 <script src="<%- url_for('/js/post-bookmark-ui.js') %>" defer></script>
-<script src="<%- url_for('/js/image-lightbox.js') %>" defer></script>
+<script src="<%- url_for('/js/image-open.js') %>" defer></script>
 <script src="<%- url_for('/js/mermaid-enhance.js') %>" defer></script>
 <script src="<%- url_for('/js/mermaid-click-to-zoom.js') %>" defer></script>
 <script src="<%- url_for('/js/code-language-label.js') %>" defer></script>
@@ -337,7 +344,7 @@
   window.ArticleLinkCopy?.initArticleLinkCopy();
   window.PostLike?.initPostLike();
   window.PostBookmarkUI?.initPostBookmark?.();
-  window.ImageLightbox?.initImageLightbox();
+  window.ImageOpen?.initImageOpen?.();
   window.CodeLanguageLabel?.initCodeLanguageLabel();
   window.CodeLineNumbers?.initCodeLineNumbers();
   window.ImageLazyLoading?.initImageLazyLoading?.();
