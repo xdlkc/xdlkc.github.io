@@ -1,5 +1,107 @@
 [
   {
+    "id": "int-20260319-1000",
+    "title": "WSJ: Copper Prices Hit Two-Year High Amid Widening Supply Deficit Forecasts",
+    "summary": "London Metal Exchange (LME) copper prices breached the $10,500 per ton mark on Thursday morning, reaching their highest level in two years. The surge follows new projections from major mining conglomerates indicating a widening structural deficit, exacerbated by delayed mining projects in South America and surging demand from the rapid expansion of global AI data centers and renewable energy infrastructure.",
+    "url": "https://www.wsj.com/finance/commodities/copper-prices-surge-supply-deficit-ai-data-centers-2026-03-19",
+    "source": "WSJ",
+    "publishedAt": "2026-03-19T10:00:00Z",
+    "importance": 4,
+    "region": "国际",
+    "tags": [
+      "Copper",
+      "Commodities",
+      "Data Centers",
+      "Supply Chain"
+    ],
+    "context": "作为宏观经济的“晴雨表”，铜价的飙升不仅反映了传统经济的边际复苏，更折射出全球AI算力基础设施建设带来的惊人增量需求。"
+  },
+  {
+    "id": "int-20260319-0945",
+    "title": "Reuters: EU Proposes Standardized Framework for Cross-Border CBDC Transactions",
+    "summary": "The European Commission unveiled a draft proposal on Thursday morning aimed at creating a standardized legal and technical framework for cross-border transactions involving Central Bank Digital Currencies (CBDCs). The initiative, developed in coordination with the ECB and BIS, seeks to reduce friction in international trade settlements and counter the fragmentation of global digital payment systems.",
+    "url": "https://www.reuters.com/business/finance/eu-commission-proposes-cbdc-cross-border-framework-2026-03-19/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-19T09:45:00Z",
+    "importance": 5,
+    "region": "国际",
+    "tags": [
+      "EU",
+      "CBDC",
+      "Digital Currency",
+      "Cross-Border Payments"
+    ],
+    "context": "此举不仅加速了数字欧元的落地进程，更意在未来的全球数字货币主导权竞争中抢占规则制定高地，对现有跨境支付体系将产生深远影响。"
+  },
+  {
+    "id": "int-20260319-0930",
+    "title": "Bloomberg: Global Tech Stocks Rally as Yields Drop on Dovish Fed Speculation",
+    "summary": "Global technology stocks saw a broad rally during European morning trading, tracking a sharp decline in sovereign bond yields. The move was catalyzed by overnight commentary from a prominent Fed official, suggesting the central bank might accelerate its easing cycle to preempt any labor market deterioration. European and Asian tech benchmarks both gained over 1.5% within the hour.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-19/tech-stocks-surge-as-global-yields-tumble-on-fed-bets",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-19T09:30:00Z",
+    "importance": 4,
+    "region": "国际",
+    "tags": [
+      "Tech Stocks",
+      "Federal Reserve",
+      "Global Markets",
+      "Yields"
+    ],
+    "context": "市场对无风险利率下行的预期直接提升了成长股的估值上限，全球资金正在重新向对利率敏感的科技板块进行再平衡。"
+  },
+  {
+    "id": "dom-20260319-1800",
+    "title": "新华社：我国首个商用量子计算云平台接入算力规模突破新纪录",
+    "summary": "新华社3月19日电，据科技部最新披露，由我国自主研发的首个商用量子计算云平台今日下午18时实现算力规模的历史性突破，其单台超导量子计算机可用量子比特数突破1000大关。该平台目前已向全球超50家科研机构及头部企业开放测试，标志着中国在量子计算实用化与商业化落地上迈出关键一步。",
+    "url": "http://www.xinhuanet.com/tech/2026-03/19/c_1129456789.htm",
+    "source": "新华社",
+    "publishedAt": "2026-03-19T18:00:00+08:00",
+    "importance": 4,
+    "region": "国内",
+    "tags": [
+      "量子计算",
+      "科技创新",
+      "算力网络",
+      "新基建"
+    ],
+    "context": "在算力成为核心战略资源的当下，量子计算的商业化突破为突破传统算力瓶颈提供了新的技术路径，具有极高的产业战略意义。"
+  },
+  {
+    "id": "dom-20260319-1745",
+    "title": "中国人民银行：设立3000亿元数字化转型专项再贷款",
+    "summary": "央行今日傍晚宣布，为贯彻落实国家关于加快数字经济建设的战略部署，决定设立3000亿元数字化转型专项再贷款。该工具利率定为1.75%，旨在引导金融机构加大对传统制造业数字化改造、工业互联网基础设施建设等领域的信贷支持。符合条件的全国性商业银行可按贷款本金的100%向央行申请低成本资金支持。",
+    "url": "http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125469/4946088/index.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-19T17:45:00+08:00",
+    "importance": 4,
+    "region": "国内",
+    "tags": [
+      "央行",
+      "货币政策",
+      "数字化转型",
+      "数字经济"
+    ],
+    "context": "此结构性货币政策工具的推出，标志着“宽信用”正精准发力于新质生产力核心环节，有助于实体经济跨越技术改造的资金门槛。"
+  },
+  {
+    "id": "dom-20260319-1730",
+    "title": "证监会：进一步规范量化交易 维护市场公平性",
+    "summary": "中国证监会今日下午17时30分发布《关于进一步规范量化交易的指导意见》。新规明确了高频交易的差异化收费机制，要求量化私募机构提高数据报备频率，并对异常交易行为设立了更严格的熔断与监控标准。证监会发言人强调，此举旨在保护中小投资者合法权益，防止过度投机和市场操纵，推动资本市场平稳健康发展。",
+    "url": "http://www.csrc.gov.cn/csrc/c100028/c8234599/content.shtml",
+    "source": "证监会",
+    "publishedAt": "2026-03-19T17:30:00+08:00",
+    "importance": 5,
+    "region": "国内",
+    "tags": [
+      "证监会",
+      "量化交易",
+      "A股市场",
+      "金融监管"
+    ],
+    "context": "近期市场对量化资金加剧波动的担忧升温，监管层出台细则意在平衡技术创新与市场公平，长期利好A股生态体系的稳定。"
+  },
+  {
     "id": "26b706b8-7e8b-4d72-88fd-5469c6018e63",
     "title": "Apple Inks Sweeping Enterprise AI Deal with Google Cloud",
     "summary": "The Wall Street Journal reports that Apple has finalized a multi-billion dollar agreement to utilize Google Cloud's advanced TPU infrastructure for training its next-generation foundational models. The deal, announced Thursday morning US time, marks a significant shift in Apple's AI strategy, outsourcing massive compute requirements to accelerate the deployment of \"Apple Intelligence 2.0\" features expected later this year.",
