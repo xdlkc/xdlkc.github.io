@@ -1,0 +1,94 @@
+/**
+ * Mobile Responsive Fixes
+ * 移动端响应式修复 - 图片和代码块自适应
+ */
+
+/* 图片响应式 - 确保在移动端不会溢出 */
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 代码块响应式 */
+.article-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* iOS 平滑滚动 */
+}
+
+.article-content code {
+  max-width: 100%;
+  overflow-x: auto;
+  word-wrap: break-word; /* 长代码自动换行 */
+  word-break: break-all; /* 强制断行，防止溢出 */
+}
+
+/* 移动端优化（屏幕宽度小于 768px） */
+@media (max-width: 768px) {
+  /* 图片进一步优化 */
+  .article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; /* 移动端圆角更友好 */
+  }
+
+  /* 代码块移动端优化 */
+  .article-content pre {
+    font-size: 13px; /* 稍小字体 */
+    line-height: 1.5;
+    padding: 12px;
+    margin: 15px 0;
+    overflow-x: auto;
+    border-radius: 4px;
+  }
+
+  .article-content code {
+    font-size: 13px;
+    word-break: break-all;
+    white-space: pre-wrap; /* 代码自动换行 */
+  }
+
+  /* 代码块字体大小调整 */
+  .article-content pre code {
+    font-size: 13px;
+    display: block;
+    overflow-x: auto;
+  }
+
+  /* 行内代码样式 */
+  .article-content :not(pre) > code {
+    font-size: 13px;
+    word-break: break-all;
+    background: var(--card);
+    padding: 2px 4px;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+  }
+}
+
+/* 超小屏幕（小于 480px） */
+@media (max-width: 480px) {
+  .article-content pre {
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px 0;
+    overflow-x: auto;
+  }
+
+  .article-content code {
+    font-size: 12px;
+  }
+
+  .article-content pre code {
+    font-size: 12px;
+  }
+
+  /* 图片超小屏幕优化 */
+  .article-content img {
+    max-width: 100%;
+    height: auto;
+  }
+}
