@@ -167,3 +167,80 @@ h2 {
     flex-wrap: wrap;
   }
 }
+
+/* TOC Styles */
+#toc-container {
+  position: sticky;
+  top: 20px; /* Adjust as needed */
+  padding: 1rem;
+  border-left: 2px solid var(--border);
+  margin-left: 1.5rem;
+  font-size: 0.9em;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-list li {
+  margin-bottom: 0.4rem;
+}
+
+.toc-list a {
+  text-decoration: none;
+  color: var(--muted);
+  display: block;
+  padding: 0.2rem 0;
+  transition: color 0.2s ease;
+}
+
+.toc-list a:hover {
+  color: var(--accent);
+}
+
+.toc-list a.active {
+  color: var(--accent);
+  font-weight: 700;
+  border-left: 2px solid var(--accent);
+  padding-left: 0.5rem;
+  margin-left: -0.5rem; /* Offset to align with border */
+}
+
+.toc-level-3 {
+  padding-left: 1rem; /* Indent for H3 */
+}
+
+.toc-level-3 a.active {
+  padding-left: 0.5rem; /* Adjust for active state indentation */
+  margin-left: -0.5rem;
+}
+
+/* Heading Anchor Styles */
+.heading-anchor-host {
+  position: relative;
+  scroll-margin-top: 70px; /* Offset for fixed header if any */
+}
+
+.heading-anchor {
+  visibility: hidden; /* Hidden by default */
+  text-decoration: none;
+  color: var(--muted);
+  margin-left: 0.5rem;
+  font-size: 0.8em;
+  transition: visibility 0s, opacity 0.2s ease;
+  opacity: 0;
+}
+
+.heading-anchor-host:hover .heading-anchor,
+.heading-anchor:focus {
+  visibility: visible;
+  opacity: 1;
+}
+
+.heading-anchor svg {
+  width: 1em; /* Adjust icon size */
+  height: 1em;
+  vertical-align: middle;
+}
