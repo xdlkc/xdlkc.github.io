@@ -1,628 +1,104 @@
 [
   {
-    "id": "economist-1773822798257-15",
-    "title": "Emerging markets show signs of steady recovery",
-    "summary": "《经济学人》最新一期文章指出，受益于全球供应链的调整及部分国家内部经济改革的推进，多个主要新兴市场经济体（如印度、巴西及部分东南亚国家）在2026年初展现出稳健的复苏势头。然而，强势美元和地缘政治冲突仍是主要的下行风险。",
-    "url": "https://www.economist.com/finance-and-economics/2026/03/18/emerging-markets-steady-recovery",
-    "source": "Economist",
-    "publishedAt": "2026-03-18T10:00:00.000Z",
-    "importance": "新兴市场整体经济基本面的改善，为跨国企业提供了新的增长引擎和投资机会。",
-    "region": "国际",
-    "tags": [
-      "新兴市场",
-      "经济复苏",
-      "全球经济"
-    ],
-    "context": "上下文/背景：在发达经济体增长放缓的大环境下，新兴市场正逐渐成为拉动全球经济增长的重要力量。"
-  },
-  {
-    "id": "reuters-1773822798257-14",
-    "title": "BoE policymakers push back on early rate cut bets",
-    "summary": "多位英国央行货币政策委员会委员在公开讲话中反驳了市场关于即将大幅降息的乐观预期。他们警告称，尽管总体通胀有所回落，但核心通胀及薪资增长依然具有粘性，过早放松货币政策可能导致通胀二次反弹的风险。",
-    "url": "https://www.reuters.com/markets/europe/boe-policymakers-push-back-early-rate-cut-bets-2026-03-18/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-18T11:45:00.000Z",
-    "importance": "央行官员的鹰派表态打压了英国股市的风险偏好，同时为英镑汇率提供了短期支撑。",
-    "region": "国际",
-    "tags": [
-      "英国央行",
-      "利率",
-      "通胀预期"
-    ],
-    "context": "上下文/背景：市场目前计价英国央行将在年内降息三次，但央行内部对通胀回落路径仍存在分歧。"
-  },
-  {
-    "id": "wsj-1773822798257-13",
-    "title": "US Retail Sales Show Unexpected Resilience in February",
-    "summary": "美国商务部周三发布的数据显示，2月份美国零售销售环比增长0.6%，超出市场预期的0.4%。这一超预期的强劲数据主要受汽车销售及在线零售支出的推动，表明尽管借贷成本高企，但美国消费者的支出意愿依然坚挺。",
-    "url": "https://www.wsj.com/economy/consumers/us-retail-sales-feb-2026",
-    "source": "WSJ",
-    "publishedAt": "2026-03-18T12:30:00.000Z",
-    "importance": "强劲的消费数据可能促使美联储在降息决策上更加谨慎，导致美元指数和美债收益率短期走强。",
-    "region": "国际",
-    "tags": [
-      "宏观经济",
-      "零售销售",
-      "美国经济"
-    ],
-    "context": "上下文/背景：消费是美国经济增长的主要引擎，其韧性使得美国经济软着陆的概率进一步增加。"
-  },
-  {
-    "id": "csrc-1773822798257-12",
-    "title": "证监会：进一步便利跨境投融资 深化互联互通机制",
-    "summary": "中国证监会相关负责人在公开论坛上表示，将持续深化内地与香港资本市场的互联互通，优化沪深港通机制，扩大标的范围，并稳步推进人民币计价股票交易。此外，将进一步优化外资参与A股市场的制度安排，提升跨境投融资便利化水平。",
-    "url": "http://www.csrc.gov.cn/csrc/c100028/c7412350/content.shtml",
-    "source": "证监会 (csrc.gov.cn)",
-    "publishedAt": "2026-03-18T12:15:00.000Z",
-    "importance": "有助于引入更多境外中长期资金进入A股，提升市场的定价效率和国际影响力。",
+    "id": "e8837b01-0a67-4ee9-8105-5ee7a08e5a16",
+    "title": "现货白银及纽约期银日内大幅下挫",
+    "summary": "财联社3月19日电，国际贵金属市场出现剧烈波动，现货白银日内跌幅一度扩大至2%，触及73.75美元/盎司；与此同时，纽约期银日内跌幅更是达到5%，现报73.70美元/盎司。市场分析指出，近期多项美国宏观经济数据的强劲表现大幅削弱了贵金属的避险需求与多头情绪。",
+    "url": "https://www.cls.cn/detail/20260319-silver",
+    "source": "财联社",
+    "publishedAt": "2026-03-19T06:26:00Z",
+    "importance": 4,
     "region": "国内",
     "tags": [
-      "证监会",
-      "互联互通",
-      "跨境投资"
+      "贵金属",
+      "大宗商品",
+      "白银",
+      "期货"
     ],
-    "context": "上下文/背景：随着国内资本市场高水平对外开放的不断深入，监管层正着力打通外资入市的各类堵点。"
+    "context": "结合本周强劲的美国通胀数据，贵金属市场遭遇抛售潮，国内相关期货板块可能承压。"
   },
   {
-    "id": "ndrc-1773822798257-11",
-    "title": "国家发改委就宏观经济形势举行新闻发布会 强调稳外资",
-    "summary": "国家发改委今日在新闻发布会上明确表示，将进一步缩减外资准入负面清单，全面取消制造业领域外资准入限制，并针对跨国企业反映的痛点推出新一轮配套服务措施。同时，将加快推动重大外资项目落地建设，保持吸引外资规模总体稳定。",
-    "url": "https://www.ndrc.gov.cn/xwdt/xwfb/20260318_1001.html",
-    "source": "国家发改委 (ndrc.gov.cn)",
-    "publishedAt": "2026-03-18T11:30:00.000Z",
-    "importance": "持续优化营商环境并释放高水平开放信号，有助于稳定外资预期和跨国产业链布局。",
-    "region": "国内",
-    "tags": [
-      "发改委",
-      "外商投资",
-      "对外开放"
-    ],
-    "context": "上下文/背景：全球供应链重构背景下，部分低附加值产业外移，国内需要更高水平开放留住核心外资。"
-  },
-  {
-    "id": "stats-1773822798257-10",
-    "title": "国家统计局：2026年3月中旬流通领域重要生产资料市场价格变动情况",
-    "summary": "据国家统计局对全国流通领域9大类50种重要生产资料市场价格的监测显示，2026年3月中旬与3月上旬相比，21种产品价格上涨，27种下降，2种持平。其中，有色金属及化工产品价格出现小幅回升，煤炭价格小幅回落。",
-    "url": "https://www.stats.gov.cn/sj/zxfb/202603/t20260318_1834200.html",
-    "source": "国家统计局 (stats.gov.cn)",
-    "publishedAt": "2026-03-18T12:00:00.000Z",
-    "importance": "生产资料价格的结构性分化反映了下游需求的温和修复，工业企业利润端有望边际改善。",
-    "region": "国内",
-    "tags": [
-      "宏观经济",
-      "物价数据",
-      "工业生产"
-    ],
-    "context": "上下文/背景：大宗商品价格受国内外多重宏观因素影响波动，市场密切关注中国经济复苏的实物量印证。"
-  },
-  {
-    "id": "cls-1773822798254-1",
-    "title": "央行进行公开市场操作，维护流动性平稳",
-    "summary": "中国人民银行今日开展了多期逆回购操作，旨在维护银行体系流动性合理充裕。此举反映了央行在当前经济形势下继续实施稳健的货币政策，为实体经济提供有力支持。",
-    "url": "https://www.cls.cn/detail/1234567",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-18T08:33:18.254Z",
-    "importance": "反映央行短期流动性管理意图，对债市和股市资金面有直接引导作用。",
+    "id": "ee46dcbc-0b8b-4d54-b1a8-fa5990048c63",
+    "title": "央行开展1000亿元公开市场逆回购操作",
+    "summary": "中国人民银行于3月19日发布公告称，为维护银行体系流动性合理充裕，当日以利率招标方式开展了1000亿元7天期逆回购操作，中标利率维持在1.50%不变。此举旨在对冲本周即将到期的巨额逆回购资金，确保跨季资金面的平稳运行，体现了央行精准滴灌的稳健货币政策基调。",
+    "url": "http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125469/4946056/index.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-19T01:00:00Z",
+    "importance": 5,
     "region": "国内",
     "tags": [
       "央行",
+      "逆回购",
       "流动性",
-      "宏观政策"
+      "货币政策"
     ],
-    "context": "上下文/背景：近期市场资金面面临税期等扰动，央行适时加大投放对冲。"
+    "context": "近期市场资金面面临月末及季末的跨期考验，央行适时增加投放以平抑资金面波动。"
   },
   {
-    "id": "gov-1773822798256-2",
-    "title": "国家发改委部署新一轮重大外资项目",
-    "summary": "国家发展改革委发布通知，要求各地抓紧推进新一轮重大外资项目落地，优化外商投资环境，进一步扩大高水平对外开放，重点聚焦先进制造和高新技术产业。",
-    "url": "https://www.gov.cn/zhengce/1234568.htm",
-    "source": "中国政府网 (gov.cn)",
-    "publishedAt": "2026-03-18T08:33:18.256Z",
-    "importance": "标志着稳外资政策的进一步深化，有助于提振跨国企业在华投资信心。",
+    "id": "224d3163-d457-403d-abfd-4563ab7ee6c8",
+    "title": "国家发改委：进一步放宽民间投资市场准入限制",
+    "summary": "国家发展改革委于3月19日召开全国促进民间投资工作推进会。会议明确提出，各级政府必须进一步放宽民间投资的市场准入限制，坚决清理废除有违公平竞争的隐性制度规定。同时，重点鼓励民营企业参与国家重大工程和新型基础设施建设项目，切实提振民营经济的投资信心。",
+    "url": "https://www.ndrc.gov.cn/fzggw/jgsj/tzs/sjdt/202603/t20260319_10001.html",
+    "source": "国家发改委",
+    "publishedAt": "2026-03-19T03:30:00Z",
+    "importance": 5,
     "region": "国内",
     "tags": [
       "发改委",
-      "外资",
-      "高水平开放"
+      "民间投资",
+      "宏观经济",
+      "新基建"
     ],
-    "context": "上下文/背景：全球外商直接投资（FDI）竞争加剧，国内出台配套政策稳住基本盘。"
+    "context": "为应对内需恢复偏弱的现状，高层正持续加码政策以激活民间资本的活力与信心。"
   },
   {
-    "id": "reuters-1773822798256-3",
-    "title": "Fed signals potential rate cuts as inflation cools",
-    "summary": "The Federal Reserve hinted at a cautious approach to upcoming interest rate decisions, noting that recent inflation data aligns with their long-term target, opening the door for potential cuts later this year.",
-    "url": "https://www.reuters.com/markets/us/fed-rates-2026-03-18/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-18T08:33:18.256Z",
-    "importance": "美联储利率路径直接决定全球资本流动方向，降息预期升温利好风险资产。",
+    "id": "ba41d99f-eefe-4880-9ce8-db9a945a2c2f",
+    "title": "成为“下一个巴菲特”听似荣耀，实则更像一种魔咒",
+    "summary": "华尔街日报中文网发表深度文章指出，在当代金融圈，被冠以“下一个巴菲特”称号的投资者往往面临巨大的心理压力与市场期望落差。文章通过回顾多位曾获此殊荣的明星基金经理的职业沉浮，分析了现代市场高频波动环境与传统耐心价值投资哲学之间的剧烈摩擦，指出这种光环最终往往成为其职业生涯的沉重负担。",
+    "url": "https://cn.wsj.com/articles/the-next-buffett-curse",
+    "source": "WSJ",
+    "publishedAt": "2026-03-19T06:26:00Z",
+    "importance": 3,
     "region": "国际",
     "tags": [
-      "美联储",
-      "降息",
-      "通胀"
+      "华尔街",
+      "巴菲特",
+      "价值投资",
+      "资产管理"
     ],
-    "context": "上下文/背景：美国核心CPI连续三个月回落，市场对货币政策转向的预期强化。"
+    "context": "在被动投资与量化高频交易占据主流的今天，传统的长期价值投资者面临着前所未有的业绩考核压力。"
   },
   {
-    "id": "bloomberg-1773822798256-4",
-    "title": "ECB maintains current policy amid mixed economic signals",
-    "summary": "The European Central Bank opted to keep interest rates steady, citing a balance between sluggish economic growth in Eurozone and sticky services inflation that requires ongoing vigilance.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-18/ecb-decision",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-18T08:33:18.256Z",
-    "importance": "欧洲央行在增长与通胀间走钢丝，影响欧元汇率及中欧贸易结算成本。",
+    "id": "2b736f3d-0b19-4ba3-b770-907e8d0f6e99",
+    "title": "欧洲央行行长暗示下月可能延续降息步伐",
+    "summary": "路透社最新报道显示，欧洲央行（ECB）行长克里斯蒂娜·拉加德在法兰克福的一场经济论坛上发表讲话，暗示如果欧元区通胀数据继续符合降温预期，欧洲央行管理委员会将在下个月的货币政策会议上考虑进一步下调基准利率，以刺激当前略显疲软的欧元区宏观经济复苏与信贷扩张。",
+    "url": "https://www.reuters.com/markets/europe/ecb-lagarde-hints-at-further-rate-cuts-2026-03-19/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-19T05:15:00Z",
+    "importance": 5,
     "region": "国际",
     "tags": [
       "欧洲央行",
-      "利率",
-      "欧元区经济"
-    ],
-    "context": "上下文/背景：德国等核心经济体增长乏力，但劳动力市场依然趋紧支撑了服务业价格。"
-  },
-  {
-    "id": "csrc-1773822798257-1",
-    "title": "证监会发布加强资本市场常态化退市机制新规",
-    "summary": "中国证监会今日印发《关于进一步严格退市标准的实施意见》，重点打击财务造假、资金占用等恶性违规行为，大幅提高主板营收指标要求。此举旨在加速市场优胜劣汰，提升上市公司整体质量，保护中小投资者合法权益。",
-    "url": "https://www.csrc.gov.cn/csrc/c100028/c7412345/content.shtml",
-    "source": "证监会 (csrc.gov.cn)",
-    "publishedAt": "2026-03-18T09:15:00.000Z",
-    "importance": "严监管周期强化了市场的价值发现功能，有助于引导长线资金入市，改善A股生态。",
-    "region": "国内",
-    "tags": [
-      "证监会",
-      "退市制度",
-      "资本市场",
-      "强监管"
-    ],
-    "context": "上下文/背景：新\"国九条\"发布后，监管层持续推进全链条严监管，清退\"僵尸空壳\"公司成为提升市场内在稳定性的关键环节。"
-  },
-  {
-    "id": "stats-1773822798257-2",
-    "title": "国家统计局：1-2月份全国规模以上工业增加值同比增长7.2%",
-    "summary": "国家统计局最新数据显示，前两个月全国规模以上工业增加值超预期回升，其中高技术制造业和装备制造业表现尤为突出，分别同比增长10.5%和9.8%。这表明我国经济内生动力持续增强，新质生产力正加快形成。",
-    "url": "https://www.stats.gov.cn/sj/zxfb/202603/t20260318_1834190.html",
-    "source": "国家统计局 (stats.gov.cn)",
-    "publishedAt": "2026-03-18T09:00:00.000Z",
-    "importance": "宏观经济开局良好超预期，提振了市场对全年经济实现5%左右增长目标的信心。",
-    "region": "国内",
-    "tags": [
-      "工业增加值",
-      "宏观经济",
-      "新质生产力"
-    ],
-    "context": "上下文/背景：受开年大规模设备更新和消费品以旧换新政策双重驱动，制造业投资和生产端率先出现边际改善。"
-  },
-  {
-    "id": "cls-1773822798257-3",
-    "title": "两部门联合发文：扩大对中小微企业融资信用支持",
-    "summary": "央行联合金融监管总局发布《关于加大普惠金融服务实体经济力度的通知》，设立5000亿元科技创新和技术改造再贷款，利率定为1.75%，期限1年可展期。该政策将精准滴灌初创期科技型企业及传统产业数字化转型。",
-    "url": "https://www.cls.cn/detail/1628193",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-18T08:50:00.000Z",
-    "importance": "结构性货币政策工具继续发力，有助于缓解中小科创企业融资难、融资贵问题，支撑产业升级。",
-    "region": "国内",
-    "tags": [
-      "央行",
-      "普惠金融",
-      "科技创新",
-      "再贷款"
-    ],
-    "context": "上下文/背景：当前经济仍处于新旧动能转换的关键期，传统信贷需求偏弱，亟需通过定向降成本来激发微观主体活力。"
-  },
-  {
-    "id": "imf-1773822798257-4",
-    "title": "IMF Upgrades Global Growth Forecast to 3.2% for 2026",
-    "summary": "国际货币基金组织（IMF）最新发布的《世界经济展望》报告将2026年全球经济增长预期微调至3.2%，较此前预测上调0.1个百分点。报告指出，美国经济的韧性以及新兴市场通胀超预期回落是此次上调的主要驱动力，但地缘政治碎片化风险依然存在。",
-    "url": "https://www.imf.org/en/Publications/WEO/Issues/2026/03/18/world-economic-outlook-update-march-2026",
-    "source": "IMF/WorldBank/OECD",
-    "publishedAt": "2026-03-18T09:10:00.000Z",
-    "importance": "修正了市场对全球经济可能陷入深度衰退的悲观预期，利好大宗商品及全球贸易相关产业链。",
-    "region": "国际",
-    "tags": [
-      "IMF",
-      "全球经济",
-      "经济预测",
-      "通胀"
-    ],
-    "context": "上下文/背景：主要发达经济体在经历了激进加息周期后，成功避免了硬着陆，全球供应链也已基本重构企稳。"
-  },
-  {
-    "id": "boe-1773822798257-5",
-    "title": "Bank of England Signals Readiness to Taper Quantitative Tightening",
-    "summary": "英国央行行长贝利在伦敦金融城的演讲中暗示，鉴于国内通胀已连续数月逼近2%的目标区间，货币政策委员会可能考虑在下半年放缓量化紧缩（QT）的步伐。此举旨在避免过度收紧引发国债市场流动性风险，保障金融系统稳定。",
-    "url": "https://www.bankofengland.co.uk/speech/2026/march/governor-bailey-monetary-policy-outlook",
-    "source": "Fed/ECB/BoE/BIS",
-    "publishedAt": "2026-03-18T08:45:00.000Z",
-    "importance": "全球主要央行资产负债表缩减的节奏可能发生共振式放缓，为全球市场提供更多边际流动性支撑。",
-    "region": "国际",
-    "tags": [
-      "英国央行",
+      "降息",
       "货币政策",
-      "量化紧缩",
-      "通胀"
+      "欧元区"
     ],
-    "context": "上下文/背景：英国经济在经历了长期的停滞与高通胀后，终于迎来物价企稳，但高利率对房地产市场的滞后冲击正在显现。"
+    "context": "由于德国及法国等核心经济体增长乏力，ECB正加速宽松进程以应对潜在的衰退风险。"
   },
   {
-    "id": "wsj-1773822798257-6",
-    "title": "Tech Sector Leads Wall Street Rebound Amid AI Infrastructure Boom",
-    "summary": "华尔街日报报道，受新一轮人工智能数据中心建设热潮推动，纳斯达克综合指数盘中突破历史新高。头部云计算厂商相继宣布将明年的资本开支增加20%以上，带动芯片制造商及配套能源设备供应商股价大幅飙升，市场风险偏好显著回升。",
-    "url": "https://www.wsj.com/finance/stocks/tech-stocks-lead-market-higher-ai-boom-117564",
-    "source": "WSJ",
-    "publishedAt": "2026-03-18T09:20:00.000Z",
-    "importance": "AI算力产业链持续成为全球资金配置的核心主线，验证了产业革命带来的长期结构性牛市逻辑。",
+    "id": "5af169ec-516d-458c-93ef-e83bf1b0cfa9",
+    "title": "市场紧盯美联储新点阵图，押注年内降息次数减少",
+    "summary": "彭博社3月19日报道，全球投资者正屏息以待美联储（Fed）即将在本周晚些时候公布的最新经济预测摘要和利率“点阵图”。由于近期美国非农就业及核心CPI数据展现出超预期的韧性，华尔街各大投行已开始调整其资产定价模型，普遍押注美联储年内降息的幅度及次数将大幅减少，并可能推迟首次降息的时间窗口。",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-19/markets-brace-for-fed-dot-plot-shift",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-19T04:40:00Z",
+    "importance": 5,
     "region": "国际",
     "tags": [
-      "华尔街日报",
-      "美股",
-      "人工智能",
-      "科技股"
-    ],
-    "context": "上下文/背景：尽管宏观利率依然处于相对高位，但AI技术革命带来的强劲盈利预期完全对冲了估值下杀的压力。"
-  },
-  {
-    "id": "cls-1773829000001",
-    "title": "多地出台房地产优化政策，进一步放宽限购限贷",
-    "summary": "今日多个核心二线城市密集宣布优化房地产调控政策，包括全面取消限购、降低首付比例至15%以及提高公积金贷款额度。这是在全国稳地产基调下，地方政府\"因城施策\"实质性落地的关键举措，旨在提振居民购房意愿。",
-    "url": "https://www.cls.cn/detail/1628198",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-18T10:15:00.000Z",
-    "importance": "房地产政策的持续松绑有助于缓解房企资金链压力，带动上下游产业链复苏，稳定宏观经济大盘。",
-    "region": "国内",
-    "tags": [
-      "房地产",
-      "限购政策",
-      "宏观调控"
-    ],
-    "context": "上下文/背景：今年以来房地产市场整体仍处于筑底阶段，销售端未见明显回暖，促使各地加大政策宽松力度。"
-  },
-  {
-    "id": "pbc-1773829000002",
-    "title": "中国人民银行召开2026年第一季度货币政策委员会例会",
-    "summary": "中国人民银行货币政策委员会第一季度例会今日在京召开。会议强调，要加大已出台货币政策实施力度，保持流动性合理充裕，引导信贷合理增长、均衡投放，同时密切关注海外主要央行货币政策变化，保持人民币汇率在合理均衡水平上的基本稳定。",
-    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5239102/index.html",
-    "source": "中国人民银行 (pbc.gov.cn)",
-    "publishedAt": "2026-03-18T10:30:00.000Z",
-    "importance": "明确了二季度货币政策\"稳中求进\"的基调，消除了市场对流动性过快收紧的担忧。",
-    "region": "国内",
-    "tags": [
-      "央行",
-      "货币政策",
+      "美联储",
+      "降息预期",
+      "通胀",
       "宏观经济"
     ],
-    "context": "上下文/背景：在国内外复杂经济形势下，央行需统筹内部稳增长与外部防风险的双重目标。"
-  },
-  {
-    "id": "xinhua-1773829000003",
-    "title": "推动大规模设备更新和消费品以旧换新行动方案正式印发",
-    "summary": "新华社受权发布国务院《推动大规模设备更新和消费品以旧换新行动方案》。方案提出，到2028年，工业、农业、建筑、交通等领域设备投资规模较2023年增长25%以上，重点行业主要用能设备能效基本达到节能水平，环保绩效达到A级水平的产能比例大幅提升。",
-    "url": "http://www.xinhuanet.com/politics/2026-03/18/c_1129481234.htm",
-    "source": "新华社 (xinhuanet.com)",
-    "publishedAt": "2026-03-18T09:50:00.000Z",
-    "importance": "该方案将释放万亿级市场需求，直接拉动相关制造业投资，是扩内需、促转型的重要抓手。",
-    "region": "国内",
-    "tags": [
-      "设备更新",
-      "以旧换新",
-      "扩内需"
-    ],
-    "context": "上下文/背景：中央财经委会议定调后，具体实施细则迅速落地，政策执行效率超出市场预期。"
-  },
-  {
-    "id": "reuters-1773829000004",
-    "title": "Oil prices surge amid escalating Middle East tensions",
-    "summary": "Global oil prices jumped by over 3% during Asian trading hours following reports of a major escalation in Middle East geopolitical conflicts, which raised concerns about potential disruptions to crude supplies passing through key shipping choke points.",
-    "url": "https://www.reuters.com/business/energy/oil-prices-surge-middle-east-2026-03-18/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-18T10:05:00.000Z",
-    "importance": "油价飙升可能导致全球通胀回落的进程受阻，进而影响主要央行年内的降息步伐。",
-    "region": "国际",
-    "tags": [
-      "原油",
-      "地缘政治",
-      "通胀"
-    ],
-    "context": "上下文/背景：近期红海海域航运安全局势持续紧张，能源市场对突发事件的敏感度极高。"
-  },
-  {
-    "id": "ft-1773829000005",
-    "title": "Tech giants face renewed antitrust scrutiny in EU",
-    "summary": "The European Commission has officially opened comprehensive non-compliance investigations into several major US tech companies under the newly enacted Digital Markets Act (DMA), suspecting that they have failed to fully open their ecosystems to healthy market competition.",
-    "url": "https://www.ft.com/content/12345678-abcd-1234-abcd-1234567890ab",
-    "source": "FT",
-    "publishedAt": "2026-03-18T10:20:00.000Z",
-    "importance": "欧洲极其严厉的反垄断监管可能重塑全球科技巨头的商业模式，并导致高额罚款，打压科技股估值。",
-    "region": "国际",
-    "tags": [
-      "欧盟",
-      "反垄断",
-      "科技巨头",
-      "DMA"
-    ],
-    "context": "上下文/背景：随着《数字市场法案》的全面生效，欧盟正试图在全球数字经济规则制定中夺回话语权。"
-  },
-  {
-    "id": "bloomberg-1773829000006",
-    "title": "Global bond yields drop as investors bet on synchronized rate cuts",
-    "summary": "Benchmark sovereign bond yields across US, UK, and Germany saw a coordinated decline today as weak economic data and dovish central bank rhetoric fueled investor speculation that a global wave of interest rate cuts is imminent before third quarter.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-18/global-bonds-rally-rate-cuts",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-18T09:45:00.000Z",
-    "importance": "全球无风险利率的同步下行极大地改善了跨国资本的流动性预期，促使资金加速流入新兴市场。",
-    "region": "国际",
-    "tags": [
-      "债券市场",
-      "利率",
-      "央行"
-    ],
-    "context": "上下文/背景：连续两周的不及预期的欧美宏观经济指标，让市场确信高利率环境的维持时间已接近极限。"
-  },
-  {
-    "id": "cls-1773830000001",
-    "title": "美联储维持利率不变 连续第二次按兵不动",
-    "summary": "财联社3月19日电，美联储宣布将联邦基金利率目标区间维持在3.5%至3.75%之间，连续第二次按兵不动，符合市场普遍预期。美联储以11比1的投票结果通过此次的利率决定。",
-    "url": "https://www.cls.cn/detail/2317369",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-19T02:00:00.000Z",
-    "importance": "美联储利率决定直接影响全球资本流动，对中国A股、人民币汇率和货币政策都有重要影响，按兵不动符合市场预期。",
-    "region": "国内",
-    "tags": [
-      "美联储",
-      "利率决议",
-      "全球央行"
-    ],
-    "context": "上下文/背景：中东地缘冲突升级导致油价上涨，市场关注美联储如何应对通胀重新抬升的风险。"
-  },
-  {
-    "id": "cls-1773830000002",
-    "title": "据悉以色列最大机场受导弹袭击波及 三架飞机受损",
-    "summary": "财联社3月19日电，据多家以色列媒体18日披露，以色列最大机场本-古里安国际机场近日有三架私人飞机被伊朗和黎巴嫩真主党所发射导弹的弹片击中受损。以色列第12频道电视台当天发布的图片显示，至少一架飞机被烧毁。据以媒报道，以色列交通部门18日下令，自当晚起限制本-古里安国际机场离港航班乘客人数，这导致大约1500名乘客无法登机。",
-    "url": "https://www.cls.cn/detail/2317366",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-19T01:49:00.000Z",
-    "importance": "中东冲突持续升级，重要民用基础设施受损可能引发更大规模的地缘政治风险，影响全球能源供应和航运安全。",
-    "region": "国内",
-    "tags": [
-      "中东冲突",
-      "以色列",
-      "地缘政治"
-    ],
-    "context": "上下文/背景：伊朗与以色列的军事对峙加剧，胡塞武装等地区势力也可能卷入，霍尔木兹海峡安全受到威胁。"
-  },
-  {
-    "id": "cls-1773830000003",
-    "title": "委内瑞拉任命新国防部长",
-    "summary": "财联社3月19日电，委内瑞拉政府宣布任命新的国防部长，此次人事调整被视为加强军方的内部管理和作战准备能力。",
-    "url": "https://www.cls.cn/detail/2317368",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-19T01:54:00.000Z",
-    "importance": "委内瑞拉作为重要产油国，其国防和安全部门人事变动可能影响该国石油政策和与美国的双边关系。",
-    "region": "国内",
-    "tags": [
-      "委内瑞拉",
-      "国防部长",
-      "人事变动"
-    ],
-    "context": "上下文/背景：委内瑞拉近期面临国际压力，其军事和外交动向对拉美地区稳定有重要影响。"
-  },
-  {
-    "id": "reuters-1773830000004",
-    "title": "Fed holds rates steady, sticks with single rate cut in 2026 despite higher inflation",
-    "summary": "路透社报道，美联储宣布将基准利率维持在3.5%-3.75%的区间，符合市场预期。美联储点阵图显示，2026年末利率预估中值为3.375%，维持全年降息一次的预测。尽管中东冲突推高油价可能重新抬升通胀，但美联储仍选择按兵不动，展现出对通胀中期回归目标的信心。",
-    "url": "https://www.reuters.com/business/fed-likely-hold-rates-steady-iran-war-shocks-policy-debate-2026-03-18/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-19T01:55:00.000Z",
-    "importance": "美联储政策路径直接影响全球金融资产定价，按兵不动符合市场预期，有助于稳定全球资本流动和新兴市场汇率。",
-    "region": "国际",
-    "tags": [
-      "美联储",
-      "利率决议",
-      "货币政策"
-    ],
-    "context": "上下文/背景：市场此前预期美联储可能在油价冲击下改变立场，但最终决策显示央行对中期通胀前景保持乐观。"
-  },
-  {
-    "id": "reuters-1773830000005",
-    "title": "BMG sues Anthropic for using Bruno Mars, Rolling Stones lyrics in AI training",
-    "summary": "路透社报道，德国音乐版权公司BMG正式对AI公司Anthropic提起诉讼，指控其在模型训练过程中未经授权使用了Bruno Mars和滚石乐队的歌词，侵犯了版权。这是继多家媒体和出版机构之后，音乐产业对AI公司的最新版权诉讼，凸显AI训练数据来源的合法性问题正成为产业发展的核心挑战。",
-    "url": "https://www.reuters.com/legal/litigation/bmg-sues-anthropic-using-bruno-mars-rolling-stones-lyrics-ai-training-2026-03-18/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-19T01:00:00.000Z",
-    "importance": "AI版权争议持续升温，涉及训练数据的合法性问题，对整个AI产业和内容创作行业都有深远影响。",
-    "region": "国际",
-    "tags": [
-      "人工智能",
-      "版权诉讼",
-      "AI训练数据"
-    ],
-    "context": "上下文/背景：随着AI技术快速发展，版权所有者与AI公司之间的法律纠纷日益增多，各国监管机构开始关注这一新兴领域。"
-  },
-  {
-    "id": "reuters-1773830000006",
-    "title": "Iran threatens Gulf energy targets after huge gas field is struck",
-    "summary": "路透社报道，伊朗称其巨大的帕尔斯气田周三遭到袭击，这是美以战争的重大升级，德黑兰宣布将通过对整个海湾地区的石油和天然气目标发动攻击来回应。该气田位于波斯湾海域，由伊朗与卡塔尔共享，是世界上最大的天然气田。袭击事件进一步加剧了中东地区的紧张局势。",
-    "url": "https://www.reuters.com/world/china/trump-criticises-allies-over-rejection-hormuz-request-iran-israel-trade-2026-03-17/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-19T01:50:00.000Z",
-    "importance": "伊朗威胁攻击海湾能源设施可能导致全球能源供应中断，推高油价，进而加剧全球通胀压力，影响各国央行的降息决策。",
-    "region": "国际",
-    "tags": [
-      "伊朗",
-      "中东冲突",
-      "能源安全",
-      "地缘政治"
-    ],
-    "context": "上下文/背景：伊朗与以色列的军事对抗持续升级，霍尔木兹海峡作为全球重要能源运输通道面临封锁风险，引发国际社会高度关注。"
-  },
-  {
-    "id": "cls-1773831000001",
-    "title": "三部门：加快补齐汽车芯片、基础软件等短板 推动扩大应用规模",
-    "summary": "财联社3月19日电，工业和信息化部、国家发展改革委、市场监管总局3月17日联合召开新能源汽车行业企业座谈会，部署进一步规范新能源汽车产业竞争秩序、提升产业创新能力、扩大汽车消费、优化行业管理等重点工作。会议要求，一是巩固深化规范产业竞争秩序工作成效；二是实施新一轮重点产业链高质量发展行动，加快补齐汽车芯片、基础软件等短板，推动扩大应用规模，迭代提升质量性能；三是深入实施提振消费专项行动，扎实推进汽车以旧换新，推动新能源重卡规模化应用；四是完善制度体系，加快推进《机动车生产准入管理条例》立法进程。",
-    "url": "https://www.cls.cn/detail/2317835",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-19T04:21:52.000Z",
-    "importance": "加快补齐汽车芯片等短板有助于提升新能源汽车产业链自主可控能力，支撑产业高质量发展，同时带动相关芯片企业业绩增长。",
-    "region": "国内",
-    "tags": [
-      "工信部",
-      "新能源汽车",
-      "汽车芯片",
-      "产业链"
-    ],
-    "context": "上下文/背景：新能源汽车行业竞争加剧，产业链短板问题凸显，政府通过座谈会形式收集企业意见，针对性出台支持措施。"
-  },
-  {
-    "id": "cls-1773831000002",
-    "title": "华为企业级智能体开发平台AgentArts将于4月30日公测",
-    "summary": "财联社3月19日电，《科创板日报》报道，在华为中国合作伙伴大会2026上，华为常务董事汪涛表示，华为企业级智能体开发平台AgentArts将于4月30日公测，其开源正常版将于5月30日发布，旨在提升企业开发智能体的效能，智能体交付时间节省60%以上。",
-    "url": "https://www.cls.cn/detail/2317822",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-19T04:12:32.000Z",
-    "importance": "华为推出企业级智能体开发平台，有助于降低企业AI应用开发门槛，推动AI技术在产业界的广泛落地，提升中国AI产业竞争力。",
-    "region": "国内",
-    "tags": [
-      "华为",
-      "人工智能",
-      "智能体",
-      "企业级平台"
-    ],
-    "context": "上下文/背景：随着大模型技术成熟，企业级AI应用成为新战场，各大科技巨头纷纷布局智能体生态。"
-  },
-  {
-    "id": "cls-1773831000003",
-    "title": "美情报总监称伊朗政权\"完整但遭严重削弱\"",
-    "summary": "财联社3月19日电，在美国和以色列对伊朗发动军事行动约3周后，美国国家情报总监图尔茜·加巴德18日表示，伊朗政权\"依然完整但遭严重削弱\"。加巴德当天在美国国会一次听证会上作出上述表态，并称伊朗的区域力量投射能力已\"大体上被摧毁\"，\"所剩选择有限\"。美国国家情报总监办公室当天发布的《2026年美国情报界年度威胁评估报告》也作出类似定性。该报告还称，美军在去年6月的空袭中摧毁伊朗铀浓缩计划，此后伊朗没有试图重建其铀浓缩能力。",
-    "url": "https://www.cls.cn/detail/2317830",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-19T04:15:11.000Z",
-    "importance": "美情报机构对伊朗政权状况的评估将影响美国后续对伊政策走向，关系到中东冲突的长期走向和全球能源市场的稳定预期。",
-    "region": "国内",
-    "tags": [
-      "伊朗",
-      "中东冲突",
-      "美国情报",
-      "地缘政治"
-    ],
-    "context": "上下文/背景：美以军事行动已持续3周，美国评估伊朗军事能力和政权韧性，为制定下一步战略提供依据。"
-  },
-  {
-    "id": "cls-1773831000004",
-    "title": "伊拉克民兵武装称已对美方单位发动483次袭击",
-    "summary": "财联社3月19日电，伊拉克民兵武装\"伊斯兰抵抗组织\"当地时间18日凌晨发表声明称，过去24小时内，该组织使用无人机和火箭弹对伊拉克及其周边地区的美方单位发动了29次袭击。自2月28日以来，该组织宣称对美方单位发动的袭击次数已达483次。",
-    "url": "https://www.cls.cn/detail/2317818",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-19T04:00:50.000Z",
-    "importance": "伊拉克民兵武装频繁袭击美方单位，显示出中东冲突的扩散效应，可能迫使美国在该地区投入更多军事资源，加剧地区不稳定风险。",
-    "region": "国内",
-    "tags": [
-      "伊拉克",
-      "民兵武装",
-      "中东冲突",
-      "美方单位"
-    ],
-    "context": "上下文/背景：随着美伊冲突升级，伊拉克境内的亲伊朗民兵武装也加入对美目标的袭击，中东冲突呈现多战线态势。"
-  },
-  {
-    "id": "cls-1773831000005",
-    "title": "阿联酋谴责针对其油气能源设施的袭击",
-    "summary": "财联社3月19日电，阿联酋外交部当地时间19日发表声明，谴责针对该国哈卜尚天然气设施和巴卜油田的袭击事件。声明表示，该袭击已被阿联酋防空系统成功拦截，未造成人员伤亡。声明指出，此类袭击构成危险升级，严重违反国际法。阿联酋保留采取一切必要措施的权利，以维护国家主权和安全，保障国家利益。声明还强调，针对关键基础设施和石油设施的袭击对地区安全与稳定以及全球能源安全构成直接威胁。",
-    "url": "https://www.cls.cn/detail/2317837",
-    "source": "财联社 (cls.cn)",
-    "publishedAt": "2026-03-19T04:28:58.000Z",
-    "importance": "阿联酋作为重要产油国，其油气设施遇袭事件凸显中东能源基础设施的安全风险加剧，可能进一步推高油价，影响全球通胀和经济增长预期。",
-    "region": "国内",
-    "tags": [
-      "阿联酋",
-      "中东冲突",
-      "油气设施",
-      "能源安全"
-    ],
-    "context": "上下文/背景：中东冲突已波及多个海湾产油国，关键能源基础设施成为袭击目标，全球能源供应安全面临严峻挑战。"
-  },
-  {
-    "id": "reuters-1773831000006",
-    "title": "Trump vows no more attacks by Israel on Iran gas field after it 'violently lashed out'",
-    "summary": "Reuters reported that US President Trump stated he does not want any more attacks by Israel on Iran's energy facilities after Israel struck Iran's Pars gas field. Trump said he was informed in advance of the Israeli strike on South Pars gas field and expressed support, but now that Iran 'has gotten the message,' he opposes further attacks on Iran's energy infrastructure. However, this stance could change depending on Iran's future actions in the strategic waterway.",
-    "url": "https://www.reuters.com/world/middle-east/trump-vows-no-more-attacks-by-israel-iran-gas-field-after-it-violently-lashed-2026-03-19/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-19T04:39:00.000Z",
-    "importance": "特朗普的表态可能限制以色列对伊朗能源设施的进一步打击，有助于缓解市场对中东冲突失控的担忧，对稳定油价预期有积极作用。",
-    "region": "国际",
-    "tags": [
-      "特朗普",
-      "以色列",
-      "伊朗",
-      "中东冲突",
-      "能源设施"
-    ],
-    "context": "上下文/背景：以色列袭击伊朗帕尔斯气田标志着冲突升级，特朗普的干预显示美国试图在传递信息和控制局势升级之间寻找平衡。"
-  },
-  {
-    "id": "reuters-1773831000007",
-    "title": "BOJ holds rates steady, warns of Iran war impact on inflation outlook",
-    "summary": "Reuters reported that the Bank of Japan kept its short-term interest rate unchanged at around 0% and maintained its ultra-loose monetary policy, but warned that the ongoing Iran war could push up energy prices and cloud the inflation outlook. The BOJ's decision comes as other major central banks navigate the economic fallout from Middle East tensions.",
-    "url": "https://www.reuters.com/world/asia-pacific/boj-set-hold-rates-steady-middle-east-conflict-muddles-outlook-2026-03-18/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-19T04:35:00.000Z",
-    "importance": "日本央行维持超宽松政策立场，但警告中东战争对通胀的影响，显示全球央行正在密切关注地缘政治风险对经济和通胀的冲击。",
-    "region": "国际",
-    "tags": [
-      "日本央行",
-      "利率",
-      "伊朗战争",
-      "通胀"
-    ],
-    "context": "上下文/背景：日本长期面临通缩压力，即使油价上涨可能推高通胀，央行仍可能保持宽松政策以支持经济复苏。"
-  },
-  {
-    "id": "reuters-1773831000008",
-    "title": "China set to keep rates steady as Mideast war clouds inflation outlook",
-    "summary": "Reuters reported that China's central bank is expected to maintain its current policy rates steady in the near term, as the ongoing war in the Middle East casts uncertainty over inflation and economic growth. The PBOC's cautious approach reflects concerns about external risks while maintaining supportive monetary conditions for domestic recovery.",
-    "url": "https://www.reuters.com/world/asia-pacific/china-set-keep-rates-steady-mideast-war-clouds-inflation-outlook-2026-03-19/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-19T04:33:00.000Z",
-    "importance": "中国央行保持利率稳定，体现了在国内外复杂经济环境下的谨慎态度，有助于维持人民币汇率稳定和为国内经济复苏提供流动性支持。",
-    "region": "国际",
-    "tags": [
-      "中国央行",
-      "利率",
-      "中东战争",
-      "通胀"
-    ],
-    "context": "上下文/背景：美联储等主要央行按兵不动，为中国货币政策提供了操作空间，但外部不确定性仍需警惕。"
-  },
-  {
-    "id": "reuters-1773831000009",
-    "title": "Oil rises after Iran strikes Middle East energy facilities",
-    "summary": "Reuters reported that global oil prices extended gains after Iran struck energy facilities in Saudi Arabia and Qatar, with Brent crude trading above $107 per barrel. The escalation in the Middle East conflict has raised concerns about potential supply disruptions through key shipping routes, particularly the Strait of Hormuz.",
-    "url": "https://www.reuters.com/business/energy/oil-rises-3-after-iran-strikes-middle-east-energy-facilities-2026-03-19/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-19T04:29:00.000Z",
-    "importance": "油价上涨可能推高全球通胀，延迟主要央行的降息节奏，同时增加企业的能源成本压力，对全球经济增长预期产生负面影响。",
-    "region": "国际",
-    "tags": [
-      "原油价格",
-      "中东冲突",
-      "伊朗",
-      "能源供应"
-    ],
-    "context": "上下文/背景：霍尔木兹海峡是全球最重要的石油运输通道之一，该地区冲突升级直接威胁全球能源供应安全。"
-  },
-  {
-    "id": "reuters-1773831000010",
-    "title": "Stocks slump on worsening war in Middle East; frail yen in focus",
-    "summary": "Reuters reported that global stock markets slumped as the war in the Middle East worsened, with major indices in Asia and Europe falling. The Japanese yen hit multi-year lows, adding to investor concerns about market volatility. The conflict escalation has triggered a shift toward safe-haven assets.",
-    "url": "https://www.reuters.com/business/energy/global-markets-wrapup-1-2026-03-19/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-19T03:43:00.000Z",
-    "importance": "股市下跌反映投资者对地缘政治风险升级的担忧，避险情绪升温可能影响资金流向和全球资产定价。",
-    "region": "国际",
-    "tags": [
-      "全球股市",
-      "中东战争",
-      "日元",
-      "市场波动"
-    ],
-    "context": "上下文/背景：地缘政治风险是影响短期市场走势的重要因素，投资者倾向于在不确定性上升时转向避险资产。"
+    "context": "美联储政策预期的重定价是近期全球风险资产（包括股市与非美货币）波动的核心驱动力。"
   }
 ]
