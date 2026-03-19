@@ -1,124 +1,144 @@
+/**
+ * Test suite for image lazy loading functionality.
+ *
+ * This test verifies that all img tags in the rendered HTML
+ * have the loading="lazy" attribute for performance optimization.
+ */
+
 const test = require('node:test');
-const assert = require('node:assert/strict');
-const { JSDOM } = require('jsdom');
+const assert = require('node:assert');
 
-test('ImageLazyLoading: adds loading="lazy" to article content images', () => {
-  const dom = new JSDOM(`<!doctype html><html><body>
-    <article class="article-content">
-      <img src="image1.jpg" alt="Image 1">
-      <img src="image2.jpg" alt="Image 2">
-      <p>Some text</p>
-      <img src="image3.jpg" alt="Image 3">
-    </article>
-  </body></html>`);
+// Mock Hexo filter registration
+const registeredFilters = {};
+const mockHexo = {
+  extend: {
+    filter: {
+      register: (name, fn) => {
+        registeredFilters[name] = fn;
+      }
+    }
+  }
+};
 
-  global.window = dom.window;
-  global.document = dom.window.document;
+// Load the plugin
+let plugin;
+try {
+  plugin = require('../scripts/image-lazy-loading.js');
+  if (typeof plugin === 'function') {
+    plugin(mockHexo);
+  }
+} catch (e) {
+  // Plugin might not exist yet - this is expected in TDD
+}
 
-  const ImageLazyLoading = require('../themes/evan/source/js/image-lazy-loading');
-  ImageLazyLoading.initImageLazyLoading({ root: dom.window.document });
+test('Image Lazy Loading - add loading="lazy" to all img tags', () => {
+  const filter = registeredFilters['after_render:html'];
+  assert.ok(filter, 'after_render:html filter should be registered');
 
-  const images = dom.window.document.querySelectorAll('.article-content img');
-  assert.equal(images.length, 3);
-  images.forEach(img => {
-    assert.equal(img.getAttribute('loading'), 'lazy');
-  });
+  const inputHtml = `
+    <html>
+      <body>
+        <img src="/image1.jpg" alt="Test 1">
+        <img src="/image2.png" alt="Test 2" class="test-class">
+        <img src="https://example.com/image3.gif">
+      </body>
+    </html>
+  `;
 
-  delete global.window;
-  delete global.document;
+  const output = filter(inputHtml, {});
+
+  assert.ok(output.includes('loading="lazy"'), 'Output should contain loading="lazy"');
+  assert.ok(output.includes('src="/image1.jpg"'), 'Should preserve original src attributes');
+  assert.ok(output.includes('alt="Test 1"'), 'Should preserve original alt attributes');
+  assert.ok(output.includes('class="test-class"'), 'Should preserve original class attributes');
 });
 
-test('ImageLazyLoading: does not modify images outside article content', () => {
-  const dom = new JSDOM(`<!doctype html><html><body>
-    <nav>
-      <img src="logo.png" alt="Logo">
-    </nav>
-    <article class="article-content">
-      <img src="content.jpg" alt="Content">
-    </article>
-  </body></html>`);
+test('Image Lazy Loading - should not modify img tags that already have loading attribute', () => {
+  const filter = registeredFilters['after_render:html'];
+  if (!filter) return;
 
-  global.window = dom.window;
-  global.document = dom.window.document;
+  const inputHtml = `
+    <img src="/image1.jpg" loading="eager">
+  `;
 
-  const ImageLazyLoading = require('../themes/evan/source/js/image-lazy-loading');
-  ImageLazyLoading.initImageLazyLoading({ root: dom.window.document });
+  const output = filter(inputHtml, {});
 
-  const navImage = dom.window.document.querySelector('nav img');
-  assert.equal(navImage.getAttribute('loading'), null);
-
-  const contentImage = dom.window.document.querySelector('.article-content img');
-  assert.equal(contentImage.getAttribute('loading'), 'lazy');
-
-  delete global.window;
-  delete global.document;
+  assert.ok(output.includes('loading="eager"'), 'Should preserve existing loading attribute');
 });
 
-test('ImageLazyLoading: preserves existing attributes', () => {
-  const dom = new JSDOM(`<!doctype html><html><body>
-    <article class="article-content">
-      <img src="test.jpg" alt="Test" class="test-class" id="test-id" width="100" height="100">
-    </article>
-  </body></html>`);
+test('Image Lazy Loading - should handle multiple img tags correctly', () => {
+  const filter = registeredFilters['after_render:html'];
+  if (!filter) return;
 
-  global.window = dom.window;
-  global.document = dom.window.document;
+  const inputHtml = `
+    <img src="/img1.jpg">
+    <p>Some text</p>
+    <img src="/img2.png" alt="Test">
+    <img src="/img3.gif" class="image">
+  `;
 
-  const ImageLazyLoading = require('../themes/evan/source/js/image-lazy-loading');
-  ImageLazyLoading.initImageLazyLoading({ root: dom.window.document });
+  const output = filter(inputHtml, {});
 
-  const img = dom.window.document.querySelector('.article-content img');
-  assert.equal(img.getAttribute('src'), 'test.jpg');
-  assert.equal(img.getAttribute('alt'), 'Test');
-  assert.equal(img.getAttribute('class'), 'test-class');
-  assert.equal(img.getAttribute('id'), 'test-id');
-  assert.equal(img.getAttribute('width'), '100');
-  assert.equal(img.getAttribute('height'), '100');
-  assert.equal(img.getAttribute('loading'), 'lazy');
-
-  delete global.window;
-  delete global.document;
+  const matches = output.match(/loading="lazy"/g);
+  assert.ok(matches, 'Should have loading="lazy" attributes');
+  assert.strictEqual(matches.length, 3, 'Should add loading="lazy" to all 3 images');
 });
 
-test('ImageLazyLoading: is idempotent (can be called multiple times)', () => {
-  const dom = new JSDOM(`<!doctype html><html><body>
-    <article class="article-content">
-      <img src="test.jpg" alt="Test">
-    </article>
-  </body></html>`);
+test('Image Lazy Loading - should handle img tags with self-closing syntax', () => {
+  const filter = registeredFilters['after_render:html'];
+  if (!filter) return;
 
-  global.window = dom.window;
-  global.document = dom.window.document;
+  const inputHtml = `<img src="/image.jpg" alt="Test" />`;
 
-  const ImageLazyLoading = require('../themes/evan/source/js/image-lazy-loading');
+  const output = filter(inputHtml, {});
 
-  ImageLazyLoading.initImageLazyLoading({ root: dom.window.document });
-  ImageLazyLoading.initImageLazyLoading({ root: dom.window.document });
-
-  const img = dom.window.document.querySelector('.article-content img');
-  assert.equal(img.getAttribute('loading'), 'lazy');
-
-  delete global.window;
-  delete global.document;
+  assert.ok(output.includes('loading="lazy"'), 'Should add loading="lazy" to self-closing tags');
 });
 
-test('ImageLazyLoading: handles empty article content gracefully', () => {
-  const dom = new JSDOM(`<!doctype html><html><body>
-    <article class="article-content">
-      <p>No images here</p>
-    </article>
-  </body></html>`);
+test('Image Lazy Loading - should preserve all other attributes', () => {
+  const filter = registeredFilters['after_render:html'];
+  if (!filter) return;
 
-  global.window = dom.window;
-  global.document = dom.window.document;
+  const inputHtml = `
+    <img src="/image.jpg" alt="Alt text" class="img-class" id="img-id" style="width: 100px;" data-custom="value">
+  `;
 
-  const ImageLazyLoading = require('../themes/evan/source/js/image-lazy-loading');
-  ImageLazyLoading.initImageLazyLoading({ root: dom.window.document });
+  const output = filter(inputHtml, {});
 
-  // Should not throw an error
-  const images = dom.window.document.querySelectorAll('.article-content img');
-  assert.equal(images.length, 0);
+  assert.ok(output.includes('alt="Alt text"'), 'Should preserve alt');
+  assert.ok(output.includes('class="img-class"'), 'Should preserve class');
+  assert.ok(output.includes('id="img-id"'), 'Should preserve id');
+  assert.ok(output.includes('style="width: 100px;"'), 'Should preserve style');
+  assert.ok(output.includes('data-custom="value"'), 'Should preserve data attributes');
+});
 
-  delete global.window;
-  delete global.document;
+test('Image Lazy Loading - should handle HTML without img tags', () => {
+  const filter = registeredFilters['after_render:html'];
+  if (!filter) return;
+
+  const inputHtml = `<p>Some text without images</p>`;
+
+  const output = filter(inputHtml, {});
+
+  assert.strictEqual(output, inputHtml, 'Should return unchanged HTML when no img tags');
+});
+
+test('Image Lazy Loading - should handle empty input', () => {
+  const filter = registeredFilters['after_render:html'];
+  if (!filter) return;
+
+  const output = filter('', {});
+
+  assert.strictEqual(output, '', 'Should handle empty input');
+});
+
+test('Image Lazy Loading - should handle img tags with mixed quotes', () => {
+  const filter = registeredFilters['after_render:html'];
+  if (!filter) return;
+
+  const inputHtml = `<img src='/image.jpg' alt="Test">`;
+
+  const output = filter(inputHtml, {});
+
+  assert.ok(output.includes('loading="lazy"'), 'Should handle mixed quotes');
 });
