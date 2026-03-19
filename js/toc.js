@@ -1,16 +1,35 @@
-// Auto TOC Generator
-document.addEventListener('DOMContentLoaded', () => {
-    const content = document.querySelector('.post-content');
-    if (!content) return;
-    const headers = content.querySelectorAll('h1, h2, h3, h4');
-    const toc = document.createElement('div');
-    toc.className = 'article-toc';
-    headers.forEach((h, i) => {
-        if (!h.id) h.id = `heading-${i}`;
-        const link = document.createElement('a');
-        link.href = `#${h.id}`;
-        link.textContent = h.textContent;
-        toc.appendChild(link);
+(function() {
+  function slugify(text) {
+    return text.toString().toLowerCase()
+      .replace(/\s+/g, '-')           // Replace spaces with -
+      .replace(/[^\w-]+/g, '')       // Remove all non-word chars
+      .replace(/--+/g, '-')         // Replace multiple - with single -
+      .replace(/^-+/, '')           // Trim - from start of text
+      .replace(/-+$/, '');          // Trim - from end of text
+  }
+
+  function generateHeadingIDs() {
+    const articleContent = document.getElementById('article-content');
+    if (!articleContent) return;
+
+    const headings = articleContent.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    const usedIds = new Set();
+
+    headings.forEach((heading) => {
+      let id = slugify(heading.textContent);
+      let originalId = id;
+      let counter = 1;
+
+      // Ensure uniqueness
+      while (usedIds.has(id)) {
+        id = `${originalId}-${counter}`;
+        counter++;
+      }
+      heading.id = id;
+      usedIds.add(id);
     });
-    document.body.appendChild(toc);
-});
+  }
+
+  // Run on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', generateHeadingIDs);
+})();
