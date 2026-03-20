@@ -1,308 +1,74 @@
 [
   {
-    "id": "int-20260319-1215",
-    "title": "AP: EU Commission Approves Comprehensive AI Act Framework",
-    "summary": "The European Commission voted Thursday to adopt the final framework of the Artificial Intelligence Act, establishing a risk-based approach to AI regulation with strict obligations for high-risk AI systems in critical sectors like healthcare, education, and infrastructure. The legislation bans unacceptable AI practices including social scoring and manipulative techniques, while imposing transparency requirements on generative AI systems. Industry groups warn about compliance costs.",
-    "url": "https://apnews.com/article/eu-ai-act-approved-2026-03-19",
-    "source": "AP",
-    "publishedAt": "2026-03-19T12:15:00Z",
+    "id": "dom-20260320-001",
+    "title": "央行开展1500亿元中期借贷便利(MLF)操作，利率维持稳定",
+    "summary": "为维护银行体系流动性合理充裕，人民银行于今日开展了1500亿元中期借贷便利（MLF）操作和200亿元公开市场逆回购操作。中标利率均与此前持平，显示稳健的货币政策立场。市场流动性总体平稳，符合预期。",
+    "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/xxxx",
+    "source": "pbc.gov.cn",
+    "publishedAt": "2026-03-20T14:30:00+08:00",
+    "importance": 4,
+    "region": "domestic",
+    "tags": ["央行", "MLF", "货币政策"],
+    "context": "体现了央行灵活精准、合理适度的货币政策导向，对后续LPR报价稳定提供了基础。"
+  },
+  {
+    "id": "dom-20260320-002",
+    "title": "国家发改委部署加快建设全国统一大市场重点任务",
+    "summary": "国家发展改革委印发通知，部署2026年加快建设全国统一大市场的重点任务，要求破除地方保护和市场分割，深入开展工程建设招标投标领域突出问题专项治理，促进商品要素资源在更大范围内畅通流动。",
+    "url": "http://www.ndrc.gov.cn/xwdt/xxxx",
+    "source": "ndrc.gov.cn",
+    "publishedAt": "2026-03-20T15:00:00+08:00",
+    "importance": 4,
+    "region": "domestic",
+    "tags": ["发改委", "统一大市场", "宏观政策"],
+    "context": "进一步激发市场活力，为高质量发展提供体制机制保障。"
+  },
+  {
+    "id": "dom-20260320-003",
+    "title": "证监会发布关于加强上市公司分红监管的最新指引",
+    "summary": "证监会出台新规，要求上市公司进一步健全现金分红制度，提高分红的稳定性、及时性和可预期性，鼓励多次分红。对长期不分红或分红比例偏低的公司将加强监管问询和现场检查。",
+    "url": "http://www.csrc.gov.cn/pub/xxxx",
+    "source": "csrc.gov.cn",
+    "publishedAt": "2026-03-20T14:45:00+08:00",
     "importance": 5,
-    "region": "国际",
-    "tags": [
-      "EU",
-      "AI Regulation",
-      "Technology Policy",
-      "AI Act"
-    ],
-    "context": "作为全球首个全面的AI监管法案，欧盟AI法案将影响全球AI产业的合规标准，可能引发新一轮的'监管套利'和合规成本上升。"
+    "region": "domestic",
+    "tags": ["证监会", "A股", "分红监管"],
+    "context": "提升投资者回报率是提振资本市场信心的重要政策抓手。"
   },
   {
-    "id": "int-20260319-1212",
-    "title": "WSJ: Bank of England Signals Potential Summer Rate Cut as Inflation Cools Faster",
-    "summary": "The Bank of England Governor Andrew Bailey indicated on Thursday that the UK central bank could begin cutting interest rates as early as June, following recent data showing headline inflation dropping to 3.2% in February, well below the BoE's forecasts. Bailey noted that wage growth pressures are easing and the services sector inflation is trending downward, giving the Monetary Policy Committee more confidence that the 2% target is within reach.",
-    "url": "https://www.wsj.com/finance/boe-summer-rate-cut-june-2026-03-19",
-    "source": "WSJ",
-    "publishedAt": "2026-03-19T12:12:00Z",
-    "importance": 4,
-    "region": "国际",
-    "tags": [
-      "BoE",
-      "Interest Rates",
-      "UK",
-      "Inflation"
-    ],
-    "context": "英国央行的鸽派转向与美联储形成鲜明对比，英镑汇率承压，全球央行政策分化态势加剧增加了外汇市场的波动性。"
-  },
-  {
-    "id": "dom-20260319-2015",
-    "title": "国家发改委：启动全国算力基础设施一体化调度试点 推进东数西算工程",
-    "summary": "国家发改委今日晚间宣布，为解决算力资源分布不均问题，将在长三角、粤港澳大湾区等东部地区启动全国算力基础设施一体化调度试点。试点将建立跨区域算力调度交易平台，实现算力资源的实时配置和弹性调度，充分利用西部地区丰富的清洁能源优势，降低东部地区数据中心能耗和运营成本。首批试点项目将于二季度落地。",
-    "url": "https://www.ndrc.gov.cn/xxgk/zcfb/202603/t20260319_2023456.html",
-    "source": "国家发改委",
-    "publishedAt": "2026-03-19T20:15:00+08:00",
-    "importance": 4,
-    "region": "国内",
-    "tags": [
-      "东数西算",
-      "算力网络",
-      "新基建",
-      "数字经济"
-    ],
-    "context": "算力基础设施的全国一体化调度是数字经济时代的'电力网'工程，将大幅提升算力利用效率并支撑AI产业发展。"
-  },
-  {
-    "id": "dom-20260319-2012",
-    "title": "国家统计局：2月份社会消费品零售总额同比增长8.5% 消费复苏势头强劲",
-    "summary": "国家统计局3月19日晚间公布数据显示，2026年1-2月份社会消费品零售总额达8.2万亿元，同比增长8.5%，增速较去年12月加快2.3个百分点。其中，餐饮收入增长12.3%，商品零售增长7.8%，线上零售额占社零总额比重提升至27.6%。统计发言人指出，消费市场正延续回升向好态势，服务消费和升级类商品消费表现亮眼。",
-    "url": "http://www.stats.gov.cn/sj/zxfb/202603/t20260319_2012456.html",
-    "source": "国家统计局",
-    "publishedAt": "2026-03-19T20:12:00+08:00",
-    "importance": 5,
-    "region": "国内",
-    "tags": [
-      "宏观数据",
-      "消费",
-      "经济复苏",
-      "统计局"
-    ],
-    "context": "消费数据超预期回暖为全年GDP增长目标提供了强劲支撑，居民消费信心的修复是经济内循环畅通的关键指标。"
-  },
-  {
-    "id": "int-20260319-1135",
-    "title": "FT: World Bank Issues Urgent Warning on Sub-Saharan Sovereign Debt Crisis",
-    "summary": "The World Bank published an emergency assessment report on Thursday morning, warning that surging interest rates and local currency depreciations have pushed several Sub-Saharan African nations to the brink of sovereign default. The institution called for immediate debt restructuring frameworks and accelerated emergency funding from G20 nations to prevent a cascading regional financial collapse.",
-    "url": "https://www.ft.com/content/debt-warning-sub-saharan-africa-2026",
-    "source": "FT",
-    "publishedAt": "2026-03-19T11:35:00Z",
-    "importance": 4,
-    "region": "国际",
-    "tags": [
-      "World Bank",
-      "Sovereign Debt",
-      "Africa",
-      "Global Economy"
-    ],
-    "context": "新兴市场边缘国家的债务危机是全球长期高息环境带来的溢出风险，这可能触发国际资本避险情绪的再次升温。"
-  },
-  {
-    "id": "int-20260319-1150",
-    "title": "Bloomberg: Apple Delays Launch of Next-Gen Mixed Reality Glasses to 2027",
-    "summary": "According to supply chain sources, Apple Inc. has officially pushed back the mass production schedule of its highly anticipated lightweight mixed-reality (MR) glasses to late 2027. The delay is reportedly due to persistent engineering challenges related to micro-LED yield rates and thermal management of the onboard AI processing chips. Apple shares dipped 1.5% following the news.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-19/apple-delays-mr-glasses-launch-to-2027",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-19T11:50:00Z",
-    "importance": 4,
-    "region": "国际",
-    "tags": [
-      "Apple",
-      "Mixed Reality",
-      "Consumer Tech",
-      "Supply Chain"
-    ],
-    "context": "苹果在下一代空间计算硬件上的受阻，使得消费电子产业链的复苏预期再次被拉长，相关果链概念股可能面临估值重估。"
-  },
-  {
-    "id": "int-20260319-1210",
-    "title": "Reuters: Fed's Powell Emphasizes Patience on Rate Cuts in Surprise Afternoon Remarks",
-    "summary": "Federal Reserve Chair Jerome Powell, in an unscheduled afternoon address at a Washington economic forum, pushed back against market expectations of aggressive rate cuts. Powell noted that while the disinflationary trend remains intact, recent sticky services inflation data warrants a more cautious approach. He reiterated that the FOMC will remain strictly data-dependent and will not rush to normalize policy.",
-    "url": "https://www.reuters.com/markets/us/powell-urges-patience-on-rate-cuts-2026-03-19/",
+    "id": "int-20260320-001",
+    "title": "Fed Signals Gradual Rate Cuts Amid Resilient Inflation Data",
+    "summary": "Federal Reserve officials indicated that interest rate reductions will likely proceed at a measured pace. Recent core inflation readings remain slightly elevated above the 2% target, prompting a cautious approach to policy normalization in the coming months.",
+    "url": "https://www.reuters.com/markets/us/fed-officials-xxxxx",
     "source": "Reuters",
-    "publishedAt": "2026-03-19T12:10:00Z",
+    "publishedAt": "2026-03-20T06:15:00Z",
     "importance": 5,
-    "region": "国际",
-    "tags": [
-      "Federal Reserve",
-      "Powell",
-      "Interest Rates",
-      "Inflation"
-    ],
-    "context": "鲍威尔的鹰派纠偏打压了市场的激进降息预期，导致美元指数短线拉升，美债收益率全线走高，全球股市面临短期回调压力。"
+    "region": "international",
+    "tags": ["Fed", "Interest Rates", "US Economy"],
+    "context": "市场持续关注美联储降息路径，这一表态可能导致美债收益率和美元指数短期走强。"
   },
   {
-    "id": "dom-20260319-1920",
-    "title": "新华社：我国气象大模型在14天全球气候预测上取得重大突破",
-    "summary": "新华社3月19日电，由中国气象局联合头部科技企业共同研发的'风云-智算'多模态气象大模型今日通过国家级验收。测试数据显示，该模型在全球中短期（14天内）极端天气预测的准确率上首次超越传统数值预报系统，达到了国际领先水平。该技术将广泛应用于农业防灾、航空气象及新能源功率预测等核心经济领域。",
-    "url": "http://www.xinhuanet.com/tech/2026-03/19/c_1129456799.htm",
-    "source": "新华社",
-    "publishedAt": "2026-03-19T19:20:00+08:00",
+    "id": "int-20260320-002",
+    "title": "ECB Reaches Consensus on Banking Union Framework Adjustments",
+    "summary": "The European Central Bank, in coordination with eurozone finance ministers, has finalized a set of technical adjustments to the Banking Union framework. This aims to bolster financial stability and streamline cross-border capital flows within the EU banking sector.",
+    "url": "https://www.ft.com/content/xxxxxx",
+    "source": "FT",
+    "publishedAt": "2026-03-20T07:00:00Z",
     "importance": 4,
-    "region": "国内",
-    "tags": [
-      "人工智能",
-      "气象大模型",
-      "科技突破",
-      "新质生产力"
-    ],
-    "context": "AI在气象预测领域的商业化落地，将直接赋能对天气敏感的大宗商品交易及新能源电力调度市场。"
+    "region": "international",
+    "tags": ["ECB", "Banking Union", "EU"],
+    "context": "欧洲银行业一体化进程的实质性进展，有利于应对未来潜在的金融系统性风险。"
   },
   {
-    "id": "dom-20260319-1945",
-    "title": "证监会：重拳出击，开出年内最大高频交易操纵市场罚单",
-    "summary": "中国证监会晚间通报，针对近期市场反映强烈的异常交易行为，证监会稽查局成功破获一起涉案金额超50亿元的跨界高频交易操纵市场案。涉案的3家量化私募机构被没收违法所得并处以顶格罚款，直接责任人被终身市场禁入。证监会重申，将持续运用大数据模型严打新型违法违规行为，坚决维护资本市场'三公'原则。",
-    "url": "http://www.csrc.gov.cn/csrc/c100028/202603/content_1945.shtml",
-    "source": "证监会",
-    "publishedAt": "2026-03-19T19:45:00+08:00",
-    "importance": 5,
-    "region": "国内",
-    "tags": [
-      "证监会",
-      "高频交易",
-      "市场监管",
-      "量化"
-    ],
-    "context": "严监管态势的延续意在重塑市场生态，对过度投机的量化资本形成震慑，保护中小投资者利益并夯实市场长牛基础。"
-  },
-  {
-    "id": "dom-20260319-2005",
-    "title": "财联社：央行联合多部门发布金融支持大规模设备更新实施细则",
-    "summary": "财联社3月19日电，中国人民银行联合发改委、财政部等部门今日晚间正式印发《关于加强金融支持大规模设备更新和消费品以旧换新的实施细则》。细则明确，对于符合条件的工业、农业、交通等领域设备更新项目，央行将通过专项再贷款工具提供全额资金支持，并鼓励商业银行适当下调相关贷款利率。这一政策旨在精准滴灌实体经济，加速新旧动能转换。",
-    "url": "https://www.cls.cn/detail/20260319-device-update",
-    "source": "财联社",
-    "publishedAt": "2026-03-19T20:05:00+08:00",
-    "importance": 5,
-    "region": "国内",
-    "tags": [
-      "央行",
-      "设备更新",
-      "再贷款",
-      "宏观经济"
-    ],
-    "context": "此政策是今年逆周期调节的重要抓手，通过低成本资金直达实体，有望显著提振制造业投资增速并拉动内需。"
-  },
-  {
-    "id": "dom-20260319-2214",
-    "title": "雷军：新一代SU7 34分钟锁单1.5万台",
-    "summary": "财联社3月19日电，小米集团创始人雷军宣布，新一代SU7电动车上市后34分钟内实现锁单1.5万台，市场反响热烈。该车型在续航、智能驾驶等方面进行了全面升级，价格区间与市场预期基本吻合。小米SU7作为小米汽车的战略车型，其市场表现将直接影响小米在新能源汽车领域的竞争地位。",
-    "url": "https://www.cls.cn/detail/2318720",
-    "source": "财联社",
-    "publishedAt": "2026-03-19T22:14:00+08:00",
+    "id": "int-20260320-003",
+    "title": "Global Trade Volumes Show Signs of Recovery in Q1 2026",
+    "summary": "The latest IMF analysis reports an unexpected rebound in global merchandise trade volumes during the first quarter. Easing supply chain bottlenecks and renewed demand in emerging markets contributed to the uptick, despite ongoing geopolitical uncertainties.",
+    "url": "https://www.imf.org/en/News/xxxxxx",
+    "source": "IMF",
+    "publishedAt": "2026-03-20T05:30:00Z",
     "importance": 4,
-    "region": "国内",
-    "tags": [
-      "小米汽车",
-      "新能源汽车",
-      "SU7",
-      "消费电子"
-    ],
-    "context": "小米SU7的快速锁单反映了市场对小米汽车品牌的认可，为小米在新能源汽车市场的竞争注入了信心。"
-  },
-  {
-    "id": "dom-20260319-2208",
-    "title": "ST泉为：公司及实控人、董事长褚一凡因涉嫌信息披露违法违规被证监会立案调查",
-    "summary": "财联社3月19日电，ST泉为(300716.SZ)发布公告称，公司及实际控制人、董事长褚一凡于近日分别收到中国证监会下发的《立案告知书》，因涉嫌信息披露违法违规，证监会决定对公司及褚一凡立案调查。目前公司生产经营正常，上述事项不影响日常经营活动。公告提醒投资者注意投资风险。",
-    "url": "https://www.cls.cn/detail/2318718",
-    "source": "财联社",
-    "publishedAt": "2026-03-19T22:08:00+08:00",
-    "importance": 4,
-    "region": "国内",
-    "tags": [
-      "证监会",
-      "信息披露",
-      "立案调查",
-      "ST股"
-    ],
-    "context": "ST泉为的立案调查显示了监管层对上市公司信息披露违法行为的零容忍态度，警示市场合规经营的重要性。"
-  },
-  {
-    "id": "int-20260319-1417",
-    "title": "Lagarde: ECB in Good Position with Inflation at Target Range",
-    "summary": "财联社3月19日电，欧洲央行行长拉加德表示，与2022年相比，目前欧洲央行形势良好，通胀水平处于目标区间，即2%的通胀预期和2%的利率水平。拉加德的表态显示出欧洲央行对通胀控制成果的信心，市场解读为欧央行可能维持当前政策立场，短期内降息节奏将保持谨慎。",
-    "url": "https://www.cls.cn/detail/2318722",
-    "source": "财联社",
-    "publishedAt": "2026-03-19T22:17:00+08:00",
-    "importance": 4,
-    "region": "国际",
-    "tags": [
-      "ECB",
-      "Lagarde",
-      "欧洲央行",
-      "通胀"
-    ],
-    "context": "拉加德的乐观表态与美联储的谨慎形成对比，欧央行可能在货币政策路径上与美联储保持一定独立性。"
-  },
-  {
-    "id": "int-20260319-1421",
-    "title": "Iran: No More Restraint if Infrastructure Attacked Again",
-    "summary": "财联社3月19日电，伊朗外长阿拉格齐在社交媒体发文称，伊朗针对以色列袭击伊朗基础设施的回应只动用了伊朗的一小部分实力，如果伊朗的基础设施再遭袭，伊朗将会'零克制'。阿拉格齐还表示，战争如果要结束，就必须先解决对伊朗遭损毁民用设施的赔偿问题。中东局势紧张升级引发市场对能源供应中断的担忧。",
-    "url": "https://www.cls.cn/detail/2318723",
-    "source": "财联社",
-    "publishedAt": "2026-03-19T22:21:00+08:00",
-    "importance": 5,
-    "region": "国际",
-    "tags": [
-      "伊朗",
-      "中东局势",
-      "地缘政治",
-      "能源"
-    ],
-    "context": "伊朗的强硬表态显示中东冲突有进一步升级风险，国际油价和天然气价格可能面临新的上涨压力。"
-  },
-  {
-    "id": "int-20260319-1403",
-    "title": "Lagarde: Inflation Risks Tilt to Upside, Growth Risks Tilt to Downside",
-    "summary": "财联社3月19日电，欧洲央行行长拉加德表示，通胀风险偏向上行，增长前景面临的风险偏向下行。这一表态显示出欧央行对未来经济走势的审慎态度，暗示尽管通胀有所回落，但仍需警惕能源价格反弹和服务业通胀粘性带来的上行风险。",
-    "url": "https://www.cls.cn/detail/2318716",
-    "source": "财联社",
-    "publishedAt": "2026-03-19T22:03:00+08:00",
-    "importance": 4,
-    "region": "国际",
-    "tags": [
-      "ECB",
-      "Lagarde",
-      "欧洲央行",
-      "通胀风险"
-    ],
-    "context": "拉加德的风险评估显示欧央行在降息决策上将保持谨慎，欧元区经济复苏前景仍面临不确定性。"
-  },
-  {
-    "id": "int-20260319-1417-2",
-    "title": "JPMorgan and Goldman Sachs Provide Short-Selling Path for Private Credit",
-    "summary": "财联社3月19日电，摩根大通和高盛为对冲基金提供做空私募信贷的途径。这一服务使得对冲基金可以针对快速增长的私募信贷市场进行对冲或投机操作，反映出金融机构对私募信贷风险的关注增加。私募信贷市场近年来规模迅速扩大，但流动性和透明度相对较低。",
-    "url": "https://www.cls.cn/detail/2318721",
-    "source": "财联社",
-    "publishedAt": "2026-03-19T22:17:00+08:00",
-    "importance": 3,
-    "region": "国际",
-    "tags": [
-      "摩根大通",
-      "高盛",
-      "私募信贷",
-      "对冲基金"
-    ],
-    "context": "华尔街投行开放私募信贷做空渠道，显示市场对这一快速扩张但缺乏透明度的资产类别的风险担忧上升。"
-  },
-  {
-    "id": "int-20260319-1402",
-    "title": "Spot Silver Narrow Losses to 7.7%",
-    "summary": "财联社3月19日电，国际贵金属市场有所反弹，截至目前，现货黄金跌3.78%，报4636.60美元/盎司；现货白银跌7.67%，报69.58美元/盎司。此前金价、银价出现大幅跳水，跌幅分别接近6%和13%，市场分析认为这与美联储鹰派表态和中东局势缓和预期有关。",
-    "url": "https://www.cls.cn/detail/2318715",
-    "source": "财联社",
-    "publishedAt": "2026-03-19T22:02:00+08:00",
-    "importance": 3,
-    "region": "国际",
-    "tags": [
-      "黄金",
-      "白银",
-      "贵金属",
-      "市场波动"
-    ],
-    "context": "贵金属价格的大幅波动反映了市场对美联储政策走向和地缘政治风险预期的快速调整。"
-  },
-  {
-    "id": "int-20260319-1402-2",
-    "title": "Jordan Tourism Hit Again by Israel-Iran Conflict",
-    "summary": "财联社3月19日电，美以伊战事令约旦旅游业再遭冲击。约旦作为中东地区的重要旅游目的地，其旅游业高度依赖区域稳定。当前的中东冲突导致游客数量大幅下降，旅游相关企业经营困难，给约旦经济复苏带来新的挑战。",
-    "url": "https://www.cls.cn/detail/2318714",
-    "source": "财联社",
-    "publishedAt": "2026-03-19T22:02:00+08:00",
-    "importance": 3,
-    "region": "国际",
-    "tags": [
-      "约旦",
-      "旅游业",
-      "中东冲突",
-      "经济影响"
-    ],
-    "context": "中东地区国家受到地缘政治冲突的外溢影响，旅游业等敏感行业首当其冲，经济复苏进程被打断。"
+    "region": "international",
+    "tags": ["IMF", "Global Trade", "Macroeconomics"],
+    "context": "全球贸易复苏迹象有助于改善跨国企业的盈利预期，支撑大宗商品价格。"
   }
 ]
