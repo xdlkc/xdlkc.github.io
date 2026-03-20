@@ -462,7 +462,7 @@
       button.setAttribute('title', copyButtonTitle({ lang }));
     }
 
-    button.addEventListener('click', async (event) => {
+    const copyButtonClickHandler = async (event) => {
       const rawText = block.type === 'highlight'
         ? extractFromHighlightFigure(container)
         : extractFromPre(container);
@@ -488,7 +488,6 @@
           return;
         }
 
-        showToast(toast, formatCopiedLineMessage(lineCount, { lang }));
         flashCopiedClass(container, { durationMs: 1200 });
         button.textContent = formatCopiedButtonLabel(lineCount, { lang });
         window.setTimeout(() => {
@@ -502,7 +501,8 @@
         selectCodeContent(container, { type: block.type });
         showToast(toast, copyFailureToastText({ lang, withHint: true }));
       }
-    });
+    };
+    button.addEventListener('click', copyButtonClickHandler);
 
     container.appendChild(button);
   }
