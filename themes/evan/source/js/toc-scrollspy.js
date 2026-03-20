@@ -124,14 +124,12 @@
       if (heading.querySelector?.(':scope > .heading-anchor')) return;
 
       const a = doc.createElement('a');
-      a.className = 'heading-anchor';
+      a.className = 'heading-anchor fa fa-link';
       a.setAttribute('href', `#${id}`);
       a.setAttribute('aria-label', label);
       a.setAttribute('title', label);
-      a.textContent = '#'; // Or an SVG icon if desired
+      // No text content here; relying on CSS for icon
 
-      // Append the anchor right after the heading text.
-      // E.g., <h2>Title <a...>#</a></h2>
       heading.appendChild(a);
     });
   }
@@ -420,7 +418,13 @@
       const id = heading.getAttribute('id');
       if (!id) return;
 
-      const text = String(heading.textContent || '').trim();
+      // Clone the heading to extract text without the anchor link.
+      const clonedHeading = heading.cloneNode(true);
+      const anchor = clonedHeading.querySelector(':scope > .heading-anchor');
+      if (anchor) {
+        anchor.remove();
+      }
+      const text = String(clonedHeading.textContent || '').trim(); // Get text from clone
       if (!text) return;
 
       // Normalize unexpected levels into a safe range.
@@ -982,7 +986,10 @@
               linkHeight: link.offsetHeight || 0
             });
             if (Number.isFinite(nextScrollTop) && Math.abs(nextScrollTop - (toc.scrollTop || 0)) > 1) {
-              toc.scrollTop = nextScrollTop;
+              link.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+              });
             }
           }
         } catch {

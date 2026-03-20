@@ -3,8 +3,6 @@ const assert = require('node:assert/strict');
 const { JSDOM } = require('jsdom');
 
 test('TocScrollSpy: auto-generates TOC links when .toc-nav is empty', () => {
-  const TocScrollSpy = require('../themes/evan/source/js/toc-scrollspy');
-
   const dom = new JSDOM(`<!doctype html><html><body>
     <nav class="article-nav"></nav>
 
@@ -22,6 +20,14 @@ test('TocScrollSpy: auto-generates TOC links when .toc-nav is empty', () => {
   global.document = dom.window.document;
   global.history = dom.window.history;
   global.location = dom.window.location;
+  dom.window.localStorage = { // Mock localStorage directly on dom.window
+    getItem: () => null,
+    setItem: () => {},
+    clear: () => {}
+  };
+
+  const TocScrollSpyFactory = require('../themes/evan/source/js/toc-scrollspy');
+  const TocScrollSpy = TocScrollSpyFactory(global.document, global.window);
 
   // JSDOM doesn't do layout; stub the functions used by toc-scrollspy.
   window.requestAnimationFrame = (cb) => cb();
@@ -77,8 +83,6 @@ test('TocScrollSpy: auto-generates TOC links when .toc-nav is empty', () => {
 });
 
 test('TocScrollSpy: does not overwrite existing TOC links', () => {
-  const TocScrollSpy = require('../themes/evan/source/js/toc-scrollspy');
-
   const dom = new JSDOM(`<!doctype html><html><body>
     <nav class="article-nav"></nav>
 
@@ -98,6 +102,14 @@ test('TocScrollSpy: does not overwrite existing TOC links', () => {
   global.document = dom.window.document;
   global.history = dom.window.history;
   global.location = dom.window.location;
+  dom.window.localStorage = { // Mock localStorage directly on dom.window
+    getItem: () => null,
+    setItem: () => {},
+    clear: () => {}
+  };
+
+  const TocScrollSpyFactory = require('../themes/evan/source/js/toc-scrollspy');
+  const TocScrollSpy = TocScrollSpyFactory(global.document, global.window);
 
   window.requestAnimationFrame = (cb) => cb();
   window.scrollTo = () => {};
@@ -119,6 +131,70 @@ test('TocScrollSpy: does not overwrite existing TOC links', () => {
   const html = document.querySelector('.toc-nav').innerHTML;
   assert.ok(html.includes('Keep'));
   assert.ok(!html.includes('New'), 'expected no auto-generated entries when toc already exists');
+
+  delete global.window;
+  delete global.document;
+  delete global.history;
+  delete global.location;
+});
+
+test('TocScrollSpy: generates anchor links for headings', () => {
+  const dom = new JSDOM(`<!doctype html><html><body>
+    <nav class="article-nav"></nav>
+
+    <aside>
+      <nav class="toc-nav"></nav>
+    </aside>
+
+    <main class="article-content">
+      <h2>Intro</h2>
+      <h3>Details</h3>
+    </main>
+  </body></html>`, { url: 'https://example.com/post' });
+
+  global.window = dom.window;
+  global.document = dom.window.document;
+  global.history = dom.window.history;
+  global.location = dom.window.location;
+  dom.window.localStorage = { // Mock localStorage directly on dom.window
+    getItem: () => null,
+    setItem: () => {},
+    clear: () => {}
+  };
+
+  const TocScrollSpyFactory = require('../themes/evan/source/js/toc-scrollspy');
+  const TocScrollSpy = TocScrollSpyFactory(global.document, global.window);
+
+  window.requestAnimationFrame = (cb) => cb();
+  window.scrollTo = () => {};
+
+  const header = document.querySelector('.article-nav');
+  header.getBoundingClientRect = () => ({ height: 0 });
+
+  const h2 = document.querySelector('h2');
+  const h3 = document.querySelector('h3');
+  h2.getBoundingClientRect = () => ({ top: 100 });
+  h3.getBoundingClientRect = () => ({ top: 300 });
+
+  TocScrollSpy.initTocScrollSpy({
+    tocSelector: '.toc-nav',
+    contentSelector: '.article-content',
+    headingSelector: 'h2, h3'
+  });
+
+  console.log('h2 innerHTML before assertion:', h2.innerHTML); // Debug print
+  const h2Anchor = h2.lastElementChild; // Use lastElementChild
+  assert.ok(h2Anchor, 'expected h2 to have an anchor link element');
+  assert.equal(h2Anchor.tagName.toLowerCase(), 'a', 'expected h2 last element child to be an <a>');
+  assert.ok(h2Anchor.outerHTML.includes('class="heading-anchor fa fa-link"'), 'expected h2 anchor outerHTML to contain toc-anchor and fa-link classes');
+  assert.ok(h2Anchor.outerHTML.includes(`href="#${h2.id}"`), 'expected h2 anchor outerHTML to contain correct href');
+
+  console.log('h3 innerHTML before assertion:', h3.innerHTML); // Debug print
+  const h3Anchor = h3.lastElementChild; // Use lastElementChild
+  assert.ok(h3Anchor, 'expected h3 to have an anchor link element');
+  assert.equal(h3Anchor.tagName.toLowerCase(), 'a', 'expected h3 last element child to be an <a>');
+  assert.ok(h3Anchor.outerHTML.includes('class="heading-anchor fa fa-link"'), 'expected h3 anchor outerHTML to contain toc-anchor and fa-link classes');
+  assert.ok(h3Anchor.outerHTML.includes(`href="#${h3.id}"`), 'expected h3 anchor outerHTML to contain correct href');
 
   delete global.window;
   delete global.document;
