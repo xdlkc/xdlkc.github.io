@@ -36,6 +36,18 @@
     "context": "提升投资者回报率是提振资本市场信心的重要政策抓手。"
   },
   {
+    "id": "dom-20260320-004",
+    "title": "财政部：1-2月全国一般公共预算收入同比增长3.1%",
+    "summary": "财政部最新发布数据显示，今年前两个月，全国一般公共预算收入实现平稳增长，增幅为3.1%。其中税收收入占主导，非税收入保持合理水平，反映出宏观经济企稳向好的积极态势。相关支出保障有力，重点向民生和重大战略项目倾斜。",
+    "url": "http://www.xinhuanet.com/fortune/20260320/xxxx.htm",
+    "source": "xinhuanet.com",
+    "publishedAt": "2026-03-20T16:15:00+08:00",
+    "importance": 4,
+    "region": "domestic",
+    "tags": ["财政部", "宏观经济", "预算收入"],
+    "context": "财政收入的稳定增长为实施积极的财政政策提供了资金保障，有助于稳定市场预期。"
+  },
+  {
     "id": "int-20260320-001",
     "title": "Fed Signals Gradual Rate Cuts Amid Resilient Inflation Data",
     "summary": "Federal Reserve officials indicated that interest rate reductions will likely proceed at a measured pace. Recent core inflation readings remain slightly elevated above the 2% target, prompting a cautious approach to policy normalization in the coming months.",
@@ -70,5 +82,17 @@
     "region": "international",
     "tags": ["IMF", "Global Trade", "Macroeconomics"],
     "context": "全球贸易复苏迹象有助于改善跨国企业的盈利预期，支撑大宗商品价格。"
+  },
+  {
+    "id": "int-20260320-004",
+    "title": "Bank of England Maintains Bank Rate at 5.0%, Cites Services Inflation",
+    "summary": "The Bank of England's Monetary Policy Committee voted to maintain the Bank Rate at 5.0%. Despite headline inflation falling towards the 2% target, policymakers emphasized that services inflation and wage growth remain elevated, necessitating a restrictive stance for an extended period.",
+    "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+    "source": "BoE",
+    "publishedAt": "2026-03-20T08:00:00Z",
+    "importance": 5,
+    "region": "international",
+    "tags": ["BoE", "Interest Rates", "UK Economy"],
+    "context": "英国央行的鹰派暂停决议对英镑汇率形成支撑，反映出全球主要央行在抗击通胀最后一英里上的普遍谨慎态度。"
   }
 ]
