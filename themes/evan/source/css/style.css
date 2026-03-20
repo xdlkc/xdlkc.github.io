@@ -1615,3 +1615,21 @@ h2 {
   background: var(--code-block-bg-hover-dark);
   border-color: var(--accent-dark);
 }
+
+/* Code Language Label */
+.article-content figure.highlight .code-lang-label {
+  position: absolute;
+  top: 0;
+  left: 0.8rem;
+  font-size: 0.75rem;
+  color: rgba(31, 35, 40, 0.4);
+  font-family: "SFMono-Regular", "Menlo", "Monaco", "Consolas", monospace;
+  text-transform: uppercase;
+  user-select: none;
+  pointer-events: none;
+  line-height: 2.2;
+}
+
+[data-theme="dark"] .article-content figure.highlight .code-lang-label {
+  color: rgba(229, 231, 235, 0.4);
+}
