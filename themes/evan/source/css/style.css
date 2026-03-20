@@ -1633,3 +1633,34 @@ h2 {
 [data-theme="dark"] .article-content figure.highlight .code-lang-label {
   color: rgba(229, 231, 235, 0.4);
 }
+
+/* Additions for TOC and Anchor Navigation */
+
+/* Style for heading anchor links */
+.article-content .heading-anchor {
+  font-size: 0.8em; /* Slightly smaller than heading text */
+  margin-left: 5px;
+  text-decoration: none;
+  color: var(--color-text-light); /* Lighter color */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.2s ease-in-out;
+}
+
+.article-content h2:hover .heading-anchor,
+.article-content h3:hover .heading-anchor,
+.article-content h4:hover .heading-anchor,
+.article-content h5:hover .heading-anchor,
+.article-content h6:hover .heading-anchor {
+  opacity: 1; /* Visible on heading hover */
+}
+
+/* Style for active TOC link */
+.toc-nav .is-active {
+  color: var(--accent); /* Highlight color for active link */
+  font-weight: bold;
+}
+
+/* Ensure smooth scroll behavior is consistent */
+html {
+  scroll-behavior: smooth;
+}

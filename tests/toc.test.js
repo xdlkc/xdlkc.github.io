@@ -2,175 +2,270 @@
  * @jest-environment jsdom
  */
 
-// Mock the DOM for testing purposes
-beforeEach(() => {
-  document.body.innerHTML = `
-    <div id="article-content">
-      <h2>Section 1</h2>
-      <p>Content of section 1</p>
-      <h3>Subsection 1.1</h3>
-      <p>Content of subsection 1.1</p>
-      <h2>Section 2</h2>
-      <p>Content of section 2</p>
-      <h3>Subsection 2.1</h3>
-      <p>Content of subsection 2.1</p>
-      <h3>Subsection 2.2</h3>
-      <p>Content of subsection 2.2</p>
-    </div>
-    <nav id="toc-container"></nav>
-  `;
-  // Reset history mock for each test
-  history.pushState = jest.fn();
-  history.replaceState = jest.fn();
-  // Mock scrollIntoView for smooth scrolling test
-  window.HTMLElement.prototype.scrollIntoView = jest.fn();
+// Mock IntersectionObserver for scroll highlighting
+class IntersectionObserver {
+  constructor(callback, options) {
+    this.callback = callback;
+    this.options = options;
+    this.observedElements = new Map();
+  }
+
+  observe(target) {
+    this.observedElements.set(target, true);
+  }
+
+  unobserve(target) {
+    this.observedElements.delete(target);
+  }
+
+  disconnect() {
+    this.observedElements.clear();
+  }
+
+  // Helper to manually trigger intersection
+  trigger(entryMap) {
+    const entries = Array.from(this.observedElements.keys()).map(target => {
+      const isIntersecting = entryMap[target.id] || false;
+      return {
+        target,
+        isIntersecting: isIntersecting,
+        intersectionRatio: isIntersecting ? 1 : 0,
+        boundingClientRect: target.getBoundingClientRect(),
+        intersectionRect: target.getBoundingClientRect(),
+        rootBounds: document.documentElement.getBoundingClientRect(),
+        time: Date.now(),
+      };
+    }).filter(Boolean);
+    this.callback(entries, this);
+  }
+}
+
+global.IntersectionObserver = IntersectionObserver;
+
+// Mock window.scrollTo for smooth scroll testing
+const mockScrollTo = jest.fn();
+Object.defineProperty(window, 'scrollTo', { value: mockScrollTo, writable: true });
+
+// Mock other global objects/properties needed for JSDOM and scrolling behavior
+Object.defineProperty(Element.prototype, 'getBoundingClientRect', {
+  writable: true,
+  value: jest.fn(() => ({
+    x: 0, y: 0, width: 0, height: 0, top: 0, right: 0, bottom: 0, left: 0, // Default values
+  })),
+});
+Object.defineProperty(HTMLElement.prototype, 'offsetTop', {
+  writable: true,
+  value: 0, // Default value
+});
+Object.defineProperty(window, 'scrollY', {
+  writable: true,
+  value: 0
+});
+Object.defineProperty(window, 'pageYOffset', {
+  writable: true,
+  value: 0
 });
 
-describe('Table of Contents (TOC) Generation', () => {
-  test.skip('should generate TOC from H2 and H3 headings', () => {
-    const { initTOC } = require('../js/toc');
-    initTOC();
+describe('TOC and Anchor Navigation', () => {
+  let TocScrollSpy;
+  let intersectionObserverInstance;
 
-    const tocContainer = document.getElementById('toc-container');
-    expect(tocContainer).not.toBeNull();
-
-    const tocList = tocContainer.querySelector('ul.toc-list');
-    expect(tocList).not.toBeNull(); // Check if ul.toc-list exists
-
-    const tocItems = tocList.querySelectorAll('li');
-    expect(tocItems.length).toBe(5); // 2 H2 + 3 H3
-
-    expect(tocItems[0].textContent).toBe('Section 1');
-    expect(tocItems[0].classList.contains('toc-level-2')).toBe(true);
-    expect(tocItems[1].textContent).toBe('Subsection 1.1');
-    expect(tocItems[1].classList.contains('toc-level-3')).toBe(true);
-    expect(tocItems[2].textContent).toBe('Section 2');
-    expect(tocItems[2].classList.contains('toc-level-2')).toBe(true);
-  });
-
-  test.skip('should add unique IDs as anchor links to H2 and H3 headings', () => {
-    const { initTOC } = require('../js/toc');
-    initTOC();
-
-    const h2Headings = document.querySelectorAll('#article-content h2');
-    const h3Headings = document.querySelectorAll('#article-content h3');
-
-    h2Headings.forEach(h => {
-      expect(h.id).toBeTruthy();
-      expect(h.querySelector('a.heading-anchor')).not.toBeNull();
-    });
-
-    h3Headings.forEach(h => {
-      expect(h.id).toBeTruthy();
-      expect(h.querySelector('a.heading-anchor')).not.toBeNull();
-    });
-
-    // Check for uniqueness (basic check)
-    const allIds = new Set();
-    document.querySelectorAll('#article-content h2, #article-content h3').forEach(h => {
-      allIds.add(h.id);
-    });
-    expect(allIds.size).toBe(h2Headings.length + h3Headings.length);
-  });
-
-  test.skip('should not generate TOC if no H2 or H3 headings exist', () => {
+  beforeEach(() => {
+    // Reset JSDOM
     document.body.innerHTML = `
       <div id="article-content">
-        <h1>Main Title</h1>
-        <p>Some content</p>
-        <h4>Sub-heading</h4>
+        <h2 id="heading-1">Heading 1</h2>
+        <p>Some content...</p>
+        <h3 id="subheading-1-1">Subheading 1.1</h3>
+        <p>More content...</p>
+        <h2 id="heading-2">Heading 2</h2>
+        <p>Even more content...</p>
       </div>
-      <nav id="toc-container"></nav>
+      <aside id="toc-container">
+        <nav>
+          <ul class="toc-nav">
+            <li><a href="#heading-1">Heading 1</a></li>
+            <li><a href="#subheading-1-1">Subheading 1.1</a></li>
+            <li><a href="#heading-2">Heading 2</a></li>
+          </ul>
+        </nav>
+      </aside>
     `;
 
-    const { initTOC } = require('../js/toc');
-    initTOC();
+    // Ensure getBoundingClientRect returns meaningful values for headings
+    // And offsetTop also has values
+    document.getElementById('heading-1').getBoundingClientRect.mockReturnValue({ top: 100, height: 50 });
+    Object.defineProperty(document.getElementById('heading-1'), 'offsetTop', { value: 100 });
 
-    const tocContainer = document.getElementById('toc-container');
-    expect(tocContainer.innerHTML.trim()).toBe('');
+    document.getElementById('subheading-1-1').getBoundingClientRect.mockReturnValue({ top: 300, height: 40 });
+    Object.defineProperty(document.getElementById('subheading-1-1'), 'offsetTop', { value: 300 });
+
+    document.getElementById('heading-2').getBoundingClientRect.mockReturnValue({ top: 600, height: 60 });
+    Object.defineProperty(document.getElementById('heading-2'), 'offsetTop', { value: 600 });
+
+    // Reset mocks
+    mockScrollTo.mockClear();
+    (Element.prototype.getBoundingClientRect).mockClear();
+    window.scrollY = 0; // Reset scrollY
+    window.pageYOffset = 0; // Reset pageYOffset
+
+    // Mock IntersectionObserver to capture its instance
+    jest.spyOn(global, 'IntersectionObserver').mockImplementation((callback, options) => {
+      intersectionObserverInstance = new IntersectionObserver(callback, options);
+      return intersectionObserverInstance;
+    });
+
+    // Dynamically import the module AFTER mocks are set up
+    // Use `require` for CommonJS in Jest
+    TocScrollSpy = require('../themes/evan/source/js/toc-scrollspy.js')(document, window);
+
+    // Initialize the module
+    TocScrollSpy.initTocScrollSpy({
+      tocSelector: '#toc-container .toc-nav',
+      contentSelector: '#article-content',
+      headingSelector: 'h2, h3',
+    });
   });
 
-  test.skip('clicking a TOC item should scroll to the corresponding heading and update URL hash', () => {
-    const { initTOC } = require('../js/toc');
-    initTOC();
+  afterEach(() => {
+    jest.restoreAllMocks();
+    mockScrollTo.mockClear();
+  });
 
-    const tocLink = document.querySelector('.toc-link'); // Get the first TOC link
-    const targetId = tocLink.getAttribute('href').substring(1); // Get ID from href
-    const targetHeading = document.getElementById(targetId);
+  test('TOC links should trigger smooth scroll to the target heading', async () => {
+    const tocLink = document.querySelector('a[href="#heading-1"]');
+    const heading1 = document.getElementById('heading-1');
 
-    expect(targetHeading).not.toBeNull();
-
-    // Simulate click
     tocLink.click();
 
-    // Check smooth scroll
-    expect(window.HTMLElement.prototype.scrollIntoView).toHaveBeenCalledTimes(1);
-    expect(window.HTMLElement.prototype.scrollIntoView).toHaveBeenCalledWith({ behavior: 'smooth', block: 'start' });
+    // Wait for the next tick for potential async scroll behavior from event listener
+    await Promise.resolve();
 
-    // Check URL hash update
-    expect(history.pushState).toHaveBeenCalledTimes(1);
-    expect(history.pushState).toHaveBeenCalledWith(null, null, `#${targetId}`);
+    // Expect window.scrollTo to have been called for smooth scroll
+    expect(mockScrollTo).toHaveBeenCalledWith(expect.objectContaining({
+      top: heading1.offsetTop - (document.querySelector('.article-nav')?.getBoundingClientRect().height || 0) - 12,
+      behavior: 'smooth',
+    }));
   });
 
-  // New test for scroll spy functionality
-  test.skip('scroll spy should set active class and update URL hash on scroll', () => {
-    // Setup a new DOM for this specific test with a longer scrollable content
+  test('TOC items should be highlighted based on scroll position (is-active class)', () => {
+    const heading1 = document.getElementById('heading-1');
+    const subheading1_1 = document.getElementById('subheading-1-1');
+    const heading2 = document.getElementById('heading-2');
+
+    const tocLink1 = document.querySelector('a[href="#heading-1"]').closest('li');
+    const tocLink2 = document.querySelector('a[href="#subheading-1-1"]').closest('li');
+    const tocLink3 = document.querySelector('a[href="#heading-2"]').closest('li');
+
+    // Simulate heading-1 entering viewport
+    // Trigger the IntersectionObserver callback manually
+    intersectionObserverInstance.trigger({ 'heading-1': true });
+
+    // Expect heading-1's TOC item to be active, others not
+    expect(tocLink1.classList.contains('is-active')).toBe(true);
+    expect(tocLink2.classList.contains('is-active')).toBe(false);
+    expect(tocLink3.classList.contains('is-active')).toBe(false);
+
+    // Simulate heading-2 entering viewport (heading-1 leaves)
+    intersectionObserverInstance.trigger({ 'heading-1': false, 'heading-2': true });
+
+    // Expect heading-2's TOC item to be active, others not
+    expect(tocLink1.classList.contains('is-active')).toBe(false);
+    expect(tocLink2.classList.contains('is-active')).toBe(false);
+    expect(tocLink3.classList.contains('is-active')).toBe(true);
+  });
+
+  test('If TOC container is missing, initTocScrollSpy should do nothing', () => {
+    document.body.innerHTML = '<div id="article-content"><h2>Test</h2></div>';
+    const initSpy = jest.spyOn(TocScrollSpy, 'initTocScrollSpy');
+    TocScrollSpy.initTocScrollSpy({ tocSelector: '#non-existent-toc .toc-nav' });
+    expect(initSpy).toHaveBeenCalled(); // initTocScrollSpy itself is called
+    // But no observer should be created, no error thrown, etc.
+    expect(global.IntersectionObserver).not.toHaveBeenCalled();
+    initSpy.mockRestore();
+  });
+
+  test('If no headings are found, TOC container should be hidden (desktop only)', () => {
     document.body.innerHTML = `
-      <div style="height:2000px;"></div> <!-- Create scrollable space -->
+      <div id="article-content"><p>No headings</p></div>
+      <aside class="toc-card toc-sidebar" data-toc-sidebar>
+        <nav>
+          <ul class="toc-nav"></ul>
+        </nav>
+      </aside>
+    `;
+    TocScrollSpy = require('../themes/evan/source/js/toc-scrollspy.js')(document, window);
+    TocScrollSpy.initTocScrollSpy({
+      tocSelector: '#toc-container .toc-nav',
+      contentSelector: '#article-content',
+      headingSelector: 'h2, h3',
+    });
+    const desktopToc = document.querySelector('.toc-card');
+    // It should be hidden if no headings are found OR the toc-nav has no links
+    expect(desktopToc.hasAttribute('hidden')).toBe(true);
+  });
+
+  test('Heading IDs are correctly assigned if not already present', () => {
+    document.body.innerHTML = `
       <div id="article-content">
-        <h2 id="section-one" style="margin-top: 1000px; height: 300px;">Section One</h2>
-        <p>Content of section one</p>
-        <h3 id="subsection-1-1" style="height: 200px;">Subsection 1.1</h3>
-        <p>Content of subsection 1.1</p>
-        <h2 id="section-two" style="margin-top: 500px; height: 300px;">Section Two</h2>
-        <p>Content of section two</p>
+        <h2>First Heading</h2>
+        <h3 id="existing-id">Second Heading</h3>
+        <h2>Another Heading</h2>
       </div>
-      <nav id="toc-container"></nav>
+      <aside id="toc-container">
+        <nav><ul class="toc-nav"></ul></nav>
+      </aside>
     `;
 
-    const { initTOC } = require('../js/toc');
-    initTOC();
+    TocScrollSpy = require('../themes/evan/source/js/toc-scrollspy.js')(document, window);
+    TocScrollSpy.initTocScrollSpy({
+      tocSelector: '#toc-container .toc-nav',
+      contentSelector: '#article-content',
+      headingSelector: 'h2, h3',
+    });
 
-    const tocLinkOne = document.querySelector('a[data-id="section-one"]');
-    const tocLinkTwo = document.querySelector('a[data-id="section-two"]');
-    const tocLinkSubOneOne = document.querySelector('a[data-id="subsection-1-1"]');
+    const h1 = document.querySelector('h2');
+    const h2 = document.querySelector('h3');
+    const h3 = document.querySelectorAll('h2')[1];
 
-    // Initially, no heading is in view or the first one if at top
-    // Simulate scroll to Section One
-    window.scrollY = 1000;
-    // Mock getBoundingClientRect for headings for the scroll spy logic
-    document.getElementById('section-one').getBoundingClientRect = () => ({ top: 50, bottom: 350 });
-    document.getElementById('subsection-1-1').getBoundingClientRect = () => ({ top: 400, bottom: 600 });
-    document.getElementById('section-two').getBoundingClientRect = () => ({ top: 900, bottom: 1200 });
-    window.innerHeight = 700; // Mock viewport height
+    expect(h1.id).toBeDefined();
+    expect(h1.id).not.toBe('');
+    expect(h1.id).not.toBe('first-heading'); // Hexo's toc helper might slugify, but we are testing syncHeadingIdsWithToc
 
-    // Trigger scroll event manually
-    window.dispatchEvent(new Event('scroll'));
+    expect(h2.id).toBe('existing-id'); // Existing ID should be preserved
 
-    expect(tocLinkOne.classList.contains('active')).toBe(true);
-    expect(history.replaceState).toHaveBeenCalledWith(null, null, '#section-one');
+    expect(h3.id).toBeDefined();
+    expect(h3.id).not.toBe('');
+    expect(h3.id).not.toBe('another-heading');
 
-    // Simulate scroll to Section Two
-    window.scrollY = 1800; // Scroll past Section One and Subsection 1.1
-    document.getElementById('section-one').getBoundingClientRect = () => ({ top: -800, bottom: -500 });
-    document.getElementById('subsection-1-1').getBoundingClientRect = () => ({ top: -400, bottom: -200 });
-    document.getElementById('section-two').getBoundingClientRect = () => ({ top: 50, bottom: 350 });
+    // Verify that the TOC links are built correctly based on new IDs
+    const tocLinks = document.querySelectorAll('#toc-container .toc-nav a');
+    expect(tocLinks.length).toBe(3);
+    expect(tocLinks[0].getAttribute('href')).toBe(`#${h1.id}`);
+    expect(tocLinks[1].getAttribute('href')).toBe(`#${h2.id}`);
+    expect(tocLinks[2].getAttribute('href')).toBe(`#${h3.id}`);
+  });
 
-    window.dispatchEvent(new Event('scroll'));
+  test('TOC should not be built if page.content contains no H2/H3 headings', () => {
+    document.body.innerHTML = `
+      <div id="article-content"><p>No headings</p></div>
+      <aside id="toc-container">
+        <nav>
+          <ul class="toc-nav"></ul>
+        </nav>
+      </aside>
+    `;
 
-    expect(tocLinkOne.classList.contains('active')).toBe(false);
-    expect(tocLinkTwo.classList.contains('active')).toBe(true);
-    expect(history.replaceState).toHaveBeenCalledWith(null, null, '#section-two');
+    TocScrollSpy = require('../themes/evan/source/js/toc-scrollspy.js')(document, window);
+    TocScrollSpy.initTocScrollSpy({
+      tocSelector: '#toc-container .toc-nav',
+      contentSelector: '#article-content',
+      headingSelector: 'h2, h3',
+    });
 
-    // Test scrolling to a sub-section
-    window.scrollY = 1200;
-    document.getElementById('section-one').getBoundingClientRect = () => ({ top: -500, bottom: -200 });
-    document.getElementById('subsection-1-1').getBoundingClientRect = () => ({ top: 50, bottom: 250 });
-    document.getElementById('section-two').getBoundingClientRect = () => ({ top: 700, bottom: 1000 });
-
-    window.dispatchEvent(new Event('scroll'));
-
-    expect(tocLinkSubOneOne.classList.contains('active')).toBe(true);
-    expect(history.replaceState).toHaveBeenCalledWith(null, null, '#subsection-1-1');
+    const tocNav = document.querySelector('.toc-nav');
+    expect(tocNav.children.length).toBe(0);
+    const desktopToc = document.querySelector('.toc-card');
+    expect(desktopToc.hasAttribute('hidden')).toBe(true); // Should be hidden if no TOC links generated
   });
 });
