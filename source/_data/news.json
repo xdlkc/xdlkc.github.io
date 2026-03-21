@@ -1,5 +1,101 @@
 [
   {
+    "id": "int-20260321-03",
+    "title": "IMF Warns of Fragmentation Risks to Global Trade",
+    "summary": "The International Monetary Fund issued a new report warning that increasing geopolitical fragmentation and protectionist trade policies could significantly weigh on global economic growth over the medium term, urging cooperative frameworks.",
+    "url": "https://www.ft.com/content/imf-warning-fragmentation-20260321",
+    "source": "FT",
+    "publishedAt": "2026-03-21T12:30:00Z",
+    "importance": "中等，揭示了全球化逆风对中长期经济的结构性影响。",
+    "region": "国际",
+    "tags": [
+      "IMF",
+      "全球贸易",
+      "地缘政治"
+    ],
+    "context": "随着多国大选落幕，贸易保护主义抬头迹象愈发明显。"
+  },
+  {
+    "id": "int-20260321-02",
+    "title": "ECB Reiterates Commitment to 2% Inflation Target Amid Mixed Data",
+    "summary": "The European Central Bank reaffirmed its dedication to bringing inflation back to its 2% target in a timely manner, despite recent mixed economic indicators showing slowing growth in key Eurozone economies but stubborn core services inflation.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-21/ecb-reiterates-inflation-target",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-21T14:00:00Z",
+    "importance": "中高，关乎欧元区利率路径及欧元汇率走势。",
+    "region": "国际",
+    "tags": [
+      "欧洲央行",
+      "通胀",
+      "货币政策"
+    ],
+    "context": "欧洲经济面临增长乏力与粘性通胀的双重挑战，政策空间受限。"
+  },
+  {
+    "id": "int-20260321-01",
+    "title": "Federal Reserve Officials Signal Caution on Further Rate Cuts",
+    "summary": "Several Federal Reserve officials indicated in recent speeches that the central bank should proceed carefully with any additional interest rate cuts, citing persistent underlying inflation pressures and a resilient labor market.",
+    "url": "https://www.reuters.com/markets/us/fed-officials-signal-caution-20260321",
+    "source": "Reuters",
+    "publishedAt": "2026-03-21T13:45:00Z",
+    "importance": "高，影响全球资产定价和资本流动方向。",
+    "region": "国际",
+    "tags": [
+      "美联储",
+      "货币政策",
+      "宏观经济"
+    ],
+    "context": "市场此前预期今年会有更激进的降息，美联储的表态正在重塑预期。"
+  },
+  {
+    "id": "dom-20260321-03",
+    "title": "证监会：进一步深化资本市场改革开放",
+    "summary": "证监会召开专题会议，强调将持续深化资本市场基础制度改革，稳步扩大制度型开放，吸引更多中长期资金入市，以增强资本市场的内在稳定性和国际竞争力。",
+    "url": "http://www.csrc.gov.cn/xw/20260321/3.html",
+    "source": "证监会",
+    "publishedAt": "2026-03-21T15:15:00Z",
+    "importance": "中高，涉及资本市场长期资金引入和对外开放政策。",
+    "region": "国内",
+    "tags": [
+      "资本市场",
+      "政策监管",
+      "证监会"
+    ],
+    "context": "近期外资流向备受关注，监管层旨在通过制度建设稳预期。"
+  },
+  {
+    "id": "dom-20260321-02",
+    "title": "国家统计局：前两月国民经济运行持续回升向好",
+    "summary": "国家统计局最新发布的数据显示，今年1-2月份，全国规模以上工业增加值同比增长稳健，服务业生产指数显著回升，消费市场持续复苏，整体经济运行呈现出积极向好的态势。",
+    "url": "http://www.stats.gov.cn/sj/20260321/2.html",
+    "source": "国家统计局",
+    "publishedAt": "2026-03-21T14:30:00Z",
+    "importance": "高，定调了一季度的经济开局表现，提振市场信心。",
+    "region": "国内",
+    "tags": [
+      "经济数据",
+      "宏观经济",
+      "统计局"
+    ],
+    "context": "市场此前对年初经济复苏力度存有分歧，本次数据确认了温和复苏的趋势。"
+  },
+  {
+    "id": "dom-20260321-01",
+    "title": "央行开展公开市场逆回购操作，维护季末流动性平稳",
+    "summary": "中国人民银行今日发布公告，为维护季末银行体系流动性合理充裕，开展了大规模的公开市场逆回购操作。此举有效缓解了市场短期的资金面紧张情绪，保障了金融体系的平稳运行。",
+    "url": "http://www.pbc.gov.cn/zhengce/20260321/1.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-21T15:00:00Z",
+    "importance": "高，直接影响短期市场利率与流动性预期。",
+    "region": "国内",
+    "tags": [
+      "宏观政策",
+      "流动性",
+      "央行"
+    ],
+    "context": "季末通常是资金面相对紧张的时期，央行的例行干预符合市场预期。"
+  },
+  {
     "id": "wsj-20260321-06",
     "title": "Fed Officials Debunk Near-Term Recession Fears Following Strong Jobs Data",
     "summary": "Federal Reserve officials have publicly dismissed concerns of an imminent US economic recession, pointing to the latest unexpectedly robust payroll figures and resilient consumer spending. This consensus supports the 'higher for longer' rate narrative.",
