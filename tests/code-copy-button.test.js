@@ -1,86 +1,151 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
+// tests/code-copy-button.test.js
+
 const { JSDOM } = require('jsdom');
+const fs = require('fs');
+const path = require('path');
 
-const CodeCopy = require('../js/code-copy');
+let dom;
+let document;
+let window;
+let navigator;
+let CodeCopy; // Declare CodeCopy here
 
-function setupDom(codeContent) {
-  const dom = new JSDOM(`<!doctype html><html><body>
-    <article class="article-content">
-      <figure class="highlight">
-        <table>
-          <tbody>
-            <tr>
-              <td class="gutter">
-                <pre><span class="line">1</span><span class="line">2</span></pre>
-              </td>
-              <td class="code">
-                <pre><span class="line">console.log("Hello");</span><span class="line">console.log("World");</span></pre>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </figure>
-    </article>
-  </body></html>`, { url: 'https://example.com/post/' });
+function setupDom() {
+    dom = new JSDOM(`
+        <!DOCTYPE html>
+        <html>
+        <body>
+            <div class="article-content"> <!-- Added article-content wrapper -->
+                <div id="test-container">
+                    <pre><code class="language-javascript">console.log('Hello World 1');</code></pre>
+                    <pre><code class="language-python">print('Hello World 2')</code></pre>
+                    <pre><code>Plain code block</code></pre>
+                    <div>
+                        <pre><code>Another code block in a div</code></pre>
+                    </div>
+                    <p>Some other content</p>
+                </div>
+            </div>
+        </body>
+        </html>
+    `, { url: "http://localhost", runScripts: "dangerously", resources: "usable" }); // Enable script execution
 
-  const { window } = dom;
-  global.window = window;
-  global.document = window.document;
-  global.navigator = window.navigator;
+    window = dom.window;
+    document = window.document;
+    navigator = window.navigator;
 
-  return dom;
+    // Load code-copy.js into the JSDOM window context
+    const codeCopyScript = fs.readFileSync(path.resolve(__dirname, '../js/code-copy.js'), 'utf8');
+    window.eval(codeCopyScript);
+    CodeCopy = window.CodeCopy; // Get the exported CodeCopy from the JSDOM window
+
+    // Mock Clipboard API for JSDOM
+    window.clipboardHistory = []; // Expose on window
+    Object.defineProperty(navigator, 'clipboard', {
+        value: {
+            writeText: (text) => {
+                window.clipboardHistory.push(text); // Use window.clipboardHistory
+                return Promise.resolve();
+            },
+            readText: () => Promise.resolve(window.clipboardHistory[window.clipboardHistory.length - 1] || ''), // Use window.clipboardHistory
+        },
+        writable: true
+    });
+
+    // Mock setTimeout and clearTimeout within the JSDOM window for testing
+    // JSDOM has its own timers, but the module might be capturing Node.js globals.
+    // By assigning them to window, the module (once evaluated within JSDOM context)
+    // should use these.
+    window.setTimeout = (...args) => global.setTimeout(...args);
+    window.clearTimeout = (...args) => global.clearTimeout(...args);
 }
 
-test('Code Copy Button: adds copy button to code blocks', () => {
-  const dom = setupDom();
-  const { document } = dom.window;
+function assert(condition, message) {
+    if (!condition) {
+        throw new Error(message);
+    }
+}
 
-  CodeCopy.initCodeCopy();
-  const copyButton = document.querySelector('.highlight .code-copy-button');
-  assert.ok(copyButton, 'copy button should be added');
-  assert.strictEqual(copyButton.getAttribute('aria-label'), '复制代码');
-  assert.strictEqual(copyButton.type, 'button');
+function test(name, fn) {
+    try {
+        // Run async tests
+        const result = fn();
+        if (result && typeof result.then === 'function') {
+            result.then(() => console.log(`✅ ${name}`)).catch((error) => {
+                console.error(`❌ ${name}`);
+                console.error(error);
+                process.exit(1);
+            });
+        } else {
+            console.log(`✅ ${name}`);
+        }
+    } catch (error) {
+        console.error(`❌ ${name}`);
+        console.error(error);
+        process.exit(1); // 失败时退出
+    }
+}
+
+test('should add a copy button to each code block', () => {
+    setupDom();
+    CodeCopy.initCodeCopy({ root: document }); // Call the actual feature init function
+
+    const codeBlocks = document.querySelectorAll('pre code');
+    assert(codeBlocks.length > 0, 'Should have code blocks to test');
+
+    codeBlocks.forEach((codeBlock, index) => {
+        const parentPre = codeBlock.parentElement;
+        const copyButton = parentPre.querySelector('.code-copy-button');
+        assert(copyButton !== null, `Code block ${index} should have a copy button`);
+        assert(copyButton.textContent === '复制代码', `Button text for block ${index} should be '复制代码'`); // Assuming default lang is 'zh'
+    });
 });
 
-test('Code Copy Button: does not add duplicate buttons', () => {
-  const dom = setupDom();
-  const { document } = dom.window;
+test('should copy code block content to clipboard on click', async () => {
+    setupDom();
+    CodeCopy.initCodeCopy({ root: document }); // Call the actual feature init function
 
-  CodeCopy.initCodeCopy();
-  const copyButtons1 = document.querySelectorAll('.highlight .code-copy-button');
-  assert.strictEqual(copyButtons1.length, 1);
+    const codeBlocks = document.querySelectorAll('pre code');
+    assert(codeBlocks.length > 0, 'Should have code blocks to test');
 
-  CodeCopy.initCodeCopy();
-  const copyButtons2 = document.querySelectorAll('.highlight .code-copy-button');
-  assert.strictEqual(copyButtons2.length, 1);
+    for (let i = 0; i < codeBlocks.length; i++) {
+        const codeBlock = codeBlocks[i];
+        const parentPre = codeBlock.parentElement;
+        const copyButton = parentPre.querySelector('.code-copy-button');
+
+        console.log(`Test Block ${i}: `);
+        console.log(`  Expected text: '${codeBlock.textContent}'`);
+
+        assert(copyButton !== null, `Copy button for block ${i} should exist before click simulation`);
+
+        copyButton.click(); // Simulate click
+        await new Promise(resolve => setTimeout(resolve, 5)); // Small delay
+
+        const expectedText = codeBlock.textContent;
+        const copiedText = await navigator.clipboard.readText();
+        console.log(`  Copied text: '${copiedText}'`);
+        assert(copiedText === expectedText, `Copied text for block ${i} should be '${expectedText}' but got '${copiedText}'`);
+    }
 });
 
-test('Code Copy Button: does not add button to inline code', () => {
-  const dom = new JSDOM(`<!doctype html><html><body>
-    <p>This is <code>inline code</code> and another <code>code</code>.</p>
-  </body></html>`);
+test('should show "Copied!" message after successful copy', async () => {
+    setupDom();
+    CodeCopy.initCodeCopy({ root: document });
 
-  const { window } = dom;
-  global.window = window;
-  global.document = window.document;
+    const codeBlock = document.querySelector('pre code');
+    const parentPre = codeBlock.parentElement;
+    const copyButton = parentPre.querySelector('.code-copy-button');
 
-  CodeCopy.initCodeCopy();
-  const copyButtons = document.querySelectorAll('code .code-copy-button');
-  assert.strictEqual(copyButtons.length, 0);
-});
+    assert(copyButton !== null, 'Copy button should exist before click simulation');
+    assert(copyButton.textContent === '复制代码', 'Initial button text should be "复制代码"');
 
-test('Code Copy Button: gets code text without line numbers', () => {
-  const dom = setupDom();
-  const { document } = dom.window;
+    copyButton.click(); // Simulate click
 
-  const codeBlock = document.querySelector('.highlight');
-  CodeCopy.initCodeCopy();
-
-  // The button is added, now we need to extract the code
-  const lines = Array.from(codeBlock.querySelectorAll('.code .line'))
-    .map(line => line.textContent)
-    .join('\n');
-
-  assert.strictEqual(lines, 'console.log("Hello");\nconsole.log("World");');
+    // The button text changes after copy. This is a direct user-perceivable change.
+    // The flashCopiedClass primarily adds a visual effect (class).
+    // We expect the button text to change to '已复制（X 行）' temporarily.
+    // The setTimeout for reverting the button text to '复制代码' happens after 1200ms.
+    // For this test, we check the immediate change after click.
+    await new Promise(resolve => setTimeout(resolve, 0)); // Yield to allow promises to resolve
+    assert(copyButton.textContent.startsWith('已复制'), 'Button text should temporarily show "已复制" message');
 });

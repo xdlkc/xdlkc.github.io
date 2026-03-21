@@ -2,7 +2,8 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const { JSDOM } = require('jsdom');
 
-const TocScrollSpy = require('../themes/evan/source/js/toc-scrollspy');
+const TocScrollSpyFactory = require('../themes/evan/source/js/toc-scrollspy');
+const TocScrollSpy = TocScrollSpyFactory(global.document, global.window);
 
 test('TOC link copy: injects copy buttons and copies full URL with hash', async () => {
   const dom = new JSDOM(`<!doctype html><html><body>

@@ -175,9 +175,7 @@
     const code = normalizeNewlines(codeText).trimEnd();
     const lang = String(langHint || '').trim();
     const fenceInfo = lang ? lang : '';
-    return `\
-\
-\`\`\`${fenceInfo}\n${code}\n\`\`\``.trimStart();
+    return `\`\`\`${fenceInfo}\n${code}\n\`\`\``.trimStart();
   }
 
   function flashCopiedClass(container, { durationMs = 1200 } = {}) {
@@ -246,6 +244,7 @@
   }
 
   async function copyText(text) {
+    console.log('copyText: received text:', text); // New debug log
     if (navigator.clipboard?.writeText) {
       await navigator.clipboard.writeText(text);
       return;

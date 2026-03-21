@@ -2,7 +2,8 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const { JSDOM } = require('jsdom');
 
-const TocScrollSpy = require('../themes/evan/source/js/toc-scrollspy');
+const TocScrollSpyFactory = require('../themes/evan/source/js/toc-scrollspy');
+const TocScrollSpy = TocScrollSpyFactory(global.document, global.window);
 
 function makeDom(html) {
   return new JSDOM(`<!doctype html><html><body>${html}</body></html>`, {

@@ -50,7 +50,6 @@ function applyThemeToDocument({ document, theme, mode }) {
   const t = normalizeTheme(theme) || 'light';
   const m = normalizeThemeMode(mode) || 'system';
 
-  document.documentElement.dataset.theme = t;
   document.documentElement.dataset.themeMode = m;
 
   const toggle = document.querySelector?.('[data-theme-toggle]');
@@ -168,6 +167,20 @@ function isTypingTarget(target) {
   return false;
 }
 
+// New function to determine theme based on time
+function getAutoTheme({ hour, config }) {
+  if (!config?.auto_dark_mode?.enable) return null;
+
+  const sunriseHour = config.auto_dark_mode.sunrise_hour;
+  const sunsetHour = config.auto_dark_mode.sunset_hour;
+
+  if (hour >= sunsetHour || hour < sunriseHour) {
+    return 'dark'; // Night time
+  } else {
+    return 'light'; // Day time
+  }
+}
+
 function initThemeToggle({
   window = globalThis.window,
   document = globalThis.document,
@@ -177,15 +190,48 @@ function initThemeToggle({
   if (!document?.querySelector) return;
 
   const prefersDark = getPrefersDark(matchMedia);
+  // DEBUG: Log prefersDark at the start of initThemeToggle
+
   const savedMode = readSavedMode(storage);
   const overrideMode = readUrlThemeOverride(window?.location);
 
-  // URL override applies to this page only; do not persist.
-  const effectiveMode = overrideMode || savedMode;
-  const initialTheme = resolveInitialTheme({ savedMode: effectiveMode, prefersDark });
-  const initialMode = normalizeThemeMode(effectiveMode) || 'system';
+  const currentHour = new Date().getHours();
+  const autoThemeResult = getAutoTheme({ hour: currentHour, config: window.CONFIG });
 
-  applyThemeToDocument({ document, theme: initialTheme, mode: initialMode });
+  let effectiveMode;
+  let finalTheme;
+
+  if (overrideMode) {
+    // 1. URL override has highest priority
+    effectiveMode = overrideMode;
+  } else if (savedMode) {
+    // 2. User's saved preference
+    effectiveMode = savedMode;
+  } else if (window.CONFIG?.auto_dark_mode?.enable && autoThemeResult) {
+    // 3. Automatic theme switching (if enabled and applicable)
+    // We set effectiveMode to 'system' because auto-switch is a system-level behavior,
+    // but its "theme" is dictated by the time.
+    effectiveMode = 'system';
+  } else {
+    // 4. Fallback to system preference (or default 'light' if system preference can't be determined)
+    effectiveMode = 'system';
+  }
+
+  // Now, resolve the final theme based on the effectiveMode and other factors
+  if (effectiveMode === 'dark' || effectiveMode === 'light') {
+    finalTheme = effectiveMode;
+  } else if (effectiveMode === 'system') {
+    if (window.CONFIG?.auto_dark_mode?.enable && autoThemeResult) {
+      finalTheme = autoThemeResult; // Use auto-theme if enabled and effectiveMode is 'system' and no manual override
+    } else {
+      finalTheme = prefersDark ? 'dark' : 'light'; // Otherwise, use system preference
+    }
+  } else {
+    // Fallback if effectiveMode is somehow invalid (shouldn't happen with normalizeThemeMode)
+    finalTheme = 'light';
+  }
+
+  applyThemeToDocument({ document, theme: finalTheme, mode: effectiveMode });
 
   const toggle = document.querySelector('[data-theme-toggle]');
   if (!toggle) return;
@@ -343,5 +389,8 @@ if (typeof module !== 'undefined') {
     // exported for tests / stability
     ensureThemeToast,
     showThemeToast,
+
+    // New export for auto-theme logic
+    getAutoTheme,
   };
 }

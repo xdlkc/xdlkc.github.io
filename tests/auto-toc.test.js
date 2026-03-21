@@ -1,8 +1,6 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
 const { JSDOM } = require('jsdom');
-
-const TocScrollSpy = require('../themes/evan/source/js/toc-scrollspy');
+// Import the factory function
+const TocScrollSpyFactory = require('../themes/evan/source/js/toc-scrollspy');
 
 function setupDom(html) {
   return new JSDOM(`<!doctype html><html><body>${html}</body></html>`, {
@@ -10,57 +8,65 @@ function setupDom(html) {
   });
 }
 
-test('buildTocIntoContainer: generates anchor links for article headings', () => {
-  const dom = setupDom(`
-    <nav class="toc-nav"></nav>
-    <article class="article-content">
-      <h2 id="intro">Intro</h2>
-      <h3 id="details">Details</h3>
-      <h2 id="summary">Summary</h2>
-    </article>
-  `);
+describe('buildTocIntoContainer', () => { // Use describe for grouping tests
+  let TocScrollSpy; // Declare a variable to hold the instantiated object
 
-  const { document } = dom.window;
-  const toc = document.querySelector('.toc-nav');
-  const headings = Array.from(document.querySelectorAll('.article-content h2, .article-content h3'));
+  beforeEach(() => {
+    // Instantiate TocScrollSpy for each test
+    const dom = setupDom('<div></div>'); // A minimal DOM for instantiation
+    TocScrollSpy = TocScrollSpyFactory(dom.window.document, dom.window);
+  });
 
-  TocScrollSpy.buildTocIntoContainer(toc, headings);
+  test('generates anchor links for article headings', () => { // Use Jest's test
+    const dom = setupDom(`
+      <nav class="toc-nav"></nav>
+      <article class="article-content">
+        <h2 id="intro">Intro</h2>
+        <h3 id="details">Details</h3>
+        <h2 id="summary">Summary</h2>
+      </article>
+    `);
 
-  const links = Array.from(toc.querySelectorAll('a[href^="#"]'));
-  assert.equal(links.length, 3);
-  assert.deepEqual(
-    links.map((link) => link.getAttribute('href')),
-    ['#intro', '#details', '#summary']
-  );
-  assert.deepEqual(
-    links.map((link) => link.textContent),
-    ['Intro', 'Details', 'Summary']
-  );
-});
+    const { document } = dom.window;
+    const toc = document.querySelector('.toc-nav');
+    const headings = Array.from(document.querySelectorAll('.article-content h2, .article-content h3'));
 
-test('buildTocIntoContainer: nests h3/h4 under the nearest parent heading', () => {
-  const dom = setupDom(`
-    <nav class="toc-nav"></nav>
-    <article class="article-content">
-      <h2 id="section-1">Section 1</h2>
-      <h3 id="section-1-a">Section 1.A</h3>
-      <h4 id="section-1-a-i">Section 1.A.I</h4>
-      <h2 id="section-2">Section 2</h2>
-    </article>
-  `);
+    TocScrollSpy.buildTocIntoContainer(toc, headings); // Now TocScrollSpy is the object
 
-  const { document } = dom.window;
-  const toc = document.querySelector('.toc-nav');
-  const headings = Array.from(document.querySelectorAll('.article-content h2, .article-content h3, .article-content h4'));
+    const links = Array.from(toc.querySelectorAll('a[href^="#"]'));
+    expect(links.length).toBe(3); // Use Jest's expect
+    expect(
+      links.map((link) => link.getAttribute('href'))
+    ).toEqual(['#intro', '#details', '#summary']); // Use Jest's toEqual
+    expect(
+      links.map((link) => link.textContent)
+    ).toEqual(['Intro', 'Details', 'Summary']); // Use Jest's toEqual
+  });
 
-  TocScrollSpy.buildTocIntoContainer(toc, headings);
+  test('nests h3/h4 under the nearest parent heading', () => { // Use Jest's test
+    const dom = setupDom(`
+      <nav class="toc-nav"></nav>
+      <article class="article-content">
+        <h2 id="section-1">Section 1</h2>
+        <h3 id="section-1-a">Section 1.A</h3>
+        <h4 id="section-1-a-i">Section 1.A.I</h4>
+        <h2 id="section-2">Section 2</h2>
+      </article>
+    `);
 
-  const topLevelItems = toc.querySelectorAll(':scope > ol > li');
-  assert.equal(topLevelItems.length, 2);
+    const { document } = dom.window;
+    const toc = document.querySelector('.toc-nav');
+    const headings = Array.from(document.querySelectorAll('.article-content h2, .article-content h3, .article-content h4'));
 
-  const nestedUnderFirst = toc.querySelector(':scope > ol > li:first-child > ol > li > a[href="#section-1-a"]');
-  const nestedThirdLevel = toc.querySelector(':scope > ol > li:first-child > ol > li:first-child > ol > li > a[href="#section-1-a-i"]');
+    TocScrollSpy.buildTocIntoContainer(toc, headings);
 
-  assert.ok(nestedUnderFirst, 'expected h3 to nest under the first h2');
-  assert.ok(nestedThirdLevel, 'expected h4 to nest under the nearest h3');
+    const topLevelItems = toc.querySelectorAll(':scope > ol > li');
+    expect(topLevelItems.length).toBe(2);
+
+    const nestedUnderFirst = toc.querySelector(':scope > ol > li:first-child > ol > li > a[href="#section-1-a"]');
+    const nestedThirdLevel = toc.querySelector(':scope > ol > li:first-child > ol > li:first-child > ol > li > a[href="#section-1-a-i"]');
+
+    expect(nestedUnderFirst).toBeTruthy();
+    expect(nestedThirdLevel).toBeTruthy();
+  });
 });

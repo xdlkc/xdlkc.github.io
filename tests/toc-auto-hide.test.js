@@ -2,7 +2,8 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const { JSDOM } = require('jsdom');
 
-const TocScrollSpy = require('../themes/evan/source/js/toc-scrollspy');
+const TocScrollSpyFactory = require('../themes/evan/source/js/toc-scrollspy');
+const TocScrollSpy = TocScrollSpyFactory(global.document, global.window);
 
 test('TOC: auto-hides when article has fewer than 2 headings', () => {
   const dom = new JSDOM(`<!doctype html><html><body>
