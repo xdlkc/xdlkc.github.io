@@ -88,6 +88,15 @@
         </div>
       <% } %>
       <article class="article-content"><%- page.content %></article>
+    <% if (theme.reward && theme.reward.enable) { %>
+      <div id="reward-container" class="reward-container" style="text-align: center; margin: 40px 0;">
+        <button id="reward-toggle" class="reward-button" data-reward-toggle aria-expanded="false" data-i18n-key="post.reward" style="padding: 8px 24px; font-size: 16px; border-radius: 4px; background: #ea6f5a; color: #fff; border: none; cursor: pointer;">赞赏</button>
+        <div id="reward-qr" class="reward-qr-codes" aria-hidden="true" style="display: none; margin-top: 20px;">
+          <% if (theme.reward.wechat) { %><div class="reward-qr-item" style="display: inline-block; margin: 0 10px;"><img src="<%- url_for(theme.reward.wechat) %>" alt="微信打赏" style="width: 150px; height: 150px;"><p>微信</p></div><% } %>
+          <% if (theme.reward.alipay) { %><div class="reward-qr-item" style="display: inline-block; margin: 0 10px;"><img src="<%- url_for(theme.reward.alipay) %>" alt="支付宝打赏" style="width: 150px; height: 150px;"><p>支付宝</p></div><% } %>
+        </div>
+      </div>
+    <% } %>
 
       <% if (comments.enable && comments.provider === 'utterances' && utterances.repo) { %>
         <section class="post-comments" aria-label="comments">
@@ -198,6 +207,7 @@
     <% } %>
   </div>
 </article>
+<script src="<%- url_for('/js/reward-toggle.js') %>" defer></script>
 
 <% if (comments.enable && comments.provider === 'utterances' && utterances.repo) { %>
 <script>

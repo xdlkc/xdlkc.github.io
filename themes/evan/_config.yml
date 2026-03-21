@@ -1,0 +1,6 @@
+
+# Reward / Sponsor
+reward:
+  enable: true
+  wechat: /images/wechat-pay.jpg
+  alipay: /images/alipay.jpg
