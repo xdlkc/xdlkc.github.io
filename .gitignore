@@ -6,3 +6,4 @@ public/
 .DS_Store
 
 tools/__pycache__/
+tmp/
