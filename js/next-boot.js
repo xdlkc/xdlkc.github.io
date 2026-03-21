@@ -88,6 +88,7 @@ NexT.boot.refresh = function() {
   CONFIG.copycode.enable && NexT.utils.registerCopyCode();
   NexT.utils.registerTabsTag();
   NexT.utils.registerActiveMenuItem();
+  NexT.utils.autoGenerateTOC(); // Call the auto TOC generation
   NexT.utils.registerSidebarTOC();
   NexT.utils.wrapTableWithBox();
   NexT.utils.registerVideoIframe();
