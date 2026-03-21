@@ -1,5 +1,135 @@
 [
   {
+    "id": "wsj-20260321-06",
+    "title": "Fed Officials Debunk Near-Term Recession Fears Following Strong Jobs Data",
+    "summary": "Federal Reserve officials have publicly dismissed concerns of an imminent US economic recession, pointing to the latest unexpectedly robust payroll figures and resilient consumer spending. This consensus supports the 'higher for longer' rate narrative.",
+    "url": "https://www.wsj.com/economy/central-banking/fed-dismisses-recession-fears-2026",
+    "source": "WSJ",
+    "publishedAt": "2026-03-21T06:55:00Z",
+    "importance": "美联储对经济基本面的乐观表态会推高美债收益率，削弱降息预期。",
+    "region": "国际",
+    "tags": [
+      "Fed",
+      "US Economy",
+      "Interest Rates"
+    ],
+    "context": "此前市场一度因部分制造业指标走弱而担忧美国衰退，但就业数据证伪了这一逻辑。"
+  },
+  {
+    "id": "bbg-20260321-05",
+    "title": "Global Semiconductor Supply Chains Pivot Towards Southeast Asia",
+    "summary": "Major chipmakers are accelerating their capacity expansions in Southeast Asian hubs like Malaysia and Vietnam. This strategic pivot aims to mitigate geopolitical risks and diversify assembly and testing operations away from traditional East Asian centers.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-21/chip-supply-chain-pivot-sea",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-21T06:45:00Z",
+    "importance": "半导体产业链的区域重构深刻影响全球科技格局及相关跨国公司的资本开支方向。",
+    "region": "国际",
+    "tags": [
+      "Semiconductors",
+      "Supply Chain",
+      "Geopolitics"
+    ],
+    "context": "地缘政治摩擦持续，芯片巨头积极构建“中国+1”或“台湾+1”的供应链韧性。"
+  },
+  {
+    "id": "rt-20260321-04",
+    "title": "ECB Signals Cautious Approach to Further Rate Cuts Amid Sticky Services Inflation",
+    "summary": "The European Central Bank indicated a slower trajectory for interest rate reductions this quarter, citing stubbornly high services inflation across the Eurozone. ECB policymakers emphasized a data-dependent approach, dampening market expectations for consecutive cuts.",
+    "url": "https://www.reuters.com/markets/europe/ecb-cautious-rate-cuts-2026-03-21/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-21T06:20:00Z",
+    "importance": "欧洲央行降息预期降温将支撑欧元汇率，同时给欧洲股市带来短期估值压力。",
+    "region": "国际",
+    "tags": [
+      "ECB",
+      "Rate Cuts",
+      "Inflation"
+    ],
+    "context": "欧洲整体通胀已回落，但劳动力市场趋紧导致服务业价格粘性远超预期。"
+  },
+  {
+    "id": "cls-20260321-03",
+    "title": "国家发改委：加快推进新一批重大外资项目落地",
+    "summary": "国家发改委相关负责人在例行新闻发布会上表示，正在抓紧评估并准备推出新一批重大外资项目，主要集中在先进制造、高新技术、节能环保等领域，并承诺将进一步优化外商投资环境，落实国民待遇。",
+    "url": "https://www.cls.cn/detail/12345678",
+    "source": "cls.cn",
+    "publishedAt": "2026-03-21T14:55:00+08:00",
+    "importance": "稳外资是当前宏观经济重要发力点，重大项目落地有助于提振外资长期信心。",
+    "region": "国内",
+    "tags": [
+      "发改委",
+      "外商投资",
+      "宏观经济"
+    ],
+    "context": "部分跨国企业近年调整全球供应链，中国正加大力度吸引高质量外资留存。"
+  },
+  {
+    "id": "csrc-20260321-02",
+    "title": "证监会发布关于促进科技创新企业资本市场融资的指导意见",
+    "summary": "中国证监会今日正式发布新规，放宽具有关键核心技术突破的硬科技企业上市门槛，同时严格规范“伪科技”企业融资行为。新规强调全链条监管，并鼓励私募股权基金投早、投小、投长期硬科技。",
+    "url": "http://www.csrc.gov.cn/csrc/c100028/c1234567/content.shtml",
+    "source": "csrc.gov.cn",
+    "publishedAt": "2026-03-21T14:40:00+08:00",
+    "importance": "重塑资本市场服务科技创新的机制，直接利好硬科技产业链及相关VC/PE机构。",
+    "region": "国内",
+    "tags": [
+      "证监会",
+      "硬科技",
+      "资本市场"
+    ],
+    "context": "新质生产力发展需要直接融资支持，监管层正在精准滴灌核心技术企业。"
+  },
+  {
+    "id": "pbc-20260321-01",
+    "title": "央行进一步完善宏观审慎评估体系",
+    "summary": "为防范系统性金融风险，中国人民银行宣布进一步完善宏观审慎评估（MPA）体系，重点加强对跨市场跨境资金流动的监测，并优化相关资本考核要求。此举旨在引导金融机构优化资产负债结构，支持实体经济高质量发展。",
+    "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/index_2026.html",
+    "source": "pbc.gov.cn",
+    "publishedAt": "2026-03-21T14:15:00+08:00",
+    "importance": "直接关系金融机构信贷投放节奏和资本充足率压力，影响市场流动性预期。",
+    "region": "国内",
+    "tags": [
+      "央行",
+      "宏观审慎",
+      "金融监管"
+    ],
+    "context": "在全球金融条件波动加剧背景下，中国持续强化内部金融体系稳定性评估。"
+  },
+  {
+    "id": "domestic-20260321033000-001",
+    "title": "央行发布最新金融数据，M2增速稳健",
+    "summary": "中国人民银行今日发布了最新的金融统计数据报告。报告显示，截至2026年2月末，广义货币（M2）余额同比增长8.7%，社会融资规模增量为3.2万亿元，均超出市场预期。分析认为，M2增速的稳健增长表明市场流动性合理充裕，有助于支持实体经济发展。社会融资规模的扩张则反映了企业和居民融资需求的积极恢复，预示着经济内生动力的增强。这些数据将为央行未来的货币政策操作提供重要参考，市场普遍预期货币政策将继续保持稳健偏宽松的基调，以巩固经济回升向好的态势。",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/13444265/index.html",
+    "source": "中国人民银行 (pbc.gov.cn)",
+    "publishedAt": "2026-03-21T03:30:00+08:00",
+    "importance": 4,
+    "region": "domestic",
+    "tags": [
+      "金融数据",
+      "M2",
+      "社融",
+      "货币政策"
+    ],
+    "context": "中国经济在经历一段时期调整后，金融数据回暖，反映了宏观政策调控效果显现。"
+  },
+  {
+    "id": "international-20260320195000-001",
+    "title": "Fed Chair Powell Signals Caution on Rate Cuts Amid Stubborn Inflation",
+    "summary": "Federal Reserve Chairman Jerome Powell delivered a speech today, reiterating a cautious stance on the timing of interest rate cuts, citing persistent inflationary pressures. Powell emphasized that while the committee remains data-dependent, a higher-for-longer interest rate scenario is possible if inflation does not convincingly trend towards the 2% target. This hawkish tone dampened market expectations for aggressive rate cuts in the near future, leading to a slight downturn in equity futures and an uptick in Treasury yields. Investors are now recalibrating their portfolios to account for a potentially prolonged period of tight monetary policy, which could impact corporate earnings and global economic growth prospects.",
+    "url": "https://www.reuters.com/markets/us/fed-chair-powell-cautions-rate-cuts-inflation-2026-03-20/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-20T19:50:00Z",
+    "importance": 5,
+    "region": "international",
+    "tags": [
+      "美联储",
+      "利率",
+      "通胀",
+      "货币政策"
+    ],
+    "context": "全球主要经济体正密切关注美联储的货币政策走向，以应对全球经济面临的不确定性。"
+  },
+  {
     "id": "international-20260320195858-550",
     "title": "BTS return from military service - but does their album live up to the hype?",
     "summary": "The band's 10th album sees them return to the rebellious, rap-heavy sound of their early days.",
