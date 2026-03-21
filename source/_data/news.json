@@ -1,5 +1,106 @@
 [
   {
+    "id": "dom-20260321-09",
+    "title": "央行设立5000亿元科技创新和技术改造再贷款",
+    "summary": "中国人民银行今日下午宣布，设立5000亿元科技创新和技术改造再贷款，利率定为1.75%，期限1年，可展期2次。该结构性货币政策工具旨在引导金融机构加大对初创期、成长期科技型中小企业的信贷支持，同时助力传统产业的数字化、智能化和绿色化设备更新改造。",
+    "url": "http://www.pbc.gov.cn/goutongjiaoliu/20260321/3.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-21T17:30:00+08:00",
+    "importance": "极高，结构性降息精准滴灌科创企业与设备更新，利好新质生产力相关板块。",
+    "region": "国内",
+    "tags": [
+      "央行",
+      "再贷款",
+      "科技创新",
+      "设备更新"
+    ],
+    "context": "在稳健货币政策基调下，央行更加注重盘活存量和精准发力，配合国务院近期的设备更新方案。"
+  },
+  {
+    "id": "dom-20260321-08",
+    "title": "证监会：进一步加强融券业务监管，全面暂停限售股出借",
+    "summary": "中国证监会盘后发布最新监管通报，为进一步稳定市场预期，即日起全面暂停限售股出借，并要求证券公司严格落实融券业务的投资者适当性管理。此举旨在限制利用信息优势和融券机制进行的不公平套利，维护资本市场“三公”原则和中小投资者合法权益。",
+    "url": "http://www.csrc.gov.cn/xw/20260321/4.html",
+    "source": "证监会",
+    "publishedAt": "2026-03-21T17:15:00+08:00",
+    "importance": "高，直接切断部分做空力量的券源，极大提振A股市场多头信心与情绪。",
+    "region": "国内",
+    "tags": [
+      "证监会",
+      "融券",
+      "限售股",
+      "资本市场"
+    ],
+    "context": "市场此前对做空机制存在争议，监管层果断出手补齐制度漏洞，响应投资者关切。"
+  },
+  {
+    "id": "dom-20260321-07",
+    "title": "乘联会：3月前三周新能源乘用车零售同比增长35%",
+    "summary": "财联社3月21日电，乘联会最新数据显示，3月1日至17日，全国新能源乘用车市场零售量达到38.5万辆，较去年同期强劲增长35%，较上月同期增长20%。随着新一轮“价格战”的深入及多地购车补贴政策的落地，终端消费观望情绪逐渐消散，车市迎来春季回暖交单小高峰。",
+    "url": "https://www.cls.cn/detail/2026032105",
+    "source": "财联社",
+    "publishedAt": "2026-03-21T17:05:00+08:00",
+    "importance": "中高，验证了车企降价对销量的刺激效果，利好汽车产业链及锂电上游。",
+    "region": "国内",
+    "tags": [
+      "乘联会",
+      "新能源汽车",
+      "消费"
+    ],
+    "context": "国内车市竞争白热化，以价换量成为车企抢占市场份额的核心策略。"
+  },
+  {
+    "id": "int-20260321-09",
+    "title": "US Core PCE Inflation Tracking Suggests Rebound, Raising Fed Caution",
+    "summary": "Early estimates from major Wall Street forecasters indicate that the US Core Personal Consumption Expenditures (PCE) price index for March is tracking higher than anticipated. Driven primarily by rigid shelter and auto insurance costs, the unexpected resilience in the Fed's preferred inflation gauge complicates the timeline for potential mid-year interest rate cuts.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-21/us-core-pce-inflation-tracking-rebound",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-21T09:45:00Z",
+    "importance": "极高，通胀反弹预期将直接推升美债收益率，打压全球风险资产估值。",
+    "region": "国际",
+    "tags": [
+      "Inflation",
+      "PCE",
+      "Federal Reserve",
+      "US Economy"
+    ],
+    "context": "市场正处于对美联储降息预期不断修正的敏感期，任何通胀超预期的线索都会引发剧烈波动。"
+  },
+  {
+    "id": "int-20260321-08",
+    "title": "EU Agrees on Historic AI Act Implementation Framework, Focusing on Foundation Models",
+    "summary": "The European Commission has finalized the implementation guidelines for the AI Act, placing stringent transparency and risk-assessment obligations on developers of large-scale foundation models. The framework mandates rigorous red-teaming and copyright disclosures before advanced AI systems can be deployed within the European single market, setting a potential global regulatory standard.",
+    "url": "https://www.ft.com/content/eu-ai-act-implementation-framework-2026",
+    "source": "FT",
+    "publishedAt": "2026-03-21T09:20:00Z",
+    "importance": "高，确立了全球最严格的AI监管细则，将显著增加科技巨头在欧洲的合规成本。",
+    "region": "国际",
+    "tags": [
+      "EU",
+      "AI Act",
+      "Regulation",
+      "Technology"
+    ],
+    "context": "随着生成式AI的爆发，欧美在科技创新与安全监管之间的平衡策略分歧正在扩大。"
+  },
+  {
+    "id": "int-20260321-07",
+    "title": "Copper Prices Hit 14-Month High on Supply Constraints and Demand Optimism",
+    "summary": "Benchmark copper prices surged past $9,100 per metric ton on the London Metal Exchange, reaching their highest level in over a year. The rally is fueled by an agreement among top Chinese smelters to coordinate production cuts in response to historically low treatment charges, coupled with resilient demand from the green energy transition and power grid upgrades.",
+    "url": "https://www.reuters.com/markets/commodities/copper-prices-hit-14-month-high-2026-03-21",
+    "source": "Reuters",
+    "publishedAt": "2026-03-21T09:05:00Z",
+    "importance": "高，铜价被视为宏观经济的“晴雨表”，其走高反映了制造业复苏和供给侧紧缩的共振。",
+    "region": "国际",
+    "tags": [
+      "Copper",
+      "Commodities",
+      "LME",
+      "Manufacturing"
+    ],
+    "context": "矿端供应干扰频发与中国新能源领域的强劲需求共同打破了铜市此前的弱势平衡。"
+  },
+  {
     "id": "int-20260321-06",
     "title": "Oil Prices Stabilize After Week of Volatility Driven by Middle East Tensions",
     "summary": "Global crude oil benchmarks stabilized near $82 per barrel during European trading hours, capping a highly volatile week. Traders weighed the risks of potential supply disruptions stemming from escalating geopolitical tensions in the Middle East against signs of building US commercial crude inventories.",
