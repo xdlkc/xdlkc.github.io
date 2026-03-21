@@ -87,7 +87,7 @@
           </details>
         </div>
       <% } %>
-      <article class="article-content"><%- page.content %></article>
+      <article class="article-content"><%- toc(page.content, {class: "article-toc", list_number: false}) %><%- page.content %></article>
     <% if (theme.reward && theme.reward.enable) { %>
       <div id="reward-container" class="reward-container" style="text-align: center; margin: 40px 0;">
         <button id="reward-toggle" class="reward-button" data-reward-toggle aria-expanded="false" data-i18n-key="post.reward" style="padding: 8px 24px; font-size: 16px; border-radius: 4px; background: #ea6f5a; color: #fff; border: none; cursor: pointer;">赞赏</button>
