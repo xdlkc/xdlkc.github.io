@@ -1,5 +1,102 @@
 [
   {
+    "id": "int-20260321-12",
+    "title": "US Retail Sales Beat Expectations, Underscoring Resilient Consumer Spending",
+    "summary": "The US Commerce Department reported that retail sales for February grew at a faster-than-expected pace, driven by strong auto sales and e-commerce growth. The data underscores the resilience of the US consumer despite elevated interest rates, complicating the Federal Reserve's inflation-fighting mandate and delaying aggressive rate cut expectations.",
+    "url": "https://www.wsj.com/economy/consumers/us-retail-sales-february-2026",
+    "source": "WSJ",
+    "publishedAt": "2026-03-21T10:45:00Z",
+    "importance": "极高，强劲的消费数据是“美国经济不衰退”的最强力证据，支撑美元走强。",
+    "region": "国际",
+    "tags": [
+      "Retail Sales",
+      "US Economy",
+      "Consumer Spending"
+    ],
+    "context": "强劲的劳动力市场持续转化为消费购买力，使得美国经济在紧缩周期中展现出罕见的韧性。"
+  },
+  {
+    "id": "int-20260321-11",
+    "title": "Oil Prices Slip Amid Rising US Inventories and Steady Global Output",
+    "summary": "Crude oil benchmarks West Texas Intermediate (WTI) and Brent both retreated by over 1.5% in early Friday trading. The sell-off was triggered by unexpectedly large builds in US commercial crude stockpiles and reports indicating that major non-OPEC+ producers are maintaining high output levels, easing fears of an imminent supply crunch.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-21/oil-prices-slip-on-us-inventories",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-21T10:30:00Z",
+    "importance": "中，油价的回落有助于缓解全球通胀压力，但对能源板块及产油国货币构成利空。",
+    "region": "国际",
+    "tags": [
+      "Oil",
+      "WTI",
+      "Commodities"
+    ],
+    "context": "能源市场的焦点正在从地缘政治风险溢价转向对实际供需基本面的重新评估。"
+  },
+  {
+    "id": "int-20260321-10",
+    "title": "Global Equity Funds Record Massive Inflows as Tech Rally Resumes",
+    "summary": "Global equity funds experienced their largest weekly inflows in over a year, according to a new report released Friday morning. Investors poured billions into technology and communication services sectors, shrugging off recent concerns over sticky inflation. The resurgence of 'FOMO' (fear of missing out) is driving equity valuations higher, particularly in AI-adjacent companies.",
+    "url": "https://www.reuters.com/markets/global-markets-flows-2026-03-21",
+    "source": "Reuters",
+    "publishedAt": "2026-03-21T10:10:00Z",
+    "importance": "中高，资金面数据显示市场风险偏好依然高亢，对短期股市表现形成强力支撑。",
+    "region": "国际",
+    "tags": [
+      "Equity Funds",
+      "Tech Rally",
+      "Capital Flows"
+    ],
+    "context": "尽管宏观环境充满不确定性，但充裕的流动性和对AI生产力革命的押注主导了市场叙事。"
+  },
+  {
+    "id": "dom-20260321-12",
+    "title": "多地密集出台新一轮房地产优化政策，进一步降低首付比例",
+    "summary": "财联社3月21日晚间电，今日包括杭州、南京在内的多个核心二线城市相继发布房地产市场平稳健康发展新政，主要措施涵盖进一步降低首套和二套房首付比例、取消局部区域限购、提高公积金贷款额度等。此举意在“金三银四”传统销售旺季加速释放改善型住房需求，促进楼市企稳回暖。",
+    "url": "https://www.cls.cn/detail/2026032108",
+    "source": "财联社",
+    "publishedAt": "2026-03-21T18:55:00+08:00",
+    "importance": "高，地方层面持续加码楼市托底政策，有望边际改善地产销售数据。",
+    "region": "国内",
+    "tags": [
+      "房地产",
+      "政策优化",
+      "限购"
+    ],
+    "context": "房地产产业链链条长、牵扯面广，楼市的企稳对全年宏观经济目标的实现至关重要。"
+  },
+  {
+    "id": "dom-20260321-11",
+    "title": "证监会就修订券商风控指标计算标准公开征求意见",
+    "summary": "为进一步完善证券公司风险控制指标体系，证监会今日晚间发布修订《证券公司风险控制指标计算标准规定》的征求意见稿。新规旨在引导券商优化业务结构，适度放宽优质券商的资本约束，同时对高风险业务实施更严格的资本计提，提升行业整体抗风险能力和高质量发展水平。",
+    "url": "http://www.csrc.gov.cn/xw/20260321/5.html",
+    "source": "证监会",
+    "publishedAt": "2026-03-21T18:40:00+08:00",
+    "importance": "中高，直接影响上市券商的ROE预期和杠杆率上限，利好头部合规券商。",
+    "region": "国内",
+    "tags": [
+      "证监会",
+      "券商",
+      "风控",
+      "资本市场"
+    ],
+    "context": "资本市场高质量发展需要强大的投行体系，风控指标的差异化安排将加速行业优胜劣汰。"
+  },
+  {
+    "id": "dom-20260321-10",
+    "title": "央行部署二季度信贷工作：盘活存量、提升效能",
+    "summary": "中国人民银行今日盘后召开二季度信贷工作座谈会，强调要准确把握当前宏观经济形势，下一阶段信贷投放要坚持稳中求进，着力盘活被低效占用的金融资源，提高资金使用效率。会议要求各金融机构加大对科技创新、绿色转型、普惠小微、数字经济等方面的支持力度，避免资金空转套利。",
+    "url": "http://www.pbc.gov.cn/goutongjiaoliu/20260321/4.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-21T18:15:00+08:00",
+    "importance": "高，明确了短期信贷投放节奏，结构性支持依然是货币政策的主轴。",
+    "region": "国内",
+    "tags": [
+      "央行",
+      "信贷",
+      "宏观政策"
+    ],
+    "context": "在总需求恢复仍需巩固的背景下，央行更加注重信贷结构的优化而非单纯的规模扩张。"
+  },
+  {
     "id": "dom-20260321-09",
     "title": "央行设立5000亿元科技创新和技术改造再贷款",
     "summary": "中国人民银行今日下午宣布，设立5000亿元科技创新和技术改造再贷款，利率定为1.75%，期限1年，可展期2次。该结构性货币政策工具旨在引导金融机构加大对初创期、成长期科技型中小企业的信贷支持，同时助力传统产业的数字化、智能化和绿色化设备更新改造。",
