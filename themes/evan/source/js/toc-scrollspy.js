@@ -358,7 +358,7 @@
           await copyText(url); // Pass no doc param
           showTocCopyToast(toast, copiedMsg);
         } catch {
-          showTocCopyToast(toast, failedMsg);
+          showTocTocCopyToast(toast, failedMsg);
         }
       });
 
@@ -707,8 +707,8 @@
   function initTocScrollSpy({
     tocSelector = '.toc-nav',
     contentSelector = '.article-content',
-    headingSelector = 'h2, h3, h4',
-    storage = win.localStorage, // Use closure-scoped win.localStorage
+    headingSelector = 'h2, h3', // Resolved: My change
+    storage = win.localStorage, // Resolved: Remote's change
     hiddenStorageKey = 'xdlkc:toc:hidden'
   } = {}) {
     const tocs = Array.from(doc.querySelectorAll(tocSelector));
@@ -911,6 +911,10 @@
       syncHeadingIdsWithToc(toc, headingElements);
       buildTocIntoContainer(toc, headingElements);
       enhanceTocLinkTitles(toc);
+      enhanceTocAutoNumbering(toc);
+      injectTocLinkCopyButtons(toc);
+      enhanceCollapsibleToc(toc);
+      injectTocCollapseAllToggle(toc);
 
       const tocLinks = Array.from(toc.querySelectorAll('a[href^="#"]'));
       if (tocLinks.length === 0) return;
