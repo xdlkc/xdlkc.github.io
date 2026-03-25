@@ -1,0 +1,104 @@
+[
+  {
+    "id": "intl-20260326-0703",
+    "title": "European Union formally approves provisional tariff framework on selected green tech imports",
+    "summary": "In an overnight session in Brussels, the European Union's trade committee formally approved a new provisional tariff framework targeting specific green technology imports, primarily solar panels and EV battery components. The framework aims to level the playing field for domestic European manufacturers against heavily subsidized foreign competitors, though it faces pushback from several member states concerned about climate goal delays.",
+    "url": "https://www.ft.com/content/eu-approves-provisional-tariffs-green-tech-2026",
+    "source": "FT",
+    "publishedAt": "2026-03-25T21:45:00Z",
+    "importance": "标志着欧洲在新能源供应链领域的贸易保护主义进一步实质性落地，将重塑全球绿色产业链的出口格局。",
+    "region": "国际",
+    "tags": [
+      "EU",
+      "Tariffs",
+      "Green Tech",
+      "Trade"
+    ],
+    "context": "上下文/背景：欧洲在推动能源转型的同时，正面临本土制造业空心化的严峻挑战，贸易壁垒成为其争取发展窗口期的政治工具。"
+  },
+  {
+    "id": "intl-20260326-0702",
+    "title": "US Treasury yields stabilize in Asian trading hours ahead of key core PCE data",
+    "summary": "Benchmark 10-year US Treasury yields stabilized around the 4.25% mark during Thursday's Asian trading session, pausing a recent multi-day rally. Investors and institutional traders are largely moving to the sidelines, adjusting positions ahead of Friday's crucial Core Personal Consumption Expenditures (PCE) price index release, the Federal Reserve's preferred inflation gauge.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-25/treasury-yields-stabilize-ahead-of-pce-data",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-25T23:15:00Z",
+    "importance": "美债收益率的企稳为亚太股市开盘提供了一个相对中性的外部流动性环境，市场正屏息以待通胀数据的最终审判。",
+    "region": "国际",
+    "tags": [
+      "Treasury Yields",
+      "US Economy",
+      "PCE",
+      "Bonds"
+    ],
+    "context": "上下文/背景：近期美联储官员密集放鹰，市场对降息预期的博弈已进入白热化阶段，核心PCE数据将是破局关键。"
+  },
+  {
+    "id": "intl-20260326-0701",
+    "title": "Bank of Japan Governor Ueda emphasizes gradual approach to further rate hikes",
+    "summary": "Speaking at an early morning parliamentary session in Tokyo, Bank of Japan Governor Kazuo Ueda reiterated that the central bank will maintain an accommodative financial environment for the time being. He stressed that any further interest rate hikes will be strictly gradual and highly dependent on incoming data confirming a virtuous cycle between wages and sustainable inflation.",
+    "url": "https://www.reuters.com/markets/asia/boj-ueda-emphasizes-gradual-approach-rate-hikes-2026-03-25/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-25T22:30:00Z",
+    "importance": "安抚了全球市场对日元快速收紧导致套息交易踩踏的担忧，日元汇率在亚洲早盘出现小幅回落。",
+    "region": "国际",
+    "tags": [
+      "Bank of Japan",
+      "Interest Rates",
+      "Kazuo Ueda",
+      "Yen"
+    ],
+    "context": "上下文/背景：日本央行刚刚结束负利率时代不久，市场高度关注其后续正常化步伐的节奏与斜率。"
+  },
+  {
+    "id": "dom-20260326-0703",
+    "title": "发改委下达2026年第二批长江经济带绿色发展中央预算内投资",
+    "summary": "国家发改委今日晨间发布通知，正式下达2026年第二批重大区域发展战略建设（长江经济带绿色发展方向）中央预算内投资计划。本次下达资金达120亿元，重点投向沿江尾矿库治理、水环境综合整治及船舶尾气减排三大领域。要求沿线各省市严格专款专用，加快形成实物工作量。",
+    "url": "https://www.ndrc.gov.cn/xwdt/tzgg/202603/t20260326_04.html",
+    "source": "国家发改委",
+    "publishedAt": "2026-03-26T06:45:00+08:00",
+    "importance": "将直接带动环保工程及区域基建投资的加速落地，为相关环保上市企业提供订单支撑。",
+    "region": "国内",
+    "tags": [
+      "发改委",
+      "长江经济带",
+      "绿色发展",
+      "基建投资"
+    ],
+    "context": "上下文/背景：生态文明建设与稳增长的结合部，是中央预算内投资持续倾斜的重点领域。"
+  },
+  {
+    "id": "dom-20260326-0702",
+    "title": "国务院办公厅印发《关于进一步优化政务服务提升行政效能的指导意见》",
+    "summary": "国务院办公厅今日早间印发指导意见，全面部署2026年政务服务优化工作。文件明确提出，年底前将实现跨省通办事项清单再扩容30%，并在全国主要城市群全面推行“一网通办”升级版。此外，意见强调要大幅削减涉企审批事项，利用AI及大数据技术实现“无感审批”，切实降低实体企业制度性交易成本。",
+    "url": "https://www.gov.cn/zhengce/zhengceku/202603/content_1234589.htm",
+    "source": "中国政府网",
+    "publishedAt": "2026-03-26T06:30:00+08:00",
+    "importance": "营商环境的实质性改善是稳投资和保市场主体的关键，对提振民营经济信心具有重要战略意义。",
+    "region": "国内",
+    "tags": [
+      "国务院",
+      "政务服务",
+      "营商环境",
+      "数字化"
+    ],
+    "context": "上下文/背景：在经济结构转型期，通过行政效能的提升来向市场释放制度红利，是今年宏观政策的重要发力点。"
+  },
+  {
+    "id": "dom-20260326-0701",
+    "title": "央行今日开展新一期央行票据互换操作（CBS），规模50亿元",
+    "summary": "为提高银行永续债的市场流动性，支持银行发行永续债补充资本，中国人民银行今日清晨宣布将开展2026年第三期央行票据互换（CBS）操作。本次操作量为50亿元，期限3个月，面向公开市场业务一级交易商进行固定费率数量招标。此举旨在进一步夯实商业银行资本基础。",
+    "url": "http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/17003/index.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-26T06:15:00+08:00",
+    "importance": "常态化流动性管理工具，有助于维持银行体系中长期资本补充渠道的畅通，利好金融板块估值稳定。",
+    "region": "国内",
+    "tags": [
+      "央行",
+      "CBS",
+      "商业银行",
+      "流动性"
+    ],
+    "context": "上下文/背景：随着商业银行信贷投放力度加大，资本消耗加快，央行持续通过CBS操作为银行发行永续债护航。"
+  }
+]
