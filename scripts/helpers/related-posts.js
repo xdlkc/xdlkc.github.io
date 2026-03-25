@@ -88,7 +88,8 @@ function computeRelatedPostsDetailed({
 }) {
   const currentPath = currentPost && currentPost.path ? String(currentPost.path) : '';
   const currentTags = normalizeTags(currentPost && currentPost.tags);
-  const currentSet = new Set(currentTags);
+  const currentTagsLower = currentTags.map(t => t.toLowerCase());
+  const currentSet = new Set(currentTagsLower);
   const candidates = Array.isArray(posts) ? posts : Array.from(posts || []);
 
   const scored = candidates
@@ -99,8 +100,8 @@ function computeRelatedPostsDetailed({
       const seen = new Set();
 
       postTags.forEach((tag) => {
-        if (!currentSet.has(tag)) return;
         const key = tag.toLowerCase();
+        if (!currentSet.has(key)) return;
         if (seen.has(key)) return;
         seen.add(key);
         shared.push(tag);

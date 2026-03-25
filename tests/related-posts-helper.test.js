@@ -59,18 +59,21 @@ test('related-posts-helper: case-insensitive tag matching', () => {
   const result = computeRelatedPostsDetailed({ currentPost: current, posts: all });
   assert.strictEqual(result.length, 2);
 
-  const tagsB = result[0].sharedTags.map(t => t.toLowerCase());
-  const tagsC = result[1].sharedTags.map(t => t.toLowerCase());
+  const postBResult = result.find(r => r.post.title === 'Post B');
+  const postCResult = result.find(r => r.post.title === 'Post C');
+
+  const tagsB = postBResult.sharedTags.map(t => t.toLowerCase());
+  const tagsC = postCResult.sharedTags.map(t => t.toLowerCase());
 
   assert.ok(tagsB.includes('javascript'));
   assert.ok(tagsC.includes('docker'));
 });
 
 test('related-posts-helper: returns empty when no shared tags', () => {
-  const current = { title: 'Post A', path: '/a/', tags: ['tag1'], date: '2024-01-01' };
+  const current = { title: 'Alpha', path: '/a/', tags: ['tag1'], date: '2024-01-01' };
   const all = [
-    { title: 'Post B', path: '/b/', tags: ['tag2'], date: '2024-01-02' },
-    { title: 'Post C', path: '/c/', tags: ['tag3'], date: '2024-01-03' }
+    { title: 'Beta', path: '/b/', tags: ['tag2'], date: '2024-01-02' },
+    { title: 'Gamma', path: '/c/', tags: ['tag3'], date: '2024-01-03' }
   ];
 
   const result = computeRelatedPostsDetailed({ currentPost: current, posts: all });
@@ -78,10 +81,10 @@ test('related-posts-helper: returns empty when no shared tags', () => {
 });
 
 test('related-posts-helper: fallback to recent when enabled', () => {
-  const current = { title: 'Post A', path: '/a/', tags: [], date: '2024-01-01' };
+  const current = { title: 'Alpha', path: '/a/', tags: [], date: '2024-01-01' };
   const all = [
-    { title: 'Post B', path: '/b/', tags: ['foo'], date: '2024-01-02' },
-    { title: 'Post C', path: '/c/', tags: ['bar'], date: '2024-01-03' }
+    { title: 'Beta', path: '/b/', tags: ['foo'], date: '2024-01-02' },
+    { title: 'Gamma', path: '/c/', tags: ['bar'], date: '2024-01-03' }
   ];
 
   const resultWithoutFallback = computeRelatedPostsDetailed({
@@ -98,7 +101,7 @@ test('related-posts-helper: fallback to recent when enabled', () => {
   });
   assert.strictEqual(resultWithFallback.length, 2);
   assert.strictEqual(resultWithFallback[0].reason, 'recent');
-  assert.strictEqual(resultWithFallback[0].post.title, 'Post C'); // latest date
+  assert.strictEqual(resultWithFallback[0].post.title, 'Gamma'); // latest date
 });
 
 test('related-posts-helper: respects limit parameter', () => {
