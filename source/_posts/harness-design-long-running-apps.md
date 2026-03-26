@@ -1,7 +1,8 @@
 ---
 title: "长运行应用开发的 Harness 设计"
 title_en: "Harness design for long-running application development"
-date: 2026-03-24
+date: 2026-03-26 19:10:00
+tags: [AI, Agent, Translate]
 source_file: blogs/anthropic/raw/harness-design-long-running-apps.md
 translated_by: AI (OpenClaw Subagent)
 ---
