@@ -72,4 +72,7 @@ feed:
   # Include full post content in RSS (better for readers)
   content: true
 
-deploy: {}
+deploy:
+  type: git
+  repo: xdlkc/xdlkc.github.io
+  branch: master
