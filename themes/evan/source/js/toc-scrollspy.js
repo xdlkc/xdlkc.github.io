@@ -912,9 +912,9 @@
       buildTocIntoContainer(toc, headingElements);
       enhanceTocLinkTitles(toc);
       enhanceTocAutoNumbering(toc);
-      injectTocLinkCopyButtons(toc);
-      enhanceCollapsibleToc(toc);
-      injectTocCollapseAllToggle(toc);
+      // injectTocLinkCopyButtons(toc);
+      // enhanceCollapsibleToc(toc);
+      // injectTocCollapseAllToggle(toc);
 
       const tocLinks = Array.from(toc.querySelectorAll('a[href^="#"]'));
       if (tocLinks.length === 0) return;

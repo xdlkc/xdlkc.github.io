@@ -616,14 +616,19 @@ h2 {
 .code-collapse-button {
   appearance: none;
   border: 1px solid rgba(31, 35, 40, 0.12);
-  background: rgba(255, 255, 255, 0.86);
-  color: var(--text);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
   border-radius: 999px;
-  padding: 0.38rem 0.68rem;
+  padding: 0.3rem 0.7rem;
   font: inherit;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
+  line-height: 1;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.18s ease, transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
 }
 
 .article-content figure.highlight .code-copy-button,
@@ -631,8 +636,42 @@ h2 {
 .article-content figure.highlight .code-collapse-button,
 .article-content pre .code-collapse-button {
   position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
+  top: 0.7rem;
+  right: 0.7rem;
+}
+
+.article-content figure.highlight:hover .code-copy-button,
+.article-content pre:hover .code-copy-button,
+.article-content figure.highlight:hover .code-collapse-button,
+.article-content pre:hover .code-collapse-button {
+  opacity: 1;
+}
+
+.code-copy-button:hover,
+.code-collapse-button:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(15, 118, 110, 0.24);
+  color: var(--accent);
+}
+
+.code-copy-button:active,
+.code-collapse-button:active {
+  transform: translateY(0);
+}
+
+[data-theme="dark"] .code-copy-button,
+[data-theme="dark"] .code-collapse-button {
+  background: rgba(15, 23, 42, 0.55);
+  border-color: rgba(229, 231, 235, 0.12);
+  color: rgba(229, 231, 235, 0.5);
+}
+
+[data-theme="dark"] .code-copy-button:hover,
+[data-theme="dark"] .code-collapse-button:hover {
+  background: rgba(15, 23, 42, 0.80);
+  border-color: rgba(15, 118, 110, 0.35);
+  color: #5eead4;
 }
 
 .article-content figure.highlight,
@@ -711,6 +750,8 @@ h2 {
 
 .toc-nav li ol {
   margin-top: 0.35rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 .toc-content li,
@@ -719,11 +760,17 @@ h2 {
 }
 
 .toc-nav-link {
-  display: block;
+  display: flex;
+  align-items: baseline;
+  gap: 0.3em;
   padding: 0.28rem 0;
   color: var(--muted);
   text-decoration: none;
   line-height: 1.45;
+}
+
+.toc-index {
+  display: none;
 }
 
 .toc-nav-link.is-active,

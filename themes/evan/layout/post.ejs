@@ -58,18 +58,6 @@
         <% }); %>
       </div>
     <% } %>
-    <button class="code-line-numbers-toggle" type="button" data-code-line-numbers-toggle aria-pressed="false" title="Toggle code line numbers (l)">行号：开</button>
-    <button class="article-link-copy" type="button" data-article-link-copy data-i18n-key="post.copyLink" data-i18n-aria-label-key="post.copyLink" aria-label="Copy article link">Copy Link</button>
-    <button class="post-bookmark" type="button" data-post-bookmark data-i18n-key="post.bookmark" data-i18n-aria-label-key="post.bookmark" aria-label="Bookmark this article" data-post-path="<%= page.path %>" data-post-title="<%= page.title %>">🔖 Bookmark (0)</button>
-    <button class="post-like" type="button" data-post-like aria-pressed="false">👍 Like (0)</button>
-
-    <div class="article-share" data-article-share data-article-title="<%= page.title %>" data-article-url="<%= url_for(page.path, { external: true }) %>">
-      <span class="article-share-label" data-i18n-key="post.share">Share:</span>
-      <a class="article-share-link article-share-twitter" href="#" data-share-platform="twitter" aria-label="Share to Twitter">Twitter</a>
-      <a class="article-share-link article-share-weibo" href="#" data-share-platform="weibo" aria-label="Share to Weibo">Weibo</a>
-      <a class="article-share-link article-share-linkedin" href="#" data-share-platform="linkedin" aria-label="Share to LinkedIn">LinkedIn</a>
-      <button class="article-share-link article-share-wechat" type="button" data-share-platform="wechat" aria-label="Share to WeChat">WeChat</button>
-    </div>
     <% if (page.excerpt) { %>
       <p class="article-summary"><%= strip_html(page.excerpt) %></p>
     <% } %>
@@ -87,7 +75,7 @@
           </details>
         </div>
       <% } %>
-      <article class="article-content"><%- toc(page.content, {class: "article-toc", list_number: false}) %><%- page.content %></article>
+      <article class="article-content"><%- page.content %></article>
     <% if (theme.reward && theme.reward.enable) { %>
       <div id="reward-container" class="reward-container" style="text-align: center; margin: 40px 0;">
         <button id="reward-toggle" class="reward-button" data-reward-toggle aria-expanded="false" data-i18n-key="post.reward" style="padding: 8px 24px; font-size: 16px; border-radius: 4px; background: #ea6f5a; color: #fff; border: none; cursor: pointer;">赞赏</button>
@@ -198,7 +186,6 @@
       <aside class="toc-card toc-sidebar" data-toc-sidebar>
         <div class="toc-header">
           <p class="toc-title" data-i18n-key="post.outline">Outline</p>
-          <button class="toc-toggle-button" type="button" data-toc-toggle aria-expanded="true" aria-controls="toc-content-desktop">折叠目录</button>
         </div>
         <div class="toc-content" id="toc-content-desktop">
           <%- postToc %>
@@ -267,23 +254,12 @@
 <script src="<%- url_for('/js/reading-progress.js') %>" defer></script>
 <script src="<%- url_for('/js/reading-time-countdown.js') %>" defer></script>
 <script src="<%- url_for('/js/breadcrumb.js') %>" defer></script>
-<script src="<%- url_for('/js/heading-anchor-copy.js') %>" defer></script>
-<script src="<%- url_for('/js/article-link-copy.js') %>" defer></script>
-<script src="<%- url_for('/js/post-like.js') %>" defer></script>
-<script src="<%- url_for('/js/post-bookmark.js') %>" defer></script>
-<script src="<%- url_for('/js/post-bookmark-ui.js') %>" defer></script>
 <script src="<%- url_for('/js/image-open.js') %>" defer></script>
 <script src="<%- url_for('/js/mermaid-enhance.js') %>" defer></script>
 <script src="<%- url_for('/js/mermaid-click-to-zoom.js') %>" defer></script>
 <script src="<%- url_for('/js/code-language-label.js') %>" defer></script>
-<script src="<%- url_for('/js/code-line-numbers.js') %>" defer></script>
 <script src="<%- url_for('/js/image-lazy-loading.js') %>" defer></script>
-<script src="<%- url_for('/js/font-size-toggle.js') %>" defer></script>
-<script src="<%- url_for('/js/code-copy.js') %>" defer></script>
-<script src="<%- url_for('/js/code-collapse.js') %>" defer></script>
-<script src="<%- url_for('/js/print-button.js') %>" defer></script>
 <script src="<%- url_for('/js/article-title-double-click-copy.js') %>" defer></script>
-<script src="<%- url_for('/js/quote-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/relative-time-display.js') %>" defer></script>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
@@ -344,21 +320,13 @@
   }
 
   window.RelativeTimeDisplay?.initRelativeTimeDisplay?.();
-  window.CodeCopy?.initCodeCopy();
-  window.CodeCollapse?.initCodeCollapse();
   window.Breadcrumb?.initBreadcrumb?.();
   window.TocScrollSpy?.initTocScrollSpy();
   window.ReadingProgress?.initReadingProgress();
   window.ReadingTimeCountdown?.init();
-  window.HeadingAnchorCopy?.initHeadingAnchorCopy();
-  window.ArticleLinkCopy?.initArticleLinkCopy();
-  window.PostLike?.initPostLike();
-  window.PostBookmarkUI?.initPostBookmark?.();
   window.ImageOpen?.initImageOpen?.();
   window.CodeLanguageLabel?.initCodeLanguageLabel();
-  window.CodeLineNumbers?.initCodeLineNumbers();
   window.ImageLazyLoading?.initImageLazyLoading?.();
-  window.PrintButton?.initPrintButton?.();
   window.ArticleTitleDoubleClickCopy?.init();
   window.ArticleTitleDoubleClickCopy?.init();
 </script>
