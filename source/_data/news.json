@@ -1,5 +1,107 @@
 [
   {
+    "id": "dom-20260401-0130-01",
+    "title": "上海原油连续主力合约日内跌10%，夜盘波动显著放大",
+    "summary": "财联社4月1日零点59分电，上海原油连续主力合约在夜盘交易中一度日内跌超10%，报价回落至674元/桶附近。结合同时段国际油价快速回吐战时风险溢价，这反映出前期因中东局势推高的情绪性定价正在被重新校准。对国内化工、航运与输入型通胀预期都会产生边际影响，短线也可能加大商品与权益市场的联动波动。",
+    "url": "https://api3.cls.cn/share/article/2331259?os=web&sv=8.4.6&app=CailianpressWeb",
+    "source": "财联社",
+    "publishedAt": "2026-03-31T16:59:29Z",
+    "importance": "高，国内原油期货剧烈回落会直接影响能源化工链条定价，也有助于观察输入型通胀压力是否阶段性缓和。",
+    "region": "国内",
+    "tags": [
+      "原油",
+      "期货",
+      "大宗商品",
+      "输入型通胀"
+    ],
+    "context": "前期国际油价因中东冲突大涨，国内原油夜盘随之积累较高风险溢价。若回落持续，化工成本端与通胀预期都可能重新定价。"
+  },
+  {
+    "id": "dom-20260401-0130-02",
+    "title": "富时中国A50指数期货涨超1%，中概股同步走强",
+    "summary": "财联社4月1日零点44分电，富时中国A50指数期货涨幅扩大至1%以上，利弗莫尔中概股龙头指数同步上涨超过3%。在国际市场仍受地缘风险与油价剧烈波动扰动的背景下，中国资产相对走强，说明外资对国内稳增长、低通胀和政策托底预期仍在继续交易。若这一势头延续，可能改善A股和港股风险偏好，并带动北向及海外被动资金重新配置。",
+    "url": "https://api3.cls.cn/share/article/2331247?os=web&sv=8.4.6&app=CailianpressWeb",
+    "source": "财联社",
+    "publishedAt": "2026-03-31T16:44:55Z",
+    "importance": "中高，中国核心资产期货与中概股同步走强，对次日A股开盘情绪和跨市场风险偏好具有较强指示意义。",
+    "region": "国内",
+    "tags": [
+      "A50",
+      "中概股",
+      "中国资产",
+      "风险偏好"
+    ],
+    "context": "在全球避险与再定价交织阶段，中国资产若保持相对收益，往往会强化“低估值+政策支持”的配置逻辑。"
+  },
+  {
+    "id": "dom-20260401-0130-03",
+    "title": "九部门提出到2028年物联网核心产业规模突破3.5万亿元",
+    "summary": "中国政府网3月31日转载新华社消息，工业和信息化部等九部门联合印发《推动物联网产业创新发展行动方案（2026—2028年）》，提出到2028年物联网终端连接数力争达到百亿级，核心产业规模突破3.5万亿元，并推动标准体系、平台服务、网络底座和重点应用场景协同建设。该方案意味着数字基础设施、工业互联网、智能终端和行业应用将继续获得政策牵引。",
+    "url": "https://www.gov.cn/lianbo/202603/content_7064286.htm",
+    "source": "中国政府网",
+    "publishedAt": "2026-03-31T00:00:00+08:00",
+    "importance": "高，物联网是新质生产力与数字经济的重要抓手，政策量化目标有利于设备、模组、通信和平台生态形成中期景气预期。",
+    "region": "国内",
+    "tags": [
+      "物联网",
+      "工信部",
+      "数字经济",
+      "新质生产力"
+    ],
+    "context": "国内政策正在从单点扶持转向“标准+场景+平台+连接规模”一体化推进。对通信模组、边缘计算、工业软件等赛道尤其关键。"
+  },
+  {
+    "id": "int-20260401-0130-01",
+    "title": "US gas prices eclipse $4 a gallon in the US, the highest since 2022",
+    "summary": "美联社报道，美国汽油均价再次站上每加仑4美元，为2022年以来最高水平。推动因素主要来自伊朗战争引发的全球能源供应担忧、油轮遇袭和霍尔木兹海峡风险升温。能源价格重新抬升会直接影响美国居民消费、通胀路径和联储降息空间，也会外溢到全球运输、化工和航空成本，对风险资产估值形成新的宏观约束。",
+    "url": "https://apnews.com/article/gas-prices-4-gallon-iran-war-de8b7ccea254a1585cab86f336db57a6",
+    "source": "AP",
+    "publishedAt": "2026-03-31T07:38:14Z",
+    "importance": "极高，能源再通胀会抬升美国通胀黏性，压缩美联储政策腾挪空间，并影响全球市场对增长与利率的定价。",
+    "region": "国际",
+    "tags": [
+      "AP",
+      "美国通胀",
+      "油价",
+      "伊朗局势"
+    ],
+    "context": "近期市场一度押注油价冲击只是短期事件，但汽油价格快速传导到终端消费后，宏观影响会更直接、更具持续性。"
+  },
+  {
+    "id": "int-20260401-0130-02",
+    "title": "Wall Street jolts higher and recovers some of its wartime losses",
+    "summary": "美联社报道，美股在此前因伊朗战事与油价飙升而大跌后出现明显反弹，市场重新交易“最坏情形未必立即兑现”的预期。反弹背后既有空头回补，也有对能源价格阶段性回落的反应。但这类修复更像高波动环境中的技术性喘息，而非风险彻底解除。若地缘冲突、航运安全或能源供应继续恶化，股市仍可能重新承压。",
+    "url": "https://apnews.com/article/stock-markets-war-oil-trump-iran-84a7c46b51b3583f743c8da6a40d36ac",
+    "source": "AP",
+    "publishedAt": "2026-03-31T04:50:10Z",
+    "importance": "高，美股反弹能反映全球风险偏好短线修复，但若只是战时急跌后的技术性回补，对后续资产配置参考价值仍需谨慎。",
+    "region": "国际",
+    "tags": [
+      "AP",
+      "美股",
+      "风险偏好",
+      "地缘政治"
+    ],
+    "context": "当前市场主线不是单纯增长或降息，而是“地缘风险—能源价格—通胀—资产估值”的连锁反应。美股每次反弹都在测试这一链条是否松动。"
+  },
+  {
+    "id": "int-20260401-0130-03",
+    "title": "Gulf allies privately make the case to Trump to keep fighting until Iran is decisively defeated",
+    "summary": "美联社援引多方消息称，沙特、阿联酋等海湾盟友正私下游说特朗普继续对伊朗保持高压，认为当前攻势尚不足以从根本上削弱德黑兰。若这一判断影响华盛顿决策，意味着中东冲突可能延长，能源运输与地区安全风险难以很快降温。对于全球市场而言，这将持续抬升原油、航运、避险资产和通胀预期的不确定性。",
+    "url": "https://apnews.com/article/trump-iran-saudi-arabia-mbs-gulf-war-uae-89f690b952fe28d3140c537b70fa5051",
+    "source": "AP",
+    "publishedAt": "2026-03-31T17:26:19.668Z",
+    "importance": "高，这不是单一外交表态，而是决定冲突持续时间与能源地缘风险溢价的关键变量。",
+    "region": "国际",
+    "tags": [
+      "AP",
+      "中东",
+      "地缘政治",
+      "原油"
+    ],
+    "context": "市场此前期待局势尽快转向谈判，但若海湾盟友倾向继续施压，风险溢价可能维持更久，并反复冲击全球资产价格。"
+  },
+  {
     "id": "int-20260321-12",
     "title": "US Retail Sales Beat Expectations, Underscoring Resilient Consumer Spending",
     "summary": "The US Commerce Department reported that retail sales for February grew at a faster-than-expected pace, driven by strong auto sales and e-commerce growth. The data underscores the resilience of the US consumer despite elevated interest rates, complicating the Federal Reserve's inflation-fighting mandate and delaying aggressive rate cut expectations.",
