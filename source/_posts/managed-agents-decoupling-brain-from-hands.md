@@ -41,6 +41,8 @@ Anthropic 把 agent 系统拆成了三个核心组成部分：
 
 Anthropic 在文中说得很直白：他们对**接口形状**是有明确主张的，但对接口背后具体跑什么并不执着。
 
+![Managed Agents 架构抽象示意图](/uploads/managed-agents-decoupling-brain-from-hands/001_image.png)
+
 ## 别把系统养成“宠物”
 
 文章里我很喜欢的一节标题叫：**Don’t adopt a pet**。
@@ -102,6 +104,8 @@ emitEvent(id, event)
 
 也就是说，**harness 不需要自己持有必须跨故障存活的状态**。这是一种非常典型、也非常成熟的分层思路：状态外移，执行层无状态化。
 
+![将大脑、session 与 hands 解耦后的恢复路径示意](/uploads/managed-agents-decoupling-brain-from-hands/002_image.png)
+
 ## 真正的安全边界在哪里
 
 这篇文章另一个非常重要的点，是它把安全问题说得很“结构化”，而不是停留在“把 token scope 缩小一点”这种战术补丁层面。
@@ -118,6 +122,8 @@ Anthropic 认为，仅仅做 narrow scoping 不是根本解决方案，因为那
 2. **外部凭证金库 + MCP 代理**：OAuth token 存在 sandbox 外部的 secure vault 中，Claude 调用 MCP tool 时，走一个专门代理；代理根据 session 关联 token 去 vault 里取真正凭证，再帮它访问外部服务。整个过程中 harness 也看不到实际凭证。
 
 这个设计思路很值得记：**别去赌模型“不会想到攻击方式”，而是从结构上让敏感信息根本不在它能碰到的位置。**
+
+![session 作为上下文窗口外可恢复对象的示意图](/uploads/managed-agents-decoupling-brain-from-hands/003_image.png)
 
 ## session 不是 Claude 的上下文窗口
 
@@ -210,6 +216,8 @@ execute(name, input) → string
 而 harness 不必关心它到底是什么。更进一步，因为 hand 不再绑定到单个 brain，不同 brain 之间甚至还能互相传递 hands。
 
 这点其实非常有意思：**Anthropic 不是在构建“一个很强的 agent”，而是在构建一种让 agent 组件自由编排的基础设施层。**
+
+![Many brains, many hands 的扩展模型示意](/uploads/managed-agents-decoupling-brain-from-hands/004_image.png)
 
 ## 结论：为未来还没出现的 harness 预留空间
 
