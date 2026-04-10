@@ -23,9 +23,7 @@
       <a href="<%- url_for('/news/') %>" data-i18n-key="nav.news">News</a>
       <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about">About</a>
       <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
-      <button class="random-post-button" data-random-post data-i18n-key="nav.random" data-i18n-aria-label-key="nav.random" aria-label="Random post" data-posts='<%- JSON.stringify(site.posts.map(p => ({ path: p.path, title: p.title }))) %>'>Random</button>
       <button class="site-search-trigger" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
-      <button class="font-size-toggle" data-font-size-toggle data-i18n-key="nav.font" data-i18n-aria-label-key="nav.font" aria-label="Font size">Font</button>
       <button class="theme-toggle" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
       <button class="shortcut-help-trigger" type="button" data-shortcut-help-trigger aria-label="Shortcuts" title="Shortcuts">?</button>
       <button class="lang-toggle" data-lang-toggle data-i18n-key="nav.lang" aria-label="切换为中文">中文</button>
@@ -76,16 +74,6 @@
         </div>
       <% } %>
       <article class="article-content"><%- page.content %></article>
-    <% if (theme.reward && theme.reward.enable) { %>
-      <div id="reward-container" class="reward-container" style="text-align: center; margin: 40px 0;">
-        <button id="reward-toggle" class="reward-button" data-reward-toggle aria-expanded="false" data-i18n-key="post.reward" style="padding: 8px 24px; font-size: 16px; border-radius: 4px; background: #ea6f5a; color: #fff; border: none; cursor: pointer;">赞赏</button>
-        <div id="reward-qr" class="reward-qr-codes" aria-hidden="true" style="display: none; margin-top: 20px;">
-          <% if (theme.reward.wechat) { %><div class="reward-qr-item" style="display: inline-block; margin: 0 10px;"><img src="<%- url_for(theme.reward.wechat) %>" alt="微信打赏" style="width: 150px; height: 150px;"><p>微信</p></div><% } %>
-          <% if (theme.reward.alipay) { %><div class="reward-qr-item" style="display: inline-block; margin: 0 10px;"><img src="<%- url_for(theme.reward.alipay) %>" alt="支付宝打赏" style="width: 150px; height: 150px;"><p>支付宝</p></div><% } %>
-        </div>
-      </div>
-    <% } %>
-
       <% if (comments.enable && comments.provider === 'utterances' && utterances.repo) { %>
         <section class="post-comments" aria-label="comments">
           <h2 class="post-comments-title" data-i18n-key="post.comments">Comments</h2>
@@ -194,8 +182,6 @@
     <% } %>
   </div>
 </article>
-<script src="<%- url_for('/js/reward-toggle.js') %>" defer></script>
-
 <% if (comments.enable && comments.provider === 'utterances' && utterances.repo) { %>
 <script>
   (function initPostComments() {

@@ -14,9 +14,7 @@ const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
     <div class="nav-links">
       <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about">About</a>
       <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
-      <button class="random-post-button" data-random-post data-i18n-key="nav.random" data-i18n-aria-label-key="nav.random" aria-label="Random post" data-posts='<%- JSON.stringify(site.posts.map(p => ({ path: p.path, title: p.title }))) %>'>Random</button>
       <button class="site-search-trigger" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
-      <button class="font-size-toggle" data-font-size-toggle data-i18n-key="nav.font" data-i18n-aria-label-key="nav.font" aria-label="Font size">Font</button>
       <button class="theme-toggle" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
       <button class="lang-toggle" data-lang-toggle data-i18n-key="nav.lang" aria-label="切换为中文">中文</button>
     </div>

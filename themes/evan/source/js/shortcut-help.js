@@ -64,7 +64,7 @@
           <li><kbd>t</kbd> — ${lang === 'zh' ? '切换目录（TOC）显示' : 'Toggle TOC'}</li>
           <li><kbd>p</kbd> — ${lang === 'zh' ? '折叠/展开阅读进度条' : 'Collapse/expand reading progress'}</li>
           <li><kbd>g</kbd> <kbd>h</kbd> — ${lang === 'zh' ? '回到首页' : 'Go Home'}</li>
-          <li><kbd>g</kbd> <kbd>a</kbd> — ${lang === 'zh' ? '打开归档' : 'Open Archives'}</li>
+          <li><kbd>g</kbd> <kbd>a</kbd> — ${lang === 'zh' ? '打开文章列表' : 'Open Archives'}</li>
           <li><kbd>Esc</kbd> — ${lang === 'zh' ? '关闭弹窗' : 'Close dialog'}</li>
         </ul>
       </div>
@@ -153,7 +153,7 @@
       <li><kbd>t</kbd> — ${nextLang === 'zh' ? '切换目录（TOC）显示' : 'Toggle TOC'}</li>
       <li><kbd>p</kbd> — ${nextLang === 'zh' ? '折叠/展开阅读进度条' : 'Collapse/expand reading progress'}</li>
       <li><kbd>g</kbd> <kbd>h</kbd> — ${nextLang === 'zh' ? '回到首页' : 'Go Home'}</li>
-      <li><kbd>g</kbd> <kbd>a</kbd> — ${nextLang === 'zh' ? '打开归档' : 'Open Archives'}</li>
+      <li><kbd>g</kbd> <kbd>a</kbd> — ${nextLang === 'zh' ? '打开文章列表' : 'Open Archives'}</li>
       <li><kbd>Esc</kbd> — ${nextLang === 'zh' ? '关闭弹窗' : 'Close dialog'}</li>
     `.trim();
   }

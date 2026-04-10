@@ -1,0 +1,39 @@
+<svg width="1400" height="860" viewBox="0 0 1400 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="860" rx="28" fill="#FFFDF8"/>
+  <text x="92" y="98" fill="#0F172A" font-size="46" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">LLM Wiki 的“知识复利”闭环</text>
+  <text x="92" y="142" fill="#475569" font-size="24" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">它不是静态仓库，而是一个会被持续编译、回写和校正的活系统。</text>
+
+  <circle cx="700" cy="446" r="164" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="626" y="434" fill="#0F172A" font-size="30" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">Wiki</text>
+  <text x="552" y="476" fill="#334155" font-size="24" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">持续演化的知识中间层</text>
+
+  <rect x="584" y="162" width="232" height="116" rx="26" fill="#FFF7ED" stroke="#FDBA74" stroke-width="2"/>
+  <text x="630" y="218" fill="#9A3412" font-size="28" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">1. 摄入新资料</text>
+  <text x="620" y="253" fill="#7C2D12" font-size="21" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">论文、文章、会议记录</text>
+
+  <rect x="962" y="360" width="252" height="116" rx="26" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="1010" y="416" fill="#1D4ED8" font-size="28" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">2. 结构化综合</text>
+  <text x="1000" y="451" fill="#1E3A8A" font-size="21" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">实体页 / 主题页 / 冲突</text>
+
+  <rect x="584" y="614" width="252" height="116" rx="26" fill="#ECFDF5" stroke="#86EFAC" stroke-width="2"/>
+  <text x="632" y="670" fill="#166534" font-size="28" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">3. 生成新输出</text>
+  <text x="620" y="705" fill="#166534" font-size="21" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">问答、报告、对比、洞见</text>
+
+  <rect x="196" y="360" width="252" height="116" rx="26" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+  <text x="244" y="416" fill="#B91C1C" font-size="28" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">4. 定期 lint</text>
+  <text x="226" y="451" fill="#991B1B" font-size="21" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">发现缺口、冲突、过时结论</text>
+
+  <path d="M824 232C923 267 992 322 1034 384" stroke="#F97316" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1022 376L1043 391L1016 394" stroke="#F97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M1088 492C1062 575 972 636 850 663" stroke="#2563EB" stroke-width="8" stroke-linecap="round"/>
+  <path d="M857 648L836 666L863 674" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M574 672C460 644 365 576 325 492" stroke="#16A34A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M340 499L317 484L345 479" stroke="#16A34A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M322 344C361 266 450 208 573 182" stroke="#DC2626" stroke-width="8" stroke-linecap="round"/>
+  <path d="M566 197L588 179L560 171" stroke="#DC2626" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="101" y="788" fill="#475569" font-size="24" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">关键变化：聊天记录里的瞬时答案，开始变成一个可被下次继续利用、继续修正的知识资产。</text>
+</svg>

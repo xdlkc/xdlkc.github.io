@@ -13,7 +13,7 @@
   const STORAGE_KEY = 'xdlkc:lang';
 
   const DICT = {
-    'nav.archives': { en: 'Archives', zh: '归档' },
+    'nav.archives': { en: 'Archives', zh: '文章' },
     'nav.news': { en: 'News', zh: '新闻' },
     'nav.about': { en: 'About', zh: '关于' },
     'nav.search': { en: 'Search', zh: '搜索' },
@@ -32,7 +32,7 @@
     'index.readArticle': { en: 'Read Article', zh: '阅读文章' },
     'footer.copyright': { en: 'All rights reserved.', zh: '保留所有权利。' },
     'archive.totalPrefix': { en: 'Total', zh: '目前共计' },
-    'archive.totalSuffix': { en: 'posts.', zh: '篇日志。' },
+    'archive.totalSuffix': { en: 'posts.', zh: '篇文章。' },
     'post.published': { en: 'Published', zh: '发布于' },
     'post.reading': { en: 'Reading', zh: '预计阅读' },
     'post.min': { en: 'min', zh: '分钟' },

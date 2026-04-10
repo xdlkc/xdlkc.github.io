@@ -904,7 +904,7 @@
       tryTopTags: langMode === 'zh' ? '也可以试试热门标签：' : 'You can also try popular tags:',
       noResult: langMode === 'zh' ? '无结果' : 'No results',
       retryHint: langMode === 'zh' ? '试试缩短关键词或换个说法' : 'Try shorter keywords or another phrase',
-      browseArchives: langMode === 'zh' ? '去 <a href="/archives/">归档</a> 按时间浏览' : 'Browse by time in <a href="/archives/">Archives</a>',
+      browseArchives: langMode === 'zh' ? '去 <a href="/archives/">文章</a> 按时间浏览' : 'Browse by time in <a href="/archives/">Archives</a>',
       externalSearchTitle: langMode === 'zh' ? '站外搜索：' : 'Search the web:',
       externalSearchGoogle: 'Google',
       externalSearchBing: 'Bing',
@@ -1515,7 +1515,7 @@
             const loadFail = langMode === 'zh' ? '搜索索引加载失败' : 'Failed to load search index';
             const retryLater = langMode === 'zh' ? '你可以稍后重试' : 'You can retry later';
             const archivesHint = langMode === 'zh'
-              ? '或直接去 <a href="/archives/">归档</a>'
+              ? '或直接去 <a href="/archives/">文章</a>'
               : 'Or jump to <a href="/archives/">Archives</a>';
             container.innerHTML = `
               <div class="site-search-empty" data-site-search-empty>

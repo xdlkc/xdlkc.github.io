@@ -21,7 +21,7 @@
 
     const items = [
       { name: mode === 'zh' ? '首页' : 'Home', url: '/' },
-      { name: mode === 'zh' ? '归档' : 'Archives', url: '/archives/' }
+      { name: mode === 'zh' ? '文章' : 'Archives', url: '/archives/' }
     ];
 
     const catName = String(categoryName || '').trim();

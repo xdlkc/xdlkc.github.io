@@ -1042,21 +1042,6 @@
         }
       });
 
-      try {
-        if (!id) return;
-        const loc = win?.location;
-        const rawHash = String(loc?.hash || '').trim();
-        const currentId = rawHash && rawHash.startsWith('#') ? rawHash.slice(1) : '';
-        const headingIds = new Set(headingMeta.map((h) => String(h?.id || '')));
-
-        if (currentId && !headingIds.has(currentId)) return;
-
-        if (rawHash !== `#${id}`) {
-          win.history.replaceState(null, '', `#${id}`);
-        }
-      } catch {
-        // ignore
-      }
     };
 
     const scrollToHashTarget = ({ behavior = 'auto' } = {}) => {

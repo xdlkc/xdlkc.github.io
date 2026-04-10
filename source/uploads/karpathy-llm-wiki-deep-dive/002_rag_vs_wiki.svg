@@ -1,0 +1,55 @@
+<svg width="1400" height="860" viewBox="0 0 1400 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="860" rx="28" fill="#F8FAFC"/>
+  <text x="84" y="96" fill="#0F172A" font-size="46" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">传统 RAG vs. LLM Wiki</text>
+  <text x="84" y="140" fill="#475569" font-size="24" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">区别不在“能不能检索”，而在于有没有提前形成综合层。</text>
+
+  <rect x="84" y="190" width="564" height="576" rx="28" fill="#FFF7ED" stroke="#FDBA74" stroke-width="2"/>
+  <text x="124" y="252" fill="#9A3412" font-size="38" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">传统 RAG</text>
+  <text x="124" y="294" fill="#7C2D12" font-size="24" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">每次提问时，临时从原始材料里拼装答案</text>
+
+  <rect x="124" y="336" width="188" height="104" rx="22" fill="#FFFFFF" stroke="#FDBA74" stroke-width="2"/>
+  <text x="152" y="394" fill="#7C2D12" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">raw docs</text>
+
+  <rect x="358" y="336" width="188" height="104" rx="22" fill="#FFFFFF" stroke="#FDBA74" stroke-width="2"/>
+  <text x="381" y="394" fill="#7C2D12" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">retrieve chunks</text>
+
+  <rect x="241" y="516" width="188" height="104" rx="22" fill="#FFFFFF" stroke="#FDBA74" stroke-width="2"/>
+  <text x="272" y="574" fill="#7C2D12" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">answer now</text>
+
+  <path d="M312 388H346" stroke="#F97316" stroke-width="7" stroke-linecap="round"/>
+  <path d="M342 372L362 388L342 404" stroke="#F97316" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M452 443V494" stroke="#F97316" stroke-width="7" stroke-linecap="round"/>
+  <path d="M436 489L452 511L468 489" stroke="#F97316" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="124" y="676" fill="#9A3412" font-size="24" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">特点</text>
+  <text x="124" y="716" fill="#7C2D12" font-size="22" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">• 快，但综合是临时的</text>
+  <text x="124" y="748" fill="#7C2D12" font-size="22" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">• 每次问复杂问题都要重新组织上下文</text>
+
+  <rect x="752" y="190" width="564" height="576" rx="28" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="792" y="252" fill="#1D4ED8" font-size="38" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">LLM Wiki</text>
+  <text x="792" y="294" fill="#1E3A8A" font-size="24" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">在摄入阶段先把知识编译进可维护的中间层</text>
+
+  <rect x="792" y="336" width="156" height="104" rx="22" fill="#FFFFFF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="822" y="394" fill="#1E3A8A" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">raw docs</text>
+
+  <rect x="980" y="336" width="196" height="104" rx="22" fill="#FFFFFF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="1016" y="394" fill="#1E3A8A" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">compile</text>
+
+  <rect x="888" y="516" width="224" height="124" rx="24" fill="#FFFFFF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="935" y="574" fill="#1E3A8A" font-size="28" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">wiki layer</text>
+  <text x="921" y="610" fill="#1E3A8A" font-size="21" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">实体 / 概念 / 综合 / 冲突</text>
+
+  <rect x="1142" y="516" width="126" height="124" rx="24" fill="#FFFFFF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="1171" y="590" fill="#1E3A8A" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">query</text>
+
+  <path d="M948 388H968" stroke="#2563EB" stroke-width="7" stroke-linecap="round"/>
+  <path d="M964 372L984 388L964 404" stroke="#2563EB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1078 443V494" stroke="#2563EB" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1062 489L1078 511L1094 489" stroke="#2563EB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1112 578H1128" stroke="#2563EB" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1124 562L1144 578L1124 594" stroke="#2563EB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="792" y="676" fill="#1D4ED8" font-size="24" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">特点</text>
+  <text x="792" y="716" fill="#1E3A8A" font-size="22" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">• 慢一些，但知识会累计</text>
+  <text x="792" y="748" fill="#1E3A8A" font-size="22" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">• 查询面对的是“整理后的知识”，不是原始碎片</text>
+</svg>
