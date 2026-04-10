@@ -76,6 +76,19 @@
     const pathname = location?.pathname;
     if (!pathname) return false;
 
+    const body = root?.body;
+    const isArticlePage = Boolean(body && body.classList && body.classList.contains('page-post-detail'));
+
+    // Article detail pages should always start from the top by default.
+    if (isArticlePage) {
+      try {
+        win.scrollTo(0, 0);
+      } catch {
+        // ignore
+      }
+      return false;
+    }
+
     // If there's an in-page anchor, let the browser do the right thing.
     if (String(location?.hash || '').trim()) return false;
 

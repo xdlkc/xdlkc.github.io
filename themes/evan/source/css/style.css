@@ -528,8 +528,19 @@ h2 {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
 }
 
+.article-content a,
+.article-summary a,
+.article-meta a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .article-content :not(pre) > code {
   padding: 0.14rem 0.38rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
   border-radius: 8px;
   background: rgba(15, 118, 110, 0.08);
   border: 1px solid rgba(15, 118, 110, 0.12);
