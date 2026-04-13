@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="50%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="#0f172a" rx="12"/>
+  <text x="400" y="28" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="bold">105 PLUGINS ECOSYSTEM</text>
+  <!-- Center -->
+  <circle cx="400" cy="165" r="40" fill="#f97316" opacity="0.15" stroke="#f97316" stroke-width="2"/>
+  <text x="400" y="160" text-anchor="middle" fill="#f97316" font-family="monospace" font-size="11" font-weight="bold">OpenClaw</text>
+  <text x="400" y="175" text-anchor="middle" fill="#f97316" font-family="monospace" font-size="9">Core</text>
+  <!-- Model providers ring -->
+  <circle cx="400" cy="165" r="85" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <text x="310" y="82" fill="#3b82f6" font-family="monospace" font-size="10" font-weight="bold">Model Providers ×20+</text>
+  <g fill="#1e40af" opacity="0.8">
+    <rect x="290" y="90" width="55" height="20" rx="10"/><text x="317" y="104" text-anchor="middle" fill="white" font-size="8">OpenAI</text>
+    <rect x="355" y="85" width="55" height="20" rx="10"/><text x="382" y="99" text-anchor="middle" fill="white" font-size="8">Anthropic</text>
+    <rect x="420" y="90" width="45" height="20" rx="10"/><text x="442" y="104" text-anchor="middle" fill="white" font-size="8">Google</text>
+    <rect x="475" y="100" width="55" height="20" rx="10"/><text x="502" y="114" text-anchor="middle" fill="white" font-size="8">DeepSeek</text>
+    <rect x="270" y="115" width="45" height="20" rx="10"/><text x="292" y="129" text-anchor="middle" fill="white" font-size="8">Ollama</text>
+    <rect x="540" y="115" width="50" height="20" rx="10"/><text x="565" y="129" text-anchor="middle" fill="white" font-size="8">Mistral</text>
+    <rect x="255" y="195" width="50" height="20" rx="10"/><text x="280" y="209" text-anchor="middle" fill="white" font-size="8">Groq</text>
+    <rect x="545" y="195" width="40" height="20" rx="10"/><text x="565" y="209" text-anchor="middle" fill="white" font-size="8">xAI</text>
+    <rect x="290" y="230" width="50" height="20" rx="10"/><text x="315" y="244" text-anchor="middle" fill="white" font-size="8">NVIDIA</text>
+    <rect x="455" y="230" width="65" height="20" rx="10"/><text x="487" y="244" text-anchor="middle" fill="white" font-size="8">Bedrock</text>
+  </g>
+  <!-- Channel plugins -->
+  <text x="620" y="55" fill="#10b981" font-family="monospace" font-size="10" font-weight="bold">Channels ×22</text>
+  <g fill="#065f46" opacity="0.8">
+    <rect x="610" y="62" width="60" height="16" rx="8"/><text x="640" y="74" text-anchor="middle" fill="white" font-size="7">Telegram</text>
+    <rect x="680" y="62" width="60" height="16" rx="8"/><text x="710" y="74" text-anchor="middle" fill="white" font-size="7">Discord</text>
+    <rect x="610" y="82" width="55" height="16" rx="8"/><text x="637" y="94" text-anchor="middle" fill="white" font-size="7">Slack</text>
+    <rect x="670" y="82" width="55" height="16" rx="8"/><text x="697" y="94" text-anchor="middle" fill="white" font-size="7">Signal</text>
+    <rect x="610" y="102" width="40" height="16" rx="8"/><text x="630" y="114" text-anchor="middle" fill="white" font-size="7">IRC</text>
+    <rect x="655" y="102" width="50" height="16" rx="8"/><text x="680" y="114" text-anchor="middle" fill="white" font-size="7">Matrix</text>
+  </g>
+  <!-- Capability plugins -->
+  <text x="30" y="55" fill="#a855f7" font-family="monospace" font-size="10" font-weight="bold">Capabilities</text>
+  <g fill="#581c87" opacity="0.8">
+    <rect x="20" y="62" width="60" height="16" rx="8"/><text x="50" y="74" text-anchor="middle" fill="white" font-size="7">Browser</text>
+    <rect x="85" y="62" width="55" height="16" rx="8"/><text x="112" y="74" text-anchor="middle" fill="white" font-size="7">Memory</text>
+    <rect x="20" y="82" width="50" height="16" rx="8"/><text x="45" y="94" text-anchor="middle" fill="white" font-size="7">Voice</text>
+    <rect x="75" y="82" width="60" height="16" rx="8"/><text x="105" y="94" text-anchor="middle" fill="white" font-size="7">Canvas</text>
+    <rect x="20" y="102" width="65" height="16" rx="8"/><text x="52" y="114" text-anchor="middle" fill="white" font-size="7">Search ×6</text>
+    <rect x="90" y="102" width="65" height="16" rx="8"/><text x="122" y="114" text-anchor="middle" fill="white" font-size="7">Image Gen</text>
+  </g>
+  <!-- Search plugins -->
+  <text x="30" y="155" fill="#06b6d4" font-family="monospace" font-size="10" font-weight="bold">Search</text>
+  <g fill="#164e63" opacity="0.8">
+    <rect x="20" y="162" width="50" height="16" rx="8"/><text x="45" y="174" text-anchor="middle" fill="white" font-size="7">Brave</text>
+    <rect x="75" y="162" width="55" height="16" rx="8"/><text x="102" y="174" text-anchor="middle" fill="white" font-size="7">Tavily</text>
+    <rect x="135" y="162" width="35" height="16" rx="8"/><text x="152" y="174" text-anchor="middle" fill="white" font-size="7">Exa</text>
+    <rect x="20" y="182" width="70" height="16" rx="8"/><text x="55" y="194" text-anchor="middle" fill="white" font-size="7">DuckDuckGo</text>
+    <rect x="95" y="182" width="65" height="16" rx="8"/><text x="127" y="194" text-anchor="middle" fill="white" font-size="7">Perplexity</text>
+  </g>
+  <!-- Voice/Media -->
+  <text x="30" y="230" fill="#f43f5e" font-family="monospace" font-size="10" font-weight="bold">Voice &amp; Media</text>
+  <g fill="#881337" opacity="0.8">
+    <rect x="20" y="237" width="65" height="16" rx="8"/><text x="52" y="249" text-anchor="middle" fill="white" font-size="7">ElevenLabs</text>
+    <rect x="90" y="237" width="65" height="16" rx="8"/><text x="122" y="249" text-anchor="middle" fill="white" font-size="7">Deepgram</text>
+    <rect x="160" y="237" width="55" height="16" rx="8"/><text x="187" y="249" text-anchor="middle" fill="white" font-size="7">Fal.ai</text>
+  </g>
+  <!-- Footer -->
+  <text x="400" y="285" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">全部通过 Plugin SDK 接入 · 第三方可自行开发 · npm 分发</text>
+</svg>
