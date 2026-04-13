@@ -1,0 +1,22 @@
+<svg width="1600" height="860" viewBox="0 0 1600 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="860" rx="40" fill="#0B1220"/>
+  <text x="90" y="86" fill="#F8FAFC" font-size="42" font-family="Helvetica, Arial, sans-serif" font-weight="700">第五章，Hermes 更像活物，是因为它在组织一种持续存在</text>
+  <text x="90" y="124" fill="#5EEAD4" font-size="24" font-family="Helvetica, Arial, sans-serif">不同入口遇到同一个 agent，同一套状态继续生长，这种连续性才会慢慢长出人格</text>
+  <circle cx="800" cy="420" r="124" fill="#083344" stroke="#5EEAD4" stroke-width="3"/>
+  <text x="738" y="410" fill="#ECFEFF" font-size="38" font-family="Helvetica, Arial, sans-serif" font-weight="700">同一个</text>
+  <text x="704" y="456" fill="#ECFEFF" font-size="38" font-family="Helvetica, Arial, sans-serif" font-weight="700">Hermes</text>
+  <rect x="180" y="200" width="220" height="94" rx="24" fill="#172554" stroke="#60A5FA"/>
+  <rect x="180" y="560" width="220" height="94" rx="24" fill="#3F1D2E" stroke="#F59E0B"/>
+  <rect x="1200" y="200" width="220" height="94" rx="24" fill="#052E2B" stroke="#34D399"/>
+  <rect x="1200" y="560" width="220" height="94" rx="24" fill="#4C1D95" stroke="#C4B5FD"/>
+  <text x="240" y="258" fill="#DBEAFE" font-size="28" font-family="Helvetica, Arial, sans-serif" font-weight="700">Telegram</text>
+  <text x="236" y="618" fill="#FEF3C7" font-size="28" font-family="Helvetica, Arial, sans-serif" font-weight="700">CLI</text>
+  <text x="1276" y="258" fill="#D1FAE5" font-size="28" font-family="Helvetica, Arial, sans-serif" font-weight="700">Slack</text>
+  <text x="1260" y="618" fill="#E9D5FF" font-size="28" font-family="Helvetica, Arial, sans-serif" font-weight="700">Discord</text>
+  <path d="M400 247C560 280 630 322 700 372" stroke="#60A5FA" stroke-width="5"/>
+  <path d="M400 607C560 560 630 518 700 468" stroke="#F59E0B" stroke-width="5"/>
+  <path d="M1200 247C1040 280 970 322 900 372" stroke="#34D399" stroke-width="5"/>
+  <path d="M1200 607C1040 560 970 518 900 468" stroke="#A78BFA" stroke-width="5"/>
+  <rect x="480" y="700" width="640" height="90" rx="22" fill="#0F172A" stroke="#334155"/>
+  <text x="530" y="757" fill="#CBD5E1" font-size="22" font-family="Helvetica, Arial, sans-serif">真正让人格长出来的不是一句 system prompt，而是连续的入口、连续的状态、连续的协作关系。</text>
+</svg>

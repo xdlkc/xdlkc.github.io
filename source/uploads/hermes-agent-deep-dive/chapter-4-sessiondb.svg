@@ -1,0 +1,22 @@
+<svg width="1600" height="860" viewBox="0 0 1600 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="860" rx="40" fill="#10151F"/>
+  <text x="90" y="86" fill="#F8FAFC" font-size="42" font-family="Helvetica, Arial, sans-serif" font-weight="700">第四章，把 demo 拉成系统的，往往不是模型，而是状态底座</text>
+  <text x="90" y="124" fill="#C4B5FD" font-size="24" font-family="Helvetica, Arial, sans-serif">SessionDB 用 SQLite + WAL + FTS5 + jitter retry 去接住长期会话、跨平台入口和多进程争用</text>
+  <ellipse cx="820" cy="390" rx="220" ry="120" fill="#312E81" fill-opacity="0.42" stroke="#A78BFA"/>
+  <text x="720" y="385" fill="#F5F3FF" font-size="38" font-family="Helvetica, Arial, sans-serif" font-weight="700">SessionDB</text>
+  <text x="710" y="428" fill="#DDD6FE" font-size="24" font-family="Helvetica, Arial, sans-serif">sessions + messages + fts</text>
+  <rect x="180" y="180" width="240" height="100" rx="24" fill="#172554" stroke="#60A5FA"/>
+  <rect x="180" y="500" width="240" height="100" rx="24" fill="#052E2B" stroke="#34D399"/>
+  <rect x="1180" y="180" width="240" height="100" rx="24" fill="#3F1D2E" stroke="#F59E0B"/>
+  <rect x="1180" y="500" width="240" height="100" rx="24" fill="#4C1D95" stroke="#C4B5FD"/>
+  <text x="238" y="238" fill="#DBEAFE" font-size="28" font-family="Helvetica, Arial, sans-serif" font-weight="700">CLI</text>
+  <text x="232" y="558" fill="#D1FAE5" font-size="28" font-family="Helvetica, Arial, sans-serif" font-weight="700">Gateway</text>
+  <text x="1220" y="238" fill="#FEF3C7" font-size="28" font-family="Helvetica, Arial, sans-serif" font-weight="700">Worktree Agent</text>
+  <text x="1244" y="558" fill="#E9D5FF" font-size="28" font-family="Helvetica, Arial, sans-serif" font-weight="700">Session Search</text>
+  <path d="M420 230C540 240 590 280 650 330" stroke="#60A5FA" stroke-width="5"/>
+  <path d="M420 550C540 520 590 485 650 440" stroke="#34D399" stroke-width="5"/>
+  <path d="M1180 230C1070 240 1020 280 960 330" stroke="#F59E0B" stroke-width="5"/>
+  <path d="M1180 550C1070 520 1020 485 960 440" stroke="#A78BFA" stroke-width="5"/>
+  <rect x="340" y="680" width="960" height="96" rx="24" fill="#0F172A" stroke="#334155"/>
+  <text x="390" y="740" fill="#CBD5E1" font-size="22" font-family="Helvetica, Arial, sans-serif">WAL 解决并发读写，FTS5 解决跨会话搜索，随机退避解决多进程写锁队头阻塞。没有这一层，agent 就只有「这一轮」没有「下一轮」。</text>
+</svg>

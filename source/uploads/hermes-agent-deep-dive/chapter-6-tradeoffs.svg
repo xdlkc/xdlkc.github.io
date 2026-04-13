@@ -1,0 +1,16 @@
+<svg width="1600" height="860" viewBox="0 0 1600 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="860" rx="40" fill="#111827"/>
+  <text x="90" y="86" fill="#F8FAFC" font-size="42" font-family="Helvetica, Arial, sans-serif" font-weight="700">第六章，真实的系统一定带着代价一起长大</text>
+  <text x="90" y="124" fill="#FCA5A5" font-size="24" font-family="Helvetica, Arial, sans-serif">复杂度、学习门槛和 prompt caching 约束，并不是缺点列表，而是它已经进入真实世界的证据</text>
+  <rect x="150" y="220" width="360" height="420" rx="30" fill="#1F2937" stroke="#475569"/>
+  <rect x="620" y="220" width="360" height="420" rx="30" fill="#2D1B22" stroke="#F87171"/>
+  <rect x="1090" y="220" width="360" height="420" rx="30" fill="#1E293B" stroke="#60A5FA"/>
+  <text x="218" y="286" fill="#F8FAFC" font-size="30" font-family="Helvetica, Arial, sans-serif" font-weight="700">复杂度</text>
+  <text x="198" y="334" fill="#CBD5E1" font-size="22" font-family="Helvetica, Arial, sans-serif">巨型核心文件、跨模块状态、长链路调用，会让维护成本很实在地上升。</text>
+  <text x="688" y="286" fill="#FECACA" font-size="30" font-family="Helvetica, Arial, sans-serif" font-weight="700">学习门槛</text>
+  <text x="658" y="334" fill="#F3F4F6" font-size="22" font-family="Helvetica, Arial, sans-serif">profiles、skills、gateway、provider routing 这些概念彼此咬合，新人要先理解运行模型。</text>
+  <text x="1148" y="286" fill="#DBEAFE" font-size="30" font-family="Helvetica, Arial, sans-serif" font-weight="700">缓存约束</text>
+  <text x="1122" y="334" fill="#E5E7EB" font-size="22" font-family="Helvetica, Arial, sans-serif">不能随便重建 prompt，不能任性改上下文，这会直接影响真实成本和稳定性。</text>
+  <rect x="270" y="700" width="1060" height="88" rx="22" fill="#0F172A" stroke="#334155"/>
+  <text x="330" y="755" fill="#CBD5E1" font-size="22" font-family="Helvetica, Arial, sans-serif">这几种代价并不讨喜，但它们说明 Hermes 想活在现实里，而不是只活在一个漂亮 demo 里。</text>
+</svg>
