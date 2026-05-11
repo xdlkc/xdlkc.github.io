@@ -14,6 +14,8 @@ categories:
 
 > 用 Hermes Agent + NotebookLM 跑完《罪与罚》之后，我发现自动化读书最难的不是“总结”。
 
+项目仓库：<https://github.com/xdlkc/notebooklm-workflow>
+
 ![AI 书童头图：阅读不是被替代，而是多了一个帮你整理书桌的 Agent](/uploads/ai-book-attendant/hero-ai-book-attendant-detailed.png)
 
 我最近想认真读一遍《罪与罚》。
