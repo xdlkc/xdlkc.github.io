@@ -303,7 +303,7 @@ function initThemeToggle({
     onSystemChange = null;
   }
 
-  if (initialMode === 'system') attachSystemListener();
+  if (effectiveMode === 'system') attachSystemListener();
 
   // Cross-tab sync: when another tab updates STORAGE_KEY, reflect it here.
   if (window?.addEventListener) {

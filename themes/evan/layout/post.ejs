@@ -11,7 +11,7 @@
   ? (primaryCategory.path ? url_for(primaryCategory.path) : url_for('/categories/' + primaryCategoryName + '/'))
   : '';
 %>
-<article class="article-shell container">
+<article class="article-shell container<%= page.deepseek_explorer ? ' dsh-article' : '' %>">
   <div class="reading-progress" data-reading-minutes="<%= reading_time(page.content) %>" role="progressbar" tabindex="0" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <div class="reading-progress-bar"></div>
   </div>
@@ -73,7 +73,12 @@
           </details>
         </div>
       <% } %>
-      <article class="article-content"><%- page.content %></article>
+      <article class="article-content">
+        <% if (page.deepseek_explorer) { %>
+          <%- partial('_partial/deepseek-harness-explorer') %>
+        <% } %>
+        <%- page.content %>
+      </article>
       <% if (comments.enable && comments.provider === 'utterances' && utterances.repo) { %>
         <section class="post-comments" aria-label="comments">
           <h2 class="post-comments-title" data-i18n-key="post.comments">Comments</h2>
@@ -247,6 +252,9 @@
 <script src="<%- url_for('/js/image-lazy-loading.js') %>" defer></script>
 <script src="<%- url_for('/js/article-title-double-click-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/relative-time-display.js') %>" defer></script>
+<% if (page.deepseek_explorer) { %>
+<script src="<%- url_for('/js/deepseek-harness-explorer.js') %>" defer></script>
+<% } %>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 

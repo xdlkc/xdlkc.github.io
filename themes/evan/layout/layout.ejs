@@ -43,6 +43,9 @@
   <link rel="stylesheet" href="<%- url_for('/css/style.css') %>" />
   <link rel="stylesheet" href="<%- url_for('/css/font-size.css') %>" />
   <link rel="stylesheet" href="<%- url_for('/css/responsive-fixes.css') %>" />
+  <% if (page.deepseek_explorer) { %>
+    <link rel="stylesheet" href="<%- url_for('/css/deepseek-harness.css') %>" />
+  <% } %>
   <link rel="stylesheet" href="<%- url_for('/css/print.css') %>" media="print" />
   <script>
     // Apply language as early as possible.
