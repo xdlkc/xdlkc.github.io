@@ -1,6 +1,7 @@
 ---
 title: 零刻 SER8 升级 Windows 11：最后卡住我的，是一个 TPM 选项
-date: 2026-09-30 00:00:00
+date: "2026-09-30T00:00:00+08:00"
+permalink: 2026/09/30/ser8-windows11-upgrade/
 description: 一次保留文件和软件的零刻 SER8 升级记录：从 TPM 无法识别、更新 BIOS，到切换 ASP fTPM 后通过检测，最终进入 Windows 11。
 tags:
   - Windows 11
