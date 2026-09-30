@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+<title id="title">这台 SER8 真正修改的 TPM 选项</title><desc id="desc">Advanced、AMD CBS、SOC Miscellaneous Control 下，Trusted Platform Module 从 Auto 改为 Enable ASP fTPM。Pluton Security Processor 保持 Auto，Security Device Support 保持 Enable。没有清除 TPM。</desc>
+<rect width="1200" height="860" rx="28" fill="#f5f2eb"/>
+<g font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<text x="64" y="67" font-size="20" fill="#586b68" letter-spacing="2">设置对照 · SER8 / BIOS 15.16</text>
+<text x="64" y="132" font-size="46" font-weight="700" fill="#193f3c">真正改动的，只有这一项</text>
+<rect x="64" y="177" width="1072" height="70" rx="12" fill="#e5e8df"/>
+<text x="88" y="220" font-size="25" fill="#314e46">Advanced → AMD CBS → SOC Miscellaneous Control</text>
+<rect x="64" y="276" width="1072" height="228" rx="18" fill="#193f3c"/>
+<text x="96" y="325" font-size="27" fill="#e0ebdf">Trusted Platform Module</text>
+<rect x="96" y="353" width="249" height="88" rx="12" fill="#365954"/>
+<text x="220" y="408" font-size="36" text-anchor="middle" fill="#fff">Auto</text>
+<path d="M385 397 H464 M449 383 L465 397 L449 411" stroke="#e1b88e" stroke-width="4" fill="none"/>
+<rect x="500" y="353" width="600" height="88" rx="12" fill="#e8b387"/>
+<text x="800" y="408" font-size="34" text-anchor="middle" font-weight="700" fill="#233f38">Enable ASP fTPM</text>
+<text x="96" y="478" font-size="22" fill="#d4e3d7">本机保存并重启后，Windows 正常识别 AMD TPM 2.0。</text>
+<g fill="#fff" stroke="#dedfd5"><rect x="64" y="532" width="1072" height="84" rx="12"/><rect x="64" y="634" width="1072" height="84" rx="12"/></g>
+<g font-size="27" fill="#193f3c"><text x="90" y="584">Pluton Security Processor</text><text x="90" y="686">Security Device Support</text></g>
+<g font-size="25" fill="#587464" text-anchor="end"><text x="1105" y="584">Auto · 保持原值</text><text x="1105" y="686">Enable · 保持原值</text></g>
+<text x="64" y="773" font-size="22" fill="#5c6861">没有清除 TPM，也没有恢复全部 BIOS 默认设置。</text>
+<text x="64" y="814" font-size="20" fill="#6e7670">这是设置示意图，不是 BIOS 截图；请勿跨机型照搬。</text>
+</g></svg>

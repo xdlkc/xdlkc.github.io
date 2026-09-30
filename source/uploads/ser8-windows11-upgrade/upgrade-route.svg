@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="920" viewBox="0 0 1200 920" role="img" aria-labelledby="title desc">
+<title id="title">零刻 SER8 升级 Windows 11 的实际路线</title><desc id="desc">确认 TPM 是阻碍；更新 BIOS 后问题仍在；切换为 ASP fTPM 后识别恢复；刷新兼容性评估通过；升级后确认 Windows 11 专业版 25H2 已激活。</desc>
+<rect width="1200" height="920" rx="28" fill="#f5f2eb"/>
+<g font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<text x="64" y="69" font-size="20" fill="#586b68" letter-spacing="3">SER8 · 一次真实升级</text>
+<text x="64" y="132" font-size="46" font-weight="700" fill="#193f3c">从“认不出 TPM”到升级完成</text>
+<text x="64" y="176" font-size="24" fill="#65716c">关键一步：把 TPM 来源从 Auto 切换为 ASP fTPM</text>
+<path d="M102 244 V764" stroke="#c5d3cb" stroke-width="4"/>
+<g fill="#ffffff" stroke="#dedfd5"><rect x="150" y="218" width="986" height="102" rx="16"/><rect x="150" y="340" width="986" height="102" rx="16"/><rect x="150" y="584" width="986" height="102" rx="16"/><rect x="150" y="706" width="986" height="102" rx="16"/></g>
+<rect x="150" y="462" width="986" height="102" rx="16" fill="#193f3c"/>
+<g fill="#193f3c"><circle cx="102" cy="269" r="27"/><circle cx="102" cy="391" r="27"/><circle cx="102" cy="635" r="27"/><circle cx="102" cy="757" r="27"/></g><circle cx="102" cy="513" r="33" fill="#c66938"/>
+<g font-size="25" font-weight="700" fill="#fff" text-anchor="middle"><text x="102" y="278">1</text><text x="102" y="400">2</text><text x="102" y="522">3</text><text x="102" y="644">4</text><text x="102" y="766">5</text></g>
+<g font-size="29" font-weight="700" fill="#193f3c"><text x="180" y="260">检查电脑</text><text x="180" y="382">更新 BIOS</text><text x="180" y="626">重新检测</text><text x="180" y="748">完成升级，再核实</text></g>
+<text x="180" y="504" font-size="29" font-weight="700" fill="#fff">切换 TPM 来源 → Enable ASP fTPM</text>
+<g font-size="22" fill="#5a6862"><text x="180" y="297">配置足够，问题集中在 Windows 无法使用 TPM。</text><text x="180" y="419">15.08 → 15.16；更新完成后，识别问题当时仍在。</text><text x="180" y="663">刷新旧缓存，新的兼容性评估显示通过。</text><text x="180" y="785">Windows 11 专业版 25H2 已激活，抽查的目录与程序仍在。</text></g>
+<text x="180" y="541" font-size="22" fill="#dce9de">保存重启后：AMD TPM 2.0 已识别、已就绪。</text>
+<text x="64" y="867" font-size="21" fill="#66716a">过程示意，非系统截图。BIOS 路径和更新必要性须按具体机型、版本核实。</text>
+</g></svg>
