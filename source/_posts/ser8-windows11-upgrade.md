@@ -1,5 +1,5 @@
 ---
-title: 我不懂 BIOS 和 TPM，也能让 Codex 帮我把电脑升级好
+title: 让 Codex 当电脑管家：我和 AI 一起升级电脑
 date: "2026-09-30 00:00:00"
 updated: "2026-10-01 00:00:00"
 permalink: 2026/09/30/ser8-windows11-upgrade/
