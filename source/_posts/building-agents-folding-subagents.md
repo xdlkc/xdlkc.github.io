@@ -1,6 +1,7 @@
 ---
 title: "构建智能体：何时将子智能体并入主智能体循环（译文转载）"
-date: 2026-10-28 23:30:57
+date: "2026-10-28 23:30:57"
+permalink: 2026/10/28/building-agents-folding-subagents/
 tags:
   - Agent
   - Subagents
