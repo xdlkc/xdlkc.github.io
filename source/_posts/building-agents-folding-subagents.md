@@ -12,26 +12,11 @@ categories:
 description: "Diane Sarkis 关于将路由器、规划器与领域子智能体逐步并入主循环的实践文章，涵盖渐进式披露、端到端评测与多团队协作。"
 ---
 
-> **引用与转载说明**
->
-> - **原文作者**：Diane Sarkis
-> - **原文出处**：Claude Resources（Anthropic）
-> - **原文标题**：*Building agents: When to fold subagents into your main agent loop*
-> - **原文发布日期**：2026 年 10 月 22 日
-> - **原文链接**：[阅读英文原文](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop)
-> - **中文版本来源**：所提供的《building_agents_folding_subagents_zh.pdf》，译者未署名。
->
-> 本文为该中文 PDF 的网页整理转载，并非本站原创，也不代表官方中文译本。正文中的“我们”指原文作者及其团队。正文、图示和相关观点的权利归各自权利人所有；配图沿用所提供 PDF 中的中文图示。本站仅整理标题层级、段落、列表与图文排版。文中模型名称、工具及实践数据保留来源材料所述时点。
-
-*Building agents: When to fold subagents into your main agent loop*
-
-在 Claude Platform 中构建智能体时，减少子智能体（Subagents）的数量、转而采用渐进式披露（Progressive Disclosure）的上下文与工具，不仅能提升输出质量，还能降低成本与延迟。本文将介绍何时以及如何进行迁移。
-
-<!-- more -->
-
 > 迁移提示（Migration Kit）：如果你已在 Claude Platform 中构建了包含多个子智能体的智能体系统，可以使用我们的迁移工具包（Migration Kit）来评估哪些子智能体适合并入主智能体循环。该工具包会运行一套引导式工作流，用于识别现有架构模式、评估替代方案并验证最佳路径，同时还附带一个可在接入真实智能体前先行试用的模拟系统演示（Demo）。
 
 子智能体（Subagents）——即拥有独立上下文窗口、专属工具集和指令，并由协调器（Coordinator）统一编排的智能体——是智能体架构设计的核心组件。它们在结果验证、并行任务处理以及模块化权限控制方面表现出色。我们在使用 Claude Platform 构建的诸多内部智能体中也广泛采用了子智能体，例如我们的多智能体研究系统（Multi-agent Research System）。
+
+<!-- more -->
 
 然而，近期我们的应用 AI（Applied AI）团队在多个企业级智能体部署案例中发现了一种普遍趋势：将路由器（Routers）、规划器（Planners）以及各领域子智能体（Domain Subagents）并入主智能体循环（Main Agent Loop）往往能带来显著收益。在对多个企业部署进行的对比评测中，搭载技能（Skills）的单智能体架构在输出质量上频繁优于“ 单提示词包揽一切（One-prompt-for-everything ）” 设计和“ 多子智能体（Subagent）”设计，且单次任务的成本与延迟通常更低。
 
@@ -225,4 +210,4 @@ description: "Diane Sarkis 关于将路由器、规划器与领域子智能体�
 
 Diane Sarkis. *Building agents: When to fold subagents into your main agent loop*. Claude Resources, Anthropic, 2026-10-22. [原文](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop)。
 
-中文正文及三张中文配图依据所提供的《building_agents_folding_subagents_zh.pdf》整理，译者未署名。PDF 末尾的“延伸阅读与相关文章”一并保留。
+本文为译文转载，中文正文及三张配图依据《building_agents_folding_subagents_zh.pdf》整理，译者未署名，非本站原创。
