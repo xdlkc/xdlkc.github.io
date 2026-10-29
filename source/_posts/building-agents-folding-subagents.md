@@ -755,6 +755,9 @@ excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式�
       </div>
     </footer>
 
-  <section class="folding-citation"><h2 class="section-h2" id="folding-section-15">引用来源</h2><p>Diane Sarkis. <em>Building agents: When to fold subagents into your main agent loop</em>. Claude Resources, Anthropic, 2026-10-22. <a href="https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop" rel="noopener noreferrer" target="_blank">原文</a>。</p><p>本文依据所提供的中文 HTML 整理转载，保留正文与交互动画，非本站原创。</p></section></div></div>
+  <section class="folding-citation"><h2 class="section-h2" id="folding-section-15">引用来源</h2>
+<p><strong>原文标题：</strong><a href="https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop" rel="noopener noreferrer" target="_blank">Building agents: When to fold subagents into your main agent loop</a></p>
+<p><strong>原文作者：</strong>Diane Sarkis<br><strong>原文出处：</strong>Claude Resources（Anthropic）<br><strong>发布日期：</strong>2026 年 10 月 22 日</p>
+<p>本文为中文整理转载，非本站原创。中文正文与交互动画采用所提供的 HTML 版本；英文原文请见上述链接。</p></section></div></div>
 <script src="/uploads/building-agents-folding-subagents/article.js" defer></script>
 {% endraw %}
