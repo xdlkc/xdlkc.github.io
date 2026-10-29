@@ -1,5 +1,5 @@
 ---
-title: "构建智能体：何时将子智能体并入主智能体循环（译文转载）"
+title: "构建智能体：何时将子智能体并入主智能体循环"
 date: "2026-10-28 23:30:57"
 permalink: 2026/10/28/building-agents-folding-subagents/
 tags:
@@ -15,7 +15,19 @@ excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式�
 
 {% raw %}
 <link rel="stylesheet" href="/uploads/building-agents-folding-subagents/article.css">
-<div id="folding-article"><div class="nav-actions folding-controls">
+<div id="folding-article">
+<div class="header-block" aria-label="文章导语与原文信息">
+<p class="en-sub en-sub-title"><a href="https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop" rel="noopener noreferrer" target="_blank"><em>Building agents: When to fold subagents into your main agent loop</em></a></p>
+<p class="article-lead">在 Claude Platform 中构建智能体时，减少子智能体（Subagents）的数量、转而采用渐进式披露（Progressive Disclosure）的上下文与工具，不仅能提升输出质量，还能降低成本与延迟。本文将介绍何时以及如何进行迁移。</p>
+<div class="meta-grid">
+<div><div class="meta-label">分类 (Category)</div><div class="meta-val">最佳实践、观点洞察</div></div>
+<div><div class="meta-label">产品 (Product)</div><div class="meta-val">Claude Platform</div></div>
+<div><div class="meta-label">作者 (Author)</div><div class="meta-val">Diane Sarkis</div></div>
+<div><div class="meta-label">发布日期与阅读时长</div><div class="meta-val">2026年10月22日 · 18 分钟</div></div>
+<div><div class="meta-label">原文出处 (Source)</div><div class="meta-val"><a href="https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop" rel="noopener noreferrer" target="_blank">Claude Resources（Anthropic）↗</a></div></div>
+</div>
+</div>
+<div class="nav-actions folding-controls">
         <button class="btn-control" id="toggleAnimBtn" type="button">
           <span class="status-dot" id="animStatusDot"></span>
           <span id="animBtnText">动画播放中 (点击暂停)</span>
@@ -755,9 +767,6 @@ excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式�
       </div>
     </footer>
 
-  <section class="folding-citation"><h2 class="section-h2" id="folding-section-15">引用来源</h2>
-<p><strong>原文标题：</strong><a href="https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop" rel="noopener noreferrer" target="_blank">Building agents: When to fold subagents into your main agent loop</a></p>
-<p><strong>原文作者：</strong>Diane Sarkis<br><strong>原文出处：</strong>Claude Resources（Anthropic）<br><strong>发布日期：</strong>2026 年 10 月 22 日</p>
-<p>本文为中文整理转载，非本站原创。中文正文与交互动画采用所提供的 HTML 版本；英文原文请见上述链接。</p></section></div></div>
+  </div></div>
 <script src="/uploads/building-agents-folding-subagents/article.js" defer></script>
 {% endraw %}
