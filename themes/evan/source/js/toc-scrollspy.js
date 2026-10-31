@@ -257,6 +257,13 @@
     };
 
     links.forEach((link) => {
+      // Imported articles can already carry section numbers in their headings.
+      const label = link.cloneNode(true);
+      label.querySelectorAll('.toc-index, .toc-toggle').forEach((node) => node.remove());
+      if (/^\d+(?:\.\d+)+(?:[.、．])?\s+|^\d+[.、．]\s*/u.test(label.textContent.trim())) {
+        link.querySelector(':scope > .toc-index')?.remove();
+        return;
+      }
       const index = computeIndex(link);
       if (!index) return;
 
