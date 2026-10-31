@@ -30,10 +30,10 @@
     </div>
   </nav>
 
+  <% const updatedLabel = updated_label(); %>
   <header class="article-hero">
-    <p class="tag">LATEST WRITING</p>
+    <p class="tag"><%= primaryCategoryName || 'ARTICLES' %></p>
     <nav data-breadcrumb
-      data-breadcrumb-title="<%- page.title %>"
       <% if (primaryCategoryName && primaryCategoryUrl) { %>
         data-breadcrumb-category="<%- primaryCategoryName %>"
         data-breadcrumb-category-url="<%- primaryCategoryUrl %>"
@@ -42,13 +42,13 @@
     <h1><%= page.title %></h1>
     <p class="article-meta">
       <span data-i18n-key="post.published">Published</span>
-      <span class="article-meta-date"><%= date(page.date, 'YYYY-MM-DD') %></span>
-      (<span data-publish-date="<%= date(page.date, 'YYYY-MM-DDTHH:mm:ssZ') %>">加载中...</span>)
-      <%- updated_label() %>
+      <time class="article-meta-date" datetime="<%= date(page.date, 'YYYY-MM-DDTHH:mm:ssZ') %>"><%= date(page.date, 'YYYY-MM-DD') %></time>
       · <span class="article-meta-word-count"><span data-i18n-key="post.words">Words</span> · <%= post_word_count(page.content) %></span>
       · <span class="article-meta-reading-time"><span data-i18n-key="post.reading">Reading</span> · <%= reading_time(page.content) %> <span data-i18n-key="post.min">min</span></span>
-      · <span class="article-meta-reading-time-countdown" data-reading-time-countdown aria-live="polite"></span>
     </p>
+    <% if (updatedLabel) { %>
+      <p class="article-updated"><%- updatedLabel %></p>
+    <% } %>
     <% if (page.tags && page.tags.length > 0) { %>
       <div class="article-meta-tags" aria-label="Tags">
         <% page.tags.forEach(function(tag, index) { %>
@@ -179,6 +179,7 @@
       <aside class="toc-card toc-sidebar" data-toc-sidebar>
         <div class="toc-header">
           <p class="toc-title" data-i18n-key="post.outline">Outline</p>
+          <span class="toc-reading-time" data-reading-time-countdown></span>
         </div>
         <div class="toc-content" id="toc-content-desktop">
           <%- postToc %>

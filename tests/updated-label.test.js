@@ -29,6 +29,6 @@ test('buildUpdatedLabel: returns formatted label when updated is on a different 
       date: new Date('2026-03-01T10:00:00Z'),
       updated: new Date('2026-03-03T09:00:00Z')
     }),
-    ' · 更新于 2026-03-03'
+    '更新于 2026-03-03'
   );
 });

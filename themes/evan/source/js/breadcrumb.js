@@ -1,4 +1,4 @@
-/* Visible breadcrumb navigation (Home → Archives → (Category) → current post).
+/* Visible breadcrumb navigation (Home → Archives → Category).
  *
  * Note: JSON-LD BreadcrumbList is handled by Hexo helpers in layout.ejs.
  * This module only renders the **UI breadcrumb** on post pages.
@@ -16,7 +16,7 @@
     return document?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
   }
 
-  function buildBreadcrumbItems({ title, categoryName, categoryUrl } = {}) {
+  function buildBreadcrumbItems({ categoryName, categoryUrl } = {}) {
     const mode = lang(globalThis.document);
 
     const items = [
@@ -29,11 +29,6 @@
     if (catName && catUrl) {
       items.push({ name: catName, url: catUrl });
     }
-
-    items.push({
-      name: String(title || '').trim() || (mode === 'zh' ? '当前文章' : 'Current Post'),
-      url: null
-    });
 
     return items;
   }
@@ -96,14 +91,10 @@
     if (container.getAttribute('data-breadcrumb-inited') === '1') return;
     container.setAttribute('data-breadcrumb-inited', '1');
 
-    const title = container.getAttribute('data-breadcrumb-title')
-      || document.title
-      || '当前文章';
-
     const categoryName = container.getAttribute('data-breadcrumb-category') || '';
     const categoryUrl = container.getAttribute('data-breadcrumb-category-url') || '';
 
-    const items = buildBreadcrumbItems({ title, categoryName, categoryUrl });
+    const items = buildBreadcrumbItems({ categoryName, categoryUrl });
 
     renderBreadcrumb({ document, container, items });
   }
