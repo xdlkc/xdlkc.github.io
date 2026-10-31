@@ -37,6 +37,8 @@
     'post.reading': { en: 'Reading', zh: '预计阅读' },
     'post.min': { en: 'min', zh: '分钟' },
     'post.words': { en: 'Words', zh: '字数' },
+    'post.audio.podcast': { en: 'AI Audio Guide', zh: 'AI 语音导读' },
+    'post.audio.full': { en: 'Full Audio', zh: '全文朗读' },
     'post.copyLink': { en: 'Copy Link', zh: '复制链接' },
     'post.toc': { en: 'Outline', zh: '查看大纲' },
     'post.outline': { en: 'Outline', zh: '大纲' },

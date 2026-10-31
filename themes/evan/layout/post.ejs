@@ -59,6 +59,7 @@
     <% if (page.excerpt) { %>
       <p class="article-summary"><%= strip_html(page.excerpt) %></p>
     <% } %>
+    <%- partial('_partial/post-audio-player') %>
   </header>
 
   <div class="article-layout">
@@ -253,6 +254,7 @@
 <script src="<%- url_for('/js/image-lazy-loading.js') %>" defer></script>
 <script src="<%- url_for('/js/article-title-double-click-copy.js') %>" defer></script>
 <script src="<%- url_for('/js/relative-time-display.js') %>" defer></script>
+<script src="<%- url_for('/js/post-audio-player.js') %>" defer></script>
 <% if (page.deepseek_explorer) { %>
 <script src="<%- url_for('/js/deepseek-harness-explorer.js') %>" defer></script>
 <% } %>
@@ -323,5 +325,5 @@
   window.CodeLanguageLabel?.initCodeLanguageLabel();
   window.ImageLazyLoading?.initImageLazyLoading?.();
   window.ArticleTitleDoubleClickCopy?.init();
-  window.ArticleTitleDoubleClickCopy?.init();
+  window.PostAudioPlayer?.initPostAudioPlayer?.();
 </script>

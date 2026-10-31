@@ -7,3 +7,5 @@ public/
 
 tools/__pycache__/
 tmp/
+.env
+.env.*

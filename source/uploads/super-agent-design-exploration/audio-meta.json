@@ -1,0 +1,12 @@
+{
+  "slug": "super-agent-design-exploration",
+  "mode": "podcast",
+  "tts_model": "speech-2.8-hd",
+  "voice_id": "presenter_male",
+  "speed": 1.0,
+  "chars": 2478,
+  "chunks": 2,
+  "duration_ms": 461592,
+  "duration": "07:42",
+  "cache_hash": "77df1c7a48ab4983"
+}

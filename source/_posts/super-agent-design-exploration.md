@@ -10,6 +10,9 @@ tags:
   - Harness
 categories:
   - Agent 工程
+audio: /uploads/super-agent-design-exploration/audio.mp3
+audio_mode: podcast
+audio_duration: "07:42"
 ---
 
 作者：DeepSeek 产品部 · DeepSeek Harness 团队 · 2026年10月31日 20:29

@@ -26,6 +26,22 @@ def parse_args() -> argparse.Namespace:
         default="http://127.0.0.1:6789",
         help="Proxy used by git push when --push is set.",
     )
+    parser.add_argument(
+        "--with-audio",
+        action="store_true",
+        help="Generate MiniMax audio narration and attach it to the post front-matter.",
+    )
+    parser.add_argument(
+        "--audio-mode",
+        choices=["podcast", "full"],
+        default="podcast",
+        help="Audio narration mode when --with-audio is set (default: podcast).",
+    )
+    parser.add_argument(
+        "--voice-id",
+        default="presenter_male",
+        help="MiniMax voice_id when --with-audio is set (default: presenter_male).",
+    )
     return parser.parse_args()
 
 
@@ -164,6 +180,17 @@ def main() -> None:
         body = sync_local_images(body, source, repo, slug)
 
     write_text(post_path, build_post_markdown(title, published, body))
+
+    if args.with_audio:
+        from generate_audio import generate_audio_for_post
+
+        generate_audio_for_post(
+            post_path=post_path,
+            repo=repo,
+            slug=slug,
+            mode=args.audio_mode,
+            voice_id=args.voice_id,
+        )
 
     if args.push:
         args.commit = True

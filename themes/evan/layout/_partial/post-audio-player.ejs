@@ -1,0 +1,78 @@
+<% if (page && page.audio) { %>
+  <% const audioMode = page.audio_mode === 'full' ? 'full' : 'podcast'; %>
+  <% const badgeI18nKey = audioMode === 'full' ? 'post.audio.full' : 'post.audio.podcast'; %>
+  <% const badgeDefaultText = audioMode === 'full' ? 'Full Audio' : 'AI Audio Guide'; %>
+  <% const initialDuration = page.audio_duration ? String(page.audio_duration) : '00:00'; %>
+  <div class="post-audio-player" data-post-audio-player data-audio-mode="<%= audioMode %>">
+    <audio
+      class="post-audio-element"
+      data-audio-el
+      preload="metadata"
+      src="<%- url_for(page.audio) %>"
+    ></audio>
+
+    <div class="post-audio-main">
+      <button
+        type="button"
+        class="post-audio-play-btn"
+        data-audio-play
+        aria-label="Play audio"
+        aria-pressed="false"
+      >
+        <span class="post-audio-icon-play" aria-hidden="true">▶</span>
+        <span class="post-audio-icon-pause" aria-hidden="true" hidden>❚❚</span>
+      </button>
+
+      <div class="post-audio-body">
+        <div class="post-audio-header">
+          <span class="post-audio-badge">
+            <span aria-hidden="true">🎧</span>
+            <span data-i18n-key="<%= badgeI18nKey %>"><%= badgeDefaultText %></span>
+          </span>
+          <span class="post-audio-time" aria-live="off">
+            <span data-audio-current>00:00</span>
+            <span class="post-audio-time-sep">/</span>
+            <span data-audio-duration><%= initialDuration %></span>
+          </span>
+        </div>
+
+        <div class="post-audio-progress-wrap">
+          <input
+            type="range"
+            class="post-audio-seek"
+            data-audio-seek
+            min="0"
+            max="100"
+            step="0.1"
+            value="0"
+            aria-label="Audio progress"
+          />
+        </div>
+      </div>
+
+      <div class="post-audio-controls">
+        <button
+          type="button"
+          class="post-audio-skip-btn"
+          data-audio-skip="-15"
+          title="-15s"
+          aria-label="Rewind 15 seconds"
+        >-15s</button>
+        <button
+          type="button"
+          class="post-audio-skip-btn"
+          data-audio-skip="15"
+          title="+15s"
+          aria-label="Forward 15 seconds"
+        >+15s</button>
+        <button
+          type="button"
+          class="post-audio-speed-btn"
+          data-audio-speed
+          title="Playback speed"
+          aria-label="Playback speed"
+        >1x</button>
+      </div>
+    </div>
+  </div>
+<% } %>

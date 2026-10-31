@@ -42,6 +42,9 @@
       {% if post.image %}
       <enclosure url="{{ url + post.image | uriencode }}" type="image"/>
       {% endif %}
+      {% if post.audio %}
+      <enclosure url="{{ url + post.audio | uriencode }}" type="audio/mpeg"/>
+      {% endif %}
       {% if config.feed.content and post.content %}
       <content:encoded><![CDATA[{{ post.content | noControlChars | safe }}]]></content:encoded>
       {% endif %}
