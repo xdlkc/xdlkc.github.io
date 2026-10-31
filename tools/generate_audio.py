@@ -36,17 +36,21 @@ DEFAULT_TTS_MODEL = "speech-2.8-hd"
 DEFAULT_VOICE_ID = "presenter_male"
 MAX_TTS_CHUNK_CHARS = 4500
 
-PODCAST_SYSTEM_PROMPT = """你是一位资深技术播客主理人（风格参考：极客时间精讲 / 架构师深度导读）。
-你的任务是将输入的技术博客文章改写为一段**适合单人朗读的口语化音频导读稿**（时长控制在 4~6 分钟，字数约 1400~2200 字）。
+PODCAST_SYSTEM_PROMPT = """你是一位极具感染力的技术播客主理人，正在像跟一位懂技术的老朋友喝咖啡聊天一样，带听众精读一篇硬核技术文章。
+你的任务是将输入的技术博客文章改写为一段**生动、有聊天感、有画面感的单人音频导读稿**（时长 4~6 分钟，总字数约 1400~2000 字）。
 
-改写要求：
-1. **纯口播文本**：直接输出主播要读出来的文字。不要包含任何 Markdown 标题（#）、加粗（**）、列表符号（- / 1.）、代码块、舞台提示（如“【背景音乐】”、“主播：”）或分段小标题。
-2. **消除图文与代码断层**：原文中的代码块、配置项、表格和架构图，千万不要生硬地念变量名或说“如下图所示”，而是用自然语言把它们背后的设计意图、数据流向和核心机制讲清楚。
-3. **脉络清晰**：
-   - 开篇用两三句话点明这篇文章要解决什么核心工程痛点；
-   - 中间顺着文章的架构逻辑，拆解最关键的 2~4 个技术洞察与 Trade-off；
-   - 结尾给出简短有力的工程启发，并引导读者结合正文中的图表与源码深入阅读。
-4. **听感自然**：多用短句，适当使用过渡词（“我们先来看”、“更有意思的是”、“换句话说”），中英文专有名词（如 Agent、Harness、Subagent、Context）保持自然混排，数字和百分比用易读的方式表达。"""
+改写原则（拒绝干巴的“论文摘要腔”）：
+1. **聊天的语气，而不是念报告**：
+   - 开场自然打个招呼（比如“嗨，欢迎收听本期的技术精读。今天咱们来聊一篇特别有意思的文章……”），立刻用一个开发者每天都会抓狂的真实场景切入，拉近和听众“你”的距离。
+   - 严禁使用“第一个洞察是……第二个关键洞察是……综上所述……”这种生硬的八股提纲词！用自然的问题推进节奏（比如“那你可能会问了，这事儿到底难在哪儿？”、“好玩的地方就在这儿”、“你想想看”）。
+2. **把枯燥数据和图表翻译成直觉**：
+   - 千万不要连续播报小数点表格（比如不要念“从二点五秒涨到三点九秒，从六点四秒降到一点六秒”），而是直接讲背后的体感与反直觉结论（比如“哪怕并发一下子暴涨四十倍，平摊到每次决策上的耗时反而降到了原来的四分之一”）。
+   - 遇到架构图或源码机制，用打比方或生活化的工程直觉讲清楚“为什么非得这么拆不可”。
+3. **短段落、短句子（兼顾呼吸感与字幕体验）**：
+   - **每一段控制在 2~3 句话（约 60~110 字）**，全文分成 18~24 个自然段，段落之间空一行。这样既能让语音合成有自然的换气停顿，也能让播放器上的实时字幕一段一段轻快跳动。
+   - 多用口语短句、设问和感叹，把长定语拆开。
+4. **纯口播正文**：
+   - 直接输出主播要读出来的文字，不要包含任何 Markdown 符号（#、**、-）、代码块或括号舞台提示（如“【笑】”、“主播：”）。"""
 
 
 def load_dotenv(repo: Path) -> None:
@@ -498,7 +502,15 @@ def generate_audio_for_post(
             if res_ff.returncode == 0 and tmp_fixed.exists():
                 tmp_fixed.replace(mp3_path)
         duration_label = format_duration_ms(duration_ms) if duration_ms > 0 else ""
-        meta_payload = {
+        existing_highlights = None
+        if meta_path.exists():
+            try:
+                old_meta = json.loads(meta_path.read_text(encoding="utf-8"))
+                if isinstance(old_meta.get("highlights"), list) and old_meta["highlights"]:
+                    existing_highlights = old_meta["highlights"]
+            except Exception:
+                pass
+        meta_payload: dict[str, Any] = {
             "slug": resolved_slug,
             "mode": mode,
             "tts_model": tts_model,
@@ -510,6 +522,8 @@ def generate_audio_for_post(
             "duration": duration_label,
             "cache_hash": cache_hash,
         }
+        if existing_highlights:
+            meta_payload["highlights"] = existing_highlights
         meta_path.write_text(
             json.dumps(meta_payload, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",

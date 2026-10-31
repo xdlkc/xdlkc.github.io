@@ -2397,6 +2397,16 @@ html {
   transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
 }
 
+.theme-picker-menu::before {
+  content: "";
+  position: absolute;
+  top: -0.75rem;
+  left: -0.75rem;
+  right: -0.75rem;
+  height: 0.85rem;
+  background: transparent;
+}
+
 .theme-picker-wrap.is-open .theme-picker-menu {
   opacity: 1;
   visibility: visible;

@@ -11,6 +11,9 @@ categories:
   - Agent 工程
 description: "在 Claude Platform 中构建智能体时，减少子智能体（Subagents）的数量、转而采用渐进式披露（Progressive Disclosure）的上下文与工具，不仅能提升输出质量，还能降低成本与延迟。本文将介绍何时以及如何进行迁移。"
 excerpt: "在 Claude Platform 中构建智能体时，减少子智能体（Subagents）的数量、转而采用渐进式披露（Progressive Disclosure）的上下文与工具，不仅能提升输出质量，还能降低成本与延迟。本文将介绍何时以及如何进行迁移。"
+audio: /uploads/building-agents-folding-subagents/audio.mp3
+audio_mode: podcast
+audio_duration: "07:21"
 ---
 
 {% raw %}

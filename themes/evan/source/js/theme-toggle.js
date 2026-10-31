@@ -9,13 +9,22 @@ const STORAGE_KEY = 'xdlkc:theme';
 const PALETTE_STORAGE_KEY = 'xdlkc:theme-palette';
 
 const THEME_PRESETS = [
-  { id: 'system', mode: 'system', palette: 'auto', swatch: 'linear-gradient(135deg, #0f766e 50%, #0f172a 50%)', zh: '跟随系统', en: 'System' },
-  { id: 'light', mode: 'light', palette: 'emerald', swatch: '#0f766e', zh: '松石青', en: 'Emerald' },
-  { id: 'sepia', mode: 'light', palette: 'sepia', swatch: '#b45309', zh: '羊皮卷', en: 'Sepia' },
-  { id: 'ocean', mode: 'light', palette: 'ocean', swatch: '#1d4ed8', zh: '极地蓝', en: 'Ocean' },
-  { id: 'dark', mode: 'dark', palette: 'dark', swatch: '#111827', zh: '极夜黑', en: 'Dark' },
-  { id: 'midnight', mode: 'dark', palette: 'midnight', swatch: '#6d28d9', zh: '星云紫', en: 'Midnight' },
+  { id: 'system', mode: 'system', palette: 'auto', swatch: 'linear-gradient(135deg, #0f766e 50%, #0f172a 50%)', zh: '跟随系统', en: 'System', btnZh: '跟随系统', btnEn: 'System' },
+  { id: 'light', mode: 'light', palette: 'emerald', swatch: '#0f766e', zh: '松石青', en: 'Emerald', btnZh: '浅色 · 松石青', btnEn: 'Light · Emerald' },
+  { id: 'sepia', mode: 'light', palette: 'sepia', swatch: '#b45309', zh: '羊皮卷', en: 'Sepia', btnZh: '暖色 · 羊皮卷', btnEn: 'Light · Sepia' },
+  { id: 'ocean', mode: 'light', palette: 'ocean', swatch: '#1d4ed8', zh: '极地蓝', en: 'Ocean', btnZh: '浅色 · 极地蓝', btnEn: 'Light · Ocean' },
+  { id: 'dark', mode: 'dark', palette: 'dark', swatch: '#111827', zh: '极夜黑', en: 'Dark', btnZh: '深色 · 极夜黑', btnEn: 'Dark · Slate' },
+  { id: 'midnight', mode: 'dark', palette: 'midnight', swatch: '#6d28d9', zh: '星云紫', en: 'Midnight', btnZh: '深色 · 星云紫', btnEn: 'Dark · Midnight' },
 ];
+
+function nextThemePreset(currentMode, currentPalette) {
+  const mode = normalizeThemeMode(currentMode) || 'system';
+  if (mode === 'system') return THEME_PRESETS[1];
+  const palette = normalizePalette(currentPalette) || (mode === 'dark' ? 'dark' : 'emerald');
+  const idx = THEME_PRESETS.findIndex((p) => p.id !== 'system' && p.palette === palette);
+  if (idx === -1) return THEME_PRESETS[1];
+  return THEME_PRESETS[(idx + 1) % THEME_PRESETS.length];
+}
 
 function normalizeThemeMode(value) {
   if (value === 'dark' || value === 'light' || value === 'system') return value;
@@ -57,7 +66,7 @@ function modeLabel(mode, { lang = 'en', palette = null } = {}) {
   if (palette && palette !== 'auto') {
     const preset = THEME_PRESETS.find((p) => p.palette === palette && p.id !== 'system');
     if (preset) {
-      return lang === 'zh' ? preset.zh : preset.en;
+      return lang === 'zh' ? (preset.btnZh || preset.zh) : (preset.btnEn || preset.en);
     }
   }
   if (lang === 'zh') {
@@ -260,13 +269,31 @@ function mountThemePalettePopover({ document, toggle, onSelectPreset }) {
   menu.setAttribute('aria-label', 'Theme presets');
 
   let suppressHoverUntil = 0;
+  let leaveTimer = null;
+
+  function clearLeaveTimer() {
+    if (leaveTimer !== null) {
+      clearTimeout(leaveTimer);
+      leaveTimer = null;
+    }
+  }
 
   function closeMenu() {
+    clearLeaveTimer();
     wrap.classList.remove('is-open');
     menu.setAttribute('aria-hidden', 'true');
   }
 
+  function scheduleCloseMenu() {
+    clearLeaveTimer();
+    leaveTimer = setTimeout(() => {
+      leaveTimer = null;
+      closeMenu();
+    }, 240);
+  }
+
   function openMenu() {
+    clearLeaveTimer();
     if (Date.now() < suppressHoverUntil) return;
     wrap.classList.add('is-open');
     menu.setAttribute('aria-hidden', 'false');
@@ -293,7 +320,7 @@ function mountThemePalettePopover({ document, toggle, onSelectPreset }) {
     item.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
-      suppressHoverUntil = Date.now() + 450;
+      suppressHoverUntil = Date.now() + 380;
       closeMenu();
       item.blur?.();
       onSelectPreset(preset);
@@ -305,7 +332,9 @@ function mountThemePalettePopover({ document, toggle, onSelectPreset }) {
   closeMenu();
 
   wrap.addEventListener('mouseenter', () => openMenu());
-  wrap.addEventListener('mouseleave', () => closeMenu());
+  wrap.addEventListener('mouseleave', () => scheduleCloseMenu());
+  menu.addEventListener('mouseenter', () => openMenu());
+  menu.addEventListener('mouseleave', () => scheduleCloseMenu());
 
   document.addEventListener?.('click', (e) => {
     if (!wrap.contains?.(e.target)) {
@@ -509,8 +538,11 @@ function initThemeToggle({
       || readUrlThemeOverride(window?.location)
       || normalizeThemeMode(readSavedMode(storage))
       || 'system';
+    const currentPalette = normalizePalette(document.documentElement.dataset.themePalette)
+      || readSavedPalette(storage);
 
-    const nextMode = toggleThemeMode(currentMode);
+    const preset = nextThemePreset(currentMode, currentPalette);
+    const nextMode = preset.mode;
 
     if (nextMode === 'system') {
       attachSystemListener();
@@ -521,7 +553,7 @@ function initThemeToggle({
     const nextTheme = nextMode === 'system'
       ? (getPrefersDark(matchMedia, window) ? 'dark' : 'light')
       : nextMode;
-    const nextPalette = nextMode === 'system' ? null : (nextTheme === 'dark' ? 'dark' : 'emerald');
+    const nextPalette = nextMode === 'system' ? null : preset.palette;
 
     applyThemeToDocument({ document, theme: nextTheme, mode: nextMode, palette: nextPalette });
     saveMode(storage, nextMode, nextPalette);
