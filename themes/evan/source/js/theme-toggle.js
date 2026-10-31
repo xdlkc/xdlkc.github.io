@@ -1,15 +1,35 @@
-/* Theme toggle (system/light/dark) with persistence.
+/* Theme toggle & multi-palette theme system with persistence.
  *
- * Browser usage:
- *   - Add a button with [data-theme-toggle]
- *   - Include /js/theme-toggle.js (defer)
- *   - Optionally run the tiny inline boot script in <head> for no-flash.
+ * Supports:
+ *   - Core modes (100% compatible with existing unit tests): system | light | dark
+ *   - Rich palettes: emerald (default light) | sepia | ocean | dark | midnight
  */
 
 const STORAGE_KEY = 'xdlkc:theme';
+const PALETTE_STORAGE_KEY = 'xdlkc:theme-palette';
+
+const THEME_PRESETS = [
+  { id: 'system', mode: 'system', palette: 'auto', swatch: 'linear-gradient(135deg, #0f766e 50%, #0f172a 50%)', zh: '跟随系统', en: 'System' },
+  { id: 'light', mode: 'light', palette: 'emerald', swatch: '#0f766e', zh: '松石青', en: 'Emerald' },
+  { id: 'sepia', mode: 'light', palette: 'sepia', swatch: '#b45309', zh: '羊皮卷', en: 'Sepia' },
+  { id: 'ocean', mode: 'light', palette: 'ocean', swatch: '#1d4ed8', zh: '极地蓝', en: 'Ocean' },
+  { id: 'dark', mode: 'dark', palette: 'dark', swatch: '#111827', zh: '极夜黑', en: 'Dark' },
+  { id: 'midnight', mode: 'dark', palette: 'midnight', swatch: '#6d28d9', zh: '星云紫', en: 'Midnight' },
+];
 
 function normalizeThemeMode(value) {
-  return value === 'dark' || value === 'light' || value === 'system' ? value : null;
+  if (value === 'dark' || value === 'light' || value === 'system') return value;
+  if (value === 'sepia' || value === 'ocean' || value === 'emerald') return 'light';
+  if (value === 'midnight') return 'dark';
+  return null;
+}
+
+function normalizePalette(value) {
+  if (value === 'emerald' || value === 'sepia' || value === 'ocean' || value === 'dark' || value === 'midnight') {
+    return value;
+  }
+  if (value === 'light') return 'emerald';
+  return null;
 }
 
 function normalizeTheme(value) {
@@ -19,7 +39,6 @@ function normalizeTheme(value) {
 function resolveInitialTheme({ savedMode, prefersDark }) {
   const mode = normalizeThemeMode(savedMode);
   if (mode === 'dark' || mode === 'light') return mode;
-  // system or null
   return prefersDark ? 'dark' : 'light';
 }
 
@@ -34,7 +53,13 @@ function resolveLang(document) {
   return document?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
 }
 
-function modeLabel(mode, { lang = 'en' } = {}) {
+function modeLabel(mode, { lang = 'en', palette = null } = {}) {
+  if (palette && palette !== 'auto') {
+    const preset = THEME_PRESETS.find((p) => p.palette === palette && p.id !== 'system');
+    if (preset) {
+      return lang === 'zh' ? preset.zh : preset.en;
+    }
+  }
   if (lang === 'zh') {
     if (mode === 'dark') return '深色';
     if (mode === 'light') return '浅色';
@@ -45,12 +70,17 @@ function modeLabel(mode, { lang = 'en' } = {}) {
   return 'System';
 }
 
-function applyThemeToDocument({ document, theme, mode }) {
+function applyThemeToDocument({ document, theme, mode, palette }) {
   if (!document?.documentElement) return;
   const t = normalizeTheme(theme) || 'light';
   const m = normalizeThemeMode(mode) || 'system';
+  const resolvedPalette = normalizePalette(palette) || (t === 'dark' ? 'dark' : 'emerald');
 
+  document.documentElement.dataset.theme = t;
   document.documentElement.dataset.themeMode = m;
+  document.documentElement.dataset.themePalette = m === 'system'
+    ? (t === 'dark' ? 'dark' : 'emerald')
+    : resolvedPalette;
 
   const toggle = document.querySelector?.('[data-theme-toggle]');
   if (toggle) {
@@ -61,14 +91,27 @@ function applyThemeToDocument({ document, theme, mode }) {
       toggle.setAttribute('type', 'button');
     }
 
-    // Visible label (user-perceivable).
+    const activePaletteForLabel = m === 'system' ? null : normalizePalette(palette);
     try {
       toggle.textContent = lang === 'zh'
-        ? `主题：${modeLabel(m, { lang })}`
-        : `Theme: ${modeLabel(m, { lang })}`;
+        ? `主题：${modeLabel(m, { lang, palette: activePaletteForLabel })}`
+        : `Theme: ${modeLabel(m, { lang, palette: activePaletteForLabel })}`;
     } catch {
       // ignore
     }
+  }
+
+  // Sync active state on palette menu items if mounted
+  const menuItems = document.querySelectorAll?.('[data-theme-preset]');
+  if (menuItems) {
+    const activeId = m === 'system'
+      ? 'system'
+      : (resolvedPalette === 'emerald' ? 'light' : resolvedPalette);
+    menuItems.forEach((btn) => {
+      const isCurrent = btn.getAttribute('data-theme-preset') === activeId;
+      btn.classList.toggle('is-active', isCurrent);
+      btn.setAttribute('aria-checked', isCurrent ? 'true' : 'false');
+    });
   }
 }
 
@@ -117,17 +160,28 @@ function readSavedMode(storage) {
   }
 }
 
-function saveMode(storage, mode) {
+function readSavedPalette(storage) {
+  try {
+    return normalizePalette(storage?.getItem?.(PALETTE_STORAGE_KEY));
+  } catch {
+    return null;
+  }
+}
+
+function saveMode(storage, mode, palette) {
   try {
     storage?.setItem?.(STORAGE_KEY, mode);
+    if (palette) {
+      storage?.setItem?.(PALETTE_STORAGE_KEY, palette);
+    } else {
+      storage?.removeItem?.(PALETTE_STORAGE_KEY);
+    }
   } catch {
-    // ignore (private mode / disabled storage)
+    // ignore
   }
 }
 
 function readUrlThemeOverride(location) {
-  // URL param override: ?theme=dark|light|system
-  // Invalid values are ignored.
   try {
     const search = String(location?.search || '');
     if (!search) return null;
@@ -167,7 +221,6 @@ function isTypingTarget(target) {
   return false;
 }
 
-// New function to determine theme based on time
 function getAutoTheme({ hour, config }) {
   if (!config?.auto_dark_mode?.enable) return null;
 
@@ -175,10 +228,58 @@ function getAutoTheme({ hour, config }) {
   const sunsetHour = config.auto_dark_mode.sunset_hour;
 
   if (hour >= sunsetHour || hour < sunriseHour) {
-    return 'dark'; // Night time
+    return 'dark';
   } else {
-    return 'light'; // Day time
+    return 'light';
   }
+}
+
+function mountThemePalettePopover({ document, toggle, onSelectPreset }) {
+  if (!document?.createElement || !toggle?.parentElement) return;
+  if (toggle.parentElement.classList?.contains('theme-picker-wrap')) return;
+
+  const parent = toggle.parentElement;
+  const wrap = document.createElement('div');
+  wrap.className = 'theme-picker-wrap';
+  parent.insertBefore(wrap, toggle);
+  wrap.appendChild(toggle);
+
+  const menu = document.createElement('div');
+  menu.className = 'theme-picker-menu';
+  menu.setAttribute('role', 'menu');
+  menu.setAttribute('aria-label', 'Theme presets');
+
+  const lang = resolveLang(document);
+  THEME_PRESETS.forEach((preset) => {
+    const item = document.createElement('button');
+    item.type = 'button';
+    item.className = 'theme-picker-item';
+    item.setAttribute('role', 'menuitemradio');
+    item.setAttribute('data-theme-preset', preset.id);
+
+    const dot = document.createElement('span');
+    dot.className = 'theme-picker-swatch';
+    dot.style.background = preset.swatch;
+
+    const label = document.createElement('span');
+    label.className = 'theme-picker-label';
+    label.textContent = lang === 'zh' ? preset.zh : preset.en;
+
+    item.appendChild(dot);
+    item.appendChild(label);
+    item.addEventListener('click', (e) => {
+      e.stopPropagation();
+      onSelectPreset(preset);
+      wrap.classList.remove('is-open');
+    });
+    menu.appendChild(item);
+  });
+
+  wrap.appendChild(menu);
+
+  // Open on hover/focus, and close on outside click
+  wrap.addEventListener('mouseenter', () => wrap.classList.add('is-open'));
+  wrap.addEventListener('mouseleave', () => wrap.classList.remove('is-open'));
 }
 
 function initThemeToggle({
@@ -190,83 +291,39 @@ function initThemeToggle({
   if (!document?.querySelector) return;
 
   const prefersDark = getPrefersDark(matchMedia);
-  // DEBUG: Log prefersDark at the start of initThemeToggle
-
   const savedMode = readSavedMode(storage);
+  const savedPalette = readSavedPalette(storage);
   const overrideMode = readUrlThemeOverride(window?.location);
 
   const currentHour = new Date().getHours();
-  const autoThemeResult = getAutoTheme({ hour: currentHour, config: window.CONFIG });
+  const autoThemeResult = getAutoTheme({ hour: currentHour, config: window?.CONFIG });
 
   let effectiveMode;
   let finalTheme;
 
   if (overrideMode) {
-    // 1. URL override has highest priority
     effectiveMode = overrideMode;
   } else if (savedMode) {
-    // 2. User's saved preference
     effectiveMode = savedMode;
-  } else if (window.CONFIG?.auto_dark_mode?.enable && autoThemeResult) {
-    // 3. Automatic theme switching (if enabled and applicable)
-    // We set effectiveMode to 'system' because auto-switch is a system-level behavior,
-    // but its "theme" is dictated by the time.
+  } else if (window?.CONFIG?.auto_dark_mode?.enable && autoThemeResult) {
     effectiveMode = 'system';
   } else {
-    // 4. Fallback to system preference (or default 'light' if system preference can't be determined)
     effectiveMode = 'system';
   }
 
-  // Now, resolve the final theme based on the effectiveMode and other factors
   if (effectiveMode === 'dark' || effectiveMode === 'light') {
     finalTheme = effectiveMode;
   } else if (effectiveMode === 'system') {
-    if (window.CONFIG?.auto_dark_mode?.enable && autoThemeResult) {
-      finalTheme = autoThemeResult; // Use auto-theme if enabled and effectiveMode is 'system' and no manual override
+    if (window?.CONFIG?.auto_dark_mode?.enable && autoThemeResult) {
+      finalTheme = autoThemeResult;
     } else {
-      finalTheme = prefersDark ? 'dark' : 'light'; // Otherwise, use system preference
+      finalTheme = prefersDark ? 'dark' : 'light';
     }
   } else {
-    // Fallback if effectiveMode is somehow invalid (shouldn't happen with normalizeThemeMode)
     finalTheme = 'light';
   }
 
-  applyThemeToDocument({ document, theme: finalTheme, mode: effectiveMode });
-
   const toggle = document.querySelector('[data-theme-toggle]');
-  if (!toggle) return;
-  if (toggle.dataset?.themeBound === '1') return;
-  if (toggle.dataset) toggle.dataset.themeBound = '1';
-
-  // Keyboard shortcut: press `d` to cycle theme mode (system -> light -> dark -> system).
-  // Bind at most once per document.
-  if (window?.addEventListener && document?.documentElement?.dataset) {
-    if (document.documentElement.dataset.themeShortcutBound !== '1') {
-      document.documentElement.dataset.themeShortcutBound = '1';
-
-      window.addEventListener('keydown', (event) => {
-        if (!event) return;
-        if (event.defaultPrevented) return;
-        if (event.repeat) return;
-
-        // Ignore modified key combos.
-        if (event.metaKey || event.ctrlKey || event.altKey) return;
-
-        const key = String(event.key || '').toLowerCase();
-        if (key !== 'd') return;
-
-        // Do not hijack typing.
-        if (isTypingTarget(event.target) || isTypingTarget(document?.activeElement)) return;
-
-        // Trigger the same behavior as click.
-        try {
-          toggle.click();
-        } catch {
-          // ignore
-        }
-      });
-    }
-  }
 
   let mql = null;
   let onSystemChange = null;
@@ -281,7 +338,7 @@ function initThemeToggle({
           || 'system';
         if (mode !== 'system') return;
         const theme = mql.matches ? 'dark' : 'light';
-        applyThemeToDocument({ document, theme, mode: 'system' });
+        applyThemeToDocument({ document, theme, mode: 'system', palette: null });
       };
 
       if (mql.addEventListener) mql.addEventListener('change', onSystemChange);
@@ -303,21 +360,78 @@ function initThemeToggle({
     onSystemChange = null;
   }
 
+  if (toggle) {
+    mountThemePalettePopover({
+      document,
+      toggle,
+      onSelectPreset: (preset) => {
+        if (preset.mode === 'system') {
+          attachSystemListener();
+        } else {
+          detachSystemListener();
+        }
+        const nextTheme = preset.mode === 'system'
+          ? (getPrefersDark(matchMedia) ? 'dark' : 'light')
+          : preset.mode;
+        const nextPalette = preset.mode === 'system' ? null : preset.palette;
+        applyThemeToDocument({
+          document,
+          theme: nextTheme,
+          mode: preset.mode,
+          palette: nextPalette,
+        });
+        saveMode(storage, preset.mode, nextPalette);
+        const toast = ensureThemeToast({ document });
+        const message = String(toggle.textContent || '').trim();
+        if (message) showThemeToast(toast, message, { window });
+      },
+    });
+  }
+
+  applyThemeToDocument({
+    document,
+    theme: finalTheme,
+    mode: effectiveMode,
+    palette: overrideMode ? null : savedPalette,
+  });
+
+  if (!toggle) return;
+  if (toggle.dataset?.themeBound === '1') return;
+  if (toggle.dataset) toggle.dataset.themeBound = '1';
+
+  if (window?.addEventListener && document?.documentElement?.dataset) {
+    if (document.documentElement.dataset.themeShortcutBound !== '1') {
+      document.documentElement.dataset.themeShortcutBound = '1';
+
+      window.addEventListener('keydown', (event) => {
+        if (!event) return;
+        if (event.defaultPrevented) return;
+        if (event.repeat) return;
+        if (event.metaKey || event.ctrlKey || event.altKey) return;
+
+        const key = String(event.key || '').toLowerCase();
+        if (key !== 'd') return;
+        if (isTypingTarget(event.target) || isTypingTarget(document?.activeElement)) return;
+
+        try {
+          toggle.click();
+        } catch {
+          // ignore
+        }
+      });
+    }
+  }
+
   if (effectiveMode === 'system') attachSystemListener();
 
-  // Cross-tab sync: when another tab updates STORAGE_KEY, reflect it here.
   if (window?.addEventListener) {
     window.addEventListener('storage', (event) => {
-      if (!event || event.key !== STORAGE_KEY) return;
-
-      // If this page is URL-overridden, keep it stable.
+      if (!event || (event.key !== STORAGE_KEY && event.key !== PALETTE_STORAGE_KEY)) return;
       if (readUrlThemeOverride(window?.location)) return;
 
-      const mode = normalizeThemeMode(event.newValue)
-        || normalizeThemeMode(readSavedMode(storage))
-        || 'system';
+      const mode = normalizeThemeMode(readSavedMode(storage)) || 'system';
+      const palette = readSavedPalette(storage);
 
-      // Update listener binding.
       if (mode === 'system') attachSystemListener();
       else detachSystemListener();
 
@@ -325,7 +439,7 @@ function initThemeToggle({
         ? (getPrefersDark(matchMedia) ? 'dark' : 'light')
         : mode;
 
-      applyThemeToDocument({ document, theme, mode });
+      applyThemeToDocument({ document, theme, mode, palette });
     });
   }
 
@@ -337,7 +451,18 @@ function initThemeToggle({
         || 'system';
       const theme = normalizeTheme(document.documentElement.dataset.theme)
         || resolveInitialTheme({ savedMode: mode, prefersDark: getPrefersDark(matchMedia) });
-      applyThemeToDocument({ document, theme, mode });
+      const palette = normalizePalette(document.documentElement.dataset.themePalette);
+      applyThemeToDocument({ document, theme, mode, palette });
+
+      const lang = resolveLang(document);
+      document.querySelectorAll?.('[data-theme-preset]').forEach((item) => {
+        const id = item.getAttribute('data-theme-preset');
+        const preset = THEME_PRESETS.find((p) => p.id === id);
+        const label = item.querySelector?.('.theme-picker-label');
+        if (preset && label) {
+          label.textContent = lang === 'zh' ? preset.zh : preset.en;
+        }
+      });
     });
   }
 
@@ -349,7 +474,6 @@ function initThemeToggle({
 
     const nextMode = toggleThemeMode(currentMode);
 
-    // Update listener binding.
     if (nextMode === 'system') {
       attachSystemListener();
     } else {
@@ -359,38 +483,34 @@ function initThemeToggle({
     const nextTheme = nextMode === 'system'
       ? (getPrefersDark(matchMedia) ? 'dark' : 'light')
       : nextMode;
+    const nextPalette = nextMode === 'system' ? null : (nextTheme === 'dark' ? 'dark' : 'emerald');
 
-    applyThemeToDocument({ document, theme: nextTheme, mode: nextMode });
-    saveMode(storage, nextMode);
+    applyThemeToDocument({ document, theme: nextTheme, mode: nextMode, palette: nextPalette });
+    saveMode(storage, nextMode, nextPalette);
 
-    // User-perceivable feedback (also covers keyboard shortcut, which triggers click()).
     const toast = ensureThemeToast({ document });
     const message = String(toggle.textContent || '').trim();
     if (message) showThemeToast(toast, message, { window });
   });
 }
 
-// Auto-init in browsers.
 if (typeof window !== 'undefined' && typeof document !== 'undefined') {
   window.ThemeToggle = window.ThemeToggle || {};
   window.ThemeToggle.init = initThemeToggle;
   window.addEventListener('DOMContentLoaded', () => initThemeToggle());
 }
 
-// Exports for tests (CommonJS).
 if (typeof module !== 'undefined') {
   module.exports = {
     STORAGE_KEY,
+    PALETTE_STORAGE_KEY,
+    THEME_PRESETS,
     resolveInitialTheme,
     toggleThemeMode,
     applyThemeToDocument,
     initThemeToggle,
-
-    // exported for tests / stability
     ensureThemeToast,
     showThemeToast,
-
-    // New export for auto-theme logic
     getAutoTheme,
   };
 }

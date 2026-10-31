@@ -86,14 +86,17 @@
     }
 
     function syncPlayState(isPlaying) {
-      playBtn.setAttribute('aria-pressed', isPlaying ? 'true' : 'false');
-      playBtn.setAttribute('aria-label', isPlaying ? 'Pause audio' : 'Play audio');
-      container.classList.toggle('is-playing', Boolean(isPlaying));
-      if (iconPlay && iconPause) {
-        if ('hidden' in iconPlay) iconPlay.hidden = Boolean(isPlaying);
-        if ('hidden' in iconPause) iconPause.hidden = !isPlaying;
-        iconPlay.style.display = isPlaying ? 'none' : '';
-        iconPause.style.display = isPlaying ? '' : 'none';
+      const playing = Boolean(isPlaying);
+      playBtn.setAttribute('aria-pressed', playing ? 'true' : 'false');
+      playBtn.setAttribute('aria-label', playing ? 'Pause audio' : 'Play audio');
+      container.classList.toggle('is-playing', playing);
+      if (iconPlay) {
+        iconPlay.removeAttribute('hidden');
+        iconPlay.style.display = playing ? 'none' : 'block';
+      }
+      if (iconPause) {
+        iconPause.removeAttribute('hidden');
+        iconPause.style.display = playing ? 'block' : 'none';
       }
     }
 

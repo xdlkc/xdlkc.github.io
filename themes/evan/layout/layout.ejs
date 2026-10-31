@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="<%- url_for('/css/style.css?v=20261101b') %>" />
+  <link rel="stylesheet" href="<%- url_for('/css/style.css?v=20261101c') %>" />
   <link rel="stylesheet" href="<%- url_for('/css/font-size.css') %>" />
   <link rel="stylesheet" href="<%- url_for('/css/responsive-fixes.css') %>" />
   <% if (page.deepseek_explorer) { %>
@@ -63,14 +63,14 @@
     })();
   </script>
   <script>
-    // Apply theme as early as possible to reduce flash.
-    // Modes: system | light | dark
+    // Apply theme and palette as early as possible to reduce flash.
     (function () {
       try {
         var key = 'xdlkc:theme';
+        var paletteKey = 'xdlkc:theme-palette';
         var savedMode = localStorage.getItem(key);
+        var savedPalette = localStorage.getItem(paletteKey);
 
-        // URL override: ?theme=dark|light|system (page-only, does not persist).
         var urlMode = null;
         try {
           var params = new URLSearchParams(window.location && window.location.search ? window.location.search : '');
@@ -87,8 +87,12 @@
         var theme = (mode === 'dark' || mode === 'light')
           ? mode
           : (prefersDark ? 'dark' : 'light');
+        var palette = (mode === 'system' || urlMode)
+          ? (theme === 'dark' ? 'dark' : 'emerald')
+          : (savedPalette || (theme === 'dark' ? 'dark' : 'emerald'));
         document.documentElement.dataset.theme = theme;
         document.documentElement.dataset.themeMode = mode;
+        document.documentElement.dataset.themePalette = palette;
       } catch (e) {
         // ignore
       }
