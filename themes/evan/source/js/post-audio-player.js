@@ -1,4 +1,5 @@
-/* Post audio player controller (play/pause, seek, skip, playback speed).
+/* Post audio player controller (play/pause, seek, skip, playback speed,
+ * interactive transcript cues & key-takeaways summary tabs).
  *
  * Supports UMD (browser global `window.PostAudioPlayer` + CommonJS for Jest).
  */
@@ -50,20 +51,91 @@
     const iconPause = container.querySelector('.post-audio-icon-pause');
     const currentEl = container.querySelector('[data-audio-current]');
     const durationEl = container.querySelector('[data-audio-duration]');
+    const progressWrap = container.querySelector('[data-audio-progress-wrap]');
     const seekInput = container.querySelector('[data-audio-seek]');
     const speedBtn = container.querySelector('[data-audio-speed]');
     const skipBtns = Array.from(container.querySelectorAll('[data-audio-skip]'));
+    const liveCaptionEl = container.querySelector('[data-audio-live-caption]');
+    const drawerToggleBtn = container.querySelector('[data-audio-drawer-toggle]');
+    const drawerEl = container.querySelector('[data-audio-drawer]');
+    const tabBtns = Array.from(container.querySelectorAll('[data-audio-tab]'));
+    const tabPanels = Array.from(container.querySelectorAll('[data-audio-panel]'));
+    const cueEls = Array.from(container.querySelectorAll('[data-audio-cue]'));
+    const transcriptPanel = container.querySelector('[data-audio-panel="transcript"]');
 
     if (!audio || !playBtn) return;
+
+    let activeCueIdx = -1;
+
+    function getEffectiveDuration() {
+      if (Number.isFinite(audio.duration) && audio.duration > 0) {
+        return audio.duration;
+      }
+      const preset = Number(container.getAttribute('data-audio-total-seconds'));
+      return Number.isFinite(preset) && preset > 0 ? preset : 0;
+    }
+
+    function setVisualProgress(pct) {
+      const clamped = Math.min(100, Math.max(0, Number(pct) || 0));
+      if (progressWrap && progressWrap.style) {
+        progressWrap.style.setProperty('--audio-progress', `${clamped.toFixed(2)}%`);
+      }
+      if (seekInput) {
+        seekInput.value = String(clamped.toFixed(1));
+      }
+    }
 
     function syncPlayState(isPlaying) {
       playBtn.setAttribute('aria-pressed', isPlaying ? 'true' : 'false');
       playBtn.setAttribute('aria-label', isPlaying ? 'Pause audio' : 'Play audio');
       container.classList.toggle('is-playing', Boolean(isPlaying));
       if (iconPlay && iconPause) {
-        iconPlay.hidden = Boolean(isPlaying);
-        iconPause.hidden = !isPlaying;
+        if ('hidden' in iconPlay) iconPlay.hidden = Boolean(isPlaying);
+        if ('hidden' in iconPause) iconPause.hidden = !isPlaying;
+        iconPlay.style.display = isPlaying ? 'none' : '';
+        iconPause.style.display = isPlaying ? '' : 'none';
       }
+    }
+
+    function syncActiveCue(currentTime) {
+      if (cueEls.length === 0) return;
+      const total = getEffectiveDuration();
+      if (total <= 0) return;
+
+      const ratio = Math.min(0.9999, Math.max(0, (Number(currentTime) || 0) / total));
+      let matchedIndex = -1;
+
+      for (let i = 0; i < cueEls.length; i++) {
+        const startR = Number(cueEls[i].getAttribute('data-start-ratio')) || 0;
+        const endR = Number(cueEls[i].getAttribute('data-end-ratio')) || 1;
+        if (ratio >= startR && ratio < endR) {
+          matchedIndex = i;
+          break;
+        }
+      }
+      if (matchedIndex === -1 && ratio > 0) {
+        matchedIndex = cueEls.length - 1;
+      }
+
+      if (matchedIndex === activeCueIdx) return;
+      activeCueIdx = matchedIndex;
+
+      cueEls.forEach((el, idx) => {
+        const isCurrent = idx === matchedIndex;
+        el.classList.toggle('is-active', isCurrent);
+        if (isCurrent) {
+          const textEl = el.querySelector('.post-audio-cue-text');
+          const snippet = textEl ? String(textEl.textContent || '').trim() : '';
+          if (liveCaptionEl && snippet) {
+            liveCaptionEl.textContent = snippet;
+          }
+          // Smooth scroll inside the transcript container without scrolling the whole page
+          if (transcriptPanel && !transcriptPanel.hidden && typeof transcriptPanel.scrollTo === 'function') {
+            const top = el.offsetTop - transcriptPanel.offsetTop - (transcriptPanel.clientHeight / 2) + (el.clientHeight / 2);
+            transcriptPanel.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+          }
+        }
+      });
     }
 
     function applySpeed(spd) {
@@ -111,47 +183,71 @@
     audio.addEventListener('pause', () => syncPlayState(false));
     audio.addEventListener('ended', () => {
       syncPlayState(false);
-      if (seekInput) seekInput.value = '0';
+      setVisualProgress(0);
       if (currentEl) currentEl.textContent = '00:00';
+      activeCueIdx = -1;
+      cueEls.forEach((el) => el.classList.remove('is-active'));
     });
 
     audio.addEventListener('loadedmetadata', () => {
-      if (Number.isFinite(audio.duration) && audio.duration > 0 && durationEl) {
-        durationEl.textContent = formatTime(audio.duration);
+      if (Number.isFinite(audio.duration) && audio.duration > 0) {
+        if (durationEl) {
+          durationEl.textContent = formatTime(audio.duration);
+        }
+        cueEls.forEach((el) => {
+          const startR = Number(el.getAttribute('data-start-ratio')) || 0;
+          const sec = Math.floor(startR * audio.duration);
+          el.setAttribute('data-start-sec', String(sec));
+          const timeBadge = el.querySelector('[data-cue-time]');
+          if (timeBadge) {
+            timeBadge.textContent = formatTime(sec);
+          }
+        });
       }
     });
 
     audio.addEventListener('timeupdate', () => {
+      const cur = audio.currentTime || 0;
       if (currentEl) {
-        currentEl.textContent = formatTime(audio.currentTime || 0);
+        currentEl.textContent = formatTime(cur);
       }
-      if (seekInput && Number.isFinite(audio.duration) && audio.duration > 0) {
-        const pct = Math.min(100, Math.max(0, (audio.currentTime / audio.duration) * 100));
-        seekInput.value = String(pct.toFixed(1));
+      const total = getEffectiveDuration();
+      if (total > 0) {
+        const pct = Math.min(100, Math.max(0, (cur / total) * 100));
+        setVisualProgress(pct);
       }
+      syncActiveCue(cur);
     });
 
     if (seekInput) {
       seekInput.addEventListener('input', () => {
-        if (!Number.isFinite(audio.duration) || audio.duration <= 0) return;
+        const total = getEffectiveDuration();
         const pct = Number(seekInput.value) || 0;
-        const targetTime = (pct / 100) * audio.duration;
+        setVisualProgress(pct);
+        if (total <= 0) return;
+        const targetTime = (pct / 100) * total;
         audio.currentTime = targetTime;
         if (currentEl) {
           currentEl.textContent = formatTime(targetTime);
         }
+        syncActiveCue(targetTime);
       });
     }
 
     skipBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
         const delta = Number(btn.getAttribute('data-audio-skip')) || 0;
-        const duration = Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : Infinity;
-        const nextTime = Math.min(duration, Math.max(0, (audio.currentTime || 0) + delta));
+        const total = getEffectiveDuration();
+        const maxTime = total > 0 ? total : Infinity;
+        const nextTime = Math.min(maxTime, Math.max(0, (audio.currentTime || 0) + delta));
         audio.currentTime = nextTime;
         if (currentEl) {
           currentEl.textContent = formatTime(nextTime);
         }
+        if (total > 0) {
+          setVisualProgress((nextTime / total) * 100);
+        }
+        syncActiveCue(nextTime);
       });
     });
 
@@ -159,6 +255,71 @@
       speedBtn.addEventListener('click', () => {
         const next = nextSpeed(audio.playbackRate || 1);
         applySpeed(next);
+      });
+    }
+
+    // Interactive cue click / keyboard seek
+    cueEls.forEach((cueEl) => {
+      function activateCue() {
+        const total = getEffectiveDuration();
+        const startRatio = Number(cueEl.getAttribute('data-start-ratio')) || 0;
+        const fallbackSec = Number(cueEl.getAttribute('data-start-sec')) || 0;
+        const targetTime = total > 0 ? startRatio * total : fallbackSec;
+
+        audio.currentTime = targetTime;
+        if (currentEl) {
+          currentEl.textContent = formatTime(targetTime);
+        }
+        if (total > 0) {
+          setVisualProgress(startRatio * 100);
+        }
+        syncActiveCue(targetTime);
+
+        if (audio.paused) {
+          const playPromise = audio.play?.();
+          if (playPromise && typeof playPromise.then === 'function') {
+            playPromise.then(() => syncPlayState(true)).catch(() => {});
+          } else {
+            syncPlayState(true);
+          }
+        }
+      }
+
+      cueEl.addEventListener('click', activateCue);
+      cueEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          activateCue();
+        }
+      });
+    });
+
+    // Drawer toggle
+    if (drawerToggleBtn && drawerEl) {
+      drawerToggleBtn.addEventListener('click', () => {
+        const isExpanded = drawerToggleBtn.getAttribute('aria-expanded') !== 'false';
+        const nextExpanded = !isExpanded;
+        drawerToggleBtn.setAttribute('aria-expanded', nextExpanded ? 'true' : 'false');
+        drawerEl.hidden = !nextExpanded;
+        container.classList.toggle('is-drawer-collapsed', !nextExpanded);
+      });
+    }
+
+    // Tab switching (Transcript vs Summary)
+    if (tabBtns.length > 0 && tabPanels.length > 0) {
+      tabBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const targetTab = btn.getAttribute('data-audio-tab');
+          tabBtns.forEach((b) => {
+            const active = b.getAttribute('data-audio-tab') === targetTab;
+            b.classList.toggle('is-active', active);
+            b.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          tabPanels.forEach((panel) => {
+            const match = panel.getAttribute('data-audio-panel') === targetTab;
+            panel.hidden = !match;
+          });
+        });
       });
     }
   }

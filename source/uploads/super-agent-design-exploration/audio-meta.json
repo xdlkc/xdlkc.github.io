@@ -8,5 +8,12 @@
   "chunks": 2,
   "duration_ms": 461592,
   "duration": "07:42",
-  "cache_hash": "77df1c7a48ab4983"
+  "cache_hash": "77df1c7a48ab4983",
+  "highlights": [
+    "双层解耦架构：常驻 Router 层维护跨信道全局连续性并支持事件批处理，隔离 Worker 层专注高并发任务执行，让 Session 退化为底层实现细节。",
+    "事件驱动与两级过滤：引入 Fast Path（确定性规则过滤噪音与已订阅 Thread 直通）与 Slow Path（LLM 语义判断与冷启动路由），节省 37% 中心节点 Token 开销。",
+    "把上下文当 Cache 管理：结合局部性原理采用 Inline（内联高频相邻上下文）与 Spill（溢出截断按需读取），通过引用图实现多跳「链式召回」。",
+    "投机执行与全双工交互：后台根据环境信号静默复现与起草方案；通过异步 ReAct Loop（start/stop）消除长耗时工具对前台对话的阻塞。",
+    "存算与环境两层分离 + Watchdog：云端无状态 Loop + 持久化状态库 + 端侧轻量 Daemon（支持 BYOM 个人机器），配合外部 Watchdog 实现进程与语义级自愈。"
+  ]
 }
