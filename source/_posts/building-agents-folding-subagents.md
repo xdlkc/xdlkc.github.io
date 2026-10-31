@@ -14,7 +14,7 @@ excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式�
 ---
 
 {% raw %}
-<link rel="stylesheet" href="/uploads/building-agents-folding-subagents/article-v2.css?v=eca7087148">
+<link rel="stylesheet" href="/uploads/building-agents-folding-subagents/article-v2.css?v=blog-theme-1">
 <div class="folding-v2" id="folding-article">
 
     <!-- Hero Title & Deck -->

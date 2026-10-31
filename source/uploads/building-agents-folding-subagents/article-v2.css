@@ -310,7 +310,22 @@
 #folding-article .related-card:hover{
       border-color: #C5C2B8;
     }
-#folding-article { padding: 0; container-type: inline-size; background: #FAF8F5; color: #191918; }
+/* Reuse the blog's theme; leave the article canvas transparent. */
+#folding-article {
+  padding: 0;
+  container-type: inline-size;
+  background: transparent;
+  color: var(--text);
+  --text-ink: var(--text);
+  --text-body: var(--text);
+  --text-muted: var(--muted);
+  --border-subtle: var(--border);
+  --bg-page: transparent;
+  --bg-card: var(--card);
+  --bg-callout: var(--bg);
+}
+/* The SVG illustrations retain their original light palette. */
+#folding-article .diagram-card { background-color: #F3F1EB; color: #191918; }
 #folding-article .hero-section { max-width: none; }
 #folding-article .folding-controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
 #folding-article .article-grid { grid-template-columns: 170px minmax(0, 1fr); gap: 28px; }
