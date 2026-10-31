@@ -1771,6 +1771,10 @@ html {
 }
 
 /* Post Audio Player & Interactive Transcript Studio */
+.post-audio-player [hidden] {
+  display: none !important;
+}
+
 .post-audio-player {
   margin-top: 1.35rem;
   border-radius: 20px;

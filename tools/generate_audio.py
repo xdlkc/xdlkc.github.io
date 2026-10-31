@@ -21,6 +21,8 @@ import hashlib
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 import urllib.error
 import urllib.request
@@ -32,7 +34,7 @@ DEFAULT_API_HOST = "https://api.minimaxi.com"
 DEFAULT_LLM_MODEL = "MiniMax-M3.1-Flash"
 DEFAULT_TTS_MODEL = "speech-2.8-hd"
 DEFAULT_VOICE_ID = "presenter_male"
-MAX_TTS_CHUNK_CHARS = 1800
+MAX_TTS_CHUNK_CHARS = 4500
 
 PODCAST_SYSTEM_PROMPT = """你是一位资深技术播客主理人（风格参考：极客时间精讲 / 架构师深度导读）。
 你的任务是将输入的技术博客文章改写为一段**适合单人朗读的口语化音频导读稿**（时长控制在 4~6 分钟，字数约 1400~2200 字）。
@@ -475,6 +477,26 @@ def generate_audio_for_post(
             speed=speed,
         )
         mp3_path.write_bytes(mp3_bytes)
+        if len(chunks) > 1 and shutil.which("ffmpeg"):
+            tmp_fixed = mp3_path.with_suffix(".fixed.mp3")
+            res_ff = subprocess.run(
+                [
+                    "ffmpeg",
+                    "-y",
+                    "-loglevel",
+                    "error",
+                    "-i",
+                    str(mp3_path),
+                    "-c",
+                    "copy",
+                    "-write_xing",
+                    "1",
+                    str(tmp_fixed),
+                ],
+                check=False,
+            )
+            if res_ff.returncode == 0 and tmp_fixed.exists():
+                tmp_fixed.replace(mp3_path)
         duration_label = format_duration_ms(duration_ms) if duration_ms > 0 else ""
         meta_payload = {
             "slug": resolved_slug,

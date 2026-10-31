@@ -165,6 +165,8 @@
       // ignore
     }
 
+    syncPlayState(false);
+
     playBtn.addEventListener('click', () => {
       if (audio.paused) {
         const playPromise = audio.play?.();
