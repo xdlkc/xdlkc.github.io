@@ -14,7 +14,7 @@ excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式�
 ---
 
 {% raw %}
-<link rel="stylesheet" href="/uploads/building-agents-folding-subagents/article-v2.css?v=blog-theme-1">
+<link rel="stylesheet" href="/uploads/building-agents-folding-subagents/article-v2.css?v=single-column-2">
 <div class="folding-v2" id="folding-article">
 
     <!-- Hero Title & Deck -->
@@ -26,30 +26,10 @@ excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式�
       </p>
     </header>
 
-    <!-- Two-Column Article Layout: Left Metadata Rail + Right Content Body -->
+    <!-- Single-column article body -->
     <div class="article-grid">
 
-      <!-- Left Sidebar Metadata Rail -->
-      <aside class="meta-rail">
-        <div class="meta-item">
-          <div class="meta-label">分类 · Category</div>
-          <div class="meta-value">最佳实践、观点洞察<span class="en-sub" style="display:block;font-size:12px;color:#6E6C65;">Best practices, Perspectives</span></div>
-        </div>
-        <div class="meta-item">
-          <div class="meta-label">产品 · Product</div>
-          <div class="meta-value">Claude Platform</div>
-        </div>
-        <div class="meta-item">
-          <div class="meta-label">作者 · Author</div>
-          <div class="meta-value">Diane Sarkis</div>
-        </div>
-        <div class="meta-item">
-          <div class="meta-label">发布日期 · Date</div>
-          <div class="meta-value">2026年10月22日 · 18 分钟<span class="en-sub" style="display:block;font-size:12px;color:#6E6C65;">October 22, 2026 · 18m read</span></div>
-        </div>
-      <div class="meta-item"><div class="meta-label">原文出处 · Source</div><div class="meta-value"><a href="https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop" rel="noopener noreferrer" target="_blank">Claude Resources（Anthropic）↗</a></div></div></aside>
-
-      <!-- Right Main Article Column -->
+<!-- Main article content -->
       <article class="article-body">
 
         <!-- 1:1 Original Anthropic Callout Box: Pure italic paragraph, NO bulleted header -->
@@ -693,36 +673,7 @@ excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式�
           子智能体的去留正是这一原则的体现。随着模型能力越来越强、智能体运行周期越来越长，你现有的更多子智能体都可以转化为技能和工具。不过，你完全不必一步到位地完成这一迁移：先构建一个小型端到端评测集，每次并入一个子智能体，仅在并入后的版本得分更差时才将其保留为子智能体，然后周而复始、持续迭代。
         </p>
 
-        <!-- Related Articles Footer -->
-        <footer class="related-section">
-          <h3 class="serif-heading" id="folding-section-14" style="margin-top:0;">
-            延伸阅读与相关文章 <span class="en-sub" style="font-size:14px;font-weight:400;color:#6E6C65;font-style:italic;">(Related articles)</span>
-          </h3>
-          <div class="related-grid">
-            <div class="related-card">
-              <div style="font-size:12px;color:#C6532D;font-weight:600;margin-bottom:4px;">2026年10月27日 · Claude Code</div>
-              <div style="font-weight:600;font-size:14.5px;color:#191918;margin-bottom:6px;">Manage costs and demonstrate ROI for Claude Code on Google Cloud</div>
-              <p style="font-size:13px;color:#6E6C65;margin:0;">在 Google Cloud 上管理 Claude Code 成本并验证投资回报率的最佳实践。</p>
-            </div>
-            <div class="related-card">
-              <div style="font-size:12px;color:#C6532D;font-weight:600;margin-bottom:4px;">2026年10月19日 · Claude Code</div>
-              <div style="font-weight:600;font-size:14.5px;color:#191918;margin-bottom:6px;">Redesigning source control at Anthropic</div>
-              <p style="font-size:13px;color:#6E6C65;margin:0;">当单仓每日合并量从约 2,500 次增长至超过 30,000 次，团队如何构建内部版本控制系统 Scion 并在五个月内完成从 Git 的迁移。</p>
-            </div>
-            <div class="related-card">
-              <div style="font-size:12px;color:#C6532D;font-weight:600;margin-bottom:4px;">2026年10月16日 · Claude Managed Agents</div>
-              <div style="font-weight:600;font-size:14.5px;color:#191918;margin-bottom:6px;">How an Anthropic BDR in Japan runs his day with Claude Managed Agents</div>
-              <p style="font-size:13px;color:#6E6C65;margin:0;">Anthropic 日本业务拓展代表如何利用 Claude Managed Agents 与 Claude Tag 清空入站队列并起草双语客户邮件。</p>
-            </div>
-            <div class="related-card">
-              <div style="font-size:12px;color:#C6532D;font-weight:600;margin-bottom:4px;">2026年10月16日 · Claude Code</div>
-              <div style="font-weight:600;font-size:14.5px;color:#191918;margin-bottom:6px;">How the Claude Code team does code review</div>
-              <p style="font-size:13px;color:#6E6C65;margin:0;">面对智能体产出的海量代码，Claude Code 团队分享从自检到按风险分层人工审批的完整审查流程与清单。</p>
-            </div>
-          </div>
-        </footer>
-
-      </article>
+</article>
     </div>
   </div>
 <script src="/uploads/building-agents-folding-subagents/article-auto.js" defer></script>

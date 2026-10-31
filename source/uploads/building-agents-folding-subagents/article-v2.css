@@ -328,12 +328,11 @@
 #folding-article .diagram-card { background-color: #F3F1EB; color: #191918; }
 #folding-article .hero-section { max-width: none; }
 #folding-article .folding-controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
-#folding-article .article-grid { grid-template-columns: 170px minmax(0, 1fr); gap: 28px; }
+#folding-article .article-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
 #folding-article .article-body { min-width: 0; }
 #folding-article .diagram-figure { margin-left: 0; margin-right: 0; }
 #folding-article .diagram-card { overflow-x: auto; }
-#folding-article .diagram-card svg { min-width: 680px; max-width: none; }
-#folding-article .diagram-figure:last-of-type .diagram-card svg { min-width: 900px; }
+#folding-article .diagram-card svg { width: 100%; min-width: 0; max-width: 100%; height: auto; }
 #folding-article svg text { stroke: none; }
 #folding-article button { font-family: inherit; line-height: 1.5; }
 @container (max-width: 800px) {
