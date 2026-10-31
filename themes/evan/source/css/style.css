@@ -2013,12 +2013,44 @@ html {
 }
 
 .post-audio-live-caption {
+  flex: 1;
   min-width: 0;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 0.84rem;
   color: var(--muted);
+  position: relative;
+}
+
+.post-audio-live-caption.is-scrolling {
+  mask-image: linear-gradient(90deg, #000 0%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 92%, transparent 100%);
+}
+
+.post-audio-live-caption-track {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.post-audio-live-caption.is-scrolling .post-audio-live-caption-track {
+  animation: post-audio-caption-marquee var(--caption-scroll-duration, 10s) linear infinite;
+}
+
+.post-audio-player:not(.is-playing) .post-audio-live-caption.is-scrolling .post-audio-live-caption-track {
+  animation-play-state: paused;
+}
+
+@keyframes post-audio-caption-marquee {
+  0%, 8% {
+    transform: translateX(0);
+  }
+  84%, 94% {
+    transform: translateX(var(--caption-scroll-distance, -50%));
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .post-audio-player.is-playing .post-audio-live-caption {
@@ -2365,9 +2397,7 @@ html {
   transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
 }
 
-.theme-picker-wrap:hover .theme-picker-menu,
-.theme-picker-wrap.is-open .theme-picker-menu,
-.theme-picker-wrap:focus-within .theme-picker-menu {
+.theme-picker-wrap.is-open .theme-picker-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;

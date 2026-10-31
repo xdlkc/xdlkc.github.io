@@ -56,6 +56,7 @@
     const speedBtn = container.querySelector('[data-audio-speed]');
     const skipBtns = Array.from(container.querySelectorAll('[data-audio-skip]'));
     const liveCaptionEl = container.querySelector('[data-audio-live-caption]');
+    const liveCaptionTrackEl = container.querySelector('[data-audio-live-caption-track]');
     const drawerToggleBtn = container.querySelector('[data-audio-drawer-toggle]');
     const drawerEl = container.querySelector('[data-audio-drawer]');
     const tabBtns = Array.from(container.querySelectorAll('[data-audio-tab]'));
@@ -66,6 +67,8 @@
     if (!audio || !playBtn) return;
 
     let activeCueIdx = -1;
+    let lastKnownTime = Number(audio.currentTime) || 0;
+    let pendingSeekTime = null;
 
     function getEffectiveDuration() {
       if (Number.isFinite(audio.duration) && audio.duration > 0) {
@@ -100,6 +103,34 @@
       }
     }
 
+    function updateLiveCaptionScroll(cueStartR, cueEndR, ratio, cueChanged) {
+      if (!liveCaptionEl) return;
+      const track = liveCaptionTrackEl || liveCaptionEl;
+      const hostWidth = Number(liveCaptionEl.clientWidth) || 0;
+      const trackWidth = Number(track.scrollWidth) || 0;
+      const overflowPx = hostWidth > 0 && trackWidth > hostWidth + 4
+        ? (trackWidth - hostWidth + 24)
+        : 0;
+
+      if (overflowPx > 0) {
+        const durationSec = Math.max(7, Math.min(16, Math.round(overflowPx / 45)));
+        if (liveCaptionEl.style) {
+          liveCaptionEl.style.setProperty('--caption-scroll-distance', `-${overflowPx}px`);
+          liveCaptionEl.style.setProperty('--caption-scroll-duration', `${durationSec}s`);
+        }
+        if (cueChanged || !liveCaptionEl.classList.contains('is-scrolling')) {
+          liveCaptionEl.classList.remove('is-scrolling');
+          void liveCaptionEl.offsetWidth;
+          liveCaptionEl.classList.add('is-scrolling');
+        }
+      } else {
+        liveCaptionEl.classList.remove('is-scrolling');
+        if (liveCaptionEl.style) {
+          liveCaptionEl.style.setProperty('--caption-scroll-distance', '0px');
+        }
+      }
+    }
+
     function syncActiveCue(currentTime) {
       if (cueEls.length === 0) return;
       const total = getEffectiveDuration();
@@ -107,38 +138,80 @@
 
       const ratio = Math.min(0.9999, Math.max(0, (Number(currentTime) || 0) / total));
       let matchedIndex = -1;
+      let matchedStartR = 0;
+      let matchedEndR = 1;
 
       for (let i = 0; i < cueEls.length; i++) {
         const startR = Number(cueEls[i].getAttribute('data-start-ratio')) || 0;
         const endR = Number(cueEls[i].getAttribute('data-end-ratio')) || 1;
         if (ratio >= startR && ratio < endR) {
           matchedIndex = i;
+          matchedStartR = startR;
+          matchedEndR = endR;
           break;
         }
       }
       if (matchedIndex === -1 && ratio > 0) {
         matchedIndex = cueEls.length - 1;
+        matchedStartR = Number(cueEls[matchedIndex].getAttribute('data-start-ratio')) || 0;
+        matchedEndR = Number(cueEls[matchedIndex].getAttribute('data-end-ratio')) || 1;
       }
 
-      if (matchedIndex === activeCueIdx) return;
+      const cueChanged = matchedIndex !== activeCueIdx;
       activeCueIdx = matchedIndex;
 
-      cueEls.forEach((el, idx) => {
-        const isCurrent = idx === matchedIndex;
-        el.classList.toggle('is-active', isCurrent);
-        if (isCurrent) {
-          const textEl = el.querySelector('.post-audio-cue-text');
-          const snippet = textEl ? String(textEl.textContent || '').trim() : '';
-          if (liveCaptionEl && snippet) {
-            liveCaptionEl.textContent = snippet;
+      if (cueChanged) {
+        cueEls.forEach((el, idx) => {
+          const isCurrent = idx === matchedIndex;
+          el.classList.toggle('is-active', isCurrent);
+          if (isCurrent) {
+            const textEl = el.querySelector('.post-audio-cue-text');
+            const snippet = textEl ? String(textEl.textContent || '').trim() : '';
+            if (snippet) {
+              if (liveCaptionTrackEl) {
+                liveCaptionTrackEl.textContent = snippet;
+              } else if (liveCaptionEl) {
+                liveCaptionEl.textContent = snippet;
+              }
+            }
+            // Smooth scroll inside the transcript container without scrolling the whole page
+            if (transcriptPanel && !transcriptPanel.hidden && typeof transcriptPanel.scrollTo === 'function') {
+              const top = el.offsetTop - transcriptPanel.offsetTop - (transcriptPanel.clientHeight / 2) + (el.clientHeight / 2);
+              transcriptPanel.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+            }
           }
-          // Smooth scroll inside the transcript container without scrolling the whole page
-          if (transcriptPanel && !transcriptPanel.hidden && typeof transcriptPanel.scrollTo === 'function') {
-            const top = el.offsetTop - transcriptPanel.offsetTop - (transcriptPanel.clientHeight / 2) + (el.clientHeight / 2);
-            transcriptPanel.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
-          }
+        });
+      }
+
+      if (matchedIndex >= 0) {
+        updateLiveCaptionScroll(matchedStartR, matchedEndR, ratio, cueChanged);
+      }
+    }
+
+    function seekToTime(targetSec) {
+      const total = getEffectiveDuration();
+      const maxTime = total > 0 ? total : Infinity;
+      const nextTime = Math.min(maxTime, Math.max(0, Number(targetSec) || 0));
+      lastKnownTime = nextTime;
+      pendingSeekTime = nextTime;
+
+      try {
+        audio.currentTime = nextTime;
+        if (Math.abs((Number(audio.currentTime) || 0) - nextTime) <= 1.0) {
+          pendingSeekTime = null;
         }
-      });
+      } catch {
+        // Keep pendingSeekTime so loadedmetadata / canplay applies it
+      }
+
+      if (currentEl) {
+        currentEl.textContent = formatTime(nextTime);
+      }
+      if (total > 0) {
+        setVisualProgress((nextTime / total) * 100);
+      }
+      syncActiveCue(nextTime);
+      return nextTime;
     }
 
     function applySpeed(spd) {
@@ -172,9 +245,15 @@
 
     playBtn.addEventListener('click', () => {
       if (audio.paused) {
+        flushPendingSeek();
+        syncActiveCue(Number(audio.currentTime) || lastKnownTime || 0);
         const playPromise = audio.play?.();
         if (playPromise && typeof playPromise.then === 'function') {
-          playPromise.then(() => syncPlayState(true)).catch(() => syncPlayState(false));
+          playPromise.then(() => {
+            flushPendingSeek();
+            syncPlayState(true);
+            syncActiveCue(Number(audio.currentTime) || lastKnownTime || 0);
+          }).catch(() => syncPlayState(false));
         } else {
           syncPlayState(true);
         }
@@ -189,10 +268,24 @@
     audio.addEventListener('ended', () => {
       syncPlayState(false);
       setVisualProgress(0);
+      lastKnownTime = 0;
+      pendingSeekTime = null;
       if (currentEl) currentEl.textContent = '00:00';
       activeCueIdx = -1;
       cueEls.forEach((el) => el.classList.remove('is-active'));
     });
+
+    function flushPendingSeek() {
+      if (pendingSeekTime === null) return;
+      try {
+        audio.currentTime = pendingSeekTime;
+        if (Math.abs((Number(audio.currentTime) || 0) - pendingSeekTime) <= 1.0) {
+          pendingSeekTime = null;
+        }
+      } catch {
+        // ignore
+      }
+    }
 
     audio.addEventListener('loadedmetadata', () => {
       if (Number.isFinite(audio.duration) && audio.duration > 0) {
@@ -209,10 +302,15 @@
           }
         });
       }
+      flushPendingSeek();
     });
 
+    audio.addEventListener?.('canplay', flushPendingSeek);
+
     audio.addEventListener('timeupdate', () => {
-      const cur = audio.currentTime || 0;
+      if (audio.seeking) return;
+      const cur = Number(audio.currentTime) || 0;
+      lastKnownTime = cur;
       if (currentEl) {
         currentEl.textContent = formatTime(cur);
       }
@@ -231,28 +329,15 @@
         setVisualProgress(pct);
         if (total <= 0) return;
         const targetTime = (pct / 100) * total;
-        audio.currentTime = targetTime;
-        if (currentEl) {
-          currentEl.textContent = formatTime(targetTime);
-        }
-        syncActiveCue(targetTime);
+        seekToTime(targetTime);
       });
     }
 
     skipBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
         const delta = Number(btn.getAttribute('data-audio-skip')) || 0;
-        const total = getEffectiveDuration();
-        const maxTime = total > 0 ? total : Infinity;
-        const nextTime = Math.min(maxTime, Math.max(0, (audio.currentTime || 0) + delta));
-        audio.currentTime = nextTime;
-        if (currentEl) {
-          currentEl.textContent = formatTime(nextTime);
-        }
-        if (total > 0) {
-          setVisualProgress((nextTime / total) * 100);
-        }
-        syncActiveCue(nextTime);
+        const baseTime = Math.max(Number(audio.currentTime) || 0, lastKnownTime);
+        seekToTime(baseTime + delta);
       });
     });
 
@@ -271,14 +356,7 @@
         const fallbackSec = Number(cueEl.getAttribute('data-start-sec')) || 0;
         const targetTime = total > 0 ? startRatio * total : fallbackSec;
 
-        audio.currentTime = targetTime;
-        if (currentEl) {
-          currentEl.textContent = formatTime(targetTime);
-        }
-        if (total > 0) {
-          setVisualProgress(startRatio * 100);
-        }
-        syncActiveCue(targetTime);
+        seekToTime(targetTime);
 
         if (audio.paused) {
           const playPromise = audio.play?.();

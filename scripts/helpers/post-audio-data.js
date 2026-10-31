@@ -120,6 +120,54 @@ if (typeof hexo !== 'undefined' && hexo.extend && hexo.extend.helper) {
   });
 }
 
+if (typeof hexo !== 'undefined' && hexo.extend && hexo.extend.filter) {
+  hexo.extend.filter.register('server_middleware', function registerAudioRangeMiddleware(app) {
+    const rootDir = path.join(__dirname, '..', '..');
+    app.use((req, res, next) => {
+      if (!req || !req.url) return next();
+      const cleanPath = decodeURIComponent(req.url.split('?')[0]);
+      if (!cleanPath.startsWith('/uploads/') || !/\.(mp3|mp4|m4a|wav)$/i.test(cleanPath)) {
+        return next();
+      }
+      const filePath = path.join(rootDir, 'source', cleanPath.replace(/^\//, ''));
+      if (!fs.existsSync(filePath)) return next();
+
+      let stat;
+      try {
+        stat = fs.statSync(filePath);
+      } catch {
+        return next();
+      }
+      const total = stat.size;
+      const contentType = /\.mp4$/i.test(cleanPath) ? 'video/mp4' : 'audio/mpeg';
+      const range = req.headers && req.headers.range;
+
+      res.setHeader('Accept-Ranges', 'bytes');
+      res.setHeader('Content-Type', contentType);
+
+      if (range) {
+        const match = /^bytes=(\d*)-(\d*)$/.exec(String(range).trim());
+        if (match) {
+          const start = match[1] ? parseInt(match[1], 10) : 0;
+          const end = match[2] ? Math.min(total - 1, parseInt(match[2], 10)) : total - 1;
+          if (start >= 0 && start <= end && start < total) {
+            res.statusCode = 206;
+            res.setHeader('Content-Range', `bytes ${start}-${end}/${total}`);
+            res.setHeader('Content-Length', String(end - start + 1));
+            if (req.method === 'HEAD') return res.end();
+            return fs.createReadStream(filePath, { start, end }).pipe(res);
+          }
+        }
+      }
+
+      res.statusCode = 200;
+      res.setHeader('Content-Length', String(total));
+      if (req.method === 'HEAD') return res.end();
+      return fs.createReadStream(filePath).pipe(res);
+    });
+  }, 1);
+}
+
 module.exports = {
   parseDurationToSeconds,
   formatSeconds,

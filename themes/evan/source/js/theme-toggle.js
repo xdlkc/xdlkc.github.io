@@ -144,12 +144,22 @@ function showThemeToast(toast, message, { window } = {}) {
   }
 }
 
-function getPrefersDark(matchMedia = globalThis.matchMedia) {
+function queryMedia(matchMedia = globalThis.matchMedia, win = globalThis.window, query = '(prefers-color-scheme: dark)') {
   try {
-    return !!matchMedia?.('(prefers-color-scheme: dark)')?.matches;
+    const fn = matchMedia || win?.matchMedia;
+    if (typeof fn !== 'function') return null;
+    return fn.call(win || globalThis, query);
   } catch {
-    return false;
+    try {
+      return matchMedia?.(query) || null;
+    } catch {
+      return null;
+    }
   }
+}
+
+function getPrefersDark(matchMedia = globalThis.matchMedia, win = globalThis.window) {
+  return !!queryMedia(matchMedia, win, '(prefers-color-scheme: dark)')?.matches;
 }
 
 function readSavedMode(storage) {
@@ -249,6 +259,19 @@ function mountThemePalettePopover({ document, toggle, onSelectPreset }) {
   menu.setAttribute('role', 'menu');
   menu.setAttribute('aria-label', 'Theme presets');
 
+  let suppressHoverUntil = 0;
+
+  function closeMenu() {
+    wrap.classList.remove('is-open');
+    menu.setAttribute('aria-hidden', 'true');
+  }
+
+  function openMenu() {
+    if (Date.now() < suppressHoverUntil) return;
+    wrap.classList.add('is-open');
+    menu.setAttribute('aria-hidden', 'false');
+  }
+
   const lang = resolveLang(document);
   THEME_PRESETS.forEach((preset) => {
     const item = document.createElement('button');
@@ -268,18 +291,32 @@ function mountThemePalettePopover({ document, toggle, onSelectPreset }) {
     item.appendChild(dot);
     item.appendChild(label);
     item.addEventListener('click', (e) => {
+      e.preventDefault();
       e.stopPropagation();
+      suppressHoverUntil = Date.now() + 450;
+      closeMenu();
+      item.blur?.();
       onSelectPreset(preset);
-      wrap.classList.remove('is-open');
     });
     menu.appendChild(item);
   });
 
   wrap.appendChild(menu);
+  closeMenu();
 
-  // Open on hover/focus, and close on outside click
-  wrap.addEventListener('mouseenter', () => wrap.classList.add('is-open'));
-  wrap.addEventListener('mouseleave', () => wrap.classList.remove('is-open'));
+  wrap.addEventListener('mouseenter', () => openMenu());
+  wrap.addEventListener('mouseleave', () => closeMenu());
+
+  document.addEventListener?.('click', (e) => {
+    if (!wrap.contains?.(e.target)) {
+      closeMenu();
+    }
+  });
+  document.addEventListener?.('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMenu();
+    }
+  });
 }
 
 function initThemeToggle({
@@ -290,7 +327,7 @@ function initThemeToggle({
 } = {}) {
   if (!document?.querySelector) return;
 
-  const prefersDark = getPrefersDark(matchMedia);
+  const prefersDark = getPrefersDark(matchMedia, window);
   const savedMode = readSavedMode(storage);
   const savedPalette = readSavedPalette(storage);
   const overrideMode = readUrlThemeOverride(window?.location);
@@ -329,9 +366,10 @@ function initThemeToggle({
   let onSystemChange = null;
 
   function attachSystemListener() {
-    if (!matchMedia) return;
+    detachSystemListener();
     try {
-      mql = matchMedia('(prefers-color-scheme: dark)');
+      mql = queryMedia(matchMedia, window, '(prefers-color-scheme: dark)');
+      if (!mql) return;
       onSystemChange = () => {
         const mode = normalizeThemeMode(document.documentElement.dataset.themeMode)
           || normalizeThemeMode(readSavedMode(storage))
@@ -371,7 +409,7 @@ function initThemeToggle({
           detachSystemListener();
         }
         const nextTheme = preset.mode === 'system'
-          ? (getPrefersDark(matchMedia) ? 'dark' : 'light')
+          ? (getPrefersDark(matchMedia, window) ? 'dark' : 'light')
           : preset.mode;
         const nextPalette = preset.mode === 'system' ? null : preset.palette;
         applyThemeToDocument({
@@ -436,7 +474,7 @@ function initThemeToggle({
       else detachSystemListener();
 
       const theme = mode === 'system'
-        ? (getPrefersDark(matchMedia) ? 'dark' : 'light')
+        ? (getPrefersDark(matchMedia, window) ? 'dark' : 'light')
         : mode;
 
       applyThemeToDocument({ document, theme, mode, palette });
@@ -450,7 +488,7 @@ function initThemeToggle({
         || normalizeThemeMode(readSavedMode(storage))
         || 'system';
       const theme = normalizeTheme(document.documentElement.dataset.theme)
-        || resolveInitialTheme({ savedMode: mode, prefersDark: getPrefersDark(matchMedia) });
+        || resolveInitialTheme({ savedMode: mode, prefersDark: getPrefersDark(matchMedia, window) });
       const palette = normalizePalette(document.documentElement.dataset.themePalette);
       applyThemeToDocument({ document, theme, mode, palette });
 
@@ -481,7 +519,7 @@ function initThemeToggle({
     }
 
     const nextTheme = nextMode === 'system'
-      ? (getPrefersDark(matchMedia) ? 'dark' : 'light')
+      ? (getPrefersDark(matchMedia, window) ? 'dark' : 'light')
       : nextMode;
     const nextPalette = nextMode === 'system' ? null : (nextTheme === 'dark' ? 'dark' : 'emerald');
 
