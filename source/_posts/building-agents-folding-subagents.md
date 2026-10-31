@@ -9,8 +9,8 @@ tags:
   - Claude
 categories:
   - Agent 工程
-description: "Diane Sarkis 关于将路由器、规划器与领域子智能体逐步并入主循环的实践文章，涵盖渐进式披露、端到端评测与多团队协作。"
-excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式披露。正文包含三组自动播放的架构动画。"
+description: "在 Claude Platform 中构建智能体时，减少子智能体（Subagents）的数量、转而采用渐进式披露（Progressive Disclosure）的上下文与工具，不仅能提升输出质量，还能降低成本与延迟。本文将介绍何时以及如何进行迁移。"
+excerpt: "在 Claude Platform 中构建智能体时，减少子智能体（Subagents）的数量、转而采用渐进式披露（Progressive Disclosure）的上下文与工具，不仅能提升输出质量，还能降低成本与延迟。本文将介绍何时以及如何进行迁移。"
 ---
 
 {% raw %}
