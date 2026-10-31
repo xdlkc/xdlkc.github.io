@@ -10,7 +10,7 @@ tags:
 categories:
   - Agent 工程
 description: "Diane Sarkis 关于将路由器、规划器与领域子智能体逐步并入主循环的实践文章，涵盖渐进式披露、端到端评测与多团队协作。"
-excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式披露。正文包含三组可播放、暂停及切换状态的交互架构动画。"
+excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式披露。正文包含三组自动播放的架构动画。"
 ---
 
 {% raw %}
@@ -24,18 +24,7 @@ excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式�
       <p class="hero-deck">
         在 Claude Platform 中构建智能体时，减少子智能体（Subagents）的数量、转而采用渐进式披露（Progressive Disclosure）的上下文与工具，不仅能提升输出质量，还能降低成本与延迟。本文将介绍何时以及如何进行迁移。
       </p>
-    <div class="folding-controls">
-        <button class="control-btn" id="toggleAnimBtn" type="button">
-          <span class="status-dot" id="animStatusDot"></span>
-          <span id="animBtnText">动画：播放中</span>
-        </button>
-        <button class="control-btn" id="toggleLangBtn" type="button">
-          显示：中英对照
-        </button>
-        <a class="control-btn" href="https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop" rel="noopener noreferrer" style="background:#191918;color:#FAF8F5;border-color:#191918;" target="_blank">
-          英文原版 ↗
-        </a>
-      </div></header>
+    </header>
 
     <!-- Two-Column Article Layout: Left Metadata Rail + Right Content Body -->
     <div class="article-grid">
@@ -446,9 +435,6 @@ excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式�
         <!-- ====================================================================== -->
         <figure class="diagram-figure">
           <div class="diagram-card">
-            <button class="fig3-floating-toggle" id="stepFig3Btn" title="点击手动切换动画帧" type="button">
-              <span id="fig3StateBadge">动画状态：合并/折入后 (点击切换)</span>
-            </button>
 
             <svg aria-label="Folding in subagents 3-column animated diagram" style="width:100%;height:auto;display:block;user-select:none;" viewBox="0 0 1080 375">
               <!-- Column Dividers -->
@@ -739,5 +725,5 @@ excerpt: "减少不必要的子智能体，使用技能与工具实现渐进式�
       </article>
     </div>
   </div>
-<script src="/uploads/building-agents-folding-subagents/article-v2.js?v=eca7087148" defer></script>
+<script src="/uploads/building-agents-folding-subagents/article-auto.js" defer></script>
 {% endraw %}
