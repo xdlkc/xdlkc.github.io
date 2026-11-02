@@ -988,19 +988,28 @@
         expandTocAncestorsForLink(link);
 
         try {
-          const height = toc.clientHeight || 0;
-          if (height > 0 && toc.scrollHeight > height) {
+          // The desktop sidebar owns the vertical scrollbar; the TOC list itself
+          // expands to its full content height and therefore never overflows.
+          const scrollContainer = toc.closest?.('.toc-sidebar') || toc;
+          const height = scrollContainer.clientHeight || 0;
+          if (height > 0 && scrollContainer.scrollHeight > height) {
+            const containerRect = scrollContainer.getBoundingClientRect();
+            const linkRect = link.getBoundingClientRect();
+            const currentScrollTop = scrollContainer.scrollTop || 0;
             const nextScrollTop = computeTocScrollTopToReveal({
-              containerScrollTop: toc.scrollTop || 0,
+              containerScrollTop: currentScrollTop,
               containerHeight: height,
-              linkTop: link.offsetTop || 0,
-              linkHeight: link.offsetHeight || 0
+              linkTop: currentScrollTop + linkRect.top - containerRect.top,
+              linkHeight: linkRect.height || link.offsetHeight || 0
             });
-            if (Number.isFinite(nextScrollTop) && Math.abs(nextScrollTop - (toc.scrollTop || 0)) > 1) {
-              link.scrollIntoView({
-                behavior: 'smooth',
-                block: 'center',
-              });
+            if (Number.isFinite(nextScrollTop) && Math.abs(nextScrollTop - currentScrollTop) > 1) {
+              // Scroll only the outline instead of scrollIntoView(), which can
+              // also move the article and fight the user's current scroll position.
+              if (typeof scrollContainer.scrollTo === 'function') {
+                scrollContainer.scrollTo({ top: nextScrollTop, behavior: 'smooth' });
+              } else {
+                scrollContainer.scrollTop = nextScrollTop;
+              }
             }
           }
         } catch {
