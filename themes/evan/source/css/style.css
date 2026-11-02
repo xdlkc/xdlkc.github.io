@@ -289,12 +289,19 @@ h2 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
   height: 100%;
+}
+
+.card > a:last-child {
+  align-self: flex-start;
+  margin-top: auto;
 }
 
 .card h3 {
