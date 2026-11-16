@@ -1,87 +1,120 @@
 # xdlkc.github.io
 
-这是博客的 Hexo 源码仓库。
+English | [简体中文](./README.zh-CN.md)
 
-## 环境要求
+Source repository for Evan Zhang's technical blog, live at **[https://xdlkc.github.io](https://xdlkc.github.io)**, built with **Hexo 7.3** and the custom **`evan`** theme.
 
-- Node.js 20+
-- npm
+---
 
-## 安装依赖
+## Theme & Site Features (`themes/evan`)
+
+- **Theme & Multi-Palette System** (`theme-toggle.js`): Supports `system`, `light` (`Emerald`, `Sepia`, `Ocean`), and `dark` (`Dark`, `Midnight`) presets persisted in `localStorage` and pre-applied in `<head>` to minimize flash of unstyled content.
+- **UI Language Toggle** (`lang-toggle.js`): Switches site navigation, section headers, and UI metadata between English and Simplified Chinese while preserving each article's original prose.
+- **Post Audio Player & Companion Drawer** (`_partial/post-audio-player.ejs`, `post-audio-player.js`): Supports `podcast` (AI audio guide) and `full` (full-text read-aloud) modes with play/pause, `-15s`/`+15s` seek, playback speed control, live caption marquee, and an expandable drawer for synced transcript paragraphs and key highlights.
+- **Sticky Active Outline & Reading Aids** (`post.ejs`, `toc-scrollspy.js`, `reading-progress.js`, `reading-time-countdown.js`): Sticky `280px` desktop outline sidebar (collapsing into a mobile `<details>` outline below `1100px` width) with active-heading scrollspy, reading progress bar, and remaining-time countdown.
+- **Developer Reading UX**: Mermaid v11 diagram rendering synced with light/dark theme plus click-to-zoom, code block language labels, copy buttons, collapse toggles, line-number toggles, client-side search (`site-search.js`), keyboard shortcut cheatsheet (`shortcut-help.js`), print styles, RSS 2.0 feed with custom XSL styling (`rss.xsl`), and theme-synced Utterances comments.
+- **Homepage & News Board** (`index.ejs`, `news.ejs`): Highlights featured engineering repositories, latest articles, and curated news digest entries (`news.home_limit: 5`).
+
+---
+
+## Quick Start
+
+### Prerequisites
+
+- Node.js `20+` and `npm`
+- Python `3.10+` (optional, for `tools/publish_article.py` and `tools/generate_audio.py`)
+
+### Install, Preview & Build
 
 ```bash
 npm install
+
+# Local preview server at http://localhost:4000/
+npx hexo server        # or: npm run server
+
+# Generate static site output into public/
+npx hexo generate      # or: npm run build
+
+# Clean Hexo cache and generated files
+npx hexo clean         # or: npm run clean
 ```
 
-## 本地预览
+---
+
+## Publishing & Content Workflows
+
+### Obsidian-to-Hexo Article Publishing
+
+Sync a Markdown draft (and its relative local images) into `source/_posts/`:
 
 ```bash
-npx hexo server
+./tools/publish_article.py "<path-to-markdown>" --date 2026-03-01 --slug your-slug
 ```
 
-打开：
-
-```text
-http://localhost:4000/
-```
-
-## 构建静态站点
+For example:
 
 ```bash
-npx hexo generate
+./tools/publish_article.py "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/lkc/Openclaws/openclaw-templates-comparison-tech-memo.md" \
+  --date 2026-03-01 \
+  --slug openclaw-agent-architecture-tech-memo
 ```
 
-生成结果在 `public/`。
+`tools/publish_article.py` handles:
 
-## 发布新文章
+1. Extracting the top-level `# Title` (or `--title` override) and stripping existing front-matter.
+2. Writing `source/_posts/<slug>.md` with normalized Hexo front-matter while preserving heading structure.
+3. Copying relative local images into `source/uploads/<slug>/` and rewriting Markdown image paths to `/uploads/<slug>/<filename>`.
+4. Optionally generating MiniMax audio narration (`--with-audio`, `--audio-mode podcast|full`, `--voice-id ...`) and optionally committing/pushing (`--commit`, `--push`).
 
-使用发布脚本把 Obsidian 里的 Markdown 同步到 `source/_posts`：
+After syncing, regenerate the static site with `npx hexo generate`.
+
+### Audio Narration Generation (`tools/generate_audio.py`)
+
+Generate `audio.mp3`, `audio-script.txt`, and `audio-meta.json` under `source/uploads/<slug>/` using MiniMax APIs (`MINIMAX_API_KEY` or `MINIMAX_TOKEN` in environment or `.env`):
 
 ```bash
-./tools/publish_article.py "<你的 Markdown 路径>" --date 2026-03-01 --slug your-slug
+npm run audio:generate -- source/_posts/your-slug.md
 ```
 
-例如：
+Supports `--mode podcast|full`, `--voice-id`, `--tts-model`, `--llm-model`, `--speed`, `--regenerate-script`, and `--force`.
+
+### News Digest Automation
+
+- `npm run news:digest` (`tools/generate-news-digest.js`): Generates daily digest posts from `source/_data/news.json`.
+- `tools/update-news-hourly.js`: Fetches domestic and international feeds into `source/_data/news.json` with URL/title deduplication.
+
+---
+
+## Testing
+
+The `tests/` directory (`200` test files) covers layout invariants, TOC scrollspy, audio player controls, theme/language toggles, RSS generation, and UI interactions using both Jest and Node's built-in `node:test` runner:
 
 ```bash
-./tools/publish_article.py "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/lkc/Openclaws/openclaw-templates-comparison-tech-memo.md" --date 2026-03-01 --slug openclaw-agent-architecture-tech-memo
+# Run Jest suite (configured in package.json)
+npm test
+
+# Run Node built-in test runner suites (e.g. layout and UI checks)
+node --test tests/article-layout.test.js tests/ui/*.test.js
 ```
 
-脚本会自动完成：
+---
 
-- 提取文章标题
-- 写入 `source/_posts/<slug>.md`
-- 保留正文原始标题结构
-- 同步 Markdown 中引用的本地图片
-- 把图片复制到 `source/uploads/<slug>/`
-- 把图片链接改写为站点路径
+## Directory Layout
 
-同步后重新生成：
+- [\_config.yml](_config.yml): Primary Hexo site configuration (`url`, `theme: evan`, Utterances comments, RSS feed)
+- [DEV.md](DEV.md): Theme CSS notes (code block container styling and responsive table rules)
+- `source/_posts/`: Published Markdown posts
+- `source/uploads/`: Post image and audio assets
+- `source/_data/`: Structured site data (including `news.json`)
+- `themes/evan/`: Custom Hexo theme (`layout/`, `source/css/`, `source/js/`, [themes/evan/\_config.yml](themes/evan/_config.yml))
+- `scripts/`: Hexo build helpers, filters, RSS enhancers, search index, and sitemap generators
+- `tools/`: Publishing, audio narration, and news automation scripts ([publish\_article.py](tools/publish_article.py), [generate\_audio.py](tools/generate_audio.py), [generate-news-digest.js](tools/generate-news-digest.js), [update-news-hourly.js](tools/update-news-hourly.js))
+- `tests/`: Automated layout, UI, RSS, and regression test suites
+- `video/`: Companion Remotion project ([video/README.md](video/README.md))
+- [.github/workflows/deploy.yml](.github/workflows/deploy.yml): GitHub Pages build & deployment workflow
 
-```bash
-npx hexo generate
-```
+---
 
-## 目录结构
+## Deployment
 
-- `source/_posts/`: 文章源码
-- `source/uploads/`: 文章图片资源
-- `themes/evan/`: 当前自定义主题
-- `tools/publish_article.py`: 发布脚本
-- `.github/workflows/deploy.yml`: GitHub Pages 自动部署
-
-## 部署
-
-推送到 `master` 后，GitHub Actions 会自动：
-
-1. 安装依赖
-2. 执行 `hexo generate`
-3. 部署到 GitHub Pages
-
-## 常用命令
-
-```bash
-npx hexo clean
-npx hexo generate
-npx hexo server
-```
+Pushing to `master` or `main` (or triggering `workflow_dispatch`) runs [.github/workflows/deploy.yml](.github/workflows/deploy.yml), which installs npm dependencies on Node.js 20, builds `./public` via `npx hexo generate`, and deploys directly to GitHub Pages.
