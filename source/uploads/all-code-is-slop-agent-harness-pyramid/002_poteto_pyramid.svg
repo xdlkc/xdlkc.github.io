@@ -1,0 +1,37 @@
+<svg width="1400" height="880" viewBox="0 0 1400 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="880" rx="28" fill="#F8FAFC"/>
+  <text x="84" y="88" fill="#0F172A" font-size="42" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">The Poteto Pyramid：五层工程信任与成本倒金字塔</text>
+  <text x="84" y="132" fill="#475569" font-size="22" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">遇到 Agent 犯错时把约束尽可能往上层推：越靠上越确定、边际成本越低；越靠下越依赖人类稀缺注意力。</text>
+
+  <!-- Left vertical Cost & Risk axis -->
+  <line x1="126" y1="204" x2="126" y2="790" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M110 772L126 802L142 772" stroke="#64748B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="126" y="184" text-anchor="middle" fill="#334155" font-size="18" font-weight="700" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">COST &amp; RISK</text>
+  <text x="96" y="480" text-anchor="middle" fill="#475569" font-size="18" font-weight="600" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" transform="rotate(-90 96 480)">综合成本与维护风险递增 ↓</text>
+
+  <!-- Layer 1 (widest) -->
+  <rect x="230" y="176" width="1080" height="114" rx="22" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="770" y="218" text-anchor="middle" fill="#1D4ED8" font-size="25" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">1. 代码库与 API 形态 (Codebase &amp; Architecture)</text>
+  <text x="770" y="256" text-anchor="middle" fill="#1E3A8A" font-size="19" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">100% 确定性 · 零边际 Token · 让错误写法在 API 层根本不存在（如 Dune 原语封装、进程目录边界）</text>
+
+  <!-- Layer 2 -->
+  <rect x="290" y="308" width="960" height="114" rx="22" fill="#F0FDF4" stroke="#86EFAC" stroke-width="2"/>
+  <text x="770" y="350" text-anchor="middle" fill="#15803D" font-size="25" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">2. 静态分析与编译检查 (Static Analysis &amp; Linters)</text>
+  <text x="770" y="388" text-anchor="middle" fill="#166534" font-size="19" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">100% 确定性 · 毫秒级阻断 · 类型系统、静态依赖图分析器、带根因修复指引的自定义 Lint</text>
+
+  <!-- Layer 3 -->
+  <rect x="350" y="440" width="840" height="114" rx="22" fill="#FEFCE8" stroke="#FDE047" stroke-width="2"/>
+  <text x="770" y="482" text-anchor="middle" fill="#A16207" font-size="25" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">3. 多维自动化与形式化验证 (Verification)</text>
+  <text x="770" y="520" text-anchor="middle" fill="#854D0E" font-size="19" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">强行为/数学证据 · 占日常 70% Token · CDP 自检、Bombadil 属性测试、TLA+、Lean</text>
+
+  <!-- Layer 4 -->
+  <rect x="415" y="572" width="710" height="114" rx="22" fill="#FFF7ED" stroke="#FDBA74" stroke-width="2"/>
+  <text x="770" y="614" text-anchor="middle" fill="#C2410C" font-size="25" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">4. 自然语言规则 (Prose: AGENTS.md / Skills)</text>
+  <text x="770" y="652" text-anchor="middle" fill="#9A3412" font-size="19" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">概率性遵循 · 易稀释或过度泛化 · 仅保留无法代码化的主观上下文权衡</text>
+
+  <!-- Layer 5 (narrowest tip) -->
+  <rect x="485" y="704" width="570" height="122" rx="22" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+  <text x="770" y="746" text-anchor="middle" fill="#B91C1C" font-size="24" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">5. 人类审查 (Human Review)</text>
+  <text x="770" y="780" text-anchor="middle" fill="#991B1B" font-size="18" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">稀缺注意力兜底 · 不再逐行盯 Diff</text>
+  <text x="770" y="808" text-anchor="middle" fill="#991B1B" font-size="18" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">转向验收状态图、录屏与核心产品品味</text>
+</svg>
