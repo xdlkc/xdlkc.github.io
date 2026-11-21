@@ -3,8 +3,7 @@ title: "45天蒸发6万亿美元：这是“泡沫”还是机遇？"
 date: "2026-11-20 22:43:52"
 updated: "2026-11-20 22:43:52"
 permalink: 2026/11/20/kobeissi-letter-45-days-6-trillion/
-description: "The Kobeissi Letter（@KobeissiLetter）原帖的完整中文翻译。图内文字亦为中译。文中的我们、策略、业绩与付费订阅属于原作者，不是本博客的策略或宣传。"
-excerpt: "中文翻译。原作者 The Kobeissi Letter @KobeissiLetter。图内文字亦为中译。文中的我们、策略、业绩与付费订阅属于原作者，不是本博客的策略或宣传。"
+description: "中文翻译。原作者 The Kobeissi Letter。原文：https://x.com/kobeissiletter/status/2123789428862660980"
 tags:
   - 中文翻译
   - The Kobeissi Letter
@@ -13,25 +12,11 @@ categories:
   - 翻译
 ---
 
-> 中文翻译
->
-> 原作者：The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
->
-> 原帖：<https://x.com/kobeissiletter/status/2123789428862660980>
->
-> 图内文字亦为中文翻译，不是原图上的原始文字。社交平台帖文与刊物版面截图，在对应图片下方标有「截图文字中译，非原始中文截图」。
->
-> 文中的「我们」、投资策略、业绩表现和付费订阅，全部属于原作者 The Kobeissi Letter，不是本博客作者或读者的策略，也不是本博客的宣传。
->
-> 本文是第三方完整翻译转载。署名和出处链接只用于标明原作者，并不表示已经获得授权。交接材料没有提供转载许可。
+中文翻译｜原作者 [The Kobeissi Letter](https://x.com/KobeissiLetter)
+
+原文：<https://x.com/kobeissiletter/status/2123789428862660980>
 
 ![](/uploads/kobeissi-letter-45-days-6-trillion/00-cover-HXkbelWWEAAnv6n-zh.png)
-
-（图内红色标注已替换为中文：标普500：-6万亿美元；黄金：-13万亿美元；比特币：-5500亿美元。）
-
-The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
-
-2026-11-20 22:43:52（北京时间）
 
 目前我们被问到最多的问题是：是否存在“AI泡沫”，以及它是否已经破裂？美股现已连续31个交易日出现下跌，日均蒸发2250亿美元。下文将全面剖析我们是如何走到这一步的、当下正在发生什么，以及我们对后市的展望。
 
@@ -49,9 +34,7 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 ![标普500指数与近期重大事件](/uploads/kobeissi-letter-45-days-6-trillion/08-HXkgt-jXEAAiVNm-zh.png)
 
-中文图注：标普500指数与近期重大事件
-
-原英文图注：S&P 500 and Recent Events
+标普500指数与近期重大事件
 
 过去45天里，市场先后经历了接连不断的伊朗战争头条消息、2026年第三季度财报季、围绕AI资本支出（CapEx）与自由现金流的担忧、美联储10月议息会议、美国中期选举、英伟达（$NVDA）风波，最终导致市值蒸发6万亿美元。
 
@@ -67,9 +50,7 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 ![大型科技股资本支出与自由现金流](/uploads/kobeissi-letter-45-days-6-trillion/01-HXkhs7fXcAAbAXx-zh.png)
 
-中文图注：大型科技股资本支出与自由现金流
-
-原英文图注：CapEx and Free Cash Flow - Large Cap Tech
+大型科技股资本支出与自由现金流
 
 2026年第三季度，亚马逊（$AMZN）、Alphabet（$GOOGL）、Meta（$META）和微软（$MSFT）的合计资本支出增加369亿美元，达到创纪录的2019亿美元。
 
@@ -81,9 +62,7 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 ![标普500每股收益（EPS）增速——2026年Q3](/uploads/kobeissi-letter-45-days-6-trillion/13-HXkxQu4W0AAHpBB-zh.png)
 
-中文图注：标普500每股收益（EPS）增速——2026年Q3
-
-原英文图注：S&P 500 EPS Growth - Q3 2026
+标普500每股收益（EPS）增速——2026年Q3
 
 历史上从未有过如此恐惧、同时增长又如此强劲的市场。2026年第三季度迄今，标普500成分股已公布+31.9%的每股收益（EPS）同比增速，创下至少4年来的最强同比增幅。
 
@@ -97,13 +76,9 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 随着民主党在中期选举中实现“横扫”，我们认为“特朗普看跌期权”已经事实上走向终结。而11月4日的以下这条帖文，进一步催化了这一托底预期的瓦解：
 
-![美国国会女议员呼吁实施AI禁令](/uploads/kobeissi-letter-45-days-6-trillion/03-HXkkmwTXEAAbGad-zh.png)
+![美国国会女议员呼吁实施AI禁令（截图文字中译）](/uploads/kobeissi-letter-45-days-6-trillion/03-HXkkmwTXEAAbGad-zh.png)
 
-美国国会女议员呼吁实施AI禁令。原帖内容中译：美国国会众议员亚萨明·安萨里（Congresswoman Yassamin Ansari，@RepYassAnsari）于2026年11月4日下午1:54发帖称：“民主党上任第一天的首要议程，必须是暂停前沿人工智能研发、监管这一失控的行业，并禁止人工超级智能（图中红框标出）。”该帖浏览量达2080万次（2.4万条评论、1.1万次转发、2.3万次点赞、5900次收藏）。
-
-截图文字中译，非原始中文截图。
-
-原英文图注：US Congresswoman Calls For AI Ban
+美国国会女议员呼吁实施AI禁令
 
 由于美国参议院和众议院控制权易手，特朗普总统干预市场的能力已被部分削弱。呼吁禁止AI的声音愈发响亮，市场也开始计入民主党于2027年1月掌权后实施激进监管乃至潜在AI禁令的风险。
 
@@ -125,32 +100,21 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 ![AI基础设施建设催生创纪录发债规模](/uploads/kobeissi-letter-45-days-6-trillion/07-HXknnG4XAAAQMDG-zh.png)
 
-中文图注：AI基础设施建设催生创纪录发债规模
-
-原英文图注：AI Buildout Requires Record Debt Issuance
+AI基础设施建设催生创纪录发债规模
 
 如上图所示，11月美国投资级企业债发行规模预计将同比增加370亿美元（增幅27%），达到1750亿美元，创下历年11月最高纪录。我们认为，美联储在这一背景下坚持加息，进一步加剧了近期的市场动荡。局面会发生变化吗？
 
 ![美国原油价格走势——2026年11月](/uploads/kobeissi-letter-45-days-6-trillion/02-HXko1VgW4AAJXL7-zh.png)
 
-中文图注：美国原油价格走势——2026年11月
-
-原英文图注：US Oil Prices - November 2026
+美国原油价格走势——2026年11月
 
 政治权力的更迭加上近期市场回调，推动油价本月下跌了约22%。结合当前的市场不稳定性，美联储对2027年的政策前景很可能会发生转向，尤其是在伊朗战争明显接近尾声的情况下。
 
 11月2日，我们在美国中期选举前夕发布了以下关于美国油价的分析，预测油价将跌破93.00美元。此后，油价已触及2026年8月以来的最低水平。本周日我们将发布最新一期《The Kobeissi Letter》，欢迎点击[此处](https://www.thekobeissiletter.com/pricing)订阅获取。
 
-![《The Kobeissi Letter》——2026年11月2日](/uploads/kobeissi-letter-45-days-6-trillion/12-HXkt97qW4AAFXeX-zh.png)
+![《The Kobeissi Letter》——2026年11月2日（截图文字中译）](/uploads/kobeissi-letter-45-days-6-trillion/12-HXkt97qW4AAFXeX-zh.png)
 
-《The Kobeissi Letter》——2026年11月2日。刊面可见文字中译：
-  - **标题**：伊朗战争进入第247天，油价变动不大
-  - **正文**：WTI原油（2026年12月合约）上周收跌0.21%，报102.98美元，因霍尔木兹海峡一艘油轮遇袭凸显了美以对伊朗战争带来的持续供应风险——这场战争现已进入第八个月。周五，霍尔木兹海峡一艘油轮遭到绑在小艇上的爆炸装置袭击。与此同时，前一天也门胡塞武装声称袭击了沙特阿拉伯境内多处设施，包括其最大的炼油厂拉斯塔努拉（Ras Tanura）、拉比格（Rabigh）炼油厂以及国有企业沙特阿美（Saudi Aramco）位于阿布盖格（Abqaiq）的一处生产设施。另一方面，美国媒体此前报道副总统JD·万斯致信伊朗最高安全官员以重启和谈，上周万斯又主动联系伊朗协助该国获取医疗物资。伊朗尚未回复该信函，但表示美国必须满足其条件才能结束战争。随着中期选举临近，如今的焦点转向特朗普总统在选后的动向——他曾多次将中期选举称为伊朗战争的关键时间节点。我们认为，WTI原油价格中仍计入了高额的地缘政治风险溢价，走势出现反转的可能性很大。从技术面来看，WTI原油上周在短暂跌破100.00美元后，迅速反弹回103.00至105.00美元的阻力区间。这使得日线RSI触及约66的下行趋势阻力位，油价也回到9月15日高点106.75美元附近。我们认为，要突破这一水平并最终上破110.00美元，【图中红框标出：必须出现重大的基本面恶化。】当前阻力最小的方向仍指向93.00美元【图中红框标出：上行趋势支撑位。因此，我们维持看空WTI原油的立场，目标价93.00美元，止损位110.00美元。】
-  - **配图说明**：左侧配有 WTI 原油日线走势与 RSI 指标图，红框标出上方阻力区及预期回落箭头，并由红色长箭头指向文末红框中的看空结论。
-
-截图文字中译，非原始中文截图。
-
-原英文图注：The Kobeissi Letter - November 2nd, 2026
+《The Kobeissi Letter》——2026年11月2日
 
 即便油价回落，“更长时间维持高利率”（higher for longer）的基调暂时仍将延续，但我们认为，美联储在2027年年中前放松紧缩政策的可能性正在上升。
 
@@ -160,11 +124,7 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 ![2026年10月6日以来英伟达与AMD股价走势对比](/uploads/kobeissi-letter-45-days-6-trillion/05-HXkqURwXEAAPVRp.png)
 
-中文图注：2026年10月6日以来英伟达与AMD股价走势对比
-
-原英文图注：Nvidia and AMD Since October 6th, 2026
-
-（图中无可替换的标题或叙述文字；曲线标注 AMD、NVIDIA 及行情界面按约定保留原文。）
+2026年10月6日以来英伟达与AMD股价走势对比
 
 相信大家已经看到，我们就英伟达事件发声颇多，很早就表明立场：在被证明有罪之前，黄仁勋应被推定为无罪。我们呼吁董事会在权威独立调查查明事实之前，为黄仁勋留出回归的大门。
 
@@ -176,9 +136,7 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 ![标普500科技板块——远期市盈率](/uploads/kobeissi-letter-45-days-6-trillion/10-HXkrkshXcAAJVfa-zh.png)
 
-中文图注：标普500科技板块——远期市盈率
-
-原英文图注：S&P 500 Tech - Forward P/E Ratio
+标普500科技板块——远期市盈率
 
 英伟达的远期市盈率已降至9倍，成为标普500指数中最便宜的股票之一；若结合其盈利增速来看，更是遥遥领先的最便宜标的。
 
@@ -194,9 +152,7 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 ![标普500波动率指数（VIX）](/uploads/kobeissi-letter-45-days-6-trillion/09-HXkvEz2XYAAkaSk-zh.png)
 
-中文图注：标普500波动率指数（VIX）
-
-原英文图注：S&P 500 Volatility Index
+标普500波动率指数（VIX）
 
 波动率指数（$VIX）现已较10月低点飙升超过100%，并在11月5日创下自2018年2月以来的最大单日涨幅。与此同时，这场突如其来的恐慌又撞上了Anthropic（$ANT）的IPO，后者大幅抽干了市场流动性。
 
@@ -204,17 +160,13 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 ![Anthropic IPO认购需求](/uploads/kobeissi-letter-45-days-6-trillion/11-HXkvoWdWQAAI9FR-zh.png)
 
-中文图注：Anthropic IPO认购需求
-
-原英文图注：Anthropic IPO Demand
+Anthropic IPO认购需求
 
 情绪突变叠加流动性大幅收紧，造就了我们本周看到的行情：从股票到黄金、再到加密货币等各类资产全线走低。
 
 ![对冲基金科技股资金流向](/uploads/kobeissi-letter-45-days-6-trillion/06-HXkwW4BXcAEZBAk-zh.png)
 
-中文图注：对冲基金科技股资金流向
-
-原英文图注：Hedge Fund Tech Stock Flows
+对冲基金科技股资金流向
 
 本月，对冲基金创下了十多年来最大规模的过去6周净资金流出。这完全就是一场夺门而逃的踩踏。
 
@@ -252,9 +204,7 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 ![《The Kobeissi Letter》业绩表现（2020年至2025年）](/uploads/kobeissi-letter-45-days-6-trillion/04-HXkyFSsXwAAeKCO-zh.png)
 
-中文图注：《The Kobeissi Letter》业绩表现（2020年至2025年）
-
-原英文图注：The Kobeissi Letter's Performance - 2020 to 2025
+《The Kobeissi Letter》业绩表现（2020年至2025年）
 
 如果您希望获取我们的高级每日分析报告，可点击[此处](https://www.thekobeissiletter.com/pricing)加入我们的订阅服务。
 
