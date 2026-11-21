@@ -164,7 +164,7 @@ The Kobeissi Letter（[@KobeissiLetter](https://x.com/KobeissiLetter)）
 
 原英文图注：Nvidia and AMD Since October 6th, 2026
 
-（图中无可替换的标题或叙述文字；曲线标注 AMD、NVIDIA 及行情界面保留英文。）
+（图中无可替换的标题或叙述文字；曲线标注 AMD、NVIDIA 及行情界面按约定保留原文。）
 
 相信大家已经看到，我们就英伟达事件发声颇多，很早就表明立场：在被证明有罪之前，黄仁勋应被推定为无罪。我们呼吁董事会在权威独立调查查明事实之前，为黄仁勋留出回归的大门。
 
