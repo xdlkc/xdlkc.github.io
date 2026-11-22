@@ -40,7 +40,19 @@
     btn.className = 'back-to-top';
     btn.setAttribute('data-back-to-top', '');
     btn.setAttribute('aria-label', '返回顶部');
-    btn.textContent = '↑';
+    btn.setAttribute('title', '返回顶部');
+
+    const icon = root.createElement('span');
+    icon.className = 'back-to-top-icon';
+    icon.setAttribute('aria-hidden', 'true');
+    icon.textContent = '↑';
+
+    const percentEl = root.createElement('span');
+    percentEl.className = 'back-to-top-percent';
+    percentEl.textContent = '';
+
+    btn.appendChild(icon);
+    btn.appendChild(percentEl);
     btn.setAttribute('hidden', 'hidden');
 
     root.body?.appendChild(btn);
@@ -84,7 +96,14 @@
     if (!button) return;
     const p = clampNumber(percent, { min: 0, max: 100 });
     try {
-      button.textContent = `↑ ${p}%`;
+      const percentEl = button.querySelector?.('.back-to-top-percent');
+      if (percentEl) {
+        percentEl.textContent = ` ${p}%`;
+      } else {
+        button.textContent = `↑ ${p}%`;
+      }
+      button.setAttribute?.('data-progress', String(p));
+      button.setAttribute?.('title', `返回顶部 (${p}%)`);
     } catch {
       // ignore
     }
@@ -103,7 +122,16 @@
 
       if (!show) {
         // Keep it minimal while hidden.
-        try { btn.textContent = '↑'; } catch { /* ignore */ }
+        try {
+          const percentEl = btn.querySelector?.('.back-to-top-percent');
+          if (percentEl) {
+            percentEl.textContent = '';
+          } else {
+            btn.textContent = '↑';
+          }
+          btn.removeAttribute?.('data-progress');
+          btn.setAttribute?.('title', '返回顶部');
+        } catch { /* ignore */ }
         return;
       }
 

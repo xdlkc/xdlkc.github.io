@@ -9,14 +9,20 @@ if (!_active) {
   else if (_rawPath === '' || _rawPath === 'index.html') _active = 'home';
 }
 %>
-<nav class="<%= _navClass %>" aria-label="Primary">
+<nav class="<%= _navClass %>" aria-label="Primary" data-mobile-nav>
   <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
-  <div class="nav-links">
+  <div class="nav-mobile-actions">
+    <button class="site-search-trigger nav-mobile-search" type="button" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
+    <button class="nav-menu-toggle" type="button" data-mobile-nav-toggle aria-expanded="false" aria-controls="primary-nav-menu" aria-label="Toggle navigation menu">
+      <span class="nav-menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+  <div id="primary-nav-menu" class="nav-links" data-mobile-nav-menu>
     <a href="<%- url_for('/archives/') %>" data-i18n-key="nav.archives"<%- _active === 'archives' ? ' class="is-active" aria-current="page"' : '' %>>Archives</a>
     <a href="<%- url_for('/news/') %>" data-i18n-key="nav.news"<%- _active === 'news' ? ' class="is-active" aria-current="page"' : '' %>>News</a>
     <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about"<%- _active === 'about' ? ' class="is-active" aria-current="page"' : '' %>>About</a>
     <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
-    <button class="site-search-trigger" type="button" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
+    <button class="site-search-trigger nav-desktop-search" type="button" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
     <button class="theme-toggle" type="button" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
     <button class="shortcut-help-trigger" type="button" data-shortcut-help-trigger aria-label="Shortcuts" title="Shortcuts">?</button>
     <button class="lang-toggle" type="button" data-lang-toggle data-i18n-key="nav.lang" aria-label="切换为中文">中文</button>
