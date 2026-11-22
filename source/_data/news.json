@@ -1,41 +1,343 @@
 [
   {
-    "id": "20260401-intl-reuters-ipsos-iran-war-poll",
-    "title": "Two-thirds of Americans want quick end to Iran war even if goals unachieved, Reuters/Ipsos poll finds",
-    "summary": "路透/益普索3月31日21:06 UTC公布的民调显示，约三分之二美国人希望美国尽快结束在伊朗战争中的参与，即便这意味着无法完全达成特朗普政府设定的目标。该结果说明美国国内对战争持续时间和代价的容忍度正在下降，未来可能对政策节奏、军事升级空间以及大选政治产生约束。市场层面，这会影响投资者对中东冲突持续性、油价风险溢价和避险资产定价的判断。",
-    "url": "https://www.reuters.com/world/middle-east/two-thirds-americans-want-quick-end-iran-war-even-if-goals-unachieved-2026-03-31/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-31T21:06:16Z",
-    "importance": "高。国内民意若明显转向，往往会反过来限制战争升级路径，进而影响原油、黄金、航运和全球风险资产对地缘冲突持续时间的定价。",
-    "region": "国际",
-    "tags": [
-      "Reuters",
-      "伊朗战争",
-      "美国民意",
-      "油价",
-      "避险资产",
-      "地缘政治"
+    "id": "aihot-20261122-the-decoder-05cec80b",
+    "title": "Perplexity 推出 Monitor API：将网页搜索从一次性查询变为持续监控",
+    "summary": "Perplexity 发布 Monitor API，按计划持续搜索网络，仅在出现相关变化时通过 Webhook 通知智能体。该 API 内置决策模型自动过滤不重要的结果，减少噪音。这也是 Perplexity 通过开发者工具在同质化聊天机器人业务中寻求差异化战略的一部分。",
+    "url": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/",
+    "source": "The Decoder",
+    "publishedAt": "2026-11-22T14:20:28.000Z",
+    "score": 80,
+    "tier": "T2",
+    "region": [
+      "AI精选",
+      "媒体"
     ],
-    "context": "最近市场最关心的是冲突会否长期化。民意数据虽然不是政策决定本身，但会影响白宫与国会在军事行动上的政治空间。"
+    "tags": [
+      "媒体",
+      "Perplexity",
+      "Monitor API",
+      "AI智能体",
+      "开发者工具"
+    ],
+    "context": "随着智能体应用兴起，从单次查询走向持续监控的搜索基础设施，为开发者提供了新的能力选择。"
   },
   {
-    "id": "20260401-intl-reuters-worldbank-turkey-railway",
-    "title": "World Bank approves $2 billion loan for Turkey's new railway project",
-    "summary": "路透3月31日20:52 UTC报道，世界银行批准向土耳其一项新铁路工程提供20亿美元贷款。该消息的重要性不只在项目融资本身，更在于多边金融机构继续对关键基础设施投资提供背书，有助于缓解新兴市场在高利率和地缘不确定性环境下的融资压力。对市场来说，这类项目会影响土耳其中长期物流能力、财政与外部融资预期，也为观察世界银行等机构在区域发展和稳增长中的角色提供了样本。",
-    "url": "https://www.reuters.com/world/middle-east/world-bank-approves-2-billion-loan-turkeys-new-railway-project-2026-03-31/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-31T20:52:50Z",
-    "importance": "中等偏高。多边开发融资在当前全球融资环境偏紧背景下尤为关键，既影响土耳其基础设施和增长预期，也关系国际开发资金流向与区域稳定。",
-    "region": "国际",
-    "tags": [
-      "Reuters",
-      "世界银行",
-      "土耳其",
-      "铁路",
-      "基建融资",
-      "新兴市场"
+    "id": "aihot-20261122-aws-ml-29fc295f",
+    "title": "AWS Quick 上线 Meta ads AI 连接器，广告主可用自然语言创建与管理广告活动",
+    "summary": "Meta ads AI 连接器现已在 AWS Quick 中可用，Meta 广告主可在 Quick 内用自然语言创建、管理和分析广告活动。连接器保持与 Meta 广告管理网络的连接，并支持将 Meta 广告数据与第一方及第三方数据源结合，构建仪表板、文档、演示文稿和自动化工作流。",
+    "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+    "source": "AWS Machine Learning Blog",
+    "publishedAt": "2026-11-22T01:59:13.000Z",
+    "score": 70,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
     ],
-    "context": "全球高利率与地缘冲突抬高了新兴市场的融资门槛。此类多边贷款有助于降低大型基建项目的资本约束，并稳定相关国家的增长预期。"
+    "tags": [
+      "官方",
+      "工程",
+      "AWS Quick",
+      "Meta ads",
+      "AI 连接器",
+      "广告营销"
+    ],
+    "context": "该集成将 Meta 广告投放能力接入 AWS 的 AI 工作助手，为广告主简化跨平台投放与数据分析流程。"
+  },
+  {
+    "id": "aihot-20261121-aws-ml-ce7e1354",
+    "title": "AWS Quick 推送功能更新：聊天内运行业务流程流、网页端改版与多智能体协作",
+    "summary": "AWS 面向工作场景的 AI 工作台 Quick 发布一批更新：用户可在聊天中构建并运行业务流程流，网页端全新改版帮助规划每日事务。多个智能体可协同给出更完整的回答，并新增 Meta 广告、Amplitude 等数据源接入。",
+    "url": "https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/",
+    "source": "AWS Machine Learning Blog",
+    "publishedAt": "2026-11-21T01:06:42.000Z",
+    "score": 66,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "工程",
+      "AWS",
+      "AI工作台",
+      "多智能体",
+      "产品更新"
+    ],
+    "context": "多智能体协作与业务流程自动化正成为企业级 AI 工作台的竞争焦点，AWS 此轮迭代值得关注。"
+  },
+  {
+    "id": "aihot-20261121-aws-ml-9657a971",
+    "title": "AWS 详解 Agent Toolkit 分布式 KV 缓存技能：自托管 LLM 推理成本最高降 40%、首 Token 延迟降 80%",
+    "summary": "AWS 在 Agent Toolkit 中提供分布式 KV 缓存 Agent 技能，可从编码代理侧自动评估并配置基于 Amazon ElastiCache 的缓存，使自托管 LLM 推理成本最多降低 40%、首 Token 时间最多降低 80%。该方案通过复用多轮对话的上下文 KV 缓存，避免 GPU 每轮重复计算相同上下文，为自托管大模型的团队提供了可直接落地的降本增效路径。",
+    "url": "https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/",
+    "source": "AWS Machine Learning Blog",
+    "publishedAt": "2026-11-21T00:14:26.000Z",
+    "score": 76,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "工程",
+      "KV缓存",
+      "LLM推理",
+      "AWS",
+      "Agent工程"
+    ],
+    "context": "KV 缓存复用是降低自托管 LLM 成本的关键手段，这份官方工程指南给出了可复制的配置与评估方案。"
+  },
+  {
+    "id": "aihot-20261120-google-research-649e0639",
+    "title": "Google Research 技术解读：Duplex 如何演化为 Gemini 替你致电商家的能力",
+    "summary": "Google Research 发布博文，详解 Duplex 电话对话 AI 技术如何演化并整合进 Gemini，让用户可以直接让 Gemini 替自己致电商家办理事务。文章以生成式 AI 为主线，回顾了这项能力从早期 Duplex 到进入 Gemini 的技术演进路径。",
+    "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
+    "source": "Google Research",
+    "publishedAt": "2026-11-20T23:30:30.000Z",
+    "score": 74,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "研究",
+      "Google",
+      "Gemini",
+      "Duplex",
+      "生成式AI"
+    ],
+    "context": "AI 助手替人打电话是任务执行类 Agent 的重要落地场景，官方技术复盘对构建语音智能体的团队有直接参考价值。"
+  },
+  {
+    "id": "aihot-20261120-aws-ml-21981c0e",
+    "title": "AWS 为 SageMaker HyperPod Slurm 推出可观测性与用户管理托管集群扩展",
+    "summary": "AWS 为 Amazon SageMaker HyperPod 的 Slurm 集群推出可观测性与用户管理两类托管集群扩展，支持通过 API 和控制台以声明式方式配置节点软件。官方博客还跟随一个平台团队运行共享 Slurm 集群一个季度的实践，展示了这些扩展的实际运作方式。对用 HyperPod 承载大规模训练的平台团队而言，监控与用户权限管理可从手工运维转为统一的声明式配置。",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+    "source": "AWS Machine Learning Blog",
+    "publishedAt": "2026-11-20T23:07:03.000Z",
+    "score": 76,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "工程",
+      "AWS",
+      "SageMaker HyperPod",
+      "Slurm",
+      "可观测性"
+    ],
+    "context": "共享 Slurm 训练集群的可观测性与多用户管理长期是 ML 平台团队的运维痛点，托管扩展直接命中这一需求。"
+  },
+  {
+    "id": "aihot-20261120-aws-ml-8a9284c6",
+    "title": "AWS 推出 SageMaker HyperPod Global Inference Gateway：单一端点跨区域、跨集群路由推理请求",
+    "summary": "AWS 推出 SageMaker HyperPod Global Inference Gateway，通过一个托管端点即可在单区域或多区域的 HyperPod 集群间路由推理请求。该网关自动选择最优集群并支持故障自动转移，所有请求经 AWS PrivateLink 使用 SigV4 与 IAM 完成认证。",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+    "source": "AWS Machine Learning Blog",
+    "publishedAt": "2026-11-20T22:35:24.000Z",
+    "score": 84,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "工程",
+      "AWS",
+      "SageMaker",
+      "推理网关",
+      "多区域部署"
+    ],
+    "context": "跨区域推理路由与容灾一直是大规模模型服务难点，该能力显著降低多集群推理的运维复杂度。"
+  },
+  {
+    "id": "aihot-20261120-aws-ml-8a2dbd72",
+    "title": "标准银行集团基于 Amazon Bedrock 用 LLM-as-a-judge 实现生成式 AI 风险评估自动化",
+    "summary": "标准银行集团与 AWS Professional Services 合作，在其自有 AWS 账户中构建了生成式 AI 风险评估方案，实现审批证据的自动化采集。该方案在 Amazon Bedrock 上采用 LLM-as-a-judge，将每个用例对照国际 AI 标准与银行内部政策自动打分，为风险委员会提供一致、可追溯的评估证据。",
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+    "source": "AWS Machine Learning Blog",
+    "publishedAt": "2026-11-20T20:37:31.000Z",
+    "score": 68,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "工程",
+      "AWS",
+      "Amazon Bedrock",
+      "LLM-as-a-judge",
+      "AI治理"
+    ],
+    "context": "金融机构的生成式 AI 用例审批依赖大量人工合规评估，该案例展示了用 LLM 评审替代人工取证的可落地路径。"
+  },
+  {
+    "id": "aihot-20261120-openai-news-7bfdfc03",
+    "title": "OpenAI 公布多层防御策略应对对抗性蒸馏，防止模型能力被窃取",
+    "summary": "OpenAI 公布了应对对抗性蒸馏的多层防护策略，结合模型训练、安全机制、检测与处置手段，防止前沿模型能力被窃取。该体系覆盖从训练加固到检测与执法的完整链条，用于对抗基于蒸馏的能力提取攻击。此举表明头部实验室正将防蒸馏能力纳入模型安全与竞争壁垒建设的核心环节。",
+    "url": "https://openai.com/index/combatting-adversarial-distillation",
+    "source": "OpenAI News",
+    "publishedAt": "2026-11-20T10:00:00.000Z",
+    "score": 76,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "OpenAI",
+      "模型安全",
+      "对抗性蒸馏",
+      "AI安全"
+    ],
+    "context": "对抗性蒸馏指通过蒸馏提取受保护模型能力的行为，OpenAI 公开防御体系反映前沿模型安全博弈正在升级。"
+  },
+  {
+    "id": "aihot-20261120-openai-news-ba57fe22",
+    "title": "Hebbia 实测 GPT-6 Astra：金融研究场景中信源覆盖与引用相关性获改善",
+    "summary": "AI 金融分析平台 Hebbia 对 GPT-6 Astra 进行了预发布阶段评测，结果显示其在金融研究任务中的信源覆盖、引用相关性与呈现质量均有提升。该内容来自 OpenAI 官方客户案例，尚未披露具体量化数据，属早期使用反馈而非正式性能报告。",
+    "url": "https://openai.com/business/customer-stories/hebbia",
+    "source": "OpenAI News",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "score": 62,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "OpenAI",
+      "GPT-6 Astra",
+      "金融研究",
+      "客户案例"
+    ],
+    "context": "新模型在实际金融研究工作流中的首批评测反馈，对关注专业领域模型选型的从业者有参考价值。"
+  },
+  {
+    "id": "aihot-20261120-openai-news-e12e82bd",
+    "title": "OpenAI 推出 MedChemBench：评测 AI 在早期药物发现中的能力",
+    "summary": "OpenAI 推出 MedChemBench 基准，评估 AI 模型解读分子结构、依据实验证据推理以及在早期药物发现中筛选候选化合物的能力。该基准为衡量 AI 在药物化学研究中的实际表现提供了统一标准，直接回应了 AI 能否帮助科学家识别有潜力药物候选物的核心问题。",
+    "url": "https://openai.com/index/introducing-medchembench",
+    "source": "OpenAI News",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "score": 72,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "OpenAI",
+      "MedChemBench",
+      "药物发现",
+      "AI评测"
+    ],
+    "context": "AI 辅助药物发现是科技巨头竞相布局的方向，统一评测基准有助于客观衡量模型在真实科研场景中的能力。"
+  },
+  {
+    "id": "aihot-20261120-hugging-face-b10e367d",
+    "title": "Inkling 2 Mini 现已登陆 Hugging Face：面向本地部署的高性能迷你模型",
+    "summary": "Inkling 2 Mini 已正式上线 Hugging Face，官方称其在本地部署场景下可提供前沿级别的性能表现。模型以 Mini 体量主打轻量化本地运行，适合希望在自有硬件上部署模型的开发者。",
+    "url": "https://huggingface.co/blog/inkling2mini",
+    "source": "Hugging Face Blog",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "score": 85,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "开源",
+      "Hugging Face",
+      "Inkling 2 Mini",
+      "本地部署",
+      "开源模型"
+    ],
+    "context": "本地端侧模型是开源社区持续升温的方向，官方博客背书的新模型发布值得关注。"
+  },
+  {
+    "id": "aihot-20261120-hugging-face-01c9cd36",
+    "title": "Hugging Face 发布 Harness Adapters：将你喜爱的模型适配到自己的 Harness，兼顾性能与成本",
+    "summary": "Hugging Face 官方发布 Harness Adapters，用于把常用的模型适配到自己的 Harness 上，从而提升性能并降低成本。该方案聚焦大规模使用场景，为在固定 Harness 下持续使用模型提供了官方适配路径。",
+    "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+    "source": "Hugging Face Blog",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "score": 78,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "开源",
+      "Hugging Face",
+      "Harness Adapters",
+      "模型适配",
+      "性能与成本"
+    ],
+    "context": "不同 Harness 的差异使模型与运行框架的深度适配成为工程落地中兼顾性能与成本的新优化方向。"
+  },
+  {
+    "id": "aihot-20261119-google-research-07556daa",
+    "title": "谷歌研究院发布博文：一款没有量子计算机就无法获胜的游戏",
+    "summary": "谷歌研究院发布博文，解析一款只有量子计算机参与者才能获胜的游戏，直观展示量子计算相对于经典计算的优势。文章以游戏形式说明量子计算机能在特定任务上完成经典方法无法实现的事情。这种互动式讲解降低了量子优势概念的理解门槛，对开发者与科普读者都有参考价值。",
+    "url": "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/",
+    "source": "Google Research",
+    "publishedAt": "2026-11-19T20:03:00.000Z",
+    "score": 68,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "研究",
+      "量子计算",
+      "Google",
+      "量子优势",
+      "科普"
+    ],
+    "context": "量子优势的直观演示是理解近期量子计算价值的关键，顶级实验室的通俗解读具有行业科普意义。"
+  },
+  {
+    "id": "aihot-20261119-nvidia-blog-9d796258",
+    "title": "NVIDIA 展示开发者如何用前沿 AI 智能体在 Omniverse 中构建仿真应用",
+    "summary": "NVIDIA 官方博客介绍开发者将前沿 AI 模型与 Omniverse 库结合，把仿真构想转化为可运行应用的工作方式。该流程涵盖组装资产、连接物理与渲染、验证场景行为，应用于场景探索、故障排查和设计改进。",
+    "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+    "source": "NVIDIA Blog",
+    "publishedAt": "2026-11-19T17:00:35.000Z",
+    "score": 65,
+    "tier": "T1",
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "NVIDIA",
+      "Omniverse",
+      "AI智能体",
+      "仿真"
+    ],
+    "context": "展示了 AI 智能体在工业仿真开发中的实际落地路径，对从事数字孪生与仿真工具开发的工程师有参考价值。"
   },
   {
     "id": "20260401-cn-cls-google-a50-night-up",
@@ -76,6 +378,25 @@
     "context": "过去一年，市场把AI投资视作科技股核心主线，但真正决定持续性的仍是订单、收入与利润兑现。卖方研究口径转谨慎，通常会先影响高弹性成长板块的交易情绪。"
   },
   {
+    "id": "20260401-intl-reuters-ipsos-iran-war-poll",
+    "title": "Two-thirds of Americans want quick end to Iran war even if goals unachieved, Reuters/Ipsos poll finds",
+    "summary": "路透/益普索3月31日21:06 UTC公布的民调显示，约三分之二美国人希望美国尽快结束在伊朗战争中的参与，即便这意味着无法完全达成特朗普政府设定的目标。该结果说明美国国内对战争持续时间和代价的容忍度正在下降，未来可能对政策节奏、军事升级空间以及大选政治产生约束。市场层面，这会影响投资者对中东冲突持续性、油价风险溢价和避险资产定价的判断。",
+    "url": "https://www.reuters.com/world/middle-east/two-thirds-americans-want-quick-end-iran-war-even-if-goals-unachieved-2026-03-31/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-31T21:06:16Z",
+    "importance": "高。国内民意若明显转向，往往会反过来限制战争升级路径，进而影响原油、黄金、航运和全球风险资产对地缘冲突持续时间的定价。",
+    "region": "国际",
+    "tags": [
+      "Reuters",
+      "伊朗战争",
+      "美国民意",
+      "油价",
+      "避险资产",
+      "地缘政治"
+    ],
+    "context": "最近市场最关心的是冲突会否长期化。民意数据虽然不是政策决定本身，但会影响白宫与国会在军事行动上的政治空间。"
+  },
+  {
     "id": "20260401-cn-cls-google-earlybrief-oildeal",
     "title": "【早报】特朗普：美伊或在5天内达成协议；国际油价重挫逾10%",
     "summary": "财联社4月1日05:02左右发布早报，核心信息是特朗普称美伊可能在数日内达成协议，同时国际油价在此前急涨后出现逾10%的快速回落。这意味着市场正在从‘冲突失控、供应受扰’的极端情景，重新切换到‘存在谈判窗口、风险溢价回吐’的定价框架。对国内市场而言，这会直接影响原油、化工、航运、黄金和权益风险偏好的联动表现，也会改变投资者对输入型通胀和政策腾挪空间的判断。",
@@ -95,42 +416,23 @@
     "context": "此前市场主要在交易中东冲突带来的供给冲击与航运风险。若谈判预期继续强化，油价风险溢价可能进一步回吐，但避险情绪未必同步完全消失。"
   },
   {
-    "id": "20260401-intl-reuters-pope-off-ramp-iran-war",
-    "title": "Pope Leo urges Trump to find 'off-ramp' to end Iran war",
-    "summary": "路透3月31日19:08 UTC报道，教皇利奥罕见直接呼吁特朗普为伊朗战争寻找“下坡道”或退出路径，表明宗教与国际社会对冲突外溢风险的担忧已明显升温。虽然这不是具体的停火协议，但它释放出国际斡旋力量正在加速聚集的信号。对市场而言，任何能够推动冲突降级的政治与道义压力，都会影响原油、黄金、军工、航运和全球风险资产的定价节奏。",
-    "url": "https://www.reuters.com/world/middle-east/pope-leo-urges-trump-find-off-ramp-end-iran-war-2026-03-31/",
+    "id": "20260401-intl-reuters-worldbank-turkey-railway",
+    "title": "World Bank approves $2 billion loan for Turkey's new railway project",
+    "summary": "路透3月31日20:52 UTC报道，世界银行批准向土耳其一项新铁路工程提供20亿美元贷款。该消息的重要性不只在项目融资本身，更在于多边金融机构继续对关键基础设施投资提供背书，有助于缓解新兴市场在高利率和地缘不确定性环境下的融资压力。对市场来说，这类项目会影响土耳其中长期物流能力、财政与外部融资预期，也为观察世界银行等机构在区域发展和稳增长中的角色提供了样本。",
+    "url": "https://www.reuters.com/world/middle-east/world-bank-approves-2-billion-loan-turkeys-new-railway-project-2026-03-31/",
     "source": "Reuters",
-    "publishedAt": "2026-03-31T19:08:09.819Z",
-    "importance": "虽然不是硬政策文件，但它增强了外界对‘外交降温’情景的关注度。在高波动环境里，这类信号会影响交易员对地缘风险持续时间的判断，并左右油价与避险资产的短线定价。",
+    "publishedAt": "2026-03-31T20:52:50Z",
+    "importance": "中等偏高。多边开发融资在当前全球融资环境偏紧背景下尤为关键，既影响土耳其基础设施和增长预期，也关系国际开发资金流向与区域稳定。",
     "region": "国际",
     "tags": [
       "Reuters",
-      "教皇",
-      "伊朗战争",
-      "外交斡旋",
-      "原油",
-      "避险情绪"
+      "世界银行",
+      "土耳其",
+      "铁路",
+      "基建融资",
+      "新兴市场"
     ],
-    "context": "近期市场最怕的不是冲突本身，而是没有可见的降级通道。国际社会开始公开施压寻找‘off-ramp’，说明围绕停火或缓和的政治空间并未完全关闭。"
-  },
-  {
-    "id": "20260401-intl-reuters-rubio-x-propaganda",
-    "title": "Marco Rubio urges US diplomats to use X to fight 'anti-American propaganda'",
-    "summary": "路透3月31日19:58 UTC披露，美国国务卿鲁比奥在电报中要求美国外交人员更多使用社交平台X，并与军方心理战单位配合，以对抗所谓“反美宣传”。这表明信息战、舆论战正在进一步制度化，并被纳入外交与国家安全工具箱。对于市场和政策观察者来说，这类动作意味着地缘博弈已不只停留在军事与制裁层面，还会延伸到平台治理、跨境信息流和科技监管领域，可能继续影响X等平台生态及美欧数字政策讨论。",
-    "url": "https://www.reuters.com/world/marco-rubio-urges-us-diplomats-use-x-fight-anti-american-propaganda-2026-03-31/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-31T19:58:35.977Z",
-    "importance": "信息战升级往往会带来更强的监管、平台合规和跨境传播摩擦，对科技平台、网络安全行业以及地缘舆论环境都有中期影响。它也说明美方正在把社交媒体视为正式的外交与心理战场域。",
-    "region": "国际",
-    "tags": [
-      "Reuters",
-      "美国外交",
-      "X平台",
-      "信息战",
-      "网络安全",
-      "地缘政治"
-    ],
-    "context": "近几年，平台治理、虚假信息和国家叙事竞争已成为全球政策焦点。此次表态把外交系统与心理战资源更明确地绑定在一起，反映出国家竞争的数字化程度继续加深。"
+    "context": "全球高利率与地缘冲突抬高了新兴市场的融资门槛。此类多边贷款有助于降低大型基建项目的资本约束，并稳定相关国家的增长预期。"
   },
   {
     "id": "20260401-intl-reuters-iran-war-decisive-moment",
@@ -152,95 +454,42 @@
     "context": "最近市场反复在‘冲突外溢’与‘谈判窗口’之间快速切换。美国高层把未来几天定性为决定性时刻，说明中东局势还远未脱离高波动状态。"
   },
   {
-    "id": "20260401-cn-xinhua-08755635a6684a5dbc22eb382622d20d",
-    "title": "我国首款7吨级运投无人机长鹰-8首飞成功",
-    "summary": "新华网3月31日报道，我国首款7吨级固定翼运投无人机长鹰-8在郑州上街机场首飞成功。该机被称为“空中重卡”，是国内首款通过实机验证的7吨级无人运投平台，最大航程超过3000公里，可用于远程物流运输、应急救援投送、边境物资补给和复杂地域作业。它填补了国内7吨级货运无人机平台空白，意味着我国在高端智能航空物流装备和低空经济基础设施能力上迈出关键一步。",
-    "url": "https://www.news.cn/photo/20260331/08755635a6684a5dbc22eb382622d20d/c.html",
-    "source": "新华社",
-    "publishedAt": "2026-03-31T16:15:17+08:00",
-    "importance": "这不仅是单点技术突破，还关系到低空经济、应急物流和高端装备自主化。若后续进入产业化和订单兑现阶段，航空制造、复合材料、飞控系统以及应急保障产业链都有望获得新的政策和资本关注。",
-    "region": "国内",
+    "id": "20260401-intl-reuters-rubio-x-propaganda",
+    "title": "Marco Rubio urges US diplomats to use X to fight 'anti-American propaganda'",
+    "summary": "路透3月31日19:58 UTC披露，美国国务卿鲁比奥在电报中要求美国外交人员更多使用社交平台X，并与军方心理战单位配合，以对抗所谓“反美宣传”。这表明信息战、舆论战正在进一步制度化，并被纳入外交与国家安全工具箱。对于市场和政策观察者来说，这类动作意味着地缘博弈已不只停留在军事与制裁层面，还会延伸到平台治理、跨境信息流和科技监管领域，可能继续影响X等平台生态及美欧数字政策讨论。",
+    "url": "https://www.reuters.com/world/marco-rubio-urges-us-diplomats-use-x-fight-anti-american-propaganda-2026-03-31/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-31T19:58:35.977Z",
+    "importance": "信息战升级往往会带来更强的监管、平台合规和跨境传播摩擦，对科技平台、网络安全行业以及地缘舆论环境都有中期影响。它也说明美方正在把社交媒体视为正式的外交与心理战场域。",
+    "region": "国际",
     "tags": [
-      "新华社",
-      "无人机",
-      "低空经济",
-      "高端制造",
-      "航空物流",
-      "应急救援"
+      "Reuters",
+      "美国外交",
+      "X平台",
+      "信息战",
+      "网络安全",
+      "地缘政治"
     ],
-    "context": "低空经济正从概念走向设备和场景落地，市场最关心的是是否出现可复制、可商用的大型平台。长鹰-8首飞成功，给出了国内自主平台向物流和应急场景扩展的一个实证案例。"
+    "context": "近几年，平台治理、虚假信息和国家叙事竞争已成为全球政策焦点。此次表态把外交系统与心理战资源更明确地绑定在一起，反映出国家竞争的数字化程度继续加深。"
   },
   {
-    "id": "20260401-cn-cls-2330560",
-    "title": "财政部：1-2月国有企业营业总收入同比增长0.2%",
-    "summary": "财联社转引财政部数据称，2026年1至2月全国国有及国有控股企业营业总收入同比增长0.2%，利润总额同比下降2.0%，应交税费同比下降2.3%，2月末资产负债率为65.4%，同比上升0.5个百分点。数据说明国企收入端总体平稳，但盈利修复仍有压力，尤其在成本、价格和需求恢复不均衡背景下，利润弹性尚未完全释放。这对后续稳增长政策、财政发力节奏以及建筑、基建、能源等国企权重板块估值都有直接参考价值。",
-    "url": "https://www.cls.cn/detail/2330560",
-    "source": "财联社",
-    "publishedAt": "2026-03-31T16:28:00+08:00",
-    "importance": "国企经营数据是判断宏观修复质量的重要切口。收入微增但利润回落，意味着政策托底有效但盈利传导仍偏慢，市场会据此重新评估基建、资源、公用事业以及中央国企板块的盈利与分红预期。",
-    "region": "国内",
+    "id": "20260401-intl-reuters-pope-off-ramp-iran-war",
+    "title": "Pope Leo urges Trump to find 'off-ramp' to end Iran war",
+    "summary": "路透3月31日19:08 UTC报道，教皇利奥罕见直接呼吁特朗普为伊朗战争寻找“下坡道”或退出路径，表明宗教与国际社会对冲突外溢风险的担忧已明显升温。虽然这不是具体的停火协议，但它释放出国际斡旋力量正在加速聚集的信号。对市场而言，任何能够推动冲突降级的政治与道义压力，都会影响原油、黄金、军工、航运和全球风险资产的定价节奏。",
+    "url": "https://www.reuters.com/world/middle-east/pope-leo-urges-trump-find-off-ramp-end-iran-war-2026-03-31/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-31T19:08:09.819Z",
+    "importance": "虽然不是硬政策文件，但它增强了外界对‘外交降温’情景的关注度。在高波动环境里，这类信号会影响交易员对地缘风险持续时间的判断，并左右油价与避险资产的短线定价。",
+    "region": "国际",
     "tags": [
-      "财联社",
-      "财政部",
-      "国企",
-      "宏观经济",
-      "盈利",
-      "国资"
+      "Reuters",
+      "教皇",
+      "伊朗战争",
+      "外交斡旋",
+      "原油",
+      "避险情绪"
     ],
-    "context": "近期市场一边关注PMI回升等总量改善信号，一边也在检验企业利润能否同步恢复。国企数据偏稳但不算强，说明经济修复仍处在从‘量的恢复’向‘利润改善’过渡的阶段。"
-  },
-  {
-    "id": "20260401-cn-cls-2330990",
-    "title": "美股盘前要闻一览：特朗普称各国应自行去霍尔木兹海峡“抢石油”；三星电子计划2030年前量产1nm级芯片；高盛预计金价年底将达5400美元",
-    "summary": "财联社3月31日20:45汇总盘前市场信息：美股三大股指期货齐涨，欧洲主要股指同步走高，但油价震荡下行、金银继续偏强，反映出风险偏好修复与避险需求并存。消息面上，特朗普就霍尔木兹海峡和能源供应再度强硬表态，美国汽油均价突破4美元/加仑，三星披露1nm量产规划，英伟达入股迈威尔推进硅光子合作，高盛则继续上调黄金年末目标价，说明地缘冲突、通胀与科技资本开支仍在共同主导全球资产定价。",
-    "url": "https://www.cls.cn/detail/2330990",
-    "source": "财联社",
-    "publishedAt": "2026-03-31T20:45:55+08:00",
-    "importance": "这条汇总不是单一公司新闻，而是把油价、贵金属、科技资本开支和美股风险偏好串在一起。它直接影响次日A股、港股及全球科技与能源板块的开盘预期，也提示市场正在同时交易‘冲突缓和’与‘再通胀抬头’两套剧本。",
-    "region": "国内",
-    "tags": [
-      "财联社",
-      "美股盘前",
-      "霍尔木兹海峡",
-      "黄金",
-      "半导体",
-      "全球市场"
-    ],
-    "context": "过去几周，市场核心变量始终是中东冲突如何通过能源、航运和通胀向全球资产传导。盘前综合信号显示，资金并未彻底转向单边乐观，而是在科技成长与避险资产之间继续做平衡。"
-  },
-  {
-    "id": "20260401-cn-xinhua-3bbc8bdf1f14446082253067a4a69150",
-    "title": "中国和巴基斯坦关于恢复海湾和中东地区和平稳定的五点倡议",
-    "summary": "新华社3月31日晚发布中巴关于恢复海湾和中东地区和平稳定的五点倡议，核心包括推动停火止战、维护航道安全、通过政治外交途径解决争端，并强调兼顾地区国家合理安全关切。在霍尔木兹海峡风险仍高、能源与航运价格大幅波动之际，这份倡议体现中国在地区危机中的稳局思路，也为市场观察原油、航运与避险资产走势提供了政策背景。",
-    "url": "https://www.news.cn/politics/leaders/20260331/3bbc8bdf1f14446082253067a4a69150/c.html",
-    "source": "新华社",
-    "publishedAt": "2026-03-31T21:27:00+08:00",
-    "importance": "这关系到中东地缘局势的潜在降温路径。若倡议推动更多国家回到外交轨道，有助于缓和原油、航运、保险等风险溢价；同时也反映中国在地区安全议题上的协调角色。",
-    "region": "国内",
-    "tags": [
-      "中国外交",
-      "中东",
-      "能源安全",
-      "航运"
-    ],
-    "context": "近期中东冲突外溢到能源和航运链条，霍尔木兹海峡通行与油价波动成为全球市场核心变量。中巴联合倡议的重要性，在于给出了停火、通航和外交斡旋的明确方向。"
-  },
-  {
-    "id": "20260401-cn-xinhua-c768e443a5c648c7bf5b6d6a70c7621d",
-    "title": "三大指数重返扩张区间 经济景气水平回升",
-    "summary": "新华社3月31日报道，最新数据表明多项宏观景气指标重新回到扩张区间，显示经济景气水平边际改善。对市场而言，这意味着此前围绕需求偏弱、企业盈利修复斜率不足的担忧，阶段性得到缓解。若后续制造业、服务业和投资端数据继续验证，政策预期将从单纯托底转向稳增长与结构优化并进，有利于提升风险资产定价的稳定性。",
-    "url": "https://www.news.cn/fortune/20260331/c768e443a5c648c7bf5b6d6a70c7621d/c.html",
-    "source": "新华社",
-    "publishedAt": "2026-03-31T20:00:00+08:00",
-    "importance": "景气回升直接影响市场对二季度增长、企业盈利和政策力度的预期。若扩张信号持续，顺周期板块、工业链及金融板块估值修复空间会被重新评估。",
-    "region": "国内",
-    "tags": [
-      "宏观经济",
-      "PMI",
-      "景气度",
-      "政策预期"
-    ],
-    "context": "近期市场一方面关注外部地缘冲击，另一方面也在验证国内基本面能否对冲外需和情绪波动。景气指标重返扩张区间，被视为内生修复仍在延续的证据。"
+    "context": "近期市场最怕的不是冲突本身，而是没有可见的降级通道。国际社会开始公开施压寻找‘off-ramp’，说明围绕停火或缓和的政治空间并未完全关闭。"
   },
   {
     "id": "20260401-intl-ap-1dece7eda196b93706091b7b52eef94a",
@@ -259,6 +508,25 @@
       "供应链"
     ],
     "context": "市场近期一边交易中东冲突导致的能源冲击，一边评估主要经济体能否维持增长。中国制造业回暖与外部风险并存，使这条新闻兼具宏观和市场双重意义。"
+  },
+  {
+    "id": "dom-20260401-0230-01",
+    "title": "上期所原油期货2605合约夜盘收跌7.39%，沪金沪银同步走强",
+    "summary": "财联社4月1日凌晨消息显示，上期所原油期货2605合约夜盘收跌7.39%，报693.90元/桶；与之对应，沪金夜盘收涨1.97%，沪银收涨5.18%。这说明在中东局势仍未彻底明朗的背景下，市场正在从单边追涨原油转向“能源回吐风险溢价、贵金属继续计入避险需求”的更细分交易结构。对国内化工链成本、通胀预期与资产配置偏好都有直接参考价值。",
+    "url": "https://www.cls.cn/detail/2331280",
+    "source": "财联社",
+    "publishedAt": "2026-03-31T18:30:31Z",
+    "importance": "高，原油与贵金属夜盘出现明显分化，反映市场对地缘风险、通胀与避险的定价方式正在快速重估。",
+    "region": "国内",
+    "tags": [
+      "财联社",
+      "原油期货",
+      "沪金",
+      "沪银",
+      "夜盘",
+      "避险"
+    ],
+    "context": "此前国际油价因中东冲突急涨，国内原油夜盘也累积较高风险溢价。如今原油回落而贵金属继续偏强，表明资金从“全面押注供给冲击”转向更谨慎的风险对冲。"
   },
   {
     "id": "int-20260401-0230-01",
@@ -280,23 +548,21 @@
     "context": "近期市场核心矛盾是中东战事如何影响能源运输、油价和全球通胀路径。若冲突边际缓和，成长股、风险资产和避险资产之间的强弱关系都可能重新排序。"
   },
   {
-    "id": "dom-20260401-0230-01",
-    "title": "上期所原油期货2605合约夜盘收跌7.39%，沪金沪银同步走强",
-    "summary": "财联社4月1日凌晨消息显示，上期所原油期货2605合约夜盘收跌7.39%，报693.90元/桶；与之对应，沪金夜盘收涨1.97%，沪银收涨5.18%。这说明在中东局势仍未彻底明朗的背景下，市场正在从单边追涨原油转向“能源回吐风险溢价、贵金属继续计入避险需求”的更细分交易结构。对国内化工链成本、通胀预期与资产配置偏好都有直接参考价值。",
-    "url": "https://www.cls.cn/detail/2331280",
-    "source": "财联社",
-    "publishedAt": "2026-03-31T18:30:31Z",
-    "importance": "高，原油与贵金属夜盘出现明显分化，反映市场对地缘风险、通胀与避险的定价方式正在快速重估。",
-    "region": "国内",
+    "id": "int-20260401-0130-03",
+    "title": "Gulf allies privately make the case to Trump to keep fighting until Iran is decisively defeated",
+    "summary": "美联社援引多方消息称，沙特、阿联酋等海湾盟友正私下游说特朗普继续对伊朗保持高压，认为当前攻势尚不足以从根本上削弱德黑兰。若这一判断影响华盛顿决策，意味着中东冲突可能延长，能源运输与地区安全风险难以很快降温。对于全球市场而言，这将持续抬升原油、航运、避险资产和通胀预期的不确定性。",
+    "url": "https://apnews.com/article/trump-iran-saudi-arabia-mbs-gulf-war-uae-89f690b952fe28d3140c537b70fa5051",
+    "source": "AP",
+    "publishedAt": "2026-03-31T17:26:19.668Z",
+    "importance": "高，这不是单一外交表态，而是决定冲突持续时间与能源地缘风险溢价的关键变量。",
+    "region": "国际",
     "tags": [
-      "财联社",
-      "原油期货",
-      "沪金",
-      "沪银",
-      "夜盘",
-      "避险"
+      "AP",
+      "中东",
+      "地缘政治",
+      "原油"
     ],
-    "context": "此前国际油价因中东冲突急涨，国内原油夜盘也累积较高风险溢价。如今原油回落而贵金属继续偏强，表明资金从“全面押注供给冲击”转向更谨慎的风险对冲。"
+    "context": "市场此前期待局势尽快转向谈判，但若海湾盟友倾向继续施压，风险溢价可能维持更久，并反复冲击全球资产价格。"
   },
   {
     "id": "dom-20260401-0130-01",
@@ -333,21 +599,95 @@
     "context": "在全球避险与再定价交织阶段，中国资产若保持相对收益，往往会强化“低估值+政策支持”的配置逻辑。"
   },
   {
-    "id": "dom-20260401-0130-03",
-    "title": "九部门提出到2028年物联网核心产业规模突破3.5万亿元",
-    "summary": "中国政府网3月31日转载新华社消息，工业和信息化部等九部门联合印发《推动物联网产业创新发展行动方案（2026—2028年）》，提出到2028年物联网终端连接数力争达到百亿级，核心产业规模突破3.5万亿元，并推动标准体系、平台服务、网络底座和重点应用场景协同建设。该方案意味着数字基础设施、工业互联网、智能终端和行业应用将继续获得政策牵引。",
-    "url": "https://www.gov.cn/lianbo/202603/content_7064286.htm",
-    "source": "中国政府网",
-    "publishedAt": "2026-03-31T00:00:00+08:00",
-    "importance": "高，物联网是新质生产力与数字经济的重要抓手，政策量化目标有利于设备、模组、通信和平台生态形成中期景气预期。",
+    "id": "20260401-cn-xinhua-3bbc8bdf1f14446082253067a4a69150",
+    "title": "中国和巴基斯坦关于恢复海湾和中东地区和平稳定的五点倡议",
+    "summary": "新华社3月31日晚发布中巴关于恢复海湾和中东地区和平稳定的五点倡议，核心包括推动停火止战、维护航道安全、通过政治外交途径解决争端，并强调兼顾地区国家合理安全关切。在霍尔木兹海峡风险仍高、能源与航运价格大幅波动之际，这份倡议体现中国在地区危机中的稳局思路，也为市场观察原油、航运与避险资产走势提供了政策背景。",
+    "url": "https://www.news.cn/politics/leaders/20260331/3bbc8bdf1f14446082253067a4a69150/c.html",
+    "source": "新华社",
+    "publishedAt": "2026-03-31T21:27:00+08:00",
+    "importance": "这关系到中东地缘局势的潜在降温路径。若倡议推动更多国家回到外交轨道，有助于缓和原油、航运、保险等风险溢价；同时也反映中国在地区安全议题上的协调角色。",
     "region": "国内",
     "tags": [
-      "物联网",
-      "工信部",
-      "数字经济",
-      "新质生产力"
+      "中国外交",
+      "中东",
+      "能源安全",
+      "航运"
     ],
-    "context": "国内政策正在从单点扶持转向“标准+场景+平台+连接规模”一体化推进。对通信模组、边缘计算、工业软件等赛道尤其关键。"
+    "context": "近期中东冲突外溢到能源和航运链条，霍尔木兹海峡通行与油价波动成为全球市场核心变量。中巴联合倡议的重要性，在于给出了停火、通航和外交斡旋的明确方向。"
+  },
+  {
+    "id": "20260401-cn-cls-2330990",
+    "title": "美股盘前要闻一览：特朗普称各国应自行去霍尔木兹海峡“抢石油”；三星电子计划2030年前量产1nm级芯片；高盛预计金价年底将达5400美元",
+    "summary": "财联社3月31日20:45汇总盘前市场信息：美股三大股指期货齐涨，欧洲主要股指同步走高，但油价震荡下行、金银继续偏强，反映出风险偏好修复与避险需求并存。消息面上，特朗普就霍尔木兹海峡和能源供应再度强硬表态，美国汽油均价突破4美元/加仑，三星披露1nm量产规划，英伟达入股迈威尔推进硅光子合作，高盛则继续上调黄金年末目标价，说明地缘冲突、通胀与科技资本开支仍在共同主导全球资产定价。",
+    "url": "https://www.cls.cn/detail/2330990",
+    "source": "财联社",
+    "publishedAt": "2026-03-31T20:45:55+08:00",
+    "importance": "这条汇总不是单一公司新闻，而是把油价、贵金属、科技资本开支和美股风险偏好串在一起。它直接影响次日A股、港股及全球科技与能源板块的开盘预期，也提示市场正在同时交易‘冲突缓和’与‘再通胀抬头’两套剧本。",
+    "region": "国内",
+    "tags": [
+      "财联社",
+      "美股盘前",
+      "霍尔木兹海峡",
+      "黄金",
+      "半导体",
+      "全球市场"
+    ],
+    "context": "过去几周，市场核心变量始终是中东冲突如何通过能源、航运和通胀向全球资产传导。盘前综合信号显示，资金并未彻底转向单边乐观，而是在科技成长与避险资产之间继续做平衡。"
+  },
+  {
+    "id": "20260401-cn-xinhua-c768e443a5c648c7bf5b6d6a70c7621d",
+    "title": "三大指数重返扩张区间 经济景气水平回升",
+    "summary": "新华社3月31日报道，最新数据表明多项宏观景气指标重新回到扩张区间，显示经济景气水平边际改善。对市场而言，这意味着此前围绕需求偏弱、企业盈利修复斜率不足的担忧，阶段性得到缓解。若后续制造业、服务业和投资端数据继续验证，政策预期将从单纯托底转向稳增长与结构优化并进，有利于提升风险资产定价的稳定性。",
+    "url": "https://www.news.cn/fortune/20260331/c768e443a5c648c7bf5b6d6a70c7621d/c.html",
+    "source": "新华社",
+    "publishedAt": "2026-03-31T20:00:00+08:00",
+    "importance": "景气回升直接影响市场对二季度增长、企业盈利和政策力度的预期。若扩张信号持续，顺周期板块、工业链及金融板块估值修复空间会被重新评估。",
+    "region": "国内",
+    "tags": [
+      "宏观经济",
+      "PMI",
+      "景气度",
+      "政策预期"
+    ],
+    "context": "近期市场一方面关注外部地缘冲击，另一方面也在验证国内基本面能否对冲外需和情绪波动。景气指标重返扩张区间，被视为内生修复仍在延续的证据。"
+  },
+  {
+    "id": "20260401-cn-cls-2330560",
+    "title": "财政部：1-2月国有企业营业总收入同比增长0.2%",
+    "summary": "财联社转引财政部数据称，2026年1至2月全国国有及国有控股企业营业总收入同比增长0.2%，利润总额同比下降2.0%，应交税费同比下降2.3%，2月末资产负债率为65.4%，同比上升0.5个百分点。数据说明国企收入端总体平稳，但盈利修复仍有压力，尤其在成本、价格和需求恢复不均衡背景下，利润弹性尚未完全释放。这对后续稳增长政策、财政发力节奏以及建筑、基建、能源等国企权重板块估值都有直接参考价值。",
+    "url": "https://www.cls.cn/detail/2330560",
+    "source": "财联社",
+    "publishedAt": "2026-03-31T16:28:00+08:00",
+    "importance": "国企经营数据是判断宏观修复质量的重要切口。收入微增但利润回落，意味着政策托底有效但盈利传导仍偏慢，市场会据此重新评估基建、资源、公用事业以及中央国企板块的盈利与分红预期。",
+    "region": "国内",
+    "tags": [
+      "财联社",
+      "财政部",
+      "国企",
+      "宏观经济",
+      "盈利",
+      "国资"
+    ],
+    "context": "近期市场一边关注PMI回升等总量改善信号，一边也在检验企业利润能否同步恢复。国企数据偏稳但不算强，说明经济修复仍处在从‘量的恢复’向‘利润改善’过渡的阶段。"
+  },
+  {
+    "id": "20260401-cn-xinhua-08755635a6684a5dbc22eb382622d20d",
+    "title": "我国首款7吨级运投无人机长鹰-8首飞成功",
+    "summary": "新华网3月31日报道，我国首款7吨级固定翼运投无人机长鹰-8在郑州上街机场首飞成功。该机被称为“空中重卡”，是国内首款通过实机验证的7吨级无人运投平台，最大航程超过3000公里，可用于远程物流运输、应急救援投送、边境物资补给和复杂地域作业。它填补了国内7吨级货运无人机平台空白，意味着我国在高端智能航空物流装备和低空经济基础设施能力上迈出关键一步。",
+    "url": "https://www.news.cn/photo/20260331/08755635a6684a5dbc22eb382622d20d/c.html",
+    "source": "新华社",
+    "publishedAt": "2026-03-31T16:15:17+08:00",
+    "importance": "这不仅是单点技术突破，还关系到低空经济、应急物流和高端装备自主化。若后续进入产业化和订单兑现阶段，航空制造、复合材料、飞控系统以及应急保障产业链都有望获得新的政策和资本关注。",
+    "region": "国内",
+    "tags": [
+      "新华社",
+      "无人机",
+      "低空经济",
+      "高端制造",
+      "航空物流",
+      "应急救援"
+    ],
+    "context": "低空经济正从概念走向设备和场景落地，市场最关心的是是否出现可复制、可商用的大型平台。长鹰-8首飞成功，给出了国内自主平台向物流和应急场景扩展的一个实证案例。"
   },
   {
     "id": "int-20260401-0130-01",
@@ -384,69 +724,117 @@
     "context": "当前市场主线不是单纯增长或降息，而是“地缘风险—能源价格—通胀—资产估值”的连锁反应。美股每次反弹都在测试这一链条是否松动。"
   },
   {
-    "id": "int-20260401-0130-03",
-    "title": "Gulf allies privately make the case to Trump to keep fighting until Iran is decisively defeated",
-    "summary": "美联社援引多方消息称，沙特、阿联酋等海湾盟友正私下游说特朗普继续对伊朗保持高压，认为当前攻势尚不足以从根本上削弱德黑兰。若这一判断影响华盛顿决策，意味着中东冲突可能延长，能源运输与地区安全风险难以很快降温。对于全球市场而言，这将持续抬升原油、航运、避险资产和通胀预期的不确定性。",
-    "url": "https://apnews.com/article/trump-iran-saudi-arabia-mbs-gulf-war-uae-89f690b952fe28d3140c537b70fa5051",
-    "source": "AP",
-    "publishedAt": "2026-03-31T17:26:19.668Z",
-    "importance": "高，这不是单一外交表态，而是决定冲突持续时间与能源地缘风险溢价的关键变量。",
-    "region": "国际",
+    "id": "dom-20260401-0130-03",
+    "title": "九部门提出到2028年物联网核心产业规模突破3.5万亿元",
+    "summary": "中国政府网3月31日转载新华社消息，工业和信息化部等九部门联合印发《推动物联网产业创新发展行动方案（2026—2028年）》，提出到2028年物联网终端连接数力争达到百亿级，核心产业规模突破3.5万亿元，并推动标准体系、平台服务、网络底座和重点应用场景协同建设。该方案意味着数字基础设施、工业互联网、智能终端和行业应用将继续获得政策牵引。",
+    "url": "https://www.gov.cn/lianbo/202603/content_7064286.htm",
+    "source": "中国政府网",
+    "publishedAt": "2026-03-31T00:00:00+08:00",
+    "importance": "高，物联网是新质生产力与数字经济的重要抓手，政策量化目标有利于设备、模组、通信和平台生态形成中期景气预期。",
+    "region": "国内",
     "tags": [
-      "AP",
-      "中东",
-      "地缘政治",
-      "原油"
+      "物联网",
+      "工信部",
+      "数字经济",
+      "新质生产力"
     ],
-    "context": "市场此前期待局势尽快转向谈判，但若海湾盟友倾向继续施压，风险溢价可能维持更久，并反复冲击全球资产价格。"
+    "context": "国内政策正在从单点扶持转向“标准+场景+平台+连接规模”一体化推进。对通信模组、边缘计算、工业软件等赛道尤其关键。"
   },
   {
-    "id": "int-20260321-12",
-    "title": "US Retail Sales Beat Expectations, Underscoring Resilient Consumer Spending",
-    "summary": "The US Commerce Department reported that retail sales for February grew at a faster-than-expected pace, driven by strong auto sales and e-commerce growth. The data underscores the resilience of the US consumer despite elevated interest rates, complicating the Federal Reserve's inflation-fighting mandate and delaying aggressive rate cut expectations.",
-    "url": "https://www.wsj.com/economy/consumers/us-retail-sales-february-2026",
-    "source": "WSJ",
-    "publishedAt": "2026-03-21T10:45:00Z",
-    "importance": "极高，强劲的消费数据是“美国经济不衰退”的最强力证据，支撑美元走强。",
-    "region": "国际",
+    "id": "dom-20260321-03",
+    "title": "证监会：进一步深化资本市场改革开放",
+    "summary": "证监会召开专题会议，强调将持续深化资本市场基础制度改革，稳步扩大制度型开放，吸引更多中长期资金入市，以增强资本市场的内在稳定性和国际竞争力。",
+    "url": "http://www.csrc.gov.cn/xw/20260321/3.html",
+    "source": "证监会",
+    "publishedAt": "2026-03-21T15:15:00Z",
+    "importance": "中高，涉及资本市场长期资金引入和对外开放政策。",
+    "region": "国内",
     "tags": [
-      "Retail Sales",
-      "US Economy",
-      "Consumer Spending"
+      "资本市场",
+      "政策监管",
+      "证监会"
     ],
-    "context": "强劲的劳动力市场持续转化为消费购买力，使得美国经济在紧缩周期中展现出罕见的韧性。"
+    "context": "近期外资流向备受关注，监管层旨在通过制度建设稳预期。"
   },
   {
-    "id": "int-20260321-11",
-    "title": "Oil Prices Slip Amid Rising US Inventories and Steady Global Output",
-    "summary": "Crude oil benchmarks West Texas Intermediate (WTI) and Brent both retreated by over 1.5% in early Friday trading. The sell-off was triggered by unexpectedly large builds in US commercial crude stockpiles and reports indicating that major non-OPEC+ producers are maintaining high output levels, easing fears of an imminent supply crunch.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-21/oil-prices-slip-on-us-inventories",
+    "id": "dom-20260321-01",
+    "title": "央行开展公开市场逆回购操作，维护季末流动性平稳",
+    "summary": "中国人民银行今日发布公告，为维护季末银行体系流动性合理充裕，开展了大规模的公开市场逆回购操作。此举有效缓解了市场短期的资金面紧张情绪，保障了金融体系的平稳运行。",
+    "url": "http://www.pbc.gov.cn/zhengce/20260321/1.html",
+    "source": "中国人民银行",
+    "publishedAt": "2026-03-21T15:00:00Z",
+    "importance": "高，直接影响短期市场利率与流动性预期。",
+    "region": "国内",
+    "tags": [
+      "宏观政策",
+      "流动性",
+      "央行"
+    ],
+    "context": "季末通常是资金面相对紧张的时期，央行的例行干预符合市场预期。"
+  },
+  {
+    "id": "dom-20260321-02",
+    "title": "国家统计局：前两月国民经济运行持续回升向好",
+    "summary": "国家统计局最新发布的数据显示，今年1-2月份，全国规模以上工业增加值同比增长稳健，服务业生产指数显著回升，消费市场持续复苏，整体经济运行呈现出积极向好的态势。",
+    "url": "http://www.stats.gov.cn/sj/20260321/2.html",
+    "source": "国家统计局",
+    "publishedAt": "2026-03-21T14:30:00Z",
+    "importance": "高，定调了一季度的经济开局表现，提振市场信心。",
+    "region": "国内",
+    "tags": [
+      "经济数据",
+      "宏观经济",
+      "统计局"
+    ],
+    "context": "市场此前对年初经济复苏力度存有分歧，本次数据确认了温和复苏的趋势。"
+  },
+  {
+    "id": "int-20260321-02",
+    "title": "ECB Reiterates Commitment to 2% Inflation Target Amid Mixed Data",
+    "summary": "The European Central Bank reaffirmed its dedication to bringing inflation back to its 2% target in a timely manner, despite recent mixed economic indicators showing slowing growth in key Eurozone economies but stubborn core services inflation.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-21/ecb-reiterates-inflation-target",
     "source": "Bloomberg",
-    "publishedAt": "2026-03-21T10:30:00Z",
-    "importance": "中，油价的回落有助于缓解全球通胀压力，但对能源板块及产油国货币构成利空。",
+    "publishedAt": "2026-03-21T14:00:00Z",
+    "importance": "中高，关乎欧元区利率路径及欧元汇率走势。",
     "region": "国际",
     "tags": [
-      "Oil",
-      "WTI",
-      "Commodities"
+      "欧洲央行",
+      "通胀",
+      "货币政策"
     ],
-    "context": "能源市场的焦点正在从地缘政治风险溢价转向对实际供需基本面的重新评估。"
+    "context": "欧洲经济面临增长乏力与粘性通胀的双重挑战，政策空间受限。"
   },
   {
-    "id": "int-20260321-10",
-    "title": "Global Equity Funds Record Massive Inflows as Tech Rally Resumes",
-    "summary": "Global equity funds experienced their largest weekly inflows in over a year, according to a new report released Friday morning. Investors poured billions into technology and communication services sectors, shrugging off recent concerns over sticky inflation. The resurgence of 'FOMO' (fear of missing out) is driving equity valuations higher, particularly in AI-adjacent companies.",
-    "url": "https://www.reuters.com/markets/global-markets-flows-2026-03-21",
+    "id": "int-20260321-01",
+    "title": "Federal Reserve Officials Signal Caution on Further Rate Cuts",
+    "summary": "Several Federal Reserve officials indicated in recent speeches that the central bank should proceed carefully with any additional interest rate cuts, citing persistent underlying inflation pressures and a resilient labor market.",
+    "url": "https://www.reuters.com/markets/us/fed-officials-signal-caution-20260321",
     "source": "Reuters",
-    "publishedAt": "2026-03-21T10:10:00Z",
-    "importance": "中高，资金面数据显示市场风险偏好依然高亢，对短期股市表现形成强力支撑。",
+    "publishedAt": "2026-03-21T13:45:00Z",
+    "importance": "高，影响全球资产定价和资本流动方向。",
     "region": "国际",
     "tags": [
-      "Equity Funds",
-      "Tech Rally",
-      "Capital Flows"
+      "美联储",
+      "货币政策",
+      "宏观经济"
     ],
-    "context": "尽管宏观环境充满不确定性，但充裕的流动性和对AI生产力革命的押注主导了市场叙事。"
+    "context": "市场此前预期今年会有更激进的降息，美联储的表态正在重塑预期。"
+  },
+  {
+    "id": "int-20260321-03",
+    "title": "IMF Warns of Fragmentation Risks to Global Trade",
+    "summary": "The International Monetary Fund issued a new report warning that increasing geopolitical fragmentation and protectionist trade policies could significantly weigh on global economic growth over the medium term, urging cooperative frameworks.",
+    "url": "https://www.ft.com/content/imf-warning-fragmentation-20260321",
+    "source": "FT",
+    "publishedAt": "2026-03-21T12:30:00Z",
+    "importance": "中等，揭示了全球化逆风对中长期经济的结构性影响。",
+    "region": "国际",
+    "tags": [
+      "IMF",
+      "全球贸易",
+      "地缘政治"
+    ],
+    "context": "随着多国大选落幕，贸易保护主义抬头迹象愈发明显。"
   },
   {
     "id": "dom-20260321-12",
@@ -463,6 +851,22 @@
       "限购"
     ],
     "context": "房地产产业链链条长、牵扯面广，楼市的企稳对全年宏观经济目标的实现至关重要。"
+  },
+  {
+    "id": "int-20260321-12",
+    "title": "US Retail Sales Beat Expectations, Underscoring Resilient Consumer Spending",
+    "summary": "The US Commerce Department reported that retail sales for February grew at a faster-than-expected pace, driven by strong auto sales and e-commerce growth. The data underscores the resilience of the US consumer despite elevated interest rates, complicating the Federal Reserve's inflation-fighting mandate and delaying aggressive rate cut expectations.",
+    "url": "https://www.wsj.com/economy/consumers/us-retail-sales-february-2026",
+    "source": "WSJ",
+    "publishedAt": "2026-03-21T10:45:00Z",
+    "importance": "极高，强劲的消费数据是“美国经济不衰退”的最强力证据，支撑美元走强。",
+    "region": "国际",
+    "tags": [
+      "Retail Sales",
+      "US Economy",
+      "Consumer Spending"
+    ],
+    "context": "强劲的劳动力市场持续转化为消费购买力，使得美国经济在紧缩周期中展现出罕见的韧性。"
   },
   {
     "id": "dom-20260321-11",
@@ -482,6 +886,22 @@
     "context": "资本市场高质量发展需要强大的投行体系，风控指标的差异化安排将加速行业优胜劣汰。"
   },
   {
+    "id": "int-20260321-11",
+    "title": "Oil Prices Slip Amid Rising US Inventories and Steady Global Output",
+    "summary": "Crude oil benchmarks West Texas Intermediate (WTI) and Brent both retreated by over 1.5% in early Friday trading. The sell-off was triggered by unexpectedly large builds in US commercial crude stockpiles and reports indicating that major non-OPEC+ producers are maintaining high output levels, easing fears of an imminent supply crunch.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-21/oil-prices-slip-on-us-inventories",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-21T10:30:00Z",
+    "importance": "中，油价的回落有助于缓解全球通胀压力，但对能源板块及产油国货币构成利空。",
+    "region": "国际",
+    "tags": [
+      "Oil",
+      "WTI",
+      "Commodities"
+    ],
+    "context": "能源市场的焦点正在从地缘政治风险溢价转向对实际供需基本面的重新评估。"
+  },
+  {
     "id": "dom-20260321-10",
     "title": "央行部署二季度信贷工作：盘活存量、提升效能",
     "summary": "中国人民银行今日盘后召开二季度信贷工作座谈会，强调要准确把握当前宏观经济形势，下一阶段信贷投放要坚持稳中求进，着力盘活被低效占用的金融资源，提高资金使用效率。会议要求各金融机构加大对科技创新、绿色转型、普惠小微、数字经济等方面的支持力度，避免资金空转套利。",
@@ -496,6 +916,39 @@
       "宏观政策"
     ],
     "context": "在总需求恢复仍需巩固的背景下，央行更加注重信贷结构的优化而非单纯的规模扩张。"
+  },
+  {
+    "id": "int-20260321-10",
+    "title": "Global Equity Funds Record Massive Inflows as Tech Rally Resumes",
+    "summary": "Global equity funds experienced their largest weekly inflows in over a year, according to a new report released Friday morning. Investors poured billions into technology and communication services sectors, shrugging off recent concerns over sticky inflation. The resurgence of 'FOMO' (fear of missing out) is driving equity valuations higher, particularly in AI-adjacent companies.",
+    "url": "https://www.reuters.com/markets/global-markets-flows-2026-03-21",
+    "source": "Reuters",
+    "publishedAt": "2026-03-21T10:10:00Z",
+    "importance": "中高，资金面数据显示市场风险偏好依然高亢，对短期股市表现形成强力支撑。",
+    "region": "国际",
+    "tags": [
+      "Equity Funds",
+      "Tech Rally",
+      "Capital Flows"
+    ],
+    "context": "尽管宏观环境充满不确定性，但充裕的流动性和对AI生产力革命的押注主导了市场叙事。"
+  },
+  {
+    "id": "int-20260321-09",
+    "title": "US Core PCE Inflation Tracking Suggests Rebound, Raising Fed Caution",
+    "summary": "Early estimates from major Wall Street forecasters indicate that the US Core Personal Consumption Expenditures (PCE) price index for March is tracking higher than anticipated. Driven primarily by rigid shelter and auto insurance costs, the unexpected resilience in the Fed's preferred inflation gauge complicates the timeline for potential mid-year interest rate cuts.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-21/us-core-pce-inflation-tracking-rebound",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-21T09:45:00Z",
+    "importance": "极高，通胀反弹预期将直接推升美债收益率，打压全球风险资产估值。",
+    "region": "国际",
+    "tags": [
+      "Inflation",
+      "PCE",
+      "Federal Reserve",
+      "US Economy"
+    ],
+    "context": "市场正处于对美联储降息预期不断修正的敏感期，任何通胀超预期的线索都会引发剧烈波动。"
   },
   {
     "id": "dom-20260321-09",
@@ -513,6 +966,23 @@
       "设备更新"
     ],
     "context": "在稳健货币政策基调下，央行更加注重盘活存量和精准发力，配合国务院近期的设备更新方案。"
+  },
+  {
+    "id": "int-20260321-08",
+    "title": "EU Agrees on Historic AI Act Implementation Framework, Focusing on Foundation Models",
+    "summary": "The European Commission has finalized the implementation guidelines for the AI Act, placing stringent transparency and risk-assessment obligations on developers of large-scale foundation models. The framework mandates rigorous red-teaming and copyright disclosures before advanced AI systems can be deployed within the European single market, setting a potential global regulatory standard.",
+    "url": "https://www.ft.com/content/eu-ai-act-implementation-framework-2026",
+    "source": "FT",
+    "publishedAt": "2026-03-21T09:20:00Z",
+    "importance": "高，确立了全球最严格的AI监管细则，将显著增加科技巨头在欧洲的合规成本。",
+    "region": "国际",
+    "tags": [
+      "EU",
+      "AI Act",
+      "Regulation",
+      "Technology"
+    ],
+    "context": "随着生成式AI的爆发，欧美在科技创新与安全监管之间的平衡策略分歧正在扩大。"
   },
   {
     "id": "dom-20260321-08",
@@ -548,40 +1018,6 @@
     "context": "国内车市竞争白热化，以价换量成为车企抢占市场份额的核心策略。"
   },
   {
-    "id": "int-20260321-09",
-    "title": "US Core PCE Inflation Tracking Suggests Rebound, Raising Fed Caution",
-    "summary": "Early estimates from major Wall Street forecasters indicate that the US Core Personal Consumption Expenditures (PCE) price index for March is tracking higher than anticipated. Driven primarily by rigid shelter and auto insurance costs, the unexpected resilience in the Fed's preferred inflation gauge complicates the timeline for potential mid-year interest rate cuts.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-21/us-core-pce-inflation-tracking-rebound",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-21T09:45:00Z",
-    "importance": "极高，通胀反弹预期将直接推升美债收益率，打压全球风险资产估值。",
-    "region": "国际",
-    "tags": [
-      "Inflation",
-      "PCE",
-      "Federal Reserve",
-      "US Economy"
-    ],
-    "context": "市场正处于对美联储降息预期不断修正的敏感期，任何通胀超预期的线索都会引发剧烈波动。"
-  },
-  {
-    "id": "int-20260321-08",
-    "title": "EU Agrees on Historic AI Act Implementation Framework, Focusing on Foundation Models",
-    "summary": "The European Commission has finalized the implementation guidelines for the AI Act, placing stringent transparency and risk-assessment obligations on developers of large-scale foundation models. The framework mandates rigorous red-teaming and copyright disclosures before advanced AI systems can be deployed within the European single market, setting a potential global regulatory standard.",
-    "url": "https://www.ft.com/content/eu-ai-act-implementation-framework-2026",
-    "source": "FT",
-    "publishedAt": "2026-03-21T09:20:00Z",
-    "importance": "高，确立了全球最严格的AI监管细则，将显著增加科技巨头在欧洲的合规成本。",
-    "region": "国际",
-    "tags": [
-      "EU",
-      "AI Act",
-      "Regulation",
-      "Technology"
-    ],
-    "context": "随着生成式AI的爆发，欧美在科技创新与安全监管之间的平衡策略分歧正在扩大。"
-  },
-  {
     "id": "int-20260321-07",
     "title": "Copper Prices Hit 14-Month High on Supply Constraints and Demand Optimism",
     "summary": "Benchmark copper prices surged past $9,100 per metric ton on the London Metal Exchange, reaching their highest level in over a year. The rally is fueled by an agreement among top Chinese smelters to coordinate production cuts in response to historically low treatment charges, coupled with resilient demand from the green energy transition and power grid upgrades.",
@@ -615,38 +1051,6 @@
     "context": "地缘溢价与供需基本面的博弈使得原油市场近期缺乏明确的单边方向。"
   },
   {
-    "id": "int-20260321-05",
-    "title": "ECB President Lagarde Hints at Possible Rate Cut in June if Data Permits",
-    "summary": "Speaking at a financial forum, European Central Bank President Christine Lagarde suggested that the governing council could consider lowering interest rates as early as June, provided that upcoming wage and inflation data confirm a sustainable path toward the 2% target. She stressed that the ECB remains strictly data-dependent.",
-    "url": "https://www.reuters.com/markets/europe/lagarde-hints-june-rate-cut-2026-03-21",
-    "source": "Reuters",
-    "publishedAt": "2026-03-21T08:30:00Z",
-    "importance": "中高，拉加德的表态强化了市场对欧洲央行先于美联储降息的预期。",
-    "region": "国际",
-    "tags": [
-      "ECB",
-      "Christine Lagarde",
-      "Rate Cut"
-    ],
-    "context": "欧洲经济面临增长压力，促使欧洲央行在抗通胀取得进展后尽早转向宽松。"
-  },
-  {
-    "id": "int-20260321-04",
-    "title": "US Tech Stocks Rally as Semiconductor Demand Forecasts Beat Estimates",
-    "summary": "Major US technology indices surged in morning trading following upward revisions of global semiconductor demand forecasts by key industry analysts. The rally was broad-based but led by AI chip designers and foundry operators, reflecting sustained capital expenditure in artificial intelligence infrastructure.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-21/tech-stocks-rally-on-chip-demand",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-21T08:15:00Z",
-    "importance": "高，科技股尤其是芯片股的表现继续主导全球风险资产的情绪。",
-    "region": "国际",
-    "tags": [
-      "Tech Stocks",
-      "Semiconductors",
-      "AI"
-    ],
-    "context": "市场曾担忧AI硬件投资可能见顶，但最新的需求上修再次点燃了投资者的乐观情绪。"
-  },
-  {
     "id": "dom-20260321-06",
     "title": "两部门联合发布支持集成电路产业高质量发展税收政策",
     "summary": "财政部与国家税务总局今日联合发布公告，进一步优化完善集成电路产业企业所得税优惠政策，对符合条件的先进制程及关键半导体设备材料企业，延长免税期并加大研发费用加计扣除比例，旨在加快攻克关键核心技术卡脖子难题。",
@@ -663,6 +1067,22 @@
     "context": "面对持续的外部科技封锁，国内加大对硬科技底座产业的财税扶持力度。"
   },
   {
+    "id": "int-20260321-05",
+    "title": "ECB President Lagarde Hints at Possible Rate Cut in June if Data Permits",
+    "summary": "Speaking at a financial forum, European Central Bank President Christine Lagarde suggested that the governing council could consider lowering interest rates as early as June, provided that upcoming wage and inflation data confirm a sustainable path toward the 2% target. She stressed that the ECB remains strictly data-dependent.",
+    "url": "https://www.reuters.com/markets/europe/lagarde-hints-june-rate-cut-2026-03-21",
+    "source": "Reuters",
+    "publishedAt": "2026-03-21T08:30:00Z",
+    "importance": "中高，拉加德的表态强化了市场对欧洲央行先于美联储降息的预期。",
+    "region": "国际",
+    "tags": [
+      "ECB",
+      "Christine Lagarde",
+      "Rate Cut"
+    ],
+    "context": "欧洲经济面临增长压力，促使欧洲央行在抗通胀取得进展后尽早转向宽松。"
+  },
+  {
     "id": "dom-20260321-05",
     "title": "央行召开一季度货币政策委员会例会，强调精准有效",
     "summary": "中国人民银行货币政策委员会2026年第一季度例会指出，要加大宏观政策调控力度，稳健的货币政策要灵活适度、精准有效。会议强调将继续引导实体经济融资成本稳中有降，同时密切关注汇率和国际收支变化，保持人民币汇率在合理均衡水平上的基本稳定。",
@@ -677,6 +1097,22 @@
       "宏观调控"
     ],
     "context": "在全球货币政策分化的背景下，央行需在内部稳增长与外部稳汇率之间取得平衡。"
+  },
+  {
+    "id": "int-20260321-04",
+    "title": "US Tech Stocks Rally as Semiconductor Demand Forecasts Beat Estimates",
+    "summary": "Major US technology indices surged in morning trading following upward revisions of global semiconductor demand forecasts by key industry analysts. The rally was broad-based but led by AI chip designers and foundry operators, reflecting sustained capital expenditure in artificial intelligence infrastructure.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-21/tech-stocks-rally-on-chip-demand",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-21T08:15:00Z",
+    "importance": "高，科技股尤其是芯片股的表现继续主导全球风险资产的情绪。",
+    "region": "国际",
+    "tags": [
+      "Tech Stocks",
+      "Semiconductors",
+      "AI"
+    ],
+    "context": "市场曾担忧AI硬件投资可能见顶，但最新的需求上修再次点燃了投资者的乐观情绪。"
   },
   {
     "id": "dom-20260321-04",
@@ -696,102 +1132,6 @@
     "context": "在当前内需复苏的关键期，通过政策引导激发存量市场的更新换代需求是稳增长的重要抓手。"
   },
   {
-    "id": "int-20260321-03",
-    "title": "IMF Warns of Fragmentation Risks to Global Trade",
-    "summary": "The International Monetary Fund issued a new report warning that increasing geopolitical fragmentation and protectionist trade policies could significantly weigh on global economic growth over the medium term, urging cooperative frameworks.",
-    "url": "https://www.ft.com/content/imf-warning-fragmentation-20260321",
-    "source": "FT",
-    "publishedAt": "2026-03-21T12:30:00Z",
-    "importance": "中等，揭示了全球化逆风对中长期经济的结构性影响。",
-    "region": "国际",
-    "tags": [
-      "IMF",
-      "全球贸易",
-      "地缘政治"
-    ],
-    "context": "随着多国大选落幕，贸易保护主义抬头迹象愈发明显。"
-  },
-  {
-    "id": "int-20260321-02",
-    "title": "ECB Reiterates Commitment to 2% Inflation Target Amid Mixed Data",
-    "summary": "The European Central Bank reaffirmed its dedication to bringing inflation back to its 2% target in a timely manner, despite recent mixed economic indicators showing slowing growth in key Eurozone economies but stubborn core services inflation.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-21/ecb-reiterates-inflation-target",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-21T14:00:00Z",
-    "importance": "中高，关乎欧元区利率路径及欧元汇率走势。",
-    "region": "国际",
-    "tags": [
-      "欧洲央行",
-      "通胀",
-      "货币政策"
-    ],
-    "context": "欧洲经济面临增长乏力与粘性通胀的双重挑战，政策空间受限。"
-  },
-  {
-    "id": "int-20260321-01",
-    "title": "Federal Reserve Officials Signal Caution on Further Rate Cuts",
-    "summary": "Several Federal Reserve officials indicated in recent speeches that the central bank should proceed carefully with any additional interest rate cuts, citing persistent underlying inflation pressures and a resilient labor market.",
-    "url": "https://www.reuters.com/markets/us/fed-officials-signal-caution-20260321",
-    "source": "Reuters",
-    "publishedAt": "2026-03-21T13:45:00Z",
-    "importance": "高，影响全球资产定价和资本流动方向。",
-    "region": "国际",
-    "tags": [
-      "美联储",
-      "货币政策",
-      "宏观经济"
-    ],
-    "context": "市场此前预期今年会有更激进的降息，美联储的表态正在重塑预期。"
-  },
-  {
-    "id": "dom-20260321-03",
-    "title": "证监会：进一步深化资本市场改革开放",
-    "summary": "证监会召开专题会议，强调将持续深化资本市场基础制度改革，稳步扩大制度型开放，吸引更多中长期资金入市，以增强资本市场的内在稳定性和国际竞争力。",
-    "url": "http://www.csrc.gov.cn/xw/20260321/3.html",
-    "source": "证监会",
-    "publishedAt": "2026-03-21T15:15:00Z",
-    "importance": "中高，涉及资本市场长期资金引入和对外开放政策。",
-    "region": "国内",
-    "tags": [
-      "资本市场",
-      "政策监管",
-      "证监会"
-    ],
-    "context": "近期外资流向备受关注，监管层旨在通过制度建设稳预期。"
-  },
-  {
-    "id": "dom-20260321-02",
-    "title": "国家统计局：前两月国民经济运行持续回升向好",
-    "summary": "国家统计局最新发布的数据显示，今年1-2月份，全国规模以上工业增加值同比增长稳健，服务业生产指数显著回升，消费市场持续复苏，整体经济运行呈现出积极向好的态势。",
-    "url": "http://www.stats.gov.cn/sj/20260321/2.html",
-    "source": "国家统计局",
-    "publishedAt": "2026-03-21T14:30:00Z",
-    "importance": "高，定调了一季度的经济开局表现，提振市场信心。",
-    "region": "国内",
-    "tags": [
-      "经济数据",
-      "宏观经济",
-      "统计局"
-    ],
-    "context": "市场此前对年初经济复苏力度存有分歧，本次数据确认了温和复苏的趋势。"
-  },
-  {
-    "id": "dom-20260321-01",
-    "title": "央行开展公开市场逆回购操作，维护季末流动性平稳",
-    "summary": "中国人民银行今日发布公告，为维护季末银行体系流动性合理充裕，开展了大规模的公开市场逆回购操作。此举有效缓解了市场短期的资金面紧张情绪，保障了金融体系的平稳运行。",
-    "url": "http://www.pbc.gov.cn/zhengce/20260321/1.html",
-    "source": "中国人民银行",
-    "publishedAt": "2026-03-21T15:00:00Z",
-    "importance": "高，直接影响短期市场利率与流动性预期。",
-    "region": "国内",
-    "tags": [
-      "宏观政策",
-      "流动性",
-      "央行"
-    ],
-    "context": "季末通常是资金面相对紧张的时期，央行的例行干预符合市场预期。"
-  },
-  {
     "id": "wsj-20260321-06",
     "title": "Fed Officials Debunk Near-Term Recession Fears Following Strong Jobs Data",
     "summary": "Federal Reserve officials have publicly dismissed concerns of an imminent US economic recession, pointing to the latest unexpectedly robust payroll figures and resilient consumer spending. This consensus supports the 'higher for longer' rate narrative.",
@@ -806,38 +1146,6 @@
       "Interest Rates"
     ],
     "context": "此前市场一度因部分制造业指标走弱而担忧美国衰退，但就业数据证伪了这一逻辑。"
-  },
-  {
-    "id": "bbg-20260321-05",
-    "title": "Global Semiconductor Supply Chains Pivot Towards Southeast Asia",
-    "summary": "Major chipmakers are accelerating their capacity expansions in Southeast Asian hubs like Malaysia and Vietnam. This strategic pivot aims to mitigate geopolitical risks and diversify assembly and testing operations away from traditional East Asian centers.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-21/chip-supply-chain-pivot-sea",
-    "source": "Bloomberg",
-    "publishedAt": "2026-03-21T06:45:00Z",
-    "importance": "半导体产业链的区域重构深刻影响全球科技格局及相关跨国公司的资本开支方向。",
-    "region": "国际",
-    "tags": [
-      "Semiconductors",
-      "Supply Chain",
-      "Geopolitics"
-    ],
-    "context": "地缘政治摩擦持续，芯片巨头积极构建“中国+1”或“台湾+1”的供应链韧性。"
-  },
-  {
-    "id": "rt-20260321-04",
-    "title": "ECB Signals Cautious Approach to Further Rate Cuts Amid Sticky Services Inflation",
-    "summary": "The European Central Bank indicated a slower trajectory for interest rate reductions this quarter, citing stubbornly high services inflation across the Eurozone. ECB policymakers emphasized a data-dependent approach, dampening market expectations for consecutive cuts.",
-    "url": "https://www.reuters.com/markets/europe/ecb-cautious-rate-cuts-2026-03-21/",
-    "source": "Reuters",
-    "publishedAt": "2026-03-21T06:20:00Z",
-    "importance": "欧洲央行降息预期降温将支撑欧元汇率，同时给欧洲股市带来短期估值压力。",
-    "region": "国际",
-    "tags": [
-      "ECB",
-      "Rate Cuts",
-      "Inflation"
-    ],
-    "context": "欧洲整体通胀已回落，但劳动力市场趋紧导致服务业价格粘性远超预期。"
   },
   {
     "id": "cls-20260321-03",
@@ -856,6 +1164,22 @@
     "context": "部分跨国企业近年调整全球供应链，中国正加大力度吸引高质量外资留存。"
   },
   {
+    "id": "bbg-20260321-05",
+    "title": "Global Semiconductor Supply Chains Pivot Towards Southeast Asia",
+    "summary": "Major chipmakers are accelerating their capacity expansions in Southeast Asian hubs like Malaysia and Vietnam. This strategic pivot aims to mitigate geopolitical risks and diversify assembly and testing operations away from traditional East Asian centers.",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-21/chip-supply-chain-pivot-sea",
+    "source": "Bloomberg",
+    "publishedAt": "2026-03-21T06:45:00Z",
+    "importance": "半导体产业链的区域重构深刻影响全球科技格局及相关跨国公司的资本开支方向。",
+    "region": "国际",
+    "tags": [
+      "Semiconductors",
+      "Supply Chain",
+      "Geopolitics"
+    ],
+    "context": "地缘政治摩擦持续，芯片巨头积极构建“中国+1”或“台湾+1”的供应链韧性。"
+  },
+  {
     "id": "csrc-20260321-02",
     "title": "证监会发布关于促进科技创新企业资本市场融资的指导意见",
     "summary": "中国证监会今日正式发布新规，放宽具有关键核心技术突破的硬科技企业上市门槛，同时严格规范“伪科技”企业融资行为。新规强调全链条监管，并鼓励私募股权基金投早、投小、投长期硬科技。",
@@ -870,6 +1194,22 @@
       "资本市场"
     ],
     "context": "新质生产力发展需要直接融资支持，监管层正在精准滴灌核心技术企业。"
+  },
+  {
+    "id": "rt-20260321-04",
+    "title": "ECB Signals Cautious Approach to Further Rate Cuts Amid Sticky Services Inflation",
+    "summary": "The European Central Bank indicated a slower trajectory for interest rate reductions this quarter, citing stubbornly high services inflation across the Eurozone. ECB policymakers emphasized a data-dependent approach, dampening market expectations for consecutive cuts.",
+    "url": "https://www.reuters.com/markets/europe/ecb-cautious-rate-cuts-2026-03-21/",
+    "source": "Reuters",
+    "publishedAt": "2026-03-21T06:20:00Z",
+    "importance": "欧洲央行降息预期降温将支撑欧元汇率，同时给欧洲股市带来短期估值压力。",
+    "region": "国际",
+    "tags": [
+      "ECB",
+      "Rate Cuts",
+      "Inflation"
+    ],
+    "context": "欧洲整体通胀已回落，但劳动力市场趋紧导致服务业价格粘性远超预期。"
   },
   {
     "id": "pbc-20260321-01",
@@ -888,23 +1228,6 @@
     "context": "在全球金融条件波动加剧背景下，中国持续强化内部金融体系稳定性评估。"
   },
   {
-    "id": "domestic-20260321033000-001",
-    "title": "央行发布最新金融数据，M2增速稳健",
-    "summary": "中国人民银行今日发布了最新的金融统计数据报告。报告显示，截至2026年2月末，广义货币（M2）余额同比增长8.7%，社会融资规模增量为3.2万亿元，均超出市场预期。分析认为，M2增速的稳健增长表明市场流动性合理充裕，有助于支持实体经济发展。社会融资规模的扩张则反映了企业和居民融资需求的积极恢复，预示着经济内生动力的增强。这些数据将为央行未来的货币政策操作提供重要参考，市场普遍预期货币政策将继续保持稳健偏宽松的基调，以巩固经济回升向好的态势。",
-    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/13444265/index.html",
-    "source": "中国人民银行 (pbc.gov.cn)",
-    "publishedAt": "2026-03-21T03:30:00+08:00",
-    "importance": 4,
-    "region": "domestic",
-    "tags": [
-      "金融数据",
-      "M2",
-      "社融",
-      "货币政策"
-    ],
-    "context": "中国经济在经历一段时期调整后，金融数据回暖，反映了宏观政策调控效果显现。"
-  },
-  {
     "id": "international-20260320195000-001",
     "title": "Fed Chair Powell Signals Caution on Rate Cuts Amid Stubborn Inflation",
     "summary": "Federal Reserve Chairman Jerome Powell delivered a speech today, reiterating a cautious stance on the timing of interest rate cuts, citing persistent inflationary pressures. Powell emphasized that while the committee remains data-dependent, a higher-for-longer interest rate scenario is possible if inflation does not convincingly trend towards the 2% target. This hawkish tone dampened market expectations for aggressive rate cuts in the near future, leading to a slight downturn in equity futures and an uptick in Treasury yields. Investors are now recalibrating their portfolios to account for a potentially prolonged period of tight monetary policy, which could impact corporate earnings and global economic growth prospects.",
@@ -920,6 +1243,23 @@
       "货币政策"
     ],
     "context": "全球主要经济体正密切关注美联储的货币政策走向，以应对全球经济面临的不确定性。"
+  },
+  {
+    "id": "domestic-20260321033000-001",
+    "title": "央行发布最新金融数据，M2增速稳健",
+    "summary": "中国人民银行今日发布了最新的金融统计数据报告。报告显示，截至2026年2月末，广义货币（M2）余额同比增长8.7%，社会融资规模增量为3.2万亿元，均超出市场预期。分析认为，M2增速的稳健增长表明市场流动性合理充裕，有助于支持实体经济发展。社会融资规模的扩张则反映了企业和居民融资需求的积极恢复，预示着经济内生动力的增强。这些数据将为央行未来的货币政策操作提供重要参考，市场普遍预期货币政策将继续保持稳健偏宽松的基调，以巩固经济回升向好的态势。",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/13444265/index.html",
+    "source": "中国人民银行 (pbc.gov.cn)",
+    "publishedAt": "2026-03-21T03:30:00+08:00",
+    "importance": 4,
+    "region": "domestic",
+    "tags": [
+      "金融数据",
+      "M2",
+      "社融",
+      "货币政策"
+    ],
+    "context": "中国经济在经历一段时期调整后，金融数据回暖，反映了宏观政策调控效果显现。"
   },
   {
     "id": "international-20260320195858-550",
@@ -1062,6 +1402,54 @@
     "context": "结合近期市场与宏观政策环境的最新动态。"
   },
   {
+    "id": "int-20260320-005",
+    "title": "英国国债跌幅扩大 10年期收益率上涨至4.95%",
+    "summary": "受近期宏观数据和市场情绪影响，英国国债市场跌幅进一步扩大。其中，基准的10年期英国国债收益率在交易中显著上涨了11个基点，攀升至4.95%的高位，反映出投资者对通胀粘性和央行可能维持高利率更长时间的持续担忧。",
+    "url": "https://www.cls.cn/detail/2319810",
+    "source": "cls.cn",
+    "publishedAt": "2026-03-20T18:58:00+08:00",
+    "importance": 4,
+    "region": "international",
+    "tags": [
+      "英国",
+      "国债",
+      "收益率"
+    ],
+    "context": "全球债券市场对通胀预期的敏感度依然很高，英国国债收益率的飙升可能对外汇及股票估值产生压力。"
+  },
+  {
+    "id": "dom-20260320-005",
+    "title": "中信银行：2025年净利润706.18亿元 同比增长2.98%",
+    "summary": "中信银行发布年度业绩公告称，2025年实现营业收入2124.75亿元，同比小幅下降0.55%；归属净利润达到706.18亿元，同比增长2.98%。公司拟向全体股东每10股派发现金股息1.93元(含税)，全年派发现金股息合计212.01亿元，体现了稳健的盈利能力和分红意愿。",
+    "url": "https://www.cls.cn/detail/2319806",
+    "source": "cls.cn",
+    "publishedAt": "2026-03-20T18:57:45+08:00",
+    "importance": 4,
+    "region": "domestic",
+    "tags": [
+      "中信银行",
+      "财报",
+      "A股"
+    ],
+    "context": "银行业绩企稳并保持较高分红水平，为高股息红利资产提供支撑，符合监管导向。"
+  },
+  {
+    "id": "dom-20260320-006",
+    "title": "浙江：指导督促用人单位建立健全年休假计划管理制度",
+    "summary": "浙江省人力社保厅等4部门近日印发《关于进一步贯彻落实带薪年休假制度的通知》，要求各地指导督促用人单位建立健全年休假计划管理制度，制定职工轮流休假计划。从年初开始统筹安排职工轮流休假，计划确定后，职工无特殊情况应服从用人单位统一安排。",
+    "url": "https://www.cls.cn/detail/2319807",
+    "source": "cls.cn",
+    "publishedAt": "2026-03-20T18:55:29+08:00",
+    "importance": 3,
+    "region": "domestic",
+    "tags": [
+      "浙江",
+      "年休假",
+      "政策"
+    ],
+    "context": "地方层面进一步落实带薪休假制度，有助于促进文旅消费，带动服务业复苏。"
+  },
+  {
     "id": "int-20260320-007",
     "title": "全球基金抛售近千亿卢比印度股票 市场承压",
     "summary": "根据印度国家证券存管有限公司(NSDL)公布的最新数据，全球基金在上一个交易日大幅净卖出高达1097亿卢比的印度股票。这一规模的资金流出显示出外资对印度市场短期估值的担忧或获利了结需求，可能引发该国资本市场进一步波动。",
@@ -1094,22 +1482,6 @@
     "context": "美国气候政策的法律博弈将直接影响新能源和传统化石能源行业的长期投资预期及合规成本。"
   },
   {
-    "id": "int-20260320-005",
-    "title": "英国国债跌幅扩大 10年期收益率上涨至4.95%",
-    "summary": "受近期宏观数据和市场情绪影响，英国国债市场跌幅进一步扩大。其中，基准的10年期英国国债收益率在交易中显著上涨了11个基点，攀升至4.95%的高位，反映出投资者对通胀粘性和央行可能维持高利率更长时间的持续担忧。",
-    "url": "https://www.cls.cn/detail/2319810",
-    "source": "cls.cn",
-    "publishedAt": "2026-03-20T18:58:00+08:00",
-    "importance": 4,
-    "region": "international",
-    "tags": [
-      "英国",
-      "国债",
-      "收益率"
-    ],
-    "context": "全球债券市场对通胀预期的敏感度依然很高，英国国债收益率的飙升可能对外汇及股票估值产生压力。"
-  },
-  {
     "id": "dom-20260320-007",
     "title": "西安：推进大数据、5G和北斗卫星导航系统等新型基础设施建设",
     "summary": "西安市发布《有效降低全社会物流成本实施方案》，提出推动物流数智化绿色化转型升级。明确支持物流经营主体提升数字化水平，推进大数据、5G和北斗系统等新基建，并支持智能网联汽车、低空飞行器等运载装备和智能产品应用，以降低运输和管理成本。",
@@ -1124,86 +1496,6 @@
       "新基建"
     ],
     "context": "地方政府加快落实降低全社会物流成本的宏观要求，利好低空经济、新基建和智慧物流产业链。"
-  },
-  {
-    "id": "dom-20260320-006",
-    "title": "浙江：指导督促用人单位建立健全年休假计划管理制度",
-    "summary": "浙江省人力社保厅等4部门近日印发《关于进一步贯彻落实带薪年休假制度的通知》，要求各地指导督促用人单位建立健全年休假计划管理制度，制定职工轮流休假计划。从年初开始统筹安排职工轮流休假，计划确定后，职工无特殊情况应服从用人单位统一安排。",
-    "url": "https://www.cls.cn/detail/2319807",
-    "source": "cls.cn",
-    "publishedAt": "2026-03-20T18:55:29+08:00",
-    "importance": 3,
-    "region": "domestic",
-    "tags": [
-      "浙江",
-      "年休假",
-      "政策"
-    ],
-    "context": "地方层面进一步落实带薪休假制度，有助于促进文旅消费，带动服务业复苏。"
-  },
-  {
-    "id": "dom-20260320-005",
-    "title": "中信银行：2025年净利润706.18亿元 同比增长2.98%",
-    "summary": "中信银行发布年度业绩公告称，2025年实现营业收入2124.75亿元，同比小幅下降0.55%；归属净利润达到706.18亿元，同比增长2.98%。公司拟向全体股东每10股派发现金股息1.93元(含税)，全年派发现金股息合计212.01亿元，体现了稳健的盈利能力和分红意愿。",
-    "url": "https://www.cls.cn/detail/2319806",
-    "source": "cls.cn",
-    "publishedAt": "2026-03-20T18:57:45+08:00",
-    "importance": 4,
-    "region": "domestic",
-    "tags": [
-      "中信银行",
-      "财报",
-      "A股"
-    ],
-    "context": "银行业绩企稳并保持较高分红水平，为高股息红利资产提供支撑，符合监管导向。"
-  },
-  {
-    "id": "dom-20260320-001",
-    "title": "央行开展1500亿元中期借贷便利(MLF)操作，利率维持稳定",
-    "summary": "为维护银行体系流动性合理充裕，人民银行于今日开展了1500亿元中期借贷便利（MLF）操作和200亿元公开市场逆回购操作。中标利率均与此前持平，显示稳健的货币政策立场。市场流动性总体平稳，符合预期。",
-    "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/xxxx",
-    "source": "pbc.gov.cn",
-    "publishedAt": "2026-03-20T14:30:00+08:00",
-    "importance": 4,
-    "region": "domestic",
-    "tags": [
-      "央行",
-      "MLF",
-      "货币政策"
-    ],
-    "context": "体现了央行灵活精准、合理适度的货币政策导向，对后续LPR报价稳定提供了基础。"
-  },
-  {
-    "id": "dom-20260320-002",
-    "title": "国家发改委部署加快建设全国统一大市场重点任务",
-    "summary": "国家发展改革委印发通知，部署2026年加快建设全国统一大市场的重点任务，要求破除地方保护和市场分割，深入开展工程建设招标投标领域突出问题专项治理，促进商品要素资源在更大范围内畅通流动。",
-    "url": "http://www.ndrc.gov.cn/xwdt/xxxx",
-    "source": "ndrc.gov.cn",
-    "publishedAt": "2026-03-20T15:00:00+08:00",
-    "importance": 4,
-    "region": "domestic",
-    "tags": [
-      "发改委",
-      "统一大市场",
-      "宏观政策"
-    ],
-    "context": "进一步激发市场活力，为高质量发展提供体制机制保障。"
-  },
-  {
-    "id": "dom-20260320-003",
-    "title": "证监会发布关于加强上市公司分红监管的最新指引",
-    "summary": "证监会出台新规，要求上市公司进一步健全现金分红制度，提高分红的稳定性、及时性和可预期性，鼓励多次分红。对长期不分红或分红比例偏低的公司将加强监管问询和现场检查。",
-    "url": "http://www.csrc.gov.cn/pub/xxxx",
-    "source": "csrc.gov.cn",
-    "publishedAt": "2026-03-20T14:45:00+08:00",
-    "importance": 5,
-    "region": "domestic",
-    "tags": [
-      "证监会",
-      "A股",
-      "分红监管"
-    ],
-    "context": "提升投资者回报率是提振资本市场信心的重要政策抓手。"
   },
   {
     "id": "dom-20260320-004",
@@ -1222,20 +1514,36 @@
     "context": "财政收入的稳定增长为实施积极的财政政策提供了资金保障，有助于稳定市场预期。"
   },
   {
-    "id": "int-20260320-001",
-    "title": "Fed Signals Gradual Rate Cuts Amid Resilient Inflation Data",
-    "summary": "Federal Reserve officials indicated that interest rate reductions will likely proceed at a measured pace. Recent core inflation readings remain slightly elevated above the 2% target, prompting a cautious approach to policy normalization in the coming months.",
-    "url": "https://www.reuters.com/markets/us/fed-officials-xxxxx",
-    "source": "Reuters",
-    "publishedAt": "2026-03-20T06:15:00Z",
+    "id": "int-20260320-004",
+    "title": "Bank of England Maintains Bank Rate at 5.0%, Cites Services Inflation",
+    "summary": "The Bank of England's Monetary Policy Committee voted to maintain the Bank Rate at 5.0%. Despite headline inflation falling towards the 2% target, policymakers emphasized that services inflation and wage growth remain elevated, necessitating a restrictive stance for an extended period.",
+    "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+    "source": "BoE",
+    "publishedAt": "2026-03-20T08:00:00Z",
     "importance": 5,
     "region": "international",
     "tags": [
-      "Fed",
+      "BoE",
       "Interest Rates",
-      "US Economy"
+      "UK Economy"
     ],
-    "context": "市场持续关注美联储降息路径，这一表态可能导致美债收益率和美元指数短期走强。"
+    "context": "英国央行的鹰派暂停决议对英镑汇率形成支撑，反映出全球主要央行在抗击通胀最后一英里上的普遍谨慎态度。"
+  },
+  {
+    "id": "dom-20260320-002",
+    "title": "国家发改委部署加快建设全国统一大市场重点任务",
+    "summary": "国家发展改革委印发通知，部署2026年加快建设全国统一大市场的重点任务，要求破除地方保护和市场分割，深入开展工程建设招标投标领域突出问题专项治理，促进商品要素资源在更大范围内畅通流动。",
+    "url": "http://www.ndrc.gov.cn/xwdt/xxxx",
+    "source": "ndrc.gov.cn",
+    "publishedAt": "2026-03-20T15:00:00+08:00",
+    "importance": 4,
+    "region": "domestic",
+    "tags": [
+      "发改委",
+      "统一大市场",
+      "宏观政策"
+    ],
+    "context": "进一步激发市场活力，为高质量发展提供体制机制保障。"
   },
   {
     "id": "int-20260320-002",
@@ -1254,6 +1562,54 @@
     "context": "欧洲银行业一体化进程的实质性进展，有利于应对未来潜在的金融系统性风险。"
   },
   {
+    "id": "dom-20260320-003",
+    "title": "证监会发布关于加强上市公司分红监管的最新指引",
+    "summary": "证监会出台新规，要求上市公司进一步健全现金分红制度，提高分红的稳定性、及时性和可预期性，鼓励多次分红。对长期不分红或分红比例偏低的公司将加强监管问询和现场检查。",
+    "url": "http://www.csrc.gov.cn/pub/xxxx",
+    "source": "csrc.gov.cn",
+    "publishedAt": "2026-03-20T14:45:00+08:00",
+    "importance": 5,
+    "region": "domestic",
+    "tags": [
+      "证监会",
+      "A股",
+      "分红监管"
+    ],
+    "context": "提升投资者回报率是提振资本市场信心的重要政策抓手。"
+  },
+  {
+    "id": "dom-20260320-001",
+    "title": "央行开展1500亿元中期借贷便利(MLF)操作，利率维持稳定",
+    "summary": "为维护银行体系流动性合理充裕，人民银行于今日开展了1500亿元中期借贷便利（MLF）操作和200亿元公开市场逆回购操作。中标利率均与此前持平，显示稳健的货币政策立场。市场流动性总体平稳，符合预期。",
+    "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/xxxx",
+    "source": "pbc.gov.cn",
+    "publishedAt": "2026-03-20T14:30:00+08:00",
+    "importance": 4,
+    "region": "domestic",
+    "tags": [
+      "央行",
+      "MLF",
+      "货币政策"
+    ],
+    "context": "体现了央行灵活精准、合理适度的货币政策导向，对后续LPR报价稳定提供了基础。"
+  },
+  {
+    "id": "int-20260320-001",
+    "title": "Fed Signals Gradual Rate Cuts Amid Resilient Inflation Data",
+    "summary": "Federal Reserve officials indicated that interest rate reductions will likely proceed at a measured pace. Recent core inflation readings remain slightly elevated above the 2% target, prompting a cautious approach to policy normalization in the coming months.",
+    "url": "https://www.reuters.com/markets/us/fed-officials-xxxxx",
+    "source": "Reuters",
+    "publishedAt": "2026-03-20T06:15:00Z",
+    "importance": 5,
+    "region": "international",
+    "tags": [
+      "Fed",
+      "Interest Rates",
+      "US Economy"
+    ],
+    "context": "市场持续关注美联储降息路径，这一表态可能导致美债收益率和美元指数短期走强。"
+  },
+  {
     "id": "int-20260320-003",
     "title": "Global Trade Volumes Show Signs of Recovery in Q1 2026",
     "summary": "The latest IMF analysis reports an unexpected rebound in global merchandise trade volumes during the first quarter. Easing supply chain bottlenecks and renewed demand in emerging markets contributed to the uptick, despite ongoing geopolitical uncertainties.",
@@ -1268,21 +1624,5 @@
       "Macroeconomics"
     ],
     "context": "全球贸易复苏迹象有助于改善跨国企业的盈利预期，支撑大宗商品价格。"
-  },
-  {
-    "id": "int-20260320-004",
-    "title": "Bank of England Maintains Bank Rate at 5.0%, Cites Services Inflation",
-    "summary": "The Bank of England's Monetary Policy Committee voted to maintain the Bank Rate at 5.0%. Despite headline inflation falling towards the 2% target, policymakers emphasized that services inflation and wage growth remain elevated, necessitating a restrictive stance for an extended period.",
-    "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
-    "source": "BoE",
-    "publishedAt": "2026-03-20T08:00:00Z",
-    "importance": 5,
-    "region": "international",
-    "tags": [
-      "BoE",
-      "Interest Rates",
-      "UK Economy"
-    ],
-    "context": "英国央行的鹰派暂停决议对英镑汇率形成支撑，反映出全球主要央行在抗击通胀最后一英里上的普遍谨慎态度。"
   }
 ]
