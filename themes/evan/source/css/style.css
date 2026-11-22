@@ -110,7 +110,7 @@ body {
 }
 
 .container {
-  width: min(1080px, 92%);
+  width: min(1320px, 94%);
   margin: 0 auto;
 }
 
@@ -766,7 +766,7 @@ h2 {
 
 /* Article page */
 .article-shell {
-  width: min(1280px, calc(100% - 2rem));
+  width: min(1360px, 94%);
   margin: 0 auto;
   padding: 1rem 0 3rem;
 }

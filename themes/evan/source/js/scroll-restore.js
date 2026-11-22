@@ -50,11 +50,24 @@
     return Math.min(Math.max(0, raw), max);
   }
 
+  function isAlwaysTopRoute(pathname) {
+    const p = String(pathname || '').trim() || '/';
+    return (
+      p === '/' ||
+      p === '/index.html' ||
+      p === '/news' || p === '/news/' ||
+      p === '/models' || p === '/models/' ||
+      p === '/archives' || p === '/archives/' ||
+      p === '/about' || p === '/about/'
+    );
+  }
+
   function saveScrollPosition({ root = document, win = globalThis, now = () => Date.now() } = {}) {
     const storage = getStorage(win);
     if (!storage) return false;
 
     const pathname = win?.location?.pathname || root?.location?.pathname;
+    if (isAlwaysTopRoute(pathname)) return false;
     const key = storageKey(pathname);
 
     const y = Number(win?.scrollY || 0);
@@ -91,6 +104,17 @@
 
     // If there's an in-page anchor, let the browser do the right thing.
     if (String(location?.hash || '').trim()) return false;
+
+    // Top-level landing/hub pages (home, news, models, archives, about) should always start at top.
+    if (isAlwaysTopRoute(pathname)) {
+      try {
+        storage.removeItem(storageKey(pathname));
+        win.scrollTo(0, 0);
+      } catch {
+        // ignore
+      }
+      return false;
+    }
 
     const key = storageKey(pathname);
     const raw = storage.getItem(key);

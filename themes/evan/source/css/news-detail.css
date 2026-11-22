@@ -3,13 +3,13 @@
  */
 
 .news-detail-shell {
-  max-width: 1180px;
+  max-width: 1360px;
 }
 
 .news-detail-grid {
   display: grid;
-  grid-template-columns: 190px minmax(0, 1fr) 200px;
-  gap: 2.25rem;
+  grid-template-columns: 200px minmax(0, 1fr) 220px;
+  gap: 2.5rem;
   align-items: start;
   margin-top: 1.75rem;
   padding-bottom: 3.5rem;

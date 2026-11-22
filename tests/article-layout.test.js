@@ -10,7 +10,7 @@ function read(relativePath) {
 test('article layout uses a wider shell without widening the reading measure', () => {
   const css = read('themes/evan/source/css/style.css');
 
-  assert.match(css, /\.article-shell\s*\{[^}]*width:\s*min\(1280px,/s);
+  assert.match(css, /\.article-shell\s*\{[^}]*width:\s*min\(1360px,/s);
   assert.match(css, /\.article-layout\s*\{[^}]*grid-template-columns:\s*minmax\(0, 1fr\) 280px/s);
   assert.match(css, /\.article-content > :is\(p, ul, ol, blockquote, h2, h3, h4, h5, h6\)\s*\{[^}]*max-width:\s*52rem/s);
   assert.match(css, /\.article-content > p\.article-image\s*\{[^}]*max-width:\s*none/s);
