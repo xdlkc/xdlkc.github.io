@@ -13,6 +13,9 @@ tags:
   - Agent Architecture
   - Cordis
   - Event Sourcing
+audio: /uploads/deepseek-harness-deep-dive/audio.mp3
+audio_mode: podcast
+audio_duration: "06:50"
 ---
 
 > 这是一份非官方研究。分析固定在 DeepSeek Harness commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a)，对应仓库当时的 `0.1.0-rc.5` developer preview。此后上游发生的变化，不会被悄悄写回这份首版结论。
