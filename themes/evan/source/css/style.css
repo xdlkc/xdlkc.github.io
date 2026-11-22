@@ -291,6 +291,7 @@ h2 {
 .card {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -306,6 +307,14 @@ h2 {
 
 .card h3 {
   margin-top: 0;
+}
+
+.card h3,
+.card p,
+.card a {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .card p {
