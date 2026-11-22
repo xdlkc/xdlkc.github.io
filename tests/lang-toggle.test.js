@@ -12,6 +12,9 @@ test('layout loads lang-toggle script and templates include toggle button', () =
   const layout = read('themes/evan/layout/layout.ejs');
   assert.match(layout, /\/js\/lang-toggle\.js/);
 
+  const header = read('themes/evan/layout/_partial/header.ejs');
+  assert.match(header, /data-lang-toggle/);
+
   const templates = [
     'themes/evan/layout/post.ejs',
     'themes/evan/layout/page.ejs',
@@ -22,7 +25,10 @@ test('layout loads lang-toggle script and templates include toggle button', () =
 
   templates.forEach((file) => {
     const content = read(file);
-    assert.match(content, /data-lang-toggle/);
+    assert.ok(
+      /data-lang-toggle/.test(content) || /partial\(['"]_partial\/header['"]/.test(content),
+      `${file} should include lang toggle or shared header partial`
+    );
   });
 });
 

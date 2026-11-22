@@ -4,25 +4,16 @@ const latestPost = posts[0];
 const summarize = (input, limit = 140) => {
   const plain = String(input || '')
     .replace(/<[^>]+>/g, ' ')
+    .replace(/https?:\/\/[^\s<>()]+/gi, ' ')
+    .replace(/\(\s*\)|\[\s*\]/g, ' ')
+    .replace(/(?:原文链接|来源|参考链接|链接|URL)\s*[:：]\s*(?=[,，。.;；\s]|$)/gi, ' ')
     .replace(/\s+/g, ' ')
     .trim();
   return plain.length > limit ? `${plain.slice(0, limit).trim()}...` : plain;
 };
 %>
 <header class="hero">
-  <nav class="nav container">
-    <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
-    <div class="nav-links">
-      <a href="<%- url_for('/archives/') %>" data-i18n-key="nav.archives">Archives</a>
-      <a href="<%- url_for('/news/') %>" data-i18n-key="nav.news">News</a>
-      <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about">About</a>
-      <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
-      <button class="site-search-trigger" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
-      <button class="theme-toggle" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
-      <button class="shortcut-help-trigger" type="button" data-shortcut-help-trigger aria-label="Shortcuts" title="Shortcuts">?</button>
-      <button class="lang-toggle" data-lang-toggle data-i18n-key="nav.lang" aria-label="切换为中文">中文</button>
-    </div>
-  </nav>
+  <%- partial('_partial/header', { navClass: 'nav container', activeSection: 'home' }) %>
 
   <section class="hero-content container">
     <div class="hero-grid">
@@ -109,7 +100,7 @@ const summarize = (input, limit = 140) => {
       <% posts.slice(0, 6).forEach((post) => { %>
         <article class="card">
           <h3><%= post.title %></h3>
-          <p><%= summarize(post.excerpt || post.content) %></p>
+          <p><%= summarize(post.description || post.excerpt || post.content) %></p>
           <a href="<%- url_for(post.path) %>" data-i18n-key="index.readArticle">Read Article</a>
         </article>
       <% }) %>
@@ -117,7 +108,7 @@ const summarize = (input, limit = 140) => {
   </section>
 
   <%
-  const latestNews = (typeof latest_news === 'function' ? latest_news() : []);
+  const latestNews = (typeof latest_news === 'function' ? latest_news(6) : []);
   const formatNewsTime = (iso) => {
     if (!iso) return '';
     const d = new Date(iso);
@@ -138,7 +129,9 @@ const summarize = (input, limit = 140) => {
           </article>
         <% }) %>
       </div>
-      <p style="margin-top: 0.75rem;"><a href="<%- url_for('/news/') %>" data-i18n-key="index.news.all">View all news -></a></p>
+      <div class="section-actions">
+        <a class="section-cta" href="<%- url_for('/news/') %>" data-i18n-key="index.news.all">View all news -></a>
+      </div>
     </section>
   <% } %>
 
@@ -149,7 +142,7 @@ const summarize = (input, limit = 140) => {
         <article class="card info-card info-card-focus">
           <p class="info-card-eyebrow" data-i18n-key="index.currentFocus">Current Focus</p>
           <h3><%= latestPost.title %></h3>
-          <p><%= summarize(latestPost.excerpt || latestPost.content, 220) %></p>
+          <p><%= summarize(latestPost.description || latestPost.excerpt || latestPost.content, 220) %></p>
           <a href="<%- url_for(latestPost.path) %>" data-i18n-key="index.readArticle">Read Article</a>
         </article>
       <% } %>

@@ -4,16 +4,22 @@ const path = require('path');
 
 describe('Theme Toggle - Memory & Switch', () => {
   const htmlPath = path.join(__dirname, '../themes/evan/layout/post.ejs');
+  const headerPath = path.join(__dirname, '../themes/evan/layout/_partial/header.ejs');
   let htmlContent = '';
+  let headerContent = '';
 
   beforeAll(() => {
     htmlContent = fs.readFileSync(htmlPath, 'utf8');
+    headerContent = fs.readFileSync(headerPath, 'utf8');
   });
 
   describe('Button exists in layout', () => {
     it('should have theme-toggle button with correct attributes', () => {
+      const hasDirect = /<button[^>]*class="theme-toggle"[^>]*data-theme-toggle/.test(htmlContent);
+      const hasPartial = /partial\(['"]_partial\/header['"]/.test(htmlContent)
+        && /<button[^>]*class="theme-toggle"[^>]*data-theme-toggle/.test(headerContent);
       assert.ok(
-        /<button[^>]*class="theme-toggle"[^>]*data-theme-toggle/.test(htmlContent),
+        hasDirect || hasPartial,
         'Theme toggle button should exist with data-theme-toggle attribute'
       );
     });

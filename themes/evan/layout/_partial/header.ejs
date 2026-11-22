@@ -1,0 +1,24 @@
+<%
+const _navClass = (typeof navClass === 'string' && navClass.trim()) ? navClass.trim() : 'article-nav';
+const _rawPath = String((typeof page !== 'undefined' && page && page.path) ? page.path : '').replace(/^\/+/, '');
+let _active = (typeof activeSection === 'string') ? activeSection.trim() : '';
+if (!_active) {
+  if (_rawPath.startsWith('archives/')) _active = 'archives';
+  else if (_rawPath.startsWith('news/')) _active = 'news';
+  else if (_rawPath.startsWith('about/')) _active = 'about';
+  else if (_rawPath === '' || _rawPath === 'index.html') _active = 'home';
+}
+%>
+<nav class="<%= _navClass %>" aria-label="Primary">
+  <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
+  <div class="nav-links">
+    <a href="<%- url_for('/archives/') %>" data-i18n-key="nav.archives"<%- _active === 'archives' ? ' class="is-active" aria-current="page"' : '' %>>Archives</a>
+    <a href="<%- url_for('/news/') %>" data-i18n-key="nav.news"<%- _active === 'news' ? ' class="is-active" aria-current="page"' : '' %>>News</a>
+    <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about"<%- _active === 'about' ? ' class="is-active" aria-current="page"' : '' %>>About</a>
+    <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
+    <button class="site-search-trigger" type="button" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
+    <button class="theme-toggle" type="button" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
+    <button class="shortcut-help-trigger" type="button" data-shortcut-help-trigger aria-label="Shortcuts" title="Shortcuts">?</button>
+    <button class="lang-toggle" type="button" data-lang-toggle data-i18n-key="nav.lang" aria-label="切换为中文">中文</button>
+  </div>
+</nav>

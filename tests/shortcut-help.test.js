@@ -12,15 +12,23 @@ test('layout includes shortcut-help script, and templates include the trigger bu
   const layout = read('themes/evan/layout/layout.ejs');
   assert.match(layout, /\/js\/shortcut-help\.js/);
 
+  const header = read('themes/evan/layout/_partial/header.ejs');
+  assert.match(header, /data-shortcut-help-trigger/, 'shared header partial should include shortcut help trigger button');
+
   const templates = [
     'themes/evan/layout/index.ejs',
     'themes/evan/layout/post.ejs',
-    'themes/evan/layout/page.ejs'
+    'themes/evan/layout/page.ejs',
+    'themes/evan/layout/archive.ejs',
+    'themes/evan/layout/news.ejs'
   ];
 
   templates.forEach((p) => {
     const tpl = read(p);
-    assert.match(tpl, /data-shortcut-help-trigger/, `${p} should include shortcut help trigger button`);
+    assert.ok(
+      /data-shortcut-help-trigger/.test(tpl) || /partial\(['"]_partial\/header['"]/.test(tpl),
+      `${p} should include shortcut help trigger button or shared header partial`
+    );
   });
 });
 

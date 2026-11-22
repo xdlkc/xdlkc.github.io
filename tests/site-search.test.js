@@ -12,13 +12,19 @@ test('layouts include site search trigger and script', () => {
   const layout = read('themes/evan/layout/layout.ejs');
   assert.match(layout, /\/js\/site-search\.js/);
 
+  const header = read('themes/evan/layout/_partial/header.ejs');
+  assert.match(header, /data-site-search-trigger/);
+
   const index = read('themes/evan/layout/index.ejs');
   const post = read('themes/evan/layout/post.ejs');
   const archive = read('themes/evan/layout/archive.ejs');
   const page = read('themes/evan/layout/page.ejs');
+  const news = read('themes/evan/layout/news.ejs');
 
-  [index, post, archive, page].forEach((tpl) => {
-    assert.match(tpl, /data-site-search-trigger/);
+  [index, post, archive, page, news].forEach((tpl) => {
+    assert.ok(
+      /data-site-search-trigger/.test(tpl) || /partial\(['"]_partial\/header['"]/.test(tpl)
+    );
   });
 });
 

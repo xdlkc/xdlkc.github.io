@@ -9,16 +9,7 @@ posts.forEach((post) => {
 const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
 %>
 <div class="archive-shell container">
-  <nav class="article-nav">
-    <a class="brand" href="<%- url_for('/') %>"><%= config.title %></a>
-    <div class="nav-links">
-      <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about">About</a>
-      <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
-      <button class="site-search-trigger" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>
-      <button class="theme-toggle" data-theme-toggle data-i18n-key="nav.theme" data-i18n-aria-label-key="nav.theme" aria-pressed="false" aria-label="Theme">Theme</button>
-      <button class="lang-toggle" data-lang-toggle data-i18n-key="nav.lang" aria-label="切换为中文">中文</button>
-    </div>
-  </nav>
+  <%- partial('_partial/header', { navClass: 'article-nav', activeSection: 'archives' }) %>
 
   <section class="archive-card">
     <h1 data-i18n-key="nav.archives">Archives</h1>
