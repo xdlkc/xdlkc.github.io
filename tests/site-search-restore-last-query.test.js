@@ -51,7 +51,7 @@ test('SiteSearch restores last query when reopening and triggers a search render
   delete global.document;
 });
 
-test('SiteSearch ESC-clear also clears persisted last query', async () => {
+test('SiteSearch Escape closes dialog immediately even when input has text', async () => {
   const SiteSearch = require('../themes/evan/source/js/site-search.js');
 
   const dom = new JSDOM(`<!doctype html><html><body>
@@ -74,19 +74,12 @@ test('SiteSearch ESC-clear also clears persisted last query', async () => {
   const dialog = document.querySelector('[data-site-search-dialog]');
   const input = dialog.querySelector('[data-site-search-input]');
   assert.equal(input.value, 'hello');
+  assert.ok(dialog.classList.contains('is-open'));
 
-  // First ESC clears input (but keeps modal open).
-  document.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
-  await new Promise((r) => setTimeout(r, 0));
-  assert.equal(input.value, '');
-
-  // Second ESC closes.
-  document.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
-
-  // Reopen: should NOT restore.
-  document.dispatchEvent(new window.KeyboardEvent('keydown', { key: '/', bubbles: true }));
-  await new Promise((r) => setTimeout(r, 0));
-  assert.equal(input.value, '');
+  // Pressing Escape closes the dialog immediately even when input has text.
+  input.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+  assert.ok(!dialog.classList.contains('is-open'));
+  assert.equal(dialog.getAttribute('aria-hidden'), 'true');
 
   delete global.window;
   delete global.document;

@@ -79,6 +79,55 @@
     return `[${p}%] ${base}`.trim();
   }
 
+  const STATIC_PAGE_PATH_RE = /^\/(about|archives|news|categories|tags|404)(\/|$|\.html)/i;
+
+  /**
+   * Determine whether reading progress should be active on the current page.
+   * Disabled on static/listing pages (/about/, /archives/, /news/, page.ejs)
+   * and kept active on article/post pages (and minimal unit-test fixtures).
+   */
+  function shouldEnableReadingProgress({
+    document: doc = globalThis.document,
+    window: win = globalThis.window
+  } = {}) {
+    if (!doc) return false;
+
+    let pathname = '';
+    try {
+      pathname = String(win?.location?.pathname || doc.location?.pathname || '');
+    } catch {
+      pathname = '';
+    }
+    if (pathname && STATIC_PAGE_PATH_RE.test(pathname)) {
+      return false;
+    }
+
+    if (doc.querySelector?.('.archive-shell')) {
+      return false;
+    }
+
+    const heroTag = doc.querySelector?.('.article-hero .tag');
+    if (heroTag) {
+      const tagText = String(heroTag.textContent || '').trim().toUpperCase();
+      const i18nKey = String(heroTag.getAttribute?.('data-i18n-key') || '').trim();
+      if (tagText === 'PAGE' || i18nKey === 'news.flash') {
+        return false;
+      }
+    }
+
+    const hasArticleShell = !!doc.querySelector?.('.article-shell');
+    if (hasArticleShell) {
+      const hasPostMarker = !!doc.querySelector?.(
+        'article.post, .article-meta, .article-meta-date, .post-navigation, .post-comments, .related-posts'
+      );
+      if (!hasPostMarker) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
   function initReadingProgress({
     containerSelector = '.reading-progress',
     barSelector = '.reading-progress-bar',
@@ -87,6 +136,20 @@
   } = {}) {
     const container = document.querySelector(containerSelector);
     if (!container) return;
+
+    if (!shouldEnableReadingProgress({ document, window: globalThis.window })) {
+      container.hidden = true;
+      if (container.style) container.style.display = 'none';
+      container.setAttribute('aria-hidden', 'true');
+
+      const legacyBar = document.getElementById?.('reading-progress-bar');
+      if (legacyBar) {
+        legacyBar.hidden = true;
+        if (legacyBar.style) legacyBar.style.display = 'none';
+      }
+      return;
+    }
+
     const bar = container.querySelector(barSelector) || document.querySelector(barSelector);
     if (!bar) return;
 
@@ -606,6 +669,7 @@
     computeNextPercentFromKey,
     stripProgressPrefixFromTitle,
     formatTitleWithProgress,
+    shouldEnableReadingProgress,
     initReadingProgress
   };
 });

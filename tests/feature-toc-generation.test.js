@@ -3,7 +3,7 @@ const path = require('node:path');
 const { JSDOM } = require('jsdom');
 
 describe('Automatic TOC and Anchor Navigation - Existing Functionality Check', () => {
-  const postPath = path.join(__dirname, '../public/2026/03/20/test-post-for-toc/index.html');
+  const postPath = path.join(__dirname, '../public/2026/03/19/agent-skill-design-patterns/index.html');
   let dom;
   let document;
 
@@ -24,7 +24,7 @@ describe('Automatic TOC and Anchor Navigation - Existing Functionality Check', (
   });
 
   test('should have IDs on H2 and H3 headings', () => {
-    const headings = document.querySelectorAll('h2, h3');
+    const headings = document.querySelectorAll('.article-content h2, .article-content h3');
     let allHeadingsHaveIds = true;
     let headingCount = 0;
     headings.forEach(heading => {

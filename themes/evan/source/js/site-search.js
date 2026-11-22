@@ -783,7 +783,7 @@
           <button class="site-search-close" data-site-search-close type="button" aria-label="${i18n.close}">${i18n.close}</button>
         </div>
         <div class="site-search-body" data-site-search-scroll>
-          <div class="site-search-hint">${i18n.hintStart}</div>
+          <div class="site-search-hint" data-site-search-hint>${i18n.hintStart}</div>
           <div class="site-search-results" data-site-search-results></div>
         </div>
       </div>
@@ -882,12 +882,14 @@
       ? `找到 ${count} 篇`
       : `Found ${count} ${count === 1 ? 'result' : 'results'}`;
 
+    const countAttr = count > 0 ? ' data-site-search-count' : '';
+
     return `
       <div class="site-search-summary" data-site-search-summary>
         <span class="site-search-summary-kind">${escapeHtml(label)}</span>
         <strong class="site-search-summary-query">${escapeHtml(raw)}</strong>
         <span class="site-search-summary-sep" aria-hidden="true">·</span>
-        <span class="site-search-summary-count">${escapeHtml(countText)}</span>
+        <span class="site-search-summary-count"${countAttr}>${escapeHtml(countText)}</span>
       </div>
     `.trim();
   }
@@ -925,6 +927,21 @@
     };
 
     container.innerHTML = '';
+
+    const outerHint = dialog?.querySelector?.('[data-site-search-hint]')
+      || dialog?.querySelector?.('[data-site-search-scroll] > .site-search-hint')
+      || dialog?.querySelector?.('.site-search-body > .site-search-hint');
+
+    const setOuterHintVisible = (visible) => {
+      if (!outerHint) return;
+      outerHint.hidden = !visible;
+      if (outerHint.style) {
+        outerHint.style.display = visible ? '' : 'none';
+      }
+      if (visible) {
+        outerHint.textContent = langMode === 'zh' ? '输入关键词开始搜索' : 'Type to start searching';
+      }
+    };
 
     const q = String(query || '').trim();
     const highlightQuery = q.startsWith('#')
@@ -1004,16 +1021,21 @@
         : '';
 
       if (recentHtml || historyHtml || topTagsHtml) {
+        setOuterHintVisible(false);
         container.innerHTML = `
           <div class="site-search-hint">${i18n.hintStart}</div>
           ${recentHtml}
           ${historyHtml}
           ${topTagsHtml}
         `.trim();
+      } else {
+        setOuterHintVisible(true);
       }
 
       return;
     }
+
+    setOuterHintVisible(false);
 
     if (!results || results.length === 0) {
       const querySummaryHtml = buildQuerySummaryHtml(parsedQuery, {
@@ -1133,18 +1155,14 @@
       container.appendChild(summary.firstElementChild);
     }
 
-    const count = root.createElement('div');
-    count.className = 'site-search-count';
-    count.setAttribute('data-site-search-count', '');
-    count.textContent = i18n.foundCount(results.length);
-    container.appendChild(count);
-
     const list = root.createElement('ul');
     list.className = 'site-search-list';
+    list.setAttribute('role', 'list');
 
     results.slice(0, 12).forEach((post) => {
       const item = root.createElement('li');
       item.className = 'site-search-item';
+      item.setAttribute('data-site-search-item', '');
 
       const categories = Array.isArray(post.categories) ? post.categories : [];
       const categoryHtml = categories.length
@@ -1429,7 +1447,9 @@
         closeBtn.textContent = closeText;
         closeBtn.setAttribute('aria-label', closeText);
       }
-      const hint = dialog.querySelector('.site-search-hint');
+      const hint = dialog.querySelector('[data-site-search-hint]')
+        || dialog.querySelector('[data-site-search-scroll] > .site-search-hint')
+        || dialog.querySelector('.site-search-hint');
       if (hint) hint.textContent = hintStart;
     }
 
@@ -1507,8 +1527,16 @@
         handleOpen();
         try {
           await ensureDb();
-          renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [], recentQueries: loadRecentQueries(storageRef) }, storage: storageRef });
+          if (!String(input?.value || '').trim()) {
+            renderResults({ root, query: '', results: [], suggestions: { topTags: cachedTopTags || [], allTags: cachedAllTags || [], recentQueries: loadRecentQueries(storageRef) }, storage: storageRef });
+          }
         } catch (err) {
+          const outerHint = dialog.querySelector('[data-site-search-hint]')
+            || dialog.querySelector('[data-site-search-scroll] > .site-search-hint');
+          if (outerHint) {
+            outerHint.hidden = true;
+            if (outerHint.style) outerHint.style.display = 'none';
+          }
           const container = dialog.querySelector('[data-site-search-results]');
           if (container) {
             const langMode = root?.documentElement?.dataset?.langMode === 'zh' ? 'zh' : 'en';
@@ -1664,41 +1692,40 @@
       }
     });
 
-    root.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && dialog.classList.contains('is-open')) {
-        // UX: Esc clears current query first; a second Esc closes the dialog.
-        const activeInput = dialog.querySelector?.('[data-site-search-input]');
-        const value = String(activeInput?.value || '');
-        if (value.trim()) {
-          try {
-            event.preventDefault();
-            event.stopPropagation();
-          } catch {
-            // ignore
-          }
+    const isEscapeKey = (event) => !!(
+      event && (event.key === 'Escape' || event.key === 'Esc' || event.keyCode === 27)
+    );
 
-          activeInput.value = '';
-          // Persist clear so next open doesn't restore the old query.
-          saveLastQuery(storageRef, '');
-          // Trigger an input event to refresh suggestions to the "empty query" state.
-          try {
-            const doc = dialog.ownerDocument || root;
-            const win = doc?.defaultView || globalThis;
-            activeInput.dispatchEvent(new win.Event('input', { bubbles: true }));
-          } catch {
-            // ignore
-          }
+    const isDialogOpen = () => (
+      dialog.classList.contains('is-open') || dialog.getAttribute('aria-hidden') === 'false'
+    );
 
-          activeInput.focus?.();
-          return;
+    dialog.addEventListener('keydown', (event) => {
+      if (isEscapeKey(event) && isDialogOpen()) {
+        try {
+          event.preventDefault?.();
+          event.stopPropagation?.();
+        } catch {
+          // ignore
         }
+        handleClose();
+      }
+    });
 
+    root.addEventListener('keydown', (event) => {
+      if (isEscapeKey(event) && isDialogOpen()) {
+        try {
+          event.preventDefault?.();
+          event.stopPropagation?.();
+        } catch {
+          // ignore
+        }
         handleClose();
         return;
       }
 
       // Keyboard shortcuts: /, Cmd+K, Ctrl+K
-      if (dialog.classList.contains('is-open')) return;
+      if (isDialogOpen()) return;
       if (isEditableTarget(event.target)) return;
 
       const key = String(event.key || '').toLowerCase();
@@ -1816,6 +1843,17 @@
 
     input?.addEventListener('keydown', (event) => {
       if (event.isComposing) return;
+
+      if (isEscapeKey(event) && isDialogOpen()) {
+        try {
+          event.preventDefault?.();
+          event.stopPropagation?.();
+        } catch {
+          // ignore
+        }
+        handleClose();
+        return;
+      }
 
       if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
         const items = getResultItems();
