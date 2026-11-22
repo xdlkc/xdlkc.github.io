@@ -35,9 +35,9 @@ if (Array.isArray(item.tags)) item.tags.forEach(addTag);
 
 const scoreNum = typeof item.score === 'number' && Number.isFinite(item.score) ? Math.round(item.score) : null;
 const summaryText = (item.summary && String(item.summary).trim()) || '';
-const contextText = (item.context && String(item.context).trim()) || '';
 const contentHtml = (item.contentHtml && String(item.contentHtml).trim()) || '';
 const contentHtmlZh = (item.contentHtmlZh && String(item.contentHtmlZh).trim()) || '';
+const hasFullBody = Boolean(contentHtml || contentHtmlZh);
 %>
 
 <link rel="stylesheet" href="<%- url_for('/css/news-detail.css') %>" />
@@ -77,15 +77,10 @@ const contentHtmlZh = (item.contentHtmlZh && String(item.contentHtmlZh).trim()) 
         <% } %>
       </header>
 
-      <% if (summaryText || contextText) { %>
+      <% if (summaryText) { %>
         <section class="news-detail-guide">
           <div class="news-guide-eyebrow">AI 导读</div>
-          <% if (summaryText) { %>
-            <p class="news-guide-summary"><%= summaryText %></p>
-          <% } %>
-          <% if (contextText) { %>
-            <p class="news-guide-context"><%= contextText %></p>
-          <% } %>
+          <p class="news-guide-summary"><%= summaryText %></p>
         </section>
       <% } %>
 
@@ -99,7 +94,7 @@ const contentHtmlZh = (item.contentHtmlZh && String(item.contentHtmlZh).trim()) 
             </div>
           <% } %>
         </div>
-        <% if (contentHtml || contentHtmlZh) { %>
+        <% if (hasFullBody) { %>
           <% if (contentHtmlZh) { %>
             <div class="news-detail-body" data-news-body-pane="zh">
               <%- contentHtmlZh %>
@@ -112,7 +107,7 @@ const contentHtmlZh = (item.contentHtmlZh && String(item.contentHtmlZh).trim()) 
           <% } %>
         <% } else { %>
           <div class="news-detail-body-fallback">
-            <p>该信源未在 RSS 中提供完整正文，请前往原文查看全部内容。</p>
+            <p>该信源暂未提供全文抽取，请点击下方按钮前往原站阅读。</p>
             <% if (item.url) { %>
               <a class="news-origin-btn" href="<%= item.url %>" target="_blank" rel="noreferrer">打开原文 ↗</a>
             <% } %>

@@ -1,103 +1,98 @@
 {
   "id": "arena-text",
-  "name": "Chatbot Arena Text",
+  "name": "Chatbot Arena (Text)",
   "category": "综合对话",
-  "description": "Crowdsourced blind human preference Elo ratings for general-purpose text and reasoning conversations.",
+  "description": "基于 LMArena / Arena.ai 大规模匿名双盲人类偏好对战计算的 Elo 评分（2026-11 快照）。",
   "unit": "Elo",
   "higherIsBetter": true,
-  "sourceName": "LMArena",
-  "sourceUrl": "https://lmarena.ai/",
-  "updatedAt": "2026-11-20",
+  "sourceName": "LMArena / Arena.ai",
+  "sourceUrl": "https://lmarena.ai/leaderboard/text",
+  "updatedAt": "2026-11-22",
   "entries": [
     {
-      "model": "Gemini 2.5 Pro",
+      "model": "Gemini 4 Carbon (High)",
       "provider": "Google",
       "openWeights": false,
       "reasoning": true,
-      "score": 1446,
-      "releaseDate": "2026-06",
-      "notes": "Thinking mode default"
+      "score": 1526,
+      "releaseDate": "2026-11-12",
+      "notes": "LMArena Text 榜首，复杂指令与多模态综合表现领先"
     },
     {
-      "model": "Claude Opus 4.1",
+      "model": "Gemini 4 Argon (High)",
+      "provider": "Google",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 1522,
+      "releaseDate": "2026-11-05",
+      "notes": "数学与高阶推理强项"
+    },
+    {
+      "model": "Muse Wonder (Max)",
+      "provider": "Meta",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 1511,
+      "releaseDate": "2026-10-28"
+    },
+    {
+      "model": "Claude Opus 5.5 (High)",
       "provider": "Anthropic",
       "openWeights": false,
       "reasoning": true,
-      "score": 1438,
-      "releaseDate": "2026-08",
-      "notes": "Extended thinking"
+      "score": 1509,
+      "releaseDate": "2026-10-20",
+      "notes": "代码工程与 Agent 编排强项"
     },
     {
-      "model": "GPT-5",
+      "model": "Claude Fable 5.2 (Max)",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 1504,
+      "releaseDate": "2026-10-15"
+    },
+    {
+      "model": "GPT-6.2 Astra",
       "provider": "OpenAI",
       "openWeights": false,
       "reasoning": true,
-      "score": 1435,
-      "releaseDate": "2026-08",
-      "notes": "Adaptive reasoning"
+      "score": 1501,
+      "releaseDate": "2026-11-01"
     },
     {
-      "model": "Claude Sonnet 4.5",
-      "provider": "Anthropic",
+      "model": "GPT-5.6 Sol",
+      "provider": "OpenAI",
       "openWeights": false,
       "reasoning": true,
-      "score": 1424,
-      "releaseDate": "2026-09",
-      "notes": "Balanced flagship"
+      "score": 1492,
+      "releaseDate": "2026-09-18",
+      "notes": "搜索与风格控制场景高分"
     },
     {
-      "model": "DeepSeek-R1-0528",
+      "model": "DeepSeek-R2",
       "provider": "DeepSeek",
       "openWeights": true,
       "reasoning": true,
-      "score": 1412,
-      "releaseDate": "2026-05",
-      "notes": "MIT open weights"
+      "score": 1478,
+      "releaseDate": "2026-08-22",
+      "notes": "开源权重推理旗舰"
     },
     {
-      "model": "Qwen3-235B-A22B",
-      "provider": "Alibaba",
+      "model": "GLM-5.3",
+      "provider": "Zhipu AI",
       "openWeights": true,
       "reasoning": true,
-      "score": 1404,
-      "releaseDate": "2026-07",
-      "notes": "Apache 2.0 MoE"
+      "score": 1468,
+      "releaseDate": "2026-10-10"
     },
     {
-      "model": "Kimi K2",
-      "provider": "Moonshot",
-      "openWeights": true,
-      "reasoning": false,
-      "score": 1396,
-      "releaseDate": "2026-07",
-      "notes": "1T MoE agentic base"
-    },
-    {
-      "model": "GLM-4.5",
-      "provider": "Zhipu",
+      "model": "Kimi K2.5",
+      "provider": "Moonshot AI",
       "openWeights": true,
       "reasoning": true,
-      "score": 1389,
-      "releaseDate": "2026-08",
-      "notes": "Hybrid thinking MoE"
-    },
-    {
-      "model": "DeepSeek-V3.1",
-      "provider": "DeepSeek",
-      "openWeights": true,
-      "reasoning": false,
-      "score": 1385,
-      "releaseDate": "2026-09",
-      "notes": "Fast non-thinking flagship"
-    },
-    {
-      "model": "Llama 4 Maverick",
-      "provider": "Meta",
-      "openWeights": true,
-      "reasoning": false,
-      "score": 1368,
-      "releaseDate": "2026-04",
-      "notes": "17B active / 400B total MoE"
+      "score": 1464,
+      "releaseDate": "2026-09-25"
     }
   ]
 }

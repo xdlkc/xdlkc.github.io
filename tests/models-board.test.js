@@ -256,23 +256,28 @@ test('UI controller: supports tab switching, license/reasoning/provider/search f
 
   // Reset and test sorting on Overview
   doc.querySelector('[data-models-reset]').click();
+  const sweBench = payload.benchmarks.find((b) => b.id === 'swe-bench-verified');
+  const sweSortedDesc = [...sweBench.entries].sort((a, b) => b.score - a.score);
+  const sweTopModel = sweSortedDesc[0].model;
+  const sweBottomModel = sweSortedDesc[sweSortedDesc.length - 1].model;
+
   const sweSortBtn = doc.querySelector('[data-sort-key="bench:swe-bench-verified"]');
   sweSortBtn.click();
-  assert.equal(getVisibleModels()[0], 'Claude Sonnet 4.5');
+  assert.equal(getVisibleModels()[0], sweTopModel);
 
   // Toggle to ascending
   doc.querySelector('[data-sort-key="bench:swe-bench-verified"]').click();
-  assert.equal(getVisibleModels()[0], 'Llama 4 Maverick');
+  assert.equal(getVisibleModels()[0], sweBottomModel);
 
   // Switch to individual benchmark tab (SWE-bench Verified)
   doc.querySelector('[data-models-tab="swe-bench-verified"]').click();
   assert.equal(ctrl.state.activeTab, 'swe-bench-verified');
-  assert.equal(getVisibleModels()[0], 'Claude Sonnet 4.5');
+  assert.equal(getVisibleModels()[0], sweTopModel);
   assert.match(doc.querySelector('[data-models-meta-badges]').textContent, /SWE-bench/);
 
   // Sort by score ascending in single benchmark view
   doc.querySelector('[data-sort-key="score"]').click();
-  assert.equal(getVisibleModels()[0], 'Llama 4 Maverick');
+  assert.equal(getVisibleModels()[0], sweBottomModel);
 });
 
 test('Navbar & i18n: header includes Models link and all models.ejs i18n keys exist in LangToggle.DICT', () => {

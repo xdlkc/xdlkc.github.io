@@ -1,103 +1,80 @@
 {
   "id": "terminal-bench",
-  "name": "Terminal-Bench",
+  "name": "Terminal-Bench 2.0",
   "category": "Agent 执行",
-  "description": "End-to-end command-line environment benchmark evaluating autonomous shell, devops, debugging, and systems tasks.",
+  "description": "Laude Institute 与 Stanford 维护的真实容器终端工程任务基准，考察自主命令行操作、调试与环境修复能力（2026-11 快照）。",
   "unit": "%",
   "higherIsBetter": true,
-  "sourceName": "Terminal-Bench",
-  "sourceUrl": "https://www.tbench.ai/",
-  "updatedAt": "2026-11-20",
+  "sourceName": "Terminal-Bench Official",
+  "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
+  "updatedAt": "2026-11-22",
   "entries": [
     {
-      "model": "Claude Sonnet 4.5",
-      "provider": "Anthropic",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 51.0,
-      "releaseDate": "2026-09",
-      "notes": "Terminus 2 agent harness"
-    },
-    {
-      "model": "GPT-5",
+      "model": "GPT-5.5 (NexAU-AHE)",
       "provider": "OpenAI",
       "openWeights": false,
       "reasoning": true,
-      "score": 48.6,
-      "releaseDate": "2026-08",
-      "notes": "Codex CLI harness"
+      "score": 84.7,
+      "releaseDate": "2026-10-12",
+      "notes": "±2.1%，Terminal-Bench 2.0 榜首"
     },
     {
-      "model": "Claude Opus 4.1",
-      "provider": "Anthropic",
+      "model": "GPT-5.5 (Capy)",
+      "provider": "OpenAI",
       "openWeights": false,
       "reasoning": true,
-      "score": 46.8,
-      "releaseDate": "2026-08",
-      "notes": "Terminus 2 harness"
+      "score": 83.1,
+      "releaseDate": "2026-10-08",
+      "notes": "±2.1%"
     },
     {
-      "model": "Gemini 2.5 Pro",
+      "model": "GPT-5.5 (Codex CLI)",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 82.2,
+      "releaseDate": "2026-09-30",
+      "notes": "±2.2%"
+    },
+    {
+      "model": "Gemini 3.1 Pro (TongAgents)",
       "provider": "Google",
       "openWeights": false,
       "reasoning": true,
-      "score": 42.3,
-      "releaseDate": "2026-06",
-      "notes": "Standard CLI harness"
+      "score": 80.2,
+      "releaseDate": "2026-09-14"
     },
     {
-      "model": "Kimi K2",
-      "provider": "Moonshot",
-      "openWeights": true,
-      "reasoning": false,
-      "score": 39.4,
-      "releaseDate": "2026-07",
-      "notes": "Tool-use optimized"
-    },
-    {
-      "model": "GLM-4.5",
-      "provider": "Zhipu",
-      "openWeights": true,
+      "model": "Claude Opus 4.7 (WOZCODE)",
+      "provider": "Anthropic",
+      "openWeights": false,
       "reasoning": true,
-      "score": 37.5,
-      "releaseDate": "2026-08",
-      "notes": "Agentic thinking mode"
+      "score": 80.2,
+      "releaseDate": "2026-09-10"
     },
     {
-      "model": "DeepSeek-V3.1",
-      "provider": "DeepSeek",
-      "openWeights": true,
-      "reasoning": false,
-      "score": 36.2,
-      "releaseDate": "2026-09",
-      "notes": "Terminal tool-calling"
-    },
-    {
-      "model": "Qwen3-235B-A22B",
-      "provider": "Alibaba",
-      "openWeights": true,
+      "model": "Claude Opus 5.5 (High)",
+      "provider": "Anthropic",
+      "openWeights": false,
       "reasoning": true,
-      "score": 33.8,
-      "releaseDate": "2026-07",
-      "notes": "Thinking mode"
+      "score": 79.4,
+      "releaseDate": "2026-10-20"
     },
     {
-      "model": "DeepSeek-R1-0528",
+      "model": "DeepSeek-R2",
       "provider": "DeepSeek",
       "openWeights": true,
       "reasoning": true,
-      "score": 31.5,
-      "releaseDate": "2026-05",
-      "notes": "Terminus harness"
+      "score": 74.6,
+      "releaseDate": "2026-08-22"
     },
     {
-      "model": "Llama 4 Maverick",
-      "provider": "Meta",
+      "model": "GLM-5.3",
+      "provider": "Zhipu AI",
       "openWeights": true,
-      "reasoning": false,
-      "score": 24.1,
-      "releaseDate": "2026-04",
-      "notes": "Baseline harness"
+      "reasoning": true,
+      "score": 71.8,
+      "releaseDate": "2026-10-10"
     }
   ]
 }

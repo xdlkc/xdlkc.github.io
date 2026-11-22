@@ -1,0 +1,43 @@
+name: Sync Model Benchmarks
+
+on:
+  schedule:
+    # Run daily at 03:30 UTC
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-benchmarks
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Sync live public benchmarks
+        run: node tools/sync-benchmarks.js
+
+      - name: Commit and push updated benchmarks
+        run: |
+          if [ -n "$(git status --porcelain source/_data/benchmarks)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add source/_data/benchmarks
+            git commit -m "chore(models): sync live benchmark leaderboards"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          else
+            echo "No benchmark updates to commit."
+          fi

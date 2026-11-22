@@ -8,7 +8,7 @@
       "Agent 智能体",
       "模型发布"
     ],
-    "heatScore": 79.5,
+    "heatScore": 78.5,
     "sourceCount": 1,
     "latestAt": "2026-11-22T14:20:28.000Z",
     "summary": "Perplexity 发布 Monitor API，按计划持续搜索网络，仅在出现相关变化时通过 Webhook 通知智能体。该 API 内置决策模型自动过滤不重要的结果，减少噪音。这也是 Perplexity 通过开发者工具在同质化聊天机器人业务中寻求差异化战略的一部分。",
@@ -31,7 +31,7 @@
     "topics": [
       "Agent 智能体"
     ],
-    "heatScore": 51.6,
+    "heatScore": 51,
     "sourceCount": 1,
     "latestAt": "2026-11-22T01:59:13.000Z",
     "summary": "Meta ads AI 连接器现已在 AWS Quick 中可用，Meta 广告主可在 Quick 内用自然语言创建、管理和分析广告活动。连接器保持与 Meta 广告管理网络的连接，并支持将 Meta 广告数据与第一方及第三方数据源结合，构建仪表板、文档、演示文稿和自动化工作流。",
@@ -54,7 +54,7 @@
     "topics": [
       "基础设施"
     ],
-    "heatScore": 25.9,
+    "heatScore": 25.6,
     "sourceCount": 1,
     "latestAt": "2026-11-20T22:35:24.000Z",
     "summary": "AWS 推出 SageMaker HyperPod Global Inference Gateway，通过一个托管端点即可在单区域或多区域的 HyperPod 集群间路由推理请求。该网关自动选择最优集群并支持故障自动转移，所有请求经 AWS PrivateLink 使用 SigV4 与 IAM 完成认证。",
@@ -79,7 +79,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 25.7,
+    "heatScore": 25.4,
     "sourceCount": 1,
     "latestAt": "2026-11-21T00:14:26.000Z",
     "summary": "AWS 在 Agent Toolkit 中提供分布式 KV 缓存 Agent 技能，可从编码代理侧自动评估并配置基于 Amazon ElastiCache 的缓存，使自托管 LLM 推理成本最多降低 40%、首 Token 时间最多降低 80%。该方案通过复用多轮对话的上下文 KV 缓存，避免 GPU 每轮重复计算相同上下文，为自托管大模型的团队提供了可直接落地的降本增效路径。",
@@ -102,7 +102,7 @@
     "topics": [
       "基础设施"
     ],
-    "heatScore": 24.9,
+    "heatScore": 24.6,
     "sourceCount": 1,
     "latestAt": "2026-11-20T23:07:03.000Z",
     "summary": "AWS 为 Amazon SageMaker HyperPod 的 Slurm 集群推出可观测性与用户管理两类托管集群扩展，支持通过 API 和控制台以声明式方式配置节点软件。官方博客还跟随一个平台团队运行共享 Slurm 集群一个季度的实践，展示了这些扩展的实际运作方式。对用 HyperPod 承载大规模训练的平台团队而言，监控与用户权限管理可从手工运维转为统一的声明式配置。",
@@ -126,7 +126,7 @@
       "模型发布",
       "研究"
     ],
-    "heatScore": 24.8,
+    "heatScore": 24.5,
     "sourceCount": 1,
     "latestAt": "2026-11-20T23:30:30.000Z",
     "summary": "Google Research 发布博文，详解 Duplex 电话对话 AI 技术如何演化并整合进 Gemini，让用户可以直接让 Gemini 替自己致电商家办理事务。文章以生成式 AI 为主线，回顾了这项能力从早期 Duplex 到进入 Gemini 的技术演进路径。",
@@ -150,7 +150,7 @@
       "Agent 智能体",
       "模型发布"
     ],
-    "heatScore": 24.4,
+    "heatScore": 24.1,
     "sourceCount": 1,
     "latestAt": "2026-11-21T01:06:42.000Z",
     "summary": "AWS 面向工作场景的 AI 工作台 Quick 发布一批更新：用户可在聊天中构建并运行业务流程流，网页端全新改版帮助规划每日事务。多个智能体可协同给出更完整的回答，并新增 Meta 广告、Amplitude 等数据源接入。",
@@ -174,7 +174,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 21.8,
+    "heatScore": 21.5,
     "sourceCount": 1,
     "latestAt": "2026-11-20T20:37:31.000Z",
     "summary": "标准银行集团与 AWS Professional Services 合作，在其自有 AWS 账户中构建了生成式 AI 风险评估方案，实现审批证据的自动化采集。该方案在 Amazon Bedrock 上采用 LLM-as-a-judge，将每个用例对照国际 AI 标准与银行内部政策自动打分，为风险委员会提供一致、可追溯的评估证据。",
@@ -198,7 +198,7 @@
       "模型发布",
       "研究"
     ],
-    "heatScore": 17,
+    "heatScore": 16.8,
     "sourceCount": 1,
     "latestAt": "2026-11-20T10:00:00.000Z",
     "summary": "OpenAI 公布了应对对抗性蒸馏的多层防护策略，结合模型训练、安全机制、检测与处置手段，防止前沿模型能力被窃取。该体系覆盖从训练加固到检测与执法的完整链条，用于对抗基于蒸馏的能力提取攻击。此举表明头部实验室正将防蒸馏能力纳入模型安全与竞争壁垒建设的核心环节。",
@@ -222,7 +222,7 @@
       "模型发布",
       "开源生态"
     ],
-    "heatScore": 13.6,
+    "heatScore": 13.4,
     "sourceCount": 1,
     "latestAt": "2026-11-20T00:00:00.000Z",
     "summary": "Inkling 2 Mini 已正式上线 Hugging Face，官方称其在本地部署场景下可提供前沿级别的性能表现。模型以 Mini 体量主打轻量化本地运行，适合希望在自有硬件上部署模型的开发者。",
@@ -246,7 +246,7 @@
       "模型发布",
       "开源生态"
     ],
-    "heatScore": 12.9,
+    "heatScore": 12.8,
     "sourceCount": 1,
     "latestAt": "2026-11-20T00:00:00.000Z",
     "summary": "Hugging Face 官方发布 Harness Adapters，用于把常用的模型适配到自己的 Harness 上，从而提升性能并降低成本。该方案聚焦大规模使用场景，为在固定 Harness 下持续使用模型提供了官方适配路径。",
@@ -271,7 +271,7 @@
       "基础设施",
       "研究"
     ],
-    "heatScore": 12.4,
+    "heatScore": 12.2,
     "sourceCount": 1,
     "latestAt": "2026-11-20T00:00:00.000Z",
     "summary": "OpenAI 推出 MedChemBench 基准，评估 AI 模型解读分子结构、依据实验证据推理以及在早期药物发现中筛选候选化合物的能力。该基准为衡量 AI 在药物化学研究中的实际表现提供了统一标准，直接回应了 AI 能否帮助科学家识别有潜力药物候选物的核心问题。",
@@ -295,7 +295,7 @@
       "模型发布",
       "研究"
     ],
-    "heatScore": 11.4,
+    "heatScore": 11.3,
     "sourceCount": 1,
     "latestAt": "2026-11-20T00:00:00.000Z",
     "summary": "AI 金融分析平台 Hebbia 对 GPT-6 Astra 进行了预发布阶段评测，结果显示其在金融研究任务中的信源覆盖、引用相关性与呈现质量均有提升。该内容来自 OpenAI 官方客户案例，尚未披露具体量化数据，属早期使用反馈而非正式性能报告。",
@@ -319,7 +319,7 @@
       "模型发布",
       "研究"
     ],
-    "heatScore": 10.7,
+    "heatScore": 10.6,
     "sourceCount": 1,
     "latestAt": "2026-11-19T20:03:00.000Z",
     "summary": "谷歌研究院发布博文，解析一款只有量子计算机参与者才能获胜的游戏，直观展示量子计算相对于经典计算的优势。文章以游戏形式说明量子计算机能在特定任务上完成经典方法无法实现的事情。这种互动式讲解降低了量子优势概念的理解门槛，对开发者与科普读者都有参考价值。",
@@ -344,7 +344,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 9.6,
+    "heatScore": 9.4,
     "sourceCount": 1,
     "latestAt": "2026-11-19T17:00:35.000Z",
     "summary": "NVIDIA 官方博客介绍开发者将前沿 AI 模型与 Omniverse 库结合，把仿真构想转化为可运行应用的工作方式。该流程涵盖组装资产、连接物理与渲染、验证场景行为，应用于场景探索、故障排查和设计改进。",

@@ -2,102 +2,147 @@
   "id": "swe-bench-verified",
   "name": "SWE-bench Verified",
   "category": "代码工程",
-  "description": "Human-validated real-world GitHub issue resolution benchmark measuring end-to-end software engineering accuracy.",
+  "description": "500 道经人工校验的真实 GitHub 仓库 Issue 修复任务，衡量端到端软件工程能力（自动同步官方 swebench.com 数据）。",
   "unit": "%",
   "higherIsBetter": true,
-  "sourceName": "SWE-bench",
+  "sourceName": "SWE-bench Official",
   "sourceUrl": "https://www.swebench.com/",
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-22",
   "entries": [
     {
-      "model": "Claude Sonnet 4.5",
+      "model": "Claude 4.5 Opus",
       "provider": "Anthropic",
       "openWeights": false,
       "reasoning": true,
-      "score": 77.2,
-      "releaseDate": "2026-09",
-      "notes": "Standard bash+edit scaffold"
+      "score": 79.2,
+      "releaseDate": "2025-12-05",
+      "notes": "Agent: Sonar Foundation Agent"
+    },
+    {
+      "model": "Doubao-Seed-Code",
+      "provider": "ByteDance",
+      "openWeights": false,
+      "reasoning": false,
+      "score": 78.8,
+      "releaseDate": "2025-09-28",
+      "notes": "Agent: TRAE"
+    },
+    {
+      "model": "Gemini 3 Pro Preview",
+      "provider": "Google",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 77.4,
+      "releaseDate": "2025-11-20",
+      "notes": "Agent: live-SWE-agent"
+    },
+    {
+      "model": "Claude 4 Sonnet",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": false,
+      "score": 76.8,
+      "releaseDate": "2025-08-04",
+      "notes": "Agent: EPAM AI/Run Developer Agent"
+    },
+    {
+      "model": "Gemini 3 Flash",
+      "provider": "Google",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 75.8,
+      "releaseDate": "2026-02-17",
+      "notes": "Agent: mini-SWE-agent"
+    },
+    {
+      "model": "MiniMax M2.5",
+      "provider": "MiniMax",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 75.8,
+      "releaseDate": "2026-02-17",
+      "notes": "Agent: mini-SWE-agent"
+    },
+    {
+      "model": "Claude 4.6 Opus",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 75.6,
+      "releaseDate": "2026-02-17",
+      "notes": "Agent: mini-SWE-agent"
+    },
+    {
+      "model": "Claude Sonnet 4",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": false,
+      "score": 74.8,
+      "releaseDate": "2025-07-31",
+      "notes": "Agent: Harness AI"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": false,
+      "score": 74.8,
+      "releaseDate": "2025-11-03",
+      "notes": "Agent: Sonar Foundation Agent"
     },
     {
       "model": "GPT-5",
       "provider": "OpenAI",
       "openWeights": false,
       "reasoning": true,
-      "score": 74.9,
-      "releaseDate": "2026-08",
-      "notes": "High reasoning effort"
+      "score": 74.4,
+      "releaseDate": "2025-10-15",
+      "notes": "Agent: Prometheus-v1.2.1"
     },
     {
-      "model": "Claude Opus 4.1",
+      "model": "Claude 4 Opus",
       "provider": "Anthropic",
       "openWeights": false,
       "reasoning": true,
-      "score": 74.5,
-      "releaseDate": "2026-08",
-      "notes": "Extended thinking"
+      "score": 73.2,
+      "releaseDate": "2025-05-22",
+      "notes": "Agent: Tools"
     },
     {
-      "model": "Gemini 2.5 Pro",
-      "provider": "Google",
+      "model": "GLM 5",
+      "provider": "Zhipu AI",
       "openWeights": false,
-      "reasoning": true,
-      "score": 68.4,
-      "releaseDate": "2026-06",
-      "notes": "Agentless + bash scaffold"
+      "reasoning": false,
+      "score": 72.8,
+      "releaseDate": "2026-02-17",
+      "notes": "Agent: mini-SWE-agent"
     },
     {
-      "model": "DeepSeek-V3.1",
-      "provider": "DeepSeek",
-      "openWeights": true,
+      "model": "GPT 5.2",
+      "provider": "OpenAI",
+      "openWeights": false,
       "reasoning": false,
-      "score": 66.0,
-      "releaseDate": "2026-09",
-      "notes": "Code-tuned agentic release"
+      "score": 72.8,
+      "releaseDate": "2026-02-17",
+      "notes": "Agent: mini-SWE-agent"
+    },
+    {
+      "model": "GPT 5.2 Codex",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "reasoning": false,
+      "score": 72.8,
+      "releaseDate": "2026-02-19",
+      "notes": "Agent: mini-SWE-agent"
     },
     {
       "model": "Kimi K2",
-      "provider": "Moonshot",
-      "openWeights": true,
+      "provider": "Moonshot AI",
+      "openWeights": false,
       "reasoning": false,
-      "score": 65.8,
-      "releaseDate": "2026-07",
-      "notes": "Single-attempt pass@1"
-    },
-    {
-      "model": "GLM-4.5",
-      "provider": "Zhipu",
-      "openWeights": true,
-      "reasoning": true,
-      "score": 64.2,
-      "releaseDate": "2026-08",
-      "notes": "Thinking enabled"
-    },
-    {
-      "model": "Qwen3-235B-A22B",
-      "provider": "Alibaba",
-      "openWeights": true,
-      "reasoning": true,
-      "score": 61.5,
-      "releaseDate": "2026-07",
-      "notes": "OpenHands scaffold"
-    },
-    {
-      "model": "DeepSeek-R1-0528",
-      "provider": "DeepSeek",
-      "openWeights": true,
-      "reasoning": true,
-      "score": 57.6,
-      "releaseDate": "2026-05",
-      "notes": "Agentless scaffold"
-    },
-    {
-      "model": "Llama 4 Maverick",
-      "provider": "Meta",
-      "openWeights": true,
-      "reasoning": false,
-      "score": 48.2,
-      "releaseDate": "2026-04",
-      "notes": "Standard scaffold"
+      "score": 71.2,
+      "releaseDate": "2025-10-14",
+      "notes": "Agent: Lingxi v1.5"
     }
   ]
 }

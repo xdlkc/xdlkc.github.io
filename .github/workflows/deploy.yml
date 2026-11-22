@@ -6,7 +6,7 @@ on:
       - main
       - master
   workflow_run:
-    workflows: ["Sync AIHOT News"]
+    workflows: ["Sync AIHOT News", "Sync Model Benchmarks"]
     types: [completed]
   workflow_dispatch:
     inputs:
