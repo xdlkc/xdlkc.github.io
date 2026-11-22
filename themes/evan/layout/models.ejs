@@ -1,0 +1,233 @@
+<%
+const modelsData = (page && page.modelsData) || {
+  benchmarks: [],
+  overview: [],
+  providers: [],
+  totalBenchmarks: 0,
+  totalModels: 0,
+  latestUpdatedAt: ''
+};
+const safeJson = JSON.stringify(modelsData).replace(/</g, '\\u003c');
+const formatScore = (val, unit) => {
+  if (val === undefined || val === null || !Number.isFinite(Number(val))) return '—';
+  const num = Number(val);
+  if (unit === 'Elo') return String(Math.round(num));
+  const formatted = Number.isInteger(num) ? num.toFixed(1) : num.toFixed(1);
+  return unit === '%' ? `${formatted}%` : `${formatted} ${unit}`.trim();
+};
+%>
+
+<link rel="stylesheet" href="<%- url_for('/css/models-board.css') %>" />
+
+<article class="article-shell models-shell container">
+  <%- partial('_partial/header', { navClass: 'article-nav', activeSection: 'models' }) %>
+
+  <header class="models-hero">
+    <p class="tag" data-i18n-key="models.tag">BENCHMARKS</p>
+    <div class="models-hero-row">
+      <div>
+        <h1 data-i18n-key="models.title">Models Leaderboard</h1>
+        <p class="models-hero-subtitle" data-i18n-key="models.subtitle">
+          Declarative multi-benchmark tracker across dialogue, software engineering, agent execution, science, and competitive coding.
+        </p>
+      </div>
+      <div class="models-hero-stats" aria-label="Leaderboard summary">
+        <span class="models-stat-pill">
+          <strong class="models-stat-num"><%= modelsData.totalBenchmarks %></strong>
+          <span data-i18n-key="models.stats.benchmarks">Benchmarks</span>
+        </span>
+        <span class="models-stat-pill">
+          <strong class="models-stat-num"><%= modelsData.totalModels %></strong>
+          <span data-i18n-key="models.stats.models">Models</span>
+        </span>
+        <% if (modelsData.latestUpdatedAt) { %>
+          <span class="models-stat-pill">
+            <span data-i18n-key="models.stats.updated">Updated</span>
+            <strong class="models-stat-num"><%= modelsData.latestUpdatedAt %></strong>
+          </span>
+        <% } %>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="models-board" tabindex="-1" data-models-board>
+    <% if (!modelsData.benchmarks.length) { %>
+      <div class="models-empty-card">
+        <p data-i18n-key="models.noData">No benchmarks found. Drop a JSON file into source/_data/benchmarks/ to get started.</p>
+      </div>
+    <% } else { %>
+      <div class="models-tabs" role="tablist" aria-label="Benchmarks" data-models-tabs>
+        <button
+          type="button"
+          role="tab"
+          class="models-tab is-active"
+          data-models-tab="overview"
+          aria-selected="true"
+        >
+          <span class="models-tab-label" data-i18n-key="models.tab.overview">Overview</span>
+          <span class="models-tab-count"><%= modelsData.totalBenchmarks %></span>
+        </button>
+        <% modelsData.benchmarks.forEach((bench) => { %>
+          <button
+            type="button"
+            role="tab"
+            class="models-tab"
+            data-models-tab="<%= bench.id %>"
+            aria-selected="false"
+          >
+            <span class="models-tab-label"><%= bench.name %></span>
+            <span class="models-tab-cat"><%= bench.category %></span>
+          </button>
+        <% }) %>
+      </div>
+
+      <section class="models-meta-strip" data-models-meta aria-live="polite">
+        <p class="models-meta-desc" data-models-meta-desc data-i18n-key="models.overview.desc">
+          Normalized composite index (0–100, relative to top score per benchmark) aggregated automatically from all registered benchmark JSON files.
+        </p>
+        <div class="models-meta-badges" data-models-meta-badges>
+          <% if (modelsData.latestUpdatedAt) { %>
+            <span class="models-meta-badge">
+              <span data-i18n-key="models.meta.updated">Updated</span>: <%= modelsData.latestUpdatedAt %>
+            </span>
+          <% } %>
+        </div>
+      </section>
+
+      <section class="models-toolbar" role="region" aria-label="Filter models" data-models-toolbar>
+        <div class="models-filter-group" role="group" aria-label="License filter">
+          <button type="button" class="models-chip is-active" data-models-license="all" aria-pressed="true" data-i18n-key="models.filter.all">All</button>
+          <button type="button" class="models-chip" data-models-license="open" aria-pressed="false" data-i18n-key="models.filter.open">Open Weights</button>
+          <button type="button" class="models-chip" data-models-license="closed" aria-pressed="false" data-i18n-key="models.filter.closed">Closed API</button>
+          <button type="button" class="models-chip models-chip-toggle" data-models-reasoning aria-pressed="false" data-i18n-key="models.filter.reasoning">Reasoning</button>
+        </div>
+
+        <div class="models-controls-right">
+          <select class="models-select" data-models-provider aria-label="Filter by provider">
+            <option value="all" data-i18n-key="models.filter.providerAll">All Providers</option>
+            <% modelsData.providers.forEach((provider) => { %>
+              <option value="<%= provider %>"><%= provider %></option>
+            <% }) %>
+          </select>
+
+          <input
+            type="search"
+            class="models-search"
+            data-models-search
+            data-i18n-placeholder-key="models.filter.searchPlaceholder"
+            placeholder="Search model, provider, or notes…"
+            aria-label="Search models"
+            autocomplete="off"
+          />
+
+          <span class="models-status" data-models-status aria-live="polite">
+            <%= modelsData.totalModels %> / <%= modelsData.totalModels %>
+          </span>
+        </div>
+      </section>
+
+      <section class="models-table-card">
+        <div class="models-table-wrap">
+          <table class="models-table" data-models-table>
+            <thead data-models-thead>
+              <tr>
+                <th scope="col" class="col-rank" data-i18n-key="models.col.rank">#</th>
+                <th scope="col" class="col-model">
+                  <button type="button" class="models-sort-btn" data-sort-key="model">
+                    <span data-i18n-key="models.col.model">Model</span>
+                    <span class="sort-icon" aria-hidden="true">↕</span>
+                  </button>
+                </th>
+                <th scope="col" class="col-composite" aria-sort="descending">
+                  <button type="button" class="models-sort-btn is-sorted" data-sort-key="avgNormalized">
+                    <span data-i18n-key="models.col.composite">Composite</span>
+                    <span class="sort-icon" aria-hidden="true">↓</span>
+                  </button>
+                </th>
+                <% modelsData.benchmarks.forEach((bench) => { %>
+                  <th scope="col" class="col-bench">
+                    <button type="button" class="models-sort-btn" data-sort-key="bench:<%= bench.id %>">
+                      <span><%= bench.name %></span>
+                      <span class="sort-icon" aria-hidden="true">↕</span>
+                    </button>
+                  </th>
+                <% }) %>
+              </tr>
+            </thead>
+            <tbody data-models-tbody>
+              <% modelsData.overview.forEach((row, idx) => { %>
+                <tr>
+                  <td class="col-rank">
+                    <span class="models-rank<%= idx < 3 ? ` is-top-${idx + 1}` : '' %>"><%= idx + 1 %></span>
+                  </td>
+                  <td class="col-model">
+                    <div class="models-model-cell">
+                      <span class="models-model-name"><%= row.model %></span>
+                      <div class="models-model-meta">
+                        <span class="models-provider-label"><%= row.provider %></span>
+                        <span class="models-badge <%= row.openWeights ? 'is-open' : 'is-closed' %>"><%= row.openWeights ? 'Open' : 'API' %></span>
+                        <% if (row.reasoning) { %>
+                          <span class="models-badge is-reasoning">Reasoning</span>
+                        <% } %>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="col-composite">
+                    <div class="models-bar-cell">
+                      <span class="models-score-val"><%= row.avgNormalized.toFixed(1) %></span>
+                      <div class="models-bar-track" aria-hidden="true">
+                        <div class="models-bar-fill" style="width: <%= Math.min(100, Math.max(0, row.avgNormalized)) %>%"></div>
+                      </div>
+                    </div>
+                  </td>
+                  <% modelsData.benchmarks.forEach((bench) => { %>
+                    <td class="col-bench">
+                      <span class="models-bench-val"><%= formatScore(row.scores[bench.id], bench.unit) %></span>
+                    </td>
+                  <% }) %>
+                </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="models-empty-state" data-models-empty hidden>
+          <p data-i18n-key="models.empty">No models match the current filters.</p>
+          <button type="button" class="models-reset-btn" data-models-reset data-i18n-key="models.filter.reset">Reset filters</button>
+        </div>
+      </section>
+    <% } %>
+
+    <details class="models-ext-card">
+      <summary class="models-ext-summary">
+        <span class="models-ext-icon" aria-hidden="true">+</span>
+        <span data-i18n-key="models.guide.summary">How to add a new benchmark (1 file / 1 command)</span>
+      </summary>
+      <div class="models-ext-body">
+        <p data-i18n-key="models.guide.lead">
+          This leaderboard automatically discovers every *.json file under source/_data/benchmarks/ at build time — zero template or code changes required.
+        </p>
+        <pre class="models-ext-code"><code># Option 1: Scaffold with 1 command
+node tools/add-benchmark.js --id=pinchbench --name="PinchBench" --category="Agent" --unit="%"
+
+# Option 2: Drop any valid JSON file into source/_data/benchmarks/&lt;id&gt;.json
+{
+  "id": "pinchbench",
+  "name": "PinchBench",
+  "category": "Agent",
+  "unit": "%",
+  "higherIsBetter": true,
+  "sourceName": "PinchBench",
+  "sourceUrl": "https://example.com",
+  "updatedAt": "2026-11-22",
+  "entries": [
+    { "model": "Claude Sonnet 4.5", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 82.4, "releaseDate": "2026-09" }
+  ]
+}</code></pre>
+      </div>
+    </details>
+  </main>
+</article>
+
+<script id="models-board-data" type="application/json"><%- safeJson %></script>
+<script src="<%- url_for('/js/models-board.js') %>" defer></script>

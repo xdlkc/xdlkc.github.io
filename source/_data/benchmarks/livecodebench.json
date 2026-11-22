@@ -1,0 +1,103 @@
+{
+  "id": "livecodebench",
+  "name": "LiveCodeBench",
+  "category": "竞赛编程",
+  "description": "Contamination-free competitive programming benchmark continuously collected from LeetCode, AtCoder, and Codeforces.",
+  "unit": "%",
+  "higherIsBetter": true,
+  "sourceName": "LiveCodeBench",
+  "sourceUrl": "https://livecodebench.github.io/",
+  "updatedAt": "2026-11-20",
+  "entries": [
+    {
+      "model": "GPT-5",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 84.5,
+      "releaseDate": "2026-08",
+      "notes": "v5 pass@1"
+    },
+    {
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 81.2,
+      "releaseDate": "2026-06",
+      "notes": "v5 pass@1"
+    },
+    {
+      "model": "DeepSeek-R1-0528",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 78.8,
+      "releaseDate": "2026-05",
+      "notes": "v5 pass@1"
+    },
+    {
+      "model": "Qwen3-235B-A22B",
+      "provider": "Alibaba",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 76.4,
+      "releaseDate": "2026-07",
+      "notes": "Thinking mode"
+    },
+    {
+      "model": "Claude Sonnet 4.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 75.6,
+      "releaseDate": "2026-09",
+      "notes": "Extended thinking"
+    },
+    {
+      "model": "GLM-4.5",
+      "provider": "Zhipu",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 72.9,
+      "releaseDate": "2026-08",
+      "notes": "Thinking mode"
+    },
+    {
+      "model": "Claude Opus 4.1",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 71.8,
+      "releaseDate": "2026-08",
+      "notes": "Extended thinking"
+    },
+    {
+      "model": "Kimi K2",
+      "provider": "Moonshot",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 68.5,
+      "releaseDate": "2026-07",
+      "notes": "Direct generation"
+    },
+    {
+      "model": "DeepSeek-V3.1",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 67.2,
+      "releaseDate": "2026-09",
+      "notes": "Non-thinking mode"
+    },
+    {
+      "model": "Llama 4 Maverick",
+      "provider": "Meta",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 56.4,
+      "releaseDate": "2026-04",
+      "notes": "v5 pass@1"
+    }
+  ]
+}
