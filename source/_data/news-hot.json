@@ -1,14 +1,172 @@
 [
   {
-    "id": "hot-a732e441",
+    "id": "hot-97e97a57",
     "rank": 1,
+    "title": "国家发改委有关负责同志就《实施全面节约战略行动方案》答记者问",
+    "industry": "金融与政策",
+    "topics": [
+      "政策动态",
+      "宏观经济",
+      "政府动态",
+      "市场政策"
+    ],
+    "heatScore": 97.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-22T19:35:37.651Z",
+    "summary": "国家发展改革委有关负责同志就《实施全面节约战略行动方案》答记者问，对这一全面节约战略的行动方案作出官方解读。该文件由国家发改委层面发布并答疑，是全面节约战略落地实施的重要政策依据。",
+    "items": [
+      {
+        "id": "aihot-20261122-ndrc-policy-554abe62",
+        "title": "国家发改委有关负责同志就《实施全面节约战略行动方案》答记者问",
+        "source": "国家发改委 · 政策通知",
+        "publishedAt": "2026-11-22T19:35:37.651Z",
+        "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261103_1408528.html",
+        "score": 92
+      },
+      {
+        "id": "aihot-20261122-ndrc-policy-d90c7016",
+        "title": "国家发展改革委等部门联合印发《实施全面节约战略行动方案》",
+        "source": "国家发改委 · 政策通知",
+        "publishedAt": "2026-11-22T19:35:37.651Z",
+        "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261103_1408529.html",
+        "score": 90
+      }
+    ]
+  },
+  {
+    "id": "hot-cc2b4c22",
+    "rank": 2,
+    "title": "OpenShell 加入 CNCF：以开放治理保障 Agentic AI 安全",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "开源生态",
+      "AI 安全"
+    ],
+    "heatScore": 84.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-22T19:35:35.657Z",
+    "summary": "在 KubeCon + CloudNativeCon North America 上，CNCF 接纳 NVIDIA 捐赠的 OpenShell 为 Sandbox 项目。OpenShell 是一个用于保护和治理自主 AI 代理的开源运行时，项目将以开放治理模式推进 Agentic AI 的安全化。",
+    "items": [
+      {
+        "id": "aihot-20261122-cncf-blog-aca02c4b",
+        "title": "OpenShell 加入 CNCF：以开放治理保障 Agentic AI 安全",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-22T19:35:35.657Z",
+        "url": "https://www.cncf.io/blog/2026/11/10/welcoming-openshell-to-the-cncf-open-governance-to-secure-agentic-ai/",
+        "score": 83
+      }
+    ]
+  },
+  {
+    "id": "hot-127d214d",
+    "rank": 3,
+    "title": "Kyverno 的 CEL 准入成本究竟花在哪：Kubernetes 准入控制优化剖析",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "研发效能",
+      "开源生态"
+    ],
+    "heatScore": 82.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-22T19:35:35.660Z",
+    "summary": "Kyverno 团队对 Kubernetes 准入路径进行性能剖析，发现约 86% 的成本并不在 CEL 策略表达式求值环节，与其为求值而设计的预期相反。文章据此拆解 Kyverno CEL 准入开销的真实去向，为准入控制优化提供依据。",
+    "items": [
+      {
+        "id": "aihot-20261122-cncf-blog-70921269",
+        "title": "Kyverno 的 CEL 准入成本究竟花在哪：Kubernetes 准入控制优化剖析",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-22T19:35:35.660Z",
+        "url": "https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "hot-cb94d271",
+    "rank": 4,
+    "title": "当同步窗口关闭时：Argo CD self-heal 如何跳过了迁移钩子",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "研发效能",
+      "开源生态"
+    ],
+    "heatScore": 80.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-22T19:35:35.658Z",
+    "summary": "CNCF 博客复盘了一个真实案例：客户在同步窗口关闭期间推送版本，Argo CD 报告 sync 成功，但迁移钩子实际没有执行。文章逐步拆解了 self-heal 机制跳过该迁移钩子的具体过程与原因。",
+    "items": [
+      {
+        "id": "aihot-20261122-cncf-blog-7829f3b4",
+        "title": "当同步窗口关闭时：Argo CD self-heal 如何跳过了迁移钩子",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-22T19:35:35.658Z",
+        "url": "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/",
+        "score": 77
+      }
+    ]
+  },
+  {
+    "id": "hot-7e25acd8",
+    "rank": 5,
+    "title": "你的 OpenTelemetry 管道正在变成性能瓶颈吗？",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "可观测性",
+      "开源生态"
+    ],
+    "heatScore": 77.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-22T19:35:35.661Z",
+    "summary": "作者在 CNCF Blog 分享其在 Cloud Native Days Austria 2026 上的演讲《How to Defeat OTel's Silent Killer: The Performance Overhead》，聚焦 OpenTelemetry 管道的性能开销问题。演讲指出，构建可观测性管道时数据采集（collecting）的开销是一个容易被忽视的问题。",
+    "items": [
+      {
+        "id": "aihot-20261122-cncf-blog-1739f35a",
+        "title": "你的 OpenTelemetry 管道正在变成性能瓶颈吗？",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-22T19:35:35.661Z",
+        "url": "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/",
+        "score": 72
+      }
+    ]
+  },
+  {
+    "id": "hot-df5a9f17",
+    "rank": 6,
+    "title": "如何在不受你控制的 Kubernetes 环境中支持你的应用",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "开源生态"
+    ],
+    "heatScore": 72.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-22T19:35:35.659Z",
+    "summary": "CNCF 博客文章讲解如何为客户运行、不受你掌控的 Kubernetes 环境中的应用提供支持，并指出这与自己集群里运行应用是两回事。文章点出核心难点在于你无法控制集群配置、升级节奏和周边工具。",
+    "items": [
+      {
+        "id": "aihot-20261122-cncf-blog-764e1bed",
+        "title": "如何在不受你控制的 Kubernetes 环境中支持你的应用",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-22T19:35:35.659Z",
+        "url": "https://www.cncf.io/blog/2026/11/19/how-to-support-your-app-on-kubernetes-environments-you-dont-control/",
+        "score": 64
+      }
+    ]
+  },
+  {
+    "id": "hot-a732e441",
+    "rank": 7,
     "title": "Perplexity 推出 Monitor API：将网页搜索从一次性查询变为持续监控",
     "industry": "AI",
     "topics": [
       "Agent 智能体",
       "模型发布"
     ],
-    "heatScore": 78.5,
+    "heatScore": 70.8,
     "sourceCount": 1,
     "latestAt": "2026-11-22T14:20:28.000Z",
     "summary": "Perplexity 发布 Monitor API，按计划持续搜索网络，仅在出现相关变化时通过 Webhook 通知智能体。该 API 内置决策模型自动过滤不重要的结果，减少噪音。这也是 Perplexity 通过开发者工具在同质化聊天机器人业务中寻求差异化战略的一部分。",
@@ -25,13 +183,13 @@
   },
   {
     "id": "hot-683b967c",
-    "rank": 2,
+    "rank": 8,
     "title": "AWS Quick 上线 Meta ads AI 连接器，广告主可用自然语言创建与管理广告活动",
     "industry": "AI",
     "topics": [
       "Agent 智能体"
     ],
-    "heatScore": 51,
+    "heatScore": 46,
     "sourceCount": 1,
     "latestAt": "2026-11-22T01:59:13.000Z",
     "summary": "Meta ads AI 连接器现已在 AWS Quick 中可用，Meta 广告主可在 Quick 内用自然语言创建、管理和分析广告活动。连接器保持与 Meta 广告管理网络的连接，并支持将 Meta 广告数据与第一方及第三方数据源结合，构建仪表板、文档、演示文稿和自动化工作流。",
@@ -48,13 +206,13 @@
   },
   {
     "id": "hot-93a27770",
-    "rank": 3,
+    "rank": 9,
     "title": "AWS 推出 SageMaker HyperPod Global Inference Gateway：单一端点跨区域、跨集群路由推理请求",
     "industry": "AI",
     "topics": [
       "基础设施"
     ],
-    "heatScore": 25.6,
+    "heatScore": 23.1,
     "sourceCount": 1,
     "latestAt": "2026-11-20T22:35:24.000Z",
     "summary": "AWS 推出 SageMaker HyperPod Global Inference Gateway，通过一个托管端点即可在单区域或多区域的 HyperPod 集群间路由推理请求。该网关自动选择最优集群并支持故障自动转移，所有请求经 AWS PrivateLink 使用 SigV4 与 IAM 完成认证。",
@@ -71,7 +229,7 @@
   },
   {
     "id": "hot-d2020d54",
-    "rank": 4,
+    "rank": 10,
     "title": "AWS 详解 Agent Toolkit 分布式 KV 缓存技能：自托管 LLM 推理成本最高降 40%、首 Token 延迟降 80%",
     "industry": "AI",
     "topics": [
@@ -79,7 +237,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 25.4,
+    "heatScore": 22.9,
     "sourceCount": 1,
     "latestAt": "2026-11-21T00:14:26.000Z",
     "summary": "AWS 在 Agent Toolkit 中提供分布式 KV 缓存 Agent 技能，可从编码代理侧自动评估并配置基于 Amazon ElastiCache 的缓存，使自托管 LLM 推理成本最多降低 40%、首 Token 时间最多降低 80%。该方案通过复用多轮对话的上下文 KV 缓存，避免 GPU 每轮重复计算相同上下文，为自托管大模型的团队提供了可直接落地的降本增效路径。",
@@ -95,38 +253,49 @@
     ]
   },
   {
-    "id": "hot-343cb11f",
-    "rank": 5,
-    "title": "AWS 为 SageMaker HyperPod Slurm 推出可观测性与用户管理托管集群扩展",
-    "industry": "AI",
+    "id": "hot-a7d801d8",
+    "rank": 11,
+    "title": "Cloudflare WAF 如何防护 ruby2shell（CVE-2026-132825）漏洞",
+    "industry": "工程与开源",
     "topics": [
-      "基础设施"
+      "安全",
+      "开源生态",
+      "云原生",
+      "研发效能"
     ],
-    "heatScore": 24.6,
+    "heatScore": 22.8,
     "sourceCount": 1,
-    "latestAt": "2026-11-20T23:07:03.000Z",
-    "summary": "AWS 为 Amazon SageMaker HyperPod 的 Slurm 集群推出可观测性与用户管理两类托管集群扩展，支持通过 API 和控制台以声明式方式配置节点软件。官方博客还跟随一个平台团队运行共享 Slurm 集群一个季度的实践，展示了这些扩展的实际运作方式。对用 HyperPod 承载大规模训练的平台团队而言，监控与用户权限管理可从手工运维转为统一的声明式配置。",
+    "latestAt": "2026-11-20T20:24:38.000Z",
+    "summary": "Cloudflare WAF 已面向全部客户（含 Free 免费版）开启对 ruby2shell（CVE-2026-132825）攻击的拦截。该漏洞允许攻击者在无需登录的情况下破坏默认配置的 Rails 和 Sinatra 应用内存。官方建议尽快升级 Ruby，并利用 WAF 覆盖升级前的风险空窗期。",
     "items": [
       {
-        "id": "aihot-20261120-aws-ml-21981c0e",
-        "title": "AWS 为 SageMaker HyperPod Slurm 推出可观测性与用户管理托管集群扩展",
-        "source": "AWS Machine Learning Blog",
-        "publishedAt": "2026-11-20T23:07:03.000Z",
-        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
-        "score": 76
+        "id": "aihot-20261120-cloudflare-blog-97c1c5bc",
+        "title": "Cloudflare WAF 如何防护 ruby2shell（CVE-2026-132825）漏洞",
+        "source": "Cloudflare Blog",
+        "publishedAt": "2026-11-20T20:24:38.000Z",
+        "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
+        "score": 78
+      },
+      {
+        "id": "aihot-20261120-cloudflare-blog-f687b29a",
+        "title": "Cloudflare WAF 如何防护 phpAfterShell 及其他严重 PHP 漏洞",
+        "source": "Cloudflare Blog",
+        "publishedAt": "2026-11-20T20:00:45.000Z",
+        "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
+        "score": 78
       }
     ]
   },
   {
     "id": "hot-17d26873",
-    "rank": 6,
+    "rank": 12,
     "title": "Google Research 技术解读：Duplex 如何演化为 Gemini 替你致电商家的能力",
     "industry": "AI",
     "topics": [
       "模型发布",
       "研究"
     ],
-    "heatScore": 24.5,
+    "heatScore": 22.1,
     "sourceCount": 1,
     "latestAt": "2026-11-20T23:30:30.000Z",
     "summary": "Google Research 发布博文，详解 Duplex 电话对话 AI 技术如何演化并整合进 Gemini，让用户可以直接让 Gemini 替自己致电商家办理事务。文章以生成式 AI 为主线，回顾了这项能力从早期 Duplex 到进入 Gemini 的技术演进路径。",
@@ -142,15 +311,38 @@
     ]
   },
   {
+    "id": "hot-343cb11f",
+    "rank": 13,
+    "title": "AWS 为 SageMaker HyperPod Slurm 推出可观测性与用户管理托管集群扩展",
+    "industry": "AI",
+    "topics": [
+      "基础设施"
+    ],
+    "heatScore": 22.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-20T23:07:03.000Z",
+    "summary": "AWS 为 Amazon SageMaker HyperPod 的 Slurm 集群推出可观测性与用户管理两类托管集群扩展，支持通过 API 和控制台以声明式方式配置节点软件。官方博客还跟随一个平台团队运行共享 Slurm 集群一个季度的实践，展示了这些扩展的实际运作方式。对用 HyperPod 承载大规模训练的平台团队而言，监控与用户权限管理可从手工运维转为统一的声明式配置。",
+    "items": [
+      {
+        "id": "aihot-20261120-aws-ml-21981c0e",
+        "title": "AWS 为 SageMaker HyperPod Slurm 推出可观测性与用户管理托管集群扩展",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "score": 76
+      }
+    ]
+  },
+  {
     "id": "hot-d473833d",
-    "rank": 7,
+    "rank": 14,
     "title": "AWS Quick 推送功能更新：聊天内运行业务流程流、网页端改版与多智能体协作",
     "industry": "AI",
     "topics": [
       "Agent 智能体",
       "模型发布"
     ],
-    "heatScore": 24.1,
+    "heatScore": 21.7,
     "sourceCount": 1,
     "latestAt": "2026-11-21T01:06:42.000Z",
     "summary": "AWS 面向工作场景的 AI 工作台 Quick 发布一批更新：用户可在聊天中构建并运行业务流程流，网页端全新改版帮助规划每日事务。多个智能体可协同给出更完整的回答，并新增 Meta 广告、Amplitude 等数据源接入。",
@@ -166,15 +358,41 @@
     ]
   },
   {
+    "id": "hot-22478817",
+    "rank": 15,
+    "title": "SEC发布提案 重组综合审计追踪（CAT）治理与融资模式",
+    "industry": "金融与政策",
+    "topics": [
+      "监管政策",
+      "美股",
+      "市场结构",
+      "市场政策"
+    ],
+    "heatScore": 21.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-20T18:03:24.000Z",
+    "summary": "美国证监会（SEC）发布提案，拟解决综合审计追踪（CAT）现行治理与融资模式中的低效问题。委员会同时提议废除Regulation NMS下的规则613（Rule 613），作为CAT重组方案的一部分。",
+    "items": [
+      {
+        "id": "aihot-20261120-sec-press-c3a64193",
+        "title": "SEC发布提案 重组综合审计追踪（CAT）治理与融资模式",
+        "source": "美国证监会 (SEC)",
+        "publishedAt": "2026-11-20T18:03:24.000Z",
+        "url": "https://www.sec.gov/newsroom/press-releases/2026-117-sec-issues-proposal-restructure-consolidated-audit-trail",
+        "score": 90
+      }
+    ]
+  },
+  {
     "id": "hot-56918e8e",
-    "rank": 8,
+    "rank": 16,
     "title": "标准银行集团基于 Amazon Bedrock 用 LLM-as-a-judge 实现生成式 AI 风险评估自动化",
     "industry": "AI",
     "topics": [
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 21.5,
+    "heatScore": 19.4,
     "sourceCount": 1,
     "latestAt": "2026-11-20T20:37:31.000Z",
     "summary": "标准银行集团与 AWS Professional Services 合作，在其自有 AWS 账户中构建了生成式 AI 风险评估方案，实现审批证据的自动化采集。该方案在 Amazon Bedrock 上采用 LLM-as-a-judge，将每个用例对照国际 AI 标准与银行内部政策自动打分，为风险委员会提供一致、可追溯的评估证据。",
@@ -190,15 +408,93 @@
     ]
   },
   {
+    "id": "hot-eaa93eca",
+    "rank": 17,
+    "title": "SEC 指控 Backward Hat Capital 及其联合创始人涉 5.6 亿美元发行欺诈并获紧急救济",
+    "industry": "金融与政策",
+    "topics": [
+      "监管执法",
+      "美国市场",
+      "美股",
+      "市场政策"
+    ],
+    "heatScore": 18,
+    "sourceCount": 1,
+    "latestAt": "2026-11-20T14:28:28.000Z",
+    "summary": "美国证监会（SEC）宣布指控总部位于印第安纳波利斯的 Backward Hat Capital 及其联合创始人 Phillip Williams 与 Devin 涉嫌 5.6 亿美元发行欺诈。SEC 已获得临时限制令、资产冻结、加快取证等紧急救济措施。",
+    "items": [
+      {
+        "id": "aihot-20261120-sec-press-ce462305",
+        "title": "SEC 指控 Backward Hat Capital 及其联合创始人涉 5.6 亿美元发行欺诈并获紧急救济",
+        "source": "美国证监会 (SEC)",
+        "publishedAt": "2026-11-20T14:28:28.000Z",
+        "url": "https://www.sec.gov/newsroom/press-releases/2026-116-sec-charges-indianapolis-based-backward-hat-capital-its-co-founders-560-million-dollar-offering",
+        "score": 82
+      }
+    ]
+  },
+  {
+    "id": "hot-3f542c7e",
+    "rank": 18,
+    "title": "美联储公布 College Fed Challenge 大学挑战赛获奖名单",
+    "industry": "金融与政策",
+    "topics": [
+      "央行动态",
+      "金融与政策",
+      "市场政策",
+      "政府动态"
+    ],
+    "heatScore": 16.3,
+    "sourceCount": 1,
+    "latestAt": "2026-11-20T21:15:00.000Z",
+    "summary": "美联储官方新闻稿宣布 College Fed Challenge（大学美联储挑战赛）获奖者。公告本身未在正文中给出更多细节，具体获奖团队及奖项信息以其官方新闻稿为准。",
+    "items": [
+      {
+        "id": "aihot-20261120-fed-press-2fab8d5e",
+        "title": "美联储公布 College Fed Challenge 大学挑战赛获奖名单",
+        "source": "美联储官方新闻稿 (Fed)",
+        "publishedAt": "2026-11-20T21:15:00.000Z",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm",
+        "score": 46
+      }
+    ]
+  },
+  {
+    "id": "hot-e6ba0d9f",
+    "rank": 19,
+    "title": "美联储发布银行高级财务官准备金余额管理策略与实践调查结果",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观政策",
+      "金融与政策",
+      "市场政策",
+      "政府动态"
+    ],
+    "heatScore": 15.7,
+    "sourceCount": 1,
+    "latestAt": "2026-11-20T15:00:00.000Z",
+    "summary": "美联储理事会发布了针对银行高级财务官的调查结果，内容聚焦银行管理准备金余额的策略与实践。该调查汇集了银行在准备金余额管理方面的做法信息。",
+    "items": [
+      {
+        "id": "aihot-20261120-fed-press-4de45d8b",
+        "title": "美联储发布银行高级财务官准备金余额管理策略与实践调查结果",
+        "source": "美联储官方新闻稿 (Fed)",
+        "publishedAt": "2026-11-20T15:00:00.000Z",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+        "score": 62
+      }
+    ]
+  },
+  {
     "id": "hot-6d5c7167",
-    "rank": 9,
+    "rank": 20,
     "title": "OpenAI 公布多层防御策略应对对抗性蒸馏，防止模型能力被窃取",
     "industry": "AI",
     "topics": [
       "模型发布",
       "研究"
     ],
-    "heatScore": 16.8,
+    "heatScore": 15.2,
     "sourceCount": 1,
     "latestAt": "2026-11-20T10:00:00.000Z",
     "summary": "OpenAI 公布了应对对抗性蒸馏的多层防护策略，结合模型训练、安全机制、检测与处置手段，防止前沿模型能力被窃取。该体系覆盖从训练加固到检测与执法的完整链条，用于对抗基于蒸馏的能力提取攻击。此举表明头部实验室正将防蒸馏能力纳入模型安全与竞争壁垒建设的核心环节。",
@@ -210,152 +506,6 @@
         "publishedAt": "2026-11-20T10:00:00.000Z",
         "url": "https://openai.com/index/combatting-adversarial-distillation",
         "score": 76
-      }
-    ]
-  },
-  {
-    "id": "hot-6057b4eb",
-    "rank": 10,
-    "title": "Inkling 2 Mini 现已登陆 Hugging Face：面向本地部署的高性能迷你模型",
-    "industry": "AI",
-    "topics": [
-      "模型发布",
-      "开源生态"
-    ],
-    "heatScore": 13.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T00:00:00.000Z",
-    "summary": "Inkling 2 Mini 已正式上线 Hugging Face，官方称其在本地部署场景下可提供前沿级别的性能表现。模型以 Mini 体量主打轻量化本地运行，适合希望在自有硬件上部署模型的开发者。",
-    "items": [
-      {
-        "id": "aihot-20261120-hugging-face-b10e367d",
-        "title": "Inkling 2 Mini 现已登陆 Hugging Face：面向本地部署的高性能迷你模型",
-        "source": "Hugging Face Blog",
-        "publishedAt": "2026-11-20T00:00:00.000Z",
-        "url": "https://huggingface.co/blog/inkling2mini",
-        "score": 85
-      }
-    ]
-  },
-  {
-    "id": "hot-df79f648",
-    "rank": 11,
-    "title": "Hugging Face 发布 Harness Adapters：将你喜爱的模型适配到自己的 Harness，兼顾性能与成本",
-    "industry": "AI",
-    "topics": [
-      "模型发布",
-      "开源生态"
-    ],
-    "heatScore": 12.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T00:00:00.000Z",
-    "summary": "Hugging Face 官方发布 Harness Adapters，用于把常用的模型适配到自己的 Harness 上，从而提升性能并降低成本。该方案聚焦大规模使用场景，为在固定 Harness 下持续使用模型提供了官方适配路径。",
-    "items": [
-      {
-        "id": "aihot-20261120-hugging-face-01c9cd36",
-        "title": "Hugging Face 发布 Harness Adapters：将你喜爱的模型适配到自己的 Harness，兼顾性能与成本",
-        "source": "Hugging Face Blog",
-        "publishedAt": "2026-11-20T00:00:00.000Z",
-        "url": "https://huggingface.co/blog/harness-adapters-at-scale",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-5abb1acf",
-    "rank": 12,
-    "title": "OpenAI 推出 MedChemBench：评测 AI 在早期药物发现中的能力",
-    "industry": "AI",
-    "topics": [
-      "模型发布",
-      "基础设施",
-      "研究"
-    ],
-    "heatScore": 12.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T00:00:00.000Z",
-    "summary": "OpenAI 推出 MedChemBench 基准，评估 AI 模型解读分子结构、依据实验证据推理以及在早期药物发现中筛选候选化合物的能力。该基准为衡量 AI 在药物化学研究中的实际表现提供了统一标准，直接回应了 AI 能否帮助科学家识别有潜力药物候选物的核心问题。",
-    "items": [
-      {
-        "id": "aihot-20261120-openai-news-e12e82bd",
-        "title": "OpenAI 推出 MedChemBench：评测 AI 在早期药物发现中的能力",
-        "source": "OpenAI News",
-        "publishedAt": "2026-11-20T00:00:00.000Z",
-        "url": "https://openai.com/index/introducing-medchembench",
-        "score": 72
-      }
-    ]
-  },
-  {
-    "id": "hot-75e68578",
-    "rank": 13,
-    "title": "Hebbia 实测 GPT-6 Astra：金融研究场景中信源覆盖与引用相关性获改善",
-    "industry": "AI",
-    "topics": [
-      "模型发布",
-      "研究"
-    ],
-    "heatScore": 11.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T00:00:00.000Z",
-    "summary": "AI 金融分析平台 Hebbia 对 GPT-6 Astra 进行了预发布阶段评测，结果显示其在金融研究任务中的信源覆盖、引用相关性与呈现质量均有提升。该内容来自 OpenAI 官方客户案例，尚未披露具体量化数据，属早期使用反馈而非正式性能报告。",
-    "items": [
-      {
-        "id": "aihot-20261120-openai-news-ba57fe22",
-        "title": "Hebbia 实测 GPT-6 Astra：金融研究场景中信源覆盖与引用相关性获改善",
-        "source": "OpenAI News",
-        "publishedAt": "2026-11-20T00:00:00.000Z",
-        "url": "https://openai.com/business/customer-stories/hebbia",
-        "score": 62
-      }
-    ]
-  },
-  {
-    "id": "hot-571bef90",
-    "rank": 14,
-    "title": "谷歌研究院发布博文：一款没有量子计算机就无法获胜的游戏",
-    "industry": "AI",
-    "topics": [
-      "模型发布",
-      "研究"
-    ],
-    "heatScore": 10.6,
-    "sourceCount": 1,
-    "latestAt": "2026-11-19T20:03:00.000Z",
-    "summary": "谷歌研究院发布博文，解析一款只有量子计算机参与者才能获胜的游戏，直观展示量子计算相对于经典计算的优势。文章以游戏形式说明量子计算机能在特定任务上完成经典方法无法实现的事情。这种互动式讲解降低了量子优势概念的理解门槛，对开发者与科普读者都有参考价值。",
-    "items": [
-      {
-        "id": "aihot-20261119-google-research-07556daa",
-        "title": "谷歌研究院发布博文：一款没有量子计算机就无法获胜的游戏",
-        "source": "Google Research",
-        "publishedAt": "2026-11-19T20:03:00.000Z",
-        "url": "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/",
-        "score": 68
-      }
-    ]
-  },
-  {
-    "id": "hot-bf51d98d",
-    "rank": 15,
-    "title": "NVIDIA 展示开发者如何用前沿 AI 智能体在 Omniverse 中构建仿真应用",
-    "industry": "AI",
-    "topics": [
-      "Agent 智能体",
-      "模型发布",
-      "基础设施"
-    ],
-    "heatScore": 9.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-19T17:00:35.000Z",
-    "summary": "NVIDIA 官方博客介绍开发者将前沿 AI 模型与 Omniverse 库结合，把仿真构想转化为可运行应用的工作方式。该流程涵盖组装资产、连接物理与渲染、验证场景行为，应用于场景探索、故障排查和设计改进。",
-    "items": [
-      {
-        "id": "aihot-20261119-nvidia-blog-9d796258",
-        "title": "NVIDIA 展示开发者如何用前沿 AI 智能体在 Omniverse 中构建仿真应用",
-        "source": "NVIDIA Blog",
-        "publishedAt": "2026-11-19T17:00:35.000Z",
-        "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-        "score": 65
       }
     ]
   }
