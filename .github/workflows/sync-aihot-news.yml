@@ -16,6 +16,16 @@ on:
         required: false
         default: "15"
         type: string
+      industries:
+        description: "Comma-separated industries filter (e.g. AI,工程与开源,金融与政策; empty = all)"
+        required: false
+        default: ""
+        type: string
+      source_kinds:
+        description: "Comma-separated source kinds filter (e.g. rss,atom,json,web; empty = all)"
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -42,23 +52,25 @@ jobs:
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
 
-      - name: Curate AI news into source/_data/news.json
+      - name: Curate multi-industry news into source/_data/news.json & news-hot.json
         env:
           AIHOT_LLM_API_KEY: ${{ secrets.AIHOT_LLM_API_KEY || secrets.GLM_API_KEY }}
           AIHOT_LLM_BASE_URL: ${{ vars.AIHOT_LLM_BASE_URL || 'https://open.bigmodel.cn/api/coding/paas/v4' }}
           AIHOT_LLM_MODEL: ${{ vars.AIHOT_LLM_MODEL || 'glm-5.3-flash' }}
           AIHOT_WINDOW_HOURS: ${{ inputs.hours || '72' }}
           AIHOT_MAX_NEW: ${{ inputs.max_new || '15' }}
+          AIHOT_INDUSTRIES: ${{ inputs.industries || '' }}
+          AIHOT_SOURCE_KINDS: ${{ inputs.source_kinds || '' }}
         run: node tools/aihot-sync.js
 
-      - name: Commit and push updated news.json
+      - name: Commit and push updated news.json and news-hot.json
         run: |
-          if [ -n "$(git status --porcelain source/_data/news.json)" ]; then
+          if [ -n "$(git status --porcelain source/_data/news.json source/_data/news-hot.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add source/_data/news.json
-            git commit -m "chore(news): sync AIHOT curated AI news"
+            git add source/_data/news.json source/_data/news-hot.json
+            git commit -m "chore(news): sync multi-industry news and hot events"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           else
-            echo "No new curated news items to commit."
+            echo "No new curated news items or hot events to commit."
           fi

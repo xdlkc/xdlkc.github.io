@@ -1,136 +1,313 @@
 {
-  "$comment": "Curated AI RSS/Atom sources adapted from AIHOT (MIT). Tiers: T1 (official/research, threshold 60), T2 (media/independent, threshold 76).",
+  "$comment": "Curated multi-industry News Hub sources (RSS/Atom/JSON/Web) adapted from AIHOT (MIT). Tiers: T1 (official/research/policy, threshold 60), T2 (media/community/independent, threshold 76). Items scoring between browseFloor and tier threshold are kept with selected=false for the All feed.",
   "thresholds": {
     "T1": 60,
     "T1_5": 65,
-    "T2": 76
+    "T2": 76,
+    "browseFloor": 45
   },
   "sources": [
     {
       "id": "rss-openai-news",
       "name": "OpenAI News",
       "feedUrl": "https://openai.com/news/rss.xml",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T1",
-      "tags": ["官方"]
+      "tags": ["官方"],
+      "topics": ["模型发布", "Agent 智能体", "研究"]
     },
     {
       "id": "rss-google-deepmind",
       "name": "Google DeepMind",
       "feedUrl": "https://deepmind.google/blog/rss.xml",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T1",
-      "tags": ["官方"]
+      "tags": ["官方"],
+      "topics": ["模型发布", "研究"]
     },
     {
       "id": "rss-google-research",
       "name": "Google Research",
       "feedUrl": "https://research.google/blog/rss/",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T1",
-      "tags": ["官方", "研究"]
+      "tags": ["官方", "研究"],
+      "topics": ["研究", "基础设施"]
     },
     {
       "id": "rss-hugging-face",
       "name": "Hugging Face Blog",
       "feedUrl": "https://huggingface.co/blog/feed.xml",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T1",
-      "tags": ["官方", "开源"]
+      "tags": ["官方", "开源"],
+      "topics": ["开源生态", "模型发布"]
     },
     {
       "id": "rss-microsoft-research",
       "name": "Microsoft Research",
       "feedUrl": "https://www.microsoft.com/en-us/research/feed/",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T1",
-      "tags": ["官方", "研究"]
+      "tags": ["官方", "研究"],
+      "topics": ["研究", "Agent 智能体"]
     },
     {
       "id": "rss-nvidia-blog",
       "name": "NVIDIA Blog",
       "feedUrl": "https://blogs.nvidia.com/feed/",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T1",
-      "tags": ["官方"]
+      "tags": ["官方"],
+      "topics": ["基础设施", "模型发布"]
     },
     {
       "id": "rss-aws-ml",
       "name": "AWS Machine Learning Blog",
       "feedUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T1",
-      "tags": ["官方", "工程"]
+      "tags": ["官方", "工程"],
+      "topics": ["基础设施", "Agent 智能体"]
     },
     {
       "id": "rss-github-ai",
       "name": "GitHub Blog · AI & ML",
       "feedUrl": "https://github.blog/ai-and-ml/feed/",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T1",
-      "tags": ["官方", "工程"]
+      "tags": ["官方", "工程"],
+      "topics": ["Agent 智能体", "开源生态"]
     },
     {
       "id": "rss-mistral",
       "name": "Mistral AI",
       "feedUrl": "https://mistral.ai/news/rss",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T1",
-      "tags": ["官方"]
+      "tags": ["官方"],
+      "topics": ["模型发布", "开源生态"]
     },
     {
       "id": "rss-bair",
       "name": "Berkeley AI Research",
       "feedUrl": "https://bair.berkeley.edu/blog/feed.xml",
+      "kind": "atom",
+      "industry": "AI",
       "tier": "T1",
-      "tags": ["研究"]
+      "tags": ["研究"],
+      "topics": ["研究", "开源生态"]
     },
     {
       "id": "rss-the-verge-ai",
       "name": "The Verge · AI",
       "feedUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "kind": "atom",
+      "industry": "AI",
       "tier": "T2",
-      "tags": ["媒体"]
+      "tags": ["媒体"],
+      "topics": ["模型发布", "Agent 智能体"]
     },
     {
       "id": "rss-techcrunch-ai",
       "name": "TechCrunch · AI",
       "feedUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T2",
-      "tags": ["媒体"]
+      "tags": ["媒体"],
+      "topics": ["模型发布", "基础设施"]
     },
     {
       "id": "rss-ars-technica-ai",
       "name": "Ars Technica · AI",
       "feedUrl": "https://arstechnica.com/ai/feed/",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T2",
-      "tags": ["媒体"]
+      "tags": ["媒体"],
+      "topics": ["研究", "基础设施"]
     },
     {
       "id": "rss-mit-tech-review-ai",
       "name": "MIT Technology Review · AI",
       "feedUrl": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T2",
-      "tags": ["媒体"]
+      "tags": ["媒体"],
+      "topics": ["研究", "模型发布"]
     },
     {
       "id": "rss-the-decoder",
       "name": "The Decoder",
       "feedUrl": "https://the-decoder.com/feed/",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T2",
-      "tags": ["媒体"]
+      "tags": ["媒体"],
+      "topics": ["模型发布", "Agent 智能体"]
     },
     {
       "id": "rss-simon-willison",
       "name": "Simon Willison",
       "feedUrl": "https://simonwillison.net/atom/everything/",
+      "kind": "atom",
+      "industry": "AI",
       "tier": "T2",
-      "tags": ["个人"]
+      "tags": ["个人"],
+      "topics": ["Agent 智能体", "开源生态"]
     },
     {
       "id": "rss-import-ai",
       "name": "Import AI",
       "feedUrl": "https://importai.substack.com/feed",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T2",
-      "tags": ["个人", "周刊"]
+      "tags": ["个人", "周刊"],
+      "topics": ["研究", "模型发布"]
     },
     {
       "id": "rss-latent-space",
       "name": "Latent Space",
       "feedUrl": "https://www.latent.space/feed",
+      "kind": "rss",
+      "industry": "AI",
       "tier": "T2",
-      "tags": ["个人"]
+      "tags": ["个人"],
+      "topics": ["Agent 智能体", "基础设施"]
+    },
+    {
+      "id": "json-hacker-news-top",
+      "name": "Hacker News Top",
+      "feedUrl": "https://hacker-news.firebaseio.com/v0/topstories.json",
+      "kind": "json",
+      "industry": "工程与开源",
+      "tier": "T2",
+      "tags": ["社区", "工程"],
+      "topics": ["开源生态", "研发效能"],
+      "jsonConfig": {
+        "adapter": "hn-top",
+        "itemUrlTemplate": "https://hacker-news.firebaseio.com/v0/item/{id}.json",
+        "limit": 12
+      }
+    },
+    {
+      "id": "rss-cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "feedUrl": "https://blog.cloudflare.com/rss/",
+      "kind": "rss",
+      "industry": "工程与开源",
+      "tier": "T1",
+      "tags": ["官方", "工程"],
+      "topics": ["云原生", "研发效能"]
+    },
+    {
+      "id": "rss-rust-blog",
+      "name": "Rust Blog",
+      "feedUrl": "https://blog.rust-lang.org/feed.xml",
+      "kind": "atom",
+      "industry": "工程与开源",
+      "tier": "T1",
+      "tags": ["官方", "开源"],
+      "topics": ["Rust & 系统", "开源生态"]
+    },
+    {
+      "id": "rss-github-engineering",
+      "name": "GitHub Engineering",
+      "feedUrl": "https://github.blog/engineering/feed/",
+      "kind": "rss",
+      "industry": "工程与开源",
+      "tier": "T1",
+      "tags": ["官方", "工程"],
+      "topics": ["开源生态", "研发效能"]
+    },
+    {
+      "id": "web-cncf-blog",
+      "name": "CNCF Blog",
+      "feedUrl": "https://www.cncf.io/blog/",
+      "kind": "web",
+      "industry": "工程与开源",
+      "tier": "T1",
+      "tags": ["官方", "云原生"],
+      "topics": ["云原生", "开源生态"],
+      "webConfig": {
+        "itemSelector": "article, .post-archive__item, .wp-block-post",
+        "titleSelector": "h2 a, h3 a, .post-archive__title a",
+        "linkSelector": "h2 a, h3 a, .post-archive__title a",
+        "summarySelector": "p, .post-archive__excerpt",
+        "dateSelector": "time, .post-archive__date"
+      }
+    },
+    {
+      "id": "rss-cnbc-markets",
+      "name": "CNBC Markets",
+      "feedUrl": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "tags": ["媒体", "市场"],
+      "topics": ["美股", "宏观"]
+    },
+    {
+      "id": "rss-yahoo-finance",
+      "name": "Yahoo Finance News",
+      "feedUrl": "https://finance.yahoo.com/news/rssindex",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "tags": ["媒体", "市场"],
+      "topics": ["美股", "宏观"]
+    },
+    {
+      "id": "rss-gnews-ashare",
+      "name": "Google News · A股市场",
+      "feedUrl": "https://news.google.com/rss/search?q=A%E8%82%A1+%E6%B2%AA%E6%B7%B1&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "tags": ["聚合", "A股"],
+      "topics": ["A股", "市场政策"]
+    },
+    {
+      "id": "rss-gnews-hkstock",
+      "name": "Google News · 港股动态",
+      "feedUrl": "https://news.google.com/rss/search?q=%E6%B8%AF%E8%82%A1+%E6%81%92%E7%94%9F%E6%8C%87%E6%95%B0&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "tags": ["聚合", "港股"],
+      "topics": ["港股", "宏观"]
+    },
+    {
+      "id": "rss-gnews-usstock",
+      "name": "Google News · 美股市场",
+      "feedUrl": "https://news.google.com/rss/search?q=%E7%BE%8E%E8%82%A1+%E7%BA%B3%E6%96%AF%E8%BE%BE%E5%85%8B+%E6%A0%87%E6%99%AE500&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "tags": ["聚合", "美股"],
+      "topics": ["美股", "宏观"]
+    },
+    {
+      "id": "rss-gnews-policy",
+      "name": "Google News · 市场政策与政府动态",
+      "feedUrl": "https://news.google.com/rss/search?q=%E8%AF%81%E7%9B%91%E4%BC%9A+%E5%A4%AE%E8%A1%8C+%E5%8F%91%E6%94%B9%E5%A7%94+%E5%B8%82%E5%9C%BA%E6%94%BF%E7%AD%96&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T1",
+      "tags": ["政策", "官方动态"],
+      "topics": ["市场政策", "政府动态", "宏观"]
     }
   ]
 }
