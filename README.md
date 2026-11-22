@@ -108,7 +108,7 @@ node --test tests/article-layout.test.js tests/ui/*.test.js
 - `source/_data/`: Structured site data (including `news.json`)
 - `themes/evan/`: Custom Hexo theme (`layout/`, `source/css/`, `source/js/`, [themes/evan/\_config.yml](themes/evan/_config.yml))
 - `scripts/`: Hexo build helpers, filters, RSS enhancers, search index, and sitemap generators
-- `tools/`: Publishing, audio narration, and news automation scripts ([publish\_article.py](tools/publish_article.py), [generate\_audio.py](tools/generate_audio.py), [generate-news-digest.js](tools/generate-news-digest.js), [update-news-hourly.js](tools/update-news-hourly.js))
+- `tools/`: Publishing, audio narration, and news automation scripts ([publish\_article.py](tools/publish_article.py), [generate\_audio.py](tools/generate_audio.py), [auto\_generate\_audio.py](tools/auto_generate_audio.py), [generate-news-digest.js](tools/generate-news-digest.js), [update-news-hourly.js](tools/update-news-hourly.js))
 - `tests/`: Automated layout, UI, RSS, and regression test suites
 - `video/`: Companion Remotion project ([video/README.md](video/README.md))
 - [.github/workflows/deploy.yml](.github/workflows/deploy.yml): GitHub Pages build & deployment workflow
@@ -117,4 +117,7 @@ node --test tests/article-layout.test.js tests/ui/*.test.js
 
 ## Deployment
 
-Pushing to `master` or `main` (or triggering `workflow_dispatch`) runs [.github/workflows/deploy.yml](.github/workflows/deploy.yml), which installs npm dependencies on Node.js 20, builds `./public` via `npx hexo generate`, and deploys directly to GitHub Pages.
+Pushing to `master` or `main` (or triggering `workflow_dispatch`) runs [.github/workflows/deploy.yml](.github/workflows/deploy.yml):
+
+1. When `MINIMAX_API_KEY` is configured in GitHub Actions Secrets, [tools/auto\_generate\_audio.py](tools/auto_generate_audio.py) inspects newly added or modified posts under `source/_posts/` (skipping `test-*`, `news-midday-summary-*`, posts that already define `audio`, or posts with `skip_audio: true`), generates podcast narration assets, and commits them back to the branch. You can also target a single post manually via `workflow_dispatch` inputs (`post` and `force_audio`).
+2. Installs npm dependencies on Node.js 20, builds `./public` via `npx hexo generate`, and deploys directly to GitHub Pages.

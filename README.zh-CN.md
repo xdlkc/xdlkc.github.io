@@ -108,7 +108,7 @@ node --test tests/article-layout.test.js tests/ui/*.test.js
 - `source/_data/`：站点结构化数据（含 `news.json`）
 - `themes/evan/`：自定义 Hexo 主题（`layout/`、`source/css/`、`source/js/`、[themes/evan/\_config.yml](themes/evan/_config.yml)）
 - `scripts/`：Hexo 辅助脚本、过滤器、RSS 增强、搜索索引与站点地图生成器
-- `tools/`：发布、音频生成与新闻采集脚本（[publish\_article.py](tools/publish_article.py)、[generate\_audio.py](tools/generate_audio.py)、[generate-news-digest.js](tools/generate-news-digest.js)、[update-news-hourly.js](tools/update-news-hourly.js)）
+- `tools/`：发布、音频生成与新闻采集脚本（[publish\_article.py](tools/publish_article.py)、[generate\_audio.py](tools/generate_audio.py)、[auto\_generate\_audio.py](tools/auto_generate_audio.py)、[generate-news-digest.js](tools/generate-news-digest.js)、[update-news-hourly.js](tools/update-news-hourly.js)）
 - `tests/`：布局、UI、RSS 与交互回归测试集合
 - `video/`：配套 Remotion 视频工程（[video/README.md](video/README.md)）
 - [.github/workflows/deploy.yml](.github/workflows/deploy.yml)：GitHub Pages 自动构建与部署工作流
@@ -117,4 +117,7 @@ node --test tests/article-layout.test.js tests/ui/*.test.js
 
 ## 部署
 
-推送到 `master` 或 `main` 分支（或手动触发 `workflow_dispatch`）后，[.github/workflows/deploy.yml](.github/workflows/deploy.yml) 会在 Node.js 20 环境安装依赖、执行 `npx hexo generate` 构建 `./public`，并自动发布至 GitHub Pages。
+推送到 `master` 或 `main` 分支（或手动触发 `workflow_dispatch`）后，[.github/workflows/deploy.yml](.github/workflows/deploy.yml) 会依次执行：
+
+1. 若仓库 Actions Secrets 中配置了 `MINIMAX_API_KEY`，[tools/auto\_generate\_audio.py](tools/auto_generate_audio.py) 会自动检查本次新增或修改的 `source/_posts/` 文章（自动跳过 `test-*`、`news-midday-summary-*`、已有 `audio` 字段或设置 `skip_audio: true` 的文章），生成播客导读音频并自动提交回当前分支；也支持通过 `workflow_dispatch` 的 `post` 与 `force_audio` 参数手动指定单篇文章补生成或重生成。
+2. 在 Node.js 20 环境安装依赖、执行 `npx hexo generate` 构建 `./public`，并自动发布至 GitHub Pages。
