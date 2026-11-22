@@ -80,6 +80,7 @@ Supports `--mode podcast|full`, `--voice-id`, `--tts-model`, `--llm-model`, `--s
 
 ### News Digest Automation
 
+- `node tools/aihot-sync.js` (scheduled via [.github/workflows/sync-aihot-news.yml](.github/workflows/sync-aihot-news.yml)): Fetches 18 curated AI RSS/Atom sources from [source/_data/aihot-sources.json](source/_data/aihot-sources.json), applies AIHOT-style tiered selection thresholds (`T1 >= 60`, `T2 >= 76`) and answer-first Chinese summarization via an OpenAI-compatible LLM (default: GLM domestic token plan `https://open.bigmodel.cn/api/coding/paas/v4` with `glm-5.3-flash`; configure `AIHOT_LLM_API_KEY` or `GLM_API_KEY`, optional `AIHOT_LLM_BASE_URL` and `AIHOT_LLM_MODEL`), and merges results into `source/_data/news.json`. Supports `--dry-run`, `--no-llm`, `--hours=72`, and `--max-new=15`.
 - `npm run news:digest` (`tools/generate-news-digest.js`): Generates daily digest posts from `source/_data/news.json`.
 - `tools/update-news-hourly.js`: Fetches domestic and international feeds into `source/_data/news.json` with URL/title deduplication.
 
@@ -105,13 +106,13 @@ node --test tests/article-layout.test.js tests/ui/*.test.js
 - [DEV.md](DEV.md): Theme CSS notes (code block container styling and responsive table rules)
 - `source/_posts/`: Published Markdown posts
 - `source/uploads/`: Post image and audio assets
-- `source/_data/`: Structured site data (including `news.json`)
+- `source/_data/`: Structured site data (including `news.json` and `aihot-sources.json`)
 - `themes/evan/`: Custom Hexo theme (`layout/`, `source/css/`, `source/js/`, [themes/evan/\_config.yml](themes/evan/_config.yml))
 - `scripts/`: Hexo build helpers, filters, RSS enhancers, search index, and sitemap generators
-- `tools/`: Publishing, audio narration, and news automation scripts ([publish\_article.py](tools/publish_article.py), [generate\_audio.py](tools/generate_audio.py), [auto\_generate\_audio.py](tools/auto_generate_audio.py), [generate-news-digest.js](tools/generate-news-digest.js), [update-news-hourly.js](tools/update-news-hourly.js))
+- `tools/`: Publishing, audio narration, and news automation scripts ([publish\_article.py](tools/publish_article.py), [generate\_audio.py](tools/generate_audio.py), [auto\_generate\_audio.py](tools/auto_generate_audio.py), [aihot-sync.js](tools/aihot-sync.js), [generate-news-digest.js](tools/generate-news-digest.js), [update-news-hourly.js](tools/update-news-hourly.js))
 - `tests/`: Automated layout, UI, RSS, and regression test suites
 - `video/`: Companion Remotion project ([video/README.md](video/README.md))
-- [.github/workflows/deploy.yml](.github/workflows/deploy.yml): GitHub Pages build & deployment workflow
+- [.github/workflows/deploy.yml](.github/workflows/deploy.yml) & [.github/workflows/sync-aihot-news.yml](.github/workflows/sync-aihot-news.yml): GitHub Pages build/deploy and scheduled AIHOT news curation workflows
 
 ---
 

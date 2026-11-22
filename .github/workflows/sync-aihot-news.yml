@@ -1,0 +1,60 @@
+name: Sync AIHOT News
+
+on:
+  schedule:
+    # Run every 6 hours (00:15, 06:15, 12:15, 18:15 UTC)
+    - cron: '15 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "Lookback window in hours (default 72)"
+        required: false
+        default: "72"
+        type: string
+      max_new:
+        description: "Max new curated items to add per run (default 15)"
+        required: false
+        default: "15"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-aihot-news
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Curate AI news into source/_data/news.json
+        env:
+          AIHOT_LLM_API_KEY: ${{ secrets.AIHOT_LLM_API_KEY || secrets.GLM_API_KEY }}
+          AIHOT_LLM_BASE_URL: ${{ vars.AIHOT_LLM_BASE_URL || 'https://open.bigmodel.cn/api/coding/paas/v4' }}
+          AIHOT_LLM_MODEL: ${{ vars.AIHOT_LLM_MODEL || 'glm-5.3-flash' }}
+          AIHOT_WINDOW_HOURS: ${{ inputs.hours || '72' }}
+          AIHOT_MAX_NEW: ${{ inputs.max_new || '15' }}
+        run: node tools/aihot-sync.js
+
+      - name: Commit and push updated news.json
+        run: |
+          if [ -n "$(git status --porcelain source/_data/news.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add source/_data/news.json
+            git commit -m "chore(news): sync AIHOT curated AI news"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          else
+            echo "No new curated news items to commit."
+          fi

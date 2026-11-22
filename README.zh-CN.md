@@ -80,6 +80,7 @@ npm run audio:generate -- source/_posts/your-slug.md
 
 ### 新闻摘要自动化
 
+- `node tools/aihot-sync.js`（由 [.github/workflows/sync-aihot-news.yml](.github/workflows/sync-aihot-news.yml) 定时触发）：从 [source/_data/aihot-sources.json](source/_data/aihot-sources.json) 抓取 18 个精选 AI RSS/Atom 信源，结合 AIHOT 的分级入选门槛（`T1 >= 60`、`T2 >= 76`）与答案前置中文摘要提示词调用 OpenAI 兼容模型（默认使用 GLM 国内版 Token Plan：`https://open.bigmodel.cn/api/coding/paas/v4` 与 `glm-5.3-flash`，配置 `AIHOT_LLM_API_KEY` 或 `GLM_API_KEY`，可选 `AIHOT_LLM_BASE_URL` 与 `AIHOT_LLM_MODEL`），去重后写入 `source/_data/news.json`。支持 `--dry-run`、`--no-llm`、`--hours=72` 与 `--max-new=15`。
 - `npm run news:digest`（`tools/generate-news-digest.js`）：基于 `source/_data/news.json` 生成每日新闻摘要文章。
 - `tools/update-news-hourly.js`：抓取国内外公开资讯源并按 URL 与标题时间去重写入 `source/_data/news.json`。
 
@@ -105,13 +106,13 @@ node --test tests/article-layout.test.js tests/ui/*.test.js
 - [DEV.md](DEV.md)：主题样式踩坑记录（代码块双容器问题与表格宽度规范）
 - `source/_posts/`：已发布文章 Markdown 源码
 - `source/uploads/`：文章图片与音频资源
-- `source/_data/`：站点结构化数据（含 `news.json`）
+- `source/_data/`：站点结构化数据（含 `news.json` 与 `aihot-sources.json`）
 - `themes/evan/`：自定义 Hexo 主题（`layout/`、`source/css/`、`source/js/`、[themes/evan/\_config.yml](themes/evan/_config.yml)）
 - `scripts/`：Hexo 辅助脚本、过滤器、RSS 增强、搜索索引与站点地图生成器
-- `tools/`：发布、音频生成与新闻采集脚本（[publish\_article.py](tools/publish_article.py)、[generate\_audio.py](tools/generate_audio.py)、[auto\_generate\_audio.py](tools/auto_generate_audio.py)、[generate-news-digest.js](tools/generate-news-digest.js)、[update-news-hourly.js](tools/update-news-hourly.js)）
+- `tools/`：发布、音频生成与新闻采集脚本（[publish\_article.py](tools/publish_article.py)、[generate\_audio.py](tools/generate_audio.py)、[auto\_generate\_audio.py](tools/auto_generate_audio.py)、[aihot-sync.js](tools/aihot-sync.js)、[generate-news-digest.js](tools/generate-news-digest.js)、[update-news-hourly.js](tools/update-news-hourly.js)）
 - `tests/`：布局、UI、RSS 与交互回归测试集合
 - `video/`：配套 Remotion 视频工程（[video/README.md](video/README.md)）
-- [.github/workflows/deploy.yml](.github/workflows/deploy.yml)：GitHub Pages 自动构建与部署工作流
+- [.github/workflows/deploy.yml](.github/workflows/deploy.yml) 与 [.github/workflows/sync-aihot-news.yml](.github/workflows/sync-aihot-news.yml)：GitHub Pages 自动构建部署与 AIHOT 定时精选新闻同步工作流
 
 ---
 
