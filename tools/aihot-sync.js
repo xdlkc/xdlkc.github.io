@@ -327,6 +327,12 @@ function parseJsonFeed(payload, sourceMeta = {}) {
     const title = stripHtml(titleRaw);
 
     let urlRaw = fields.url ? getByPath(row, fields.url) : (row.url || row.link || row.href);
+    if (!urlRaw && cfg.urlTemplate) {
+      urlRaw = String(cfg.urlTemplate).replace(/\{([^}]+)\}/g, (_, key) => {
+        const v = getByPath(row, key.trim());
+        return v != null ? encodeURIComponent(String(v)) : '';
+      });
+    }
     if (!urlRaw && cfg.adapter === 'hn-top' && row.id != null) {
       urlRaw = `https://news.ycombinator.com/item?id=${row.id}`;
     }

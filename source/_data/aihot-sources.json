@@ -839,6 +839,133 @@
         "市场政策",
         "宏观"
       ]
+    },
+    {
+      "id": "web-stats-gov-cn",
+      "name": "国家统计局 · 权威宏观数据",
+      "feedUrl": "https://www.stats.gov.cn/sj/zxfb/",
+      "kind": "web",
+      "industry": "金融与政策",
+      "tier": "T1",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方数据",
+        "政府动态"
+      ],
+      "topics": [
+        "宏观",
+        "政府动态",
+        "A股"
+      ],
+      "webConfig": {
+        "itemSelector": ".list-content li",
+        "titleSelector": "a",
+        "linkSelector": "a",
+        "dateSelector": "span"
+      }
+    },
+    {
+      "id": "web-ndrc-policy",
+      "name": "国家发改委 · 政策通知",
+      "feedUrl": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/",
+      "kind": "web",
+      "industry": "金融与政策",
+      "tier": "T1",
+      "intervalMinutes": 120,
+      "tags": [
+        "部委政策",
+        "政府动态"
+      ],
+      "topics": [
+        "市场政策",
+        "政府动态",
+        "A股"
+      ],
+      "webConfig": {
+        "itemSelector": ".u-list li",
+        "titleSelector": "a",
+        "linkSelector": "a",
+        "dateSelector": "span"
+      }
+    },
+    {
+      "id": "web-mof-news",
+      "name": "财政部 · 财政要闻与收支数据",
+      "feedUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/",
+      "kind": "web",
+      "industry": "金融与政策",
+      "tier": "T1",
+      "intervalMinutes": 120,
+      "tags": [
+        "部委政策",
+        "财政数据"
+      ],
+      "topics": [
+        "市场政策",
+        "政府动态",
+        "宏观"
+      ],
+      "webConfig": {
+        "itemSelector": ".xwfb_listbox li, .list_con li",
+        "titleSelector": "a",
+        "linkSelector": "a",
+        "dateSelector": "span"
+      }
+    },
+    {
+      "id": "json-eastmoney-724",
+      "name": "东方财富 · 7x24快讯",
+      "feedUrl": "https://np-listapi.eastmoney.com/comm/web/getFastNewsList?client=web&biz=web_724&fastColumn=102&sortEnd=&pageSize=12&req_trace=1",
+      "kind": "json",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "国内快讯",
+        "A股"
+      ],
+      "topics": [
+        "A股",
+        "港股",
+        "宏观"
+      ],
+      "jsonConfig": {
+        "jsonPath": "data.fastNewsList",
+        "urlTemplate": "https://finance.eastmoney.com/a/{code}.html",
+        "fields": {
+          "title": "title",
+          "summary": "summary",
+          "publishedAt": "showTime"
+        }
+      }
+    },
+    {
+      "id": "json-sina-finance",
+      "name": "新浪财经 · 实时滚动",
+      "feedUrl": "https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2516&k=&num=12&page=1",
+      "kind": "json",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "国内财经",
+        "市场"
+      ],
+      "topics": [
+        "A股",
+        "港股",
+        "美股",
+        "宏观"
+      ],
+      "jsonConfig": {
+        "jsonPath": "result.data",
+        "fields": {
+          "title": "title",
+          "url": "url",
+          "summary": "intro",
+          "publishedAt": "ctime"
+        }
+      }
     }
   ]
 }
