@@ -31,7 +31,7 @@ test('aihot-sources.json contains upgraded multi-kind, multi-industry sources in
   const aiSources = data.sources.filter((s) => s.industry === 'AI');
   const engSources = data.sources.filter((s) => s.industry === '工程与开源');
   const finSources = data.sources.filter((s) => s.industry === '金融与政策');
-  assert.equal(aiSources.length, 18);
+  assert.ok(aiSources.length >= 18);
   assert.ok(engSources.length >= 3);
   assert.ok(finSources.length >= 4);
 

@@ -417,23 +417,6 @@
       "intervalMinutes": 60
     },
     {
-      "id": "rss-yahoo-finance",
-      "name": "Yahoo Finance News",
-      "feedUrl": "https://finance.yahoo.com/news/rssindex",
-      "kind": "rss",
-      "industry": "金融与政策",
-      "tier": "T2",
-      "tags": [
-        "媒体",
-        "市场"
-      ],
-      "topics": [
-        "美股",
-        "宏观"
-      ],
-      "intervalMinutes": 60
-    },
-    {
       "id": "rss-gnews-ashare",
       "name": "Google News · A股市场",
       "feedUrl": "https://news.google.com/rss/search?q=A%E8%82%A1+%E6%B2%AA%E6%B7%B1&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
@@ -501,6 +484,361 @@
         "宏观"
       ],
       "intervalMinutes": 60
+    },
+    {
+      "id": "rss-anthropic-news",
+      "name": "Anthropic News",
+      "feedUrl": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
+      "kind": "rss",
+      "industry": "AI",
+      "tier": "T1",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方"
+      ],
+      "topics": [
+        "模型发布",
+        "Agent 智能体"
+      ]
+    },
+    {
+      "id": "rss-anthropic-engineering",
+      "name": "Anthropic Engineering",
+      "feedUrl": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_engineering.xml",
+      "kind": "rss",
+      "industry": "AI",
+      "tier": "T1",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方",
+        "工程"
+      ],
+      "topics": [
+        "Agent 智能体",
+        "基础设施"
+      ]
+    },
+    {
+      "id": "rss-kubernetes-blog",
+      "name": "Kubernetes Blog",
+      "feedUrl": "https://kubernetes.io/feed.xml",
+      "kind": "rss",
+      "industry": "工程与开源",
+      "tier": "T1",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方",
+        "云原生"
+      ],
+      "topics": [
+        "云原生",
+        "开源生态"
+      ]
+    },
+    {
+      "id": "atom-go-blog",
+      "name": "The Go Blog",
+      "feedUrl": "https://go.dev/blog/feed.atom",
+      "kind": "atom",
+      "industry": "工程与开源",
+      "tier": "T1",
+      "intervalMinutes": 180,
+      "tags": [
+        "官方",
+        "工程"
+      ],
+      "topics": [
+        "研发效能",
+        "开源生态"
+      ]
+    },
+    {
+      "id": "rss-stripe-engineering",
+      "name": "Stripe Engineering",
+      "feedUrl": "https://stripe.com/blog/feed.rss",
+      "kind": "rss",
+      "industry": "工程与开源",
+      "tier": "T1",
+      "intervalMinutes": 180,
+      "tags": [
+        "官方",
+        "工程"
+      ],
+      "topics": [
+        "研发效能",
+        "基础设施"
+      ]
+    },
+    {
+      "id": "rss-fed-press",
+      "name": "美联储官方新闻稿 (Fed)",
+      "feedUrl": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T1",
+      "intervalMinutes": 120,
+      "tags": [
+        "央行",
+        "政策"
+      ],
+      "topics": [
+        "市场政策",
+        "政府动态",
+        "宏观"
+      ]
+    },
+    {
+      "id": "rss-sec-press",
+      "name": "美国证监会 (SEC)",
+      "feedUrl": "https://www.sec.gov/news/pressreleases.rss",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T1",
+      "intervalMinutes": 120,
+      "tags": [
+        "监管",
+        "政策"
+      ],
+      "topics": [
+        "美股",
+        "市场政策",
+        "政府动态"
+      ]
+    },
+    {
+      "id": "rss-hkex-news",
+      "name": "香港交易所新闻稿 (HKEX)",
+      "feedUrl": "https://www.hkex.com.hk/Services/RSS-Feeds/News-Releases?sc_lang=zh-HK",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T1",
+      "intervalMinutes": 120,
+      "tags": [
+        "交易所",
+        "官方"
+      ],
+      "topics": [
+        "港股",
+        "市场政策"
+      ]
+    },
+    {
+      "id": "rss-hkma-press",
+      "name": "香港金管局新闻稿 (HKMA)",
+      "feedUrl": "https://www.hkma.gov.hk/gb_chi/other-information/rss/rss_press-release.xml",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T1",
+      "intervalMinutes": 120,
+      "tags": [
+        "央行",
+        "政策"
+      ],
+      "topics": [
+        "港股",
+        "市场政策",
+        "政府动态"
+      ]
+    },
+    {
+      "id": "json-wscn-global",
+      "name": "华尔街见闻 · 全球",
+      "feedUrl": "https://api-one-wscn.awtmt.com/apiv1/content/information-flow?channel=global&accept=article&limit=10",
+      "kind": "json",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "财经",
+        "宏观"
+      ],
+      "topics": [
+        "宏观",
+        "市场政策",
+        "美股"
+      ],
+      "jsonConfig": {
+        "jsonPath": "data.items",
+        "fields": {
+          "title": "resource.title",
+          "url": "resource.uri",
+          "publishedAt": "resource.display_time",
+          "author": "resource.author.display_name",
+          "summary": "resource.content_text",
+          "contentHtml": "resource.content"
+        }
+      }
+    },
+    {
+      "id": "json-wscn-ashare",
+      "name": "华尔街见闻 · A股",
+      "feedUrl": "https://api-one-wscn.awtmt.com/apiv1/content/information-flow?channel=a-stock&accept=article&limit=10",
+      "kind": "json",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "财经",
+        "A股"
+      ],
+      "topics": [
+        "A股",
+        "市场政策"
+      ],
+      "jsonConfig": {
+        "jsonPath": "data.items",
+        "fields": {
+          "title": "resource.title",
+          "url": "resource.uri",
+          "publishedAt": "resource.display_time",
+          "author": "resource.author.display_name",
+          "summary": "resource.content_text",
+          "contentHtml": "resource.content"
+        }
+      }
+    },
+    {
+      "id": "json-wscn-hkstock",
+      "name": "华尔街见闻 · 港股",
+      "feedUrl": "https://api-one-wscn.awtmt.com/apiv1/content/information-flow?channel=hk-stock&accept=article&limit=10",
+      "kind": "json",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "财经",
+        "港股"
+      ],
+      "topics": [
+        "港股",
+        "市场政策"
+      ],
+      "jsonConfig": {
+        "jsonPath": "data.items",
+        "fields": {
+          "title": "resource.title",
+          "url": "resource.uri",
+          "publishedAt": "resource.display_time",
+          "author": "resource.author.display_name",
+          "summary": "resource.content_text",
+          "contentHtml": "resource.content"
+        }
+      }
+    },
+    {
+      "id": "json-wscn-usstock",
+      "name": "华尔街见闻 · 美股",
+      "feedUrl": "https://api-one-wscn.awtmt.com/apiv1/content/information-flow?channel=us-stock&accept=article&limit=10",
+      "kind": "json",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "财经",
+        "美股"
+      ],
+      "topics": [
+        "美股",
+        "宏观"
+      ],
+      "jsonConfig": {
+        "jsonPath": "data.items",
+        "fields": {
+          "title": "resource.title",
+          "url": "resource.uri",
+          "publishedAt": "resource.display_time",
+          "author": "resource.author.display_name",
+          "summary": "resource.content_text",
+          "contentHtml": "resource.content"
+        }
+      }
+    },
+    {
+      "id": "rss-investing-cn-stock",
+      "name": "英为财情 · 股市资讯",
+      "feedUrl": "https://cn.investing.com/rss/news_25.rss",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "财经",
+        "市场"
+      ],
+      "topics": [
+        "A股",
+        "港股",
+        "美股"
+      ]
+    },
+    {
+      "id": "rss-bloomberg-markets",
+      "name": "Bloomberg Markets",
+      "feedUrl": "https://feeds.bloomberg.com/markets/news.rss",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "媒体",
+        "市场"
+      ],
+      "topics": [
+        "美股",
+        "宏观"
+      ]
+    },
+    {
+      "id": "rss-wsj-markets",
+      "name": "WSJ Markets",
+      "feedUrl": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "媒体",
+        "市场"
+      ],
+      "topics": [
+        "美股",
+        "宏观"
+      ]
+    },
+    {
+      "id": "rss-ft-markets",
+      "name": "Financial Times · Markets",
+      "feedUrl": "https://www.ft.com/markets?format=rss",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "媒体",
+        "宏观"
+      ],
+      "topics": [
+        "宏观",
+        "美股"
+      ]
+    },
+    {
+      "id": "rss-36kr",
+      "name": "36氪",
+      "feedUrl": "https://36kr.com/feed",
+      "kind": "rss",
+      "industry": "金融与政策",
+      "tier": "T2",
+      "intervalMinutes": 60,
+      "tags": [
+        "媒体",
+        "科技财经"
+      ],
+      "topics": [
+        "A股",
+        "市场政策",
+        "宏观"
+      ]
     }
   ]
 }

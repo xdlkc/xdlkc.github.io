@@ -350,7 +350,8 @@ function parseJsonFeed(payload, sourceMeta = {}) {
       summaryRaw = [pts, cmts].filter(Boolean).join(' · ') || title;
     }
     const snippet = stripHtml(summaryRaw || title).slice(0, 900);
-    const contentHtml = row.contentHtml ? sanitizeArticleHtml(row.contentHtml) : '';
+    const contentRaw = fields.contentHtml ? getByPath(row, fields.contentHtml) : row.contentHtml;
+    const contentHtml = contentRaw ? sanitizeArticleHtml(contentRaw) : '';
 
     items.push({
       title,
