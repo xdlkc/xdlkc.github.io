@@ -1,55 +1,324 @@
-/* Code Block Collapse Styles */
+/* ==========================================================================
+   Code Block Toolbar, Collapse, Syntax Highlighting & Inline Code Typography
+   ========================================================================== */
 
-.code-collapse-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: rgba(0, 0, 0, 0.1);
-  border: none;
-  border-radius: 4px;
-  padding: 4px 8px;
-  font-size: 12px;
-  cursor: pointer;
+:root,
+[data-theme="light"],
+[data-theme-palette="emerald"],
+[data-theme-palette="sepia"],
+[data-theme-palette="ocean"] {
+  --code-toolbar-bg: rgba(15, 23, 42, 0.035);
+  --code-toolbar-border: var(--border, rgba(31, 35, 40, 0.1));
+  --code-btn-bg: var(--surface-elevated, rgba(255, 255, 255, 0.92));
+  --code-btn-text: var(--muted, #5a6572);
+  --code-btn-hover-bg: var(--card, #ffffff);
+  --code-btn-hover-text: var(--accent, #0f766e);
+  --code-btn-hover-border: var(--accent-border, rgba(15, 118, 110, 0.28));
+  --code-fade-bg: var(--card, #ffffff);
+
+  /* Syntax highlighting tokens (Light themes: default / emerald / sepia / ocean) */
+  --syntax-base: #24292f;
+  --syntax-comment: #6a737d;
+  --syntax-keyword: #cf222e;
+  --syntax-string: #0a3069;
+  --syntax-number: #0550ae;
+  --syntax-title: #8250df;
+  --syntax-built-in: #953800;
+  --syntax-tag: #116329;
+  --syntax-punctuation: #57606a;
+  --syntax-deletion: #82071e;
+  --syntax-addition-bg: rgba(17, 99, 41, 0.12);
+  --syntax-deletion-bg: rgba(130, 7, 30, 0.12);
+}
+
+[data-theme="dark"],
+[data-theme-palette="dark"],
+[data-theme-palette="midnight"] {
+  --code-toolbar-bg: rgba(255, 255, 255, 0.04);
+  --code-toolbar-border: var(--border, rgba(255, 255, 255, 0.12));
+  --code-btn-bg: var(--surface-elevated, rgba(30, 41, 59, 0.9));
+  --code-btn-text: var(--muted, #94a3b8);
+  --code-btn-hover-bg: var(--card, #111827);
+  --code-btn-hover-text: var(--accent, #2dd4bf);
+  --code-btn-hover-border: var(--accent-border, rgba(45, 212, 191, 0.32));
+  --code-fade-bg: var(--card, #111827);
+
+  /* Syntax highlighting tokens (Dark themes: dark / midnight) */
+  --syntax-base: #e6edf3;
+  --syntax-comment: #8b949e;
+  --syntax-keyword: #ff7b72;
+  --syntax-string: #a5d6ff;
+  --syntax-number: #79c0ff;
+  --syntax-title: #d2a8ff;
+  --syntax-built-in: #ffa657;
+  --syntax-tag: #7ee787;
+  --syntax-punctuation: #94a3b8;
+  --syntax-deletion: #ffa198;
+  --syntax-addition-bg: rgba(46, 160, 67, 0.18);
+  --syntax-deletion-bg: rgba(248, 81, 73, 0.18);
+}
+
+[data-theme-palette="midnight"] {
+  --code-fade-bg: var(--card, #16132b);
+  --code-btn-hover-text: var(--accent, #a78bfa);
+  --code-btn-hover-border: var(--accent-border, rgba(167, 139, 250, 0.35));
+}
+
+/* --------------------------------------------------------------------------
+   P0-1: Non-overlapping Code Block Toolbar (Copy + Collapse + Language)
+   -------------------------------------------------------------------------- */
+
+figure.highlight,
+pre.highlight,
+.article-content figure.highlight,
+.article-content pre {
+  position: relative;
+}
+
+.article-content figure.highlight .code-block-toolbar,
+figure.highlight .code-block-toolbar {
+  position: sticky;
+  top: 0;
+  left: 0;
   z-index: 10;
-  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  background: var(--code-toolbar-bg);
+  border-bottom: 1px solid var(--code-toolbar-border);
+  white-space: normal;
 }
 
-.code-collapse-button:hover {
-  background: rgba(0, 0, 0, 0.2);
+.article-content pre .code-block-toolbar,
+pre.highlight .code-block-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: -0.45rem -0.55rem 0.65rem;
+  padding: 0.4rem 0.65rem;
+  background: var(--code-toolbar-bg);
+  border-bottom: 1px solid var(--code-toolbar-border);
+  border-radius: 12px 12px 0 0;
+  white-space: normal;
 }
 
-[data-theme='dark'] .code-collapse-button {
-  background: rgba(255, 255, 255, 0.1);
+.code-block-lang {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  background: var(--accent-soft, rgba(15, 118, 110, 0.09));
+  color: var(--accent, #0f766e);
+  font-family: "SFMono-Regular", "Menlo", "Monaco", "Consolas", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  user-select: none;
 }
 
-[data-theme='dark'] .code-collapse-button:hover {
-  background: rgba(255, 255, 255, 0.2);
+.code-block-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* Override absolute positioning & hover-only opacity from style.css */
+.article-content figure.highlight .code-block-toolbar .code-copy-button,
+.article-content pre .code-block-toolbar .code-copy-button,
+.article-content figure.highlight .code-block-toolbar .code-collapse-button,
+.article-content pre .code-block-toolbar .code-collapse-button,
+.code-block-toolbar .code-copy-button,
+.code-block-toolbar .code-collapse-button {
+  position: static;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  z-index: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0.3rem 0.68rem;
+  border: 1px solid var(--code-toolbar-border);
+  border-radius: 999px;
+  background: var(--code-btn-bg);
+  color: var(--code-btn-text);
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  transition: background-color 0.16s ease, border-color 0.16s ease, color 0.16s ease, transform 0.16s ease;
+}
+
+.article-content figure.highlight .code-block-toolbar .code-copy-button:hover,
+.article-content pre .code-block-toolbar .code-copy-button:hover,
+.article-content figure.highlight .code-block-toolbar .code-collapse-button:hover,
+.article-content pre .code-block-toolbar .code-collapse-button:hover,
+.code-block-toolbar .code-copy-button:hover,
+.code-block-toolbar .code-collapse-button:hover {
+  background: var(--code-btn-hover-bg);
+  border-color: var(--code-btn-hover-border);
+  color: var(--code-btn-hover-text);
+  transform: translateY(-1px);
+}
+
+.article-content figure.highlight .code-block-toolbar .code-copy-button:focus-visible,
+.article-content pre .code-block-toolbar .code-copy-button:focus-visible,
+.article-content figure.highlight .code-block-toolbar .code-collapse-button:focus-visible,
+.article-content pre .code-block-toolbar .code-collapse-button:focus-visible {
+  outline: 2px solid var(--accent, #0f766e);
+  outline-offset: 2px;
+}
+
+.article-content figure.highlight .code-block-toolbar .code-copy-button:active,
+.article-content pre .code-block-toolbar .code-copy-button:active,
+.article-content figure.highlight .code-block-toolbar .code-collapse-button:active,
+.article-content pre .code-block-toolbar .code-collapse-button:active {
+  transform: translateY(0);
 }
 
 /* Collapsed state */
-.highlight.is-collapsed {
+.highlight.is-collapsed,
+.article-content figure.highlight.is-collapsed {
   position: relative;
-  max-height: 200px;
+  max-height: 220px;
   overflow: hidden;
 }
 
-.highlight.is-collapsed::after {
+.highlight.is-collapsed::after,
+.article-content figure.highlight.is-collapsed::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
-  background: linear-gradient(to bottom, transparent, var(--card-bg, #fff));
+  height: 64px;
+  background: linear-gradient(to bottom, transparent, var(--code-fade-bg));
   pointer-events: none;
+  z-index: 5;
 }
 
-[data-theme='dark'] .highlight.is-collapsed::after {
-  background: linear-gradient(to bottom, transparent, var(--card-bg, #1a1a1a));
+/* --------------------------------------------------------------------------
+   P1-2A: Syntax Highlighting Token Colors (Hexo highlight.js)
+   -------------------------------------------------------------------------- */
+
+.article-content figure.highlight .code pre,
+.article-content pre > code {
+  color: var(--syntax-base);
 }
 
-/* Ensure code blocks have relative positioning for absolute button */
-figure.highlight,
-pre.highlight {
-  position: relative;
+.highlight .comment,
+.highlight .quote {
+  color: var(--syntax-comment);
+  font-style: italic;
+}
+
+.highlight .keyword,
+.highlight .selector-tag,
+.highlight .doctag,
+.highlight .meta-keyword,
+.highlight .template-tag,
+.highlight .type {
+  color: var(--syntax-keyword);
+  font-weight: 500;
+}
+
+.highlight .string,
+.highlight .regexp,
+.highlight .meta-string,
+.highlight .link,
+.highlight span.code {
+  color: var(--syntax-string);
+}
+
+.highlight .number,
+.highlight .literal,
+.highlight .constant_,
+.highlight .attr,
+.highlight .attribute,
+.highlight .property,
+.highlight .variable,
+.highlight .template-variable,
+.highlight .language_ {
+  color: var(--syntax-number);
+}
+
+.highlight .title,
+.highlight .title.function_,
+.highlight .title.class_,
+.highlight .function,
+.highlight .function_,
+.highlight .class_,
+.highlight .section {
+  color: var(--syntax-title);
+}
+
+.highlight .section {
+  font-weight: 700;
+}
+
+.highlight .built_in,
+.highlight .symbol,
+.highlight .bullet {
+  color: var(--syntax-built-in);
+}
+
+.highlight .tag,
+.highlight .name,
+.highlight .selector-class,
+.highlight .selector-id,
+.highlight .addition {
+  color: var(--syntax-tag);
+}
+
+.highlight .params,
+.highlight .subst {
+  color: var(--syntax-base);
+}
+
+.highlight .punctuation,
+.highlight .operator,
+.highlight .meta {
+  color: var(--syntax-punctuation);
+}
+
+.highlight .emphasis {
+  font-style: italic;
+}
+
+.highlight .strong {
+  font-weight: 700;
+}
+
+.highlight .addition {
+  background: var(--syntax-addition-bg);
+}
+
+.highlight .deletion {
+  color: var(--syntax-deletion);
+  background: var(--syntax-deletion-bg);
+}
+
+/* --------------------------------------------------------------------------
+   P1-2B: Inline <code> Wrapping Fix (No mid-word / mid-number breaks)
+   -------------------------------------------------------------------------- */
+
+.article-content :not(pre) > code {
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: none;
+  font-family: "SFMono-Regular", "Menlo", "Monaco", "Consolas", monospace;
 }

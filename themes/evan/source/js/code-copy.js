@@ -20,9 +20,17 @@
   function extractFromPre(pre) {
     if (!pre) return '';
     const code = pre.querySelector?.('code');
-    // Prefer code element content to avoid including the button text.
-    const text = code ? code.textContent : pre.textContent;
-    return normalizeNewlines(text || '').trimEnd();
+    if (code) {
+      return normalizeNewlines(code.textContent || '').trimEnd();
+    }
+    // Fallback when <pre> has no <code> child: exclude injected toolbar/buttons.
+    if (pre.cloneNode) {
+      const clone = pre.cloneNode(true);
+      clone.querySelectorAll?.('.code-block-toolbar, .code-block-header, .code-copy-button, .code-collapse-button')
+        .forEach((el) => el.remove?.());
+      return normalizeNewlines(clone.textContent || '').trimEnd();
+    }
+    return normalizeNewlines(pre.textContent || '').trimEnd();
   }
 
   function extractFromHighlightFigure(figure) {
@@ -445,17 +453,51 @@
     });
   }
 
+  function ensureCodeToolbar(container, { block } = {}) {
+    const doc = container?.ownerDocument || document;
+    let toolbar = container.querySelector?.('.code-block-toolbar');
+    if (!toolbar) {
+      toolbar = doc.createElement('div');
+      toolbar.className = 'code-block-toolbar';
+      if (container.firstChild) {
+        container.insertBefore(toolbar, container.firstChild);
+      } else {
+        container.appendChild(toolbar);
+      }
+    }
+
+    // Add a clean language badge on figure.highlight blocks when none exists yet.
+    if (block?.type === 'highlight' && !container.querySelector?.('.code-block-lang, .code-lang-label, .code-language-label')) {
+      const langHint = extractLanguageHint({ block });
+      if (langHint && langHint !== 'plain' && langHint !== 'plaintext' && langHint !== 'text') {
+        const langBadge = doc.createElement('span');
+        langBadge.className = 'code-block-lang';
+        langBadge.textContent = langHint;
+        toolbar.insertBefore(langBadge, toolbar.firstChild);
+      }
+    }
+
+    let actions = toolbar.querySelector?.('.code-block-actions');
+    if (!actions) {
+      actions = doc.createElement('div');
+      actions.className = 'code-block-actions';
+      toolbar.appendChild(actions);
+    }
+
+    return actions;
+  }
+
   function injectButton({ block, toast } = {}) {
     if (!block || !block.element) return;
 
     const container = block.element;
     if (container.querySelector('.code-copy-button')) return;
 
-    const button = document.createElement('button');
+    const doc = container?.ownerDocument || document;
+    const button = doc.createElement('button');
     button.type = 'button';
     button.className = 'code-copy-button';
     {
-      const doc = container?.ownerDocument || document;
       const lang = resolveLang(doc);
       button.textContent = copyButtonText({ lang });
       button.setAttribute('aria-label', copyButtonAriaLabel({ lang }));
@@ -463,13 +505,13 @@
     }
 
     button.addEventListener('click', async (event) => {
+      event?.stopPropagation?.();
       const rawText = block.type === 'highlight'
         ? extractFromHighlightFigure(container)
         : extractFromPre(container);
 
       if (!rawText.trim()) return;
 
-      const doc = container?.ownerDocument || document;
       const lang = resolveLang(doc);
 
       const copyAsMarkdown = !!event?.altKey;
@@ -504,7 +546,8 @@
       }
     });
 
-    container.appendChild(button);
+    const actions = ensureCodeToolbar(container, { block });
+    actions.appendChild(button);
   }
 
   function initCodeCopy({ root = document, longPressMs = 450 } = {}) {
