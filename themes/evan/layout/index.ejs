@@ -182,13 +182,15 @@ const summarize = (input, limit = 140) => {
         <a class="section-cta" href="<%- url_for('/news/') %>" data-i18n-key="index.news.all">View all news →</a>
       </div>
       <div class="news-grid">
-        <% latestNews.forEach((n) => { %>
+        <% latestNews.forEach((n, idx) => {
+          const detailUrl = typeof news_detail_path === 'function' ? url_for(news_detail_path(n, idx)) : n.url;
+        %>
           <article class="card card-news">
             <div class="card-meta">
               <time><%= formatNewsTime(n.publishedAt) %></time>
               <% if (n.source) { %><span class="card-meta-sep" aria-hidden="true">·</span><span><%= n.source %></span><% } %>
             </div>
-            <h3 class="card-title-clamp"><a class="card-title-link card-link-stretched" href="<%= n.url %>" target="_blank" rel="noreferrer"><%= n.title %></a></h3>
+            <h3 class="card-title-clamp"><a class="card-title-link card-link-stretched" href="<%= detailUrl %>"><%= n.title %></a></h3>
             <% if (n.summary) { %><p class="card-desc card-desc-2"><%= n.summary %></p><% } %>
           </article>
         <% }) %>

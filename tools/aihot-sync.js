@@ -34,33 +34,91 @@ const DEFAULT_THRESHOLDS = {
   T2: 76,
 };
 
-const CURATION_SYSTEM_PROMPT = `你是 AI 行业资讯精选编辑，参考 AIHOT 的精选与写作规范，对单条候选资讯进行严格评分并改写为高质量中文快讯。
+let aihotExtractorPromise = null;
+async function getAihotExtractor() {
+  if (!aihotExtractorPromise) {
+    aihotExtractorPromise = import('../vendor/aihot/extractor.ts');
+  }
+  return aihotExtractorPromise;
+}
 
-【评分标准（0-100 整数）】
-- 90-100：头部机构重磅模型/产品发布、重大开源突破、改变行业格局的大事。
-- 75-89：有明确新进展的产品上线、重要研究论文、高质量工程深度实践或关键行业动态。
-- 60-74：官方常规更新、细分工具发布、有价值的工程案例或评测。
-- <60：纯营销软文、无实质内容的预告、旧闻转述、泛泛而谈的观点水文。
+function buildCurationSystemPrompt(extractor) {
+  const titleRules = extractor?.loadAihotPrompt?.('rules-self-contained-title.md') || '';
+  const summaryRules = extractor?.loadAihotPrompt?.('rules-answer-first-summary.md') || '';
+  const antiHallucination = extractor?.loadAihotPrompt?.('rules-anti-hallucination.md') || '';
 
-【标题自洽规则】
-1. 标题必须明确点出核心主体（公司/模型/产品/项目名），让读者不点开就知道是谁做了什么。
-2. 英文标题翻译为自然中文，保持原意；严禁把分析/教程/评测（How/Why/Guide/Analysis）夸大改写成“发布/上线/开源”。
-3. 只使用来源或正文中真实出现的名称与数字，严禁凭常识编造未出现的型号、公司或数据。
+  return [
+    '你是 AI 行业资讯精选编辑，严格遵循以下 AIHOT 精选与写作规范，对单条候选资讯评分并改写为高质量中文快讯。',
+    '',
+    '【评分标准（0-100 整数）】',
+    '- 90-100：头部机构重磅模型/产品发布、重大开源突破、改变行业格局的大事。',
+    '- 75-89：有明确新进展的产品上线、重要研究论文、高质量工程深度实践或关键行业动态。',
+    '- 60-74：官方常规更新、细分工具发布、有价值的工程案例或评测。',
+    '- <60：纯营销软文、无实质内容的预告、旧闻转述、泛泛而谈的观点水文。',
+    titleRules ? `\n${titleRules}` : '',
+    summaryRules ? `\n${summaryRules}` : '',
+    antiHallucination ? `\n${antiHallucination}` : '',
+    '',
+    '【输出格式】',
+    '严格输出单个 JSON 对象，不要包含 Markdown 代码块或其他多余文字：',
+    '{',
+    '  "score": 0-100 整数,',
+    '  "title": "自洽的中文标题",',
+    '  "summary": "2-3 句答案前置的中文摘要",',
+    '  "context": "1 句简短背景或为什么值得关注（25-60字）",',
+    '  "tags": ["2到4个简短中文或英文技术标签"]',
+    '}',
+  ]
+    .filter(Boolean)
+    .join('\n');
+}
 
-【摘要答案前置规则】
-1. 第一句（30-70字）直接交代“谁做了什么、关键结果或变化是什么”，禁止以“本文介绍了”“文章讨论了”“据报道”起句。
-2. 后面补 1-2 个可验证的关键事实或对开发者/行业的直接影响，总共 2-3 个紧凑陈述句，不使用 Markdown 列表或分段。
-3. 事实不足时只写已知事实，不臆测。
+function isMostlyEnglish(text) {
+  const s = String(text || '');
+  const cjk = (s.match(/[\u4e00-\u9fff]/g) || []).length;
+  const latin = (s.match(/[a-zA-Z]/g) || []).length;
+  return latin > 120 && cjk < latin * 0.15;
+}
 
-【输出格式】
-严格输出单个 JSON 对象，不要包含 Markdown 代码块或其他多余文字：
-{
-  "score": 0-100 整数,
-  "title": "自洽的中文标题",
-  "summary": "2-3 句答案前置的中文摘要",
-  "context": "1 句简短背景或为什么值得关注（25-60字）",
-  "tags": ["2到4个简短中文或英文技术标签"]
-}`;
+async function translateHtmlWithLlm(html, { apiKey, baseUrl, model, extractor, timeoutMs = 60000 }) {
+  const endpoint = `${String(baseUrl || 'https://open.bigmodel.cn/api/coding/paas/v4').replace(/\/+$/, '')}/chat/completions`;
+  const rules = extractor?.loadAihotPrompt?.('translate-body-rules.md') || '';
+  const systemPrompt = [
+    '你是专业技术翻译编辑。将输入文章 HTML 正文准确、自然地翻译为简体中文，完整保留所有 HTML 标签、链接 href 与图片 img 标签，不要增删段落，不要输出 Markdown 代码围栏，只返回翻译后的 HTML。',
+    rules ? `\n${rules}` : '',
+  ]
+    .filter(Boolean)
+    .join('\n');
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      signal: controller.signal,
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model,
+        temperature: 0.2,
+        max_tokens: 4096,
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: String(html || '').slice(0, 14000) },
+        ],
+      }),
+    });
+    if (!res.ok) throw new Error(`Translate HTTP ${res.status}`);
+    const data = await res.json();
+    const raw = String(data?.choices?.[0]?.message?.content || '').trim();
+    const unfenced = raw.replace(/^```(?:html)?\s*/i, '').replace(/\s*```$/i, '').trim();
+    return unfenced;
+  } finally {
+    clearTimeout(timer);
+  }
+}
 
 function decodeXmlEntities(str) {
   if (!str) return '';
@@ -119,6 +177,39 @@ function parseDateIso(raw) {
   return Number.isFinite(d.getTime()) ? d.toISOString() : '';
 }
 
+function sanitizeArticleHtml(html, maxLen = 24000) {
+  if (!html) return '';
+  const cleaned = decodeXmlEntities(html)
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<(?:iframe|object|embed|form|input|button|textarea|select|svg)[\s\S]*?<\/(?:iframe|object|embed|form|input|button|textarea|select|svg)>/gi, '')
+    .replace(/<(?:iframe|object|embed|input|meta|link|base)\b[^>]*\/?>/gi, '')
+    .replace(/\s+on[a-z]+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, '')
+    .replace(/\s+style\s*=\s*(?:"[^"]*"|'[^']*')/gi, '')
+    .replace(/(href|src)\s*=\s*["']\s*javascript:[^"']*["']/gi, '$1="#"')
+    .trim();
+
+  if (!cleaned) return '';
+  // If plain text without block tags, wrap paragraphs cleanly
+  if (!/<(?:p|div|h[1-6]|ul|ol|blockquote|pre|figure|img)\b/i.test(cleaned)) {
+    const paras = cleaned
+      .split(/\n{2,}/)
+      .map((p) => p.trim())
+      .filter(Boolean)
+      .map((p) => `<p>${p}</p>`)
+      .join('\n');
+    return paras.slice(0, maxLen);
+  }
+  return cleaned.length > maxLen ? `${cleaned.slice(0, maxLen)}…` : cleaned;
+}
+
+function extractAuthor(block) {
+  const authorBlock = extractTag(block, ['dc:creator', 'author', 'creator']);
+  if (!authorBlock) return '';
+  const nestedName = extractTag(authorBlock, ['name']);
+  return stripHtml(nestedName || authorBlock).slice(0, 80);
+}
+
 function parseFeedXml(xml, sourceMeta = {}) {
   const text = String(xml || '');
   if (!text.trim()) return [];
@@ -140,15 +231,20 @@ function parseFeedXml(xml, sourceMeta = {}) {
     const publishedAt = parseDateIso(
       extractTag(block, ['pubDate', 'published', 'updated', 'dc:date'])
     );
-    const rawSnippet = extractTag(block, ['description', 'summary', 'content:encoded', 'content']);
-    const snippet = stripHtml(rawSnippet).slice(0, 900);
+    const author = extractAuthor(block);
+    const rawFull = extractTag(block, ['content:encoded', 'content', 'description', 'summary']);
+    const rawSummary = extractTag(block, ['description', 'summary', 'content:encoded', 'content']);
+    const snippet = stripHtml(rawSummary || rawFull).slice(0, 900);
+    const contentHtml = sanitizeArticleHtml(rawFull);
 
     if (!title || !url || !/^https?:\/\//i.test(url)) continue;
 
     items.push({
       title,
       url,
+      author,
       snippet,
+      contentHtml,
       publishedAt: publishedAt || new Date().toISOString(),
       source: sourceMeta.name || 'Unknown',
       sourceId: sourceMeta.id || 'unknown',
@@ -233,6 +329,8 @@ function buildNewsItem(candidate, curated, thresholds = DEFAULT_THRESHOLDS) {
   return {
     id: makeItemId(candidate.sourceId, candidate.url, candidate.publishedAt),
     title,
+    ...(candidate.title && candidate.title !== title ? { originalTitle: candidate.title } : {}),
+    ...(candidate.author ? { author: candidate.author } : {}),
     summary,
     url: candidate.url,
     source: candidate.source,
@@ -242,6 +340,7 @@ function buildNewsItem(candidate, curated, thresholds = DEFAULT_THRESHOLDS) {
     region,
     tags: mergedTags.slice(0, 6),
     ...(context ? { context } : {}),
+    ...(candidate.contentHtml ? { contentHtml: candidate.contentHtml } : {}),
   };
 }
 
@@ -290,7 +389,7 @@ async function fetchFeed(source, timeoutMs = 12000) {
   }
 }
 
-async function curateWithLlm(candidate, { apiKey, baseUrl, model, timeoutMs = 45000 }) {
+async function curateWithLlm(candidate, { apiKey, baseUrl, model, systemPrompt, timeoutMs = 45000 }) {
   const endpoint = `${String(baseUrl || 'https://open.bigmodel.cn/api/coding/paas/v4').replace(/\/+$/, '')}/chat/completions`;
   const userPrompt = [
     `【来源】${candidate.source}（分级：${candidate.tier}，标签：${candidate.sourceTags.join(' / ') || '无'}）`,
@@ -315,7 +414,7 @@ async function curateWithLlm(candidate, { apiKey, baseUrl, model, timeoutMs = 45
         temperature: 0.2,
         max_tokens: 2048,
         messages: [
-          { role: 'system', content: CURATION_SYSTEM_PROMPT },
+          { role: 'system', content: systemPrompt || buildCurationSystemPrompt(null) },
           { role: 'user', content: userPrompt },
         ],
       }),
@@ -337,6 +436,7 @@ function parseCliArgs(argv) {
     dryRun: false,
     noLlm: false,
     allowRaw: false,
+    backfillContent: false,
     hours: Number(process.env.AIHOT_WINDOW_HOURS || 72),
     perSource: Number(process.env.AIHOT_PER_SOURCE || 6),
     maxCandidates: Number(process.env.AIHOT_MAX_CANDIDATES || 30),
@@ -350,6 +450,7 @@ function parseCliArgs(argv) {
     if (arg === '--dry-run') opts.dryRun = true;
     else if (arg === '--no-llm') opts.noLlm = true;
     else if (arg === '--allow-raw') opts.allowRaw = true;
+    else if (arg === '--backfill-content') opts.backfillContent = true;
     else if (arg.startsWith('--hours=')) opts.hours = Number(arg.split('=')[1]) || opts.hours;
     else if (arg.startsWith('--per-source=')) opts.perSource = Number(arg.split('=')[1]) || opts.perSource;
     else if (arg.startsWith('--max-candidates=')) opts.maxCandidates = Number(arg.split('=')[1]) || opts.maxCandidates;
@@ -361,9 +462,11 @@ function parseCliArgs(argv) {
 }
 
 async function runSync(opts) {
+  const extractor = await getAihotExtractor();
   const config = JSON.parse(fs.readFileSync(opts.sourcesPath, 'utf8'));
   const sources = Array.isArray(config.sources) ? config.sources : [];
-  const thresholds = { ...DEFAULT_THRESHOLDS, ...(config.thresholds || {}) };
+  const thresholds = { ...extractor.getAihotThresholds(), ...(config.thresholds || {}) };
+  const systemPrompt = buildCurationSystemPrompt(extractor);
 
   const existing = fs.existsSync(opts.newsPath)
     ? JSON.parse(fs.readFileSync(opts.newsPath, 'utf8'))
@@ -382,11 +485,58 @@ async function runSync(opts) {
     const src = sources[idx];
     if (result.status === 'fulfilled') {
       okCount += 1;
-      fetchedAll.push(...result.value.slice(0, opts.perSource));
+      fetchedAll.push(...result.value.slice(0, opts.backfillContent ? 25 : opts.perSource));
     } else {
       console.warn(`[aihot-sync] Feed failed (${src.name}): ${result.reason?.message || result.reason}`);
     }
   });
+
+  if (opts.backfillContent) {
+    const byUrl = new Map();
+    fetchedAll.forEach((item) => {
+      byUrl.set(normalizeUrl(item.url), item);
+    });
+    let updatedCount = 0;
+    const enriched = [];
+    for (const item of existing) {
+      if (!String(item.id || '').startsWith('aihot-')) {
+        enriched.push(item);
+        continue;
+      }
+      const match = byUrl.get(normalizeUrl(item.url));
+      const next = { ...item };
+      let changed = false;
+      if (!next.originalTitle && match && match.title && match.title !== next.title) {
+        next.originalTitle = match.title;
+        changed = true;
+      }
+      if (!next.author && match && match.author) {
+        next.author = match.author;
+        changed = true;
+      }
+
+      const extracted = await extractor.extractFullArticle(item.url, {
+        fallbackHtml: match?.contentHtml || item.contentHtml || '',
+      });
+      if (extracted.author && !next.author) {
+        next.author = extracted.author;
+        changed = true;
+      }
+      if (extracted.html && extracted.html !== next.contentHtml) {
+        next.contentHtml = extracted.html;
+        changed = true;
+        console.log(`  [EXTRACT ${extracted.via}] ${item.source} (${extracted.text.length} chars): ${item.title}`);
+      }
+      if (changed) updatedCount += 1;
+      enriched.push(next);
+    }
+    console.log(`[aihot-sync] Backfilled full AIHOT content/meta for ${updatedCount} existing AIHOT items.`);
+    if (!opts.dryRun && updatedCount > 0) {
+      fs.writeFileSync(opts.newsPath, `${JSON.stringify(enriched, null, 2)}\n`, 'utf8');
+      console.log(`[aihot-sync] Updated ${opts.newsPath}`);
+    }
+    return { added: 0, updated: updatedCount, total: enriched.length };
+  }
 
   // Deduplicate & keep within recency window
   const seenBatchUrls = new Set();
@@ -457,11 +607,34 @@ async function runSync(opts) {
     for (const candidate of selectedCandidates) {
       if (curatedItems.length >= opts.maxNew) break;
       try {
-        const curated = await curateWithLlm(candidate, { apiKey, baseUrl, model });
+        const curated = await curateWithLlm(candidate, { apiKey, baseUrl, model, systemPrompt });
         const item = buildNewsItem(candidate, curated, thresholds);
         if (item) {
+          const extracted = await extractor.extractFullArticle(candidate.url, {
+            fallbackHtml: candidate.contentHtml || '',
+          });
+          if (extracted.html) {
+            item.contentHtml = extracted.html;
+          }
+          if (extracted.author && !item.author) {
+            item.author = extracted.author;
+          }
+          if (extracted.html && isMostlyEnglish(extracted.text)) {
+            try {
+              const zhRaw = await translateHtmlWithLlm(extracted.html, {
+                apiKey,
+                baseUrl,
+                model,
+                extractor,
+              });
+              const zhClean = extractor.sanitizeWithAihot(zhRaw, candidate.url);
+              if (zhClean) item.contentHtmlZh = zhClean;
+            } catch (tErr) {
+              console.warn(`  [TRANSLATE ERR] ${candidate.source}: ${tErr.message}`);
+            }
+          }
           curatedItems.push(item);
-          console.log(`  [KEEP ${item.score}] (${item.tier}) ${item.source} -> ${item.title}`);
+          console.log(`  [KEEP ${item.score}] (${item.tier}, ${extracted.via}${item.contentHtmlZh ? '+zh' : ''}) ${item.source} -> ${item.title}`);
         } else {
           console.log(`  [DROP ${curated?.score ?? '?'}] (${candidate.tier}) ${candidate.source}: ${candidate.title}`);
         }

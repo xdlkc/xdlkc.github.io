@@ -1,0 +1,193 @@
+<%
+const item = page.newsItem || {};
+const format = (iso) => {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (!Number.isFinite(d.getTime())) return String(iso);
+  const parts = new Intl.DateTimeFormat('zh-CN', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  }).formatToParts(d);
+  const get = (type) => (parts.find((p) => p.type === type) || {}).value || '';
+  return `${get('year')}-${get('month')}-${get('day')} ${get('hour')}:${get('minute')}`;
+};
+
+const rawTags = [];
+const seen = new Set();
+const addTag = (t) => {
+  const clean = String(t || '').trim();
+  if (!clean) return;
+  const v = clean.toUpperCase();
+  const label = (v === 'INT' || v === 'INTERNATIONAL') ? '国际' : ((v === 'CN' || v === 'DOMESTIC') ? '国内' : clean);
+  if (!seen.has(label)) {
+    seen.add(label);
+    rawTags.push(label);
+  }
+};
+if (Array.isArray(item.region)) item.region.forEach(addTag);
+else if (typeof item.region === 'string') addTag(item.region);
+if (Array.isArray(item.tags)) item.tags.forEach(addTag);
+
+const scoreNum = typeof item.score === 'number' && Number.isFinite(item.score) ? Math.round(item.score) : null;
+const summaryText = (item.summary && String(item.summary).trim()) || '';
+const contextText = (item.context && String(item.context).trim()) || '';
+const contentHtml = (item.contentHtml && String(item.contentHtml).trim()) || '';
+const contentHtmlZh = (item.contentHtmlZh && String(item.contentHtmlZh).trim()) || '';
+%>
+
+<link rel="stylesheet" href="<%- url_for('/css/news-detail.css') %>" />
+
+<div class="article-shell news-detail-shell container">
+  <%- partial('_partial/header', { navClass: 'article-nav', activeSection: 'news' }) %>
+
+  <div class="news-detail-grid">
+    <!-- Left metadata rail -->
+    <aside class="news-detail-rail news-detail-rail-left">
+      <a class="news-back-link" href="<%- url_for('/news/') %>">← 返回快讯</a>
+
+      <% if (item.source) { %>
+        <div class="news-rail-block">
+          <div class="news-rail-label">来源</div>
+          <div class="news-rail-value news-rail-source"><%= item.source %></div>
+          <% if (item.author) { %>
+            <div class="news-rail-sub"><%= item.author %></div>
+          <% } %>
+        </div>
+      <% } %>
+
+      <% if (item.publishedAt) { %>
+        <div class="news-rail-block">
+          <div class="news-rail-label">发布时间</div>
+          <time class="news-rail-value news-rail-time" datetime="<%= item.publishedAt %>"><%= format(item.publishedAt) %></time>
+        </div>
+      <% } %>
+    </aside>
+
+    <!-- Center reading column -->
+    <main id="main-content" class="news-detail-main" tabindex="-1">
+      <header class="news-detail-header">
+        <h1><%= item.title || 'News Detail' %></h1>
+        <% if (item.originalTitle && item.originalTitle !== item.title) { %>
+          <p class="news-detail-original-title"><%= item.originalTitle %></p>
+        <% } %>
+      </header>
+
+      <% if (summaryText || contextText) { %>
+        <section class="news-detail-guide">
+          <div class="news-guide-eyebrow">AI 导读</div>
+          <% if (summaryText) { %>
+            <p class="news-guide-summary"><%= summaryText %></p>
+          <% } %>
+          <% if (contextText) { %>
+            <p class="news-guide-context"><%= contextText %></p>
+          <% } %>
+        </section>
+      <% } %>
+
+      <section class="news-detail-body-section">
+        <div class="news-body-bar">
+          <div class="news-body-eyebrow" data-news-body-label><%= contentHtmlZh ? '正文 · 中文翻译' : '正文 · 原文' %></div>
+          <% if (contentHtml && contentHtmlZh) { %>
+            <div class="news-body-lang-switch" role="group" aria-label="Switch article body language">
+              <button type="button" class="news-lang-btn is-active" data-news-body-toggle="zh" aria-pressed="true">中文</button>
+              <button type="button" class="news-lang-btn" data-news-body-toggle="orig" aria-pressed="false">原文</button>
+            </div>
+          <% } %>
+        </div>
+        <% if (contentHtml || contentHtmlZh) { %>
+          <% if (contentHtmlZh) { %>
+            <div class="news-detail-body" data-news-body-pane="zh">
+              <%- contentHtmlZh %>
+            </div>
+          <% } %>
+          <% if (contentHtml) { %>
+            <div class="news-detail-body" data-news-body-pane="orig"<%- contentHtmlZh ? ' hidden' : '' %>>
+              <%- contentHtml %>
+            </div>
+          <% } %>
+        <% } else { %>
+          <div class="news-detail-body-fallback">
+            <p>该信源未在 RSS 中提供完整正文，请前往原文查看全部内容。</p>
+            <% if (item.url) { %>
+              <a class="news-origin-btn" href="<%= item.url %>" target="_blank" rel="noreferrer">打开原文 ↗</a>
+            <% } %>
+          </div>
+        <% } %>
+      </section>
+      <% if (contentHtml && contentHtmlZh) { %>
+        <script>
+          (function() {
+            const buttons = document.querySelectorAll('[data-news-body-toggle]');
+            const panes = document.querySelectorAll('[data-news-body-pane]');
+            const label = document.querySelector('[data-news-body-label]');
+            buttons.forEach((btn) => {
+              btn.addEventListener('click', () => {
+                const mode = btn.getAttribute('data-news-body-toggle');
+                buttons.forEach((b) => {
+                  const active = b === btn;
+                  b.classList.toggle('is-active', active);
+                  b.setAttribute('aria-pressed', active ? 'true' : 'false');
+                });
+                panes.forEach((p) => {
+                  p.hidden = p.getAttribute('data-news-body-pane') !== mode;
+                });
+                if (label) label.textContent = mode === 'zh' ? '正文 · 中文翻译' : '正文 · 原文';
+              });
+            });
+          })();
+        </script>
+      <% } %>
+
+      <% if (page.prevNews || page.nextNews) { %>
+        <nav class="news-detail-pager" aria-label="News navigation">
+          <% if (page.prevNews) { %>
+            <a class="news-pager-link" href="<%- url_for(page.prevNews.path) %>">
+              <span class="news-pager-label">← 上一条</span>
+              <span class="news-pager-title"><%= page.prevNews.title %></span>
+            </a>
+          <% } else { %>
+            <span></span>
+          <% } %>
+          <% if (page.nextNews) { %>
+            <a class="news-pager-link news-pager-next" href="<%- url_for(page.nextNews.path) %>">
+              <span class="news-pager-label">下一条 →</span>
+              <span class="news-pager-title"><%= page.nextNews.title %></span>
+            </a>
+          <% } %>
+        </nav>
+      <% } %>
+    </main>
+
+    <!-- Right action & score rail -->
+    <aside class="news-detail-rail news-detail-rail-right">
+      <% if (item.url) { %>
+        <a class="news-origin-btn news-origin-btn-block" href="<%= item.url %>" target="_blank" rel="noreferrer">打开原文 ↗</a>
+      <% } %>
+
+      <% if (scoreNum !== null) { %>
+        <div class="news-rail-block">
+          <div class="news-rail-label">AI 评分</div>
+          <div class="news-rail-score-wrap">
+            <span class="news-detail-score<%= scoreNum >= 80 ? ' is-high' : '' %>">AI 评分 · <%= scoreNum %></span>
+          </div>
+        </div>
+      <% } %>
+
+      <% if (rawTags.length) { %>
+        <div class="news-rail-block">
+          <div class="news-rail-label">主题</div>
+          <div class="news-rail-tags">
+            <% rawTags.slice(0, 6).forEach((t) => { %>
+              <a class="news-rail-tag" href="<%- url_for('/news/?tag=' + encodeURIComponent(t)) %>"><%= t %></a>
+            <% }) %>
+          </div>
+        </div>
+      <% } %>
+    </aside>
+  </div>
+</div>

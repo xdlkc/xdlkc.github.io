@@ -1,0 +1,7 @@
+{
+  "name": "aihot-vendor",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Vendored DB-free content extraction, sanitization, and prompt modules from AIHOT (MIT)."
+}
