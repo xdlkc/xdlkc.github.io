@@ -39,7 +39,10 @@ test('post header avoids duplicate title metadata and places countdown in the TO
   const template = read('themes/evan/layout/post.ejs');
 
   assert.match(template, /primaryCategoryName \|\| 'ARTICLES'/);
-  assert.match(template, /class="article-updated"/);
+  assert.match(template, /class="article-meta-reading-time"/);
+  assert.match(template, /class="article-meta-tags article-footer-tags"/);
+  assert.doesNotMatch(template, /data-breadcrumb/);
+  assert.doesNotMatch(template, /class="article-summary"/);
   assert.doesNotMatch(template, /data-breadcrumb-title/);
   assert.doesNotMatch(template, /data-publish-date/);
   assert.doesNotMatch(template, /LATEST WRITING/);

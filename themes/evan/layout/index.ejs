@@ -6,7 +6,7 @@ const summarize = (input, limit = 140) => {
     .replace(/<[^>]+>/g, ' ')
     .replace(/https?:\/\/[^\s<>()]+/gi, ' ')
     .replace(/\(\s*\)|\[\s*\]/g, ' ')
-    .replace(/(?:原文链接|来源|参考链接|链接|URL)\s*[:：]\s*(?=[,，。.;；\s]|$)/gi, ' ')
+    .replace(/(?:原文链接|原文|来源|参考链接|链接|URL)\s*[:：]\s*(?=[,，。.;；\s]|$)/gi, ' ')
     .replace(/\s+/g, ' ')
     .trim();
   return plain.length > limit ? `${plain.slice(0, limit).trim()}...` : plain;
@@ -19,33 +19,35 @@ const summarize = (input, limit = 140) => {
     <div class="hero-grid">
       <div class="hero-copy">
         <p class="tag" data-i18n-key="index.hero.tag">HELLO</p>
-        <h1><span data-i18n-key="index.hero.titleLine1">I am Evan Zhang,</span><br /><span data-i18n-key="index.hero.titleLine2">an Agent Application Engineer (Full Stack)</span></h1>
-        <p class="subtitle" data-i18n-key="index.hero.subtitle">Previously a Java backend engineer, now focused on Agent application development and full stack engineering at Alibaba Group (Beijing).</p>
+        <h1><span data-i18n-key="index.hero.titleLine1">Hi, I'm Evan Zhang.</span><br /><span class="hero-title-muted" data-i18n-key="index.hero.titleLine2">AI Infra &amp; Agent Engineer.</span></h1>
+        <p class="subtitle" data-i18n-key="index.hero.subtitle">Working on AI Agent infrastructure and crafting local-first developer tools.</p>
         <div class="actions">
           <a class="btn primary" href="#writing" data-i18n-key="index.latestWriting">Latest Writing</a>
-          <a class="btn ghost" href="https://github.com/xdlkc" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn ghost" href="https://github.com/xdlkc" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
       </div>
 
       <aside class="hero-panel">
         <p class="hero-panel-eyebrow" data-i18n-key="index.profile.eyebrow">PROFILE</p>
-        <div class="hero-panel-item">
-          <span class="hero-panel-label" data-i18n-key="index.profile.focusLabel">Focus</span>
-          <strong data-i18n-key="index.profile.focusValue">Agent Apps</strong>
-        </div>
-        <div class="hero-panel-item">
-          <span class="hero-panel-label" data-i18n-key="index.profile.stackLabel">Stack</span>
-          <strong data-i18n-key="index.profile.stackValue">Full Stack + Engineering</strong>
-        </div>
-        <div class="hero-panel-item">
-          <span class="hero-panel-label" data-i18n-key="index.profile.baseLabel">Base</span>
-          <strong data-i18n-key="index.profile.baseValue">Beijing</strong>
-        </div>
-        <% if (latestPost) { %>
-          <div class="hero-panel-feature">
-            <span class="hero-panel-label" data-i18n-key="index.profile.latestLabel">Latest</span>
-            <a href="<%- url_for(latestPost.path) %>"><%= latestPost.title %></a>
+        <dl class="hero-profile-list">
+          <div class="hero-profile-row">
+            <dt class="hero-panel-label" data-i18n-key="index.profile.focusLabel">Focus</dt>
+            <dd data-i18n-key="index.profile.focusValue">AI Infra · Agent</dd>
           </div>
+          <div class="hero-profile-row">
+            <dt class="hero-panel-label" data-i18n-key="index.profile.stackLabel">Stack</dt>
+            <dd data-i18n-key="index.profile.stackValue">Rust · Python · Go · TS · Swift</dd>
+          </div>
+          <div class="hero-profile-row">
+            <dt class="hero-panel-label" data-i18n-key="index.profile.baseLabel">Base</dt>
+            <dd data-i18n-key="index.profile.baseValue">Beijing</dd>
+          </div>
+        </dl>
+        <% if (latestPost) { %>
+          <a class="hero-panel-latest" href="<%- url_for(latestPost.path) %>">
+            <span class="hero-panel-label" data-i18n-key="index.profile.latestLabel">Latest</span>
+            <span class="hero-panel-latest-title"><%= latestPost.title %> <span aria-hidden="true">→</span></span>
+          </a>
         <% } %>
       </aside>
     </div>
@@ -54,54 +56,110 @@ const summarize = (input, limit = 140) => {
 
 <main id="main-content" tabindex="-1">
   <section id="projects" class="section container">
-    <h2 data-i18n-key="index.projects">Projects</h2>
+    <div class="section-head">
+      <h2 data-i18n-key="index.projects">Projects</h2>
+      <a class="section-cta" href="https://github.com/xdlkc?tab=repositories" target="_blank" rel="noreferrer" data-i18n-key="index.projects.all">View all repos →</a>
+    </div>
     <div class="grid">
-      <article class="card">
-        <h3>loom</h3>
-        <p data-i18n-key="index.project.loom">A local-only model quota dashboard with usage curves, browser sync, and a unified model gateway.</p>
-        <a href="https://github.com/xdlkc/loom" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
+      <article class="card card-project">
+        <div class="card-head">
+          <h3><a class="card-title-link card-link-stretched" href="https://github.com/xdlkc/nexus" target="_blank" rel="noreferrer">nexus</a></h3>
+          <span class="card-ext-icon" aria-hidden="true">↗</span>
+        </div>
+        <p class="card-desc" data-i18n-key="index.project.nexus">Event-driven, dual-engine Super-Agent control plane and polymorphic worker runtime built in Rust and TypeScript.</p>
+        <div class="card-tags">
+          <span class="card-tag">Rust</span>
+          <span class="card-tag">Agent</span>
+        </div>
       </article>
 
-      <article class="card">
-        <h3>llm-texas-holdem</h3>
-        <p data-i18n-key="index.project.llmTexasHoldem">A Royal Hold'em AI arena for one human and multiple LLM/Agent opponents, supporting OpenAI and Anthropic protocols.</p>
-        <a href="https://github.com/xdlkc/llm-texas-holdem" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
+      <article class="card card-project">
+        <div class="card-head">
+          <h3><a class="card-title-link card-link-stretched" href="https://github.com/xdlkc/loom" target="_blank" rel="noreferrer">loom</a></h3>
+          <span class="card-ext-icon" aria-hidden="true">↗</span>
+        </div>
+        <p class="card-desc" data-i18n-key="index.project.loom">Local-only unified Rust model gateway (OpenAI &amp; Anthropic APIs) with a loopback observability console.</p>
+        <div class="card-tags">
+          <span class="card-tag">Rust</span>
+          <span class="card-tag">Gateway</span>
+        </div>
       </article>
 
-      <article class="card">
-        <h3>scribeleaf</h3>
-        <p data-i18n-key="index.project.scribeleaf">A native macOS Markdown editor with live preview.</p>
-        <a href="https://github.com/xdlkc/scribeleaf" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
+      <article class="card card-project">
+        <div class="card-head">
+          <h3><a class="card-title-link card-link-stretched" href="https://github.com/xdlkc/verba" target="_blank" rel="noreferrer">verba</a></h3>
+          <span class="card-ext-icon" aria-hidden="true">↗</span>
+        </div>
+        <p class="card-desc" data-i18n-key="index.project.verba">Local-first macOS live bilingual subtitles and structured meeting notes with pinyin search and Obsidian sync.</p>
+        <div class="card-tags">
+          <span class="card-tag">Rust</span>
+          <span class="card-tag">macOS</span>
+        </div>
       </article>
 
-      <article class="card">
-        <h3>stillpin</h3>
-        <p data-i18n-key="index.project.stillpin">A native macOS tool for region capture, annotation, and floating image pins, built with Swift and AppKit.</p>
-        <a href="https://github.com/xdlkc/stillpin" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
+      <article class="card card-project">
+        <div class="card-head">
+          <h3><a class="card-title-link card-link-stretched" href="https://github.com/xdlkc/scribeleaf" target="_blank" rel="noreferrer">scribeleaf</a></h3>
+          <span class="card-ext-icon" aria-hidden="true">↗</span>
+        </div>
+        <p class="card-desc" data-i18n-key="index.project.scribeleaf">Native macOS Markdown editor built with AppKit, WKWebView &amp; CodeMirror 6 for live preview and multi-format export.</p>
+        <div class="card-tags">
+          <span class="card-tag">macOS</span>
+          <span class="card-tag">Markdown</span>
+        </div>
       </article>
 
-      <article class="card">
-        <h3>AgentForge</h3>
-        <p data-i18n-key="index.project.agentForge">An engineering-focused project for Agent applications, covering end-to-end practices from backend capability encapsulation to frontend interaction delivery.</p>
-        <a href="https://github.com/xdlkc/AgentForge" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
+      <article class="card card-project">
+        <div class="card-head">
+          <h3><a class="card-title-link card-link-stretched" href="https://github.com/xdlkc/lstack" target="_blank" rel="noreferrer">lstack</a></h3>
+          <span class="card-ext-icon" aria-hidden="true">↗</span>
+        </div>
+        <p class="card-desc" data-i18n-key="index.project.lstack">Personal Agent Skills stack for engineering and productivity across Antigravity, Claude Code, Codex, Gemini CLI, and Cursor.</p>
+        <div class="card-tags">
+          <span class="card-tag">Agent Skills</span>
+          <span class="card-tag">Workflow</span>
+        </div>
       </article>
 
-      <article class="card">
-        <h3>skills-manager</h3>
-        <p data-i18n-key="index.project.skillsManager">A tool for managing Agent skill configurations and version evolution, improving consistency and delivery efficiency in multi-skill collaboration.</p>
-        <a href="https://github.com/xdlkc/skills-manager" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
+      <article class="card card-project">
+        <div class="card-head">
+          <h3><a class="card-title-link card-link-stretched" href="https://github.com/xdlkc/AgentForge" target="_blank" rel="noreferrer">AgentForge</a></h3>
+          <span class="card-ext-icon" aria-hidden="true">↗</span>
+        </div>
+        <p class="card-desc" data-i18n-key="index.project.agentForge">Agent Skills package implementing Spec-Driven Development (SDD) with a six-phase workflow, EARS templates, and validation scripts.</p>
+        <div class="card-tags">
+          <span class="card-tag">SDD</span>
+          <span class="card-tag">Agent</span>
+        </div>
       </article>
     </div>
   </section>
 
   <section id="writing" class="section container">
-    <h2 data-i18n-key="index.latestWriting">Latest Writing</h2>
-    <div class="grid">
-      <% posts.slice(0, 6).forEach((post) => { %>
-        <article class="card">
-          <h3><%= post.title %></h3>
-          <p><%= summarize(post.description || post.excerpt || post.content) %></p>
-          <a href="<%- url_for(post.path) %>" data-i18n-key="index.readArticle">Read Article</a>
+    <div class="section-head">
+      <h2 data-i18n-key="index.latestWriting">Latest Writing</h2>
+      <a class="section-cta" href="<%- url_for('/archives/') %>" data-i18n-key="index.writing.all">View all articles →</a>
+    </div>
+    <div class="writing-grid">
+      <% posts.slice(0, 6).forEach((post) => {
+        const postDate = post.date ? (typeof date === 'function' ? date(post.date, 'YYYY-MM-DD') : String(post.date).slice(0, 10)) : '';
+        const postTags = (post.tags && post.tags.length) ? post.tags.toArray().slice(0, 3) : [];
+      %>
+        <article class="card card-post">
+          <% if (postDate) { %>
+            <div class="card-meta">
+              <time datetime="<%= postDate %>"><%= postDate %></time>
+            </div>
+          <% } %>
+          <h3 class="card-title-clamp"><a class="card-title-link card-link-stretched" href="<%- url_for(post.path) %>"><%= post.title %></a></h3>
+          <p class="card-desc card-desc-2"><%= summarize(post.description || post.excerpt || post.content, 120) %></p>
+          <% if (postTags.length) { %>
+            <div class="card-tags">
+              <% postTags.forEach((tag) => { %>
+                <span class="card-tag">#<%= tag.name %></span>
+              <% }) %>
+            </div>
+          <% } %>
         </article>
       <% }) %>
     </div>
@@ -119,48 +177,58 @@ const summarize = (input, limit = 140) => {
   %>
   <% if (latestNews.length) { %>
     <section id="news" class="section container">
-      <h2 data-i18n-key="index.news.latest">Latest News</h2>
-      <div class="grid">
+      <div class="section-head">
+        <h2 data-i18n-key="index.news.latest">Latest News</h2>
+        <a class="section-cta" href="<%- url_for('/news/') %>" data-i18n-key="index.news.all">View all news →</a>
+      </div>
+      <div class="news-grid">
         <% latestNews.forEach((n) => { %>
-          <article class="card">
-            <h3 style="margin-bottom: 0.4rem;"><a href="<%= n.url %>" target="_blank" rel="noreferrer"><%= n.title %></a></h3>
-            <p style="opacity: 0.75; margin: 0 0 0.5rem 0;"><%= formatNewsTime(n.publishedAt) %><% if (n.source) { %> · <%= n.source %><% } %></p>
-            <% if (n.summary) { %><p><%= n.summary %></p><% } %>
+          <article class="card card-news">
+            <div class="card-meta">
+              <time><%= formatNewsTime(n.publishedAt) %></time>
+              <% if (n.source) { %><span class="card-meta-sep" aria-hidden="true">·</span><span><%= n.source %></span><% } %>
+            </div>
+            <h3 class="card-title-clamp"><a class="card-title-link card-link-stretched" href="<%= n.url %>" target="_blank" rel="noreferrer"><%= n.title %></a></h3>
+            <% if (n.summary) { %><p class="card-desc card-desc-2"><%= n.summary %></p><% } %>
           </article>
         <% }) %>
-      </div>
-      <div class="section-actions">
-        <a class="section-cta" href="<%- url_for('/news/') %>" data-i18n-key="index.news.all">View all news -></a>
       </div>
     </section>
   <% } %>
 
   <section id="about" class="section container">
-    <h2 data-i18n-key="index.about">About</h2>
-    <div class="grid info-grid">
-      <% if (latestPost) { %>
-        <article class="card info-card info-card-focus">
-          <p class="info-card-eyebrow" data-i18n-key="index.currentFocus">Current Focus</p>
-          <h3><%= latestPost.title %></h3>
-          <p><%= summarize(latestPost.description || latestPost.excerpt || latestPost.content, 220) %></p>
-          <a href="<%- url_for(latestPost.path) %>" data-i18n-key="index.readArticle">Read Article</a>
-        </article>
-      <% } %>
-
-      <article class="card info-card">
-        <p class="info-card-eyebrow" data-i18n-key="index.about">About</p>
-        <h3 data-i18n-key="index.aboutCard.role">Agent Application Engineer</h3>
+    <div class="section-head">
+      <h2 data-i18n-key="index.about">About</h2>
+    </div>
+    <div class="about-grid">
+      <article class="card about-bio-card">
+        <h3 data-i18n-key="index.aboutCard.role">AI Infra &amp; Agent Engineer</h3>
         <p data-i18n-key="index.aboutCard.bio">
-          I studied at Xidian University from 2014 to 2018 for my bachelor's degree and currently work at Alibaba Group (Beijing).
-          I started as a Java backend engineer and now focus on Agent application development and full stack engineering, with an emphasis on engineering quality and delivery efficiency.
+          Software engineer based in Beijing working on AI infrastructure and Agent platforms. Outside work, I enjoy exploring AI-native workflows and building local-first developer tools and native macOS apps.
         </p>
+        <div class="card-tags">
+          <span class="card-tag">AI Infra</span>
+          <span class="card-tag">Agent Tooling</span>
+          <span class="card-tag">macOS</span>
+        </div>
       </article>
 
-      <article class="card info-card info-card-contact">
-        <p class="info-card-eyebrow" data-i18n-key="index.contact">Contact</p>
+      <article class="card about-contact-card">
         <h3 data-i18n-key="index.contactCard.title">Find Me</h3>
-        <p><span data-i18n-key="index.contactCard.emailLabel">Email:</span> <a href="mailto:wimness@163.com">wimness@163.com</a></p>
-        <p>GitHub: <a href="https://github.com/xdlkc" target="_blank" rel="noreferrer">@xdlkc</a></p>
+        <div class="contact-list">
+          <a class="contact-row" href="mailto:wimness@163.com">
+            <span class="contact-label" data-i18n-key="index.contactCard.emailLabel">Email</span>
+            <span class="contact-value">wimness@163.com ↗</span>
+          </a>
+          <a class="contact-row" href="https://github.com/xdlkc" target="_blank" rel="noreferrer">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">@xdlkc ↗</span>
+          </a>
+          <a class="contact-row" href="<%- url_for('/rss.xml') %>">
+            <span class="contact-label">RSS</span>
+            <span class="contact-value">/rss.xml ↗</span>
+          </a>
+        </div>
       </article>
     </div>
   </section>

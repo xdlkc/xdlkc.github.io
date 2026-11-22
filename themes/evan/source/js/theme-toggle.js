@@ -102,9 +102,18 @@ function applyThemeToDocument({ document, theme, mode, palette }) {
 
     const activePaletteForLabel = m === 'system' ? null : normalizePalette(palette);
     try {
-      toggle.textContent = lang === 'zh'
+      const labelText = lang === 'zh'
         ? `主题：${modeLabel(m, { lang, palette: activePaletteForLabel })}`
         : `Theme: ${modeLabel(m, { lang, palette: activePaletteForLabel })}`;
+      const labelEl = toggle.querySelector?.('[data-theme-label]');
+      if (labelEl) {
+        labelEl.textContent = labelText;
+      } else {
+        toggle.textContent = labelText;
+      }
+      if (toggle.setAttribute) {
+        toggle.setAttribute('title', labelText);
+      }
     } catch {
       // ignore
     }
