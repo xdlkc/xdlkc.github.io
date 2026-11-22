@@ -10,14 +10,42 @@ const format = (iso) => {
 const normalizeTags = (region) => {
   if (!region) return [];
   const arr = Array.isArray(region) ? region : (typeof region === 'string' ? [region] : []);
-  return arr.map((t) => {
-    const v = String(t).toUpperCase();
-    if (v === 'INT') return '国际';
-    if (v === 'CN') return '国内';
-    return String(t);
+  const seen = new Set();
+  const out = [];
+  arr.forEach((t) => {
+    const raw = String(t || '').trim();
+    if (!raw) return;
+    const v = raw.toUpperCase();
+    let label = raw;
+    if (v === 'INT' || v === 'INTERNATIONAL') label = '国际';
+    else if (v === 'CN' || v === 'DOMESTIC') label = '国内';
+    if (!seen.has(label)) {
+      seen.add(label);
+      out.push(label);
+    }
   });
+  return out;
 };
+
+const normalizedItems = newsItems.map((n) => ({
+  item: n,
+  tags: normalizeTags(n.region || n.tags)
+}));
+
+const tagCounts = new Map();
+normalizedItems.forEach(({ tags }) => {
+  tags.forEach((tag) => {
+    tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+  });
+});
+
+const sortedTags = Array.from(tagCounts.entries()).sort((a, b) => {
+  if (b[1] !== a[1]) return b[1] - a[1];
+  return a[0].localeCompare(b[0], 'zh-CN');
+});
 %>
+
+<link rel="stylesheet" href="<%- url_for('/css/news-filter.css') %>" />
 
 <article class="article-shell container">
   <%- partial('_partial/header', { navClass: 'article-nav', activeSection: 'news' }) %>
@@ -28,40 +56,80 @@ const normalizeTags = (region) => {
   </header>
 
   <main id="main-content" class="article-card" tabindex="-1">
-    <% if (!newsItems.length) { %>
+    <% if (!normalizedItems.length) { %>
       <p data-i18n-key="news.empty">No news data yet. Add items to source/_data/news.json.</p>
     <% } else { %>
       <div class="article-content">
-        <% newsItems.forEach((n) => { %>
-          <section style="margin: 1.2rem 0;">
-            <h2 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">
-              <a href="<%= n.url %>" target="_blank" rel="noreferrer"><%= n.title %></a>
-            </h2>
-            <div style="opacity: 0.75; font-size: 0.95rem;">
-              <span><%= format(n.publishedAt) %></span>
-              <% if (n.source) { %>
-                <span> · <%= n.source %></span>
+        <div class="news-filter-bar" role="region" aria-label="Filter news by tag" data-news-filter-bar>
+          <div class="news-filter-chips" role="group" aria-label="News category filters">
+            <button
+              type="button"
+              class="news-filter-chip is-active"
+              data-news-filter-chip="all"
+              aria-pressed="true"
+            >
+              <span class="news-filter-chip-label" data-news-i18n="all">All</span>
+              <span class="news-filter-chip-count"><%= normalizedItems.length %></span>
+            </button>
+            <% sortedTags.forEach(([tag, count]) => { %>
+              <button
+                type="button"
+                class="news-filter-chip"
+                data-news-filter-chip="<%= tag %>"
+                aria-pressed="false"
+              >
+                <span class="news-filter-chip-label">#<%= tag %></span>
+                <span class="news-filter-chip-count"><%= count %></span>
+              </button>
+            <% }) %>
+          </div>
+          <p class="news-filter-status" data-news-filter-status aria-live="polite"></p>
+        </div>
+
+        <div class="news-feed" data-news-feed data-news-page-size="15">
+          <% normalizedItems.forEach(({ item: n, tags }) => { %>
+            <section class="news-item" data-news-item data-news-tags="<%= tags.join('|') %>">
+              <h2 class="news-item-title">
+                <a href="<%= n.url %>" target="_blank" rel="noreferrer"><%= n.title %></a>
+              </h2>
+              <div class="news-item-meta">
+                <span><%= format(n.publishedAt) %></span>
+                <% if (n.source) { %>
+                  <span> · <%= n.source %></span>
+                <% } %>
+              </div>
+              <% const summaryText = (n.summary && String(n.summary).trim()) || ''; %>
+              <% const contextText = (n.context && String(n.context).trim()) || ''; %>
+              <% if (summaryText) { %>
+                <p class="news-item-summary"><%= summaryText %></p>
               <% } %>
-            </div>
-            <% const summaryText = (n.summary && String(n.summary).trim()) || ''; %>
-            <% const contextText = (n.context && String(n.context).trim()) || ''; %>
-            <% if (summaryText) { %>
-              <p style="margin: 0.4rem 0 0 0;"><%= summaryText %></p>
-            <% } %>
-            <% if (contextText) { %>
-              <p style="margin: 0.35rem 0 0 0; opacity: 0.82;"><span data-i18n-key="news.context">Context:</span> <%= contextText %></p>
-            <% } %>
-            <% const tags = normalizeTags(n.region || n.tags); if (tags.length) { %>
-              <p style="margin: 0.35rem 0 0 0; opacity: 0.75;">
-                <% tags.forEach((t) => { %>
-                  <code style="margin-right: 0.4rem;">#<%= t %></code>
-                <% }) %>
-              </p>
-            <% } %>
-          </section>
-          <hr />
-        <% }) %>
+              <% if (contextText) { %>
+                <p class="news-item-context"><span data-i18n-key="news.context">Context:</span> <%= contextText %></p>
+              <% } %>
+              <% if (tags.length) { %>
+                <div class="news-item-tags">
+                  <% tags.forEach((t) => { %>
+                    <button
+                      type="button"
+                      class="news-tag-badge"
+                      data-news-tag-badge="<%= t %>"
+                      aria-pressed="false"
+                    >#<%= t %></button>
+                  <% }) %>
+                </div>
+              <% } %>
+            </section>
+          <% }) %>
+        </div>
+
+        <div class="news-pagination" data-news-pagination hidden>
+          <button type="button" class="news-load-more-btn" data-news-load-more>
+            Load more
+          </button>
+        </div>
       </div>
     <% } %>
   </main>
 </article>
+
+<script src="<%- url_for('/js/news-filter.js') %>" defer></script>
