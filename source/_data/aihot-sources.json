@@ -14,8 +14,15 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T1",
-      "tags": ["官方"],
-      "topics": ["模型发布", "Agent 智能体", "研究"]
+      "tags": [
+        "官方"
+      ],
+      "topics": [
+        "模型发布",
+        "Agent 智能体",
+        "研究"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "rss-google-deepmind",
@@ -24,8 +31,14 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T1",
-      "tags": ["官方"],
-      "topics": ["模型发布", "研究"]
+      "tags": [
+        "官方"
+      ],
+      "topics": [
+        "模型发布",
+        "研究"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "rss-google-research",
@@ -34,8 +47,15 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T1",
-      "tags": ["官方", "研究"],
-      "topics": ["研究", "基础设施"]
+      "tags": [
+        "官方",
+        "研究"
+      ],
+      "topics": [
+        "研究",
+        "基础设施"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "rss-hugging-face",
@@ -44,8 +64,15 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T1",
-      "tags": ["官方", "开源"],
-      "topics": ["开源生态", "模型发布"]
+      "tags": [
+        "官方",
+        "开源"
+      ],
+      "topics": [
+        "开源生态",
+        "模型发布"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "rss-microsoft-research",
@@ -54,8 +81,15 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T1",
-      "tags": ["官方", "研究"],
-      "topics": ["研究", "Agent 智能体"]
+      "tags": [
+        "官方",
+        "研究"
+      ],
+      "topics": [
+        "研究",
+        "Agent 智能体"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "rss-nvidia-blog",
@@ -64,8 +98,14 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T1",
-      "tags": ["官方"],
-      "topics": ["基础设施", "模型发布"]
+      "tags": [
+        "官方"
+      ],
+      "topics": [
+        "基础设施",
+        "模型发布"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "rss-aws-ml",
@@ -74,8 +114,15 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T1",
-      "tags": ["官方", "工程"],
-      "topics": ["基础设施", "Agent 智能体"]
+      "tags": [
+        "官方",
+        "工程"
+      ],
+      "topics": [
+        "基础设施",
+        "Agent 智能体"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "rss-github-ai",
@@ -84,8 +131,15 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T1",
-      "tags": ["官方", "工程"],
-      "topics": ["Agent 智能体", "开源生态"]
+      "tags": [
+        "官方",
+        "工程"
+      ],
+      "topics": [
+        "Agent 智能体",
+        "开源生态"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "rss-mistral",
@@ -94,8 +148,14 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T1",
-      "tags": ["官方"],
-      "topics": ["模型发布", "开源生态"]
+      "tags": [
+        "官方"
+      ],
+      "topics": [
+        "模型发布",
+        "开源生态"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "rss-bair",
@@ -104,8 +164,14 @@
       "kind": "atom",
       "industry": "AI",
       "tier": "T1",
-      "tags": ["研究"],
-      "topics": ["研究", "开源生态"]
+      "tags": [
+        "研究"
+      ],
+      "topics": [
+        "研究",
+        "开源生态"
+      ],
+      "intervalMinutes": 180
     },
     {
       "id": "rss-the-verge-ai",
@@ -114,8 +180,14 @@
       "kind": "atom",
       "industry": "AI",
       "tier": "T2",
-      "tags": ["媒体"],
-      "topics": ["模型发布", "Agent 智能体"]
+      "tags": [
+        "媒体"
+      ],
+      "topics": [
+        "模型发布",
+        "Agent 智能体"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-techcrunch-ai",
@@ -124,8 +196,14 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T2",
-      "tags": ["媒体"],
-      "topics": ["模型发布", "基础设施"]
+      "tags": [
+        "媒体"
+      ],
+      "topics": [
+        "模型发布",
+        "基础设施"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-ars-technica-ai",
@@ -134,8 +212,14 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T2",
-      "tags": ["媒体"],
-      "topics": ["研究", "基础设施"]
+      "tags": [
+        "媒体"
+      ],
+      "topics": [
+        "研究",
+        "基础设施"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-mit-tech-review-ai",
@@ -144,8 +228,14 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T2",
-      "tags": ["媒体"],
-      "topics": ["研究", "模型发布"]
+      "tags": [
+        "媒体"
+      ],
+      "topics": [
+        "研究",
+        "模型发布"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-the-decoder",
@@ -154,8 +244,14 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T2",
-      "tags": ["媒体"],
-      "topics": ["模型发布", "Agent 智能体"]
+      "tags": [
+        "媒体"
+      ],
+      "topics": [
+        "模型发布",
+        "Agent 智能体"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-simon-willison",
@@ -164,8 +260,14 @@
       "kind": "atom",
       "industry": "AI",
       "tier": "T2",
-      "tags": ["个人"],
-      "topics": ["Agent 智能体", "开源生态"]
+      "tags": [
+        "个人"
+      ],
+      "topics": [
+        "Agent 智能体",
+        "开源生态"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-import-ai",
@@ -174,8 +276,15 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T2",
-      "tags": ["个人", "周刊"],
-      "topics": ["研究", "模型发布"]
+      "tags": [
+        "个人",
+        "周刊"
+      ],
+      "topics": [
+        "研究",
+        "模型发布"
+      ],
+      "intervalMinutes": 180
     },
     {
       "id": "rss-latent-space",
@@ -184,8 +293,14 @@
       "kind": "rss",
       "industry": "AI",
       "tier": "T2",
-      "tags": ["个人"],
-      "topics": ["Agent 智能体", "基础设施"]
+      "tags": [
+        "个人"
+      ],
+      "topics": [
+        "Agent 智能体",
+        "基础设施"
+      ],
+      "intervalMinutes": 180
     },
     {
       "id": "json-hacker-news-top",
@@ -194,13 +309,20 @@
       "kind": "json",
       "industry": "工程与开源",
       "tier": "T2",
-      "tags": ["社区", "工程"],
-      "topics": ["开源生态", "研发效能"],
+      "tags": [
+        "社区",
+        "工程"
+      ],
+      "topics": [
+        "开源生态",
+        "研发效能"
+      ],
       "jsonConfig": {
         "adapter": "hn-top",
         "itemUrlTemplate": "https://hacker-news.firebaseio.com/v0/item/{id}.json",
         "limit": 12
-      }
+      },
+      "intervalMinutes": 60
     },
     {
       "id": "rss-cloudflare-blog",
@@ -209,8 +331,15 @@
       "kind": "rss",
       "industry": "工程与开源",
       "tier": "T1",
-      "tags": ["官方", "工程"],
-      "topics": ["云原生", "研发效能"]
+      "tags": [
+        "官方",
+        "工程"
+      ],
+      "topics": [
+        "云原生",
+        "研发效能"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "rss-rust-blog",
@@ -219,8 +348,15 @@
       "kind": "atom",
       "industry": "工程与开源",
       "tier": "T1",
-      "tags": ["官方", "开源"],
-      "topics": ["Rust & 系统", "开源生态"]
+      "tags": [
+        "官方",
+        "开源"
+      ],
+      "topics": [
+        "Rust & 系统",
+        "开源生态"
+      ],
+      "intervalMinutes": 180
     },
     {
       "id": "rss-github-engineering",
@@ -229,8 +365,15 @@
       "kind": "rss",
       "industry": "工程与开源",
       "tier": "T1",
-      "tags": ["官方", "工程"],
-      "topics": ["开源生态", "研发效能"]
+      "tags": [
+        "官方",
+        "工程"
+      ],
+      "topics": [
+        "开源生态",
+        "研发效能"
+      ],
+      "intervalMinutes": 120
     },
     {
       "id": "web-cncf-blog",
@@ -239,15 +382,22 @@
       "kind": "web",
       "industry": "工程与开源",
       "tier": "T1",
-      "tags": ["官方", "云原生"],
-      "topics": ["云原生", "开源生态"],
+      "tags": [
+        "官方",
+        "云原生"
+      ],
+      "topics": [
+        "云原生",
+        "开源生态"
+      ],
       "webConfig": {
         "itemSelector": "article, .post-archive__item, .wp-block-post",
         "titleSelector": "h2 a, h3 a, .post-archive__title a",
         "linkSelector": "h2 a, h3 a, .post-archive__title a",
         "summarySelector": "p, .post-archive__excerpt",
         "dateSelector": "time, .post-archive__date"
-      }
+      },
+      "intervalMinutes": 180
     },
     {
       "id": "rss-cnbc-markets",
@@ -256,8 +406,15 @@
       "kind": "rss",
       "industry": "金融与政策",
       "tier": "T2",
-      "tags": ["媒体", "市场"],
-      "topics": ["美股", "宏观"]
+      "tags": [
+        "媒体",
+        "市场"
+      ],
+      "topics": [
+        "美股",
+        "宏观"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-yahoo-finance",
@@ -266,8 +423,15 @@
       "kind": "rss",
       "industry": "金融与政策",
       "tier": "T2",
-      "tags": ["媒体", "市场"],
-      "topics": ["美股", "宏观"]
+      "tags": [
+        "媒体",
+        "市场"
+      ],
+      "topics": [
+        "美股",
+        "宏观"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-gnews-ashare",
@@ -276,8 +440,15 @@
       "kind": "rss",
       "industry": "金融与政策",
       "tier": "T2",
-      "tags": ["聚合", "A股"],
-      "topics": ["A股", "市场政策"]
+      "tags": [
+        "聚合",
+        "A股"
+      ],
+      "topics": [
+        "A股",
+        "市场政策"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-gnews-hkstock",
@@ -286,8 +457,15 @@
       "kind": "rss",
       "industry": "金融与政策",
       "tier": "T2",
-      "tags": ["聚合", "港股"],
-      "topics": ["港股", "宏观"]
+      "tags": [
+        "聚合",
+        "港股"
+      ],
+      "topics": [
+        "港股",
+        "宏观"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-gnews-usstock",
@@ -296,8 +474,15 @@
       "kind": "rss",
       "industry": "金融与政策",
       "tier": "T2",
-      "tags": ["聚合", "美股"],
-      "topics": ["美股", "宏观"]
+      "tags": [
+        "聚合",
+        "美股"
+      ],
+      "topics": [
+        "美股",
+        "宏观"
+      ],
+      "intervalMinutes": 60
     },
     {
       "id": "rss-gnews-policy",
@@ -306,8 +491,16 @@
       "kind": "rss",
       "industry": "金融与政策",
       "tier": "T1",
-      "tags": ["政策", "官方动态"],
-      "topics": ["市场政策", "政府动态", "宏观"]
+      "tags": [
+        "政策",
+        "官方动态"
+      ],
+      "topics": [
+        "市场政策",
+        "政府动态",
+        "宏观"
+      ],
+      "intervalMinutes": 60
     }
   ]
 }

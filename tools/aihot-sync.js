@@ -1051,6 +1051,7 @@ function parseCliArgs(argv) {
     rebuildHot: false,
     industries: parseCsvList(process.env.AIHOT_INDUSTRIES),
     kinds: parseCsvList(process.env.AIHOT_SOURCE_KINDS),
+    dueStatePath: process.env.AIHOT_DUE_STATE_PATH || '',
     browseFloor: Number(process.env.AIHOT_BROWSE_FLOOR || DEFAULT_BROWSE_FLOOR),
     hours: Number(process.env.AIHOT_WINDOW_HOURS || 72),
     perSource: Number(process.env.AIHOT_PER_SOURCE || 6),
@@ -1070,6 +1071,7 @@ function parseCliArgs(argv) {
     else if (arg === '--rebuild-hot') opts.rebuildHot = true;
     else if (arg.startsWith('--industry=')) opts.industries = parseCsvList(arg.slice('--industry='.length));
     else if (arg.startsWith('--kind=')) opts.kinds = parseCsvList(arg.slice('--kind='.length));
+    else if (arg.startsWith('--due-state=')) opts.dueStatePath = path.resolve(arg.slice('--due-state='.length));
     else if (arg.startsWith('--browse-floor=')) {
       const n = Number(arg.slice('--browse-floor='.length));
       if (Number.isFinite(n)) opts.browseFloor = n;
@@ -1109,7 +1111,28 @@ async function runSync(opts) {
   const extractor = await getAihotExtractor();
   const config = JSON.parse(fs.readFileSync(opts.sourcesPath, 'utf8'));
   const allSources = Array.isArray(config.sources) ? config.sources : [];
-  const sources = filterSources(allSources, { industries: opts.industries, kinds: opts.kinds });
+  let sources = filterSources(allSources, { industries: opts.industries, kinds: opts.kinds });
+  let dueState = {};
+  const nowMs = Date.now();
+  if (opts.dueStatePath && !opts.backfillContent) {
+    try {
+      if (fs.existsSync(opts.dueStatePath)) {
+        dueState = JSON.parse(fs.readFileSync(opts.dueStatePath, 'utf8')) || {};
+      }
+    } catch {
+      dueState = {};
+    }
+    const beforeCount = sources.length;
+    sources = sources.filter((src) => {
+      const intervalMs = (Number(src.intervalMinutes) || 120) * 60 * 1000;
+      const lastMs = Number(dueState[src.id] || 0);
+      return !lastMs || nowMs - lastMs >= intervalMs;
+    });
+    console.log(`[aihot-sync] Due-source check: ${sources.length}/${beforeCount} sources due.`);
+    if (sources.length === 0) {
+      return { added: 0, total: existing.length };
+    }
+  }
   const thresholds = {
     ...DEFAULT_THRESHOLDS,
     ...extractor.getAihotThresholds(),
@@ -1132,11 +1155,20 @@ async function runSync(opts) {
     const src = sources[idx];
     if (result.status === 'fulfilled') {
       okCount += 1;
+      if (opts.dueStatePath) dueState[src.id] = Date.now();
       fetchedAll.push(...result.value.slice(0, opts.backfillContent ? 25 : opts.perSource));
     } else {
       console.warn(`[aihot-sync] Source failed (${src.name} [${src.kind || 'rss'}]): ${result.reason?.message || result.reason}`);
     }
   });
+
+  if (opts.dueStatePath && !opts.dryRun && !opts.backfillContent) {
+    try {
+      fs.writeFileSync(opts.dueStatePath, `${JSON.stringify(dueState, null, 2)}\n`, 'utf8');
+    } catch (e) {
+      console.warn(`[aihot-sync] Failed to save due state: ${e.message}`);
+    }
+  }
 
   if (opts.backfillContent) {
     const byUrl = new Map();
