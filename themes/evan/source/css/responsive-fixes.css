@@ -146,3 +146,225 @@
     padding: 2px 3px;
   }
 }
+
+/* ==========================================================================
+   P2-1: Mobile Navigation Drawer (<= 768px) — desktop (> 768px) unchanged
+   ========================================================================== */
+.nav-mobile-actions {
+  display: none;
+}
+
+@keyframes mobile-nav-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav[data-mobile-nav],
+  .article-nav[data-mobile-nav] {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.45rem;
+  }
+
+  [data-mobile-nav] .brand {
+    font-size: 1.08rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  [data-mobile-nav] .nav-mobile-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    flex-shrink: 0;
+  }
+
+  [data-mobile-nav] .nav-mobile-search,
+  [data-mobile-nav] .nav-menu-toggle {
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    border: 1px solid var(--border);
+    background: var(--surface-elevated, var(--card));
+    color: var(--text);
+    font: inherit;
+    font-size: 0.86rem;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+  }
+
+  [data-mobile-nav] .nav-mobile-search {
+    padding: 0 0.75rem;
+    border-radius: 999px;
+  }
+
+  [data-mobile-nav] .nav-menu-toggle {
+    width: 38px;
+    height: 36px;
+    padding: 0;
+    border-radius: 10px;
+  }
+
+  [data-mobile-nav] .nav-mobile-search:hover,
+  [data-mobile-nav] .nav-menu-toggle:hover,
+  [data-mobile-nav] .nav-menu-toggle[aria-expanded="true"] {
+    background: var(--accent-soft);
+    border-color: var(--accent-border);
+    color: var(--accent);
+  }
+
+  .nav-menu-toggle-icon {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18px;
+    height: 13px;
+  }
+
+  .nav-menu-toggle-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 999px;
+    background: currentColor;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .nav-menu-toggle[aria-expanded="true"] .nav-menu-toggle-icon span:nth-child(1) {
+    transform: translateY(5.5px) rotate(45deg);
+  }
+
+  .nav-menu-toggle[aria-expanded="true"] .nav-menu-toggle-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-menu-toggle[aria-expanded="true"] .nav-menu-toggle-icon span:nth-child(3) {
+    transform: translateY(-5.5px) rotate(-45deg);
+  }
+
+  .nav[data-mobile-nav] .nav-links[data-mobile-nav-menu],
+  .article-nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] {
+    display: none;
+    flex-basis: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 0.35rem;
+    margin-top: 0.35rem;
+    padding: 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--surface-card, var(--card));
+    box-shadow: 0 14px 36px rgba(15, 23, 42, 0.14);
+    overflow: visible;
+    z-index: 10002;
+  }
+
+  .nav[data-mobile-nav].is-open .nav-links[data-mobile-nav-menu],
+  .article-nav[data-mobile-nav].is-open .nav-links[data-mobile-nav-menu],
+  .nav[data-mobile-nav] .nav-links[data-mobile-nav-menu].is-open,
+  .article-nav[data-mobile-nav] .nav-links[data-mobile-nav-menu].is-open {
+    display: flex;
+    animation: mobile-nav-slide-down 0.18s ease-out both;
+  }
+
+  [data-mobile-nav] .nav-links[data-mobile-nav-menu] .nav-desktop-search {
+    display: none;
+  }
+
+  .nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] a,
+  .nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] button,
+  .article-nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] a,
+  .article-nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 40px;
+    padding: 0.55rem 0.75rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text);
+    font-size: 0.94rem;
+    font-weight: 500;
+    text-align: left;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] a:hover,
+  .nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] button:hover,
+  .article-nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] a:hover,
+  .article-nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] button:hover {
+    transform: none;
+    background: var(--accent-soft);
+    border-color: var(--accent-border);
+    color: var(--accent);
+  }
+
+  .nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] .theme-picker-wrap,
+  .article-nav[data-mobile-nav] .nav-links[data-mobile-nav-menu] .theme-picker-wrap {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   P2-2: Back-to-Top Anti-Overlap (Desktop Outline Clearance + Mobile Compact)
+   ========================================================================== */
+.toc-sidebar {
+  max-height: calc(100vh - 5.5rem);
+  padding-bottom: 3.5rem;
+}
+
+.back-to-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 1rem;
+    line-height: 1;
+    opacity: 0.75;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14);
+  }
+
+  .back-to-top:hover,
+  .back-to-top:focus-visible {
+    opacity: 1;
+  }
+
+  .back-to-top .back-to-top-percent {
+    display: none;
+  }
+}
