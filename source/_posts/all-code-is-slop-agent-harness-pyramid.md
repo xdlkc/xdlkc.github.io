@@ -12,6 +12,9 @@ tags:
   - Coding Agent
 categories:
   - Agent 工程
+audio: /uploads/all-code-is-slop-agent-harness-pyramid/audio.mp3
+audio_mode: podcast
+audio_duration: "06:35"
 ---
 
 ![从 AGENTS.md 到确定性护栏总览图](/uploads/all-code-is-slop-agent-harness-pyramid/001_cover.svg)

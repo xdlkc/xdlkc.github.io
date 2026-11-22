@@ -1,0 +1,12 @@
+{
+  "slug": "all-code-is-slop-agent-harness-pyramid",
+  "mode": "podcast",
+  "tts_model": "speech-2.8-hd",
+  "voice_id": "presenter_male",
+  "speed": 1.0,
+  "chars": 2119,
+  "chunks": 1,
+  "duration_ms": 394956,
+  "duration": "06:35",
+  "cache_hash": "66825bc07b893c4a"
+}

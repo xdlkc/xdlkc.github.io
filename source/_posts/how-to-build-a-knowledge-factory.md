@@ -10,6 +10,9 @@ tags:
   - Agent
 categories:
   - 翻译
+audio: /uploads/how-to-build-a-knowledge-factory/audio.mp3
+audio_mode: podcast
+audio_duration: "06:03"
 ---
 
 中文翻译｜原作者 [Harrison Chase](https://x.com/hwchase17)

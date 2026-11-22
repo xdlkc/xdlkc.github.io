@@ -1,0 +1,12 @@
+{
+  "slug": "kobeissi-letter-45-days-6-trillion",
+  "mode": "podcast",
+  "tts_model": "speech-2.8-hd",
+  "voice_id": "presenter_male",
+  "speed": 1.0,
+  "chars": 2149,
+  "chunks": 1,
+  "duration_ms": 450648,
+  "duration": "07:31",
+  "cache_hash": "aa87566bffa24826"
+}

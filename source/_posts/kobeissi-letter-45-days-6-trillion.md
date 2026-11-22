@@ -10,6 +10,9 @@ tags:
   - 市场
 categories:
   - 翻译
+audio: /uploads/kobeissi-letter-45-days-6-trillion/audio.mp3
+audio_mode: podcast
+audio_duration: "07:31"
 ---
 
 中文翻译｜原作者 [The Kobeissi Letter](https://x.com/KobeissiLetter)

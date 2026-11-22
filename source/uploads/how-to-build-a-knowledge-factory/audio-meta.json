@@ -1,0 +1,12 @@
+{
+  "slug": "how-to-build-a-knowledge-factory",
+  "mode": "podcast",
+  "tts_model": "speech-2.8-hd",
+  "voice_id": "presenter_male",
+  "speed": 1.0,
+  "chars": 1966,
+  "chunks": 1,
+  "duration_ms": 362592,
+  "duration": "06:03",
+  "cache_hash": "f4bbd9b255301b11"
+}
