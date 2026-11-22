@@ -27,10 +27,18 @@
       <% } %>
     </p>
     <h1><%= page.title %></h1>
+    <% const updatedLabelRaw = typeof updated_label === 'function' ? updated_label() : ''; %>
+    <% const updatedDateStr = updatedLabelRaw ? updatedLabelRaw.replace(/^更新于\s*/, '').trim() : ''; %>
     <p class="article-meta">
-      <time class="article-meta-date" datetime="<%= date(page.date, 'YYYY-MM-DDTHH:mm:ssZ') %>"><%= date(page.date, 'YYYY-MM-DD') %></time>
+      <span class="article-meta-published"><span data-i18n-key="post.published">Published</span> <time class="article-meta-date" datetime="<%= date(page.date, 'YYYY-MM-DDTHH:mm:ssZ') %>"><%= date(page.date, 'YYYY-MM-DD') %></time></span>
       <span class="article-meta-sep" aria-hidden="true">·</span>
-      <span class="article-meta-reading-time"><%= reading_time(page.content) %> <span data-i18n-key="post.minRead">min read</span></span>
+      <span class="article-meta-word-count"><span data-i18n-key="post.words">Words</span> <%= post_word_count(page.content) %></span>
+      <span class="article-meta-sep" aria-hidden="true">·</span>
+      <span class="article-meta-reading-time"><span data-i18n-key="post.reading">Reading</span> <%= reading_time(page.content) %> <span data-i18n-key="post.min">min</span></span>
+      <% if (updatedDateStr) { %>
+        <span class="article-meta-sep" aria-hidden="true">·</span>
+        <span class="article-meta-updated"><span data-i18n-key="post.updated">Updated</span> <time class="article-meta-updated-date" datetime="<%= date(page.updated, 'YYYY-MM-DDTHH:mm:ssZ') %>"><%= updatedDateStr %></time></span>
+      <% } %>
     </p>
     <%- partial('_partial/post-audio-player') %>
   </header>

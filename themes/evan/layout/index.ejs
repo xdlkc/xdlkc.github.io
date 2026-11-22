@@ -18,32 +18,32 @@ const summarize = (input, limit = 140) => {
   <section class="hero-content container">
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="tag">HELLO</p>
-        <h1>I am Evan Zhang,<br />an Agent Application Engineer (Full Stack)</h1>
-        <p class="subtitle">Previously a Java backend engineer, now focused on Agent application development and full stack engineering at Alibaba Group (Beijing).</p>
+        <p class="tag" data-i18n-key="index.hero.tag">HELLO</p>
+        <h1><span data-i18n-key="index.hero.titleLine1">I am Evan Zhang,</span><br /><span data-i18n-key="index.hero.titleLine2">an Agent Application Engineer (Full Stack)</span></h1>
+        <p class="subtitle" data-i18n-key="index.hero.subtitle">Previously a Java backend engineer, now focused on Agent application development and full stack engineering at Alibaba Group (Beijing).</p>
         <div class="actions">
-          <a class="btn primary" href="#writing">Latest Writing</a>
+          <a class="btn primary" href="#writing" data-i18n-key="index.latestWriting">Latest Writing</a>
           <a class="btn ghost" href="https://github.com/xdlkc" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
 
       <aside class="hero-panel">
-        <p class="hero-panel-eyebrow">PROFILE</p>
+        <p class="hero-panel-eyebrow" data-i18n-key="index.profile.eyebrow">PROFILE</p>
         <div class="hero-panel-item">
-          <span class="hero-panel-label">Focus</span>
-          <strong>Agent Apps</strong>
+          <span class="hero-panel-label" data-i18n-key="index.profile.focusLabel">Focus</span>
+          <strong data-i18n-key="index.profile.focusValue">Agent Apps</strong>
         </div>
         <div class="hero-panel-item">
-          <span class="hero-panel-label">Stack</span>
-          <strong>Full Stack + Engineering</strong>
+          <span class="hero-panel-label" data-i18n-key="index.profile.stackLabel">Stack</span>
+          <strong data-i18n-key="index.profile.stackValue">Full Stack + Engineering</strong>
         </div>
         <div class="hero-panel-item">
-          <span class="hero-panel-label">Base</span>
-          <strong>Beijing</strong>
+          <span class="hero-panel-label" data-i18n-key="index.profile.baseLabel">Base</span>
+          <strong data-i18n-key="index.profile.baseValue">Beijing</strong>
         </div>
         <% if (latestPost) { %>
           <div class="hero-panel-feature">
-            <span class="hero-panel-label">Latest</span>
+            <span class="hero-panel-label" data-i18n-key="index.profile.latestLabel">Latest</span>
             <a href="<%- url_for(latestPost.path) %>"><%= latestPost.title %></a>
           </div>
         <% } %>
@@ -58,37 +58,37 @@ const summarize = (input, limit = 140) => {
     <div class="grid">
       <article class="card">
         <h3>loom</h3>
-        <p>A local-only model quota dashboard with usage curves, browser sync, and a unified model gateway.</p>
+        <p data-i18n-key="index.project.loom">A local-only model quota dashboard with usage curves, browser sync, and a unified model gateway.</p>
         <a href="https://github.com/xdlkc/loom" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
       </article>
 
       <article class="card">
         <h3>llm-texas-holdem</h3>
-        <p>A Royal Hold'em AI arena for one human and multiple LLM/Agent opponents, supporting OpenAI and Anthropic protocols.</p>
+        <p data-i18n-key="index.project.llmTexasHoldem">A Royal Hold'em AI arena for one human and multiple LLM/Agent opponents, supporting OpenAI and Anthropic protocols.</p>
         <a href="https://github.com/xdlkc/llm-texas-holdem" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
       </article>
 
       <article class="card">
         <h3>scribeleaf</h3>
-        <p>A native macOS Markdown editor with live preview.</p>
+        <p data-i18n-key="index.project.scribeleaf">A native macOS Markdown editor with live preview.</p>
         <a href="https://github.com/xdlkc/scribeleaf" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
       </article>
 
       <article class="card">
         <h3>stillpin</h3>
-        <p>A native macOS tool for region capture, annotation, and floating image pins, built with Swift and AppKit.</p>
+        <p data-i18n-key="index.project.stillpin">A native macOS tool for region capture, annotation, and floating image pins, built with Swift and AppKit.</p>
         <a href="https://github.com/xdlkc/stillpin" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
       </article>
 
       <article class="card">
         <h3>AgentForge</h3>
-        <p>An engineering-focused project for Agent applications, covering end-to-end practices from backend capability encapsulation to frontend interaction delivery.</p>
+        <p data-i18n-key="index.project.agentForge">An engineering-focused project for Agent applications, covering end-to-end practices from backend capability encapsulation to frontend interaction delivery.</p>
         <a href="https://github.com/xdlkc/AgentForge" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
       </article>
 
       <article class="card">
         <h3>skills-manager</h3>
-        <p>A tool for managing Agent skill configurations and version evolution, improving consistency and delivery efficiency in multi-skill collaboration.</p>
+        <p data-i18n-key="index.project.skillsManager">A tool for managing Agent skill configurations and version evolution, improving consistency and delivery efficiency in multi-skill collaboration.</p>
         <a href="https://github.com/xdlkc/skills-manager" target="_blank" rel="noreferrer" data-i18n-key="index.viewRepo">View Repository</a>
       </article>
     </div>
@@ -149,8 +149,8 @@ const summarize = (input, limit = 140) => {
 
       <article class="card info-card">
         <p class="info-card-eyebrow" data-i18n-key="index.about">About</p>
-        <h3>Agent Application Engineer</h3>
-        <p>
+        <h3 data-i18n-key="index.aboutCard.role">Agent Application Engineer</h3>
+        <p data-i18n-key="index.aboutCard.bio">
           I studied at Xidian University from 2014 to 2018 for my bachelor's degree and currently work at Alibaba Group (Beijing).
           I started as a Java backend engineer and now focus on Agent application development and full stack engineering, with an emphasis on engineering quality and delivery efficiency.
         </p>
@@ -158,8 +158,8 @@ const summarize = (input, limit = 140) => {
 
       <article class="card info-card info-card-contact">
         <p class="info-card-eyebrow" data-i18n-key="index.contact">Contact</p>
-        <h3>Find Me</h3>
-        <p>Email: <a href="mailto:wimness@163.com">wimness@163.com</a></p>
+        <h3 data-i18n-key="index.contactCard.title">Find Me</h3>
+        <p><span data-i18n-key="index.contactCard.emailLabel">Email:</span> <a href="mailto:wimness@163.com">wimness@163.com</a></p>
         <p>GitHub: <a href="https://github.com/xdlkc" target="_blank" rel="noreferrer">@xdlkc</a></p>
       </article>
     </div>
