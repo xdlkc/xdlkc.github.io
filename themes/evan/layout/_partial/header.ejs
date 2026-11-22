@@ -5,6 +5,7 @@ let _active = (typeof activeSection === 'string') ? activeSection.trim() : '';
 if (!_active) {
   if (_rawPath.startsWith('archives/')) _active = 'archives';
   else if (_rawPath.startsWith('news/')) _active = 'news';
+  else if (_rawPath.startsWith('models/')) _active = 'models';
   else if (_rawPath.startsWith('about/')) _active = 'about';
   else if (_rawPath === '' || _rawPath === 'index.html') _active = 'home';
 }
@@ -20,6 +21,7 @@ if (!_active) {
   <div id="primary-nav-menu" class="nav-links" data-mobile-nav-menu>
     <a href="<%- url_for('/archives/') %>" data-i18n-key="nav.archives"<%- _active === 'archives' ? ' class="is-active" aria-current="page"' : '' %>>Archives</a>
     <a href="<%- url_for('/news/') %>" data-i18n-key="nav.news"<%- _active === 'news' ? ' class="is-active" aria-current="page"' : '' %>>News</a>
+    <a href="<%- url_for('/models/') %>" data-i18n-key="nav.models"<%- _active === 'models' ? ' class="is-active" aria-current="page"' : '' %>>Models</a>
     <a href="<%- url_for('/about/') %>" data-i18n-key="nav.about"<%- _active === 'about' ? ' class="is-active" aria-current="page"' : '' %>>About</a>
     <a href="<%- url_for('/rss.xml') %>" aria-label="RSS">RSS</a>
     <button class="site-search-trigger nav-desktop-search" type="button" data-site-search-trigger data-i18n-key="nav.search" data-i18n-aria-label-key="nav.search" aria-label="Search">Search</button>

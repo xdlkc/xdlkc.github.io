@@ -1,0 +1,103 @@
+{
+  "id": "swe-bench-verified",
+  "name": "SWE-bench Verified",
+  "category": "代码工程",
+  "description": "Human-validated real-world GitHub issue resolution benchmark measuring end-to-end software engineering accuracy.",
+  "unit": "%",
+  "higherIsBetter": true,
+  "sourceName": "SWE-bench",
+  "sourceUrl": "https://www.swebench.com/",
+  "updatedAt": "2026-11-20",
+  "entries": [
+    {
+      "model": "Claude Sonnet 4.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 77.2,
+      "releaseDate": "2026-09",
+      "notes": "Standard bash+edit scaffold"
+    },
+    {
+      "model": "GPT-5",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 74.9,
+      "releaseDate": "2026-08",
+      "notes": "High reasoning effort"
+    },
+    {
+      "model": "Claude Opus 4.1",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 74.5,
+      "releaseDate": "2026-08",
+      "notes": "Extended thinking"
+    },
+    {
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 68.4,
+      "releaseDate": "2026-06",
+      "notes": "Agentless + bash scaffold"
+    },
+    {
+      "model": "DeepSeek-V3.1",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 66.0,
+      "releaseDate": "2026-09",
+      "notes": "Code-tuned agentic release"
+    },
+    {
+      "model": "Kimi K2",
+      "provider": "Moonshot",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 65.8,
+      "releaseDate": "2026-07",
+      "notes": "Single-attempt pass@1"
+    },
+    {
+      "model": "GLM-4.5",
+      "provider": "Zhipu",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 64.2,
+      "releaseDate": "2026-08",
+      "notes": "Thinking enabled"
+    },
+    {
+      "model": "Qwen3-235B-A22B",
+      "provider": "Alibaba",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 61.5,
+      "releaseDate": "2026-07",
+      "notes": "OpenHands scaffold"
+    },
+    {
+      "model": "DeepSeek-R1-0528",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 57.6,
+      "releaseDate": "2026-05",
+      "notes": "Agentless scaffold"
+    },
+    {
+      "model": "Llama 4 Maverick",
+      "provider": "Meta",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 48.2,
+      "releaseDate": "2026-04",
+      "notes": "Standard scaffold"
+    }
+  ]
+}

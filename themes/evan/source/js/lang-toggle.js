@@ -15,6 +15,7 @@
   const DICT = {
     'nav.archives': { en: 'Archives', zh: '文章' },
     'nav.news': { en: 'News', zh: '新闻' },
+    'nav.models': { en: 'Models', zh: '模型榜' },
     'nav.about': { en: 'About', zh: '关于' },
     'nav.search': { en: 'Search', zh: '搜索' },
     'nav.font': { en: 'Font', zh: '字号' },
@@ -108,7 +109,54 @@
     'news.flash': { en: 'Flash', zh: '快讯' },
     'news.board': { en: 'News Board', zh: '新闻看板' },
     'news.empty': { en: 'No news data yet. Add items to source/_data/news.json.', zh: '暂无新闻数据。请在 source/_data/news.json 中添加条目。' },
-    'news.context': { en: 'Context:', zh: '背景：' }
+    'news.context': { en: 'Context:', zh: '背景：' },
+    'models.tag': { en: 'BENCHMARKS', zh: '模型评测' },
+    'models.title': { en: 'Models Leaderboard', zh: 'AI 模型评测榜' },
+    'models.subtitle': {
+      en: 'Declarative multi-benchmark tracker across dialogue, software engineering, agent execution, science, and competitive coding.',
+      zh: '可扩展的多维度 AI 模型评测看板，覆盖综合对话、代码工程、Agent 执行、科学推理与竞赛编程。'
+    },
+    'models.stats.benchmarks': { en: 'Benchmarks', zh: '个评测集' },
+    'models.stats.models': { en: 'Models', zh: '个模型' },
+    'models.stats.updated': { en: 'Updated', zh: '更新于' },
+    'models.tab.overview': { en: 'Overview', zh: '综合总览' },
+    'models.overview.desc': {
+      en: 'Normalized composite index (0–100, relative to top score per benchmark) aggregated automatically from all registered benchmark JSON files.',
+      zh: '综合归一化指数（0–100，按各评测集最高分归一化后取均值），由 source/_data/benchmarks/ 下所有 JSON 自动汇总。'
+    },
+    'models.filter.all': { en: 'All', zh: '全部' },
+    'models.filter.open': { en: 'Open Weights', zh: '开源权重' },
+    'models.filter.closed': { en: 'Closed API', zh: '闭源商用' },
+    'models.filter.reasoning': { en: 'Reasoning', zh: '推理模型' },
+    'models.filter.providerAll': { en: 'All Providers', zh: '全部厂商' },
+    'models.filter.searchPlaceholder': { en: 'Search model, provider, or notes…', zh: '搜索模型、厂商或备注…' },
+    'models.filter.reset': { en: 'Reset filters', zh: '重置筛选' },
+    'models.col.rank': { en: '#', zh: '#' },
+    'models.col.model': { en: 'Model', zh: '模型' },
+    'models.col.provider': { en: 'Provider', zh: '厂商' },
+    'models.col.composite': { en: 'Composite', zh: '综合均分' },
+    'models.col.score': { en: 'Score', zh: '得分' },
+    'models.col.release': { en: 'Release', zh: '发布日期' },
+    'models.badge.open': { en: 'Open', zh: '开源' },
+    'models.badge.closed': { en: 'API', zh: '闭源' },
+    'models.badge.reasoning': { en: 'Reasoning', zh: '推理' },
+    'models.meta.source': { en: 'Source', zh: '数据来源' },
+    'models.meta.updated': { en: 'Updated', zh: '更新日期' },
+    'models.meta.higherBetter': { en: 'Higher is better', zh: '越高越好' },
+    'models.meta.lowerBetter': { en: 'Lower is better', zh: '越低越好' },
+    'models.empty': { en: 'No models match the current filters.', zh: '当前筛选条件下暂无匹配的模型。' },
+    'models.noData': {
+      en: 'No benchmarks found. Drop a JSON file into source/_data/benchmarks/ to get started.',
+      zh: '暂无评测数据。请将 JSON 文件放入 source/_data/benchmarks/ 目录。'
+    },
+    'models.guide.summary': {
+      en: 'How to add a new benchmark (1 file / 1 command)',
+      zh: '如何新增一个评测榜（1 个文件 / 1 条命令）'
+    },
+    'models.guide.lead': {
+      en: 'This leaderboard automatically discovers every *.json file under source/_data/benchmarks/ at build time — zero template or code changes required.',
+      zh: '本看板在构建时自动扫描 source/_data/benchmarks/ 目录下的全部 *.json 文件，无需修改任何模板或代码。'
+    }
   };
 
   function normalizeMode(value) {

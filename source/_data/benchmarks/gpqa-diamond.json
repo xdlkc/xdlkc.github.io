@@ -1,0 +1,103 @@
+{
+  "id": "gpqa-diamond",
+  "name": "GPQA Diamond",
+  "category": "科学推理",
+  "description": "PhD-level graduate science multiple-choice benchmark spanning physics, chemistry, and molecular biology.",
+  "unit": "%",
+  "higherIsBetter": true,
+  "sourceName": "Artificial Analysis",
+  "sourceUrl": "https://artificialanalysis.ai/",
+  "updatedAt": "2026-11-20",
+  "entries": [
+    {
+      "model": "GPT-5",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 87.3,
+      "releaseDate": "2026-08",
+      "notes": "High reasoning effort"
+    },
+    {
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 86.4,
+      "releaseDate": "2026-06",
+      "notes": "Single attempt"
+    },
+    {
+      "model": "Claude Sonnet 4.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 83.4,
+      "releaseDate": "2026-09",
+      "notes": "Extended thinking"
+    },
+    {
+      "model": "DeepSeek-R1-0528",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 81.0,
+      "releaseDate": "2026-05",
+      "notes": "Zero-shot CoT"
+    },
+    {
+      "model": "Claude Opus 4.1",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 80.9,
+      "releaseDate": "2026-08",
+      "notes": "Extended thinking"
+    },
+    {
+      "model": "Qwen3-235B-A22B",
+      "provider": "Alibaba",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 79.2,
+      "releaseDate": "2026-07",
+      "notes": "Thinking mode"
+    },
+    {
+      "model": "GLM-4.5",
+      "provider": "Zhipu",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 79.1,
+      "releaseDate": "2026-08",
+      "notes": "Thinking mode"
+    },
+    {
+      "model": "Kimi K2",
+      "provider": "Moonshot",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 75.1,
+      "releaseDate": "2026-07",
+      "notes": "Direct response"
+    },
+    {
+      "model": "DeepSeek-V3.1",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 74.8,
+      "releaseDate": "2026-09",
+      "notes": "Non-thinking mode"
+    },
+    {
+      "model": "Llama 4 Maverick",
+      "provider": "Meta",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 69.8,
+      "releaseDate": "2026-04",
+      "notes": "Zero-shot"
+    }
+  ]
+}

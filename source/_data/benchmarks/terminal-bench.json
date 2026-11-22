@@ -1,0 +1,103 @@
+{
+  "id": "terminal-bench",
+  "name": "Terminal-Bench",
+  "category": "Agent 执行",
+  "description": "End-to-end command-line environment benchmark evaluating autonomous shell, devops, debugging, and systems tasks.",
+  "unit": "%",
+  "higherIsBetter": true,
+  "sourceName": "Terminal-Bench",
+  "sourceUrl": "https://www.tbench.ai/",
+  "updatedAt": "2026-11-20",
+  "entries": [
+    {
+      "model": "Claude Sonnet 4.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 51.0,
+      "releaseDate": "2026-09",
+      "notes": "Terminus 2 agent harness"
+    },
+    {
+      "model": "GPT-5",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 48.6,
+      "releaseDate": "2026-08",
+      "notes": "Codex CLI harness"
+    },
+    {
+      "model": "Claude Opus 4.1",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 46.8,
+      "releaseDate": "2026-08",
+      "notes": "Terminus 2 harness"
+    },
+    {
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 42.3,
+      "releaseDate": "2026-06",
+      "notes": "Standard CLI harness"
+    },
+    {
+      "model": "Kimi K2",
+      "provider": "Moonshot",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 39.4,
+      "releaseDate": "2026-07",
+      "notes": "Tool-use optimized"
+    },
+    {
+      "model": "GLM-4.5",
+      "provider": "Zhipu",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 37.5,
+      "releaseDate": "2026-08",
+      "notes": "Agentic thinking mode"
+    },
+    {
+      "model": "DeepSeek-V3.1",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 36.2,
+      "releaseDate": "2026-09",
+      "notes": "Terminal tool-calling"
+    },
+    {
+      "model": "Qwen3-235B-A22B",
+      "provider": "Alibaba",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 33.8,
+      "releaseDate": "2026-07",
+      "notes": "Thinking mode"
+    },
+    {
+      "model": "DeepSeek-R1-0528",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 31.5,
+      "releaseDate": "2026-05",
+      "notes": "Terminus harness"
+    },
+    {
+      "model": "Llama 4 Maverick",
+      "provider": "Meta",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 24.1,
+      "releaseDate": "2026-04",
+      "notes": "Baseline harness"
+    }
+  ]
+}

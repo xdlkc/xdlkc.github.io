@@ -1,0 +1,103 @@
+{
+  "id": "arena-text",
+  "name": "Chatbot Arena Text",
+  "category": "综合对话",
+  "description": "Crowdsourced blind human preference Elo ratings for general-purpose text and reasoning conversations.",
+  "unit": "Elo",
+  "higherIsBetter": true,
+  "sourceName": "LMArena",
+  "sourceUrl": "https://lmarena.ai/",
+  "updatedAt": "2026-11-20",
+  "entries": [
+    {
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 1446,
+      "releaseDate": "2026-06",
+      "notes": "Thinking mode default"
+    },
+    {
+      "model": "Claude Opus 4.1",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 1438,
+      "releaseDate": "2026-08",
+      "notes": "Extended thinking"
+    },
+    {
+      "model": "GPT-5",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 1435,
+      "releaseDate": "2026-08",
+      "notes": "Adaptive reasoning"
+    },
+    {
+      "model": "Claude Sonnet 4.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "reasoning": true,
+      "score": 1424,
+      "releaseDate": "2026-09",
+      "notes": "Balanced flagship"
+    },
+    {
+      "model": "DeepSeek-R1-0528",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 1412,
+      "releaseDate": "2026-05",
+      "notes": "MIT open weights"
+    },
+    {
+      "model": "Qwen3-235B-A22B",
+      "provider": "Alibaba",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 1404,
+      "releaseDate": "2026-07",
+      "notes": "Apache 2.0 MoE"
+    },
+    {
+      "model": "Kimi K2",
+      "provider": "Moonshot",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 1396,
+      "releaseDate": "2026-07",
+      "notes": "1T MoE agentic base"
+    },
+    {
+      "model": "GLM-4.5",
+      "provider": "Zhipu",
+      "openWeights": true,
+      "reasoning": true,
+      "score": 1389,
+      "releaseDate": "2026-08",
+      "notes": "Hybrid thinking MoE"
+    },
+    {
+      "model": "DeepSeek-V3.1",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 1385,
+      "releaseDate": "2026-09",
+      "notes": "Fast non-thinking flagship"
+    },
+    {
+      "model": "Llama 4 Maverick",
+      "provider": "Meta",
+      "openWeights": true,
+      "reasoning": false,
+      "score": 1368,
+      "releaseDate": "2026-04",
+      "notes": "17B active / 400B total MoE"
+    }
+  ]
+}
