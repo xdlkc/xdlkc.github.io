@@ -10,7 +10,7 @@
       "宏观经济",
       "A股"
     ],
-    "heatScore": 93,
+    "heatScore": 88.6,
     "sourceCount": 1,
     "latestAt": "2026-11-23T05:04:45.038Z",
     "summary": "国家发展改革委、民政部、国家卫生健康委、教育部四部门联合印发《“一老一小”服务体系建设实施方案》。方案聚焦养老与儿童服务两大民生领域，由四部委协同部署推进。",
@@ -44,7 +44,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 88.5,
+    "heatScore": 84.3,
     "sourceCount": 1,
     "latestAt": "2026-11-23T05:01:34.000Z",
     "summary": "沪深北交易所将于11月30日正式下调两融保证金比例，从现行的100%降至80%。监管已向券商下发通知，要求做好两融逆周期调节，对保证金比例实施动态管理与差异化控制，及时完成系统参数调整与测试验证，并做好政策解读与风险揭示。",
@@ -60,8 +60,34 @@
     ]
   },
   {
-    "id": "hot-c52dafcf",
+    "id": "hot-e61b5c87",
     "rank": 3,
+    "title": "三星首款AI智能眼镜将于12月10日在韩国和美国发布",
+    "industry": "金融与政策",
+    "topics": [
+      "消费电子",
+      "人工智能",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 83.7,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:42:29.000Z",
+    "summary": "三星电子将于12月10日在韩国和美国推出其首款AI智能眼镜。该眼镜支持基于Gemini的翻译、导航和会议摘要功能。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-94a76920",
+        "title": "三星首款AI智能眼镜将于12月10日在韩国和美国发布",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T06:42:29.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937221329.html",
+        "score": 82
+      }
+    ]
+  },
+  {
+    "id": "hot-c52dafcf",
+    "rank": 4,
     "title": "Anthropic 承诺投入 9000 亿美元，华尔街预期其债务将为垃圾级",
     "industry": "金融与政策",
     "topics": [
@@ -70,7 +96,7 @@
       "债券市场",
       "A股"
     ],
-    "heatScore": 87,
+    "heatScore": 82.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T04:55:22.000Z",
     "summary": "Anthropic 上周募资超 1000 亿美元，估值约 1.18 万亿美元，高于沃尔玛和摩根大通。该公司同时承诺投入 9000 亿美元，但其上市之路颠簸，债券市场前景疑问更大，华尔街预期其债务将为垃圾级。",
@@ -87,7 +113,7 @@
   },
   {
     "id": "hot-bcc1a7ec",
-    "rank": 4,
+    "rank": 5,
     "title": "国家发展改革委就《全国守信激励措施基础清单（2026年版）》答记者问",
     "industry": "金融与政策",
     "topics": [
@@ -96,7 +122,7 @@
       "市场政策",
       "A股"
     ],
-    "heatScore": 85,
+    "heatScore": 81,
     "sourceCount": 1,
     "latestAt": "2026-11-23T05:04:45.038Z",
     "summary": "国家发展改革委有关负责同志就《全国守信激励措施基础清单（2026年版）》答记者问，对清单有关情况作出官方说明。该清单为2026年版全国层面的守信激励措施基础清单。",
@@ -112,8 +138,138 @@
     ]
   },
   {
+    "id": "hot-3a8f987f",
+    "rank": 6,
+    "title": "特朗普再次公开呼吁英伟达董事会重新聘用前CEO黄仁勋",
+    "industry": "金融与政策",
+    "topics": [
+      "海外市场",
+      "科技公司动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 80.9,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:30:46.000Z",
+    "summary": "11月23日，美国总统特朗普再次公开呼吁英伟达董事会重新聘用前首席执行官黄仁勋，称其回归将同时符合英伟达及美国的利益。此前，英伟达董事会已明确表示不会重新聘用黄仁勋。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-fcc0c219",
+        "title": "特朗普再次公开呼吁英伟达董事会重新聘用前CEO黄仁勋",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T06:30:46.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszeh8374374.shtml",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "hot-10266ab9",
+    "rank": 7,
+    "title": "必和必拓计划2040年前将南澳铜产量翻倍至65万吨，股价涨超2%",
+    "industry": "金融与政策",
+    "topics": [
+      "海外市场",
+      "大宗商品",
+      "公司动态",
+      "A股"
+    ],
+    "heatScore": 79.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:27:50.000Z",
+    "summary": "全球最大上市铜生产商必和必拓（BHP）11月23日宣布，计划到2040年将其南澳大利亚铜业务年产量翻倍至65万吨，以满足电气化、可再生能源及人工智能发展推动的长期铜需求。消息公布后，公司股价涨超2%。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-72fb2e00",
+        "title": "必和必拓计划2040年前将南澳铜产量翻倍至65万吨，股价涨超2%",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T06:27:50.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszee2341702.shtml",
+        "score": 76
+      }
+    ]
+  },
+  {
+    "id": "hot-94253162",
+    "rank": 8,
+    "title": "康菲石油拟以44.25亿美元向VrEnergi出售挪威业务及英国蒂赛德油码头权益",
+    "industry": "金融与政策",
+    "topics": [
+      "能源",
+      "海外市场",
+      "公司动态",
+      "A股"
+    ],
+    "heatScore": 75.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:38:11.000Z",
+    "summary": "美国康菲石油11月23日宣布，已与挪威油气企业VrEnergi达成最终协议，拟以44.25亿美元出售其挪威业务及英国蒂赛德（Teesside）油码头40.25%股权与运营权。交易对价需扣除截至2026年1月1日生效日约5亿美元的约定调整款。交易预计2027年一季度末前完成，尚需挪威能源部批准并满足相关监管条件。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-ca84c311",
+        "title": "康菲石油拟以44.25亿美元向VrEnergi出售挪威业务及英国蒂赛德油码头权益",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T06:38:11.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937220257.html",
+        "score": 68
+      }
+    ]
+  },
+  {
+    "id": "hot-5ae1d0f0",
+    "rank": 9,
+    "title": "荣耀700系列正式发布",
+    "industry": "金融与政策",
+    "topics": [
+      "消费电子",
+      "国内动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 71.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:36:11.000Z",
+    "summary": "荣耀11月23日正式发布700系列手机，全系标配2亿像素电影感主摄及2亿柔光自拍系统，支持4K电影感Live。其中荣耀700 Pro与荣耀700配备5000万像素潜望长焦，支持3.5倍光学变焦及全焦段4K Live直出。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-2717ab44",
+        "title": "荣耀700系列正式发布",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T06:36:11.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937220085.html",
+        "score": 62
+      }
+    ]
+  },
+  {
+    "id": "hot-5061962b",
+    "rank": 10,
+    "title": "马来西亚棕榈油行业称毛棕榈油出口税豁免窗口期已过",
+    "industry": "金融与政策",
+    "topics": [
+      "大宗商品",
+      "贸易政策",
+      "美股",
+      "宏观"
+    ],
+    "heatScore": 71.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:26:14.000Z",
+    "summary": "马来西亚棕榈油行业表示，毛棕榈油（CPO）出口税豁免的窗口期已经过去。该豁免原本可帮助提振出口出货、缓解库存持续积压的压力。",
+    "items": [
+      {
+        "id": "aihot-20261123-bloomberg-markets-d2249e54",
+        "title": "马来西亚棕榈油行业称毛棕榈油出口税豁免窗口期已过",
+        "source": "Bloomberg Markets",
+        "publishedAt": "2026-11-23T06:26:14.000Z",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-23/malaysia-palm-oil-industry-says-cpo-tax-waiver-window-has-passed",
+        "score": 62
+      }
+    ]
+  },
+  {
     "id": "hot-a72b06c3",
-    "rank": 5,
+    "rank": 11,
     "title": "运行时安全工具不等于安全基线：云原生团队中被伪装成自主性的孤岛",
     "industry": "工程与开源",
     "topics": [
@@ -121,7 +277,7 @@
       "安全",
       "开源生态"
     ],
-    "heatScore": 74.3,
+    "heatScore": 70.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T05:04:43.783Z",
     "summary": "CNCF 博客发文指出，运行时安全工具本身不能当作安全基线，云原生团队常把各自为战误当成自主性，最终形成安全孤岛。作者结合一次 Kubernetes 安全专项的经历：截止日期带来压力，一支拥有优秀工程师和清晰目标的团队决定只直接解决自己那一部分问题。",
@@ -138,7 +294,7 @@
   },
   {
     "id": "hot-97e97a57",
-    "rank": 6,
+    "rank": 12,
     "title": "国家发改委有关负责同志就《实施全面节约战略行动方案》答记者问",
     "industry": "金融与政策",
     "topics": [
@@ -147,7 +303,7 @@
       "政府动态",
       "市场政策"
     ],
-    "heatScore": 74.3,
+    "heatScore": 70.8,
     "sourceCount": 1,
     "latestAt": "2026-11-22T19:35:37.651Z",
     "summary": "国家发展改革委有关负责同志就《实施全面节约战略行动方案》答记者问，对这一全面节约战略的行动方案作出官方解读。该文件由国家发改委层面发布并答疑，是全面节约战略落地实施的重要政策依据。",
@@ -171,8 +327,34 @@
     ]
   },
   {
+    "id": "hot-c9b4bfd7",
+    "rank": 13,
+    "title": "钟南山谈AI：医疗健康领域必须有专业AI，医学容不得半点\"差不多\"",
+    "industry": "金融与政策",
+    "topics": [
+      "人工智能",
+      "医疗健康",
+      "行业动态",
+      "A股"
+    ],
+    "heatScore": 70.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:40:19.000Z",
+    "summary": "11月23日，中国工程院院士钟南山在2026蚂蚁阿福医疗健康生态大会上表示，医疗健康领域必须有专业的医学AI。他认为AI可以成为守护居民健康的温暖力量，让更多老百姓看得上病、看得好病、看得明白病，但医学容不得半点\"差不多\"。当前医生、患者使用AI已成为大趋势。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-236e87a0",
+        "title": "钟南山谈AI：医疗健康领域必须有专业AI，医学容不得半点\"差不多\"",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T06:40:19.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937220551.html",
+        "score": 60
+      }
+    ]
+  },
+  {
     "id": "hot-173ad767",
-    "rank": 7,
+    "rank": 14,
     "title": "揭秘黄仁勋夫妇的财富帝国：英伟达持股价值超千亿美元，妻子为核心人物",
     "industry": "金融与政策",
     "topics": [
@@ -181,7 +363,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 74,
+    "heatScore": 70.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T04:56:42.000Z",
     "summary": "《华尔街日报》11月23日发文拆解英伟达CEO黄仁勋与妻子洛丽的财富版图，两人通过信托及其他实体控制8.7亿股英伟达股票，价值超过1090亿美元。报道称，妻子洛丽在这一财富架构中是核心人物。",
@@ -197,8 +379,59 @@
     ]
   },
   {
+    "id": "hot-5445f8d8",
+    "rank": 15,
+    "title": "生猪期货主力合约触及涨停，涨幅6%报10060元/吨",
+    "industry": "金融与政策",
+    "topics": [
+      "商品市场",
+      "国内财经",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 69.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:42:03.000Z",
+    "summary": "2026年11月23日，生猪期货主力合约触及涨停，涨幅6%，报10060元/吨。该条为盘面快讯，正文未披露涨停的具体原因及后续走势。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-04ff6182",
+        "title": "生猪期货主力合约触及涨停，涨幅6%报10060元/吨",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T06:42:03.000Z",
+        "url": "https://finance.sina.com.cn/money/future/fmnews/2026-11-23/doc-iniztfnh0579908.shtml",
+        "score": 58
+      }
+    ]
+  },
+  {
+    "id": "hot-3936cf7a",
+    "rank": 16,
+    "title": "网传月风私募产品清盘，知情人士回应：消息不实，产品正常运作",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场动态",
+      "市场政策"
+    ],
+    "heatScore": 68.9,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:27:19.000Z",
+    "summary": "针对网传月风私募产品清盘的消息，一位接近月风的人士回应称消息并不属实，相关私募产品目前仍在正常运作。11月23日，市场流传疑似月风发言“结束了，一场游戏一场梦”的截图并引发热议，有网友就此向其求证产品是否清盘。",
+    "items": [
+      {
+        "id": "aihot-20261123-wscn-ashare-d9422e03",
+        "title": "网传月风私募产品清盘，知情人士回应：消息不实，产品正常运作",
+        "source": "华尔街见闻 · A股",
+        "publishedAt": "2026-11-23T06:27:19.000Z",
+        "url": "https://wallstreetcn.com/livenews/3203973",
+        "score": 58
+      }
+    ]
+  },
+  {
     "id": "hot-cb92d99b",
-    "rank": 8,
+    "rank": 17,
     "title": "逢低买盘入场推动黄金反弹 上周曾创3月以来最差单周表现",
     "industry": "金融与政策",
     "topics": [
@@ -207,7 +440,7 @@
       "美联储政策",
       "A股"
     ],
-    "heatScore": 72.2,
+    "heatScore": 68.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T04:57:34.000Z",
     "summary": "黄金价格从八个月来最大单周跌幅中反弹，逢低买盘入场，现货黄金一度上涨2.6%、突破每盎司3630美元。市场同时降低了对美联储12月加息的押注。此前一周黄金曾创3月以来最差单周表现。",
@@ -223,8 +456,60 @@
     ]
   },
   {
+    "id": "hot-82050bff",
+    "rank": 18,
+    "title": "国际金价低位反弹，美债收益率回落缓解金价下行压力",
+    "industry": "金融与政策",
+    "topics": [
+      "国内财经",
+      "市场动态",
+      "宏观经济",
+      "A股"
+    ],
+    "heatScore": 67.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:38:44.000Z",
+    "summary": "11月23日，国际金价在连续五个交易日下跌后反弹，结束此前抛售行情。此前跌势源于市场流动性紧张、美元走强及美联储加息预期升温。随着美国国债收益率回落，黄金持有成本下降，金价下行压力有所缓解。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-298013bb",
+        "title": "国际金价低位反弹，美债收益率回落缓解金价下行压力",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T06:38:44.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszea5574095.shtml",
+        "score": 55
+      }
+    ]
+  },
+  {
+    "id": "hot-fad5e97f",
+    "rank": 19,
+    "title": "猪肉板块尾盘拉升 金新农涨停",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场快讯",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 67.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T06:37:14.000Z",
+    "summary": "A股猪肉板块尾盘拉升，金新农涨停。大禹生物、罗牛山、天邦食品、新五丰、东瑞股份跟涨。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-2f11f9ba",
+        "title": "猪肉板块尾盘拉升 金新农涨停",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T06:37:14.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937219419.html",
+        "score": 55
+      }
+    ]
+  },
+  {
     "id": "hot-4733e11d",
-    "rank": 9,
+    "rank": 20,
     "title": "华尔街在AI股票抛售后有望反弹",
     "industry": "金融与政策",
     "topics": [
@@ -233,7 +518,7 @@
       "宏观",
       "美股"
     ],
-    "heatScore": 69.3,
+    "heatScore": 66,
     "sourceCount": 1,
     "latestAt": "2026-11-23T04:58:47.000Z",
     "summary": "华尔街在AI股票遭遇抛售后有望开盘反弹。亚洲市场当日整体下跌，韩国芯片制造商股价跌约3%。",
@@ -245,255 +530,6 @@
         "publishedAt": "2026-11-23T04:58:47.000Z",
         "url": "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1",
         "score": 58
-      }
-    ]
-  },
-  {
-    "id": "hot-766b67f1",
-    "rank": 10,
-    "title": "特朗普结束亚洲行返美召开白宫记者会，谈及利率、伊朗、数据中心与黄仁勋",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "国际动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 66.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T04:57:47.000Z",
-    "summary": "据路透社11月23日报道，美国总统特朗普结束为期四天的亚洲访问后，周五在白宫召开记者会，话题涵盖利率、伊朗、数据中心及英伟达CEO黄仁勋。他开场称赞卡塔尔打造的新“空军一号”速度，感叹新冠疫苗推出太晚，并谈到利率过高。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-b385ac69",
-        "title": "特朗普结束亚洲行返美召开白宫记者会，谈及利率、伊朗、数据中心与黄仁勋",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T04:57:47.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937150754.html",
-        "score": 54
-      }
-    ]
-  },
-  {
-    "id": "hot-cc2b4c22",
-    "rank": 11,
-    "title": "OpenShell 加入 CNCF：以开放治理保障 Agentic AI 安全",
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "开源生态",
-      "AI 安全"
-    ],
-    "heatScore": 64.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-22T19:35:35.657Z",
-    "summary": "在 KubeCon + CloudNativeCon North America 上，CNCF 接纳 NVIDIA 捐赠的 OpenShell 为 Sandbox 项目。OpenShell 是一个用于保护和治理自主 AI 代理的开源运行时，项目将以开放治理模式推进 Agentic AI 的安全化。",
-    "items": [
-      {
-        "id": "aihot-20261122-cncf-blog-aca02c4b",
-        "title": "OpenShell 加入 CNCF：以开放治理保障 Agentic AI 安全",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-22T19:35:35.657Z",
-        "url": "https://www.cncf.io/blog/2026/11/10/welcoming-openshell-to-the-cncf-open-governance-to-secure-agentic-ai/",
-        "score": 83
-      }
-    ]
-  },
-  {
-    "id": "hot-cfdd64ae",
-    "rank": 12,
-    "title": "A股电子化学品板块拉升，西陇科学涨停",
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "市场动态",
-      "港股",
-      "宏观"
-    ],
-    "heatScore": 63.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T05:01:28.000Z",
-    "summary": "电子化学品板块盘中拉升，西陇科学涨停，容大感光、强力新材、飞凯材料、同宇新材、广信材料等个股跟涨。原文未披露本次拉升的具体催化因素。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-10d9fb2c",
-        "title": "A股电子化学品板块拉升，西陇科学涨停",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T05:01:28.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937152059.html",
-        "score": 48
-      }
-    ]
-  },
-  {
-    "id": "hot-127d214d",
-    "rank": 13,
-    "title": "Kyverno 的 CEL 准入成本究竟花在哪：Kubernetes 准入控制优化剖析",
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "研发效能",
-      "开源生态"
-    ],
-    "heatScore": 62.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-22T19:35:35.660Z",
-    "summary": "Kyverno 团队对 Kubernetes 准入路径进行性能剖析，发现约 86% 的成本并不在 CEL 策略表达式求值环节，与其为求值而设计的预期相反。文章据此拆解 Kyverno CEL 准入开销的真实去向，为准入控制优化提供依据。",
-    "items": [
-      {
-        "id": "aihot-20261122-cncf-blog-70921269",
-        "title": "Kyverno 的 CEL 准入成本究竟花在哪：Kubernetes 准入控制优化剖析",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-22T19:35:35.660Z",
-        "url": "https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/",
-        "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-cb94d271",
-    "rank": 14,
-    "title": "当同步窗口关闭时：Argo CD self-heal 如何跳过了迁移钩子",
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "研发效能",
-      "开源生态"
-    ],
-    "heatScore": 61.5,
-    "sourceCount": 1,
-    "latestAt": "2026-11-22T19:35:35.658Z",
-    "summary": "CNCF 博客复盘了一个真实案例：客户在同步窗口关闭期间推送版本，Argo CD 报告 sync 成功，但迁移钩子实际没有执行。文章逐步拆解了 self-heal 机制跳过该迁移钩子的具体过程与原因。",
-    "items": [
-      {
-        "id": "aihot-20261122-cncf-blog-7829f3b4",
-        "title": "当同步窗口关闭时：Argo CD self-heal 如何跳过了迁移钩子",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-22T19:35:35.658Z",
-        "url": "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/",
-        "score": 77
-      }
-    ]
-  },
-  {
-    "id": "hot-7e25acd8",
-    "rank": 15,
-    "title": "你的 OpenTelemetry 管道正在变成性能瓶颈吗？",
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "可观测性",
-      "开源生态"
-    ],
-    "heatScore": 59.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-22T19:35:35.661Z",
-    "summary": "作者在 CNCF Blog 分享其在 Cloud Native Days Austria 2026 上的演讲《How to Defeat OTel's Silent Killer: The Performance Overhead》，聚焦 OpenTelemetry 管道的性能开销问题。演讲指出，构建可观测性管道时数据采集（collecting）的开销是一个容易被忽视的问题。",
-    "items": [
-      {
-        "id": "aihot-20261122-cncf-blog-1739f35a",
-        "title": "你的 OpenTelemetry 管道正在变成性能瓶颈吗？",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-22T19:35:35.661Z",
-        "url": "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/",
-        "score": 72
-      }
-    ]
-  },
-  {
-    "id": "hot-df5a9f17",
-    "rank": 16,
-    "title": "如何在不受你控制的 Kubernetes 环境中支持你的应用",
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "开源生态"
-    ],
-    "heatScore": 55.6,
-    "sourceCount": 1,
-    "latestAt": "2026-11-22T19:35:35.659Z",
-    "summary": "CNCF 博客文章讲解如何为客户运行、不受你掌控的 Kubernetes 环境中的应用提供支持，并指出这与自己集群里运行应用是两回事。文章点出核心难点在于你无法控制集群配置、升级节奏和周边工具。",
-    "items": [
-      {
-        "id": "aihot-20261122-cncf-blog-764e1bed",
-        "title": "如何在不受你控制的 Kubernetes 环境中支持你的应用",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-22T19:35:35.659Z",
-        "url": "https://www.cncf.io/blog/2026/11/19/how-to-support-your-app-on-kubernetes-environments-you-dont-control/",
-        "score": 64
-      }
-    ]
-  },
-  {
-    "id": "hot-a732e441",
-    "rank": 17,
-    "title": "Perplexity 推出 Monitor API：将网页搜索从一次性查询变为持续监控",
-    "industry": "AI",
-    "topics": [
-      "Agent 智能体",
-      "模型发布"
-    ],
-    "heatScore": 54,
-    "sourceCount": 1,
-    "latestAt": "2026-11-22T14:20:28.000Z",
-    "summary": "Perplexity 发布 Monitor API，按计划持续搜索网络，仅在出现相关变化时通过 Webhook 通知智能体。该 API 内置决策模型自动过滤不重要的结果，减少噪音。这也是 Perplexity 通过开发者工具在同质化聊天机器人业务中寻求差异化战略的一部分。",
-    "items": [
-      {
-        "id": "aihot-20261122-the-decoder-05cec80b",
-        "title": "Perplexity 推出 Monitor API：将网页搜索从一次性查询变为持续监控",
-        "source": "The Decoder",
-        "publishedAt": "2026-11-22T14:20:28.000Z",
-        "url": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/",
-        "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-683b967c",
-    "rank": 18,
-    "title": "AWS Quick 上线 Meta ads AI 连接器，广告主可用自然语言创建与管理广告活动",
-    "industry": "AI",
-    "topics": [
-      "Agent 智能体"
-    ],
-    "heatScore": 35.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-22T01:59:13.000Z",
-    "summary": "Meta ads AI 连接器现已在 AWS Quick 中可用，Meta 广告主可在 Quick 内用自然语言创建、管理和分析广告活动。连接器保持与 Meta 广告管理网络的连接，并支持将 Meta 广告数据与第一方及第三方数据源结合，构建仪表板、文档、演示文稿和自动化工作流。",
-    "items": [
-      {
-        "id": "aihot-20261122-aws-ml-29fc295f",
-        "title": "AWS Quick 上线 Meta ads AI 连接器，广告主可用自然语言创建与管理广告活动",
-        "source": "AWS Machine Learning Blog",
-        "publishedAt": "2026-11-22T01:59:13.000Z",
-        "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
-        "score": 70
-      }
-    ]
-  },
-  {
-    "id": "hot-048806c9",
-    "rank": 19,
-    "title": "OpenAI 解析困惑度与智能：Perplexity 如何衡量模型进展",
-    "industry": "AI",
-    "topics": [
-      "模型评估",
-      "技术解读",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "heatScore": 32.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-22T00:00:00.000Z",
-    "summary": "OpenAI 发文解释困惑度（perplexity）如何衡量 AI 模型的能力进展，并探讨这一指标能否帮助开发者建立评估新兴能力的统一方法。文章旨在为模型评估提供一个共享的衡量口径。",
-    "items": [
-      {
-        "id": "aihot-20261122-openai-news-bd294928",
-        "title": "OpenAI 解析困惑度与智能：Perplexity 如何衡量模型进展",
-        "source": "OpenAI News",
-        "publishedAt": "2026-11-22T00:00:00.000Z",
-        "url": "https://openai.com/index/perplexity-and-intelligence",
-        "score": 67
       }
     ]
   }

@@ -1,5 +1,357 @@
 [
   {
+    "id": "aihot-20261123-eastmoney-724-94a76920",
+    "title": "三星首款AI智能眼镜将于12月10日在韩国和美国发布",
+    "originalTitle": "三星首款人工智能眼镜将于下月10日发布",
+    "summary": "三星电子将于12月10日在韩国和美国推出其首款AI智能眼镜。该眼镜支持基于Gemini的翻译、导航和会议摘要功能。",
+    "url": "https://finance.eastmoney.com/a/202611233937221329.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T06:42:29.000Z",
+    "score": 82,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "消费电子",
+      "人工智能",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "三星",
+      "AI眼镜",
+      "Gemini",
+      "产品发布"
+    ],
+    "context": "三星作为消费电子巨头首次入局AI眼镜赛道，并深度整合谷歌Gemini能力，是AI硬件落地的标志性动向。"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-04ff6182",
+    "title": "生猪期货主力合约触及涨停，涨幅6%报10060元/吨",
+    "originalTitle": "快讯：生猪主力合约触及涨停，涨幅6%",
+    "summary": "2026年11月23日，生猪期货主力合约触及涨停，涨幅6%，报10060元/吨。该条为盘面快讯，正文未披露涨停的具体原因及后续走势。",
+    "url": "https://finance.sina.com.cn/money/future/fmnews/2026-11-23/doc-iniztfnh0579908.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T06:42:03.000Z",
+    "score": 58,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "商品市场",
+      "国内财经",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "生猪期货",
+      "涨停",
+      "商品期货",
+      "农产品"
+    ],
+    "context": "生猪期货单日涨停波动较大，可作为跟踪猪周期与猪肉价格走势的盘面信号。"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-236e87a0",
+    "title": "钟南山谈AI：医疗健康领域必须有专业AI，医学容不得半点\"差不多\"",
+    "originalTitle": "钟南山谈AI：医疗健康领域必须有专业AI 医学容不得半点“差不多”",
+    "summary": "11月23日，中国工程院院士钟南山在2026蚂蚁阿福医疗健康生态大会上表示，医疗健康领域必须有专业的医学AI。他认为AI可以成为守护居民健康的温暖力量，让更多老百姓看得上病、看得好病、看得明白病，但医学容不得半点\"差不多\"。当前医生、患者使用AI已成为大趋势。",
+    "url": "https://finance.eastmoney.com/a/202611233937220551.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T06:40:19.000Z",
+    "score": 60,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "人工智能",
+      "医疗健康",
+      "行业动态",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "钟南山",
+      "AI医疗",
+      "专业医学AI",
+      "蚂蚁阿福"
+    ],
+    "context": "在医生与患者使用AI渐成趋势之际，钟南山对医学AI专业性提出明确要求，对AI医疗行业具有风向意义。"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-298013bb",
+    "title": "国际金价低位反弹，美债收益率回落缓解金价下行压力",
+    "originalTitle": "今日黄金：低位反弹，美债收益率回落缓解金价下行压力",
+    "summary": "11月23日，国际金价在连续五个交易日下跌后反弹，结束此前抛售行情。此前跌势源于市场流动性紧张、美元走强及美联储加息预期升温。随着美国国债收益率回落，黄金持有成本下降，金价下行压力有所缓解。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszea5574095.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T06:38:44.000Z",
+    "score": 55,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "国内财经",
+      "市场动态",
+      "宏观经济",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "黄金",
+      "金价反弹",
+      "美债收益率",
+      "贵金属"
+    ],
+    "context": "金价走势与美元、美债收益率及美联储政策预期高度联动，此番止跌反弹可作为观察贵金属短期方向的重要信号。"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-ca84c311",
+    "title": "康菲石油拟以44.25亿美元向VrEnergi出售挪威业务及英国蒂赛德油码头权益",
+    "originalTitle": "康菲石油拟以44.25亿美元出售挪威业务及英国蒂赛德油码头权益",
+    "summary": "美国康菲石油11月23日宣布，已与挪威油气企业VrEnergi达成最终协议，拟以44.25亿美元出售其挪威业务及英国蒂赛德（Teesside）油码头40.25%股权与运营权。交易对价需扣除截至2026年1月1日生效日约5亿美元的约定调整款。交易预计2027年一季度末前完成，尚需挪威能源部批准并满足相关监管条件。",
+    "url": "https://finance.eastmoney.com/a/202611233937220257.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T06:38:11.000Z",
+    "score": 68,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "能源",
+      "海外市场",
+      "公司动态",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "康菲石油",
+      "并购",
+      "油气",
+      "资产剥离"
+    ],
+    "context": "康菲石油借此交易整体剥离挪威资产，是国际油气巨头资产组合调整中规模较大的剥离案例。"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-2f11f9ba",
+    "title": "猪肉板块尾盘拉升 金新农涨停",
+    "summary": "A股猪肉板块尾盘拉升，金新农涨停。大禹生物、罗牛山、天邦食品、新五丰、东瑞股份跟涨。",
+    "url": "https://finance.eastmoney.com/a/202611233937219419.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T06:37:14.000Z",
+    "score": 55,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场快讯",
+      "港股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "猪肉板块",
+      "涨停",
+      "尾盘拉升"
+    ],
+    "context": "多只生猪养殖股尾盘集体走强，属当日A股盘面异动快讯，具体催化因素文中未提及。"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-2717ab44",
+    "title": "荣耀700系列正式发布",
+    "summary": "荣耀11月23日正式发布700系列手机，全系标配2亿像素电影感主摄及2亿柔光自拍系统，支持4K电影感Live。其中荣耀700 Pro与荣耀700配备5000万像素潜望长焦，支持3.5倍光学变焦及全焦段4K Live直出。",
+    "url": "https://finance.eastmoney.com/a/202611233937220085.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T06:36:11.000Z",
+    "score": 62,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "消费电子",
+      "国内动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "荣耀",
+      "新机发布",
+      "手机影像"
+    ],
+    "context": "荣耀手机影像配置再度升级，2亿像素主摄与潜望长焦成为该系列主打卖点。"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-fcc0c219",
+    "title": "特朗普再次公开呼吁英伟达董事会重新聘用前CEO黄仁勋",
+    "originalTitle": "最大科技多头发力：特朗普再次呼吁英伟达董事会重新聘用黄仁勋",
+    "summary": "11月23日，美国总统特朗普再次公开呼吁英伟达董事会重新聘用前首席执行官黄仁勋，称其回归将同时符合英伟达及美国的利益。此前，英伟达董事会已明确表示不会重新聘用黄仁勋。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszeh8374374.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T06:30:46.000Z",
+    "score": 78,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "海外市场",
+      "科技公司动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "特朗普",
+      "英伟达",
+      "黄仁勋",
+      "美股"
+    ],
+    "context": "总统公开为芯片巨头前CEO回归喊话、董事会明确拒绝，双方分歧走向对英伟达后续发展具有风向意义。",
+    "contentHtml": "<p><img src=\"https://n.sinaimg.cn/tech/transform/114/w550h364/20261123/8913-adcb7cb373641b9e8e812d05634210a2.jpg\" alt=\"\"><span></span></p><p>　11月23日，美国总统特朗普再次公开呼吁英伟达董事会重新聘用前首席执行官黄仁勋，称其回归将同时符合英伟达及美国的利益。此前，英伟达董事会已明确表示不会重新聘用黄仁勋，并启动新任首席执行官遴选程序。<span>英伟达董事长哈维·琼斯（Harvey Jones）上周明确表示，公司不会重新聘用黄仁勋，并已聘请高管猎头公司Heidrick &amp; Struggles协助寻找新任首席执行官。</span></p><p>　　特朗普在Truth Social平台发文称：“我希望英伟达董事会重新聘用黄仁勋。这对公司和美国而言都将是最好的选择。”</p><p>　　这是特朗普继黄仁勋11月12日辞职后，再次公开支持其重返英伟达。此前，特朗普曾表示，黄仁勋已经吸取教训，理应获得第二次机会。</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：龙运翔 </p>",
+    "author": "环球市场播报"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-72fb2e00",
+    "title": "必和必拓计划2040年前将南澳铜产量翻倍至65万吨，股价涨超2%",
+    "summary": "全球最大上市铜生产商必和必拓（BHP）11月23日宣布，计划到2040年将其南澳大利亚铜业务年产量翻倍至65万吨，以满足电气化、可再生能源及人工智能发展推动的长期铜需求。消息公布后，公司股价涨超2%。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszee2341702.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T06:27:50.000Z",
+    "score": 76,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "海外市场",
+      "大宗商品",
+      "公司动态",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "必和必拓",
+      "铜产量",
+      "矿业",
+      "大宗商品"
+    ],
+    "context": "AI与能源转型持续推升铜需求，全球最大铜生产商的长期扩产计划对铜供需格局和矿业板块具有风向标意义。",
+    "contentHtml": "<p>　　11月23日，全球最大上市铜生产商必和必拓（BHP）宣布，计划到2040年将旗下南澳大利亚铜业务的年产量翻倍至65万吨，以满足电气化、可再生能源及人工智能发展推动的长期铜需求增长。</p><p>　　消息公布后，截至发稿，必和必拓澳大利亚上市股票上涨约2.3%，报52.6澳元。</p><p>　　<strong><span>2035年集团铜产量目标为200万吨</span></strong></p><p>　　根据必和必拓在投资者演示会上公布的扩产计划，公司拟将集团应占铜年产量从目前约140万吨提升至2035年的200万吨，增幅约43%。</p><p>　　其中，南澳大利亚铜业务预计将贡献集团2035年前计划新增铜产量的约三分之一。</p><p>　　南澳铜业务扩产将分两个阶段实施：</p><ul>\n<li>\n<p>第一阶段：将铜年产量提升至约50万吨。</p>\n</li>\n<li>\n<p>第二阶段：进一步将年产量提升至65万吨，计划于2040年前实现。</p>\n</li>\n</ul><p>　　<strong><span>预计铜业务2035年前累计产生350亿美元自由现金流</span></strong></p><p>　　必和必拓表示，南澳铜业务扩产所需资金将主要来自铜业务自身的经营现金流。</p><p>　　公司预计，截至2035年，旗下铜业务累计将产生约350亿美元的应占自由现金流，为产能扩张提供资金支持。</p><p>　　在长期需求方面，必和必拓认为，全球电气化、可再生能源投资、数字化转型及人工智能基础设施建设将持续推动铜需求增长。</p><p>　　该公司同时警告，现有铜矿的供应能力不足以满足未来市场需求，全球铜产业仍需扩大投资及新增产能，以应对长期供需缺口。</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：龙运翔 </p>",
+    "author": "环球市场播报"
+  },
+  {
+    "id": "aihot-20261123-wscn-ashare-d9422e03",
+    "title": "网传月风私募产品清盘，知情人士回应：消息不实，产品正常运作",
+    "summary": "针对网传月风私募产品清盘的消息，一位接近月风的人士回应称消息并不属实，相关私募产品目前仍在正常运作。11月23日，市场流传疑似月风发言“结束了，一场游戏一场梦”的截图并引发热议，有网友就此向其求证产品是否清盘。",
+    "url": "https://wallstreetcn.com/livenews/3203973",
+    "source": "华尔街见闻 · A股",
+    "publishedAt": "2026-11-23T06:27:19.000Z",
+    "score": 58,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场动态",
+      "市场政策"
+    ],
+    "region": [
+      "金融与政策",
+      "财经"
+    ],
+    "tags": [
+      "财经",
+      "A股",
+      "月风",
+      "私募",
+      "清盘传闻",
+      "辟谣"
+    ],
+    "context": "清盘传闻借截图快速发酵、随即被辟谣，反映市场对私募产品动向的高度敏感。",
+    "contentHtml": "<p>11月23日，市场流传截图引发热议，截图中疑似月风发言“结束了，一场游戏一场梦”，有网友就此向其求证，询问产品是否清盘。</p>\n\n<p>据一位接近月风的人士透露，网传清盘消息并不属实，相关私募产品目前仍在正常运作。（新浪财经）</p>"
+  },
+  {
+    "id": "aihot-20261123-bloomberg-markets-d2249e54",
+    "title": "马来西亚棕榈油行业称毛棕榈油出口税豁免窗口期已过",
+    "originalTitle": "Malaysia Palm Oil Industry Says CPO Tax-Waiver Window Has Passed",
+    "author": "Anuradha Raghu",
+    "summary": "马来西亚棕榈油行业表示，毛棕榈油（CPO）出口税豁免的窗口期已经过去。该豁免原本可帮助提振出口出货、缓解库存持续积压的压力。",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-23/malaysia-palm-oil-industry-says-cpo-tax-waiver-window-has-passed",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-23T06:26:14.000Z",
+    "score": 62,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "大宗商品",
+      "贸易政策",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "马来西亚",
+      "棕榈油",
+      "出口税",
+      "商品市场"
+    ],
+    "context": "马来西亚是全球主要棕榈油出口国，出口税政策动向直接影响棕榈油价格与库存走势。",
+    "contentHtml": "<p>Malaysia’s palm oil industry says the window in which an export tax waiver would have helped boost shipments and ease a buildup in stockpiles has passed.</p>"
+  },
+  {
     "id": "aihot-20261123-ndrc-policy-1c6d998b",
     "title": "国家发改委等四部门印发《“一老一小”服务体系建设实施方案》",
     "originalTitle": "国家发展改革委 民政部 国家卫生健康委 教育部印发《“一老一小”服务体系建设实施方案》",
@@ -540,6 +892,39 @@
     "context": "头部芯片厂商将智能体 AI 安全治理开源并捐赠给云原生基金会，显示 Agentic AI 安全正成为云原生社区的新议题。",
     "contentHtml": "<p>CNCF projects highlighted in this post</p><p><a title=\"Go to OpenShell\" href=\"https://www.cncf.io/projects/openshell\">\n\t\t\t\t<img width=\"70\" height=\"60\" src=\"https://landscape.cncf.io/logos/0476d1e760d3b3faf9ec3feb9a486c2ac9f1f7b325743fd5899900bd7dae201c.svg\" alt=\"OpenShell logo\">\n\t\t\t</a>\n\t\t\t\t\t\t</p><p>Today at KubeCon + CloudNativeCon North America, the Cloud Native Computing Foundation (CNCF) welcomes OpenShell as a Sandbox project. NVIDIA has contributed OpenShell, an open source runtime for securing and governing autonomous AI agents, to the foundation’s community-led home.</p><p>As organizations put AI agents to work, they need to give agents real capability without giving them unchecked access to data, secrets, or networks. This requires enforcement outside of the agents, right within the infrastructure that the agents run on.&nbsp;</p><p>OpenShell does exactly that: it manages and monitors agent behavior, provides and enforces policy-based boundaries for what it can do. OpenShell is adopting Cedar, another CNCF project, as its policy language. It’s a great example of CNCF projects building on one another.</p><p><strong>Why this belongs in the cloud native community</strong></p><p>Agents are becoming part of cloud native infrastructure, and the layer that governs them should be shared, vendor-neutral, and open to everyone who depends on it. OpenShell already reflects that spirit. Core contributors from NVIDIA, Red Hat, Docker, and Canonical have worked on the project since its inception. Their early involvement, alongside many additional organizations adopting OpenShell shows broad industry agreement on the need for dependable controls for agentic systems.</p><p>“Open source is the foundation of enterprise trust. As agents become part of cloud native infrastructure, the controls around them need to be open, auditable, and built together with the ecosystem. Bringing OpenShell to the CNCF puts governance of the project in the hands of the community. Red Hat has always believed that innovation thrives where collaboration is open, and we’re excited to help steward OpenShell alongside NVIDIA and the broader ecosystem.”</p><p>— Chris Wright, Chief Technology Officer and Senior Vice President of Global Engineering, Red Hat</p><p>Contributing OpenShell to the CNCF as a neutral foundation is a natural next step to expand and grow the OpenShell project. It has adopted the CNCF Code of Conduct, runs a public RFC process, and follows a governance model with explicit vendor-neutrality commitments. By contributing OpenShell alongside partners and maintainers from across the industry, NVIDIA aims to make secure AI available to all, under the same open governance model that supports other CNCF projects.</p><p><strong>Built for an ecosystem</strong></p><p>No two organizations run agents the same way. They use different infrastructure, secret stores, inference providers, and governance practices, and those choices change over time. OpenShell is designed to fit this variety through well-defined extension points for providers, compute, governance and approval workflows, policy enforcement, isolation, and credential management. Teams can adopt it incrementally and swap in what they already run. It also gives vendors, integrators, and end users clear places to contribute.</p><p><strong>What changes, and what doesn’t</strong></p><p>OpenShell is moving from NVIDIA’s GitHub repository to a neutral organization, ai-openshell. Working groups and special interest groups will form around integrated components and cross-cutting topics such as observability.</p><p>The core engineering efforts from NVIDIA will continue, while we welcome contributions from other interested parties.</p><p><strong>Ways to participate</strong></p><p>Whether your organization already uses OpenShell or is just exploring it, contributing is the best way to shape its future. Areas where help is especially welcome include:</p><ul>\n<li><strong>Extension implementations.</strong> Reference implementations for compute, credential management, inference, and logging, along with shared documentation and conformance tests so third-party integrations behave consistently.</li>\n\n\n\n<li><strong>Policy and governance patterns.</strong> Real-world approval flows, egress rules, and per-tenant policies, shared as examples or a policy library, plus feedback on the Cedar-based policy approach.</li>\n\n\n\n<li><strong>Isolation and platform coverage.</strong> Broader support across Linux, macOS, and Kubernetes, security reviews, adversarial testing, and vendor-neutral confidential computing work.</li>\n\n\n\n<li><strong>Observability.</strong> Consistent metrics, traces, and audit events aligned with OpenTelemetry.</li>\n\n\n\n<li><strong>Packaging and release engineering.</strong> Package maintenance, reproducible builds, SBOMs, signing, and CI, all of which support Incubation requirements.</li>\n\n\n\n<li><strong>Deployment at scale.</strong> Multi-tenancy, identity and access integration, and policy management workflows drawn from your own deployments.</li>\n</ul><p><strong>Get involved</strong></p><ul>\n<li>Join the <a href=\"https://groups.google.com/a/ai-openshell.org/g/openshell-community/about\">community mailing list</a> for notes and call invitations.</li>\n\n\n\n<li>Find the project in the CNCF Slack channel <a href=\"https://slack.cncf.io/\">#openshell-dev</a>.</li>\n\n\n\n<li>Watch the <a href=\"https://github.com/ai-openshell\">ai-openshell GitHub organization</a> for new repositories, “good first issue” labels, and design proposals.</li>\n</ul><p>Contributors, end users, and people who are both are welcome. We look forward to building the future of open agent governance together.</p>",
     "author": "Posted on November 10, 2026\n\t\tby Jonathan Bryce (CNCF), Ali Golshan (NVIDIA)"
+  },
+  {
+    "id": "aihot-20261122-hkma-press-13387ded",
+    "title": "香港按揭证券有限公司与亚洲基础设施投资银行签署合作意向书",
+    "summary": "香港按揭证券有限公司与亚洲基础设施投资银行签署合作意向书，正式建立合作关系。该合作消息由香港金融管理局以新闻稿形式对外发布。",
+    "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261123-3/",
+    "source": "香港金管局新闻稿 (HKMA)",
+    "publishedAt": "2026-11-22T16:00:00.000Z",
+    "score": 70,
+    "tier": "T1",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "金融与政策",
+      "央行与监管",
+      "港股",
+      "市场政策"
+    ],
+    "region": [
+      "金融与政策",
+      "央行"
+    ],
+    "tags": [
+      "央行",
+      "政策",
+      "香港金管局",
+      "亚投行",
+      "合作意向书",
+      "按揭证券"
+    ],
+    "context": "香港按揭融资平台与多边开发银行携手，债务融资与基础设施投资领域的合作动向值得关注。",
+    "contentHtml": "<p>香港按揭证券有限公司（按揭证券公司）与亚洲基础设施投资银行（亚投行）已于11月20日在香港签署合作意向书，确立双方的合作框架。</p><p>在是次签署的意向书之下，双方计划在多个方面加强合作，如发掘可持续基建领域的潜在联合融资机会、将相关气候变化战略融入基建投资、培养可持续基建融资人才、开展数码工具方面的交流及深化在基建贷款抵押证券发行方面的合作，实践双方加强将私有资本引入基建领域的共同目标。</p><p>在过去三年，亚投行透过其总计三亿美元的投资计划 Project Ocean，作为锚定投资者支持按揭证券公司基建贷款抵押证券的发行，并主要投资于其中的可持续融资票据。</p><p>按揭证券公司为履行促进本地债券市场发展的使命，于过去三年致力透过定期发行Bauhinia系列之基建贷款抵押证券（Bauhinia系列证券），以期达致推广此类证券作为独立资产类别的长远目标，巩固香港作为基建融资中心的地位。Bauhinia系列证券的发行为专业投资者提供一个投资横跨不同地域和行业的多元化项目和基建债务机会。亚投行作为Bauhinia系列票据发行的积极投资者，其多边开发银行的地位和参与度提升了投资者的信心，进一步扩大投资者基础和促进私有资本的流动性。</p><p>按揭证券公司执行董事兼总裁鲍克运表示：「随著按揭证券公司的基建融资及证券化平台业务在过往几年的显著增长，我们希望加强与我们网络内的金融机构、商业银行和多边开发银行的合作。我们进一步深化与亚投行的合作，将为推进我们的业务带来更多机遇，并促进香港作为基建融资中心的发展。」</p><p>亚投行公共部门（第一区）金融机构及基金客户（全球）首席投资官林金思表示：「亚投行很高兴能够拓展与按揭证券公司的合作。我们期待运用双方在基建融资领域的专长，并通过支持基建贷款抵押证券的持续发展，动员私有资本进入新兴市场基础设施项目​​的投资。」</p><p>香港按揭证券有限公司<br>\n2026年11月23日</p><p><img src=\"https://www.hkma.gov.hk/media/gb_chi/img/key-information/press-release/2026/20261123c3a1.jpg\" alt=\"香港按揭证券有限公司执行董事兼总裁鲍克运（左）和亚洲基础设施投资银行公共部门（第一区）金融机构及基金客户（全球）首席投资官林金思（右）签署合作意向书，正式确立双方合作框架。\" width=\"800\"><br>\n香港按揭证券有限公司执行董事兼总裁鲍克运（左）和亚洲基础设施投资银行公共部门（第一区）金融机构及基金客户（全球）首席投资官林金思（右）签署合作意向书，正式确立双方合作框架。</p><p><img src=\"https://www.hkma.gov.hk/media/gb_chi/img/key-information/press-release/2026/20261123c3a2.jpg\" alt=\"香港按揭证券有限公司执行董事兼总裁鲍克运（左二）和亚洲基础设施投资银行公共部门（第一区）金融机构及基金客户（全球）首席投资官林金思（右二）继签署合作意向书后，连同按揭证券公司首席投资总监（基建融资及证券化产品）郑文信（左一）和亚投行金融机构及基金客户（全球）资深投资官Torsten Albrecht（右一）参与祝酒仪式。\" width=\"800\"><br>\n香港按揭证券有限公司执行董事兼总裁鲍克运（左二）和亚洲基础设施投资银行公共部门（第一区）金融机构及基金客户（全球）首席投资官林金思（右二）继签署合作意向书后，连同按揭证券公司首席投资总监（基建融资及证券化产品）郑文信（左一）和亚投行金融机构及基金客户（全球）资深投资官Torsten Albrecht（右一）参与祝酒仪式。</p>",
+    "author": "香港金融管理局"
   },
   {
     "id": "aihot-20261122-ndrc-policy-3ed235ab",
