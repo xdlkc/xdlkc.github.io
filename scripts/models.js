@@ -239,6 +239,7 @@ function normalizeBenchmark(raw, fallbackId = '', catalogLookup = null) {
     id,
     name: String(raw.name || id).trim(),
     domain,
+    status: raw.status === 'reference' ? 'reference' : 'active',
     category,
     description: String(raw.description || '').trim(),
     unit: String(raw.unit || '%').trim(),
@@ -398,10 +399,13 @@ function computeParetoFrontier(rankedRows) {
 function buildOverviewMatrix(benchmarks, catalog = { models: [] }, newsIndex = []) {
   const catalogLookup = buildCatalogLookup(catalog);
   const catalogBySlug = new Map((catalog.models || []).map((m) => [m.slug, m]));
-  const totalBenchmarks = benchmarks.length;
-  const activeDomainSet = new Set(benchmarks.map((b) => b.domain));
-  const minBenchmarksForRank = totalBenchmarks >= 4 ? Math.min(3, Math.ceil(totalBenchmarks * 0.3)) : 1;
-  const minDomainsForRank = activeDomainSet.size >= 2 && totalBenchmarks >= 4 ? 2 : 1;
+  const activeBenchmarks = benchmarks.filter((b) => b.status !== 'reference');
+  const scoringBenchmarks = activeBenchmarks.length ? activeBenchmarks : benchmarks;
+  const scoringBenchIds = new Set(scoringBenchmarks.map((b) => b.id));
+  const totalScoringBenchmarks = scoringBenchmarks.length;
+  const activeDomainSet = new Set(scoringBenchmarks.map((b) => b.domain));
+  const minBenchmarksForRank = totalScoringBenchmarks >= 4 ? Math.min(3, Math.ceil(totalScoringBenchmarks * 0.3)) : 1;
+  const minDomainsForRank = activeDomainSet.size >= 2 && totalScoringBenchmarks >= 4 ? 2 : 1;
 
   const modelMap = new Map();
 
@@ -463,13 +467,13 @@ function buildOverviewMatrix(benchmarks, catalog = { models: [] }, newsIndex = [
   }
 
   const rows = Array.from(modelMap.values()).map((row) => {
-    const benchIds = Object.keys(row.normalizedScores);
-    const benchCount = benchIds.length;
-    const coveragePct = totalBenchmarks ? Math.round((benchCount / totalBenchmarks) * 100) : 0;
+    const activeEvaluatedIds = Object.keys(row.normalizedScores).filter((id) => scoringBenchIds.has(id));
+    const benchCount = activeEvaluatedIds.length;
+    const coveragePct = totalScoringBenchmarks ? Math.round((benchCount / totalScoringBenchmarks) * 100) : 0;
 
-    // Group normalized scores by domain
+    // Group normalized scores by domain (active scoring benchmarks only)
     const byDomain = {};
-    for (const bench of benchmarks) {
+    for (const bench of scoringBenchmarks) {
       const val = row.normalizedScores[bench.id];
       if (val === undefined) continue;
       if (!byDomain[bench.domain]) byDomain[bench.domain] = [];
@@ -493,11 +497,16 @@ function buildOverviewMatrix(benchmarks, catalog = { models: [] }, newsIndex = [
     }
 
     const coveredDomains = Object.keys(domainScores).length;
-    const compositeScore = weightTotal > 0 ? round1(weightedSum / weightTotal) : 0;
+    const fallbackVals = Object.values(row.normalizedScores);
+    const compositeScore = weightTotal > 0
+      ? round1(weightedSum / weightTotal)
+      : (fallbackVals.length ? round1(fallbackVals.reduce((s, v) => s + v, 0) / fallbackVals.length) : 0);
     const ranked = benchCount >= minBenchmarksForRank && coveredDomains >= minDomainsForRank;
     const unrankedReason = ranked
       ? ''
-      : `评测覆盖不足（当前 ${benchCount}/${totalBenchmarks} 项，需至少 ${minBenchmarksForRank} 项且覆盖 ${minDomainsForRank} 个领域）`;
+      : (benchCount === 0
+        ? '仅包含历史参考评测，未参与当前活跃综合排名'
+        : `评测覆盖不足（当前 ${benchCount}/${totalScoringBenchmarks} 项，需至少 ${minBenchmarksForRank} 项且覆盖 ${minDomainsForRank} 个领域）`);
 
     const cat = catalogBySlug.get(row.slug);
     const relatedNews = matchRelatedNews(row, newsIndex, cat);
@@ -556,8 +565,11 @@ function buildModelsPayload(
   const unranked = overview.filter((r) => !r.ranked);
   const paretoFrontier = computeParetoFrontier(ranked);
 
+  const activeBenchmarks = benchmarks.filter((b) => b.status !== 'reference');
+  const scoringBenchmarks = activeBenchmarks.length ? activeBenchmarks : benchmarks;
+
   const domains = DOMAIN_DEFS.map((def) => {
-    const domainBenches = benchmarks.filter((b) => b.domain === def.id);
+    const domainBenches = scoringBenchmarks.filter((b) => b.domain === def.id);
     return {
       ...def,
       weightPct: Math.round(def.weight * 100),
@@ -590,6 +602,7 @@ function buildModelsPayload(
     priceSource: catalog.priceSource || 'OpenRouter',
     priceSourceUrl: catalog.priceSourceUrl || 'https://openrouter.ai/api/v1/models',
     totalBenchmarks: benchmarks.length,
+    activeBenchmarkCount: scoringBenchmarks.length,
     totalModels: overview.length,
     rankedCount: ranked.length,
     unrankedCount: unranked.length,

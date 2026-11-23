@@ -688,7 +688,7 @@
       if (isOverview) {
         baseRows = ranked;
       } else if (isDomain) {
-        baseRows = overview.filter((r) => r.domainScores && r.domainScores[activeDomainId] !== undefined);
+        baseRows = ranked.filter((r) => r.domainScores && r.domainScores[activeDomainId] !== undefined);
       } else if (activeBench) {
         baseRows = activeBench.entries;
       }
@@ -709,7 +709,7 @@
             ${thSort('col-composite', 'compositeScore', scoreCol)}
           </tr>`;
         } else if (isDomain) {
-          const domBenches = benchmarks.filter((b) => b.domain === activeDomainId);
+          const domBenches = benchmarks.filter((b) => b.domain === activeDomainId && b.status !== 'reference');
           const benchHeaders = domBenches.map((b) => thSort('col-bench', `bench:${b.id}`, b.name)).join('');
           thead.innerHTML = `<tr>
             <th scope="col" class="col-rank">${escapeHtml(rankCol)}</th>
@@ -742,7 +742,7 @@
                 <td class="col-release"><span class="models-release-val">${escapeHtml(row.releaseDate || '—')}</span></td>
                 <td class="col-coverage">
                   <div class="models-coverage-cell">
-                    <span class="models-coverage-count">${row.benchCount} / ${payload.totalBenchmarks}</span>
+                    <span class="models-coverage-count">${row.benchCount} / ${payload.activeBenchmarkCount || payload.totalBenchmarks}</span>
                     <span class="models-coverage-pct">${row.coveragePct}%</span>
                   </div>
                 </td>
@@ -759,7 +759,7 @@
             })
             .join('');
         } else if (isDomain) {
-          const domBenches = benchmarks.filter((b) => b.domain === activeDomainId);
+          const domBenches = benchmarks.filter((b) => b.domain === activeDomainId && b.status !== 'reference');
           tbody.innerHTML = sorted
             .map((row, idx) => {
               const rankClass = idx < 3 ? ` is-top-${idx + 1}` : '';

@@ -2,6 +2,7 @@
   "id": "swe-bench-verified",
   "name": "SWE-bench Verified",
   "domain": "coding",
+  "status": "reference",
   "category": "代码工程",
   "description": "500 道经人工校验的真实 GitHub 仓库 Issue 修复任务，衡量端到端软件工程能力（自动同步官方 swebench.com 数据）。",
   "unit": "%",

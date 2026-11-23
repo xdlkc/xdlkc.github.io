@@ -280,11 +280,15 @@ test('UI controller: 3 views, currency toggle, domestic/open/provider/search fil
   assert.ok(doc.querySelector('[data-models-frontier-chart] svg'), 'Should render Pareto SVG');
   assert.ok(doc.querySelectorAll('.frontier-step-card').length >= 4);
 
-  // Switch to Coding domain tab
+  // Switch to Coding domain tab (must only include ranked models, no unranked legacy SWE-bench/LiveCodeBench pollution)
   doc.querySelector('[data-models-tab="domain:coding"]').click();
   assert.equal(ctrl.state.viewMode, 'leaderboard');
   assert.equal(ctrl.state.activeTab, 'domain:coding');
-  assert.ok(getVisibleModels().length >= 20);
+  const codingVisible = getVisibleModels();
+  assert.ok(codingVisible.length >= 20 && codingVisible.length <= payload.rankedCount);
+  assert.equal(codingVisible[0], 'Claude Fable 5.2');
+  assert.ok(!codingVisible.includes('O4-Mini'), 'Unranked legacy O4-Mini must not pollute Coding domain');
+  assert.ok(!codingVisible.includes('Claude 4.5 Opus'), 'Unranked legacy Claude 4.5 Opus must not pollute Coding domain');
 
   // Switch to individual benchmark tab (SWE-bench Verified)
   const sweBench = payload.benchmarks.find((b) => b.id === 'swe-bench-verified');

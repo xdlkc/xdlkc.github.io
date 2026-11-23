@@ -222,7 +222,7 @@ const fmtCny = (usd) => {
                   <td class="col-release"><span class="models-release-val"><%= row.releaseDate || '—' %></span></td>
                   <td class="col-coverage">
                     <div class="models-coverage-cell">
-                      <span class="models-coverage-count"><%= row.benchCount %> / <%= modelsData.totalBenchmarks %></span>
+                      <span class="models-coverage-count"><%= row.benchCount %> / <%= modelsData.activeBenchmarkCount || modelsData.totalBenchmarks %></span>
                       <span class="models-coverage-pct"><%= row.coveragePct %>%</span>
                     </div>
                   </td>
