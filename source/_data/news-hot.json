@@ -1,7 +1,41 @@
 [
   {
-    "id": "hot-a3ee9641",
+    "id": "hot-3d8e0ac3",
     "rank": 1,
+    "title": "黄仁勋重掌英伟达帅印：董事会恢复其CEO职务，股价暴涨27%",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "公司动态",
+      "AI产业链",
+      "宏观"
+    ],
+    "heatScore": 124.2,
+    "sourceCount": 2,
+    "latestAt": "2026-11-23T19:19:20.000Z",
+    "summary": "英伟达董事会已恢复黄仁勋的CEO职务，公司股价应声大涨27%。黄仁勋重掌英伟达帅印，市场对这一管理层变动反应强烈。",
+    "items": [
+      {
+        "id": "aihot-20261123-wscn-global-5d5fe795",
+        "title": "黄仁勋重掌英伟达帅印：董事会恢复其CEO职务，股价暴涨27%",
+        "source": "华尔街见闻 · 全球",
+        "publishedAt": "2026-11-23T14:34:27.000Z",
+        "url": "https://wallstreetcn.com/articles/3786536",
+        "score": 92
+      },
+      {
+        "id": "aihot-20261123-sina-finance-f911a23e",
+        "title": "英伟达董事会恢复黄仁勋职务，据悉未事先征询公司高管意见",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T19:19:20.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuhxn5282873.shtml",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "hot-a3ee9641",
+    "rank": 2,
     "title": "黄仁勋恢复英伟达CEO职务后，下周将出席美国参议院公开听证",
     "industry": "AI",
     "topics": [
@@ -10,7 +44,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 114.5,
+    "heatScore": 113.4,
     "sourceCount": 2,
     "latestAt": "2026-11-23T18:12:22.000Z",
     "summary": "黄仁勋在恢复英伟达CEO职务后，已确定下周出席美国参议院公开听证会作证。此次听证源于两党议员就其与一名疑似中国间谍者的恋情事件发出的作证呼吁。",
@@ -35,7 +69,7 @@
   },
   {
     "id": "hot-7f55bab1",
-    "rank": 2,
+    "rank": 3,
     "title": "英伟达美股盘前涨超9%",
     "industry": "金融与政策",
     "topics": [
@@ -44,7 +78,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 94,
+    "heatScore": 93,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:51:39.000Z",
     "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
@@ -76,8 +110,34 @@
     ]
   },
   {
+    "id": "hot-1630e20a",
+    "rank": 4,
+    "title": "黄仁勋戏剧性重返英伟达掌舵，特朗普介入推动其复职",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "半导体",
+      "公司治理",
+      "A股"
+    ],
+    "heatScore": 91.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T19:26:03.000Z",
+    "summary": "英伟达董事会周一意外宣布恢复黄仁勋的领导职务，公司股价随之创下数十年来最大涨幅。此次回归被称为企业史上最令人震惊的高管回归之一，特朗普的介入是推动复职的关键因素。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-af0d2280",
+        "title": "黄仁勋戏剧性重返英伟达掌舵，特朗普介入推动其复职",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T19:26:03.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuhxu0347227.shtml",
+        "score": 95
+      }
+    ]
+  },
+  {
     "id": "hot-b146512e",
-    "rank": 3,
+    "rank": 5,
     "title": "英伟达重新任命黄仁勋，上演惊人回归",
     "industry": "金融与政策",
     "topics": [
@@ -86,7 +146,7 @@
       "公司动态",
       "宏观"
     ],
-    "heatScore": 84.9,
+    "heatScore": 84,
     "sourceCount": 1,
     "latestAt": "2026-11-23T16:54:43.000Z",
     "summary": "英伟达董事会重新任命黄仁勋执掌这家全球最大芯片制造商，成为史上最令人震惊的企业回归案例之一。消息推动英伟达股价录得数十年来最大涨幅。彭博记者 Ed Ludlow 解读了这一事件的来龙去脉。",
@@ -103,7 +163,7 @@
   },
   {
     "id": "hot-5466adef",
-    "rank": 4,
+    "rank": 6,
     "title": "交大思诺董事长提议回购2000万元至4000万元公司股份",
     "industry": "金融与政策",
     "topics": [
@@ -112,7 +172,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 84.4,
+    "heatScore": 83.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:20:50.000Z",
     "summary": "交大思诺11月23日公告，董事长李伟提议以自有资金或自筹资金回购公司部分A股股份，回购资金总额不低于2000万元且不超过4000万元。回购将通过深交所交易系统以集中竞价方式进行，拟用于股权激励或员工持股计划。",
@@ -161,7 +221,7 @@
   },
   {
     "id": "hot-d83d4b7b",
-    "rank": 5,
+    "rank": 7,
     "title": "OpenAI 警告后续 AI 系统可能超出安全检查能力，敦促竞争对手就共同限制达成一致",
     "industry": "AI",
     "topics": [
@@ -170,7 +230,7 @@
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 84.1,
+    "heatScore": 83.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T18:42:38.000Z",
     "summary": "OpenAI 首席科学家 Jakub Pachocki 警告，即将到来的 AI 系统可能在安全措施跟上前失控，敦促竞争对手就共同限制达成一致。他首次公开整个 GPT 系列的内部困惑度评分，数据延伸至一个尚未发布的新模型，显示核心能力在出奇精确的阈值处涌现。Pachocki 正推动将困惑度作为行业通用的进展指标，以便在 AI 行为控制力被侵蚀前建立共同限制。",
@@ -187,7 +247,7 @@
   },
   {
     "id": "hot-ec51062d",
-    "rank": 6,
+    "rank": 8,
     "title": "加拿大皇家银行下调标普500十二个月目标位至8050点 仍看好16.5%上行空间",
     "industry": "金融与政策",
     "topics": [
@@ -196,7 +256,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 83.9,
+    "heatScore": 83.1,
     "sourceCount": 2,
     "latestAt": "2026-11-23T08:53:13.000Z",
     "summary": "加拿大皇家银行策略团队将标普500十二个月目标点位下调至8050点，略低于9月给出的8150点，但仍预计未来一年有16.5%的上涨空间。由洛里·卡尔瓦西纳牵头的团队认为股市已充分计入诸多利空，强劲的经济增长与企业盈利能够对冲估值进一步压缩以及美联储加息带来的压力。",
@@ -221,7 +281,7 @@
   },
   {
     "id": "hot-dc7ad5df",
-    "rank": 7,
+    "rank": 9,
     "title": "优化 Kubernetes 准入控制：Kyverno 的 CEL 准入成本究竟花在哪",
     "industry": "工程与开源",
     "topics": [
@@ -230,7 +290,7 @@
       "研发效能",
       "开源生态"
     ],
-    "heatScore": 83.9,
+    "heatScore": 83,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:06:28.636Z",
     "summary": "CNCF 博客发布对 Kyverno 准入路径的性能剖析：成本大头并不在 CEL 表达式求值，约 86% 的准入开销来自其他环节。文章通过逐环节定位真实瓶颈，为 Kubernetes 准入控制优化指明方向。",
@@ -246,15 +306,41 @@
     ]
   },
   {
+    "id": "hot-2c7efa3a",
+    "rank": 10,
+    "title": "谷歌搜索 AI Mode 现已接入 Drive 和 Wallet，提供更个性化回复",
+    "industry": "AI",
+    "topics": [
+      "产品动态",
+      "搜索",
+      "模型发布",
+      "基础设施"
+    ],
+    "heatScore": 82.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T19:14:46.000Z",
+    "summary": "谷歌搜索的 AI Mode 现已接入 Drive 和 Wallet，可利用用户数据生成更个性化的回复。谷歌同时将 AI Mode 的 Personal Intelligence 功能扩展到 Drive、Wallet 和 Gemini 应用，充分利用其生态系统内已有的海量用户数据。",
+    "items": [
+      {
+        "id": "aihot-20261123-techcrunch-ai-d63bc6e9",
+        "title": "谷歌搜索 AI Mode 现已接入 Drive 和 Wallet，提供更个性化回复",
+        "source": "TechCrunch · AI",
+        "publishedAt": "2026-11-23T19:14:46.000Z",
+        "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+        "score": 80
+      }
+    ]
+  },
+  {
     "id": "hot-00664211",
-    "rank": 8,
+    "rank": 11,
     "title": "NVIDIA 捐赠 OpenShell 加入 CNCF 沙箱项目：以开放治理保障 Agentic AI 安全",
     "industry": "工程与开源",
     "topics": [
       "云原生",
       "开源生态"
     ],
-    "heatScore": 82.7,
+    "heatScore": 81.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:06:28.635Z",
     "summary": "NVIDIA 在 KubeCon + CloudNativeCon North America 上将开源运行时 OpenShell 捐赠给 CNCF，使其成为沙箱（Sandbox）项目。OpenShell 专注于为自主 AI 代理（agentic AI）提供安全防护与治理，CNCF 将以开放治理模式托管该项目。",
@@ -270,8 +356,60 @@
     ]
   },
   {
+    "id": "hot-464c5a5d",
+    "rank": 12,
+    "title": "Peterson 分析：财长贝森特对黄仁勋态度转向揭示了特朗普对华政策的什么",
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "中美关系",
+      "美股",
+      "宏观"
+    ],
+    "heatScore": 81.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T19:06:14.000Z",
+    "summary": "Peterson 分析文章指出，美国财政部长贝森特一度成为针对英伟达的新兴强硬路线的代表人物，但如今已改弦更张、立场逆转。文章以这一态度转变切入，解读其透露出的特朗普政府对华政策信号。",
+    "items": [
+      {
+        "id": "aihot-20261123-cnbc-markets-422713b7",
+        "title": "Peterson 分析：财长贝森特对黄仁勋态度转向揭示了特朗普对华政策的什么",
+        "source": "CNBC Markets",
+        "publishedAt": "2026-11-23T19:06:14.000Z",
+        "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "hot-36e7ccb3",
+    "rank": 13,
+    "title": "特朗普火速力挺黄仁勋复职、自称“一手促成”，万斯被曝也介入幕后协调",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观",
+      "政策",
+      "市场政策",
+      "美股"
+    ],
+    "heatScore": 81.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T19:06:08.000Z",
+    "summary": "特朗普火速表态力挺黄仁勋复职，并自称此事由他“一手促成”。万斯被曝也在幕后参与了协调。",
+    "items": [
+      {
+        "id": "aihot-20261123-wscn-global-275a6a77",
+        "title": "特朗普火速力挺黄仁勋复职、自称“一手促成”，万斯被曝也介入幕后协调",
+        "source": "华尔街见闻 · 全球",
+        "publishedAt": "2026-11-23T19:06:08.000Z",
+        "url": "https://wallstreetcn.com/articles/3786540",
+        "score": 80
+      }
+    ]
+  },
+  {
     "id": "hot-8def6855",
-    "rank": 9,
+    "rank": 14,
     "title": "黄仁勋复职带动AI相关股票普涨 英伟达市值数小时增逾1万亿美元",
     "industry": "金融与政策",
     "topics": [
@@ -280,7 +418,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 82.4,
+    "heatScore": 81.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:51:40.000Z",
     "summary": "英伟达宣布恢复黄仁勋总裁兼首席执行官职务并立即生效，AI相关股票应声普涨，英伟达股价一度上涨35%，创2000年以来最大盘中涨幅。受此带动，英伟达市值数小时内增逾1万亿美元。",
@@ -297,7 +435,7 @@
   },
   {
     "id": "hot-6e524e28",
-    "rank": 10,
+    "rank": 15,
     "title": "同步窗口关闭时：Argo CD self-heal 是如何跳过迁移 hook 的",
     "industry": "工程与开源",
     "topics": [
@@ -305,7 +443,7 @@
       "研发效能",
       "开源生态"
     ],
-    "heatScore": 81.5,
+    "heatScore": 80.7,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:06:28.635Z",
     "summary": "CNCF 博客复盘一则真实案例：客户推送发布后 Argo CD 报告同步成功，迁移 hook 却未执行，根因是同步窗口关闭后 self-heal 跳过了迁移 hook。文章拆解了这一行为背后的机制，帮助依赖同步窗口与 hook 的团队避开同类问题。",
@@ -321,42 +459,8 @@
     ]
   },
   {
-    "id": "hot-d475a203",
-    "rank": 11,
-    "title": "特朗普透露：曾直接与英伟达董事会沟通黄仁勋事宜",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "政策动态",
-      "市场",
-      "A股"
-    ],
-    "heatScore": 80.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T15:36:16.000Z",
-    "summary": "美国总统特朗普透露，在黄仁勋复职之前，他曾直接与英伟达董事会沟通黄仁勋事宜。特朗普还表示，自己已于周日晚间与复职的英伟达CEO黄仁勋通了电话。上述信息是特朗普在接受记者埃蒙·贾弗尔斯电话采访时作出的披露。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-788eb645",
-        "title": "特朗普透露：曾直接与英伟达董事会沟通黄仁勋事宜",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T15:36:16.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwis5444302.shtml",
-        "score": 78
-      },
-      {
-        "id": "aihot-20261123-sina-finance-fcc0c219",
-        "title": "特朗普再次公开呼吁英伟达董事会重新聘用前CEO黄仁勋",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T06:30:46.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszeh8374374.shtml",
-        "score": 78
-      }
-    ]
-  },
-  {
     "id": "hot-4d347bb7",
-    "rank": 12,
+    "rank": 16,
     "title": "美股为何迎来2008年以来波动最剧烈的周一早盘",
     "industry": "金融与政策",
     "topics": [
@@ -365,7 +469,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 79,
+    "heatScore": 78.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:01:25.000Z",
     "summary": "美股周一早盘波动剧烈程度创2008年以来之最，此前一周遭华尔街疯狂抛售的AI相关资产被资金大举买回。跟踪纳指100的景顺QQQ信托开盘大涨近8%，创下该基金1999年以来的纪录。",
@@ -382,7 +486,7 @@
   },
   {
     "id": "hot-32fa1be4",
-    "rank": 13,
+    "rank": 17,
     "title": "英伟达恢复黄仁勋总裁兼CEO职务，AI概念股大涨",
     "industry": "金融与政策",
     "topics": [
@@ -390,7 +494,7 @@
       "AI",
       "宏观"
     ],
-    "heatScore": 78.9,
+    "heatScore": 78.1,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:04:13.000Z",
     "summary": "英伟达（Nvidia）宣布即刻恢复黄仁勋总裁兼首席执行官（CEO）职务。受此消息推动，AI相关个股周一大涨。",
@@ -406,34 +510,8 @@
     ]
   },
   {
-    "id": "hot-14b7c534",
-    "rank": 14,
-    "title": "黄仁勋重掌英伟达帅印：董事会恢复其CEO职务，股价暴涨27%",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "公司动态",
-      "AI产业链",
-      "宏观"
-    ],
-    "heatScore": 78.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T14:34:27.000Z",
-    "summary": "英伟达董事会已恢复黄仁勋的CEO职务，公司股价应声大涨27%。黄仁勋重掌英伟达帅印，市场对这一管理层变动反应强烈。",
-    "items": [
-      {
-        "id": "aihot-20261123-wscn-global-5d5fe795",
-        "title": "黄仁勋重掌英伟达帅印：董事会恢复其CEO职务，股价暴涨27%",
-        "source": "华尔街见闻 · 全球",
-        "publishedAt": "2026-11-23T14:34:27.000Z",
-        "url": "https://wallstreetcn.com/articles/3786536",
-        "score": 92
-      }
-    ]
-  },
-  {
     "id": "hot-a46a8bed",
-    "rank": 15,
+    "rank": 18,
     "title": "Z.ai 发布 7500 亿参数旗舰模型 GLM-5.4，跟随 OpenAI 布局循环 Transformer 架构",
     "industry": "AI",
     "topics": [
@@ -442,7 +520,7 @@
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 78.2,
+    "heatScore": 77.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:13:03.000Z",
     "summary": "Z.ai 发布旗舰模型 GLM-5.4，将 7500 亿参数模型迁移至循环架构，让 28 层网络运行两次。公司称该设计能让其匹敌 2 至 3 万亿参数的模型，但目前基准成绩仅来自较小的 30B 测试模型。Z.ai 将 GLM-5.4 定位为\"泛化编码\"（Generalized Coding）的开端，代码还可生成视频、游戏和 CAD 模型。",
@@ -458,8 +536,34 @@
     ]
   },
   {
+    "id": "hot-8fb76c9e",
+    "rank": 19,
+    "title": "Nothing 即将推出的 Ear Note 是一款支持 AI 转写的耳机",
+    "industry": "AI",
+    "topics": [
+      "消费电子",
+      "AI硬件",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "heatScore": 77,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T19:04:52.000Z",
+    "summary": "Nothing 演示了即将推出的 AI 耳机 Ear Note，耳塞和配备麦克风的充电盒可录制并转写对话，配套 App 用于管理录音、转写和 AI 生成的摘要。CEO Carl Pei 现场演示了这款设备，其定位类似 Apple 新的 Watch 功能和 Amazon 的 Bee 可穿戴设备等产品。",
+    "items": [
+      {
+        "id": "aihot-20261123-the-verge-ai-555fb4db",
+        "title": "Nothing 即将推出的 Ear Note 是一款支持 AI 转写的耳机",
+        "source": "The Verge · AI",
+        "publishedAt": "2026-11-23T19:04:52.000Z",
+        "url": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+        "score": 72
+      }
+    ]
+  },
+  {
     "id": "hot-47506176",
-    "rank": 16,
+    "rank": 20,
     "title": "监管部门向券商下发两融新政通知：落实融资融券逆周期调节措施",
     "industry": "金融与政策",
     "topics": [
@@ -468,7 +572,7 @@
       "监管动态",
       "港股"
     ],
-    "heatScore": 77.8,
+    "heatScore": 77,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:35:36.000Z",
     "summary": "11月23日，监管部门向券商下发《关于落实融资融券逆周期调节措施、提升风险管控有效性有关工作的通知》。该通知围绕落实两融逆周期调节措施、提升风险管控有效性提出要求，属两融领域新政。",
@@ -480,108 +584,6 @@
         "publishedAt": "2026-11-23T14:35:36.000Z",
         "url": "https://finance.sina.com.cn/china/2026-11-23/doc-iniztwiw8165261.shtml",
         "score": 90
-      }
-    ]
-  },
-  {
-    "id": "hot-4b4b8839",
-    "rank": 17,
-    "title": "RoboTrack：面向真实世界机器人操作场景的点跟踪",
-    "industry": "AI",
-    "topics": [
-      "机器人",
-      "计算机视觉",
-      "开源生态",
-      "模型发布"
-    ],
-    "heatScore": 77.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T17:20:37.000Z",
-    "summary": "AI2（Allen Institute for AI）在 Hugging Face 官方博客介绍 RoboTrack，一个面向真实世界机器人操作场景的点跟踪工作。该项目由官方以开源形式发布，聚焦机器人操作任务中的点级运动追踪。",
-    "items": [
-      {
-        "id": "aihot-20261123-hugging-face-4712db43",
-        "title": "RoboTrack：面向真实世界机器人操作场景的点跟踪",
-        "source": "Hugging Face Blog",
-        "publishedAt": "2026-11-23T17:20:37.000Z",
-        "url": "https://huggingface.co/blog/allenai/robotrack",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-bcc90a73",
-    "rank": 18,
-    "title": "黄仁勋时隔12天重回英伟达CEO宝座 苹果乔布斯当年等了12年",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "公司治理",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 77.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T14:46:34.000Z",
-    "summary": "英伟达董事会仅用12天就撤销罢免黄仁勋的决定，黄仁勋重回CEO职位。作为对照，苹果乔布斯当年重返CEO等了12年，而三年前的同一周，OpenAI撤换山姆·奥特曼后不到五天就完成了同样的复位。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-561b931d",
-        "title": "黄仁勋时隔12天重回英伟达CEO宝座 苹果乔布斯当年等了12年",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T14:46:34.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwiu2198462.shtml",
-        "score": 88
-      }
-    ]
-  },
-  {
-    "id": "hot-4a1d3983",
-    "rank": 19,
-    "title": "黄仁勋回归点燃科技债反弹，全球信用风险指标大幅回落",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观",
-      "金融市场",
-      "市场政策",
-      "美股"
-    ],
-    "heatScore": 77,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T17:54:06.000Z",
-    "summary": "黄仁勋回归的消息点燃科技债反弹，全球信用风险指标大幅回落。科技板块信用压力担忧随之明显降温，信用风险定价快速修复。",
-    "items": [
-      {
-        "id": "aihot-20261123-wscn-global-0f48bcd1",
-        "title": "黄仁勋回归点燃科技债反弹，全球信用风险指标大幅回落",
-        "source": "华尔街见闻 · 全球",
-        "publishedAt": "2026-11-23T17:54:06.000Z",
-        "url": "https://wallstreetcn.com/articles/3786543",
-        "score": 75
-      }
-    ]
-  },
-  {
-    "id": "hot-b5424780",
-    "rank": 20,
-    "title": "CNCF 博客：如何在不由你掌控的 Kubernetes 环境中为应用提供支持",
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "开源生态"
-    ],
-    "heatScore": 76.7,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T19:06:28.635Z",
-    "summary": "CNCF 博客发布实践指南，讲解如何在客户自行运行的 Kubernetes 环境中为应用提供支持，这类环境的集群配置、升级节奏与周边工具都不受你控制。文章指出，让应用在 Kubernetes 上跑起来是一回事，在客户环境中持续提供支持是另一回事。",
-    "items": [
-      {
-        "id": "aihot-20261123-cncf-blog-764e1bed",
-        "title": "CNCF 博客：如何在不由你掌控的 Kubernetes 环境中为应用提供支持",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-23T19:06:28.635Z",
-        "url": "https://www.cncf.io/blog/2026/11/19/how-to-support-your-app-on-kubernetes-environments-you-dont-control/",
-        "score": 70
       }
     ]
   }
