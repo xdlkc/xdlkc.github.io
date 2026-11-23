@@ -32,11 +32,11 @@ jobs:
 
       - name: Commit and push updated benchmarks
         run: |
-          if [ -n "$(git status --porcelain source/_data/benchmarks)" ]; then
+          if [ -n "$(git status --porcelain source/_data/benchmarks source/_data/models-catalog.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add source/_data/benchmarks
-            git commit -m "chore(models): sync live benchmark leaderboards"
+            git add source/_data/benchmarks source/_data/models-catalog.json
+            git commit -m "chore(models): sync live benchmarks and OpenRouter pricing"
             git pull --rebase origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           else

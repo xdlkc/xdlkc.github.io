@@ -113,32 +113,66 @@
     'models.tag': { en: 'BENCHMARKS', zh: '模型评测' },
     'models.title': { en: 'Models Leaderboard', zh: 'AI 模型评测榜' },
     'models.subtitle': {
-      en: 'Declarative multi-benchmark tracker across dialogue, software engineering, agent execution, science, and competitive coding.',
-      zh: '可扩展的多维度 AI 模型评测看板，覆盖综合对话、代码工程、Agent 执行、科学推理与竞赛编程。'
+      en: 'Cross-benchmark calibrated leaderboard with 5-domain weighting, live API pricing, and Pareto cost-performance frontier.',
+      zh: '跨榜难度校准的 AI 模型综合榜单，支持五大领域加权、实时 API 价格与上下文对比及帕累托性价比斩杀线。'
     },
-    'models.stats.benchmarks': { en: 'Benchmarks', zh: '个评测集' },
+    'models.stats.benchmarks': { en: 'Benchmarks', zh: '项评测' },
     'models.stats.models': { en: 'Models', zh: '个模型' },
+    'models.stats.ranked': { en: 'Ranked', zh: '个入榜模型' },
     'models.stats.updated': { en: 'Updated', zh: '更新于' },
-    'models.tab.overview': { en: 'Overview', zh: '综合总览' },
+    'models.view.leaderboard': { en: 'Leaderboard', zh: '榜单' },
+    'models.view.pricing': { en: 'Pricing & Context', zh: '价格' },
+    'models.view.frontier': { en: 'Value Frontier', zh: '斩杀线' },
+    'models.currency.label': { en: 'Currency', zh: '计价' },
+    'models.tab.overview': { en: 'Composite', zh: '综合' },
+    'models.benchmarks.single': { en: 'Single Benchmark:', zh: '单项评测：' },
     'models.overview.desc': {
-      en: 'Normalized composite index (0–100, relative to top score per benchmark) aggregated automatically from all registered benchmark JSON files.',
-      zh: '综合归一化指数（0–100，按各评测集最高分归一化后取均值），由 source/_data/benchmarks/ 下所有 JSON 自动汇总。'
+      en: 'Difficulty-calibrated composite index (mean 50, SD 15) weighted across Coding (38%), Reasoning (19%), Professional (19%), Knowledge (14%), and Arena (10%).',
+      zh: '跨榜难度校准综合评分（均分 50 / 标准差 15），按编程 38%、科研 19%、专业办公 19%、知识问答 14%、真人盲选 10% 加权汇总。'
     },
+    'models.pricing.desc': {
+      en: 'API pricing & context window comparison. 7:2:1 blended cost reflects typical agent workloads (70% cached input, 20% uncached input, 10% output).',
+      zh: 'API 定价与上下文窗口对比。7:2:1 综合价按 70% 缓存输入 + 20% 常规输入 + 10% 输出估算典型 Agent 场景成本。'
+    },
+    'models.frontier.title': { en: 'Pareto Cost-Performance Frontier', zh: '性价比斩杀线（帕累托前沿）' },
+    'models.frontier.desc': {
+      en: 'Log-scale 7:2:1 blended API cost (70% cached input + 20% input + 10% output) vs. calibrated composite score. Highlighted models form the optimal value frontier.',
+      zh: '横轴为对数坐标 7:2:1 综合用量价格，纵轴为校准综合评分。高亮连线上的模型代表各价位段的帕累托最优解。'
+    },
+    'models.frontier.metaDesc': {
+      en: 'Pareto value frontier plotting log-scale 7:2:1 blended cost against calibrated composite score.',
+      zh: '按对数坐标 7:2:1 综合价与综合评分绘制性价比帕累托前沿，点击节点可查看模型详情。'
+    },
+    'models.frontier.stepsTitle': { en: 'Optimal Frontier Progression', zh: '斩杀线阶梯路径' },
+    'models.calibrationNote': {
+      en: 'Note: Score differences under 3 points are within cross-benchmark variance. Models with insufficient benchmark coverage are listed below under Unranked.',
+      zh: '提示：综合分差不到 3 分时属于跨榜正常波动范围；评测覆盖不足的模型自动归入下方「暂不排名」。'
+    },
+    'models.unranked.title': { en: 'Unranked Models (Insufficient Coverage)', zh: '暂不排名（评测覆盖不足）' },
+    'models.unranked.reason': { en: 'Reason', zh: '未入榜原因' },
     'models.filter.all': { en: 'All', zh: '全部' },
-    'models.filter.open': { en: 'Open Weights', zh: '开源权重' },
-    'models.filter.closed': { en: 'Closed API', zh: '闭源商用' },
+    'models.filter.open': { en: 'Open Weights', zh: '开源模型' },
+    'models.filter.closed': { en: 'Closed API', zh: '闭源 API' },
+    'models.filter.domestic': { en: 'Domestic (CN)', zh: '国产模型' },
     'models.filter.reasoning': { en: 'Reasoning', zh: '推理模型' },
     'models.filter.providerAll': { en: 'All Providers', zh: '全部厂商' },
-    'models.filter.searchPlaceholder': { en: 'Search model, provider, or notes…', zh: '搜索模型、厂商或备注…' },
+    'models.filter.searchPlaceholder': { en: 'Search model or provider…', zh: '搜索模型或厂商…' },
     'models.filter.reset': { en: 'Reset filters', zh: '重置筛选' },
-    'models.col.rank': { en: '#', zh: '#' },
+    'models.col.rank': { en: '#', zh: '名次' },
     'models.col.model': { en: 'Model', zh: '模型' },
     'models.col.provider': { en: 'Provider', zh: '厂商' },
-    'models.col.composite': { en: 'Composite', zh: '综合均分' },
+    'models.col.composite': { en: 'Score', zh: '综合评分' },
     'models.col.score': { en: 'Score', zh: '得分' },
-    'models.col.release': { en: 'Release', zh: '发布日期' },
-    'models.badge.open': { en: 'Open', zh: '开源' },
+    'models.col.release': { en: 'Release', zh: '上线日期' },
+    'models.col.coverage': { en: 'Coverage', zh: '评测覆盖' },
+    'models.col.cachePrice': { en: 'Cache', zh: '缓存价格' },
+    'models.col.inputPrice': { en: 'Input', zh: '输入价格' },
+    'models.col.outputPrice': { en: 'Output', zh: '输出价格' },
+    'models.col.blended': { en: '7:2:1 Blended', zh: '7:2:1 综合价' },
+    'models.col.context': { en: 'Context', zh: '上下文' },
+    'models.badge.open': { en: 'Open', zh: '开源权重' },
     'models.badge.closed': { en: 'API', zh: '闭源' },
+    'models.badge.domestic': { en: 'CN', zh: '国产' },
     'models.badge.reasoning': { en: 'Reasoning', zh: '推理' },
     'models.meta.source': { en: 'Source', zh: '数据来源' },
     'models.meta.updated': { en: 'Updated', zh: '更新日期' },
@@ -154,9 +188,20 @@
       zh: '如何新增一个评测榜（1 个文件 / 1 条命令）'
     },
     'models.guide.lead': {
-      en: 'This leaderboard automatically discovers every *.json file under source/_data/benchmarks/ at build time — zero template or code changes required.',
-      zh: '本看板在构建时自动扫描 source/_data/benchmarks/ 目录下的全部 *.json 文件，无需修改任何模板或代码。'
-    }
+      en: 'This leaderboard automatically discovers every *.json file under source/_data/benchmarks/ at build time and syncs live API pricing from OpenRouter.',
+      zh: '本看板在构建时自动扫描 source/_data/benchmarks/ 目录下的全部 *.json 文件，并自动同步 OpenRouter 实时 API 价格。'
+    },
+    'models.detail.back': { en: 'Back to Leaderboard', zh: '返回模型榜' },
+    'models.detail.rank': { en: 'Overall Rank', zh: '综合排名' },
+    'models.detail.pricingTitle': { en: 'API Pricing Breakdown', zh: 'API 定价明细' },
+    'models.detail.domainsTitle': { en: 'Domain Performance', zh: '五大领域表现' },
+    'models.detail.benchmarksTitle': { en: 'Evaluated Benchmarks', zh: '逐项评测明细' },
+    'models.detail.colBench': { en: 'Benchmark', zh: '评测项' },
+    'models.detail.colDomain': { en: 'Category', zh: '领域' },
+    'models.detail.colRaw': { en: 'Raw Score', zh: '原始分' },
+    'models.detail.colCalibrated': { en: 'Calibrated', zh: '校准分' },
+    'models.detail.colSource': { en: 'Source', zh: '来源' },
+    'models.detail.newsTitle': { en: 'Related News', zh: '相关动态' }
   };
 
   function normalizeMode(value) {

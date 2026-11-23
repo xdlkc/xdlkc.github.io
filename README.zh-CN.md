@@ -81,7 +81,8 @@ npm run audio:generate -- source/_posts/your-slug.md
 ### 新闻摘要自动化
 
 - `node tools/aihot-sync.js`（由 [.github/workflows/sync-aihot-news.yml](.github/workflows/sync-aihot-news.yml) 定时触发，需 Node.js `24+`）：直接复用引入至 [vendor/aihot/](vendor/aihot/) 的 AIHOT 无数据库核心模块（`content/sanitize.ts`、`lib/page-content.ts`、`industry/selection.ts`、`industry/prompts/`）与 `@mozilla/readability` + `linkedom` + `cheerio` + `sanitize-html`，抓取多类信源（`rss`/`atom`/`json`/`web`）与多行业分类（`AI`、`工程与开源`、`金融与政策`），抽取原网页完整图文正文，按分级门槛（`T1 >= 60`、`T2 >= 76`）调用 OpenAI 兼容模型生成答案前置中文摘要与可选正文中文翻译（默认使用 GLM 国内版 Token Plan：`https://open.bigmodel.cn/api/coding/paas/v4` 与 `glm-5.3-flash`，配置 `AIHOT_LLM_API_KEY` 或 `GLM_API_KEY`，可选 `AIHOT_LLM_BASE_URL` 与 `AIHOT_LLM_MODEL`），聚簇生成 `source/_data/news-hot.json` 热点榜并写入 `source/_data/news.json`（静态生成 `/news/` 三视图与 `/news/<id>/` 详情页）。支持 `--dry-run`、`--no-llm`、`--backfill-content`、`--rebuild-hot`、`--industry=...`、`--kind=...`、`--hours=72` 与 `--max-new=15`。
-- `node tools/add-benchmark.js --id=<slug> --name="<名称>" --category="<分类>" --unit="%"`：在 `source/_data/benchmarks/` 下快速新增一个声明式评测基准 JSON 文件，[scripts/models.js](scripts/models.js) 构建时会自动发现并渲染到 `/models/` 模型榜。
+- `node tools/add-benchmark.js --id=<slug> --name="<名称>" --category="<分类>" --unit="%"`：在 `source/_data/benchmarks/` 下快速新增一个声明式评测基准 JSON 文件，[scripts/models.js](scripts/models.js) 构建时会自动发现并聚合渲染到 `/models/`（支持五大领域加权校准榜单、价格与上下文视图、帕累托性价比斩杀线、`¥ / $` 一键切换，以及联动 `/news/` 相关动态的静态 `/models/<slug>/` 模型详情页）。
+- `node tools/sync-benchmarks.js`（由 [.github/workflows/sync-benchmarks.yml](.github/workflows/sync-benchmarks.yml) 每日定时触发）：自动同步公开基准（`SWE-bench Verified`、`LiveCodeBench`）以及 OpenRouter 实时 API 价格与上下文窗口至 `source/_data/models-catalog.json`。支持 `--dry-run` 与 `--bench=swe-bench-verified,livecodebench,openrouter-catalog`。
 - `npm run news:digest`（`tools/generate-news-digest.js`）：基于 `source/_data/news.json` 生成每日新闻摘要文章。
 - `tools/update-news-hourly.js`：抓取国内外公开资讯源并按 URL 与标题时间去重写入 `source/_data/news.json`。
 

@@ -1,6 +1,7 @@
 {
   "id": "livecodebench",
   "name": "LiveCodeBench",
+  "domain": "coding",
   "category": "竞赛编程",
   "description": "持续更新的防数据污染算法竞赛题库（LeetCode / AtCoder / CodeForces），自动同步官方 livecodebench.github.io 数据。",
   "unit": "%",

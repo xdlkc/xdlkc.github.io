@@ -1,78 +1,36 @@
 {
   "id": "gpqa-diamond",
   "name": "GPQA Diamond",
-  "category": "科学推理",
+  "domain": "reasoning",
+  "category": "科研",
   "description": "198 道博士级物理、化学与生物难题（人类领域专家基线 81.3%），衡量深度科学推理能力（2026-11 快照）。",
   "unit": "%",
   "higherIsBetter": true,
-  "sourceName": "Epoch AI / OpenRouter",
+  "sourceName": "Epoch AI / Artificial Analysis",
   "sourceUrl": "https://epoch.ai/benchmarks",
-  "updatedAt": "2026-11-22",
+  "updatedAt": "2026-11-23",
   "entries": [
-    {
-      "model": "GPT-6.2 Astra",
-      "provider": "OpenAI",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 97.0,
-      "releaseDate": "2026-11-01",
-      "notes": "前沿科学推理接近饱和"
-    },
-    {
-      "model": "Gemini 4 Argon (High)",
-      "provider": "Google",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 96.5,
-      "releaseDate": "2026-11-05"
-    },
-    {
-      "model": "GPT-6 Astra (xhigh)",
-      "provider": "OpenAI",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 96.3,
-      "releaseDate": "2026-10-10"
-    },
-    {
-      "model": "GPT-5.6 Sol",
-      "provider": "OpenAI",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 95.0,
-      "releaseDate": "2026-09-18"
-    },
-    {
-      "model": "Gemini 4 Carbon (High)",
-      "provider": "Google",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 94.8,
-      "releaseDate": "2026-11-12"
-    },
-    {
-      "model": "Claude Opus 5.5 (High)",
-      "provider": "Anthropic",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 93.4,
-      "releaseDate": "2026-10-20"
-    },
-    {
-      "model": "DeepSeek-R2",
-      "provider": "DeepSeek",
-      "openWeights": true,
-      "reasoning": true,
-      "score": 89.2,
-      "releaseDate": "2026-08-22"
-    },
-    {
-      "model": "GLM-5.3",
-      "provider": "Zhipu AI",
-      "openWeights": true,
-      "reasoning": true,
-      "score": 87.6,
-      "releaseDate": "2026-10-10"
-    }
+    { "model": "GPT-6.2 Astra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 97.0, "releaseDate": "2026-11-17", "notes": "前沿科学推理接近饱和" },
+    { "model": "Gemini 4 Argon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 96.5, "releaseDate": "2026-11-05" },
+    { "model": "GPT-6 Astra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 96.3, "releaseDate": "2026-10-10" },
+    { "model": "Claude Fable 5.2", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 95.8, "releaseDate": "2026-11-09" },
+    { "model": "GPT-6.2 Sol", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 95.0, "releaseDate": "2026-11-17" },
+    { "model": "Gemini 4 Carbon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 94.8, "releaseDate": "2026-10-28" },
+    { "model": "Gemini 4 Hydrogen", "provider": "Google", "openWeights": false, "reasoning": true, "score": 94.2, "releaseDate": "2026-11-12" },
+    { "model": "Claude Opus 5.5", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 93.4, "releaseDate": "2026-09-22" },
+    { "model": "Claude Fable 5.1", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 93.1, "releaseDate": "2026-09-29" },
+    { "model": "Gemini 4 Neon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 92.6, "releaseDate": "2026-11-19" },
+    { "model": "Claude Sonnet 5.5", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 91.9, "releaseDate": "2026-09-22" },
+    { "model": "Qwen4 Max", "provider": "Alibaba", "openWeights": false, "reasoning": true, "score": 91.2, "releaseDate": "2026-11-16" },
+    { "model": "Kimi K3.1 Pro", "provider": "Moonshot AI", "openWeights": false, "reasoning": true, "score": 90.4, "releaseDate": "2026-11-04" },
+    { "model": "DeepSeek V4.1 Flash", "provider": "DeepSeek", "openWeights": true, "reasoning": true, "score": 89.2, "releaseDate": "2026-10-17" },
+    { "model": "Grok 4.7", "provider": "xAI", "openWeights": false, "reasoning": true, "score": 88.9, "releaseDate": "2026-10-15" },
+    { "model": "GLM-5.3 Prime", "provider": "Zhipu AI", "openWeights": true, "reasoning": true, "score": 87.6, "releaseDate": "2026-10-10" },
+    { "model": "Muse Spark Open", "provider": "Meta", "openWeights": true, "reasoning": true, "score": 86.5, "releaseDate": "2026-10-18" },
+    { "model": "MiMo-V2.6-Pro", "provider": "Xiaomi", "openWeights": true, "reasoning": true, "score": 85.4, "releaseDate": "2026-10-21" },
+    { "model": "MiniMax M3.1 Flash", "provider": "MiniMax", "openWeights": true, "reasoning": true, "score": 84.1, "releaseDate": "2026-10-26" },
+    { "model": "MiMo-V2.6-Flash", "provider": "Xiaomi", "openWeights": true, "reasoning": true, "score": 82.6, "releaseDate": "2026-10-21" },
+    { "model": "GPT-6 Luna", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 81.2, "releaseDate": "2026-10-08" },
+    { "model": "GLM-5.3 Flash", "provider": "Zhipu AI", "openWeights": true, "reasoning": true, "score": 78.4, "releaseDate": "2026-10-12" }
   ]
 }

@@ -16,6 +16,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const BENCH_DIR = path.resolve(__dirname, '..', 'source', '_data', 'benchmarks');
+const CATALOG_PATH = path.resolve(__dirname, '..', 'source', '_data', 'models-catalog.json');
 
 function inferProvider(modelName, rawOrg = '') {
   const s = `${rawOrg} ${modelName}`.toLowerCase();
@@ -88,6 +89,7 @@ async function syncSweBenchVerified() {
       ...existing,
       id: 'swe-bench-verified',
       name: 'SWE-bench Verified',
+      domain: 'coding',
       category: '代码工程',
       description: '500 道经人工校验的真实 GitHub 仓库 Issue 修复任务，衡量端到端软件工程能力（自动同步官方 swebench.com 数据）。',
       unit: '%',
@@ -137,6 +139,7 @@ async function syncLiveCodeBench() {
       ...existing,
       id: 'livecodebench',
       name: 'LiveCodeBench',
+      domain: 'coding',
       category: '竞赛编程',
       description: '持续更新的防数据污染算法竞赛题库（LeetCode / AtCoder / CodeForces），自动同步官方 livecodebench.github.io 数据。',
       unit: '%',
@@ -146,6 +149,53 @@ async function syncLiveCodeBench() {
       updatedAt: new Date().toISOString().slice(0, 10),
       entries,
     },
+  };
+}
+
+async function syncOpenRouterCatalog() {
+  if (!fs.existsSync(CATALOG_PATH)) {
+    throw new Error('models-catalog.json not found');
+  }
+  const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
+  const res = await fetch('https://openrouter.ai/api/v1/models', { signal: AbortSignal.timeout(25000) });
+  if (!res.ok) throw new Error(`OpenRouter HTTP ${res.status}`);
+  const data = await res.json();
+  const byId = new Map((data.data || []).map((m) => [String(m.id || '').toLowerCase(), m]));
+
+  let matched = 0;
+  const models = (catalog.models || []).map((item) => {
+    const orId = String(item.openRouterId || '').toLowerCase();
+    const live = orId ? byId.get(orId) : null;
+    if (!live) return item;
+    matched += 1;
+
+    const toPerMillion = (raw) => {
+      const n = Number(raw);
+      return Number.isFinite(n) && n >= 0 ? Number((n * 1e6).toFixed(4)) : null;
+    };
+    const input = toPerMillion(live.pricing?.prompt);
+    const output = toPerMillion(live.pricing?.completion);
+    const cacheRead = live.pricing?.input_cache_read !== undefined
+      ? toPerMillion(live.pricing.input_cache_read)
+      : (item.pricingUsd?.cacheRead ?? null);
+
+    return {
+      ...item,
+      contextLength: Number(live.context_length) > 0 ? Number(live.context_length) : item.contextLength,
+      pricingUsd: input !== null && output !== null
+        ? { input, output, cacheRead }
+        : item.pricingUsd
+    };
+  });
+
+  return {
+    filePath: CATALOG_PATH,
+    matched,
+    payload: {
+      ...catalog,
+      updatedAt: new Date().toISOString().slice(0, 10),
+      models
+    }
   };
 }
 
@@ -174,7 +224,20 @@ async function main() {
       console.warn(`[sync-benchmarks] ${id} failed: ${err.message}`);
     }
   }
-  console.log(`[sync-benchmarks] Done. Updated ${updated} benchmark files.`);
+
+  if (!wanted || wanted.has('openrouter-catalog')) {
+    try {
+      const { filePath, matched, payload } = await syncOpenRouterCatalog();
+      console.log(`[sync-benchmarks] openrouter-catalog: synced live pricing/context for ${matched}/${payload.models.length} catalog models`);
+      if (!dryRun) {
+        fs.writeFileSync(filePath, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
+        updated += 1;
+      }
+    } catch (err) {
+      console.warn(`[sync-benchmarks] openrouter-catalog failed: ${err.message}`);
+    }
+  }
+  console.log(`[sync-benchmarks] Done. Updated ${updated} files.`);
 }
 
 if (require.main === module) {
@@ -184,4 +247,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { syncSweBenchVerified, syncLiveCodeBench, inferProvider };
+module.exports = { syncSweBenchVerified, syncLiveCodeBench, syncOpenRouterCatalog, inferProvider };

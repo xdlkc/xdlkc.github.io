@@ -1,98 +1,38 @@
 {
   "id": "arena-text",
   "name": "Chatbot Arena (Text)",
-  "category": "综合对话",
+  "domain": "arena",
+  "category": "真人盲选",
   "description": "基于 LMArena / Arena.ai 大规模匿名双盲人类偏好对战计算的 Elo 评分（2026-11 快照）。",
   "unit": "Elo",
   "higherIsBetter": true,
   "sourceName": "LMArena / Arena.ai",
   "sourceUrl": "https://lmarena.ai/leaderboard/text",
-  "updatedAt": "2026-11-22",
+  "updatedAt": "2026-11-23",
   "entries": [
-    {
-      "model": "Gemini 4 Carbon (High)",
-      "provider": "Google",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 1526,
-      "releaseDate": "2026-11-12",
-      "notes": "LMArena Text 榜首，复杂指令与多模态综合表现领先"
-    },
-    {
-      "model": "Gemini 4 Argon (High)",
-      "provider": "Google",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 1522,
-      "releaseDate": "2026-11-05",
-      "notes": "数学与高阶推理强项"
-    },
-    {
-      "model": "Muse Wonder (Max)",
-      "provider": "Meta",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 1511,
-      "releaseDate": "2026-10-28"
-    },
-    {
-      "model": "Claude Opus 5.5 (High)",
-      "provider": "Anthropic",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 1509,
-      "releaseDate": "2026-10-20",
-      "notes": "代码工程与 Agent 编排强项"
-    },
-    {
-      "model": "Claude Fable 5.2 (Max)",
-      "provider": "Anthropic",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 1504,
-      "releaseDate": "2026-10-15"
-    },
-    {
-      "model": "GPT-6.2 Astra",
-      "provider": "OpenAI",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 1501,
-      "releaseDate": "2026-11-01"
-    },
-    {
-      "model": "GPT-5.6 Sol",
-      "provider": "OpenAI",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 1492,
-      "releaseDate": "2026-09-18",
-      "notes": "搜索与风格控制场景高分"
-    },
-    {
-      "model": "DeepSeek-R2",
-      "provider": "DeepSeek",
-      "openWeights": true,
-      "reasoning": true,
-      "score": 1478,
-      "releaseDate": "2026-08-22",
-      "notes": "开源权重推理旗舰"
-    },
-    {
-      "model": "GLM-5.3",
-      "provider": "Zhipu AI",
-      "openWeights": true,
-      "reasoning": true,
-      "score": 1468,
-      "releaseDate": "2026-10-10"
-    },
-    {
-      "model": "Kimi K2.5",
-      "provider": "Moonshot AI",
-      "openWeights": true,
-      "reasoning": true,
-      "score": 1464,
-      "releaseDate": "2026-09-25"
-    }
+    { "model": "Gemini 4 Carbon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 1526, "releaseDate": "2026-10-28", "notes": "LMArena Text 榜首" },
+    { "model": "Claude Fable 5.2", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 1524, "releaseDate": "2026-11-09" },
+    { "model": "Gemini 4 Argon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 1522, "releaseDate": "2026-11-05" },
+    { "model": "GPT-6.2 Astra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 1516, "releaseDate": "2026-11-17" },
+    { "model": "Gemini 4 Hydrogen", "provider": "Google", "openWeights": false, "reasoning": true, "score": 1513, "releaseDate": "2026-11-12" },
+    { "model": "Muse Wonder", "provider": "Meta", "openWeights": false, "reasoning": true, "score": 1511, "releaseDate": "2026-10-28" },
+    { "model": "Claude Opus 5.5", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 1509, "releaseDate": "2026-09-22" },
+    { "model": "GPT-6.2 Sol", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 1505, "releaseDate": "2026-11-17" },
+    { "model": "Claude Fable 5.1", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 1504, "releaseDate": "2026-09-29" },
+    { "model": "GPT-6 Astra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 1501, "releaseDate": "2026-10-10" },
+    { "model": "Claude Sonnet 5.5", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 1497, "releaseDate": "2026-09-22" },
+    { "model": "Gemini 4 Neon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 1494, "releaseDate": "2026-11-19" },
+    { "model": "Qwen4 Max", "provider": "Alibaba", "openWeights": false, "reasoning": true, "score": 1488, "releaseDate": "2026-11-16" },
+    { "model": "Kimi K3.1 Pro", "provider": "Moonshot AI", "openWeights": false, "reasoning": true, "score": 1483, "releaseDate": "2026-11-04" },
+    { "model": "DeepSeek V4.1 Flash", "provider": "DeepSeek", "openWeights": true, "reasoning": true, "score": 1478, "releaseDate": "2026-10-17" },
+    { "model": "Grok 4.7", "provider": "xAI", "openWeights": false, "reasoning": true, "score": 1475, "releaseDate": "2026-10-15" },
+    { "model": "GPT-6.1 Terra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 1472, "releaseDate": "2026-10-24" },
+    { "model": "GLM-5.3 Prime", "provider": "Zhipu AI", "openWeights": true, "reasoning": true, "score": 1468, "releaseDate": "2026-10-10" },
+    { "model": "MiMo-V2.6-Pro", "provider": "Xiaomi", "openWeights": true, "reasoning": true, "score": 1461, "releaseDate": "2026-10-21" },
+    { "model": "Muse Spark Open", "provider": "Meta", "openWeights": true, "reasoning": true, "score": 1456, "releaseDate": "2026-10-18" },
+    { "model": "MiniMax M3.1 Flash", "provider": "MiniMax", "openWeights": true, "reasoning": true, "score": 1452, "releaseDate": "2026-10-26" },
+    { "model": "MiMo-V2.6-Flash", "provider": "Xiaomi", "openWeights": true, "reasoning": true, "score": 1444, "releaseDate": "2026-10-21" },
+    { "model": "GPT-6 Luna", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 1435, "releaseDate": "2026-10-08" },
+    { "model": "GLM-5.3 Flash", "provider": "Zhipu AI", "openWeights": true, "reasoning": true, "score": 1426, "releaseDate": "2026-10-12" }
   ]
 }

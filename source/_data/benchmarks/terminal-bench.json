@@ -1,80 +1,37 @@
 {
   "id": "terminal-bench",
-  "name": "Terminal-Bench 2.0",
-  "category": "Agent 执行",
-  "description": "Laude Institute 与 Stanford 维护的真实容器终端工程任务基准，考察自主命令行操作、调试与环境修复能力（2026-11 快照）。",
+  "name": "Terminal-Bench 4.0",
+  "domain": "coding",
+  "category": "编程",
+  "description": "真实 Linux 容器终端 Agent 编程基准，考察复杂环境调试、系统运维、编译构建与端到端脚本修复能力（2026-11 快照）。",
   "unit": "%",
   "higherIsBetter": true,
-  "sourceName": "Terminal-Bench Official",
-  "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
-  "updatedAt": "2026-11-22",
+  "sourceName": "Terminal-Bench / Artificial Analysis",
+  "sourceUrl": "https://www.tbench.ai/",
+  "updatedAt": "2026-11-23",
   "entries": [
-    {
-      "model": "GPT-5.5 (NexAU-AHE)",
-      "provider": "OpenAI",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 84.7,
-      "releaseDate": "2026-10-12",
-      "notes": "±2.1%，Terminal-Bench 2.0 榜首"
-    },
-    {
-      "model": "GPT-5.5 (Capy)",
-      "provider": "OpenAI",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 83.1,
-      "releaseDate": "2026-10-08",
-      "notes": "±2.1%"
-    },
-    {
-      "model": "GPT-5.5 (Codex CLI)",
-      "provider": "OpenAI",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 82.2,
-      "releaseDate": "2026-09-30",
-      "notes": "±2.2%"
-    },
-    {
-      "model": "Gemini 3.1 Pro (TongAgents)",
-      "provider": "Google",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 80.2,
-      "releaseDate": "2026-09-14"
-    },
-    {
-      "model": "Claude Opus 4.7 (WOZCODE)",
-      "provider": "Anthropic",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 80.2,
-      "releaseDate": "2026-09-10"
-    },
-    {
-      "model": "Claude Opus 5.5 (High)",
-      "provider": "Anthropic",
-      "openWeights": false,
-      "reasoning": true,
-      "score": 79.4,
-      "releaseDate": "2026-10-20"
-    },
-    {
-      "model": "DeepSeek-R2",
-      "provider": "DeepSeek",
-      "openWeights": true,
-      "reasoning": true,
-      "score": 74.6,
-      "releaseDate": "2026-08-22"
-    },
-    {
-      "model": "GLM-5.3",
-      "provider": "Zhipu AI",
-      "openWeights": true,
-      "reasoning": true,
-      "score": 71.8,
-      "releaseDate": "2026-10-10"
-    }
+    { "model": "Claude Fable 5.2", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 76.4, "releaseDate": "2026-11-09" },
+    { "model": "GPT-6.2 Astra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 74.1, "releaseDate": "2026-11-17" },
+    { "model": "Claude Opus 5.5", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 72.8, "releaseDate": "2026-09-22" },
+    { "model": "Gemini 4 Carbon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 71.5, "releaseDate": "2026-10-28" },
+    { "model": "GPT-6 Astra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 70.2, "releaseDate": "2026-10-10" },
+    { "model": "Claude Fable 5.1", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 69.8, "releaseDate": "2026-09-29" },
+    { "model": "Claude Sonnet 5.5", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 68.9, "releaseDate": "2026-09-22" },
+    { "model": "GPT-6.2 Sol", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 68.4, "releaseDate": "2026-11-17" },
+    { "model": "Gemini 4 Hydrogen", "provider": "Google", "openWeights": false, "reasoning": true, "score": 67.6, "releaseDate": "2026-11-12" },
+    { "model": "Gemini 4 Argon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 66.8, "releaseDate": "2026-11-05" },
+    { "model": "Gemini 4 Neon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 66.1, "releaseDate": "2026-11-19" },
+    { "model": "Qwen4 Max", "provider": "Alibaba", "openWeights": false, "reasoning": true, "score": 64.5, "releaseDate": "2026-11-16" },
+    { "model": "Kimi K3.1 Pro", "provider": "Moonshot AI", "openWeights": false, "reasoning": true, "score": 62.7, "releaseDate": "2026-11-04" },
+    { "model": "GPT-6.1 Terra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 61.9, "releaseDate": "2026-10-24" },
+    { "model": "DeepSeek V4.1 Flash", "provider": "DeepSeek", "openWeights": true, "reasoning": true, "score": 60.4, "releaseDate": "2026-10-17" },
+    { "model": "GLM-5.3 Prime", "provider": "Zhipu AI", "openWeights": true, "reasoning": true, "score": 59.1, "releaseDate": "2026-10-10" },
+    { "model": "Grok 4.7", "provider": "xAI", "openWeights": false, "reasoning": true, "score": 58.3, "releaseDate": "2026-10-15" },
+    { "model": "MiMo-V2.6-Pro", "provider": "Xiaomi", "openWeights": true, "reasoning": true, "score": 56.8, "releaseDate": "2026-10-21" },
+    { "model": "Muse Spark Open", "provider": "Meta", "openWeights": true, "reasoning": true, "score": 54.9, "releaseDate": "2026-10-18" },
+    { "model": "MiniMax M3.1 Flash", "provider": "MiniMax", "openWeights": true, "reasoning": true, "score": 53.6, "releaseDate": "2026-10-26" },
+    { "model": "MiMo-V2.6-Flash", "provider": "Xiaomi", "openWeights": true, "reasoning": true, "score": 51.2, "releaseDate": "2026-10-21" },
+    { "model": "GPT-6 Luna", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 48.5, "releaseDate": "2026-10-08" },
+    { "model": "GLM-5.3 Flash", "provider": "Zhipu AI", "openWeights": true, "reasoning": true, "score": 45.8, "releaseDate": "2026-10-12" }
   ]
 }

@@ -1,0 +1,287 @@
+<%
+const model = page.modelDetail || {};
+const benchmarks = page.benchmarks || [];
+const domains = page.domains || [];
+const rate = Number(page.usdToCny) || 7.25;
+const totalRanked = Number(page.totalRanked) || 0;
+
+const fmtScore = (val, unit) => {
+  if (val === undefined || val === null || !Number.isFinite(Number(val))) return '—';
+  const num = Number(val);
+  if (unit === 'Elo') return String(Math.round(num));
+  return unit === '%' ? `${num.toFixed(1)}%` : `${num.toFixed(1)} ${unit}`.trim();
+};
+
+const fmtCtx = (ctx) => {
+  if (!ctx || !Number.isFinite(Number(ctx))) return '—';
+  const n = Number(ctx);
+  if (n >= 1000000) return `${(n / 1000000).toFixed(n % 1000000 === 0 ? 0 : 2)}M`;
+  return `${Math.round(n / 1000)}K`;
+};
+
+const fmtPriceAttr = (usd) => {
+  if (usd === null || usd === undefined || !Number.isFinite(Number(usd))) return '';
+  return String(Number(usd));
+};
+
+const fmtCnyInit = (usd) => {
+  if (usd === null || usd === undefined || !Number.isFinite(Number(usd))) return '—';
+  const v = Number(usd) * rate;
+  return `¥${v < 10 ? v.toFixed(2) : v.toFixed(1)}`;
+};
+
+const evaluatedBenchmarks = benchmarks.filter(
+  (b) => model.scores && model.scores[b.id] !== undefined
+);
+%>
+
+<link rel="stylesheet" href="<%- url_for('/css/models-board.css') %>" />
+
+<article class="article-shell models-shell container" data-model-detail data-usd-to-cny="<%= rate %>">
+  <%- partial('_partial/header', { navClass: 'article-nav', activeSection: 'models' }) %>
+
+  <nav class="model-detail-breadcrumb" aria-label="Breadcrumb">
+    <a href="<%- url_for('/models/') %>">← <span data-i18n-key="models.detail.back">Back to Leaderboard</span></a>
+    <div class="models-currency-toggle" role="group" aria-label="Currency toggle" data-detail-currency-group>
+      <button type="button" class="models-currency-btn is-active" data-detail-currency="cny" aria-pressed="true">¥ RMB</button>
+      <button type="button" class="models-currency-btn" data-detail-currency="usd" aria-pressed="false">$ USD</button>
+    </div>
+  </nav>
+
+  <header class="model-detail-hero">
+    <div class="model-detail-title-row">
+      <span class="models-provider-badge is-large" style="background:<%= model.providerBadge ? model.providerBadge.color : '#64748b' %>">
+        <%= model.providerBadge ? model.providerBadge.code : 'AI' %>
+      </span>
+      <div>
+        <h1><%= model.model %></h1>
+        <div class="model-detail-badges">
+          <span class="models-meta-badge"><%= model.provider %></span>
+          <% if (model.releaseDate) { %>
+            <span class="models-meta-badge"><%= model.releaseDate %></span>
+          <% } %>
+          <% if (model.openWeights) { %>
+            <% if (model.weightsUrl) { %>
+              <a class="models-meta-badge" href="<%= model.weightsUrl %>" target="_blank" rel="noreferrer">Open Weights ↗</a>
+            <% } else { %>
+              <span class="models-badge is-open">Open Weights</span>
+            <% } %>
+          <% } else { %>
+            <span class="models-badge is-closed">API</span>
+          <% } %>
+          <% if (model.domestic) { %>
+            <span class="models-badge is-domestic">国产模型</span>
+          <% } %>
+        </div>
+      </div>
+    </div>
+
+    <div class="model-detail-kpis">
+      <div class="model-kpi-card">
+        <span class="model-kpi-label" data-i18n-key="models.detail.rank">Overall Rank</span>
+        <strong class="model-kpi-value is-accent">
+          <%= model.ranked ? `#${model.rank}` : 'Unranked' %>
+          <% if (model.ranked && totalRanked) { %><small>/ <%= totalRanked %></small><% } %>
+        </strong>
+      </div>
+      <div class="model-kpi-card">
+        <span class="model-kpi-label" data-i18n-key="models.col.composite">Composite Score</span>
+        <strong class="model-kpi-value"><%= Number(model.compositeScore || 0).toFixed(1) %></strong>
+      </div>
+      <div class="model-kpi-card">
+        <span class="model-kpi-label" data-i18n-key="models.col.coverage">Benchmark Coverage</span>
+        <strong class="model-kpi-value"><%= model.benchCount %> / <%= benchmarks.length %> <small>(<%= model.coveragePct %>%)</small></strong>
+      </div>
+      <div class="model-kpi-card">
+        <span class="model-kpi-label" data-i18n-key="models.col.context">Context Window</span>
+        <strong class="model-kpi-value"><%= fmtCtx(model.contextLength) %></strong>
+      </div>
+      <div class="model-kpi-card">
+        <span class="model-kpi-label" data-i18n-key="models.col.blended">7:2:1 Blended Cost</span>
+        <strong class="model-kpi-value" data-price-usd="<%= fmtPriceAttr(model.blendedUsd) %>"><%= fmtCnyInit(model.blendedUsd) %></strong>
+        <span class="model-kpi-sub" data-detail-price-unit>¥ / 百万 Token</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="model-detail-main" tabindex="-1">
+    <!-- Pricing Breakdown -->
+    <% if (model.pricingUsd) { %>
+      <section class="model-detail-section">
+        <h2 data-i18n-key="models.detail.pricingTitle">API Pricing Breakdown</h2>
+        <div class="model-price-grid">
+          <div class="model-price-box">
+            <span class="model-kpi-label" data-i18n-key="models.col.cachePrice">Cache Read</span>
+            <strong class="model-price-num" data-price-usd="<%= fmtPriceAttr(model.pricingUsd.cacheRead) %>"><%= fmtCnyInit(model.pricingUsd.cacheRead) %></strong>
+          </div>
+          <div class="model-price-box">
+            <span class="model-kpi-label" data-i18n-key="models.col.inputPrice">Input</span>
+            <strong class="model-price-num" data-price-usd="<%= fmtPriceAttr(model.pricingUsd.input) %>"><%= fmtCnyInit(model.pricingUsd.input) %></strong>
+          </div>
+          <div class="model-price-box">
+            <span class="model-kpi-label" data-i18n-key="models.col.outputPrice">Output</span>
+            <strong class="model-price-num" data-price-usd="<%= fmtPriceAttr(model.pricingUsd.output) %>"><%= fmtCnyInit(model.pricingUsd.output) %></strong>
+          </div>
+          <div class="model-price-box">
+            <span class="model-kpi-label" data-i18n-key="models.col.blended">7:2:1 Blended</span>
+            <strong class="model-price-num is-accent" data-price-usd="<%= fmtPriceAttr(model.blendedUsd) %>"><%= fmtCnyInit(model.blendedUsd) %></strong>
+          </div>
+        </div>
+      </section>
+    <% } %>
+
+    <!-- 5-Domain Breakdown -->
+    <section class="model-detail-section">
+      <h2 data-i18n-key="models.detail.domainsTitle">Domain Performance</h2>
+      <div class="model-domain-grid">
+        <% domains.forEach((dom) => {
+          const dScore = model.domainScores ? model.domainScores[dom.id] : undefined;
+          const dCount = model.domainBenchCounts ? (model.domainBenchCounts[dom.id] || 0) : 0;
+        %>
+          <div class="model-domain-card">
+            <div class="model-domain-head">
+              <span class="model-domain-name"><%= dom.labelZh %> · <%= dom.labelEn %></span>
+              <span class="models-tab-cat"><%= dom.weightPct %>%</span>
+            </div>
+            <div class="model-domain-score-row">
+              <strong><%= dScore !== undefined ? dScore.toFixed(1) : '—' %></strong>
+              <span class="models-provider-label"><%= dCount %> / <%= dom.benchmarkCount %> 项</span>
+            </div>
+            <div class="models-bar-track" aria-hidden="true">
+              <div class="models-bar-fill" style="width:<%= dScore !== undefined ? Math.min(100, Math.max(0, dScore)) : 0 %>%"></div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </section>
+
+    <!-- Per-Benchmark Detail Table -->
+    <section class="model-detail-section">
+      <h2 data-i18n-key="models.detail.benchmarksTitle">Evaluated Benchmarks (<%= evaluatedBenchmarks.length %>)</h2>
+      <div class="models-table-card">
+        <div class="models-table-wrap">
+          <table class="models-table">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n-key="models.detail.colBench">Benchmark</th>
+                <th scope="col" data-i18n-key="models.detail.colDomain">Category</th>
+                <th scope="col" data-i18n-key="models.detail.colRaw">Raw Score</th>
+                <th scope="col" data-i18n-key="models.detail.colCalibrated">Calibrated</th>
+                <th scope="col" data-i18n-key="models.detail.colSource">Source</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% evaluatedBenchmarks.forEach((bench) => {
+                const rawVal = model.scores[bench.id];
+                const calVal = model.normalizedScores[bench.id];
+              %>
+                <tr>
+                  <td>
+                    <a class="models-model-name" href="<%- url_for('/models/?bench=' + bench.id) %>"><%= bench.name %></a>
+                    <% if (model.benchNotes && model.benchNotes[bench.id]) { %>
+                      <div class="models-model-notes"><%= model.benchNotes[bench.id] %></div>
+                    <% } %>
+                  </td>
+                  <td><span class="models-meta-badge"><%= bench.category %></span></td>
+                  <td><strong><%= fmtScore(rawVal, bench.unit) %></strong></td>
+                  <td>
+                    <div class="models-bar-cell">
+                      <span class="models-score-val"><%= Number(calVal || 0).toFixed(1) %></span>
+                      <div class="models-bar-track" aria-hidden="true">
+                        <div class="models-bar-fill" style="width:<%= Math.min(100, Math.max(0, Number(calVal || 0))) %>%"></div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <% if (bench.sourceUrl) { %>
+                      <a class="models-meta-badge" href="<%= bench.sourceUrl %>" target="_blank" rel="noreferrer"><%= bench.sourceName || 'Source' %> ↗</a>
+                    <% } else { %>
+                      <span class="models-provider-label"><%= bench.sourceName || '—' %></span>
+                    <% } %>
+                  </td>
+                </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related News from /news/ -->
+    <% if (Array.isArray(model.relatedNews) && model.relatedNews.length) { %>
+      <section class="model-detail-section">
+        <h2 data-i18n-key="models.detail.newsTitle">Related News</h2>
+        <div class="model-news-grid">
+          <% model.relatedNews.forEach((item) => { %>
+            <a class="model-news-card" href="<%- url_for('/news/' + item.id + '/') %>">
+              <div class="model-news-meta">
+                <span><%= item.source %></span>
+                <% if (item.publishedAt) { %>
+                  <span><%= item.publishedAt.slice(0, 10) %></span>
+                <% } %>
+              </div>
+              <h3><%= item.title %></h3>
+              <% if (item.summary) { %>
+                <p><%= item.summary %></p>
+              <% } %>
+            </a>
+          <% }) %>
+        </div>
+      </section>
+    <% } %>
+  </main>
+</article>
+
+<script>
+(function () {
+  var root = document.querySelector('[data-model-detail]');
+  if (!root) return;
+  var rate = Number(root.getAttribute('data-usd-to-cny')) || 7.25;
+  var btns = Array.from(root.querySelectorAll('[data-detail-currency]'));
+  var unitEl = root.querySelector('[data-detail-price-unit]');
+  var priceEls = Array.from(root.querySelectorAll('[data-price-usd]'));
+
+  function formatPrice(usdStr, cur) {
+    if (!usdStr) return '—';
+    var usd = Number(usdStr);
+    if (!Number.isFinite(usd)) return '—';
+    var val = cur === 'usd' ? usd : usd * rate;
+    var sym = cur === 'usd' ? '$' : '¥';
+    return sym + (val < 1 ? val.toFixed(2) : val < 10 ? val.toFixed(2) : val.toFixed(1));
+  }
+
+  function applyCurrency(cur) {
+    var mode = cur === 'usd' ? 'usd' : 'cny';
+    try { localStorage.setItem('xdlkc_models_currency', mode); } catch (e) {}
+    btns.forEach(function (b) {
+      var active = b.getAttribute('data-detail-currency') === mode;
+      b.classList.toggle('is-active', active);
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    if (unitEl) {
+      var isZh = document.documentElement.dataset.langMode === 'zh';
+      unitEl.textContent = mode === 'usd'
+        ? '$ / 1M Tokens'
+        : (isZh ? '¥ / 百万 Token' : '¥ / 1M Tokens');
+    }
+    priceEls.forEach(function (el) {
+      el.textContent = formatPrice(el.getAttribute('data-price-usd'), mode);
+    });
+  }
+
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      applyCurrency(b.getAttribute('data-detail-currency'));
+    });
+  });
+
+  var saved = 'cny';
+  try { saved = localStorage.getItem('xdlkc_models_currency') || 'cny'; } catch (e) {}
+  applyCurrency(saved);
+  window.addEventListener('xdlkc:lang-change', function () {
+    var cur = 'cny';
+    try { cur = localStorage.getItem('xdlkc_models_currency') || 'cny'; } catch (e) {}
+    applyCurrency(cur);
+  });
+})();
+</script>

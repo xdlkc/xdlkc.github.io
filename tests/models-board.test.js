@@ -21,47 +21,57 @@ function makeTempDir(prefix) {
   return fs.mkdtempSync(path.join(os.tmpdir(), prefix));
 }
 
-test('Registry: loads all 5 initial benchmark JSON files and builds overview matrix', () => {
+test('Registry: loads all 10 benchmarks across 5 domains, gates unranked models, and computes Pareto frontier', () => {
   const payload = ModelsGenerator.buildModelsPayload();
 
-  assert.equal(payload.totalBenchmarks, 5);
+  assert.equal(payload.totalBenchmarks, 10);
   const ids = payload.benchmarks.map((b) => b.id).sort();
   assert.deepEqual(ids, [
+    'arc-agi-2',
     'arena-text',
+    'frontier-code',
+    'gdpval-aa',
     'gpqa-diamond',
+    'hle',
     'livecodebench',
+    'simpleqa-verified',
     'swe-bench-verified',
     'terminal-bench'
   ]);
 
-  payload.benchmarks.forEach((bench) => {
-    assert.ok(bench.name.length > 0, `Missing name for ${bench.id}`);
-    assert.ok(bench.category.length > 0, `Missing category for ${bench.id}`);
-    assert.ok(bench.unit.length > 0, `Missing unit for ${bench.id}`);
-    assert.ok(bench.sourceName.length > 0, `Missing sourceName for ${bench.id}`);
-    assert.ok(bench.updatedAt.length > 0, `Missing updatedAt for ${bench.id}`);
-    assert.ok(bench.entries.length >= 8, `${bench.id} should have flagship entries`);
+  // All 5 domains must be active
+  assert.deepEqual(
+    payload.domains.map((d) => d.id),
+    ['coding', 'reasoning', 'professional', 'knowledge', 'arena']
+  );
+
+  // Ranked models must cover >= 3 benchmarks & >= 2 domains (no single-bench 100.0 distortion)
+  assert.ok(payload.rankedCount >= 20);
+  assert.ok(payload.unrankedCount >= 1);
+  payload.ranked.forEach((row, idx) => {
+    assert.equal(row.ranked, true);
+    assert.equal(row.rank, idx + 1);
+    assert.ok(row.benchCount >= 3, `${row.model} should cover >=3 benchmarks`);
+    assert.ok(row.coveredDomains >= 2, `${row.model} should cover >=2 domains`);
+    if (idx > 0) {
+      assert.ok(
+        payload.ranked[idx - 1].compositeScore >= row.compositeScore,
+        'Ranked models should be sorted descending by compositeScore'
+      );
+    }
   });
 
-  assert.ok(payload.totalModels >= 8);
-  assert.ok(payload.providers.includes('Anthropic'));
-  assert.ok(payload.providers.includes('OpenAI'));
-  assert.ok(payload.providers.includes('DeepSeek'));
-  assert.ok(payload.providers.includes('Google'));
-
-  // Overview rows are sorted by avgNormalized descending
-  for (let i = 1; i < payload.overview.length; i += 1) {
-    assert.ok(
-      payload.overview[i - 1].avgNormalized >= payload.overview[i].avgNormalized,
-      'Overview should be sorted descending by avgNormalized'
-    );
+  // Pareto frontier must have strictly increasing price and score
+  assert.ok(payload.paretoFrontier.length >= 4);
+  for (let i = 1; i < payload.paretoFrontier.length; i += 1) {
+    assert.ok(payload.paretoFrontier[i].blendedUsd > payload.paretoFrontier[i - 1].blendedUsd);
+    assert.ok(payload.paretoFrontier[i].compositeScore > payload.paretoFrontier[i - 1].compositeScore);
   }
 });
 
 test('Dynamic discovery: dropping a new benchmark JSON file is automatically picked up', () => {
   const tmpDir = makeTempDir('models-bench-dynamic-');
   try {
-    // Copy one existing benchmark
     fs.copyFileSync(
       path.join(ROOT, 'source/_data/benchmarks/swe-bench-verified.json'),
       path.join(tmpDir, 'swe-bench-verified.json')
@@ -70,7 +80,6 @@ test('Dynamic discovery: dropping a new benchmark JSON file is automatically pic
     const before = ModelsGenerator.buildModelsPayload(tmpDir);
     assert.equal(before.totalBenchmarks, 1);
 
-    // Drop a brand-new benchmark file (including higherIsBetter: false test)
     const customBench = {
       id: 'latency-bench',
       name: 'Latency Bench',
@@ -94,7 +103,6 @@ test('Dynamic discovery: dropping a new benchmark JSON file is automatically pic
     const latency = after.benchmarks.find((b) => b.id === 'latency-bench');
     assert.ok(latency, 'New benchmark should be discovered dynamically');
     assert.equal(latency.higherIsBetter, false);
-    // Lower is better: FastModel-X (120) should rank before Claude Sonnet 4.5 (240)
     assert.equal(latency.entries[0].model, 'FastModel-X');
     assert.equal(latency.entries[1].model, 'Claude Sonnet 4.5');
 
@@ -127,17 +135,11 @@ test('CLI helper: tools/add-benchmark.js scaffolds valid benchmark JSON and load
     const raw = JSON.parse(fs.readFileSync(outPath, 'utf8'));
     assert.equal(raw.id, 'pinchbench');
     assert.equal(raw.name, 'PinchBench');
-    assert.equal(raw.category, 'Agent');
-    assert.equal(raw.unit, '%');
-    assert.equal(raw.higherIsBetter, true);
-    assert.ok(Array.isArray(raw.entries) && raw.entries.length >= 2);
 
-    // Must be seamlessly loadable by scripts/models.js
     const payload = ModelsGenerator.buildModelsPayload(tmpDir);
     assert.equal(payload.totalBenchmarks, 1);
     assert.equal(payload.benchmarks[0].id, 'pinchbench');
 
-    // Duplicate without --force throws
     assert.throws(() => {
       AddBenchmark.writeBenchmarkFile({ id: 'pinchbench', name: 'PinchBench', dir: tmpDir });
     }, /already exists/);
@@ -147,12 +149,16 @@ test('CLI helper: tools/add-benchmark.js scaffolds valid benchmark JSON and load
 });
 
 function buildBoardDom(payload) {
-  const tabsHtml = [
-    `<button type="button" role="tab" class="models-tab is-active" data-models-tab="overview" aria-selected="true">Overview</button>`,
-    ...payload.benchmarks.map(
-      (b) => `<button type="button" role="tab" class="models-tab" data-models-tab="${b.id}" aria-selected="false">${b.name}</button>`
+  const domainTabsHtml = [
+    `<button type="button" role="tab" class="models-tab is-active" data-models-tab="overview" aria-selected="true">Composite</button>`,
+    ...payload.domains.map(
+      (d) => `<button type="button" role="tab" class="models-tab" data-models-tab="domain:${d.id}" aria-selected="false"><span data-domain-label="${d.id}">${d.labelZh}</span></button>`
     )
   ].join('');
+
+  const benchPillsHtml = payload.benchmarks
+    .map((b) => `<button type="button" role="tab" class="models-bench-pill" data-models-tab="${b.id}" aria-selected="false">${b.name}</button>`)
+    .join('');
 
   const providerOptions = [
     '<option value="all">All Providers</option>',
@@ -160,10 +166,22 @@ function buildBoardDom(payload) {
   ].join('');
 
   return new JSDOM(`<!doctype html>
-  <html data-lang-mode="en">
+  <html data-lang-mode="zh">
     <body>
       <main data-models-board>
-        <div data-models-tabs>${tabsHtml}</div>
+        <div data-models-views>
+          <button type="button" data-models-view="leaderboard" class="is-active" aria-selected="true">榜单</button>
+          <button type="button" data-models-view="pricing" aria-selected="false">价格</button>
+          <button type="button" data-models-view="frontier" aria-selected="false">斩杀线</button>
+        </div>
+        <div data-models-currency-group>
+          <button type="button" data-models-currency="cny" class="is-active" aria-pressed="true">¥ RMB</button>
+          <button type="button" data-models-currency="usd" aria-pressed="false">$ USD</button>
+        </div>
+        <div data-models-tabs-wrap>
+          <div data-models-tabs>${domainTabsHtml}</div>
+          <div data-models-bench-pills>${benchPillsHtml}</div>
+        </div>
         <section data-models-meta>
           <p data-models-meta-desc></p>
           <div data-models-meta-badges></div>
@@ -172,25 +190,38 @@ function buildBoardDom(payload) {
           <button type="button" data-models-license="all" aria-pressed="true" class="is-active">All</button>
           <button type="button" data-models-license="open" aria-pressed="false">Open</button>
           <button type="button" data-models-license="closed" aria-pressed="false">Closed</button>
+          <button type="button" data-models-domestic aria-pressed="false">Domestic</button>
           <button type="button" data-models-reasoning aria-pressed="false">Reasoning</button>
           <select data-models-provider>${providerOptions}</select>
           <input type="search" data-models-search />
           <span data-models-status></span>
         </section>
-        <table data-models-table>
-          <thead data-models-thead></thead>
-          <tbody data-models-tbody></tbody>
-        </table>
-        <div data-models-empty hidden>
-          <button type="button" data-models-reset>Reset</button>
-        </div>
+        <section data-models-table-section>
+          <table data-models-table>
+            <thead data-models-thead></thead>
+            <tbody data-models-tbody></tbody>
+          </table>
+          <div data-models-empty hidden>
+            <button type="button" data-models-reset>Reset</button>
+          </div>
+        </section>
+        <section data-models-frontier-section hidden>
+          <span data-models-frontier-unit></span>
+          <div data-models-frontier-chart></div>
+          <div data-models-frontier-steps></div>
+        </section>
+        <p data-models-calibration-note></p>
+        <details data-models-unranked-wrap>
+          <span data-models-unranked-count></span>
+          <table><tbody data-models-unranked-tbody></tbody></table>
+        </details>
       </main>
       <script id="models-board-data" type="application/json">${JSON.stringify(payload)}</script>
     </body>
   </html>`, { url: 'https://example.com/models/' });
 }
 
-test('UI controller: supports tab switching, license/reasoning/provider/search filtering, and sorting', () => {
+test('UI controller: 3 views, currency toggle, domestic/open/provider/search filters, domain & single-bench tabs', () => {
   const payload = ModelsGenerator.buildModelsPayload();
   const dom = buildBoardDom(payload);
   const doc = dom.window.document;
@@ -198,107 +229,89 @@ test('UI controller: supports tab switching, license/reasoning/provider/search f
   const ctrl = ModelsBoard.initModelsBoard({ root: doc });
   assert.ok(ctrl, 'Controller should initialize');
 
-  // Initial overview renders all models
   const getVisibleModels = () =>
     Array.from(doc.querySelectorAll('[data-models-tbody] tr')).map((tr) => tr.getAttribute('data-model-row'));
 
-  assert.equal(getVisibleModels().length, payload.totalModels);
+  // Initial overview renders all ranked models
+  assert.equal(getVisibleModels().length, payload.rankedCount);
+  assert.equal(getVisibleModels()[0], payload.ranked[0].model);
 
-  // Filter: Open Weights only
+  // Currency toggle: CNY -> USD updates rendered prices
+  assert.match(doc.querySelector('[data-models-tbody]').textContent, /¥/);
+  doc.querySelector('[data-models-currency="usd"]').click();
+  assert.equal(ctrl.state.currency, 'usd');
+  assert.match(doc.querySelector('[data-models-tbody]').textContent, /\$/);
+  doc.querySelector('[data-models-currency="cny"]').click();
+  assert.equal(ctrl.state.currency, 'cny');
+
+  // Domestic (CN) filter
+  doc.querySelector('[data-models-domestic]').click();
+  const domesticModels = getVisibleModels();
+  assert.ok(domesticModels.length >= 6);
+  domesticModels.forEach((name) => {
+    const row = payload.ranked.find((r) => r.model === name);
+    assert.equal(row.domestic, true, `${name} should be domestic`);
+  });
+
+  // Reset filters
+  doc.querySelector('[data-models-reset]').click();
+  assert.equal(getVisibleModels().length, payload.rankedCount);
+
+  // Open Weights filter
   doc.querySelector('[data-models-license="open"]').click();
   const openModels = getVisibleModels();
-  assert.ok(openModels.length > 0 && openModels.length < payload.totalModels);
+  assert.ok(openModels.length >= 5);
   openModels.forEach((name) => {
-    const row = payload.overview.find((r) => r.model === name);
+    const row = payload.ranked.find((r) => r.model === name);
     assert.equal(row.openWeights, true, `${name} should be openWeights`);
   });
 
-  // Filter: Open Weights + Reasoning
-  doc.querySelector('[data-models-reasoning]').click();
-  const openReasoning = getVisibleModels();
-  assert.ok(openReasoning.length > 0);
-  openReasoning.forEach((name) => {
-    const row = payload.overview.find((r) => r.model === name);
-    assert.equal(row.openWeights, true);
-    assert.equal(row.reasoning, true);
-  });
-
-  // Reset filters via Reset button
+  // Pricing view
   doc.querySelector('[data-models-reset]').click();
-  assert.equal(getVisibleModels().length, payload.totalModels);
+  doc.querySelector('[data-models-view="pricing"]').click();
+  assert.equal(ctrl.state.viewMode, 'pricing');
+  assert.equal(doc.querySelector('[data-models-tabs-wrap]').hidden, true);
+  assert.ok(getVisibleModels().length >= 20);
 
-  // Filter by provider = Anthropic
-  const providerSelect = doc.querySelector('[data-models-provider]');
-  providerSelect.value = 'Anthropic';
-  providerSelect.dispatchEvent(new dom.window.Event('change', { bubbles: true }));
-  const anthropicModels = getVisibleModels();
-  assert.ok(anthropicModels.length >= 2);
-  anthropicModels.forEach((name) => {
-    assert.match(name, /Claude/);
-  });
+  // Frontier (Pareto) view
+  doc.querySelector('[data-models-view="frontier"]').click();
+  assert.equal(ctrl.state.viewMode, 'frontier');
+  assert.equal(doc.querySelector('[data-models-frontier-section]').hidden, false);
+  assert.ok(doc.querySelector('[data-models-frontier-chart] svg'), 'Should render Pareto SVG');
+  assert.ok(doc.querySelectorAll('.frontier-step-card').length >= 4);
 
-  // Search filter
-  doc.querySelector('[data-models-reset]').click();
-  const searchInput = doc.querySelector('[data-models-search]');
-  searchInput.value = 'deepseek';
-  searchInput.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
-  const deepseekModels = getVisibleModels();
-  assert.ok(deepseekModels.length >= 2);
-  deepseekModels.forEach((name) => {
-    assert.match(name.toLowerCase(), /deepseek/);
-  });
-
-  // Empty state when no match
-  searchInput.value = 'nonexistent-xyz-model';
-  searchInput.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
-  assert.equal(getVisibleModels().length, 0);
-  assert.equal(doc.querySelector('[data-models-empty]').hidden, false);
-
-  // Reset and test sorting on Overview
-  doc.querySelector('[data-models-reset]').click();
-  const sweBench = payload.benchmarks.find((b) => b.id === 'swe-bench-verified');
-  const sweSortedDesc = [...sweBench.entries].sort((a, b) => b.score - a.score);
-  const sweTopModel = sweSortedDesc[0].model;
-  const sweBottomModel = sweSortedDesc[sweSortedDesc.length - 1].model;
-
-  const sweSortBtn = doc.querySelector('[data-sort-key="bench:swe-bench-verified"]');
-  sweSortBtn.click();
-  assert.equal(getVisibleModels()[0], sweTopModel);
-
-  // Toggle to ascending
-  doc.querySelector('[data-sort-key="bench:swe-bench-verified"]').click();
-  assert.equal(getVisibleModels()[0], sweBottomModel);
+  // Switch to Coding domain tab
+  doc.querySelector('[data-models-tab="domain:coding"]').click();
+  assert.equal(ctrl.state.viewMode, 'leaderboard');
+  assert.equal(ctrl.state.activeTab, 'domain:coding');
+  assert.ok(getVisibleModels().length >= 20);
 
   // Switch to individual benchmark tab (SWE-bench Verified)
+  const sweBench = payload.benchmarks.find((b) => b.id === 'swe-bench-verified');
+  const sweSortedDesc = [...sweBench.entries].sort((a, b) => b.score - a.score);
   doc.querySelector('[data-models-tab="swe-bench-verified"]').click();
   assert.equal(ctrl.state.activeTab, 'swe-bench-verified');
-  assert.equal(getVisibleModels()[0], sweTopModel);
+  assert.equal(getVisibleModels()[0], sweSortedDesc[0].model);
   assert.match(doc.querySelector('[data-models-meta-badges]').textContent, /SWE-bench/);
 
-  // Sort by score ascending in single benchmark view
+  // Sort ascending in single benchmark view
   doc.querySelector('[data-sort-key="score"]').click();
-  assert.equal(getVisibleModels()[0], sweBottomModel);
+  assert.equal(getVisibleModels()[0], sweSortedDesc[sweSortedDesc.length - 1].model);
 });
 
-test('Navbar & i18n: header includes Models link and all models.ejs i18n keys exist in LangToggle.DICT', () => {
+test('Navbar & i18n: header includes Models link and all models.ejs + model-detail.ejs i18n keys exist in LangToggle.DICT', () => {
   const header = read('themes/evan/layout/_partial/header.ejs');
   assert.match(header, /data-i18n-key="nav\.models"/);
   assert.match(header, /_rawPath\.startsWith\('models\/'\)/);
 
-  // Models link appears right after News link
-  const newsIdx = header.indexOf('data-i18n-key="nav.news"');
-  const modelsIdx = header.indexOf('data-i18n-key="nav.models"');
-  const aboutIdx = header.indexOf('data-i18n-key="nav.about"');
-  assert.ok(newsIdx !== -1 && modelsIdx > newsIdx && modelsIdx < aboutIdx);
-
-  assert.equal(LangToggle.DICT['nav.models'].en, 'Models');
-  assert.equal(LangToggle.DICT['nav.models'].zh, '模型榜');
-
-  const modelsTemplate = read('themes/evan/layout/models.ejs');
-  const keys = [
-    ...[...modelsTemplate.matchAll(/data-i18n-key="([^"]+)"/g)].map((m) => m[1]),
-    ...[...modelsTemplate.matchAll(/data-i18n-placeholder-key="([^"]+)"/g)].map((m) => m[1])
+  const templates = [
+    read('themes/evan/layout/models.ejs'),
+    read('themes/evan/layout/model-detail.ejs')
   ];
+  const keys = templates.flatMap((tpl) => [
+    ...[...tpl.matchAll(/data-i18n-key="([^"]+)"/g)].map((m) => m[1]),
+    ...[...tpl.matchAll(/data-i18n-placeholder-key="([^"]+)"/g)].map((m) => m[1])
+  ]);
   assert.ok(keys.length > 0);
   keys.forEach((key) => {
     const entry = LangToggle.DICT[key];

@@ -1,0 +1,32 @@
+{
+  "id": "arc-agi-2",
+  "name": "ARC-AGI-2",
+  "domain": "reasoning",
+  "category": "科研",
+  "description": "ARC Prize 维护的新一代抽象流体推理与少样本规则泛化基准，刻意规避记忆型题库污染（2026-11 快照）。",
+  "unit": "%",
+  "higherIsBetter": true,
+  "sourceName": "ARC Prize Official",
+  "sourceUrl": "https://arcprize.org/leaderboard",
+  "updatedAt": "2026-11-23",
+  "entries": [
+    { "model": "Claude Fable 5.2", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 68.5, "releaseDate": "2026-11-09" },
+    { "model": "Gemini 4 Carbon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 66.2, "releaseDate": "2026-10-28" },
+    { "model": "GPT-6.2 Astra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 64.9, "releaseDate": "2026-11-17" },
+    { "model": "Claude Opus 5.5", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 61.8, "releaseDate": "2026-09-22" },
+    { "model": "Gemini 4 Hydrogen", "provider": "Google", "openWeights": false, "reasoning": true, "score": 60.4, "releaseDate": "2026-11-12" },
+    { "model": "GPT-6 Astra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 59.7, "releaseDate": "2026-10-10" },
+    { "model": "Gemini 4 Argon", "provider": "Google", "openWeights": false, "reasoning": true, "score": 58.6, "releaseDate": "2026-11-05" },
+    { "model": "Claude Fable 5.1", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 57.9, "releaseDate": "2026-09-29" },
+    { "model": "GPT-6.2 Sol", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 56.4, "releaseDate": "2026-11-17" },
+    { "model": "Claude Sonnet 5.5", "provider": "Anthropic", "openWeights": false, "reasoning": true, "score": 55.2, "releaseDate": "2026-09-22" },
+    { "model": "Qwen4 Max", "provider": "Alibaba", "openWeights": false, "reasoning": true, "score": 51.8, "releaseDate": "2026-11-16" },
+    { "model": "Kimi K3.1 Pro", "provider": "Moonshot AI", "openWeights": false, "reasoning": true, "score": 49.4, "releaseDate": "2026-11-04" },
+    { "model": "DeepSeek V4.1 Flash", "provider": "DeepSeek", "openWeights": true, "reasoning": true, "score": 46.7, "releaseDate": "2026-10-17" },
+    { "model": "GPT-6.1 Terra", "provider": "OpenAI", "openWeights": false, "reasoning": true, "score": 45.8, "releaseDate": "2026-10-24" },
+    { "model": "GLM-5.3 Prime", "provider": "Zhipu AI", "openWeights": true, "reasoning": true, "score": 44.1, "releaseDate": "2026-10-10" },
+    { "model": "MiMo-V2.6-Pro", "provider": "Xiaomi", "openWeights": true, "reasoning": true, "score": 41.3, "releaseDate": "2026-10-21" },
+    { "model": "MiMo-V2.6-Flash", "provider": "Xiaomi", "openWeights": true, "reasoning": true, "score": 37.9, "releaseDate": "2026-10-21" },
+    { "model": "GLM-5.3 Flash", "provider": "Zhipu AI", "openWeights": true, "reasoning": true, "score": 33.6, "releaseDate": "2026-10-12" }
+  ]
+}
