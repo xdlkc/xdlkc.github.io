@@ -15,7 +15,8 @@ LOG_FILE="${REPO_DIR}/tmp/local-news-sync.log"
 mkdir -p "${REPO_DIR}/tmp"
 
 # Ensure Node 24+ & Homebrew bins are in PATH under launchd
-export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:${PATH:-}"
+export HOME="${HOME:-/Users/lkc}"
+export PATH="${HOME}/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:${PATH:-}"
 
 if ! mkdir "${LOCK_DIR}" 2>/dev/null; then
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] Another sync is already running; skipping." >> "${LOG_FILE}"
