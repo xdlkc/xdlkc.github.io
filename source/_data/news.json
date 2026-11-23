@@ -1,5 +1,389 @@
 [
   {
+    "id": "aihot-20261123-bloomberg-markets-2761c516",
+    "title": "美国重新押注鸵鸟肉",
+    "originalTitle": "America is Betting on Ostrich Again",
+    "summary": "随着牛肉价格高企，彭博报道称少数坚定的美国从业者正押注时机终于成熟，要让鸵鸟肉在美国餐桌上占有一席之地。鸵鸟在美国已引人着迷近150年，曾引发农业淘金热，其羽毛是镀金时代时髦女性的帽饰，也一度被捧为下一个美国好肉。",
+    "url": "https://www.bloomberg.com/news/videos/2026-11-23/america-is-betting-on-ostrich-again",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-23T10:05:52.000Z",
+    "score": 50,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "消费趋势",
+      "农产品市场",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "鸵鸟肉",
+      "牛肉价格",
+      "替代蛋白",
+      "美国农业"
+    ],
+    "context": "牛肉价格高企之际，这一替代蛋白动向折射美国食品消费与农产品市场的新风向。",
+    "contentHtml": "<p>For nearly 150 years, the ostrich has been an object of American fascination. It set off agricultural gold rushes, its plumes crowned the hats of the Gilded Age’s most fashionable women, and it’s been touted as the next great American meat. Now, as beef prices run high, a determined few are betting the timing is finally right for ostrich to find its place in US cuisine. Chase Purdy reports. (Source: Bloomberg)</p>"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-bf7aadde",
+    "title": "伊朗称已制定综合措施应对美国制裁和封锁",
+    "summary": "伊朗外交部发言人巴加埃23日表示，伊朗已制定政治、外交和防御相结合的综合措施，以应对美国的非法制裁和封锁。相关措施将在适当阶段实施，目前未披露具体内容。",
+    "url": "https://finance.eastmoney.com/a/202611233937389468.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T10:05:40.000Z",
+    "score": 50,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "地缘政治",
+      "国际快讯",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "伊朗",
+      "美国制裁",
+      "地缘政治",
+      "中东局势"
+    ],
+    "context": "此为地缘政治外围表态性快讯，暂无具体举措落地，可关注后续美伊关系演变对市场情绪的影响。"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-425b083c",
+    "title": "摩根大通上调CrowdStrike目标价至240美元",
+    "summary": "摩根大通将网络安全公司CrowdStrike（CRWD.O）目标价由235美元上调至240美元，上调幅度为5美元。",
+    "url": "https://finance.eastmoney.com/a/202611233937389511.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T10:03:57.000Z",
+    "score": 48,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "机构观点",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "摩根大通",
+      "CrowdStrike",
+      "目标价",
+      "美股"
+    ],
+    "context": "分析师目标价微调属美股常规动态，可作为跟踪网络安全板块机构态度的参考。"
+  },
+  {
+    "id": "aihot-20261123-bloomberg-markets-63f7eceb",
+    "title": "摩根士丹利策略师 Wilson：标普500与道指回调带来不容错过的买入良机",
+    "originalTitle": "Morgan Stanley’s Wilson Says Buying Opportunity Too Good to Miss",
+    "author": "Michael Msika",
+    "summary": "摩根士丹利策略师 Wilson 团队表示，标普500与道指双双进入回调区间的一周，为投资者提供了不容错过的买入机会。这一表态是头部投行策略团队在美股两大基准指数同步回调之际发出的鲜明看多声音。",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-23/morgan-stanley-s-wilson-says-buying-opportunity-too-good-to-miss",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-23T10:02:24.000Z",
+    "score": 78,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "美股市场",
+      "机构观点",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "美股",
+      "摩根士丹利",
+      "策略观点",
+      "市场回调"
+    ],
+    "context": "美股同周齐齐跌入回调区间引发多空分歧，具影响力的大行策略师表态对市场情绪有风向标意义。",
+    "contentHtml": "<p>A week that saw both the S&amp;P 500 and Dow Jones Industrial Average enter correction territory has delivered investors a buying opportunity that’s too good to miss, according to Morgan Stanley strategists.</p>",
+    "contentHtmlZh": "<p>{\"t\": [\"</p><p>摩根士丹利的策略师表示，标普500指数与道琼斯工业平均指数双双进入回调区间的这一周，为投资者带来了一个不容错过的买入良机。</p><p>\"]}</p>"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-3e267f4e",
+    "title": "华夏基金(香港)推出全球唯一一只追踪离岸人民币债券ETF",
+    "originalTitle": "華夏基金(香港)推出全球唯一一隻追蹤離岸人民幣債券ETF助力香港離岸人民幣市場建設",
+    "summary": "华夏基金（香港）推出全球唯一一只追踪离岸人民币债券的ETF，以助力香港离岸人民币市场建设。该公司表示，该产品旨在推进人民币国际化行稳致远。",
+    "url": "https://finance.sina.com.cn/money/fund/jjdt/2026-11-23/doc-iniztmtw5486506.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T09:58:26.000Z",
+    "score": 73,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "港股",
+      "人民币国际化",
+      "A股",
+      "美股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "港股ETF",
+      "离岸人民币",
+      "华夏基金",
+      "债券"
+    ],
+    "context": "离岸人民币债券ETF为投资者参与香港离岸人民币市场和人民币国际化进程提供了新的被动投资工具。"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-29bd7242",
+    "title": "锡耶纳牧山银行董事会对联合圣保罗银行370亿美元收购要约释放矛盾信号",
+    "originalTitle": "锡耶纳牧山银行董事会对意大利联合圣保罗银行370亿美元收购要约释放矛盾信号",
+    "summary": "锡耶纳牧山银行董事会未表态股东应当接受还是拒绝意大利联合圣保罗银行370亿美元的收购要约，立场释放出矛盾信号。该要约的接受期将持续至次年1月22日。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmue0589499.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T09:55:19.000Z",
+    "score": 78,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "并购交易",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "银行业并购",
+      "锡耶纳牧山银行",
+      "联合圣保罗银行",
+      "收购要约"
+    ],
+    "context": "370亿美元意大利银行业并购案悬而未决，董事会态度暧昧令交易走向更添不确定性，值得市场投资者关注。",
+    "contentHtml": "<p>　　董事会未表态股东应当接受还是拒绝该收购要约</p><p><img src=\"https://n.sinaimg.cn/finance/transform/116/w550h366/20261123/133d-60962ba4536981e103ca23f373ea638d.png\" alt=\"锡耶纳牧山银行总部。联合圣保罗银行要约的接受期将持续至次年 1 月 22 日。\"><span>锡耶纳牧山银行总部。联合圣保罗银行要约的接受期将持续至次年 1 月 22 日。</span></p><p>　　<strong>内容概要</strong></p><p>　　锡耶纳牧山银行董事会表示，意大利联合圣保罗银行 370 亿美元的收购要约定价公允，但并未体现该行的成长价值。</p><p>　　本周晚些时候收购要约接受期即将开启，锡耶纳牧山银行并未对意大利联合圣保罗银行这笔 370 亿美元收购要约给出明确立场。</p><p>　　牧山银行董事会于周六就联合圣保罗银行的收购要约出具正式意见，称该要约的报价处于公允水平。</p><p>　　但董事会补充表示，这份报价并未体现牧山银行自身价值，以及其未来增长与价值创造的潜力。</p><p>　　董事会称，应由各位股东自行独立评估本次交易；同时明确，董事会既不建议接受，也不建议拒绝该要约。</p><p>　　按照上周五收盘价计算，联合圣保罗银行拟收购素有全球现存最古老银行之称的牧山银行，交易对价约 336.3 亿欧元（折合 368.9 亿美元）。联合圣保罗银行自身市值约为 1022.7 亿欧元。</p><p>　　牧山银行董事会表示，已考虑到联合圣保罗银行对初始要约作出的改进，但报价依旧没有反映本行的增长前景，尤其在完成另一笔收购之后。</p><p>　　牧山银行同时认为，本次交易所预估每年 29 亿欧元的协同效应，预期值看起来偏高。</p><p>　　牧山银行此前一直试图抵御联合圣保罗银行的收购。但上月形势急转直下：为阻击本次收购，该行首席执行官路易吉・洛瓦格里奥提出两笔并购提案，拟收购另外两家机构，却遭到股东压倒性否决。</p><p>　　联合圣保罗银行当前给出的对价方案为：每 1 股牧山银行股票，可以获得 1.25 欧元现金外加 1.664 股联合圣保罗银行股票。为对冲联合圣保罗银行拟派发中期股息带来的影响，上述换股比例已经上调。</p><p>　　除非延期，联合圣保罗银行要约的接受期将于周二启动，至次年 1 月 22 日截止。</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
+    "author": "环球市场播报"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-a21b7108",
+    "title": "翰博高新筹划收购拓合科技51%股权 预计构成重大资产重组",
+    "originalTitle": "翰博高新：筹划收购拓合科技51%股权 预计构成重大资产重组",
+    "summary": "翰博高新(301321.SZ)公告，拟以现金方式购买拓合科技51%股权，交易完成后拓合科技将成为其控股子公司，本次交易预计构成重大资产重组。交易不涉及发行股份，不构成关联交易。拓合科技主营蚀刻液等功能性湿电子化学品的研发、生产和销售，产品主要应用于显示面板等领域。",
+    "url": "https://finance.eastmoney.com/a/202611233937384611.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T09:52:13.000Z",
+    "score": 62,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "公司公告",
+      "港股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "翰博高新",
+      "重大资产重组",
+      "并购"
+    ],
+    "context": "湿电子化学品资产拟注入显示面板产业链公司，交易细节与整合进展值得关注。"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-08234c4d",
+    "title": "康菲石油以39亿美元将挪威业务出售给Var Energi",
+    "summary": "康菲石油达成协议，以39亿美元将其挪威业务出售给挪威能源公司Var Energi，旗下蒂赛德石油终端也一并纳入交易。该交易预计于明年第一季度末完成交割。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmty2257930.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T09:52:07.000Z",
+    "score": 78,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "能源",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "康菲石油",
+      "Var Energi",
+      "油气并购",
+      "挪威"
+    ],
+    "context": "近40亿美元规模的油气资产出售是近期国际能源行业资产整合的重要动态。",
+    "contentHtml": "<p>　　该交易预计于明年第一季度末完成交割</p><p><img src=\"https://n.sinaimg.cn/finance/transform/116/w550h366/20261123/63ef-996f59177ee66ecbadc0b3d84f6f2cd7.png\" alt=\"康菲石油的蒂赛德石油终端也纳入本次与挪威Var Energi达成的交易。\"><span>康菲石油的蒂赛德石油终端也纳入本次与挪威Var Energi达成的交易。</span></p><p>　　<strong>内容概要</strong></p><p>　　<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/COP.html\">康菲石油</a></span><span></span>达成协议，将旗下挪威油气业务以及英国一处石油终端的股权，作价约 39 亿美元出售给Var Energi。</p><p>　　美国石油企业康菲石油宣布，已达成交易，将其挪威油气业务，外加英国一座石油终端的部分股权出售给Var Energi，交易总规模约 39 亿美元。</p><p>　　康菲石油周一表示，本次交易将带来约 25 亿美元现金；剩余约 14 亿美元由这家挪威油气公司承担，对应康菲石油 2026 年应付税款，该笔税款将于 2027 年上半年缴纳。康菲石油称，本次出售资产包含英国蒂赛德石油终端 40.25% 的股权，同时交出该设施的运营权。</p><p>　　康菲石油表示，所得现金将用于企业一般经营用途，以及 2027 年股票回购。</p><p>　　2025 年，这批挪威资产的油气产量约为每日 12 万桶油当量。Var Energi在另一份公告中称，这笔交易将增厚公司每股收益与每股股息。</p><p>　　本次交易预计在明年第一季度末完成交割。</p><p><span>新浪合作大平台期货开户 安全快捷有保障</span>\n    <img src=\"https://n.sinaimg.cn/finance/transform/340/w170h170/20220415/bd6a-a2376d5226aaa796dfdca62b1d9b1fcb.png\">\n</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
+    "author": "环球市场播报"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-4dcdcc6a",
+    "title": "沪光股份：拟以5000万元至1亿元回购公司股份",
+    "originalTitle": "沪光股份：拟以5000万元-1亿元回购公司股份",
+    "summary": "沪光股份公告，拟以自有资金或自筹资金通过集中竞价方式回购股份，金额不低于5000万元且不超过1亿元。回购股份将用于股权激励或员工持股计划，回购价格不超过28.44元/股。",
+    "url": "https://finance.eastmoney.com/a/202611233937378152.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T09:51:19.000Z",
+    "score": 55,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "公司公告",
+      "港股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "沪光股份",
+      "股份回购",
+      "股权激励"
+    ],
+    "context": "回购拟用于股权激励或员工持股计划，是A股上市公司常规资本运作公告动态。"
+  },
+  {
+    "id": "aihot-20261123-wscn-global-ad537d36",
+    "title": "欧洲紧急石油储备面临新挑战：有原油，缺柴油",
+    "author": "李佳",
+    "summary": "欧洲紧急石油储备面临新挑战：原油储备充足，但柴油储备短缺。这一有原油、缺柴油的结构性问题成为欧洲应急能源保障的新难点。",
+    "url": "https://wallstreetcn.com/articles/3786517",
+    "source": "华尔街见闻 · 全球",
+    "publishedAt": "2026-11-23T09:50:56.000Z",
+    "score": 63,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "能源",
+      "宏观",
+      "市场政策"
+    ],
+    "region": [
+      "金融与政策",
+      "财经"
+    ],
+    "tags": [
+      "财经",
+      "宏观",
+      "欧洲",
+      "石油储备",
+      "柴油",
+      "能源安全"
+    ],
+    "context": "在原油储备充足的情况下柴油不足，为欧洲能源安全与石油市场带来新的结构性变量。"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-6f70bfb8",
+    "title": "阳光诺和：董事长提议回购3000万至5000万元股份",
+    "summary": "阳光诺和（688621.SH）公告，公司董事长、控股股东、实际控制人利虔提议以自有资金或自筹资金回购股份，回购金额不低于3000万元且不超过5000万元。回购股份将用于员工持股计划或股权激励。",
+    "url": "https://finance.eastmoney.com/a/202611233937378968.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T09:50:31.000Z",
+    "score": 55,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "公司动态",
+      "港股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "阳光诺和",
+      "股份回购",
+      "公司公告"
+    ],
+    "context": "实控人提议回购并用于员工持股或股权激励，是A股常见的市值管理与激励安排动态，对跟踪该科创板个股的投资者具有参考价值。"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-159f073c",
+    "title": "迪拜据悉考虑合并Dubai Islamic Bank和Emirates Islamic Bank",
+    "summary": "据知情人士透露，迪拜官员已就可能合并Dubai Islamic Bank和Emirates Islamic Bank进行初步讨论，旨在打造一家更有能力参与全球竞争、符合伊斯兰教法的银行。消息来自知情人士，谈判尚处初步讨论阶段。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmtw5479859.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T09:50:00.000Z",
+    "score": 55,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "海外金融",
+      "市场",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "迪拜",
+      "伊斯兰银行",
+      "并购",
+      "银行业"
+    ],
+    "context": "消息尚未获官方确认，若落地将整合迪拜两大伊斯兰银行，后续进展值得持续跟踪。"
+  },
+  {
     "id": "aihot-20261123-bloomberg-markets-09ff2b0a",
     "title": "中国普通人如何采用AI：彭博记者的良渚见闻",
     "originalTitle": "How Everyday Chinese People Are Adopting AI",
