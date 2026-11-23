@@ -53,7 +53,7 @@ test('P1-3: single-column static pages center and balance content width when no 
   assert.match(page, /page-shell-single/);
   assert.match(page, /article-layout-single/);
   assert.match(css, /\.article-layout\.article-layout-single\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)/s);
-  assert.match(css, /\.page-shell-single \.article-hero,\s*\.article-layout\.article-layout-single\s*\{[^}]*max-width:\s*800px/s);
+  assert.match(css, /\.page-shell-single \.article-hero,\s*\.article-layout\.article-layout-single\s*\{[^}]*max-width:\s*1360px/s);
 });
 
 test('P1-4: midnight button contrast, prev/next label ordering, and dark search result link styles', () => {

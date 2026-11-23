@@ -218,9 +218,27 @@ const sortedTags = Array.from(allTagCounts.entries())
 <article class="article-shell news-shell container">
   <%- partial('_partial/header', { navClass: 'article-nav', activeSection: 'news' }) %>
 
-  <header class="news-hero">
+  <header class="news-hero section-page-hero">
     <p class="tag" data-i18n-key="news.flash">Flash</p>
-    <h1><%= page.title || 'News Board' %></h1>
+    <div class="section-page-hero-row">
+      <div>
+        <h1><%= page.title || 'News Board' %></h1>
+      </div>
+      <div class="section-page-stats">
+        <span class="section-stat-pill">
+          <strong><%= curatedItems.length %></strong>
+          <span data-news-i18n="viewCurated">精选</span>
+        </span>
+        <span class="section-stat-pill">
+          <strong><%= normalizedItems.length %></strong>
+          <span data-news-i18n="viewAll">全部动态</span>
+        </span>
+        <span class="section-stat-pill">
+          <strong><%= hotEvents.length %></strong>
+          <span data-news-i18n="viewHot">热点榜</span>
+        </span>
+      </div>
+    </div>
   </header>
 
   <main id="main-content" class="news-board" tabindex="-1">

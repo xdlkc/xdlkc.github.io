@@ -7,9 +7,13 @@
 
   <%- partial('_partial/header', { navClass: 'article-nav' }) %>
 
-  <header class="article-hero">
-    <p class="tag">PAGE</p>
-    <h1><%= page.title %></h1>
+  <header class="section-page-hero">
+    <p class="tag"><%= (page.path && String(page.path).startsWith('about')) ? 'ABOUT' : 'PAGE' %></p>
+    <div class="section-page-hero-row">
+      <div>
+        <h1><%= page.title %></h1>
+      </div>
+    </div>
   </header>
 
   <div class="article-layout<%= hasPageToc ? '' : ' article-layout-single' %>">

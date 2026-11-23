@@ -7,7 +7,7 @@
 }
 
 .models-hero {
-  margin: 1.4rem 0 1.25rem;
+  margin: 1.35rem 0 1.25rem;
 }
 
 .models-hero-row {
@@ -85,16 +85,16 @@
 .models-view-switcher {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
-  padding: 0.3rem;
-  border-radius: 12px;
+  gap: 0.35rem;
+  padding: 0.35rem;
+  border-radius: 14px;
   border: 1px solid var(--border);
   background: var(--surface-elevated);
 }
 
 .models-view-btn {
   padding: 0.45rem 0.95rem;
-  border-radius: 9px;
+  border-radius: 10px;
   border: 1px solid transparent;
   background: transparent;
   color: var(--muted);

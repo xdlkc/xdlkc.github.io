@@ -11,26 +11,47 @@ const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
 <div class="archive-shell container">
   <%- partial('_partial/header', { navClass: 'article-nav', activeSection: 'archives' }) %>
 
-  <section class="archive-card">
-    <h1 data-i18n-key="nav.archives">Archives</h1>
-    <p class="archive-total"><span data-i18n-key="archive.totalPrefix">Total</span> <%= posts.length %> <span data-i18n-key="archive.totalSuffix">posts.</span></p>
-
-    <% years.forEach((year) => { %>
-      <div class="archive-year">
-        <h2><%= year %></h2>
-        <div class="archive-items-list">
-          <% grouped[year].forEach((post) => { %>
-            <article class="archive-item">
-              <time datetime="<%= date_xml(post.date) %>"><%= date(post.date, 'MM-DD') %></time>
-              <a href="<%- url_for(post.path) %>"><%= post.title %></a>
-            </article>
-          <% }) %>
-        </div>
+  <header class="section-page-hero">
+    <p class="tag">ARCHIVES</p>
+    <div class="section-page-hero-row">
+      <div>
+        <h1 data-i18n-key="nav.archives">Archives</h1>
+        <p class="section-page-subtitle">
+          <span data-i18n-key="archive.totalPrefix">Total</span> <%= posts.length %> <span data-i18n-key="archive.totalSuffix">posts.</span>
+        </p>
       </div>
-    <% }) %>
+      <div class="section-page-stats">
+        <span class="section-stat-pill">
+          <strong><%= posts.length %></strong>
+          <span>Posts</span>
+        </span>
+        <span class="section-stat-pill">
+          <strong><%= years.length %></strong>
+          <span>Years</span>
+        </span>
+      </div>
+    </div>
+  </header>
 
-    <%- partial('_partial/hot-tags-cloud') %>
-  </section>
+  <main id="main-content" tabindex="-1">
+    <section class="archive-card">
+      <% years.forEach((year) => { %>
+        <div class="archive-year">
+          <h2><%= year %></h2>
+          <div class="archive-items-list">
+            <% grouped[year].forEach((post) => { %>
+              <article class="archive-item">
+                <time datetime="<%= date_xml(post.date) %>"><%= date(post.date, 'MM-DD') %></time>
+                <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+              </article>
+            <% }) %>
+          </div>
+        </div>
+      <% }) %>
+
+      <%- partial('_partial/hot-tags-cloud') %>
+    </section>
+  </main>
 
   <script src="<%- url_for('/js/archive-year-collapsible.js') %>" defer></script>
 </div>

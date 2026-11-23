@@ -3,16 +3,16 @@
  */
 
 .news-shell {
-  max-width: 1320px;
+  max-width: 1360px;
 }
 
 .news-hero {
-  margin: 1.4rem 0 1.25rem;
+  margin: 1.35rem 0 1.25rem;
 }
 
 .news-hero h1 {
   margin: 0.15rem 0 0;
-  font-size: clamp(1.6rem, 3vw, 2.15rem);
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
   line-height: 1.25;
   letter-spacing: -0.02em;
 }
