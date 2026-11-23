@@ -1,5 +1,72 @@
 [
   {
+    "id": "aihot-20261123-the-decoder-d1f10eab",
+    "title": "Meta 首席 AI 官 Alexandr Wang 警告：AI 行业尚未准备好应对黎曼突破之后的变化",
+    "originalTitle": "Meta's Alexandr Wang warns the AI industry isn't ready for what's coming after Riemann breakthrough",
+    "author": "Maximilian Schreiner",
+    "summary": "Meta 首席 AI 官 Alexandr Wang 警告，AI 行业尚未准备好应对黎曼猜想突破之后的变化。他认为近期 AI 辅助得出的黎曼猜想证明概要，是超级智能即将到来的明确信号。",
+    "url": "https://the-decoder.com/metas-alexandr-wang-warns-the-ai-industry-isnt-ready-for-whats-coming-after-riemann-breakthrough/",
+    "source": "The Decoder",
+    "publishedAt": "2026-11-23T13:59:36.000Z",
+    "score": 65,
+    "tier": "T2",
+    "selected": false,
+    "industry": "AI",
+    "topics": [
+      "行业动态",
+      "前沿研究",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "region": [
+      "AI精选",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "Alexandr Wang",
+      "Meta",
+      "黎曼猜想",
+      "超级智能"
+    ],
+    "context": "这一表态来自 Meta AI 最高负责人，其对超级智能临近的判断可能影响行业预期与布局。",
+    "contentHtml": "<p><img width=\"2048\" height=\"1152\" src=\"https://the-decoder.com/wp-content/uploads/2026/07/meta_logo-2.png\" class=\"attachment-full size-full wp-post-image\" alt=\"\" decoding=\"async\" fetchpriority=\"high\" /></p>\n<p>        Meta's Chief AI Officer Alexandr Wang sees the recent AI-assisted proof sketch of the Riemann Hypothesis as a clear sign that superintelligence is right around the corner.</p>\n<p>The article <a href=\"https://the-decoder.com/metas-alexandr-wang-warns-the-ai-industry-isnt-ready-for-whats-coming-after-riemann-breakthrough/\">Meta's Alexandr Wang warns the AI industry isn't ready for what's coming after Riemann breakthrough</a> appeared first on <a href=\"https://the-decoder.com\">The Decoder</a>.</p>"
+  },
+  {
+    "id": "aihot-20261123-the-decoder-5c09a7c9",
+    "title": "美国情报机构跟踪英伟达丑闻人物与中国情报部门联系超一年",
+    "originalTitle": "US spies tracked Nvidia scandal figure's ties to Chinese intelligence for over a year",
+    "author": "Maximilian Schreiner",
+    "summary": "据《纽约时报》报道，美国情报机构对爱丽丝·黄与中国国家安全部的接触跟踪超过一年，监视期间她还与时任英伟达CEO黄仁勋保持秘密恋情。联邦调查人员正调查一个东南亚公司网络是否被用于向中国走私AI芯片、违反美国出口管制。黄仁勋定于12月1日在美国众议院作证。",
+    "url": "https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year/",
+    "source": "The Decoder",
+    "publishedAt": "2026-11-23T13:45:32.000Z",
+    "score": 84,
+    "tier": "T2",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "政策监管",
+      "行业动态",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "region": [
+      "AI精选",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "英伟达",
+      "出口管制",
+      "情报监视",
+      "国会作证"
+    ],
+    "context": "该案同时牵涉美国对华AI芯片出口管制执法与英伟达高层丑闻，国会作证或披露更多细节。",
+    "contentHtml": "<p><strong>The woman at the center of the Nvidia scandal was in contact with China's top spy agency for over a year, US intelligence reports show.</strong> Alice Huang communicated with China's Ministry of State Security from spring 2025 through this fall, according to the New York Times, citing US intelligence findings. The entire time, she was carrying on a secret affair with then-Nvidia CEO Jensen Huang.</p><p>US spy agencies had been tracking the contacts for more than a year. Alice Huang's business partner Kang Wei, whom she introduced to acquaintances as her husband, is also believed to have cooperated with the ministry. Federal investigators are now trying to determine whether the two used a web of companies across Southeast Asia to funnel Nvidia AI chips into China, <a href=\"https://the-decoder.com/chinese-tech-firms-face-a-double-hit-as-chip-shipments-stop-and-overseas-cloud-access-disappears/\">skirting US export controls</a>. Alice Huang's firm Megaspeed is part of that network.</p><p>Jensen Huang <a href=\"https://the-decoder.com/jensen-huang-resigns-as-nvidia-ceo-after-espionage-scandal-wipes-out-1-4-trillion-in-market-value/\">resigned as CEO</a> earlier this month after the affair became public, along with reports of a second relationship. President Donald Trump tried to downplay the allegations and floated the idea of Huang returning to the company. Nvidia's board shut that down.</p><p>Meanwhile, Treasury Secretary Scott Bessent <a href=\"https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html\">told Nvidia to come clean</a> about its chip sales to China before the company makes any decisions about its future leadership. Jensen Huang is set to testify behind closed doors before the US House of Representatives on December 1.</p>",
+    "contentHtmlZh": "<p>{\"t\": [\"</p><p><strong>美国情报报告显示，身处英伟达丑闻风暴中心的这名女子与中国最高间谍机构保持接触已超过一年。</strong>据《纽约时报》援引美国情报结论报道，Alice Huang 自 2025 年春季至今年秋季一直与中国国家安全部保持联络。在此期间，她与英伟达时任 CEO 黄仁勋一直保持着一段秘密恋情。</p><p>美国情报机构追踪这些接触已超过一年。Alice Huang 的商业伙伴 Kang Wei——她曾向熟人介绍为自己的丈夫——据信也曾与该部门合作。联邦调查人员目前正在试图确定两人是否利用横跨东南亚的公司网络将英伟达 AI 芯片输入中国，<a href=\"https://the-decoder.com/%22https://the-decoder.com/chinese-tech-firms-face-a-double-hit-as-chip-shipments-stop-and-overseas-cloud-access-disappears//%22\">借此规避美国出口管制</a>。Alice Huang 的公司 Megaspeed 正是该网络的一部分。</p><p>黄仁勋在本月早些时候这段恋情曝光后<a href=\"https://the-decoder.com/%22https://the-decoder.com/jensen-huang-resigns-as-nvidia-ceo-after-espionage-scandal-wipes-out-1-4-trillion-in-market-value//%22\">辞去了 CEO 职务</a>，随后又有报道称他还有第二段感情关系。唐纳德·特朗普总统试图淡化这些指控，并提出了让黄仁勋回归公司的想法。英伟达董事会否决了这一提议。</p><p>与此同时，财政部长斯科特·贝森特<a href=\"https://the-decoder.com/%22https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html/%22\">要求英伟达如实说明</a>其对华芯片销售情况，再对公司未来领导层作出任何决定。黄仁勋定于 12 月 1 日在美国众议院闭门作证。</p><p>\"]}</p>"
+  },
+  {
     "id": "aihot-20261123-eastmoney-724-5c8edf18",
     "title": "英伟达美股盘前涨超9%",
     "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
