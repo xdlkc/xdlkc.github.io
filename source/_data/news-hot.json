@@ -10,7 +10,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 101.2,
+    "heatScore": 98.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:20:50.000Z",
     "summary": "交大思诺11月23日公告，董事长李伟提议以自有资金或自筹资金回购公司部分A股股份，回购资金总额不低于2000万元且不超过4000万元。回购将通过深交所交易系统以集中竞价方式进行，拟用于股权激励或员工持股计划。",
@@ -68,7 +68,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 100.7,
+    "heatScore": 98.2,
     "sourceCount": 2,
     "latestAt": "2026-11-23T08:53:13.000Z",
     "summary": "加拿大皇家银行策略团队将标普500十二个月目标点位下调至8050点，略低于9月给出的8150点，但仍预计未来一年有16.5%的上涨空间。由洛里·卡尔瓦西纳牵头的团队认为股市已充分计入诸多利空，强劲的经济增长与企业盈利能够对冲估值进一步压缩以及美联储加息带来的压力。",
@@ -102,7 +102,7 @@
       "宏观经济",
       "A股"
     ],
-    "heatScore": 89.8,
+    "heatScore": 87.7,
     "sourceCount": 1,
     "latestAt": "2026-11-23T08:45:56.383Z",
     "summary": "国家发展改革委、民政部、国家卫生健康委、教育部四部门联合印发《“一老一小”服务体系建设实施方案》。方案聚焦养老与儿童服务两大民生领域，由四部委协同部署推进。",
@@ -144,7 +144,7 @@
       "基准测试",
       "模型发布"
     ],
-    "heatScore": 83.8,
+    "heatScore": 81.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:17:01.000Z",
     "summary": "OpenAI 的 GPT-6.2 Astra 独立给出 Smoktunowicz 间隙定理的机器可验证 Lean 证明，据 Vals AI 称属同类成果中的首次。由于 Mathlib 缺少关键基础，模型自行设计证明路径。在 Autoform-Hard 基准上，Astra 以 56 题解出 49 题位居榜首。",
@@ -160,8 +160,86 @@
     ]
   },
   {
-    "id": "hot-84b37b59",
+    "id": "hot-c0bac5e2",
     "rank": 5,
+    "title": "英伟达美股盘前涨超9%",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 81.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T13:42:00.000Z",
+    "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-5c8edf18",
+        "title": "英伟达美股盘前涨超9%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T13:42:00.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937569623.html",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "hot-c5fac465",
+    "rank": 6,
+    "title": "盘前：纳指期货涨3.68% 半导体等科技股领涨",
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "美股",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 81.3,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T13:34:23.000Z",
+    "summary": "周一盘前，美国纳指期货上涨3.68%，半导体等科技股领涨，股指期货正从此前人工智能相关股票的猛烈抛售中反弹。这轮抛售此前已导致标普500指数进入技术性回调区间。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-4bdc46e4",
+        "title": "盘前：纳指期货涨3.68% 半导体等科技股领涨",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T13:34:23.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwiw8128663.shtml",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "hot-eaf4bfae",
+    "rank": 7,
+    "title": "标普、纳指有望终结“七连跌”，英伟达反弹近9%",
+    "industry": "金融与政策",
+    "topics": [
+      "美股市场",
+      "市场行情",
+      "美股",
+      "宏观"
+    ],
+    "heatScore": 81.3,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T13:33:55.000Z",
+    "summary": "美股标普、纳指有望终结连续七个交易日的下跌走势，英伟达反弹近9%。财联社“今夜看点”栏目对当晚美股市场动态进行了播报。",
+    "items": [
+      {
+        "id": "aihot-20261123-gnews-usstock-bfdc2d09",
+        "title": "标普、纳指有望终结“七连跌”，英伟达反弹近9%",
+        "source": "Google News · 美股市场",
+        "publishedAt": "2026-11-23T13:33:55.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5OV0xyb0xyUHhnZG9SZUM1U3NuTU0yM2lQSjdQbU5ZamNIUXBBNVJZZlVPdXlWRGZqWFFmVzZGM3U4WlgtblE?oc=5",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "hot-84b37b59",
+    "rank": 8,
     "title": "中际旭创拟20亿元至40亿元回购A股股份，回购价不超过600元/股",
     "industry": "金融与政策",
     "topics": [
@@ -170,7 +248,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 81.9,
+    "heatScore": 79.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:29:00.000Z",
     "summary": "中际旭创11月23日公告，拟以自有或自筹资金通过集中竞价方式回购A股股份，回购金额不低于20亿元且不超过40亿元，回购价格不超过600元/股。按上限测算预计回购约666.67万股，占总股本的0.57%；按下限测算约333.33万股，占0.28%。回购股份将用于员工持股计划或股权激励以及维护公司价值及股东权益，回购期限为董事会审议通过之日起不超过3个月。",
@@ -187,7 +265,7 @@
   },
   {
     "id": "hot-7246f443",
-    "rank": 6,
+    "rank": 9,
     "title": "诺华首个siRNA降胆固醇疗法心血管结局研究达到主要终点",
     "industry": "金融与政策",
     "topics": [
@@ -196,7 +274,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 81.9,
+    "heatScore": 79.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:28:24.000Z",
     "summary": "诺华宣布III期ORION-4研究取得积极顶线结果，其siRNA降胆固醇疗法英克司兰钠注射液达到主要终点。该研究首次为英克司兰钠注射液用于已确诊动脉粥样硬化性心血管疾病（ASCVD）患者提供心血管结局证据。",
@@ -213,7 +291,7 @@
   },
   {
     "id": "hot-6e2f9910",
-    "rank": 7,
+    "rank": 10,
     "title": "代币化股票遭遇抵制，纽交所、纳斯达克转向布局新市场",
     "industry": "金融与政策",
     "topics": [
@@ -222,7 +300,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 81.8,
+    "heatScore": 79.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:27:14.000Z",
     "summary": "纽交所与纳斯达克对代币化股票相关计划表示抵制，并转向布局新市场。据参与相关企业沟通的人士称，仅 30 天的异议窗口期留给公司的反应、决策时间非常紧张，来不及判断是否愿意参与。引发争议的代币化股票计划由洲际交易所（ICE）与加密交易所 OKX 合作推出。",
@@ -239,7 +317,7 @@
   },
   {
     "id": "hot-a10b688a",
-    "rank": 8,
+    "rank": 11,
     "title": "特朗普关税担忧缓解，交易商开始将美国铜运往中国",
     "industry": "金融与政策",
     "topics": [
@@ -248,7 +326,7 @@
       "市场动态",
       "宏观"
     ],
-    "heatScore": 81.6,
+    "heatScore": 79.7,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:21:55.000Z",
     "summary": "随着特朗普关税担忧缓解，交易商开始将美国铜运往中国。中国铜供应紧缺、本地溢价高企，造就丰厚套利机会。",
@@ -265,7 +343,7 @@
   },
   {
     "id": "hot-d4c36366",
-    "rank": 9,
+    "rank": 12,
     "title": "Meta Muse 现在可在沃尔玛代你完成黑五购物",
     "industry": "AI",
     "topics": [
@@ -274,7 +352,7 @@
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 80.1,
+    "heatScore": 78.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T11:00:00.000Z",
     "summary": "沃尔玛现已开放 Meta 的 Muse AI 代理在其网站代用户购物，可自动查找并购买黑色星期五优惠商品。这是沃尔玛上月发布的 Agent Gateway 的实际落地实现，可在不共享用户购买历史的前提下帮助 AI 代理找到相关商品。",
@@ -291,7 +369,7 @@
   },
   {
     "id": "hot-3bb87645",
-    "rank": 10,
+    "rank": 13,
     "title": "智谱GLM-5.4上线：首款Loop架构国产旗舰模型，3万亿参数GLM-5.5预计12月发布",
     "industry": "金融与政策",
     "topics": [
@@ -300,7 +378,7 @@
       "A股",
       "市场政策"
     ],
-    "heatScore": 76.1,
+    "heatScore": 74.3,
     "sourceCount": 1,
     "latestAt": "2026-11-23T07:32:10.000Z",
     "summary": "智谱GLM-5.4今日中午上线Coding Plan订阅体系，官方尚未正式发布，该模型采用Loop Transformer架构，是国内首款基于该架构的旗舰模型。内测用户反馈其综合表现优于3万亿参数级别的Kimi K3.1 Pro，官方跑分暂未公布。智谱管理层预计四季度推出约3万亿参数旗舰模型，市场普遍预期GLM-5.5于12月接力发布。",
@@ -316,8 +394,34 @@
     ]
   },
   {
+    "id": "hot-4a7b7187",
+    "rank": 14,
+    "title": "古尔曼：苹果Siri裁员不影响AI项目 智能体要等到2027年底",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "科技行业",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 73.7,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T13:38:12.000Z",
+    "summary": "知名科技记者马克·古尔曼表示，苹果近期针对Siri的裁员主要裁撤负责语音助手旧底层架构的员工，新一代AI系统研发团队并未受到波及。他还表示苹果的智能体要等到2027年底才会推出。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-0f37fb2a",
+        "title": "古尔曼：苹果Siri裁员不影响AI项目 智能体要等到2027年底",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T13:38:12.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwis5377417.shtml",
+        "score": 65
+      }
+    ]
+  },
+  {
     "id": "hot-84e541b8",
-    "rank": 11,
+    "rank": 15,
     "title": "摩根士丹利策略师 Wilson：标普500与道指回调带来不容错过的买入良机",
     "industry": "金融与政策",
     "topics": [
@@ -326,7 +430,7 @@
       "美股",
       "宏观"
     ],
-    "heatScore": 75.2,
+    "heatScore": 73.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T10:02:24.000Z",
     "summary": "摩根士丹利策略师 Wilson 团队表示，标普500与道指双双进入回调区间的一周，为投资者提供了不容错过的买入机会。这一表态是头部投行策略团队在美股两大基准指数同步回调之际发出的鲜明看多声音。",
@@ -343,7 +447,7 @@
   },
   {
     "id": "hot-840423f8",
-    "rank": 12,
+    "rank": 16,
     "title": "锡耶纳牧山银行董事会对联合圣保罗银行370亿美元收购要约释放矛盾信号",
     "industry": "金融与政策",
     "topics": [
@@ -352,7 +456,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 74.9,
+    "heatScore": 73.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T09:55:19.000Z",
     "summary": "锡耶纳牧山银行董事会未表态股东应当接受还是拒绝意大利联合圣保罗银行370亿美元的收购要约，立场释放出矛盾信号。该要约的接受期将持续至次年1月22日。",
@@ -369,7 +473,7 @@
   },
   {
     "id": "hot-e28542a1",
-    "rank": 13,
+    "rank": 17,
     "title": "康菲石油以39亿美元将挪威业务出售给Var Energi",
     "industry": "金融与政策",
     "topics": [
@@ -378,7 +482,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 74.8,
+    "heatScore": 73,
     "sourceCount": 1,
     "latestAt": "2026-11-23T09:52:07.000Z",
     "summary": "康菲石油达成协议，以39亿美元将其挪威业务出售给挪威能源公司Var Energi，旗下蒂赛德石油终端也一并纳入交易。该交易预计于明年第一季度末完成交割。",
@@ -394,8 +498,34 @@
     ]
   },
   {
+    "id": "hot-f76e49e1",
+    "rank": 18,
+    "title": "中国汽车流通协会：10月全国二手车市场交易量150.74万辆 同比下降14.25%",
+    "industry": "金融与政策",
+    "topics": [
+      "国内快讯",
+      "宏观经济",
+      "汽车行业",
+      "A股"
+    ],
+    "heatScore": 71.9,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T13:38:03.000Z",
+    "summary": "中国汽车流通协会11月23日数据显示，2026年10月全国二手车市场交易量150.74万辆，环比下降4.16%，同比下降14.25%，交易金额937.97亿元。2026年1-10月累计交易量1587.12万辆，同比下降3.76%，较同期减少61.95万辆，累计交易金额10301.98亿元。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-9590b832",
+        "title": "中国汽车流通协会：10月全国二手车市场交易量150.74万辆 同比下降14.25%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T13:38:03.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937567626.html",
+        "score": 62
+      }
+    ]
+  },
+  {
     "id": "hot-dd2583f0",
-    "rank": 14,
+    "rank": 19,
     "title": "国仪公司签订1.42亿元高端双束电子显微镜销售合同",
     "industry": "金融与政策",
     "topics": [
@@ -404,7 +534,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 73.6,
+    "heatScore": 71.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:29:21.000Z",
     "summary": "国仪公司（688828.SH）公告，近日接受某客户多份采购订单，销售高端双束电子显微镜，订单总金额1.42亿元（含税）。订单依据双方签订的《采购框架协议》执行，客户名称未披露。",
@@ -421,7 +551,7 @@
   },
   {
     "id": "hot-cf9dacd9",
-    "rank": 15,
+    "rank": 20,
     "title": "500美元溢价撕裂铜流向，中国铜短缺能否支撑铜价？",
     "industry": "金融与政策",
     "topics": [
@@ -430,7 +560,7 @@
       "宏观",
       "市场政策"
     ],
-    "heatScore": 73.2,
+    "heatScore": 71.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T10:40:41.000Z",
     "summary": "500美元的区域溢价正在撕裂全球铜流向，价差使铜的贸易路径出现明显分流。市场核心关注点是中国铜短缺能否为铜价提供支撑，供应缺口成为判断铜价走向的关键变量。",
@@ -442,144 +572,6 @@
         "publishedAt": "2026-11-23T10:40:41.000Z",
         "url": "https://wallstreetcn.com/member/articles/3786514",
         "score": 72
-      }
-    ]
-  },
-  {
-    "id": "hot-ae4c87fd",
-    "rank": 16,
-    "title": "Susquehanna将迈威尔科技目标价下调至225美元",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "机构评级",
-      "半导体",
-      "A股"
-    ],
-    "heatScore": 73,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T12:23:22.000Z",
-    "summary": "Susquehanna将芯片制造商迈威尔科技（MRVL.O）目标价由300美元下调至225美元，降幅25%。此前11月3日，Susquehanna已将目标价由340美元下调至300美元，并维持Positive评级。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-edb4e00a",
-        "title": "Susquehanna将迈威尔科技目标价下调至225美元",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T12:23:22.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937508574.html",
-        "score": 52
-      },
-      {
-        "id": "aihot-20261123-eastmoney-724-f5388a34",
-        "title": "花旗将Salesforce目标价从263美元下调至198美元",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T11:14:55.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937452840.html",
-        "score": 52
-      }
-    ]
-  },
-  {
-    "id": "hot-7dfa0ffe",
-    "rank": 17,
-    "title": "Mahanadi Coalfields 9.53亿美元印度IPO获1.5倍认购",
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "IPO与新股",
-      "美股",
-      "宏观"
-    ],
-    "heatScore": 72.5,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T12:15:01.000Z",
-    "summary": "Mahanadi Coalfields规模9.53亿美元的印度IPO于周一截止申购，最终获1.5倍认购。机构投资者的强劲需求是本次认购的主要推动力。",
-    "items": [
-      {
-        "id": "aihot-20261123-bloomberg-markets-141b20d6",
-        "title": "Mahanadi Coalfields 9.53亿美元印度IPO获1.5倍认购",
-        "source": "Bloomberg Markets",
-        "publishedAt": "2026-11-23T12:15:01.000Z",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-23/mahanadi-coalfields-953-million-india-ipo-subscribed-1-5-times",
-        "score": 65
-      }
-    ]
-  },
-  {
-    "id": "hot-0814c9c7",
-    "rank": 18,
-    "title": "*ST美丽（000010）被证监会立案",
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "市场监管",
-      "港股",
-      "美股"
-    ],
-    "heatScore": 72.5,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T12:14:33.000Z",
-    "summary": "*ST美丽（000010）11月23日晚间公告，公司收到中国证监会下发的《立案告知书》和深圳证监局下发的《行政监管措施决定书》。公司已被证监会立案调查。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-dfc9ff8d",
-        "title": "*ST美丽（000010）被证监会立案",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T12:14:33.000Z",
-        "url": "https://finance.sina.com.cn/stock/s/2026-11-23/doc-iniztrzu5457095.shtml",
-        "score": 65
-      }
-    ]
-  },
-  {
-    "id": "hot-3a93b7e4",
-    "rank": 19,
-    "title": "华夏基金(香港)推出全球唯一一只追踪离岸人民币债券ETF",
-    "industry": "金融与政策",
-    "topics": [
-      "港股",
-      "人民币国际化",
-      "A股",
-      "美股"
-    ],
-    "heatScore": 72.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T09:58:26.000Z",
-    "summary": "华夏基金（香港）推出全球唯一一只追踪离岸人民币债券的ETF，以助力香港离岸人民币市场建设。该公司表示，该产品旨在推进人民币国际化行稳致远。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-3e267f4e",
-        "title": "华夏基金(香港)推出全球唯一一只追踪离岸人民币债券ETF",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T09:58:26.000Z",
-        "url": "https://finance.sina.com.cn/money/fund/jjdt/2026-11-23/doc-iniztmtw5486506.shtml",
-        "score": 73
-      }
-    ]
-  },
-  {
-    "id": "hot-91a288f8",
-    "rank": 20,
-    "title": "韦东奕攻克近140年难题获奖，50万奖金归个人",
-    "industry": "金融与政策",
-    "topics": [
-      "国内财经",
-      "科技",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 72,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T11:10:00.000Z",
-    "summary": "北京大学数学科学学院长聘副教授韦东奕荣获2025年度北京市科学技术奖杰出青年中关村奖，该奖项面向40岁以下青年科研人员。韦东奕因攻克近140年数学难题获奖，50万元奖金归个人所有。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-82fcc9c7",
-        "title": "韦东奕攻克近140年难题获奖，50万奖金归个人",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T11:10:00.000Z",
-        "url": "https://finance.sina.com.cn/jjxw/2026-11-23/doc-iniztsaa0510159.shtml",
-        "score": 68
       }
     ]
   }
