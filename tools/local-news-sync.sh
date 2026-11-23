@@ -89,6 +89,8 @@ fi
   if [ -n "$(git status --porcelain source/_data/news.json source/_data/news-hot.json)" ]; then
     git add source/_data/news.json source/_data/news-hot.json
     git commit -m "chore(news): local AIHOT news sync" --quiet
+    git fetch origin master --quiet
+    git rebase origin/master --quiet
     git push origin HEAD:master --quiet
     echo "[local-news-sync] Pushed updated news to origin/master."
   else
