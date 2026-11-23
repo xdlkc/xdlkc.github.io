@@ -10,7 +10,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 98,
+    "heatScore": 95.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:20:50.000Z",
     "summary": "交大思诺11月23日公告，董事长李伟提议以自有资金或自筹资金回购公司部分A股股份，回购资金总额不低于2000万元且不超过4000万元。回购将通过深交所交易系统以集中竞价方式进行，拟用于股权激励或员工持股计划。",
@@ -68,7 +68,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 97.5,
+    "heatScore": 95,
     "sourceCount": 2,
     "latestAt": "2026-11-23T08:53:13.000Z",
     "summary": "加拿大皇家银行策略团队将标普500十二个月目标点位下调至8050点，略低于9月给出的8150点，但仍预计未来一年有16.5%的上涨空间。由洛里·卡尔瓦西纳牵头的团队认为股市已充分计入诸多利空，强劲的经济增长与企业盈利能够对冲估值进一步压缩以及美联储加息带来的压力。",
@@ -92,8 +92,146 @@
     ]
   },
   {
-    "id": "hot-036e97a0",
+    "id": "hot-06fd03cb",
     "rank": 3,
+    "title": "英伟达美股盘前涨超9%",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 89.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T14:42:58.000Z",
+    "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-5c8edf18",
+        "title": "英伟达美股盘前涨超9%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T13:42:00.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937569623.html",
+        "score": 78
+      },
+      {
+        "id": "aihot-20261123-eastmoney-724-e3ae9c54",
+        "title": "英伟达涨幅收窄至25%，此前一度上涨33%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T14:42:58.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937641971.html",
+        "score": 55
+      }
+    ]
+  },
+  {
+    "id": "hot-14b7c534",
+    "rank": 4,
+    "title": "黄仁勋重掌英伟达帅印：董事会恢复其CEO职务，股价暴涨27%",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "公司动态",
+      "AI产业链",
+      "宏观"
+    ],
+    "heatScore": 89.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T14:34:27.000Z",
+    "summary": "英伟达董事会已恢复黄仁勋的CEO职务，公司股价应声大涨27%。黄仁勋重掌英伟达帅印，市场对这一管理层变动反应强烈。",
+    "items": [
+      {
+        "id": "aihot-20261123-wscn-global-5d5fe795",
+        "title": "黄仁勋重掌英伟达帅印：董事会恢复其CEO职务，股价暴涨27%",
+        "source": "华尔街见闻 · 全球",
+        "publishedAt": "2026-11-23T14:34:27.000Z",
+        "url": "https://wallstreetcn.com/articles/3786536",
+        "score": 92
+      }
+    ]
+  },
+  {
+    "id": "hot-47506176",
+    "rank": 5,
+    "title": "监管部门向券商下发两融新政通知：落实融资融券逆周期调节措施",
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "A股",
+      "监管动态",
+      "港股"
+    ],
+    "heatScore": 88.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T14:35:36.000Z",
+    "summary": "11月23日，监管部门向券商下发《关于落实融资融券逆周期调节措施、提升风险管控有效性有关工作的通知》。该通知围绕落实两融逆周期调节措施、提升风险管控有效性提出要求，属两融领域新政。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-7567b04c",
+        "title": "监管部门向券商下发两融新政通知：落实融资融券逆周期调节措施",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T14:35:36.000Z",
+        "url": "https://finance.sina.com.cn/china/2026-11-23/doc-iniztwiw8165261.shtml",
+        "score": 90
+      }
+    ]
+  },
+  {
+    "id": "hot-bcc90a73",
+    "rank": 6,
+    "title": "黄仁勋时隔12天重回英伟达CEO宝座 苹果乔布斯当年等了12年",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "公司治理",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 87.3,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T14:46:34.000Z",
+    "summary": "英伟达董事会仅用12天就撤销罢免黄仁勋的决定，黄仁勋重回CEO职位。作为对照，苹果乔布斯当年重返CEO等了12年，而三年前的同一周，OpenAI撤换山姆·奥特曼后不到五天就完成了同样的复位。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-561b931d",
+        "title": "黄仁勋时隔12天重回英伟达CEO宝座 苹果乔布斯当年等了12年",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T14:46:34.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwiu2198462.shtml",
+        "score": 88
+      }
+    ]
+  },
+  {
+    "id": "hot-9a7a8d44",
+    "rank": 7,
+    "title": "Sierra 完成 17.5 亿美元 F 轮融资，估值半年翻倍至 300 亿美元",
+    "industry": "AI",
+    "topics": [
+      "市场动态",
+      "融资",
+      "模型发布",
+      "基础设施"
+    ],
+    "heatScore": 85.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T14:43:03.000Z",
+    "summary": "由前 Salesforce 联合 CEO Bret Taylor 联合创办的企业级客户体验公司 Sierra 周一宣布完成 17.5 亿美元 F 轮融资，估值在半年内翻倍至 300 亿美元。融资之际，市场对 AI 在客户体验领域应用的需求正快速升温。",
+    "items": [
+      {
+        "id": "aihot-20261123-techcrunch-ai-0527ded0",
+        "title": "Sierra 完成 17.5 亿美元 F 轮融资，估值半年翻倍至 300 亿美元",
+        "source": "TechCrunch · AI",
+        "publishedAt": "2026-11-23T14:43:03.000Z",
+        "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+        "score": 85
+      }
+    ]
+  },
+  {
+    "id": "hot-036e97a0",
+    "rank": 8,
     "title": "国家发改委等四部门印发《“一老一小”服务体系建设实施方案》",
     "industry": "金融与政策",
     "topics": [
@@ -102,7 +240,7 @@
       "宏观经济",
       "A股"
     ],
-    "heatScore": 87,
+    "heatScore": 84.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T08:45:56.383Z",
     "summary": "国家发展改革委、民政部、国家卫生健康委、教育部四部门联合印发《“一老一小”服务体系建设实施方案》。方案聚焦养老与儿童服务两大民生领域，由四部委协同部署推进。",
@@ -134,8 +272,85 @@
     ]
   },
   {
+    "id": "hot-fec5945e",
+    "rank": 9,
+    "title": "美股科技大反攻！黄仁勋回归，英伟达涨超30%，纳斯达克100涨7%，布油失守90美元",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "宏观",
+      "市场政策"
+    ],
+    "heatScore": 83.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T14:40:02.000Z",
+    "summary": "美股科技股迎来大反攻，黄仁勋回归，英伟达涨超30%，纳斯达克100指数上涨7%。布伦特原油同期失守90美元关口。",
+    "items": [
+      {
+        "id": "aihot-20261123-wscn-global-8f848be1",
+        "title": "美股科技大反攻！黄仁勋回归，英伟达涨超30%，纳斯达克100涨7%，布油失守90美元",
+        "source": "华尔街见闻 · 全球",
+        "publishedAt": "2026-11-23T14:40:02.000Z",
+        "url": "https://wallstreetcn.com/articles/3786472",
+        "score": 82
+      }
+    ]
+  },
+  {
+    "id": "hot-714107f0",
+    "rank": 10,
+    "title": "费城半导体指数盘初大涨超14%",
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "美股",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 83.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T14:36:56.000Z",
+    "summary": "费城半导体指数盘初大涨超14%，其中英伟达涨超30%，台积电涨超20%。ARM涨超18%，美光科技涨超15%，英特尔涨超13%，AMD、高通均涨超8%，半导体龙头全线上扬。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-5f0fe25d",
+        "title": "费城半导体指数盘初大涨超14%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T14:36:56.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937635817.html",
+        "score": 82
+      }
+    ]
+  },
+  {
+    "id": "hot-10936fa0",
+    "rank": 11,
+    "title": "特朗普称美国政府没有证据表明黄仁勋有不合法行为",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "宏观与政策",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 82.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T14:45:27.000Z",
+    "summary": "美国总统特朗普23日在社交媒体发文称，美国司法部长已确认政府没有证据表明黄仁勋有不合法行为。他表示英伟达董事会让黄仁勋重新担任首席执行官是\"正确且恰当的决定\"，没有理由认为其回归会对国家安全构成任何风险。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-842ebf6a",
+        "title": "特朗普称美国政府没有证据表明黄仁勋有不合法行为",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T14:45:27.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937644456.html",
+        "score": 80
+      }
+    ]
+  },
+  {
     "id": "hot-624eed47",
-    "rank": 4,
+    "rank": 12,
     "title": "美国情报机构跟踪英伟达丑闻人物与中国情报部门联系超一年",
     "industry": "AI",
     "topics": [
@@ -144,7 +359,7 @@
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 84.6,
+    "heatScore": 82.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T13:45:32.000Z",
     "summary": "据《纽约时报》报道，美国情报机构对爱丽丝·黄与中国国家安全部的接触跟踪超过一年，监视期间她还与时任英伟达CEO黄仁勋保持秘密恋情。联邦调查人员正调查一个东南亚公司网络是否被用于向中国走私AI芯片、违反美国出口管制。黄仁勋定于12月1日在美国众议院作证。",
@@ -161,7 +376,7 @@
   },
   {
     "id": "hot-cb3700e2",
-    "rank": 5,
+    "rank": 13,
     "title": "GPT-6.2 Astra 解出其他 AI 均未攻克的数学定理，并自创证明策略",
     "industry": "AI",
     "topics": [
@@ -170,7 +385,7 @@
       "基准测试",
       "模型发布"
     ],
-    "heatScore": 81.1,
+    "heatScore": 79,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:17:01.000Z",
     "summary": "OpenAI 的 GPT-6.2 Astra 独立给出 Smoktunowicz 间隙定理的机器可验证 Lean 证明，据 Vals AI 称属同类成果中的首次。由于 Mathlib 缺少关键基础，模型自行设计证明路径。在 Autoform-Hard 基准上，Astra 以 56 题解出 49 题位居榜首。",
@@ -186,34 +401,8 @@
     ]
   },
   {
-    "id": "hot-c0bac5e2",
-    "rank": 6,
-    "title": "英伟达美股盘前涨超9%",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 80.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T13:42:00.000Z",
-    "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-5c8edf18",
-        "title": "英伟达美股盘前涨超9%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T13:42:00.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937569623.html",
-        "score": 78
-      }
-    ]
-  },
-  {
     "id": "hot-c5fac465",
-    "rank": 7,
+    "rank": 14,
     "title": "盘前：纳指期货涨3.68% 半导体等科技股领涨",
     "industry": "金融与政策",
     "topics": [
@@ -222,7 +411,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 80.6,
+    "heatScore": 78.6,
     "sourceCount": 1,
     "latestAt": "2026-11-23T13:34:23.000Z",
     "summary": "周一盘前，美国纳指期货上涨3.68%，半导体等科技股领涨，股指期货正从此前人工智能相关股票的猛烈抛售中反弹。这轮抛售此前已导致标普500指数进入技术性回调区间。",
@@ -239,7 +428,7 @@
   },
   {
     "id": "hot-eaf4bfae",
-    "rank": 8,
+    "rank": 15,
     "title": "标普、纳指有望终结“七连跌”，英伟达反弹近9%",
     "industry": "金融与政策",
     "topics": [
@@ -248,7 +437,7 @@
       "美股",
       "宏观"
     ],
-    "heatScore": 80.6,
+    "heatScore": 78.6,
     "sourceCount": 1,
     "latestAt": "2026-11-23T13:33:55.000Z",
     "summary": "美股标普、纳指有望终结连续七个交易日的下跌走势，英伟达反弹近9%。财联社“今夜看点”栏目对当晚美股市场动态进行了播报。",
@@ -265,7 +454,7 @@
   },
   {
     "id": "hot-84b37b59",
-    "rank": 9,
+    "rank": 16,
     "title": "中际旭创拟20亿元至40亿元回购A股股份，回购价不超过600元/股",
     "industry": "金融与政策",
     "topics": [
@@ -274,7 +463,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 79.3,
+    "heatScore": 77.3,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:29:00.000Z",
     "summary": "中际旭创11月23日公告，拟以自有或自筹资金通过集中竞价方式回购A股股份，回购金额不低于20亿元且不超过40亿元，回购价格不超过600元/股。按上限测算预计回购约666.67万股，占总股本的0.57%；按下限测算约333.33万股，占0.28%。回购股份将用于员工持股计划或股权激励以及维护公司价值及股东权益，回购期限为董事会审议通过之日起不超过3个月。",
@@ -291,7 +480,7 @@
   },
   {
     "id": "hot-7246f443",
-    "rank": 10,
+    "rank": 17,
     "title": "诺华首个siRNA降胆固醇疗法心血管结局研究达到主要终点",
     "industry": "金融与政策",
     "topics": [
@@ -300,7 +489,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 79.3,
+    "heatScore": 77.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:28:24.000Z",
     "summary": "诺华宣布III期ORION-4研究取得积极顶线结果，其siRNA降胆固醇疗法英克司兰钠注射液达到主要终点。该研究首次为英克司兰钠注射液用于已确诊动脉粥样硬化性心血管疾病（ASCVD）患者提供心血管结局证据。",
@@ -317,7 +506,7 @@
   },
   {
     "id": "hot-6e2f9910",
-    "rank": 11,
+    "rank": 18,
     "title": "代币化股票遭遇抵制，纽交所、纳斯达克转向布局新市场",
     "industry": "金融与政策",
     "topics": [
@@ -326,7 +515,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 79.2,
+    "heatScore": 77.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:27:14.000Z",
     "summary": "纽交所与纳斯达克对代币化股票相关计划表示抵制，并转向布局新市场。据参与相关企业沟通的人士称，仅 30 天的异议窗口期留给公司的反应、决策时间非常紧张，来不及判断是否愿意参与。引发争议的代币化股票计划由洲际交易所（ICE）与加密交易所 OKX 合作推出。",
@@ -343,7 +532,7 @@
   },
   {
     "id": "hot-a10b688a",
-    "rank": 12,
+    "rank": 19,
     "title": "特朗普关税担忧缓解，交易商开始将美国铜运往中国",
     "industry": "金融与政策",
     "topics": [
@@ -352,7 +541,7 @@
       "市场动态",
       "宏观"
     ],
-    "heatScore": 79,
+    "heatScore": 77,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:21:55.000Z",
     "summary": "随着特朗普关税担忧缓解，交易商开始将美国铜运往中国。中国铜供应紧缺、本地溢价高企，造就丰厚套利机会。",
@@ -369,7 +558,7 @@
   },
   {
     "id": "hot-d4c36366",
-    "rank": 13,
+    "rank": 20,
     "title": "Meta Muse 现在可在沃尔玛代你完成黑五购物",
     "industry": "AI",
     "topics": [
@@ -378,7 +567,7 @@
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 77.6,
+    "heatScore": 75.6,
     "sourceCount": 1,
     "latestAt": "2026-11-23T11:00:00.000Z",
     "summary": "沃尔玛现已开放 Meta 的 Muse AI 代理在其网站代用户购物，可自动查找并购买黑色星期五优惠商品。这是沃尔玛上月发布的 Agent Gateway 的实际落地实现，可在不共享用户购买历史的前提下帮助 AI 代理找到相关商品。",
@@ -390,188 +579,6 @@
         "publishedAt": "2026-11-23T11:00:00.000Z",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
         "score": 83
-      }
-    ]
-  },
-  {
-    "id": "hot-988b0e9d",
-    "rank": 14,
-    "title": "Meta 首席 AI 官 Alexandr Wang 警告：AI 行业尚未准备好应对黎曼突破之后的变化",
-    "industry": "AI",
-    "topics": [
-      "行业动态",
-      "前沿研究",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "heatScore": 73.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T13:59:36.000Z",
-    "summary": "Meta 首席 AI 官 Alexandr Wang 警告，AI 行业尚未准备好应对黎曼猜想突破之后的变化。他认为近期 AI 辅助得出的黎曼猜想证明概要，是超级智能即将到来的明确信号。",
-    "items": [
-      {
-        "id": "aihot-20261123-the-decoder-d1f10eab",
-        "title": "Meta 首席 AI 官 Alexandr Wang 警告：AI 行业尚未准备好应对黎曼突破之后的变化",
-        "source": "The Decoder",
-        "publishedAt": "2026-11-23T13:59:36.000Z",
-        "url": "https://the-decoder.com/metas-alexandr-wang-warns-the-ai-industry-isnt-ready-for-whats-coming-after-riemann-breakthrough/",
-        "score": 65
-      }
-    ]
-  },
-  {
-    "id": "hot-3bb87645",
-    "rank": 15,
-    "title": "智谱GLM-5.4上线：首款Loop架构国产旗舰模型，3万亿参数GLM-5.5预计12月发布",
-    "industry": "金融与政策",
-    "topics": [
-      "人工智能",
-      "科技产业",
-      "A股",
-      "市场政策"
-    ],
-    "heatScore": 73.7,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T07:32:10.000Z",
-    "summary": "智谱GLM-5.4今日中午上线Coding Plan订阅体系，官方尚未正式发布，该模型采用Loop Transformer架构，是国内首款基于该架构的旗舰模型。内测用户反馈其综合表现优于3万亿参数级别的Kimi K3.1 Pro，官方跑分暂未公布。智谱管理层预计四季度推出约3万亿参数旗舰模型，市场普遍预期GLM-5.5于12月接力发布。",
-    "items": [
-      {
-        "id": "aihot-20261123-wscn-ashare-437bd69e",
-        "title": "智谱GLM-5.4上线：首款Loop架构国产旗舰模型，3万亿参数GLM-5.5预计12月发布",
-        "source": "华尔街见闻 · A股",
-        "publishedAt": "2026-11-23T07:32:10.000Z",
-        "url": "https://wallstreetcn.com/livenews/3204019",
-        "score": 90
-      }
-    ]
-  },
-  {
-    "id": "hot-4a7b7187",
-    "rank": 16,
-    "title": "古尔曼：苹果Siri裁员不影响AI项目 智能体要等到2027年底",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "科技行业",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 73.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T13:38:12.000Z",
-    "summary": "知名科技记者马克·古尔曼表示，苹果近期针对Siri的裁员主要裁撤负责语音助手旧底层架构的员工，新一代AI系统研发团队并未受到波及。他还表示苹果的智能体要等到2027年底才会推出。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-0f37fb2a",
-        "title": "古尔曼：苹果Siri裁员不影响AI项目 智能体要等到2027年底",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T13:38:12.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwis5377417.shtml",
-        "score": 65
-      }
-    ]
-  },
-  {
-    "id": "hot-84e541b8",
-    "rank": 17,
-    "title": "摩根士丹利策略师 Wilson：标普500与道指回调带来不容错过的买入良机",
-    "industry": "金融与政策",
-    "topics": [
-      "美股市场",
-      "机构观点",
-      "美股",
-      "宏观"
-    ],
-    "heatScore": 72.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T10:02:24.000Z",
-    "summary": "摩根士丹利策略师 Wilson 团队表示，标普500与道指双双进入回调区间的一周，为投资者提供了不容错过的买入机会。这一表态是头部投行策略团队在美股两大基准指数同步回调之际发出的鲜明看多声音。",
-    "items": [
-      {
-        "id": "aihot-20261123-bloomberg-markets-63f7eceb",
-        "title": "摩根士丹利策略师 Wilson：标普500与道指回调带来不容错过的买入良机",
-        "source": "Bloomberg Markets",
-        "publishedAt": "2026-11-23T10:02:24.000Z",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-23/morgan-stanley-s-wilson-says-buying-opportunity-too-good-to-miss",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-840423f8",
-    "rank": 18,
-    "title": "锡耶纳牧山银行董事会对联合圣保罗银行370亿美元收购要约释放矛盾信号",
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "并购交易",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 72.6,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T09:55:19.000Z",
-    "summary": "锡耶纳牧山银行董事会未表态股东应当接受还是拒绝意大利联合圣保罗银行370亿美元的收购要约，立场释放出矛盾信号。该要约的接受期将持续至次年1月22日。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-29bd7242",
-        "title": "锡耶纳牧山银行董事会对联合圣保罗银行370亿美元收购要约释放矛盾信号",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T09:55:19.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmue0589499.shtml",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-e28542a1",
-    "rank": 19,
-    "title": "康菲石油以39亿美元将挪威业务出售给Var Energi",
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "能源",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 72.5,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T09:52:07.000Z",
-    "summary": "康菲石油达成协议，以39亿美元将其挪威业务出售给挪威能源公司Var Energi，旗下蒂赛德石油终端也一并纳入交易。该交易预计于明年第一季度末完成交割。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-08234c4d",
-        "title": "康菲石油以39亿美元将挪威业务出售给Var Energi",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T09:52:07.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmty2257930.shtml",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-f76e49e1",
-    "rank": 20,
-    "title": "中国汽车流通协会：10月全国二手车市场交易量150.74万辆 同比下降14.25%",
-    "industry": "金融与政策",
-    "topics": [
-      "国内快讯",
-      "宏观经济",
-      "汽车行业",
-      "A股"
-    ],
-    "heatScore": 71.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T13:38:03.000Z",
-    "summary": "中国汽车流通协会11月23日数据显示，2026年10月全国二手车市场交易量150.74万辆，环比下降4.16%，同比下降14.25%，交易金额937.97亿元。2026年1-10月累计交易量1587.12万辆，同比下降3.76%，较同期减少61.95万辆，累计交易金额10301.98亿元。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-9590b832",
-        "title": "中国汽车流通协会：10月全国二手车市场交易量150.74万辆 同比下降14.25%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T13:38:03.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937567626.html",
-        "score": 62
       }
     ]
   }
