@@ -253,6 +253,39 @@
     "context": "金刚石芯片基板面向第四代半导体散热器件应用，该项目投产是九州一轨参股业务布局落地的实质进展。"
   },
   {
+    "id": "aihot-20261123-the-decoder-5e979ff3",
+    "title": "GPT-6.2 Astra 解出其他 AI 均未攻克的数学定理，并自创证明策略",
+    "originalTitle": "GPT-6.2 Astra solved a math theorem no other AI could crack, then invented its own proof strategy",
+    "author": "Manuel Uth",
+    "summary": "OpenAI 的 GPT-6.2 Astra 独立给出 Smoktunowicz 间隙定理的机器可验证 Lean 证明，据 Vals AI 称属同类成果中的首次。由于 Mathlib 缺少关键基础，模型自行设计证明路径。在 Autoform-Hard 基准上，Astra 以 56 题解出 49 题位居榜首。",
+    "url": "https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy/",
+    "source": "The Decoder",
+    "publishedAt": "2026-11-23T12:17:01.000Z",
+    "score": 84,
+    "tier": "T2",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "前沿模型",
+      "AI4Science",
+      "基准测试",
+      "模型发布"
+    ],
+    "region": [
+      "AI精选",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "OpenAI",
+      "GPT-6.2 Astra",
+      "Lean证明",
+      "数学推理"
+    ],
+    "context": "机器可验证的形式化证明是检验 AI 数学推理能力的硬标准，此成果显示前沿模型自主证明能力再进一步。",
+    "contentHtml": "<p><strong>OpenAI's GPT-6.2 Astra produced a formalized, machine-verifiable proof of a 2006 theorem with zero human help during the run.</strong> According to <a href=\"https://www.vals.ai/blogs/smoktunowicz-gap-theorem\">Vals AI</a>, it's the first known proof of Smoktunowicz's gap theorem written in <a href=\"https://the-decoder.com/mathematicians-say-openai-doesnt-understand-its-own-navier-stokes-proof/\">Lean</a>. The theorem states that when a mathematical system multiplies its basic building blocks, growth is either quite slow or very fast. There's no middle ground. Because key foundations of the original proof were missing from the math library Mathlib, Astra took a different route than the published <a href=\"https://the-decoder.com/some-mathematicians-call-for-openai-boycott-after-ai-generated-proofs-flood-their-field/\">mathematical proofs</a>, Vals says. It used \"capacity,\" a metric from existing research that checks the minimum number of elements added per computation step.</p><figure><img src=\"https://the-decoder.com/wp-content/uploads/2026/11/gpt_6.2_astra_capacity-770x446.png\" alt=\"\" width=\"770\" height=\"446\"><figcaption>GPT-6.2 Astra built its proof around \"capacity,\" a metric that behaves like the edge of a graph. | Image: Vals AI</figcaption></figure><p>This happened on <a href=\"https://www.vals.ai/benchmarks/autoform_hard\">Autoform-Hard</a>, a subset of Meta FAIR's AutoformBench curated by Vals. It contains 56 tasks (five corrected) that ten models in Meta's study failed to solve within budget. When Astra tried to quit after 47 minutes and eight dollars, the system rejected the attempt since unsolved submissions aren't accepted until $20 has been spent. After nine minutes of silence with no code input while it searched for a new strategy, Astra delivered the 1,800-line proof at the 94-minute mark for $21.58. It now leads the leaderboard with 49 solved tasks, ahead of GPT-6.2 Sol and Claude Fable 5.2 at 48 each.</p>"
+  },
+  {
     "id": "aihot-20261123-sina-finance-108be213",
     "title": "美债收益率走高、美股股指期货反弹，投资者等待纽约联储主席威廉姆斯讲话",
     "originalTitle": "美债收益率走高、股指期货反弹，投资者等待纽约联储主席威廉姆斯讲话",
