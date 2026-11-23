@@ -1,41 +1,7 @@
 [
   {
-    "id": "hot-ec51062d",
+    "id": "hot-5466adef",
     "rank": 1,
-    "title": "加拿大皇家银行下调标普500十二个月目标位至8050点 仍看好16.5%上行空间",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "机构观点",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 104.8,
-    "sourceCount": 2,
-    "latestAt": "2026-11-23T08:53:13.000Z",
-    "summary": "加拿大皇家银行策略团队将标普500十二个月目标点位下调至8050点，略低于9月给出的8150点，但仍预计未来一年有16.5%的上涨空间。由洛里·卡尔瓦西纳牵头的团队认为股市已充分计入诸多利空，强劲的经济增长与企业盈利能够对冲估值进一步压缩以及美联储加息带来的压力。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-3f6efb64",
-        "title": "加拿大皇家银行下调标普500十二个月目标位至8050点 仍看好16.5%上行空间",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T07:44:28.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937262413.html",
-        "score": 72
-      },
-      {
-        "id": "aihot-20261123-sina-finance-a2a3a61d",
-        "title": "加皇银行下调标普500目标位，仍看好16.5%上行空间",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T08:53:13.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztfmy5562509.shtml",
-        "score": 63
-      }
-    ]
-  },
-  {
-    "id": "hot-1783912a",
-    "rank": 2,
     "title": "交大思诺董事长提议回购2000万元至4000万元公司股份",
     "industry": "金融与政策",
     "topics": [
@@ -44,9 +10,9 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 94.1,
+    "heatScore": 102,
     "sourceCount": 1,
-    "latestAt": "2026-11-23T11:15:00.000Z",
+    "latestAt": "2026-11-23T12:20:50.000Z",
     "summary": "交大思诺11月23日公告，董事长李伟提议以自有资金或自筹资金回购公司部分A股股份，回购资金总额不低于2000万元且不超过4000万元。回购将通过深交所交易系统以集中竞价方式进行，拟用于股权激励或员工持股计划。",
     "items": [
       {
@@ -74,12 +40,54 @@
         "score": 55
       },
       {
+        "id": "aihot-20261123-eastmoney-724-2fdb358c",
+        "title": "九州一轨：董事兼总裁提议回购6000万元至1.2亿元公司股份",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T12:20:50.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937506120.html",
+        "score": 52
+      },
+      {
         "id": "aihot-20261123-eastmoney-724-5753757e",
         "title": "奥拓电子董事长提议1000万元—2000万元回购公司股份",
         "source": "东方财富 · 7x24快讯",
         "publishedAt": "2026-11-23T11:15:00.000Z",
         "url": "https://finance.eastmoney.com/a/202611233937452557.html",
         "score": 52
+      }
+    ]
+  },
+  {
+    "id": "hot-ec51062d",
+    "rank": 2,
+    "title": "加拿大皇家银行下调标普500十二个月目标位至8050点 仍看好16.5%上行空间",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "机构观点",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 101.5,
+    "sourceCount": 2,
+    "latestAt": "2026-11-23T08:53:13.000Z",
+    "summary": "加拿大皇家银行策略团队将标普500十二个月目标点位下调至8050点，略低于9月给出的8150点，但仍预计未来一年有16.5%的上涨空间。由洛里·卡尔瓦西纳牵头的团队认为股市已充分计入诸多利空，强劲的经济增长与企业盈利能够对冲估值进一步压缩以及美联储加息带来的压力。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-3f6efb64",
+        "title": "加拿大皇家银行下调标普500十二个月目标位至8050点 仍看好16.5%上行空间",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T07:44:28.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937262413.html",
+        "score": 72
+      },
+      {
+        "id": "aihot-20261123-sina-finance-a2a3a61d",
+        "title": "加皇银行下调标普500目标位，仍看好16.5%上行空间",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T08:53:13.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztfmy5562509.shtml",
+        "score": 63
       }
     ]
   },
@@ -94,7 +102,7 @@
       "宏观经济",
       "A股"
     ],
-    "heatScore": 93.5,
+    "heatScore": 90.6,
     "sourceCount": 1,
     "latestAt": "2026-11-23T08:45:56.383Z",
     "summary": "国家发展改革委、民政部、国家卫生健康委、教育部四部门联合印发《“一老一小”服务体系建设实施方案》。方案聚焦养老与儿童服务两大民生领域，由四部委协同部署推进。",
@@ -126,8 +134,112 @@
     ]
   },
   {
-    "id": "hot-d4c36366",
+    "id": "hot-84b37b59",
     "rank": 4,
+    "title": "中际旭创拟20亿元至40亿元回购A股股份，回购价不超过600元/股",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "公司公告",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 82.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T12:29:00.000Z",
+    "summary": "中际旭创11月23日公告，拟以自有或自筹资金通过集中竞价方式回购A股股份，回购金额不低于20亿元且不超过40亿元，回购价格不超过600元/股。按上限测算预计回购约666.67万股，占总股本的0.57%；按下限测算约333.33万股，占0.28%。回购股份将用于员工持股计划或股权激励以及维护公司价值及股东权益，回购期限为董事会审议通过之日起不超过3个月。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-79f0a9f8",
+        "title": "中际旭创拟20亿元至40亿元回购A股股份，回购价不超过600元/股",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T12:29:00.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937509073.html",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "hot-7246f443",
+    "rank": 5,
+    "title": "诺华首个siRNA降胆固醇疗法心血管结局研究达到主要终点",
+    "industry": "金融与政策",
+    "topics": [
+      "医药健康",
+      "A股",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 82.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T12:28:24.000Z",
+    "summary": "诺华宣布III期ORION-4研究取得积极顶线结果，其siRNA降胆固醇疗法英克司兰钠注射液达到主要终点。该研究首次为英克司兰钠注射液用于已确诊动脉粥样硬化性心血管疾病（ASCVD）患者提供心血管结局证据。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-fd53a306",
+        "title": "诺华首个siRNA降胆固醇疗法心血管结局研究达到主要终点",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T12:28:24.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937510366.html",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "hot-6e2f9910",
+    "rank": 6,
+    "title": "代币化股票遭遇抵制，纽交所、纳斯达克转向布局新市场",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "加密资产",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 82.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T12:27:14.000Z",
+    "summary": "纽交所与纳斯达克对代币化股票相关计划表示抵制，并转向布局新市场。据参与相关企业沟通的人士称，仅 30 天的异议窗口期留给公司的反应、决策时间非常紧张，来不及判断是否愿意参与。引发争议的代币化股票计划由洲际交易所（ICE）与加密交易所 OKX 合作推出。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-ed37f3ab",
+        "title": "代币化股票遭遇抵制，纽交所、纳斯达克转向布局新市场",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T12:27:14.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztrzw2239574.shtml",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "hot-a10b688a",
+    "rank": 7,
+    "title": "特朗普关税担忧缓解，交易商开始将美国铜运往中国",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "大宗商品",
+      "市场动态",
+      "宏观"
+    ],
+    "heatScore": 82.3,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T12:21:55.000Z",
+    "summary": "随着特朗普关税担忧缓解，交易商开始将美国铜运往中国。中国铜供应紧缺、本地溢价高企，造就丰厚套利机会。",
+    "items": [
+      {
+        "id": "aihot-20261123-ft-markets-f9662eb5",
+        "title": "特朗普关税担忧缓解，交易商开始将美国铜运往中国",
+        "source": "Financial Times · Markets",
+        "publishedAt": "2026-11-23T12:21:55.000Z",
+        "url": "https://www.ft.com/content/b84dbcb1-f216-422e-89c7-f203e0ab2757?syn-25a6b1a6=1",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "hot-d4c36366",
+    "rank": 8,
     "title": "Meta Muse 现在可在沃尔玛代你完成黑五购物",
     "industry": "AI",
     "topics": [
@@ -136,7 +248,7 @@
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 83.4,
+    "heatScore": 80.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T11:00:00.000Z",
     "summary": "沃尔玛现已开放 Meta 的 Muse AI 代理在其网站代用户购物，可自动查找并购买黑色星期五优惠商品。这是沃尔玛上月发布的 Agent Gateway 的实际落地实现，可在不共享用户购买历史的前提下帮助 AI 代理找到相关商品。",
@@ -153,7 +265,7 @@
   },
   {
     "id": "hot-3bb87645",
-    "rank": 5,
+    "rank": 9,
     "title": "智谱GLM-5.4上线：首款Loop架构国产旗舰模型，3万亿参数GLM-5.5预计12月发布",
     "industry": "金融与政策",
     "topics": [
@@ -162,7 +274,7 @@
       "A股",
       "市场政策"
     ],
-    "heatScore": 79.2,
+    "heatScore": 76.7,
     "sourceCount": 1,
     "latestAt": "2026-11-23T07:32:10.000Z",
     "summary": "智谱GLM-5.4今日中午上线Coding Plan订阅体系，官方尚未正式发布，该模型采用Loop Transformer架构，是国内首款基于该架构的旗舰模型。内测用户反馈其综合表现优于3万亿参数级别的Kimi K3.1 Pro，官方跑分暂未公布。智谱管理层预计四季度推出约3万亿参数旗舰模型，市场普遍预期GLM-5.5于12月接力发布。",
@@ -179,7 +291,7 @@
   },
   {
     "id": "hot-84e541b8",
-    "rank": 6,
+    "rank": 10,
     "title": "摩根士丹利策略师 Wilson：标普500与道指回调带来不容错过的买入良机",
     "industry": "金融与政策",
     "topics": [
@@ -188,7 +300,7 @@
       "美股",
       "宏观"
     ],
-    "heatScore": 78.3,
+    "heatScore": 75.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T10:02:24.000Z",
     "summary": "摩根士丹利策略师 Wilson 团队表示，标普500与道指双双进入回调区间的一周，为投资者提供了不容错过的买入机会。这一表态是头部投行策略团队在美股两大基准指数同步回调之际发出的鲜明看多声音。",
@@ -205,7 +317,7 @@
   },
   {
     "id": "hot-840423f8",
-    "rank": 7,
+    "rank": 11,
     "title": "锡耶纳牧山银行董事会对联合圣保罗银行370亿美元收购要约释放矛盾信号",
     "industry": "金融与政策",
     "topics": [
@@ -214,7 +326,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 78,
+    "heatScore": 75.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T09:55:19.000Z",
     "summary": "锡耶纳牧山银行董事会未表态股东应当接受还是拒绝意大利联合圣保罗银行370亿美元的收购要约，立场释放出矛盾信号。该要约的接受期将持续至次年1月22日。",
@@ -231,7 +343,7 @@
   },
   {
     "id": "hot-e28542a1",
-    "rank": 8,
+    "rank": 12,
     "title": "康菲石油以39亿美元将挪威业务出售给Var Energi",
     "industry": "金融与政策",
     "topics": [
@@ -240,7 +352,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 77.9,
+    "heatScore": 75.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T09:52:07.000Z",
     "summary": "康菲石油达成协议，以39亿美元将其挪威业务出售给挪威能源公司Var Energi，旗下蒂赛德石油终端也一并纳入交易。该交易预计于明年第一季度末完成交割。",
@@ -256,8 +368,34 @@
     ]
   },
   {
+    "id": "hot-dd2583f0",
+    "rank": 13,
+    "title": "国仪公司签订1.42亿元高端双束电子显微镜销售合同",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "公司公告",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 74.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T12:29:21.000Z",
+    "summary": "国仪公司（688828.SH）公告，近日接受某客户多份采购订单，销售高端双束电子显微镜，订单总金额1.42亿元（含税）。订单依据双方签订的《采购框架协议》执行，客户名称未披露。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-dc30c375",
+        "title": "国仪公司签订1.42亿元高端双束电子显微镜销售合同",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T12:29:21.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937510120.html",
+        "score": 66
+      }
+    ]
+  },
+  {
     "id": "hot-cf9dacd9",
-    "rank": 9,
+    "rank": 14,
     "title": "500美元溢价撕裂铜流向，中国铜短缺能否支撑铜价？",
     "industry": "金融与政策",
     "topics": [
@@ -266,7 +404,7 @@
       "宏观",
       "市场政策"
     ],
-    "heatScore": 76.2,
+    "heatScore": 73.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T10:40:41.000Z",
     "summary": "500美元的区域溢价正在撕裂全球铜流向，价差使铜的贸易路径出现明显分流。市场核心关注点是中国铜短缺能否为铜价提供支撑，供应缺口成为判断铜价走向的关键变量。",
@@ -282,8 +420,94 @@
     ]
   },
   {
+    "id": "hot-ae4c87fd",
+    "rank": 15,
+    "title": "Susquehanna将迈威尔科技目标价下调至225美元",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "机构评级",
+      "半导体",
+      "A股"
+    ],
+    "heatScore": 73.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T12:23:22.000Z",
+    "summary": "Susquehanna将芯片制造商迈威尔科技（MRVL.O）目标价由300美元下调至225美元，降幅25%。此前11月3日，Susquehanna已将目标价由340美元下调至300美元，并维持Positive评级。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-edb4e00a",
+        "title": "Susquehanna将迈威尔科技目标价下调至225美元",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T12:23:22.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937508574.html",
+        "score": 52
+      },
+      {
+        "id": "aihot-20261123-eastmoney-724-f5388a34",
+        "title": "花旗将Salesforce目标价从263美元下调至198美元",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T11:14:55.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937452840.html",
+        "score": 52
+      }
+    ]
+  },
+  {
+    "id": "hot-7dfa0ffe",
+    "rank": 16,
+    "title": "Mahanadi Coalfields 9.53亿美元印度IPO获1.5倍认购",
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "IPO与新股",
+      "美股",
+      "宏观"
+    ],
+    "heatScore": 73.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T12:15:01.000Z",
+    "summary": "Mahanadi Coalfields规模9.53亿美元的印度IPO于周一截止申购，最终获1.5倍认购。机构投资者的强劲需求是本次认购的主要推动力。",
+    "items": [
+      {
+        "id": "aihot-20261123-bloomberg-markets-141b20d6",
+        "title": "Mahanadi Coalfields 9.53亿美元印度IPO获1.5倍认购",
+        "source": "Bloomberg Markets",
+        "publishedAt": "2026-11-23T12:15:01.000Z",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-23/mahanadi-coalfields-953-million-india-ipo-subscribed-1-5-times",
+        "score": 65
+      }
+    ]
+  },
+  {
+    "id": "hot-0814c9c7",
+    "rank": 17,
+    "title": "*ST美丽（000010）被证监会立案",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场监管",
+      "港股",
+      "美股"
+    ],
+    "heatScore": 73.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T12:14:33.000Z",
+    "summary": "*ST美丽（000010）11月23日晚间公告，公司收到中国证监会下发的《立案告知书》和深圳证监局下发的《行政监管措施决定书》。公司已被证监会立案调查。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-dfc9ff8d",
+        "title": "*ST美丽（000010）被证监会立案",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T12:14:33.000Z",
+        "url": "https://finance.sina.com.cn/stock/s/2026-11-23/doc-iniztrzu5457095.shtml",
+        "score": 65
+      }
+    ]
+  },
+  {
     "id": "hot-3a93b7e4",
-    "rank": 10,
+    "rank": 18,
     "title": "华夏基金(香港)推出全球唯一一只追踪离岸人民币债券ETF",
     "industry": "金融与政策",
     "topics": [
@@ -292,7 +516,7 @@
       "A股",
       "美股"
     ],
-    "heatScore": 75.3,
+    "heatScore": 72.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T09:58:26.000Z",
     "summary": "华夏基金（香港）推出全球唯一一只追踪离岸人民币债券的ETF，以助力香港离岸人民币市场建设。该公司表示，该产品旨在推进人民币国际化行稳致远。",
@@ -309,7 +533,7 @@
   },
   {
     "id": "hot-91a288f8",
-    "rank": 11,
+    "rank": 19,
     "title": "韦东奕攻克近140年难题获奖，50万奖金归个人",
     "industry": "金融与政策",
     "topics": [
@@ -318,7 +542,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 74.9,
+    "heatScore": 72.6,
     "sourceCount": 1,
     "latestAt": "2026-11-23T11:10:00.000Z",
     "summary": "北京大学数学科学学院长聘副教授韦东奕荣获2025年度北京市科学技术奖杰出青年中关村奖，该奖项面向40岁以下青年科研人员。韦东奕因攻克近140年数学难题获奖，50万元奖金归个人所有。",
@@ -335,7 +559,7 @@
   },
   {
     "id": "hot-a5cd726a",
-    "rank": 12,
+    "rank": 20,
     "title": "摩尔线程拟以集中竞价方式回购股份，金额5亿至10亿元",
     "industry": "金融与政策",
     "topics": [
@@ -343,7 +567,7 @@
       "公司公告",
       "市场政策"
     ],
-    "heatScore": 74.5,
+    "heatScore": 72.1,
     "sourceCount": 1,
     "latestAt": "2026-11-23T10:57:24.000Z",
     "summary": "摩尔线程公告拟以集中竞价交易方式回购股份，资金总额不低于5亿元、不超过10亿元，回购价格不超过511元/股。回购期限为董事会审议通过后12个月内，回购股份拟用于员工持股计划或股权激励。",
@@ -355,214 +579,6 @@
         "publishedAt": "2026-11-23T10:57:24.000Z",
         "url": "https://wallstreetcn.com/livenews/3204246",
         "score": 68
-      }
-    ]
-  },
-  {
-    "id": "hot-29b60291",
-    "rank": 13,
-    "title": "AI数据中心热潮为私人基础设施领域注入数百亿资金",
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "AI基础设施",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 74.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T08:57:44.000Z",
-    "summary": "普睿金（Preqin）数据显示，2026年第三季度基础设施募资反弹，21只基金合计募得620亿美元。AI数据中心热潮正为私人基础设施领域注入数百亿资金，步入2027年，AI数据中心与电力需求仍是资金配置的重要方向。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-eefce5bd",
-        "title": "AI数据中心热潮为私人基础设施领域注入数百亿资金",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T08:57:44.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmua8220091.shtml",
-        "score": 75
-      }
-    ]
-  },
-  {
-    "id": "hot-90d73fe1",
-    "rank": 14,
-    "title": "沪深北交易所11月30日下调两融保证金比例至80%",
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "市场政策",
-      "港股",
-      "宏观"
-    ],
-    "heatScore": 73.7,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T05:01:34.000Z",
-    "summary": "沪深北交易所将于11月30日正式下调两融保证金比例，从现行的100%降至80%。监管已向券商下发通知，要求做好两融逆周期调节，对保证金比例实施动态管理与差异化控制，及时完成系统参数调整与测试验证，并做好政策解读与风险揭示。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-de3cad99",
-        "title": "沪深北交易所11月30日下调两融保证金比例至80%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T05:01:34.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937153115.html",
-        "score": 90
-      }
-    ]
-  },
-  {
-    "id": "hot-9958fc23",
-    "rank": 15,
-    "title": "人社部：非法骗取社保基金支出或社保待遇 拟处骗取金额2倍以上5倍以下罚款",
-    "industry": "金融与政策",
-    "topics": [
-      "国内政策",
-      "社会保障",
-      "宏观经济",
-      "A股"
-    ],
-    "heatScore": 73.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T07:44:14.000Z",
-    "summary": "人社部研究起草的《社会保险基金监督条例（征求意见稿）》向社会公开征求意见，拟对以欺诈、伪造证明材料等手段骗取社保基金支出或待遇者，责令退回骗取的社会保险金并处骗取金额2倍以上5倍以下罚款。属社保服务机构的将解除服务协议，直接负责的主管人员和其他直接责任人员有执业资格的依法吊销执业资格。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-d0baea9b",
-        "title": "人社部：非法骗取社保基金支出或社保待遇 拟处骗取金额2倍以上5倍以下罚款",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T07:44:14.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937262051.html",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-e61b5c87",
-    "rank": 16,
-    "title": "三星首款AI智能眼镜将于12月10日在韩国和美国发布",
-    "industry": "金融与政策",
-    "topics": [
-      "消费电子",
-      "人工智能",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 73.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T06:42:29.000Z",
-    "summary": "三星电子将于12月10日在韩国和美国推出其首款AI智能眼镜。该眼镜支持基于Gemini的翻译、导航和会议摘要功能。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-94a76920",
-        "title": "三星首款AI智能眼镜将于12月10日在韩国和美国发布",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T06:42:29.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937221329.html",
-        "score": 82
-      }
-    ]
-  },
-  {
-    "id": "hot-db333ffc",
-    "rank": 17,
-    "title": "社保基金监管条例公开征求意见：事关养老金、工伤和失业保障",
-    "industry": "金融与政策",
-    "topics": [
-      "政策监管",
-      "社会保障",
-      "宏观经济",
-      "宏观"
-    ],
-    "heatScore": 73,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T07:38:33.000Z",
-    "summary": "社保基金监管条例公开征求意见，内容事关养老金、工伤和失业保障。条例草案目前面向社会公开征集意见。",
-    "items": [
-      {
-        "id": "aihot-20261123-wscn-global-ef39ed7b",
-        "title": "社保基金监管条例公开征求意见：事关养老金、工伤和失业保障",
-        "source": "华尔街见闻 · 全球",
-        "publishedAt": "2026-11-23T07:38:33.000Z",
-        "url": "https://wallstreetcn.com/articles/3786505",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-c52dafcf",
-    "rank": 18,
-    "title": "Anthropic 承诺投入 9000 亿美元，华尔街预期其债务将为垃圾级",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "AI 产业",
-      "债券市场",
-      "A股"
-    ],
-    "heatScore": 72.5,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T04:55:22.000Z",
-    "summary": "Anthropic 上周募资超 1000 亿美元，估值约 1.18 万亿美元，高于沃尔玛和摩根大通。该公司同时承诺投入 9000 亿美元，但其上市之路颠簸，债券市场前景疑问更大，华尔街预期其债务将为垃圾级。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-504b8511",
-        "title": "Anthropic 承诺投入 9000 亿美元，华尔街预期其债务将为垃圾级",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T04:55:22.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszeh8320015.shtml",
-        "score": 88
-      }
-    ]
-  },
-  {
-    "id": "hot-ff51c507",
-    "rank": 19,
-    "title": "高盛：股市复苏取决于美联储信号与AI盈利表现",
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "宏观经济",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 72.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T08:53:33.000Z",
-    "summary": "高盛策略师表示，美股需满足三大催化剂之一才有望探明底部：市场对AI盈利信心提升、美联储释放鸽派政策信号，或持仓水平大幅回落。这一框架指出了当前判断美股能否企稳的三个关键观察变量。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-adda5acd",
-        "title": "高盛：股市复苏取决于美联储信号与AI盈利表现",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T08:53:33.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztfne8347618.shtml",
-        "score": 72
-      }
-    ]
-  },
-  {
-    "id": "hot-8124bb02",
-    "rank": 20,
-    "title": "廖岷主持第十七次中欧财金对话",
-    "industry": "金融与政策",
-    "topics": [
-      "政策动态",
-      "宏观经济",
-      "A股",
-      "市场政策"
-    ],
-    "heatScore": 71.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T11:09:12.000Z",
-    "summary": "财政部副部长廖岷与欧盟委员会经济与金融事务总司长沃威在北京共同主持第十七次中欧财金对话。双方围绕宏观经济形势和政策、中欧在二十国集团（G20）框架下的多边合作等议题深入讨论，欧央行执行委员会委员奇波洛内、欧元集团工作组主席萨伦海默及中国财政部、人民银行相关司局代表参会。",
-    "items": [
-      {
-        "id": "aihot-20261123-wscn-ashare-0589d533",
-        "title": "廖岷主持第十七次中欧财金对话",
-        "source": "华尔街见闻 · A股",
-        "publishedAt": "2026-11-23T11:09:12.000Z",
-        "url": "https://wallstreetcn.com/livenews/3204253",
-        "score": 63
       }
     ]
   }
