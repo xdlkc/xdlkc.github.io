@@ -1,7 +1,144 @@
 [
   {
-    "id": "hot-97e97a57",
+    "id": "hot-8b87865d",
     "rank": 1,
+    "title": "国家发改委等四部门印发《“一老一小”服务体系建设实施方案》",
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "政府动态",
+      "宏观经济",
+      "A股"
+    ],
+    "heatScore": 93,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T05:04:45.038Z",
+    "summary": "国家发展改革委、民政部、国家卫生健康委、教育部四部门联合印发《“一老一小”服务体系建设实施方案》。方案聚焦养老与儿童服务两大民生领域，由四部委协同部署推进。",
+    "items": [
+      {
+        "id": "aihot-20261123-ndrc-policy-1c6d998b",
+        "title": "国家发改委等四部门印发《“一老一小”服务体系建设实施方案》",
+        "source": "国家发改委 · 政策通知",
+        "publishedAt": "2026-11-23T05:04:45.038Z",
+        "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261123_1409029.html",
+        "score": 84
+      },
+      {
+        "id": "aihot-20261122-ndrc-policy-3ed235ab",
+        "title": "国家发改委印发《“一老一小”服务体系建设实施方案》",
+        "source": "国家发改委 · 政策通知",
+        "publishedAt": "2026-11-22T16:00:00.000Z",
+        "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202611/t20261123_1409024.html",
+        "score": 84
+      }
+    ]
+  },
+  {
+    "id": "hot-90d73fe1",
+    "rank": 2,
+    "title": "沪深北交易所11月30日下调两融保证金比例至80%",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场政策",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 88.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T05:01:34.000Z",
+    "summary": "沪深北交易所将于11月30日正式下调两融保证金比例，从现行的100%降至80%。监管已向券商下发通知，要求做好两融逆周期调节，对保证金比例实施动态管理与差异化控制，及时完成系统参数调整与测试验证，并做好政策解读与风险揭示。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-de3cad99",
+        "title": "沪深北交易所11月30日下调两融保证金比例至80%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T05:01:34.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937153115.html",
+        "score": 90
+      }
+    ]
+  },
+  {
+    "id": "hot-c52dafcf",
+    "rank": 3,
+    "title": "Anthropic 承诺投入 9000 亿美元，华尔街预期其债务将为垃圾级",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "AI 产业",
+      "债券市场",
+      "A股"
+    ],
+    "heatScore": 87,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T04:55:22.000Z",
+    "summary": "Anthropic 上周募资超 1000 亿美元，估值约 1.18 万亿美元，高于沃尔玛和摩根大通。该公司同时承诺投入 9000 亿美元，但其上市之路颠簸，债券市场前景疑问更大，华尔街预期其债务将为垃圾级。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-504b8511",
+        "title": "Anthropic 承诺投入 9000 亿美元，华尔街预期其债务将为垃圾级",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T04:55:22.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszeh8320015.shtml",
+        "score": 88
+      }
+    ]
+  },
+  {
+    "id": "hot-bcc1a7ec",
+    "rank": 4,
+    "title": "国家发展改革委就《全国守信激励措施基础清单（2026年版）》答记者问",
+    "industry": "金融与政策",
+    "topics": [
+      "政策动态",
+      "政府动态",
+      "市场政策",
+      "A股"
+    ],
+    "heatScore": 85,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T05:04:45.038Z",
+    "summary": "国家发展改革委有关负责同志就《全国守信激励措施基础清单（2026年版）》答记者问，对清单有关情况作出官方说明。该清单为2026年版全国层面的守信激励措施基础清单。",
+    "items": [
+      {
+        "id": "aihot-20261123-ndrc-policy-1c92df67",
+        "title": "国家发展改革委就《全国守信激励措施基础清单（2026年版）》答记者问",
+        "source": "国家发改委 · 政策通知",
+        "publishedAt": "2026-11-23T05:04:45.038Z",
+        "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261110_1408747.html",
+        "score": 84
+      }
+    ]
+  },
+  {
+    "id": "hot-a72b06c3",
+    "rank": 5,
+    "title": "运行时安全工具不等于安全基线：云原生团队中被伪装成自主性的孤岛",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "安全",
+      "开源生态"
+    ],
+    "heatScore": 74.3,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T05:04:43.783Z",
+    "summary": "CNCF 博客发文指出，运行时安全工具本身不能当作安全基线，云原生团队常把各自为战误当成自主性，最终形成安全孤岛。作者结合一次 Kubernetes 安全专项的经历：截止日期带来压力，一支拥有优秀工程师和清晰目标的团队决定只直接解决自己那一部分问题。",
+    "items": [
+      {
+        "id": "aihot-20261123-cncf-blog-63aa5276",
+        "title": "运行时安全工具不等于安全基线：云原生团队中被伪装成自主性的孤岛",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-23T05:04:43.783Z",
+        "url": "https://www.cncf.io/blog/2026/11/16/your-runtime-security-tool-is-not-your-baseline-silos-dressed-as-autonomy-in-cloud-native-teams/",
+        "score": 66
+      }
+    ]
+  },
+  {
+    "id": "hot-97e97a57",
+    "rank": 6,
     "title": "国家发改委有关负责同志就《实施全面节约战略行动方案》答记者问",
     "industry": "金融与政策",
     "topics": [
@@ -10,7 +147,7 @@
       "政府动态",
       "市场政策"
     ],
-    "heatScore": 97.5,
+    "heatScore": 74.3,
     "sourceCount": 1,
     "latestAt": "2026-11-22T19:35:37.651Z",
     "summary": "国家发展改革委有关负责同志就《实施全面节约战略行动方案》答记者问，对这一全面节约战略的行动方案作出官方解读。该文件由国家发改委层面发布并答疑，是全面节约战略落地实施的重要政策依据。",
@@ -34,8 +171,112 @@
     ]
   },
   {
+    "id": "hot-173ad767",
+    "rank": 7,
+    "title": "揭秘黄仁勋夫妇的财富帝国：英伟达持股价值超千亿美元，妻子为核心人物",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "财经人物",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 74,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T04:56:42.000Z",
+    "summary": "《华尔街日报》11月23日发文拆解英伟达CEO黄仁勋与妻子洛丽的财富版图，两人通过信托及其他实体控制8.7亿股英伟达股票，价值超过1090亿美元。报道称，妻子洛丽在这一财富架构中是核心人物。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-4002f314",
+        "title": "揭秘黄仁勋夫妇的财富帝国：英伟达持股价值超千亿美元，妻子为核心人物",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T04:56:42.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937150663.html",
+        "score": 66
+      }
+    ]
+  },
+  {
+    "id": "hot-cb92d99b",
+    "rank": 8,
+    "title": "逢低买盘入场推动黄金反弹 上周曾创3月以来最差单周表现",
+    "industry": "金融与政策",
+    "topics": [
+      "市场行情",
+      "大宗商品",
+      "美联储政策",
+      "A股"
+    ],
+    "heatScore": 72.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T04:57:34.000Z",
+    "summary": "黄金价格从八个月来最大单周跌幅中反弹，逢低买盘入场，现货黄金一度上涨2.6%、突破每盎司3630美元。市场同时降低了对美联储12月加息的押注。此前一周黄金曾创3月以来最差单周表现。",
+    "items": [
+      {
+        "id": "aihot-20261123-sina-finance-230e7060",
+        "title": "逢低买盘入场推动黄金反弹 上周曾创3月以来最差单周表现",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T04:57:34.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszeh8320961.shtml",
+        "score": 63
+      }
+    ]
+  },
+  {
+    "id": "hot-4733e11d",
+    "rank": 9,
+    "title": "华尔街在AI股票抛售后有望反弹",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观市场",
+      "AI产业",
+      "宏观",
+      "美股"
+    ],
+    "heatScore": 69.3,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T04:58:47.000Z",
+    "summary": "华尔街在AI股票遭遇抛售后有望开盘反弹。亚洲市场当日整体下跌，韩国芯片制造商股价跌约3%。",
+    "items": [
+      {
+        "id": "aihot-20261123-ft-markets-3c9d1186",
+        "title": "华尔街在AI股票抛售后有望反弹",
+        "source": "Financial Times · Markets",
+        "publishedAt": "2026-11-23T04:58:47.000Z",
+        "url": "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1",
+        "score": 58
+      }
+    ]
+  },
+  {
+    "id": "hot-766b67f1",
+    "rank": 10,
+    "title": "特朗普结束亚洲行返美召开白宫记者会，谈及利率、伊朗、数据中心与黄仁勋",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "国际动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 66.9,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T04:57:47.000Z",
+    "summary": "据路透社11月23日报道，美国总统特朗普结束为期四天的亚洲访问后，周五在白宫召开记者会，话题涵盖利率、伊朗、数据中心及英伟达CEO黄仁勋。他开场称赞卡塔尔打造的新“空军一号”速度，感叹新冠疫苗推出太晚，并谈到利率过高。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-b385ac69",
+        "title": "特朗普结束亚洲行返美召开白宫记者会，谈及利率、伊朗、数据中心与黄仁勋",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T04:57:47.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937150754.html",
+        "score": 54
+      }
+    ]
+  },
+  {
     "id": "hot-cc2b4c22",
-    "rank": 2,
+    "rank": 11,
     "title": "OpenShell 加入 CNCF：以开放治理保障 Agentic AI 安全",
     "industry": "工程与开源",
     "topics": [
@@ -43,7 +284,7 @@
       "开源生态",
       "AI 安全"
     ],
-    "heatScore": 84.2,
+    "heatScore": 64.2,
     "sourceCount": 1,
     "latestAt": "2026-11-22T19:35:35.657Z",
     "summary": "在 KubeCon + CloudNativeCon North America 上，CNCF 接纳 NVIDIA 捐赠的 OpenShell 为 Sandbox 项目。OpenShell 是一个用于保护和治理自主 AI 代理的开源运行时，项目将以开放治理模式推进 Agentic AI 的安全化。",
@@ -59,8 +300,34 @@
     ]
   },
   {
+    "id": "hot-cfdd64ae",
+    "rank": 12,
+    "title": "A股电子化学品板块拉升，西陇科学涨停",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场动态",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 63.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T05:01:28.000Z",
+    "summary": "电子化学品板块盘中拉升，西陇科学涨停，容大感光、强力新材、飞凯材料、同宇新材、广信材料等个股跟涨。原文未披露本次拉升的具体催化因素。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-10d9fb2c",
+        "title": "A股电子化学品板块拉升，西陇科学涨停",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T05:01:28.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937152059.html",
+        "score": 48
+      }
+    ]
+  },
+  {
     "id": "hot-127d214d",
-    "rank": 3,
+    "rank": 13,
     "title": "Kyverno 的 CEL 准入成本究竟花在哪：Kubernetes 准入控制优化剖析",
     "industry": "工程与开源",
     "topics": [
@@ -68,7 +335,7 @@
       "研发效能",
       "开源生态"
     ],
-    "heatScore": 82.4,
+    "heatScore": 62.8,
     "sourceCount": 1,
     "latestAt": "2026-11-22T19:35:35.660Z",
     "summary": "Kyverno 团队对 Kubernetes 准入路径进行性能剖析，发现约 86% 的成本并不在 CEL 策略表达式求值环节，与其为求值而设计的预期相反。文章据此拆解 Kyverno CEL 准入开销的真实去向，为准入控制优化提供依据。",
@@ -85,7 +352,7 @@
   },
   {
     "id": "hot-cb94d271",
-    "rank": 4,
+    "rank": 14,
     "title": "当同步窗口关闭时：Argo CD self-heal 如何跳过了迁移钩子",
     "industry": "工程与开源",
     "topics": [
@@ -93,7 +360,7 @@
       "研发效能",
       "开源生态"
     ],
-    "heatScore": 80.6,
+    "heatScore": 61.5,
     "sourceCount": 1,
     "latestAt": "2026-11-22T19:35:35.658Z",
     "summary": "CNCF 博客复盘了一个真实案例：客户在同步窗口关闭期间推送版本，Argo CD 报告 sync 成功，但迁移钩子实际没有执行。文章逐步拆解了 self-heal 机制跳过该迁移钩子的具体过程与原因。",
@@ -110,7 +377,7 @@
   },
   {
     "id": "hot-7e25acd8",
-    "rank": 5,
+    "rank": 15,
     "title": "你的 OpenTelemetry 管道正在变成性能瓶颈吗？",
     "industry": "工程与开源",
     "topics": [
@@ -118,7 +385,7 @@
       "可观测性",
       "开源生态"
     ],
-    "heatScore": 77.6,
+    "heatScore": 59.2,
     "sourceCount": 1,
     "latestAt": "2026-11-22T19:35:35.661Z",
     "summary": "作者在 CNCF Blog 分享其在 Cloud Native Days Austria 2026 上的演讲《How to Defeat OTel's Silent Killer: The Performance Overhead》，聚焦 OpenTelemetry 管道的性能开销问题。演讲指出，构建可观测性管道时数据采集（collecting）的开销是一个容易被忽视的问题。",
@@ -135,14 +402,14 @@
   },
   {
     "id": "hot-df5a9f17",
-    "rank": 6,
+    "rank": 16,
     "title": "如何在不受你控制的 Kubernetes 环境中支持你的应用",
     "industry": "工程与开源",
     "topics": [
       "云原生",
       "开源生态"
     ],
-    "heatScore": 72.8,
+    "heatScore": 55.6,
     "sourceCount": 1,
     "latestAt": "2026-11-22T19:35:35.659Z",
     "summary": "CNCF 博客文章讲解如何为客户运行、不受你掌控的 Kubernetes 环境中的应用提供支持，并指出这与自己集群里运行应用是两回事。文章点出核心难点在于你无法控制集群配置、升级节奏和周边工具。",
@@ -159,14 +426,14 @@
   },
   {
     "id": "hot-a732e441",
-    "rank": 7,
+    "rank": 17,
     "title": "Perplexity 推出 Monitor API：将网页搜索从一次性查询变为持续监控",
     "industry": "AI",
     "topics": [
       "Agent 智能体",
       "模型发布"
     ],
-    "heatScore": 70.8,
+    "heatScore": 54,
     "sourceCount": 1,
     "latestAt": "2026-11-22T14:20:28.000Z",
     "summary": "Perplexity 发布 Monitor API，按计划持续搜索网络，仅在出现相关变化时通过 Webhook 通知智能体。该 API 内置决策模型自动过滤不重要的结果，减少噪音。这也是 Perplexity 通过开发者工具在同质化聊天机器人业务中寻求差异化战略的一部分。",
@@ -183,13 +450,13 @@
   },
   {
     "id": "hot-683b967c",
-    "rank": 8,
+    "rank": 18,
     "title": "AWS Quick 上线 Meta ads AI 连接器，广告主可用自然语言创建与管理广告活动",
     "industry": "AI",
     "topics": [
       "Agent 智能体"
     ],
-    "heatScore": 46,
+    "heatScore": 35.1,
     "sourceCount": 1,
     "latestAt": "2026-11-22T01:59:13.000Z",
     "summary": "Meta ads AI 连接器现已在 AWS Quick 中可用，Meta 广告主可在 Quick 内用自然语言创建、管理和分析广告活动。连接器保持与 Meta 广告管理网络的连接，并支持将 Meta 广告数据与第一方及第三方数据源结合，构建仪表板、文档、演示文稿和自动化工作流。",
@@ -205,307 +472,28 @@
     ]
   },
   {
-    "id": "hot-93a27770",
-    "rank": 9,
-    "title": "AWS 推出 SageMaker HyperPod Global Inference Gateway：单一端点跨区域、跨集群路由推理请求",
-    "industry": "AI",
-    "topics": [
-      "基础设施"
-    ],
-    "heatScore": 23.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T22:35:24.000Z",
-    "summary": "AWS 推出 SageMaker HyperPod Global Inference Gateway，通过一个托管端点即可在单区域或多区域的 HyperPod 集群间路由推理请求。该网关自动选择最优集群并支持故障自动转移，所有请求经 AWS PrivateLink 使用 SigV4 与 IAM 完成认证。",
-    "items": [
-      {
-        "id": "aihot-20261120-aws-ml-8a9284c6",
-        "title": "AWS 推出 SageMaker HyperPod Global Inference Gateway：单一端点跨区域、跨集群路由推理请求",
-        "source": "AWS Machine Learning Blog",
-        "publishedAt": "2026-11-20T22:35:24.000Z",
-        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
-        "score": 84
-      }
-    ]
-  },
-  {
-    "id": "hot-d2020d54",
-    "rank": 10,
-    "title": "AWS 详解 Agent Toolkit 分布式 KV 缓存技能：自托管 LLM 推理成本最高降 40%、首 Token 延迟降 80%",
-    "industry": "AI",
-    "topics": [
-      "Agent 智能体",
-      "模型发布",
-      "基础设施"
-    ],
-    "heatScore": 22.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-21T00:14:26.000Z",
-    "summary": "AWS 在 Agent Toolkit 中提供分布式 KV 缓存 Agent 技能，可从编码代理侧自动评估并配置基于 Amazon ElastiCache 的缓存，使自托管 LLM 推理成本最多降低 40%、首 Token 时间最多降低 80%。该方案通过复用多轮对话的上下文 KV 缓存，避免 GPU 每轮重复计算相同上下文，为自托管大模型的团队提供了可直接落地的降本增效路径。",
-    "items": [
-      {
-        "id": "aihot-20261121-aws-ml-9657a971",
-        "title": "AWS 详解 Agent Toolkit 分布式 KV 缓存技能：自托管 LLM 推理成本最高降 40%、首 Token 延迟降 80%",
-        "source": "AWS Machine Learning Blog",
-        "publishedAt": "2026-11-21T00:14:26.000Z",
-        "url": "https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/",
-        "score": 76
-      }
-    ]
-  },
-  {
-    "id": "hot-a7d801d8",
-    "rank": 11,
-    "title": "Cloudflare WAF 如何防护 ruby2shell（CVE-2026-132825）漏洞",
-    "industry": "工程与开源",
-    "topics": [
-      "安全",
-      "开源生态",
-      "云原生",
-      "研发效能"
-    ],
-    "heatScore": 22.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T20:24:38.000Z",
-    "summary": "Cloudflare WAF 已面向全部客户（含 Free 免费版）开启对 ruby2shell（CVE-2026-132825）攻击的拦截。该漏洞允许攻击者在无需登录的情况下破坏默认配置的 Rails 和 Sinatra 应用内存。官方建议尽快升级 Ruby，并利用 WAF 覆盖升级前的风险空窗期。",
-    "items": [
-      {
-        "id": "aihot-20261120-cloudflare-blog-97c1c5bc",
-        "title": "Cloudflare WAF 如何防护 ruby2shell（CVE-2026-132825）漏洞",
-        "source": "Cloudflare Blog",
-        "publishedAt": "2026-11-20T20:24:38.000Z",
-        "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
-        "score": 78
-      },
-      {
-        "id": "aihot-20261120-cloudflare-blog-f687b29a",
-        "title": "Cloudflare WAF 如何防护 phpAfterShell 及其他严重 PHP 漏洞",
-        "source": "Cloudflare Blog",
-        "publishedAt": "2026-11-20T20:00:45.000Z",
-        "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-17d26873",
-    "rank": 12,
-    "title": "Google Research 技术解读：Duplex 如何演化为 Gemini 替你致电商家的能力",
-    "industry": "AI",
-    "topics": [
-      "模型发布",
-      "研究"
-    ],
-    "heatScore": 22.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T23:30:30.000Z",
-    "summary": "Google Research 发布博文，详解 Duplex 电话对话 AI 技术如何演化并整合进 Gemini，让用户可以直接让 Gemini 替自己致电商家办理事务。文章以生成式 AI 为主线，回顾了这项能力从早期 Duplex 到进入 Gemini 的技术演进路径。",
-    "items": [
-      {
-        "id": "aihot-20261120-google-research-649e0639",
-        "title": "Google Research 技术解读：Duplex 如何演化为 Gemini 替你致电商家的能力",
-        "source": "Google Research",
-        "publishedAt": "2026-11-20T23:30:30.000Z",
-        "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
-        "score": 74
-      }
-    ]
-  },
-  {
-    "id": "hot-343cb11f",
-    "rank": 13,
-    "title": "AWS 为 SageMaker HyperPod Slurm 推出可观测性与用户管理托管集群扩展",
-    "industry": "AI",
-    "topics": [
-      "基础设施"
-    ],
-    "heatScore": 22.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T23:07:03.000Z",
-    "summary": "AWS 为 Amazon SageMaker HyperPod 的 Slurm 集群推出可观测性与用户管理两类托管集群扩展，支持通过 API 和控制台以声明式方式配置节点软件。官方博客还跟随一个平台团队运行共享 Slurm 集群一个季度的实践，展示了这些扩展的实际运作方式。对用 HyperPod 承载大规模训练的平台团队而言，监控与用户权限管理可从手工运维转为统一的声明式配置。",
-    "items": [
-      {
-        "id": "aihot-20261120-aws-ml-21981c0e",
-        "title": "AWS 为 SageMaker HyperPod Slurm 推出可观测性与用户管理托管集群扩展",
-        "source": "AWS Machine Learning Blog",
-        "publishedAt": "2026-11-20T23:07:03.000Z",
-        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
-        "score": 76
-      }
-    ]
-  },
-  {
-    "id": "hot-d473833d",
-    "rank": 14,
-    "title": "AWS Quick 推送功能更新：聊天内运行业务流程流、网页端改版与多智能体协作",
-    "industry": "AI",
-    "topics": [
-      "Agent 智能体",
-      "模型发布"
-    ],
-    "heatScore": 21.7,
-    "sourceCount": 1,
-    "latestAt": "2026-11-21T01:06:42.000Z",
-    "summary": "AWS 面向工作场景的 AI 工作台 Quick 发布一批更新：用户可在聊天中构建并运行业务流程流，网页端全新改版帮助规划每日事务。多个智能体可协同给出更完整的回答，并新增 Meta 广告、Amplitude 等数据源接入。",
-    "items": [
-      {
-        "id": "aihot-20261121-aws-ml-ce7e1354",
-        "title": "AWS Quick 推送功能更新：聊天内运行业务流程流、网页端改版与多智能体协作",
-        "source": "AWS Machine Learning Blog",
-        "publishedAt": "2026-11-21T01:06:42.000Z",
-        "url": "https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/",
-        "score": 66
-      }
-    ]
-  },
-  {
-    "id": "hot-22478817",
-    "rank": 15,
-    "title": "SEC发布提案 重组综合审计追踪（CAT）治理与融资模式",
-    "industry": "金融与政策",
-    "topics": [
-      "监管政策",
-      "美股",
-      "市场结构",
-      "市场政策"
-    ],
-    "heatScore": 21.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T18:03:24.000Z",
-    "summary": "美国证监会（SEC）发布提案，拟解决综合审计追踪（CAT）现行治理与融资模式中的低效问题。委员会同时提议废除Regulation NMS下的规则613（Rule 613），作为CAT重组方案的一部分。",
-    "items": [
-      {
-        "id": "aihot-20261120-sec-press-c3a64193",
-        "title": "SEC发布提案 重组综合审计追踪（CAT）治理与融资模式",
-        "source": "美国证监会 (SEC)",
-        "publishedAt": "2026-11-20T18:03:24.000Z",
-        "url": "https://www.sec.gov/newsroom/press-releases/2026-117-sec-issues-proposal-restructure-consolidated-audit-trail",
-        "score": 90
-      }
-    ]
-  },
-  {
-    "id": "hot-56918e8e",
-    "rank": 16,
-    "title": "标准银行集团基于 Amazon Bedrock 用 LLM-as-a-judge 实现生成式 AI 风险评估自动化",
-    "industry": "AI",
-    "topics": [
-      "模型发布",
-      "基础设施"
-    ],
-    "heatScore": 19.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T20:37:31.000Z",
-    "summary": "标准银行集团与 AWS Professional Services 合作，在其自有 AWS 账户中构建了生成式 AI 风险评估方案，实现审批证据的自动化采集。该方案在 Amazon Bedrock 上采用 LLM-as-a-judge，将每个用例对照国际 AI 标准与银行内部政策自动打分，为风险委员会提供一致、可追溯的评估证据。",
-    "items": [
-      {
-        "id": "aihot-20261120-aws-ml-8a2dbd72",
-        "title": "标准银行集团基于 Amazon Bedrock 用 LLM-as-a-judge 实现生成式 AI 风险评估自动化",
-        "source": "AWS Machine Learning Blog",
-        "publishedAt": "2026-11-20T20:37:31.000Z",
-        "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
-        "score": 68
-      }
-    ]
-  },
-  {
-    "id": "hot-eaa93eca",
-    "rank": 17,
-    "title": "SEC 指控 Backward Hat Capital 及其联合创始人涉 5.6 亿美元发行欺诈并获紧急救济",
-    "industry": "金融与政策",
-    "topics": [
-      "监管执法",
-      "美国市场",
-      "美股",
-      "市场政策"
-    ],
-    "heatScore": 18,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T14:28:28.000Z",
-    "summary": "美国证监会（SEC）宣布指控总部位于印第安纳波利斯的 Backward Hat Capital 及其联合创始人 Phillip Williams 与 Devin 涉嫌 5.6 亿美元发行欺诈。SEC 已获得临时限制令、资产冻结、加快取证等紧急救济措施。",
-    "items": [
-      {
-        "id": "aihot-20261120-sec-press-ce462305",
-        "title": "SEC 指控 Backward Hat Capital 及其联合创始人涉 5.6 亿美元发行欺诈并获紧急救济",
-        "source": "美国证监会 (SEC)",
-        "publishedAt": "2026-11-20T14:28:28.000Z",
-        "url": "https://www.sec.gov/newsroom/press-releases/2026-116-sec-charges-indianapolis-based-backward-hat-capital-its-co-founders-560-million-dollar-offering",
-        "score": 82
-      }
-    ]
-  },
-  {
-    "id": "hot-3f542c7e",
-    "rank": 18,
-    "title": "美联储公布 College Fed Challenge 大学挑战赛获奖名单",
-    "industry": "金融与政策",
-    "topics": [
-      "央行动态",
-      "金融与政策",
-      "市场政策",
-      "政府动态"
-    ],
-    "heatScore": 16.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T21:15:00.000Z",
-    "summary": "美联储官方新闻稿宣布 College Fed Challenge（大学美联储挑战赛）获奖者。公告本身未在正文中给出更多细节，具体获奖团队及奖项信息以其官方新闻稿为准。",
-    "items": [
-      {
-        "id": "aihot-20261120-fed-press-2fab8d5e",
-        "title": "美联储公布 College Fed Challenge 大学挑战赛获奖名单",
-        "source": "美联储官方新闻稿 (Fed)",
-        "publishedAt": "2026-11-20T21:15:00.000Z",
-        "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm",
-        "score": 46
-      }
-    ]
-  },
-  {
-    "id": "hot-e6ba0d9f",
+    "id": "hot-048806c9",
     "rank": 19,
-    "title": "美联储发布银行高级财务官准备金余额管理策略与实践调查结果",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观政策",
-      "金融与政策",
-      "市场政策",
-      "政府动态"
-    ],
-    "heatScore": 15.7,
-    "sourceCount": 1,
-    "latestAt": "2026-11-20T15:00:00.000Z",
-    "summary": "美联储理事会发布了针对银行高级财务官的调查结果，内容聚焦银行管理准备金余额的策略与实践。该调查汇集了银行在准备金余额管理方面的做法信息。",
-    "items": [
-      {
-        "id": "aihot-20261120-fed-press-4de45d8b",
-        "title": "美联储发布银行高级财务官准备金余额管理策略与实践调查结果",
-        "source": "美联储官方新闻稿 (Fed)",
-        "publishedAt": "2026-11-20T15:00:00.000Z",
-        "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
-        "score": 62
-      }
-    ]
-  },
-  {
-    "id": "hot-6d5c7167",
-    "rank": 20,
-    "title": "OpenAI 公布多层防御策略应对对抗性蒸馏，防止模型能力被窃取",
+    "title": "OpenAI 解析困惑度与智能：Perplexity 如何衡量模型进展",
     "industry": "AI",
     "topics": [
+      "模型评估",
+      "技术解读",
       "模型发布",
-      "研究"
+      "Agent 智能体"
     ],
-    "heatScore": 15.2,
+    "heatScore": 32.3,
     "sourceCount": 1,
-    "latestAt": "2026-11-20T10:00:00.000Z",
-    "summary": "OpenAI 公布了应对对抗性蒸馏的多层防护策略，结合模型训练、安全机制、检测与处置手段，防止前沿模型能力被窃取。该体系覆盖从训练加固到检测与执法的完整链条，用于对抗基于蒸馏的能力提取攻击。此举表明头部实验室正将防蒸馏能力纳入模型安全与竞争壁垒建设的核心环节。",
+    "latestAt": "2026-11-22T00:00:00.000Z",
+    "summary": "OpenAI 发文解释困惑度（perplexity）如何衡量 AI 模型的能力进展，并探讨这一指标能否帮助开发者建立评估新兴能力的统一方法。文章旨在为模型评估提供一个共享的衡量口径。",
     "items": [
       {
-        "id": "aihot-20261120-openai-news-7bfdfc03",
-        "title": "OpenAI 公布多层防御策略应对对抗性蒸馏，防止模型能力被窃取",
+        "id": "aihot-20261122-openai-news-bd294928",
+        "title": "OpenAI 解析困惑度与智能：Perplexity 如何衡量模型进展",
         "source": "OpenAI News",
-        "publishedAt": "2026-11-20T10:00:00.000Z",
-        "url": "https://openai.com/index/combatting-adversarial-distillation",
-        "score": 76
+        "publishedAt": "2026-11-22T00:00:00.000Z",
+        "url": "https://openai.com/index/perplexity-and-intelligence",
+        "score": 67
       }
     ]
   }
