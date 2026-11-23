@@ -10,7 +10,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 117.5,
+    "heatScore": 114.5,
     "sourceCount": 2,
     "latestAt": "2026-11-23T18:12:22.000Z",
     "summary": "黄仁勋在恢复英伟达CEO职务后，已确定下周出席美国参议院公开听证会作证。此次听证源于两党议员就其与一名疑似中国间谍者的恋情事件发出的作证呼吁。",
@@ -44,7 +44,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 96.4,
+    "heatScore": 94,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:51:39.000Z",
     "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
@@ -86,7 +86,7 @@
       "公司动态",
       "宏观"
     ],
-    "heatScore": 87.1,
+    "heatScore": 84.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T16:54:43.000Z",
     "summary": "英伟达董事会重新任命黄仁勋执掌这家全球最大芯片制造商，成为史上最令人震惊的企业回归案例之一。消息推动英伟达股价录得数十年来最大涨幅。彭博记者 Ed Ludlow 解读了这一事件的来龙去脉。",
@@ -112,7 +112,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 86.6,
+    "heatScore": 84.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:20:50.000Z",
     "summary": "交大思诺11月23日公告，董事长李伟提议以自有资金或自筹资金回购公司部分A股股份，回购资金总额不低于2000万元且不超过4000万元。回购将通过深交所交易系统以集中竞价方式进行，拟用于股权激励或员工持股计划。",
@@ -160,8 +160,34 @@
     ]
   },
   {
-    "id": "hot-ec51062d",
+    "id": "hot-d83d4b7b",
     "rank": 5,
+    "title": "OpenAI 警告后续 AI 系统可能超出安全检查能力，敦促竞争对手就共同限制达成一致",
+    "industry": "AI",
+    "topics": [
+      "AI安全与治理",
+      "前沿模型",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "heatScore": 84.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T18:42:38.000Z",
+    "summary": "OpenAI 首席科学家 Jakub Pachocki 警告，即将到来的 AI 系统可能在安全措施跟上前失控，敦促竞争对手就共同限制达成一致。他首次公开整个 GPT 系列的内部困惑度评分，数据延伸至一个尚未发布的新模型，显示核心能力在出奇精确的阈值处涌现。Pachocki 正推动将困惑度作为行业通用的进展指标，以便在 AI 行为控制力被侵蚀前建立共同限制。",
+    "items": [
+      {
+        "id": "aihot-20261123-the-decoder-86ccf815",
+        "title": "OpenAI 警告后续 AI 系统可能超出安全检查能力，敦促竞争对手就共同限制达成一致",
+        "source": "The Decoder",
+        "publishedAt": "2026-11-23T18:42:38.000Z",
+        "url": "https://the-decoder.com/openai-warns-that-upcoming-ai-systems-could-outpace-safety-checks-and-urges-rivals-to-agree-on-shared-limits/",
+        "score": 84
+      }
+    ]
+  },
+  {
+    "id": "hot-ec51062d",
+    "rank": 6,
     "title": "加拿大皇家银行下调标普500十二个月目标位至8050点 仍看好16.5%上行空间",
     "industry": "金融与政策",
     "topics": [
@@ -170,7 +196,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 86.1,
+    "heatScore": 83.9,
     "sourceCount": 2,
     "latestAt": "2026-11-23T08:53:13.000Z",
     "summary": "加拿大皇家银行策略团队将标普500十二个月目标点位下调至8050点，略低于9月给出的8150点，但仍预计未来一年有16.5%的上涨空间。由洛里·卡尔瓦西纳牵头的团队认为股市已充分计入诸多利空，强劲的经济增长与企业盈利能够对冲估值进一步压缩以及美联储加息带来的压力。",
@@ -194,8 +220,58 @@
     ]
   },
   {
+    "id": "hot-dc7ad5df",
+    "rank": 7,
+    "title": "优化 Kubernetes 准入控制：Kyverno 的 CEL 准入成本究竟花在哪",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "工程与开源",
+      "研发效能",
+      "开源生态"
+    ],
+    "heatScore": 83.9,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T19:06:28.636Z",
+    "summary": "CNCF 博客发布对 Kyverno 准入路径的性能剖析：成本大头并不在 CEL 表达式求值，约 86% 的准入开销来自其他环节。文章通过逐环节定位真实瓶颈，为 Kubernetes 准入控制优化指明方向。",
+    "items": [
+      {
+        "id": "aihot-20261123-cncf-blog-70921269",
+        "title": "优化 Kubernetes 准入控制：Kyverno 的 CEL 准入成本究竟花在哪",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-23T19:06:28.636Z",
+        "url": "https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/",
+        "score": 82
+      }
+    ]
+  },
+  {
+    "id": "hot-00664211",
+    "rank": 8,
+    "title": "NVIDIA 捐赠 OpenShell 加入 CNCF 沙箱项目：以开放治理保障 Agentic AI 安全",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "开源生态"
+    ],
+    "heatScore": 82.7,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T19:06:28.635Z",
+    "summary": "NVIDIA 在 KubeCon + CloudNativeCon North America 上将开源运行时 OpenShell 捐赠给 CNCF，使其成为沙箱（Sandbox）项目。OpenShell 专注于为自主 AI 代理（agentic AI）提供安全防护与治理，CNCF 将以开放治理模式托管该项目。",
+    "items": [
+      {
+        "id": "aihot-20261123-cncf-blog-aca02c4b",
+        "title": "NVIDIA 捐赠 OpenShell 加入 CNCF 沙箱项目：以开放治理保障 Agentic AI 安全",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-23T19:06:28.635Z",
+        "url": "https://www.cncf.io/blog/2026/11/10/welcoming-openshell-to-the-cncf-open-governance-to-secure-agentic-ai/",
+        "score": 80
+      }
+    ]
+  },
+  {
     "id": "hot-8def6855",
-    "rank": 6,
+    "rank": 9,
     "title": "黄仁勋复职带动AI相关股票普涨 英伟达市值数小时增逾1万亿美元",
     "industry": "金融与政策",
     "topics": [
@@ -204,7 +280,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 84.5,
+    "heatScore": 82.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:51:40.000Z",
     "summary": "英伟达宣布恢复黄仁勋总裁兼首席执行官职务并立即生效，AI相关股票应声普涨，英伟达股价一度上涨35%，创2000年以来最大盘中涨幅。受此带动，英伟达市值数小时内增逾1万亿美元。",
@@ -220,8 +296,33 @@
     ]
   },
   {
+    "id": "hot-6e524e28",
+    "rank": 10,
+    "title": "同步窗口关闭时：Argo CD self-heal 是如何跳过迁移 hook 的",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "研发效能",
+      "开源生态"
+    ],
+    "heatScore": 81.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T19:06:28.635Z",
+    "summary": "CNCF 博客复盘一则真实案例：客户推送发布后 Argo CD 报告同步成功，迁移 hook 却未执行，根因是同步窗口关闭后 self-heal 跳过了迁移 hook。文章拆解了这一行为背后的机制，帮助依赖同步窗口与 hook 的团队避开同类问题。",
+    "items": [
+      {
+        "id": "aihot-20261123-cncf-blog-7829f3b4",
+        "title": "同步窗口关闭时：Argo CD self-heal 是如何跳过迁移 hook 的",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-23T19:06:28.635Z",
+        "url": "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/",
+        "score": 78
+      }
+    ]
+  },
+  {
     "id": "hot-d475a203",
-    "rank": 7,
+    "rank": 11,
     "title": "特朗普透露：曾直接与英伟达董事会沟通黄仁勋事宜",
     "industry": "金融与政策",
     "topics": [
@@ -230,7 +331,7 @@
       "市场",
       "A股"
     ],
-    "heatScore": 82.9,
+    "heatScore": 80.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:36:16.000Z",
     "summary": "美国总统特朗普透露，在黄仁勋复职之前，他曾直接与英伟达董事会沟通黄仁勋事宜。特朗普还表示，自己已于周日晚间与复职的英伟达CEO黄仁勋通了电话。上述信息是特朗普在接受记者埃蒙·贾弗尔斯电话采访时作出的披露。",
@@ -255,7 +356,7 @@
   },
   {
     "id": "hot-4d347bb7",
-    "rank": 8,
+    "rank": 12,
     "title": "美股为何迎来2008年以来波动最剧烈的周一早盘",
     "industry": "金融与政策",
     "topics": [
@@ -264,7 +365,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 81,
+    "heatScore": 79,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:01:25.000Z",
     "summary": "美股周一早盘波动剧烈程度创2008年以来之最，此前一周遭华尔街疯狂抛售的AI相关资产被资金大举买回。跟踪纳指100的景顺QQQ信托开盘大涨近8%，创下该基金1999年以来的纪录。",
@@ -281,7 +382,7 @@
   },
   {
     "id": "hot-32fa1be4",
-    "rank": 9,
+    "rank": 13,
     "title": "英伟达恢复黄仁勋总裁兼CEO职务，AI概念股大涨",
     "industry": "金融与政策",
     "topics": [
@@ -289,7 +390,7 @@
       "AI",
       "宏观"
     ],
-    "heatScore": 80.9,
+    "heatScore": 78.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:04:13.000Z",
     "summary": "英伟达（Nvidia）宣布即刻恢复黄仁勋总裁兼首席执行官（CEO）职务。受此消息推动，AI相关个股周一大涨。",
@@ -306,7 +407,7 @@
   },
   {
     "id": "hot-14b7c534",
-    "rank": 10,
+    "rank": 14,
     "title": "黄仁勋重掌英伟达帅印：董事会恢复其CEO职务，股价暴涨27%",
     "industry": "金融与政策",
     "topics": [
@@ -315,7 +416,7 @@
       "AI产业链",
       "宏观"
     ],
-    "heatScore": 80.9,
+    "heatScore": 78.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:34:27.000Z",
     "summary": "英伟达董事会已恢复黄仁勋的CEO职务，公司股价应声大涨27%。黄仁勋重掌英伟达帅印，市场对这一管理层变动反应强烈。",
@@ -332,7 +433,7 @@
   },
   {
     "id": "hot-a46a8bed",
-    "rank": 11,
+    "rank": 15,
     "title": "Z.ai 发布 7500 亿参数旗舰模型 GLM-5.4，跟随 OpenAI 布局循环 Transformer 架构",
     "industry": "AI",
     "topics": [
@@ -341,7 +442,7 @@
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 80.2,
+    "heatScore": 78.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:13:03.000Z",
     "summary": "Z.ai 发布旗舰模型 GLM-5.4，将 7500 亿参数模型迁移至循环架构，让 28 层网络运行两次。公司称该设计能让其匹敌 2 至 3 万亿参数的模型，但目前基准成绩仅来自较小的 30B 测试模型。Z.ai 将 GLM-5.4 定位为\"泛化编码\"（Generalized Coding）的开端，代码还可生成视频、游戏和 CAD 模型。",
@@ -358,7 +459,7 @@
   },
   {
     "id": "hot-47506176",
-    "rank": 12,
+    "rank": 16,
     "title": "监管部门向券商下发两融新政通知：落实融资融券逆周期调节措施",
     "industry": "金融与政策",
     "topics": [
@@ -367,7 +468,7 @@
       "监管动态",
       "港股"
     ],
-    "heatScore": 79.8,
+    "heatScore": 77.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:35:36.000Z",
     "summary": "11月23日，监管部门向券商下发《关于落实融资融券逆周期调节措施、提升风险管控有效性有关工作的通知》。该通知围绕落实两融逆周期调节措施、提升风险管控有效性提出要求，属两融领域新政。",
@@ -384,7 +485,7 @@
   },
   {
     "id": "hot-4b4b8839",
-    "rank": 13,
+    "rank": 17,
     "title": "RoboTrack：面向真实世界机器人操作场景的点跟踪",
     "industry": "AI",
     "topics": [
@@ -393,7 +494,7 @@
       "开源生态",
       "模型发布"
     ],
-    "heatScore": 79.4,
+    "heatScore": 77.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:20:37.000Z",
     "summary": "AI2（Allen Institute for AI）在 Hugging Face 官方博客介绍 RoboTrack，一个面向真实世界机器人操作场景的点跟踪工作。该项目由官方以开源形式发布，聚焦机器人操作任务中的点级运动追踪。",
@@ -410,7 +511,7 @@
   },
   {
     "id": "hot-bcc90a73",
-    "rank": 14,
+    "rank": 18,
     "title": "黄仁勋时隔12天重回英伟达CEO宝座 苹果乔布斯当年等了12年",
     "industry": "金融与政策",
     "topics": [
@@ -419,7 +520,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 79.2,
+    "heatScore": 77.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:46:34.000Z",
     "summary": "英伟达董事会仅用12天就撤销罢免黄仁勋的决定，黄仁勋重回CEO职位。作为对照，苹果乔布斯当年重返CEO等了12年，而三年前的同一周，OpenAI撤换山姆·奥特曼后不到五天就完成了同样的复位。",
@@ -436,7 +537,7 @@
   },
   {
     "id": "hot-4a1d3983",
-    "rank": 15,
+    "rank": 19,
     "title": "黄仁勋回归点燃科技债反弹，全球信用风险指标大幅回落",
     "industry": "金融与政策",
     "topics": [
@@ -445,7 +546,7 @@
       "市场政策",
       "美股"
     ],
-    "heatScore": 79,
+    "heatScore": 77,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:54:06.000Z",
     "summary": "黄仁勋回归的消息点燃科技债反弹，全球信用风险指标大幅回落。科技板块信用压力担忧随之明显降温，信用风险定价快速修复。",
@@ -461,132 +562,26 @@
     ]
   },
   {
-    "id": "hot-0ba71f06",
-    "rank": 16,
-    "title": "纽约诉讼案令市场预测平台Kalshi面临全美停运威胁",
-    "industry": "金融与政策",
-    "topics": [
-      "金融与政策",
-      "海外动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 78.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T16:54:22.000Z",
-    "summary": "市场预测平台Kalshi因一起纽约诉讼案面临全美停运威胁，其全美业务能否继续运营取决于案件走向。这是预测市场平台在美合规运营面临的一项关键法律挑战。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-50928167",
-        "title": "纽约诉讼案令市场预测平台Kalshi面临全美停运威胁",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T16:54:22.000Z",
-        "url": "https://finance.eastmoney.com/a/202611243937731659.html",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-fc120d76",
-    "rank": 17,
-    "title": "瑞银160亿美元资本金法案辩论转向修正案，至少四项提案竞争",
-    "industry": "金融与政策",
-    "topics": [
-      "监管政策",
-      "银行与金融",
-      "宏观与政策",
-      "美股"
-    ],
-    "heatScore": 78.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T16:53:06.000Z",
-    "summary": "瑞士议员将于周二就瑞银集团(UBS)资本金要求召开会议，法案辩论转向修正案阶段，目前至少有四项相互竞争的提案摆上桌面。各方分歧明显，通往共识的路径尚不明朗。",
-    "items": [
-      {
-        "id": "aihot-20261123-bloomberg-markets-c9658a38",
-        "title": "瑞银160亿美元资本金法案辩论转向修正案，至少四项提案竞争",
-        "source": "Bloomberg Markets",
-        "publishedAt": "2026-11-23T16:53:06.000Z",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-23/ubs-debate-turns-to-amendments-on-16-billion-capital-bill",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-ee5aebce",
-    "rank": 18,
-    "title": "Google Research 研究如何增强 Transformer 残差连接",
-    "industry": "AI",
-    "topics": [
-      "AI 研究",
-      "模型架构",
-      "研究",
-      "基础设施"
-    ],
-    "heatScore": 78.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T17:21:12.000Z",
-    "summary": "Google Research 发文探讨如何增强 Transformer 的残差连接。该项工作归属于其算法与理论（Algorithms & Theory）研究方向。",
-    "items": [
-      {
-        "id": "aihot-20261123-google-research-e7441471",
-        "title": "Google Research 研究如何增强 Transformer 残差连接",
-        "source": "Google Research",
-        "publishedAt": "2026-11-23T17:21:12.000Z",
-        "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
-        "score": 76
-      }
-    ]
-  },
-  {
-    "id": "hot-9a7a8d44",
-    "rank": 19,
-    "title": "Sierra 完成 17.5 亿美元 F 轮融资，估值半年翻倍至 300 亿美元",
-    "industry": "AI",
-    "topics": [
-      "市场动态",
-      "融资",
-      "模型发布",
-      "基础设施"
-    ],
-    "heatScore": 77.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T14:43:03.000Z",
-    "summary": "由前 Salesforce 联合 CEO Bret Taylor 联合创办的企业级客户体验公司 Sierra 周一宣布完成 17.5 亿美元 F 轮融资，估值在半年内翻倍至 300 亿美元。融资之际，市场对 AI 在客户体验领域应用的需求正快速升温。",
-    "items": [
-      {
-        "id": "aihot-20261123-techcrunch-ai-0527ded0",
-        "title": "Sierra 完成 17.5 亿美元 F 轮融资，估值半年翻倍至 300 亿美元",
-        "source": "TechCrunch · AI",
-        "publishedAt": "2026-11-23T14:43:03.000Z",
-        "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
-        "score": 85
-      }
-    ]
-  },
-  {
-    "id": "hot-4ce9ef76",
+    "id": "hot-b5424780",
     "rank": 20,
-    "title": "微创医疗获香港联交所复牌指引：六项条件待解，法证调查扩至关联方多宗交易",
-    "industry": "金融与政策",
+    "title": "CNCF 博客：如何在不由你掌控的 Kubernetes 环境中为应用提供支持",
+    "industry": "工程与开源",
     "topics": [
-      "港股",
-      "公司治理",
-      "监管动态",
-      "A股"
+      "云原生",
+      "开源生态"
     ],
-    "heatScore": 76.9,
+    "heatScore": 76.7,
     "sourceCount": 1,
-    "latestAt": "2026-11-23T15:57:13.000Z",
-    "summary": "停牌近三个月的微创医疗（00853.HK）于11月23日披露香港联交所复牌指引，涉及六项待解条件。指引将独立法证调查范围从物业租赁协议扩大至求真务实基金有限公司与本集团或常兆华博士家人之间长期进行的多宗交易，并要求证明管理层及相关人士的诚信、能力及品格并无合理监管疑虑。",
+    "latestAt": "2026-11-23T19:06:28.635Z",
+    "summary": "CNCF 博客发布实践指南，讲解如何在客户自行运行的 Kubernetes 环境中为应用提供支持，这类环境的集群配置、升级节奏与周边工具都不受你控制。文章指出，让应用在 Kubernetes 上跑起来是一回事，在客户环境中持续提供支持是另一回事。",
     "items": [
       {
-        "id": "aihot-20261123-eastmoney-724-d8322473",
-        "title": "微创医疗获香港联交所复牌指引：六项条件待解，法证调查扩至关联方多宗交易",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T15:57:13.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937695112.html",
-        "score": 79
+        "id": "aihot-20261123-cncf-blog-764e1bed",
+        "title": "CNCF 博客：如何在不由你掌控的 Kubernetes 环境中为应用提供支持",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-23T19:06:28.635Z",
+        "url": "https://www.cncf.io/blog/2026/11/19/how-to-support-your-app-on-kubernetes-environments-you-dont-control/",
+        "score": 70
       }
     ]
   }
