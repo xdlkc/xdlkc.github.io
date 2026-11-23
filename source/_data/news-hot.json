@@ -10,7 +10,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 95.5,
+    "heatScore": 93.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:20:50.000Z",
     "summary": "交大思诺11月23日公告，董事长李伟提议以自有资金或自筹资金回购公司部分A股股份，回购资金总额不低于2000万元且不超过4000万元。回购将通过深交所交易系统以集中竞价方式进行，拟用于股权激励或员工持股计划。",
@@ -68,7 +68,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 95,
+    "heatScore": 93.4,
     "sourceCount": 2,
     "latestAt": "2026-11-23T08:53:13.000Z",
     "summary": "加拿大皇家银行策略团队将标普500十二个月目标点位下调至8050点，略低于9月给出的8150点，但仍预计未来一年有16.5%的上涨空间。由洛里·卡尔瓦西纳牵头的团队认为股市已充分计入诸多利空，强劲的经济增长与企业盈利能够对冲估值进一步压缩以及美联储加息带来的压力。",
@@ -102,7 +102,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 89.2,
+    "heatScore": 87.7,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:42:58.000Z",
     "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
@@ -136,7 +136,7 @@
       "AI产业链",
       "宏观"
     ],
-    "heatScore": 89.2,
+    "heatScore": 87.7,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:34:27.000Z",
     "summary": "英伟达董事会已恢复黄仁勋的CEO职务，公司股价应声大涨27%。黄仁勋重掌英伟达帅印，市场对这一管理层变动反应强烈。",
@@ -152,8 +152,34 @@
     ]
   },
   {
-    "id": "hot-47506176",
+    "id": "hot-a46a8bed",
     "rank": 5,
+    "title": "Z.ai 发布 7500 亿参数旗舰模型 GLM-5.4，跟随 OpenAI 布局循环 Transformer 架构",
+    "industry": "AI",
+    "topics": [
+      "大模型",
+      "模型架构",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "heatScore": 87,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T15:13:03.000Z",
+    "summary": "Z.ai 发布旗舰模型 GLM-5.4，将 7500 亿参数模型迁移至循环架构，让 28 层网络运行两次。公司称该设计能让其匹敌 2 至 3 万亿参数的模型，但目前基准成绩仅来自较小的 30B 测试模型。Z.ai 将 GLM-5.4 定位为\"泛化编码\"（Generalized Coding）的开端，代码还可生成视频、游戏和 CAD 模型。",
+    "items": [
+      {
+        "id": "aihot-20261123-the-decoder-b3f52b71",
+        "title": "Z.ai 发布 7500 亿参数旗舰模型 GLM-5.4，跟随 OpenAI 布局循环 Transformer 架构",
+        "source": "The Decoder",
+        "publishedAt": "2026-11-23T15:13:03.000Z",
+        "url": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/",
+        "score": 88
+      }
+    ]
+  },
+  {
+    "id": "hot-47506176",
+    "rank": 6,
     "title": "监管部门向券商下发两融新政通知：落实融资融券逆周期调节措施",
     "industry": "金融与政策",
     "topics": [
@@ -162,7 +188,7 @@
       "监管动态",
       "港股"
     ],
-    "heatScore": 88.1,
+    "heatScore": 86.6,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:35:36.000Z",
     "summary": "11月23日，监管部门向券商下发《关于落实融资融券逆周期调节措施、提升风险管控有效性有关工作的通知》。该通知围绕落实两融逆周期调节措施、提升风险管控有效性提出要求，属两融领域新政。",
@@ -179,7 +205,7 @@
   },
   {
     "id": "hot-bcc90a73",
-    "rank": 6,
+    "rank": 7,
     "title": "黄仁勋时隔12天重回英伟达CEO宝座 苹果乔布斯当年等了12年",
     "industry": "金融与政策",
     "topics": [
@@ -188,7 +214,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 87.3,
+    "heatScore": 85.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:46:34.000Z",
     "summary": "英伟达董事会仅用12天就撤销罢免黄仁勋的决定，黄仁勋重回CEO职位。作为对照，苹果乔布斯当年重返CEO等了12年，而三年前的同一周，OpenAI撤换山姆·奥特曼后不到五天就完成了同样的复位。",
@@ -205,7 +231,7 @@
   },
   {
     "id": "hot-9a7a8d44",
-    "rank": 7,
+    "rank": 8,
     "title": "Sierra 完成 17.5 亿美元 F 轮融资，估值半年翻倍至 300 亿美元",
     "industry": "AI",
     "topics": [
@@ -214,7 +240,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 85.4,
+    "heatScore": 84,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:43:03.000Z",
     "summary": "由前 Salesforce 联合 CEO Bret Taylor 联合创办的企业级客户体验公司 Sierra 周一宣布完成 17.5 亿美元 F 轮融资，估值在半年内翻倍至 300 亿美元。融资之际，市场对 AI 在客户体验领域应用的需求正快速升温。",
@@ -231,7 +257,7 @@
   },
   {
     "id": "hot-036e97a0",
-    "rank": 8,
+    "rank": 9,
     "title": "国家发改委等四部门印发《“一老一小”服务体系建设实施方案》",
     "industry": "金融与政策",
     "topics": [
@@ -240,7 +266,7 @@
       "宏观经济",
       "A股"
     ],
-    "heatScore": 84.8,
+    "heatScore": 83.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T08:45:56.383Z",
     "summary": "国家发展改革委、民政部、国家卫生健康委、教育部四部门联合印发《“一老一小”服务体系建设实施方案》。方案聚焦养老与儿童服务两大民生领域，由四部委协同部署推进。",
@@ -273,7 +299,7 @@
   },
   {
     "id": "hot-fec5945e",
-    "rank": 9,
+    "rank": 10,
     "title": "美股科技大反攻！黄仁勋回归，英伟达涨超30%，纳斯达克100涨7%，布油失守90美元",
     "industry": "金融与政策",
     "topics": [
@@ -281,7 +307,7 @@
       "宏观",
       "市场政策"
     ],
-    "heatScore": 83.5,
+    "heatScore": 82.1,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:40:02.000Z",
     "summary": "美股科技股迎来大反攻，黄仁勋回归，英伟达涨超30%，纳斯达克100指数上涨7%。布伦特原油同期失守90美元关口。",
@@ -298,7 +324,7 @@
   },
   {
     "id": "hot-714107f0",
-    "rank": 10,
+    "rank": 11,
     "title": "费城半导体指数盘初大涨超14%",
     "industry": "金融与政策",
     "topics": [
@@ -307,7 +333,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 83.4,
+    "heatScore": 82,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:36:56.000Z",
     "summary": "费城半导体指数盘初大涨超14%，其中英伟达涨超30%，台积电涨超20%。ARM涨超18%，美光科技涨超15%，英特尔涨超13%，AMD、高通均涨超8%，半导体龙头全线上扬。",
@@ -324,7 +350,7 @@
   },
   {
     "id": "hot-10936fa0",
-    "rank": 11,
+    "rank": 12,
     "title": "特朗普称美国政府没有证据表明黄仁勋有不合法行为",
     "industry": "金融与政策",
     "topics": [
@@ -333,7 +359,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 82.5,
+    "heatScore": 81.1,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:45:27.000Z",
     "summary": "美国总统特朗普23日在社交媒体发文称，美国司法部长已确认政府没有证据表明黄仁勋有不合法行为。他表示英伟达董事会让黄仁勋重新担任首席执行官是\"正确且恰当的决定\"，没有理由认为其回归会对国家安全构成任何风险。",
@@ -350,7 +376,7 @@
   },
   {
     "id": "hot-624eed47",
-    "rank": 12,
+    "rank": 13,
     "title": "美国情报机构跟踪英伟达丑闻人物与中国情报部门联系超一年",
     "industry": "AI",
     "topics": [
@@ -359,7 +385,7 @@
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 82.5,
+    "heatScore": 81.1,
     "sourceCount": 1,
     "latestAt": "2026-11-23T13:45:32.000Z",
     "summary": "据《纽约时报》报道，美国情报机构对爱丽丝·黄与中国国家安全部的接触跟踪超过一年，监视期间她还与时任英伟达CEO黄仁勋保持秘密恋情。联邦调查人员正调查一个东南亚公司网络是否被用于向中国走私AI芯片、违反美国出口管制。黄仁勋定于12月1日在美国众议院作证。",
@@ -375,8 +401,32 @@
     ]
   },
   {
+    "id": "hot-c9ed6188",
+    "rank": 14,
+    "title": "Cloudflare 如何探测 DNS",
+    "industry": "工程与开源",
+    "topics": [
+      "研发效能",
+      "云原生"
+    ],
+    "heatScore": 78.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T14:00:00.000Z",
+    "summary": "Cloudflare 分享了其 DNS 探测的工程实践：公司构建了可扩展的内部测试框架，支持各团队为网络协议搭建专用测试工具。这套框架已被用于 DNS，文章讲述了从通用测试能力到 DNS 探测工具的落地过程。",
+    "items": [
+      {
+        "id": "aihot-20261123-cloudflare-blog-118e4472",
+        "title": "Cloudflare 如何探测 DNS",
+        "source": "Cloudflare Blog",
+        "publishedAt": "2026-11-23T14:00:00.000Z",
+        "url": "https://blog.cloudflare.com/probing-dns-at-cloudflare/",
+        "score": 78
+      }
+    ]
+  },
+  {
     "id": "hot-cb3700e2",
-    "rank": 13,
+    "rank": 15,
     "title": "GPT-6.2 Astra 解出其他 AI 均未攻克的数学定理，并自创证明策略",
     "industry": "AI",
     "topics": [
@@ -385,7 +435,7 @@
       "基准测试",
       "模型发布"
     ],
-    "heatScore": 79,
+    "heatScore": 77.7,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:17:01.000Z",
     "summary": "OpenAI 的 GPT-6.2 Astra 独立给出 Smoktunowicz 间隙定理的机器可验证 Lean 证明，据 Vals AI 称属同类成果中的首次。由于 Mathlib 缺少关键基础，模型自行设计证明路径。在 Autoform-Hard 基准上，Astra 以 56 题解出 49 题位居榜首。",
@@ -402,7 +452,7 @@
   },
   {
     "id": "hot-c5fac465",
-    "rank": 14,
+    "rank": 16,
     "title": "盘前：纳指期货涨3.68% 半导体等科技股领涨",
     "industry": "金融与政策",
     "topics": [
@@ -411,7 +461,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 78.6,
+    "heatScore": 77.3,
     "sourceCount": 1,
     "latestAt": "2026-11-23T13:34:23.000Z",
     "summary": "周一盘前，美国纳指期货上涨3.68%，半导体等科技股领涨，股指期货正从此前人工智能相关股票的猛烈抛售中反弹。这轮抛售此前已导致标普500指数进入技术性回调区间。",
@@ -428,7 +478,7 @@
   },
   {
     "id": "hot-eaf4bfae",
-    "rank": 15,
+    "rank": 17,
     "title": "标普、纳指有望终结“七连跌”，英伟达反弹近9%",
     "industry": "金融与政策",
     "topics": [
@@ -437,7 +487,7 @@
       "美股",
       "宏观"
     ],
-    "heatScore": 78.6,
+    "heatScore": 77.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T13:33:55.000Z",
     "summary": "美股标普、纳指有望终结连续七个交易日的下跌走势，英伟达反弹近9%。财联社“今夜看点”栏目对当晚美股市场动态进行了播报。",
@@ -454,7 +504,7 @@
   },
   {
     "id": "hot-84b37b59",
-    "rank": 16,
+    "rank": 18,
     "title": "中际旭创拟20亿元至40亿元回购A股股份，回购价不超过600元/股",
     "industry": "金融与政策",
     "topics": [
@@ -463,7 +513,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 77.3,
+    "heatScore": 76,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:29:00.000Z",
     "summary": "中际旭创11月23日公告，拟以自有或自筹资金通过集中竞价方式回购A股股份，回购金额不低于20亿元且不超过40亿元，回购价格不超过600元/股。按上限测算预计回购约666.67万股，占总股本的0.57%；按下限测算约333.33万股，占0.28%。回购股份将用于员工持股计划或股权激励以及维护公司价值及股东权益，回购期限为董事会审议通过之日起不超过3个月。",
@@ -480,7 +530,7 @@
   },
   {
     "id": "hot-7246f443",
-    "rank": 17,
+    "rank": 19,
     "title": "诺华首个siRNA降胆固醇疗法心血管结局研究达到主要终点",
     "industry": "金融与政策",
     "topics": [
@@ -489,7 +539,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 77.2,
+    "heatScore": 75.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:28:24.000Z",
     "summary": "诺华宣布III期ORION-4研究取得积极顶线结果，其siRNA降胆固醇疗法英克司兰钠注射液达到主要终点。该研究首次为英克司兰钠注射液用于已确诊动脉粥样硬化性心血管疾病（ASCVD）患者提供心血管结局证据。",
@@ -506,7 +556,7 @@
   },
   {
     "id": "hot-6e2f9910",
-    "rank": 18,
+    "rank": 20,
     "title": "代币化股票遭遇抵制，纽交所、纳斯达克转向布局新市场",
     "industry": "金融与政策",
     "topics": [
@@ -515,7 +565,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 77.2,
+    "heatScore": 75.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:27:14.000Z",
     "summary": "纽交所与纳斯达克对代币化股票相关计划表示抵制，并转向布局新市场。据参与相关企业沟通的人士称，仅 30 天的异议窗口期留给公司的反应、决策时间非常紧张，来不及判断是否愿意参与。引发争议的代币化股票计划由洲际交易所（ICE）与加密交易所 OKX 合作推出。",
@@ -527,58 +577,6 @@
         "publishedAt": "2026-11-23T12:27:14.000Z",
         "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztrzw2239574.shtml",
         "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-a10b688a",
-    "rank": 19,
-    "title": "特朗普关税担忧缓解，交易商开始将美国铜运往中国",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "大宗商品",
-      "市场动态",
-      "宏观"
-    ],
-    "heatScore": 77,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T12:21:55.000Z",
-    "summary": "随着特朗普关税担忧缓解，交易商开始将美国铜运往中国。中国铜供应紧缺、本地溢价高企，造就丰厚套利机会。",
-    "items": [
-      {
-        "id": "aihot-20261123-ft-markets-f9662eb5",
-        "title": "特朗普关税担忧缓解，交易商开始将美国铜运往中国",
-        "source": "Financial Times · Markets",
-        "publishedAt": "2026-11-23T12:21:55.000Z",
-        "url": "https://www.ft.com/content/b84dbcb1-f216-422e-89c7-f203e0ab2757?syn-25a6b1a6=1",
-        "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-d4c36366",
-    "rank": 20,
-    "title": "Meta Muse 现在可在沃尔玛代你完成黑五购物",
-    "industry": "AI",
-    "topics": [
-      "AI应用",
-      "零售电商",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "heatScore": 75.6,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T11:00:00.000Z",
-    "summary": "沃尔玛现已开放 Meta 的 Muse AI 代理在其网站代用户购物，可自动查找并购买黑色星期五优惠商品。这是沃尔玛上月发布的 Agent Gateway 的实际落地实现，可在不共享用户购买历史的前提下帮助 AI 代理找到相关商品。",
-    "items": [
-      {
-        "id": "aihot-20261123-the-verge-ai-d4db29de",
-        "title": "Meta Muse 现在可在沃尔玛代你完成黑五购物",
-        "source": "The Verge · AI",
-        "publishedAt": "2026-11-23T11:00:00.000Z",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
-        "score": 83
       }
     ]
   }
