@@ -1,7 +1,83 @@
 [
   {
-    "id": "hot-b146512e",
+    "id": "hot-a3ee9641",
     "rank": 1,
+    "title": "黄仁勋恢复英伟达CEO职务后，下周将出席美国参议院公开听证",
+    "industry": "AI",
+    "topics": [
+      "政策监管",
+      "行业动态",
+      "模型发布",
+      "基础设施"
+    ],
+    "heatScore": 117.5,
+    "sourceCount": 2,
+    "latestAt": "2026-11-23T18:12:22.000Z",
+    "summary": "黄仁勋在恢复英伟达CEO职务后，已确定下周出席美国参议院公开听证会作证。此次听证源于两党议员就其与一名疑似中国间谍者的恋情事件发出的作证呼吁。",
+    "items": [
+      {
+        "id": "aihot-20261123-techcrunch-ai-80268d9e",
+        "title": "黄仁勋恢复英伟达CEO职务后，下周将出席美国参议院公开听证",
+        "source": "TechCrunch · AI",
+        "publishedAt": "2026-11-23T18:12:22.000Z",
+        "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+        "score": 80
+      },
+      {
+        "id": "aihot-20261123-sina-finance-e8da2e06",
+        "title": "英伟达CEO黄仁勋将于12月3日出席美国参议院银行委员会公开听证会作证",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-23T17:20:52.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuars2138301.shtml",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "hot-7f55bab1",
+    "rank": 2,
+    "title": "英伟达美股盘前涨超9%",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 96.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T17:51:39.000Z",
+    "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
+    "items": [
+      {
+        "id": "aihot-20261123-eastmoney-724-5c8edf18",
+        "title": "英伟达美股盘前涨超9%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T13:42:00.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937569623.html",
+        "score": 78
+      },
+      {
+        "id": "aihot-20261123-eastmoney-724-e3ae9c54",
+        "title": "英伟达涨幅收窄至25%，此前一度上涨33%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T14:42:58.000Z",
+        "url": "https://finance.eastmoney.com/a/202611233937641971.html",
+        "score": 55
+      },
+      {
+        "id": "aihot-20261123-eastmoney-724-0a0e1bec",
+        "title": "英伟达股价涨幅收窄至30%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T17:51:39.000Z",
+        "url": "https://finance.eastmoney.com/a/202611243937744415.html",
+        "score": 50
+      }
+    ]
+  },
+  {
+    "id": "hot-b146512e",
+    "rank": 3,
     "title": "英伟达重新任命黄仁勋，上演惊人回归",
     "industry": "金融与政策",
     "topics": [
@@ -10,7 +86,7 @@
       "公司动态",
       "宏观"
     ],
-    "heatScore": 88.1,
+    "heatScore": 87.1,
     "sourceCount": 1,
     "latestAt": "2026-11-23T16:54:43.000Z",
     "summary": "英伟达董事会重新任命黄仁勋执掌这家全球最大芯片制造商，成为史上最令人震惊的企业回归案例之一。消息推动英伟达股价录得数十年来最大涨幅。彭博记者 Ed Ludlow 解读了这一事件的来龙去脉。",
@@ -27,7 +103,7 @@
   },
   {
     "id": "hot-5466adef",
-    "rank": 2,
+    "rank": 4,
     "title": "交大思诺董事长提议回购2000万元至4000万元公司股份",
     "industry": "金融与政策",
     "topics": [
@@ -36,7 +112,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 87.6,
+    "heatScore": 86.6,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:20:50.000Z",
     "summary": "交大思诺11月23日公告，董事长李伟提议以自有资金或自筹资金回购公司部分A股股份，回购资金总额不低于2000万元且不超过4000万元。回购将通过深交所交易系统以集中竞价方式进行，拟用于股权激励或员工持股计划。",
@@ -85,7 +161,7 @@
   },
   {
     "id": "hot-ec51062d",
-    "rank": 3,
+    "rank": 5,
     "title": "加拿大皇家银行下调标普500十二个月目标位至8050点 仍看好16.5%上行空间",
     "industry": "金融与政策",
     "topics": [
@@ -94,7 +170,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 87.1,
+    "heatScore": 86.1,
     "sourceCount": 2,
     "latestAt": "2026-11-23T08:53:13.000Z",
     "summary": "加拿大皇家银行策略团队将标普500十二个月目标点位下调至8050点，略低于9月给出的8150点，但仍预计未来一年有16.5%的上涨空间。由洛里·卡尔瓦西纳牵头的团队认为股市已充分计入诸多利空，强劲的经济增长与企业盈利能够对冲估值进一步压缩以及美联储加息带来的压力。",
@@ -119,7 +195,7 @@
   },
   {
     "id": "hot-8def6855",
-    "rank": 4,
+    "rank": 6,
     "title": "黄仁勋复职带动AI相关股票普涨 英伟达市值数小时增逾1万亿美元",
     "industry": "金融与政策",
     "topics": [
@@ -128,7 +204,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 85.4,
+    "heatScore": 84.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:51:40.000Z",
     "summary": "英伟达宣布恢复黄仁勋总裁兼首席执行官职务并立即生效，AI相关股票应声普涨，英伟达股价一度上涨35%，创2000年以来最大盘中涨幅。受此带动，英伟达市值数小时内增逾1万亿美元。",
@@ -145,7 +221,7 @@
   },
   {
     "id": "hot-d475a203",
-    "rank": 5,
+    "rank": 7,
     "title": "特朗普透露：曾直接与英伟达董事会沟通黄仁勋事宜",
     "industry": "金融与政策",
     "topics": [
@@ -154,7 +230,7 @@
       "市场",
       "A股"
     ],
-    "heatScore": 83.9,
+    "heatScore": 82.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:36:16.000Z",
     "summary": "美国总统特朗普透露，在黄仁勋复职之前，他曾直接与英伟达董事会沟通黄仁勋事宜。特朗普还表示，自己已于周日晚间与复职的英伟达CEO黄仁勋通了电话。上述信息是特朗普在接受记者埃蒙·贾弗尔斯电话采访时作出的披露。",
@@ -179,7 +255,7 @@
   },
   {
     "id": "hot-4d347bb7",
-    "rank": 6,
+    "rank": 8,
     "title": "美股为何迎来2008年以来波动最剧烈的周一早盘",
     "industry": "金融与政策",
     "topics": [
@@ -188,7 +264,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 81.9,
+    "heatScore": 81,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:01:25.000Z",
     "summary": "美股周一早盘波动剧烈程度创2008年以来之最，此前一周遭华尔街疯狂抛售的AI相关资产被资金大举买回。跟踪纳指100的景顺QQQ信托开盘大涨近8%，创下该基金1999年以来的纪录。",
@@ -205,7 +281,7 @@
   },
   {
     "id": "hot-32fa1be4",
-    "rank": 7,
+    "rank": 9,
     "title": "英伟达恢复黄仁勋总裁兼CEO职务，AI概念股大涨",
     "industry": "金融与政策",
     "topics": [
@@ -213,7 +289,7 @@
       "AI",
       "宏观"
     ],
-    "heatScore": 81.9,
+    "heatScore": 80.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:04:13.000Z",
     "summary": "英伟达（Nvidia）宣布即刻恢复黄仁勋总裁兼首席执行官（CEO）职务。受此消息推动，AI相关个股周一大涨。",
@@ -229,42 +305,8 @@
     ]
   },
   {
-    "id": "hot-06fd03cb",
-    "rank": 8,
-    "title": "英伟达美股盘前涨超9%",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 81.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T14:42:58.000Z",
-    "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-5c8edf18",
-        "title": "英伟达美股盘前涨超9%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T13:42:00.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937569623.html",
-        "score": 78
-      },
-      {
-        "id": "aihot-20261123-eastmoney-724-e3ae9c54",
-        "title": "英伟达涨幅收窄至25%，此前一度上涨33%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T14:42:58.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937641971.html",
-        "score": 55
-      }
-    ]
-  },
-  {
     "id": "hot-14b7c534",
-    "rank": 9,
+    "rank": 10,
     "title": "黄仁勋重掌英伟达帅印：董事会恢复其CEO职务，股价暴涨27%",
     "industry": "金融与政策",
     "topics": [
@@ -273,7 +315,7 @@
       "AI产业链",
       "宏观"
     ],
-    "heatScore": 81.8,
+    "heatScore": 80.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:34:27.000Z",
     "summary": "英伟达董事会已恢复黄仁勋的CEO职务，公司股价应声大涨27%。黄仁勋重掌英伟达帅印，市场对这一管理层变动反应强烈。",
@@ -290,7 +332,7 @@
   },
   {
     "id": "hot-a46a8bed",
-    "rank": 10,
+    "rank": 11,
     "title": "Z.ai 发布 7500 亿参数旗舰模型 GLM-5.4，跟随 OpenAI 布局循环 Transformer 架构",
     "industry": "AI",
     "topics": [
@@ -299,7 +341,7 @@
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 81.1,
+    "heatScore": 80.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:13:03.000Z",
     "summary": "Z.ai 发布旗舰模型 GLM-5.4，将 7500 亿参数模型迁移至循环架构，让 28 层网络运行两次。公司称该设计能让其匹敌 2 至 3 万亿参数的模型，但目前基准成绩仅来自较小的 30B 测试模型。Z.ai 将 GLM-5.4 定位为\"泛化编码\"（Generalized Coding）的开端，代码还可生成视频、游戏和 CAD 模型。",
@@ -316,7 +358,7 @@
   },
   {
     "id": "hot-47506176",
-    "rank": 11,
+    "rank": 12,
     "title": "监管部门向券商下发两融新政通知：落实融资融券逆周期调节措施",
     "industry": "金融与政策",
     "topics": [
@@ -325,7 +367,7 @@
       "监管动态",
       "港股"
     ],
-    "heatScore": 80.7,
+    "heatScore": 79.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:35:36.000Z",
     "summary": "11月23日，监管部门向券商下发《关于落实融资融券逆周期调节措施、提升风险管控有效性有关工作的通知》。该通知围绕落实两融逆周期调节措施、提升风险管控有效性提出要求，属两融领域新政。",
@@ -342,7 +384,7 @@
   },
   {
     "id": "hot-4b4b8839",
-    "rank": 12,
+    "rank": 13,
     "title": "RoboTrack：面向真实世界机器人操作场景的点跟踪",
     "industry": "AI",
     "topics": [
@@ -351,7 +393,7 @@
       "开源生态",
       "模型发布"
     ],
-    "heatScore": 80.3,
+    "heatScore": 79.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:20:37.000Z",
     "summary": "AI2（Allen Institute for AI）在 Hugging Face 官方博客介绍 RoboTrack，一个面向真实世界机器人操作场景的点跟踪工作。该项目由官方以开源形式发布，聚焦机器人操作任务中的点级运动追踪。",
@@ -368,7 +410,7 @@
   },
   {
     "id": "hot-bcc90a73",
-    "rank": 13,
+    "rank": 14,
     "title": "黄仁勋时隔12天重回英伟达CEO宝座 苹果乔布斯当年等了12年",
     "industry": "金融与政策",
     "topics": [
@@ -377,7 +419,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 80.1,
+    "heatScore": 79.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:46:34.000Z",
     "summary": "英伟达董事会仅用12天就撤销罢免黄仁勋的决定，黄仁勋重回CEO职位。作为对照，苹果乔布斯当年重返CEO等了12年，而三年前的同一周，OpenAI撤换山姆·奥特曼后不到五天就完成了同样的复位。",
@@ -393,8 +435,34 @@
     ]
   },
   {
+    "id": "hot-4a1d3983",
+    "rank": 15,
+    "title": "黄仁勋回归点燃科技债反弹，全球信用风险指标大幅回落",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观",
+      "金融市场",
+      "市场政策",
+      "美股"
+    ],
+    "heatScore": 79,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T17:54:06.000Z",
+    "summary": "黄仁勋回归的消息点燃科技债反弹，全球信用风险指标大幅回落。科技板块信用压力担忧随之明显降温，信用风险定价快速修复。",
+    "items": [
+      {
+        "id": "aihot-20261123-wscn-global-0f48bcd1",
+        "title": "黄仁勋回归点燃科技债反弹，全球信用风险指标大幅回落",
+        "source": "华尔街见闻 · 全球",
+        "publishedAt": "2026-11-23T17:54:06.000Z",
+        "url": "https://wallstreetcn.com/articles/3786543",
+        "score": 75
+      }
+    ]
+  },
+  {
     "id": "hot-0ba71f06",
-    "rank": 14,
+    "rank": 16,
     "title": "纽约诉讼案令市场预测平台Kalshi面临全美停运威胁",
     "industry": "金融与政策",
     "topics": [
@@ -403,7 +471,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 79.3,
+    "heatScore": 78.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T16:54:22.000Z",
     "summary": "市场预测平台Kalshi因一起纽约诉讼案面临全美停运威胁，其全美业务能否继续运营取决于案件走向。这是预测市场平台在美合规运营面临的一项关键法律挑战。",
@@ -420,7 +488,7 @@
   },
   {
     "id": "hot-fc120d76",
-    "rank": 15,
+    "rank": 17,
     "title": "瑞银160亿美元资本金法案辩论转向修正案，至少四项提案竞争",
     "industry": "金融与政策",
     "topics": [
@@ -429,7 +497,7 @@
       "宏观与政策",
       "美股"
     ],
-    "heatScore": 79.3,
+    "heatScore": 78.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T16:53:06.000Z",
     "summary": "瑞士议员将于周二就瑞银集团(UBS)资本金要求召开会议，法案辩论转向修正案阶段，目前至少有四项相互竞争的提案摆上桌面。各方分歧明显，通往共识的路径尚不明朗。",
@@ -446,7 +514,7 @@
   },
   {
     "id": "hot-ee5aebce",
-    "rank": 16,
+    "rank": 18,
     "title": "Google Research 研究如何增强 Transformer 残差连接",
     "industry": "AI",
     "topics": [
@@ -455,7 +523,7 @@
       "研究",
       "基础设施"
     ],
-    "heatScore": 79.2,
+    "heatScore": 78.3,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:21:12.000Z",
     "summary": "Google Research 发文探讨如何增强 Transformer 的残差连接。该项工作归属于其算法与理论（Algorithms & Theory）研究方向。",
@@ -472,7 +540,7 @@
   },
   {
     "id": "hot-9a7a8d44",
-    "rank": 17,
+    "rank": 19,
     "title": "Sierra 完成 17.5 亿美元 F 轮融资，估值半年翻倍至 300 亿美元",
     "industry": "AI",
     "topics": [
@@ -481,7 +549,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 78.3,
+    "heatScore": 77.4,
     "sourceCount": 1,
     "latestAt": "2026-11-23T14:43:03.000Z",
     "summary": "由前 Salesforce 联合 CEO Bret Taylor 联合创办的企业级客户体验公司 Sierra 周一宣布完成 17.5 亿美元 F 轮融资，估值在半年内翻倍至 300 亿美元。融资之际，市场对 AI 在客户体验领域应用的需求正快速升温。",
@@ -498,7 +566,7 @@
   },
   {
     "id": "hot-4ce9ef76",
-    "rank": 18,
+    "rank": 20,
     "title": "微创医疗获香港联交所复牌指引：六项条件待解，法证调查扩至关联方多宗交易",
     "industry": "金融与政策",
     "topics": [
@@ -507,7 +575,7 @@
       "监管动态",
       "A股"
     ],
-    "heatScore": 77.7,
+    "heatScore": 76.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:57:13.000Z",
     "summary": "停牌近三个月的微创医疗（00853.HK）于11月23日披露香港联交所复牌指引，涉及六项待解条件。指引将独立法证调查范围从物业租赁协议扩大至求真务实基金有限公司与本集团或常兆华博士家人之间长期进行的多宗交易，并要求证明管理层及相关人士的诚信、能力及品格并无合理监管疑虑。",
@@ -519,58 +587,6 @@
         "publishedAt": "2026-11-23T15:57:13.000Z",
         "url": "https://finance.eastmoney.com/a/202611233937695112.html",
         "score": 79
-      }
-    ]
-  },
-  {
-    "id": "hot-42c26604",
-    "rank": 19,
-    "title": "杰富瑞首次覆盖给予买入评级，SpaceX股价上涨6.6%",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 77.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T16:44:56.000Z",
-    "summary": "杰富瑞首次覆盖SpaceX（SPCX），给予买入评级并设定210美元目标价，SpaceX股价上涨6.6%。杰富瑞认为，经历IPO后的股价低迷，SpaceX值得买入。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-1dd1951a",
-        "title": "杰富瑞首次覆盖给予买入评级，SpaceX股价上涨6.6%",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T16:44:56.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuars2121501.shtml",
-        "score": 75
-      }
-    ]
-  },
-  {
-    "id": "hot-12193b5a",
-    "rank": 20,
-    "title": "英伟达尝试没有黄仁勋的日子，仅维持约两周",
-    "industry": "AI",
-    "topics": [
-      "行业动态",
-      "公司动态",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "heatScore": 77.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T14:24:47.000Z",
-    "summary": "英伟达董事会已重新任命黄仁勋为总裁、CEO 兼董事会成员，立即生效。此前英伟达'没有黄仁勋'的日子只持续了约两周。",
-    "items": [
-      {
-        "id": "aihot-20261123-the-decoder-f6c2ed8c",
-        "title": "英伟达尝试没有黄仁勋的日子，仅维持约两周",
-        "source": "The Decoder",
-        "publishedAt": "2026-11-23T14:24:47.000Z",
-        "url": "https://the-decoder.com/nvidia-tried-life-without-jensen-huang-and-it-lasted-about-two-weeks/",
-        "score": 84
       }
     ]
   }

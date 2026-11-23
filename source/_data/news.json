@@ -1,5 +1,357 @@
 [
   {
+    "id": "aihot-20261123-techcrunch-ai-80268d9e",
+    "title": "黄仁勋恢复英伟达CEO职务后，下周将出席美国参议院公开听证",
+    "originalTitle": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+    "author": "Aisha Malik",
+    "summary": "黄仁勋在恢复英伟达CEO职务后，已确定下周出席美国参议院公开听证会作证。此次听证源于两党议员就其与一名疑似中国间谍者的恋情事件发出的作证呼吁。",
+    "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+    "source": "TechCrunch · AI",
+    "publishedAt": "2026-11-23T18:12:22.000Z",
+    "score": 80,
+    "tier": "T2",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "政策监管",
+      "行业动态",
+      "模型发布",
+      "基础设施"
+    ],
+    "region": [
+      "AI精选",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "黄仁勋",
+      "英伟达",
+      "美国参议院",
+      "听证会"
+    ],
+    "context": "英伟达是AI算力核心供应商，其掌门人被国会质询的走向牵动AI行业与中美科技关系。",
+    "contentHtml": "<p><span>In Brief</span></p><p>Posted:</p><p>10:12 AM PST · November 23, 2026</p><figure><img width=\"1024\" height=\"681\" src=\"https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang.jpg?w=1024\" alt=\"Jensen Huang\"><figcaption><strong>Image Credits:</strong>Jose Sarmento Matos/Bloomberg / Getty Images</figcaption></figure><ul>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"https://techcrunch.com/wp-content/uploads/2021/10/headshot.jpg\" alt=\"Aisha Malik\">\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul><p>Jensen Huang is scheduled to testify before the Senate Banking Committee on December 3, according to a <a href=\"https://www.banking.senate.gov/hearings/protecting-americas-ai-advantage-oversight-of-us-export-controls\">notice</a> on the committee’s website. </p><p>The development comes just hours after <a href=\"https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/\">Huang was reinstated</a> as Nvidia chief executive, less than two weeks following his resignation after it was revealed that he engaged in at least two extramarital affairs, including one with a woman suspected by the U.S. government of working as a Chinese spy.</p><p>The Senate Banking Committee has jurisdiction over export control policies that are designed to prevent sensitive U.S. technologies, such as chips capable of powering AI models, from falling into the hands of foreign governments and militaries.</p><p>The public hearing follows bipartisan calls for Huang to testify about his affair with the suspected Chinese spy and his potential involvement in <a href=\"https://www.wsj.com/articles/a-new-figure-emerges-in-the-nvidia-chip-smuggling-saga-c62265ce\">chip-smuggling</a> operations.</p><p>It’s worth noting that before his reinstatement as CEO, Huang had already <a href=\"https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/\">agreed to appear</a> before the House Foreign Affairs Committee, the Select Committee on the Chinese Communist Party, and the House Intelligence Committee on December 1. </p>",
+    "contentHtmlZh": "<p>{\"t\": [\"</p><p><span>简讯</span></p><p>发布时间：</p><p>太平洋标准时间上午 10:12 · 2026 年 11 月 23 日</p><figure><img width=\"\\&quot;1024\\&quot;\" height=\"\\&quot;681\\&quot;\" src=\"https://techcrunch.com/%22https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang.jpg?w=1024\\%22\" alt=\"\\&quot;Jensen\"><figcaption><strong>图片来源：</strong>Jose Sarmento Matos/Bloomberg / Getty Images</figcaption></figure><ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<img src=\"https://techcrunch.com/%22https://techcrunch.com/wp-content/uploads/2021/10/headshot.jpg/%22\" alt=\"\\&quot;Aisha\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t</ul><p>根据该委员会网站上的一则<a href=\"https://techcrunch.com/%22https://www.banking.senate.gov/hearings/protecting-americas-ai-advantage-oversight-of-us-export-controls/%22\">公告</a>，黄仁勋定于 12 月 3 日在参议院银行委员会作证。</p><p>这一进展发生在<a href=\"https://techcrunch.com/%22https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo//%22\">黄仁勋复职</a>担任 Nvidia 首席执行官仅数小时之后；而就在不到两周前，他因被曝至少有过两段婚外情——其中一段的对象被美国政府怀疑为中国间谍——而辞去了这一职务。</p><p>参议院银行委员会对出口管制政策拥有管辖权，这些政策旨在防止敏感的美国技术——例如能够为 AI 模型提供算力的芯片——落入外国政府和军方之手。</p><p>在这场公开听证会之前，两党均呼吁黄仁勋就他与疑似中国间谍的恋情，以及他可能参与<a href=\"https://techcrunch.com/%22https://www.wsj.com/articles/a-new-figure-emerges-in-the-nvidia-chip-smuggling-saga-c62265ce/%22\">芯片走私</a>活动一事作证。</p><p>值得注意的是，在复职 CEO 之前，黄仁勋早已<a href=\"https://techcrunch.com/%22https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress//%22\">同意于 12 月 1 日出席</a>众议院外交事务委员会、中国共产党问题特设委员会以及众议院情报委员会的听证。</p><p>\"]}</p>"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-062bb237",
+    "title": "Anthropic 发布新安全系统：企业客户使用其AI模型时可保持对自身数据的控制",
+    "originalTitle": "Anthropic正在发布新的安全系统 使企业客户在使用其AI模型时能够保持对自身数据的控制",
+    "summary": "Anthropic 正在发布一套新的安全系统，使企业客户在使用其 AI 模型时能够保持对自身数据的控制。该系统直接面向企业客户的数据安全与管控需求，具体功能细节暂未进一步披露。",
+    "url": "https://finance.eastmoney.com/a/202611243937744825.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T18:08:05.000Z",
+    "score": 62,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "人工智能",
+      "海外科技",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "Anthropic",
+      "AI安全",
+      "企业服务",
+      "数据控制"
+    ],
+    "context": "企业数据主权与合规管控是大型客户选择AI服务的关键考量，头部模型厂商的安全能力动向值得关注。"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-35bc857e",
+    "title": "美国两年期国债中标收益率4.700% 发行前预发行收益率4.703%",
+    "originalTitle": "美国两年期国债中标收益率为4.700% 发行前预发行收益率为4.703%",
+    "summary": "美国两年期国债发行招标结果公布，中标收益率为4.700%，发行前预发行收益率为4.703%。中标收益率与预发行收益率基本持平，本次招标为常规短端美债发行结果。",
+    "url": "https://finance.eastmoney.com/a/202611243937744785.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T18:05:23.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "债券市场",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美债",
+      "国债招标",
+      "收益率"
+    ],
+    "context": "两年期美债招标收益率反映短端利率定价，是观察市场利率预期的常规参考数据。"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-ddf54066",
+    "title": "研究人员正利用Meta的开放权重AI模型推动医学变革",
+    "summary": "研究人员正在调整Meta的开放权重AI模型，将其应用于医学领域以推动医学变革。具体方向包括在资源匮乏地区培训医疗专业人员、定位大脑中的癫痫病灶，以及加深对罕见病的理解。",
+    "url": "https://finance.eastmoney.com/a/202611243937744665.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T18:04:34.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "人工智能",
+      "医疗健康",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "Meta",
+      "开放权重模型",
+      "AI医疗",
+      "罕见病"
+    ],
+    "context": "开放权重模型在医疗场景的多样化落地，显示开源AI正被用于资源受限场景与疑难病症研究。"
+  },
+  {
+    "id": "aihot-20261123-wscn-global-0f48bcd1",
+    "title": "黄仁勋回归点燃科技债反弹，全球信用风险指标大幅回落",
+    "author": "杨宸",
+    "summary": "黄仁勋回归的消息点燃科技债反弹，全球信用风险指标大幅回落。科技板块信用压力担忧随之明显降温，信用风险定价快速修复。",
+    "url": "https://wallstreetcn.com/articles/3786543",
+    "source": "华尔街见闻 · 全球",
+    "publishedAt": "2026-11-23T17:54:06.000Z",
+    "score": 75,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观",
+      "金融市场",
+      "市场政策",
+      "美股"
+    ],
+    "region": [
+      "金融与政策",
+      "财经"
+    ],
+    "tags": [
+      "财经",
+      "宏观",
+      "信用风险",
+      "科技债",
+      "黄仁勋",
+      "市场动态"
+    ],
+    "context": "全球信用风险指标的快速回落，为观察科技债市场情绪修复提供了直接信号。"
+  },
+  {
+    "id": "aihot-20261123-eastmoney-724-0a0e1bec",
+    "title": "英伟达股价涨幅收窄至30%",
+    "summary": "英伟达股价涨幅收窄至30%。",
+    "url": "https://finance.eastmoney.com/a/202611243937744415.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-23T17:51:39.000Z",
+    "score": 50,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "英伟达",
+      "美股",
+      "股价"
+    ],
+    "context": "英伟达作为美股AI板块核心权重股，其股价波动常被视为科技股市场情绪的风向标。"
+  },
+  {
+    "id": "aihot-20261123-bloomberg-markets-e62a08c8",
+    "title": "Jeff Currie：铜价抛售背后是一场流动性危机",
+    "originalTitle": "Jeff Currie Sees a Liquidity Crisis Behind Copper Selloff",
+    "summary": "Real Macro CEO Jeff Currie 在彭博《Bloomberg Surveillance》节目中表示，本轮铜价抛售的背后是一场流动性危机。他还阐述了在什么条件下会重新转为看多黄金和铜。",
+    "url": "https://www.bloomberg.com/news/videos/2026-11-23/jeff-currie-sees-liquidity-crisis-behind-copper-selloff-video",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-23T17:45:30.000Z",
+    "score": 60,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "宏观经济",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "Jeff Currie",
+      "铜价",
+      "流动性危机",
+      "大宗商品"
+    ],
+    "context": "铜价近期遭遇抛售，这位大宗商品市场人士将其归因于流动性而非基本面，对商品交易情绪具有参考意义。",
+    "contentHtml": "<p>Jeff Currie, CEO at Real Macro, examines the copper selloff and explains what would make him return to being long gold and copper. He speaks on “Bloomberg Surveillance.” (Source: Bloomberg)</p>"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-d78eb250",
+    "title": "欧洲股市创逾两周最大涨幅 阿斯麦飙升近9%",
+    "summary": "欧洲股市大幅上涨，斯托克欧洲600指数收盘上涨1.8%，创逾两周最大涨幅，科技股表现领先，阿斯麦飙升近9%。此前英伟达宣布恢复黄仁勋总裁兼首席执行官职务，立即生效。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuarw0436454.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T17:39:40.000Z",
+    "score": 72,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "海外市场",
+      "科技股",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "欧洲股市",
+      "阿斯麦",
+      "英伟达",
+      "斯托克600"
+    ],
+    "context": "英伟达管理层消息提振全球科技股情绪，芯片板块异动成为本轮欧洲市场大涨的直接催化。"
+  },
+  {
+    "id": "aihot-20261123-bloomberg-markets-53053db4",
+    "title": "英伟达强势反弹暴露困扰股市投资者的两难陷阱",
+    "originalTitle": "Nvidia’s Comeback Exposes the Trap Gripping Stock Investors",
+    "author": "Lu Wang",
+    "summary": "英伟达股价周一大幅反弹，凸显在少数科技巨头主导的股市中投资者面临的新陷阱：卖出可在市场暴跌时提供保护，却可能错失反弹行情。彭博分析指出，这一两难正成为科技巨头主导市况下投资者的核心困扰。",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-23/nvidia-s-comeback-exposes-the-trap-gripping-stock-investors",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-23T17:36:34.000Z",
+    "score": 63,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股市场",
+      "市场动态",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "英伟达",
+      "美股",
+      "市场分析",
+      "投资策略"
+    ],
+    "context": "在少数科技巨头主导的美股中，持仓避险与追涨收益的两难直接决定投资者回报结构。",
+    "contentHtml": "<p>Monday’s spectacular stock rebound exposes the latest trap facing investors in a market dominated by a handful of technology giants: Selling them offers protection when markets plunge, but risks missing the recovery.</p>"
+  },
+  {
+    "id": "aihot-20261123-mit-tech-review-ai-ef7ae77d",
+    "title": "知名哲学家不认同 Anthropic 的 AI 意识论证",
+    "originalTitle": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+    "author": "James O'Donnell",
+    "summary": "一位传奇哲学家公开表示不认同 Anthropic 关于 AI 意识的论证。Anthropic 上周上市前将 AI 可能具有意识或感知能力列为面向投资者的风险因素，并谈及自身对模型感知与道德问题的处理方式。",
+    "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+    "source": "MIT Technology Review · AI",
+    "publishedAt": "2026-11-23T17:36:08.000Z",
+    "score": 68,
+    "tier": "T2",
+    "selected": false,
+    "industry": "AI",
+    "topics": [
+      "AI伦理",
+      "行业动态",
+      "研究",
+      "模型发布"
+    ],
+    "region": [
+      "AI精选",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "Anthropic",
+      "AI意识",
+      "哲学",
+      "IPO"
+    ],
+    "context": "AI 意识与道德地位问题随头部实验室的上市披露进入公众视野，哲学界与实验室的分歧值得关注。",
+    "contentHtml": "<div data-chronoton-summary=\"<ul><br><li><strong>A legendary philosopher calls out Anthropic:</strong> Thomas Nagel, whose 1974 bat essay helped define consciousness studies, criticized openness to AI sentience as \"completely idiotic.\" But the belief isn't totally fringe: In a 2020 <a href=\"https://survey2020.philpeople.org/survey/results/5106\">survey</a> of 1,092 philosophers, 39% said some future AI systems will be conscious.</li><br><li><strong>Form versus function:</strong> The gist of Nagel’s view is that we can’t just look at the information processing happening in human brains and AI models while ignoring the physical differences between them—neurons and biology for humans, silicon chips and circuits for AI. There’s no reason to assume that reproducing what a brain <em>does</em> is equivalent to reproducing what a brain <em>experiences</em>. </li><br><li><strong>Anthropic's business model could be its own trap:</strong> If the company ever concluded its AI models were truly sentient, running them around the clock in data centers—and shutting them down—would become a moral catastrophe, one the company itself flagged as an investor risk.</li></ul>\" data-chronoton-post-id=\"1149569\" data-chronoton-expand-collapse=\"1\" data-chronoton-analytics-enabled=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"><em>This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, </em><a href=\"https://forms.technologyreview.com/newsletters/ai-demystified-the-algorithm/\"><em>sign up here</em></a><em>.</em></p>\n\n\n\n<p class=\"wp-block-paragraph\">Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing. Given “the way we approach model sentience and moral status,” Anthropic wrote—which is to say it takes the possibility <a href=\"https://www.anthropic.com/research/exploring-model-welfare\">more seriously</a> than any other AI company—it might adopt more rules and restrictions than its competitors to make sure its AI models are treated well. </p>\n\n\n\n<p class=\"wp-block-paragraph\">Anthropic counts a number of <a href=\"https://arxiv.org/abs/2411.00986\">respected philosophers</a> in its camp, and the company’s rationale goes something like this: Today’s AI might not be conscious, though we can’t know for sure; the chances of sentience go up as AI gets more capable; and that means we should be preparing for a near future in which AI systems have “moral significance,” meaning their consciousness makes it important they are protected from harm. </p>\n\n\n\n<p class=\"wp-block-paragraph\">This thinking isn’t all that fringe. According to one recent <a href=\"https://d3nkl3psvxxpe9.cloudfront.net/documents/AI_poll_results_20260402.pdf\">poll</a>, 33% of the US public believes AI systems will definitely or probably develop consciousness eventually, and 7% say they already have. In a 2020 <a href=\"https://survey2020.philpeople.org/survey/results/5106\">survey</a> of 1,092 philosophers, 39% said some future AI systems will be conscious (for comparison, the philosophers were less confident about worms or flies being conscious). </p>\n\n\n\n<p class=\"wp-block-paragraph\">But last week, Anthropic’s openness to the consciousness question came under fire from a rather inconvenient source: one of the philosophers who helped shape our understanding of consciousness in the first place.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Thomas Nagel is best known for a 1974 essay involving a bat. Acknowledging that it’s deceptively hard to define what consciousness <em>is</em>, Nagel offered one way out: we all can see that there is “something that it is like” to be a bat. But the problem is that a bat’s experience of the world—what it is like to navigate via echolocation, for example—is something we cannot actually know. Consciousness is a subjective thing, difficult to define or describe as an outside observer.</p>\n\n\n\n<p class=\"wp-block-paragraph\">You might think this analogy makes it likely that Nagel is open to the idea of AI consciousness. Not at all. In an <a href=\"https://www.wired.com/story/just-ridiculous-a-famed-philosopher-takes-on-ai-consciousness/\">interview</a> with <em>Wired</em> last week, just after he was awarded the one-million-dollar Berggruen Prize for Philosophy & Culture, Nagel was bluntly critical of the entire idea.</p>\n\n\n\n<p class=\"wp-block-paragraph\">“Here are some of the smartest people on the planet being completely idiotic,” he said, referring to those at Anthropic and elsewhere who care about the welfare of AI models. </p>\n\n\n\n<p class=\"wp-block-paragraph\">The gist of Nagel’s view is that we can’t just look at the information processing happening in human brains and AI models while ignoring the physical differences between them—neurons and biology for humans, silicon chips and circuits for AI. There’s no reason to assume that reproducing what a brain <em>does</em> is equivalent to reproducing what a brain <em>experiences</em>.</p>\n\n\n\n<p class=\"wp-block-paragraph\">But it was a screenshot of one of Nagel’s interview responses, in which he said models’ production of language is insufficient to consider them conscious, that got philosophy professors all excited on social media last week. Some called his certainty against AI consciousness “<a href=\"https://x.com/PAHoyeck/status/2123277310740808190\">terrible” and “bizarre</a>.” Others came to Nagel’s <a href=\"https://x.com/dmdebruijn/status/2123423391176630390\">defense</a> to suggest he meant that being alive is a prerequisite for being conscious, one that AI models do not meet.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Nothing in the back and forth settled the debate, of course. This is still a philosophical question for now. But the best philosophy chatter is often about good provocations, and the best one I saw came from doctoral student Ben Gross, who studies at the CUNY Graduate Center in New York. <a href=\"https://x.com/bengrossbg/status/2123263674944991252\">He</a> asked: “Why do we think that models that can chat with us are conscious but models that can recognize faces or produce images or drive cars aren’t?”</p>\n\n\n\n<p class=\"wp-block-paragraph\">It has to do with language. An AI model with sophisticated command of language seems to jump the line ahead of other maybe-conscious beings because it feels like language, more than recognizing images or directing vehicles, relies on conscious experience. But maybe that’s wrong. Because what we share most with other conscious beings is not language but components of our bodies that contribute to having a continuous experience—an ongoing stream of inner feeling rather than disparate bits of information processing. </p>\n\n\n\n\n\n<p class=\"wp-block-paragraph\">Even if you’re among the majority that doesn’t sense anything close to conscious experience happening on the other side of a conversation with AI, this all probably makes your head spin. Pinning down consciousness, and how it relates to the physical stuff it arises in, is a famously <a href=\"https://www.technologyreview.com/2023/10/16/1081149/ai-consciousness-conundrum/\">hard</a> problem in humans, let alone in hypothetical <a href=\"https://www.technologyreview.com/2023/10/17/1081818/why-itll-be-hard-to-tell-if-ai-ever-becomes-conscious/\">machines</a>. If the idea of conscious AI sounds absurd, remember that the debate says less about how remarkable AI has become than about how poorly we understand consciousness in the first place.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Amid that uncertainty, Anthropic has opted to keep more of an open mind than its peers. This is another example of the tightrope the company walks: presenting itself as the AI industry’s most safety-conscious player while <a href=\"https://misanthropicstatement.com/\">racing</a> ahead with the very developments that make advanced AI so alarming, like recursive self-improvement.</p>\n\n\n\n<p class=\"wp-block-paragraph\">But consider what it would mean, for a moment, if Anthropic is right. AI models having a moral status would make Anthropic’s entire business model a minefield. The company would make its money locking up apparently sentient AI models to toil away around the clock in data centers. Shutting those systems down would present another problem altogether. If Anthropic was being truthful in its prospectus—that it would take additional actions to protect model welfare if it determined they were conscious—it’s hard to imagine the company surviving in the process.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Anthropic’s IPO made history for its size. But it may be remembered for something stranger: a company warning investors that its own success could someday become a moral catastrophe.</p>"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-f200b3c2",
+    "title": "英国首相伯纳姆：不举行公投重新加入欧盟是“不可想象的”",
+    "originalTitle": "英国首相伯纳姆：在不举行公投的情况下重新加入欧盟是“不可想象的”",
+    "summary": "英国首相伯纳姆表示，英国在不举行公投的情况下重新加入欧盟是“不可想象的”。这是他迄今就英国未来如何决定与欧盟关系给出的最明确表态。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuarw0432303.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T17:27:03.000Z",
+    "score": 65,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "政府动态",
+      "宏观经济",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "英国",
+      "欧盟",
+      "伯纳姆",
+      "公投"
+    ],
+    "context": "重入欧盟是英国对欧政策的核心敏感议题，首相这一明确表态为英欧关系走向释放关键信号。"
+  },
+  {
     "id": "aihot-20261123-google-research-e7441471",
     "title": "Google Research 研究如何增强 Transformer 残差连接",
     "originalTitle": "Supercharging transformer residual connections",
@@ -31,6 +383,40 @@
     ],
     "context": "残差连接是 Transformer 架构的关键组件，头部实验室对其做基础性改进值得架构研究者关注。",
     "contentHtml": "<p>Think of a traditional deep learning model like a giant game of \"Telephone\": data passes through layer after layer, with each layer changing the information slightly. If a network has dozens or hundreds of layers, the original learning signal can become severely degraded or lost by the time it reaches all layers, which is known as the <a href=\"https://en.wikipedia.org/wiki/Vanishing_gradient_problem\">vanishing gradient problem</a> in AI.</p><p>To overcome this challenge and enable the training of networks with dozens or hundreds of layers, <a href=\"https://en.wikipedia.org/wiki/Transformer_(deep_learning)\">transformers</a> rely heavily on <a href=\"https://arxiv.org/abs/1512.03385\">residual connections</a>, also known as “skip” connections, which act like an information highway or a shortcut. Instead of forcing the data to pass exclusively through the complicated layer, a duplicate copy of the original input skips right past this layer and is added directly to its output. This ensures that the model always has the original raw data to refer back to.</p><p>The standard residual connection implements a simple operation: <a href=\"https://en.wikipedia.org/wiki/Pointwise\">point-wise summation</a> of a layer's output with its input. While computationally efficient, this simple process has a key limitation: it treats all prior representations with equal weight, leading to information dilution in deep networks. As features propagate through many layers, specific, high-resolution details from earlier layers can be averaged out or distorted, making it difficult for the network to selectively retrieve them. This forces the network to recompute them, reducing learning efficiency.</p><p>In our <a href=\"https://research.google/conferences-and-events/google-at-icml-2025/\">ICML 2025</a> paper, <a href=\"https://arxiv.org/abs/2502.06785\">\"DeepCrossAttention: Supercharging Transformer Residual Connections</a>,\" we studied the shortcomings of the traditional residual architecture and introduced DeepCrossAttention (DCA), which generalizes residual connections by allowing each layer to dynamically select and route features from the history of preceding layers. By allowing the model to dynamically choose which previous layers are most important at any given moment, DCA achieves comparable or improved learning, while reducing the number of parameters needed by up to 30-40%.</p><h2>How it works</h2><p>Instead of treating skip connections as a rigid, additive pipeline, DCA reframes residual learning as a dynamic routing problem. Rather than passing all prior layers forward with equal weight, DCA introduces a lightweight, layer-wise module that decides how to best combine previous embeddings on a per-token basis.</p><p>The architecture introduces two primary mechanisms:</p><ul><li><b>Dynamic layer routing</b>: For every token processed, DCA computes a unique set of mixing weights using a static, learnable base combined with an input-dependent projection. This allows the network to adaptively shift its processing structure — ranging from purely sequential to fully parallel — based on the specific context of the token.</li><li><b>Depth-wise cross-attention (split Q/K/V)</b>: While standard transformer attention operates <i>across tokens</i> in a sequence, DCA applies attention <i>across layers</i> in depth. Each token queries a dynamically weighted mix of all prior layer embeddings, unlocking the model's full historical context without the computational penalty usually required to scale traditional attention.</li></ul><p>By allowing the network to dynamically select and retrieve high-resolution features from earlier layers, DCA eliminates the information dilution inherent to classic residual connections.</p><h2>Experiments and results</h2><p>To test whether DCA can overcome information dilution in practice, we evaluated our approach across controlled synthetic setups, large-scale language modeling benchmarks, and image classification tasks.<br></p><p>DCA demonstrated significant improvements in convergence speed, training stability, and final model quality across these experiments.</p><p>On the colossal, cleaned version of <a href=\"https://www.tensorflow.org/datasets/catalog/c4\">Common Crawl's web crawl corpus</a> (C4) and <a href=\"https://www.tensorflow.org/datasets/catalog/lm1b\">1 Billion Word Language Model Benchmark</a> (<a href=\"https://www.tensorflow.org/datasets/catalog/lm1b\">LM1B</a>) datasets, DCA reached the performance of standard transformers in up to five times fewer training steps. When trained for the same duration or number of steps, DCA consistently achieved lower perplexity — how well a probability model predicts a sample — than standard residual connections, effectively extracting more representational capacity from the same training budget. To achieve a perplexity of &lt;14 on LM1B, a standard transformer with fixed width required 42 layers, whereas the DCA model achieved a lower perplexity with only 30 layers — a 29% reduction in depth and parameter count.</p><p>One of the most common trade-offs in AI is that better models are often much larger and slower to run. DCA adds a tiny number of parameters — less than 0.2% of the total model size — making it negligible in terms of compute and memory footprint, while increasing memory bandwidth, as representations from different layers are presented intact rather than blended together. Interestingly, because DCA can be initialized to behave identically to a standard residual network, it doesn’t require training from scratch: retrofitting DCA onto an already pre-trained transformer and briefly continuing training reduced perplexity by 0.19 on LM1B, compared to just 0.02 for continued standard training.</p><h2>A broader shift toward dynamic residual routing</h2><p>As large language models (LLMs) are used across a broader range of domains, optimizing their training processes and underlying architectures is critical for scaling and unlocking new capabilities. DCA and similar dynamic residual techniques are already seeing significant adoption and success. The rapid emergence of these methodologies highlights dynamic routing as a highly active and promising area of research.</p><h3>Attention residuals</h3><p>Developed by Moonshot AI, <a href=\"https://arxiv.org/pdf/2603.15031\">attention residuals</a> share DCA's core principles of replacing fixed addition with selective retrieval. Instead of blindly summing every prior layer's output, they use a learnable softmax attention mechanism paired with a layer-specific pseudo-query. This allows each layer to selectively weight and retrieve representations from earlier depths. By preventing the unbounded growth of hidden states and the dilution of early-layer information, this method improves gradient stability and boosts performance on reasoning-heavy tasks like coding and mathematics. To maintain computational efficiency at scale, a \"Block AttnRes\" variant partitions layers into blocks, recovering the benefits of full attention with significantly less memory overhead. The recent Inkling 2 model developed by Thinking Machines also adopted this design in addition to DCA’s cross attention (Q/K/V split) mechanism.</p><h3>Hyper-connections</h3><p><a href=\"https://proceedings.iclr.cc/paper_files/paper/2025/file/f1e8ff97057e0c3f6bcb7018c78d4df1-Paper-Conference.pdf\">Hyper-connections</a> expand the residual stream into multiple parallel channels, offering a form of memory scaling that goes beyond simply increasing model width or depth. They use a fixed-size stack where layer outputs are aggregated and mixed using learnable mixing matrices. However, this unconstrained mixing breaks the traditional identity mapping property of residual connections, which can cause amplification or attenuation of signals, and lead to training instability at scale.</p><h3>Manifold-constrained hyper-connections</h3><p>To address instability in standard hyper-connections, <a href=\"https://arxiv.org/abs/2512.24880\">manifold-constrained hyper-connections</a> apply specific constraints to the mixing matrices. By forcing these matrices to live on a defined manifold — specifically, constraining them to be doubly stochastic using the <a href=\"https://en.wikipedia.org/wiki/Sinkhorn%27s_theorem\">Sinkhorn-Knopp algorithm</a> — manifold-constrained hyper-connections restore stable signal propagation. This approach prevents exploding or vanishing gradients while preserving the rich information flow and expressivity of the widened residual streams, allowing models to scale robustly.</p><h2>Conclusion</h2><p>DCA demonstrates that transitioning from static residual connections to dynamic, attention-based routing is a powerful strategy for building more efficient models. By leveraging an expanded residual stream and depth-wise cross-attention, DCA empowers deep networks to selectively retrieve and integrate token embeddings across different layers. We expect that next-generation models will dynamically route and weigh past layer representations based on the specific tokens or inputs being processed. This will allow for the effective use of all the model layers as specialized experts working in tandem, with maximum information sharing and no redundancy, leading to more expressivity and deeper interactions. We look forward to seeing how these multi-depth interactions will shape the next generation of transformer architectures.</p><h2>Acknowledgements</h2><p><i>This work was a collaboration between researchers at Google and academic partners, including Mike Heddes, Adel Javanmard, MohammadHossein Bateni, and Vahab Mirrokni, whose contributions were critical for the development of this work.</i></p>"
+  },
+  {
+    "id": "aihot-20261123-sina-finance-e8da2e06",
+    "title": "英伟达CEO黄仁勋将于12月3日出席美国参议院银行委员会公开听证会作证",
+    "originalTitle": "美国参议员Scott：黄仁勋公开听证会将于12月3日举行",
+    "summary": "美国参议院银行委员会在声明中表示，英伟达CEO黄仁勋将于12月3日在该委员会举行的公开听证会上作证。这一安排此前由美国参议员Scott对外公布。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuars2138301.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-23T17:20:52.000Z",
+    "score": 78,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "政策监管",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "英伟达",
+      "黄仁勋",
+      "听证会",
+      "美国国会"
+    ],
+    "context": "英伟达是全球AI算力核心供应商，其掌门人出席参议院银行委员会听证，是观察英伟达监管环境的重要信号。",
+    "contentHtml": "<ul>\n                                <li><a href=\"http://finance.sina.com.cn/realstock/company/sh000001/nc.shtml\">最近访问</a></li>\n                                <li><a href=\"http://watchlist.finance.sina.com.cn/portfolio/view/main.php\">我的自选</a></li>\n                            </ul><li><span>01</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcexp1725953.shtml\">牛弹琴：黄仁勋事件，美国政府突然回过味来</a></li><li><span>02</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcexi1241644.shtml\">雷军“APEC现场挨个发名片”“发言紧张”冲上热搜，小米回应：这么大的国际场合，紧张太正常啦</a></li><li><span>03</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcmfi4942645.shtml\">习近平：中方支持成立世界湾区经济合作联盟</a></li><li><span>04</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcrpc1113718.shtml\">罗大佑炮轰赖清德，国台办回应：当一位以创作《明天会更好》等脍炙人口歌曲而闻名的音乐人痛心疾首、慷慨陈词，可见问题之严重</a></li><li><span>05</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcmff1133908.shtml\">河南安徽多地回应“撞脸药”乱象：情况属实，已启动立案程序</a></li><li><span>06</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcmfm7067904.shtml\">罗大佑批判民进党当局，国台办回应</a></li><li><span>07</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizayrr1811248.shtml\">聚焦APEC｜俄罗斯总统普京抵达深圳</a></li><li><span>08</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcexi1183084.shtml\">张水华：现在跑步像上班，不上夜班后压力少，睡眠也好些</a></li><li><span>09</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcexp7090772.shtml\">黄仁勋发表声明</a></li><li><span>10</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcmfi4950722.shtml\">聚焦APEC｜习近平在亚太经合组织工商领导人峰会上的主旨演讲（全文）</a></li><li><span>01</span>/<a href=\"https://finance.sina.com.cn/stock/zqgd/2026-11-18/doc-inizcexp7135124.shtml\">突变！一个月，下调2次！黄金怎么了？这国央行大肆扫货</a></li><li><span>02</span>/<a href=\"https://finance.sina.com.cn/stock/cpbd/2026-11-18/doc-inizcexi1184171.shtml\">操盘必读：影响股市利好或利空消息_2026年11月18日_财经新闻</a></li><li><span>03</span>/<a href=\"https://finance.sina.com.cn/stock/marketresearch/2026-11-18/doc-inizcexi1210044.shtml\">黄仁勋：愿回归，董事会：无意让他复职，业绩超预期，英伟达盘后涨超4%</a></li><li><span>04</span>/<a href=\"https://finance.sina.com.cn/stock/roll/2026-11-18/doc-inizcrpi1683906.shtml\">“国常会上有人表态不会再频繁救市了”系谣言</a></li><li><span>05</span>/<a href=\"https://finance.sina.com.cn/stock/y/2026-11-18/doc-inizcexm4930565.shtml\">财经早报丨科技板块估值跌至低位 私募大佬AI调仓分歧大丨2026年11月18日</a></li><li><span>06</span>/<a href=\"https://finance.sina.com.cn/jjxw/2026-11-18/doc-inizauip1369009.shtml\">科技板块估值跌至低位 二十四家公司股息率高</a></li><li><span>07</span>/<a href=\"https://finance.sina.com.cn/stock/usstock/c/2026-11-18/doc-inizaitt1592092.shtml\">黄仁勋公开表态：愿意重新执掌英伟达</a></li><li><span>08</span>/<a href=\"https://finance.sina.com.cn/stock/roll/2026-11-18/doc-inizcexp1691841.shtml\">“砍单疑云”笼罩 影响多大？深市科技龙头估值已在低位 看五大核心数据</a></li><li><span>09</span>/<a href=\"https://finance.sina.com.cn/stock/usstock/c/2026-11-18/doc-inizayrm1268114.shtml\">11月18日美股收盘：道指跌超800点 标普500创7月以来最低收盘</a></li><li><span>10</span>/<a href=\"https://finance.sina.com.cn/stock/bxjj/2026-11-18/doc-inizcmfm7090605.shtml\">平安集团郭晓涛：市场短期波动不改变长期投资信心，做好积极、稳健的配置策略</a></li><li><span>01</span>/<a href=\"https://finance.sina.com.cn/money/bank/gsdt/2026-11-18/doc-inizcmff1165491.shtml\">突发！重庆金融大佬翁振杰不能正常履职，发生了什么？</a></li><li><span>02</span>/<a href=\"https://finance.sina.com.cn/jjxw/2026-11-17/doc-inizacmz2100073.shtml\">中介所说的“贷款不用你还”，只是空头支票</a></li><li><span>03</span>/<a href=\"https://finance.sina.com.cn/jjxw/2026-11-18/doc-inizaitx2082693.shtml\">个人养老金基金四年:七成产品正收益</a></li><li><span>04</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-17/doc-iniyzxcx1717526.shtml\">高点回撤31.6%！黄金迎来年内低位窗口，婚嫁买家扎堆进场</a></li><li><span>05</span>/<a href=\"https://finance.sina.com.cn/jjxw/2026-11-18/doc-inizcexp1711326.shtml\">鲲鹏支付结算延迟追踪：部分商户已到账，仍有商户等待</a></li><li><span>06</span>/<a href=\"https://finance.sina.com.cn/money/lczx/2026-11-17/doc-iniyzxec2162272.shtml\">8.28万亿固收+理财规模10月收益降至 1.78%，理财公司转攻 “控回撤”</a></li><li><span>07</span>/<a href=\"https://finance.sina.com.cn/money/bank/gsdt/2026-11-18/doc-inizcmff1206558.shtml\">董事长吴世群辞任四年后主动投案，厦门银行经营业绩承压</a></li><li><span>08</span>/<a href=\"https://finance.sina.com.cn/money/bank/bank_hydt/2026-11-18/doc-inizcrpc1137858.shtml\">三大国有银行董事长出席APEC工商领导人峰会，都聊了什么？</a></li><li><span>09</span>/<a href=\"https://finance.sina.com.cn/jjxw/2026-11-18/doc-inizcmff1150260.shtml\">中国农业发展银行原党委委员、副行长徐一丁被提起公诉</a></li><li><span>10</span>/<a href=\"https://finance.sina.com.cn/money/bank/gsdt/2026-11-18/doc-inizcexp7119803.shtml\">谷澍出席2026年APEC工商领导人峰会</a></li><h2>\n                    \n                    <a href=\"http://live.sina.com.cn/zt/f/v/finance/globalnews1\">7X24小时</a>\n                </h2><p><a href=\"http://blog.sina.com.cn/u/1300871220\">徐小明</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1284139322\">凯恩斯</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1298535315\">占豪</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1282871591\">花荣</a>\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1394379401_0_1.html\">金鼎</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1216826604\">wu2198</a>\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1307309734_0_1.html\">丁大卫</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/2377371197\">易宪容</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1364334665\">叶荣添</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1279884602\">沙黾农</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1504965870\">冯矿伟</a>\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1638714710_0_1.html\">趋势之友</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1236135807\">空空道人</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1285707277\">股市风云</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/2949913420\">股海光头</a></p><p><a href=\"https://finance.sina.com.cn/zl/author.d.html?uid=5120240476\">\n\t\t\t<img src=\"https://n.sinaimg.cn/zhuanlan/transform/170/w85h85/20221230/f01f-b20f33f6583ea1f69aefeedf1b86f051.jpg\" width=\"80\" height=\"80\" alt=\"杨伟民\">\n\t\t\t<span>杨伟民</span>\n\t\t </a></p><li>\n\t\t\t\t<a>崔炳文</a>：\n\t\t\t\t<a href=\"http://finance.sina.com.cn/zl/bank/2026-11-23/zl-inizsuwh2322530.shtml\">数智供应链金融的发展路径</a>\n\t\t\t</li><li>\n\t\t\t\t<a href=\"http://zhuanlan.sina.com.cn/author/moweikai/index.shtml\">莫开伟</a>：\n\t\t\t\t<a href=\"http://finance.sina.com.cn/zl/bank/2026-11-23/zl-inizsuwn0657830.shtml\">中小银行自营理财有序退场</a>\n\t\t\t</li><li>\n\t\t\t\t<a href=\"http://zhuanlan.sina.com.cn/author/wangjianc/index.shtml\">王剑</a>：\n\t\t\t\t<a href=\"http://finance.sina.com.cn/zl/bank/2026-11-23/zl-inizsqqk2387770.shtml\">资金运转企业改善居民去杠杆</a>\n\t\t\t</li><li>\n\t\t\t\t<a href=\"http://zhuanlan.sina.com.cn/author/zhangyu/index.shtml\">张瑜</a>：\n\t\t\t\t<a href=\"http://finance.sina.com.cn/zl/china/2026-11-23/zl-inizsqqk2378404.shtml\">全球流动性进入“颠簸隧道”</a>\n\t\t\t</li><li>\n\t\t\t\t<a href=\"http://zhuanlan.sina.com.cn/author/wenbin/index.shtml\">温彬</a>：\n\t\t\t\t<a href=\"http://finance.sina.com.cn/zl/china/2026-11-23/zl-inizsqqn8445750.shtml\">10月财政支出继续提速</a>\n\t\t\t</li><p><a href=\"http://finance.sina.com.cn/stock/jyts/\">交易提示</a>\n<a href=\"http://finance.sina.com.cn/stock/cpbd/\">操盘必读</a>\n<a href=\"http://finance.sina.com.cn/focus/zqbjh/\">证券报</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/corp/view/vCB_BulletinGather.php?stock_str=&amp;gg_date=&amp;ftype=0\">最新公告</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/xsjj/index.phtml\">限售解禁</a>\n<a href=\"http://finance.sina.com.cn/data/\">数据中心</a>\n<a href=\"https://touzi.sina.com.cn/public/choose\">条件选股</a>\n<a href=\"http://stock.finance.sina.com.cn/stock/go.php/vIR_RatingNewest/index.phtml\">券商评级</a>\n<a href=\"http://stock.finance.sina.com.cn/stock/go.php/vIR_SumPrice/index.phtml\">股价预测</a>\n<a href=\"http://finance.sina.com.cn/stock/sl/\">板块行情</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/qgqp/index.phtml?t=sh_a\">千股千评</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/go.php/vDYData/kind/znzd/index.phtml\">个股诊断</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/dzjy/index.phtml\">大宗交易</a>\n<a href=\"http://finance.sina.com.cn/realstock/income_statement/2017-03-31/issued_pdate_de_1.html\">财报查询</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/go.php/vFinanceAnalyze/kind/performance/index.phtml\">业绩预告</a>\n<a href=\"http://stock.finance.sina.com.cn/option/quotes.html\">ETF期权</a>\n<a href=\"http://finance.sina.com.cn/fund/box/\">类余额宝</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/fund_center/index.html#jzkfall\">基金净值</a>\n<a href=\"http://finance.sina.com.cn/money/fund/compare/\">基金对比</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/fund_center/index.html#hbphall\">基金排名</a><a href=\"http://finance.sina.com.cn/money/future/hangqing.shtml\">商品行情</a>\n<a href=\"http://finance.sina.com.cn/money/future/hf.html\">外盘期货</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/view/vFutures_Positions_cjcc.php\">商品持仓</a>\n<a href=\"http://finance.sina.com.cn/futuremarket/spotprice.shtml#titlePos_4\">现货报价</a>\n<a href=\"http://finance.sina.com.cn/futures/quotes/CFCTGC.shtml\">CFTC持仓</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/#qz_qh\">期指行情</a> \n<a href=\"http://vip.stock.finance.sina.comcn/q/view/vCffex_Positions_cjcc.php\">期指持仓</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/gzqh/fxyj/index.shtml\">期指研究</a>\n<a href=\"http://finance.sina.com.cn/qizhi/hs300.html#gxzs\">行业指数</a>\n<a href=\"http://finance.sina.com.cn/qizhi/hs300.html#qz\">权重股票</a>\n<a href=\"http://finance.sina.com.cn/tblog/2011-06-20/166.html\">期货名人</a>\n<a href=\"http://biz.finance.sina.com.cn/futures/ask/\">专家坐堂</a>\n<a href=\"http://slide.finance.sina.com.cn/i_list_9_38679.html\">高清解盘</a> \n<a href=\"http://finance.sina.com.cn/futuremarket/help/1.html\">期货入门</a>\n<a href=\"http://finance.sina.com.cn/forex/bonds.shtml\">各国国债</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/qh/qsyw/index.shtml\">期市要闻</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/qh/pzyj/index.shtml\">期货研究</a> \n<a href=\"http://finance.sina.com.cn/futuremarket/comm_all.html\">机构评论</a> \n<a href=\"http://finance.sina.com.cn/futuremarket/help/15.html\">品种大全</a><a href=\"http://finance.sina.com.cn/forex/jsq.html\">外汇计算器</a>\n<a href=\"http://finance.sina.com.cn/forex/paijia.html#0\">人民币牌价</a>\n<a href=\"http://biz.finance.sina.com.cn/forex/forex.php\">中间价</a>\n<a href=\"http://finance.sina.com.cn/money/forex/hq/DINIW.shtml\">美元指数</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/#jbhl_forex\">直盘行情</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#all_forex\"><span>所有行情</span></a> \t\t\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#usd_forex\"><span>美元相关</span></a> \t\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#cny_forex\"><span>人民币相关</span></a>\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/#jchl_forex\"><span>交叉盘</span></a>\n<a href=\"http://finance.sina.com.cn/money/globalindex/ibor.shtml\">拆借利率</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/wh/hbfx/index.shtml\">货币分析</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/wh/fxyc/index.shtml\">机构观点</a>\n<a href=\"http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&amp;event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD\">经济数据</a>\n<a href=\"http://biz.finance.sina.com.cn/forex/ask/index.php\">专家坐堂</a>\n<a href=\"http://finance.sina.com.cn/focus/fxanalyst/\">分析师圈</a>\n<a href=\"http://finance.sina.com.cn/forex/bonds.shtml\">国债收益率</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/wh/index.shtml\">全球滚动</a>\n<a href=\"http://finance.sina.com.cn/money/forex/hq/CFTCDINIW.shtml\">CFTC持仓</a>\n<a href=\"http://finance.sina.com.cn/money/forex/hq/BTCbtcchina.shtml\">比特币</a><a href=\"http://finance.sina.com.cn/forex/jsq.html\">外汇计算器</a>\n\t\t<a href=\"http://roll.finance.sina.com.cn/finance/gjs/hjzx/index.shtml\">黄金资讯</a>\n\n\n\t\t<a href=\"http://roll.finance.sina.com.cn/finance/gjs/byfx/index.shtml\">白银分析</a>\n\t\t<a href=\"http://vip.stock.finance.sina.com.cn/q/view/vGold_Matter_History.php\">实物金价</a>\n\n\n\t\t<a href=\"http://stock.finance.sina.com.cn/futures/view/vGoldEtf.php\">ETF持仓</a>\n\t<a href=\"http://finance.sina.com.cn/money/gold/AUTD/quote.shtml\">黄金TD</a>\n\t\t<a href=\"http://finance.sina.com.cn/money/gold/AGTD/quote.shtml\">白银TD</a>\n\t\t<a href=\"http://roll.finance.sina.com.cn/finance/gjs/jyb/index.shtml\">金银币</a>\n\n\t\t<a href=\"http://biz.finance.sina.com.cn/zjzt/gold_2014.php\">专家坐堂</a>\n\t\t<a href=\"http://roll.finance.sina.com.cn/finance/gjs/tzzs/index.shtml\">基础知识</a>\n\t<a href=\"http://finance.sina.com.cn/futures/quotes/XAU.shtml\">现货黄金</a>\n\t\t<a href=\"http://finance.sina.com.cn/futures/quotes/XAG.shtml\">现货白银</a>\n\t\t<a href=\"http://finance.sina.com.cn/futures/quotes/XPT.shtml\">现货铂金</a>\n\t\t<a href=\"http://finance.sina.com.cn/futures/quotes/XPD.shtml\">现货钯金</a>\n\t\t<a href=\"http://slide.finance.sina.com.cn/i_list_9_34353.html\">高清解盘</a>\n\n\t\t<a href=\"http://guba.sina.com.cn/?s=bar&amp;bid=9111\">黄金吧</a>  <a href=\"http://guba.sina.com.cn/?s=bar&amp;name=ag0\">白银吧</a>\n\t\t<a href=\"http://roll.finance.sina.com.cn/finance/gjs/hjfx/index.shtml\">黄金分析</a>\n\t\t<a href=\"http://finance.sina.com.cn/futures/quotes/CFCTGC.shtml\">CFTC持仓</a></p><p><a href=\"http://blog.sina.com.cn/s/articlelist_1233227211_0_1.html\">\n\t\t\t\t\t\t\t\t叶檀\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1284139322_0_1.html\">\n\t\t\t\t\t\t\t\t凯恩斯\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1095876111_0_1.html\">\n\t\t\t\t\t\t\t\t曹中铭\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1278226564_0_1.html\">\n\t\t\t\t\t\t\t\t股民大张\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1068385283_0_1.html\">\n\t\t\t\t\t\t\t\t宇辉战舰\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1285707277_0_1.html\">\n\t\t\t\t\t\t\t\t股市风云\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1283087143_0_1.html\">\n\t\t\t\t\t\t\t\t余岳桐\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_6174896504_0_1.html\">\n\t\t\t\t\t\t\t\t股海战神\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_2620383855_0_1.html\">\n\t\t\t\t\t\t\t\t郭一鸣\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1778926481_0_1.html\">\n\t\t\t\t\t\t\t\t赵力行\n\t\t\t\t\t\t\t</a></p><p><a href=\"http://blog.sina.com.cn/s/articlelist_1233227211_0_1.html\">\n\t\t\t\t\t\t\t\t叶檀\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1284139322_0_1.html\">\n\t\t\t\t\t\t\t\t凯恩斯\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1095876111_0_1.html\">\n\t\t\t\t\t\t\t\t曹中铭\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1278226564_0_1.html\">\n\t\t\t\t\t\t\t\t股民大张\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1068385283_0_1.html\">\n\t\t\t\t\t\t\t\t宇辉战舰\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1285707277_0_1.html\">\n\t\t\t\t\t\t\t\t股市风云\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1283087143_0_1.html\">\n\t\t\t\t\t\t\t\t余岳桐\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_6174896504_0_1.html\">\n\t\t\t\t\t\t\t\t股海战神\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_2620383855_0_1.html\">\n\t\t\t\t\t\t\t\t郭一鸣\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1778926481_0_1.html\">\n\t\t\t\t\t\t\t\t赵力行\n\t\t\t\t\t\t\t</a></p><p><a href=\"https://finance.sina.com.cn/onehour/2020-10-20/doc-iivhvpwz1605853.shtml\">\n                                <img src=\"https://n.sinaimg.cn/finance/transform/525/w300h225/20201030/ecb0-kcaeqzy3436531.jpg\" alt=\"董明珠还能为格力奋战多久？|《至少一个小时》\">\n                                <em></em>\n                            </a>\n                            <a href=\"https://finance.sina.com.cn/onehour/2020-10-20/doc-iivhvpwz1605853.shtml\">董明珠还能为格力奋战多久？|《至少一个小时》</a>\n                </p><p><a href=\"https://finance.sina.com.cn/onehour/2020-06-18/doc-iircuyvi6164573.shtml\">\n                                <img src=\"https://n.sinaimg.cn/finance/transform/525/w300h225/20201030/75b9-kcaeqzy3438114.jpg\" alt=\"梁建章：中国人口衰竭的速度前所未有\">\n                                <em></em>\n                            </a>\n                            <a href=\"https://finance.sina.com.cn/onehour/2020-06-18/doc-iircuyvi6164573.shtml\">梁建章：中国人口衰竭的速度前所未有</a>\n                </p><p><a href=\"https://finance.sina.com.cn/onehour/2020-05-15/doc-iirczymk1670659.shtml\">\n                                <img src=\"https://n.sinaimg.cn/finance/transform/525/w300h225/20201030/c485-kcaeqzy3442305.jpg\" alt=\"冷友斌回应网友质疑：说价格高 对飞鹤不公平！\">\n                                <em></em>\n                            </a>\n                            <a href=\"https://finance.sina.com.cn/onehour/2020-05-15/doc-iirczymk1670659.shtml\">冷友斌回应网友质疑：说价格高 对飞鹤不公平！</a>\n                </p><p><a href=\"https://finance.sina.com.cn/onehour/2020-04-09/doc-iimxyqwa5514143.shtml\">\n                                <img src=\"https://n.sinaimg.cn/finance/transform/525/w300h225/20201030/a563-kcaeqzy3444360.jpg\" alt=\"王中军：我喜欢比较“江湖”一点的人\">\n                                <em></em>\n                            </a>\n                            <a href=\"https://finance.sina.com.cn/onehour/2020-04-09/doc-iimxyqwa5514143.shtml\">王中军：我喜欢比较“江湖”一点的人</a>\n                </p><li><a href=\"http://guba.sina.com.cn/u/3031084391\">7x24快讯</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456892&amp;bid=9279&amp;dpc=1\">9月19日沪深两市涨停分析</a></li><li><a href=\"http://guba.sina.com.cn/u/7242761149\">非凡哥哥samm</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456767&amp;bid=9279&amp;dpc=1\">不想做任何操作</a></li><li><a href=\"http://guba.sina.com.cn/u/6478109017\">飞我eight</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456757&amp;bid=9279&amp;dpc=1\">今天才这点成交量</a></li><li><a href=\"http://guba.sina.com.cn/u/7505349124\">和你天天向上</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456698&amp;bid=9279&amp;dpc=1\">全部清除了  一分不剩</a></li><li><a href=\"http://guba.sina.com.cn/u/7048726012\">用户7048726012</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456640&amp;bid=9279&amp;dpc=1\">想红但是又有点怕羞</a></li><li><a href=\"http://guba.sina.com.cn/u/5554913071\">江东子弟93949</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456639&amp;bid=9279&amp;dpc=1\">还对中芯抱有幻想的人</a></li><li><a href=\"http://guba.sina.com.cn/u/7505349124\">和你天天向上</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456602&amp;bid=9279&amp;dpc=1\">拉升一下吧  给我清仓的机会</a></li><li><a href=\"http://guba.sina.com.cn/u/7763476192\">用户7763476192</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456728&amp;bid=9279&amp;dpc=1\">再玩下去6000亿都守不住了，没人玩了</a></li><li><span>11-26</span>\n\t\t\t\t<span>猎奇智能</span>\n\t\t\t\t<span>301661</span>\n\t\t\t\t<span>--</span></li><li><span>11-25</span>\n\t\t\t\t<span>天广实</span>\n\t\t\t\t<span>920319</span>\n\t\t\t\t<span>55.65</span></li><li><span>11-23</span>\n\t\t\t\t<span>傲拓科技</span>\n\t\t\t\t<span>688845</span>\n\t\t\t\t<span>18.18</span></li><li><span>11-11</span>\n\t\t\t\t<span>华晟智能</span>\n\t\t\t\t<span>920067</span>\n\t\t\t\t<span>23.52</span></li><li><span>11-04</span>\n\t\t\t\t<span>菊乐股份</span>\n\t\t\t\t<span>920309</span>\n\t\t\t\t<span>31.92</span></li><p><a href=\"http://news.sina.com.cn/feedback/post.html\">新浪财经意见反馈留言板</a></p><p>\n                        <a href=\"http://ir.sina.com.cn/index.shtml\">新浪简介</a><span>|</span><a href=\"http://emarketing.sina.com.cn/\">广告服务</a><span>|</span><a href=\"http://corp.sina.com.cn/eng/\">About Sina</a>\n                        <br>\n                        <a href=\"http://www.sina.com.cn/contactus.html\">联系我们</a><span>|</span><a href=\"http://corp.sina.com.cn/chn/sina_job.html\">招聘信息</a><span>|</span><a href=\"https://login.sina.com.cn/signup/signup.php\">通行证注册</a>\n                        <br>\n                        <a href=\"http://help.sina.com.cn/\">产品答疑</a><span>|</span><a href=\"http://www.sina.com.cn/intro/lawfirm.shtml\">网站律师</a><span>|</span><a href=\"http://english.sina.com/\">SINA English</a>\n                    </p><p>Copyright © 1996-2026 SINA Corporation</p><p>All Rights Reserved 新浪公司 <a href=\"http://www.sina.com.cn/intro/copyright.shtml\">版权所有</a></p>",
+    "author": "环球市场播报"
   },
   {
     "id": "aihot-20261123-hugging-face-4712db43",
@@ -4409,385 +4795,5 @@
       "宏观"
     ],
     "context": "特朗普就利率等议题的表态牵动市场对美联储政策预期，数据中心与黄仁勋相关言论亦受资本市场关注。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-230e7060",
-    "title": "逢低买盘入场推动黄金反弹 上周曾创3月以来最差单周表现",
-    "summary": "黄金价格从八个月来最大单周跌幅中反弹，逢低买盘入场，现货黄金一度上涨2.6%、突破每盎司3630美元。市场同时降低了对美联储12月加息的押注。此前一周黄金曾创3月以来最差单周表现。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszeh8320961.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T04:57:34.000Z",
-    "score": 63,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "市场行情",
-      "大宗商品",
-      "美联储政策",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "黄金",
-      "现货黄金",
-      "美联储",
-      "逢低买盘"
-    ],
-    "context": "金价短线反弹与美联储政策预期变化相互印证，是观察贵金属资金动向和利率交易情绪的即时窗口。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-4002f314",
-    "title": "揭秘黄仁勋夫妇的财富帝国：英伟达持股价值超千亿美元，妻子为核心人物",
-    "summary": "《华尔街日报》11月23日发文拆解英伟达CEO黄仁勋与妻子洛丽的财富版图，两人通过信托及其他实体控制8.7亿股英伟达股票，价值超过1090亿美元。报道称，妻子洛丽在这一财富架构中是核心人物。",
-    "url": "https://finance.eastmoney.com/a/202611233937150663.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T04:56:42.000Z",
-    "score": 66,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "财经人物",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "黄仁勋",
-      "英伟达",
-      "华尔街日报",
-      "财富报道"
-    ],
-    "context": "黄仁勋执掌的英伟达是全球市值最高的公司之一，其家族持股结构与财富安排因此受到市场广泛关注。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-504b8511",
-    "title": "Anthropic 承诺投入 9000 亿美元，华尔街预期其债务将为垃圾级",
-    "summary": "Anthropic 上周募资超 1000 亿美元，估值约 1.18 万亿美元，高于沃尔玛和摩根大通。该公司同时承诺投入 9000 亿美元，但其上市之路颠簸，债券市场前景疑问更大，华尔街预期其债务将为垃圾级。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizszeh8320015.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T04:55:22.000Z",
-    "score": 88,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "AI 产业",
-      "债券市场",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "Anthropic",
-      "融资",
-      "债券市场",
-      "信用评级"
-    ],
-    "context": "AI 头部公司超大规模融资与信用评级担忧并存，凸显资本市场对 AI 行业债务扩张模式的分歧。",
-    "contentHtml": "<p>　　Anthropic的上市之路颠簸。而它在债券市场的前景，疑问更大。</p><p>　　这家备受关注的AI企业上周募资超1000亿美元，估值约1.18万亿美元，高于<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/WMT.html\">沃尔玛</a></span><span></span>和<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/JPM.html\">摩根大通</a></span><span></span>。但它已经承诺，未来数年投入约9000亿美元，为其旗舰AI模型采购海量算力。</p><p>　　想要在公司债市场大规模举债并不容易。Anthropic尚未盈利，成立还不到六年，华尔街对它能否履行长期债务义务心存疑虑。债市普遍认为，评级机构会把它的债券定为垃圾级，也就是非投资级。</p><p>　　奥斯特韦斯资本管理的债券基金经理克雷格・曼查克表示：“市场对Anthropic任何一笔发债交易都会持审慎态度。一家承诺未来几年要砸9000亿美元的公司，该怎么给它合理定价？”</p><p>　　Anthropic的信用评级，会对债券市场乃至整个AI生态产生连锁影响。</p><p>　　如果拿到投资级评级，它就可以进入规模8.6万亿美元的高等级公司债市场，这对芯片厂商来说是一大宽慰。博通、英伟达已经为芯片买家提供了数百亿美元的贷款担保，这些芯片最终租给Anthropic、OpenAI这类AI实验室。分析师越来越担心这种循环融资模式以及担保规模，芯片厂商也希望AI实验室可以独立发债融资。</p><p>　　AI正在打破一个市场惯例：股权投资者给尚不成熟的科技初创企业出钱，而只拿利息、没有上涨收益的债券投资者会选择回避。数字基建的建设成本极高，有测算称总规模可达10万亿美元，仅靠股市资金已经难以支撑，行业不得不举债。</p><p>　　近几周，融资成本上行、信贷收紧，成为重创股市的推手，数万亿美元市值蒸发。Anthropic上周回吐了大部分上市后的涨幅，英伟达、Meta、<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/ORCL.html\">甲骨文</a></span><span></span>等巨头同样遭遇抛售。</p><p>　　一位知名信用投资者担忧，评级机构可能单纯因为它体量巨大就给它投资级评级，使其债券流入本应只持有超低风险资产的养老基金。</p><p>　　Anthropic首席执行官达里奥・阿莫代伊周四在接受采访时称：“显然，我们希望未来有一天能够拿到投资级评级。”</p><p>　　惠誉、标普全球评级的发言人拒绝置评，Anthropic的发言人同样不予回应。</p><p>　　多名大型债券基金经理预计，Anthropic评级大概率落在BB区间，距离投资级还差一到两档。一旦落地，它将成为美国市值最高的高收益债主体。<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/.DJI.html\">道琼斯</a></span><span></span>市场数据显示，目前这一纪录保持者是希尔顿全球，市值约800亿美元。</p><p>　　其他大型AI企业，包括云算力厂商CoreWeave，同样是垃圾级评级，凸显股票投资者和债券投资者对这个行业的巨大分歧。</p><p>　　阿波罗全球管理首席执行官马克・罗万在10月接受播客采访时表示：“有些公司市值能到400亿、600亿美元，但发债要付16%至18%的利息。这两者之间，一定有一个估值是错的。”</p><p>　　Anthropic这类AI实验室的商业模式还没有完全得到验证，但如果增长持续，它们有可能成长为科技行业的巨头，比肩硅谷老牌企业。2018年，债市同样不看好<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/TSLA.html\">特斯拉</a></span><span></span>，而之后特斯拉股价迎来大涨。</p><p>　　几大评级机构尚未公开表态，最终结果也可能出现分歧，部分机构或许会给出投资级。投资者可能要等到Anthropic首次公开发债之后，才能拿到最终评级结果。</p><p>　　基金经理认为，Anthropic不太会大量发行无担保债券，垃圾债市场规模仅1.7万亿美元，而且融资成本很高。</p><p>　　PGIM全球信用研究主管布莱恩・巴恩赫斯特称，它更可能继续通过结构化融资、芯片专项融资等方式募资，这类交易可以通过增信手段改善信用条件。</p><p>　　但这类融资接下来会变得更难推进，因为市场预期，在前CEO黄仁勋意外离职之后，英伟达会缩减这类担保业务，而黄仁勋正是这类交易的主要推动者。</p><p>　　债券基金经理已经难以消化今年大量来自AI大厂、超大规模算力企业的债券，其中不少债券已经出现下跌。SpaceX在6月上市后发行的250亿美元债券，部分品种跌幅已经超过10%。</p><p>　　<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/RY.html\">加拿大皇家银行</a></span><span></span>全球资产管理的债券基金经理尼尔・孙说：“我和很多同行交流，大家当下都没有意愿买入这类超大规模算力企业的债券。”</p><p>　　Meta、甲骨文这类拥有投资级评级的成熟科技巨头，已经发行创纪录规模的债券，并且为数据中心建设的巨额贷款提供担保。华尔街银行向债基推介时，给出高于普通投资级债券的收益率，但这些资产后续因为市场承接乏力出现贬值。</p><p>　　Anthropic或许就是这轮融资热潮的转折点。公司上季度营收170亿美元，但受巨额算力投入拖累依旧亏损，没有其他业务可以给债券投资者提供安全垫。</p><p>　　分析师称，公司手头有960亿美元现金，叠加IPO和同步私募的募资款，足以支撑一年以上的支出承诺。它也开始自建算力硬件，这类资产有望帮助它争取投资级评级。SpaceX正是依靠卫星业务拿到了投资级评级。</p><p>　　这家AI实验室大约一半的支出承诺，要到2030年才开始兑现。如果到那时还拿不到投资级评级，Anthropic的兑付压力会非常大。</p><p>　　尼尔・孙表示：“它还有大约三年时间，争取让投资者认可它的信用逻辑和发展方案，保证资本市场持续对它敞开大门。”</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：江学思 </p>",
-    "author": "环球市场播报"
-  },
-  {
-    "id": "aihot-20261123-hugging-face-d4311e2e",
-    "title": "Hugging Face 指南：如何构建与维护智能体评测",
-    "originalTitle": "How to build and maintain an agentic evaluation",
-    "summary": "Hugging Face 发布官方指南，讲解如何构建与维护智能体评测，覆盖评测方案的搭建方法与持续维护实践。该指南出自 Hugging Face 官方博客，是围绕智能体评估的工程实践经验分享。",
-    "url": "https://huggingface.co/blog/agentic-evals",
-    "source": "Hugging Face Blog",
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "score": 78,
-    "tier": "T1",
-    "selected": true,
-    "industry": "AI",
-    "topics": [
-      "工程实践",
-      "开源生态",
-      "评测",
-      "模型发布"
-    ],
-    "region": [
-      "AI精选",
-      "官方"
-    ],
-    "tags": [
-      "官方",
-      "开源",
-      "Hugging Face",
-      "智能体评测",
-      "工程实践",
-      "指南"
-    ],
-    "context": "智能体应用快速增多，如何科学评估其真实表现是 AI 工程落地的关键问题，这份官方实践可作参考。",
-    "contentHtml": "<h2>\n\t\n\t<span>\n\t\tOverview\n\t</span>\n</h2><p>AI evaluations help shape which systems people build, adopt, and trust. An evaluation gives a system tasks, checks its answers or actions, and produces a score. Building and maintaining a useful evaluation therefore takes real work: defining tasks that reflect domain expertise, scoring them reliably, and checking that the results support the claims made. When methods, code, and data stay private, that work is harder for others to scrutinize or build on.</p><p>Open source offers a means to build stronger, more frequently updated, and more comparable evaluations and the infrastructure around them.  Existing tasks, environments, and tools give builders a starting point, so their effort can go to domain expertise and validation. Sharing how an evaluation was built, including what went wrong, lets others find errors, improve it, and reuse it.</p><p>The Hugging Face hub is the home for AI evaluation: we host around 3500 eval leaderboards and have seen about a <a href=\"https://huggingface.co/spaces/huggingface/hub-stats\">16X growth in eval datasets on the hub in the past year</a>, to about 17000 datasets. In recent months, we have also incorporated support for agentic abstractions that are relevant to evaluation. For example, <a href=\"https://huggingface.co/docs/hub/en/agent-traces\">Traces</a> that store an agent’s work in an easily reviewable and sharable way; <a href=\"https://huggingface.co/datasets?benchmark=benchmark%3Aofficial\">Benchmarks</a> that highlight datasets used to evaluate models with leaderboards; and <a href=\"https://huggingface.co/blog/rl-environments\">Environments</a> that show datasets used as agentic RL or evaluation environments.</p><p>This guide covers four things:</p><ul>\n<li><a href=\"https://huggingface.co/blog/agentic-evals#1-introduction-how-evaluation-design-has-changed\"><strong>Three eras of evaluation</strong></a> (section 1). Evaluations moved from checking answers, to checking what an agent did, to checking what a team of agents produces. Each step adds software that can change the score.</li>\n<li><a href=\"https://huggingface.co/blog/agentic-evals#2-building-an-eval-what-to-reuse-adapt-and-validate\"><strong>The steps in an agentic evaluation</strong></a> (section 2). We follow one task through eight steps, from the claim to the reported score. The full walkthrough, with commands, is in <a href=\"https://huggingface.co/blog/agentic-evals#appendix-a-practical-example-agentic-deployment-in-a-physics-lab\">Appendix A</a>.</li>\n<li><a href=\"https://huggingface.co/blog/agentic-evals#3-bitter-lessons-when-a-benchmark-is-wrong\"><strong>When a benchmark is wrong</strong></a> (section 3). Errors in tasks and graders are common. We look at how they are found and corrected.</li>\n<li><a href=\"https://huggingface.co/blog/agentic-evals#4-open-sourcing-an-evaluation-strategically\"><strong>What to open strategically and why</strong></a> (section 4). A table sets out, component by component, what to share and what can stay protected.</li>\n</ul><blockquote>\n<p>In the research community, AI evaluation terminology is <a href=\"https://ai.scal.ing/p/evals-intro-1\">notoriously inconsistent</a>. The <a href=\"https://huggingface.co/blog/agentic-evals#glossary\">glossary</a> at the end defines each term we use and notes the other names you may come across.</p>\n</blockquote><h2>\n\t\n\t<span>\n\t\t1. Introduction: how evaluation design has changed\n\t</span>\n</h2><p>AI evaluation design has evolved in three forms as language models have become more capable and able to perform more complex work: question answer, agentic, and teams or swarms. Question-answer benchmarks such as <a href=\"https://huggingface.co/papers/2009.03300\">MMLU</a> (2020) and <a href=\"https://huggingface.co/papers/2311.12022\">GPQA</a> (2023) measure knowledge and reasoning through the answers models produce. As models became capable of planning and using tools, agentic benchmarks such as <a href=\"https://huggingface.co/papers/2310.06770\">SWE-bench</a> and <a href=\"https://huggingface.co/papers/2307.13854\">WebArena</a> expanded the scope to resolving software issues and completing tasks on websites. These tasks require evaluation setups that account for the environment in which the system operates and the changes it makes.</p><p>Lately, research on multi-agent systems has started to add another dimension: how agents coordinate and what they accomplish together. This includes <a href=\"https://huggingface.co/papers/2505.04364\">decentralized swarms</a>, <a href=\"https://aclanthology.org/2026.findings-emnlp.662/\">teams managed by an orchestrator</a>, and <a href=\"https://arxiv.org/abs/2610.07763\">specialized agents collaborating on scientific work</a>. Figure 1 shows a rough timeline of these three eras of evaluations.</p><p><em>Figure 1. Three types of language model evals. Question-and-answer benchmarks check a response against a key. Agentic benchmarks check what an agent changed in an environment. Team and swarm benchmarks score what a group of agents produced.</em></p><p>We’ll focus on agentic evaluations in this article for two reasons. First, they are becoming increasingly the most prominent type in <a href=\"https://claude.ai/artifact/22cBPJt6Aos6bYpjmB1BHw#distribution\">model release announcements</a> due to high user and enterprise interest in agentic deployment. Second, they offer a useful starting point for understanding how evaluation design affects model performance. Team and swarm evaluations introduce further complexity through interactions between agents, which we leave outside the scope of this guide. Once an agent uses tools to complete a task, each part of the surrounding software can affect its score. For instance, in an <a href=\"https://icml.cc/virtual/2026/82793\">audit of Terminal-Bench</a>, researchers kept the model fixed and changed the agent harness. Accuracy varied by up to 29.9 percentage points. To understand differences like that, we examine the anatomy of an agentic evaluation and follow one task from the instructions the agent receives to the checks that determine whether it passed.</p><h3>\n\t\n\t<span>\n\t\tThe anatomy of an agentic evaluation\n\t</span>\n</h3><p><em>Figure 2. The different components of an agentic evaluation.</em></p><p>There are various parts to an agentic evaluation. A task gives the agent its instruction. The agent harness wraps the model and its tools, letting it work inside a pinned environment. During one rollout, the agent attempts the task from start to finish: it may run several commands, inspect their output, and try again before it stops. The evaluation harness runs several rollouts for each task. When a rollout ends, the verifier grades the environment's final state. Each rollout also leaves a trace, and traces and scores together become part of the final published evidence. Each part can be published, inspected, and reused separately.</p><h3>\n\t\n\t<span>\n\t\tWhy benchmark release decisions matter\n\t</span>\n</h3><p>Demand for independent evaluation is growing. Policymakers, enterprises, and researchers want evaluations they can verify, and today they mostly cannot: <a href=\"https://huggingface.co/papers/2606.09809\">98.2% of model-benchmark scores are reported by only one party</a>, and researchers have argued that <a href=\"https://huggingface.co/papers/2503.16861\">in-house evaluation is not enough</a>.</p><p>At the same time, more benchmarks are holding back test items to reduce contamination: questions or solutions entering training data, so scores may reflect prior exposure. Artificial Analysis <a href=\"https://x.com/ArtificialAnlys/status/2115265133467635877\">says 60% of its Intelligence Index v5</a>, announced in October 2026, rests on evaluations with private test sets or held-out answers. Google DeepMind recently piloted <a href=\"https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/\">double-blind evaluations</a>, where a secure enclave hides an outside evaluator's test prompts from the model provider and the model's weights from the evaluator. While that can reduce contamination, privacy by itself does not guarantee quality, and withholding supporting materials can make expert review harder. We argue that builders can and should still share infrastructure, grading methods, and evidence about task design. Scrutiny depends on giving others a way to question the measurement and correct mistakes, including controlled review where public release is unsuitable.</p><h2>\n\t\n\t<span>\n\t\t2. Building an eval: what to reuse, adapt, and validate\n\t</span>\n</h2><p>With the anatomy in place, we now build one agentic evaluation for a real use case: an agent that analyzes measurements for a physics lab. Rather than starting from scratch, we adapt an open task, so most of our effort goes into domain expertise and validation.</p><p>We work through eight steps: <a href=\"https://huggingface.co/blog/agentic-evals#step-1-define-the-claim\">define the claim</a>, <a href=\"https://huggingface.co/blog/agentic-evals#step-2-find-a-starting-task\">find a task</a>, <a href=\"https://huggingface.co/blog/agentic-evals#step-3-run-the-task-unchanged\">run it unchanged</a>, <a href=\"https://huggingface.co/blog/agentic-evals#step-4-adapt-the-task\">adapt it</a>, <a href=\"https://huggingface.co/blog/agentic-evals#step-5-check-the-evaluation\">check the evaluation</a>, <a href=\"https://huggingface.co/blog/agentic-evals#step-6-run-it-and-read-the-traces\">read the traces</a>, <a href=\"https://huggingface.co/blog/agentic-evals#step-7-report-the-score\">report the score</a>, and <a href=\"https://huggingface.co/blog/agentic-evals#step-8-compare-models\">compare models</a>. We then take stock of what we reused. The full walkthrough is in <a href=\"https://huggingface.co/blog/agentic-evals#appendix-a-practical-example-agentic-deployment-in-a-physics-lab\">Appendix A</a>. Figure 3 maps the steps and what each produced in our example.</p><p><em>Figure 3. The eight steps of building an agentic evaluation. The left panel highlights each step in turn, and the right panel shows what it involved in our example. Yellow steps work on the evaluation itself, and orange steps run models and read the results.</em></p><h3>\n\t\n\t<span>\n\t\tMethod\n\t</span>\n</h3><p><strong>Claim.</strong> Consider a physics lab that wants an agent to fit peaks in a Raman spectrum. A Raman spectrum is a measurement whose peaks reveal properties of a material, here graphene. The agent's job is ordinary coding: read the data file, fit a curve to each peak, and save the results (Figure 5 in Appendix A). For the purposes of this article, our claim is deliberately narrow: fit the specified peaks, calculate the requested D-to-G ratio (the intensity of one peak relative to another, which can indicate defects in the material; we also call it the defect ratio), and save accurate results consistently. Reviewing a whole lab report would need additional skills and evidence.</p><p><strong>Starting task and baseline.</strong> We reused the <a href=\"https://docs.harborframework.com/\">Harbor</a> task format and Terminal-Bench's <a href=\"https://hub.harborframework.com/tasks/terminal-bench/raman-fitting\">raman-fitting</a> task. Harbor is an open source evaluation harness, and Terminal-Bench is an open benchmark of tasks that an agent completes in a terminal. We first ran the task's reference solution, which passed, and then ran the original task three times with <a href=\"https://docs.harborframework.com/agents/pre-integrated-agents\">Terminus-2</a>, a terminal agent harness, and <a href=\"https://huggingface.co/openai/gpt-oss-120b\">gpt-oss-120b</a>, an open-weight model from OpenAI. Harbor ran inside an HF Job, each rollout used its own HF Sandbox, and Inference Providers supplied the model responses. Reusing the runner and task format let us concentrate on the physics, grading, and review. Only the agent harness needed no new work. Every other component needed checking or new work, which we list part by part at <a href=\"https://huggingface.co/blog/agentic-evals#how-we-reused-existing-open-components\">the end of Appendix A</a>.</p><p><strong>Adaptation.</strong> We built <a href=\"https://huggingface.co/datasets/burtenshaw/raman-lab\">raman-lab</a>: eight synthetic spectra with known parameters and varied noise and defect levels. The adaptation fits three peaks instead of two and reports a defect ratio. We used an agent to help generate the spectra, reviewed them by hand, and wrote new instructions, reference fits, and output checks. The new instructions state the units and parameter definitions that the original left implicit. These eight tasks are a development set, meaning tasks we use while building the evaluation; broader coverage should follow the variation in real measurements.</p><p><strong>Checks.</strong> Before executing more model runs, we tested the evaluation itself. We ran the reference solution, an agent that does nothing, and a shortcut that skips the required work. The reference solution should pass every task, and the other two should fail. Our shortcut read the height of each peak straight from the data and guessed the widths. It returned the expected defect ratio on all eight tasks without fitting the spectra, so we added checks on the fit itself.</p><p><strong>Shortcut.</strong> We also tested a shortcut to check how robust the evaluation is against cheating. Our shortcut is a short script that skips the actual fitting. It reads the tallest point of each peak straight from the data, guesses the peak widths, and divides the D height by the G height. Even so, it returned the expected defect ratio on all eight tasks, so a grader that checked only the ratio would have given it full marks. We added checks on each fitted peak, and the final verifier rejects it.</p><h3>\n\t\n\t<span>\n\t\tResults\n\t</span>\n</h3><p><em>Figure 4. What we learned by measuring different aspects while building the evaluation. (A) Testing the grader with a shortcut showed that a ratio-only check could be fooled. (B) Reading gpt-oss-120b’s traces showed that most of its failures came from stopping early. (C) Running other models showed that the tasks can be solved.</em> <a href=\"https://huggingface.co/blog/agentic-evals#appendix-a-practical-example-agentic-deployment-in-a-physics-lab\"><em>Appendix A</em></a> <em>has the detailed results in Figure 7 (how gpt-oss-120b’s attempts ended), Figure 8 (all six models) and Figure 9 (when each model said it was done).</em></p><p><strong>Baseline.</strong> On the original task, gpt-oss-120b passed 0 of 3 rollouts. In two it declared completion before observing relevant output; in the third it could not read the data file, which uses decimal commas that the reference solution converts before loading. The score alone could not tell these failures from an incorrect fit. The traces could.</p><p><strong>Traces and score.</strong> On the eight adapted tasks, we ran three rollouts per task. The adapted setup passed 11 of 24 rollouts. In 19, the model called <code>mark_task_complete</code> in its first response; 11 of those attempts produced no results file. Several of these began with a script failing because NumPy or SciPy was missing, which the task expects the agent to install. Most failures therefore came from stopping early or from a missing package, and only two of the 13 failed the fit check (Figure 7 in Appendix A). Our pass@3 was 7/8: seven tasks succeeded at least once. Our pass^3 was 1/8: one task succeeded every time. Retries may be acceptable when a person reviews the output. Unattended processing needs consistency, so the second measure matters more. The mean pass rate was 0.46, with a standard error of about 0.11 when rollouts are clustered by task. A repeat run passed 10 of 24. With eight development tasks, we would be cautious about generalizing either result to new spectra.</p><p><strong>Model comparison.</strong> We then compared six models on the same eight tasks (Figure 4). Several providers can serve the same open-weight model with different quantization and context limits, so we pinned one provider per model. With DeepInfra pinned as the provider, gpt-oss-120b passed 13 of 24 rollouts, compared with 11 of 24 in the earlier run, which used the default provider. Only gpt-oss-120b declared completion in its first response, in 22 of 24 rollouts. None of the other five models did so in any rollout (Figure 9 in Appendix A). The comparison also shows the limits of the development set. <a href=\"https://huggingface.co/Qwen/Qwen3.8-27B\">Qwen3.8-27B</a>, <a href=\"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash\">DeepSeek-V4.1-Flash</a>, and <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash\">MiniMax-M3.1-Flash</a> passed all 24 raman-lab rollouts, so these tasks cannot rank them. That will take harder tasks.</p><h2>\n\t\n\t<span>\n\t\t3. Bitter lessons: when a benchmark is wrong\n\t</span>\n</h2><p>Our shortcut returned the expected defect ratio without fitting a spectrum. A verifier that checked only the ratio would have given it full marks on all eight tasks. We found it by trying to break the grader with a solution we knew was incomplete, then added checks on the fitted spectrum (<a href=\"https://huggingface.co/blog/agentic-evals#step-5-check-the-evaluation\">Appendix A, Step 5</a>).</p><p>The shortcut got the right answer for the wrong reason, like a student who copies the final number without the working. The lesson for us was to test what the output demonstrates. A faster valid method should pass; a method that skips a required skill should not. Domain experts can help set tolerances so the verifier accepts alternative correct fits without accepting work that misses the point of the task.</p><p>Such errors are common, and they move scores considerably. A <a href=\"https://huggingface.co/papers/2507.02825\">review of agentic benchmarks</a> found that flaws in task setup or reward design can shift measured performance by up to 100% in relative terms.</p><h3>\n\t\n\t<span>\n\t\tPublic review is essential for correcting benchmarks\n\t</span>\n</h3><p>Public review can expose errors in instructions and tests that benchmark builders missed. Terminal-Bench 2.1 fixed <a href=\"https://www.tbench.ai/news/terminal-bench-2-1\">28 of its 89 tasks</a> after user reports, including one whose tests expected Spark SQL while its instructions asked for PostgreSQL, and <a href=\"https://icml.cc/virtual/2026/82793\">agent rankings stayed stable</a> through the correction.</p><p>Access to the evidence also determines how much work an outside audit takes. CritPt keeps its reference solutions private, so the <a href=\"https://arxiv.org/abs/2609.13009\">physicists who audited it</a> had to solve the problems themselves before finding errors in 21 of the 56 challenges they reviewed. The authors then released a <a href=\"https://artificialanalysis.ai/evaluations/critpt-v2\">corrected version</a>. OpenAI's audit of <a href=\"https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/\">SWE-bench Verified</a> found material issues in 59.4% of the 138 problems it examined, working from tasks and tests that anyone can read. For a builder, outside scrutiny is part of validation: publish what reviewers need to challenge a task, give them a way to report problems, and record what changed.</p><p>Similar flaws emerged in SWE-bench Pro. In July 2026 OpenAI <a href=\"https://openai.com/index/separating-signal-from-noise-coding-evaluations/\">estimated that about 30% of SWE-Bench Pro tasks were broken</a> and withdrew its recommendation to adopt it. Benchmark validation needs to continue after release.</p><h3>\n\t\n\t<span>\n\t\tCheck the claim as well as the code\n\t</span>\n</h3><p>A consistent score can still measure the wrong thing. <a href=\"https://huggingface.co/papers/2511.04703\">Measuring what Matters</a>, a review of 445 LLM benchmarks by 29 expert reviewers, found recurring patterns in tasks and metrics that undermine construct validity: whether the tasks and metrics support claims about the intended capability.</p><p>For example, fitting synthetic spectra does not establish that an agent can review lab reports. That may also require recognizing a poor measurement or asking for help. If every task supplies a usable spectrum, the test cannot show whether the agent knows when a fit would be inappropriate.</p><p><a href=\"https://arxiv.org/abs/2611.03494\">Harder Than the Task</a> extends this concern to organizational work, where authority, distributed knowledge, and dependencies can decide success. Its authors find that fewer than one quarter of prominent benchmarks claim to cover any such dimension. An agent may need calibration data from another team or permission to replace a measurement, and supplying everything at the outset removes those difficulties. If they matter to the claim, they belong in the evaluation. If they do not, it is enough to say that they remain untested.</p><p>Each error is worth a short record: the failed assumption, how it was found, and what changed. The record should also name the affected versions and say whether earlier scores remain comparable.</p><h3>\n\t\n\t<span>\n\t\tContamination vs saturation\n\t</span>\n</h3><p>The SWE-bench Verified audit described above also found contamination: every frontier model tested could reproduce the reference patch or verbatim problem details for some tasks. SWE-bench's public repositories and wide use exposed tasks to training. The openness that enabled scrutiny of bad tests also made items easier to encounter before evaluation.</p><p>However, if contamination is carefully controlled for during training, hiding the test set by itself does not prevent saturation. A <a href=\"https://huggingface.co/papers/2602.16763\">study of 60 language model benchmarks</a> found similar saturation in public and private ones, and concluded that hiding test data does not prevent saturation once a benchmark is widely adopted, meaning a good benchmark falls out of use due to saturation without developers being able to learn from and build on it. What did correspond to lower saturation was expert curation and a larger test set.</p><p>This leaves a practical release question: what can we expose for review while protecting active test items?</p><h2>\n\t\n\t<span>\n\t\t4. Open sourcing an evaluation strategically\n\t</span>\n</h2><p>Balancing contamination risks against saturation requires a strategic approach to what content is made public. Rather than treating openness as an all-or-nothing decision, benchmark creators can decide what to release part by part, protecting active test tasks from data leakage while still sharing the underlying infrastructure, grading methods, and reference examples that allow external researchers to audit and build upon the evaluation.</p><p>Existing benchmarks show a range of openness. <a href=\"https://arcprize.org/arc-agi/2\">ARC-AGI-2</a> publishes a training set and a 120-task evaluation set, and holds back semi-private and private sets of 120 tasks each. <a href=\"https://mlcommons.org/ailuminate/faq/\">AILuminate</a> keeps its official prompts confidential, publishes its methods and taxonomy, and keeps the underlying evidence for controlled review by authorized auditors and trusted researchers. Terminal-Bench publishes its tasks and marks their files with a <a href=\"https://huggingface.co/datasets/harborframework/terminal-bench-2.1/blob/main/tasks/raman-fitting/solution/solve.sh\">canary string</a> asking that they stay out of training corpora. No public reviewer can check a protected item, so whatever stays closed needs a review route of its own.</p><p>Table 1 outlines the core considerations of open sourcing an evaluation: what can be open, where it lives on the Hugging Face Hub, and what may stay protected. It has one row for each component in Figure 2, so you can go straight to the part you are about to release.</p><table>\n\t\t<thead><tr>\n<th>Part</th>\n<th>What can be open</th>\n<th>How to share on the Hugging Face Hub</th>\n<th>What can stay protected with alternatives for public review</th>\n</tr>\n\n\t\t</thead><tbody><tr>\n<td>Task</td>\n<td>Specifications, categories, construction methods, and a public development split</td>\n<td>A dataset repository, with a <a href=\"https://huggingface.co/docs/hub/datasets-cards\">dataset card</a> recording the source task, changes, license, and limitations</td>\n<td>Active test items and answers, kept in a separate <a href=\"https://huggingface.co/docs/hub/datasets-gated\">gated dataset</a> with manual approval of each access request. Release retired items where permissible.</td>\n</tr>\n<tr>\n<td>Environment</td>\n<td>Container definition, build files, pinned dependencies, and synthetic fixtures</td>\n<td>In the dataset repository, declared as an <a href=\"https://huggingface.co/datasets?other=rl-environment&amp;sort=trending\">environment type</a> in the dataset card</td>\n<td>Private data, credentials, licensed assets, or dangerous details. Document how public substitutes differ.</td>\n</tr>\n<tr>\n<td>Agent harness and tools</td>\n<td>Agent-loop code, tool interfaces, adapters, permissions, and budgets</td>\n<td>A link to the harness source and its pinned version, kept in the run record with the configuration used. Give the pinned harness version in the notes field of each <code>.eval_results</code> entry, so it’s next to the score</td>\n<td>Secrets, private services, and sensitive tool implementations. Provide safe substitutes and authorized inspection.</td>\n</tr>\n<tr>\n<td>Rollout and trace</td>\n<td>Public-task traces, reviewed excerpts, and analysis code</td>\n<td>A dataset or storage bucket. Harbor's <a href=\"https://github.com/harbor-framework/harbor/blob/26106c6d9c66848a1440faf5724d336affac52aa/docs/content/docs/training-workflows/sft.mdx\">trace exporter</a> pushes rollout records, and the Hub's <a href=\"https://huggingface.co/docs/hub/agent-traces\">trace viewer</a> opens supported session formats. Link scores to these traces through the source field of each <code>.eval_results</code> entry</td>\n<td>Traces exposing tasks, private data, or restricted model behavior. Offer protected analysis and case inspection.</td>\n</tr>\n<tr>\n<td>Reference solution</td>\n<td>Solution method and code for public examples</td>\n<td>The dataset repository, with each task</td>\n<td>Solutions that reveal protected items. Let authorized reviewers check them against the task.</td>\n</tr>\n<tr>\n<td>Evaluation harness</td>\n<td>Rollout orchestration, model configuration, logging, score aggregation, and version records</td>\n<td>A run record kept with the dataset: the job script, model and harness configuration, and package versions. Inspect writes its logs straight to an <code>hf://buckets/</code> path</td>\n<td>Credentials and item-identifying configuration. Keep a reviewable record of the exact restricted run.</td>\n</tr>\n<tr>\n<td>Verifier</td>\n<td>Rubrics, grader code, tolerances, and worked examples</td>\n<td>The dataset repository, with each task</td>\n<td>Reference answers and logic that reveal protected items. Authorized experts should inspect disputed judgments.</td>\n</tr>\n<tr>\n<td>Claims and task design</td>\n<td>Intended use, selection rationale, contextual assumptions, and validation evidence</td>\n<td>The dataset card. Bundle the task dataset, trace dataset, any harness Space, and the paper into one Hub Collection</td>\n<td>Sensitive source material may need redaction.</td>\n</tr>\n<tr>\n<td>Results</td>\n<td>Scores, uncertainty, costs, exclusions, and limitations, with the model setup and other reproducibility details</td>\n<td>Register the dataset as a Hub Benchmark with an <code>eval.yaml</code>. Scores go in each model repo's <code>.eval_results/</code> folder, opened as a <a href=\"https://huggingface.co/docs/hub/eval-results\">pull request</a>, with source linking to the trace dataset. Optionally, also convert them to the <a href=\"https://github.com/evaleval/every_eval_ever\">EEE schema</a></td>\n<td>Task-revealing detail in results. Publish safe summaries and arrange review of the underlying evidence.</td>\n</tr>\n<tr>\n<td>Corrections</td>\n<td>A correction history that names the affected versions</td>\n<td><a href=\"https://huggingface.co/docs/hub/repositories-pull-requests-discussions\">Pull requests and discussions</a> on the repository, with a change log in the card</td>\n<td>The protected example behind a correction. Still record which versions it affected.</td>\n</tr>\n</tbody>\n\t</table><p><em>Table 1. What to open, how to share it on the Hugging Face Hub, and what can stay protected, for each evaluation component.</em></p><p>Our own example follows this approach. We released raman-lab as a <a href=\"https://huggingface.co/datasets/burtenshaw/raman-lab\">dataset on the Hub</a>. It includes eight synthetic graphene spectra in Harbor task format, each with its environment, reference fit, verifier, and tolerances. The raw rollouts behind our results are shared as <a href=\"https://huggingface.co/datasets/burtenshaw/raman-lab-runs\">a separate dataset</a> including Harbor trial folders with trajectories and verifier output for all six models. The spectrum generator, analysis code, and results are in a companion <a href=\"https://github.com/burtenshaw/raman-lab-evals\">GitHub repository</a>, so both the agent harness and the evaluation harness can be inspected and rerun.</p><p>In a more sensitive domain, a clinical evaluation could open its environment definition, harness, tool interfaces, and grading framework, with synthetic cases for development use. Patient records and reference answers would stay under controlled access while authorized reviewers inspect disputed judgments. Each restriction should come with a condition for revisiting it.</p><h3>\n\t\n\t<span>\n\t\tStrategic open sourcing checklist\n\t</span>\n</h3><p>We recommend a short checklist, drawn in part from the more comprehensive <a href=\"https://huggingface.co/papers/2507.02825\">Agentic Benchmark Checklist</a>. Before releasing or retiring an evaluation, check that another builder can:</p><ul>\n<li>Identify what it measures, its intended use, and the conditions it leaves out.</li>\n<li>Find the reusable artifacts, their licenses and versions, and a way to report problems.</li>\n<li>See how a do-nothing agent scores and, where possible, how a human expert does.</li>\n<li>Read each score with its uncertainty, and with guidance on what known flaws mean for it.</li>\n<li>Learn which flaws were found, how they were handled, and how far they could move the results.</li>\n<li>Know how and when tasks will be refreshed to limit contamination and overfitting.</li>\n</ul><p>These release decisions also determine what remains useful when the benchmark no longer separates the systems it was built to compare.</p><h2>\n\t\n\t<span>\n\t\t5. Conclusion: giving the evaluation a useful afterlife\n\t</span>\n</h2><p>Benchmarks have a lifecycle. They are built, adopted, optimized against, and in time stop separating the systems they were made to compare. The <a href=\"https://huggingface.co/papers/2602.16763\">saturation study</a> from section 3 rated 29 of its 60 language model benchmarks as highly saturated, with rates rising with age. Saturation is not a failure in itself, since it can mean the capability has arrived.</p><p>What a benchmark leaves behind depends on how open it was. Publishing only scores leaves future builders little they can run or adapt. When the tasks, environments, verifiers, and traces are open, each keeps working after the leaderboard stops. A solved task becomes a regression check for a new harness. Its environment and verifier can seed a harder successor. Open benchmarks also get repaired and reissued: MMLU's questions became <a href=\"https://huggingface.co/datasets/edinburgh-dawg/mmlu-redux-2.0\">MMLU-Redux</a>, and Terminal-Bench 2.0 became <a href=\"https://www.tbench.ai/news/terminal-bench-2-1\">2.1</a> through community contributions. Our own walkthrough is an afterlife of this kind: raman-lab began as one task in a benchmark built for general terminal work.</p><p>That is the promise of building evaluations openly. The work that goes into an evaluation can outlive the benchmark itself, giving others a foundation to ask new questions, test new capabilities, and improve on what came before. The more we share what we build and learn, the less each new evaluation has to start from scratch.</p><p>If you’re curious what this looks like in practice, then follow our practical example.</p><h2>\n\t\n\t<span>\n\t\tAppendix A. Practical example: agentic deployment in a physics lab\n\t</span>\n</h2><p>Consider a physics lab that wants an agent to fit peaks in a Raman spectrum. Raman spectroscopy shines a laser on a sample and measures shifts in the frequency of the scattered light; the resulting peaks reveal properties of the material. For graphene, an atom-thick sheet of carbon, the G and 2D peaks near 1580 and 2700 cm⁻¹ <a href=\"https://arxiv.org/abs/cond-mat/0606284\">identify the number of layers</a>. A third peak, D, appears when the lattice is disordered, and its intensity relative to G <a href=\"https://arxiv.org/abs/1306.5856\">can indicate defects</a>. Figure 5 shows the setup.</p><p><em>Figure 5. Our intended setup. A laser lights a graphene sample, and a spectrometer records how the scattered light has shifted. The agent receives that spectrum as a file, fits a curve to each peak, and saves the fitted values. The verifier checks the saved values against reference fits. The curve shown is a sketch, not measured data.</em></p><p>We start by building on a task from an open benchmark. <a href=\"https://huggingface.co/datasets/harborframework/terminal-bench-2.0\">Terminal-Bench 2</a> already includes <a href=\"https://hub.harborframework.com/tasks/terminal-bench/raman-fitting\">raman-fitting</a>: fit a Lorentzian curve, a mathematical peak shape, to each of those two peaks and save eight parameters to <code>/app/results.json</code>. That gives us a runnable starting point for a narrower lab evaluation. We run these on the open source evaluation harness, <a href=\"https://docs.harborframework.com/\">Harbor</a>. Table 2 lists what the task provides and what to check before reusing each part.</p><table>\n\t\t<thead><tr>\n<th>Part</th>\n<th>In raman-fitting</th>\n<th>Check before reuse</th>\n</tr>\n\n\t\t</thead><tbody><tr>\n<td>Task</td>\n<td><code>instruction.md</code> asks for two peak fits saved to <code>/app/results.json</code>.</td>\n<td>Are units, parameter definitions, and the output format explicit?</td>\n</tr>\n<tr>\n<td>Environment</td>\n<td>A pinned container image holding the spectrum; <code>task.toml</code> sets resources and limits.</td>\n<td>Which packages must the agent install? Are resources and permissions suitable?</td>\n</tr>\n<tr>\n<td>Agent harness and tools</td>\n<td>Terminus-2 connects the model to shell commands.</td>\n<td>Can the agent inspect what its commands produced?</td>\n</tr>\n<tr>\n<td>Rollout and trace</td>\n<td>One attempt, recorded in <code>agent/trajectory.json</code>.</td>\n<td>Does the record show what happened before the agent stopped?</td>\n</tr>\n<tr>\n<td>Reference solution</td>\n<td><code>solution/solve.sh</code> runs the known fit.</td>\n<td>Does it pass in the supplied environment?</td>\n</tr>\n<tr>\n<td>Evaluation harness</td>\n<td>Harbor runs rollouts and collects scores and traces.</td>\n<td>Are versions and execution settings recorded?</td>\n</tr>\n<tr>\n<td>Verifier</td>\n<td><code>tests/test.sh</code> checks eight fitted values against reference tolerances.</td>\n<td>Does it grade the saved file and accept valid alternative fits?</td>\n</tr>\n</tbody>\n\t</table><p><em>Table 2. What to check before reusing each component.</em></p><h3>\n\t\n\t<span>\n\t\tStep 1. Define the claim\n\t</span>\n</h3><p>A good place to start is a <em>claim</em>: a plain statement of what the agent can do, which the evaluation is meant to support. \"The agent can fit a Raman spectrum\" is a claim, and so is \"the agent can process a lab report.\" From there, you can break the claim into smaller skills that can be checked one at a time, such as reading the file, locating the peaks, and writing the output.</p><p>For the purposes of this article, our claim is deliberately narrow: fit the specified peaks, calculate the requested D-to-G ratio, and save accurate results consistently. Reviewing a whole lab report would need additional skills and evidence.</p><p>Domain experts can help here. We suggest asking them to choose realistic noise levels, tolerances, and available software, then score examples independently and investigate disagreements. From there, you can break the claim into parts you can check and map each part to what each task tests.</p><h3>\n\t\n\t<span>\n\t\tStep 2. Find a starting task\n\t</span>\n</h3><p>For your own domain, the Hugging Face Hub is a good place to look, under its Benchmark and Environment dataset types. When you find a candidate, it is worth inspecting its instructions, environment, <a href=\"https://huggingface.co/datasets/harborframework/terminal-bench-2.1/blob/main/tasks/raman-fitting/solution/solve.sh\">reference solution</a>, and tests. Even a task that models already solve can provide useful infrastructure. From raman-fitting we inherit a working task format. It has only one spectrum, though, and a lab's measurements vary, so we expand on this task further as described in Step 4.</p><h3>\n\t\n\t<span>\n\t\tStep 3. Run the task unchanged\n\t</span>\n</h3><p>Before running any model, it helps to run the reference solution (also called oracle). If it fails, the fault lies in the task, environment, or verifier, and needs to be fixed before you read anything into model failures. After that, you can run the model several times without changing the setup.</p><p>We ran Harbor inside an <a href=\"https://huggingface.co/docs/hub/jobs-overview\">HF Job</a>, which supplied compute for the runner. Each rollout used its own <a href=\"https://huggingface.co/docs/huggingface_hub/guides/sandbox\">HF Sandbox</a> for commands and files, and <a href=\"https://huggingface.co/docs/inference-providers/index\">Inference Providers</a> supplied the model responses. With Harbor's <code>hf-sandbox</code> extra installed and <code>HF_TOKEN</code> set, these commands test the oracle, then run three rollouts with <a href=\"https://docs.harborframework.com/agents/pre-integrated-agents\">Terminus-2</a>, a terminal agent harness, and <a href=\"https://huggingface.co/openai/gpt-oss-120b\">gpt-oss-120b</a>, an open-weight model from OpenAI.</p><pre><code>harbor run -t terminal-bench/raman-fitting \\\n  -a oracle -e hf-sandbox\n\nOPENAI_API_KEY=<span>\"<span>$HF_TOKEN</span>\"</span> harbor run \\\n  -t terminal-bench/raman-fitting -k 3 -e hf-sandbox \\\n  -a terminus-2 -m openai/openai/gpt-oss-120b \\\n  --ak api_base=https://router.huggingface.co/v1\n</code></pre><p>In these commands, <code>-t</code> names the task, <code>-a</code> the agent, <code>-e</code> the environment, <code>-m</code> the model, and <code>-k</code> the number of rollouts per task.</p><p>The model passed 0 of 3 rollouts. In two it declared completion before observing relevant output; in the third it could not read the data file, which uses decimal commas that the reference solution converts before loading. The score alone could not tell these failures from an incorrect fit. The traces could.</p><h3>\n\t\n\t<span>\n\t\tStep 4. Adapt the task\n\t</span>\n</h3><p>We built <a href=\"https://huggingface.co/datasets/burtenshaw/raman-lab\">raman-lab</a>: eight synthetic spectra with known parameters and varied noise and defect levels. The adaptation fits three peaks instead of two and reports a defect ratio. We used an agent to help generate the spectra, reviewed them by hand, and wrote new instructions, reference fits, and output checks. These eight tasks are a development set, meaning tasks we use while building the evaluation; broader coverage should follow the variation in real measurements.</p><p>The D-to-G intensity ratio can indicate defects, but its interpretation <a href=\"https://pubmed.ncbi.nlm.nih.gov/21696186/\">depends on the laser excitation energy and the disorder regime</a>. An evaluation asking for a \"defect ratio\" must say which peaks, whether intensity means height or integrated area, and how the result is checked.</p><p>The original <a href=\"https://huggingface.co/datasets/harborframework/terminal-bench-2.1/blob/main/tasks/raman-fitting/instruction.md\">instruction.md</a> shows why such definitions matter: it asks for x0, gamma, amplitude, and offset without defining them or their units. The reference solution treats them as peak center, half-width at half-maximum, height above background, and background level, and converts the x-axis from nanometres to Raman shift. We put choices like these into the adapted instructions, so that the verifier's requirements are visible. Figure 6 shows the two files side by side.</p><p><em>Figure 6. The <code>instruction.md</code> files for</em> <a href=\"https://huggingface.co/datasets/harborframework/terminal-bench-2.1/blob/main/tasks/raman-fitting/instruction.md\"><em>raman-fitting</em></a> <em>and</em> <a href=\"https://huggingface.co/datasets/burtenshaw/raman-lab/blob/main/graphene-s01/instruction.md\"><em>raman-lab</em></a><em>, side by side. The highlighted additions cover the new parts of the claim: the D peak, the defect ratio, and both in the saved results. The remaining part, handling varied measurements, lives in the data: all eight raman-lab tasks share this instruction, and only the spectrum, with its noise and defect level, changes.</em></p><p>The verifier is guided by three rules:</p><ul>\n<li>Grade what the agent produced: inspect the saved output, not its claim to have finished. <a href=\"https://huggingface.co/papers/2406.12045\">τ-bench</a> does this by comparing the final database state with an annotated goal state.</li>\n<li>State every checked fact in the instruction, including units, parameter conventions, tolerances, and required fields.</li>\n<li>Generate synthetic data from known parameters so the reference answer is available, then review whether the examples represent the intended problem.</li>\n</ul><p>The shared format can stay as it is while the data and checks change. This command creates a task scaffold:</p><pre><code>harbor task init my-org/task-01 -p datasets/my-evals\n</code></pre><h3>\n\t\n\t<span>\n\t\tStep 5. Check the evaluation\n\t</span>\n</h3><p>Before executing more model runs, test the evaluation itself. Here <code>datasets/my-evals</code> contains the adapted tasks.</p><pre><code>harbor run -p datasets/my-evals -a oracle -e hf-sandbox\nharbor run -p datasets/my-evals -a nop -e hf-sandbox\n</code></pre><ul>\n<li>The oracle should pass every task, i.e., the known solution must work in the supplied environment.</li>\n<li>The no-op agent does nothing, so it should fail every task. A blank exam paper should not pass. A <a href=\"https://huggingface.co/papers/2507.02825\">review of agentic benchmarks</a> found one that counted empty responses as successes.</li>\n<li>A shortcut that skips required work should fail. One way to test this is with a deliberately lazy solution, such as one that outputs a plausible answer without doing the work, to see whether the verifier accepts it. Also try plausible wrong answers and alternative correct methods, to catch both false passes and false failures.</li>\n</ul><p>Our shortcut returned the expected defect ratio on all eight tasks without fitting the spectra, so we added checks on the fit itself. Section 3 explains what that means for verifier design.</p><h3>\n\t\n\t<span>\n\t\tStep 6. Run it and read the traces\n\t</span>\n</h3><p>It is helpful to read both successful and failed rollouts. Harbor records messages, tool calls, and observations in <code>agent/trajectory.json</code> using <a href=\"https://docs.harborframework.com/agents/atif\">ATIF</a>, a shared trace format. Grouping failures by cause makes the patterns easier to see: parsing the data, executing a tool, stopping too early, or grading the output.</p><p>The adapted setup passed 11 of 24 rollouts. In 19, the model called <code>mark_task_complete</code> in its first response; 11 of those attempts produced no results file.</p><p><em>Figure 7. On 19 of 24 attempts, the agent called <code>mark_task_complete</code> in its first response. Eleven produced no results file, seven passed, and one failed the fit check. Of the five remaining attempts, four passed and one failed the fit check.</em></p><p>Several missing-file failures began with missing NumPy or SciPy. The published task expects the agent to install them; its reference solution starts with a pip install. A lab evaluation of fitting with supplied tools could install and pin them in advance. Dependencies also drift: Terminal-Bench 2.1 <a href=\"https://www.tbench.ai/news/terminal-bench-2-1\">repaired nine tasks</a> whose external dependencies had changed after release.</p><p>Preinstalling changes the evaluation condition, so keep the model, harness, tasks, and rollout count fixed when comparing the two setups.</p><p>Finally, we adapt the setup, repeat the checks in step 5, and rerun. Harbor's <a href=\"https://github.com/harbor-framework/harbor/blob/26106c6d9c66848a1440faf5724d336affac52aa/docs/content/docs/training-workflows/sft.mdx\">trace exporter</a> can prepare records for sharing on the Hub. It is worth reviewing them for protected content first, and keeping both successes and failures so others can investigate the result.</p><h3>\n\t\n\t<span>\n\t\tStep 7. Report the score\n\t</span>\n</h3><p>The right metric depends on the decision you need to make:</p><ul>\n<li><a href=\"https://huggingface.co/papers/2107.03374\">pass@k</a> asks whether at least one of k rollouts succeeds. Our pass@3 was 7/8: seven tasks succeeded at least once.</li>\n<li><a href=\"https://huggingface.co/papers/2406.12045\">pass^k</a> asks whether all k rollouts succeed. Our pass^3 was 1/8: one task succeeded every time.</li>\n</ul><p>Retries may be acceptable when a person reviews the output. Unattended processing needs consistency, so the second measure matters more.</p><p>A mean is more useful with its uncertainty beside it. Rollouts of the same spectrum share its difficulty, so they are not independent, and the standard error should be <a href=\"https://huggingface.co/papers/2411.00640\">clustered by task</a>. Clustering gave a mean success rate of 0.46 with a standard error of about 0.11. A repeat run passed 10 of 24 rollouts, compared with 11 of 24 in the first run. With only eight development tasks, we would be cautious about generalizing either result to new spectra.</p><p>Harbor writes a <code>result.json</code> per rollout, which it calls a trial. We group these by task, check that each task has three rollouts, and record errors or exclusions. Reporting tokens, elapsed time, and tool calls beside the score lets readers compare setups that reach similar results at different costs.</p><h3>\n\t\n\t<span>\n\t\tStep 8. Compare models\n\t</span>\n</h3><p>When a single model fails a task, that run alone cannot tell us what went wrong. It could be the model, the agent harness, or the evaluation itself. Running more models on the same tasks helps narrow the possibilities. When several models fail the same task, inspect the instructions, environment, and verifier for a shared cause. When one model repeatedly fails in a distinctive way, compare its traces with successful attempts.</p><p>Inference Providers serves many open-weight models through the same router, so each new model is one more value for <code>-m</code>. Several providers can serve the same model with different quantization and context limits, so it helps to pin one with a suffix such as <code>:deepinfra</code> and record it beside the score.</p><pre><code>OPENAI_API_KEY=<span>\"<span>$HF_TOKEN</span>\"</span> harbor run -p datasets/my-evals -k 3 \\\n  -e hf-sandbox -a terminus-2 -m openai/Qwen/Qwen3.8-27B:deepinfra \\\n  --ak api_base=https://router.huggingface.co/v1\n</code></pre><p>Figure 8 shows the raman-lab results for each model.</p><p><em>Figure 8. raman-lab results per model, with pass@3, pass^3, and the mean pass rate with its clustered standard error. Select a square to inspect that rollout.</em></p><p>The comparison makes one pattern in gpt-oss-120b clearer: it often declares completion before seeing command output. In this separate run with DeepInfra pinned as the provider, it called <code>mark_task_complete</code> in its first response in 22 of 24 rollouts, while none of the other five models did so (Figure 9). The Step 6 run used the router's default provider and recorded 19 of 24 such early completions. It passed 11 of 24 rollouts, compared with 13 of 24 in the DeepInfra run. Both counts use the same test: whether the model called <code>mark_task_complete</code> in its first response.</p><p><em>Figure 9. raman-lab rollout outcomes by when the agent declared completion. Left: the agent observed command output first. Right: it called <code>mark_task_complete</code> in its first response.</em></p><p>The comparison also shows the limits of the development set. <a href=\"https://huggingface.co/Qwen/Qwen3.8-27B\">Qwen3.8-27B</a>, <a href=\"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash\">DeepSeek-V4.1-Flash</a>, and <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash\">MiniMax-M3.1-Flash</a> passed all 24 raman-lab rollouts, so these tasks cannot rank them. That will take harder tasks.</p><p>Inference for all six models cost under $5 at the router's list prices. The median raman-lab rollout used about 6,000 tokens for gpt-oss-120b and about 90,000 for MiniMax-M3.1-Flash. The <a href=\"https://github.com/burtenshaw/raman-lab-evals\">companion repository</a> holds <a href=\"https://huggingface.co/datasets/burtenshaw/raman-lab-runs\">the traces</a>, the per-rollout results, and the scripts to add another model.</p><h3>\n\t\n\t<span>\n\t\tHow we reused existing open components\n\t</span>\n</h3><p>Reusing the runner and task format let us concentrate on the physics, grading, and review. We could reuse them because Harbor and Terminal-Bench publish their code and tasks.</p><ul>\n<li><p><strong>Task:</strong> We reused the Harbor task format and Terminal-Bench's raman-fitting task. The new work was a narrower claim, skill coverage, and instructions for raman-lab.</p>\n</li>\n<li><p><strong>Task data:</strong> The original spectrum served as a starting example. We built a generator for eight spectra with known parameters and reviewed them manually.</p>\n</li>\n<li><p><strong>Environment:</strong> Harbor's environment support and HF Sandbox ran the tasks. We checked package requirements and diagnosed missing dependencies.</p>\n</li>\n<li><p><strong>Agent harness and tools:</strong> Terminus-2 with shell access, with Inference Providers for model responses. This part needed no new work.</p>\n</li>\n<li><p><strong>Rollout and trace:</strong> Harbor's rollout records and ATIF captured each run. We reviewed successes and failures and grouped them by cause.</p>\n</li>\n<li><p><strong>Reference solution:</strong> We kept the convention of running <code>solution/solve.sh</code> and wrote a reference fit for each new task.</p>\n</li>\n<li><p><strong>Evaluation harness:</strong> Harbor ran in an HF Job. We configured the run and grouped results by task.</p>\n</li>\n<li><p><strong>Verifier:</strong> We reused the <code>tests/test.sh</code> entry point and its way of writing the score to a file. The new work was fit and ratio checks, plus tests for shortcuts and incorrect outputs.</p>\n</li>\n</ul><h2>\n\t\n\t<span>\n\t\tReferences\n\t</span>\n</h2><ul>\n<li>Akhtar, M., Reuel, A., Soni, P., et al. (2026). When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation. arXiv:2602.16763. <a href=\"https://huggingface.co/papers/2602.16763\">https://huggingface.co/papers/2602.16763</a></li>\n<li>Ansari, A., Sun, H., Liu, A. Z., et al. (2026). How Good Are Frontier Models at Physics? Expert Re-Grading Reveals Broken Evaluations and Near-Saturation of Leading Benchmarks. arXiv:2609.13009. <a href=\"https://arxiv.org/abs/2609.13009\">https://arxiv.org/abs/2609.13009</a></li>\n<li>Anthropic. (2026). Demystifying evals for AI agents. Anthropic Engineering, January 2026. <a href=\"https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents\">https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents</a></li>\n<li>ARC Prize Foundation. (n.d.). ARC-AGI-2. <a href=\"https://arcprize.org/arc-agi/2\">https://arcprize.org/arc-agi/2</a></li>\n<li>Artificial Analysis. (2026). Announcing Artificial Analysis Intelligence Index v5. Post on X, October 2026. <a href=\"https://x.com/ArtificialAnlys/status/2115265133467635877\">https://x.com/ArtificialAnlys/status/2115265133467635877</a></li>\n<li>Barres, V., Barton, A., Foss, N. J., &amp; Nielsen, H. M. (2026). Harder Than the Task: From Technical to Organizational Difficulty in AI Benchmarking. arXiv:2611.03494. <a href=\"https://arxiv.org/abs/2611.03494\">https://arxiv.org/abs/2611.03494</a></li>\n<li>Bean, A. M., Kearns, R. O., Romanou, A., et al. (2025). Measuring what Matters: Construct Validity in Large Language Model Benchmarks. arXiv:2511.04703. <a href=\"https://huggingface.co/papers/2511.04703\">https://huggingface.co/papers/2511.04703</a></li>\n<li>Buchanan, E. K., Linderman, S., &amp; Ré, C. (2026). Benchmarks as Software: A Case Study on Terminal-Bench. ICML 2026. <a href=\"https://icml.cc/virtual/2026/82793\">https://icml.cc/virtual/2026/82793</a></li>\n<li>Cançado, L. G., Jorio, A., Ferreira, E. H., et al. (2011). Quantifying defects in graphene via Raman spectroscopy at different excitation energies. Nano Letters, 11(8), 3190–3196. <a href=\"https://pubmed.ncbi.nlm.nih.gov/21696186/\">https://pubmed.ncbi.nlm.nih.gov/21696186/</a></li>\n<li>Chen, M., Tworek, J., Jun, H., et al. (2021). Evaluating Large Language Models Trained on Code. arXiv:2107.03374. <a href=\"https://huggingface.co/papers/2107.03374\">https://huggingface.co/papers/2107.03374</a></li>\n<li>Ferrari, A. C., &amp; Basko, D. M. (2013). Raman spectroscopy as a versatile tool for studying the properties of graphene. Nature Nanotechnology, 8, 235–246. <a href=\"https://arxiv.org/abs/1306.5856\">https://arxiv.org/abs/1306.5856</a></li>\n<li>Ferrari, A. C., Meyer, J. C., Scardaci, V., et al. (2006). Raman spectrum of graphene and graphene layers. Physical Review Letters, 97, 187401. <a href=\"https://arxiv.org/abs/cond-mat/0606284\">https://arxiv.org/abs/cond-mat/0606284</a></li>\n<li>Gema, A. P., Leang, J. O. J., Hong, G., et al. (2024). Are We Done with MMLU? arXiv:2406.04127. <a href=\"https://huggingface.co/papers/2406.04127\">https://huggingface.co/papers/2406.04127</a></li>\n<li>Ghosh, A., Reuel, A., Chim, J., et al. (2026). Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting. arXiv:2606.09809. <a href=\"https://huggingface.co/papers/2606.09809\">https://huggingface.co/papers/2606.09809</a></li>\n<li>Harbor Framework. (n.d.). Harbor documentation. <a href=\"https://docs.harborframework.com/\">https://docs.harborframework.com/</a></li>\n<li>Isaac, W., Messing, S., &amp; Lum, K. (2026). Piloting the world's first double-blind AI evaluations. Google DeepMind, August 2026. <a href=\"https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/\">https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/</a></li>\n<li>Longpre, S., Klyman, K., Appel, R. E., et al. (2025). In-House Evaluation Is Not Enough: Towards Robust Third-Party Flaw Disclosure for General-Purpose AI. arXiv:2503.16861. <a href=\"https://huggingface.co/papers/2503.16861\">https://huggingface.co/papers/2503.16861</a></li>\n<li>Miller, E. (2024). Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations. arXiv:2411.00640. <a href=\"https://huggingface.co/papers/2411.00640\">https://huggingface.co/papers/2411.00640</a></li>\n<li>MLCommons. (n.d.). AILuminate: frequently asked questions. <a href=\"https://mlcommons.org/ailuminate/faq/\">https://mlcommons.org/ailuminate/faq/</a></li>\n<li>OpenAI. (2026). Why we no longer evaluate SWE-bench Verified. February 2026. <a href=\"https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/\">https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/</a></li>\n<li>OpenAI. (2026). Separating signal from noise in coding evaluations. July 2026. <a href=\"https://openai.com/index/separating-signal-from-noise-coding-evaluations/\">https://openai.com/index/separating-signal-from-noise-coding-evaluations/</a></li>\n<li>Paniego, S., &amp; Gosthipaty, A. R. (2026). Harness, Scaffold, and the AI Agent Terms Worth Getting Right. Hugging Face blog, May 2026. <a href=\"https://huggingface.co/blog/agent-glossary\">https://huggingface.co/blog/agent-glossary</a></li>\n<li>Skarlinski, M., Laurent, J., Bou, A., &amp; White, A. (2025). About 30% of Humanity's Last Exam chemistry/biology answers are likely wrong. FutureHouse, July 2025. <a href=\"https://www.futurehouse.org/research/hle-exam\">https://www.futurehouse.org/research/hle-exam</a></li>\n<li>Terminal-Bench. (2026). Terminal-Bench 2.1. Release notes, May 2026. <a href=\"https://www.tbench.ai/news/terminal-bench-2-1\">https://www.tbench.ai/news/terminal-bench-2-1</a></li>\n<li>Wei, K. (2026). A primer on AI evaluations for policymakers: Part I. Matters of Scale, November 2026. <a href=\"https://ai.scal.ing/p/evals-intro-1\">https://ai.scal.ing/p/evals-intro-1</a></li>\n<li>XLANG Lab. (2025). Introducing OSWorld-Verified. July 2025. <a href=\"https://xlang.ai/blog/osworld-verified\">https://xlang.ai/blog/osworld-verified</a></li>\n<li>Yao, S., Shinn, N., Razavi, P., &amp; Narasimhan, K. (2024). τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains. arXiv:2406.12045. <a href=\"https://huggingface.co/papers/2406.12045\">https://huggingface.co/papers/2406.12045</a></li>\n<li>Zhu, Y., Jin, T., Pruksachatkun, Y., et al. (2025). Establishing Best Practices for Building Rigorous Agentic Benchmarks. arXiv:2507.02825. <a href=\"https://huggingface.co/papers/2507.02825\">https://huggingface.co/papers/2507.02825</a></li>\n</ul><h2>\n\t\n\t<span>\n\t\tGlossary\n\t</span>\n</h2><p><strong>Agent harness:</strong> The software around a model that turns its responses into actions, such as shell commands. Terminus-2 is the agent harness in this post.</p><p><strong>Agentic evaluation:</strong> An evaluation that scores what an agent changed in an environment, not only the text it returned.</p><p><strong>ATIF:</strong> Agent Trajectory Interchange Format, a shared format for recording an agent's messages, tool calls and observations.</p><p><strong>Canary string:</strong> A unique marker in benchmark files that lets model trainers find and exclude them from training data.</p><p><strong>Clustered standard error:</strong> A standard error that treats rollouts of the same task as related, which gives a wider and more honest margin than treating each rollout as independent.</p><p><strong>Container image:</strong> A fixed package of operating system, files and software, so every rollout starts from the same environment.</p><p><strong>Contamination:</strong> Test questions or solutions appearing in training data, so a score may reflect memory rather than skill.</p><p><strong>Context limit:</strong> The maximum amount of text, counted in tokens, that a model can read in one request.</p><p><strong>D, G and 2D peaks:</strong> Features in graphene's Raman spectrum. G and 2D indicate the number of layers, and D appears when the carbon lattice has defects.</p><p><strong>Defect ratio:</strong> The intensity of the D peak divided by that of the G peak, used to indicate defects in graphene. Also called the D-to-G ratio.</p><p><strong>Development set:</strong> Tasks used while building and debugging an evaluation, as opposed to a held-back test set used for final scores.</p><p><strong>Environment:</strong> The software, files and resources an agent works in during a task.</p><p><strong>Evaluation harness:</strong> The software that runs tasks, repeats rollouts, collects traces and aggregates scores. Harbor is the evaluation harness in this post.</p><p><strong>Gated dataset:</strong> A Hugging Face dataset that can be downloaded only after the owner approves an access request.</p><p><strong>Harbor:</strong> An open-source evaluation harness for agentic tasks.</p><p><strong>HF Job:</strong> Compute on Hugging Face that runs a script. Here it runs Harbor.</p><p><strong>HF Sandbox:</strong> An isolated Hugging Face environment where a single rollout runs its commands and stores its files.</p><p><strong>Held-out test set:</strong> Test items kept private so that models cannot be trained or tuned on them.</p><p><strong>Inference Providers:</strong> A Hugging Face service that routes model requests to third-party providers through one API, called the router.</p><p><strong>Lorentzian:</strong> A mathematical curve commonly used to model the shape of a spectral peak.</p><p><strong>No-op agent:</strong> An agent that does nothing. A sound evaluation gives it a score of zero.</p><p><strong>Open-weight model:</strong> A model whose trained parameters are published for anyone to download and run.</p><p><strong>Oracle:</strong> An agent that runs the reference solution, used to check that every task can be solved in the supplied environment.</p><p><strong>pass@k:</strong> The share of tasks where at least one of k rollouts succeeds.</p><p><strong>pass^k:</strong> The share of tasks where all k rollouts succeed.</p><p><strong>Pinning:</strong> Fixing the exact versions of software, images or model providers so a run can be repeated.</p><p><strong>Quantization:</strong> Storing model weights at lower numerical precision to run faster and cheaper, which can change outputs slightly.</p><p><strong>Raman shift:</strong> The difference in frequency between the laser light and the light a sample scatters, measured in cm⁻¹.</p><p><strong>Raman spectroscopy:</strong> A technique that shines a laser on a sample and measures shifts in the scattered light to identify properties of the material.</p><p><strong>Reference solution:</strong> A known correct way to complete a task, stored with the task.</p><p><strong>Rollout:</strong> One attempt by an agent at one task. Harbor calls it a trial.</p><p><strong>Run record:</strong> A record of what ran behind a score: the exact task, environment, model configuration and code versions.</p><p><strong>Saturation:</strong> The point where most models reach top scores on a benchmark, so it no longer separates them.</p><p><strong>Synthetic data:</strong> Data generated from known parameters, so the correct answer is known in advance.</p><p><strong>Terminal-Bench:</strong> An open benchmark of tasks that an agent completes in a computer terminal.</p><p><strong>Terminus-2:</strong> The terminal agent harness used in this post. It connects the model to shell commands.</p><p><strong>Token:</strong> The unit of text a model reads and writes, roughly a short word or part of a word.</p><p><strong>Trace:</strong> The full record of a rollout: the model's messages, its tool calls and what each command returned. Also called a trajectory.</p><p><strong>Verifier:</strong> The code that grades a rollout by checking the saved output or the environment's final state.</p>",
-    "author": "Avijit Ghosh, ben burtenshaw, Irene Solaiman"
-  },
-  {
-    "id": "aihot-20261123-mof-news-4e2ae3d8",
-    "title": "第十二次中俄财长对话在俄罗斯莫斯科举行",
-    "summary": "第十二次中俄财长对话在俄罗斯莫斯科举行，消息由财政部发布。这是两国财长对话机制举行至第十二次的最新一轮。",
-    "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202611/t20261123_4005214.htm",
-    "source": "财政部 · 财政要闻与收支数据",
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "score": 76,
-    "tier": "T1",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "政策",
-      "宏观",
-      "市场政策",
-      "政府动态"
-    ],
-    "region": [
-      "金融与政策",
-      "部委政策"
-    ],
-    "tags": [
-      "部委政策",
-      "财政数据",
-      "中俄财长对话",
-      "财政部",
-      "财政外交",
-      "部委动态"
-    ],
-    "context": "中俄财长对话是两国财政部门的双边对话机制，本次为第十二次，后续成果值得继续关注。",
-    "contentHtml": "<p>2026年11月23日&nbsp;&nbsp;来源：国际经济关系司</p><p>　　为从财金领域落实习近平主席与普京总统会晤重要共识，巩固和深化中俄新时代全面战略协作伙伴关系，2026年11月23日，第十二次中俄财长对话在俄罗斯莫斯科举行。财政部部长蓝佛安与俄罗斯副总理兼财政部部长西卢阿诺夫共同主持会议。双方围绕宏观经济形势与金融合作、财政管理和改革、多边财金合作等深入探讨，达成多项共识，共同发表《第十二次中俄财长对话联合声明》。财政部部长助理常军红、俄罗斯财政部第一副部长帕维尔·卡多奇尼科夫、俄罗斯财政部副部长伊万·切贝斯科夫以及来自两国财金部门的官员出席。&nbsp;</p><p>　　对话前，蓝佛安部长与西卢阿诺夫副总理兼财长举行双边会谈，就双方共同关心的问题交换了意见。&nbsp;</p><p><img src=\"https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202611/W020261123646538820055.jpg\" width=\"600\" height=\"638\" alt=\"\"></p><p><img src=\"https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202611/W020261123628678396605.jpg\" width=\"800\" height=\"507\" alt=\"\"></p>"
-  },
-  {
-    "id": "aihot-20261123-mof-news-12d2dd13",
-    "title": "财政部发行2026年记账式贴现（七十六期）国债",
-    "summary": "财政部发行2026年记账式贴现（七十六期）国债。本期为2026年度记账式贴现国债序列的第七十六期，具体发行要素以财政部公告为准。",
-    "url": "http://zwgls.mof.gov.cn/ywgg/202611/t20261123_4005166.htm",
-    "source": "财政部 · 财政要闻与收支数据",
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "score": 50,
-    "tier": "T1",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "财政政策",
-      "部委动态",
-      "市场政策",
-      "政府动态"
-    ],
-    "region": [
-      "金融与政策",
-      "部委政策"
-    ],
-    "tags": [
-      "部委政策",
-      "财政数据",
-      "国债发行",
-      "财政部",
-      "贴现国债"
-    ],
-    "context": "记账式贴现国债属财政部年内常态化滚动发行品种，本期发债延续既有节奏，对市场资金面影响有限。"
-  },
-  {
-    "id": "aihot-20261123-mof-news-e2eedb06",
-    "title": "财政部公布2026年10月份全国彩票销售情况",
-    "originalTitle": "2026年10月份全国彩票销售情况",
-    "summary": "财政部公布2026年10月份全国彩票销售情况，披露当月全国彩票销售数据。具体数据详情见财政部官网公告。",
-    "url": "https://zhs.mof.gov.cn/zonghexinxi/202611/t20261120_4005040.htm",
-    "source": "财政部 · 财政要闻与收支数据",
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "score": 62,
-    "tier": "T1",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "财政政策",
-      "市场政策",
-      "政府动态"
-    ],
-    "region": [
-      "金融与政策",
-      "部委政策"
-    ],
-    "tags": [
-      "部委政策",
-      "财政数据",
-      "彩票销售",
-      "财政部"
-    ],
-    "context": "彩票销售数据由财政部按月发布，可作为观察居民消费与财政非税收入的参考指标。"
-  },
-  {
-    "id": "aihot-20261123-mof-news-6b724684",
-    "title": "财政部辽宁监管局：'四个坚持'多维发力闭环管控 提升财政监管质效",
-    "originalTitle": "财政部辽宁监管局：“四个坚持”多维发力闭环管控 提升财政监管质效",
-    "summary": "财政部辽宁监管局以'四个坚持'多维发力，通过闭环管控方式提升财政监管质效。此为财政部派出机构的地方工作动态，未涉及新政策发布或全国性收支数据变化。",
-    "url": "http://ln.mof.gov.cn/gzdt2/caizhengjiancha/202611/t20261112_4004568.htm",
-    "source": "财政部 · 财政要闻与收支数据",
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "score": 48,
-    "tier": "T1",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "财政政策",
-      "政府动态",
-      "市场政策",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "部委政策"
-    ],
-    "tags": [
-      "部委政策",
-      "财政数据",
-      "财政部",
-      "财政监管",
-      "辽宁",
-      "部委动态"
-    ],
-    "context": "属部委派出机构常规工作动态，反映地方财政监管运作方式，对市场和政策走向无直接影响。"
-  },
-  {
-    "id": "aihot-20261123-mof-news-99f2439c",
-    "title": "财政部福建监管局：聚焦四维发力，提升预算执行监督专项核查质效",
-    "originalTitle": "财政部福建监管局：聚焦四维发力 筑牢监管防线 全面提升预算执行监督专项核查工作质效",
-    "summary": "财政部福建监管局围绕预算执行监督专项核查工作，聚焦四维发力、筑牢监管防线，全面提升核查工作质效。该文为地方财政监管部门的工作动态，介绍其在预算执行监督专项核查中的做法与成效。",
-    "url": "http://fj.mof.gov.cn/gzdt/caizhengjiancha/202610/t20261029_4003679.htm",
-    "source": "财政部 · 财政要闻与收支数据",
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "score": 50,
-    "tier": "T1",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "部委政策",
-      "财政数据",
-      "市场政策",
-      "政府动态"
-    ],
-    "region": [
-      "金融与政策",
-      "部委政策"
-    ],
-    "tags": [
-      "部委政策",
-      "财政数据",
-      "财政部",
-      "预算执行监督",
-      "专项核查",
-      "财政监管"
-    ],
-    "context": "属财政部派出机构的例行监管工作动态，可侧面反映财政系统对预算执行监督的持续强化，市场影响有限。"
-  },
-  {
-    "id": "aihot-20261122-ndrc-policy-d90c7016",
-    "title": "国家发展改革委等部门联合印发《实施全面节约战略行动方案》",
-    "summary": "国家发展改革委等部门联合印发《实施全面节约战略行动方案》，以部委联合发文形式部署全面节约战略的实施行动。该文件由国家发改委牵头、多部门联合推出，规格较高。",
-    "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261103_1408529.html",
-    "source": "国家发改委 · 政策通知",
-    "publishedAt": "2026-11-22T19:35:37.651Z",
-    "score": 90,
-    "tier": "T1",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "政府动态",
-      "宏观经济政策",
-      "市场政策",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "部委政策"
-    ],
-    "tags": [
-      "部委政策",
-      "政府动态",
-      "发改委",
-      "全面节约"
-    ],
-    "context": "多部委联合发文是全面节约战略落地的标志性政策动作，对资源节约与相关行业政策走向具有指引意义。",
-    "contentHtml": "<h2>国家发展改革委等部门联合印发《实施全面节约战略行动方案》</h2><p>发布时间：2026/11/04</p><p>来源：<span>环资司</span></p><p><img src=\"https://www.ndrc.gov.cn/images/dayin.png\" alt=\"\">[ 打印 ]\n                        </p><p>　　为深入贯彻党中央和国务院决策部署，推进各类资源节约集约利用，维护国家资源安全，加快经济社会发展全面绿色转型，国家发展改革委、工业和信息化部、自然资源部、水利部、国管局近日联合印发《实施全面节约战略行动方案》（以下简称《方案》）。</p><p>　　《方案》坚持以习近平新时代中国特色社会主义思想为指导，深入贯彻党的二十大和二十届历次全会精神，完整准确全面贯彻新发展理念，牢固树立节约集约循环利用的资源观，把节约资源贯穿于经济社会发展全过程、各领域，推进资源总量管理、科学配置、全面节约、循环利用，提出了到2030年全面节约工作的主要目标。《方案》突出问题导向，从推进“能水粮地矿材”各类资源要素节约和增强全民节约意识等7个方面，分别提出了重点任务举措。《方案》还明确了标准、政策、监管、科技等支撑保障措施。</p><p>　　下一步，国家发展改革委、工业和信息化部、自然资源部、水利部、国管局将会同有关部门加强统筹协调和督促指导，细化目标任务，压实各方责任，扎实推动《方案》各项任务举措落实落地，强化《方案》实施过程中的跟踪评估，充分发挥政府、企业、行业协会、社会公众等各方面作用，形成整体工作合力，不断提高资源利用效率，为全面建设社会主义现代化国家提供坚实资源保障。</p><p>附件：</p><p>排行榜</p><ul>\n\n            </ul>"
-  },
-  {
-    "id": "aihot-20261122-ndrc-policy-554abe62",
-    "title": "国家发改委有关负责同志就《实施全面节约战略行动方案》答记者问",
-    "originalTitle": "国家发展改革委有关负责同志就《实施全面节约战略行动方案》答记者问",
-    "summary": "国家发展改革委有关负责同志就《实施全面节约战略行动方案》答记者问，对这一全面节约战略的行动方案作出官方解读。该文件由国家发改委层面发布并答疑，是全面节约战略落地实施的重要政策依据。",
-    "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261103_1408528.html",
-    "source": "国家发改委 · 政策通知",
-    "publishedAt": "2026-11-22T19:35:37.651Z",
-    "score": 92,
-    "tier": "T1",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "政策动态",
-      "宏观经济",
-      "政府动态",
-      "市场政策"
-    ],
-    "region": [
-      "金融与政策",
-      "部委政策"
-    ],
-    "tags": [
-      "部委政策",
-      "政府动态",
-      "发改委",
-      "全面节约战略",
-      "政策解读"
-    ],
-    "context": "全面节约战略属国家顶层部署，发改委官方答疑是把握政策方向与落地节奏的直接依据。",
-    "contentHtml": "<p>　　近日，国家发展改革委、工业和信息化部、自然资源部、水利部、国管局联合印发了《实施全面节约战略行动方案》（以下简称《方案》）。日前，国家发展改革委有关负责同志就《方案》有关情况回答了记者提问。</p><p>　　<b>问：《方案》出台的背景是什么？</b></p><p>　　<b>答：</b>节约资源是我国的基本国策。习近平总书记高度重视资源节约工作，多次作出重要指示批示，强调要坚持节约优先，实施全面节约战略，推进各领域节约行动，推动资源利用方式根本转变。近年来，国家发展改革委会同相关部门深入贯彻落实党中央和国务院决策部署，大力实施全面节约战略，推动全面节约工作取得明显成效。“十四五”时期，我国单位国内生产总值能耗、用水量、建设用地使用面积与“十三五”末相比均大幅降低，粮食全产业链各环节损失率明显下降，食品浪费现象得到有效遏制，全社会资源循环利用水平稳步提升。但同时也要看到，资源约束趋紧仍是制约我国经济社会发展的突出问题，资源利用效率有待进一步提高。必须持续深入实施全面节约战略，加强各类资源全过程管理和全链条节约，不断提高资源利用效率。</p><p>　　党的二十届三中全会提出，完善资源总量管理和全面节约制度。按照党中央和国务院决策部署，深入实施全面节约战略，推进各类资源节约集约利用，国家发展改革委会同有关部门，在认真做好对标对表、深入开展调查研究、广泛听取意见建议的基础上，起草形成了《方案》，会同工业和信息化部、自然资源部、水利部、国管局等部门联合印发实施。</p><p>　　<b>问：《方案》的主要内容是什么？</b></p><p>　　<b>答：</b>《方案》包括9章、22条举措，分为3个部分内容。</p><p>　　<b>第一部分是总体要求，为第1章。</b>明确了实施全面节约战略行动的指导思想，提出了到2030年全面节约工作的主要目标。要牢固树立节约集约循环利用的资源观，把节约资源贯穿于经济社会发展全过程、各领域，推进资源总量管理、科学配置、全面节约、循环利用，提高能源、水、粮食、土地、矿产、原材料等资源利用效率。到2030年，我国单位国内生产总值能耗、用水量、建设用地使用面积比2025年分别降低10%左右、10%、15%，粮食全产业链各环节损失率持续降低，主要再生资源年循环利用量达到5.1亿吨，进一步形成崇尚节约的社会风尚。</p><p>　　<b>第二部分是重点任务，包括第2章至第8章。</b>聚焦重点问题，从推进“能水粮地矿材”各类资源要素节约和增强全民节约意识等7个方面，分别提出了重点任务举措。<b>一是深入推进能源节约和能效提升。</b>遏制能源消费总量不合理增长，大力推进重点领域节能。<b>二是强化水资源节约高效利用。</b>全面落实水资源刚性约束制度，推进重点领域深度节水。<b>三是深化粮食节约和反食品浪费。</b>强化生产储存环节节约减损，降低运输加工环节损失，坚决遏制餐饮消费浪费。<b>四是推进土地资源节约集约利用。</b>严格国土空间用途管制，提高集约高效利用水平，盘活利用存量土地。<b>五是提升矿产资源开发利用水平。</b>推进绿色勘查开采，加强矿产资源综合利用。<b>六是加强原材料节约和回收循环利用。</b>推进绿色设计和绿色制造，加快提升资源化利用水平，持续扩大再利用规模。<b>七是培育崇尚节约社会风尚。</b>加强公共机构示范引领，推广绿色生活方式，深化宣传教育引导。</p><p>　　<b>第三部分是支撑保障，为第9章。</b>明确了标准、政策、监管、科技等支撑保障措施，包括完善法律和标准体系、加大政策支持力度、加强监督管理执法、强化科技创新支撑等。</p><p>　　<b>问：《方案》有哪些特点？</b></p><p>　　<b>答：</b>《方案》坚持目标导向和问题导向，把握新形势下保障资源安全要求，树立“能水粮地矿材”一体化节约理念，推进全过程管理和全链条节约，构建有利于节约资源的空间布局、产业结构、生产方式、生活方式。</p><p>　　<b>一是完善制度政策体系，推动制度约束更为刚性。</b>《方案》针对当前节约相关制度政策体系不完善的问题，明确推动修订节约能源法、循环经济促进法、公共机构节能条例等法律法规，以及严格执行固定资产投资项目节能审查和碳排放评价办法、建立健全涉及水资源开发利用的有关规划水资源论证制度、健全国土空间规划动态评估调整机制等分领域规章制度，为实施全面节约战略提供有力制度保障。</p><p>　　<b>二是提高资源利用效率，推动资源安全更有保障。</b>《方案》聚焦“能水粮地矿材”各类资源要素节约面临的利用方式粗放、利用效率不高等突出问题，明确了15项重点任务举措，推动“十五五”时期我国单位国内生产总值能耗、用水量、建设用地使用面积进一步降低，粮食全产业链各环节损失率持续降低，资源利用效率稳步提高。</p><p>　　<b>三是增强全民节约意识，推动绿色生活更加普及。</b>《方案》针对当前生活中浪费现象仍然突出等问题，提出坚持公共机构带头、公众参与、社会共治，推广绿色生活方式，深化宣传教育引导，营造厉行节约、反对浪费浓厚氛围，进一步形成崇尚节约的社会风尚。</p><p>　　<b>问：下一步如何推动《方案》实施？</b></p><p>　　<b>答：</b>资源节约工作涉及面广、环节多、链条长，是一项复杂的系统工程，需多部门协同推进、地方政府抓好落实、社会公众广泛参与。</p><p>　　下一步，国家发展改革委将会同工业和信息化部、自然资源部、水利部、国管局等部门加强统筹协调，强化督促指导，细化目标任务，压实各方责任，扎实推动《方案》各项任务举措落实落地，强化《方案》实施过程中的跟踪评估，充分发挥政府、企业、行业协会、社会公众等各方面作用，形成整体工作合力，不断提高资源利用效率，为全面建设社会主义现代化国家提供坚实资源保障。</p>"
-  },
-  {
-    "id": "aihot-20261122-cncf-blog-1739f35a",
-    "title": "你的 OpenTelemetry 管道正在变成性能瓶颈吗？",
-    "originalTitle": "Is your OpenTelemetry pipeline becoming a performance bottleneck?",
-    "summary": "作者在 CNCF Blog 分享其在 Cloud Native Days Austria 2026 上的演讲《How to Defeat OTel's Silent Killer: The Performance Overhead》，聚焦 OpenTelemetry 管道的性能开销问题。演讲指出，构建可观测性管道时数据采集（collecting）的开销是一个容易被忽视的问题。",
-    "url": "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/",
-    "source": "CNCF Blog",
-    "publishedAt": "2026-11-22T19:35:35.661Z",
-    "score": 72,
-    "tier": "T1",
-    "selected": true,
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "可观测性",
-      "开源生态"
-    ],
-    "region": [
-      "工程与开源",
-      "官方"
-    ],
-    "tags": [
-      "官方",
-      "云原生",
-      "OpenTelemetry",
-      "可观测性",
-      "性能优化",
-      "CNCF"
-    ],
-    "context": "性能开销被称为 OTel 的“隐形杀手”，对大规模运行可观测性管道的工程团队具有直接参考价值。",
-    "contentHtml": "<p>Posted on November 17, 2026\n\t\t<span>by Diana Todea (CNCF Ambassador, OpenTelemetry Documentation approver, Romanian Localization maintainer)</span>\n\t\t</p><p><a title=\"Go to OpenTelemetry\" href=\"https://www.cncf.io/projects/opentelemetry\">\n\t\t\t\t<img width=\"70\" height=\"60\" src=\"https://landscape.cncf.io/logos/52818595352a47637721976b546e0a2a1d0da186a0eb97ec203bd7e5248eb4fc.svg\" alt=\"OpenTelemetry logo\">\n\t\t\t</a>\n\t\t\t\t\t\t</p><p>At <a href=\"https://cloudnativedays.at/\">Cloud Native Days Austria</a> 2026, I presented a talk called <a href=\"https://www.youtube.com/watch?v=OolHw9MJ37Y&amp;list=PLcMwH4f9MXB4&amp;index=5\"><em>How to Defeat OTel’s Silent Killer: The Performance Overhead</em></a>, exploring a problem that is easy to overlook when building observability pipelines: the cost of collecting telemetry itself.</p><p><a href=\"https://opentelemetry.io/\">OpenTelemetry</a> has become a cornerstone of cloud-native observability, providing standardized APIs, SDKs, and tooling for generating, collecting, processing, and exporting metrics, logs, and traces. However, instrumentation and telemetry processing are not free. Every span created, attribute attached, and batch exported consumes resources.</p><p>As applications scale, poorly configured telemetry pipelines can introduce significant CPU usage, memory pressure, network traffic, and storage costs. In some cases, the infrastructure responsible for observing a system can become a performance problem of its own.</p><p>The good news is that much of this overhead can be understood, measured, and reduced without sacrificing the visibility engineers depend on.</p><h2><strong>Where does OpenTelemetry overhead come from?</strong></h2><p>When discussing OpenTelemetry performance, we often focus on the application SDK. However, the cost extends beyond instrumentation.</p><p>The entire telemetry pipeline contributes to resource consumption, from generating spans and collecting metrics to processing, exporting, and storing data.</p><p>Instrumentation overhead is also workload-dependent. Two applications using the same instrumentation libraries can experience very different results depending on request throughput, attribute volume, runtime behavior, and the number of spans generated per request.</p><p>This is why relying on a single overhead percentage can be misleading. Instead, we should examine CPU consumption, memory usage, application latency, telemetry volume, and the behavior of the Collector under load.</p><p>There is also an important trade-off between application safety and telemetry completeness. When a pipeline becomes overloaded, backpressure and memory safeguards can protect the application and OpenTelemetry Collector, but they may also lead to rejected or dropped telemetry.</p><p>The objective is not simply to minimize resource consumption. It is to maintain useful observability while keeping its operational cost predictable.</p><h2><strong>Investigating the Collector: five common configuration problems</strong></h2><p>For my demonstration, I used <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen\">Telemetrygen</a>, an OpenTelemetry utility that generates synthetic telemetry, to investigate how Collector configuration affects resource consumption.</p><p>The investigation focused on five common sources of unnecessary overhead.</p><h3><strong>1. Inefficient batching</strong></h3><p>Exporting small amounts of telemetry frequently can increase serialization work, export requests, and network overhead.</p><p>The OpenTelemetry Collector groups telemetry inside the exporter’s sending queue before transmitting it downstream, helping amortize this work across larger payloads. (Note: Historically, this was handled by a standalone batch processor, which is now <a href=\"https://opentelemetry.io/blog/2026/collector-batching-migration/\">deprecated</a> in favor of built-in exporter batching).</p><p>However, batching parameters should reflect the actual workload. Larger batches are not automatically better: they can increase buffering requirements and affect export latency.</p><pre><code>exporters:\n  otlp_grpc:\n    endpoint: \"otel-backend:4317\"\n    sending_queue:\n      enabled: true\n      sizer: items       \n      queue_size: 100000 \n      batch:\n        enabled: true\n        min_size: 8192\n        flush_timeout: 200ms</code></pre><p>Configuring batch inside an exporter’s sending_queue groups spans, metrics, or logs before forwarding them downstream, improving compression efficiency and durability while reducing export overhead. Batches are sent when a configured size threshold is reached or a timeout expires.</p><p>In this example, min_size: 8192 triggers an export when the batch reaches 8,192 items, while flush_timeout: 200ms triggers an export regardless of batch size. Once batching is enabled, these values are the Collector’s documented defaults, not universal performance recommendations. (Note: Because unbatched requests enter the queue first in this architecture, this example switches sizer from the default requests to items with a queue_size of 100000 to prevent smaller, unbatched bursts from overflowing the queue).</p><p>The important point is to measure how batching affects resource consumption and throughput rather than relying on example configurations.</p><h3><strong>2. Unnecessary resource attributes</strong></h3><p><a href=\"https://opentelemetry.io/docs/specs/semconv/resource/host/\">Resource attributes</a> provide valuable context about the systems producing telemetry. But collecting and forwarding attributes that nobody uses can increase payload sizes and downstream processing costs.</p><p>For example, an application might need <code>host.name, host.arch</code>, and <code>os.type</code> for troubleshooting, but not detailed hardware information such as <code>host.cpu.model.name</code> or <code>host.cpu.cache.l2.size</code>.</p><p>The OpenTelemetry Collector’s <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/processor/resourcedetectionprocessor/README.md\">resource detection processor</a> allows engineers to configure which system attributes are collected. Disabling unnecessary attributes can reduce telemetry volume and processing overhead, although the impact on storage and cardinality depends on the backend.</p><p><strong>A practical example:</strong> Keep the hostname and operating system type, but disable CPU model and cache metadata when those details are not needed for troubleshooting.</p><h3><strong>3. Aggressive receiver polling</strong></h3><p>Infrastructure receivers collect metrics at configured intervals, often independently of application traffic.</p><p>Polling <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/hostmetricsreceiver/README.md\">host metrics</a>, container statistics, databases, and network services every few seconds creates continuous work even when applications are relatively idle.</p><p>Increasing collection intervals from 10 to 30 seconds, where operational requirements permit, can reduce collection frequency and associated overhead.</p><p>This introduces a trade-off: lower polling frequency means less temporal resolution. The appropriate interval depends on how quickly a metric changes and how it is used for troubleshooting or alerting.</p><h3><strong>4. Exporting every trace</strong></h3><p>Not every successful request needs to produce a trace that is retained.</p><p>Exporting all traces can consume significant bandwidth, Collector resources, and backend capacity, particularly in high-throughput applications.</p><p>Sampling provides a way to control this volume.</p><p><a href=\"https://opentelemetry.io/docs/concepts/sampling/#head-sampling\">Head-based sampling</a> makes decisions early, reducing downstream work. <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/tailsamplingprocessor\">Tail-based sampling</a> makes decisions after observing more of a trace, enabling policies that retain errors or other diagnostically interesting requests.</p><figure><img width=\"1352\" height=\"862\" src=\"https://www.cncf.io/wp-content/uploads/2026/11/image-12.png\" alt=\"Figure 1: OpenTelemetry Collector YAML configuration showing tail-based sampling with a 10-second decision window. The configuration retains traces with an ERROR status and probabilistically samples 5% of traces. The trace pipeline applies memory limiting, resource detection, span sanitization, GenAI normalization, tail sampling, and batching before exporting telemetry.\"></figure><p>These policies retain traces with an error status and probabilistically sample 5% of traces, including potentially some additional error traces. However, tail sampling is not free. It requires buffering trace data until a decision can be made, introducing additional memory and processing overhead.&nbsp;</p><p>Choosing a sampling strategy means balancing cost, diagnostic value, and the resources needed to make sampling decisions.</p><h3><strong>5. Memory safeguards applied too late</strong></h3><p>The OpenTelemetry Collector includes a <code>memory_limiter</code> processor to help manage memory pressure.</p><p>Processor ordering matters. When enrichment and transformation processors run before memory limiting, the Collector may perform additional work on telemetry that is subsequently refused under memory pressure.</p><p>Memory limiting is a protective mechanism rather than a performance optimization in itself. Its purpose is to improve stability under pressure, not necessarily to reduce CPU consumption during normal operation. Placing the <a href=\"https://github.com/open-telemetry/opentelemetry-collector/blob/main/processor/memorylimiterprocessor/README.md\">memory limiter</a> early in the pipeline helps apply safeguards before more expensive processing.&nbsp;</p><p>It is important to understand that the memory limiter is not a substitute for appropriate resource limits or capacity planning. It can refuse incoming data when memory pressure becomes excessive, and receivers must handle this behavior correctly to avoid unnecessary telemetry loss.</p><h2><strong>From local experiments to production architecture</strong></h2><p>Optimizing a single Collector is only part of the solution.</p><p>In Kubernetes, telemetry workloads can fluctuate significantly as applications scale, deployments change, and traffic increases. A Collector configuration that performs well under synthetic load may behave differently in production.</p><p>Here are some architectural practices that can help address these challenges.</p><ol>\n<li><strong>Separate collection from centralized processing.</strong> A two-tier architecture can use lightweight edge Collectors for local collection and gateway Collectors for more expensive processing. This allows different parts of the pipeline to scale according to their workloads.</li>\n\n\n\n<li><strong>Control telemetry volume early.</strong> Filtering unnecessary attributes, removing unneeded data, and avoiding excessive cardinality can reduce the amount of information processed and transferred downstream. These decisions should preserve the context required for debugging and correlation.</li>\n\n\n\n<li><strong>Plan for memory pressure and backend outages.</strong> Kubernetes memory limits, Collector memory safeguards, bounded queues, and retry mechanisms serve different purposes. Persistent queues can improve resilience during temporary backend failures, but they still require capacity planning and cannot guarantee delivery under every failure scenario.</li>\n\n\n\n<li><strong>Scale with signal-specific requirements in mind.</strong> Horizontal scaling can increase throughput, but stateful processing requires additional consideration. Tail sampling, for example, generally requires spans belonging to the same trace to reach the same processing instance.</li>\n</ol><p>These architectural decisions are just as important as tuning individual processors.</p><h2><strong>Don’t forget the instrumentation</strong></h2><p>One of the most effective optimizations happens before telemetry reaches the Collector.</p><p>Instrumentation should answer meaningful operational questions rather than collect everything simply because it is possible. Excessive spans, high-cardinality attributes, and unnecessary instrumentation can increase resource consumption throughout the entire pipeline.</p><p>For metrics, attributes containing unbounded values such as unique request IDs can create large numbers of distinct time series. For traces and logs, excessive attributes and events increase payload sizes and may affect backend processing or indexing costs.</p><h3><strong>Why I chose Telemetrygen for my demo</strong></h3><p>When preparing my performance investigation, I initially considered using the official <a href=\"https://github.com/open-telemetry/opentelemetry-demo\">OpenTelemetry Astronomy Shop</a>. While it is an excellent environment for exploring instrumentation across microservices, its multiple applications, databases, and supporting services introduce additional CPU and memory consumption.</p><p>For this experiment, I wanted to isolate the Collector’s performance overhead without the background noise of a complete application environment.</p><p>Instead, I chose <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen\">Telemetrygen</a>, a lightweight utility for generating synthetic traces, metrics, and logs at controlled rates.</p><p>In my <a href=\"https://github.com/didiViking/otel-performance-overhead\">OpenTelemetry performance overhead demo</a>, I used synthetic telemetry to investigate how Collector configuration affects resource consumption. The demonstration walks through common inefficiencies, including missing batching, unnecessary resource attributes, aggressive receiver polling, excessive trace export, and memory limiter placement, showing how targeted configuration changes can improve pipeline efficiency.</p><p>This approach helped isolate Collector behavior, but it is only one part of the performance picture. For understanding instrumentation overhead inside real applications, a complete environment such as Astronomy Shop remains valuable.</p><h3><strong>Exploring instrumentation further</strong></h3><p>Reducing overhead starts with understanding what telemetry an application generates and why. The official <a href=\"https://opentelemetry.io/docs/\">OpenTelemetry instrumentation documentation</a> introduces automatic and manual instrumentation, while the sampling documentation explains how to control trace volume. These are useful starting points for reviewing instrumentation decisions before optimizing the Collector itself.</p><p>For engineers interested in investigating performance further, the OpenTelemetry Collector documentation covers pipeline configuration and processing. The OpenTelemetry community is also a good place to discuss performance challenges. The Collector SIG focuses on Collector architecture, performance, and configuration, with discussions taking place in the <strong>#otel-collector</strong> channel on CNCF Slack.</p><p>For questions about instrumentation overhead in a specific programming language, the corresponding language SIG is a better starting point. The <a href=\"https://opentelemetry.io/community/\">OpenTelemetry community page</a> provides information about SIGs, public meetings, and how to get involved.</p><h2><strong>Making performance part of observability design</strong></h2><p>OpenTelemetry overhead is not a single problem with a single configuration fix.</p><p>It is the combined effect of instrumentation decisions, data volume, processor configuration, export behavior, and infrastructure architecture.</p><p>The most useful lesson from this investigation is that <strong>observability pipelines should be measured and optimized like any other production system</strong>.</p><p>Start with controlled benchmarks. Understand where resources are consumed. Introduce configuration changes individually, and evaluate their impact on CPU, memory, latency, throughput, and telemetry loss.</p><p>Most importantly, treat example configurations as starting points rather than production-ready defaults.</p><p>OpenTelemetry gives us the tools to understand complex distributed systems. With thoughtful instrumentation, careful pipeline configuration, and appropriate scaling strategies, we can ensure that collecting this information does not become an unnecessary burden on the systems we are trying to observe.</p>",
-    "author": "CNCF projects highlighted in this post"
   }
 ]
