@@ -170,11 +170,35 @@
     });
   }
 
-  function computeLocalPareto(rows) {
+  function computePresetBlendedUsd(row, preset = 'agent') {
+    const p = row && row.pricingUsd;
+    if (!p || !Number.isFinite(Number(p.input)) || !Number.isFinite(Number(p.output))) {
+      return row && Number.isFinite(Number(row.blendedUsd)) ? Number(row.blendedUsd) : null;
+    }
+    const input = Number(p.input);
+    const output = Number(p.output);
+    const cacheRead = p.cacheRead !== null && p.cacheRead !== undefined && Number.isFinite(Number(p.cacheRead))
+      ? Number(p.cacheRead)
+      : input;
+
+    let raw;
+    if (preset === 'chat') {
+      raw = 0.75 * input + 0.25 * output;
+    } else if (preset === 'longctx') {
+      raw = (100 * cacheRead + 1 * input + 1 * output) / 102;
+    } else {
+      raw = 0.7 * cacheRead + 0.2 * input + 0.1 * output;
+    }
+    return Math.round(raw * 10000) / 10000;
+  }
+
+  function computeLocalPareto(rows, preset = 'agent') {
     const candidates = rows
-      .filter((r) => r.blendedUsd !== null && r.blendedUsd > 0 && Number.isFinite(Number(r.compositeScore)))
-      .slice()
-      .sort((a, b) => (a.blendedUsd !== b.blendedUsd ? a.blendedUsd - b.blendedUsd : b.compositeScore - a.compositeScore));
+      .map((r) => ({ ...r, activeBlendedUsd: computePresetBlendedUsd(r, preset) }))
+      .filter((r) => r.activeBlendedUsd !== null && r.activeBlendedUsd > 0 && Number.isFinite(Number(r.compositeScore)))
+      .sort((a, b) => (a.activeBlendedUsd !== b.activeBlendedUsd
+        ? a.activeBlendedUsd - b.activeBlendedUsd
+        : b.compositeScore - a.compositeScore));
 
     const frontier = [];
     let bestScore = -Infinity;
@@ -183,13 +207,81 @@
         const prev = frontier.length ? frontier[frontier.length - 1] : null;
         frontier.push({
           ...r,
-          priceRatio: prev ? Math.round((r.blendedUsd / prev.blendedUsd) * 10) / 10 : null,
+          blendedUsd: r.activeBlendedUsd,
+          priceRatio: prev ? Math.round((r.activeBlendedUsd / prev.activeBlendedUsd) * 10) / 10 : null,
           scoreGain: prev ? Math.round((r.compositeScore - prev.compositeScore) * 10) / 10 : null
         });
         bestScore = r.compositeScore;
       }
     }
     return { candidates, frontier };
+  }
+
+  function layoutScatterLabels(points, bounds) {
+    // Iterative AABB relaxation solver so all plotted models get non-overlapping labels + leader lines
+    const items = points.map((pt, idx) => {
+      const textW = Math.max(46, pt.label.length * 6.5 + 10);
+      const textH = 15;
+      const preferLeft = pt.cx > bounds.right - textW - 24;
+      const initX = preferLeft ? pt.cx - 10 - textW / 2 : pt.cx + 10 + textW / 2;
+      const initY = pt.cy + (idx % 2 === 0 ? -12 : 14);
+      return {
+        ...pt,
+        w: textW,
+        h: textH,
+        lx: Math.max(bounds.left + textW / 2, Math.min(bounds.right - textW / 2, initX)),
+        ly: Math.max(bounds.top + textH / 2, Math.min(bounds.bottom - textH / 2, initY))
+      };
+    });
+
+    const padX = 5;
+    const padY = 4;
+    for (let iter = 0; iter < 50; iter += 1) {
+      // Pairwise repulsion between label boxes
+      for (let i = 0; i < items.length; i += 1) {
+        for (let j = i + 1; j < items.length; j += 1) {
+          const a = items[i];
+          const b = items[j];
+          const overlapX = (a.w + b.w) / 2 + padX - Math.abs(a.lx - b.lx);
+          const overlapY = (a.h + b.h) / 2 + padY - Math.abs(a.ly - b.ly);
+          if (overlapX > 0 && overlapY > 0) {
+            if (overlapY < overlapX) {
+              const push = overlapY / 2 + 0.6;
+              if (a.ly <= b.ly) {
+                a.ly -= push;
+                b.ly += push;
+              } else {
+                a.ly += push;
+                b.ly -= push;
+              }
+            } else {
+              const push = overlapX / 2 + 0.6;
+              if (a.lx <= b.lx) {
+                a.lx -= push;
+                b.lx += push;
+              } else {
+                a.lx += push;
+                b.lx -= push;
+              }
+            }
+          }
+        }
+      }
+
+      // Gentle pull toward home dot + avoid covering dots + clamp within bounds
+      for (const item of items) {
+        const dx = item.cx - item.lx;
+        const dy = item.cy - item.ly;
+        item.lx += dx * 0.03;
+        item.ly += dy * 0.04;
+        if (Math.abs(item.ly - item.cy) < 10 && Math.abs(item.lx - item.cx) < item.w / 2 + 8) {
+          item.ly += item.ly <= item.cy ? -2 : 2;
+        }
+        item.lx = Math.max(bounds.left + item.w / 2, Math.min(bounds.right - item.w / 2, item.lx));
+        item.ly = Math.max(bounds.top + item.h / 2, Math.min(bounds.bottom - item.h / 2, item.ly));
+      }
+    }
+    return items;
   }
 
   function renderModelIdentityCell(row, mode, openLabel, domesticLabel) {
@@ -269,7 +361,10 @@
     const emptyEl = board.querySelector('[data-models-empty]');
     const resetBtn = board.querySelector('[data-models-reset]');
     const frontierSection = board.querySelector('[data-models-frontier-section]');
+    const frontierPresetsEl = board.querySelector('[data-models-frontier-presets]');
+    const frontierLegendEl = board.querySelector('[data-models-frontier-legend]');
     const frontierChartEl = board.querySelector('[data-models-frontier-chart]');
+    const frontierTooltipEl = board.querySelector('[data-models-frontier-tooltip]');
     const frontierStepsEl = board.querySelector('[data-models-frontier-steps]');
     const frontierUnitEl = board.querySelector('[data-models-frontier-unit]');
     const unrankedWrap = board.querySelector('[data-models-unranked-wrap]');
@@ -289,6 +384,8 @@
       viewMode: 'leaderboard', // 'leaderboard' | 'pricing' | 'frontier'
       activeTab: 'overview',   // 'overview' | 'domain:<id>' | '<benchId>'
       currency: initialCurrency,
+      frontierPreset: 'agent', // 'agent' | 'chat' | 'longctx'
+      highlightProvider: null, // null | provider name
       license: 'all',
       domesticOnly: false,
       reasoningOnly: false,
@@ -420,38 +517,72 @@
       metaBadgesEl.innerHTML = badges.join('');
     }
 
+    function hideFrontierTooltip() {
+      if (frontierTooltipEl) frontierTooltipEl.hidden = true;
+    }
+
     function renderFrontierView() {
       const mode = getLangMode(root);
       const filtered = filterRows(ranked, state);
-      const { candidates, frontier } = computeLocalPareto(filtered);
+      const { candidates, frontier } = computeLocalPareto(filtered, state.frontierPreset);
       const unitLabel = state.currency === 'usd'
         ? '$ / 1M Tokens'
         : (mode === 'zh' ? '¥ / 百万 Token' : '¥ / 1M Tokens');
 
       if (frontierUnitEl) frontierUnitEl.textContent = unitLabel;
       if (statusEl) statusEl.textContent = `${candidates.length} / ${ranked.length}`;
+      hideFrontierTooltip();
 
       if (!frontierChartEl || !frontierStepsEl) return;
 
       if (!candidates.length) {
+        if (frontierLegendEl) frontierLegendEl.innerHTML = '';
         frontierChartEl.innerHTML = `<div class="models-empty-state"><p>${escapeHtml(translate('models.empty', mode, 'No models match the current filters.'))}</p></div>`;
         frontierStepsEl.innerHTML = '';
         return;
       }
 
-      const width = 920;
-      const height = 400;
-      const pad = { top: 28, right: 44, bottom: 52, left: 58 };
+      // Build interactive provider legend
+      const providerMap = new Map();
+      for (const c of candidates) {
+        if (!providerMap.has(c.provider)) {
+          providerMap.set(c.provider, c.providerBadge?.color || '#64748b');
+        }
+      }
+      if (state.highlightProvider && !providerMap.has(state.highlightProvider)) {
+        state.highlightProvider = null;
+      }
+      if (frontierLegendEl) {
+        const legendPills = Array.from(providerMap.entries())
+          .sort((a, b) => a[0].localeCompare(b[0], 'en'))
+          .map(([prov, color]) => {
+            const isActive = state.highlightProvider === prov;
+            const isDimmed = Boolean(state.highlightProvider && !isActive);
+            return `<button type="button" class="frontier-legend-pill${isActive ? ' is-active' : ''}${isDimmed ? ' is-dimmed' : ''}" data-frontier-provider="${escapeHtml(prov)}" aria-pressed="${isActive ? 'true' : 'false'}">
+              <span class="frontier-legend-dot" style="background:${escapeHtml(color)}"></span>
+              <span>${escapeHtml(prov)}</span>
+            </button>`;
+          })
+          .join('');
+        const clearBtn = state.highlightProvider
+          ? `<button type="button" class="frontier-legend-clear" data-frontier-clear-highlight>${mode === 'zh' ? '清除高亮' : 'Clear highlight'} ✕</button>`
+          : '';
+        frontierLegendEl.innerHTML = `${legendPills}${clearBtn}`;
+      }
+
+      const width = 1040;
+      const height = 500;
+      const pad = { top: 30, right: 44, bottom: 54, left: 60 };
       const plotW = width - pad.left - pad.right;
       const plotH = height - pad.top - pad.bottom;
 
       const mult = state.currency === 'usd' ? 1 : usdToCny;
-      const prices = candidates.map((c) => c.blendedUsd * mult);
+      const prices = candidates.map((c) => c.activeBlendedUsd * mult);
       const scores = candidates.map((c) => c.compositeScore);
-      const minLogX = Math.log10(Math.max(0.01, Math.min(...prices) * 0.72));
-      const maxLogX = Math.log10(Math.max(...prices) * 1.45);
-      const minY = Math.max(0, Math.floor((Math.min(...scores) - 6) / 5) * 5);
-      const maxY = Math.min(100, Math.ceil((Math.max(...scores) + 6) / 5) * 5);
+      const minLogX = Math.log10(Math.max(0.01, Math.min(...prices) * 0.65));
+      const maxLogX = Math.log10(Math.max(...prices) * 1.65);
+      const minY = Math.max(0, Math.floor((Math.min(...scores) - 8) / 5) * 5);
+      const maxY = Math.min(100, Math.ceil((Math.max(...scores) + 8) / 5) * 5);
 
       const xPos = (p) => {
         const lx = Math.log10(Math.max(0.01, p));
@@ -459,12 +590,19 @@
       };
       const yPos = (s) => pad.top + plotH - ((s - minY) / Math.max(1, maxY - minY)) * plotH;
 
+      // Most attractive quadrant (top-left: low price, high score)
+      const quadW = plotW * 0.5;
+      const quadH = plotH * 0.5;
+      const quadLabel = mode === 'zh' ? '高性价比区（低价高分）' : 'Most attractive quadrant';
+      const quadrantSvg = `<rect x="${pad.left}" y="${pad.top}" width="${quadW.toFixed(1)}" height="${quadH.toFixed(1)}" rx="6" class="frontier-quadrant-best" />
+        <text x="${pad.left + 12}" y="${pad.top + 18}" class="frontier-quadrant-label">${escapeHtml(quadLabel)}</text>`;
+
       // Grid lines
       const yTicks = [];
       for (let y = minY; y <= maxY; y += 10) yTicks.push(y);
       const xTickCandidates = state.currency === 'usd'
-        ? [0.05, 0.1, 0.25, 0.5, 1, 2, 5, 10]
-        : [0.3, 0.5, 1, 2, 5, 10, 20, 50];
+        ? [0.02, 0.05, 0.1, 0.25, 0.5, 1, 2, 5, 10, 20]
+        : [0.1, 0.3, 0.5, 1, 2, 5, 10, 20, 50, 100];
       const xTicks = xTickCandidates.filter((v) => Math.log10(v) >= minLogX && Math.log10(v) <= maxLogX);
       const sym = state.currency === 'usd' ? '$' : '¥';
 
@@ -481,84 +619,74 @@
         })
       ].join('');
 
-      // Frontier polyline + step path
+      // Frontier dotted polyline (always visible as reference)
       const frontierSlugs = new Set(frontier.map((f) => f.slug));
-      let stepPath = '';
-      if (frontier.length >= 2) {
-        const parts = frontier.map((f, idx) => {
-          const px = xPos(f.blendedUsd * mult).toFixed(1);
-          const py = yPos(f.compositeScore).toFixed(1);
-          if (idx === 0) return `M ${px} ${py}`;
-          const prevY = yPos(frontier[idx - 1].compositeScore).toFixed(1);
-          return `L ${px} ${prevY} L ${px} ${py}`;
-        });
-        stepPath = `<path d="${parts.join(' ')}" class="frontier-step-path" />`;
-      }
-
       const linePath = frontier.length >= 2
-        ? `<polyline points="${frontier.map((f) => `${xPos(f.blendedUsd * mult).toFixed(1)},${yPos(f.compositeScore).toFixed(1)}`).join(' ')}" class="frontier-line" />`
+        ? `<polyline points="${frontier.map((f) => `${xPos(f.activeBlendedUsd * mult).toFixed(1)},${yPos(f.compositeScore).toFixed(1)}`).join(' ')}" class="frontier-line-dotted" />`
         : '';
 
-      const nonFrontierDots = candidates
-        .filter((c) => !frontierSlugs.has(c.slug))
-        .map((c) => {
-          const cx = xPos(c.blendedUsd * mult).toFixed(1);
-          const cy = yPos(c.compositeScore).toFixed(1);
-          const tip = `${c.model} · ${formatPrice(c.blendedUsd, state.currency, usdToCny)} · ${c.compositeScore.toFixed(1)}`;
-          return `<a href="/models/${encodeURIComponent(c.slug)}/" class="frontier-point-link">
-            <circle cx="${cx}" cy="${cy}" r="5" class="frontier-dot-muted"><title>${escapeHtml(tip)}</title></circle>
-          </a>`;
-        })
-        .join('');
+      // Compute non-overlapping label positions for ALL plotted models
+      const rawPoints = candidates.map((c) => ({
+        row: c,
+        isFrontier: frontierSlugs.has(c.slug),
+        cx: xPos(c.activeBlendedUsd * mult),
+        cy: yPos(c.compositeScore),
+        label: c.model,
+        color: c.providerBadge?.color || '#64748b'
+      }));
 
-      const placedLabels = [];
-      const frontierDots = frontier
-        .map((f, idx) => {
-          const cx = xPos(f.blendedUsd * mult);
-          const cy = yPos(f.compositeScore);
-          const nearRight = cx > width - 175;
-          let labelAnchor = nearRight ? 'end' : 'start';
-          let labelDx = nearRight ? -10 : 10;
-          let labelDy = idx % 2 === 0 ? -11 : 17;
+      const laidOut = layoutScatterLabels(rawPoints, {
+        left: pad.left + 4,
+        right: width - pad.right - 4,
+        top: pad.top + 14,
+        bottom: height - pad.bottom - 8
+      });
 
-          // Avoid label overlap with previously placed frontier labels
-          for (const prev of placedLabels) {
-            const curX = cx + labelDx;
-            const curY = cy + labelDy;
-            if (Math.abs(curY - prev.y) < 18 && Math.abs(curX - prev.x) < 130) {
-              if (labelDy < 0) {
-                labelDy = 18;
-              } else {
-                labelAnchor = 'end';
-                labelDx = -10;
-                labelDy = -12;
-              }
-            }
+      const nodesSvg = laidOut
+        .map((pt) => {
+          const isDimmed = Boolean(state.highlightProvider && pt.row.provider !== state.highlightProvider);
+          const dist = Math.hypot(pt.lx - pt.cx, pt.ly - pt.cy);
+          // Connect leader line from dot center to nearest edge of label when displaced
+          let leaderSvg = '';
+          if (dist > 14) {
+            const edgeX = pt.lx > pt.cx ? pt.lx - pt.w / 2 + 2 : pt.lx + pt.w / 2 - 2;
+            leaderSvg = `<line x1="${pt.cx.toFixed(1)}" y1="${pt.cy.toFixed(1)}" x2="${edgeX.toFixed(1)}" y2="${pt.ly.toFixed(1)}" class="frontier-leader-line" />`;
           }
-          placedLabels.push({ x: cx + labelDx, y: cy + labelDy });
-
-          const tip = `${f.model} · ${formatPrice(f.blendedUsd, state.currency, usdToCny)} · ${f.compositeScore.toFixed(1)}`;
-          return `<a href="/models/${encodeURIComponent(f.slug)}/" class="frontier-point-link">
-            <circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="7" class="frontier-dot-active"><title>${escapeHtml(tip)}</title></circle>
-            <text x="${(cx + labelDx).toFixed(1)}" y="${(cy + labelDy).toFixed(1)}" text-anchor="${labelAnchor}" class="frontier-point-label">${escapeHtml(f.model)}</text>
-          </a>`;
+          const haloSvg = pt.isFrontier
+            ? `<circle cx="${pt.cx.toFixed(1)}" cy="${pt.cy.toFixed(1)}" r="8.5" class="frontier-dot-halo" stroke="${escapeHtml(pt.color)}" />`
+            : '';
+          const r = pt.isFrontier ? '5.6' : '4.8';
+          return `<g class="frontier-node${pt.isFrontier ? ' is-frontier' : ''}${isDimmed ? ' is-dimmed' : ''}" data-frontier-slug="${escapeHtml(pt.row.slug)}" data-frontier-provider-node="${escapeHtml(pt.row.provider)}">
+            ${leaderSvg}
+            <a href="/models/${encodeURIComponent(pt.row.slug)}/" class="frontier-point-link">
+              ${haloSvg}
+              <circle cx="${pt.cx.toFixed(1)}" cy="${pt.cy.toFixed(1)}" r="${r}" fill="${escapeHtml(pt.color)}" class="frontier-dot-colored" />
+              <text x="${pt.lx.toFixed(1)}" y="${pt.ly.toFixed(1)}" text-anchor="middle" dominant-baseline="middle" class="frontier-point-label${pt.isFrontier ? ' is-frontier-label' : ''}">${escapeHtml(pt.label)}</text>
+            </a>
+          </g>`;
         })
         .join('');
 
-      const xAxisTitle = mode === 'zh'
-        ? `7:2:1 综合用量价格（对数坐标，${unitLabel}）`
-        : `7:2:1 Blended Price (Log Scale, ${unitLabel})`;
+      const presetNames = {
+        agent: mode === 'zh' ? '7:2:1 Agent 综合价' : '7:2:1 Agent Blended Price',
+        chat: mode === 'zh' ? '3:1 对话综合价' : '3:1 Chat Blended Price',
+        longctx: mode === 'zh' ? '100:1:1 长上下文综合价' : '100:1:1 Long-Context Price'
+      };
+      const xAxisTitle = `${presetNames[state.frontierPreset] || presetNames.agent} (${mode === 'zh' ? '对数坐标，' : 'Log Scale, '}${unitLabel})`;
       const yAxisTitle = mode === 'zh' ? '综合评分' : 'Composite Score';
 
       frontierChartEl.innerHTML = `<svg viewBox="0 0 ${width} ${height}" class="frontier-svg" role="img" aria-label="${escapeHtml(xAxisTitle)}">
+        ${quadrantSvg}
         ${gridSvg}
-        ${stepPath}
         ${linePath}
-        ${nonFrontierDots}
-        ${frontierDots}
+        ${nodesSvg}
         <text x="${pad.left + plotW / 2}" y="${height - 10}" text-anchor="middle" class="frontier-axis-title">${escapeHtml(xAxisTitle)}</text>
         <text x="18" y="${pad.top + plotH / 2}" text-anchor="middle" transform="rotate(-90 18 ${pad.top + plotH / 2})" class="frontier-axis-title">${escapeHtml(yAxisTitle)}</text>
       </svg>`;
+
+      // Attach rich hover tooltip lookup
+      const candidateBySlug = new Map(candidates.map((c) => [c.slug, c]));
+      frontierChartEl._frontierLookup = { candidateBySlug, frontierSlugs };
 
       frontierStepsEl.innerHTML = frontier
         .map((f, idx) => {
@@ -571,7 +699,7 @@
               <span class="frontier-step-name">${escapeHtml(f.model)}</span>
             </div>
             <div class="frontier-step-metrics">
-              <span class="frontier-step-price">${escapeHtml(formatPrice(f.blendedUsd, state.currency, usdToCny))}</span>
+              <span class="frontier-step-price">${escapeHtml(formatPrice(f.activeBlendedUsd, state.currency, usdToCny))}</span>
               <span class="frontier-step-score">${f.compositeScore.toFixed(1)}</span>
             </div>
             <span class="frontier-step-delta">${escapeHtml(deltaText)}</span>
@@ -1039,6 +1167,88 @@
       resetBtn.addEventListener('click', resetFilters);
     }
 
+    function setFrontierPreset(preset) {
+      const valid = preset === 'chat' || preset === 'longctx' ? preset : 'agent';
+      state.frontierPreset = valid;
+      if (frontierPresetsEl) {
+        frontierPresetsEl.querySelectorAll('[data-frontier-preset]').forEach((btn) => {
+          const active = btn.getAttribute('data-frontier-preset') === valid;
+          btn.classList.toggle('is-active', active);
+          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+      }
+      if (state.viewMode === 'frontier') renderFrontierView();
+    }
+
+    if (frontierPresetsEl) {
+      frontierPresetsEl.addEventListener('click', (e) => {
+        const btn = e.target.closest ? e.target.closest('[data-frontier-preset]') : null;
+        if (!btn) return;
+        setFrontierPreset(btn.getAttribute('data-frontier-preset'));
+      });
+    }
+
+    if (frontierLegendEl) {
+      frontierLegendEl.addEventListener('click', (e) => {
+        const clearBtn = e.target.closest ? e.target.closest('[data-frontier-clear-highlight]') : null;
+        if (clearBtn) {
+          state.highlightProvider = null;
+          renderFrontierView();
+          return;
+        }
+        const pill = e.target.closest ? e.target.closest('[data-frontier-provider]') : null;
+        if (!pill) return;
+        const prov = pill.getAttribute('data-frontier-provider');
+        state.highlightProvider = state.highlightProvider === prov ? null : prov;
+        renderFrontierView();
+      });
+    }
+
+    if (frontierChartEl && frontierTooltipEl) {
+      const showTooltipForNode = (node) => {
+        const lookup = frontierChartEl._frontierLookup;
+        if (!lookup) return;
+        const slug = node.getAttribute('data-frontier-slug');
+        const row = lookup.candidateBySlug.get(slug);
+        if (!row) return;
+        const mode = getLangMode(root);
+        const isFrontier = lookup.frontierSlugs.has(slug);
+        const frontierTag = isFrontier
+          ? `<span class="models-badge is-open">${mode === 'zh' ? '帕累托前沿' : 'Pareto Frontier'}</span>`
+          : '';
+        frontierTooltipEl.innerHTML = `
+          <div class="frontier-tip-head">
+            <span class="models-provider-badge" style="background:${escapeHtml(row.providerBadge?.color || '#64748b')}">${escapeHtml(row.providerBadge?.code || 'AI')}</span>
+            <div>
+              <strong>${escapeHtml(row.model)}</strong>
+              <div class="frontier-tip-sub">${escapeHtml(row.provider)} ${frontierTag}</div>
+            </div>
+          </div>
+          <div class="frontier-tip-metrics">
+            <span>${mode === 'zh' ? '综合评分' : 'Score'}: <strong>${row.compositeScore.toFixed(1)}</strong></span>
+            <span>${mode === 'zh' ? '综合价' : 'Blended'}: <strong>${escapeHtml(formatPrice(row.activeBlendedUsd, state.currency, usdToCny))}</strong></span>
+          </div>
+          <div class="frontier-tip-prices">
+            <span>In: ${escapeHtml(formatPrice(row.pricingUsd?.input, state.currency, usdToCny))}</span>
+            <span>Out: ${escapeHtml(formatPrice(row.pricingUsd?.output, state.currency, usdToCny))}</span>
+            <span>Cache: ${escapeHtml(formatPrice(row.pricingUsd?.cacheRead, state.currency, usdToCny))}</span>
+          </div>
+          <div class="frontier-tip-hint">${mode === 'zh' ? '点击节点查看模型详情 →' : 'Click point for model details →'}</div>
+        `;
+        frontierTooltipEl.hidden = false;
+      };
+
+      frontierChartEl.addEventListener('mouseover', (e) => {
+        const node = e.target.closest ? e.target.closest('[data-frontier-slug]') : null;
+        if (node) showTooltipForNode(node);
+      });
+      frontierChartEl.addEventListener('focusin', (e) => {
+        const node = e.target.closest ? e.target.closest('[data-frontier-slug]') : null;
+        if (node) showTooltipForNode(node);
+      });
+      frontierChartEl.addEventListener('mouseleave', hideFrontierTooltip);
+    }
+
     if (typeof window !== 'undefined' && window.addEventListener) {
       window.addEventListener('xdlkc:lang-change', () => {
         renderMeta();
@@ -1072,6 +1282,7 @@
     return {
       state,
       setCurrency,
+      setFrontierPreset,
       selectView,
       selectTab,
       toggleSort,
@@ -1088,7 +1299,9 @@
     formatPrice,
     formatContext,
     computeBarPercent,
+    computePresetBlendedUsd,
     computeLocalPareto,
+    layoutScatterLabels,
     filterRows,
     sortRows,
     initModelsBoard

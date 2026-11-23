@@ -206,8 +206,15 @@ function buildBoardDom(payload) {
           </div>
         </section>
         <section data-models-frontier-section hidden>
+          <div data-models-frontier-presets>
+            <button type="button" data-frontier-preset="agent" class="is-active" aria-pressed="true">7:2:1 Agent</button>
+            <button type="button" data-frontier-preset="chat" aria-pressed="false">3:1 Chat</button>
+            <button type="button" data-frontier-preset="longctx" aria-pressed="false">100:1:1 Long</button>
+          </div>
           <span data-models-frontier-unit></span>
+          <div data-models-frontier-legend></div>
           <div data-models-frontier-chart></div>
+          <div data-models-frontier-tooltip hidden></div>
           <div data-models-frontier-steps></div>
         </section>
         <p data-models-calibration-note></p>
@@ -273,12 +280,34 @@ test('UI controller: 3 views, currency toggle, domestic/open/provider/search fil
   assert.equal(doc.querySelector('[data-models-tabs-wrap]').hidden, true);
   assert.ok(getVisibleModels().length >= 20);
 
-  // Frontier (Pareto) view
+  // Frontier (Pareto) view: all ranked models (including GPT-6 series) must be labeled, presets & provider legend must work
   doc.querySelector('[data-models-view="frontier"]').click();
   assert.equal(ctrl.state.viewMode, 'frontier');
   assert.equal(doc.querySelector('[data-models-frontier-section]').hidden, false);
   assert.ok(doc.querySelector('[data-models-frontier-chart] svg'), 'Should render Pareto SVG');
   assert.ok(doc.querySelectorAll('.frontier-step-card').length >= 4);
+
+  const frontierLabels = Array.from(doc.querySelectorAll('.frontier-point-label')).map((el) => el.textContent);
+  assert.equal(frontierLabels.length, payload.rankedCount, 'All ranked models should have visible labels');
+  assert.ok(frontierLabels.includes('GPT-6.2 Astra'), 'GPT-6.2 Astra must be visibly labeled on Value Frontier');
+  assert.ok(frontierLabels.includes('GPT-6.2 Sol'), 'GPT-6.2 Sol must be visibly labeled on Value Frontier');
+  assert.ok(frontierLabels.includes('GPT-6 Astra'), 'GPT-6 Astra must be visibly labeled on Value Frontier');
+
+  // Interactive provider legend: click OpenAI -> highlights OpenAI and dims others
+  doc.querySelector('[data-frontier-provider="OpenAI"]').click();
+  assert.equal(ctrl.state.highlightProvider, 'OpenAI');
+  const dimmedNodes = doc.querySelectorAll('.frontier-node.is-dimmed');
+  assert.ok(dimmedNodes.length > 0, 'Non-OpenAI nodes should be dimmed');
+  doc.querySelector('[data-frontier-clear-highlight]').click();
+  assert.equal(ctrl.state.highlightProvider, null);
+  assert.equal(doc.querySelectorAll('.frontier-node.is-dimmed').length, 0);
+
+  // Preset toggle: 3:1 Chat recalculates prices
+  doc.querySelector('[data-frontier-preset="chat"]').click();
+  assert.equal(ctrl.state.frontierPreset, 'chat');
+  assert.match(doc.querySelector('[data-models-frontier-chart]').textContent, /3:1/);
+  doc.querySelector('[data-frontier-preset="agent"]').click();
+  assert.equal(ctrl.state.frontierPreset, 'agent');
 
   // Switch to Coding domain tab (must only include ranked models, no unranked legacy SWE-bench/LiveCodeBench pollution)
   doc.querySelector('[data-models-tab="domain:coding"]').click();

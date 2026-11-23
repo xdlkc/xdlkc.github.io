@@ -136,9 +136,12 @@
     },
     'models.frontier.title': { en: 'Pareto Cost-Performance Frontier', zh: '性价比斩杀线（帕累托前沿）' },
     'models.frontier.desc': {
-      en: 'Log-scale 7:2:1 blended API cost (70% cached input + 20% input + 10% output) vs. calibrated composite score. Highlighted models form the optimal value frontier.',
-      zh: '横轴为对数坐标 7:2:1 综合用量价格，纵轴为校准综合评分。高亮连线上的模型代表各价位段的帕累托最优解。'
+      en: 'Log-scale blended API cost vs. calibrated composite score. All ranked models are colored by provider; the dotted line connects the Pareto-optimal frontier.',
+      zh: '横轴为对数坐标综合用量价格，纵轴为校准综合评分。全部入榜模型按厂商配色标注，虚线串联帕累托最优斩杀线，点击上方厂商图例可单独高亮。'
     },
+    'models.frontier.presetAgent': { en: '7:2:1 Agent', zh: '7:2:1 Agent' },
+    'models.frontier.presetChat': { en: '3:1 Chat', zh: '3:1 对话' },
+    'models.frontier.presetLong': { en: '100:1:1 Long', zh: '100:1:1 长上下文' },
     'models.frontier.metaDesc': {
       en: 'Pareto value frontier plotting log-scale 7:2:1 blended cost against calibrated composite score.',
       zh: '按对数坐标 7:2:1 综合价与综合评分绘制性价比帕累托前沿，点击节点可查看模型详情。'

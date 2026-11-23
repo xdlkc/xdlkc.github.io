@@ -791,6 +791,105 @@ a.models-model-name:hover {
   max-width: 72ch;
 }
 
+.models-frontier-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.models-preset-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+  gap: 0.2rem;
+}
+
+.models-preset-btn {
+  padding: 0.28rem 0.62rem;
+  border-radius: 7px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.models-preset-btn:hover {
+  color: var(--text);
+}
+
+.models-preset-btn.is-active,
+.models-preset-btn[aria-pressed="true"] {
+  background: var(--card);
+  color: var(--accent);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.models-frontier-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.frontier-legend-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+  padding: 0.22rem 0.62rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.frontier-legend-pill:hover,
+.frontier-legend-pill.is-active {
+  border-color: var(--accent-border);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.frontier-legend-pill.is-dimmed {
+  opacity: 0.38;
+}
+
+.frontier-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.frontier-legend-clear {
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  border: 1px dashed var(--accent-border);
+  background: transparent;
+  color: var(--accent);
+  font-family: inherit;
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.models-frontier-stage {
+  position: relative;
+}
+
 .models-frontier-chart-wrap {
   width: 100%;
   overflow-x: auto;
@@ -798,9 +897,20 @@ a.models-model-name:hover {
 
 .frontier-svg {
   width: 100%;
-  min-width: 640px;
+  min-width: 720px;
   height: auto;
   display: block;
+}
+
+.frontier-quadrant-best {
+  fill: rgba(16, 185, 129, 0.065);
+}
+
+.frontier-quadrant-label {
+  fill: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.8;
 }
 
 .frontier-grid-line {
@@ -821,44 +931,119 @@ a.models-model-name:hover {
   font-weight: 600;
 }
 
-.frontier-step-path {
+.frontier-line-dotted {
   fill: none;
-  stroke: var(--accent);
-  stroke-opacity: 0.25;
-  stroke-width: 1.5;
-  stroke-dasharray: 4 4;
+  stroke: var(--text);
+  stroke-opacity: 0.45;
+  stroke-width: 1.75;
+  stroke-dasharray: 5 5;
 }
 
-.frontier-line {
+.frontier-leader-line {
+  stroke: var(--muted);
+  stroke-opacity: 0.42;
+  stroke-width: 1;
+}
+
+.frontier-node {
+  transition: opacity 0.16s ease;
+}
+
+.frontier-node.is-dimmed {
+  opacity: 0.14;
+}
+
+.frontier-dot-halo {
   fill: none;
-  stroke: var(--accent);
-  stroke-width: 2.5;
+  stroke-width: 1.75;
+  stroke-opacity: 0.45;
 }
 
-.frontier-dot-muted {
-  fill: var(--muted);
-  fill-opacity: 0.4;
-  transition: fill-opacity 0.15s ease, r 0.15s ease;
-}
-
-.frontier-dot-muted:hover {
-  fill-opacity: 0.9;
-}
-
-.frontier-dot-active {
-  fill: var(--accent);
+.frontier-dot-colored {
   stroke: var(--card);
-  stroke-width: 2.5;
+  stroke-width: 1.8;
+  transition: r 0.14s ease;
 }
 
 .frontier-point-label {
   fill: var(--text);
-  font-size: 11.5px;
+  font-size: 10.5px;
+  font-weight: 500;
+  paint-order: stroke;
+  stroke: var(--card);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.frontier-point-label.is-frontier-label {
   font-weight: 700;
 }
 
 .frontier-point-link {
   text-decoration: none;
+}
+
+.models-frontier-tooltip {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 5;
+  min-width: 220px;
+  max-width: 280px;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.models-frontier-tooltip[hidden] {
+  display: none;
+}
+
+.frontier-tip-head {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.5rem;
+}
+
+.frontier-tip-sub {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+.frontier-tip-metrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.38rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+
+.frontier-tip-prices {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  margin-top: 0.42rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.frontier-tip-hint {
+  margin-top: 0.45rem;
+  font-size: 0.72rem;
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .models-frontier-steps {
