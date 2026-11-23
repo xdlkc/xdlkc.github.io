@@ -31,6 +31,31 @@ if [ -f "${REPO_DIR}/.env" ]; then
   set +a
 fi
 
+# Fallback: read enabled GLM provider keyFile & baseURL directly from loom's providers.json (in-memory only)
+if [ -z "${AIHOT_LLM_API_KEY:-}" ] && [ -z "${GLM_API_KEY:-}" ]; then
+  LOOM_PROVIDERS="${HOME}/Library/Application Support/ModelHub/.local/providers.json"
+  if [ -f "${LOOM_PROVIDERS}" ]; then
+    LOOM_GLM_KEY="$(node -e "
+      const fs = require('fs'), path = require('path');
+      const p = process.argv[1];
+      const cfg = JSON.parse(fs.readFileSync(p, 'utf8'));
+      for (const [id, v] of Object.entries(cfg.providers || {})) {
+        if (v && v.enabled !== false && /glm|bigmodel/i.test(id + ' ' + (v.prefix || '') + ' ' + (v.baseURL || '')) && v.keyFile) {
+          const kf = path.isAbsolute(v.keyFile) ? v.keyFile : path.join(path.dirname(p), v.keyFile);
+          if (fs.existsSync(kf)) {
+            process.stdout.write(fs.readFileSync(kf, 'utf8').trim());
+            process.exit(0);
+          }
+        }
+      }
+    " "${LOOM_PROVIDERS}" 2>/dev/null || true)"
+    if [ -n "${LOOM_GLM_KEY}" ]; then
+      export GLM_API_KEY="${LOOM_GLM_KEY}"
+      unset LOOM_GLM_KEY
+    fi
+  fi
+fi
+
 {
   echo "=== [$(date '+%Y-%m-%d %H:%M:%S')] Starting local AIHOT news sync ==="
 
