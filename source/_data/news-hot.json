@@ -10,7 +10,7 @@
       "AI产业链",
       "宏观"
     ],
-    "heatScore": 124.2,
+    "heatScore": 95.6,
     "sourceCount": 2,
     "latestAt": "2026-11-23T19:19:20.000Z",
     "summary": "英伟达董事会已恢复黄仁勋的CEO职务，公司股价应声大涨27%。黄仁勋重掌英伟达帅印，市场对这一管理层变动反应强烈。",
@@ -44,7 +44,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 113.4,
+    "heatScore": 87.2,
     "sourceCount": 2,
     "latestAt": "2026-11-23T18:12:22.000Z",
     "summary": "黄仁勋在恢复英伟达CEO职务后，已确定下周出席美国参议院公开听证会作证。此次听证源于两党议员就其与一名疑似中国间谍者的恋情事件发出的作证呼吁。",
@@ -78,7 +78,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 93,
+    "heatScore": 71.6,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:51:39.000Z",
     "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
@@ -110,8 +110,34 @@
     ]
   },
   {
-    "id": "hot-1630e20a",
+    "id": "hot-8ad2a983",
     "rank": 4,
+    "title": "CNCF 博客：运行时安全工具不是你的安全基线——警惕伪装成自主性的团队孤岛",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "安全",
+      "研发效能",
+      "开源生态"
+    ],
+    "heatScore": 70.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-24T04:26:18.137Z",
+    "summary": "CNCF 博客发文指出，部署运行时安全工具并不等于团队拥有了安全基线。文章以一次 Kubernetes 安全专项为例：有工程能力、目标清晰的团队在截止日期压力下决定自行解决自己那部分问题，结果形成伪装成自主性的孤岛。",
+    "items": [
+      {
+        "id": "aihot-20261124-cncf-blog-63aa5276",
+        "title": "CNCF 博客：运行时安全工具不是你的安全基线——警惕伪装成自主性的团队孤岛",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-24T04:26:18.137Z",
+        "url": "https://www.cncf.io/blog/2026/11/16/your-runtime-security-tool-is-not-your-baseline-silos-dressed-as-autonomy-in-cloud-native-teams/",
+        "score": 60
+      }
+    ]
+  },
+  {
+    "id": "hot-1630e20a",
+    "rank": 5,
     "title": "黄仁勋戏剧性重返英伟达掌舵，特朗普介入推动其复职",
     "industry": "金融与政策",
     "topics": [
@@ -120,7 +146,7 @@
       "公司治理",
       "A股"
     ],
-    "heatScore": 91.6,
+    "heatScore": 70.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:26:03.000Z",
     "summary": "英伟达董事会周一意外宣布恢复黄仁勋的领导职务，公司股价随之创下数十年来最大涨幅。此次回归被称为企业史上最令人震惊的高管回归之一，特朗普的介入是推动复职的关键因素。",
@@ -136,8 +162,34 @@
     ]
   },
   {
+    "id": "hot-052cf1ab",
+    "rank": 6,
+    "title": "OpenAI 携手思科推出开源运行时 Shirudo",
+    "industry": "AI",
+    "topics": [
+      "产品发布",
+      "开源",
+      "安全",
+      "模型发布"
+    ],
+    "heatScore": 67.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T21:20:00.000Z",
+    "summary": "OpenAI 与思科（Cisco）共同推出开源运行时 Shirudo，面向 Linux 系统。该工具可帮助团队在部署补丁的同时，为运行中的系统保持安全防护。",
+    "items": [
+      {
+        "id": "aihot-20261123-openai-news-cbfa98a4",
+        "title": "OpenAI 携手思科推出开源运行时 Shirudo",
+        "source": "OpenAI News",
+        "publishedAt": "2026-11-23T21:20:00.000Z",
+        "url": "https://openai.com/index/introducing-shirudo",
+        "score": 80
+      }
+    ]
+  },
+  {
     "id": "hot-b146512e",
-    "rank": 5,
+    "rank": 7,
     "title": "英伟达重新任命黄仁勋，上演惊人回归",
     "industry": "金融与政策",
     "topics": [
@@ -146,7 +198,7 @@
       "公司动态",
       "宏观"
     ],
-    "heatScore": 84,
+    "heatScore": 64.7,
     "sourceCount": 1,
     "latestAt": "2026-11-23T16:54:43.000Z",
     "summary": "英伟达董事会重新任命黄仁勋执掌这家全球最大芯片制造商，成为史上最令人震惊的企业回归案例之一。消息推动英伟达股价录得数十年来最大涨幅。彭博记者 Ed Ludlow 解读了这一事件的来龙去脉。",
@@ -163,7 +215,7 @@
   },
   {
     "id": "hot-5466adef",
-    "rank": 6,
+    "rank": 8,
     "title": "交大思诺董事长提议回购2000万元至4000万元公司股份",
     "industry": "金融与政策",
     "topics": [
@@ -172,7 +224,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 83.5,
+    "heatScore": 64.3,
     "sourceCount": 1,
     "latestAt": "2026-11-23T12:20:50.000Z",
     "summary": "交大思诺11月23日公告，董事长李伟提议以自有资金或自筹资金回购公司部分A股股份，回购资金总额不低于2000万元且不超过4000万元。回购将通过深交所交易系统以集中竞价方式进行，拟用于股权激励或员工持股计划。",
@@ -221,7 +273,7 @@
   },
   {
     "id": "hot-d83d4b7b",
-    "rank": 7,
+    "rank": 9,
     "title": "OpenAI 警告后续 AI 系统可能超出安全检查能力，敦促竞争对手就共同限制达成一致",
     "industry": "AI",
     "topics": [
@@ -230,7 +282,7 @@
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 83.2,
+    "heatScore": 64,
     "sourceCount": 1,
     "latestAt": "2026-11-23T18:42:38.000Z",
     "summary": "OpenAI 首席科学家 Jakub Pachocki 警告，即将到来的 AI 系统可能在安全措施跟上前失控，敦促竞争对手就共同限制达成一致。他首次公开整个 GPT 系列的内部困惑度评分，数据延伸至一个尚未发布的新模型，显示核心能力在出奇精确的阈值处涌现。Pachocki 正推动将困惑度作为行业通用的进展指标，以便在 AI 行为控制力被侵蚀前建立共同限制。",
@@ -247,7 +299,7 @@
   },
   {
     "id": "hot-ec51062d",
-    "rank": 8,
+    "rank": 10,
     "title": "加拿大皇家银行下调标普500十二个月目标位至8050点 仍看好16.5%上行空间",
     "industry": "金融与政策",
     "topics": [
@@ -256,7 +308,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 83.1,
+    "heatScore": 63.9,
     "sourceCount": 2,
     "latestAt": "2026-11-23T08:53:13.000Z",
     "summary": "加拿大皇家银行策略团队将标普500十二个月目标点位下调至8050点，略低于9月给出的8150点，但仍预计未来一年有16.5%的上涨空间。由洛里·卡尔瓦西纳牵头的团队认为股市已充分计入诸多利空，强劲的经济增长与企业盈利能够对冲估值进一步压缩以及美联储加息带来的压力。",
@@ -281,7 +333,7 @@
   },
   {
     "id": "hot-dc7ad5df",
-    "rank": 9,
+    "rank": 11,
     "title": "优化 Kubernetes 准入控制：Kyverno 的 CEL 准入成本究竟花在哪",
     "industry": "工程与开源",
     "topics": [
@@ -290,7 +342,7 @@
       "研发效能",
       "开源生态"
     ],
-    "heatScore": 83,
+    "heatScore": 63.9,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:06:28.636Z",
     "summary": "CNCF 博客发布对 Kyverno 准入路径的性能剖析：成本大头并不在 CEL 表达式求值，约 86% 的准入开销来自其他环节。文章通过逐环节定位真实瓶颈，为 Kubernetes 准入控制优化指明方向。",
@@ -306,8 +358,34 @@
     ]
   },
   {
+    "id": "hot-9fed2260",
+    "rank": 12,
+    "title": "国家统计局公布2026年11月中旬流通领域重要生产资料市场价格变动情况",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "官方数据",
+      "宏观",
+      "政府动态"
+    ],
+    "heatScore": 63.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-24T00:00:00.000Z",
+    "summary": "国家统计局发布2026年11月中旬流通领域重要生产资料市场价格变动情况，公布本期重要生产资料价格的最新监测数据。该系列为官方旬度价格调查，反映流通领域重要生产资料的近期价格涨跌变化。",
+    "items": [
+      {
+        "id": "aihot-20261124-stats-gov-cn-a46b8753",
+        "title": "国家统计局公布2026年11月中旬流通领域重要生产资料市场价格变动情况",
+        "source": "国家统计局 · 权威宏观数据",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261123_1965935.html",
+        "score": 63
+      }
+    ]
+  },
+  {
     "id": "hot-2c7efa3a",
-    "rank": 10,
+    "rank": 13,
     "title": "谷歌搜索 AI Mode 现已接入 Drive 和 Wallet，提供更个性化回复",
     "industry": "AI",
     "topics": [
@@ -316,7 +394,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 82.2,
+    "heatScore": 63.2,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:14:46.000Z",
     "summary": "谷歌搜索的 AI Mode 现已接入 Drive 和 Wallet，可利用用户数据生成更个性化的回复。谷歌同时将 AI Mode 的 Personal Intelligence 功能扩展到 Drive、Wallet 和 Gemini 应用，充分利用其生态系统内已有的海量用户数据。",
@@ -333,14 +411,14 @@
   },
   {
     "id": "hot-00664211",
-    "rank": 11,
+    "rank": 14,
     "title": "NVIDIA 捐赠 OpenShell 加入 CNCF 沙箱项目：以开放治理保障 Agentic AI 安全",
     "industry": "工程与开源",
     "topics": [
       "云原生",
       "开源生态"
     ],
-    "heatScore": 81.8,
+    "heatScore": 63,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:06:28.635Z",
     "summary": "NVIDIA 在 KubeCon + CloudNativeCon North America 上将开源运行时 OpenShell 捐赠给 CNCF，使其成为沙箱（Sandbox）项目。OpenShell 专注于为自主 AI 代理（agentic AI）提供安全防护与治理，CNCF 将以开放治理模式托管该项目。",
@@ -357,7 +435,7 @@
   },
   {
     "id": "hot-464c5a5d",
-    "rank": 12,
+    "rank": 15,
     "title": "Peterson 分析：财长贝森特对黄仁勋态度转向揭示了特朗普对华政策的什么",
     "industry": "金融与政策",
     "topics": [
@@ -366,7 +444,7 @@
       "美股",
       "宏观"
     ],
-    "heatScore": 81.8,
+    "heatScore": 63,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:06:14.000Z",
     "summary": "Peterson 分析文章指出，美国财政部长贝森特一度成为针对英伟达的新兴强硬路线的代表人物，但如今已改弦更张、立场逆转。文章以这一态度转变切入，解读其透露出的特朗普政府对华政策信号。",
@@ -383,7 +461,7 @@
   },
   {
     "id": "hot-36e7ccb3",
-    "rank": 13,
+    "rank": 16,
     "title": "特朗普火速力挺黄仁勋复职、自称“一手促成”，万斯被曝也介入幕后协调",
     "industry": "金融与政策",
     "topics": [
@@ -392,7 +470,7 @@
       "市场政策",
       "美股"
     ],
-    "heatScore": 81.8,
+    "heatScore": 63,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:06:08.000Z",
     "summary": "特朗普火速表态力挺黄仁勋复职，并自称此事由他“一手促成”。万斯被曝也在幕后参与了协调。",
@@ -409,7 +487,7 @@
   },
   {
     "id": "hot-8def6855",
-    "rank": 14,
+    "rank": 17,
     "title": "黄仁勋复职带动AI相关股票普涨 英伟达市值数小时增逾1万亿美元",
     "industry": "金融与政策",
     "topics": [
@@ -418,7 +496,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 81.5,
+    "heatScore": 62.7,
     "sourceCount": 1,
     "latestAt": "2026-11-23T15:51:40.000Z",
     "summary": "英伟达宣布恢复黄仁勋总裁兼首席执行官职务并立即生效，AI相关股票应声普涨，英伟达股价一度上涨35%，创2000年以来最大盘中涨幅。受此带动，英伟达市值数小时内增逾1万亿美元。",
@@ -435,7 +513,7 @@
   },
   {
     "id": "hot-6e524e28",
-    "rank": 15,
+    "rank": 18,
     "title": "同步窗口关闭时：Argo CD self-heal 是如何跳过迁移 hook 的",
     "industry": "工程与开源",
     "topics": [
@@ -443,7 +521,7 @@
       "研发效能",
       "开源生态"
     ],
-    "heatScore": 80.7,
+    "heatScore": 62.1,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:06:28.635Z",
     "summary": "CNCF 博客复盘一则真实案例：客户推送发布后 Argo CD 报告同步成功，迁移 hook 却未执行，根因是同步窗口关闭后 self-heal 跳过了迁移 hook。文章拆解了这一行为背后的机制，帮助依赖同步窗口与 hook 的团队避开同类问题。",
@@ -459,8 +537,34 @@
     ]
   },
   {
+    "id": "hot-3b309196",
+    "rank": 19,
+    "title": "Google DeepMind 用智能体团队与形式化验证寻找更快的量子算法",
+    "industry": "AI",
+    "topics": [
+      "前沿研究",
+      "量子计算",
+      "AI科研",
+      "模型发布"
+    ],
+    "heatScore": 61,
+    "sourceCount": 1,
+    "latestAt": "2026-11-23T16:59:40.000Z",
+    "summary": "Google DeepMind 结合智能体团队与形式化验证，寻找更快的量子算法，改进了面向核聚变与化学领域的量子算法。这项工作展示了 AI 智能体直接参与量子算法发现的实践路径。",
+    "items": [
+      {
+        "id": "aihot-20261123-google-deepmind-fb953c22",
+        "title": "Google DeepMind 用智能体团队与形式化验证寻找更快的量子算法",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-23T16:59:40.000Z",
+        "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+        "score": 84
+      }
+    ]
+  },
+  {
     "id": "hot-4d347bb7",
-    "rank": 16,
+    "rank": 20,
     "title": "美股为何迎来2008年以来波动最剧烈的周一早盘",
     "industry": "金融与政策",
     "topics": [
@@ -469,7 +573,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 78.2,
+    "heatScore": 60.1,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:01:25.000Z",
     "summary": "美股周一早盘波动剧烈程度创2008年以来之最，此前一周遭华尔街疯狂抛售的AI相关资产被资金大举买回。跟踪纳指100的景顺QQQ信托开盘大涨近8%，创下该基金1999年以来的纪录。",
@@ -481,109 +585,6 @@
         "publishedAt": "2026-11-23T17:01:25.000Z",
         "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuars2128579.shtml",
         "score": 82
-      }
-    ]
-  },
-  {
-    "id": "hot-32fa1be4",
-    "rank": 17,
-    "title": "英伟达恢复黄仁勋总裁兼CEO职务，AI概念股大涨",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "AI",
-      "宏观"
-    ],
-    "heatScore": 78.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T15:04:13.000Z",
-    "summary": "英伟达（Nvidia）宣布即刻恢复黄仁勋总裁兼首席执行官（CEO）职务。受此消息推动，AI相关个股周一大涨。",
-    "items": [
-      {
-        "id": "aihot-20261123-bloomberg-markets-76fec016",
-        "title": "英伟达恢复黄仁勋总裁兼CEO职务，AI概念股大涨",
-        "source": "Bloomberg Markets",
-        "publishedAt": "2026-11-23T15:04:13.000Z",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-23/ai-linked-stocks-take-off-after-nvidia-reinstates-jensen-huang",
-        "score": 90
-      }
-    ]
-  },
-  {
-    "id": "hot-a46a8bed",
-    "rank": 18,
-    "title": "Z.ai 发布 7500 亿参数旗舰模型 GLM-5.4，跟随 OpenAI 布局循环 Transformer 架构",
-    "industry": "AI",
-    "topics": [
-      "大模型",
-      "模型架构",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "heatScore": 77.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T15:13:03.000Z",
-    "summary": "Z.ai 发布旗舰模型 GLM-5.4，将 7500 亿参数模型迁移至循环架构，让 28 层网络运行两次。公司称该设计能让其匹敌 2 至 3 万亿参数的模型，但目前基准成绩仅来自较小的 30B 测试模型。Z.ai 将 GLM-5.4 定位为\"泛化编码\"（Generalized Coding）的开端，代码还可生成视频、游戏和 CAD 模型。",
-    "items": [
-      {
-        "id": "aihot-20261123-the-decoder-b3f52b71",
-        "title": "Z.ai 发布 7500 亿参数旗舰模型 GLM-5.4，跟随 OpenAI 布局循环 Transformer 架构",
-        "source": "The Decoder",
-        "publishedAt": "2026-11-23T15:13:03.000Z",
-        "url": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/",
-        "score": 88
-      }
-    ]
-  },
-  {
-    "id": "hot-8fb76c9e",
-    "rank": 19,
-    "title": "Nothing 即将推出的 Ear Note 是一款支持 AI 转写的耳机",
-    "industry": "AI",
-    "topics": [
-      "消费电子",
-      "AI硬件",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "heatScore": 77,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T19:04:52.000Z",
-    "summary": "Nothing 演示了即将推出的 AI 耳机 Ear Note，耳塞和配备麦克风的充电盒可录制并转写对话，配套 App 用于管理录音、转写和 AI 生成的摘要。CEO Carl Pei 现场演示了这款设备，其定位类似 Apple 新的 Watch 功能和 Amazon 的 Bee 可穿戴设备等产品。",
-    "items": [
-      {
-        "id": "aihot-20261123-the-verge-ai-555fb4db",
-        "title": "Nothing 即将推出的 Ear Note 是一款支持 AI 转写的耳机",
-        "source": "The Verge · AI",
-        "publishedAt": "2026-11-23T19:04:52.000Z",
-        "url": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
-        "score": 72
-      }
-    ]
-  },
-  {
-    "id": "hot-47506176",
-    "rank": 20,
-    "title": "监管部门向券商下发两融新政通知：落实融资融券逆周期调节措施",
-    "industry": "金融与政策",
-    "topics": [
-      "市场政策",
-      "A股",
-      "监管动态",
-      "港股"
-    ],
-    "heatScore": 77,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T14:35:36.000Z",
-    "summary": "11月23日，监管部门向券商下发《关于落实融资融券逆周期调节措施、提升风险管控有效性有关工作的通知》。该通知围绕落实两融逆周期调节措施、提升风险管控有效性提出要求，属两融领域新政。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-7567b04c",
-        "title": "监管部门向券商下发两融新政通知：落实融资融券逆周期调节措施",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T14:35:36.000Z",
-        "url": "https://finance.sina.com.cn/china/2026-11-23/doc-iniztwiw8165261.shtml",
-        "score": 90
       }
     ]
   }
