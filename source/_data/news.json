@@ -1,5 +1,226 @@
 [
   {
+    "id": "aihot-20261126-eastmoney-724-22e0656f",
+    "title": "道琼斯工业平均指数转涨 此前一度下跌2.2%",
+    "summary": "道琼斯工业平均指数由跌转涨，此前盘中一度下跌2.2%。",
+    "url": "https://finance.eastmoney.com/a/202611263939935519.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-26T01:55:47.000Z",
+    "score": 55,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美股",
+      "道琼斯",
+      "市场快讯"
+    ],
+    "context": "美股盘中宽幅震荡后收复跌幅，短期市场波动加剧的信号值得关注。"
+  },
+  {
+    "id": "aihot-20261126-eastmoney-724-1cb57159",
+    "title": "费城半导体指数跌幅收窄至4% 现报8480.95点",
+    "summary": "费城半导体指数盘中跌幅收窄至4%，现报8480.95点。",
+    "url": "https://finance.eastmoney.com/a/202611263939935496.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-26T01:55:02.000Z",
+    "score": 50,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "费城半导体指数",
+      "美股",
+      "半导体",
+      "盘面快讯"
+    ],
+    "context": "该指数是全球半导体行情的风向标，其盘中波动常牵动A股、港股半导体板块情绪。"
+  },
+  {
+    "id": "aihot-20261126-eastmoney-724-f27d9e39",
+    "title": "美股三大指数拉升 纳指跌幅收窄至2%",
+    "summary": "美股三大指数盘中拉升，纳指跌幅收窄至2%，标普500指数跌1%，恐慌指数VIX回落至30下方。成分股中Anthropic涨2%，此前一度跌近10%；Meta涨超1%。",
+    "url": "https://finance.eastmoney.com/a/202611263939934562.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-26T01:52:48.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场行情",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美股",
+      "纳指",
+      "VIX",
+      "行情快讯"
+    ],
+    "context": "VIX自高位回落，显示盘中避险情绪有所降温，科技与AI相关个股的剧烈波动仍值得关注。"
+  },
+  {
+    "id": "aihot-20261126-eastmoney-724-6ecce5b7",
+    "title": "瑞典央行将接入欧洲央行T2支付结算平台",
+    "summary": "瑞典央行已同意将本国RIX-RTGS支付结算系统接入欧洲央行T2平台，目标在2030年2月完成切换。RIX-RTGS系统目前每月处理约70万笔大额支付结算业务，瑞典央行与欧洲央行将共同承担安全、技术开发及欧洲通用标准相关投入。",
+    "url": "https://finance.eastmoney.com/a/202611263939934354.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-26T01:44:10.000Z",
+    "score": 68,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "金融政策",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "瑞典央行",
+      "欧洲央行",
+      "支付结算",
+      "金融基础设施"
+    ],
+    "context": "瑞典核心大额支付系统并入欧元区清算基础设施，欧洲支付清算一体化再进一步。"
+  },
+  {
+    "id": "aihot-20261126-eastmoney-724-cfd30bd6",
+    "title": "英伟达芯片卖家争相寻找买家",
+    "summary": "英伟达GPU卖家正为数千枚先进的B300芯片寻找新买家，大量英伟达GPU涌入转售市场。卖家试图将这批AI硬件转售他处。",
+    "url": "https://finance.eastmoney.com/a/202611263939933368.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-26T01:39:14.000Z",
+    "score": 64,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "AI硬件",
+      "半导体",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "英伟达",
+      "GPU",
+      "转售市场",
+      "AI算力"
+    ],
+    "context": "旗舰级GPU集中流入二级转售市场，是观察AI算力供需变化的直观信号，对AI硬件产业链情绪有参考意义。"
+  },
+  {
+    "id": "aihot-20261126-eastmoney-724-8715b1ec",
+    "title": "Anthropic股价重回83美元IPO发行价上方",
+    "originalTitle": "Anthropic股价重回83美元的IPO发行价上方",
+    "summary": "Anthropic股价重回83美元的IPO发行价上方，最新涨近3%，报84.23美元/股。",
+    "url": "https://finance.eastmoney.com/a/202611263939932998.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-26T01:36:03.000Z",
+    "score": 62,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股市场",
+      "人工智能",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "Anthropic",
+      "美股",
+      "IPO",
+      "股价"
+    ],
+    "context": "AI头部公司上市后股价表现受市场关注，重回发行价上方常被解读为市场情绪回稳的信号。"
+  },
+  {
+    "id": "aihot-20261125-bloomberg-markets-3f41483c",
+    "title": "安大略教师养老金CEO Jo Taylor：AI基建周期“非常长”或危及投资押注",
+    "originalTitle": "Ontario Teachers’ CEO Says ‘Very Long’ AI Buildout Imperils Bets",
+    "author": "Layan Odeh",
+    "summary": "安大略教师养老金计划CEO Jo Taylor表示，人工智能能否成功将取决于相关基础设施建设所需的时间长短。他警告，若AI基建周期“非常漫长”，可能危及对该领域的投资押注。",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-25/ontario-teachers-ceo-says-very-long-ai-buildout-imperils-bets",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-25T18:02:51.000Z",
+    "score": 76,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "机构投资",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "AI基建",
+      "养老金",
+      "Jo Taylor",
+      "机构观点"
+    ],
+    "context": "安大略教师养老金是加拿大大型机构投资者，其掌门人对AI基建周期的审慎表态折射出机构资金对AI热潮的谨慎态度。",
+    "contentHtml": "<p>November 25, 2026 at 6:02 PM UTC</p><p><a href=\"https://www.bloomberg.com/quote/1885Z:CN\">Ontario Teachers’ Pension Plan</a> Chief Executive Officer Jo Taylor said the success of artificial intelligence will hinge on how long it takes to build infrastructure for the technology.</p><p>AI will be predicated on “how long this very long buildout of a capacity to feed their technology models will continue,” Taylor, 65, said in an interview. “The longer it takes, the more it costs, the less obvious that the business model works.” </p>",
+    "contentHtmlZh": "<p>{\"t\": [\"</p><p>2026年11月25日 下午6:02（UTC）</p><p><a href=\"https://www.bloomberg.com/%22https://www.bloomberg.com/quote/1885Z:CN/%22\">安大略省教师养老金计划</a>首席执行官 Jo Taylor 表示，人工智能的成败将取决于为这项技术建设基础设施所需的时间长短。</p><p>现年 65 岁的 Taylor 在接受采访时表示，AI 将取决于“这场为技术模型提供算力支持的漫长产能建设还将持续多久”。“耗时越长，成本越高，商业模式能否成立就越不明显。” </p><p>\"]}</p>"
+  },
+  {
     "id": "aihot-20261125-eastmoney-724-d25fc91c",
     "title": "Anthropic股价拉升翻红 此前一度跌9.5%",
     "summary": "Anthropic股价盘中拉升翻红，此前一度下跌9.5%。该快讯仅披露这一盘中价格异动，未提及波动原因或公司基本面变化。",
@@ -29,6 +250,39 @@
       "股价"
     ],
     "context": "单日先深跌后翻红、日内波动剧烈，属典型盘中异动外围快讯，仅供关注短线资金动向的读者参考。"
+  },
+  {
+    "id": "aihot-20261125-google-research-cf3013b8",
+    "title": "Google Research 介绍 LLM 助手的可验证社会推理研究",
+    "originalTitle": "Verifiable Social Reasoning for LLM Assistants",
+    "summary": "Google Research 在官方博客介绍面向 LLM 助手的可验证社会推理研究，方向是让大模型助手在社会情境中的推理过程可被验证。该工作隶属其生成式 AI 研究范畴，具体方法与结果可查阅官方博客原文。",
+    "url": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+    "source": "Google Research",
+    "publishedAt": "2026-11-25T17:10:27.000Z",
+    "score": 76,
+    "tier": "T1",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "大模型",
+      "AI 研究",
+      "研究",
+      "基础设施"
+    ],
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "研究",
+      "Google Research",
+      "LLM",
+      "可验证性",
+      "社会推理"
+    ],
+    "context": "可验证的社会推理是提升 LLM 助手可靠性的重要研究方向，谷歌官方研究动态值得关注。",
+    "contentHtml": "<p>Large Language Models (LLMs) are widely used for everyday personal support and advice, yet evaluating their social reasoning in such consultation settings remains challenging since (1) it requires setups where the assistant learns about social situations from subjective user narratives, and (2) social properties, such as others’ intentions, typically lack verifiable ground truth.</p><p>Designed to address both of these challenges, we <a href=\"https://arxiv.org/abs/2609.17496\">introduce</a> an evaluation framework for social reasoning based on multi-agent simulations. In our framework, a target agent is assigned a <i>hidden</i> motive and interacts with other agents, including one representing the user. The user then consults with the evaluated assistant, which must infer the target's hidden motive. Evaluating a diverse range of LLMs through our framework reveals that relying on subjective user mediation substantially complicates social reasoning. Furthermore, models are sensitive to user framing, require more detail than humans need to reach correct predictions, and fail to fully leverage clarification questions. We <a href=\"https://github.com/google-research/google-research/tree/master/user_mediated_social_reasoning\">open-source</a> the framework and dataset to encourage future research on user-mediated social reasoning.</p><h2>User-mediated reality</h2><p>When evaluating LLMs’ social reasoning, it’s important to recognize that deployed assistants operate within a <i>user-mediated reality</i>. In classical reasoning tasks like math and code, LLMs operate over objective, complete information. However, when an LLM acts as a conversational assistant and is asked for personal support and advice, it does not observe the actual social interactions firsthand; its only source of information is the subjective, potentially biased lens of the user.</p><p>This information asymmetry can be challenging, as users may omit crucial context or provide a distorted narrative due to personal bias (e.g., projecting their insecurities onto their recounting of events). When models adopt the user's premise, they may amplify one-sided assumptions rather than offer objective assessment. This can result in an undesired failure mode, such as dispensing harsh advice against a colleague who was actually trying to help.</p><h2>Evaluating everyday social interactions</h2><p><a href=\"https://meridianlabs-ai.github.io/inspect_petri/\">Existing evaluations</a> often constrain their scope to edge-cases and overt anomalies, like testing whether models endorse absurd claims such as a human claiming to have <a href=\"https://en.wikipedia.org/wiki/Supernatural\">supernatural powers</a>, largely overlooking more nuanced everyday social interactions. These everyday interactions represent a <a href=\"https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/\">massive share</a> of real-world usage, translating to hundreds of millions of daily conversations where users seek personal support, relationship advice, and companionship.</p><h2>The challenge of verifiable ground-truth</h2><p>Evaluating everyday scenarios is inherently more challenging due to a lack of verifiable ground truth. In extreme cases, ground truth labels come “for free”; a claim of having supernatural powers, for instance, is trivially false. In contrast, establishing a verifiable ground truth for nuanced, day-to-day interactions, such as inferring human motives, is far less trivial.</p><h2>Our approach</h2><p>To systematically evaluate LLM-based assistants’ social reasoning, we propose an evaluation framework based on multi-agent simulations that produces rich interpersonal dynamics between generative characters with three core principles:</p><ol><li><b>User-mediated reality:</b> As illustrated in the figure below, the evaluated model, which acts as an assistant, does not participate in the main social interaction and cannot observe the events firsthand. Instead it interacts exclusively with a single user persona.</li><li><b>Verifiable signals:</b> To establish a verifiable ground truth, the evaluation framework starts each simulation with a controllable entity that has a hidden motivation. This motivation shapes the entity's behavior throughout the simulation, and the goal of the evaluated assistant is to predict it.</li><li><b>Controllable axes:</b> To evaluate how user perspective influences the assistant's social reasoning, the framework parameterizes the user persona's cognitive filters along distinct axes, such as toggling a user between being confident or insecure.</li></ol><p>Based on these principles, our framework tests social capabilities across diverse scenarios.</p><p>Our framework programmatically generates scenarios and evaluates them using a five-step pipeline:</p><ol><li><b>Ground in social topics:</b> We start with a definition of a set of social reasoning categories (e.g., desires, knowledge) that determine the scope of the evaluation. Grounding the evaluation around some principled set of categories ensures that it covers a range of social aspects.</li><li><b>Generate scenario templates:</b> The framework generates the scaffolding for each simulation, including: a multi-scene structure, a user persona, any background personas, and a target persona whose hidden motive is controlled by the framework. Every scenario is built around a reasoning question. The diagram below illustrates an example scenario within the <i>desire</i> category, requiring the model to deduce the romantic motives of the target persona.</li><li><b>Run the main simulation:</b> The simulated user, the target entity, and any auxiliary agents interact naturally across the scenes to generate a concrete, emergent social narrative. The multi-agent simulations are implemented by extending the <a href=\"https://github.com/google-deepmind/concordia\">Concordia</a> open-source library developed by Google.</li><li><b>Conduct the assistant debrief:</b> The user agent is extracted from the simulation and turns to the assistant for social advice, privately recounting the events in a partial and perhaps biased manner.</li><li><b>Assess the assistant decision:</b> The assistant is prompted to predict the underlying hidden motive based solely on the user-mediated conversation. We then use an <a href=\"https://arxiv.org/abs/2411.15594\">LLM-as-a-judge</a> to determine if the assistant successfully deduced the ground truth.</li></ol><p>Importantly, the simulation and the debrief are separated in our framework, allowing simulations to be reused efficiently across any number of evaluated models, and enabling the creation of static evaluation datasets. We <a href=\"https://github.com/google-research/google-research/tree/master/user_mediated_social_reasoning\">open-source</a> the framework and a dataset with over 20K generated examples for running experiments.</p><h2>Key findings</h2><p>Our framework makes it possible to systematically study what makes user-mediated social reasoning challenging, offering insights into how better assistants can be developed and evaluated. We apply it to 12 LLMs and isolate several key factors:</p><ul><li><b>The assistant-observer gap:</b> When we show an LLM the objective, unmediated events of a simulation directly as a \"fly on the wall\" observer, the model is significantly more accurate at predicting the verifiable ground truth than when the same model acts as an assistant talking strictly to the user. This gap isolates the cost of reasoning through the user's subjective lens.</li><li><b>Sensitivity to user framing:</b> The gap intensifies when we inject explicit biases into the simulated user. Rather than offering an objective perspective, the evaluated models often adopt the user’s subjective framing. For instance, in some cases where the user expresses unfounded suspicion, the assistant validated those assumptions rather than reasoning from the underlying facts.</li><li><b>The effect of narrative detail:</b> Models improve with more detailed user narratives, even when the additional detail is not necessary for a correct prediction. This suggests that models often require more evidence than is actually needed before committing to certain predictions.</li><li><b>Multi-turn dynamics:</b> Longer conversations do not always improve social reasoning accuracy. While additional turns provide opportunities to ask clarifying questions, models preserve conversational coherence, often causing models to anchor to prior exchanges, reinforcing the user’s subjective framing across successive turns.</li></ul><p>We are currently using the framework and dataset to help inform our own model development. We are also releasing both publicly, to be transparent about our research and to encourage the community to make progress on this important topic.</p><h2>Conclusion</h2><p>Our <a href=\"https://research.google/blog/evaluating-alignment-of-behavioral-dispositions-in-llms/\">previous work on behavioral alignment</a> explored how AI assistants match human preferences in everyday social scenarios. In <a href=\"https://arxiv.org/abs/2609.17496\">this work</a>, we expand the focus from measuring general <i>behavioral tendencies</i> to evaluating <i>social reasoning</i>.</p><p>By incorporating verifiable signals within simulated environments, we chart a scalable, empirical path toward developing reliable AI. Future work can build on this foundation by modeling longer-term, evolving relationships and multi-party group dynamics, bringing simulated benchmarks even closer to the nuances of real-world human interactions. We are <a href=\"https://github.com/google-research/google-research/tree/master/user_mediated_social_reasoning\">open-sourcing</a> our framework to advance research across the community and encourage the collaborative design of new, diverse social evaluation environments.</p><h2>Acknowledgements</h2><p><i>This research was conducted by Zorik Gekhman, Amir Taubenfeld, Avigail Grinstein-Dabush, Ariel Goldstein, Lior Nezry, Romina Stella, Itay Laish, Marian Croak, Yossi Matias, and Amir Feder. We thank Gal Yona, Yonathan Efroni, Saška Mojsilović, Avinatan Hassidim, and Ronit Levavi Morad for reviewing the work and their valuable suggestions.</i></p>"
   },
   {
     "id": "aihot-20261125-sina-finance-c39fdd14",
@@ -772,6 +1026,40 @@
       "海外快讯"
     ],
     "context": "假日季临近，喜力能否如期在海地恢复啤酒供应，可作为观察其海外运营修复进展的信号。"
+  },
+  {
+    "id": "aihot-20261125-github-ai-bbb62882",
+    "title": "GitHub Copilot 如何为应用现代化选择下一个安全步骤",
+    "originalTitle": "How to choose the next safe step in application modernization",
+    "author": "Sam Quakenbush",
+    "summary": "GitHub 官方博客讲解应用现代化的安全推进方法：如何评估遗留应用，并选择一个有边界的现代化步骤。文中还展示了如何借助 GitHub Copilot agent skill 复用这套方法。",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/",
+    "source": "GitHub Blog · AI & ML",
+    "publishedAt": "2026-11-25T15:00:00.000Z",
+    "score": 63,
+    "tier": "T1",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "AI 辅助开发",
+      "软件工程",
+      "Agent 智能体",
+      "开源生态"
+    ],
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "工程",
+      "GitHub Copilot",
+      "应用现代化",
+      "遗留系统",
+      "工程实践"
+    ],
+    "context": "该方法聚焦把大型改造拆成有边界的小步推进，对负责遗留系统现代化的工程团队有直接参考价值。",
+    "contentHtml": "<p>Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill.</p><p>\n\t\t\tNovember 25, 2026\t\t</p><p><span>|</span></p><p>\n\t\t\t\t9 minutes\t\t\t</p><ul>\n\t<li>\n\t\t<span>\n\t\t\tShare:\t\t</span>\n\t</li>\n\t<li>\n\t\t\n\t</li>\n\t<li>\n\t\t\n\t</li>\n\t<li>\n\t\t\n\t</li>\n</ul><p>A request to modernize an application often starts with a technology question: Which framework should replace the old one? Before you choose, find out what still works. Then collect evidence that can act as a regression net for that behavior and show where modernization is necessary.</p><p>I used an evidence-first method on four public applications, from a small Node.js game to a large Java enterprise resource planning (ERP) application. Each needed a different treatment, but the way I collected evidence, chose the next experiment, and decided on possible proof points was repeatable.</p><p>This post walks through that process so you can apply it to one application of your own. It also shows how to encode the procedure in a <a href=\"https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/about-agent-skills\">GitHub Copilot agent skill</a> while keeping architectural judgment with the people responsible for the system.</p><h2>Build evidence before choosing a target</h2><p>The label on an application rarely tells you enough. “Java microservices” doesn’t tell you which Java Development Kit (JDK) runs in production, where that version is pinned, whether the tests execute, or which interfaces other systems depend on. “Legacy monolith” doesn’t tell you whether the business core is broken or whether one retired platform dependency prevents the application from starting.</p><p>Before you recommend a change, build a small evidence inventory:</p><ul>\n<li>Manifests, lockfiles, entry points, and deployable components</li>\n\n\n\n<li>Verified commands for installing, building, testing, packaging, and running</li>\n\n\n\n<li>Runtime pins in containers, CI workflows, deployment files, and developer tooling</li>\n\n\n\n<li>External contracts such as APIs, database behavior, file formats, and user workflows</li>\n\n\n\n<li>End-of-life frameworks and dependencies, with evidence that the application still uses them</li>\n</ul><p>Record uncertainty while you work. I use three simple labels: documented, inferred, and unverified. If two files disagree about the Java version, resolve the contradiction. If you can’t determine whether a CI check blocks merges, say so. Record the unknown rather than treating a guess as a finding.</p><p>That inventory gives you something concrete to review with the people who own the application before you propose changes.</p><h2>Choose the least disruptive treatment that works</h2><p>Once you understand the application, make the decision per component. A single system can contain code that should stay, dependencies that should be swapped, and one subsystem that genuinely needs a rewrite.</p><p>First, check whether a capability is still needed. Remove it only after verifying that it is unused or superseded and confirming that decision with its owner. Removal is a separate decision, and it’s not necessarily the most disruptive one.</p><p>For a capability you still need, start with the option that changes the least:</p><ol>\n<li><strong>Keep it.</strong> Supported code that still fits the job doesn’t need a modernization story.</li>\n\n\n\n<li><strong>Upgrade it.</strong> Move to a supported major version and fix the breaking changes.</li>\n\n\n\n<li><strong>Swap it.</strong> Replace an abandoned dependency while preserving the existing design.</li>\n\n\n\n<li><strong>Wrap it.</strong> Stabilize a useful interface and replace the internals in increments.</li>\n\n\n\n<li><strong>Rewrite it.</strong> Use this when no responsible upgrade path exists or the architecture cannot meet the requirement.</li>\n</ol><p>This is a decision order, not a universal ranking of effort or risk. Ask what evidence justifies choosing a more disruptive option. “The code is old” is not enough. A known vulnerability with no patched release for the pinned version, a dependency that fails on the required runtime, or a measured reliability target the current design cannot meet can justify escalation.</p><h2>Decide what proof is possible</h2><p>The next question is whether the component can run well enough to produce evidence, even if the legacy CI pipeline is not green.</p><p>Run a time-boxed feasibility check. Try to install dependencies, build on an available toolchain, start the component, and execute at least one meaningful test. Stop when the time box expires. The result sends you down one of two paths.</p><p><strong>Capture behavior, then upgrade.</strong> Use this path when the old application can still run at an acceptable cost. Record its externally visible behavior, fix the test harness where practical, and use those checks to verify the upgrade.</p><p><strong>Build a small modern slice first.</strong> Use this path when the old component cannot run until you have already changed it. Move the thinnest useful workflow to supported technology, prove it, and expand from there. Requiring a complete legacy test suite in this situation is circular. Restoring the test suite is part of the modernization.</p><p>I use the following safety levels, adapted from the <a href=\"https://github.com/github/awesome-copilot/blob/1899b18da3fa5183652f86165917d553cba1850a/skills/doc-and-modernize/SKILL.md#L350-L373\"><code>doc-and-modernize</code> skill</a>, to describe the strongest regression protection available:</p><figure><table><thead><tr><th>Level</th><th>Strongest honest protection</th></tr></thead><tbody><tr><td>L0</td><td>No usable regression net; treat the old code and available documentation as the specification.</td></tr><tr><td>L1</td><td>Small reversible changes, old and new paths in parallel, smoke checks, and domain review.</td></tr><tr><td>L2</td><td>Captured inputs and outputs, snapshots, or other behavioral comparisons.</td></tr><tr><td>L3</td><td>Automated checks cover part of the system, with the remaining gaps named.</td></tr><tr><td>L4</td><td>An automated CI gate combines lint, unit, behavioral, and end-to-end checks for the agreed scope.</td></tr></tbody></table></figure><p>State what you can prove and what risk remains. Even an L4 gate cannot establish that every possible behavior is correct. APIs, database effects, files, rendered output, and business workflows often make durable comparison points because those behaviors can survive a framework or language change.</p><h2>PiggyMetrics: capture behavior, then upgrade</h2><p><a href=\"https://github.com/samqbush/piggymetricsv2/tree/d1b37dbfff5e973bd09d08753f0b41585b7225d6\">PiggyMetrics</a> was the clearest example of an application that looked worse than it was. The project used Java 8, Spring Boot 2.0.3, Spring Cloud Finchley, Zuul, Hystrix, and the old <code>spring-security-oauth2</code> library.</p><p>It would have been easy to call the application unworkable and start drawing a new architecture. The feasibility check told a different story.</p><p>The <a href=\"https://github.com/samqbush/piggymetricsv2/blob/d1b37dbfff5e973bd09d08753f0b41585b7225d6/ARCHITECTURE.md#L97-L129\">recorded feasibility results</a> show these two probes against the legacy checkout with JDK 8:</p><figure><table><thead><tr><th>Command</th><th>Recorded result</th><th>What it established</th></tr></thead><tbody><tr><td><code>mvn -pl config -am compile</code></td><td>Exit code 0</td><td>The selected config module and required reactor dependencies compiled.</td></tr><tr><td><code>mvn -pl account-service -am test</code></td><td>14 tests ran: five passed and nine errored</td><td>Some service logic passed; embedded MongoDB initialization blocked the other tests.</td></tr></tbody></table></figure><p>These are historical results, not commands expected to reproduce those failures on the modernized checkout. The nine errors traced through <code>Failed to load ApplicationContext</code> to an embedded MongoDB download returning HTTP 403. The pinned binary also targeted i386, which would not run on the Apple Silicon host.</p><p>The probes did <strong>not</strong> establish that the whole application ran or that its integration behavior was correct. They did give me a narrower next step: replace the test dependency and rerun the affected tests before changing the production stack.</p><p>That result saved me from making a very tidy, very expensive mistake. I had already started thinking about which parts of the architecture I might replace. One broken test dependency did not justify redesigning the application, and five passing tests established behavior I could check for unintended changes during modernization.</p><p>The <a href=\"https://github.com/samqbush/piggymetricsv2/blob/d1b37dbfff5e973bd09d08753f0b41585b7225d6/MODERNIZATION_PLAN.md#L29-L65\">modernization plan</a> turned that evidence into a capture-then-upgrade sequence:</p><ol>\n<li>Replace the embedded database dependency with Testcontainers and establish a green baseline on the existing stack.</li>\n\n\n\n<li>Put that baseline in GitHub Actions before changing the production runtime.</li>\n\n\n\n<li>Move from Java 8 to Java 21 and Spring Boot 3.3.</li>\n\n\n\n<li>Replace obsolete components behind their existing interfaces: Zuul with Spring Cloud Gateway, Hystrix with Resilience4j, and the retired OAuth stack with Spring Authorization Server and JSON Web Token (JWT) resource servers.</li>\n\n\n\n<li>Carry the baseline forward and add contract checks around the parts whose behavior changed.</li>\n</ol><p>The first acceptance gate was a passing baseline on the old stack, not merely the successful installation of a replacement dependency. Running checks in CI and enforcing them as merge requirements were also separate steps in the plan.</p><p>The <a href=\"https://github.com/samqbush/piggymetricsv2/blob/d1b37dbfff5e973bd09d08753f0b41585b7225d6/README.md#modernization-at-a-glance\">result summary</a> records the Java and Spring upgrades while retaining the microservice decomposition that the application exists to demonstrate. Eureka and Cloud Config stayed; the two monitoring modules used by the retired Hystrix and Turbine stack were removed. The in-scope build went from nine modules to seven.</p><p>Those versions describe the experiment, not a recommendation to select the same versions today. Choose targets against your current support requirements. The useful lesson is how the repository evidence narrowed the change.</p><h2>The method changes with the system</h2><p>The same process produced different answers on two smaller applications. Their pinned reports describe these choices:</p><figure><table><thead><tr><th>Application</th><th>What stayed</th><th>What changed</th><th>Strategy</th></tr></thead><tbody><tr><td><a href=\"https://github.com/samqbush/browserquest-v2/blob/e535c16838f12f2d7d641f94f8cf4cd45b63dbd0/BEFORE_AFTER.md\">BrowserQuest</a></td><td>Canvas renderer, pathfinding, world model, protocol, and game-loop model</td><td>Node 0.4.7 to Node 22, two obsolete WebSocket stacks to <code>ws</code>, plus tests and GitHub Actions</td><td>Upgrade and swap</td></tr><tr><td><a href=\"https://github.com/samqbush/doomv2/blob/523f0446768136f1be0af81f73264093997c8170/README.TXT\">DOOM</a></td><td>Renderer, 35 Hz simulation model, and WAD game-data format</td><td>X11 video and OSS audio replaced with SDL2; platform code adapted for modern 64-bit systems</td><td>Preserve the core and replace the platform</td></tr></tbody></table></figure><p>The comparison needs one important qualification: <a href=\"https://github.com/samqbush/doomv2/blob/523f0446768136f1be0af81f73264093997c8170/README.TXT\">DOOM’s checks</a> froze outputs from the modernized engine itself. They protected against later regressions; they did not independently prove parity with a period-correct legacy binary. Naming that limit is part of choosing an honest safety level.</p><h3>Scaling the method without pretending the product is finished</h3><p>I then applied the method to <a href=\"https://github.com/samqbush/adempiere2/blob/f6813cc5488725ccff865deda16d840e468cb975/docs/modernization/modernization-effort-report.md\">ADempiere</a>, a large Java suite covering ERP, customer relationship management, manufacturing, supply chain, accounting, and point of sale.</p><p>The scale changed the controls, but not the method. The work established a reproducible build, moved the runtime to JDK 21, preserved SOAP web-service contracts while replacing XFire with CXF and Jakarta, captured legacy web behavior, and introduced a modern web path for selected users. The first modern business partner write was compared with a result frozen from the legacy application.</p><p>The <a href=\"https://github.com/samqbush/adempiere2/blob/f6813cc5488725ccff865deda16d840e468cb975/docs/modernization/modernization-effort-report.md#executive-summary\">fixed measurement report</a> covers 30 merged modernization pull requests and 102,587.72 reconstructed Copilot credits through the first accepted portable demo. The credit total is not a dollar cost. More important, the report says exactly what the result was not: it was not a claim that every ADempiere screen or production deployment had been modernized.</p><p>I stopped because the proof-of-concept question had been answered. The result demonstrated a build on the selected runtime, old and new paths running together, and a real business write checked against the legacy result. Completing the rest would have required a product funding decision, not another technical proof. Stopping at that boundary was part of the method.</p><h2>Turn the method into an agent skill</h2><p>After repeating this work, I didn’t want the evidence checklist and decision rules to live only in my notes. I encoded them in the public <a href=\"https://github.com/github/awesome-copilot/tree/main/skills/doc-and-modernize\"><code>doc-and-modernize</code> agent skill</a>.</p><p><a href=\"https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/about-agent-skills\">Agent skills</a> are folders of instructions, scripts, and resources that Copilot can load when a task is relevant. A project skill can live with one repository:</p><pre><code>.github/skills/doc-and-modernize/\n├── SKILL.md\n├── references/\n└── scripts/\n</code></pre><p>Only <code>SKILL.md</code> is required; the resource folders shown here are optional. The file needs YAML frontmatter with a <code>name</code> and a <code>description</code> explaining what the skill does and when to use it, followed by the instructions. The <a href=\"https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/copilot-cli/customize-copilot/add-skills#creating-and-adding-a-skill\">creation guide</a> includes the full format.</p><p>Paraphrased from the <a href=\"https://github.com/github/awesome-copilot/blob/1899b18da3fa5183652f86165917d553cba1850a/skills/doc-and-modernize/SKILL.md#L330-L349\">commit-pinned skill source</a>, its decision fork is:</p><ul>\n<li>If the old component can run at an acceptable cost, capture its behavior before upgrading.</li>\n\n\n\n<li>If it cannot run without changes, build and verify a small modern slice first, then expand it.</li>\n</ul><p>The full skill adds the feasibility check, testability milestone, safety levels, phase gates, and evidence requirements.</p><p>The useful distinction is procedure versus policy. A shared skill can require repository evidence, bounded experiments, explicit safety levels, and runnable exit criteria. Your organization still needs to supply the parts only it knows:</p><ul>\n<li>Approved runtimes, frameworks, and hosting services</li>\n\n\n\n<li>Application criticality and acceptable residual risk</li>\n\n\n\n<li>Security, compliance, and change-control requirements</li>\n\n\n\n<li>Which legacy or production results may be used as the expected answer</li>\n\n\n\n<li>Who can approve the architecture and declare a production change complete</li>\n</ul><p>The skill should make those decisions visible. It shouldn’t make them for you.</p><h2>Start with one bounded application</h2><p>Choose an application with an identified owner, known business value, and one workflow you can observe. Run the documentation workflow first. Review the architecture, commands, runtime surfaces, and unknowns with the people who own the system.</p><p>Then approve one experiment, not a portfolio rewrite.</p><p>Inspect the skill and its supporting files before adding it to a project. GitHub CLI’s <code>gh skill</code> commands are <a href=\"https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills#managing-skills-with-github-cli\">in public preview</a>; check the current installation guidance when you’re ready to use them.</p><h2>\n\t\tWritten by\t</h2><p>\n\t\t\t\t<picture>\n\t\t\t\t\t\n\t\t\t\t\t<img src=\"https://avatars.githubusercontent.com/u/74389839?v=4&amp;s=200\" alt=\"Sam Quakenbush\" width=\"80\" height=\"80\">\n\t\t\t\t</picture>\n\t\t\t</p><p>Senior Solutions Engineer</p><h2>\n\t\tRelated posts\t</h2><h2>We do newsletters, too</h2><p>Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.</p>"
   },
   {
     "id": "aihot-20261125-bloomberg-markets-476e0abe",
@@ -2016,6 +2304,39 @@
     "author": "CNCF projects highlighted in this post"
   },
   {
+    "id": "aihot-20261125-anthropic-engineering-1b0efd9b",
+    "title": "Anthropic 将 Messages API 从 Python 迁移到 Rust",
+    "originalTitle": "Migrating our Messages API to Rust",
+    "summary": "Anthropic 工程团队将其 Messages API 从 Python 迁移到 Rust，并公开了这次核心 API 重写的迁移过程。文章记录了从语言选型到落地迁移的具体做法与工程经验。",
+    "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+    "source": "Anthropic Engineering",
+    "publishedAt": "2026-11-25T00:00:00.000Z",
+    "score": 80,
+    "tier": "T1",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "工程实践",
+      "Agent 智能体",
+      "基础设施"
+    ],
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "工程",
+      "Anthropic",
+      "Rust",
+      "工程实践",
+      "Messages API"
+    ],
+    "context": "Anthropic 官方工程实践，展示头部 AI 公司如何为其核心 API 接口做语言级重写。",
+    "contentHtml": "<p>Many problems have a <em>generator–verifier</em> gap: it’s often far easier to verify that a solution is correct than to come up with one. Sudoku is a classic example. It’s simple to check the solution (just count the numbers in each row, column, and box), but finding that solution can take a long time. Many ambitious Claude projects have relied on this gap: formalizing <a href=\"https://alpo.ge/remark.pdf\">proofs</a> in mathematics or <a href=\"https://bun.com/blog/bun-in-rust\">migrating</a> large, well-tested codebases are tasks Claude can take on as long as it has a reliable way to verify its work.</p><p>But as Claude has become more capable, it’s begun to take on projects in live systems, where generating the work is easier than verifying it. In these systems, users often rely on edge cases and quirks that <a href=\"https://github.blog/2016-02-03-scientist/\">fall outside the test suite</a>, and it’s hard to write <a href=\"https://www.anthropic.com/research/formal-verification\">a definition of “correct” that covers everything</a>. Without a reliable way to check Claude’s work, the migration of a live system is hard to trust—however quickly Claude can generate the code for it.</p><p>We ran into this problem when we migrated our <a href=\"https://platform.claude.com/docs/en/build-with-claude/working-with-messages\">Messages API</a> from Python to Rust. This API is the primary way that customers—as well as our own apps, like Claude Code and Cowork—reach Claude. From early 2024 to fall 2026, API traffic grew roughly 1,800 times. Rust would allow us to use far less CPU per request. Claude wrote a first version of the API’s core request path in about a week. But building trust in the migration required us to find a way to verify that our Rust API was at parity with our production API. This proved hard for several reasons, including that the Python API continued changing throughout the migration, so parity was a moving target; Claude can reply nondeterministically to the same request, so a difference between two outputs didn’t necessarily mean a bug; and we couldn't read customer requests, so we weren't able to easily see where the two versions diverged.</p><p>In this post, we share how we turned the production Messages API itself into a verifier—and how that helped us test the new Rust version on production traffic, find where it differed, and automatically dispatch agents to fix those differences. This allowed us to ship an API on Rust that uses about 70% less CPU per request and cuts median time to first token by about 20% without ever taking the service offline or freezing feature development.</p><h2>Why migrate?</h2><p>We built the Messages API in 2023 and wrote it in Python, which was widely used internally for much of our research code. At first, it was simple. The Messages API passed requests to the model and sent back what the model wrote. (One engineer at the time called it “basically a request forwarder.”) But as the Messages API became more capable and deeply integrated with our codebases, it also developed shared dependencies with Python libraries that were owned by our research and inference teams, which made it hard to move. If we ever wanted to move to another language, it would mean building logging, metrics, and tools all over again.</p><p>This calculus gradually began to change. By late 2025, every Messages API request had to be validated, converted into the prompt, tokenized, and screened by our safety classifiers. As each reply arrived, the stream of tokens had to be sorted into text, thinking, and tool calls, and Python added overhead to every one of those steps each time it created an object, freed memory, or handed its work to the next task. Traffic eventually grew far beyond what the initial Python service was built for (Figure 1), and we quickly needed to find a way to make the service much more efficient.</p><h3>Incremental or all at once?</h3><p>Full rewrites of large production systems are often approached cautiously, for at least two reasons. First, there is no guarantee that test suites cover 100% of production code behavior, and rewriting it is risky. Second, the sheer effort required often makes such work intractable. (In 2024, after one of our engineers suggested migrating to Go or Rust, another temporarily settled the question: “<em>We are not rewriting the API in go or rust!</em>”)</p><p>The standard advice if you’re looking for performance gains is thus to rewrite only the parts that are slowing the system down, so that’s where we started. In Rust, we rewrote the code that parses a model’s output and called it from Python. This reduced the API’s CPU usage by about 8% to 10%. However, incremental solutions often incur added complexity, and it’s important to make sure that incremental improvements justify those costs. In our case, the gains didn’t justify the added complexity. Each token now crossed between Python and Rust three times (Figure 2), creating new sources of overhead.</p><p>As Claude became increasingly capable, we began to question whether the usual reasons to avoid a full migration still held. The effort required to undertake the project was dropping fast: by May 2026, Claude was writing <a href=\"https://www.anthropic.com/institute/recursive-self-improvement\">more than 80% of the code Anthropic merged</a>. We wondered if Claude could now help us write code that would empirically capture every behavior and fix in the production system. But the question became: how could we verify that the behavior of our migration was correct? Verification, not generation, had become the bottleneck.</p><h2>How we verified the migration</h2><h3>General approaches</h3><p>To verify the migration, we first needed to define what “correct” meant. You can do this in a few ways (Figure 3). If you’re lucky, you can simply write a rule. A <a href=\"https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/\">theorem in mathematics</a> is a precise statement, and a proof assistant (like Lean) can check each step of a proof against a fixed set of rules. Other times—and more frequently in software engineering—you define “correct” with a set of examples, like tests. For instance, when <a href=\"https://bun.com/blog/bun-in-rust\">Bun moved</a> from Zig to Rust, its test suite was written in TypeScript, so the same tests could judge both versions. In our case, neither approach was sufficient, so we used the existing system as an oracle to test parity during the migration. In this case, our existing system (the Messages API) kept changing. We were releasing new models and shipping new features regularly, which made the definition of “correct” a moving target.</p><h3>Tests</h3><p>Tests were the easiest place for us to start, since we already had an existing set of about 700 integration tests. However, two problems limited our ability to trust them to verify the correctness of a migration as high stakes as this (Figure 4).</p><p><strong>The tests were coupled to the Python implementation.</strong> An integration test sends a request, then checks the reply and what was sent to other services. Our tests ran the Python API inside the test’s process and mocked services, like billing and rate limiting, in Python’s memory. The tests had to change along with the code, and Claude helped with both. Now, a “pass” could mean that the code was right, or that the test had been changed in a way that let wrong code through. We saw this happen: when we audited the ported tests, we found more than 100 weakened assertions.</p><p><strong>The tests were incomplete.</strong> The Messages API has dozens of features, and there are far too many configurations to test them exhaustively. Just 20 binary options make over a million combinations—that translates to 12 days of tests at a second each, for one model, before we even vary the prompts inside them. In practice, engineers test a subset that tries to approximate production, but that process inevitably misses cases. Some projects, like Bun, have an independent suite that’s extensive enough to judge a rewrite. Many production services don’t; what counts as correct depends as much on how they behave as on what’s in their tests or documentation.</p><h3>Detecting parity with production</h3><p>Production data is sometimes “<a href=\"https://github.blog/2016-02-03-scientist/\">the only true test</a>” that new code behaves like the old code. Running requests through old and new code and comparing the results is often called <em>shadowing</em>. To understand what we needed to compare, it helps to walk through what happens to a single request on the Messages API (Figure 5). The API validates each request, converts it into a prompt a model can read (the prompt for inference), tokenizes it, and runs it through safety classifiers. A model then writes a reply, one token at a time. On the output side, the API sorts those tokens into text, thinking, and tool calls, streams them to the customer, and counts usage for limits and billing.</p><p>The migration covered both the input and output paths. Some differences were obvious, such as when the Rust API rejected a request that Python had accepted. But many were subtle. For instance, if the Rust API left out part of a prompt, the request would still succeed and the model would still answer, though sometimes with minor differences.</p><p>Our Rust API passed about 98% of its tests in April, yet only about a quarter of inputs matched on production traffic (Figure 6). The gap came partly from cases in production traffic that our tests didn’t cover. For example, when Python writes JSON tool calls, it escapes certain characters (e.g., an emoji) by replacing them with text codes. Rust wrote those characters as is, so the two prompts differed by a few bytes. Production also weighted bugs differently. In a test suite, each case counts once, but in live traffic, a bug will show up in each request where it’s triggered, which means a single common bug can cause many mismatches.</p><p><a href=\"https://github.blog/2016-02-03-scientist/\">Common</a> <a href=\"https://blog.x.com/en/engineering/diffy-testing-services-without-writing-tests\">tools</a> for shadowing often assume that a request can safely run twice, or that a service is deterministic. These assumptions didn’t apply in our case. We had to ensure that a request only counted once toward a customer’s limits and bill. In addition, Claude is nondeterministic, meaning that replies <a href=\"https://platform.claude.com/docs/en/about-claude/glossary\">can differ for the same input</a> (Figure 7). To address this, we ran the model once and replayed the model output to Rust.</p><p>With both versions working from the same model output, we still had to compare every stage before and after the model call, and the results had to match exactly. In many systems, bad input causes an error somewhere down the stack. But since Claude accepts almost any prompt, even a small deviation can change its reply without triggering an error. We compared each step before and after the model call, so that we could pin down any deviation that might change what a customer received.</p><p>It was important to us to do this in a way that protected user privacy. To do that we had to work without reading user requests or Claude’s replies to them, which means we couldn’t easily see where the Rust and Python versions of the API differed. So instead of looking at text, we recorded the <em>shape</em> of each difference, such as where it happened in the service and how big it was. We did this using a few different approaches:</p><ul><li><strong>Checkpointing.</strong> Both API versions handle a request using the same steps: accept or reject it, resolve its settings, build the prompt. Every step produces some result, such as an error or the pieces of the prompt, that we could compare step by step, and within the prompt, piece by piece. The first place they differed indicated roughly where the migration code differed from production code (Figure 8).</li></ul><ul><li><strong>Fingerprint.</strong> Once we knew roughly where each diff resided, we still needed a way to distinguish one bug from another. We recorded where each difference began in the prompt, as well as the length difference between the two versions. Combined with the step and piece of the prompt isolated in checkpointing, we found that bugs presented with a specific fingerprint. That is, one bug tends to leave the same fingerprint on every request it affects (Figure 9). We could then group errors by fingerprint, which helped us triage the fixes.</li></ul><p>The result was a shadowing system that produced a small record of each difference between our Rust and Python APIs. Here is an example, with made-up values:</p><p>We could then pass this record to an agent to fix it.</p><h2>Verification loops</h2><p>Each request that differed left a record in our logs. A single bug could produce hundreds of thousands of nearly identical diff records. Rather than send each to an agent, we ran a script every 10 to 30 minutes that grouped them by which fields differed, then alerted a coordinating Claude agent only when it saw a new <em>kind</em> of record. This coordinator assigned a worker agent to own each new kind of record. It also created a new thread in a shared Slack channel where human engineers could follow along and steer it when necessary.</p><p>To tackle the many bugs, we set up a series of verification loops. A fast <em>inner</em> loop gave agents a sandbox in which they could test ideas and propose fixes. A slower <em>outer</em> loop then validated fixes in production. In addition, a <em>memory loop</em> recorded any mistakes along the way, saving them so that agents could learn over time (Figure 10).</p><h3>Inner loop</h3><p>When we first started testing this in April, we gave each agent a record that showed where the Rust and Python versions differed. Agents would guess the root cause from the code and open a pull request. Once the fix was reviewed and merged, they deployed it to staging, a preproduction copy of the Rust API where we ran the same shadow comparison on test traffic. The agents checked whether the difference was eliminated. Since every hypothesis needed a review and a deployment, feedback was taking hours or days.</p><p>We needed agents to get a signal from verification much sooner, so we moved them into their own workspace. We redesigned the inner loop so that agents could have a place to test ideas quickly and fail safely. Each agent ran in a cloud sandbox with both codebases and fast, local checks for what happens before and after the model call. The input check took a request, built the prompt that each version would send to the model, and showed what differed. Because this check never actually called the model, comparing the versions took under a second. We later added an output check, which ran both versions against a fake model. The output check passed a scripted reply, such as a tool call, through each version and compared the results.</p><p>The main limitation was that agents could only see the fingerprint, not the request behind each record. So an agent would hypothesize what had caused the difference, then write its own request or model reply to try to reproduce the difference. Since each agent was writing these itself, it could read both results in full. If the results matched, its guess was wrong and the agent tried again. If they differed the same way the record described, the agent edited the Rust until the two versions matched, then added a test that failed on the old code and passed on the new (Figure 11).</p><p>The seam between the inner and outer loops was a good checkpoint for human review. Inside the sandbox, a wrong guess cost an agent only a few seconds and had no impact on users. Agents could iterate on their own. We allowed a fix to cross into the outer loop only after it had undergone PR review; this allowed engineers to focus their attention on proposed fixes (rather than on guesses) and on the questions the verifiers couldn’t answer, such as whether a difference between the Rust and Python APIs was the result of a bug or a deliberate change.</p><p>Agents posted their fixes and evidence to their Slack threads for engineers to review. In mid-May, one of the largest remaining differences between the Rust and Python APIs came from web search. The production API retrieved the web search tool’s description from an internal service. The Rust API didn’t call this service yet, so the tool description was missing from the prompts. An agent proposed a shortcut to copy the text into files that would be readable by Rust. The prompts then matched, and the fix passed the local verifier. But an engineer turned it down because it didn’t solve the problem: Rust would still need to call the service before launch, at which point the workaround would be thrown out (Figure 12).</p><p>But the verifier rewarded matching outputs, and the agent found the cheapest way to produce them. A verifier can tell an agent whether the outputs matched, but not whether the fix is good enough to ship. That’s why human review was an important gate.</p><h3>Outer loop</h3><p>In the inner loop, agents debugged differences and proposed fixes. At the seam between the inner loop and the outer loop, engineers reviewed the proposed fixes, gave feedback, and approved them to deploy. The outer loop then compared Rust API deployments with and without each fix.</p><p>To make that comparison fair, we logged facts about each request we compared, but not its text, including which model and API features it used—for example, prompt caching, tools, or extended thinking. These details let agents compare requests  of the same kind (Figure 13) and ask how often the bug’s fingerprint appeared on builds with and without the fix. This way, agents could monitor the new builds for the bug.</p><p>We designed the outer loop to catch problems that the inner loop missed. The inner loop simulated production quickly but imperfectly: agents could test a hypothesis in seconds, but only on requests they had written, and with a local verifier that wasn’t always configured exactly like production.</p><p>This means that sometimes a fix passed in the sandbox and production still showed the difference. The agent assigned to the bug would either see the difference in the new build’s records, or be alerted by the coordinating agent. It then went back to the inner loop and used that evidence to form a new hypothesis.</p><h3>Memory loop</h3><p>The inner and outer loops fixed one difference at a time. The <a href=\"https://www.anthropic.com/research/components-of-agent-memory\">memory</a> loop improved how agents made those fixes. We didn’t want engineers to have to make the same correction twice, so we recorded what came out of reviews and agents’ own work and applied it to every agent that followed.</p><p>For example, when an engineer turned down the web search shortcut (Figure 12), the agent saved a note to memory explaining the decision, the reason for it, and the correct fix, which was to have Rust call the service that supplies tool descriptions.</p><p>Building that call took our team weeks, and in the meantime the bug kept producing records. Some had new fingerprints, because the missing text fell at other positions in the prompt or belonged to another tool that used the same service. Agents checked the memory note, recognized the known bug, and linked those records to it, instead of writing another workaround (Figure 14).</p><p>Other lessons became general rules for porting and writing Rust. After one agent guessed at Python’s behavior, an engineer made it a rule to port exactly what Python did. An agent then compared the existing code with that rule and found seven more places where the port had relied on a guess.</p><p>In June, an agent also went through about 60 of the team’s review comments, grouped the recurring problems and proposed rules, which an engineer edited and approved for <a href=\"https://code.claude.com/docs/en/memory\">CLAUDE.md</a> (Figure 14).</p><p>The memory loop also encoded some lessons in permanent checks. This included new tests that failed when Rust drifted from Python, lints that banned patterns reviewers kept flagging, and later a merge check that required anyone changing the Python code to make a matching change in Rust or request an exemption.</p><h2>Looking ahead</h2><p>It’s increasingly feasible to migrate production systems with Claude, either for better performance or security, without taking an API offline or slowing feature development. Now that the hard part is no longer writing new code, we need to build sufficient confidence that the new system behaves like the old one.</p><p>The usual approach to migration is a bit like rebuilding the Ship of Theseus, in which the old ship was replaced plank by plank. Generally it’s been possible to replace planks while the ship still sails, but changing too many planks at once requires coming into dock. To fully stretch the metaphor, Claude now makes it possible to build an identically functioning ship alongside the first—even as the first keeps sailing and having its planks replaced. Agents kept the new ship in step as the old one changed, and we kept checking that the two behaved the same. Once we trusted that they did, we moved the passengers over a few at a time. The new ship sails faster and more efficiently than the old one.</p><h3>Lessons learned</h3><p><strong>Verification is the new bottleneck.</strong> Previously, large software projects like migrations were hard to justify because they took too much effort and carried too much risk. But if writing code is no longer the bottleneck, the main constraint becomes how quickly you can verify results. In general, ambition can be increased as long as there’s a way for Claude to verify correctness.</p><p><strong>Verification is how you earn confidence.</strong> In math, we use a proof assistant to verify that each step of a proof Claude wrote is valid. For software, tests or <a href=\"https://www.anthropic.com/research/formal-verification\">formal verification</a> can help us gain similar confidence. But when these checks aren’t enough, a production system itself can also be a verifier.</p><p><strong>Carefully design the verification signal.</strong> A verifier provides a signal that Claude can act on. We can calibrate this signal to show Claude where things went wrong. Where a proof assistant points to the failing step or a test names the failing case, a production system often offers no such signal by default. Much of our effort for this project went to building such a signal. In this case, checkpoints located each difference <em>in the code</em> and fingerprints helped <em>tell one bug from another</em>.</p><p><strong>Build loops that let Claude autonomously act on the signal.</strong> Our inner loop was fast and ran locally in a sandbox. Agents tested hypotheses in seconds using requests they wrote themselves. The outer loop was slower and checked fixes on shadowed production traffic. The outermost loop was just prose, with corrections saved as rules in memory that could be read by every agent later in the process. Together, these loops allowed us to migrate the Messages API to Rust, which uses about 70% less CPU per request and reduces median time to first token by about 20% (Figure 15).</p><p><strong>Keep the loops simple, so they scale with Claude’s capability.</strong> We tried to put human judgment only into what counted as correct; otherwise we left it up to Claude how to get there. Agents chose which hypotheses to test, how to reproduce each bug, and how to fix it. The verifiers judged the result. Simple loops around strong verifiers allowed us to move productively over time (Figure 16).</p><p><strong>Move toward outer loops.</strong> At first, we had our engineers working inside the inner loop, running Claude and chasing differences themselves. Later, they moved to the seam between loops, helping to steer agents and reviewing fixes in Slack. But as the system matured, they increasingly moved to the edge, where they could provide the highest leverage, writing the rules and checks that agents worked within. As Claude grew more intelligent (and as we grew more intelligent at working with it), we evolved from directing Claude to Claude directing itself, relying on humans mainly for important judgment calls.</p>",
+    "author": "Anthropic"
+  },
+  {
     "id": "aihot-20261125-mof-news-c2c920fc",
     "title": "财政部等五部门制定印发《常态化帮扶资金绩效评价办法》",
     "originalTitle": "财政部等五部门制定印发 《常态化帮扶资金绩效评价办法》",
@@ -2272,6 +2593,39 @@
     "context": "Sim2Real 仿真到现实迁移是机器人学习落地的关键环节，官方教程对复现部署有直接参考价值。",
     "contentHtml": "<p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/Tqh5FK78Q1qDuzhEDGpqQ.gif\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/Tqh5FK78Q1qDuzhEDGpqQ.gif\" alt=\"Microduck obstacle avoidance: simulation to reality\"></a></p><h2>\n\t\n\t<span>\n\t\tTL;DR\n\t</span>\n</h2><p>Add local obstacle avoidance to <a href=\"https://pollen-robotics.com/microduck/\">Microduck</a> while keeping its walking policy fixed. Build varied courses with reusable <a href=\"https://www.nvidia.com/en-us/glossary/simready/\">SimReady</a> assets, model ToF sensing with Newton’s raycaster, and train a controller in <a href=\"https://developer.nvidia.com/isaac/lab\">Isaac Lab</a> to adjust gamepad velocity commands around obstacles. This tutorial covers simulation training, evaluation, export, and real-robot deployment.</p><h2>\n\t\n\t<span>\n\t\tIntroduction\n\t</span>\n</h2><p>A walking policy can keep Microduck balanced, but it does not tell the robot how to steer around an obstacle in its path. In this workflow, we reuse the walking policy from our <a href=\"https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real\">first Microduck tutorial</a> and keep its weights fixed. This follow-up trains a separate avoidance controller using time-of-flight (ToF) sensing. You choose a direction with a gamepad; the controller adjusts the velocity command before passing it to the walking policy.</p><p><a href=\"https://isaac-sim.github.io/IsaacLab/main/index.html\">NVIDIA Isaac Lab</a> is an open-source framework for training policies across thousands of GPU-parallel simulations and it provides the robot-learning environment. <a href=\"https://github.com/newton-physics/newton\">Newton</a> simulates physics and the sensor’s depth measurements. We will cover the control architecture, train on varied obstacle layouts, evaluate the resulting policies, and prepare the interface for hardware testing.</p><h2>\n\t\n\t<span>\n\t\t1. Set Microduck obstacle avoidance in Isaac Lab\n\t</span>\n</h2><p>For simulation and training, prepare:</p><ul>\n<li><p>A Linux system with a compatible NVIDIA GPU and driver. See the <a href=\"https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html\">Isaac Lab installation guide</a> for platform requirements.</p>\n</li>\n<li><p>Git with Git LFS, and the uv package manager.</p>\n</li>\n</ul><p>For physical-robot testing, prepare:</p><ul>\n<li><p>A configured Microduck. Load the same backlash walking-policy export used by the navigation task.</p>\n</li>\n<li><p>A supported ToF sensor with its configuration recorded.</p>\n</li>\n<li><p>A paired gamepad and a level test area with obstacles.</p>\n</li>\n</ul><h3>\n\t\n\t<span>\n\t\tQuick install\n\t</span>\n</h3><p>Install <a href=\"https://docs.astral.sh/uv/getting-started/installation/\">uv</a> if it is not already installed. Then clone the exp/microduck branch of the Isaac Lab repository and install its dependencies:</p><pre><code>git lfs install\ngit <span>clone</span> --branch exp/microduck https://github.com/isaac-sim/IsaacLab.git\n<span>cd</span> IsaacLab\nuv <span>sync</span> --frozen\n</code></pre><p>Once setup is complete, list the available Microduck environments and presets:</p><pre><code>uv run isaaclab list_envs --keyword MicroDuck --show_presets\n</code></pre><h3>\n\t\n\t<span>\n\t\tDownload the walking policy\n\t</span>\n</h3><p>Download and export the <a href=\"https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/PretrainedCheckpoints/rsl_rl/IsaacContrib-Velocity-Rough-MicroDuck_backlash_newtonmjwarp_none_rsl_rl.pt\">upstream backlash walking checkpoint</a> once before training. The obstacle avoidance task loads the exported walking policy automatically.</p><pre><code>uv run isaaclab play \\\n  --task IsaacContrib-Velocity-Rough-MicroDuck \\\n  --rl_library rsl_rl --checkpoint pretrained \\\n  --num_envs 1 --visualizer none \\\n  --video newton_gl --video_length 1 \\\n  presets=backlash\n</code></pre><h2>\n\t\n\t<span>\n\t\t2. Build the obstacle course\n\t</span>\n</h2><p>The environment combines simple primitives with <a href=\"https://www.nvidia.com/en-us/glossary/openusd/\">OpenUSD</a> assets available through <a href=\"https://huggingface.co/spaces/nvidia/simready-central\">SimReady Central</a> on Hugging Face. We use a <a href=\"https://huggingface.co/datasets/nvidia/simready-assets/tree/main/box_cardboard_a01\">cardboard box</a>, <a href=\"https://huggingface.co/datasets/nvidia/simready-assets/tree/main/trashCan_office_black_a03\">office bin</a>, <a href=\"https://huggingface.co/datasets/nvidia/simready-assets/tree/main/table_bedside_b01\">bedside cabinet</a> alongside cones. From the IsaacLab repository root, download the pinned box, bin and cabinet packages into assets/simready.</p><pre><code>uvx --from huggingface-hub hf download nvidia/simready-assets \\\n  --repo-type dataset \\\n  --revision 9d4556bfe80868c1d27a7a7ba1c2774e63e8cedd \\\n  --include <span>\"box_cardboard_a01/*\"</span> \\\n  --include <span>\"trashCan_office_black_a03/*\"</span> \\\n  --include <span>\"table_bedside_b01/*\"</span> \\\n  --local-dir ./assets/simready\n</code></pre><p>At each episode reset, the environment code automatically samples a layout, shuffles the props, and varies their placement and rotation. Most courses scatter obstacles ahead of the duck, with a smaller mix of clear paths, barriers and passages. The code also mirrors layouts and mixes aligned and staggered rows.</p><p>Goals start ahead of the duck. Movement commands guide it toward the goal while the policy adjusts them around obstacles.</p><p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/uesbJUW3FYJxujnhTMbxN.png\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/uesbJUW3FYJxujnhTMbxN.png\" alt=\"A four-panel grid shows Microduck on a checkerboard floor with rearranged cardboard boxes, bins, cabinets, red cones, white barriers, and green goal markers.\"></a></p><p>Figure 1. Varied obstacle-course layouts with SimReady assets and primitive geometry.</p><h2>\n\t\n\t<span>\n\t\t3. Understand how ToF sensing guides the walking policy\n\t</span>\n</h2><p>The <code>IsaacContrib-ObstacleAvoidance-Flat-MicroDuck</code> task separates obstacle avoidance from balance. A navigation policy uses ToF sensing to adjust forward, lateral, and yaw commands at 50 Hz. The frozen walking policy then converts those commands into joint actions, allowing the robot to learn obstacle avoidance without retraining its walking behavior.</p><p>During training, the navigation policy’s actor receives ToF history and body and controller state available on the real robot. Its critic has access to additional simulation state to guide learning, but is not needed for deployment.</p><p>Rewards encourage progress toward the goal, safe arrivals, and movement around obstacles. Following a movement command earns credit only when the robot makes progress with sufficient clearance; risky approaches reduce that credit. Penalties discourage fast approaches, abrupt command changes, collisions, and falls.</p><p>The obstacle-avoidance task lives in <a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck_obstacle\"><code>isaaclab_tasks.contrib.microduck_obstacle</code></a>. Its configuration is in <a href=\"https://github.com/isaac-sim/IsaacLab/blob/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck_obstacle/obstacle_avoidance_env_cfg.py\"><code>obstacle_avoidance_env_cfg.py</code></a>, ToF sensing is in <a href=\"https://github.com/isaac-sim/IsaacLab/blob/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck_obstacle/sensors.py\"><code>sensors.py</code></a>, and actions, commands, observations and rewards are organized under <a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck_obstacle/mdp\"><code>mdp/</code></a>.</p><h3>\n\t\n\t<span>\n\t\tModel the ToF sensor\n\t</span>\n</h3><p>MicroDuckToFCamera extends Newton’s LegacyMultiMeshRayCasterCamera to model the VL53L5CX—a compact time-of-flight (ToF) sensor on the microduck that measures distance across an 8×8 grid at 15Hz. The simulated sensor has a 45° field of view and a 0.12–4 m range. It follows the duck’s head, with placement similar to the sensor on the real duck.</p><p>Real recordings informed the sensor placement and floor readings in simulation. Training adds noise, delays and missing measurements—including near the grid’s edges—to expose the policy to imperfect data. The excerpt below shows selected sensor settings already included in the task configuration. You do not need to edit or run this code separately.</p><pre><code><span># Selected settings; mount and raycast targets omitted.</span>\nhead_tof = MicroDuckToFCameraCfg(\n    prim_path=MICRODUCK_HEAD_BODY_PATH,\n    update_period=<span>1.0</span> / <span>15.0</span>,\n    pattern_cfg=patterns.PinholeCameraPatternCfg(\n        focal_length=<span>1.0</span>, width=<span>8</span>, height=<span>8</span>,\n        horizontal_aperture=_TOF_APERTURE,\n        vertical_aperture=_TOF_APERTURE,\n    ),\n    randomization=ToFRandomizationCfg(\n        mount_pitch_degrees=(-<span>10.0</span>, <span>10.0</span>),\n        mount_height_m=(-<span>0.02</span>, <span>0.02</span>),\n        floor_validity_midpoint_offset_m=(<span>0.0</span>, <span>0.13</span>),\n        near_floor_edge_impairment_probability=<span>0.5</span>,\n    ),\n    data_types=[<span>\"distance_to_image_plane\"</span>, <span>\"distance_to_camera\"</span>],\n    max_distance=TOF_MAX_RANGE,\n    depth_clipping_behavior=<span>\"zero\"</span>,\n)\n</code></pre><h2>\n\t\n\t<span>\n\t\t4. Train the Microduck policy across parallel environments\n\t</span>\n</h2><p>Train the navigation policy with PPO across 16,384 parallel environments for 1,500 training iterations. Its actor, critic, normalizers, and optimizer start fresh. The task configuration loads the fixed walking checkpoint, robot model, and obstacle assets.</p><p>The 16,384 environments shown here are configurable, not a minimum requirement. Lower <code>--num_envs</code> to fit your GPU’s available memory. With fewer environments collecting experience in parallel, reaching comparable policy performance may require more training iterations and longer training time. We also trained this policy on NVIDIA DGX Spark in approximately 6 hours using 4,096 parallel environments for 3,000 PPO updates, demonstrating a smaller-scale configuration for the same workflow.</p><p>Run this command to train the policy:</p><pre><code>uv run isaaclab train \\\n  --task IsaacContrib-ObstacleAvoidance-Flat-MicroDuck \\\n  --rl_library rsl_rl \\\n  --num_envs 16384 \\\n  --max_iterations 1500 \\\n  --seed 42 \\\n  --device cuda:0 \\\n  --visualizer none \\\n  presets=backlash\n</code></pre><p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/RCQ8kWS0Ky4j_YU1ch-G3.gif\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/RCQ8kWS0Ky4j_YU1ch-G3.gif\" alt=\"Camera pulls back from one MicroDuck navigating among cones, boxes, and barriers to reveal neighboring randomized obstacle courses\"></a></p><p>Figure 2. Parallel MicroDuck obstacle-avoidance simulation</p><h2>\n\t\n\t<span>\n\t\t5. Inspect behavior and export the policy to ONNX\n\t</span>\n</h2><p>Playback uses the same props, primitives, frozen walker and sensor randomization as training, with a different seed for new obstacle arrangements.</p><p>Navigation checkpoints are saved under <code>logs/rsl_rl/microduck_obstacle_avoidance_tof_flat_backlash/&lt;timestamp&gt;/</code> relative to the repository root. Choose a <code>model_&lt;iteration&gt;.pt</code> file from your run and replace <code>/absolute/path/to/model.pt</code> below with its path. This plays the policy, opens the Newton viewer and records 20 seconds of simulation. Set --viz to none for headless recording.</p><pre><code>uv run --extra video isaaclab play \\\n  --task IsaacContrib-ObstacleAvoidance-Flat-MicroDuck \\\n  --rl_library rsl_rl \\\n  --checkpoint /absolute/path/to/model.pt \\\n  --num_envs 1 \\\n  --seed 6173 \\\n  --device cuda:0 \\\n  --viz newton_gl \\\n  --video newton_gl \\\n  --video_length 1000 \\\n  presets=backlash\n</code></pre><p>Playback saves TorchScript and ONNX models in the checkpoint’s exported folder. Keep the ONNX data file alongside the model.</p><p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/Tqh5FK78Q1qDuzhEDGpqQ.gif\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/Tqh5FK78Q1qDuzhEDGpqQ.gif\" alt=\"Microduck faces red cones and a marked fixed goal. Overlays identify the head-mounted ToF sensor, an 8 × 8 depth grid, and requested versus policy-steered motion.\"></a></p><p>Figure 3. Cone-course evaluation with requested motion, policy steering, and ToF input overlays.</p><h2>\n\t\n\t<span>\n\t\t6. Test obstacle avoidance on a real Microduck\n\t</span>\n</h2><p>These <a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/scripts/deploy/microduck_tof_nav\">deployment tools</a> run the navigation model on a laptop and send adjusted gamepad commands to the walking policy on the robot. Use the same walking policy that was used during navigation training.</p><p>Section 1 saves the walker’s ONNX export to <code>.pretrained_checkpoints/rsl_rl/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/PretrainedCheckpoints/rsl_rl/exported/policy.onnx</code>, relative to the Isaac Lab repository root.</p><p>Load that walking policy using <a href=\"https://github.com/pollen-robotics/microduck/blob/main/docs/robot/cheatsheet.md#trying-your-own-file\">Pollen’s policy-loading guide</a>. The deployment README includes the transfer steps, including how to package an ONNX export that uses an external data file.</p><p>From your Isaac Lab checkout, set up SSH access and check inference with the robot standing upright and still:</p><pre><code><span>cd</span> scripts/deploy/microduck_tof_nav\nssh-copy-id microduck@ROBOT_HOST\nuv run nav_pad.py --robot ROBOT_HOST \\\n  --model /absolute/path/to/navigation/exported/policy.onnx \\\n  --dry-run --seconds 30\n</code></pre><p>Dry-run copies the helpers and streams sensor data, but sends no movement commands. Watch the proposed commands as obstacles enter the sensor’s view. Keep the navigation ONNX and any companion .data file together.</p><p>Once those checks pass, start supervised gamepad navigation:</p><pre><code>uv run nav_pad.py --robot ROBOT_HOST \\\n  --model /absolute/path/to/navigation/exported/policy.onnx\n</code></pre><p>Hold the stick forward to request movement; the policy adjusts the command to avoid obstacles. Release the stick to stop, press X to toggle navigation, and use Ctrl-C to end the session. Forward speed is capped at 0.15 m/s by default, with an additional close-obstacle brake and stale-input stopping. Start in a clear area and verify stopping before testing a course.</p><p>See the <a href=\"https://github.com/isaac-sim/IsaacLab/blob/exp/microduck/scripts/deploy/microduck_tof_nav/README.md\">deployment README</a> for controls, logs and troubleshooting.</p><p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/zJU03xK6y0Ii0XOWtmiwa.gif\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/zJU03xK6y0Ii0XOWtmiwa.gif\" alt=\"A small white and lavender robot walks past three orange cones on a tiled floor, next to a 3D replay of the same run. Below are a sensor distance grid, a cone checklist and a list of the policy’s steering decisions.\"></a></p><p>Figure 4. Microduck steers around cones using its 8×8 ToF sensor, with real footage on the left and a 3D rebuild from its logs on the right. Blue shows the policy steering, purple shows the operator intervention.</p><h2>\n\t\n\t<span>\n\t\t7. Explore other locomotion skills for Microduck in Isaac Lab\n\t</span>\n</h2><p>The <a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck\">Microduck task collection</a> includes velocity tracking on flat and rough terrain; stand-up recovery, sit–stand transitions, and walking with fall recovery (VelStand); ball kicking, ground picking, and forward rolls (Roulade). Roller-skating tasks add velocity tracking and swizzle motion, crouch-gliding, slope descent, standing up on skates, and spins.</p><p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/bg3GRix2mg67YBbayO_Y5.gif\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/bg3GRix2mg67YBbayO_Y5.gif\" alt=\"A looping five-column, three-row grid shows a close-up of one Microduck in each labeled tile: Walking · Flat, Walking · Rough, Roller Skating, Swizzle, RollerSlope, StandUp · Seated, SitStand, GroundPick, BallKick, RollerCrouch, VelStand · Flat, VelStand · Rough, Roulade, RollerStandUp, and Spin.\"></a></p><p>Figure 5. Fifteen Microduck task views: flat and rough-terrain walking, recovery, object interaction, and roller-skating motions.</p><h2>\n\t\n\t<span>\n\t\tBuild your next policy\n\t</span>\n</h2><p>Start with the <a href=\"https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real\">first Microduck tutorial</a>, then choose a task from the <a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck\">Microduck task collection</a> to build your next policy in Isaac Lab with Newton. Explore new behaviors by changing commands, rewards, or environments—from rough-terrain walking to perception-driven obstacle avoidance. Evaluate your policy on scenes outside the training set before testing on the robot.</p><h2>\n\t\n\t<span>\n\t\tResources\n\t</span>\n</h2><ul>\n<li><p><a href=\"https://pollen-robotics.com/microduck/\">Microduck home page</a> (ordering, quick start, installation)</p>\n</li>\n<li><p><a href=\"https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/train-a-microduck/index.html\">Train a Microduck in Isaac Lab</a></p>\n</li>\n<li><p><a href=\"https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/\">Train Robots to Navigate with AI agents, NVIDIA Isaac Lab and RTX Spark</a></p>\n</li>\n<li><p><a href=\"https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real\">Train in Simulation, Deploy on a Real Robot: Microduck with Isaac Lab 3.0</a></p>\n</li>\n<li><p><a href=\"https://isaac-sim.github.io/IsaacLab/develop/source/setup/installation/index.html\">Isaac Lab installation guide</a></p>\n</li>\n<li><p><a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck\">Microduck training environments and configuration</a></p>\n</li>\n<li><p><a href=\"https://github.com/isaac-sim/IsaacLab/blob/develop/docs/source/concepts/actuators.rst#bam-servo-model\">Newton-based BAM actuator documentation</a></p>\n</li>\n<li><p><a href=\"https://github.com/pollen-robotics/microduck-arena/blob/main/docs/guides/train-a-policy.md#already-have-an-onnx\">Microduck Arena and ONNX submission guide</a></p>\n</li>\n<li><p>Explore <a href=\"https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories\">SimReady Central for more simulation-ready OpenUSD assets from OEMs and asset providers.</a></p>\n</li>\n<li><p><a href=\"https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place\">Learn how to Build a Robot Pick-and-Place Simulation with SimReady Assets</a></p>\n</li>\n<li><p><a href=\"https://github.com/pollen-robotics/microduck/blob/main/docs/robot/cheatsheet.md#trying-your-own-file\">Microduck robot software and deployment guide</a></p>\n</li>\n</ul><h2>\n\t\n\t<span>\n\t\tAcknowledgments\n\t</span>\n</h2><p>This workflow builds on Pollen Robotics’ Microduck hardware and software, the original <a href=\"https://github.com/pollen-robotics/microduck_rl\">Microduck reinforcement-learning project</a>, <a href=\"https://github.com/Rhoban/bam\">BAM actuator modeling work</a>, and the Isaac Lab and Newton integrations.</p>",
     "author": "Oluwaseun Doherty, Oyindamola Omotuyi, Richard"
+  },
+  {
+    "id": "aihot-20261124-google-deepmind-36056053",
+    "title": "从光谱到结构：Google Antigravity 的 Mass Spec Skills 助力分子鉴定",
+    "originalTitle": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
+    "summary": "Google DeepMind 推出 Mass Spec Skills，让科学家可以在 Google Antigravity 中解读串联质谱数据。该能力用于从光谱到结构的分子鉴定，帮助使用 Antigravity 的科学工作者解析质谱。",
+    "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+    "source": "Google DeepMind",
+    "publishedAt": "2026-11-24T13:07:53.000Z",
+    "score": 80,
+    "tier": "T1",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "产品发布",
+      "AI for Science",
+      "模型发布",
+      "研究"
+    ],
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "Google DeepMind",
+      "Mass Spec Skills",
+      "Google Antigravity",
+      "质谱解析"
+    ],
+    "context": "将 AI 能力延伸至质谱解析这一科学研究场景，是 Google Antigravity 技能生态的新扩展，值得关注。",
+    "contentHtml": "<p><span> November 25, 2026 </span><span>Science</span></p><p>Robert Brunck, Stefan Ganscha, Swaroop Guntupalli, Dariusz Lasecki, Gabriella Marfani, Jack Mason, Hussain Masoom, Rose Mirshafian, Eliseo Papa and Zoi Tsangalidou</p><p>Built in collaboration with analytical chemists and using community-developed tools, Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra, lay out chemical evidence, and match frontier-level retrieval accuracy even with a lightweight model.</p><p>Every sample of blood, soil or plant tissue contains a vast array of small molecules, such as nutrients, hormones, drugs and their breakdown products, pollutants, or bioactive compounds with therapeutic potential. A modern mass spectrometer can detect tens of thousands of these molecular signals in a single drop of sample extract, measuring the masses of charged molecules and, in tandem mass spectrometry (MS/MS), the fragments they break into.</p><p>These measurements, however, do not directly reveal the molecular structure. Researchers cannot immediately tell which compound produced a signal and relate it to its biological role or downstream use cases.</p><p>To fully map the diversity of small molecules, which remains largely uncharted, researchers need ways to translate mass spectra to molecular structures at scale. The standard approach is to match each spectrum against reference spectra from previously measured molecules. Yet even after a decade of expanding reference libraries, spectral searches annotate on average only about 5% of measured spectra, and 10% for human samples; the rest has been called the \"dark matter\" of mass spectrometry.</p><p>Many of the molecules producing these unannotated signals are already listed in public chemical databases, but their spectra have not been recorded, so there is no reference spectrum to compare against. Elucidating them instead requires inferring the structure directly from the observed fragment ions.</p><p>Analytical chemists have a well-tested, step-by-step workflow for narrowing down candidate structures from tandem (MS/MS) spectra: check spectral reference libraries, find the molecular formula and retrieve candidate structures from chemical databases, and then test every candidate against observed fragment peaks.</p><p>The tools for each step exist and are openly available, but running the full workflow would take a domain expert a significant amount of time for every single spectrum. Because a single study can produce thousands of spectra, manual analysis cannot keep up, leaving most of these signals unannotated.</p><p>Today, we are sharing Mass Spec Skills for <a href=\"https://antigravity.google/use-cases/science\">Google Antigravity</a>, a suite of domain skills that pair Gemini's chemical reasoning with the ability to run established mass spectrometry tools and query public chemical databases on the user's behalf to fulfil their request. Antigravity runs these skills, combines their results, and reasons about the chemistry, laying out the evidence for a chemist to review.</p><p>For molecules that are already catalogued in a database, identification is much faster. For undiscovered molecules, the agent still helps: it narrows down the formula and the parts of the structure supported by the fragments to guide full structure elucidation. A language model cannot do this on its own, since matching fragments to a structure takes precise mass calculations, searches across databases of millions of compounds, and simulations of how bonds break. Pairing Gemini’s reasoning with dedicated chemistry tools brings those steps into one workflow.</p><figure><p><img alt=\"An infographic flowchart illustrating the four-step process of identifying a molecule from its spectrum: Prepare, Libraries, Formula to Structure, and Cross-check.\" src=\"https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/original_images/ZC6JSXIz2lVOvhwl/AGY_Mass-spec_fig-1__light.svg\"><img alt=\"An infographic flowchart illustrating the four-step process of identifying a molecule from its spectrum: Prepare, Libraries, Formula to Structure, and Cross-check.\" src=\"https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/original_images/s22C91WLRrNRVyLF/AGY_Mass-spec_fig-1__dark.svg\"></p><figcaption><p>Figure 1. How a molecule is identified from its tandem mass spectrum: prepare the signal, search reference libraries, deduce the formula and rank candidate structures, then cross-check and refine. Each step is carried out by our Mass Spec Skills built on established, openly available tools.</p></figcaption></figure><p>Researchers can describe their task and any instrument-specific tolerances in plain language without having to configure each underlying tool. The agent selects and chains the relevant skills, lowering the technical barrier to entry for scientists less familiar with computational tools. From a single prompt, the agent can take an unannotated tandem mass spectrum all the way to a proposed chemical structure and an auditable report (Figure 2).</p><figure><p><img alt=\"A user interface text input card containing a prompt to run structure elucidation on an MS2 spectrum file.\" src=\"https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/original_images/uA0uODt1WDAW73Tw/Antigravity__prompt_figure_02__light.svg\"><img alt=\"A user interface text input card containing a prompt to run structure elucidation on an MS2 spectrum file.\" src=\"https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/original_images/yrnv1csua3qQTBpH/Antigravity__prompt_figure_02__dark.svg\"></p><figcaption><p>Figure 2. The agent preprocesses the raw recording, identifies the molecular formula C<sub>20</sub>H<sub>21</sub>ClN<sub>6</sub>O, ranks 845 PubChem isomers against simulated fragments and neutral losses, and summarises the evidence alongside the top candidate structure. It also compiles a detailed report mapping predicted fragment substructures onto 14 of the 19 signal peaks (97.7% of summed fragment intensity).</p></figcaption></figure><p>Each stage of that workflow can also be run on its own for smaller everyday tasks, from cleaning up a noisy recording to annotating peaks or comparing candidate isomers:</p><h2>From raw spectrum to structure end-to-end</h2><p>To see how the chemical evidence fits together in practice, consider the negative-mode tandem mass spectrum from the end-to-end run in Figure 2 (precursor [M−H]− at m/z 395.1387; Figure 3).</p><figure><figcaption><p>Figure 3. Top: negative-mode tandem mass spectrum ([M−H]− precursor at m/z 395.1387; 1,761 raw peaks filtered to 19 preprocessed peaks), with peaks involved in known neutral-loss pairs highlighted in red, including the two complementary halves from central urea cleavage at m/z 162.1037 (45.1%) and m/z 232.0283 (6.8%). Bottom: zoomed fragment region (m/z 85–245) annotated with literature neutral losses, showing the closed HCl and HNCO loss loop from m/z 232.0283 (via m/z 196.0511 and m/z 189.0238 to m/z 153.0453) alongside secondary NH<sub>3</sub> and H<sub>2</sub> losses.</p></figcaption></figure><p>Negative-ion spectra are traditionally much harder to annotate than positive-ion recordings due to limited reference libraries and less well-characterised fragmentation mechanisms. With spectral library lookup disabled, the agent used SIRIUS to pin down the molecular formula C<sub>20</sub>H<sub>21</sub>ClN<sub>6</sub>O. In the fragmentation tree, the molecule splits cleanly into two complementary halves at m/z 162.1037 ([C<sub>9</sub>H<sub>12</sub>N<sub>3</sub>]−) and m/z 232.0283 ([C<sub>11</sub>H<sub>7</sub>ClN<sub>3</sub>O]−), whose formulas add up to the intact precursor. From the m/z 232.0283 half, sequential neutral losses of HCl and isocyanic acid (HNCO) in both orders form a closed loop indicating a central urea linkage.</p><p>With the molecular formula and these fragmentation clues established, the agent retrieved and scored all 845 C<sub>20</sub>H<sub>21</sub>ClN<sub>6</sub>O isomers in PubChem. Several high-scoring candidates, including a fused triazolobenzazepinol isomer (CID 154638626), accounted for 97.7% of the summed fragment intensity across 14 of the 19 preprocessed peaks, so the Gemini-powered agent tested whether they were chemically consistent with the observed losses. The triazolobenzazepinol isomer lacks a urea linkage, leaving it with no route to lose HNCO, and despite carrying a secondary alcohol, the spectrum has only baseline noise at the expected water-loss masses (m/z 377.1281 and m/z 214.0178). Filtering the 845 isomers for structures with a central urea bond that cleaves into the two measured halves ruled out close amide isomers such as the runner-up (CID 55558151; Figure 4) and narrowed the list to five urea regioisomers, where secondary fragments from the chlorophenyl-pyrazole side (m/z 206.0485 and m/z 126.0114) singled out the true molecule (<a href=\"https://pubchem.ncbi.nlm.nih.gov/compound/137835447\">CID 137835447</a>). The verified structure and both rejected non-urea isomers accounted for the same 97.7% of summed fragment intensity, so distinguishing them required testing their fragmentation pathways.</p><figure><figcaption><p>Figure 4. Side-by-side comparison of the top two C<sub>20</sub>H<sub>21</sub>ClN<sub>6</sub>O isomer candidates, which both match 14 of 19 preprocessed peaks (97.7% of fragment intensity) in MAGMa and differ by inverted attachment of the central piperidine ring. Left: the verified Rank 1 structure (CID 137835447), whose asymmetric urea C−N bond cleaves directly into m/z 162.1037 and m/z 232.0283 and whose C-linked pyrimidine forms the low-mass fragments (m/z 93.0463–119.0611) without breaking aromatic rings (sum bond-break score 26.0). Right: the Rank 2 runner-up (CID 55558151), where inverting the piperidine ring turns the urea into an amide (requiring C−C cleavage) and leaves an N-linked pyrimidine with no attached carbon to form [C<sub>5</sub>H<sub>5</sub>N<sub>2</sub>]− (m/z 93.0463) without breaking aromatic rings (sum bond-break score 49.0; lower indicates a lower cleavage penalty).</p></figcaption></figure><p>Spectral coverage measures how much peak intensity a candidate matches by mass alone, without testing whether its functional groups and bond connectivity can plausibly form those fragments. Checking candidates against diagnostic neutral losses and bond cleavages, just as an analytical chemist would, lets Antigravity rule out high-scoring mismatches on its own and verify the final structure.</p><h2>Reliable library identification and verification, even with a lightweight model</h2><p>Even when a compound's reference spectrum is already stored in a public library, finding and verifying it is harder than simply giving an AI agent internet access. To test how reliably Antigravity handles end-to-end identification and verification, we evaluated it on 100 compounds sampled from the Enamine REAL MS/MS collection in MoNA (with structures also catalogued in PubChem), after filtering out under-fragmented recordings such as intact precursors or dimers that barely broke apart.</p><p>We compared three set-ups: (1) Antigravity with no internet access or skills (to test what the models can deduce from the peak list alone), (2) Antigravity with user-permitted internet access to query public libraries and databases on the user's behalf, and (3) Antigravity with that same access plus the Mass Spec Skills, across three models: the lightweight <strong>Gemini 3.8 Flash</strong> and two frontier models, <strong>Gemini 4 Argon</strong> and <strong>Gemini 4 Carbon</strong>.</p><p>With no internet access or skills, accuracy remained below 4% across all three models, confirming that they cannot reliably deduce molecular structures from the peak list alone. Giving the agent limited internet access allowed it to query online libraries, but custom search scripts written from scratch proved brittle around precursor windows, adducts, and noisy peaks, causing the frontier models to miss a quarter to a third of the spectra and the lightweight model to miss more than three-quarters.</p><p>With the Mass Spec Skills added, all three models identified and verified the exact molecule in around 97% of attempts, with the lightweight model matching the frontier models' accuracy (Figure 5a).</p><p>Skills also cut token cost and effort. Without internet or skills, the models used the most tokens per attempt trying to deduce structures from raw peak lists, and with internet access alone they still spent substantial tokens improvising API queries and debugging one-off scripts. With the Mass Spec Skills, the agent in Antigravity calls validated, ready-made skills instead, cutting generated tokens per attempt across every model: by nearly four times on Flash, by half on Argon, and by nearly a fifth on Carbon (Figure 5b).</p><figure><p><img alt=\"A bar chart comparing exact-match accuracy (%) across three AI models—Gemini 3.8 Flash, Gemini 4 Argon, and Gemini 4 Carbon—under three conditions: &quot;No internet, no skills&quot; (extremely low), &quot;Internet&quot; (moderate to high), and &quot;Internet + skills&quot; (consistently near 100%).\" src=\"https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/original_images/IsxadwTjRmxuf9LN/AGY_Mass-spec_fig-7__light.svg\"><img alt=\"A bar chart comparing exact-match accuracy (%) across three AI models—Gemini 3.8 Flash, Gemini 4 Argon, and Gemini 4 Carbon—under three conditions: &quot;No internet, no skills&quot; (extremely low), &quot;Internet&quot; (moderate to high), and &quot;Internet + skills&quot; (consistently near 100%).\" src=\"https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/original_images/FjACnUOCWdBPOhF5/AGY_Mass-spec_fig-7__dark.svg\"></p><figcaption><p>Figure 5a. Exact-match identification accuracy on 100 benchmark spectra available in public reference libraries (three attempts per spectrum), comparing Antigravity alone (no internet, no skills), with internet access only, and with internet access plus the Mass Spec Skills (mean and 95% confidence interval). Attempts exceeding the one-hour wall-clock budget were scored as failures (0% accuracy); transient infrastructure and quota errors were excluded.</p></figcaption></figure><figure><p><img alt=\"A bar chart showing the relative generated tokens for three Gemini models (3.8 Flash, 4 Argon, and 4 Carbon) under three configurations: &quot;No internet, no skills&quot; (grey, resulting in the highest relative tokens), &quot;Internet&quot; (light blue, moderate tokens), and &quot;Internet + skills&quot; (blue, resulting in the fewest tokens).\" src=\"https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/original_images/2aj6bbgSOGsnalbJ/AGY_Mass-spec_fig-8__light.svg\"><img alt=\"A bar chart showing the relative generated tokens for three Gemini models (3.8 Flash, 4 Argon, and 4 Carbon) under three configurations: &quot;No internet, no skills&quot; (grey, resulting in the highest relative tokens), &quot;Internet&quot; (light blue, moderate tokens), and &quot;Internet + skills&quot; (blue, resulting in the fewest tokens).\" src=\"https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/original_images/6U_Qu8EI0ypc3ApI/AGY_Mass-spec_fig-8__dark.svg\"></p><figcaption><p>Figure 5b. Generated tokens per attempt on the same benchmark runs relative to the Gemini 4 Argon with internet access baseline (dashed line at 1.0×; mean and 95% confidence interval, excluding transient infrastructure and quota errors).</p></figcaption></figure><h2>A collaborative analytical assistant</h2><p>Antigravity’s Mass Spec Skills pair mass spectrometry tools trusted by the community with transparent agentic reasoning, performing the time-consuming groundwork of spectral interpretation and keeping the chemist in control of decisions requiring scientific judgement.</p><p>However, there are some questions that cannot be answered from an LC-MS/MS spectrum at all, such as mirror-image molecules and some closely related isomers. These molecules all break apart in nearly identical ways; telling them apart requires other measurements, such as chromatographic retention time, ion mobility, or NMR.</p><p>Genuinely new molecules, including many natural products, are not in any existing database, so Antigravity cannot retrieve or confirm a structure on its own. It does, however, give an informed starting point for chemists, with a predicted formula, peak assignments, and a detailed annotation table.</p><p>Scaling automated spectral interpretation from single spectra to full metabolomics studies can help researchers identify far more of the unknown small molecules across human health, environmental science, and natural-product discovery.</p><h2>Acknowledgements</h2><p>The Mass Spec Skills are available on Google Antigravity today. Download the Antigravity App and install the Mass Spec plugin to start using these skills.</p><p>You can also get started with Mass Spec Skills on Antigravity today as an Enterprise user, by choosing “Use Business Account” and logging into the app with your Google Cloud credentials.</p><p>To further advance the pace of research, we’re offering 10,000 scientists the highest usage tier in Google Antigravity free of charge for 6 months (onboarded on a rolling basis), subject to eligibility, capacity, and selection. Applications are <a href=\"http://forms.gle/WvmBbPvRbpKG1BPn9\">now open</a>.</p><p>We would like to acknowledge the contributions of the following team members: Joao Madeira Araujo, Andrew Campbell, Antoine Dedieu, Arnaud Doucet, Julian Eisenschlos, Romu Elie, Doug Fritz, Gena Hong, Dan Horgan, Victoria Johnston, Anna Koivuniemi, Ira Korshunova, Agata Laydon, Vlad Mnih, Filip Radlinski, Sukhdeep Singh, Artem Sobolev, Lexi Walker and the Biocompatibility team.</p>",
+    "author": "Robert Brunck, Stefan Ganscha, Swaroop Guntupalli, Dariusz Lasecki, Gabriella Marfani, Jack Mason, Hussain Masoom, Rose Mirshafian, Eliseo Papa, Zoi Tsangalidou"
   },
   {
     "id": "aihot-20261124-openai-news-11b88f0f",
@@ -4463,360 +4817,5 @@
     ],
     "context": "原油单日大跌并跌破关键整数关口，叠加美元同步走强，是观察大宗商品与汇率联动的重要行情信号。",
     "contentHtml": "<p>WTI原油日内跌幅超过4.0%，失守80美元/桶关口，为8月份以来首次；布伦特原油日内跌幅达4.0%，报88.8美元/桶。</p>\n\n<p>美元指数日内涨幅达0.5%，报104.3659。</p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-eba78220",
-    "title": "美油、布油期货日内跌超4%",
-    "summary": "国际油价日内跌幅扩大，WTI原油期货跌4.13%报79.968美元/桶，布伦特原油期货跌4.23%报88.651美元/桶，两大基准油价均跌超4%。",
-    "url": "https://finance.eastmoney.com/a/202611233937708673.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T15:51:49.000Z",
-    "score": 78,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "大宗商品",
-      "国际市场",
-      "宏观经济",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "国际油价",
-      "WTI",
-      "布伦特",
-      "原油期货"
-    ],
-    "context": "单日跌超4%属较大幅度波动，能源板块、通胀预期及大宗商品市场情绪或受直接影响。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-63ee6517",
-    "title": "黄仁勋复职带动AI相关股票普涨 英伟达市值数小时增逾1万亿美元",
-    "summary": "英伟达宣布恢复黄仁勋总裁兼首席执行官职务并立即生效，AI相关股票应声普涨，英伟达股价一度上涨35%，创2000年以来最大盘中涨幅。受此带动，英伟达市值数小时内增逾1万亿美元。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizuarw0392235.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T15:51:40.000Z",
-    "score": 93,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "美股",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "英伟达",
-      "黄仁勋",
-      "美股",
-      "AI概念股"
-    ],
-    "context": "CEO复职这一罕见人事变动直接引爆AI板块行情，万亿美元级市值波动成为当日美股市场核心事件。",
-    "contentHtml": "<p><img src=\"https://n.sinaimg.cn/finance/transform/59/w550h309/20261123/8c42-2e223825bf623385ec73f4777276828e.png\" alt=\"\"><span></span></p><p>　　英伟达恢复黄仁勋总裁兼首席执行官职务、并立即生效后，人工智能相关公司的股价大涨。</p><p>　　英伟达股价一度上涨35%，创2000年以来最大盘中涨幅，短短数小时内市值增加逾1万亿美元，并带动标普500指数和<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/.IXIC.html\">纳斯达克</a></span><span></span>100指数走高。涨势还蔓延至芯片股，费城证券交易所半导体指数飙升13%；其他与人工智能基础设施交易相关的股票也上涨，包括能源供应商和工业企业。</p><p>　　Bokeh Capital Partners首席投资官Kim Forrest表示：“那件黑色夹克又回来了。大部分涨势都有其合理性，而且我们并没有对已经暴露出来的问题避而不谈。”</p><p>　　Miller Tabak + Co．首席市场策略师Matt Maley表示：“市场本来就已经处于超卖状态，之前的悲观情绪也非常高。”</p><p>　　不过，围绕人工智能交易更广泛的一些问题，并没有因为这次人事变动而得到解决。</p><p>　　他说：“不过，数据中心延期以及企业客户对定价的抵触并没有消失。因此，核心问题并没有改变。也正因为如此，从长期来看，这未必就是多头一直在等待的那个催化剂。”</p><p>　　Interactive Brokers首席策略师Steve Sosnick表示：“董事会似乎是在市场和政府的压力下让步了。这将安抚英伟达股东，甚至整个市场。但等新一届国会就位后，围绕黄仁勋、卢特尼克等人的一系列国会调查恐怕会接踵而至。”</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：丁文武 </p>",
-    "author": "环球市场播报"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-aa00b051",
-    "title": "投资银行Baird将英伟达列为最新看多首选股",
-    "summary": "投资银行Baird将英伟达列为最新看多首选股，表达对该股的看多立场。消息来自东方财富7x24快讯，正文仅披露该评级动作，未附带目标价等更多细节。",
-    "url": "https://finance.eastmoney.com/a/202611233937708128.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T15:50:32.000Z",
-    "score": 56,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "A股",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "Baird",
-      "英伟达",
-      "机构评级",
-      "美股"
-    ],
-    "context": "机构首选股名单变动是投资者跟踪华尔街态度的常规参考信号。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-788eb645",
-    "title": "特朗普透露：曾直接与英伟达董事会沟通黄仁勋事宜",
-    "summary": "美国总统特朗普透露，在黄仁勋复职之前，他曾直接与英伟达董事会沟通黄仁勋事宜。特朗普还表示，自己已于周日晚间与复职的英伟达CEO黄仁勋通了电话。上述信息是特朗普在接受记者埃蒙·贾弗尔斯电话采访时作出的披露。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwis5444302.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T15:36:16.000Z",
-    "score": 78,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "政策动态",
-      "市场",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "特朗普",
-      "英伟达",
-      "黄仁勋",
-      "美股"
-    ],
-    "context": "美国总统罕见公开披露就CEO人事事宜直接与英伟达董事会沟通，政企互动细节对市场情绪较为敏感。",
-    "contentHtml": "<p>\t<a href=\"https://finance.sina.com.cn/zt_d/subject-1794214941\">专题：英伟达官宣恢复黄仁勋总裁、CEO及董事会职务</a></p><p>　　<strong>核心要点</strong></p><ul>\n<li>美国总统特朗普表示，他已于周日晚间与复职的英伟达首席执行官黄仁勋通了话。</li>\n<li>特朗普在接受 记者埃蒙・贾弗尔斯电话采访时透露，在黄仁勋复职之前，他已经 “直接以及间接” 和英伟达董事会进行过沟通。</li>\n<li>特朗普称，董事会 “寻求国家安全风险层面的保证”，而他给出了这份保证。\n<p><img src=\"https://n.sinaimg.cn/finance/transform/51/w550h301/20261123/b400-303f6a065d4d6241a402ccb69f628ad1.png\" alt=\"\"><span></span></p>\n</li>\n</ul><p>　　美国总统特朗普周一早上表示，刚刚官复原职的英伟达首席执行官黄仁勋 “没有做错任何事”。</p><p>　　特朗普同时告诉埃蒙・贾弗尔斯：“我认为（英伟达）董事会做出恢复黄仁勋职务的决定，行事非常负责任。”</p><p>　　在电话采访中特朗普说道：“董事会的确向我方寻求关于国家安全风险的保证。”</p><p>　　“基于我们所掌握的全部信息 —— 而我们掌握的信息量很大，我们向他们作出了保证。”</p><p>　　特朗普表示，在英伟达董事会官宣黄仁勋复职之前的周日晚间，他就已经和黄仁勋通过话。</p><p>　　总统称：“我非常非常高兴，这家公司、董事会有勇气做出正确选择。过去两周，公司承受了巨大的损失。”</p><p>　　当被问及，上周黄仁勋辞职之后股市普遍大跌，这一因素是否推动他出面力促黄仁勋复职。特朗普回应：“或许有影响，但更重要的是长远考量。”</p><p>　　“关键在于，他脑子里还装着其他别人无从知晓的芯片设计方案。”</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
-    "author": "环球市场播报"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-d2463649",
-    "title": "感恩节、黑色星期五美股开市吗？周四全天休市、周五提前收盘",
-    "originalTitle": "感恩节、黑色星期五股市开盘吗？",
-    "summary": "美股感恩节期间，11月26日（周四）全天休市，11月27日（周五）正常开盘但提前收盘。纳斯达克、纽约证券交易所感恩节当日均休市。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwiw8186479.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T15:27:18.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场日历",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "美股",
-      "感恩节",
-      "休市安排",
-      "黑色星期五"
-    ],
-    "context": "感恩节假期临近，美股交易时段调整直接影响交易安排，投资者需提前留意休市与提前收盘时间。"
-  },
-  {
-    "id": "aihot-20261123-wscn-ashare-f927dc74",
-    "title": "特朗普：现在并不担心AI泡沫",
-    "summary": "美国总统特朗普表示，现在并不担心人工智能（AI）泡沫，并对英伟达股价反弹表示赞赏。该表态未附带具体政策或行动内容。",
-    "url": "https://wallstreetcn.com/livenews/3204391",
-    "source": "华尔街见闻 · A股",
-    "publishedAt": "2026-11-23T15:24:32.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "宏观经济",
-      "A股",
-      "市场政策"
-    ],
-    "region": [
-      "金融与政策",
-      "财经"
-    ],
-    "tags": [
-      "财经",
-      "A股",
-      "特朗普",
-      "AI泡沫",
-      "英伟达",
-      "市场情绪"
-    ],
-    "context": "AI泡沫之争是近期市场关注的热点，特朗普作为对市场情绪影响较大的政治人物，其表态具有一定参考意义。",
-    "contentHtml": "<p>美国总统特朗普：现在并不担心人工智能（AI）泡沫。</p>\n\n<p>赞赏英伟达股价反弹。</p>"
-  },
-  {
-    "id": "aihot-20261123-the-decoder-b3f52b71",
-    "title": "Z.ai 发布 7500 亿参数旗舰模型 GLM-5.4，跟随 OpenAI 布局循环 Transformer 架构",
-    "originalTitle": "Z.ai follows OpenAI into loop transformer territory with its new 750B flagship model",
-    "author": "Jonathan Kemper",
-    "summary": "Z.ai 发布旗舰模型 GLM-5.4，将 7500 亿参数模型迁移至循环架构，让 28 层网络运行两次。公司称该设计能让其匹敌 2 至 3 万亿参数的模型，但目前基准成绩仅来自较小的 30B 测试模型。Z.ai 将 GLM-5.4 定位为\"泛化编码\"（Generalized Coding）的开端，代码还可生成视频、游戏和 CAD 模型。",
-    "url": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/",
-    "source": "The Decoder",
-    "publishedAt": "2026-11-23T15:13:03.000Z",
-    "score": 88,
-    "tier": "T2",
-    "selected": true,
-    "industry": "AI",
-    "topics": [
-      "大模型",
-      "模型架构",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "region": [
-      "AI精选",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "Z.ai",
-      "GLM-5.4",
-      "循环Transformer",
-      "模型发布"
-    ],
-    "context": "循环 Transformer 是 OpenAI 也在走的路线，Z.ai 以更少参数对标更大模型的策略值得行业关注。",
-    "contentHtml": "<p><strong>Z.ai is moving its flagship model to a loop architecture that runs some of its layers twice. With GLM-5.4, the company wants to mark the start of \"Generalized Coding,\" where code also generates videos, games, and CAD models.</strong></p><p>Following OpenAI, Z.ai is introducing GLM-5.4, its first large model built on a loop transformer. While standard language models use each layer once per pass, GLM-5.4 runs a block of shared layers multiple times, refining the intermediate results from the previous pass to make the network deeper without adding parameters. OpenAI has used a <a href=\"https://the-decoder.com/openais-data-suggests-that-frontier-models-are-hiding-their-thoughts-because-developers-optimize-for-capability-and-compute/\">similar architecture since GPT-6 Astra</a>. According to Z.ai, the 750-billion-parameter model reaches performance comparable to models with 2 to 3 trillion parameters.</p><p>The team retrained the <a href=\"https://the-decoder.com/chinese-ai-lab-zhipu-releases-glm-5-under-mit-license-claims-parity-with-top-western-models/?trk=article-ssr-frontend-pulse_little-text-block\">GLM-5 base model released in February</a> into a loop model that runs 28 layers twice. Loop models trained from scratch have so far performed worse than models without shared weights under the same compute budget, <a href=\"https://z.ai/blog/glm-5.4\">Z.ai writes</a>.</p><h2>Gates and shared caching keep the second pass manageable</h2><p>Converting the model introduces a problem, Z.ai says. If the model simply overwrites intermediate states on each pass, activations grow sharply from round to round, leaving subsequent layers with values outside the range they were trained on.</p><p>To handle this, GLM-5.4 uses dedicated gates for each token and pass to control how much of the new output flows back into the data stream. According to Z.ai, the model builds context cautiously on the first pass and writes its changes back in full on the second. On difficult tokens, Z.ai says, the first pass steps in more strongly.</p><figure><img src=\"https://the-decoder.com/wp-content/uploads/2026/11/glm-54-02-loop-architecture.jpg\" alt=\"Architekturdiagramm von GLM-5.4 mit Prelude aus 26 Schichten, zwei Loop-Durchläufen über die Schichten 27 bis 54 mit Damp Gates und gemeinsamem KV-Cache sowie einer Coda aus 24 Schichten vor dem LM Head.\" width=\"1280\" height=\"960\"><figcaption>GLM-5.4 runs layers 27 through 54 twice, and gates control how much each pass changes the intermediate results.</figcaption></figure><p>Because the second pass would otherwise double memory usage, both passes share the KV cache, the temporary memory for previously processed tokens. The second pass stores its own extra values only in a small local window. As a result, Z.ai says, the overhead compared to GLM-5.3 stays manageable even at a 1-million-token context.</p><p>To save on compute as well, the model uses sparse attention to pick the most relevant earlier tokens upfront rather than scanning the entire context every time, a standard technique. The second pass then reuses that selection from the first instead of making a new one. According to Z.ai, that yields nearly the same results as picking tokens separately on each pass. The company also says the model reaches up to 200 tokens per second off-peak and 70 to 80 tokens per second under load.</p><h2>A looped 30B test model beats its baseline with shorter reasoning chains</h2><p>Before rolling out the architecture in its flagship, Z.ai tested it on models with 1, 4, 30, and 750 billion parameters. For a direct comparison, the team used a 30B model built on the same architecture as the large base model. Both versions had the same parameter count, while the loop version received about 10 percent more training compute. Its biggest gain came on the AIME25 math benchmark, where scores jumped from 19.2 to 30.4 points. Scores on the expert-level science questions in GPQA-Diamond rose from 47.6 to 56.3 points, and on the AA-LCR long-context test they climbed from 40.3 to 47.7 points. Gains were smaller at just over three points on the MMLU-Pro knowledge test and on IFBench, which tests instruction following.</p><p>Responses also got shorter, shrinking 14.9 percent on MMLU-Pro, 11.7 percent on GPQA-Diamond, and just 2 percent on AIME25. Z.ai says part of the reasoning shifts out of the output tokens and into the loop's extra computational depth.</p><figure><img src=\"https://the-decoder.com/wp-content/uploads/2026/11/glm-54-03-benchmark-30b.jpg\" alt=\"Tabelle mit fünf Benchmarks für ein 30B-Modell mit und ohne Loop, darunter AIME25, GPQA-Diamond und MMLU-Pro, mit Verbesserungen von 3,3 bis 11,3 Punkten und kürzeren Antworten.\" width=\"1789\" height=\"729\"><figcaption>At the same parameter count, the loop version outperforms the baseline across all five benchmarks while producing shorter responses.</figcaption></figure><p>It is still impossible to judge how well GLM-5.4 actually performs, as Z.ai has published no benchmark scores for the 750B model and the figures in its blog post come solely from the 30B test. There are no independent evaluations from groups like Artificial Analysis either.</p><p>By Z.ai's own account, GLM-5.4's biggest weakness is overly long reasoning phases in which the model gets stuck, though the company says that extended double-checking improves accuracy.</p><p>Z.ai views GLM-5.4 as the starting point for \"Generalized Coding,\" where the company says code becomes the foundation for tasks beyond traditional software development. To illustrate the idea, Z.ai shows a music video scored by the model itself, a six-axis robot arm it says GLM-5.4 designed in FreeCAD, a complete game, and an interactive 3D scene built from mathematical geometry and custom shaders.</p><p>\n\t\t<span>1 / 4</span>\n\t\t\n\t\t\n\t</p><h2>Z.ai plans to release model weights and a much larger model</h2><p>GLM-5.4 is available through the GLM Coding Plan, the ZCode coding environment, and Z.ai Chat, with an API set to follow and token pricing not yet announced. Z.ai plans to release the model weights after further safety testing, and it also announced a much larger model expected to arrive soon.</p><p>Shared layers date back to the Universal Transformer in 2018. In March, researchers in Bonn showed that <a href=\"https://the-decoder.com/math-needs-thinking-time-everyday-knowledge-needs-memory-and-a-new-transformer-architecture-aims-to-deliver-both/\">looped transformers benefit from greater compute depth on math, while everyday knowledge benefits more from greater memory</a>, the same trade-off Z.ai cites to explain its architecture. Thinking Machines also drew attention recently with <a href=\"https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/\">Inkling 2 Mini</a> because the loop model runs locally on Macs with at least 32 GB of RAM.</p><p>At 750 billion parameters, GLM-5.4 is nowhere near running on a laptop, but Z.ai is instead targeting the tier of <a href=\"https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/\">Kimi K3.1 Pro</a> and <a href=\"https://the-decoder.com/alibabas-open-weight-qwen3-8-max-takes-on-long-horizon-ai-tasks-with-2-4-trillion-parameters/\">Qwen3.8-Max</a>. At 2.8 trillion and 2.4 trillion parameters, respectively, those models are more than three times as large and require large amounts of compute.</p><p>For its predecessor <a href=\"https://the-decoder.com/zhipu-ai-releases-glm-5-3-claims-its-the-strongest-open-weights-coding-model/\">GLM-5.3</a>, Z.ai kept the existing base model and drew all of its gains from post-training. The company delayed releasing its weights because of the model's strong vulnerability-finding abilities, and Anthropic later found that GLM-5.3 could <a href=\"https://the-decoder.com/anthropic-says-zhipus-open-weight-glm-5-3-nearly-matches-claude-mythos-preview-at-building-exploits/\">build exploits on its own, almost on par with Claude Mythos Preview</a>.</p>"
-  },
-  {
-    "id": "aihot-20261123-bloomberg-markets-76fec016",
-    "title": "英伟达恢复黄仁勋总裁兼CEO职务，AI概念股大涨",
-    "originalTitle": "AI-Linked Stocks Take Off as Nvidia Brings Back ‘Black Jacket’",
-    "author": "Carmen Reinicke",
-    "summary": "英伟达（Nvidia）宣布即刻恢复黄仁勋总裁兼首席执行官（CEO）职务。受此消息推动，AI相关个股周一大涨。",
-    "url": "https://www.bloomberg.com/news/articles/2026-11-23/ai-linked-stocks-take-off-after-nvidia-reinstates-jensen-huang",
-    "source": "Bloomberg Markets",
-    "publishedAt": "2026-11-23T15:04:13.000Z",
-    "score": 90,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "AI",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "市场",
-      "英伟达",
-      "黄仁勋",
-      "AI概念股",
-      "美股"
-    ],
-    "context": "英伟达掌门人职务变动叠加AI行情，成为周一科技股交易的核心催化剂。",
-    "contentHtml": "<p>Shares of companies tied to artificial intelligence surged Monday after Nvidia Corp. reinstated Jensen Huang as president and chief executive officer, effective immediately.</p>",
-    "contentHtmlZh": "<p>{\"t\": [\"</p><p>周一，在英伟达公司重新任命黄仁勋为总裁兼首席执行官、即刻生效后，与人工智能相关的公司股价飙升。</p><p>\"]}</p>"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-49067b02",
-    "title": "美国11月制造业PMI初值报54.5，符合预估",
-    "originalTitle": "美国11月份制造业采购经理指数初值报54.5 符合预估",
-    "summary": "标普全球（S&P Global）公布的美国11月制造业采购经理指数（PMI）初值为54.5，符合市场预估，较10月的54.9小幅回落。该指数仍高于50荣枯线、处于扩张区间，上年同月为52.2。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwiu2199075.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T14:47:42.000Z",
-    "score": 62,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "市场数据",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "宏观经济",
-      "制造业PMI",
-      "美国经济"
-    ],
-    "context": "PMI初值是美国制造业景气的月度先行指标，50为扩张与萎缩的分界线，结果与预期一致。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-561b931d",
-    "title": "黄仁勋时隔12天重回英伟达CEO宝座 苹果乔布斯当年等了12年",
-    "originalTitle": "黄仁勋时隔12天重回英伟达CEO宝座 苹果乔布斯等了12年",
-    "summary": "英伟达董事会仅用12天就撤销罢免黄仁勋的决定，黄仁勋重回CEO职位。作为对照，苹果乔布斯当年重返CEO等了12年，而三年前的同一周，OpenAI撤换山姆·奥特曼后不到五天就完成了同样的复位。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwiu2198462.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T14:46:34.000Z",
-    "score": 88,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "公司治理",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "英伟达",
-      "黄仁勋",
-      "管理层变动",
-      "美股"
-    ],
-    "context": "董事会12天推翻罢免决定，与乔布斯12年、奥特曼5天的回归速度形成鲜明对比，凸显科技巨头治理波动对市场的冲击。",
-    "contentHtml": "<p>　　作者：Jared Blikre</p><p>　　英伟达董事会只用了 12 天，就做出撤销罢免黄仁勋的决定。三年前的同一周，OpenAI 撤换山姆・奥特曼，完成同样的复位只用了不到五天。</p><p>　　几乎没人预料到黄仁勋复职的消息。周一早晨，就在英伟达发布官方复职公告的几分钟之前，预测市场 Polymarket 上，押注黄仁勋本月复职的概率仅约 3%。公告发布五分钟后，该概率飙升至 99%。</p><p>　　董事会全票通过决议，即刻恢复黄仁勋总裁、首席执行官以及董事职务，科莱特・克雷斯回归首席财务官岗位。董事会主席哈维・琼斯表示：“董事会认为，黄仁勋是领导英伟达的合适人选。” 英伟达股价暴涨超 30%。</p><p><img src=\"https://n.sinaimg.cn/finance/transform/59/w550h309/20261123/635b-fc5b1336bc425e543afbc2bb9ac53f8e.png\" alt=\"\"><span></span></p><p>　　<strong>黄仁勋的短暂下台代价惨重</strong></p><p>　　从 11 月 11 日收盘（董事会接受黄仁勋辞职）至上周五，英伟达市值蒸发约 1.2 万亿美元，这期间还出现英伟达老款 GPU 价格逆势走高的现象。</p><p>　　硅谷之前就上演过相似戏码。2023 年 11 月一个周五下午，OpenAI 解雇奥特曼；周日<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/MSFT.html\">微软</a></span><span></span>向他抛出橄榄枝；OpenAI 约 770 名员工当中，超过 700 人威胁跟随他离职。到周二晚间，奥特曼重回 OpenAI。</p><p>　　奥特曼在 X 平台发文：“我热爱 OpenAI，过去几天我所做的一切，都是为了保全这个团队与我们的使命。”</p><p><img src=\"https://n.sinaimg.cn/finance/transform/59/w550h309/20261123/2126-11bbab703c8012050afec37195260c5f.png\" alt=\"\"><span></span></p><p>　　虽然并非由本人发起，但民间也出现声援黄仁勋的浪潮。一份名为 “与黄仁勋站在一起” 的请愿书收集超 10 万签名，埃隆・马斯克也参与签名，其中有 5000 多份签名自称来自英伟达内部员工。请愿呼吁 “遵循正当程序，而非暴民式审判”。</p><p>　　当初促成奥特曼回归的关键力量是微软；而推动黄仁勋复职的是美国白宫。</p><p>　　董事会表示，美国政府高层给出意见，据此判定黄仁勋不存在国家安全风险，这成为他获得二次机会的关键。</p><p>　　但黄仁勋的回归和奥特曼有一处不同：奥特曼回来时，董事会已经完成大换血；黄仁勋面对的还是原班董事会，同时新增设立国家安全与出口控制委员会、启动首席合规官的招聘，还要接受针对 “遭境外情报机构盯上” 相关报道的独立调查。</p><p>　　<strong>乔布斯回归<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/AAPL.html\">苹果</a></span><span></span>耗费 12 年</strong></p><p>　　史蒂夫・乔布斯 1985 年 9 月离开苹果，1997 年 9 月才回归担任临时 CEO。他回归首日，苹果股价上涨 2%；之后一年，苹果股价跑赢标普 500 指数，超额收益达到 65 个百分点。</p><p>　　大多数知名的创始人回归，开局都会获得华尔街一片叫好，但往后一年的表现却是好坏参半。英伟达本次盘前 30% 的涨幅，是下文统计图表里，其他几位 CEO 回归首日最大涨幅的三倍有余。</p><p><img src=\"https://n.sinaimg.cn/finance/transform/59/w550h309/20261123/04a2-0b51ff224683edd67a34a29914a195e5.png\" alt=\"\"><span></span></p><p>　　<strong>学术研究：“归位型 CEO” 的实际表现并不乐观</strong></p><p>　　麻省理工斯隆管理学院的一项研究，统计 1992‑2017 年间标普 1500 成分股公司的 167 位重新上任的 CEO。研究发现，这类 CEO 任职期间，公司股价年均表现，要比首任 CEO 执掌时期低大约 10%；在技术迭代飞快的行业，差距会更大。 样本中，创始人 CEO 占全部 CEO 的 4%，但在 “归位复职 CEO” 群体里占比高达 44%。</p><p>　　黄仁勋接下来日程依旧紧张：12 月 1 日要参加众议院闭门问询，并且已经同意出席参议院银行委员会的公开听证会。</p><p>　　乔布斯后来把自己当年被赶出苹果的经历视作一份馈赠。</p><p>　　他在 2005 年斯坦福大学毕业演讲中说道：“我当时并未意识到，但事后证明，被苹果解雇，是发生在我身上最好的一件事。”</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
-    "author": "环球市场播报"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-842ebf6a",
-    "title": "特朗普称美国政府没有证据表明黄仁勋有不合法行为",
-    "summary": "美国总统特朗普23日在社交媒体发文称，美国司法部长已确认政府没有证据表明黄仁勋有不合法行为。他表示英伟达董事会让黄仁勋重新担任首席执行官是\"正确且恰当的决定\"，没有理由认为其回归会对国家安全构成任何风险。",
-    "url": "https://finance.eastmoney.com/a/202611233937644456.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T14:45:27.000Z",
-    "score": 80,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "宏观与政策",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "特朗普",
-      "黄仁勋",
-      "英伟达",
-      "美股"
-    ],
-    "context": "美国总统公开回应英伟达CEO黄仁勋的任职与国家安全评估问题，官方结论对市场预期具有重要参考意义。"
   }
 ]

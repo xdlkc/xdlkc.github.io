@@ -10,7 +10,7 @@
       "商业航天",
       "A股"
     ],
-    "heatScore": 86.5,
+    "heatScore": 83.8,
     "sourceCount": 1,
     "latestAt": "2026-11-25T16:46:54.000Z",
     "summary": "美国联邦通信委员会（FCC）授权SpaceX为数据中心部署100万颗卫星。该授权来自美国核心通信监管机构，部署规模达百万颗量级。",
@@ -26,8 +26,50 @@
     ]
   },
   {
-    "id": "hot-262566de",
+    "id": "hot-d60302f4",
     "rank": 2,
+    "title": "美股三大指数拉升 纳指跌幅收窄至2%",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场行情",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 82.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T01:55:02.000Z",
+    "summary": "美股三大指数盘中拉升，纳指跌幅收窄至2%，标普500指数跌1%，恐慌指数VIX回落至30下方。成分股中Anthropic涨2%，此前一度跌近10%；Meta涨超1%。",
+    "items": [
+      {
+        "id": "aihot-20261126-eastmoney-724-f27d9e39",
+        "title": "美股三大指数拉升 纳指跌幅收窄至2%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-26T01:52:48.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263939934562.html",
+        "score": 52
+      },
+      {
+        "id": "aihot-20261126-eastmoney-724-1cb57159",
+        "title": "费城半导体指数跌幅收窄至4% 现报8480.95点",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-26T01:55:02.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263939935496.html",
+        "score": 50
+      },
+      {
+        "id": "aihot-20261125-eastmoney-724-1e922c75",
+        "title": "SpaceX在FCC授权后跌幅收窄至5%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T16:59:53.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263939926260.html",
+        "score": 48
+      }
+    ]
+  },
+  {
+    "id": "hot-262566de",
+    "rank": 3,
     "title": "美股跌幅扩大 纳斯达克综合指数跌4.32%",
     "industry": "金融与政策",
     "topics": [
@@ -36,7 +78,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 84.6,
+    "heatScore": 81.9,
     "sourceCount": 1,
     "latestAt": "2026-11-25T14:45:17.000Z",
     "summary": "美股跌幅扩大，纳斯达克综合指数跌4.32%，标普500指数跌2.94%，道琼斯指数跌2%。三大指数当日同步大幅走低，纳指跌幅居前。",
@@ -61,7 +103,7 @@
   },
   {
     "id": "hot-4b82e15c",
-    "rank": 3,
+    "rank": 4,
     "title": "现货白银跌超5%，报38.82美元/盎司",
     "industry": "金融与政策",
     "topics": [
@@ -70,7 +112,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 83.3,
+    "heatScore": 80.7,
     "sourceCount": 1,
     "latestAt": "2026-11-25T14:41:55.000Z",
     "summary": "现货白银价格跌幅扩大至5.06%，报38.82美元/盎司。",
@@ -95,7 +137,7 @@
   },
   {
     "id": "hot-da4ec909",
-    "rank": 4,
+    "rank": 5,
     "title": "道指大跌700点、纳指下挫4%，英伟达带动AI板块再度遭抛售",
     "industry": "金融与政策",
     "topics": [
@@ -104,7 +146,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 83.2,
+    "heatScore": 80.5,
     "sourceCount": 1,
     "latestAt": "2026-11-25T16:51:29.000Z",
     "summary": "周三美股集体走低，道指大跌700点、纳斯达克综合指数下挫4%，英伟达带动的AI板块再度遭遇抛售。交易员同时在消化最新通胀数据以及美国新一轮关税政策带来的影响，人工智能板块承受进一步下行压力。",
@@ -120,8 +162,34 @@
     ]
   },
   {
+    "id": "hot-d5d56dca",
+    "rank": 6,
+    "title": "安大略教师养老金CEO Jo Taylor：AI基建周期“非常长”或危及投资押注",
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "机构投资",
+      "美股",
+      "宏观"
+    ],
+    "heatScore": 79.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T18:02:51.000Z",
+    "summary": "安大略教师养老金计划CEO Jo Taylor表示，人工智能能否成功将取决于相关基础设施建设所需的时间长短。他警告，若AI基建周期“非常漫长”，可能危及对该领域的投资押注。",
+    "items": [
+      {
+        "id": "aihot-20261125-bloomberg-markets-3f41483c",
+        "title": "安大略教师养老金CEO Jo Taylor：AI基建周期“非常长”或危及投资押注",
+        "source": "Bloomberg Markets",
+        "publishedAt": "2026-11-25T18:02:51.000Z",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-25/ontario-teachers-ceo-says-very-long-ai-buildout-imperils-bets",
+        "score": 76
+      }
+    ]
+  },
+  {
     "id": "hot-d73e2a6f",
-    "rank": 5,
+    "rank": 7,
     "title": "迪拜伊斯兰银行收购Emirates Islamic Bank，缔造1590亿美元伊斯兰银行巨头",
     "industry": "金融与政策",
     "topics": [
@@ -130,7 +198,7 @@
       "中东市场",
       "美股"
     ],
-    "heatScore": 81.2,
+    "heatScore": 78.7,
     "sourceCount": 1,
     "latestAt": "2026-11-25T15:48:08.000Z",
     "summary": "迪拜伊斯兰银行（Dubai Islamic Bank PJSC）宣布收购Emirates Islamic Bank PJSC，交易将缔造全球最大上市伊斯兰银行集团之一。合并后集团总资产约1590亿美元，规模位居全球伊斯兰银行业前列。",
@@ -146,34 +214,8 @@
     ]
   },
   {
-    "id": "hot-d58b0283",
-    "rank": 6,
-    "title": "胡塞武装无人机袭击沙特最大炼油厂，布油拉升近3%重回92美元",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观",
-      "大宗商品",
-      "市场政策",
-      "美股"
-    ],
-    "heatScore": 80.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T15:41:27.000Z",
-    "summary": "胡塞武装出动无人机袭击沙特最大炼油厂，布伦特原油随之拉升近3%，重回92美元。沙特核心能源基础设施遇袭成为油价短线走高的直接推手，凸显中东地缘冲突对原油市场的冲击。",
-    "items": [
-      {
-        "id": "aihot-20261125-wscn-global-0e7ef332",
-        "title": "胡塞武装无人机袭击沙特最大炼油厂，布油拉升近3%重回92美元",
-        "source": "华尔街见闻 · 全球",
-        "publishedAt": "2026-11-25T15:41:27.000Z",
-        "url": "https://wallstreetcn.com/articles/3786708",
-        "score": 82
-      }
-    ]
-  },
-  {
     "id": "hot-c26b7697",
-    "rank": 7,
+    "rank": 8,
     "title": "国家发展改革委等四部门印发《“一老一小”服务体系建设实施方案》",
     "industry": "金融与政策",
     "topics": [
@@ -182,7 +224,7 @@
       "市场政策",
       "A股"
     ],
-    "heatScore": 80.4,
+    "heatScore": 77.9,
     "sourceCount": 1,
     "latestAt": "2026-11-25T12:33:42.609Z",
     "summary": "国家发展改革委、民政部、国家卫生健康委、教育部联合印发《“一老一小”服务体系建设实施方案》，围绕养老和托育服务体系建设作出部署。该方案为四部委联合出台的政策文件，相关落地安排值得持续关注。",
@@ -206,8 +248,60 @@
     ]
   },
   {
+    "id": "hot-10a60ce8",
+    "rank": 9,
+    "title": "Google Research 介绍 LLM 助手的可验证社会推理研究",
+    "industry": "AI",
+    "topics": [
+      "大模型",
+      "AI 研究",
+      "研究",
+      "基础设施"
+    ],
+    "heatScore": 77.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T17:10:27.000Z",
+    "summary": "Google Research 在官方博客介绍面向 LLM 助手的可验证社会推理研究，方向是让大模型助手在社会情境中的推理过程可被验证。该工作隶属其生成式 AI 研究范畴，具体方法与结果可查阅官方博客原文。",
+    "items": [
+      {
+        "id": "aihot-20261125-google-research-cf3013b8",
+        "title": "Google Research 介绍 LLM 助手的可验证社会推理研究",
+        "source": "Google Research",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "url": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "score": 76
+      }
+    ]
+  },
+  {
+    "id": "hot-d58b0283",
+    "rank": 10,
+    "title": "胡塞武装无人机袭击沙特最大炼油厂，布油拉升近3%重回92美元",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观",
+      "大宗商品",
+      "市场政策",
+      "美股"
+    ],
+    "heatScore": 77.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T15:41:27.000Z",
+    "summary": "胡塞武装出动无人机袭击沙特最大炼油厂，布伦特原油随之拉升近3%，重回92美元。沙特核心能源基础设施遇袭成为油价短线走高的直接推手，凸显中东地缘冲突对原油市场的冲击。",
+    "items": [
+      {
+        "id": "aihot-20261125-wscn-global-0e7ef332",
+        "title": "胡塞武装无人机袭击沙特最大炼油厂，布油拉升近3%重回92美元",
+        "source": "华尔街见闻 · 全球",
+        "publishedAt": "2026-11-25T15:41:27.000Z",
+        "url": "https://wallstreetcn.com/articles/3786708",
+        "score": 82
+      }
+    ]
+  },
+  {
     "id": "hot-a720d2fc",
-    "rank": 8,
+    "rank": 11,
     "title": "Michael Burry清仓纳指100看跌头寸 拟待英伟达接近200美元时再次做空",
     "industry": "金融与政策",
     "topics": [
@@ -216,7 +310,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 80.2,
+    "heatScore": 77.7,
     "sourceCount": 1,
     "latestAt": "2026-11-25T17:08:18.000Z",
     "summary": "知名投资人Michael Burry周三清晨在Substack发帖称，随着科技股普遍走弱，他已卖出剩余的纳斯达克100指数看跌期权头寸。他表示拟待英伟达股价接近200美元时再次做空。",
@@ -233,7 +327,7 @@
   },
   {
     "id": "hot-fa303461",
-    "rank": 9,
+    "rank": 12,
     "title": "纳斯达克100指数进入\"先卖再说\"模式 AI和加息之忧刺激抛售",
     "industry": "金融与政策",
     "topics": [
@@ -242,7 +336,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 79.6,
+    "heatScore": 77.1,
     "sourceCount": 1,
     "latestAt": "2026-11-25T15:51:24.000Z",
     "summary": "纳斯达克100指数连续第二天暴跌，盘中较收盘纪录高位一度下跌20%、短暂进入熊市，投资者对AI过度投资和加息的担忧加剧，重创美国大型科技股。该指数随后收复部分失地，目前今年微跌。",
@@ -258,34 +352,8 @@
     ]
   },
   {
-    "id": "hot-328d8439",
-    "rank": 10,
-    "title": "秘鲁赶在年底期限前加紧解决非正规采矿规则之争",
-    "industry": "金融与政策",
-    "topics": [
-      "市场政策",
-      "大宗商品",
-      "美股",
-      "宏观"
-    ],
-    "heatScore": 79.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T16:55:18.000Z",
-    "summary": "秘鲁正赶在年底期限前加紧修订监管规则，以规范数万名非正规矿工的采矿活动。政府警告，若未能赶在期限前解决这场争端，这些矿工可能一夜之间被推入非法境地。",
-    "items": [
-      {
-        "id": "aihot-20261125-bloomberg-markets-a4a5fe68",
-        "title": "秘鲁赶在年底期限前加紧解决非正规采矿规则之争",
-        "source": "Bloomberg Markets",
-        "publishedAt": "2026-11-25T16:55:18.000Z",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-25/peru-races-to-resolve-informal-mining-fight-by-year-end-deadline",
-        "score": 75
-      }
-    ]
-  },
-  {
     "id": "hot-be9c4c53",
-    "rank": 11,
+    "rank": 13,
     "title": "AI交易信仰动摇：纳指跌超3%，英伟达重挫7%，金银大跌，避险资金涌入美债",
     "industry": "金融与政策",
     "topics": [
@@ -294,7 +362,7 @@
       "宏观",
       "市场政策"
     ],
-    "heatScore": 79.2,
+    "heatScore": 76.7,
     "sourceCount": 1,
     "latestAt": "2026-11-25T14:40:23.000Z",
     "summary": "AI交易信仰动摇引发市场抛售，纳斯达克指数大跌超3%，英伟达重挫7%，避险资金涌入美债。金银价格同步大跌，风险资产与贵金属齐跌，资金集中流向美债避险。",
@@ -310,8 +378,102 @@
     ]
   },
   {
+    "id": "hot-328d8439",
+    "rank": 14,
+    "title": "秘鲁赶在年底期限前加紧解决非正规采矿规则之争",
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "大宗商品",
+      "美股",
+      "宏观"
+    ],
+    "heatScore": 76.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T16:55:18.000Z",
+    "summary": "秘鲁正赶在年底期限前加紧修订监管规则，以规范数万名非正规矿工的采矿活动。政府警告，若未能赶在期限前解决这场争端，这些矿工可能一夜之间被推入非法境地。",
+    "items": [
+      {
+        "id": "aihot-20261125-bloomberg-markets-a4a5fe68",
+        "title": "秘鲁赶在年底期限前加紧解决非正规采矿规则之争",
+        "source": "Bloomberg Markets",
+        "publishedAt": "2026-11-25T16:55:18.000Z",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-25/peru-races-to-resolve-informal-mining-fight-by-year-end-deadline",
+        "score": 75
+      }
+    ]
+  },
+  {
+    "id": "hot-c8a445d1",
+    "rank": 15,
+    "title": "美国30年期国债收益率当日下跌10个基点至5.22%",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 76.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T15:53:12.000Z",
+    "summary": "美国30年期国债收益率当日下跌10个基点，至5.22%。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-896fe570",
+        "title": "美国30年期国债收益率当日下跌10个基点至5.22%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T15:53:12.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939917228.html",
+        "score": 52
+      },
+      {
+        "id": "aihot-20261125-eastmoney-724-dacca4e4",
+        "title": "美国2年期与10年期国债收益率日内均下跌至少10个基点",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T14:44:18.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939883668.html",
+        "score": 52
+      },
+      {
+        "id": "aihot-20261123-eastmoney-724-35bc857e",
+        "title": "美国两年期国债中标收益率4.700% 发行前预发行收益率4.703%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-23T18:05:23.000Z",
+        "url": "https://finance.eastmoney.com/a/202611243937744785.html",
+        "score": 52
+      }
+    ]
+  },
+  {
+    "id": "hot-dc22831b",
+    "rank": 16,
+    "title": "瑞典央行将接入欧洲央行T2支付结算平台",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "金融政策",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 75.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T01:44:10.000Z",
+    "summary": "瑞典央行已同意将本国RIX-RTGS支付结算系统接入欧洲央行T2平台，目标在2030年2月完成切换。RIX-RTGS系统目前每月处理约70万笔大额支付结算业务，瑞典央行与欧洲央行将共同承担安全、技术开发及欧洲通用标准相关投入。",
+    "items": [
+      {
+        "id": "aihot-20261126-eastmoney-724-6ecce5b7",
+        "title": "瑞典央行将接入欧洲央行T2支付结算平台",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-26T01:44:10.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263939934354.html",
+        "score": 68
+      }
+    ]
+  },
+  {
     "id": "hot-d8b776de",
-    "rank": 12,
+    "rank": 17,
     "title": "AI交易现裂痕，美股抛售加速，纳斯达克100指数跌超3%",
     "industry": "金融与政策",
     "topics": [
@@ -319,7 +481,7 @@
       "宏观市场",
       "宏观"
     ],
-    "heatScore": 77.8,
+    "heatScore": 75.3,
     "sourceCount": 1,
     "latestAt": "2026-11-25T14:33:19.000Z",
     "summary": "美股抛售随AI交易出现裂痕而加速，以科技股为主的纳斯达克100指数大跌超过3%。此轮跌势已持续数周，市场抛售压力仍在加剧。",
@@ -336,7 +498,7 @@
   },
   {
     "id": "hot-59dead7b",
-    "rank": 13,
+    "rank": 18,
     "title": "Cloudflare 推出 Search for Agents：一键让网站可被 AI 智能体搜索",
     "industry": "工程与开源",
     "topics": [
@@ -344,7 +506,7 @@
       "AI 智能体",
       "研发效能"
     ],
-    "heatScore": 77.7,
+    "heatScore": 75.2,
     "sourceCount": 1,
     "latestAt": "2026-11-25T14:00:00.000Z",
     "summary": "Cloudflare 推出 Search for Agents，只需切换一个开关即可让网站内容可被 AI 智能体搜索。该功能内置自动内容索引、可被发现的搜索 API，并原生支持 HTTP QUERY 方法。",
@@ -361,7 +523,7 @@
   },
   {
     "id": "hot-45351dae",
-    "rank": 14,
+    "rank": 19,
     "title": "美国10月PCE通胀加速至3.8%，美联储加息或成定局",
     "industry": "金融与政策",
     "topics": [
@@ -370,7 +532,7 @@
       "美股",
       "宏观"
     ],
-    "heatScore": 77,
+    "heatScore": 74.6,
     "sourceCount": 1,
     "latestAt": "2026-11-25T13:42:27.000Z",
     "summary": "美国10月个人消费支出物价指数（PCE）同比涨幅加速至3.8%，与道琼斯共识预期一致。作为美联储最青睐的通胀指标，PCE加速升温令进一步加息或成定局。",
@@ -387,7 +549,7 @@
   },
   {
     "id": "hot-c70eb8b8",
-    "rank": 15,
+    "rank": 20,
     "title": "OPEC+ 最大成员国将就石油产量预估发生冲突",
     "industry": "金融与政策",
     "topics": [
@@ -396,7 +558,7 @@
       "宏观",
       "美股"
     ],
-    "heatScore": 76.5,
+    "heatScore": 74.1,
     "sourceCount": 1,
     "latestAt": "2026-11-25T14:27:46.000Z",
     "summary": "OPEC+ 及其盟友将于周日召开会议，分析人士预计其最大成员国将在石油产量预估问题上发生冲突，并称这可能是'多年来最复杂的会议之一'。全球市场正重新转向供应过剩，成为此次内部分歧的背景。",
@@ -408,136 +570,6 @@
         "publishedAt": "2026-11-25T14:27:46.000Z",
         "url": "https://www.ft.com/content/b24d5c8c-4c9b-48f0-b4a8-5f83eee2d3e9?syn-25a6b1a6=1",
         "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-1d482c15",
-    "rank": 16,
-    "title": "投资者撤离AI交易赛道，英伟达、AMD和美光股价大跌",
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "美股",
-      "AI产业",
-      "A股"
-    ],
-    "heatScore": 76.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T14:22:41.000Z",
-    "summary": "投资者撤离AI交易，芯片股持续暴跌，英伟达周三盘前再度下挫5%，前一交易日该股已下跌6%。AMD与博通延续前一日跌势继续走低，今年一度火爆的AI概念股行情持续下挫。",
-    "items": [
-      {
-        "id": "aihot-20261125-sina-finance-8543534d",
-        "title": "投资者撤离AI交易赛道，英伟达、AMD和美光股价大跌",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-25T14:22:41.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykpx1709093.shtml",
-        "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-998c1052",
-    "rank": 17,
-    "title": "美国新建住宅销售意外升至年内最高 建商大力提供购房优惠",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "海外市场",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 74.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T15:48:12.000Z",
-    "summary": "美国10月新建单户住宅销售增长14.2%，意外升至年内最高水平，数据由联邦政府周三公布。建商正大力提供购房优惠，以抵消抵押贷款利率飙升的影响。",
-    "items": [
-      {
-        "id": "aihot-20261125-sina-finance-72c17c6f",
-        "title": "美国新建住宅销售意外升至年内最高 建商大力提供购房优惠",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-25T15:48:12.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizyqvt9268961.shtml",
-        "score": 72
-      }
-    ]
-  },
-  {
-    "id": "hot-d76bf131",
-    "rank": 18,
-    "title": "金价跌破每盎司3500美元 市场等待通胀数据研判美联储加息路径",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 73.7,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T13:40:59.000Z",
-    "summary": "受股市持续抛售拖累，黄金价格下探至每盎司3500美元下方。投资者正等待关键通胀数据出炉，该数据可能影响市场对美联储进一步加息的预期，短期内继续压制金价走势。",
-    "items": [
-      {
-        "id": "aihot-20261125-sina-finance-d6b267f3",
-        "title": "金价跌破每盎司3500美元 市场等待通胀数据研判美联储加息路径",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-25T13:40:59.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykqc4123397.shtml",
-        "score": 78
-      }
-    ]
-  },
-  {
-    "id": "hot-5c47f70e",
-    "rank": 19,
-    "title": "Nothing 展示 AI 耳机 Ear Note 及录音充电盒完整外观",
-    "industry": "AI",
-    "topics": [
-      "消费电子",
-      "AI硬件",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "heatScore": 73.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T16:00:59.000Z",
-    "summary": "Nothing 在 12 月 8 日发售前展示了即将推出的 AI 耳机 Ear Note 的更多细节。Ear Note 耳机可录制通话，其充电盒可对对话进行录音、转写和摘要；与 Ear 3 类似，配备麦克风的充电盒带有\"Talk\"按钮。",
-    "items": [
-      {
-        "id": "aihot-20261125-the-verge-ai-546c251d",
-        "title": "Nothing 展示 AI 耳机 Ear Note 及录音充电盒完整外观",
-        "source": "The Verge · AI",
-        "publishedAt": "2026-11-25T16:00:59.000Z",
-        "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
-        "score": 68
-      }
-    ]
-  },
-  {
-    "id": "hot-48877125",
-    "rank": 20,
-    "title": "美国政府或面临再度部分停摆 两党考虑切断对伊战事专项资金",
-    "industry": "金融与政策",
-    "topics": [
-      "市场政策",
-      "宏观经济",
-      "政府动态",
-      "A股"
-    ],
-    "heatScore": 72.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T13:33:59.000Z",
-    "summary": "参议院共和党人为避免美国政府再度部分停摆，正考虑与民主党达成协议，切断对伊朗战事的专项资金。该战事不受民众欢迎，且从未获得国会批准。",
-    "items": [
-      {
-        "id": "aihot-20261125-sina-finance-f2e1440c",
-        "title": "美国政府或面临再度部分停摆 两党考虑切断对伊战事专项资金",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-25T13:33:59.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykqc4119879.shtml",
-        "score": 76
       }
     ]
   }
