@@ -9,7 +9,7 @@
   "higherIsBetter": true,
   "sourceName": "LiveCodeBench Official",
   "sourceUrl": "https://livecodebench.github.io/leaderboard.html",
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "entries": [
     {
       "model": "O4-Mini (High)",
@@ -17,7 +17,7 @@
       "openWeights": false,
       "reasoning": true,
       "score": 87.3,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -26,7 +26,7 @@
       "openWeights": false,
       "reasoning": true,
       "score": 84.7,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -35,7 +35,7 @@
       "openWeights": false,
       "reasoning": true,
       "score": 84.5,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -44,7 +44,7 @@
       "openWeights": true,
       "reasoning": true,
       "score": 84.4,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -53,7 +53,7 @@
       "openWeights": false,
       "reasoning": true,
       "score": 84.3,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -62,7 +62,7 @@
       "openWeights": false,
       "reasoning": true,
       "score": 82.7,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -71,7 +71,7 @@
       "openWeights": true,
       "reasoning": true,
       "score": 81,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -80,7 +80,7 @@
       "openWeights": true,
       "reasoning": false,
       "score": 80.9,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -89,7 +89,7 @@
       "openWeights": true,
       "reasoning": false,
       "score": 80.4,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -98,7 +98,7 @@
       "openWeights": false,
       "reasoning": true,
       "score": 80.1,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -107,7 +107,7 @@
       "openWeights": true,
       "reasoning": true,
       "score": 78.5,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -116,7 +116,7 @@
       "openWeights": false,
       "reasoning": true,
       "score": 78.1,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -125,7 +125,7 @@
       "openWeights": false,
       "reasoning": true,
       "score": 77.7,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -134,7 +134,7 @@
       "openWeights": false,
       "reasoning": true,
       "score": 77.4,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     },
     {
@@ -143,7 +143,7 @@
       "openWeights": false,
       "reasoning": true,
       "score": 76.2,
-      "releaseDate": "2026-11-24",
+      "releaseDate": "2026-11-25",
       "notes": "1055 problems evaluated"
     }
   ]
