@@ -77,6 +77,10 @@
       en: 'Native local macOS region capture, irreversible flattened annotation, and floating image pins built with Swift, AppKit, and ScreenCaptureKit.',
       zh: '基于 Swift、AppKit 与 ScreenCaptureKit 的本地优先原生 macOS 区域截图、不可逆打码标注与悬浮贴图工具。'
     },
+    'index.project.keel': {
+      en: 'Local Google Compute Engine VM console with end-to-end Outline, Clash subscription, Prometheus, and Grafana observability tooling.',
+      zh: '本地 Google Compute Engine 单机控制台，集成端到端 Outline、Clash 订阅、Prometheus 与 Grafana 可观测部署方案。'
+    },
     'index.aboutCard.role': { en: 'AI Infra & Agent Engineer', zh: 'AI Infra 与 Agent 工程师' },
     'index.aboutCard.bio': {
       en: 'Software engineer based in Beijing working on AI infrastructure and Agent platforms. Outside work, I enjoy exploring AI-native workflows and building local-first developer tools and native macOS apps.',
