@@ -61,6 +61,22 @@
       en: 'Agent Skills package implementing Spec-Driven Development (SDD) with a six-phase workflow, EARS templates, and validation scripts.',
       zh: '实现规格驱动开发（SDD）的 Agent Skills 工具包，提供六阶段工作流、EARS 模板与校验脚本。'
     },
+    'index.project.shuttle': {
+      en: 'Local-first Rust daemon dispatching GitHub Issues and PRs to coding agents through a recoverable queue and draft PRs.',
+      zh: '本机优先的 Rust 后台服务，通过可恢复队列将 GitHub Issue / PR 派发给本地编程 Agent 并发布草稿 PR。'
+    },
+    'index.project.harnessSwarm': {
+      en: 'CLI and Codex plugin dispatching 9 coding harnesses into isolated Git worktrees with unified session history and rules/skills sync.',
+      zh: 'CLI 与 Codex 插件，将 9 款编程 Harness 调度至独立 Git worktree，支持统一会话检索与全局规则/Skill 同步。'
+    },
+    'index.project.sillage': {
+      en: 'Zero-dependency Python CLI for text-only model fingerprinting and SHA-256 committed blind model-family identification across LLM gateways.',
+      zh: '零第三方依赖的 Python CLI，面向统一大模型网关提供纯文本输出指纹与带 SHA-256 承诺的模型家族盲测识别。'
+    },
+    'index.project.stillpin': {
+      en: 'Native local macOS region capture, irreversible flattened annotation, and floating image pins built with Swift, AppKit, and ScreenCaptureKit.',
+      zh: '基于 Swift、AppKit 与 ScreenCaptureKit 的本地优先原生 macOS 区域截图、不可逆打码标注与悬浮贴图工具。'
+    },
     'index.aboutCard.role': { en: 'AI Infra & Agent Engineer', zh: 'AI Infra 与 Agent 工程师' },
     'index.aboutCard.bio': {
       en: 'Software engineer based in Beijing working on AI infrastructure and Agent platforms. Outside work, I enjoy exploring AI-native workflows and building local-first developer tools and native macOS apps.',
