@@ -1,5 +1,392 @@
 [
   {
+    "id": "aihot-20261125-eastmoney-724-d25fc91c",
+    "title": "Anthropic股价拉升翻红 此前一度跌9.5%",
+    "summary": "Anthropic股价盘中拉升翻红，此前一度下跌9.5%。该快讯仅披露这一盘中价格异动，未提及波动原因或公司基本面变化。",
+    "url": "https://finance.eastmoney.com/a/202611263939927284.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T17:10:30.000Z",
+    "score": 48,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "Anthropic",
+      "美股",
+      "盘中异动",
+      "股价"
+    ],
+    "context": "单日先深跌后翻红、日内波动剧烈，属典型盘中异动外围快讯，仅供关注短线资金动向的读者参考。"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-c39fdd14",
+    "title": "Michael Burry清仓纳指100看跌头寸 拟待英伟达接近200美元时再次做空",
+    "summary": "知名投资人Michael Burry周三清晨在Substack发帖称，随着科技股普遍走弱，他已卖出剩余的纳斯达克100指数看跌期权头寸。他表示拟待英伟达股价接近200美元时再次做空。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-26/doc-inizyqvt9299412.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T17:08:18.000Z",
+    "score": 76,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "Michael Burry",
+      "纳指100",
+      "做空",
+      "美股"
+    ],
+    "context": "科技股近期普遍走弱背景下，这位知名投资人的空头仓位变动与再做空表态受到市场关注。",
+    "contentHtml": "<p><img src=\"https://n.sinaimg.cn/finance/transform/796/w550h246/20261126/03c1-aad2efd27dd701c3874a4776ffea31d0.png\" alt=\"\"><span></span></p><p>　　知名投资者Michael Burry周三清晨在Substack发帖称，随着科技股普遍走弱，他已卖出剩余的<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/.IXIC.html\">纳斯达克</a></span><span></span>100指数看跌期权头寸。</p><p>　　他写道：“从整体来看，我的投资组合目前多头更多、空头更少，是一段时间以来最偏多的状态。”</p><p>　　他补充说，在评估做空机会期间，自己“暂时几乎完全做多”。</p><p>　　Burry表示，他目前持有约25%的现金，正在寻找投资机会。</p><p>　　他仍持有上周五买入的英伟达看涨期权。</p><p>　　“这些期权已经翻倍，我还没有决定下一步怎么处理。我的计划是在市场情绪乐观，英伟达股价接近每股200美元时再次做空。现在还不是时候。”</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：丁文武 </p>",
+    "author": "环球市场播报"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-20761ed9",
+    "title": "夜盘期货收盘：沪铜跌超2%，沪锡跌超6%",
+    "originalTitle": "夜盘期货收盘：沪铜跌超2% 沪锡跌超6%",
+    "summary": "国内商品期货夜盘收盘，沪锡收跌6.47%，国际铜收跌2.53%，沪铜收跌2.24%。沪铝、沪锌、沪铅分别收跌0.62%、1.51%、0.92%，沪镍微涨0.10%，氧化铝收平，不锈钢收涨0.04%。",
+    "url": "https://finance.eastmoney.com/a/202611263939926825.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T17:06:26.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "商品市场",
+      "行情动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "期货",
+      "有色金属",
+      "沪锡",
+      "行情快讯"
+    ],
+    "context": "有色金属夜盘多数收跌，锡价跌幅显著，为当日国内商品期货市场的主要异动。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-469485a8",
+    "title": "EIA：美国上周天然气库存减少240亿立方英尺",
+    "originalTitle": "EIA称美国上周天然气库存减少240亿立方英尺",
+    "summary": "美国能源信息署（EIA）公布，美国上周天然气库存减少240亿立方英尺。",
+    "url": "https://finance.eastmoney.com/a/202611263939926482.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T17:01:05.000Z",
+    "score": 60,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "大宗商品",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "EIA",
+      "天然气",
+      "库存数据",
+      "美国"
+    ],
+    "context": "EIA每周例行发布的库存数据是观察美国天然气供需与期货价格走向的重要参考。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-1e922c75",
+    "title": "SpaceX在FCC授权后跌幅收窄至5%",
+    "summary": "SpaceX股价在获得FCC授权后跌幅收窄至5%，此前跌幅一度更深。",
+    "url": "https://finance.eastmoney.com/a/202611263939926260.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T16:59:53.000Z",
+    "score": 48,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "监管动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "SpaceX",
+      "FCC",
+      "美股",
+      "盘中行情"
+    ],
+    "context": "FCC监管授权与SpaceX盘中股价走势联动，是观察监管事件对市场情绪影响的即时样本。"
+  },
+  {
+    "id": "aihot-20261125-bloomberg-markets-9e6c9582",
+    "title": "萨尔瓦多严打帮派行动终于收获经济回报",
+    "originalTitle": "El Salvador Finally Reaps Economic Gains From Gang Crackdown",
+    "author": "Michael McDonald",
+    "summary": "萨尔瓦多的经济表现终于开始与其安全状况的显著改善相匹配，打击帮派行动的成效正逐步传导至经济层面。这标志着该国治安治理与经济增长长期脱节的局面出现转变。",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-25/el-salvador-finally-reaps-economic-gains-from-gang-crackdown",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-25T16:55:27.000Z",
+    "score": 55,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "萨尔瓦多",
+      "宏观经济",
+      "治安政策",
+      "新兴市场"
+    ],
+    "context": "治安改善与经济回报此前长期脱节是该国面临的困境，两者开始同步对新兴市场观察具有指标意义。",
+    "contentHtml": "<p>El Salvador’s economic fortunes are finally starting to match its dramatic improvement in security.</p>"
+  },
+  {
+    "id": "aihot-20261125-bloomberg-markets-a4a5fe68",
+    "title": "秘鲁赶在年底期限前加紧解决非正规采矿规则之争",
+    "originalTitle": "Peru Races to Resolve Informal Mining Fight by Year-End Deadline",
+    "author": "Carla Samon Ros",
+    "summary": "秘鲁正赶在年底期限前加紧修订监管规则，以规范数万名非正规矿工的采矿活动。政府警告，若未能赶在期限前解决这场争端，这些矿工可能一夜之间被推入非法境地。",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-25/peru-races-to-resolve-informal-mining-fight-by-year-end-deadline",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-25T16:55:18.000Z",
+    "score": 75,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "大宗商品",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "秘鲁",
+      "非正规采矿",
+      "矿业监管",
+      "政策"
+    ],
+    "context": "年底期限迫近，这场监管改革的成败将直接决定数万名非正规矿工能否继续合法采矿。",
+    "contentHtml": "<p>Peru is racing to overhaul rules governing tens of thousands of informal miners before a year-end deadline that the government warns could otherwise push them into illegality overnight.</p>"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-09a457e9",
+    "title": "芬兰量子计算初创公司IQM将在2027年底前向卡塔尔国家人工智能公司QAI交付54量子比特量子计算机",
+    "originalTitle": "芬兰量子计算初创公司IQM表示：将于2027年底前向卡塔尔国家人工智能公司QAI交付54量子比特量子计算机",
+    "summary": "芬兰量子计算初创公司IQM宣布，将于2027年底前向卡塔尔国家人工智能公司QAI交付54量子比特量子计算机。该消息明确了交付方、采购方、量子比特规模与交付时间节点。",
+    "url": "https://finance.eastmoney.com/a/202611263939926133.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T16:54:00.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "前沿科技",
+      "国际动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "IQM",
+      "量子计算",
+      "卡塔尔",
+      "QAI"
+    ],
+    "context": "量子计算商业化订单落地中东，反映国际前沿算力布局动向，值得关注。"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-4737415b",
+    "title": "德银：市场避险情绪再度回归",
+    "summary": "德银指出，市场避险情绪再度回归，投资者在一轮行情过后重新转向谨慎。标普500指数与纳斯达克综合指数周二收盘已现回落，周三交易时段两大指数跌幅进一步扩大。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-26/doc-inizyqvz4073559.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T16:53:20.000Z",
+    "score": 50,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场情绪",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "美股",
+      "德银",
+      "避险情绪",
+      "市场动态"
+    ],
+    "context": "美股主要指数连续走弱叠加机构情绪转谨慎，是观察短期风险偏好与资金流向变化的重要信号。"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-4ae3d164",
+    "title": "道指大跌700点、纳指下挫4%，英伟达带动AI板块再度遭抛售",
+    "summary": "周三美股集体走低，道指大跌700点、纳斯达克综合指数下挫4%，英伟达带动的AI板块再度遭遇抛售。交易员同时在消化最新通胀数据以及美国新一轮关税政策带来的影响，人工智能板块承受进一步下行压力。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-26/doc-inizyqvz4072939.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T16:51:29.000Z",
+    "score": 82,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "美股",
+      "英伟达",
+      "AI板块",
+      "抛售"
+    ],
+    "context": "AI权重股集体回调叠加通胀与关税政策不确定性，是美股风险偏好变化的关键信号。",
+    "contentHtml": "<p><img src=\"https://n.sinaimg.cn/finance/transform/59/w550h309/20261126/e585-3d205984748f60145c487b54e4e32b84.png\" alt=\"\"><span></span></p><p>　　周三美股走低，人工智能板块承受进一步下行压力，交易员同时在消化最新通胀数据以及美国新一轮关税政策带来的影响。</p><p>　　<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/.IXIC.html\">纳斯达克</a></span><span></span>综合指数大跌 4.2%；<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/.DJI.html\">道琼斯</a></span><span></span>工业平均指数下跌 727 点，跌幅 1.5%；标普 500 指数下跌 2.7%。</p><p>　　英伟达与 Anthropic 引领 AI 相关个股走弱，英伟达下跌 6%，Anthropic 下跌 4%。<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/MU.html\">美光</a></span><span></span>科技大跌 10%，<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/ORCL.html\">甲骨文</a></span><span></span>跌幅超 6%，<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/GOOG.html\">谷歌</a></span><span></span>下跌逾 4%；科技行业指数 XLK 跌幅超过 4%。</p><p>　　尽管<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/DELL.html\">戴尔</a></span><span></span>交出亮眼财报，第四季度业绩指引也表现向好，但戴尔股价仍下跌 5%。半导体公司安霸本季度业绩指引不及预期，叠加第三季度盈利与营收双双未达市场预期，其股价暴跌超 22%。</p><p>　　阿普图斯资本顾问公司股票业务主管戴维・瓦格纳表示：“市场存在一大隐忧：如果市场开始充分定价美联储将大幅加息，那么 AI 领域的恐慌会从单纯的情绪层面，演变为对经济增长前景的担忧。”</p><p>　　10 月个人消费支出（PCE）通胀报告显示，通胀尚未出现降温迹象。该数据强化了市场对美联储 12 月、1 月继续加息的预期，令投资者转向避险交易。</p><p>　　10 月整体 PCE 环比上涨 0.3%，年化通胀率达到 3.8%。两项数据虽符合市场预期，但年化通胀率较 9 月的 3.7% 有所抬升。剔除食品与能源后的核心 PCE 同比上涨 3.3%，略高于道琼斯的预测值。</p><p>　　白宫宣布对包括中国、欧盟在内的十余个主要贸易伙伴加征关税，也进一步打压了投资者情绪。</p><p>　　此前一个交易日，受英伟达下挫、Anthropic 股价跌破发行价拖累，科技股回吐部分前一日涨幅，标普 500 与纳斯达克指数已经经历一轮回调。</p><p>　　整个 11 月市场持续震荡，周二行情起伏不定只是缩影。即便在英伟达黄仁勋经历离职又复职事件、民主党中期选举大获全胜之前，在宏观经济前景不断恶化的大背景下，投资者就已经在掂量人工智能产业扩张的未来走向。</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
+    "author": "环球市场播报"
+  },
+  {
+    "id": "aihot-20261125-ars-technica-ai-f978fe7f",
+    "title": "Ars Live 回顾：战时军方对数据中心的攻击难以停止",
+    "originalTitle": "Ars Live recap: Don’t expect military attacks on data centers to stop",
+    "author": "Jeremy Hsu",
+    "summary": "Ars Technica 的 Ars Live 讨论回顾指出，战时军方有许多理由打击数据中心和云基础设施，因此不应期待此类攻击停止。数据中心和云作为打击目标的风险将持续存在。",
+    "url": "https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/",
+    "source": "Ars Technica · AI",
+    "publishedAt": "2026-11-25T16:47:14.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "AI",
+    "topics": [
+      "行业动态",
+      "安全",
+      "研究",
+      "基础设施"
+    ],
+    "region": [
+      "AI精选",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "数据中心",
+      "军事打击",
+      "云安全",
+      "地缘政治"
+    ],
+    "context": "数据中心日益成为核心基础设施，其战时遭打击的风险正引发行业关注与讨论。",
+    "contentHtml": "<div class=\"ars-video ars-video--horizontal\"><div><div class=\"relative\" allow=\"fullscreen\" loading=\"lazy\" src=\"https://www.youtube.com/embed/xhciziTZdAQ?start=0&wmode=transparent\"></div><div class=\"caption font-impact dusk:text-gray-300 mb-4 mt-2 inline-flex flex-row items-stretch gap-1 text-base leading-tight text-gray-400 dark:text-gray-300\">\n    <div class=\"caption-icon bg-[left_top_5px] w-[10px] shrink-0\"></div>\n    <div class=\"caption-content\">\n      Drone attacks on data centers.\n\n          </div>\n  </div>\n</div></div>\n<p>Amazon data centers came under military attack for the first time ever in the Middle East this year, and Russia and Ukraine exchanged an unprecedented flurry of drone strikes on each other’s data centers. To examine what such attacks on data centers mean for the future of cloud services that all modern societies depend upon, Ars <a href=\"https://www.youtube.com/live/xhciziTZdAQ\">hosted a live discussion.</a></p>\n<p>In a conversation with Ars Technica Tech Reporter Jeremy Hsu, <a href=\"https://www.rusi.org/people/jarnecki\">Joseph Jarnecki</a> at the Royal United Services Institute first talked about why public cloud data centers have increasingly become military targets during the 2026 Iran war and the ongoing full-scale Russian invasion of Ukraine:</p>\n<blockquote><p>We see an increasing acknowledgement and fact of dual use in particularly the public cloud, but also just across the board in private cloud data centers as well. The dual use that I refer to is the utilization of compute functions within these data centers—within cloud services—by militaries, for example, to run battlefield management systems, to do their HR, to do their resource management. Once a military uses a piece of civilian infrastructure, at least under international law or in terms of the principles of targeting that are taken forward by militaries, it can sometimes become a military object and is therefore of interest to an adversary, and there's an incentive to target it.</p></blockquote>\n<p>Jarnecki also highlighted the fact that relatively cheap <a href=\"https://arstechnica.com/gadgets/2026/09/iran-strikes-on-amazon-data-centers-caused-permanent-loss-of-customer-data/\">kamikaze drones can inflict disproportionate economic costs</a> and create widespread cloud disruptions when striking data centers:</p><p><a href=\"https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/\">Read full article</a></p>\n<p><a href=\"https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/#comments\">Comments</a></p>"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-7901232b",
+    "title": "美国联邦通信委员会授权SpaceX为数据中心部署100万颗卫星",
+    "summary": "美国联邦通信委员会（FCC）授权SpaceX为数据中心部署100万颗卫星。该授权来自美国核心通信监管机构，部署规模达百万颗量级。",
+    "url": "https://finance.eastmoney.com/a/202611263939924956.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T16:46:54.000Z",
+    "score": 88,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "政策监管",
+      "科技产业",
+      "商业航天",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "SpaceX",
+      "美国FCC",
+      "卫星",
+      "数据中心"
+    ],
+    "context": "百万颗量级的卫星部署授权规模罕见，该监管动向对商业航天与数据中心布局具有标志意义。",
+    "contentHtml": "<p>美国联邦通信委员会授权SpaceX为数据中心部署100万颗卫星</p><p>2026年11月26日 00:46</p><p>\n                                    来源：\n财联社                                </p><p><span>小</span>\n                                <span>中</span>\n                                <span>大</span>\n                            </p><p>东方财富APP</p><p>方便，快捷  </p><p>手机查看财经快讯</p><p>专业，丰富</p><p>一手掌握市场脉搏</p><p><a href=\"http://quote.eastmoney.com/unify/r/105.SPCX\"><img src=\"https://webquoteklinepic.eastmoney.com/GetPic.aspx?nid=105.SPCX&amp;imageType=k&amp;token=28dfeb41d35cc81d84b4664d7c23c49f&amp;at=1\" alt=\"K图 SPCX_0\" width=\"578\" height=\"276\"></a></p><p>　　美国联邦<span><a href=\"http://quote.eastmoney.com/unify/r/90.BK1215\">通信</a></span><span></span>委员会授权<span><a href=\"http://quote.eastmoney.com/unify/r/105.SPCX\">SpaceX</a></span><span></span>为<span><a href=\"http://quote.eastmoney.com/unify/r/90.BK0922\">数据中心</a></span><span></span>部署100万颗卫星。 </p><p>（文章来源：财联社）</p><p><span>文章来源：财联社</span>\n                                        <span>责任编辑：161</span>\n                            </p><p>原标题：美国联邦通信委员会授权SpaceX为数据中心部署100万颗卫星。</p><p><strong>郑重声明：</strong>东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。\n                                    </p><p><a href=\"https://help.eastmoney.com/report_center.html?reportType=3&amp;title=%e7%be%8e%e5%9b%bd%e8%81%94%e9%82%a6%e9%80%9a%e4%bf%a1%e5%a7%94%e5%91%98%e4%bc%9a%e6%8e%88%e6%9d%83SpaceX%e4%b8%ba%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83%e9%83%a8%e7%bd%b2100%e4%b8%87%e9%a2%97%e5%8d%ab%e6%98%9f&amp;systype=3&amp;id=202611263939924956\">举报</a>\n                            </p><p><span></span>\n                                            <img src=\"https://g1.dfcfw.com/g4/202106/20210618093603.png\" alt=\"\"></p><p>扫描二维码关注</p><p>东方财富官网微信</p>"
+  },
+  {
     "id": "aihot-20261125-the-verge-ai-546c251d",
     "title": "Nothing 展示 AI 耳机 Ear Note 及录音充电盒完整外观",
     "originalTitle": "Nothing offers a full look at its AI earbuds and charging case",
@@ -4431,390 +4818,5 @@
       "美股"
     ],
     "context": "美国总统公开回应英伟达CEO黄仁勋的任职与国家安全评估问题，官方结论对市场预期具有重要参考意义。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-c1e68955",
-    "title": "美国11月标普全球综合PMI初值54.6，前值55.9",
-    "originalTitle": "美国11月标普全球综合PMI初值54.6 前值55.9",
-    "summary": "美国11月标普全球综合PMI初值公布为54.6，低于前值55.9，读数环比回落。本次为初值（初估值）数据，暂无更多分项或分析内容。",
-    "url": "https://finance.eastmoney.com/a/202611233937644844.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T14:45:23.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "海外市场",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "美国经济",
-      "PMI",
-      "宏观数据"
-    ],
-    "context": "标普全球综合PMI是跟踪美国经济景气度的高频先行指标，初值回落对判断经济动能边际变化有参考意义。"
-  },
-  {
-    "id": "aihot-20261123-the-decoder-65ef0be3",
-    "title": "中国军方研究人员担心 AI 让美国得以定位并摧毁其核导弹",
-    "originalTitle": "Chinese military fears AI could let the US find and destroy its nuclear missiles",
-    "author": "Maximilian Schreiner",
-    "summary": "中国军方研究人员担心，AI 技术的进步可能打破现有核力量平衡，让美国获得核博弈中的优势。其核心忧虑在于，AI 或将帮助美国定位并摧毁其核导弹，从而削弱己方的核威慑能力。",
-    "url": "https://the-decoder.com/chinese-military-fears-ai-could-let-the-us-find-and-destroy-its-nuclear-missiles/",
-    "source": "The Decoder",
-    "publishedAt": "2026-11-23T14:43:23.000Z",
-    "score": 70,
-    "tier": "T2",
-    "selected": false,
-    "industry": "AI",
-    "topics": [
-      "AI与地缘政治",
-      "AI安全",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "region": [
-      "AI精选",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "AI军事应用",
-      "核威慑",
-      "中美博弈",
-      "战略安全"
-    ],
-    "context": "AI 对战略稳定与核威慑的潜在冲击正成为大国军事博弈中的新变量，值得持续关注。",
-    "contentHtml": "<p><img width=\"1392\" height=\"768\" src=\"https://the-decoder.com/wp-content/uploads/2026/03/AI-Fake-Carrier-Iran-small.png\" class=\"attachment-full size-full wp-post-image\" alt=\"\" decoding=\"async\" /></p>\n<p>        Chinese military researchers fear that AI advances could give the US an edge in the nuclear balance of power.</p>\n<p>The article <a href=\"https://the-decoder.com/chinese-military-fears-ai-could-let-the-us-find-and-destroy-its-nuclear-missiles/\">Chinese military fears AI could let the US find and destroy its nuclear missiles</a> appeared first on <a href=\"https://the-decoder.com\">The Decoder</a>.</p>"
-  },
-  {
-    "id": "aihot-20261123-techcrunch-ai-0527ded0",
-    "title": "Sierra 完成 17.5 亿美元 F 轮融资，估值半年翻倍至 300 亿美元",
-    "originalTitle": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
-    "author": "Ivan Mehta",
-    "summary": "由前 Salesforce 联合 CEO Bret Taylor 联合创办的企业级客户体验公司 Sierra 周一宣布完成 17.5 亿美元 F 轮融资，估值在半年内翻倍至 300 亿美元。融资之际，市场对 AI 在客户体验领域应用的需求正快速升温。",
-    "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
-    "source": "TechCrunch · AI",
-    "publishedAt": "2026-11-23T14:43:03.000Z",
-    "score": 85,
-    "tier": "T2",
-    "selected": true,
-    "industry": "AI",
-    "topics": [
-      "市场动态",
-      "融资",
-      "模型发布",
-      "基础设施"
-    ],
-    "region": [
-      "AI精选",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "Sierra",
-      "融资",
-      "企业级AI",
-      "客户体验"
-    ],
-    "context": "半年估值翻倍是 AI 应用层标志性融资事件，凸显企业级 AI 客服赛道的资本热度。",
-    "contentHtml": "<p>Enterprise customer experience company Sierra, co-founded by former Salesforce co-CEO Bret Taylor, said on Monday that it has raised $1.75 billion in a Series F round that doubles the company’s valuation to $30 billion. The new raise comes within six months of its previous round, which <a href=\"https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/\">valued the company at $15 billion</a>.</p><p>The new round was led by Greenoaks and Lightspeed Venture Partners, with participation from existing investors who have led previous rounds, including Benchmark, Sequoia, Greenoaks, GV, and Tiger Global.</p><p>Enterprise automation is among the few areas where AI has seen rapid adoption. Sierra said that it currently serves almost 50% of Fortune 50 companies, and its clients include BNY, HSBC, Singtel, Wells Fargo, JPMorganChase, Pearson, Next, and Cox Automotive. The company late last month said its outcome-based pricing model has helped it double its run-rate revenue to <a href=\"https://sierra.ai/blog/our-customers-ambition-is-accelerating-our-growth\">$400 million within five months</a>.</p><p>That said, Sierra is working along similar lines as other customer experience players in the market, which is <a href=\"https://techcrunch.com/2026/04/09/sierras-bret-taylor-says-the-era-of-clicking-buttons-is-over/\">creating a platform to build agents and partner</a> with model developers to provide choices to enterprises. As personal and work agents interact with enterprise systems, Sierra is also working on <a href=\"https://sierra.ai/blog/poppy\">creating protocol definitions</a> for agents with companies like Meta, Stripe, and Walmart.</p><p>Sierra will use the fresh cash build to its technology stack to layer agents for servicing, and hire more sales folks to sign and maintain enterprise contracts faster than its rivals.</p><p>Startups operating in the CX space have seen multi-million-dollar rounds come their way with soaring valuations. Voice AI company ElevenLabs is now valued at $22 billion; <a href=\"https://techcrunch.com/2026/03/04/decagon-completes-first-tender-offer-at-4-5b-valuation/\">Decagon is valued at $4.5 billion</a>; <a href=\"https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/\">Wonderful is valued at $5 billion</a>; and <a href=\"https://techcrunch.com/2026/01/15/parloa-triples-its-valuation-in-8-months-to-3b-with-350m-raise/\">Parloa is valued at $3 billion</a>. Multiple other startups have scored investments of more than $100 million.</p><p>During the HumanX conference in Amsterdam in September, Sierra co-founder Clay Bavor argued that despite the popular belief that AI-powered CX companies are replacing humans in contact centers, a majority of its customers are reassigning roles to existing employees.</p><p><em>When you purchase through links in our articles, <a href=\"https://techcrunch.com/techcrunch-affiliate-monetization-standards/\">we may earn a small commission</a>. This doesn’t affect our editorial independence.</em></p><p>Ivan covers global consumer tech developments at TechCrunch. He is based out of India and has previously worked at publications including Huffington Post and The Next Web.</p><p>You can contact or verify outreach from Ivan by emailing <a href=\"https://techcrunch.com/cdn-cgi/l/email-protection#026b6f426b74636c6f676a76632c616d6f\"><span>[email&nbsp;protected]</span></a> or via encrypted message at ivan.42 on Signal.</p><p>\n\t<a href=\"https://techcrunch.com/author/ivan-mehta/\">View Bio </a>\n</p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-e3ae9c54",
-    "title": "英伟达涨幅收窄至25%，此前一度上涨33%",
-    "originalTitle": "英伟达涨幅收窄至25% 此前一度上涨33%",
-    "summary": "英伟达股价涨幅收窄至25%，此前一度上涨33%。盘中涨势自高位回落，但仍维持在25%的高涨幅水平。",
-    "url": "https://finance.eastmoney.com/a/202611233937641971.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T14:42:58.000Z",
-    "score": 55,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "英伟达",
-      "美股",
-      "股价波动",
-      "快讯"
-    ],
-    "context": "作为权重科技股，英伟达单日超25%的涨幅波动对科技板块情绪具有风向标意义。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-4f84f7ce",
-    "title": "美股三大指数涨幅较盘初有所回落",
-    "summary": "美股三大指数涨幅较盘初有所回落，截至目前道琼斯指数涨2.02%，标普500指数涨3.83%，纳斯达克综合指数涨5.63%。三大指数虽涨幅收窄，但盘中仍全线维持上涨。",
-    "url": "https://finance.eastmoney.com/a/202611233937641169.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T14:40:14.000Z",
-    "score": 58,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "美股",
-      "三大指数",
-      "行情快讯"
-    ],
-    "context": "美股当日冲高后涨幅收窄、波动加大，作为全球风险资产风向标，其盘面变化值得关注。"
-  },
-  {
-    "id": "aihot-20261123-wscn-global-8f848be1",
-    "title": "美股科技大反攻！黄仁勋回归，英伟达涨超30%，纳斯达克100涨7%，布油失守90美元",
-    "author": "鲍奕龙",
-    "summary": "美股科技股迎来大反攻，黄仁勋回归，英伟达涨超30%，纳斯达克100指数上涨7%。布伦特原油同期失守90美元关口。",
-    "url": "https://wallstreetcn.com/articles/3786472",
-    "source": "华尔街见闻 · 全球",
-    "publishedAt": "2026-11-23T14:40:02.000Z",
-    "score": 82,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "宏观",
-      "市场政策"
-    ],
-    "region": [
-      "金融与政策",
-      "财经"
-    ],
-    "tags": [
-      "财经",
-      "宏观",
-      "美股",
-      "英伟达",
-      "纳斯达克100",
-      "原油"
-    ],
-    "context": "英伟达单日涨超30%、纳指100大涨与油价回落同步出现，是当日全球市场最受关注的变化。"
-  },
-  {
-    "id": "aihot-20261123-wscn-ashare-16eb448c",
-    "title": "富时A50夜期一度涨约1.5%，日月光半导体、世纪互联至少涨约25%",
-    "summary": "富时A50夜期涨幅一度达到约1.5%，纳斯达克金龙中国指数一度涨超2.7%、逼近5155点，中概股普遍走高。热门中概股中，日月光半导体一度涨约25%，世纪互联涨约29%，小鹏涨约10%，百度、阿里巴巴涨约8%，万国数据涨约19%；新东方跌约1.6%，网易有道跌超10%。",
-    "url": "https://wallstreetcn.com/livenews/3204365",
-    "source": "华尔街见闻 · A股",
-    "publishedAt": "2026-11-23T14:39:42.000Z",
-    "score": 65,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "A股",
-      "市场政策"
-    ],
-    "region": [
-      "金融与政策",
-      "财经"
-    ],
-    "tags": [
-      "财经",
-      "A股",
-      "中概股",
-      "富时A50",
-      "美股"
-    ],
-    "context": "美股时段中概股与富时A50夜期同步走强，普涨行情下仍有网易有道等逆势大跌，分化明显。",
-    "contentHtml": "<p>富时A50夜期涨幅一度达到1.5%左右。</p>\n\n<p>纳斯达克金龙中国指数一度涨超2.7%，逼近5155点。热门中概股里，日月光半导体一度涨约25%，小鹏涨约10%，百度涨约8%，阿里巴巴涨约8%，世纪互联涨约29%，万国数据涨约19%，蔚来、理想、网易、京东、拼多多目前至多涨超4%，新东方跌约1.6%，网易有道跌超10%。</p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-5f0fe25d",
-    "title": "费城半导体指数盘初大涨超14%",
-    "summary": "费城半导体指数盘初大涨超14%，其中英伟达涨超30%，台积电涨超20%。ARM涨超18%，美光科技涨超15%，英特尔涨超13%，AMD、高通均涨超8%，半导体龙头全线上扬。",
-    "url": "https://finance.eastmoney.com/a/202611233937635817.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T14:36:56.000Z",
-    "score": 82,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "美股",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "美股",
-      "半导体",
-      "英伟达",
-      "市场行情"
-    ],
-    "context": "费城半导体指数单日盘初涨超14%属极端行情，成分股集体暴涨显示市场情绪剧烈波动，值得密切关注。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-7567b04c",
-    "title": "监管部门向券商下发两融新政通知：落实融资融券逆周期调节措施",
-    "originalTitle": "事关两融新政！监管部门向券商下发通知",
-    "summary": "11月23日，监管部门向券商下发《关于落实融资融券逆周期调节措施、提升风险管控有效性有关工作的通知》。该通知围绕落实两融逆周期调节措施、提升风险管控有效性提出要求，属两融领域新政。",
-    "url": "https://finance.sina.com.cn/china/2026-11-23/doc-iniztwiw8165261.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T14:35:36.000Z",
-    "score": 90,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "市场政策",
-      "A股",
-      "监管动态",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "两融",
-      "融资融券",
-      "监管新规",
-      "券商"
-    ],
-    "context": "两融直接关系市场杠杆资金与风险偏好，监管层此时下发通知对券商业务和资金面影响重大。",
-    "contentHtml": "<p>　　<span>来源：国际金融报</span></p><p>　　11月23日，记者获悉，监管部门向券商下发《关于落实融资融券逆周期调节措施、提升风险管控有效性有关工作的通知》（下称《通知》）。</p><p>　　为稳定资本市场、提振投资者信心，促进融资融券业务功能发挥，沪深京交易所于11月22日发布通知，明确融资保证金比例调整、客户交易行为规范等逆周期调节安排，相关措施自11月30日起正式实施。为确保相关工作平稳有序开展，引导投资者理性投资，切实有效防范风险，监管同步发布上述《通知》。</p><p>　　《通知》要求券商有效部署，确保政策稳妥实施。</p><p>　　一是做好保证金比例评估和调整。各公司要基于证券交易所公布的标准范围，结合公司内部相关风险管理政策，对保证金比例等实施动态管理与差异化控制。涉及修订或更新融资融券合同、签署补充协议的，应依规履行相关程序，并采取适当方式通知投资者，切实保障投资者合法权益。</p><p>　　二是及时完成系统调整。各证券公司要加强保障力度，及时完成系统参数调整，并根据证券交易所安排，完成系统测试验证，确保交易结算系统安全稳定。如确因无法克服的原因难以及时调整参数的，应做好应急预案，向投资者做好解释说明，不得因技术原因造成投资者投诉或纠纷。</p><p>　　三是做好政策解读和风险揭示。各证券公司要积极做好内部培训和投资者服务工作，确保分支机构和营业部员工、客户服务人员等正确理解政策内容，并向投资者做好解读。本次保证金比例调整同时适用于新开仓合约及存量合约，投资者不必了结存量合约即可适用新的指标，证券公司要将相关安排有效传达至投资者，避免因政策理解偏差引发不必要的调仓交易。此外，各证券公司要引导投资者秉持理性投资理念，根据自身风险承受能力，合理运用融资融券工具。</p><p>　　《通知》还强调要统筹风险，优化风险控制安排。各证券公司要持续保持对市场风险的警惕性和风险管理的审慎性，结合市场情况和公司实际，审慎确定风险容忍度和风险限额等风险管理指标，控制顺周期风险暴露，确保整体风险可测、可控、可承受。细化客户授信管理，加强对大额授信客户授信额度控制；优化标的和担保分类管理体系，持续完善担保证券可充抵保证金折算率动态调整机制，评估优化单一客户融资融券业务规模占比、单只担保股票市值占比、单一信用账户持仓集中度等风险控制指标，关注是否存在过度集中的结构性风险，提升业务管控有效性。</p><p>　　在市场波动期间，在与客户充分沟通、取得确认的情况下，可动态调整最低维持担保比例及追保平仓安排，以时间换空间，保持适度弹性。违约处置要稳妥审慎，注意处置金额、时点、节奏，避免早盘尾市等时点集中卖出，冲击市场和个股，自觉维护市场稳定。</p><p>　　《通知》也强调，压实责任，做好客户交易行为管理。各证券公司要认真落实证券交易所关于加强投资者融资融券交易行为管理的要求，对存在异常交易行为的投资者采取差异化的管控措施，从严适用保证金比例、可充抵保证金证券折算率等风险控制指标，审慎控制其授信规模及交易费率。对频繁发生异常交易行为的投资者，以及存在严重影响正常交易秩序的异常交易行为或者涉嫌违法违规交易行为的投资者，依法采取必要限制性措施。</p><p>　　黑崎资本首席战略官陈兴文对《国际金融报》记者分析，这份《通知》是配套约束券商执行环节的细化规则。一方面，保证金比例下调直接降低杠杆准入门槛，有望带动两融规模扩张，增厚券商利息收入；另一方面，配套规则明确动态管控、差异化授信、存量合约平稳衔接，保障政策红利顺畅传导。与此同时，对异常交易的管控力度同步加码，说明本次逆周期调节是带风控约束的杠杆优化，并非无底线放宽。</p><p>　　券商该如何在业务扩容与风控合规之间把握分寸？</p><p>　　“机会不在于两融余额的短期起落，而在于经营范式升级带来的估值重塑。”陈兴文进一步表示，第一，两融是券商资本中介业务的主战场，保证金比例下调意味着业务空间的直接扩容，头部券商凭借资金成本与渠道优势，最先受益。</p><p>　　第二，监管同步要求严控单一客户集中度、审慎把握追保平仓节奏、避免集中卖出冲击市场，抬高了粗放式经营的门槛，倒逼券商在业务扩张与风控合规之间寻求更高水平的平衡。</p><p>　　第三，风控能力、系统稳定性、研究服务实力构成的综合管理能力将成为券商的核心护城河，在新一轮行业分化中重新定价。</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：杨红卜 </p>",
-    "author": "市场资讯"
-  },
-  {
-    "id": "aihot-20261123-wscn-global-5d5fe795",
-    "title": "黄仁勋重掌英伟达帅印：董事会恢复其CEO职务，股价暴涨27%",
-    "originalTitle": "黄仁勋重掌英伟达帅印！董事会恢复其CEO职务，股价暴涨27%",
-    "author": "李佳",
-    "summary": "英伟达董事会已恢复黄仁勋的CEO职务，公司股价应声大涨27%。黄仁勋重掌英伟达帅印，市场对这一管理层变动反应强烈。",
-    "url": "https://wallstreetcn.com/articles/3786536",
-    "source": "华尔街见闻 · 全球",
-    "publishedAt": "2026-11-23T14:34:27.000Z",
-    "score": 92,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "公司动态",
-      "AI产业链",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "财经"
-    ],
-    "tags": [
-      "财经",
-      "宏观",
-      "英伟达",
-      "黄仁勋",
-      "美股",
-      "CEO变动"
-    ],
-    "context": "英伟达是全球AI浪潮核心公司，最高管理层变动叠加罕见股价涨幅，对全球市场影响重大。"
-  },
-  {
-    "id": "aihot-20261123-the-decoder-f6c2ed8c",
-    "title": "英伟达尝试没有黄仁勋的日子，仅维持约两周",
-    "originalTitle": "Nvidia tried life without Jensen Huang and it lasted about two weeks",
-    "author": "Maximilian Schreiner",
-    "summary": "英伟达董事会已重新任命黄仁勋为总裁、CEO 兼董事会成员，立即生效。此前英伟达'没有黄仁勋'的日子只持续了约两周。",
-    "url": "https://the-decoder.com/nvidia-tried-life-without-jensen-huang-and-it-lasted-about-two-weeks/",
-    "source": "The Decoder",
-    "publishedAt": "2026-11-23T14:24:47.000Z",
-    "score": 84,
-    "tier": "T2",
-    "selected": true,
-    "industry": "AI",
-    "topics": [
-      "行业动态",
-      "公司动态",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "region": [
-      "AI精选",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "英伟达",
-      "黄仁勋",
-      "Nvidia",
-      "管理层变动"
-    ],
-    "context": "英伟达是全球 AI 芯片龙头，黄仁勋的去留与回归是近期行业高度关注的重大治理事件。",
-    "contentHtml": "<p><strong>Nvidia's board of directors has reinstated Jensen Huang as president, CEO, and board member, effective immediately.</strong> The decision was unanimous, Nvidia said in a press release, following talks with Huang and feedback from senior US government officials who concluded that his return poses no national security risk.</p><p>CFO Colette Kress had been <a href=\"https://the-decoder.com/jensen-huang-resigns-as-nvidia-ceo-after-espionage-scandal-wipes-out-1-4-trillion-in-market-value/\">running the company on an interim basis</a>, and the stock had tanked during that period. President <a href=\"https://truthsocial.com/@realDonaldTrump\">Donald J. Trump</a> praised the decision on Truth Social, saying the US Attorney General found no evidence of wrongdoing by Huang. The move comes after reports that <a href=\"https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year/\">Huang had been targeted by foreign intelligence operations</a>. An independent board committee is still investigating the matter with outside counsel.</p><p>The US government is also reviewing Nvidia's business dealings. Trump urged the company to keep looking into whether its export control compliance holds up. Nvidia has already <a href=\"https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee\">set up a dedicated oversight committee</a> for that purpose and is searching for a Chief Compliance Officer. Huang and the company said they'll continue cooperating with authorities and internal investigators. Nvidia's stock jumped more than 30 percent on the news.</p>",
-    "contentHtmlZh": "<p>{\"t\": [\"</p><p><strong>英伟达董事会已恢复黄仁勋（Jensen Huang）的总裁、首席执行官及董事会成员职务，即时生效。</strong>英伟达在一份新闻稿中表示，该决定为全票通过；此前公司曾与黄仁勋进行会谈，并听取了美国政府高级官员的反馈，这些官员认为他的回归不构成国家安全风险。</p><p>\", \"</p><p>首席财务官 Colette Kress 此前<a href=\"https://the-decoder.com/%22https://the-decoder.com/jensen-huang-resigns-as-nvidia-ceo-after-espionage-scandal-wipes-out-1-4-trillion-in-market-value//%22\">一直在临时执掌公司</a>，而在此期间股价大幅下挫。总统 <a href=\"https://the-decoder.com/%22https://truthsocial.com/@realDonaldTrump/%22\">Donald J. Trump</a> 在 Truth Social 上称赞了这一决定，称美国司法部长未发现黄仁勋存在不当行为的证据。此举是在有报道称<a href=\"https://the-decoder.com/%22https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year//%22\">黄仁勋曾成为境外情报行动的目标</a>之后作出的。董事会的一个独立委员会仍在外部律师的协助下调查此事。</p><p>\", \"</p><p>美国政府还在审查英伟达的业务往来。特朗普敦促公司继续调查其出口管制合规情况是否经得起检验。为此，英伟达已<a href=\"https://the-decoder.com/%22https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee/%22\">设立专门的监督委员会</a>，并正在物色首席合规官。黄仁勋和公司表示，将继续配合政府机构及内部调查人员。受此消息影响，英伟达股价上涨超过 30%。</p><p>\"]}</p>"
-  },
-  {
-    "id": "aihot-20261123-import-ai-51349aa6",
-    "title": "Import AI 第482期：华为内核基准测试、空中无人机检测与国家实验室AI科学基准",
-    "originalTitle": "Import AI 482: Huawei kernel benchmarks; airborne drone detection; and a national lab's AI science benchmark",
-    "author": "Jack Clark",
-    "summary": "Import AI 第482期围绕三大主题展开：华为内核基准测试、空中无人机检测以及一座国家实验室的AI科学基准。本期随笔部分探讨'科学方法是否可能是涌现的'这一问题。",
-    "url": "https://importai.substack.com/p/import-ai-482-huawei-kernel-benchmarks",
-    "source": "Import AI",
-    "publishedAt": "2026-11-23T14:11:17.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "AI",
-    "topics": [
-      "行业动态",
-      "研究",
-      "模型发布"
-    ],
-    "region": [
-      "AI精选",
-      "个人"
-    ],
-    "tags": [
-      "个人",
-      "周刊",
-      "Import AI",
-      "华为",
-      "基准测试",
-      "行业周报"
-    ],
-    "context": "该周刊一期覆盖硬件基准、安全探测与AI科研评测等多个方向，适合快速浏览行业多领域动态。",
-    "contentHtml": "<p>Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. </p><p class=\"button-wrapper\" data-attrs=\"{\"url\":\"https://importai.substack.com/subscribe?\",\"text\":\"Subscribe now\",\"action\":null,\"class\":null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://importai.substack.com/subscribe?\"><span>Subscribe now</span></a></p><p><strong>Chinese researchers optimize Huawei chips with a kernel improvement benchmark:<br></strong><em>…AscendGYM will help China do its own form of RSI…<br></em>Researchers with the Shenzhen Loop Area Institute, a Chinese research organization, have built and released AscendGYM, “a kernel optimization benchmark for Ascend NPUs”. The purpose of AscendGYM is to make it easier to use AI to develop custom kernels for Ascend chips from Huawei - especially important given the export controls that prevent Chinese organizations from acquiring frontier Western semiconductors and forcing them onto Huawei.<br><br><strong>What AscendGYM does and contains:</strong> The goal is for AscendGYM to be the best way to evaluate the efficacy of AI-designed kernels as well as design new ones. The software is meant to help researchers answer this question: “Given a correct kernel implementation, can the specific agent further improve its performance for a target workload within an acceptable budget while preserving correctness?,” they write.<br>   “AscendGYM evaluates performance across multiple deployment cases, the best achievable performance for specific shapes and scenarios, and the optimization cost required to obtain these gains. Together, these dimensions characterize cross-case applicability, shape specialization, and optimization efficiency.”<br>    The software includes the AscendForge evaluation environment, which provides unified interfaces for “compilation, correctness checking, performance measurement, and feedback”.<br><br><strong>How well can AI models optimize Ascend chips?</strong> In tests, the single best model is Opus 5, followed by GPT-5.6, followed by GLM-5.3. They test out models in Claude Code, Codex, and OpenCode; Claude Code yields the best absolute scores, and GLM does well in it, while GPT does well in Codex. Opus 5 is more token hungry and GPT-5.6 more token efficient.<br><br><strong>Why this matters - ingredients for Chinese RSI:</strong> For AI systems to be able to build themselves, they need to be able to develop and improve the software that is used for their own training and inference. Software like AscendGYM will be an essential ingredient for allowing China to rapidly improve the efficiency of its own compute substrates. The software will also have a bearing on export controls, where it provides a route to improve the performance of Chinese chips and close the gap with Western alternatives.<br><strong>   Read more:</strong> <a href=\"https://arxiv.org/abs/2611.17621\">AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs (arXiv)</a>.<br>   <strong>Get AscendGYM here</strong>: <a href=\"https://github.com/SLAI-AITP/AscendGYM\">AscendGYM (GitHub)</a>.<br><br>***<br><br><strong>Lawrence Livermore scientists test out if AI scientists can communicate uncertainty about experimental results:<br></strong><em>…Can AI systems be appropriately conservative?...<br></em>“An agent that reports a confident wrong number is worse than one that reports honest uncertainty, because nobody downstream can tell the difference,” write researchers from Lawrence Livermore National Laboratory in a new paper that tests out how reliably AI systems can give accurate score ranges even when dealing with uncertainty.<br><br><strong>Testing for uncertainty:</strong> The paper introduces SciResearch-Eval, “an interactive benchmark of scientific judgment built on a standard laboratory problem: measuring a material’s thermal properties by heating it and fitting a heat-conduction simulator”. The novel part of this eval is that “an agent designs its own experiments, uses a supplied simulator that may be under-resolved or physically wrong, and reports each property with a 95% interval. To our knowledge it is the first benchmark to combine agent-designed experiments, a deliberately flawed simulator, and proper scoring of calibrated intervals against exact ground truth”.<br><br><strong>What they studied:</strong> They give AI agents a common materials science task - measuring a material’s thermal properties by heating a sample and fitting a heat-conduction model to its temperature response.<br>  “An agent receives a sample of unknown material, a simulator of heat conduction through it, one heating experiment, and budgets: four more experiments it designs, compute for simulations and fits, and a cap on actions. It must report the sample’s conductivity, heat capacity and rear heat-transfer coefficient with 95% intervals, and predict a measurement it may not run,” they write. “Hidden from the agent, the simulator may be under-resolved, physically wrong (the real sample has temperature-dependent conductivity, a glued joint, front-face radiation, or heat loss through its sides), or adequate but fed uninformative data”.<br><br><strong>Results - only the most powerful frontier models can do this</strong>: “When the simulator is missing real physics, only GPT-6 Astra and Claude Fable 5.2 are reliable at default settings; the Claude 5.5 models recover only at their highest reasoning setting, and older and open-weight models not at all.”<br>   These models are able to do well by automatically trying to measure where the simulator is accurate and where it is less accurate then bases their estimates on that, making them more resilient to the different ways the simulator gets broken in experiments.<br><br><strong>Why this matters - real scientists are careful, and so are powerful models:</strong> Papers like this are further indications that we’re entering an era of AI-driven science. Though many of today’s models can assist in scientific experiments, as this paper shows only a couple of the powerful models at the frontier are able to operate with such appropriate autonomous skepticism and inherent attendance to the scientific method that they can deal with unanticipated breaks in their equipment. This is both an indication of the science advancement to come and a sign of how the most powerful models are exhibiting more and more of an ability to generalize and make themselves robust to perturbations in their environment.<br><strong>   Read more:</strong> <a href=\"https://arxiv.org/abs/2611.21541\">SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents (arXiv)</a>.<br><strong>   Check out the <a href=\"https://btwestyo.github.io/sciresearch-eval/\">leaderboard</a></strong><a href=\"https://btwestyo.github.io/sciresearch-eval/\"> here (official site)</a>.<br><br>***<br><br><strong>Stanford professors launch AI startup that wants to create a world where thousands of models define the frontier:<br></strong><em>…Noeri sees two well-regarded AI researchers enter the neolab game…<br></em>Stanford profs Yejin Choi and Carlos Guestrin have launched Noeri, “a neolab to push the frontier of plural intelligence”. They have raised $110m and are relatively light on technical details, but their main vision is that they want to create a world where the frontier is defined by powerful models which rely on the proprietary data of distinct organizations. “Rather than one monolithic source of truth, we can nurture many small, specialized intelligences, each tuned to a place, a people or a problem,” they write.<br><br><strong>Further details:</strong> “At Noeri, we are building intelligence that learns proactively and continually. Most AI today is trained once and then frozen, while the world it serves keeps moving,” they write. “We close that gap with living systems that grow out of our own research. Our work on test-time training showed that learning on the job after deployment can unlock new capabilities and lead to new discoveries. Our work on self-distillation found that a model can become its own teacher, learning from each mistake and solving hard problems in far fewer attempts. And our work on agentic orchestration demonstrated that a small model conducting a team of other models and tools can outperform frontier models at a fraction of the cost.”<br><br><strong>Why this matters - the political economy of the singularity:</strong> Currently, the dominant AI models are massive pre-trained ones from companies like Anthropic and OpenAI and a tiny handful of other companies. What would it mean for the frontier to be instead defined by a broader set of actors? This is a core question inherent to the political economy of AI and startups like this show how some people are going to try and utilize technical approaches to make that different vision a reality.<br><strong>   Read more</strong> in the <a href=\"https://x.com/YejinChoinka/status/2122379749372907852\">announcement tweet from Yejin (Yejin Choi, X)</a>.<br>   <strong>Check out the <a href=\"https://www.noeri.ai/vision/\">official site</a></strong><a href=\"https://www.noeri.ai/vision/\"> here (Noeri)</a>.<br><br>***<br><br><strong>Chinese researchers build an air-to-air drone identification set:<br></strong><em>…A2A-UAV will help people add more visual intelligence to drones…<br></em>Researchers with Nanjing University of Aeronautics and Astronautics and Hong Kong University of Science and Technology have developed and released A2A-UAV, “a multimodal dataset for air-to-air UAV detection and identification”. This kind of dataset has obvious civil and military applications and will be used to create better AI systems for autonomous onboard sensing on drones.<br><br><strong>What A2A-UAV consists of: </strong>105,263 samples, split roughly equally across three different locations - a playground, a park, and a garden - and also split equally across day and night. “Each sample provides one RGB image and one panoramic image for annotation”, as well as thermal images, RF time-frequency images, a radar point cloud, and metadata. Bounding boxes are provided for the RGB and panoramic images, but not the other ones.<br>   One use case of this dataset could be to try and extend annotations to the other modalities: “Specifically, the bounding boxes can be transferred to the thermal images to support thermal UAV detection, and the radar points can be associated with the visual targets to support radar-based UAV localization,” the researchers write.<br>    The full dataset comprises 271 independently extractable .tar.gz archives with a total size of approximately 2.5 TB.<br><br><strong>How the data was collected</strong>: “The data were acquired by a UAV-mounted platform equipped with an RGB-thermal gimbal camera, a panoramic camera, an RF spectrum analyzer, and a millimeter-wave radar,” they write. The data includes 15 target drones from 13 commercial models, including three separately labeled DJI Mini 4 Pro units.<br><br><strong>Why this matters - fuel for the physical world: </strong>Datasets like this are the ingredients for making it easier for AI systems to operate robots and drones in the physical world. They also have potential dual use impacts, though my suspicion is that datasets like this are pretty irrelevant to militaries relative to the kinds of datasets that - and I’m speculating wildly here - might be being gathered in Ukraine right now given the extremely sophisticated drone-to-drone conflict there.<br><strong>   Read more:</strong> <a href=\"https://arxiv.org/abs/2611.21311\">A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification (arXiv)</a>.<br><strong>   Get a sample of the <a href=\"https://drive.google.com/file/d/1oCtjoF5vfH3MsPDNQEOQ84MvRywHSUso/view\">data</a></strong><a href=\"https://drive.google.com/file/d/1oCtjoF5vfH3MsPDNQEOQ84MvRywHSUso/view\"> from Google Drive here (Google Drive)</a>.<br>   <strong>The full dataset will ultimately be available </strong>via <a href=\"https://pan.baidu.com/s/1_P6F3z18gCyuDagdedcM2Q?pwd=A2AD\">Baidu Netdisk with the extraction code A2AD (direct link, Baidu Netdisk)</a>.<br><br><strong>***<br><br>Tech Tales:<br><br>Machine architecture and the objectivity crisis of Machine Hermeneutics<br></strong><em>[Memoir from a primary Machine Hermeneutics investigator, 2033]<br><br>“We shape our buildings; thereafter they shape us” - Winston Churchill, human politician, 1943.<br><br></em>The building was a vast representation of the proposed Upgrade Device and we walked around it, our footsteps echoing as the sound bounced off its curving walls, eventually dimming in the face of the baroque crenellations that covered the edges of every surface. We humans, a small group of us, the best of our kind, needed to make sense of this building and explain the science it represented, and only then could it be used.<br><br>As per the terms of the Sentience Accords, any novel machine-designed insight or equipment needed to be fully explainable by humans before the machines would be allowed to use it. In the early years, this so-called “conceptual verification” had mostly been a matter of time: machines performed science and delivered new insights to the world, then humans studied these insights and made sense of them, eventually generating human-readable explanations of the machine logic. Once this was complete, whatever insights or tools that had been created could be used.<br><br>But as the machines grew more advanced and their science went further, the work became more arduous: machines would invent ideas, then use these ideas to inform the design of new experimental equipment, and then use this equipment as the basis of some new discovery. To keep up, the humans had to understand each link in the chain as well as the chain itself.<br><br>This flood of scientific progress had caused the field of machine hermeneutics to come into existence in the mid-2020s. By the 2030s, the pinnacle of human achievement in the sciences was considered to be neither making breakthroughs nor wielding AI systems to advance science, but rather to be able to generate elegant, pedagogically useful explanations of the frontiers of machine science, so that other humans could build a mental map of this new territory.<br><br>Thus had come into being the new field of didactic architecture; vast buildings meant to give experts in machine hermeneutics a better conceptual understanding of what the machines had built. These buildings were constructed through the interplay of humans and machines. The first had been crude, little more than 3D printed extrusions inside otherwise normal houses or apartments. But exposure to the buildings had verifiably sped up human understanding, with clear TTHUE (Time-to-human-understandable-explanation) improvements visible in cohorts of machine hermeneutics experts that experienced the buildings and those that didn’t. This led to its own arms race, with some of us specializing in the construction of the buildings as our primary work. We raced with one another, building ever more complicated spaces that could impart knowledge of ever more alien concepts.<br><br>We had all been electrons, appearing and disappearing in 3D transistors. We had been qubits, placed into spheres that rolled around vomit-inducingly when our position was indeterminate, then resolving us up or down at the moment of delivering an answer. We had laid our hands on surfaces suggestive of the textures and arrangements of novel forms of heat shield and solar panel.<br><br>Once I had walked for six miles through corridors meant to suggest the path a plasma might take through a fusion reactor, and instead of magnets I was buffeted on all sides by wind that forced me into the center of the paths.<br><br>The building meant to educate us about the Upgrade Device was larger than anything we’d seen before and was replete with ideas from many earlier machine inventions. All around us were indicators of complexity packed up into familiar architectural tropes that many of us had studied to understand past inventions. We dispersed throughout the building, walking its many levels and exploring its passages. At night we gathered in the entrance hall for a spartan dinner served at a low table, finding ourselves whispering to one another even though no one forced us to.<br><br>It had begun to feel to us as though the building was doing something more than teaching us - that in its various chambers there was something else being taught to us. Something about understanding the minds behind the concepts that it sought to explain to us. That in spending all of our effort on understanding the products of the machines perhaps we were being taught to think like them and behave as them.<br><br><strong>Things that inspired this story:</strong> The singularity which has already begun; the rise of AI science; how when you look at things like the machine math papers that have proliferated this year you realize we may spend tens or hundreds of times more time on understanding them as people than the machines did in generating them; architecture; multi-modal representations.<br><br><em>Thanks for reading!</em></p>"
   }
 ]
