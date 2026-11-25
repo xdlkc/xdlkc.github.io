@@ -1,5 +1,222 @@
 [
   {
+    "id": "aihot-20261125-cncf-blog-2565b149",
+    "title": "「Drone 2」背后的故事：KubeCon NA 2026 闭幕主题演讲",
+    "originalTitle": "🚀 The story behind “Drone 2”: My KubeCon + CloudNativeCon North America 2026 keynote",
+    "summary": "CNCF 博客分享了 KubeCon + CloudNativeCon NA 2026 闭幕主题演讲「Drone 2」背后的故事，包括距开场直播仅剩 30 秒的幕后经历。演讲以开源冒险的形式呈现 Kubernetes、agent-substrate、kagent、AI 智能体与无人机等元素，主题围绕 AI 智能体与云原生（Cloud Native Without Limits）。",
+    "url": "https://www.cncf.io/blog/2026/11/25/%f0%9f%9a%80-the-story-behind-drone-2-my-kubecon-cloudnativecon-north-america-2026-keynote/",
+    "source": "CNCF Blog",
+    "publishedAt": "2026-11-25T12:33:44.390Z",
+    "score": 62,
+    "tier": "T1",
+    "selected": true,
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "开源生态"
+    ],
+    "region": [
+      "工程与开源",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "云原生",
+      "KubeCon",
+      "AI智能体",
+      "开源"
+    ],
+    "context": "KubeCon 闭幕主题演讲的幕后复盘，展示了 AI 智能体与云原生开源项目结合的现场实践，值得关注。",
+    "contentHtml": "<p>CNCF projects highlighted in this post</p><p><a title=\"Go to Agent Substrate\" href=\"https://www.cncf.io/projects/agent-substrate\">\n\t\t\t\t<img width=\"70\" height=\"60\" src=\"https://landscape.cncf.io/logos/12393ea733625a06899ec27331bdb213a197281ad80b0e39af5e1c4fe7a6d44c.svg\" alt=\"Agent Substrate logo\">\n\t\t\t</a>\n\t\t\t\t\t\n\t\t\t<a title=\"Go to kagent\" href=\"https://www.cncf.io/projects/kagent\">\n\t\t\t\t<img width=\"70\" height=\"60\" src=\"https://landscape.cncf.io/logos/c6cdce37ac9d6d8482f90b573a41d57bc03d3b31e39e79e409fb5c914f5967ff.svg\" alt=\"kagent logo\">\n\t\t\t</a>\n\t\t\t\t\t\t</p><p><strong><em>An open source adventure featuring Kubernetes, agent-substrate, kagent, AI agents, drones, and more!</em></strong><br></p><figure><img width=\"2400\" height=\"1600\" src=\"https://www.cncf.io/wp-content/uploads/2026/11/OpeningImage.jpg\" alt=\"Opening Image: Lin Sun on KubeCon NA 2026 keynote stage\"></figure><p>Just 30 seconds before going live for the KubeCon + CloudNativeCon NA 2026 closing keynote, “Cloud Native Without Limits: What Can AI Agents Do for Us?”, while <a href=\"https://www.linkedin.com/in/sabdelfettah/\">Abdel Sghiouar</a> was introducing me, <a href=\"https://www.linkedin.com/in/coryjett/\">Cory Jett</a> leaned over and whispered: “The drone isn’t connecting to the controller!” 😱</p><p>A heart-stopping moment!</p><p>Thankfully, a quick reboot saved the day. And then came the moment I’ll never forget: walking onto the stage with a live drone following right behind me! 🚁✨</p><p>And when I finally walked off stage, all the nervousness and anxiety were gone. I was just SO happy! What a feeling! ❤️</p><figure><img width=\"1488\" height=\"991\" src=\"https://www.cncf.io/wp-content/uploads/2026/11/Figure-1-keynote-screens.jpg\" alt=\"Figure 1: On-stage live demo with the drone and big screens\"></figure><p><em>On-stage live demo with the drone and big screens</em></p><h2>🥋 From Amsterdam to Salt Lake City: Never give up!</h2><p>After my <a href=\"https://www.youtube.com/watch?v=ttGYcUFCok0\">Amsterdam keynote</a>, where the drone camera failed, <a href=\"https://www.linkedin.com/in/christiandussol?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAABWCrsBVqFNGcpH8FVeuipmZvNPvMghM74\">Christian Dussol</a> taught me the martial arts lesson of “Osu” (never give up! 🥋💪). That lesson stuck with me, and I wanted to push the boundaries even further in Salt Lake City.</p><figure><img width=\"751\" height=\"751\" src=\"https://www.cncf.io/wp-content/uploads/2026/11/Figure-2-Osu-posture.jpg\" alt=\"Figure 2: Striking the &quot;Osu&quot; posture after the Amsterdam keynote\"></figure><p><em>Striking the “Osu” posture after the Amsterdam keynote</em></p><p>While brainstorming with <a href=\"https://www.linkedin.com/in/allisonmarieprice/\">Allison Price</a> around our theme, “Cloud Native Without Limits,” we asked ourselves: What if we could let the audience experience what it’s like to fly and build something live on stage, powered by AI agents?<br></p><figure><img width=\"1970\" height=\"626\" src=\"https://www.cncf.io/wp-content/uploads/2026/11/Figure-3-Allison-Slack.jpg\" alt=\"Figure 3: Early Slack brainstorming with Allison\"></figure><p>Of course, bringing a live drone indoors isn’t exactly plug-and-play. There was quite a bit of work behind the scenes!</p><h2>🛠️ Behind the scenes: Making the impossible possible</h2><p>A few challenges we had to tackle:</p><p>🛩️ Regulatory compliance: Back in August, we learned that an FAA Part 107-certified remote pilot was required for our indoor drone operation. Cory stepped up, completed the necessary training in just one week, and saved the demo! 🙌</p><figure><img width=\"1129\" height=\"1500\" src=\"https://www.cncf.io/wp-content/uploads/2026/11/Figure-4-signage.jpg\" alt=\"Figure 4: Teaser at the venue\"></figure><p><em>Teaser at the venue 😅</em></p><p>🏠 Home testing: I got propeller guards so I could safely experiment with code, test flight paths, and practice flying indoors at home. Let’s just say my house became a mini drone testing lab!<br></p><figure><img width=\"1029\" height=\"763\" src=\"https://www.cncf.io/wp-content/uploads/2026/11/Figure-5-Drone-at-home-edited.jpg\" alt=\"Figure 5: Flight testing at home with propeller guards\"></figure><p><em>Flight testing at home with propeller guards</em></p><p>But this demo was about much more than flying a drone. We wanted to show what real-time agentic execution looks like, with the right guardrails, sandboxing, and observability in place.</p><h2>🤖 Under the hood: The Cloud Native technologies behind the drone</h2><p>Here’s what powered the experience:</p><p>🤖 Agents: Running on CNCF Sanbox projects <a href=\"https://www.linkedin.com/company/agent-substrate/\">agent-substrate</a>, and <a href=\"https://www.linkedin.com/company/kagent/\">kagent</a> providing an opinionated layer for building and running agents.</p><p>🔐Then AAIF Growth project <a href=\"https://www.linkedin.com/company/agent-gateway/\">agentgateway</a>: Playing multiple roles:</p><ul>\n<li>LLM gateway: Rate limiting and controlling access to models.</li>\n\n\n\n<li>Egress gateway (as part of agent-substrate): Enforcing sandbox and network access policies.</li>\n\n\n\n<li>MCP gateway: Handling authentication and authorization for <a href=\"https://www.linkedin.com/company/modelcontextprotocol/\">Model Context Protocol</a> tool calls with an Identity Provider, for example, Keycloak.</li>\n</ul><p>📊 OpenTelemetry and Jaeger: Providing end-to-end observability across agent execution through agentgateway and agent-substrate, including rate-limiting errors, the duration of each tool call, and where agents spend most of their time.</p><p>All coming together to make an AI-powered physical experience happen, live on stage!</p><figure><img width=\"1999\" height=\"1333\" src=\"https://www.cncf.io/wp-content/uploads/2026/11/Figure-6-Lin-on-screen.png\" alt=\"Figure 6: The moment when it all comes together live on stage\"></figure><p><em>The moment when it all comes together live on stage</em></p><h2><strong>💜</strong> A big Thank You &amp; what’s next? 🇪🇸</h2><p>The community’s response was incredible! It’s exciting to see how far we’ve come as an industry, bringing AI models, agentic AI, and cloud native technologies together to make things possible that would have seemed like science fiction just a few years ago.</p><p>A massive THANK YOU to my manager, <a href=\"https://www.linkedin.com/in/iditlevine/\">Idit Levine</a>, for her unwavering support; <a href=\"https://www.linkedin.com/in/coryjett/\">Cory Jett</a>, for making the drone flight possible; <a href=\"https://www.linkedin.com/in/allisonmarieprice/\">Allison Price</a>, for brainstorming this adventure with me; <a href=\"https://www.linkedin.com/in/jbryce/\">Jonathan Bryce</a>, for loving the drone idea when I casually brought it up during KubeCon + CloudNativeCon NA 2025; <a href=\"https://www.linkedin.com/in/elna-vogel/\">Elna Vogel</a>, for making sure we had the required insurance.</p><p>And of course, a huge shout-out to the entire event and technical teams who helped bring this adventure to life! ❤️</p><p>Last but definitely not least, THANK YOU to the agent-substrate, kagent, and agentgateway communities! They answered every question I threw at them, responded incredibly quickly, and were always ready to jump in and debug live if needed. I couldn’t have pulled this off without you! 💜</p><figure><img width=\"1952\" height=\"494\" src=\"https://www.cncf.io/wp-content/uploads/2026/11/Figure-7-Substrate-Team-Slack.jpg\" alt=\"Figure 7: My #substrate-dev team CNCF slack\"></figure><p><em>My #substrate-dev team CNCF slack</em></p><p>📺 Missed the keynote? Catch the full recording!</p><figure></figure><p>Now, I’m officially wrapping up the Drone 2 chapter and already looking forward to building something fresh for KubeCon + CloudNativeCon 2027 in Barcelona! 🇪🇸</p><p>So, what physical objects or hardware should we hack on next? Drones have had their moment. What’s next? What could we build that I haven’t even imagined yet? 🙂</p>",
+    "author": "Posted on November 25, 2026\n\t\tby Lin Sun (CNCF Ambassador and KubeCon + CloudNativeCon Co-Chair)"
+  },
+  {
+    "id": "aihot-20261125-ndrc-policy-0dc60adc",
+    "title": "国家发改委图解“一老一小”服务体系建设实施方案",
+    "originalTitle": "一图读懂 | “一老一小”服务体系建设实施方案",
+    "summary": "国家发改委发布“一图读懂”图解，解读“一老一小”服务体系建设实施方案的核心内容。方案围绕养老与托育服务体系建设，以图文形式呈现政策要点。",
+    "url": "https://www.ndrc.gov.cn/xxgk/jd/zctj/202611/t20261123_1409033.html",
+    "source": "国家发改委 · 政策通知",
+    "publishedAt": "2026-11-25T12:33:42.609Z",
+    "score": 75,
+    "tier": "T1",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "政策",
+      "政府动态",
+      "市场政策",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "部委政策"
+    ],
+    "tags": [
+      "部委政策",
+      "政府动态",
+      "国家发改委",
+      "一老一小",
+      "养老托育",
+      "民生政策"
+    ],
+    "context": "“一老一小”是当前民生保障与扩大内需的重点政策方向，方案落地关系养老托育服务体系与相关产业发展。"
+  },
+  {
+    "id": "aihot-20261125-ndrc-policy-7537f49c",
+    "title": "国家发改委刊发专家解读：织牢织密养老育幼服务网，托举“一老一小”民生福祉",
+    "originalTitle": "专家解读文章 | 织牢织密养老育幼服务网 托举“一老一小”民生福祉",
+    "summary": "国家发改委网站刊发专家解读文章，围绕织牢织密养老育幼服务网、托举“一老一小”民生福祉展开阐释。文章聚焦养老与育幼服务体系建设这一民生重点方向。",
+    "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261123_1409034.html",
+    "source": "国家发改委 · 政策通知",
+    "publishedAt": "2026-11-25T12:33:42.609Z",
+    "score": 58,
+    "tier": "T1",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "部委政策",
+      "政府动态",
+      "市场政策",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "部委政策"
+    ],
+    "tags": [
+      "部委政策",
+      "政府动态",
+      "一老一小",
+      "养老育幼",
+      "发改委",
+      "专家解读"
+    ],
+    "context": "“一老一小”是民生保障重点领域，官方渠道的专家解读有助于把握养老育幼服务政策的走向。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-5a1b5693",
+    "title": "三星显示将以2.1亿欧元收购ams OSRAM 9.1%股权，交割后成其最大股东",
+    "originalTitle": "三星显示将以2.1亿欧元收购ams OSRAM 9.1%股权",
+    "summary": "11月25日，三星显示宣布已签署投资协议，以约2.1亿欧元认购ams OSRAM 9,984,439股新发行股份，取得其9.1%股权。按协议安排，预计交割完成后三星显示将成为ams OSRAM最大股东。",
+    "url": "https://finance.eastmoney.com/a/202611253939730597.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T12:29:19.000Z",
+    "score": 78,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "公司动态",
+      "股权投资",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "三星显示",
+      "ams OSRAM",
+      "股权投资",
+      "显示面板"
+    ],
+    "context": "这笔交易通过认购新股完成，交割后三星显示将升至第一大股东，股东结构变化值得产业链关注。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-4c275bcd",
+    "title": "我国新材料研发提速 关键材料加速走向工程应用",
+    "summary": "今年以来，我国一大批关键新材料加速走出实验室、落地工程一线。这些材料持续突破技术壁垒、补齐应用短板，为制造强国建设提供支撑。",
+    "url": "https://finance.eastmoney.com/a/202611253939730338.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T12:29:03.000Z",
+    "score": 50,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "行业动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "新材料",
+      "制造强国"
+    ],
+    "context": "新材料是制造强国建设的底层支撑，其从实验室走向工程应用的进度备受产业链与市场关注。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-82b9ec84",
+    "title": "锦盛新材：控股股东及一致行动人拟协议转让15%股份",
+    "summary": "锦盛新材（300849.SZ）公告，控股股东、实控人阮荣涛、高丽君及其一致行动人阮荣根、锦盛合伙，与深圳擎力一号科技有限公司签署股份转让协议，拟以18.67元/股协议转让2250万股，占总股本的15%。交易对价合计4.2亿元。",
+    "url": "https://finance.eastmoney.com/a/202611253939730629.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T12:27:33.000Z",
+    "score": 58,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "公司公告",
+      "港股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "锦盛新材",
+      "股份转让",
+      "公司公告"
+    ],
+    "context": "控股股东一次性转让15%股份、对价达4.2亿元，或对公司股权结构产生影响，股东值得留意后续进展。"
+  },
+  {
+    "id": "aihot-20261125-wscn-global-3f7aaef0",
+    "title": "浦江中国AI Token业务加速落地，首批客户已接入",
+    "author": "郑巧",
+    "summary": "浦江中国AI Token业务加速落地，首批客户已正式接入。目前消息仅披露接入进展，客户数量与业务规模等细节尚待进一步公布。",
+    "url": "https://wallstreetcn.com/articles/3786694",
+    "source": "华尔街见闻 · 全球",
+    "publishedAt": "2026-11-25T12:23:40.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "财经",
+      "公司动态",
+      "宏观",
+      "市场政策"
+    ],
+    "region": [
+      "金融与政策",
+      "财经"
+    ],
+    "tags": [
+      "财经",
+      "宏观",
+      "浦江中国",
+      "AI Token",
+      "商业落地"
+    ],
+    "context": "首批客户接入标志该业务从筹备进入落地阶段，是跟踪公司AI商业化节奏的一个观察点。"
+  },
+  {
     "id": "aihot-20261125-eastmoney-724-837a4fc1",
     "title": "化肥概念震荡反弹 红四方、中哲精化双双涨停",
     "summary": "A股化肥概念盘中震荡反弹，红四方、中哲精化双双涨停。赤天化、潞化科技、泸天化、四川美丰、六国化工、富邦科技等个股跟涨。",
@@ -189,6 +406,99 @@
     "author": "CNCF projects highlighted in this post"
   },
   {
+    "id": "aihot-20261125-mof-news-c2c920fc",
+    "title": "财政部等五部门制定印发《常态化帮扶资金绩效评价办法》",
+    "originalTitle": "财政部等五部门制定印发 《常态化帮扶资金绩效评价办法》",
+    "summary": "财政部等五部门制定印发《常态化帮扶资金绩效评价办法》，对常态化帮扶资金的绩效评价作出制度性安排。该文件由五部门联合制定，已在财政部官网正式发布。",
+    "url": "http://nys.mof.gov.cn/czpjZhengCeFaBu_2_2/202611/t20261124_4005326.htm",
+    "source": "财政部 · 财政要闻与收支数据",
+    "publishedAt": "2026-11-25T00:00:00.000Z",
+    "score": 82,
+    "tier": "T1",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "宏观经济",
+      "政府动态",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "部委政策"
+    ],
+    "tags": [
+      "部委政策",
+      "财政数据",
+      "财政部",
+      "绩效评价",
+      "帮扶资金"
+    ],
+    "context": "帮扶资金绩效管理是财政监管的重点环节，五部门联合发文体现部委层面对资金使用效益的制度化约束，值得财政与政策领域关注。",
+    "contentHtml": "<p>财农〔2026〕84号</p><p>各省、自治区、直辖市财政厅（局）、农业农村（农牧）厅（局、委）、农垦管理部门、发展改革委、民（宗）委（厅、局）、林业和草原主管部门，新疆生产建设兵团财政局、农业农村局、发展和改革委员会、民族宗教事务局：&nbsp;</p><p>　　按照党中央、国务院决策部署，2026年起，原衔接推进乡村振兴补助资金调整为常态化帮扶资金。在总结过渡期资金绩效评价工作经验做法的基础上，根据新要求新情况，我们制定了《常态化帮扶资金绩效评价办法》。现印发给你们，请遵照执行。</p><p>财政部 农业农村部 国家发展改革委</p><p>国家民委 国家林草局</p><p>2026年11月16日</p><p><b>常态化帮扶资金绩效评价办法&nbsp;</b></p><p>　　第一条&nbsp;为规范和加强常态化帮扶资金（以下简称帮扶资金）管理，根据预算绩效管理有关要求，制定本办法。&nbsp;</p><p>　　第二条&nbsp;本办法所称的帮扶资金是指中央、省、市、县各级财政预算安排的帮扶资金（除具体条款和指标中有特别说明外）。&nbsp;</p><p>　　第三条&nbsp;本办法所称帮扶资金绩效评价是对各级财政和农业农村、发展改革、民族工作、林业和草原、农垦等部门（以下统称相关部门）使用管理帮扶资金进行综合性评价。&nbsp;</p><p>　　第四条&nbsp;绩效评价的目标是提高资金使用效益，保障资金使用管理的安全性、规范性和有效性。&nbsp;</p><p>　　第五条&nbsp;绩效评价遵循以下原则：&nbsp;</p><p>　　（一）聚焦任务、突出成效；&nbsp;</p><p>　　（二）科学规范、公正公开；&nbsp;</p><p>　　（三）分类分级、权责统一；&nbsp;</p><p>　　（四）强化管理、激励约束。&nbsp;</p><p>　　第六条&nbsp;绩效评价的依据：&nbsp;</p><p>　　（一）党中央、国务院关于常态化帮扶的方针政策；&nbsp;</p><p>　　（二）预算绩效管理相关规定；&nbsp;</p><p>　　（三）帮扶资金管理办法和资金项目管理有关制度；&nbsp;</p><p>　　（四）常态化帮扶考核评估结果，统计部门公布的有关统计数据，以及全国常态化防止返贫致贫促乡村振兴信息系统（以下简称防止返贫致贫信息系统）、预算管理一体化系统等数据；&nbsp;</p><p>　　（五）评价年度地方常态化帮扶工作情况总结；&nbsp;</p><p>　　（六）资金分配下达文件及相关资料；&nbsp;</p><p>　　（七）巡视巡察、监督检查、审计报告及处理决定；&nbsp;</p><p>　　（八）其他相关资料。&nbsp;</p><p>　　第七条&nbsp;绩效评价的主要内容包括目标管理、任务管理、资金项目管理、使用效益和激励约束（加减分项）5方面。&nbsp;</p><p>　　（一）目标管理。包括防止返贫致贫情况、收入增长情况等。&nbsp;</p><p>　　（二）任务管理。包括资金保障、支持产业帮扶、支持就业帮扶、支持欠发达地区帮扶等。&nbsp;</p><p>　　（三）资金项目管理。包括资金使用管理、项目库建设管理、项目绩效目标管理、项目质量管理、信息公开和公告公示制度落实等。&nbsp;</p><p>　　（四）使用效益。包括项目推进进度、预算执行进度、项目实施成效等。&nbsp;</p><p>　　（五）激励约束（加减分项）。加分项包括机制创新激励、预算执行激励、投入情况激励等；减分项包括执行中调减预算、数据质量和负面问题等。&nbsp;</p><p>　　绩效评价指标体系根据评价内容设置。绩效评价的具体指标、评价内容和赋分规则，可根据常态化帮扶年度工作重点和实际情况适当调整。对各省、自治区、直辖市和新疆生产建设兵团（以下统称省）绩效评价指标体系由财政部会同其他资金管理部门设置（详见附件）。&nbsp;</p><p>　　第八条&nbsp;绩效评价分级实施。中央相关部门负责对各省开展帮扶资金绩效评价；省级相关部门负责组织本省帮扶资金绩效评价工作；市级相关部门负责指导县级做好帮扶资金绩效管理工作，具备条件的可按省级要求组织本市帮扶资金绩效评价工作；县级资金使用管理部门和财政部门要合理确定资金项目绩效目标并按程序报省级相关部门，作为绩效过程监控和具体项目绩效评价的依据。&nbsp;</p><p>　　各级相关部门可根据工作需要，邀请或委托有关机构、专家通过调查研究、资料分析、实地评价、专家评议等方式参与帮扶资金绩效评价。&nbsp;</p><p>　　第九条&nbsp;对各省开展的绩效评价，由农业农村部、财政部联合其他资金管理部门明确当年绩效评价工作方案。省级相关部门联合将评价年度帮扶资金绩效自评报告等相关材料按要求报送至中央相关部门，并抄送财政部当地监管局。中央相关部门根据每年工作安排适时组织开展实地评价、专家评议和部门会审等。各省对上报材料的真实性、准确性、及时性和完整性负责。&nbsp;</p><p>　　第十条&nbsp;绩效评价依据所设定的指标逐项计分后确定总得分。分任务评价的指标按照各项任务的帮扶资金占比加权平均计算。根据得分将评价结果（包括整体结果和分任务结果）划分为四个等次，分别为：A（≥90分）、B（≥80分，＜90分）、C（≥60分，＜80分）、D（＜60分）。&nbsp;</p><p>　　第十一条 考虑不同区域、不同部门评价指标的差异性，因少数指标不适用而满分不足百分的，按照得分折算成百分制。绩效评价结果按照东、中、西部地区分别排序。&nbsp;</p><p>　　第十二条&nbsp;对各省的绩效评价结果，纳入下一年度帮扶资金因素法分配，给予相应激励，由财政部、农业农村部会同其他资金管理部门联合向省级相关部门通报，并抄送省级人民政府。对绩效评价发现的问题，由农业农村部会同其他资金管理部门联合向省级相关部门反馈，并抄送财政部当地监管局。省级相关部门按照任务方向分别推动问题整改，并将整改情况按照要求由农业农村部门汇总后按程序联合报中央相关部门。&nbsp;</p><p>　　地方应参照中央相关部门做法，采取适当方式反馈结果，并通过纳入帮扶资金测算因素等方式加强绩效评价结果应用。&nbsp;</p><p>　　第十三条 省级财政部门会同其他资金管理部门根据绩效管理有关要求、本办法规定，结合实际情况，制定本省帮扶资金绩效评价细则，并抄送中央相关部门和财政部当地监管局。&nbsp;</p><p>　　第十四条&nbsp;各级相关部门及涉及工作人员在绩效评价过程中，存在违反本办法规定的，以及滥用职权、玩忽职守、徇私舞弊等违规违纪违法行为的，按照有关规定追究相应责任；涉嫌犯罪的，依法移送有关机关处理。&nbsp;</p><p>　　第十五条 本办法自印发之日起施行，由财政部会同其他资金管理部门负责解释。《财政部 国家乡村振兴局 国家发展改革委 国家民委 农业农村部 国家林草局关于印发&lt;衔接推进乡村振兴补助资金绩效评价及考核办法&gt;的通知》（财农〔2021〕122号）、《财政部 农业农村部 国家发展改革委 国家民委 国家林草局关于修订调整衔接推进乡村振兴补助资金绩效评价相关指标的通知》（财农〔2024〕50号）同时废止。</p><p>　　附件：常态化帮扶资金绩效评价指标评分表&nbsp;</p>"
+  },
+  {
+    "id": "aihot-20261125-mof-news-5134080f",
+    "title": "财政部贵州监管局：科学谋划 系统推进 扎实问效 推动绩效评价工作走深走实",
+    "summary": "财政部贵州监管局围绕绩效评价工作提出科学谋划、系统推进、扎实问效的要求，推动绩效评价工作走深走实。原文未披露具体评价项目、资金规模或量化成效。",
+    "url": "http://gz.mof.gov.cn/caizhengjiancha/202611/t20261119_4004967.htm",
+    "source": "财政部 · 财政要闻与收支数据",
+    "publishedAt": "2026-11-25T00:00:00.000Z",
+    "score": 48,
+    "tier": "T1",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "政府动态",
+      "财政政策",
+      "市场政策",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "部委政策"
+    ],
+    "tags": [
+      "部委政策",
+      "财政数据",
+      "财政部",
+      "绩效评价",
+      "财政监管"
+    ],
+    "context": "财政部派出机构绩效评价经验交流类常规动态，无新增政策或数据，市场影响有限。"
+  },
+  {
+    "id": "aihot-20261125-mof-news-6beb09f1",
+    "title": "财政部四川监管局：三维协同发力 提升转移支付执行常态化监督工作效能",
+    "summary": "财政部四川监管局介绍，通过三维协同发力提升转移支付执行常态化监督工作效能。该文为地方监管局日常工作动态，正文未披露具体监督举措与量化成果。",
+    "url": "http://sc.mof.gov.cn/caizhengjiancha/202611/t20261123_4005213.htm",
+    "source": "财政部 · 财政要闻与收支数据",
+    "publishedAt": "2026-11-25T00:00:00.000Z",
+    "score": 48,
+    "tier": "T1",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "部委政策",
+      "财政数据",
+      "市场政策",
+      "政府动态"
+    ],
+    "region": [
+      "金融与政策",
+      "部委政策"
+    ],
+    "tags": [
+      "部委政策",
+      "财政数据",
+      "财政部",
+      "转移支付",
+      "财政监管",
+      "四川监管局"
+    ],
+    "context": "转移支付资金监管是财政监管重点事项，此类地方监管局工作机制动态属外围信息，供关注财政执行的读者了解。"
+  },
+  {
     "id": "aihot-20261124-ndrc-policy-1c6d998b",
     "title": "国家发展改革委等四部门印发《“一老一小”服务体系建设实施方案》",
     "originalTitle": "国家发展改革委 民政部 国家卫生健康委 教育部印发《“一老一小”服务体系建设实施方案》",
@@ -218,6 +528,40 @@
     ],
     "context": "四部门联合发文统筹“一老一小”服务体系建设，是养老、托育领域的部委级政策动向。",
     "contentHtml": "<p>　　为深入贯彻落实党中央、国务院关于促进人口高质量发展的决策部署，扩大养老、托育服务有效供给，日前，经国务院同意，国家发展改革委、民政部、国家卫生健康委、教育部印发《“一老一小”服务体系建设实施方案》（以下简称《实施方案》）。</p><p>　　《实施方案》要求，坚持以习近平新时代中国特色社会主义思想为指导，深入贯彻党的二十大和二十届历次全会精神，坚持以人民为中心的发展思想，坚持因地制宜、分级分类，坚持改革创新、系统集成，坚持投资于物和投资于人紧密结合，统筹发展和安全，统筹推进“硬投资”与“软建设”，着力完善设施、提升服务、增强效能，提高养老、托育服务供给与人民群众需求的适配度，加快构建更加适应人口结构变化的“一老一小”服务体系。</p><p>　　《实施方案》明确，到2030年，养老、托育服务设施布局更加合理、条件明显改善，医养结合持续深化，“一老一小”服务体系进一步健全、供需适配度进一步提高，养老机构护理型床位占比达到73%，社区养老服务机构和设施覆盖率达到70%，3岁以下婴幼儿入托率较2025年提高6个百分点，覆盖城乡、布局合理、价格可接受、质量有保障的普惠养老、托育服务供给格局基本形成。</p><p>　　《实施方案》提出，<b>在优化资源布局方面，</b>将根据常住人口规模、结构、分布变化和流动趋势等，加强养老服务设施规划布局，推动医养结合服务设施有序扩容，健全托育服务设施网络，推进设施功能整合和公共环境改造，加快完善服务设施体系。<b>在提升服务品质方面，</b>将加快健全养老、托育领域服务标准和建设规范，完善价格机制，积极拓展多样化服务，加快智能技术在养老、托育领域落地应用，更好满足群众需求。<b>在完善管理模式方面，</b>将推动设施和服务向人口密集、需求旺盛的县乡村倾斜，探索构建城乡养老服务联合体，发挥托育综合服务中心示范带动作用，理顺医养结合、幼儿园办托管理机制，切实增强服务效能。<b>在健全保障措施方面，</b>将加大资金、土地、人才等要素支撑，加强安全、价格、信用等监督监管，更好保障“一老一小”群体基本权益，全面夯实发展基础。</p><p>　　《实施方案》强调，各地区、各有关部门要加强组织领导，结合实际落实工作责任，及时研判分析新情况、协调解决新问题，认真开展成效评估，确保“一老一小”服务体系建设取得实效。鼓励将“一老一小”服务体系建设纳入本地区经济社会发展、国土空间等相关规划和民生实事清单。国家发展改革委、民政部、国家卫生健康委、教育部加强统筹指导，总结经验做法，推动地区间、行业间交流互鉴，持续提升“一老一小”服务体系建设质效。</p>"
+  },
+  {
+    "id": "aihot-20261124-fed-press-7859ef41",
+    "title": "美联储公布理事会2026年10月19日与28日贴现率会议纪要",
+    "originalTitle": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+    "summary": "美联储发布理事会于2026年10月19日和10月28日召开的两次贴现率会议纪要。纪要记录相关会议的讨论与表决情况，属美联储例行披露文件。",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm",
+    "source": "美联储官方新闻稿 (Fed)",
+    "publishedAt": "2026-11-24T19:00:00.000Z",
+    "score": 62,
+    "tier": "T1",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "金融与政策",
+      "央行动态",
+      "市场政策",
+      "政府动态"
+    ],
+    "region": [
+      "金融与政策",
+      "央行"
+    ],
+    "tags": [
+      "央行",
+      "政策",
+      "美联储",
+      "贴现率",
+      "会议纪要",
+      "货币政策"
+    ],
+    "context": "贴现率会议纪要是观察美联储内部对政策利率立场变化的窗口，市场可借此捕捉政策倾向信号。",
+    "contentHtml": "<p>November 24, 2026</p><h3>Minutes of the Board's discount rate meetings on October 19 and October 28, 2026</h3><p>For release at 2:00 p.m. EST                     \n                \n                </p><ul>\n                    \n                </ul><p>The Federal Reserve Board on Tuesday released the minutes from its recent meetings to review and determine the discount rates provided to depository institutions through the discount window. Today's minutes cover the Board meetings that occurred on October 19 and October 28, 2026.</p><p>The Board's process for setting the discount rate is distinct from the process the Federal Open Market Committee follows in setting the target range for the federal funds rate.</p><p>For media inquiries, please email <a href=\"https://www.federalreserve.gov/cdn-cgi/l/email-protection#cda0a8a9a4ac8dabbfafe3aaa2bb\"><span>[email&nbsp;protected]</span></a> or call 202-452-2955.</p><p>Last Update:\n            November 24, 2026\n        </p>",
+    "contentHtmlZh": "<p>{\"t\": [\"</p><p>2026年11月24日</p><h3>理事会2026年10月19日和10月28日贴现率会议的会议纪要</h3><p>美国东部标准时间下午2:00发布                      \\n                </p><ul>\\n                    \\n                </ul><p>美联储理事会于周二发布了其近期会议的纪要，这些会议审议并确定了通过贴现窗口向存款机构提供的贴现率。今日发布的纪要涵盖2026年10月19日和10月28日举行的理事会会议。</p><p>理事会设定贴现率的程序有别于联邦公开市场委员会设定联邦基金利率目标区间的程序。</p><p>媒体咨询事宜，请发送电子邮件至 <a href=\"https://www.federalreserve.gov/%22https://www.federalreserve.gov/cdn-cgi/l/email-protection#cda0a8a9a4ac8dabbfafe3aaa2bb\\%22\"><span>[email&nbsp;protected]</span></a> 或致电 202-452-2955。</p><p>最后更新：\\n            2026年11月24日\\n        </p><p>\"]}</p>"
   },
   {
     "id": "aihot-20261124-hugging-face-f7049fe2",
@@ -284,6 +628,38 @@
     ],
     "context": "通用前沿模型延伸至可经湿实验验证的蛋白质设计，是 AI for Science 方向的重要进展。",
     "contentHtml": "<h2><span>Key findings:</span></h2><ul><li><p><span>Our GPT‑6 family of models can design new protein shapes and the sequence of their chemical building blocks using only reasoning and code, without calling specialized biology models to generate those designs.</span></p></li><li><p><span>An internal research model matched or outperformed specialized models on many protein design tasks. Researchers could also guide designs by prompting the model on where a protein should attach and what shape it should take.</span></p></li><li><p><span>In lab tests with Onava, proteins based on GPT‑6.2’s designs showed evidence of binding, or attachment, across five targets. Redesigned antibodies also retained binding. Specialized models helped supply sequences and select candidates for testing.</span></p></li><li><p><span>The models’ written reasoning and code suggest they draw on math, physics, chemistry, and biological knowledge to reason about protein shapes and interactions with other molecules.</span></p></li></ul><p><span>In a preprint titled </span><i><span>GPT‑6 as a Universal Foundation Model for Protein Biology: Beyond Specialized Models</span></i><span>, we show that our GPT‑6 family of models has </span><b><span>intrinsic capabilities</span></b><span> for designing new proteins: the models can design new protein structures and sequences without relying on specialized biology models, using only reasoning and general-purpose coding tools.</span></p><p><span>Proteins do much of the work in living cells. They drive the chemical reactions that sustain life, carry oxygen through the blood, and defend the body against infection. Incorrectly shaped proteins can also cause disease and dysfunction. Proteins are made from chains of chemical building blocks called amino acids. The order, or sequence, of these amino acids helps determine how a protein folds into a three-dimensional shape, which in turn influences what it does.</span></p><p><span>Scientists often start with a clear idea of what they want a protein to do. They might want it to block a signal that helps cancer cells evade the immune system or to help capture carbon dioxide from the air. The challenge is to work out what three-dimensional structure would enable the protein to do its job and which amino acid sequence would give it that structure. Specialized biology models capable of generating three-dimensional protein structures and sequences have made this work more practical.</span></p><p><span>Using and coordinating these specialized models requires substantial expertise. Each accepts particular kinds of inputs and constraints, and these models cannot easily accept new kinds of information without changes to their software or additional training. In contrast, a general-purpose model capable of performing the work of multiple specialized models can easily adapt to new instructions and requirements.</span></p><p><span>Our research illustrates the potential power of pairing natural language with intrinsic protein capabilities. We could guide our models at scales ranging from a single bond between two atoms to the overall shape of a protein. For example, we asked GPT‑6.2 to predict where and how a small molecule would bind to a protein. When we already knew which two atoms formed a bond, we could give the model that information and ask how the rest of the molecule would fit. We could switch between these tasks simply by changing the prompt, without retraining the model. We also asked our models to design small proteins called minibinders and marked where each should attach to its target, and further specified how many coils or strands each minibinder should contain. An internal model followed that instruction with near-perfect fidelity in its three-dimensional designs.</span></p><figure><figcaption><p><i><span>Points farther from the center indicate better performance. Newer generations of models improved on many of the 14 protein tasks tested.</span></i></p></figcaption></figure><h2><span>A closer look at our models’ protein designs</span></h2><p><span>We ran computational tests of whether the GPT‑6 models series could design small proteins to bind given targets, build proteins around specified structural features, predict protein structures and molecular interactions, and rank how sequence changes affect properties such as stability and binding. Our latest models performed comparably to or better than specialized models on most tasks, although predicting a complete protein structure remained a clear weakness.</span></p><p><span>The models’ written reasoning and code offer clues to how they approach these tasks. They draw on mathematics, physics, chemistry, and coding alongside knowledge of recurring patterns in protein sequences and structures. For example, when designing a small protein intended to bind to IL-7Rα, the model proposed how the two proteins might interact, then wrote and executed code to explore different protein shapes and amino acid choices that could support that interaction.</span></p><figure><figcaption><p><i><span>The model’s written reasoning and code show it drawing on math, physics, chemistry and biology to design a protein intended to attach to IL-7Rα. It examines the target’s surface, arranges five coiled sections into a protein shape, and checks how the two proteins could fit together.</span></i></p></figcaption></figure><p><span>With our research partner, </span><a href=\"http://www.onava.ai/\"><span>Onava</span>⁠<span>(opens in a new window)</span></a><span>, we also tested the models’ structure and sequence designs in the lab. First, Onava made small proteins based on three-dimensional structures designed by a pre-released version of GPT‑6.2. Specialized models supplied amino acid sequences and helped select candidates for testing. For each of the five targets we chose, at least one protein showed evidence of binding in the lab. In separate experiments, GPT‑6.2 designed new amino acid sequences for existing minibinders and antibodies. Following candidate selection with specialized models, many of the redesigned proteins also showed evidence of binding to the same targets as the originals.</span></p><h2><span>Laboratory Experiment 1: Designing small proteins that bind to a target</span></h2><p><span>Our first laboratory experiment tested whether GPT‑6.2 could design small proteins that would bind to their intended targets. We compared computational measurements of quality against RFdiffusion, a specialized model for protein design, and found that GPT‑6.2’s three-dimensional designs scored slightly lower while our latest internal models scored higher. For the lab experiment, we made proteins based on GPT‑6.2’s designs and measured how strongly they bound to their targets.</span></p><p><span>We gave GPT‑6.2 the three-dimensional structures of five target proteins and marked where we wanted a minibinder to attach. It then wrote code to create three-dimensional designs for potential minibinders, without using specialized protein AI models.</span></p><p><span>To turn GPT‑6.2’s three-dimensional designs into proteins we could test in the lab, we needed amino acid sequences that would fold into the proposed structures. We used a specialized AI model called SolubleMPNN to suggest sequences for each design. Other specialized protein models helped us select candidates predicted to fold as designed and bind at the intended site on the target.</span></p><figure><figcaption><p><i><span>GPT‑6.2 designed shapes for small proteins intended to attach to chosen targets. Specialized models then proposed amino acid sequences—the order of the proteins’ chemical building blocks—and helped select designs for our research partner Onava to make and test in the lab.</span></i></p></figcaption></figure><p><span>We tested 322 minibinders against 5 targets in the lab. Of those, 35 (10.9%) tested positive for binding to their intended target. We found 5 hits for PD-L1 (a protein some cancers use to evade the immune system), 3 for IL-7Rα, 1 for TrkA, 8 for VEGF-A and 18 for IL-17A. The</span><a href=\"https://www.nature.com/articles/s41586-023-06415-8/figures/6\"><span> original RFdiffusion study</span>⁠<span>(opens in a new window)</span></a><span> reported higher hit rates, but rates depend heavily on how strictly researchers filter designs before lab validation and their definition of binding. Nevertheless, our results provide early evidence that we can turn GPT‑6.2’s three-dimensional designs into proteins that bind to their intended targets in the lab.</span></p><figure><p><img alt=\"Designing proteins to attach to specific targets · responsive legend poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/6YdRXyaFP4SEp3mku9AcPi/e8675d403db99751eac6a843d6d32507/specific-responsive-legend-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>An internal research model designed shapes for small proteins intended to attach to the target proteins shown in gray. The colored shapes compare each design with a computational prediction of how the protein would fold and fit against its target.</span></i></p></figcaption></figure><h2><span>Laboratory Experiment 2: Designing new sequences for 3D protein structures</span></h2><p><span>We tested whether GPT‑6.2 could design the sequences itself. We gave it three-dimensional models of how existing minibinders fit against their targets, withheld the original amino acid sequences, and asked it to propose new ones. Specialized models helped us choose which proteins to make and test in the lab.</span></p><p><span>For three targets, we started with computationally predicted structures of confirmed minibinders whose sequences Onava had collected from earlier studies. In our initial lab screens, we saw binding in 75 of 88 designs for MDM2 (85%), 26 of 42 for VEGF-A (62%), and 8 of 59 for PD-1 (14%). The amino acid sequences proposed by GPT‑6.2 also often differed significantly from the original minibinder sequences, with a median of 50% for VEGF-A, 43% for MDM2, and 15% for PD-1.</span></p><p><span>We also asked GPT‑6.2 to design new sequences for three unpublished minibinder shapes it had generated earlier: two targeting PD-L1 and one targeting IL-7Rα. A specialized model, ProteinMPNN, had already supplied one sequence for each shape, and proteins made from those sequences had shown binding in the lab. Of the 107 proteins made from GPT‑6.2’s new sequences, 14 (13.1%) showed binding.</span></p><p><span>Given an unpublished structure, GPT‑6.2 had come up with two substantially different sequences that both showed signs of binding to the same target. For the same PD-L1 minibinder structure, GPT‑6.2 designed two sequences different from the original in 52 and 58 out of 90 total amino acids. The two also differed from each other at 44 positions, nearly half the sequence.</span></p><p><span>The unpublished structures and substantial differences in sequence give us strong evidence that GPT‑6.2’s capabilities extend beyond memorization. The results also suggest we could use GPT‑6.2 to intrinsically design both a minibinder’s structure and its sequence.</span></p><h2><span>Redesigning the parts of an antibody that bind to a target</span></h2><p><span>Researchers often redesign an antibody’s binding loops to help it grip its target more tightly, a process called </span><b><span>affinity maturation</span></b><span>. They may also want it to bind more selectively, so it’s less likely to attach to similar proteins. We tested a first step toward those goals by asking our models to design new loop sequences that preserved binding to the original target.</span></p><p><span>We started with six small antibodies (VHHs) that bind to the same protein, IL-4Rα. For each antibody, we gave GPT‑6.2 its predicted three-dimensional structure and most of its amino acid sequence, leaving out the three loops that help the antibody grip its target. We asked the model to design new sequences for them. Of the 182 designs we tested, 128 (70%) showed signs of binding to IL-4Rα.</span></p><p><span>We then tested how precisely we could guide the model’s changes to existing therapeutic antibodies. This time, we gave the model the original sequences and asked it to change about half the amino acids in each of three binding loops while keeping the rest of the sequence intact. We tested the redesigned portions of the antibodies as fragments in the lab. Of 272 fragments based on five therapeutic antibodies, 179 (66%) showed binding to the original target, PD-1 or PD-L1.</span></p><h2><span>What else can our models design and predict?</span></h2><h3>Precise control over minibinder structures for programmable structure design</h3><p><span>A long-term goal of programmable structure-based design is to let researchers specify structural constraints in natural language. In our computational evaluations, our models consistently designed minibinders that contacted the required locations on the target. We could also specify the minibinder’s structural class (all helices, all strands, or a combination) and control the number of coils and strands with near-perfect fidelity. The same approach lets us express more detailed requirements for the binding interface, such as which target amino acids should be buried upon binding or whether the minibinder and target should interact through specific interactions such as “β-sheet–β-sheet”. As our model’s reasoning capabilities improve, we envision researchers guiding protein structure generation much as they guide image generation today, by describing the features they want.</span></p><figure><p><img alt=\"Guiding protein shapes with plain language · responsive legend poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/6hHUcGPmxSdtuz8SS3Rcth/7af1c0f8e139a63fd1433aceae7ec207/guiding-responsive-legend-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>Our model was asked to design small proteins with specified shapes: mainly coils (orange), mainly strands (blue), or a mix. Some instructions also specified how many coils or strands to include. The designs are intended to attach to PD-L1 or PD-1, shown in gray.</span></i></p></figcaption></figure><h3>Building a protein around a specified structural feature</h3><p><span>Most enzymes are proteins that speed up chemical reactions. When designing a new enzyme, researchers may know how a few key amino acids need to be arranged at the site where the reaction happens. Those amino acids can lie far apart along the protein chain. The challenge is to design the rest of the protein so that, as the chain folds, it brings them together and holds them in place.</span></p><p><span>We tested our models on 30 challenges from</span><a href=\"https://arxiv.org/html/2502.12479v2\"><span> MotifBench</span>⁠<span>(opens in a new window)</span></a><span>, including examples drawn from enzymes and from sites where proteins bind to one another. We gave the models a specific three-dimensional arrangement of amino acids, called a </span><b><span>motif</span></b><span>, and asked them to use coding tools to design the rest of the protein around it. This task is called </span><b><span>motif scaffolding</span></b><span>.</span></p><p><span>For each design, we used ProteinMPNN to propose eight possible amino acid sequences, and </span><a href=\"https://huggingface.co/biohub/esmfold_v1\"><span>ESMFold</span>⁠<span>(opens in a new window)</span></a><span> to predict how each would fold. We counted the design as a success if at least one predicted structure both preserved the motif and closely matched the overall structure the model had designed.</span></p><p><span>In a preliminary analysis, 43.7% of the designs we evaluated from our latest internal model met both criteria, compared with 27.8% for RFdiffusion. While laboratory experiments are needed to find out whether these proteins could carry out the intended function, such as speeding up a particular reaction, this provides strong computational evidence of our models’ intrinsic protein capabilities.</span></p><figure><p><img alt=\"MotifBench · responsive legend poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/3GkRmY9bmi12lalJCbZOjU/1bb471ce9aeb8e177ea935869c355d92/motif-responsive-legend-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>An internal research model designed protein structures around a small region whose shape had to stay fixed, shown in gold. The colored shapes compare the model’s designs with computer predictions of how the proteins would fold. Panels showing only gold had no design that passed the computer checks.</span></i></p></figcaption></figure><h3>Designing a protein with a specified fold</h3><p><span>In motif scaffolding, we specified how a few amino acids should sit relative to one another. We then determined whether we could also guide the design of an entire protein by specifying its overall fold. We gave our models a chain length and a code from</span><a href=\"https://www.cathdb.info/wiki/doku/?id=faq\"><span> CATH</span>⁠<span>(opens in a new window)</span></a><span>, a system scientists use to classify protein structures. The models then had to work out where each amino acid should go in three-dimensional space.</span></p><p><span>Many designs captured the broad layout we asked for. The harder part was getting the chain to follow the right path through it. Two proteins can have several coiled stretches packed together in a similar bundle, for example, yet differ in the order in which the chain connects them.</span></p><p><span>We counted a design as a success if at least one amino acid sequence was predicted to adopt the requested fold and closely match the model’s three-dimensional design. Across 200 challenges, 18.9% of the designs we evaluated from our latest internal model passed, compared with 17.1% for Proteina, a specialized protein design model.</span></p><figure><p><img alt=\"CATH fold design · responsive legend poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/11XZLTWWYSfBFIEC0CGw0D/df7b4140a33a376f4ecc4f5bc2a553e6/cath-responsive-legend-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>An internal research model was asked to design proteins with specified overall shapes, such as bundles of coils or layers of strands. The colored shapes compare selected designs with computer predictions of how they would fold, showing examples where the two closely match.</span></i></p></figcaption></figure><h3>Predicting how chemicals and proteins fit together</h3><p><span>Many medicines, including aspirin, are </span><b><span>small molecules</span></b><span>, chemical compounds much smaller than the proteins they act on. Predicting where a small molecule binds to a protein and how it fits there is called </span><b><span>docking</span></b><span>. These predictions can help researchers decide how to modify a drug candidate so it binds more tightly to its target. To test our models, we started with experimentally determined structures of small molecules bound to proteins. We digitally removed each small molecule and gave the models the protein structure along with a text description of how the molecule’s atoms were connected (a sequence of characters called SMILES). We then asked the models to predict where the molecule had been bound and how it was oriented.</span></p><p><span>For our first docking test, we used the</span><a href=\"https://pubs.rsc.org/en/content/articlehtml/2024/sc/d3sc04185a\"><span> PoseBusters dataset</span>⁠<span>(opens in a new window)</span></a><span>, a collection of three-dimensional structures that show how small molecules bind to proteins. Researchers determined these structures experimentally, giving us a way to check the models’ predictions. Without being told where on the protein each molecule had bound, the models had to predict both where the molecule fit and which way it faced. GPT‑6.2 closely matched the molecule’s observed position and orientation in 93% of scored predictions, compared with 96% for our latest internal model and 50% for DiffDock-L, a specialized docking model.</span></p><p><span>In practice, researchers may already know something about how a molecule binds. </span><b><span>One major advantage of a GPT model is that we can give additional information directly in the prompt</span></b><span>. We tested this on 179 structures from the</span><a href=\"https://doi.org/10.1021/acs.jcim.8b00228\"><span> </span><span>Scarpino dataset</span>⁠<span>(opens in a new window)</span></a><span>, where each protein structure forms a chemical bond with a small molecule, tethering the two together. We told our models which two atoms formed the bond and asked them to predict how the rest of the molecule fit against the protein. GPT‑6.2 closely matched the experimental structure in</span><a href=\"https://github.com/openai/protein_paper/blob/4f5fbba67d507f01c5b8f1ea2ba9f5bc8c23494b/figures/section_4/small_molecule_docking/data/success/counts_and_rates.csv\"><span> </span><span>92% of scored predictions</span>⁠<span>(opens in a new window)</span></a><span>, and our latest internal model did so in 97%, while </span><a href=\"https://github.com/gcorso/DiffDock/blob/main/inference.py\"><span>DiffDock</span>⁠<span>(opens in a new window)</span></a><span> reached 60%.</span></p><figure><figcaption><p><i><span>An internal research model predicted where and how small molecules would fit against proteins, shown in gray. Purple shows the model’s predictions, and teal shows the molecules’ positions determined in earlier experiments. In these examples, the predictions closely match the experimental structures.</span></i></p></figcaption></figure><h3>Predicting how antibodies bind to proteins</h3><p><span>Where an antibody binds can help explain whether it blocks another protein from attaching to the same site. We tested how accurately successive generations of GPT could predict where an antibody binds and which way it faces. For hundreds of pairs of antibodies and targets, we showed the models the two proteins separately and hid some of the atomic detail (all side chains) on their surfaces.</span></p><p><span>With the side-chain details hidden, the mean DockQ score (a commonly used metric in which higher values indicate a closer match to the experimentally observed arrangement) increased from approximately 0.05 for GPT‑5.6 to 0.28 for GPT‑6, 0.57 for GPT‑6.2, and 0.81 for our latest internal model, at each model’s highest evaluated compute setting.</span></p><p><span>Because these structures were public, the models may have seen the same antibody-target pairs or similar ones during training. Even so, each generation of our models predicted more accurately how the two proteins fit together, even with all side-chain positions hidden. That progress gives us reason to be optimistic about harder docking problems.</span></p><figure><p><img alt=\"Predicting antibody attachment · Video poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/1YHml5YMMOVbMQ7vV03a0Z/4e6dadc376a44b026d96bfd6b3ae1e8a/102-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>Each row compares four models’ predictions of how an antibody attaches to its target protein. Colored shapes show the model’s prediction; dark gray shows the position observed in experiments. Results improved with each successive generation of model.</span></i></p></figcaption></figure><h3>Predicting the effects of mutations</h3><p><span>We can design far more proteins on a computer than we can make and test in the lab. Even after we settle on a promising structure, we may have many amino acid sequences to choose from. We tested whether our models could help researchers decide which versions to make first by predicting how changes to a protein’s sequence would affect its stability, activity, or ability to bind to a target.</span></p><p><span>We drew on four public datasets from experiments in which scientists had replaced one or more amino acids in a protein and measured the effects. For each test, we gave our models the sequence of the protein the scientists started with and the sequences of 50 modified versions. We told the models what the scientists had measured, withheld the results, and asked them to rank the 50 versions without using coding tools, by reasoning only.</span></p><p><span>In one study of protein stability, we asked the models to rank 50 versions of a protein by how likely each was to be folded at room temperature. We compared the predicted order with the order observed in the lab using a measure called </span><i><span>rank correlation</span></i><span>. A value of 1 means the rankings match perfectly, 0 means there’s no consistent relationship, and −1 means the order is exactly reversed. Across 265 sets from the stability study, each model generation improved, from 0.41 for GPT‑5.6 to 0.52 for GPT‑6, 0.57 for GPT‑6.2, and 0.66 for our latest internal model.</span></p><p><span>In each of the four datasets, GPT‑6.2 and our latest internal model produced more accurate rankings on average than ESM2-650M, a specialized protein model.</span></p><h3>Early signals from our model’s protein structure predictions</h3><p><span>Earlier, we relied on specialized models to predict whether an amino acid sequence would fold into the structure our models had designed. We wanted to see how close our models are to making that prediction themselves. We gave our models the amino acid sequences of proteins with known three-dimensional structures. Using only basic coding tools, the models predicted how each chain would fold in three dimensions. We evaluated their predictions using a measure called </span><i><span>TM-score</span></i><span>. A score of 1 means a perfect match to the real structure, and scores above 0.5 generally indicate that the prediction captures the overall fold.</span></p><p><span>The biggest gains are visible in individual examples. For some proteins, our latest internal model closely reproduced folds that earlier models missed. Across the full test, the average score rose from 0.16 for GPT‑5.6 to 0.26 for GPT‑6.2 and 0.38 for our latest internal model. The specialized model ESMFold2 averaged 0.93, so there’s still a substantial gap in how reliably our models can predict a whole protein’s structure from its sequence alone.</span></p><p><span>What if researchers already know most of the structure and want to fill in a missing piece? We tested this on 100 antibody fragments. For each one, we gave our models the amino acid sequences and the surrounding three-dimension structure, hiding the six loops that help the antibody recognize its target. Our latest internal model often predicted both the shape and position of those loops quite accurately. ESMFold2 was still more accurate overall, even working from the sequences alone.</span></p><figure><p><img alt=\"Predicting how a protein folds · Video poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/EPSBjHvFHaqO4YmjaARZl/eb92da4b71e5c45583f0ac9f96cf47f7/117-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>Each model was given the same protein sequence—the order of its chemical building blocks—and asked to predict its 3D shape. The colored shapes show the predictions, and dark gray shows the structure measured in experiments.</span></i></p></figcaption></figure><figure><figcaption><p><i><span>Each model was given a partial structure and tasked with predicting the missing regions corresponding to the antibody CDRs. The colored regions show predictions from the internal model and ESMFold2 compared with the experimentally determined structures.</span></i></p></figcaption></figure><h2><span>Limitations</span></h2><p><span>It is important to note that our protein design campaign relied on specialized structure prediction models such as Boltz-2, OpenDDE, and ESMFold2 to filter candidates. Our results show that GPT models have intrinsic capabilities comparable to specialized models at two stages of the workflow: backbone generation, where researchers commonly use RFdiffusion; and sequence redesign, where they commonly use ProteinMPNN. Our results therefore do not yet establish that our models can generate de novo minibinders end-to-end in a zero-shot setting without help from specialized models.</span></p><p><span>Our work demonstrates yet again the jagged capability frontier. Predicting a complete protein structure from its amino acid sequence remains substantially harder for our models than several of the component tasks above. On that task, even our best internal models remained well behind specialized structure-prediction models.</span></p><p><span>Some benchmark results also require careful interpretation. In tests that asked models to infer amino acid sequences from protein structures, unusually high accuracy may partly reflect memorization or patterns left by the process used to generate those structures. Those results alone do not establish reliable performance on unfamiliar proteins.</span></p><p><span>The laboratory results provide a more direct test of whether proposed designs can work, but binding is only one step toward a useful research tool or medicine. Further work would need to establish properties such as specificity, stability, and biological activity, along with safety and efficacy for therapeutic applications.</span></p><h2><span>What’s next</span></h2><p><span>This work is an early step toward </span><b><span>programmable molecular design</span></b><span> at OpenAI. Our goal is to let scientists describe what they want a molecule to do in plain language and use our models to help design candidates to test in the lab. To make that approach useful for developing medicines, we want to make progress in three areas.</span></p><ul><li><p><b><span>Find minibinders for harder targets.</span></b><span> We want to design molecules that bind to targets where our attempts so far have fallen short.</span></p></li><li><p><b><span>Design for what happens after binding.</span></b><span> We want to test whether the molecules we design can produce a specific biological effect, such as killing a cancer cell. We also want to design molecules that bind selectively to their intended targets and are practical to manufacture.</span></p></li><li><p><b><span>Design a wider range of molecules.</span></b><span> Our lab experiments focused on small protein minibinders and antibody fragments. We’d like to extend that work to molecules that bind to several targets at once, RNA, and small molecules, including a class called PROTACs that direct a cell to break down a particular protein.</span></p></li></ul><p><span>As we work to accelerate scientific progress safely and responsibly, we also seek to evaluate and reduce risks, particularly those related to biosecurity. The same capabilities that help scientists design proteins for new medicines could also be misused. Our</span><a href=\"https://openai.com/index/updating-our-preparedness-framework/\"><span> Preparedness Framework</span>⁠</a><span> guides how we assess these risks and test safeguards to reduce them.</span></p><p><span>While lab testing remains a critical part of protein design, our goal is to provide powerful models that can shorten each round of design by giving scientists more control and flexibility, and reduce the total number of design-test cycles needed to find a functional protein. Ultimately, we envision enabling scientists to design proteins and molecules simply by prompting our models in natural language, massively accelerating the development of new biotechnologies and new medicines.</span></p>"
+  },
+  {
+    "id": "aihot-20261124-openai-news-92dff0d7",
+    "title": "两名业余天文爱好者用 Codex 与 Astra 在 NASA 数据中搜寻系外行星",
+    "originalTitle": "Searching for distant planets with Astra",
+    "summary": "两名业余天文爱好者借助 Codex 与 Astra，在 NASA 开普勒与 TESS 太空望远镜的公开数据中找到潜在系外行星。OpenAI 通过官方案例展示了这一 AI 辅助的天文搜寻过程，显示 AI 工具正在被业余研究者用于真实科学发现。",
+    "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+    "source": "OpenAI News",
+    "publishedAt": "2026-11-24T11:00:00.000Z",
+    "score": 76,
+    "tier": "T1",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "AI应用",
+      "科学研究",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "OpenAI",
+      "Astra",
+      "Codex",
+      "系外行星"
+    ],
+    "context": "公开天文数据与 AI 工具结合，让业余研究者也能参与系外行星搜寻等前沿科学工作，是 AI 科研应用的代表性案例。",
+    "contentHtml": "<p>See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.</p>"
   },
   {
     "id": "aihot-20261124-aws-ml-df5bd027",
@@ -4426,390 +4802,5 @@
       "中东局势"
     ],
     "context": "此为地缘政治外围表态性快讯，暂无具体举措落地，可关注后续美伊关系演变对市场情绪的影响。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-425b083c",
-    "title": "摩根大通上调CrowdStrike目标价至240美元",
-    "summary": "摩根大通将网络安全公司CrowdStrike（CRWD.O）目标价由235美元上调至240美元，上调幅度为5美元。",
-    "url": "https://finance.eastmoney.com/a/202611233937389511.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T10:03:57.000Z",
-    "score": 48,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "机构观点",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "摩根大通",
-      "CrowdStrike",
-      "目标价",
-      "美股"
-    ],
-    "context": "分析师目标价微调属美股常规动态，可作为跟踪网络安全板块机构态度的参考。"
-  },
-  {
-    "id": "aihot-20261123-bloomberg-markets-63f7eceb",
-    "title": "摩根士丹利策略师 Wilson：标普500与道指回调带来不容错过的买入良机",
-    "originalTitle": "Morgan Stanley’s Wilson Says Buying Opportunity Too Good to Miss",
-    "author": "Michael Msika",
-    "summary": "摩根士丹利策略师 Wilson 团队表示，标普500与道指双双进入回调区间的一周，为投资者提供了不容错过的买入机会。这一表态是头部投行策略团队在美股两大基准指数同步回调之际发出的鲜明看多声音。",
-    "url": "https://www.bloomberg.com/news/articles/2026-11-23/morgan-stanley-s-wilson-says-buying-opportunity-too-good-to-miss",
-    "source": "Bloomberg Markets",
-    "publishedAt": "2026-11-23T10:02:24.000Z",
-    "score": 78,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股市场",
-      "机构观点",
-      "美股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "市场",
-      "美股",
-      "摩根士丹利",
-      "策略观点",
-      "市场回调"
-    ],
-    "context": "美股同周齐齐跌入回调区间引发多空分歧，具影响力的大行策略师表态对市场情绪有风向标意义。",
-    "contentHtml": "<p>A week that saw both the S&amp;P 500 and Dow Jones Industrial Average enter correction territory has delivered investors a buying opportunity that’s too good to miss, according to Morgan Stanley strategists.</p>",
-    "contentHtmlZh": "<p>{\"t\": [\"</p><p>摩根士丹利的策略师表示，标普500指数与道琼斯工业平均指数双双进入回调区间的这一周，为投资者带来了一个不容错过的买入良机。</p><p>\"]}</p>"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-3e267f4e",
-    "title": "华夏基金(香港)推出全球唯一一只追踪离岸人民币债券ETF",
-    "originalTitle": "華夏基金(香港)推出全球唯一一隻追蹤離岸人民幣債券ETF助力香港離岸人民幣市場建設",
-    "summary": "华夏基金（香港）推出全球唯一一只追踪离岸人民币债券的ETF，以助力香港离岸人民币市场建设。该公司表示，该产品旨在推进人民币国际化行稳致远。",
-    "url": "https://finance.sina.com.cn/money/fund/jjdt/2026-11-23/doc-iniztmtw5486506.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T09:58:26.000Z",
-    "score": 73,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "港股",
-      "人民币国际化",
-      "A股",
-      "美股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "港股ETF",
-      "离岸人民币",
-      "华夏基金",
-      "债券"
-    ],
-    "context": "离岸人民币债券ETF为投资者参与香港离岸人民币市场和人民币国际化进程提供了新的被动投资工具。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-29bd7242",
-    "title": "锡耶纳牧山银行董事会对联合圣保罗银行370亿美元收购要约释放矛盾信号",
-    "originalTitle": "锡耶纳牧山银行董事会对意大利联合圣保罗银行370亿美元收购要约释放矛盾信号",
-    "summary": "锡耶纳牧山银行董事会未表态股东应当接受还是拒绝意大利联合圣保罗银行370亿美元的收购要约，立场释放出矛盾信号。该要约的接受期将持续至次年1月22日。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmue0589499.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T09:55:19.000Z",
-    "score": 78,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "并购交易",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "银行业并购",
-      "锡耶纳牧山银行",
-      "联合圣保罗银行",
-      "收购要约"
-    ],
-    "context": "370亿美元意大利银行业并购案悬而未决，董事会态度暧昧令交易走向更添不确定性，值得市场投资者关注。",
-    "contentHtml": "<p>　　董事会未表态股东应当接受还是拒绝该收购要约</p><p><img src=\"https://n.sinaimg.cn/finance/transform/116/w550h366/20261123/133d-60962ba4536981e103ca23f373ea638d.png\" alt=\"锡耶纳牧山银行总部。联合圣保罗银行要约的接受期将持续至次年 1 月 22 日。\"><span>锡耶纳牧山银行总部。联合圣保罗银行要约的接受期将持续至次年 1 月 22 日。</span></p><p>　　<strong>内容概要</strong></p><p>　　锡耶纳牧山银行董事会表示，意大利联合圣保罗银行 370 亿美元的收购要约定价公允，但并未体现该行的成长价值。</p><p>　　本周晚些时候收购要约接受期即将开启，锡耶纳牧山银行并未对意大利联合圣保罗银行这笔 370 亿美元收购要约给出明确立场。</p><p>　　牧山银行董事会于周六就联合圣保罗银行的收购要约出具正式意见，称该要约的报价处于公允水平。</p><p>　　但董事会补充表示，这份报价并未体现牧山银行自身价值，以及其未来增长与价值创造的潜力。</p><p>　　董事会称，应由各位股东自行独立评估本次交易；同时明确，董事会既不建议接受，也不建议拒绝该要约。</p><p>　　按照上周五收盘价计算，联合圣保罗银行拟收购素有全球现存最古老银行之称的牧山银行，交易对价约 336.3 亿欧元（折合 368.9 亿美元）。联合圣保罗银行自身市值约为 1022.7 亿欧元。</p><p>　　牧山银行董事会表示，已考虑到联合圣保罗银行对初始要约作出的改进，但报价依旧没有反映本行的增长前景，尤其在完成另一笔收购之后。</p><p>　　牧山银行同时认为，本次交易所预估每年 29 亿欧元的协同效应，预期值看起来偏高。</p><p>　　牧山银行此前一直试图抵御联合圣保罗银行的收购。但上月形势急转直下：为阻击本次收购，该行首席执行官路易吉・洛瓦格里奥提出两笔并购提案，拟收购另外两家机构，却遭到股东压倒性否决。</p><p>　　联合圣保罗银行当前给出的对价方案为：每 1 股牧山银行股票，可以获得 1.25 欧元现金外加 1.664 股联合圣保罗银行股票。为对冲联合圣保罗银行拟派发中期股息带来的影响，上述换股比例已经上调。</p><p>　　除非延期，联合圣保罗银行要约的接受期将于周二启动，至次年 1 月 22 日截止。</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
-    "author": "环球市场播报"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-a21b7108",
-    "title": "翰博高新筹划收购拓合科技51%股权 预计构成重大资产重组",
-    "originalTitle": "翰博高新：筹划收购拓合科技51%股权 预计构成重大资产重组",
-    "summary": "翰博高新(301321.SZ)公告，拟以现金方式购买拓合科技51%股权，交易完成后拓合科技将成为其控股子公司，本次交易预计构成重大资产重组。交易不涉及发行股份，不构成关联交易。拓合科技主营蚀刻液等功能性湿电子化学品的研发、生产和销售，产品主要应用于显示面板等领域。",
-    "url": "https://finance.eastmoney.com/a/202611233937384611.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T09:52:13.000Z",
-    "score": 62,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司公告",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "翰博高新",
-      "重大资产重组",
-      "并购"
-    ],
-    "context": "湿电子化学品资产拟注入显示面板产业链公司，交易细节与整合进展值得关注。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-08234c4d",
-    "title": "康菲石油以39亿美元将挪威业务出售给Var Energi",
-    "summary": "康菲石油达成协议，以39亿美元将其挪威业务出售给挪威能源公司Var Energi，旗下蒂赛德石油终端也一并纳入交易。该交易预计于明年第一季度末完成交割。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmty2257930.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T09:52:07.000Z",
-    "score": 78,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "能源",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "康菲石油",
-      "Var Energi",
-      "油气并购",
-      "挪威"
-    ],
-    "context": "近40亿美元规模的油气资产出售是近期国际能源行业资产整合的重要动态。",
-    "contentHtml": "<p>　　该交易预计于明年第一季度末完成交割</p><p><img src=\"https://n.sinaimg.cn/finance/transform/116/w550h366/20261123/63ef-996f59177ee66ecbadc0b3d84f6f2cd7.png\" alt=\"康菲石油的蒂赛德石油终端也纳入本次与挪威Var Energi达成的交易。\"><span>康菲石油的蒂赛德石油终端也纳入本次与挪威Var Energi达成的交易。</span></p><p>　　<strong>内容概要</strong></p><p>　　<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/COP.html\">康菲石油</a></span><span></span>达成协议，将旗下挪威油气业务以及英国一处石油终端的股权，作价约 39 亿美元出售给Var Energi。</p><p>　　美国石油企业康菲石油宣布，已达成交易，将其挪威油气业务，外加英国一座石油终端的部分股权出售给Var Energi，交易总规模约 39 亿美元。</p><p>　　康菲石油周一表示，本次交易将带来约 25 亿美元现金；剩余约 14 亿美元由这家挪威油气公司承担，对应康菲石油 2026 年应付税款，该笔税款将于 2027 年上半年缴纳。康菲石油称，本次出售资产包含英国蒂赛德石油终端 40.25% 的股权，同时交出该设施的运营权。</p><p>　　康菲石油表示，所得现金将用于企业一般经营用途，以及 2027 年股票回购。</p><p>　　2025 年，这批挪威资产的油气产量约为每日 12 万桶油当量。Var Energi在另一份公告中称，这笔交易将增厚公司每股收益与每股股息。</p><p>　　本次交易预计在明年第一季度末完成交割。</p><p><span>新浪合作大平台期货开户 安全快捷有保障</span>\n    <img src=\"https://n.sinaimg.cn/finance/transform/340/w170h170/20220415/bd6a-a2376d5226aaa796dfdca62b1d9b1fcb.png\">\n</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
-    "author": "环球市场播报"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-4dcdcc6a",
-    "title": "沪光股份：拟以5000万元至1亿元回购公司股份",
-    "originalTitle": "沪光股份：拟以5000万元-1亿元回购公司股份",
-    "summary": "沪光股份公告，拟以自有资金或自筹资金通过集中竞价方式回购股份，金额不低于5000万元且不超过1亿元。回购股份将用于股权激励或员工持股计划，回购价格不超过28.44元/股。",
-    "url": "https://finance.eastmoney.com/a/202611233937378152.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T09:51:19.000Z",
-    "score": 55,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司公告",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "沪光股份",
-      "股份回购",
-      "股权激励"
-    ],
-    "context": "回购拟用于股权激励或员工持股计划，是A股上市公司常规资本运作公告动态。"
-  },
-  {
-    "id": "aihot-20261123-wscn-global-ad537d36",
-    "title": "欧洲紧急石油储备面临新挑战：有原油，缺柴油",
-    "author": "李佳",
-    "summary": "欧洲紧急石油储备面临新挑战：原油储备充足，但柴油储备短缺。这一有原油、缺柴油的结构性问题成为欧洲应急能源保障的新难点。",
-    "url": "https://wallstreetcn.com/articles/3786517",
-    "source": "华尔街见闻 · 全球",
-    "publishedAt": "2026-11-23T09:50:56.000Z",
-    "score": 63,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "能源",
-      "宏观",
-      "市场政策"
-    ],
-    "region": [
-      "金融与政策",
-      "财经"
-    ],
-    "tags": [
-      "财经",
-      "宏观",
-      "欧洲",
-      "石油储备",
-      "柴油",
-      "能源安全"
-    ],
-    "context": "在原油储备充足的情况下柴油不足，为欧洲能源安全与石油市场带来新的结构性变量。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-6f70bfb8",
-    "title": "阳光诺和：董事长提议回购3000万至5000万元股份",
-    "summary": "阳光诺和（688621.SH）公告，公司董事长、控股股东、实际控制人利虔提议以自有资金或自筹资金回购股份，回购金额不低于3000万元且不超过5000万元。回购股份将用于员工持股计划或股权激励。",
-    "url": "https://finance.eastmoney.com/a/202611233937378968.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T09:50:31.000Z",
-    "score": 55,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司动态",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "阳光诺和",
-      "股份回购",
-      "公司公告"
-    ],
-    "context": "实控人提议回购并用于员工持股或股权激励，是A股常见的市值管理与激励安排动态，对跟踪该科创板个股的投资者具有参考价值。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-159f073c",
-    "title": "迪拜据悉考虑合并Dubai Islamic Bank和Emirates Islamic Bank",
-    "summary": "据知情人士透露，迪拜官员已就可能合并Dubai Islamic Bank和Emirates Islamic Bank进行初步讨论，旨在打造一家更有能力参与全球竞争、符合伊斯兰教法的银行。消息来自知情人士，谈判尚处初步讨论阶段。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmtw5479859.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T09:50:00.000Z",
-    "score": 55,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "海外金融",
-      "市场",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "迪拜",
-      "伊斯兰银行",
-      "并购",
-      "银行业"
-    ],
-    "context": "消息尚未获官方确认，若落地将整合迪拜两大伊斯兰银行，后续进展值得持续跟踪。"
-  },
-  {
-    "id": "aihot-20261123-bloomberg-markets-09ff2b0a",
-    "title": "中国普通人如何采用AI：彭博记者的良渚见闻",
-    "originalTitle": "How Everyday Chinese People Are Adopting AI",
-    "author": "Tracy Alloway and Joe Weisenthal",
-    "summary": "彭博刊发记者Afra Wang的一线观察，报道杭州良渚普通人在日常生活中采用AI的情况，呈现中国AI应用向大众渗透的面貌。文章以实地见闻回答普通人如何把AI融入日常的问题。",
-    "url": "https://www.bloomberg.com/news/articles/2026-11-23/how-everyday-chinese-people-are-adopting-ai",
-    "source": "Bloomberg Markets",
-    "publishedAt": "2026-11-23T09:00:08.000Z",
-    "score": 58,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "AI应用",
-      "行业观察",
-      "美股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "市场",
-      "AI采用",
-      "中国",
-      "彭博",
-      "一线观察"
-    ],
-    "context": "AI落地正从技术圈走向普通人，这类一线见闻为判断中国AI消费渗透提供了直观参照。",
-    "contentHtml": "<p>What journalist Afra Wang saw in Liangzhu.</p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-27ed822e",
-    "title": "燧原科技：在手订单充沛 正与多家国内半导体产业伙伴合作",
-    "originalTitle": "燧原科技：在手订单充沛 正在与多家国内半导体产业伙伴进行合作",
-    "summary": "燧原科技高管在2026年三季度业绩说明会上表示，公司目前在手订单充沛，生产经营按计划正常开展。公司正与多家国内半导体产业伙伴合作，打造基于国产供应链的云端AI芯片产品，构建稳定供应链体系。",
-    "url": "https://finance.eastmoney.com/a/202611233937333298.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T08:59:52.000Z",
-    "score": 56,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "科技硬件",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "燧原科技",
-      "AI芯片",
-      "国产供应链"
-    ],
-    "context": "国产AI芯片厂商披露订单与供应链国产化进展，呼应算力自主可控主线。"
   }
 ]
