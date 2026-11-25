@@ -1,5 +1,392 @@
 [
   {
+    "id": "aihot-20261125-the-verge-ai-546c251d",
+    "title": "Nothing 展示 AI 耳机 Ear Note 及录音充电盒完整外观",
+    "originalTitle": "Nothing offers a full look at its AI earbuds and charging case",
+    "author": "Emma Roth",
+    "summary": "Nothing 在 12 月 8 日发售前展示了即将推出的 AI 耳机 Ear Note 的更多细节。Ear Note 耳机可录制通话，其充电盒可对对话进行录音、转写和摘要；与 Ear 3 类似，配备麦克风的充电盒带有\"Talk\"按钮。",
+    "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+    "source": "The Verge · AI",
+    "publishedAt": "2026-11-25T16:00:59.000Z",
+    "score": 68,
+    "tier": "T2",
+    "selected": false,
+    "industry": "AI",
+    "topics": [
+      "消费电子",
+      "AI硬件",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "region": [
+      "AI精选",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "Nothing",
+      "Ear Note",
+      "AI耳机",
+      "消费硬件"
+    ],
+    "context": "将录音、转写与摘要能力整合进耳机和充电盒，是消费级音频硬件 AI 化的新尝试。",
+    "contentHtml": "<figure>\n\n<img alt=\"An image of the Nothing Ear Note\" data-caption=\"\" data-portal-copyright=\"\" data-has-syndication-rights=\"1\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ear-note-nothing.jpeg?quality=90&strip=all&crop=0,0,100,100\" />\n\t<figcaption>\n\t\t</figcaption>\n</figure>\n<p class=\"wp-block-paragraph\">Nothing <a href=\"https://x.com/nothing/status/2125590327189021093?a=Su5GIj_FqQDB3ddRSgE&s=20\">is showing off a much more detailed look</a> at its upcoming AI earbuds ahead of their December 8th release. The Ear Note buds can record your calls, while their charging case can record, transcribe, and summarize your conversations.</p>\n<p class=\"wp-block-paragraph\"><a href=\"https://www.theverge.com/tech/792839/nothing-ear-3-review-audio-super-mic-price\">Like the Ear 3</a>, the Ear Note's microphone-equipped case comes with a \"Talk\" button that you can use to record your own voice. There's also a new \"Record\" button that can record and transcribe your conversations. <a href=\"https://x.com/getpeid/status/2125596507307180044?a=F_huihKP6YwdY81UzAc&s=20\">In a post on X</a>, Nothing CEO Carl Pei says the button will allow you to record calls through the earbuds, and meetings through the case as a \"first step toward a hardware context layer for AI.\"</p>\n<div class=\"youtube-embed\"></div>\n<p class=\"wp-block-paragraph\">As p …</p>\n<p><a href=\"https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal\">Read the full story at The Verge.</a></p>"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-5fed27b4",
+    "title": "美军在艾奥瓦州销毁数吨有毒化学物质",
+    "summary": "美国陆军于美东时间11月25日上午10时在艾奥瓦州一处设施内销毁近5吨用于制造炸药的有毒含铅化合物。联邦官员此前表示，这些化学物质已发生降解，在严寒气温下可能引发失控爆炸，打开容器进行化学中和处理同样存在爆炸风险，因此必须进行受控销毁。",
+    "url": "https://finance.eastmoney.com/a/202611263939917632.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T16:00:30.000Z",
+    "score": 46,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "海外动态",
+      "A股",
+      "港股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美军",
+      "有毒化学物质",
+      "艾奥瓦州",
+      "海外动态"
+    ],
+    "context": "属海外突发动态，涉及危险化学品受控销毁与公共安全，与A股及市场政策直接关联有限。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-896fe570",
+    "title": "美国30年期国债收益率当日下跌10个基点至5.22%",
+    "summary": "美国30年期国债收益率当日下跌10个基点，至5.22%。",
+    "url": "https://finance.eastmoney.com/a/202611253939917228.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T15:53:12.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美债",
+      "收益率",
+      "海外宏观",
+      "快讯"
+    ],
+    "context": "长端美债收益率变动是影响全球资产定价与A股风险偏好的重要宏观信号，单日大幅回落值得留意。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-9e7fdec8",
+    "title": "纳斯达克100指数进入\"先卖再说\"模式 AI和加息之忧刺激抛售",
+    "originalTitle": "纳斯达克100指数进入“先卖再说”模式 AI和加息之忧刺激抛售",
+    "summary": "纳斯达克100指数连续第二天暴跌，盘中较收盘纪录高位一度下跌20%、短暂进入熊市，投资者对AI过度投资和加息的担忧加剧，重创美国大型科技股。该指数随后收复部分失地，目前今年微跌。",
+    "url": "https://finance.eastmoney.com/a/202611253939917111.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T15:51:24.000Z",
+    "score": 80,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "纳斯达克100",
+      "美股",
+      "熊市",
+      "AI担忧"
+    ],
+    "context": "美股科技权重风向标触及熊市阈值，AI交易降温与利率担忧叠加，市场情绪明显转向谨慎。",
+    "contentHtml": "<p><a href=\"http://quote.eastmoney.com/unify/r/100.NDX100\"><img src=\"https://webquoteklinepic.eastmoney.com/GetPic.aspx?nid=100.NDX100&amp;imageType=k&amp;token=28dfeb41d35cc81d84b4664d7c23c49f&amp;at=1\" alt=\"K图 NDX100_0\" width=\"578\" height=\"276\"></a></p><p>　　<span><a href=\"http://quote.eastmoney.com/unify/r/105.NDAQ\">纳斯达克</a></span><span></span>100指数连续第二天暴跌并短暂进入熊市，投资者对AI过度投资的担忧加剧，重创了美国大型科技公司的股价。<span>纳斯达克</span>100指数短暂较收盘纪录高位下跌20%后收复了部分失地。目前来看该指数今年微跌。 </p><p>　　“先卖了再说，之后再问问题，”The Wealth Alliance总裁兼董事总经理Eric Diton说，此次残酷的抛售潮是由<span><a href=\"http://quote.eastmoney.com/unify/r/105.NVDA\">英伟达</a></span><span></span>的不稳定引发的，再加上美联储的加息周期以及对科技公司盈利增长达峰的担忧更是雪上加霜。 </p><p>（文章来源：财联社）</p>"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-f05d26f0",
+    "title": "产品“供不应求”“持续放量” 多家沪市科技公司发声稳市场，并以真金白银回购护盘",
+    "originalTitle": "产品“供不应求”“持续放量” 多家沪市科技公司发声稳市场 还拿出真金白银护盘回购",
+    "summary": "多家沪市科技公司近日集体发声，称产品“供不应求”“持续放量”，并拿出真金白银回购护盘，稳定市场预期。此举是对近日全球科技公司股价调整加剧的回应，直接针对投资者关于科技产业趋势是否变化、订单需求能否支撑企业发展的疑问。",
+    "url": "https://finance.eastmoney.com/a/202611253939912879.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T15:49:56.000Z",
+    "score": 64,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "科技股",
+      "市场动态",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "沪市科技公司",
+      "回购",
+      "市场稳定"
+    ],
+    "context": "全球科技股调整加剧之际，沪市科技公司密集表态并启动回购，是观察A股科技板块信心与订单支撑的重要信号。"
+  },
+  {
+    "id": "aihot-20261125-bloomberg-markets-81cc01a0",
+    "title": "白宫经济顾问哈塞特：美国经济呈\"金发姑娘\"状态，通胀未加速",
+    "originalTitle": "Hassett Sees a “Goldilocks” Economy",
+    "summary": "白宫经济顾问凯文·哈塞特表示，强劲的投资与增长表明美国经济处于\"金发姑娘\"状态，通胀并未加速。他还就美联储政策、英伟达对国家层面的重要性以及即将举行的丽莎·库克听证会发表看法。",
+    "url": "https://www.bloomberg.com/news/videos/2026-11-25/hassett-sees-a-goldilocks-economy-video",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-25T15:49:47.000Z",
+    "score": 65,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "政策动态",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "宏观经济",
+      "美联储",
+      "通胀",
+      "白宫"
+    ],
+    "context": "白宫经济顾问在库克听证会前夕对经济与美联储议题表态，其观点对市场预期具有指引意义。",
+    "contentHtml": "<p>White House economic adviser Kevin Hassett says strong investment and growth point to a “Goldilocks” economy, with inflation not accelerating. He also weighs in on Fed policy, Nvidia’s national importance, and the upcoming Lisa Cook hearing. (Source: Bloomberg)</p>"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-72c17c6f",
+    "title": "美国新建住宅销售意外升至年内最高 建商大力提供购房优惠",
+    "summary": "美国10月新建单户住宅销售增长14.2%，意外升至年内最高水平，数据由联邦政府周三公布。建商正大力提供购房优惠，以抵消抵押贷款利率飙升的影响。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizyqvt9268961.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T15:48:12.000Z",
+    "score": 72,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "海外市场",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "美国经济",
+      "新屋销售",
+      "房地产",
+      "宏观经济"
+    ],
+    "context": "月度楼市数据意外走强，为观察高利率环境下美国房地产韧性和市场对利率走向的预期提供参考。"
+  },
+  {
+    "id": "aihot-20261125-bloomberg-markets-91f5df18",
+    "title": "迪拜伊斯兰银行收购Emirates Islamic Bank，缔造1590亿美元伊斯兰银行巨头",
+    "originalTitle": "Dubai Bank Merger to Create $159 Billion Islamic Lending Giant",
+    "author": "Adveith Nair",
+    "summary": "迪拜伊斯兰银行（Dubai Islamic Bank PJSC）宣布收购Emirates Islamic Bank PJSC，交易将缔造全球最大上市伊斯兰银行集团之一。合并后集团总资产约1590亿美元，规模位居全球伊斯兰银行业前列。",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-25/dubai-bank-merger-to-create-159-billion-islamic-lending-giant",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-25T15:48:08.000Z",
+    "score": 83,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "金融与政策",
+      "银行业动态",
+      "中东市场",
+      "美股"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "银行并购",
+      "伊斯兰金融",
+      "迪拜",
+      "银行业"
+    ],
+    "context": "海湾地区伊斯兰银行业迎来重大整合，新集团资产规模跻身全球第一梯队，值得资本市场关注。",
+    "contentHtml": "<p>Dubai Islamic Bank PJSC said it’s buying Emirates Islamic Bank PJSC in a deal that will create one of the world’s largest listed Islamic-banking groups, with assets of about $159 billion.</p>",
+    "contentHtmlZh": "<p>{\"t\": [\"</p><p>迪拜伊斯兰银行PJSC（Dubai Islamic Bank PJSC）表示，正在收购阿联酋伊斯兰银行PJSC（Emirates Islamic Bank PJSC），这笔交易将造就全球最大的上市伊斯兰银行集团之一，资产规模约为1590亿美元。</p><p>\"]}</p>"
+  },
+  {
+    "id": "aihot-20261125-wscn-global-7a1276d2",
+    "title": "摩根大通：日股这轮回调还没到头",
+    "author": "李佳",
+    "summary": "摩根大通发布观点称，日本股市这一轮回调行情尚未结束，还没到头。原文仅给出该结论，未披露具体论据、点位或时间框架等细节。",
+    "url": "https://wallstreetcn.com/articles/3786705",
+    "source": "华尔街见闻 · 全球",
+    "publishedAt": "2026-11-25T15:46:42.000Z",
+    "score": 46,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "全球市场",
+      "宏观经济",
+      "宏观",
+      "市场政策"
+    ],
+    "region": [
+      "金融与政策",
+      "财经"
+    ],
+    "tags": [
+      "财经",
+      "宏观",
+      "摩根大通",
+      "日股",
+      "机构观点",
+      "回调"
+    ],
+    "context": "原文只有观点结论而无论据支撑，属机构观点类外围快讯，参考价值有限。"
+  },
+  {
+    "id": "aihot-20261125-techcrunch-ai-a84877cd",
+    "title": "AI 数据中心建设愈发困难，neoclouds（新型云厂商）首当其冲",
+    "originalTitle": "AI data centers are becoming harder to build, and neoclouds are feeling it",
+    "author": "Theresa Loconsolo, Rebecca Bellan",
+    "summary": "Nvidia 明确表示，AI 数据中心在接近可运行之前不会获得其兜底支持，而 neoclouds 正报告建设延误和更高的债务成本。这向开发商传递的信号是，土地、电力和已完工建筑比融资推介更重要，Anita Verma-Lallian 出售的正是这类资源。",
+    "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+    "source": "TechCrunch · AI",
+    "publishedAt": "2026-11-25T15:41:43.000Z",
+    "score": 62,
+    "tier": "T2",
+    "selected": false,
+    "industry": "AI",
+    "topics": [
+      "AI基础设施",
+      "行业动态",
+      "模型发布",
+      "基础设施"
+    ],
+    "region": [
+      "AI精选",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "AI数据中心",
+      "Nvidia",
+      "neocloud",
+      "融资"
+    ],
+    "context": "该讨论揭示 AI 算力基建的资金与建设门槛正在收紧，反映上游算力供给的不确定性。",
+    "contentHtml": "<p>⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power and a finished building matter more than a pitch deck.  ⁠Anita Verma-Lallian⁠ has been selling exactly that. […]</p>"
+  },
+  {
+    "id": "aihot-20261125-wscn-global-0e7ef332",
+    "title": "胡塞武装无人机袭击沙特最大炼油厂，布油拉升近3%重回92美元",
+    "author": "杨宸",
+    "summary": "胡塞武装出动无人机袭击沙特最大炼油厂，布伦特原油随之拉升近3%，重回92美元。沙特核心能源基础设施遇袭成为油价短线走高的直接推手，凸显中东地缘冲突对原油市场的冲击。",
+    "url": "https://wallstreetcn.com/articles/3786708",
+    "source": "华尔街见闻 · 全球",
+    "publishedAt": "2026-11-25T15:41:27.000Z",
+    "score": 82,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观",
+      "大宗商品",
+      "市场政策",
+      "美股"
+    ],
+    "region": [
+      "金融与政策",
+      "财经"
+    ],
+    "tags": [
+      "财经",
+      "宏观",
+      "原油",
+      "中东局势",
+      "沙特",
+      "油价"
+    ],
+    "context": "沙特是全球原油供应的关键节点，其最大炼油厂遇袭令市场供应担忧升温，油价走势值得关注。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-9bf84978",
+    "title": "喜力：正与海地政府合作尽快恢复运营 目标假日季前让啤酒重新上市",
+    "originalTitle": "喜力表示：正与海地政府合作 以尽快恢复在海地的运营 公司目标是在假日季前让啤酒重新上市",
+    "summary": "喜力表示，正与海地政府合作，以尽快恢复在海地的运营。公司目标是在假日季前让啤酒重新上市。",
+    "url": "https://finance.eastmoney.com/a/202611253939913835.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T15:39:14.000Z",
+    "score": 48,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "公司动态",
+      "海外市场",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "喜力",
+      "海地",
+      "啤酒",
+      "海外快讯"
+    ],
+    "context": "假日季临近，喜力能否如期在海地恢复啤酒供应，可作为观察其海外运营修复进展的信号。"
+  },
+  {
     "id": "aihot-20261125-bloomberg-markets-476e0abe",
     "title": "迪尔预测2027年农户仍面临逆风",
     "originalTitle": "Deere Sees Headwinds Ahead for Farmers in 2027",
@@ -4426,386 +4813,5 @@
     ],
     "context": "这一表态来自 Meta AI 最高负责人，其对超级智能临近的判断可能影响行业预期与布局。",
     "contentHtml": "<p><img width=\"2048\" height=\"1152\" src=\"https://the-decoder.com/wp-content/uploads/2026/07/meta_logo-2.png\" class=\"attachment-full size-full wp-post-image\" alt=\"\" decoding=\"async\" fetchpriority=\"high\" /></p>\n<p>        Meta's Chief AI Officer Alexandr Wang sees the recent AI-assisted proof sketch of the Riemann Hypothesis as a clear sign that superintelligence is right around the corner.</p>\n<p>The article <a href=\"https://the-decoder.com/metas-alexandr-wang-warns-the-ai-industry-isnt-ready-for-whats-coming-after-riemann-breakthrough/\">Meta's Alexandr Wang warns the AI industry isn't ready for what's coming after Riemann breakthrough</a> appeared first on <a href=\"https://the-decoder.com\">The Decoder</a>.</p>"
-  },
-  {
-    "id": "aihot-20261123-the-decoder-5c09a7c9",
-    "title": "美国情报机构跟踪英伟达丑闻人物与中国情报部门联系超一年",
-    "originalTitle": "US spies tracked Nvidia scandal figure's ties to Chinese intelligence for over a year",
-    "author": "Maximilian Schreiner",
-    "summary": "据《纽约时报》报道，美国情报机构对爱丽丝·黄与中国国家安全部的接触跟踪超过一年，监视期间她还与时任英伟达CEO黄仁勋保持秘密恋情。联邦调查人员正调查一个东南亚公司网络是否被用于向中国走私AI芯片、违反美国出口管制。黄仁勋定于12月1日在美国众议院作证。",
-    "url": "https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year/",
-    "source": "The Decoder",
-    "publishedAt": "2026-11-23T13:45:32.000Z",
-    "score": 84,
-    "tier": "T2",
-    "selected": true,
-    "industry": "AI",
-    "topics": [
-      "政策监管",
-      "行业动态",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "region": [
-      "AI精选",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "英伟达",
-      "出口管制",
-      "情报监视",
-      "国会作证"
-    ],
-    "context": "该案同时牵涉美国对华AI芯片出口管制执法与英伟达高层丑闻，国会作证或披露更多细节。",
-    "contentHtml": "<p><strong>The woman at the center of the Nvidia scandal was in contact with China's top spy agency for over a year, US intelligence reports show.</strong> Alice Huang communicated with China's Ministry of State Security from spring 2025 through this fall, according to the New York Times, citing US intelligence findings. The entire time, she was carrying on a secret affair with then-Nvidia CEO Jensen Huang.</p><p>US spy agencies had been tracking the contacts for more than a year. Alice Huang's business partner Kang Wei, whom she introduced to acquaintances as her husband, is also believed to have cooperated with the ministry. Federal investigators are now trying to determine whether the two used a web of companies across Southeast Asia to funnel Nvidia AI chips into China, <a href=\"https://the-decoder.com/chinese-tech-firms-face-a-double-hit-as-chip-shipments-stop-and-overseas-cloud-access-disappears/\">skirting US export controls</a>. Alice Huang's firm Megaspeed is part of that network.</p><p>Jensen Huang <a href=\"https://the-decoder.com/jensen-huang-resigns-as-nvidia-ceo-after-espionage-scandal-wipes-out-1-4-trillion-in-market-value/\">resigned as CEO</a> earlier this month after the affair became public, along with reports of a second relationship. President Donald Trump tried to downplay the allegations and floated the idea of Huang returning to the company. Nvidia's board shut that down.</p><p>Meanwhile, Treasury Secretary Scott Bessent <a href=\"https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html\">told Nvidia to come clean</a> about its chip sales to China before the company makes any decisions about its future leadership. Jensen Huang is set to testify behind closed doors before the US House of Representatives on December 1.</p>",
-    "contentHtmlZh": "<p>{\"t\": [\"</p><p><strong>美国情报报告显示，身处英伟达丑闻风暴中心的这名女子与中国最高间谍机构保持接触已超过一年。</strong>据《纽约时报》援引美国情报结论报道，Alice Huang 自 2025 年春季至今年秋季一直与中国国家安全部保持联络。在此期间，她与英伟达时任 CEO 黄仁勋一直保持着一段秘密恋情。</p><p>美国情报机构追踪这些接触已超过一年。Alice Huang 的商业伙伴 Kang Wei——她曾向熟人介绍为自己的丈夫——据信也曾与该部门合作。联邦调查人员目前正在试图确定两人是否利用横跨东南亚的公司网络将英伟达 AI 芯片输入中国，<a href=\"https://the-decoder.com/%22https://the-decoder.com/chinese-tech-firms-face-a-double-hit-as-chip-shipments-stop-and-overseas-cloud-access-disappears//%22\">借此规避美国出口管制</a>。Alice Huang 的公司 Megaspeed 正是该网络的一部分。</p><p>黄仁勋在本月早些时候这段恋情曝光后<a href=\"https://the-decoder.com/%22https://the-decoder.com/jensen-huang-resigns-as-nvidia-ceo-after-espionage-scandal-wipes-out-1-4-trillion-in-market-value//%22\">辞去了 CEO 职务</a>，随后又有报道称他还有第二段感情关系。唐纳德·特朗普总统试图淡化这些指控，并提出了让黄仁勋回归公司的想法。英伟达董事会否决了这一提议。</p><p>与此同时，财政部长斯科特·贝森特<a href=\"https://the-decoder.com/%22https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html/%22\">要求英伟达如实说明</a>其对华芯片销售情况，再对公司未来领导层作出任何决定。黄仁勋定于 12 月 1 日在美国众议院闭门作证。</p><p>\"]}</p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-5c8edf18",
-    "title": "英伟达美股盘前涨超9%",
-    "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
-    "url": "https://finance.eastmoney.com/a/202611233937569623.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T13:42:00.000Z",
-    "score": 78,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "英伟达",
-      "美股",
-      "盘前行情",
-      "股价波动"
-    ],
-    "context": "英伟达股价连续剧烈波动牵动科技股与AI板块情绪，盘前大幅反弹显示多空分歧明显。",
-    "contentHtml": "<p>英伟达美股盘前涨超9%</p><p>2026年11月23日 21:42</p><p>\n                                    来源：\n东方财富Choice数据                                </p><p><span>小</span>\n                                <span>中</span>\n                                <span>大</span>\n                            </p><p>东方财富APP</p><p>方便，快捷  </p><p>手机查看财经快讯</p><p>专业，丰富</p><p>一手掌握市场脉搏</p><p><a href=\"http://quote.eastmoney.com/us/NVDA.html\"><img src=\"https://webquoteklinepic.eastmoney.com/GetPic.aspx?nid=105.NVDA&amp;imageType=k&amp;token=28dfeb41d35cc81d84b4664d7c23c49f&amp;at=1\" alt=\"K图 NVDA_0\" width=\"578\" height=\"276\"></a></p><p>　　<span><a href=\"http://quote.eastmoney.com/unify/r/105.NVDA\">英伟达</a></span><span></span>美股盘前涨超9%，该股上周五大跌14%，较10月高点回落近50%。<br></p><p><span>文章来源：东方财富Choice数据</span>\n                                        <span>责任编辑：98</span>\n                            </p><p><strong>郑重声明：</strong>东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。\n                                    </p><p><a href=\"https://help.eastmoney.com/report_center.html?reportType=3&amp;title=%e8%8b%b1%e4%bc%9f%e8%be%be%e7%be%8e%e8%82%a1%e7%9b%98%e5%89%8d%e6%b6%a8%e8%b6%859%25&amp;systype=3&amp;id=202611233937569623\">举报</a>\n                            </p><p><a href=\"https://weibo.com/dfcfw\">东方财富网<span></span></a>\n                                    </p><p>分享到微信朋友圈</p><p>打开微信，  </p><p>点击底部的“发现” </p><p>使用“扫一扫” </p><p>即可将网页分享至朋友圈</p><p><span></span>\n                                            <img src=\"https://g1.dfcfw.com/g4/202106/20210618093603.png\" alt=\"\"></p><p>扫描二维码关注</p><p>东方财富官网微信</p><ul>\n                                    <li><a href=\"http://quote.eastmoney.com/center/gridlist.html#sh_hk_board\">沪股通</a></li>\n                                    <li> </li>\n                                    <li><span></span></li>\n                                </ul><ul>\n                                    <li><a href=\"http://quote.eastmoney.com/center/gridlist.html#sz_hk_board\">深股通</a></li>\n                                    <li> </li>\n                                    <li><span></span></li>\n                                </ul><ul>\n                                    <li><a href=\"http://quote.eastmoney.com/center/gridlist.html#hk_sh_stocks\">港股通(沪)</a></li>\n                                    <li> </li>\n                                    <li><span></span></li>\n                                </ul><ul>\n                                    <li><a href=\"http://quote.eastmoney.com/center/gridlist.html#hk_sz_stocks\">港股通(深)</a></li>\n                                    <li> </li>\n                                    <li><span></span></li>\n                                </ul><p><a>热门资讯</a>\n    </p><ul>\n                        <li><a href=\"https://finance.eastmoney.com/a/202611233937026352.html\">全线拉升！特朗普最新发声！</a></li>\n                        <li><a href=\"https://finance.eastmoney.com/a/202611233937007379.html\">首批主动ETF今日上市</a></li>\n                        <li><a href=\"https://fund.eastmoney.com/a/202611233937232623.html\">创业板指大涨超3% 超4600股飘红</a></li>\n                        <li><a href=\"https://finance.eastmoney.com/a/202611233937184969.html\">港股年末将迎限售股解禁高峰</a></li>\n    </ul><p><a href=\"https://topic.eastmoney.com/\">焦点专题</a>\n                            \n                        </p><ul>\n                                        <li><a href=\"https://topic.eastmoney.com/detail/hgqdgswdjjjs.html\">韩国启动股市稳定基金救市</a></li>\n                                        <li><a href=\"https://topic.eastmoney.com/detail/sanjian3.html\">稳市场稳预期 监管层“三箭齐发”</a></li>\n                                        <li><a href=\"https://topic.eastmoney.com/detail/xhhjdp3600my.html\">现货黄金跌破3600美元</a></li>\n                                </ul><p><a href=\"https://topic.eastmoney.com/detail/qqdlbdqwj.html\">\n                                                <img src=\"https://np-newspic.dfcfw.com/download/D25099822825273599933_w800h600.jpg\" alt=\"\">\n                                                <span>警报拉响：全球电路板短缺危机蔓延</span>\n                                            </a>\n                                            <a href=\"https://topic.eastmoney.com/detail/zqshfdjscgg.html\">\n                                                <img src=\"https://np-newspic.dfcfw.com/download/D25205608426536342841_w800h600.jpg\" alt=\"\">\n                                                <span>朱雀三号发动机全部试车过关</span>\n                                            </a>\n                                    </p><p><a href=\"https://video.eastmoney.com/\">视频</a>\n                            \n                        </p><ul>\n                                        \n                                    </ul><ul></ul><ul>\n                                        <li>\n                                                    <a href=\"http://acttg.eastmoney.com/pub/web_nr_zxzwy_rdtjx_01_01_01_0\">一键关注财经大咖</a>\n                                        </li>\n                                    </ul><p>热点推荐</p><p><a href=\"http://finance.eastmoney.com/a/202611233937278151.html\">A股重磅！监管明确两融风控细则 稳妥处置违约</a></p><p><span>券商中国</span>\n                                </p><p><a href=\"http://finance.eastmoney.com/a/202611233937278151.html\">\n                                            <span>1167</span>\n                                            <span>人评论</span>\n                                        </a>\n                                    <span>2026-11-23</span>\n                                </p>"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-0f37fb2a",
-    "title": "古尔曼：苹果Siri裁员不影响AI项目 智能体要等到2027年底",
-    "summary": "知名科技记者马克·古尔曼表示，苹果近期针对Siri的裁员主要裁撤负责语音助手旧底层架构的员工，新一代AI系统研发团队并未受到波及。他还表示苹果的智能体要等到2027年底才会推出。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwis5377417.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T13:38:12.000Z",
-    "score": 65,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "科技行业",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "苹果",
-      "Siri",
-      "AI",
-      "古尔曼"
-    ],
-    "context": "古尔曼长期追踪苹果动态，其表态明确了本轮裁员范围与苹果下一代AI系统的时间表。"
-  },
-  {
-    "id": "aihot-20261123-bloomberg-markets-49785963",
-    "title": "花旗财富首席投资官摩尔谈市场抛售：'选择观望等待'",
-    "originalTitle": "Citi Wealth CIO Moore Says ‘Going to Wait It Out’ on Market Selloff",
-    "summary": "花旗财富首席投资官Kate Moore表示，市场抛售之下她选择'观望等待'，尚未准备宣布市场'警报解除'，但也没有看到需要削减股票持仓的理由。她在'Bloomberg Surveillance'节目中发表了上述观点。",
-    "url": "https://www.bloomberg.com/news/videos/2026-11-23/citi-wealth-cio-moore-on-selloff-going-to-wait-it-out-video",
-    "source": "Bloomberg Markets",
-    "publishedAt": "2026-11-23T13:38:06.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "市场",
-      "机构观点",
-      "美股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "市场",
-      "花旗财富",
-      "市场观点",
-      "股票",
-      "抛售"
-    ],
-    "context": "机构资金管理者对当前抛售的应对态度，可作为判断市场情绪的一线参考。",
-    "contentHtml": "<p>Kate Moore, chief investment officer at Citi Wealth, says she’s not ready to call an “all clear” on markets, but doesn’t see anything to make her cut back her equity exposure. She speaks on “Bloomberg Surveillance.” (Source: Bloomberg)</p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-9590b832",
-    "title": "中国汽车流通协会：10月全国二手车市场交易量150.74万辆 同比下降14.25%",
-    "summary": "中国汽车流通协会11月23日数据显示，2026年10月全国二手车市场交易量150.74万辆，环比下降4.16%，同比下降14.25%，交易金额937.97亿元。2026年1-10月累计交易量1587.12万辆，同比下降3.76%，较同期减少61.95万辆，累计交易金额10301.98亿元。",
-    "url": "https://finance.eastmoney.com/a/202611233937567626.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T13:38:03.000Z",
-    "score": 62,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "国内快讯",
-      "宏观经济",
-      "汽车行业",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "二手车",
-      "汽车流通",
-      "行业数据"
-    ],
-    "context": "协会月度例行数据，单月同比降幅达两位数且明显深于累计降幅，可作观察车市景气度的参考。"
-  },
-  {
-    "id": "aihot-20261123-gnews-hkstock-c5a6d8eb",
-    "title": "港股风向标｜恒指跌穿22000点后反弹 海外资金再平衡有所回流",
-    "originalTitle": "港股风向标｜恒指跌穿22000点后反弹 海外资金再平衡有所回流 - 东方财富网",
-    "summary": "恒生指数跌穿22000点后出现反弹，东方财富网港股风向标栏目指出海外资金再平衡有所回流。该动态反映港股短线资金面出现边际变化，22000点关口表现值得关注。",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4xT2JWUWZOelc0bmVzTHVPSDVJcnBfTnlNWEhPTklGRmFESnVwUWs5ZEU4TWZ2a2Z3N2V6YnV3elJvUFA5VXI1Z25jZnhXeHFHZVo1NWdGYmNxcU5xdFR6MTB4Ri1TUQ?oc=5",
-    "source": "Google News · 港股动态",
-    "publishedAt": "2026-11-23T13:36:09.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "港股",
-      "市场行情",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "聚合"
-    ],
-    "tags": [
-      "聚合",
-      "港股",
-      "恒生指数",
-      "外资流向",
-      "市场动态"
-    ],
-    "context": "22000点关口得失与海外资金回流动向，是判断港股短期资金面与走势的重要观察信号。",
-    "contentHtml": "<p><a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE4xT2JWUWZOelc0bmVzTHVPSDVJcnBfTnlNWEhPTklGRmFESnVwUWs5ZEU4TWZ2a2Z3N2V6YnV3elJvUFA5VXI1Z25jZnhXeHFHZVo1NWdGYmNxcU5xdFR6MTB4Ri1TUQ?oc=5\" target=\"_blank\">港股风向标｜恒指跌穿22000点后反弹 海外资金再平衡有所回流</a>  <font color=\"#6f6f6f\">东方财富网</font></p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-3959153d",
-    "title": "美国财政部顾问泽尔沃斯：上周金融环境收紧",
-    "originalTitle": "美国财政部顾问：上周金融环境收紧",
-    "summary": "美国财政部顾问泽尔沃斯表示，上周金融环境收紧。",
-    "url": "https://finance.eastmoney.com/a/202611233937567579.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T13:35:03.000Z",
-    "score": 48,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "A股",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "美国财政部",
-      "金融环境",
-      "海外宏观"
-    ],
-    "context": "金融环境松紧关系到流动性与资产价格预期，财政部顾问的相关表态受到市场关注。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-4bdc46e4",
-    "title": "盘前：纳指期货涨3.68% 半导体等科技股领涨",
-    "summary": "周一盘前，美国纳指期货上涨3.68%，半导体等科技股领涨，股指期货正从此前人工智能相关股票的猛烈抛售中反弹。这轮抛售此前已导致标普500指数进入技术性回调区间。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztwiw8128663.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T13:34:23.000Z",
-    "score": 78,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "美股",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "美股",
-      "纳指期货",
-      "科技股",
-      "盘前行情"
-    ],
-    "context": "AI相关股票的抛售曾将标普500推入技术性回调区间，期指大幅反弹是市场能否企稳的重要信号。",
-    "contentHtml": "<p><img src=\"https://n.sinaimg.cn/finance/transform/59/w550h309/20261123/a372-b5aaa839265e0589cee0ad979494a654.png\" alt=\"\"><span></span></p><p>　　周一美国股指期货正从人工智能相关股票遭遇的猛烈抛售中反弹。此前，这轮抛售导致标普500指数进入技术性回调区间。与此同时，亚洲各地监管机构纷纷采取措施，以稳定金融市场。随着市场避险需求减弱，美国国债和日元承受下行压力。</p><p>　　截至发稿，道指期货涨2.17%，标普500指数期货涨3.04%，有望结束此前连续七个交易日的下跌。纳指期货涨3.68%，其中半导体及其他科技股领涨。</p><p>　　欧洲股市涨幅相对温和，斯托克600指数上涨0.8%。</p><p>　　上周，<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/.IXIC.html\">纳斯达克</a></span><span></span>综合指数累计下跌10%，创下2020年3月新冠疫情引发市场暴跌以来最大单周跌幅。与此同时，市场波动加剧，华尔街所谓的“恐慌指数”VIX自2025年4月以来首次突破40。</p><p>　　上周，以芯片制造商为主要成分的台湾地区股市基准指数创下1990年以来最大单周跌幅。周一，台湾地区股市上涨2.1%，监管机构的支持措施帮助市场逐渐企稳。韩国KOSPI指数的抛售行情则进一步加剧，不过该指数从10个月低点反弹，跌幅收窄至约3.3%。</p><p>　　今年上半年，韩国KOSPI指数曾是全球表现最强劲的主要股票指数之一。由于投资者押注半导体需求激增，该指数在六个月内上涨超过一倍。然而，随着近期抛售潮持续，KOSPI指数已经较此前高点下跌约50%。韩国财政部长周一重申，如有必要，政府将采取措施稳定金融市场。</p><p>　　技术性反弹不可避免</p><p>　　经历了一段极其艰难的行情后，股市在新一周开局表现强劲。此前，美国民主党在中期选举中横扫国会，以及黄仁勋被迫离开英伟达，加剧了投资者对人工智能投资热潮的担忧。接下来，市场仍将接连迎来重要风险事件。本周即将公布美国通胀数据，而投资者也开始质疑，在当前环境下，美联储是否应该在下个月继续加息。</p><p>　　AlphaValue分析师Pierre-Yves Gauthier表示：“考虑到上周市场跌势如此猛烈，技术性反弹几乎不可避免，但我不认为这种反弹能够持续。”他认为，由于股票估值仍需要进一步下降，市场疲软态势可能持续一段时间。</p><p>　　德意志银行策略师Jim Reid表示，围绕AI交易的担忧已经蔓延至更广泛的金融市场，引发全球投资者降低风险敞口，并寻求流动性。他在报告中写道：“这已经不再只是一场科技股抛售。”</p><p>　　AI交易逻辑发生转变</p><p>　　自聊天机器人ChatGPT推出以来的约四年间，“AI交易”推动了广泛股票上涨，受益企业涵盖芯片制造商、网络交换机和电缆生产商，以及发电企业。投资者此前普遍押注，人工智能计算需求将出现爆炸式增长。</p><p>　　分析师指出，AI相关支出仍然保持强劲。<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/MS.html\">摩根士丹利</a></span><span></span>预计，明年超大规模云计算企业的资本支出将增长超过70%，突破1.6万亿美元。</p><p>　　然而，金融市场的情绪已经发生剧烈转变。</p><p>　　被称为“AI教父”的英伟达前首席执行官黄仁勋离职，引发投资者对这家芯片制造商商业战略的质疑，尤其是英伟达向部分客户提供融资支持的做法。</p><p>　　与此同时，人工智能行业领军企业Anthropic的上市表现不及预期，也显示交易员对AI股票的态度正在迅速变化。上周五，该公司在上市后的首个完整交易日收跌8.5%。</p><p>　　除了本周美国股市自身的表现外，市场接下来还将面临两项重要考验：计算机制造商<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/DELL.html\">戴尔</a></span><span></span>将于周二公布的业绩及前景展望，以及美联储下个月是否会按照投资者预期进一步加息。</p><p>　　美国PCE驾到</p><p>　　在此之前，本周三即将公布的数据预计显示，美国10月经通胀调整后的个人消费支出较前一个月有所增长，表明尽管消费者对通胀感到担忧，但其消费意愿尚未受到明显抑制。与此同时，市场预计个人消费支出（PCE）物价指数同比上涨3.8%，与今年5月的涨幅持平，达到三年来最高水平。</p><p>　　XTB分析师Kathleen Brooks表示：“市场可能会非常庆幸感恩节假期即将到来，因为这能够为投资者提供一个急需的喘息机会。”她指出：“PCE数据，尤其是核心PCE，将非常重要，因为市场开始质疑，在股市持续下跌的情况下，美联储进一步加息是否明智。”</p><p>　　市场还没出现全面投降式抛售</p><p>　　<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/GS.html\">高盛</a></span><span></span>集团交易部门表示，上周的市场抛售已经创造了颇具吸引力的美股买入机会。不过，该行同时警告，投资者整体持仓水平仍然偏高，这意味着市场可能尚未出现推动持续性反弹所需的全面投降式抛售。</p><p>　　市场策略师指出，风险资产在新一周开局表现更加稳健，中期基本面前景仍然具有支撑作用。不过，当前市场波动性极高，随着美国感恩节假期临近，流动性将逐渐下降，而此前引发投资者担忧的根本问题并未消失。任何反弹都可能被多头投资者视为更好的退出机会，而不是一轮持续性复苏的开始。</p><p>　　华尔街知名策略师Ed Yardeni在大约两个月内第二次下调标普500指数年末目标点位。亚德尼研究公司总裁兼首席投资策略师Yardeni目前预计，标普500指数将在2026年底收于7500点，低于他今年9月已经下调至7900点的目标。</p><p>　　不过，这一最新预测仍意味着，标普500指数有望较上周五收盘水平反弹超过8%。Yardeni还表示，美国政府因有关英伟达及其他美国芯片制造商涉嫌通过间接渠道向海外市场销售芯片的指控而进一步收紧出口控制，相关消息也对半导体股票造成了严重冲击。</p><p>　　风险情绪依旧脆弱</p><p>　　周一，此前为投资者提供一定避险保护的资产普遍回落。美国国债价格下跌，短期国债领跌。美国10年期国债收益率上涨5个基点，至4.96%。作为欧元区债券市场基准的德国10年期国债收益率上涨2.2个基点，至3.32%。</p><p>　　日元兑美元走弱。美元兑一篮子货币从19个月高点回落。此前，上周股市遭遇猛烈抛售，促使交易员下调了对美联储下个月激进加息的预期。美元指数下跌0.2%，至103.6。</p><p>　　黄金则反弹2.3%，重新站上3600美元，日内涨幅超过80美元。布伦特原油价格跌破每桶92美元。</p><p>　　不过，铜价仍徘徊在今年3月以来的最低水平附近，表明市场风险偏好依然脆弱。</p><p>　　美股大跌之际，贝森特公开反对美联储继续紧缩，警告金融体系已现脆弱信号。</p><p>　　近日，美国财政部长斯科特・贝森特公开对美联储的货币紧缩立场提出异议。他警告称，若美联储针对最新通胀数据持续收紧政策，或将损害美国经济，他同时指出金融体系已显现脆弱信号。</p><p>　　贝森特在一档节目中，援引多位美联储高官近期释放的鹰派信号称：“不少市场人士认为，如果美联储收紧力度过猛，很可能犯下政策错误。”</p><p>　　他表示，过去数月金融条件已经显著收紧，这也是近期股市抛压的宏观背景。当前距离美联储12月9日议息会议尚有数日，而美联储核心决策层内部仍存在明显分歧。</p><p>　　不过，近期金融市场剧烈震荡，一定程度压低了市场对进一步紧缩的预期。上周五日美股大幅下挫，投资者集中了结此前基于AI增长预期建立的头寸。随后不少交易员下调12月加息概率。</p><p>　　焦点个股</p><p>　　投资者逢低买入 AI 相关标的，英伟达、Anthropic股价分别大涨 8%、4%。</p><p>　　云安全企业Zscaler同意被<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/CRWD.html\">CrowdStrike</a></span><span></span>收购，股价大涨 13%。这笔交易对 Zscaler 每股估值 260.41 美元，较上周五收盘价溢价 34%。CrowdStrike下跌 9%。</p><p>　　贝尔德将两家地区性银行公民金融、特鲁斯特银行评级由中性上调至跑赢大盘，两只股票均涨超 2%。</p><p>　　比特币试图收复上周的大幅失地，MARA、微策略股价分别大涨 7.6%、8.5%。比特币最新报价上涨 1.1%，报 61291.08 美元。</p><p>　　<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/JPM.html\">摩根大通</a></span><span></span>将奢侈品线上零售商LuxExperience评级从中性上调至增持，其美股盘前股价大涨 6.6%。</p><p>　　Piper Sandler 将美元树评级由中性上调至增持，该股上涨 2%。</p><p>　　高管斯特林・安德森被视作<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/GM.html\">通用汽车</a></span><span></span>首席执行官玛丽・巴拉的潜在继任者，通用汽车股价上涨超 2%。</p><p><span>新浪合作大平台期货开户 安全快捷有保障</span>\n    <img src=\"https://n.sinaimg.cn/finance/transform/340/w170h170/20220415/bd6a-a2376d5226aaa796dfdca62b1d9b1fcb.png\">\n</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
-    "author": "环球市场播报"
-  },
-  {
-    "id": "aihot-20261123-gnews-usstock-bfdc2d09",
-    "title": "标普、纳指有望终结“七连跌”，英伟达反弹近9%",
-    "originalTitle": "标普、纳指有望终结“七连跌” 英伟达反弹近9% | 今夜看点 - 财联社电报",
-    "summary": "美股标普、纳指有望终结连续七个交易日的下跌走势，英伟达反弹近9%。财联社“今夜看点”栏目对当晚美股市场动态进行了播报。",
-    "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5OV0xyb0xyUHhnZG9SZUM1U3NuTU0yM2lQSjdQbU5ZamNIUXBBNVJZZlVPdXlWRGZqWFFmVzZGM3U4WlgtblE?oc=5",
-    "source": "Google News · 美股市场",
-    "publishedAt": "2026-11-23T13:33:55.000Z",
-    "score": 78,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股市场",
-      "市场行情",
-      "美股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "聚合"
-    ],
-    "tags": [
-      "聚合",
-      "美股",
-      "标普500",
-      "纳斯达克",
-      "英伟达"
-    ],
-    "context": "此前主要股指连续七个交易日下跌，市场关注美股能否止跌企稳，权重股反弹动向成为焦点。",
-    "contentHtml": "<p><a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTE5OV0xyb0xyUHhnZG9SZUM1U3NuTU0yM2lQSjdQbU5ZamNIUXBBNVJZZlVPdXlWRGZqWFFmVzZGM3U4WlgtblE?oc=5\">标普、纳指有望终结“七连跌” 英伟达反弹近9% | 今夜看点</a>  财联社电报</p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-38fe5307",
-    "title": "印度将关税配额下对美原糖出口期限延长一年",
-    "originalTitle": "印度将通过关税配额向美国出口原糖的期限延长一年",
-    "summary": "印度将通过关税配额（TRQ）向美国出口原糖的期限延长一年。原文未披露具体配额规模与延期起始时间等执行细节。",
-    "url": "https://finance.eastmoney.com/a/202611233937567329.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T13:33:53.000Z",
-    "score": 55,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "国际政策",
-      "大宗商品",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "原糖出口",
-      "关税配额",
-      "印度",
-      "国际贸易"
-    ],
-    "context": "美印糖贸易安排延续，可关注其对国际原糖供需与价格预期的潜在影响。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-56284ca5",
-    "title": "盛剑科技逆势五连板，上交所下发监管工作函问询股价波动",
-    "originalTitle": "逆势五连板牛股，被问究竟啥情况",
-    "summary": "11月23日，上交所向盛剑科技（603324）下发监管工作函，处理事由为该公司有关股价波动事项，涉及对象为上市公司。该股此前逆势走出五连板行情，股价异动引来交易所问询。",
-    "url": "https://finance.sina.com.cn/stock/s/2026-11-23/doc-iniztwiu2155881.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T13:32:10.000Z",
-    "score": 57,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "市场监管",
-      "港股",
-      "美股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "盛剑科技",
-      "上交所",
-      "监管工作函",
-      "股价异动"
-    ],
-    "context": "监管工作函是交易所对股价异动公司的常规问询手段，连板牛股遭问询对短线炒作情绪有直接影响。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-587c6452",
-    "title": "德龙汇能公告：仍聚焦天然气主业，无半导体业务",
-    "originalTitle": "德龙汇能：仍聚焦天然气主业 无半导体业务",
-    "summary": "德龙汇能11月23日公告，目前经营情况及内外部经营环境未发生重大变化，公司仍聚焦天然气主业，无半导体业务。近五年燃气供应及其相关收入占总收入比例均超过90%。",
-    "url": "https://finance.eastmoney.com/a/202611233937546971.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T13:30:04.000Z",
-    "score": 55,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "德龙汇能",
-      "天然气",
-      "公司公告"
-    ],
-    "context": "公司就业务范围作出说明，厘清主业构成，可为投资者核实市场传闻、判断基本面提供依据。"
   }
 ]
