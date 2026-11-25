@@ -1,5 +1,390 @@
 [
   {
+    "id": "aihot-20261125-bloomberg-markets-476e0abe",
+    "title": "迪尔预测2027年农户仍面临逆风",
+    "originalTitle": "Deere Sees Headwinds Ahead for Farmers in 2027",
+    "summary": "迪尔(Deere)发布2027财年业绩指引，预计农户将持续面临逆风，净利润指引为45亿至52.5亿美元，低于彭博汇总的分析师平均预期的61亿美元。公司同时预计截至10月的12个月内其最大型设备销量将增长。",
+    "url": "https://www.bloomberg.com/news/videos/2026-11-25/deere-sees-headwinds-ahead-for-farmers-in-2027-video",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-25T14:46:13.000Z",
+    "score": 68,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "公司财报",
+      "美股",
+      "农业机械",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "迪尔",
+      "业绩指引",
+      "农业机械",
+      "美股"
+    ],
+    "context": "迪尔是全球农机市场风向标，其指引低于华尔街预期，指向农机需求与新财年农户景气的持续压力。",
+    "contentHtml": "<p>Deere & Co. says it expects higher sales of its biggest machines in the 12 months through October, but also sees net income of $4.5 billion to $5.25 billion, which trails the $6.1 billion average of analysts’ estimates compiled by Bloomberg. Chris Ciolino has more on \"Bloomberg Open Interest.\" (Source: Bloomberg)</p>"
+  },
+  {
+    "id": "aihot-20261125-bloomberg-markets-d22aea8e",
+    "title": "Bullrich 警告：若经济不改善，Milei 连任将面临风险",
+    "originalTitle": "Bullrich dice que reelección de Milei está en riesgo si la economía no mejora",
+    "summary": "Patricia Bullrich 警告，若经济无起色，Milei 的连任将面临风险，不能只指望 2028 年经济好转，因为 2027 年选举先行。这位参议员呼吁采取\"手术刀式\"调整，扶持当前陷入困境的行业。",
+    "url": "https://www.bloomberg.com/news/videos/2026-11-25/bullrich-dice-que-reeleccion-de-milei-esta-en-riesgo-si-la-economia-no-mejora",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-25T14:45:51.000Z",
+    "score": 56,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "政府动态",
+      "宏观经济",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "阿根廷",
+      "Milei",
+      "Bullrich",
+      "选举风险"
+    ],
+    "context": "执政阵营重量级人物公开提示连任时间压力，凸显经济进展已成为 2027 年选情的关键变量。",
+    "contentHtml": "<p>Patricia Bullrich advierte que no basta con esperar una mejora económica en 2028: antes están las elecciones de 2027. La senadora pide cambios “quirúrgicos” para impulsar a los sectores que atraviesan dificultades. (Source: Bloomberg)</p>"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-c0fdb0cf",
+    "title": "美股跌幅扩大 纳斯达克综合指数跌4.32%",
+    "originalTitle": "美股跌幅扩大 纳斯达克综合指数跌4.3%",
+    "summary": "美股跌幅扩大，纳斯达克综合指数跌4.32%，标普500指数跌2.94%，道琼斯指数跌2%。三大指数当日同步大幅走低，纳指跌幅居前。",
+    "url": "https://finance.eastmoney.com/a/202611253939883066.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T14:45:17.000Z",
+    "score": 80,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美股",
+      "纳斯达克",
+      "标普500",
+      "市场波动"
+    ],
+    "context": "美股盘中跌幅持续走阔，三大指数同步重挫，短期市场波动加大，后续走势及对A股联动影响值得关注。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-dacca4e4",
+    "title": "美国2年期与10年期国债收益率日内均下跌至少10个基点",
+    "summary": "美国2年期与10年期国债收益率日内均下跌至少10个基点，短端与长端利率同步走低。快讯未提及收益率下行的具体原因。",
+    "url": "https://finance.eastmoney.com/a/202611253939883668.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T14:44:18.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "宏观经济",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美债收益率",
+      "债券市场",
+      "海外市场"
+    ],
+    "context": "美债收益率是全球资产定价之锚，日内双端大幅下行往往牵动市场对利率政策预期的重新定价。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-12d1b881",
+    "title": "现货白银跌超5%，报38.82美元/盎司",
+    "originalTitle": "现货白银跌超5%",
+    "summary": "现货白银价格跌幅扩大至5.06%，报38.82美元/盎司。",
+    "url": "https://finance.eastmoney.com/a/202611253939882486.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T14:41:55.000Z",
+    "score": 78,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "大宗商品",
+      "市场行情",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "现货白银",
+      "贵金属",
+      "大宗商品",
+      "行情快讯"
+    ],
+    "context": "白银日内跌超5%属贵金属市场显著波动，对关注大宗商品走势的投资者具有较高参考价值。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-f04603d7",
+    "title": "博通跌幅扩大至7%，创2025年7月以来新低",
+    "originalTitle": "博通跌幅扩大至7% 为2025年7月以来新低",
+    "summary": "博通股价跌幅扩大至7%，股价创下2025年7月以来新低。",
+    "url": "https://finance.eastmoney.com/a/202611253939881163.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T14:41:02.000Z",
+    "score": 55,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "半导体",
+      "市场行情",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美股",
+      "博通",
+      "股价下跌"
+    ],
+    "context": "博通为美股大型芯片股，其大跌并创逾一年新低，对科技股情绪具有风向标意义。"
+  },
+  {
+    "id": "aihot-20261125-wscn-global-3d3bca5a",
+    "title": "AI交易信仰动摇：纳指跌超3%，英伟达重挫7%，金银大跌，避险资金涌入美债",
+    "originalTitle": "AI交易信仰动摇，纳指跌超3%，英伟达重挫7%，金银大跌，避险资金涌入美债",
+    "author": "鲍奕龙",
+    "summary": "AI交易信仰动摇引发市场抛售，纳斯达克指数大跌超3%，英伟达重挫7%，避险资金涌入美债。金银价格同步大跌，风险资产与贵金属齐跌，资金集中流向美债避险。",
+    "url": "https://wallstreetcn.com/articles/3786656",
+    "source": "华尔街见闻 · 全球",
+    "publishedAt": "2026-11-25T14:40:23.000Z",
+    "score": 84,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "宏观经济",
+      "宏观",
+      "市场政策"
+    ],
+    "region": [
+      "金融与政策",
+      "财经"
+    ],
+    "tags": [
+      "财经",
+      "宏观",
+      "美股",
+      "英伟达",
+      "美债",
+      "避险情绪"
+    ],
+    "context": "AI主线行情出现动摇迹象，股、金、银齐跌而美债受捧，市场避险情绪急升，值得密切跟踪后续走势。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-1a2fb53b",
+    "title": "纳斯达克100指数跌幅扩大至4%",
+    "summary": "纳斯达克100指数跌幅扩大至4%，盘中跌势较此前进一步加深。该指数汇聚美股大型科技股，短线急跌直接反映市场风险偏好快速回落。",
+    "url": "https://finance.eastmoney.com/a/202611253939878236.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T14:36:47.000Z",
+    "score": 66,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美股",
+      "纳斯达克100",
+      "市场快讯"
+    ],
+    "context": "纳指100单日跌幅达4%属较剧烈波动，对全球风险资产情绪及A股科技板块联动具有风向标意义。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-7a56b046",
+    "title": "美股光通信板块走弱，Lumentum跌超10%",
+    "originalTitle": "美股光通信板块走弱",
+    "summary": "美股光通信板块走弱，Lumentum跌超10%，Coherent、迈威尔跌超9%，康宁跌超8%。板块内多只龙头当日同步大幅下挫。",
+    "url": "https://finance.eastmoney.com/a/202611253939877913.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T14:36:31.000Z",
+    "score": 55,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "美股科技",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美股",
+      "光通信",
+      "Lumentum",
+      "市场行情"
+    ],
+    "context": "光通信是AI算力链热门方向，多只美股龙头同日大跌，可关注其对A股光模块板块的情绪传导。"
+  },
+  {
+    "id": "aihot-20261125-ft-markets-ccfbaa16",
+    "title": "AI交易现裂痕，美股抛售加速，纳斯达克100指数跌超3%",
+    "originalTitle": "US stocks sell-off accelerates as AI trade cracks",
+    "summary": "美股抛售随AI交易出现裂痕而加速，以科技股为主的纳斯达克100指数大跌超过3%。此轮跌势已持续数周，市场抛售压力仍在加剧。",
+    "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a?syn-25a6b1a6=1",
+    "source": "Financial Times · Markets",
+    "publishedAt": "2026-11-25T14:33:19.000Z",
+    "score": 82,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "宏观市场",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "宏观",
+      "美股",
+      "纳斯达克100",
+      "AI交易",
+      "抛售"
+    ],
+    "context": "AI交易此前是美股科技股估值的核心支撑，其松动牵动全球科技股与风险偏好走向。",
+    "contentHtml": "<p>Tech-heavy Nasdaq 100 falls more than 3% as weeks-long slide continues</p>"
+  },
+  {
+    "id": "aihot-20261125-ft-markets-82d8db1b",
+    "title": "OPEC+ 最大成员国将就石油产量预估发生冲突",
+    "originalTitle": "Opec+’s largest members head for clash over oil production estimates",
+    "summary": "OPEC+ 及其盟友将于周日召开会议，分析人士预计其最大成员国将在石油产量预估问题上发生冲突，并称这可能是'多年来最复杂的会议之一'。全球市场正重新转向供应过剩，成为此次内部分歧的背景。",
+    "url": "https://www.ft.com/content/b24d5c8c-4c9b-48f0-b4a8-5f83eee2d3e9?syn-25a6b1a6=1",
+    "source": "Financial Times · Markets",
+    "publishedAt": "2026-11-25T14:27:46.000Z",
+    "score": 80,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "大宗商品",
+      "宏观",
+      "美股"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "宏观",
+      "OPEC+",
+      "原油",
+      "供应过剩",
+      "石油产量"
+    ],
+    "context": "OPEC+ 产量政策直接牵动全球油价与通胀预期，此次核心成员国摊牌结果或影响供应走向。",
+    "contentHtml": "<p>Analysts expect Sunday’s meeting of the cartel and its allies to be ‘one of the most complicated in years’ as global markets swing back into oversupply</p>",
+    "contentHtmlZh": "<p>{\"t\": [\"</p><p>分析师预计，随着全球市场重新陷入供应过剩，该卡特尔组织及其盟友周日的会议将是“近年来最复杂的会议之一”</p><p>\"]}</p>"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-8543534d",
+    "title": "投资者撤离AI交易赛道，英伟达、AMD和美光股价大跌",
+    "summary": "投资者撤离AI交易，芯片股持续暴跌，英伟达周三盘前再度下挫5%，前一交易日该股已下跌6%。AMD与博通延续前一日跌势继续走低，今年一度火爆的AI概念股行情持续下挫。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykpx1709093.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T14:22:41.000Z",
+    "score": 80,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "美股",
+      "AI产业",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "美股",
+      "AI概念股",
+      "英伟达",
+      "芯片股"
+    ],
+    "context": "英伟达等AI权重股连续大跌是资金撤离AI交易的直接信号，对美股科技板块情绪影响重大。",
+    "contentHtml": "<p>　　芯片股持续暴跌，英伟达周三盘前再度下挫 5%，前一交易日该股已经下跌 6%。</p><p>　　同行 <span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/AMD.html\">AMD</a></span><span></span> 与博通延续前一日跌势，继续走低。</p><p>　　今年曾经火爆的 AI 概念股行情持续下挫，存储芯片厂商<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/MU.html\">美光</a></span><span></span>科技以及 SK 海力士均下跌 6%。美光股价相较今夏创下的历史最高点已经腰斩。<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/STX.html\">希捷</a></span><span></span>、<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/WDC.html\">西部数据</a></span><span></span>、<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/SNDK.html\">闪迪</a></span><span></span>等存储芯片企业周三同样走弱。刚完成拆股的闪迪，较 6 月的历史高点累计回落约 70%。</p><p>　　本周一英伟达董事会恢复黄仁勋首席执行官一职，该股单日暴涨 31%，上演一轮惊人反弹；但反弹过后市场出现剧烈回调。部分策略师表示，金融环境收紧，叠加 AI 板块本身尚存诸多疑问，持续打压市场情绪。</p><p>　　Trade Nation 高级市场分析师戴维・莫里森周三表示：“市场依旧弥漫浓厚的避险情绪，部分投资者借周一股价大涨的机会，削减自身 AI 板块持仓。”</p><p>　　他还称，市场流传 “只有黄仁勋一人能够维系 AI 行情” 的观点，“透着一股绝望的味道”；同时越来越多投资者认为，“英伟达当前的董事会，并不配这家全球顶尖芯片设计公司的身份”。</p><p>　　AI 产业链其他板块同样走弱，新兴云厂商 CoreWeave、Nebius 股价均出现回落。</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
+    "author": "环球市场播报"
+  },
+  {
     "id": "aihot-20261125-cnbc-markets-259217ac",
     "title": "美国10月PCE通胀加速至3.8%，美联储加息或成定局",
     "originalTitle": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
@@ -4418,389 +4803,5 @@
       "心血管"
     ],
     "context": "心血管结局试验结果是降脂疗法临床价值验证与后续审批准入的关键依据，对siRNA小核酸药物领域具有标志性意义。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-ed37f3ab",
-    "title": "代币化股票遭遇抵制，纽交所、纳斯达克转向布局新市场",
-    "summary": "纽交所与纳斯达克对代币化股票相关计划表示抵制，并转向布局新市场。据参与相关企业沟通的人士称，仅 30 天的异议窗口期留给公司的反应、决策时间非常紧张，来不及判断是否愿意参与。引发争议的代币化股票计划由洲际交易所（ICE）与加密交易所 OKX 合作推出。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztrzw2239574.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T12:27:14.000Z",
-    "score": 80,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "加密资产",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "代币化股票",
-      "纽交所",
-      "纳斯达克",
-      "ICE"
-    ],
-    "context": "传统交易所与加密平台的代币化股票之争升温，关系美股市未来交易格局。",
-    "contentHtml": "<p><a href=\"https://finance.sina.com.cn/focus/app/sfa_download_new.shtml\">登录新浪财经APP 搜索【信披】查看更多考评等级</a></p><p>　　<strong>核心要点</strong></p><p>　　参与相关企业沟通的人士称，仅 30 天的异议窗口期留给公司的反应、决策时间非常紧张，来不及判断是否愿意参与。</p><p><img src=\"https://n.sinaimg.cn/finance/transform/59/w550h309/20261123/46e3-10c23cb4239eedeb602d254b44b4e671.png\" alt=\"\"><span></span></p><p>　　由<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/ICE.html\">洲际交易所</a></span><span></span>（ICE）与加密交易所 OKX 联合运营的代币化证券交易平台 OKXICE 定于周一正式上线。然而，平台最初拟挂牌的标的企业当中，九成提出了反对。</p><p>　　根据公示文件统计，OKXICE 最初计划上线 62 家公司的股票，其中 56 家反对将自家股票代币化并在该平台交易。到上周，反对名单进一步扩大，新增标的（不在最初清单内）也出现异议。</p><p>　　高反对率，更可能反映企业尚未准备好让基于区块链的股票凭证在 OKXICE 这类全新第三方平台交易，而非普遍抵制代币化本身。</p><p>　　和企业沟通的人士表示，只有 30 天的异议窗口期，留给各方判断、决策的时间十分有限。</p><p>　　<strong>“革命性、颠覆性”</strong></p><p>　　OKXICE 联合主席安德鲁・科莫接受 采访时表示：“转向全天候全球市场，对我们的市场结构而言是革命性、颠覆性的变化。大部分企业并不熟悉代币化，没有机会吃透这套机制及其后果。”</p><p>　　科莫曾担任纽约州州长，任期至 2021 年，一共十年。他补充道：“按常理，在搞清楚这套系统到底如何运作之前，很多公司都会保持谨慎。现在我们看到的趋势是，企业越了解全天候全球可交易的好处，接受度就越高。”</p><p>　　平台上线初期，Coinbase、Robinhood、MicroStrategy、<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/CRCL.html\">Circle</a></span><span></span>、Securitize、BTGO 的代币化股票将开放交易。OKXICE 确认合计 113 项资产（含 ETF 与其他产品）将分批上线。平台称，自 11 月 11 日上线预告发布后，收到更多发行方意向；富达国民信息服务（FIS）、Direxion、Etor、Asset、Vida 现已确认参与。</p><p>　　这 30 天的退出窗口期来自美国证监会的豁免规则，该规定 9 月生效，临时允许部分代币化股票交易。豁免条款要求交易平台必须通知标的发行方，并给予对方提出异议的机会；只要发行方反对，其股票就不能被代币化挂牌。</p><p>　　富兰克林邓普顿加密部门首席投资官 Seth Ginns 在本月早些时候纽约数字资产论坛上表示：“我们收到大量反馈，之所以这么多公司拒绝股票代币化，根源就是只有 30 天窗口期。很多发行方其实愿意探索这个方向，但同期事务繁杂，不敢仓促落地。”</p><p>　　他说：“企业反馈，这段时间正好是财报季、还有中期选举，一堆事情挤在一起。他们说，给我们一点时间研究，不是完全拒绝这个想法，只是不想仓促上马。”</p><p>　　<strong>公告时机争议</strong></p><p>　　全球支付平台 MassPay 首席执行官 Ran Grushkowsky 称，他不少客户都在首批通知名单里。这些公司顾虑的重点并不是代币化这个概念本身，而是全天候交易将如何影响股价、投资者关系策略，尤其是公司公告发布的节奏安排。</p><p>　　“大家更关心实际影响，它到底会如何影响股票价值。很多投资者关系策略都围绕时间规划、信息披露节奏；如果股票 24 小时不间断交易，这套策略该怎么调整？”</p><p>　　他补充：“高管本身对这项创新、对吸引更多市场关注抱有期待；阻力主要来自投资者关系团队，他们倾向暂缓推进。”</p><p>　　Securitize 首席执行官 Carlos Domingo（该公司是首批登陆 OKXICE 的标的之一，同时也是 OKX 的代币化合作方）认为，认知不足甚至存在于负责数字资产项目的管理层，部分拒绝来自内部沟通不畅、流程不熟。</p><p>　　“我们和一些选择退出的发行方聊过，有的公司里，负责数字资产业务的负责人甚至都不知道是谁在内部否决了这件事。” 他说，“一方面是这套机制和交易平台还很新，另一方面，企业根本没看懂收到的通知意味着什么。”</p><p>　　不过 Domingo 认为，虽然初期遭遇抵制，随着企业熟悉这套模式，后续会有更多发行方加入。他同时指出，部分受监管交易平台可以在不经发行方同意的情况下开展相关业务。</p><p>　　<strong>长期博弈</strong></p><p>　　企业接连提出异议，也引出一个问题：哪一种代币化模式最终更受欢迎。OKXICE 模式之外，另一条主流路线是由发行方主导，把区块链股票嵌入现有受监管市场基础设施，发行方保留更强控制权。</p><p>　　数字资产平台 Bullish 就在走这条路线，它收购过户理商 Equiniti，并与之合作推进相关方案。</p><p>　　<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/.IXIC.html\">纳斯达克</a></span><span></span>计划在明年第二季度，与 Kraken 的母公司 Payward 合作推出代币化股票交易平台，这将成为一次重要测试，看看换一套架构之后，企业是否更愿意接纳代币化。</p><p>　　洲际交易所旗下的纽交所、纳斯达克以及其他交易所，都在应对证券发行、交易、结算层面的结构性变革。代币化对机构和投资者吸引力很强：支持全天候交易、缩短结算周期、允许小额份额持有，也更方便用证券做抵押品。</p><p>　　对传统交易所而言，这是一种守住交易与市场基础设施主导权的方式 —— 原生加密平台正持续把传统金融资产搬上区块链。但 Clear Street 分析师 Owen Lau 认为，代币化距离成为可观的收入来源还有很长一段路。</p><p>　　“最重要的一点是，它扩大了整体目标市场。短期增量收入未必亮眼，但趋势已经确立：股票代币化、实现全天候交易是大方向。”</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
-    "author": "环球市场播报"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-edb4e00a",
-    "title": "Susquehanna将迈威尔科技目标价下调至225美元",
-    "summary": "Susquehanna将芯片制造商迈威尔科技（MRVL.O）目标价由300美元下调至225美元，降幅25%。此前11月3日，Susquehanna已将目标价由340美元下调至300美元，并维持Positive评级。",
-    "url": "https://finance.eastmoney.com/a/202611233937508574.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T12:23:22.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "机构评级",
-      "半导体",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "迈威尔科技",
-      "Susquehanna",
-      "目标价下调",
-      "美股"
-    ],
-    "context": "这是Susquehanna对迈威尔科技目标价的又一次下调，此前评级仍为Positive。"
-  },
-  {
-    "id": "aihot-20261123-ft-markets-f9662eb5",
-    "title": "特朗普关税担忧缓解，交易商开始将美国铜运往中国",
-    "originalTitle": "Traders start to move US copper to China as Trump tariff fears ease",
-    "summary": "随着特朗普关税担忧缓解，交易商开始将美国铜运往中国。中国铜供应紧缺、本地溢价高企，造就丰厚套利机会。",
-    "url": "https://www.ft.com/content/b84dbcb1-f216-422e-89c7-f203e0ab2757?syn-25a6b1a6=1",
-    "source": "Financial Times · Markets",
-    "publishedAt": "2026-11-23T12:21:55.000Z",
-    "score": 80,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "大宗商品",
-      "市场动态",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "宏观",
-      "铜",
-      "关税",
-      "套利",
-      "大宗商品"
-    ],
-    "context": "铜贸易流向转变直接反映关税政策对全球大宗商品流动的影响，是观察中美贸易关系的重要风向标。",
-    "contentHtml": "<p>Acute Chinese shortage and high local premium create lucrative arbitrage</p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-2fdb358c",
-    "title": "九州一轨：董事兼总裁提议回购6000万元至1.2亿元公司股份",
-    "originalTitle": "九州一轨：董事兼总裁提议回购6000万元-1.2亿元公司股份",
-    "summary": "九州一轨11月23日公告，公司董事、总裁曹卫东提议使用自有资金及/或自筹资金，通过上交所集中竞价方式回购部分A股股份。回购资金总额不低于6000万元（含）、不超过1.2亿元（含），用于维护公司价值及股东权益。",
-    "url": "https://finance.eastmoney.com/a/202611233937506120.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T12:20:50.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司动态",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "九州一轨",
-      "股份回购",
-      "公告"
-    ],
-    "context": "该事项目前为董事层面的回购提议，具体方案与实施进展需以公司后续公告为准。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-1cd4549f",
-    "title": "九州一轨：参股公司金刚石芯片基板项目点火投产并签订战略合作协议",
-    "summary": "九州一轨（688485.SH）公告，参股公司通创九州的金刚石芯片基板建设项目（一期）于11月23日点火投产，项目总投资约8亿元，达产后预计年产6000万颗单晶金刚石芯片基板。点火仪式上，通创九州与可川光子、青禾晶元等五家企业签署战略合作协议，拟在第四代半导体散热器件领域开展合作。通创九州还与呼和浩特金山高新区管委会签订框架协议，拟推进项目在内蒙古落地。",
-    "url": "https://finance.eastmoney.com/a/202611233937506473.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T12:20:00.000Z",
-    "score": 60,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "半导体",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "九州一轨",
-      "金刚石基板",
-      "第四代半导体",
-      "A股公告"
-    ],
-    "context": "金刚石芯片基板面向第四代半导体散热器件应用，该项目投产是九州一轨参股业务布局落地的实质进展。"
-  },
-  {
-    "id": "aihot-20261123-the-decoder-5e979ff3",
-    "title": "GPT-6.2 Astra 解出其他 AI 均未攻克的数学定理，并自创证明策略",
-    "originalTitle": "GPT-6.2 Astra solved a math theorem no other AI could crack, then invented its own proof strategy",
-    "author": "Manuel Uth",
-    "summary": "OpenAI 的 GPT-6.2 Astra 独立给出 Smoktunowicz 间隙定理的机器可验证 Lean 证明，据 Vals AI 称属同类成果中的首次。由于 Mathlib 缺少关键基础，模型自行设计证明路径。在 Autoform-Hard 基准上，Astra 以 56 题解出 49 题位居榜首。",
-    "url": "https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy/",
-    "source": "The Decoder",
-    "publishedAt": "2026-11-23T12:17:01.000Z",
-    "score": 84,
-    "tier": "T2",
-    "selected": true,
-    "industry": "AI",
-    "topics": [
-      "前沿模型",
-      "AI4Science",
-      "基准测试",
-      "模型发布"
-    ],
-    "region": [
-      "AI精选",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "OpenAI",
-      "GPT-6.2 Astra",
-      "Lean证明",
-      "数学推理"
-    ],
-    "context": "机器可验证的形式化证明是检验 AI 数学推理能力的硬标准，此成果显示前沿模型自主证明能力再进一步。",
-    "contentHtml": "<p><strong>OpenAI's GPT-6.2 Astra produced a formalized, machine-verifiable proof of a 2006 theorem with zero human help during the run.</strong> According to <a href=\"https://www.vals.ai/blogs/smoktunowicz-gap-theorem\">Vals AI</a>, it's the first known proof of Smoktunowicz's gap theorem written in <a href=\"https://the-decoder.com/mathematicians-say-openai-doesnt-understand-its-own-navier-stokes-proof/\">Lean</a>. The theorem states that when a mathematical system multiplies its basic building blocks, growth is either quite slow or very fast. There's no middle ground. Because key foundations of the original proof were missing from the math library Mathlib, Astra took a different route than the published <a href=\"https://the-decoder.com/some-mathematicians-call-for-openai-boycott-after-ai-generated-proofs-flood-their-field/\">mathematical proofs</a>, Vals says. It used \"capacity,\" a metric from existing research that checks the minimum number of elements added per computation step.</p><figure><img src=\"https://the-decoder.com/wp-content/uploads/2026/11/gpt_6.2_astra_capacity-770x446.png\" alt=\"\" width=\"770\" height=\"446\"><figcaption>GPT-6.2 Astra built its proof around \"capacity,\" a metric that behaves like the edge of a graph. | Image: Vals AI</figcaption></figure><p>This happened on <a href=\"https://www.vals.ai/benchmarks/autoform_hard\">Autoform-Hard</a>, a subset of Meta FAIR's AutoformBench curated by Vals. It contains 56 tasks (five corrected) that ten models in Meta's study failed to solve within budget. When Astra tried to quit after 47 minutes and eight dollars, the system rejected the attempt since unsolved submissions aren't accepted until $20 has been spent. After nine minutes of silence with no code input while it searched for a new strategy, Astra delivered the 1,800-line proof at the 94-minute mark for $21.58. It now leads the leaderboard with 49 solved tasks, ahead of GPT-6.2 Sol and Claude Fable 5.2 at 48 each.</p>"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-108be213",
-    "title": "美债收益率走高、美股股指期货反弹，投资者等待纽约联储主席威廉姆斯讲话",
-    "originalTitle": "美债收益率走高、股指期货反弹，投资者等待纽约联储主席威廉姆斯讲话",
-    "summary": "周一美国国债收益率上行，部分扭转上周末的行情，美股股指期货大幅反弹。市场静待纽约联邦储备银行行长约翰·威廉姆斯的讲话。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztrzy8217998.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T12:16:51.000Z",
-    "score": 50,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "海外市场",
-      "宏观经济",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "美债收益率",
-      "美股期货",
-      "美联储",
-      "威廉姆斯"
-    ],
-    "context": "纽约联储行长威廉姆斯的表态向来受市场关注，其讲话成为当日行情的主要观察点。"
-  },
-  {
-    "id": "aihot-20261123-bloomberg-markets-141b20d6",
-    "title": "Mahanadi Coalfields 9.53亿美元印度IPO获1.5倍认购",
-    "originalTitle": "Mahanadi Coalfields’ $953 Million India IPO Subscribed 1.5 Times",
-    "author": "Rajesh Mascarenhas",
-    "summary": "Mahanadi Coalfields规模9.53亿美元的印度IPO于周一截止申购，最终获1.5倍认购。机构投资者的强劲需求是本次认购的主要推动力。",
-    "url": "https://www.bloomberg.com/news/articles/2026-11-23/mahanadi-coalfields-953-million-india-ipo-subscribed-1-5-times",
-    "source": "Bloomberg Markets",
-    "publishedAt": "2026-11-23T12:15:01.000Z",
-    "score": 65,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "IPO与新股",
-      "美股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "市场",
-      "印度IPO",
-      "Mahanadi Coalfields",
-      "机构投资者"
-    ],
-    "context": "近10亿美元量级的大型发行认购结果落地，可作为观察印度一级市场资金热度与机构情绪的窗口。",
-    "contentHtml": "<p>Mahanadi Coalfields Ltd.’s $953 million initial public offering was subscribed 1.5 times as bidding closed Monday, driven by strong demand from institutional investors.</p>"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-dfc9ff8d",
-    "title": "*ST美丽（000010）被证监会立案",
-    "originalTitle": "突发！000010，被证监会立案！",
-    "summary": "*ST美丽（000010）11月23日晚间公告，公司收到中国证监会下发的《立案告知书》和深圳证监局下发的《行政监管措施决定书》。公司已被证监会立案调查。",
-    "url": "https://finance.sina.com.cn/stock/s/2026-11-23/doc-iniztrzu5457095.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T12:14:33.000Z",
-    "score": 65,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "市场监管",
-      "港股",
-      "美股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "证监会立案",
-      "*ST美丽",
-      "监管动态",
-      "A股"
-    ],
-    "context": "*ST公司被证监会立案属重大监管风险事件，后续调查进展与公司处境值得关注。"
-  },
-  {
-    "id": "aihot-20261123-wscn-global-dd26b751",
-    "title": "纳斯达克走势与2018年高度相似，反弹后或还有下一波回调",
-    "originalTitle": "2018年噩梦重演？走势高度相似，纳斯达克反弹之后或还有下一波回调",
-    "author": "李佳",
-    "summary": "华尔街见闻刊文提示，纳斯达克本轮走势与2018年高度相似，反弹之后或仍将迎来下一波回调。",
-    "url": "https://wallstreetcn.com/articles/3786527",
-    "source": "华尔街见闻 · 全球",
-    "publishedAt": "2026-11-23T12:09:30.000Z",
-    "score": 50,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场观点",
-      "宏观",
-      "市场政策"
-    ],
-    "region": [
-      "金融与政策",
-      "财经"
-    ],
-    "tags": [
-      "财经",
-      "宏观",
-      "纳斯达克",
-      "美股",
-      "回调风险",
-      "走势分析"
-    ],
-    "context": "在指数反弹阶段以历史走势类比提示风险，为研判美股回调节奏提供市场观点参考。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-dfb2103e",
-    "title": "美国银行预计2027年欧元区GDP增长0.8%",
-    "summary": "美国银行全球研究部（BofA Global Research）预计，2027年欧元区GDP将增长0.8%。该机构同时预计2027年全球经济增长3.4%，美国GDP增长2.3%。",
-    "url": "https://finance.eastmoney.com/a/202611233937453743.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T11:18:12.000Z",
-    "score": 54,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "国际经济",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "宏观经济",
-      "GDP预测",
-      "美国银行",
-      "欧元区"
-    ],
-    "context": "美国银行对2027年主要经济体增速的预测中，欧元区0.8%的增速明显低于全球3.4%和美国2.3%的水平。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-1b6c7f62",
-    "title": "美银全球研究预计2027年全球经济增速为3.4%",
-    "summary": "美银全球研究预计2027年全球经济增速为3.4%。该机构同时预测美国2027年GDP增速为2.3%，欧元区2027年GDP增速为0.8%。",
-    "url": "https://finance.eastmoney.com/a/202611233937453583.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T11:17:59.000Z",
-    "score": 62,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "海外经济",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "宏观经济",
-      "经济预测",
-      "美银",
-      "全球GDP"
-    ],
-    "context": "美银对2027年全球及主要经济体增速给出量化预测，可作为研判中期宏观走势的机构参考。"
   }
 ]
