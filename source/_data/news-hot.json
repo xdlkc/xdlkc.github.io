@@ -10,7 +10,7 @@
       "市场政策",
       "A股"
     ],
-    "heatScore": 91.8,
+    "heatScore": 89,
     "sourceCount": 1,
     "latestAt": "2026-11-25T12:33:42.609Z",
     "summary": "国家发展改革委、民政部、国家卫生健康委、教育部联合印发《“一老一小”服务体系建设实施方案》，围绕养老和托育服务体系建设作出部署。该方案为四部委联合出台的政策文件，相关落地安排值得持续关注。",
@@ -34,8 +34,112 @@
     ]
   },
   {
-    "id": "hot-08b6e961",
+    "id": "hot-45351dae",
     "rank": 2,
+    "title": "美国10月PCE通胀加速至3.8%，美联储加息或成定局",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "货币政策",
+      "美股",
+      "宏观"
+    ],
+    "heatScore": 85.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:42:27.000Z",
+    "summary": "美国10月个人消费支出物价指数（PCE）同比涨幅加速至3.8%，与道琼斯共识预期一致。作为美联储最青睐的通胀指标，PCE加速升温令进一步加息或成定局。",
+    "items": [
+      {
+        "id": "aihot-20261125-cnbc-markets-259217ac",
+        "title": "美国10月PCE通胀加速至3.8%，美联储加息或成定局",
+        "source": "CNBC Markets",
+        "publishedAt": "2026-11-25T13:42:27.000Z",
+        "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+        "score": 84
+      }
+    ]
+  },
+  {
+    "id": "hot-d76bf131",
+    "rank": 3,
+    "title": "金价跌破每盎司3500美元 市场等待通胀数据研判美联储加息路径",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 81.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:40:59.000Z",
+    "summary": "受股市持续抛售拖累，黄金价格下探至每盎司3500美元下方。投资者正等待关键通胀数据出炉，该数据可能影响市场对美联储进一步加息的预期，短期内继续压制金价走势。",
+    "items": [
+      {
+        "id": "aihot-20261125-sina-finance-d6b267f3",
+        "title": "金价跌破每盎司3500美元 市场等待通胀数据研判美联储加息路径",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-25T13:40:59.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykqc4123397.shtml",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "hot-48877125",
+    "rank": 4,
+    "title": "美国政府或面临再度部分停摆 两党考虑切断对伊战事专项资金",
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "宏观经济",
+      "政府动态",
+      "A股"
+    ],
+    "heatScore": 80.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:33:59.000Z",
+    "summary": "参议院共和党人为避免美国政府再度部分停摆，正考虑与民主党达成协议，切断对伊朗战事的专项资金。该战事不受民众欢迎，且从未获得国会批准。",
+    "items": [
+      {
+        "id": "aihot-20261125-sina-finance-f2e1440c",
+        "title": "美国政府或面临再度部分停摆 两党考虑切断对伊战事专项资金",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-25T13:33:59.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykqc4119879.shtml",
+        "score": 76
+      }
+    ]
+  },
+  {
+    "id": "hot-6526e966",
+    "rank": 5,
+    "title": "高盛：美国数据中心建设热潮将延续至2028年，推升电力与天然气需求",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "美股",
+      "能源",
+      "A股"
+    ],
+    "heatScore": 79.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:41:34.000Z",
+    "summary": "高盛预计，受 AI 热潮驱动，美国数据中心电力容量将保持强劲增长直至 2028 年。更多规模更大、功率密度更高的数据中心持续开建，美国电力与天然气需求因此面临上行风险。",
+    "items": [
+      {
+        "id": "aihot-20261125-sina-finance-3b483161",
+        "title": "高盛：美国数据中心建设热潮将延续至2028年，推升电力与天然气需求",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-25T13:41:34.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykpx1682883.shtml",
+        "score": 74
+      }
+    ]
+  },
+  {
+    "id": "hot-08b6e961",
+    "rank": 6,
     "title": "三星显示将以2.1亿欧元收购ams OSRAM 9.1%股权，交割后成其最大股东",
     "industry": "金融与政策",
     "topics": [
@@ -44,7 +148,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 81.3,
+    "heatScore": 78.8,
     "sourceCount": 1,
     "latestAt": "2026-11-25T12:29:19.000Z",
     "summary": "11月25日，三星显示宣布已签署投资协议，以约2.1亿欧元认购ams OSRAM 9,984,439股新发行股份，取得其9.1%股权。按协议安排，预计交割完成后三星显示将成为ams OSRAM最大股东。",
@@ -60,8 +164,112 @@
     ]
   },
   {
+    "id": "hot-1fb62d12",
+    "rank": 7,
+    "title": "美国10月耐用品订单环比增长0.2%，低于预期的0.7%",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "A股",
+      "港股",
+      "美股"
+    ],
+    "heatScore": 75.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:37:51.000Z",
+    "summary": "美国人口普查局公布，10月耐用品订单环比增长0.2%，低于市场预期的0.7%增长。9月该数据为增长2%，52位经济学家的预测区间为-1.9%至4.2%。不含运输品的新订单10月增长0.5%，与9月增速持平。",
+    "items": [
+      {
+        "id": "aihot-20261125-sina-finance-3ce1b689",
+        "title": "美国10月耐用品订单环比增长0.2%，低于预期的0.7%",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-25T13:37:51.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykpx1680466.shtml",
+        "score": 68
+      }
+    ]
+  },
+  {
+    "id": "hot-d5dc87b1",
+    "rank": 8,
+    "title": "联想天津高性能服务器产线投产 预计年产值300亿元",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "科技制造",
+      "AI算力",
+      "港股"
+    ],
+    "heatScore": 74.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:33:49.000Z",
+    "summary": "11月25日，联想集团在天津举行高性能服务器产线落成暨超节点项目启动仪式，产线正式投产。该产线位于联想（天津）创新产业园，于2025年底启动建设、总投资1.2亿元，具备年产20万台通用服务器、10万台AI服务器的设计产能，预计年产值达300亿元。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-aec253c5",
+        "title": "联想天津高性能服务器产线投产 预计年产值300亿元",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T13:33:49.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939804672.html",
+        "score": 66
+      }
+    ]
+  },
+  {
+    "id": "hot-c1dbf664",
+    "rank": 9,
+    "title": "一汽解放与道依茨（Deutz）签署技术授权协议",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "行业动态",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 73.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:37:49.000Z",
+    "summary": "一汽解放与德国发动机品牌道依茨（Deutz）于11月25日在上海宝马工程机械展解放动力展区签署TLA技术授权协议，合作由意向规划阶段迈入标准化落地阶段。道依茨创立于1864年，总部位于德国科隆，是发动机独立制造品牌。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-78cfe923",
+        "title": "一汽解放与道依茨（Deutz）签署技术授权协议",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T13:37:49.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939808112.html",
+        "score": 65
+      }
+    ]
+  },
+  {
+    "id": "hot-36d77f3e",
+    "rank": 10,
+    "title": "美国上周首次申领失业救济人数减少1.3万人至18.9万人 低于预期的20万人",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "海外市场",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 73.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:34:30.000Z",
+    "summary": "美国上周首次申领失业救济人数减少1.3万人至18.9万人，低于经济学家预期的20万人。39位受访经济学家的预测区间为19.5万至20.8万人，实际值低于区间下限；4周移动均值为19.6万人。截至11月14日当周，持续申领失业救济人数减少9.5万人至169.7万人。",
+    "items": [
+      {
+        "id": "aihot-20261125-sina-finance-924dcf53",
+        "title": "美国上周首次申领失业救济人数减少1.3万人至18.9万人 低于预期的20万人",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-25T13:34:30.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykpv9340191.shtml",
+        "score": 65
+      }
+    ]
+  },
+  {
     "id": "hot-9ffea528",
-    "rank": 3,
+    "rank": 11,
     "title": "特斯拉FSD新版本“抛下”老车型，Counterpoint：国内部分智驾车型或于2028年面临类似问题",
     "industry": "金融与政策",
     "topics": [
@@ -70,7 +278,7 @@
       "行业研究",
       "港股"
     ],
-    "heatScore": 75.8,
+    "heatScore": 73.4,
     "sourceCount": 1,
     "latestAt": "2026-11-25T11:06:07.000Z",
     "summary": "市场研究机构Counterpoint Research 11月25日发布分析报告称，随着特斯拉FSD v15推出，搭载HW3硬件平台的数百万辆特斯拉与新车型将出现明显智驾体验差异。报告指出汽车智能化硬件预埋的价值兑现期受制于算力代际，国内2022年至2024年集中量产的英伟达Orin-X平台车型预计将在2028年至2029年面临类似问题。",
@@ -87,14 +295,14 @@
   },
   {
     "id": "hot-a42ca6de",
-    "rank": 4,
+    "rank": 12,
     "title": "「Drone 2」背后的故事：KubeCon NA 2026 闭幕主题演讲",
     "industry": "工程与开源",
     "topics": [
       "云原生",
       "开源生态"
     ],
-    "heatScore": 71.9,
+    "heatScore": 69.7,
     "sourceCount": 1,
     "latestAt": "2026-11-25T12:33:44.390Z",
     "summary": "CNCF 博客分享了 KubeCon + CloudNativeCon NA 2026 闭幕主题演讲「Drone 2」背后的故事，包括距开场直播仅剩 30 秒的幕后经历。演讲以开源冒险的形式呈现 Kubernetes、agent-substrate、kagent、AI 智能体与无人机等元素，主题围绕 AI 智能体与云原生（Cloud Native Without Limits）。",
@@ -111,7 +319,7 @@
   },
   {
     "id": "hot-90b4f86b",
-    "rank": 5,
+    "rank": 13,
     "title": "国家能源局：截至10月底全国累计发电装机容量41.6亿千瓦 同比增长10.9%",
     "industry": "金融与政策",
     "topics": [
@@ -120,7 +328,7 @@
       "新能源",
       "港股"
     ],
-    "heatScore": 70.6,
+    "heatScore": 68.4,
     "sourceCount": 1,
     "latestAt": "2026-11-25T11:04:21.000Z",
     "summary": "国家能源局发布1-10月份全国电力统计数据，截至10月底全国累计发电装机容量41.6亿千瓦，同比增长10.9%。其中太阳能发电装机容量13.3亿千瓦，同比增长16.3%；风电装机容量7.1亿千瓦，同比增长20.0%。1-10月份全国发电设备累计平均利用2406小时，比上年同期降低214小时。",
@@ -137,7 +345,7 @@
   },
   {
     "id": "hot-9cde1bcf",
-    "rank": 6,
+    "rank": 14,
     "title": "国家发改委刊发专家解读：织牢织密养老育幼服务网，托举“一老一小”民生福祉",
     "industry": "金融与政策",
     "topics": [
@@ -146,7 +354,7 @@
       "市场政策",
       "A股"
     ],
-    "heatScore": 69.5,
+    "heatScore": 67.3,
     "sourceCount": 1,
     "latestAt": "2026-11-25T12:33:42.609Z",
     "summary": "国家发改委网站刊发专家解读文章，围绕织牢织密养老育幼服务网、托举“一老一小”民生福祉展开阐释。文章聚焦养老与育幼服务体系建设这一民生重点方向。",
@@ -163,7 +371,7 @@
   },
   {
     "id": "hot-a850035c",
-    "rank": 7,
+    "rank": 15,
     "title": "锦盛新材：控股股东及一致行动人拟协议转让15%股份",
     "industry": "金融与政策",
     "topics": [
@@ -172,7 +380,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 69.3,
+    "heatScore": 67.1,
     "sourceCount": 1,
     "latestAt": "2026-11-25T12:27:33.000Z",
     "summary": "锦盛新材（300849.SZ）公告，控股股东、实控人阮荣涛、高丽君及其一致行动人阮荣根、锦盛合伙，与深圳擎力一号科技有限公司签署股份转让协议，拟以18.67元/股协议转让2250万股，占总股本的15%。交易对价合计4.2亿元。",
@@ -188,8 +396,86 @@
     ]
   },
   {
+    "id": "hot-0b3f1538",
+    "rank": 16,
+    "title": "摩根大通下调百威英博评级至中性，股价小幅走低",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "消费行业",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 65.7,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:31:42.000Z",
+    "summary": "摩根大通将百威英博（BUD）评级由增持下调至中性，该股随后下跌0.4%。该行分析师在近期发给客户的研报中作出上述调整，正文未披露更多下调理由与目标价细节。",
+    "items": [
+      {
+        "id": "aihot-20261125-sina-finance-5a7014e7",
+        "title": "摩根大通下调百威英博评级至中性，股价小幅走低",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-25T13:31:42.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykpv9338587.shtml",
+        "score": 52
+      }
+    ]
+  },
+  {
+    "id": "hot-69b6df31",
+    "rank": 17,
+    "title": "北京商报侃股：创业板做市商制度有助于提升市场定价效率",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场政策",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 64.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:41:19.000Z",
+    "summary": "北京商报撰文指出，创业板做市商制度渐行渐近，该制度有助于提升市场定价效率。文章认为，做市商可在成交冷清时段提供双边报价，改善股票成交活跃度。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-bcf96165",
+        "title": "北京商报侃股：创业板做市商制度有助于提升市场定价效率",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T13:41:19.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939810517.html",
+        "score": 50
+      }
+    ]
+  },
+  {
+    "id": "hot-5cbc6401",
+    "rank": 18,
+    "title": "现货黄金跌幅扩大，下跌近2%报3484.39美元/盎司",
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "贵金属",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 64.7,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T13:38:59.000Z",
+    "summary": "现货黄金跌幅扩大，下跌近2%，报3,484.39美元/盎司。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-c52f13d2",
+        "title": "现货黄金跌幅扩大，下跌近2%报3484.39美元/盎司",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T13:38:59.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939806853.html",
+        "score": 50
+      }
+    ]
+  },
+  {
     "id": "hot-5e899357",
-    "rank": 8,
+    "rank": 19,
     "title": "浦江中国AI Token业务加速落地，首批客户已接入",
     "industry": "金融与政策",
     "topics": [
@@ -198,7 +484,7 @@
       "宏观",
       "市场政策"
     ],
-    "heatScore": 65.6,
+    "heatScore": 63.6,
     "sourceCount": 1,
     "latestAt": "2026-11-25T12:23:40.000Z",
     "summary": "浦江中国AI Token业务加速落地，首批客户已正式接入。目前消息仅披露接入进展，客户数量与业务规模等细节尚待进一步公布。",
@@ -214,313 +500,28 @@
     ]
   },
   {
-    "id": "hot-4e2e422f",
-    "rank": 9,
-    "title": "散户押中英伟达期权 一天暴赚近20倍 直言“开盘即售出，谢谢老黄”",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 64.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T11:03:20.000Z",
-    "summary": "彭博社25日报道，Reddit用户Outrageous-Voice1459上周五买入价值1.9万美元的英伟达看涨期权，在CEO黄仁勋回归后单日获利37.69万美元，收益率增长1984%、接近20倍。该散户表示将开盘即售出兑现收益。",
-    "items": [
-      {
-        "id": "aihot-20261125-eastmoney-724-c45378c3",
-        "title": "散户押中英伟达期权 一天暴赚近20倍 直言“开盘即售出，谢谢老黄”",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-25T11:03:20.000Z",
-        "url": "https://finance.eastmoney.com/a/202611253939383630.html",
-        "score": 55
-      }
-    ]
-  },
-  {
-    "id": "hot-70a26699",
-    "rank": 10,
-    "title": "我国新材料研发提速 关键材料加速走向工程应用",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "行业动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 64.6,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T12:29:03.000Z",
-    "summary": "今年以来，我国一大批关键新材料加速走出实验室、落地工程一线。这些材料持续突破技术壁垒、补齐应用短板，为制造强国建设提供支撑。",
-    "items": [
-      {
-        "id": "aihot-20261125-eastmoney-724-4c275bcd",
-        "title": "我国新材料研发提速 关键材料加速走向工程应用",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-25T12:29:03.000Z",
-        "url": "https://finance.eastmoney.com/a/202611253939730338.html",
-        "score": 50
-      }
-    ]
-  },
-  {
-    "id": "hot-174b7673",
-    "rank": 11,
-    "title": "化肥概念震荡反弹 红四方、中哲精化双双涨停",
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "市场快讯",
-      "港股",
-      "宏观"
-    ],
-    "heatScore": 62.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T11:06:20.000Z",
-    "summary": "A股化肥概念盘中震荡反弹，红四方、中哲精化双双涨停。赤天化、潞化科技、泸天化、四川美丰、六国化工、富邦科技等个股跟涨。",
-    "items": [
-      {
-        "id": "aihot-20261125-eastmoney-724-837a4fc1",
-        "title": "化肥概念震荡反弹 红四方、中哲精化双双涨停",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-25T11:06:20.000Z",
-        "url": "https://finance.eastmoney.com/a/202611253939386639.html",
-        "score": 50
-      }
-    ]
-  },
-  {
-    "id": "hot-47021702",
-    "rank": 12,
-    "title": "马来西亚航空宣布选择波音787梦想客机",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "航空产业",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 62,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T11:04:33.000Z",
-    "summary": "马来西亚航空集团CEO表示，已选择波音(BA.N)787梦想客机，订单包括10架787。该订单还附有可选择再增购6架的条款。",
-    "items": [
-      {
-        "id": "aihot-20261125-eastmoney-724-d09a3749",
-        "title": "马来西亚航空宣布选择波音787梦想客机",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-25T11:04:33.000Z",
-        "url": "https://finance.eastmoney.com/a/202611253939386546.html",
-        "score": 50
-      }
-    ]
-  },
-  {
-    "id": "hot-2958eac8",
-    "rank": 13,
-    "title": "你的 OpenTelemetry 管道正在成为性能瓶颈吗？",
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "可观测性",
-      "开源生态"
-    ],
-    "heatScore": 59.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T03:10:12.171Z",
-    "summary": "CNCF 博客发布 Cloud Native Days Austria 2026 演讲回顾《How to Defeat OTel's Silent Killer: The Performance Overhead》，聚焦可观测性管道中容易被忽视的采集性能开销问题。演讲探讨 OpenTelemetry 管道何时会成为性能瓶颈及其应对方法。",
-    "items": [
-      {
-        "id": "aihot-20261125-cncf-blog-1739f35a",
-        "title": "你的 OpenTelemetry 管道正在成为性能瓶颈吗？",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-25T03:10:12.171Z",
-        "url": "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/",
-        "score": 73
-      }
-    ]
-  },
-  {
-    "id": "hot-cc1067a7",
-    "rank": 14,
-    "title": "财政部等五部门制定印发《常态化帮扶资金绩效评价办法》",
-    "industry": "金融与政策",
-    "topics": [
-      "市场政策",
-      "宏观经济",
-      "政府动态",
-      "宏观"
-    ],
-    "heatScore": 58.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T00:00:00.000Z",
-    "summary": "财政部等五部门制定印发《常态化帮扶资金绩效评价办法》，对常态化帮扶资金的绩效评价作出制度性安排。该文件由五部门联合制定，已在财政部官网正式发布。",
-    "items": [
-      {
-        "id": "aihot-20261125-mof-news-c2c920fc",
-        "title": "财政部等五部门制定印发《常态化帮扶资金绩效评价办法》",
-        "source": "财政部 · 财政要闻与收支数据",
-        "publishedAt": "2026-11-25T00:00:00.000Z",
-        "url": "http://nys.mof.gov.cn/czpjZhengCeFaBu_2_2/202611/t20261124_4005326.htm",
-        "score": 82
-      }
-    ]
-  },
-  {
-    "id": "hot-1472a9ed",
-    "rank": 15,
-    "title": "GPT-6 模型展现出内在的蛋白质设计能力",
-    "industry": "AI",
-    "topics": [
-      "前沿模型",
-      "AI科学",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "heatScore": 45.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-24T13:00:00.000Z",
-    "summary": "GPT-6 模型展现出内在的蛋白质设计能力，可通过推理和代码设计蛋白质结构与序列。实验室测试已在五个靶点上发现结合证据，为其设计的有效性提供了实验支持。",
-    "items": [
-      {
-        "id": "aihot-20261124-openai-news-11b88f0f",
-        "title": "GPT-6 模型展现出内在的蛋白质设计能力",
-        "source": "OpenAI News",
-        "publishedAt": "2026-11-24T13:00:00.000Z",
-        "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-        "score": 93
-      }
-    ]
-  },
-  {
-    "id": "hot-319cd429",
-    "rank": 16,
-    "title": "Microduck 避障：基于 Isaac Lab 与 Newton 的 Sim2Real 工作流",
-    "industry": "AI",
-    "topics": [
-      "开源",
-      "机器人",
-      "工程实践",
-      "开源生态"
-    ],
-    "heatScore": 45.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-24T16:34:13.000Z",
-    "summary": "Hugging Face 发布 Microduck 避障教程，讲解如何用 Isaac Lab 与 Newton 搭建 Sim2Real（仿真到现实）完整工作流。教程围绕避障任务的仿真训练与真机迁移展开，属官方开源技术实践分享。",
-    "items": [
-      {
-        "id": "aihot-20261124-hugging-face-f7049fe2",
-        "title": "Microduck 避障：基于 Isaac Lab 与 Newton 的 Sim2Real 工作流",
-        "source": "Hugging Face Blog",
-        "publishedAt": "2026-11-24T16:34:13.000Z",
-        "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
-        "score": 76
-      }
-    ]
-  },
-  {
-    "id": "hot-a86c58fe",
-    "rank": 17,
-    "title": "财政部贵州监管局：科学谋划 系统推进 扎实问效 推动绩效评价工作走深走实",
-    "industry": "金融与政策",
-    "topics": [
-      "政府动态",
-      "财政政策",
-      "市场政策",
-      "宏观"
-    ],
-    "heatScore": 44.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T00:00:00.000Z",
-    "summary": "财政部贵州监管局围绕绩效评价工作提出科学谋划、系统推进、扎实问效的要求，推动绩效评价工作走深走实。原文未披露具体评价项目、资金规模或量化成效。",
-    "items": [
-      {
-        "id": "aihot-20261125-mof-news-5134080f",
-        "title": "财政部贵州监管局：科学谋划 系统推进 扎实问效 推动绩效评价工作走深走实",
-        "source": "财政部 · 财政要闻与收支数据",
-        "publishedAt": "2026-11-25T00:00:00.000Z",
-        "url": "http://gz.mof.gov.cn/caizhengjiancha/202611/t20261119_4004967.htm",
-        "score": 48
-      }
-    ]
-  },
-  {
-    "id": "hot-b01f4dc2",
-    "rank": 18,
-    "title": "财政部四川监管局：三维协同发力 提升转移支付执行常态化监督工作效能",
-    "industry": "金融与政策",
-    "topics": [
-      "部委政策",
-      "财政数据",
-      "市场政策",
-      "政府动态"
-    ],
-    "heatScore": 44.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T00:00:00.000Z",
-    "summary": "财政部四川监管局介绍，通过三维协同发力提升转移支付执行常态化监督工作效能。该文为地方监管局日常工作动态，正文未披露具体监督举措与量化成果。",
-    "items": [
-      {
-        "id": "aihot-20261125-mof-news-6beb09f1",
-        "title": "财政部四川监管局：三维协同发力 提升转移支付执行常态化监督工作效能",
-        "source": "财政部 · 财政要闻与收支数据",
-        "publishedAt": "2026-11-25T00:00:00.000Z",
-        "url": "http://sc.mof.gov.cn/caizhengjiancha/202611/t20261123_4005213.htm",
-        "score": 48
-      }
-    ]
-  },
-  {
-    "id": "hot-59dd5c54",
-    "rank": 19,
-    "title": "美联储公布理事会2026年10月19日与28日贴现率会议纪要",
-    "industry": "金融与政策",
-    "topics": [
-      "金融与政策",
-      "央行动态",
-      "市场政策",
-      "政府动态"
-    ],
-    "heatScore": 43.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-24T19:00:00.000Z",
-    "summary": "美联储发布理事会于2026年10月19日和10月28日召开的两次贴现率会议纪要。纪要记录相关会议的讨论与表决情况，属美联储例行披露文件。",
-    "items": [
-      {
-        "id": "aihot-20261124-fed-press-7859ef41",
-        "title": "美联储公布理事会2026年10月19日与28日贴现率会议纪要",
-        "source": "美联储官方新闻稿 (Fed)",
-        "publishedAt": "2026-11-24T19:00:00.000Z",
-        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm",
-        "score": 62
-      }
-    ]
-  },
-  {
-    "id": "hot-ddd36328",
+    "id": "hot-c8068af5",
     "rank": 20,
-    "title": "两名业余天文爱好者用 Codex 与 Astra 在 NASA 数据中搜寻系外行星",
-    "industry": "AI",
+    "title": "标普500指数期货和纳斯达克100指数期货触及盘中低点",
+    "industry": "金融与政策",
     "topics": [
-      "AI应用",
-      "科学研究",
-      "模型发布",
-      "Agent 智能体"
+      "美股",
+      "市场行情",
+      "A股",
+      "港股"
     ],
-    "heatScore": 38.4,
+    "heatScore": 63.4,
     "sourceCount": 1,
-    "latestAt": "2026-11-24T11:00:00.000Z",
-    "summary": "两名业余天文爱好者借助 Codex 与 Astra，在 NASA 开普勒与 TESS 太空望远镜的公开数据中找到潜在系外行星。OpenAI 通过官方案例展示了这一 AI 辅助的天文搜寻过程，显示 AI 工具正在被业余研究者用于真实科学发现。",
+    "latestAt": "2026-11-25T13:34:38.000Z",
+    "summary": "标普500指数期货和纳斯达克100指数期货小幅走低，双双触及盘中低点。",
     "items": [
       {
-        "id": "aihot-20261124-openai-news-92dff0d7",
-        "title": "两名业余天文爱好者用 Codex 与 Astra 在 NASA 数据中搜寻系外行星",
-        "source": "OpenAI News",
-        "publishedAt": "2026-11-24T11:00:00.000Z",
-        "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
-        "score": 76
+        "id": "aihot-20261125-eastmoney-724-560a5f17",
+        "title": "标普500指数期货和纳斯达克100指数期货触及盘中低点",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T13:34:38.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939799563.html",
+        "score": 48
       }
     ]
   }

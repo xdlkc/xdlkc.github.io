@@ -1,5 +1,389 @@
 [
   {
+    "id": "aihot-20261125-cnbc-markets-259217ac",
+    "title": "美国10月PCE通胀加速至3.8%，美联储加息或成定局",
+    "originalTitle": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+    "summary": "美国10月个人消费支出物价指数（PCE）同比涨幅加速至3.8%，与道琼斯共识预期一致。作为美联储最青睐的通胀指标，PCE加速升温令进一步加息或成定局。",
+    "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+    "source": "CNBC Markets",
+    "publishedAt": "2026-11-25T13:42:27.000Z",
+    "score": 84,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "货币政策",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "美联储",
+      "PCE",
+      "通胀",
+      "加息"
+    ],
+    "context": "PCE是美联储利率决策最倚重的通胀指标，其加速上行将直接影响货币政策路径与市场资产定价。",
+    "contentHtml": "<p>Customers shop at a grocery store on Sept. 10, 2026 in Chicago, Illinois.</p><p>Scott Olson | Getty Images</p><p>Inflation moved further away from the Federal Reserve's target in October, reinforcing expectations that another interest rate hike is in cards for December and raising questions about how much more work the central bank will have to do in 2027.</p><p>The personal consumption expenditures price index, the Fed's preferred inflation gauge, showed a seasonally adjusted 3.8% annual inflation rate, in line with the Dow Jones consensus estimate.</p><p>Excluding food and energy, core PCE was 3.3%, the Commerce Department reported Wednesday. That was 0.1 percentage point above the forecast.</p><p>While the Fed officially follows the headline figure, policymakers consider core to be a more reliable longer-term gauge of inflation trends.</p><p>A separate report also showed much stronger economic growth for the third quarter, with gross domestic product rising at a 4.3% annualized rate, according to a revised Commerce Department estimate. The strong top-line gain for the economy adds further fuel to the notion that Fed monetary policy is not restricting economic activity.</p><p>Consumer spending rose 0.3% for the month, which matched the pace of price increases but was 0.1 percentage point lower than forecast. Income, on the other hand, surged 0.7%, much more than the 0.4% estimate. The personal saving rate rose to 4.1%.</p><p>The report comes with the market fully pricing in a quarter percentage point interest rate hike when the Fed meets Dec. 8-9. However, it leaves unanswered how much more rates will need to increase to get inflation back down to the Fed's 2% target.</p><p><strong>This is breaking news. Please refresh for updates</strong>.</p>",
+    "author": "Jeff Cox",
+    "contentHtmlZh": "<p>{\"t\": [\"</p><p>2026年9月10日，顾客在伊利诺伊州芝加哥市的一家杂货店购物。</p><p>\", \"</p><p>Scott Olson | Getty Images</p><p>\", \"</p><p>10月份通胀进一步偏离了美联储的目标，这强化了市场对12月再次加息的预期，同时也引发了一个疑问：央行在2027年还有多少工作要做。</p><p>\", \"</p><p>美联储首选的通胀指标——个人消费支出价格指数显示，按季节调整后折合年率的通胀率为3.8%，与道琼斯的普遍预期一致。</p><p>\", \"</p><p>商务部周三公布的数据显示，剔除食品和能源后，核心PCE为3.3%，比预测高出0.1个百分点。</p><p>\", \"</p><p>虽然美联储官方遵循整体数据，但政策制定者认为核心数据是衡量通胀长期趋势的更可靠指标。</p><p>\", \"</p><p>另一份报告还显示第三季度经济增长要强劲得多，根据商务部修正后的估计，国内生产总值按年化率增长4.3%。经济整体数据的强劲表现进一步助长了这样一种观点：美联储的货币政策并未限制经济活动。</p><p>\", \"</p><p>当月消费者支出增长0.3%，与价格上涨步伐一致，但比预测低0.1个百分点。另一方面，收入激增0.7%，远高于0.4%的预期。个人储蓄率升至4.1%。</p><p>\", \"</p><p>该报告发布之际，市场已完全消化美联储12月8日至9日会议加息25个基点的预期。然而，要将通胀率降回美联储2%的目标还需要加息多少，仍是未知数。</p><p>\", \"</p><p><strong>这是突发新闻。请刷新获取最新消息</strong>。</p><p>\"]}</p>"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-3b483161",
+    "title": "高盛：美国数据中心建设热潮将延续至2028年，推升电力与天然气需求",
+    "summary": "高盛预计，受 AI 热潮驱动，美国数据中心电力容量将保持强劲增长直至 2028 年。更多规模更大、功率密度更高的数据中心持续开建，美国电力与天然气需求因此面临上行风险。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykpx1682883.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T13:41:34.000Z",
+    "score": 74,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "美股",
+      "能源",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "高盛",
+      "数据中心",
+      "电力需求",
+      "天然气"
+    ],
+    "context": "AI 算力扩张正在重塑美国能源需求格局，对电力与天然气板块的供需判断具有参考意义。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-bcf96165",
+    "title": "北京商报侃股：创业板做市商制度有助于提升市场定价效率",
+    "originalTitle": "北京商报侃股：做市商制度有助于提升市场定价效率",
+    "summary": "北京商报撰文指出，创业板做市商制度渐行渐近，该制度有助于提升市场定价效率。文章认为，做市商可在成交冷清时段提供双边报价，改善股票成交活跃度。",
+    "url": "https://finance.eastmoney.com/a/202611253939810517.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T13:41:19.000Z",
+    "score": 50,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场政策",
+      "港股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "创业板",
+      "做市商制度",
+      "市场评论"
+    ],
+    "context": "做市商制度是改善创业板流动性的市场基础制度改革，媒体发声或预示推进临近，可关注后续细则。"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-d6b267f3",
+    "title": "金价跌破每盎司3500美元 市场等待通胀数据研判美联储加息路径",
+    "summary": "受股市持续抛售拖累，黄金价格下探至每盎司3500美元下方。投资者正等待关键通胀数据出炉，该数据可能影响市场对美联储进一步加息的预期，短期内继续压制金价走势。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykqc4123397.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T13:40:59.000Z",
+    "score": 78,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "黄金",
+      "美联储",
+      "通胀数据",
+      "市场动态"
+    ],
+    "context": "金价走势与美联储政策预期高度联动，即将公布的通胀数据是决定贵金属与股市短线方向的关键变量。",
+    "contentHtml": "<p>　　股市持续遭到抛售，投资者静待关键通胀数据，该数据或将影响市场对美联储进一步加息的预期，黄金价格随之下探至每盎司3500美元下方。</p><p>　　现货黄金最大跌幅达2%，报每盎司3485.33美元，创下2025年9月以来低点，延续近几周加速下跌的行情。上周金价大跌近9%，本月有望连续第三个月跌幅超6%。</p><p>　　周三美元走强，美债全曲线收益率下行，美股股指期货下跌推升避险需求。美元走强通常会压制以美元计价的大宗商品，抬高其他货币买家的采购成本。</p><p>　　黄金也卷入股市下跌行情，进而引发跨市场的大范围抛售。<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/.IXIC.html\">纳斯达克</a></span><span></span>100股指期货周三下挫约3%，预示科技股或将再度迎来大幅下跌。</p><p>　　不过，金价年内累计下跌18%的最主要原因是市场对货币紧缩的预期升温。持续高企的通胀与能源成本上涨，促使投资者快速重新定价利率前景。黄金不产生利息，借贷成本走<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/QCOM.html\">高通</a></span><span></span>常对金价形成压制。</p><p><span>新浪合作大平台期货开户 安全快捷有保障</span>\n    <img src=\"https://n.sinaimg.cn/finance/transform/340/w170h170/20220415/bd6a-a2376d5226aaa796dfdca62b1d9b1fcb.png\">\n</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：陈钰嘉 </p>",
+    "author": "环球市场播报"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-c52f13d2",
+    "title": "现货黄金跌幅扩大，下跌近2%报3484.39美元/盎司",
+    "originalTitle": "现货黄金跌幅扩大 下跌近2%",
+    "summary": "现货黄金跌幅扩大，下跌近2%，报3,484.39美元/盎司。",
+    "url": "https://finance.eastmoney.com/a/202611253939806853.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T13:38:59.000Z",
+    "score": 50,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "贵金属",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "现货黄金",
+      "贵金属",
+      "行情快讯",
+      "金价"
+    ],
+    "context": "贵金属盘中实时行情快讯，记录现货黄金短线跌势扩大至近2%的关键价位。"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-3ce1b689",
+    "title": "美国10月耐用品订单环比增长0.2%，低于预期的0.7%",
+    "originalTitle": "美国10月份耐用品订单较前月增长0.2% 预估为增长0.7%",
+    "summary": "美国人口普查局公布，10月耐用品订单环比增长0.2%，低于市场预期的0.7%增长。9月该数据为增长2%，52位经济学家的预测区间为-1.9%至4.2%。不含运输品的新订单10月增长0.5%，与9月增速持平。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykpx1680466.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T13:37:51.000Z",
+    "score": 68,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "A股",
+      "港股",
+      "美股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "美国经济",
+      "耐用品订单",
+      "宏观数据"
+    ],
+    "context": "耐用品订单是观察美国制造业与企业资本开支的重要指标，本次数据不及预期，对研判经济动能具有参考意义。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-78cfe923",
+    "title": "一汽解放与道依茨（Deutz）签署技术授权协议",
+    "originalTitle": "一汽解放与Deutz签署技术授权协议",
+    "summary": "一汽解放与德国发动机品牌道依茨（Deutz）于11月25日在上海宝马工程机械展解放动力展区签署TLA技术授权协议，合作由意向规划阶段迈入标准化落地阶段。道依茨创立于1864年，总部位于德国科隆，是发动机独立制造品牌。",
+    "url": "https://finance.eastmoney.com/a/202611253939808112.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T13:37:49.000Z",
+    "score": 65,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "行业动态",
+      "港股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "一汽解放",
+      "道依茨",
+      "技术授权"
+    ],
+    "context": "签约仪式在上海宝马工程机械展举行，一汽解放为A股上市公司，该技术授权协议的落地进展值得关注。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-560a5f17",
+    "title": "标普500指数期货和纳斯达克100指数期货触及盘中低点",
+    "summary": "标普500指数期货和纳斯达克100指数期货小幅走低，双双触及盘中低点。",
+    "url": "https://finance.eastmoney.com/a/202611253939799563.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T13:34:38.000Z",
+    "score": 48,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场行情",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "美股",
+      "股指期货",
+      "盘中低点",
+      "快讯"
+    ],
+    "context": "美股两大股指期货盘中小幅下探，可作为观察美股短期风险偏好变化的即时参考。"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-924dcf53",
+    "title": "美国上周首次申领失业救济人数减少1.3万人至18.9万人 低于预期的20万人",
+    "originalTitle": "美国上周首次申领失业救济人数减少1.3万人至18.9万人 预估为20.0万人",
+    "summary": "美国上周首次申领失业救济人数减少1.3万人至18.9万人，低于经济学家预期的20万人。39位受访经济学家的预测区间为19.5万至20.8万人，实际值低于区间下限；4周移动均值为19.6万人。截至11月14日当周，持续申领失业救济人数减少9.5万人至169.7万人。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykpv9340191.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T13:34:30.000Z",
+    "score": 65,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "海外市场",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "美国经济",
+      "就业数据",
+      "失业救济",
+      "宏观经济"
+    ],
+    "context": "该数据是观察美国劳动力市场的高频指标，本次实际值低于全部受访经济学家的预测区间。"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-f2e1440c",
+    "title": "美国政府或面临再度部分停摆 两党考虑切断对伊战事专项资金",
+    "summary": "参议院共和党人为避免美国政府再度部分停摆，正考虑与民主党达成协议，切断对伊朗战事的专项资金。该战事不受民众欢迎，且从未获得国会批准。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykqc4119879.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T13:33:59.000Z",
+    "score": 76,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "宏观经济",
+      "政府动态",
+      "A股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "美国政府停摆",
+      "对伊战事",
+      "两党博弈",
+      "财政拨款"
+    ],
+    "context": "政府停摆风险是市场高度敏感的宏观变量，两党拨款谈判走向直接影响美国政务运转与市场情绪。",
+    "contentHtml": "<p>　　参议院共和党人为避免政府停摆，正考虑和民主党达成一项协议：切断对伊朗战事的专项资金。这场战事不受民众欢迎，且从未获得国会批准，也是共和党中期选举遭遇惨败的诱因之一。</p><p>　　国会准备休会迎接感恩节之际，参议院拨款委员会主席、缅因州共和党参议员苏珊·柯林斯向记者表示，她正在探讨方案：一方面拿出新资金，为五角大楼补充已经严重不足的弹药库存；另一方面，拒绝向特朗普政府提供专门用于延续对伊朗冲突的经费。</p><p>　　“我正在研究可以实现这一目标的条款文本。”柯林斯说。她本人此次连任竞选失利，同时她也坦言，目前尚不清楚参议院共和党党团会有多少人支持该方案。</p><p>　　参议院多数党领袖、南达科他州共和党参议员约翰·休恩也释放谈判信号。他表示：“只要能维持政府运转、保障军方与国家安全需求，任何方案我都愿意谈。”</p><p>　　华府距离12月11日拨款到期、再度触发政府停摆仅剩最后窗口期，国防经费一直是预算谈判中的核心卡点。如果国会无法就联邦机构拨款方案达成一致，这将是特朗普第二个任期以来第四次出现联邦政府部分停摆。</p><p>　　特朗普希望大幅增加五角大楼预算，但民主党领导层以及部分共和党人对此表示反对。民主党在11月3日中期选举拿下国会控制权后，不少民主党议员主张：任何政府拨款法案，都必须停止为这场对伊战争提供资金。</p><p>　　民主党参议员蒂姆·凯恩（弗吉尼亚州）上周五向记者透露，他已经和一批民主党参议员敲定对应提案，正和共和党磋商，争取在12月11日截止日前达成协议。</p><p>　　凯恩介绍，该提案规定：除非特朗普向国会申请并拿到正式开战授权，否则资金不得用于针对伊朗的进攻性行动；但用于保护美军、遇袭时撤离美国平民的开支不受限制。</p><p>　　凯恩称，民主党已经和共和党就该提案、以及五角大楼弹药补给等刚需资金方案展开沟通。 “两党不少人都意识到，弹药补充资金需要尽快落地。”</p><p>　　参议院拨款委员会民主党首席议员帕蒂·默里确认，民主党内部正在积极讨论这份提案。但方案能否在参议院共和党阵营获得广泛支持尚且存疑，更难争取立场更为分裂的众议院共和党党团。</p><p>　　同时未知数还有两点：常在社交媒体自称“否决先生”的特朗普会不会签署这份法案；即便签署，其行政团队是否会遵守条款，或是另辟资金渠道继续推进战事。</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：陈钰嘉 </p>",
+    "author": "环球市场播报"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-aec253c5",
+    "title": "联想天津高性能服务器产线投产 预计年产值300亿元",
+    "originalTitle": "年产值300亿元 联想高性能服务器产线在天津投产",
+    "summary": "11月25日，联想集团在天津举行高性能服务器产线落成暨超节点项目启动仪式，产线正式投产。该产线位于联想（天津）创新产业园，于2025年底启动建设、总投资1.2亿元，具备年产20万台通用服务器、10万台AI服务器的设计产能，预计年产值达300亿元。",
+    "url": "https://finance.eastmoney.com/a/202611253939804672.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T13:33:49.000Z",
+    "score": 66,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "科技制造",
+      "AI算力",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "联想",
+      "AI服务器",
+      "天津",
+      "算力产业链"
+    ],
+    "context": "AI服务器产能落地叠加超节点项目启动，是观察算力产业链制造扩张与联想AI业务进展的窗口。"
+  },
+  {
+    "id": "aihot-20261125-sina-finance-5a7014e7",
+    "title": "摩根大通下调百威英博评级至中性，股价小幅走低",
+    "originalTitle": "摩根大通下调评级，百威英博股价小幅走低",
+    "summary": "摩根大通将百威英博（BUD）评级由增持下调至中性，该股随后下跌0.4%。该行分析师在近期发给客户的研报中作出上述调整，正文未披露更多下调理由与目标价细节。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizykpv9338587.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-25T13:31:42.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "消费行业",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "百威英博",
+      "摩根大通",
+      "评级下调",
+      "美股"
+    ],
+    "context": "单一投行对消费龙头的一次评级调整，对整体市场影响有限，适合作为跟踪外资投行观点的外围快讯参考。"
+  },
+  {
     "id": "aihot-20261125-cncf-blog-2565b149",
     "title": "「Drone 2」背后的故事：KubeCon NA 2026 闭幕主题演讲",
     "originalTitle": "🚀 The story behind “Drone 2”: My KubeCon + CloudNativeCon North America 2026 keynote",
@@ -4418,389 +4802,5 @@
       "全球GDP"
     ],
     "context": "美银对2027年全球及主要经济体增速给出量化预测，可作为研判中期宏观走势的机构参考。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-0e9c773a",
-    "title": "德国约450所学校收到炸弹威胁邮件",
-    "originalTitle": "德国约450所学校收到炸弹威胁",
-    "summary": "德国约450所学校周一上午通过电子邮件收到炸弹威胁，弗赖堡警方表示超过450所学校收到威胁邮件。所有邮件措辞相同，主题均为“死亡在等着你”。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztrzy8182592.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T11:17:22.000Z",
-    "score": 50,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "国际动态",
-      "A股",
-      "港股",
-      "美股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "德国",
-      "炸弹威胁",
-      "学校安全",
-      "国际新闻"
-    ],
-    "context": "同一时段批量发送同文威胁邮件、波及学校数量多，警方排查与处置进展值得关注。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-d12de1fe",
-    "title": "富创精密实控人提议回购1亿至2亿元股份",
-    "originalTitle": "富创精密：实控人提议回购1亿至2亿元股份",
-    "summary": "富创精密(688409.SH)公告，实际控制人、董事长兼总经理郑广文提议公司以自有资金及自筹资金回购股份，回购资金总额不低于1亿元且不超过2亿元。回购股份拟用于股权激励或员工持股计划。",
-    "url": "https://finance.eastmoney.com/a/202611233937454868.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T11:15:07.000Z",
-    "score": 60,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司公告",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "富创精密",
-      "股份回购",
-      "A股公告",
-      "股权激励"
-    ],
-    "context": "实控人亲自提议回购并拟用于股权激励，常被视为传递信心、绑定核心员工的信号。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-5753757e",
-    "title": "奥拓电子董事长提议1000万元—2000万元回购公司股份",
-    "originalTitle": "奥拓电子：董事长提议1000万元—2000万元回购公司股份",
-    "summary": "奥拓电子(002587)11月23日公告，公司控股股东、实际控制人、董事长吴涵渠提议以1000万元—2000万元回购公司股份。回购股份拟用于员工持股或股权激励，目前处于董事长提议阶段。",
-    "url": "https://finance.eastmoney.com/a/202611233937452557.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T11:15:00.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司公告",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "奥拓电子",
-      "股份回购",
-      "股权激励"
-    ],
-    "context": "回购目前仅为董事长提议，后续公司审议及方案落地进展值得关注。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-f5388a34",
-    "title": "花旗将Salesforce目标价从263美元下调至198美元",
-    "originalTitle": "花旗集团将Salesforce公司目标价从263美元下调至198美元",
-    "summary": "花旗集团将Salesforce目标价从263美元下调至198美元，一次性下调65美元。原文未披露下调原因及评级是否变动。",
-    "url": "https://finance.eastmoney.com/a/202611233937452840.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T11:14:55.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "投行动态",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "美股",
-      "Salesforce",
-      "花旗",
-      "目标价下调"
-    ],
-    "context": "投行目标价调整是观察机构对Salesforce前景预期的风向标，可留意后续是否引发其他机构跟进。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-82fcc9c7",
-    "title": "韦东奕攻克近140年难题获奖，50万奖金归个人",
-    "summary": "北京大学数学科学学院长聘副教授韦东奕荣获2025年度北京市科学技术奖杰出青年中关村奖，该奖项面向40岁以下青年科研人员。韦东奕因攻克近140年数学难题获奖，50万元奖金归个人所有。",
-    "url": "https://finance.sina.com.cn/jjxw/2026-11-23/doc-iniztsaa0510159.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T11:10:00.000Z",
-    "score": 68,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "国内财经",
-      "科技",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "韦东奕",
-      "北京市科学技术奖",
-      "中关村奖",
-      "基础研究"
-    ],
-    "context": "韦东奕是备受关注的青年数学家，此次获奖是官方对其基础研究突破的重要肯定。"
-  },
-  {
-    "id": "aihot-20261123-wscn-ashare-0589d533",
-    "title": "廖岷主持第十七次中欧财金对话",
-    "summary": "财政部副部长廖岷与欧盟委员会经济与金融事务总司长沃威在北京共同主持第十七次中欧财金对话。双方围绕宏观经济形势和政策、中欧在二十国集团（G20）框架下的多边合作等议题深入讨论，欧央行执行委员会委员奇波洛内、欧元集团工作组主席萨伦海默及中国财政部、人民银行相关司局代表参会。",
-    "url": "https://wallstreetcn.com/livenews/3204253",
-    "source": "华尔街见闻 · A股",
-    "publishedAt": "2026-11-23T11:09:12.000Z",
-    "score": 63,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "政策动态",
-      "宏观经济",
-      "A股",
-      "市场政策"
-    ],
-    "region": [
-      "金融与政策",
-      "财经"
-    ],
-    "tags": [
-      "财经",
-      "A股",
-      "中欧财金对话",
-      "宏观经济",
-      "G20",
-      "财政政策"
-    ],
-    "context": "中欧财金对话是双方财金领域的高层定期沟通机制，其宏观政策协调动向对市场预期具有参考意义。",
-    "contentHtml": "<p>财政部副部长廖岷与欧盟委员会经济与金融事务总司长沃威在北京共同主持第十七次中欧财金对话。会议围绕宏观经济形势和政策、中欧在二十国集团（G20）框架下的多边合作等议题进行了深入讨论。欧方欧元集团工作组主席萨伦海默、欧央行执行委员会委员奇波洛内以及中国财政部、人民银行相关司局代表参加会议。</p>"
-  },
-  {
-    "id": "aihot-20261123-bloomberg-markets-1f3d2fed",
-    "title": "高盛外汇与新兴市场策略主管Trivedi：美元仍有一战之力",
-    "originalTitle": "Goldman’s Trivedi Says ‘Dollar Still Has Some Fight in It’",
-    "summary": "高盛外汇与新兴市场策略主管Kamakshya Trivedi在Bloomberg Brief节目中表示，美元仍有一战之力，并给出他对美元的前景展望。他还分析了最能影响美元走势的关键因素。",
-    "url": "https://www.bloomberg.com/news/videos/2026-11-23/goldman-s-trivedi-dollar-still-has-some-fight-in-it-video",
-    "source": "Bloomberg Markets",
-    "publishedAt": "2026-11-23T11:06:25.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "外汇市场",
-      "机构观点",
-      "美股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "市场",
-      "美元",
-      "高盛",
-      "外汇策略",
-      "市场观点"
-    ],
-    "context": "美元走向牵动全球资产定价，高盛首席外汇策略师的最新表态是市场研判美元前景的重要参考。",
-    "contentHtml": "<p>Kamakshya Trivedi, chief FX and emerging markets strategist at Goldman Sachs, offers his outlook for the US dollar and examines the factors that can most impact the currency. He speaks on “Bloomberg Brief.” (Source: Bloomberg)</p>"
-  },
-  {
-    "id": "aihot-20261123-the-verge-ai-d4db29de",
-    "title": "Meta Muse 现在可在沃尔玛代你完成黑五购物",
-    "originalTitle": "Meta Muse can now do your Black Friday shopping at Walmart",
-    "author": "Jess Weatherbed",
-    "summary": "沃尔玛现已开放 Meta 的 Muse AI 代理在其网站代用户购物，可自动查找并购买黑色星期五优惠商品。这是沃尔玛上月发布的 Agent Gateway 的实际落地实现，可在不共享用户购买历史的前提下帮助 AI 代理找到相关商品。",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
-    "source": "The Verge · AI",
-    "publishedAt": "2026-11-23T11:00:00.000Z",
-    "score": 83,
-    "tier": "T2",
-    "selected": true,
-    "industry": "AI",
-    "topics": [
-      "AI应用",
-      "零售电商",
-      "模型发布",
-      "Agent 智能体"
-    ],
-    "region": [
-      "AI精选",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "Meta Muse",
-      "沃尔玛",
-      "AI Agent",
-      "代理电商"
-    ],
-    "context": "头部零售商与 AI 代理厂商合作落地真实交易，标志着代理电商从概念走向实用。",
-    "contentHtml": "<p><a href=\"https://www.theverge.com/authors/jess-weatherbed\"><img alt=\"Jess Weatherbed\" width=\"36\" height=\"36\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/chorus/author_profile_images/195820/JESSICA_WEATHERBED.0.jpg?quality=90&amp;strip=all&amp;crop=0%2C0%2C100%2C100&amp;w=96\"></a></p><p><span><span><span><span></span></span><span>Jess Weatherbed</span></span></span></p><p><span>is a news writer focused on creative industries, computing, and internet culture. Jess started her career at TechRadar, covering news and hardware reviews.</span></p><p>Walmart will now let Meta’s Muse shop on its website on your behalf, allowing the AI agent to find and purchase Black Friday deals. The retail giant is rolling out a live implementation of the <a href=\"https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents\">Agent Gateway it announced last month</a>, which helps AI agents find relevant products for you without sharing your purchase history, according to Walmart.</p><p><a href=\"https://www.theverge.com/ai-artificial-intelligence/1002671/meta-muse-ai\">Muse</a> can make purchases through Walmart’s “Agent Profiles,” which provide a dedicated space for agent activity within your Walmart customer account. These profiles also allow you to set spending limits, approve purchases, and check the purchase history of everything bought by Muse. While other online retailers like <a href=\"https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse\">Amazon</a> and <a href=\"https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping\">eBay</a> have blocked AI agents from browsing their platforms, Walmart says that support for Meta’s Muse is “just the beginning,” and that additional Walmart shopping experiences for other AI agents and apps are “on the way.”</p><p>Here are Walmart’s instructions for shopping its website via Muse:</p><blockquote><p><strong>1. Tell Muse what you need.</strong> For example, ask it to find a great TV deal or show you which Walmart Black Friday deals are available for delivery. Muse can help you explore products and build your basket.</p><p><strong>2. Set your shopping rules.</strong> Muse will take you to Walmart to sign in, then bring you back to Muse. The first time you add an item to your cart, you’ll set up your Agent Profile on Walmart within your Walmart account, including a spending limit you’re comfortable with.</p><p><strong>3. Check out.</strong> Complete your purchase within the conversation using a card saved in your Walmart account, with the same Walmart prices you’d find on Walmart.com. And if something isn’t quite right, Walmart’s return policy still applies.</p></blockquote><p><span><strong>Follow topics and authors</strong> from this story to see more like this in your personalized homepage feed and to receive email updates.</span></p><ul><li><span><span><span></span><span>Jess Weatherbed</span></span></span></li><li></li><li></li><li></li><li></li><li></li></ul>"
-  },
-  {
-    "id": "aihot-20261123-wscn-ashare-a267d40f",
-    "title": "摩尔线程拟以集中竞价方式回购股份，金额5亿至10亿元",
-    "originalTitle": "摩尔线程：拟以集中竞价交易方式回购股份，资金总额不低于5亿元、不超过10亿元",
-    "summary": "摩尔线程公告拟以集中竞价交易方式回购股份，资金总额不低于5亿元、不超过10亿元，回购价格不超过511元/股。回购期限为董事会审议通过后12个月内，回购股份拟用于员工持股计划或股权激励。",
-    "url": "https://wallstreetcn.com/livenews/3204246",
-    "source": "华尔街见闻 · A股",
-    "publishedAt": "2026-11-23T10:57:24.000Z",
-    "score": 68,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司公告",
-      "市场政策"
-    ],
-    "region": [
-      "金融与政策",
-      "财经"
-    ],
-    "tags": [
-      "财经",
-      "A股",
-      "摩尔线程",
-      "回购",
-      "股权激励"
-    ],
-    "context": "回购金额与价格上限均有明确区间，作为市场高关注度的公司公告，其对股价和股权激励结构的影响值得留意。",
-    "contentHtml": "<p>摩尔线程：拟以集中竞价交易方式回购股份，资金总额不低于5亿元、不超过10亿元，价格不超过511元/股，回购期限为董事会审议通过后12个月内，回购股份拟用于员工持股计划或股权激励。</p>"
-  },
-  {
-    "id": "aihot-20261123-wscn-global-7509f1e7",
-    "title": "500美元溢价撕裂铜流向，中国铜短缺能否支撑铜价？",
-    "originalTitle": "500美元溢价撕裂铜流向！中国铜短缺能否支撑铜价？",
-    "author": "弋文涛",
-    "summary": "500美元的区域溢价正在撕裂全球铜流向，价差使铜的贸易路径出现明显分流。市场核心关注点是中国铜短缺能否为铜价提供支撑，供应缺口成为判断铜价走向的关键变量。",
-    "url": "https://wallstreetcn.com/member/articles/3786514",
-    "source": "华尔街见闻 · 全球",
-    "publishedAt": "2026-11-23T10:40:41.000Z",
-    "score": 72,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "大宗商品",
-      "宏观",
-      "市场政策"
-    ],
-    "region": [
-      "金融与政策",
-      "财经"
-    ],
-    "tags": [
-      "财经",
-      "宏观",
-      "铜价",
-      "大宗商品",
-      "供应短缺",
-      "铜流向"
-    ],
-    "context": "铜被视为宏观经济风向标，溢价分化与区域短缺并存的格局对研判大宗商品走势具有指标意义。"
-  },
-  {
-    "id": "aihot-20261123-bloomberg-markets-2761c516",
-    "title": "美国重新押注鸵鸟肉",
-    "originalTitle": "America is Betting on Ostrich Again",
-    "summary": "随着牛肉价格高企，彭博报道称少数坚定的美国从业者正押注时机终于成熟，要让鸵鸟肉在美国餐桌上占有一席之地。鸵鸟在美国已引人着迷近150年，曾引发农业淘金热，其羽毛是镀金时代时髦女性的帽饰，也一度被捧为下一个美国好肉。",
-    "url": "https://www.bloomberg.com/news/videos/2026-11-23/america-is-betting-on-ostrich-again",
-    "source": "Bloomberg Markets",
-    "publishedAt": "2026-11-23T10:05:52.000Z",
-    "score": 50,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "消费趋势",
-      "农产品市场",
-      "美股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "市场",
-      "鸵鸟肉",
-      "牛肉价格",
-      "替代蛋白",
-      "美国农业"
-    ],
-    "context": "牛肉价格高企之际，这一替代蛋白动向折射美国食品消费与农产品市场的新风向。",
-    "contentHtml": "<p>For nearly 150 years, the ostrich has been an object of American fascination. It set off agricultural gold rushes, its plumes crowned the hats of the Gilded Age’s most fashionable women, and it’s been touted as the next great American meat. Now, as beef prices run high, a determined few are betting the timing is finally right for ostrich to find its place in US cuisine. Chase Purdy reports. (Source: Bloomberg)</p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-bf7aadde",
-    "title": "伊朗称已制定综合措施应对美国制裁和封锁",
-    "summary": "伊朗外交部发言人巴加埃23日表示，伊朗已制定政治、外交和防御相结合的综合措施，以应对美国的非法制裁和封锁。相关措施将在适当阶段实施，目前未披露具体内容。",
-    "url": "https://finance.eastmoney.com/a/202611233937389468.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T10:05:40.000Z",
-    "score": 50,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "地缘政治",
-      "国际快讯",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "伊朗",
-      "美国制裁",
-      "地缘政治",
-      "中东局势"
-    ],
-    "context": "此为地缘政治外围表态性快讯，暂无具体举措落地，可关注后续美伊关系演变对市场情绪的影响。"
   }
 ]
