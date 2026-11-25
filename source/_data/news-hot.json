@@ -1,7 +1,110 @@
 [
   {
-    "id": "hot-9faa685f",
+    "id": "hot-9ffea528",
     "rank": 1,
+    "title": "特斯拉FSD新版本“抛下”老车型，Counterpoint：国内部分智驾车型或于2028年面临类似问题",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "智能驾驶",
+      "行业研究",
+      "港股"
+    ],
+    "heatScore": 79.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T11:06:07.000Z",
+    "summary": "市场研究机构Counterpoint Research 11月25日发布分析报告称，随着特斯拉FSD v15推出，搭载HW3硬件平台的数百万辆特斯拉与新车型将出现明显智驾体验差异。报告指出汽车智能化硬件预埋的价值兑现期受制于算力代际，国内2022年至2024年集中量产的英伟达Orin-X平台车型预计将在2028年至2029年面临类似问题。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-58a6bc3d",
+        "title": "特斯拉FSD新版本“抛下”老车型，Counterpoint：国内部分智驾车型或于2028年面临类似问题",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T11:06:07.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939386254.html",
+        "score": 74
+      }
+    ]
+  },
+  {
+    "id": "hot-2958eac8",
+    "rank": 2,
+    "title": "你的 OpenTelemetry 管道正在成为性能瓶颈吗？",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "可观测性",
+      "开源生态"
+    ],
+    "heatScore": 78.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T03:10:12.171Z",
+    "summary": "CNCF 博客发布 Cloud Native Days Austria 2026 演讲回顾《How to Defeat OTel's Silent Killer: The Performance Overhead》，聚焦可观测性管道中容易被忽视的采集性能开销问题。演讲探讨 OpenTelemetry 管道何时会成为性能瓶颈及其应对方法。",
+    "items": [
+      {
+        "id": "aihot-20261125-cncf-blog-1739f35a",
+        "title": "你的 OpenTelemetry 管道正在成为性能瓶颈吗？",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-25T03:10:12.171Z",
+        "url": "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/",
+        "score": 73
+      }
+    ]
+  },
+  {
+    "id": "hot-90b4f86b",
+    "rank": 3,
+    "title": "国家能源局：截至10月底全国累计发电装机容量41.6亿千瓦 同比增长10.9%",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "A股",
+      "新能源",
+      "港股"
+    ],
+    "heatScore": 74,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T11:04:21.000Z",
+    "summary": "国家能源局发布1-10月份全国电力统计数据，截至10月底全国累计发电装机容量41.6亿千瓦，同比增长10.9%。其中太阳能发电装机容量13.3亿千瓦，同比增长16.3%；风电装机容量7.1亿千瓦，同比增长20.0%。1-10月份全国发电设备累计平均利用2406小时，比上年同期降低214小时。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-e1350a6e",
+        "title": "国家能源局：截至10月底全国累计发电装机容量41.6亿千瓦 同比增长10.9%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T11:04:21.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939386323.html",
+        "score": 65
+      }
+    ]
+  },
+  {
+    "id": "hot-4e2e422f",
+    "rank": 4,
+    "title": "散户押中英伟达期权 一天暴赚近20倍 直言“开盘即售出，谢谢老黄”",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 68,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T11:03:20.000Z",
+    "summary": "彭博社25日报道，Reddit用户Outrageous-Voice1459上周五买入价值1.9万美元的英伟达看涨期权，在CEO黄仁勋回归后单日获利37.69万美元，收益率增长1984%、接近20倍。该散户表示将开盘即售出兑现收益。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-c45378c3",
+        "title": "散户押中英伟达期权 一天暴赚近20倍 直言“开盘即售出，谢谢老黄”",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T11:03:20.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939383630.html",
+        "score": 55
+      }
+    ]
+  },
+  {
+    "id": "hot-f7d71040",
+    "rank": 5,
     "title": "国家发展改革委等四部门印发《“一老一小”服务体系建设实施方案》",
     "industry": "金融与政策",
     "topics": [
@@ -10,7 +113,7 @@
       "市场政策",
       "A股"
     ],
-    "heatScore": 91.7,
+    "heatScore": 66.2,
     "sourceCount": 1,
     "latestAt": "2026-11-24T19:05:47.328Z",
     "summary": "国家发展改革委、民政部、国家卫生健康委、教育部联合印发《“一老一小”服务体系建设实施方案》，围绕养老和托育服务体系建设作出部署。该方案为四部委联合出台的政策文件，相关落地安排值得持续关注。",
@@ -22,20 +125,90 @@
         "publishedAt": "2026-11-24T19:05:47.328Z",
         "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261123_1409029.html",
         "score": 82
-      },
+      }
+    ]
+  },
+  {
+    "id": "hot-174b7673",
+    "rank": 6,
+    "title": "化肥概念震荡反弹 红四方、中哲精化双双涨停",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场快讯",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 65,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T11:06:20.000Z",
+    "summary": "A股化肥概念盘中震荡反弹，红四方、中哲精化双双涨停。赤天化、潞化科技、泸天化、四川美丰、六国化工、富邦科技等个股跟涨。",
+    "items": [
       {
-        "id": "aihot-20261123-ndrc-policy-0dc60adc",
-        "title": "国家发改委发布“一老一小”服务体系建设实施方案图解",
-        "source": "国家发改委 · 政策通知",
-        "publishedAt": "2026-11-23T08:45:56.383Z",
-        "url": "https://www.ndrc.gov.cn/xxgk/jd/zctj/202611/t20261123_1409033.html",
-        "score": 68
+        "id": "aihot-20261125-eastmoney-724-837a4fc1",
+        "title": "化肥概念震荡反弹 红四方、中哲精化双双涨停",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T11:06:20.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939386639.html",
+        "score": 50
+      }
+    ]
+  },
+  {
+    "id": "hot-47021702",
+    "rank": 7,
+    "title": "马来西亚航空宣布选择波音787梦想客机",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "航空产业",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 65,
+    "sourceCount": 1,
+    "latestAt": "2026-11-25T11:04:33.000Z",
+    "summary": "马来西亚航空集团CEO表示，已选择波音(BA.N)787梦想客机，订单包括10架787。该订单还附有可选择再增购6架的条款。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-d09a3749",
+        "title": "马来西亚航空宣布选择波音787梦想客机",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T11:04:33.000Z",
+        "url": "https://finance.eastmoney.com/a/202611253939386546.html",
+        "score": 50
+      }
+    ]
+  },
+  {
+    "id": "hot-1472a9ed",
+    "rank": 8,
+    "title": "GPT-6 模型展现出内在的蛋白质设计能力",
+    "industry": "AI",
+    "topics": [
+      "前沿模型",
+      "AI科学",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "heatScore": 59.9,
+    "sourceCount": 1,
+    "latestAt": "2026-11-24T13:00:00.000Z",
+    "summary": "GPT-6 模型展现出内在的蛋白质设计能力，可通过推理和代码设计蛋白质结构与序列。实验室测试已在五个靶点上发现结合证据，为其设计的有效性提供了实验支持。",
+    "items": [
+      {
+        "id": "aihot-20261124-openai-news-11b88f0f",
+        "title": "GPT-6 模型展现出内在的蛋白质设计能力",
+        "source": "OpenAI News",
+        "publishedAt": "2026-11-24T13:00:00.000Z",
+        "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+        "score": 93
       }
     ]
   },
   {
     "id": "hot-319cd429",
-    "rank": 2,
+    "rank": 9,
     "title": "Microduck 避障：基于 Isaac Lab 与 Newton 的 Sim2Real 工作流",
     "industry": "AI",
     "topics": [
@@ -44,7 +217,7 @@
       "工程实践",
       "开源生态"
     ],
-    "heatScore": 74.5,
+    "heatScore": 58.9,
     "sourceCount": 1,
     "latestAt": "2026-11-24T16:34:13.000Z",
     "summary": "Hugging Face 发布 Microduck 避障教程，讲解如何用 Isaac Lab 与 Newton 搭建 Sim2Real（仿真到现实）完整工作流。教程围绕避障任务的仿真训练与真机迁移展开，属官方开源技术实践分享。",
@@ -61,7 +234,7 @@
   },
   {
     "id": "hot-3d8e0ac3",
-    "rank": 3,
+    "rank": 10,
     "title": "黄仁勋重掌英伟达帅印：董事会恢复其CEO职务，股价暴涨27%",
     "industry": "金融与政策",
     "topics": [
@@ -70,7 +243,7 @@
       "AI产业链",
       "宏观"
     ],
-    "heatScore": 62.6,
+    "heatScore": 49.5,
     "sourceCount": 2,
     "latestAt": "2026-11-23T19:19:20.000Z",
     "summary": "英伟达董事会已恢复黄仁勋的CEO职务，公司股价应声大涨27%。黄仁勋重掌英伟达帅印，市场对这一管理层变动反应强烈。",
@@ -95,7 +268,7 @@
   },
   {
     "id": "hot-a3ee9641",
-    "rank": 4,
+    "rank": 11,
     "title": "黄仁勋恢复英伟达CEO职务后，下周将出席美国参议院公开听证",
     "industry": "AI",
     "topics": [
@@ -104,7 +277,7 @@
       "模型发布",
       "基础设施"
     ],
-    "heatScore": 57.2,
+    "heatScore": 45.2,
     "sourceCount": 2,
     "latestAt": "2026-11-23T18:12:22.000Z",
     "summary": "黄仁勋在恢复英伟达CEO职务后，已确定下周出席美国参议院公开听证会作证。此次听证源于两党议员就其与一名疑似中国间谍者的恋情事件发出的作证呼吁。",
@@ -129,7 +302,7 @@
   },
   {
     "id": "hot-b18f5bcc",
-    "rank": 5,
+    "rank": 12,
     "title": "Amazon Bedrock 推出 Trusted Access API，首发 Anthropic 企业级 Frontier Safeguards 与 Enterprise Data Controls",
     "industry": "AI",
     "topics": [
@@ -138,7 +311,7 @@
       "基础设施",
       "Agent 智能体"
     ],
-    "heatScore": 54.9,
+    "heatScore": 43.5,
     "sourceCount": 1,
     "latestAt": "2026-11-24T05:01:14.000Z",
     "summary": "Amazon Bedrock 推出可信访问计划 API，用户可在一个入口发现、申请并加入模型供应商的企业计划。首批公开预览的两项服务为 Anthropic 的 Enterprise Frontier Safeguards（EFS）与 Enterprise Data Controls（EDC），让用户在使用 Claude Fable 模型时掌控自己的数据。",
@@ -155,7 +328,7 @@
   },
   {
     "id": "hot-7f55bab1",
-    "rank": 6,
+    "rank": 13,
     "title": "英伟达美股盘前涨超9%",
     "industry": "金融与政策",
     "topics": [
@@ -164,7 +337,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 46.9,
+    "heatScore": 37.1,
     "sourceCount": 1,
     "latestAt": "2026-11-23T17:51:39.000Z",
     "summary": "英伟达美股盘前涨超9%。该股上周五大跌14%，目前较10月高点回落近50%。",
@@ -197,7 +370,7 @@
   },
   {
     "id": "hot-8ad2a983",
-    "rank": 7,
+    "rank": 14,
     "title": "CNCF 博客：运行时安全工具不是你的安全基线——警惕伪装成自主性的团队孤岛",
     "industry": "工程与开源",
     "topics": [
@@ -206,7 +379,7 @@
       "研发效能",
       "开源生态"
     ],
-    "heatScore": 46.2,
+    "heatScore": 36.6,
     "sourceCount": 1,
     "latestAt": "2026-11-24T04:26:18.137Z",
     "summary": "CNCF 博客发文指出，部署运行时安全工具并不等于团队拥有了安全基线。文章以一次 Kubernetes 安全专项为例：有工程能力、目标清晰的团队在截止日期压力下决定自行解决自己那部分问题，结果形成伪装成自主性的孤岛。",
@@ -223,7 +396,7 @@
   },
   {
     "id": "hot-1494af6a",
-    "rank": 8,
+    "rank": 15,
     "title": "财政部解读新注册会计师法：优化执业环境 夯实行业发展根基",
     "industry": "金融与政策",
     "topics": [
@@ -232,7 +405,7 @@
       "市场政策",
       "政府动态"
     ],
-    "heatScore": 46.2,
+    "heatScore": 36.5,
     "sourceCount": 1,
     "latestAt": "2026-11-24T00:00:00.000Z",
     "summary": "财政部刊发新注册会计师法系列解读之八，主题为优化执业环境、夯实注册会计师行业发展根基。作为官方系列解读的第八篇，该文围绕新注册会计师法中与行业执业环境相关的内容进行阐释。",
@@ -249,7 +422,7 @@
   },
   {
     "id": "hot-1630e20a",
-    "rank": 9,
+    "rank": 16,
     "title": "黄仁勋戏剧性重返英伟达掌舵，特朗普介入推动其复职",
     "industry": "金融与政策",
     "topics": [
@@ -258,7 +431,7 @@
       "公司治理",
       "A股"
     ],
-    "heatScore": 46.2,
+    "heatScore": 36.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T19:26:03.000Z",
     "summary": "英伟达董事会周一意外宣布恢复黄仁勋的领导职务，公司股价随之创下数十年来最大涨幅。此次回归被称为企业史上最令人震惊的高管回归之一，特朗普的介入是推动复职的关键因素。",
@@ -274,8 +447,34 @@
     ]
   },
   {
+    "id": "hot-89692b68",
+    "rank": 17,
+    "title": "iFood 如何在 15,000 个代码仓库中规模化应用编码智能体",
+    "industry": "AI",
+    "topics": [
+      "AI编程",
+      "企业落地",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "heatScore": 34.9,
+    "sourceCount": 1,
+    "latestAt": "2026-11-24T00:00:00.000Z",
+    "summary": "OpenAI 发布客户案例，介绍 iFood 如何在 15,000 个代码仓库中规模化使用编码智能体。案例聚焦编码智能体在大型工程组织多仓库场景下的落地实践。",
+    "items": [
+      {
+        "id": "aihot-20261124-openai-news-a330d448",
+        "title": "iFood 如何在 15,000 个代码仓库中规模化应用编码智能体",
+        "source": "OpenAI News",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "url": "https://openai.com/business/customer-stories/ifood",
+        "score": 70
+      }
+    ]
+  },
+  {
     "id": "hot-052cf1ab",
-    "rank": 10,
+    "rank": 18,
     "title": "OpenAI 携手思科推出开源运行时 Shirudo",
     "industry": "AI",
     "topics": [
@@ -284,7 +483,7 @@
       "安全",
       "模型发布"
     ],
-    "heatScore": 44,
+    "heatScore": 34.8,
     "sourceCount": 1,
     "latestAt": "2026-11-23T21:20:00.000Z",
     "summary": "OpenAI 与思科（Cisco）共同推出开源运行时 Shirudo，面向 Linux 系统。该工具可帮助团队在部署补丁的同时，为运行中的系统保持安全防护。",
@@ -301,7 +500,7 @@
   },
   {
     "id": "hot-b146512e",
-    "rank": 11,
+    "rank": 19,
     "title": "英伟达重新任命黄仁勋，上演惊人回归",
     "industry": "金融与政策",
     "topics": [
@@ -310,7 +509,7 @@
       "公司动态",
       "宏观"
     ],
-    "heatScore": 42.4,
+    "heatScore": 33.5,
     "sourceCount": 1,
     "latestAt": "2026-11-23T16:54:43.000Z",
     "summary": "英伟达董事会重新任命黄仁勋执掌这家全球最大芯片制造商，成为史上最令人震惊的企业回归案例之一。消息推动英伟达股价录得数十年来最大涨幅。彭博记者 Ed Ludlow 解读了这一事件的来龙去脉。",
@@ -326,266 +525,28 @@
     ]
   },
   {
-    "id": "hot-5466adef",
-    "rank": 12,
-    "title": "交大思诺董事长提议回购2000万元至4000万元公司股份",
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司公告",
-      "港股",
-      "宏观"
-    ],
-    "heatScore": 42.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T12:20:50.000Z",
-    "summary": "交大思诺11月23日公告，董事长李伟提议以自有资金或自筹资金回购公司部分A股股份，回购资金总额不低于2000万元且不超过4000万元。回购将通过深交所交易系统以集中竞价方式进行，拟用于股权激励或员工持股计划。",
-    "items": [
-      {
-        "id": "aihot-20261123-eastmoney-724-b1eddccf",
-        "title": "交大思诺董事长提议回购2000万元至4000万元公司股份",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T08:57:52.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937331925.html",
-        "score": 60
-      },
-      {
-        "id": "aihot-20261123-eastmoney-724-4dcdcc6a",
-        "title": "沪光股份：拟以5000万元至1亿元回购公司股份",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T09:51:19.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937378152.html",
-        "score": 55
-      },
-      {
-        "id": "aihot-20261123-eastmoney-724-6f70bfb8",
-        "title": "阳光诺和：董事长提议回购3000万至5000万元股份",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T09:50:31.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937378968.html",
-        "score": 55
-      },
-      {
-        "id": "aihot-20261123-eastmoney-724-2fdb358c",
-        "title": "九州一轨：董事兼总裁提议回购6000万元至1.2亿元公司股份",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T12:20:50.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937506120.html",
-        "score": 52
-      },
-      {
-        "id": "aihot-20261123-eastmoney-724-5753757e",
-        "title": "奥拓电子董事长提议1000万元—2000万元回购公司股份",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T11:15:00.000Z",
-        "url": "https://finance.eastmoney.com/a/202611233937452557.html",
-        "score": 52
-      }
-    ]
-  },
-  {
-    "id": "hot-d83d4b7b",
-    "rank": 13,
-    "title": "OpenAI 警告后续 AI 系统可能超出安全检查能力，敦促竞争对手就共同限制达成一致",
+    "id": "hot-fa14b99f",
+    "rank": 20,
+    "title": "Clay 借助 Codex 与 ChatGPT 助力销售团队赢单",
     "industry": "AI",
     "topics": [
-      "AI安全与治理",
-      "前沿模型",
+      "企业应用",
+      "客户案例",
       "模型发布",
       "Agent 智能体"
     ],
-    "heatScore": 42,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T18:42:38.000Z",
-    "summary": "OpenAI 首席科学家 Jakub Pachocki 警告，即将到来的 AI 系统可能在安全措施跟上前失控，敦促竞争对手就共同限制达成一致。他首次公开整个 GPT 系列的内部困惑度评分，数据延伸至一个尚未发布的新模型，显示核心能力在出奇精确的阈值处涌现。Pachocki 正推动将困惑度作为行业通用的进展指标，以便在 AI 行为控制力被侵蚀前建立共同限制。",
-    "items": [
-      {
-        "id": "aihot-20261123-the-decoder-86ccf815",
-        "title": "OpenAI 警告后续 AI 系统可能超出安全检查能力，敦促竞争对手就共同限制达成一致",
-        "source": "The Decoder",
-        "publishedAt": "2026-11-23T18:42:38.000Z",
-        "url": "https://the-decoder.com/openai-warns-that-upcoming-ai-systems-could-outpace-safety-checks-and-urges-rivals-to-agree-on-shared-limits/",
-        "score": 84
-      }
-    ]
-  },
-  {
-    "id": "hot-dc7ad5df",
-    "rank": 14,
-    "title": "优化 Kubernetes 准入控制：Kyverno 的 CEL 准入成本究竟花在哪",
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "工程与开源",
-      "研发效能",
-      "开源生态"
-    ],
-    "heatScore": 41.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T19:06:28.636Z",
-    "summary": "CNCF 博客发布对 Kyverno 准入路径的性能剖析：成本大头并不在 CEL 表达式求值，约 86% 的准入开销来自其他环节。文章通过逐环节定位真实瓶颈，为 Kubernetes 准入控制优化指明方向。",
-    "items": [
-      {
-        "id": "aihot-20261123-cncf-blog-70921269",
-        "title": "优化 Kubernetes 准入控制：Kyverno 的 CEL 准入成本究竟花在哪",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-23T19:06:28.636Z",
-        "url": "https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/",
-        "score": 82
-      }
-    ]
-  },
-  {
-    "id": "hot-9fed2260",
-    "rank": 15,
-    "title": "国家统计局公布2026年11月中旬流通领域重要生产资料市场价格变动情况",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "官方数据",
-      "宏观",
-      "政府动态"
-    ],
-    "heatScore": 41.7,
+    "heatScore": 33.2,
     "sourceCount": 1,
     "latestAt": "2026-11-24T00:00:00.000Z",
-    "summary": "国家统计局发布2026年11月中旬流通领域重要生产资料市场价格变动情况，公布本期重要生产资料价格的最新监测数据。该系列为官方旬度价格调查，反映流通领域重要生产资料的近期价格涨跌变化。",
+    "summary": "Clay 通过集成 ChatGPT 与 Codex，帮助销售团队用户调研交易并把数据转化为 go-to-market 打法，推理部分由 GPT-6 模型承担。这是 OpenAI 官方发布的客户案例，展示两类产品在销售场景中的实际落地。",
     "items": [
       {
-        "id": "aihot-20261124-stats-gov-cn-a46b8753",
-        "title": "国家统计局公布2026年11月中旬流通领域重要生产资料市场价格变动情况",
-        "source": "国家统计局 · 权威宏观数据",
+        "id": "aihot-20261124-openai-news-54517da7",
+        "title": "Clay 借助 Codex 与 ChatGPT 助力销售团队赢单",
+        "source": "OpenAI News",
         "publishedAt": "2026-11-24T00:00:00.000Z",
-        "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261123_1965935.html",
-        "score": 63
-      }
-    ]
-  },
-  {
-    "id": "hot-2c7efa3a",
-    "rank": 16,
-    "title": "谷歌搜索 AI Mode 现已接入 Drive 和 Wallet，提供更个性化回复",
-    "industry": "AI",
-    "topics": [
-      "产品动态",
-      "搜索",
-      "模型发布",
-      "基础设施"
-    ],
-    "heatScore": 41.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T19:14:46.000Z",
-    "summary": "谷歌搜索的 AI Mode 现已接入 Drive 和 Wallet，可利用用户数据生成更个性化的回复。谷歌同时将 AI Mode 的 Personal Intelligence 功能扩展到 Drive、Wallet 和 Gemini 应用，充分利用其生态系统内已有的海量用户数据。",
-    "items": [
-      {
-        "id": "aihot-20261123-techcrunch-ai-d63bc6e9",
-        "title": "谷歌搜索 AI Mode 现已接入 Drive 和 Wallet，提供更个性化回复",
-        "source": "TechCrunch · AI",
-        "publishedAt": "2026-11-23T19:14:46.000Z",
-        "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
-        "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-00664211",
-    "rank": 17,
-    "title": "NVIDIA 捐赠 OpenShell 加入 CNCF 沙箱项目：以开放治理保障 Agentic AI 安全",
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "开源生态"
-    ],
-    "heatScore": 41.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T19:06:28.635Z",
-    "summary": "NVIDIA 在 KubeCon + CloudNativeCon North America 上将开源运行时 OpenShell 捐赠给 CNCF，使其成为沙箱（Sandbox）项目。OpenShell 专注于为自主 AI 代理（agentic AI）提供安全防护与治理，CNCF 将以开放治理模式托管该项目。",
-    "items": [
-      {
-        "id": "aihot-20261123-cncf-blog-aca02c4b",
-        "title": "NVIDIA 捐赠 OpenShell 加入 CNCF 沙箱项目：以开放治理保障 Agentic AI 安全",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-23T19:06:28.635Z",
-        "url": "https://www.cncf.io/blog/2026/11/10/welcoming-openshell-to-the-cncf-open-governance-to-secure-agentic-ai/",
-        "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-464c5a5d",
-    "rank": 18,
-    "title": "Peterson 分析：财长贝森特对黄仁勋态度转向揭示了特朗普对华政策的什么",
-    "industry": "金融与政策",
-    "topics": [
-      "市场政策",
-      "中美关系",
-      "美股",
-      "宏观"
-    ],
-    "heatScore": 41.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T19:06:14.000Z",
-    "summary": "Peterson 分析文章指出，美国财政部长贝森特一度成为针对英伟达的新兴强硬路线的代表人物，但如今已改弦更张、立场逆转。文章以这一态度转变切入，解读其透露出的特朗普政府对华政策信号。",
-    "items": [
-      {
-        "id": "aihot-20261123-cnbc-markets-422713b7",
-        "title": "Peterson 分析：财长贝森特对黄仁勋态度转向揭示了特朗普对华政策的什么",
-        "source": "CNBC Markets",
-        "publishedAt": "2026-11-23T19:06:14.000Z",
-        "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
-        "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-36e7ccb3",
-    "rank": 19,
-    "title": "特朗普火速力挺黄仁勋复职、自称“一手促成”，万斯被曝也介入幕后协调",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观",
-      "政策",
-      "市场政策",
-      "美股"
-    ],
-    "heatScore": 41.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T19:06:08.000Z",
-    "summary": "特朗普火速表态力挺黄仁勋复职，并自称此事由他“一手促成”。万斯被曝也在幕后参与了协调。",
-    "items": [
-      {
-        "id": "aihot-20261123-wscn-global-275a6a77",
-        "title": "特朗普火速力挺黄仁勋复职、自称“一手促成”，万斯被曝也介入幕后协调",
-        "source": "华尔街见闻 · 全球",
-        "publishedAt": "2026-11-23T19:06:08.000Z",
-        "url": "https://wallstreetcn.com/articles/3786540",
-        "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-8def6855",
-    "rank": 20,
-    "title": "黄仁勋复职带动AI相关股票普涨 英伟达市值数小时增逾1万亿美元",
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "美股",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 41.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-23T15:51:40.000Z",
-    "summary": "英伟达宣布恢复黄仁勋总裁兼首席执行官职务并立即生效，AI相关股票应声普涨，英伟达股价一度上涨35%，创2000年以来最大盘中涨幅。受此带动，英伟达市值数小时内增逾1万亿美元。",
-    "items": [
-      {
-        "id": "aihot-20261123-sina-finance-63ee6517",
-        "title": "黄仁勋复职带动AI相关股票普涨 英伟达市值数小时增逾1万亿美元",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-23T15:51:40.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-inizuarw0392235.shtml",
-        "score": 93
+        "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+        "score": 64
       }
     ]
   }

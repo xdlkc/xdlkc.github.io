@@ -1,5 +1,194 @@
 [
   {
+    "id": "aihot-20261125-eastmoney-724-837a4fc1",
+    "title": "化肥概念震荡反弹 红四方、中哲精化双双涨停",
+    "summary": "A股化肥概念盘中震荡反弹，红四方、中哲精化双双涨停。赤天化、潞化科技、泸天化、四川美丰、六国化工、富邦科技等个股跟涨。",
+    "url": "https://finance.eastmoney.com/a/202611253939386639.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T11:06:20.000Z",
+    "score": 50,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场快讯",
+      "港股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "化肥",
+      "涨停",
+      "板块异动"
+    ],
+    "context": "化肥板块盘中集体走强、多股封板，属短线资金驱动的板块异动信号，可关注后续量能与持续性。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-58a6bc3d",
+    "title": "特斯拉FSD新版本“抛下”老车型，Counterpoint：国内部分智驾车型或于2028年面临类似问题",
+    "originalTitle": "特斯拉FSD新版本“抛下”老车型 机构：国内部分智驾车型或在2028年面临类似问题",
+    "summary": "市场研究机构Counterpoint Research 11月25日发布分析报告称，随着特斯拉FSD v15推出，搭载HW3硬件平台的数百万辆特斯拉与新车型将出现明显智驾体验差异。报告指出汽车智能化硬件预埋的价值兑现期受制于算力代际，国内2022年至2024年集中量产的英伟达Orin-X平台车型预计将在2028年至2029年面临类似问题。",
+    "url": "https://finance.eastmoney.com/a/202611253939386254.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T11:06:07.000Z",
+    "score": 74,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "智能驾驶",
+      "行业研究",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "特斯拉",
+      "FSD",
+      "智能驾驶",
+      "Orin-X"
+    ],
+    "context": "报告将特斯拉硬件代际分化映射到国内智驾存量车型，对汽车智能化产业链价值判断与A股相关板块预期具有参考意义。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-d09a3749",
+    "title": "马来西亚航空宣布选择波音787梦想客机",
+    "originalTitle": "马来西亚航空：已选择波音787梦想客机",
+    "summary": "马来西亚航空集团CEO表示，已选择波音(BA.N)787梦想客机，订单包括10架787。该订单还附有可选择再增购6架的条款。",
+    "url": "https://finance.eastmoney.com/a/202611253939386546.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T11:04:33.000Z",
+    "score": 50,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "航空产业",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "波音",
+      "马来西亚航空",
+      "波音787",
+      "航空订单"
+    ],
+    "context": "波音787获得马来西亚航空新订单并保留增购选择权，可关注波音后续订单储备变化。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-e1350a6e",
+    "title": "国家能源局：截至10月底全国累计发电装机容量41.6亿千瓦 同比增长10.9%",
+    "summary": "国家能源局发布1-10月份全国电力统计数据，截至10月底全国累计发电装机容量41.6亿千瓦，同比增长10.9%。其中太阳能发电装机容量13.3亿千瓦，同比增长16.3%；风电装机容量7.1亿千瓦，同比增长20.0%。1-10月份全国发电设备累计平均利用2406小时，比上年同期降低214小时。",
+    "url": "https://finance.eastmoney.com/a/202611253939386323.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T11:04:21.000Z",
+    "score": 65,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "A股",
+      "新能源",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "国家能源局",
+      "电力装机",
+      "光伏",
+      "风电"
+    ],
+    "context": "官方月度电力数据是跟踪光伏、风电装机节奏与电力供需的重要指标，对新能源板块投资具有参考价值。"
+  },
+  {
+    "id": "aihot-20261125-eastmoney-724-c45378c3",
+    "title": "散户押中英伟达期权 一天暴赚近20倍 直言“开盘即售出，谢谢老黄”",
+    "summary": "彭博社25日报道，Reddit用户Outrageous-Voice1459上周五买入价值1.9万美元的英伟达看涨期权，在CEO黄仁勋回归后单日获利37.69万美元，收益率增长1984%、接近20倍。该散户表示将开盘即售出兑现收益。",
+    "url": "https://finance.eastmoney.com/a/202611253939383630.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-25T11:03:20.000Z",
+    "score": 55,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "英伟达",
+      "期权",
+      "美股",
+      "散户"
+    ],
+    "context": "个案折射英伟达消息面波动下期权高杠杆的散户暴富效应，短期情绪催化值得关注。"
+  },
+  {
+    "id": "aihot-20261125-cncf-blog-1739f35a",
+    "title": "你的 OpenTelemetry 管道正在成为性能瓶颈吗？",
+    "originalTitle": "Is your OpenTelemetry pipeline becoming a performance bottleneck?",
+    "summary": "CNCF 博客发布 Cloud Native Days Austria 2026 演讲回顾《How to Defeat OTel's Silent Killer: The Performance Overhead》，聚焦可观测性管道中容易被忽视的采集性能开销问题。演讲探讨 OpenTelemetry 管道何时会成为性能瓶颈及其应对方法。",
+    "url": "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/",
+    "source": "CNCF Blog",
+    "publishedAt": "2026-11-25T03:10:12.171Z",
+    "score": 73,
+    "tier": "T1",
+    "selected": true,
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "可观测性",
+      "开源生态"
+    ],
+    "region": [
+      "工程与开源",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "云原生",
+      "OpenTelemetry",
+      "可观测性",
+      "性能优化",
+      "CNCF"
+    ],
+    "context": "采集开销是可观测性落地的隐性成本，对大规模使用 OpenTelemetry 的团队有直接参考价值。",
+    "contentHtml": "<p>Posted on November 17, 2026\n\t\t<span>by Diana Todea (CNCF Ambassador, OpenTelemetry Documentation approver, Romanian Localization maintainer)</span>\n\t\t</p><p><a title=\"Go to OpenTelemetry\" href=\"https://www.cncf.io/projects/opentelemetry\">\n\t\t\t\t<img width=\"70\" height=\"60\" src=\"https://landscape.cncf.io/logos/52818595352a47637721976b546e0a2a1d0da186a0eb97ec203bd7e5248eb4fc.svg\" alt=\"OpenTelemetry logo\">\n\t\t\t</a>\n\t\t\t\t\t\t</p><p>At <a href=\"https://cloudnativedays.at/\">Cloud Native Days Austria</a> 2026, I presented a talk called <a href=\"https://www.youtube.com/watch?v=OolHw9MJ37Y&amp;list=PLcMwH4f9MXB4&amp;index=5\"><em>How to Defeat OTel’s Silent Killer: The Performance Overhead</em></a>, exploring a problem that is easy to overlook when building observability pipelines: the cost of collecting telemetry itself.</p><p><a href=\"https://opentelemetry.io/\">OpenTelemetry</a> has become a cornerstone of cloud-native observability, providing standardized APIs, SDKs, and tooling for generating, collecting, processing, and exporting metrics, logs, and traces. However, instrumentation and telemetry processing are not free. Every span created, attribute attached, and batch exported consumes resources.</p><p>As applications scale, poorly configured telemetry pipelines can introduce significant CPU usage, memory pressure, network traffic, and storage costs. In some cases, the infrastructure responsible for observing a system can become a performance problem of its own.</p><p>The good news is that much of this overhead can be understood, measured, and reduced without sacrificing the visibility engineers depend on.</p><h2><strong>Where does OpenTelemetry overhead come from?</strong></h2><p>When discussing OpenTelemetry performance, we often focus on the application SDK. However, the cost extends beyond instrumentation.</p><p>The entire telemetry pipeline contributes to resource consumption, from generating spans and collecting metrics to processing, exporting, and storing data.</p><p>Instrumentation overhead is also workload-dependent. Two applications using the same instrumentation libraries can experience very different results depending on request throughput, attribute volume, runtime behavior, and the number of spans generated per request.</p><p>This is why relying on a single overhead percentage can be misleading. Instead, we should examine CPU consumption, memory usage, application latency, telemetry volume, and the behavior of the Collector under load.</p><p>There is also an important trade-off between application safety and telemetry completeness. When a pipeline becomes overloaded, backpressure and memory safeguards can protect the application and OpenTelemetry Collector, but they may also lead to rejected or dropped telemetry.</p><p>The objective is not simply to minimize resource consumption. It is to maintain useful observability while keeping its operational cost predictable.</p><h2><strong>Investigating the Collector: five common configuration problems</strong></h2><p>For my demonstration, I used <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen\">Telemetrygen</a>, an OpenTelemetry utility that generates synthetic telemetry, to investigate how Collector configuration affects resource consumption.</p><p>The investigation focused on five common sources of unnecessary overhead.</p><h3><strong>1. Inefficient batching</strong></h3><p>Exporting small amounts of telemetry frequently can increase serialization work, export requests, and network overhead.</p><p>The OpenTelemetry Collector groups telemetry inside the exporter’s sending queue before transmitting it downstream, helping amortize this work across larger payloads. (Note: Historically, this was handled by a standalone batch processor, which is now <a href=\"https://opentelemetry.io/blog/2026/collector-batching-migration/\">deprecated</a> in favor of built-in exporter batching).</p><p>However, batching parameters should reflect the actual workload. Larger batches are not automatically better: they can increase buffering requirements and affect export latency.</p><pre><code>exporters:\n  otlp_grpc:\n    endpoint: \"otel-backend:4317\"\n    sending_queue:\n      enabled: true\n      sizer: items       \n      queue_size: 100000 \n      batch:\n        enabled: true\n        min_size: 8192\n        flush_timeout: 200ms</code></pre><p>Configuring batch inside an exporter’s sending_queue groups spans, metrics, or logs before forwarding them downstream, improving compression efficiency and durability while reducing export overhead. Batches are sent when a configured size threshold is reached or a timeout expires.</p><p>In this example, min_size: 8192 triggers an export when the batch reaches 8,192 items, while flush_timeout: 200ms triggers an export regardless of batch size. Once batching is enabled, these values are the Collector’s documented defaults, not universal performance recommendations. (Note: Because unbatched requests enter the queue first in this architecture, this example switches sizer from the default requests to items with a queue_size of 100000 to prevent smaller, unbatched bursts from overflowing the queue).</p><p>The important point is to measure how batching affects resource consumption and throughput rather than relying on example configurations.</p><h3><strong>2. Unnecessary resource attributes</strong></h3><p><a href=\"https://opentelemetry.io/docs/specs/semconv/resource/host/\">Resource attributes</a> provide valuable context about the systems producing telemetry. But collecting and forwarding attributes that nobody uses can increase payload sizes and downstream processing costs.</p><p>For example, an application might need <code>host.name, host.arch</code>, and <code>os.type</code> for troubleshooting, but not detailed hardware information such as <code>host.cpu.model.name</code> or <code>host.cpu.cache.l2.size</code>.</p><p>The OpenTelemetry Collector’s <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/processor/resourcedetectionprocessor/README.md\">resource detection processor</a> allows engineers to configure which system attributes are collected. Disabling unnecessary attributes can reduce telemetry volume and processing overhead, although the impact on storage and cardinality depends on the backend.</p><p><strong>A practical example:</strong> Keep the hostname and operating system type, but disable CPU model and cache metadata when those details are not needed for troubleshooting.</p><h3><strong>3. Aggressive receiver polling</strong></h3><p>Infrastructure receivers collect metrics at configured intervals, often independently of application traffic.</p><p>Polling <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/hostmetricsreceiver/README.md\">host metrics</a>, container statistics, databases, and network services every few seconds creates continuous work even when applications are relatively idle.</p><p>Increasing collection intervals from 10 to 30 seconds, where operational requirements permit, can reduce collection frequency and associated overhead.</p><p>This introduces a trade-off: lower polling frequency means less temporal resolution. The appropriate interval depends on how quickly a metric changes and how it is used for troubleshooting or alerting.</p><h3><strong>4. Exporting every trace</strong></h3><p>Not every successful request needs to produce a trace that is retained.</p><p>Exporting all traces can consume significant bandwidth, Collector resources, and backend capacity, particularly in high-throughput applications.</p><p>Sampling provides a way to control this volume.</p><p><a href=\"https://opentelemetry.io/docs/concepts/sampling/#head-sampling\">Head-based sampling</a> makes decisions early, reducing downstream work. <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/tailsamplingprocessor\">Tail-based sampling</a> makes decisions after observing more of a trace, enabling policies that retain errors or other diagnostically interesting requests.</p><figure><img width=\"1352\" height=\"862\" src=\"https://www.cncf.io/wp-content/uploads/2026/11/image-12.png\" alt=\"Figure 1: OpenTelemetry Collector YAML configuration showing tail-based sampling with a 10-second decision window. The configuration retains traces with an ERROR status and probabilistically samples 5% of traces. The trace pipeline applies memory limiting, resource detection, span sanitization, GenAI normalization, tail sampling, and batching before exporting telemetry.\"></figure><p>These policies retain traces with an error status and probabilistically sample 5% of traces, including potentially some additional error traces. However, tail sampling is not free. It requires buffering trace data until a decision can be made, introducing additional memory and processing overhead.&nbsp;</p><p>Choosing a sampling strategy means balancing cost, diagnostic value, and the resources needed to make sampling decisions.</p><h3><strong>5. Memory safeguards applied too late</strong></h3><p>The OpenTelemetry Collector includes a <code>memory_limiter</code> processor to help manage memory pressure.</p><p>Processor ordering matters. When enrichment and transformation processors run before memory limiting, the Collector may perform additional work on telemetry that is subsequently refused under memory pressure.</p><p>Memory limiting is a protective mechanism rather than a performance optimization in itself. Its purpose is to improve stability under pressure, not necessarily to reduce CPU consumption during normal operation. Placing the <a href=\"https://github.com/open-telemetry/opentelemetry-collector/blob/main/processor/memorylimiterprocessor/README.md\">memory limiter</a> early in the pipeline helps apply safeguards before more expensive processing.&nbsp;</p><p>It is important to understand that the memory limiter is not a substitute for appropriate resource limits or capacity planning. It can refuse incoming data when memory pressure becomes excessive, and receivers must handle this behavior correctly to avoid unnecessary telemetry loss.</p><h2><strong>From local experiments to production architecture</strong></h2><p>Optimizing a single Collector is only part of the solution.</p><p>In Kubernetes, telemetry workloads can fluctuate significantly as applications scale, deployments change, and traffic increases. A Collector configuration that performs well under synthetic load may behave differently in production.</p><p>Here are some architectural practices that can help address these challenges.</p><ol>\n<li><strong>Separate collection from centralized processing.</strong> A two-tier architecture can use lightweight edge Collectors for local collection and gateway Collectors for more expensive processing. This allows different parts of the pipeline to scale according to their workloads.</li>\n\n\n\n<li><strong>Control telemetry volume early.</strong> Filtering unnecessary attributes, removing unneeded data, and avoiding excessive cardinality can reduce the amount of information processed and transferred downstream. These decisions should preserve the context required for debugging and correlation.</li>\n\n\n\n<li><strong>Plan for memory pressure and backend outages.</strong> Kubernetes memory limits, Collector memory safeguards, bounded queues, and retry mechanisms serve different purposes. Persistent queues can improve resilience during temporary backend failures, but they still require capacity planning and cannot guarantee delivery under every failure scenario.</li>\n\n\n\n<li><strong>Scale with signal-specific requirements in mind.</strong> Horizontal scaling can increase throughput, but stateful processing requires additional consideration. Tail sampling, for example, generally requires spans belonging to the same trace to reach the same processing instance.</li>\n</ol><p>These architectural decisions are just as important as tuning individual processors.</p><h2><strong>Don’t forget the instrumentation</strong></h2><p>One of the most effective optimizations happens before telemetry reaches the Collector.</p><p>Instrumentation should answer meaningful operational questions rather than collect everything simply because it is possible. Excessive spans, high-cardinality attributes, and unnecessary instrumentation can increase resource consumption throughout the entire pipeline.</p><p>For metrics, attributes containing unbounded values such as unique request IDs can create large numbers of distinct time series. For traces and logs, excessive attributes and events increase payload sizes and may affect backend processing or indexing costs.</p><h3><strong>Why I chose Telemetrygen for my demo</strong></h3><p>When preparing my performance investigation, I initially considered using the official <a href=\"https://github.com/open-telemetry/opentelemetry-demo\">OpenTelemetry Astronomy Shop</a>. While it is an excellent environment for exploring instrumentation across microservices, its multiple applications, databases, and supporting services introduce additional CPU and memory consumption.</p><p>For this experiment, I wanted to isolate the Collector’s performance overhead without the background noise of a complete application environment.</p><p>Instead, I chose <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen\">Telemetrygen</a>, a lightweight utility for generating synthetic traces, metrics, and logs at controlled rates.</p><p>In my <a href=\"https://github.com/didiViking/otel-performance-overhead\">OpenTelemetry performance overhead demo</a>, I used synthetic telemetry to investigate how Collector configuration affects resource consumption. The demonstration walks through common inefficiencies, including missing batching, unnecessary resource attributes, aggressive receiver polling, excessive trace export, and memory limiter placement, showing how targeted configuration changes can improve pipeline efficiency.</p><p>This approach helped isolate Collector behavior, but it is only one part of the performance picture. For understanding instrumentation overhead inside real applications, a complete environment such as Astronomy Shop remains valuable.</p><h3><strong>Exploring instrumentation further</strong></h3><p>Reducing overhead starts with understanding what telemetry an application generates and why. The official <a href=\"https://opentelemetry.io/docs/\">OpenTelemetry instrumentation documentation</a> introduces automatic and manual instrumentation, while the sampling documentation explains how to control trace volume. These are useful starting points for reviewing instrumentation decisions before optimizing the Collector itself.</p><p>For engineers interested in investigating performance further, the OpenTelemetry Collector documentation covers pipeline configuration and processing. The OpenTelemetry community is also a good place to discuss performance challenges. The Collector SIG focuses on Collector architecture, performance, and configuration, with discussions taking place in the <strong>#otel-collector</strong> channel on CNCF Slack.</p><p>For questions about instrumentation overhead in a specific programming language, the corresponding language SIG is a better starting point. The <a href=\"https://opentelemetry.io/community/\">OpenTelemetry community page</a> provides information about SIGs, public meetings, and how to get involved.</p><h2><strong>Making performance part of observability design</strong></h2><p>OpenTelemetry overhead is not a single problem with a single configuration fix.</p><p>It is the combined effect of instrumentation decisions, data volume, processor configuration, export behavior, and infrastructure architecture.</p><p>The most useful lesson from this investigation is that <strong>observability pipelines should be measured and optimized like any other production system</strong>.</p><p>Start with controlled benchmarks. Understand where resources are consumed. Introduce configuration changes individually, and evaluate their impact on CPU, memory, latency, throughput, and telemetry loss.</p><p>Most importantly, treat example configurations as starting points rather than production-ready defaults.</p><p>OpenTelemetry gives us the tools to understand complex distributed systems. With thoughtful instrumentation, careful pipeline configuration, and appropriate scaling strategies, we can ensure that collecting this information does not become an unnecessary burden on the systems we are trying to observe.</p>",
+    "author": "CNCF projects highlighted in this post"
+  },
+  {
     "id": "aihot-20261124-ndrc-policy-1c6d998b",
     "title": "国家发展改革委等四部门印发《“一老一小”服务体系建设实施方案》",
     "originalTitle": "国家发展改革委 民政部 国家卫生健康委 教育部印发《“一老一小”服务体系建设实施方案》",
@@ -63,6 +252,38 @@
     "context": "Sim2Real 仿真到现实迁移是机器人学习落地的关键环节，官方教程对复现部署有直接参考价值。",
     "contentHtml": "<p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/Tqh5FK78Q1qDuzhEDGpqQ.gif\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/Tqh5FK78Q1qDuzhEDGpqQ.gif\" alt=\"Microduck obstacle avoidance: simulation to reality\"></a></p><h2>\n\t\n\t<span>\n\t\tTL;DR\n\t</span>\n</h2><p>Add local obstacle avoidance to <a href=\"https://pollen-robotics.com/microduck/\">Microduck</a> while keeping its walking policy fixed. Build varied courses with reusable <a href=\"https://www.nvidia.com/en-us/glossary/simready/\">SimReady</a> assets, model ToF sensing with Newton’s raycaster, and train a controller in <a href=\"https://developer.nvidia.com/isaac/lab\">Isaac Lab</a> to adjust gamepad velocity commands around obstacles. This tutorial covers simulation training, evaluation, export, and real-robot deployment.</p><h2>\n\t\n\t<span>\n\t\tIntroduction\n\t</span>\n</h2><p>A walking policy can keep Microduck balanced, but it does not tell the robot how to steer around an obstacle in its path. In this workflow, we reuse the walking policy from our <a href=\"https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real\">first Microduck tutorial</a> and keep its weights fixed. This follow-up trains a separate avoidance controller using time-of-flight (ToF) sensing. You choose a direction with a gamepad; the controller adjusts the velocity command before passing it to the walking policy.</p><p><a href=\"https://isaac-sim.github.io/IsaacLab/main/index.html\">NVIDIA Isaac Lab</a> is an open-source framework for training policies across thousands of GPU-parallel simulations and it provides the robot-learning environment. <a href=\"https://github.com/newton-physics/newton\">Newton</a> simulates physics and the sensor’s depth measurements. We will cover the control architecture, train on varied obstacle layouts, evaluate the resulting policies, and prepare the interface for hardware testing.</p><h2>\n\t\n\t<span>\n\t\t1. Set Microduck obstacle avoidance in Isaac Lab\n\t</span>\n</h2><p>For simulation and training, prepare:</p><ul>\n<li><p>A Linux system with a compatible NVIDIA GPU and driver. See the <a href=\"https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html\">Isaac Lab installation guide</a> for platform requirements.</p>\n</li>\n<li><p>Git with Git LFS, and the uv package manager.</p>\n</li>\n</ul><p>For physical-robot testing, prepare:</p><ul>\n<li><p>A configured Microduck. Load the same backlash walking-policy export used by the navigation task.</p>\n</li>\n<li><p>A supported ToF sensor with its configuration recorded.</p>\n</li>\n<li><p>A paired gamepad and a level test area with obstacles.</p>\n</li>\n</ul><h3>\n\t\n\t<span>\n\t\tQuick install\n\t</span>\n</h3><p>Install <a href=\"https://docs.astral.sh/uv/getting-started/installation/\">uv</a> if it is not already installed. Then clone the exp/microduck branch of the Isaac Lab repository and install its dependencies:</p><pre><code>git lfs install\ngit <span>clone</span> --branch exp/microduck https://github.com/isaac-sim/IsaacLab.git\n<span>cd</span> IsaacLab\nuv <span>sync</span> --frozen\n</code></pre><p>Once setup is complete, list the available Microduck environments and presets:</p><pre><code>uv run isaaclab list_envs --keyword MicroDuck --show_presets\n</code></pre><h3>\n\t\n\t<span>\n\t\tDownload the walking policy\n\t</span>\n</h3><p>Download and export the <a href=\"https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/PretrainedCheckpoints/rsl_rl/IsaacContrib-Velocity-Rough-MicroDuck_backlash_newtonmjwarp_none_rsl_rl.pt\">upstream backlash walking checkpoint</a> once before training. The obstacle avoidance task loads the exported walking policy automatically.</p><pre><code>uv run isaaclab play \\\n  --task IsaacContrib-Velocity-Rough-MicroDuck \\\n  --rl_library rsl_rl --checkpoint pretrained \\\n  --num_envs 1 --visualizer none \\\n  --video newton_gl --video_length 1 \\\n  presets=backlash\n</code></pre><h2>\n\t\n\t<span>\n\t\t2. Build the obstacle course\n\t</span>\n</h2><p>The environment combines simple primitives with <a href=\"https://www.nvidia.com/en-us/glossary/openusd/\">OpenUSD</a> assets available through <a href=\"https://huggingface.co/spaces/nvidia/simready-central\">SimReady Central</a> on Hugging Face. We use a <a href=\"https://huggingface.co/datasets/nvidia/simready-assets/tree/main/box_cardboard_a01\">cardboard box</a>, <a href=\"https://huggingface.co/datasets/nvidia/simready-assets/tree/main/trashCan_office_black_a03\">office bin</a>, <a href=\"https://huggingface.co/datasets/nvidia/simready-assets/tree/main/table_bedside_b01\">bedside cabinet</a> alongside cones. From the IsaacLab repository root, download the pinned box, bin and cabinet packages into assets/simready.</p><pre><code>uvx --from huggingface-hub hf download nvidia/simready-assets \\\n  --repo-type dataset \\\n  --revision 9d4556bfe80868c1d27a7a7ba1c2774e63e8cedd \\\n  --include <span>\"box_cardboard_a01/*\"</span> \\\n  --include <span>\"trashCan_office_black_a03/*\"</span> \\\n  --include <span>\"table_bedside_b01/*\"</span> \\\n  --local-dir ./assets/simready\n</code></pre><p>At each episode reset, the environment code automatically samples a layout, shuffles the props, and varies their placement and rotation. Most courses scatter obstacles ahead of the duck, with a smaller mix of clear paths, barriers and passages. The code also mirrors layouts and mixes aligned and staggered rows.</p><p>Goals start ahead of the duck. Movement commands guide it toward the goal while the policy adjusts them around obstacles.</p><p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/uesbJUW3FYJxujnhTMbxN.png\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/uesbJUW3FYJxujnhTMbxN.png\" alt=\"A four-panel grid shows Microduck on a checkerboard floor with rearranged cardboard boxes, bins, cabinets, red cones, white barriers, and green goal markers.\"></a></p><p>Figure 1. Varied obstacle-course layouts with SimReady assets and primitive geometry.</p><h2>\n\t\n\t<span>\n\t\t3. Understand how ToF sensing guides the walking policy\n\t</span>\n</h2><p>The <code>IsaacContrib-ObstacleAvoidance-Flat-MicroDuck</code> task separates obstacle avoidance from balance. A navigation policy uses ToF sensing to adjust forward, lateral, and yaw commands at 50 Hz. The frozen walking policy then converts those commands into joint actions, allowing the robot to learn obstacle avoidance without retraining its walking behavior.</p><p>During training, the navigation policy’s actor receives ToF history and body and controller state available on the real robot. Its critic has access to additional simulation state to guide learning, but is not needed for deployment.</p><p>Rewards encourage progress toward the goal, safe arrivals, and movement around obstacles. Following a movement command earns credit only when the robot makes progress with sufficient clearance; risky approaches reduce that credit. Penalties discourage fast approaches, abrupt command changes, collisions, and falls.</p><p>The obstacle-avoidance task lives in <a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck_obstacle\"><code>isaaclab_tasks.contrib.microduck_obstacle</code></a>. Its configuration is in <a href=\"https://github.com/isaac-sim/IsaacLab/blob/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck_obstacle/obstacle_avoidance_env_cfg.py\"><code>obstacle_avoidance_env_cfg.py</code></a>, ToF sensing is in <a href=\"https://github.com/isaac-sim/IsaacLab/blob/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck_obstacle/sensors.py\"><code>sensors.py</code></a>, and actions, commands, observations and rewards are organized under <a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck_obstacle/mdp\"><code>mdp/</code></a>.</p><h3>\n\t\n\t<span>\n\t\tModel the ToF sensor\n\t</span>\n</h3><p>MicroDuckToFCamera extends Newton’s LegacyMultiMeshRayCasterCamera to model the VL53L5CX—a compact time-of-flight (ToF) sensor on the microduck that measures distance across an 8×8 grid at 15Hz. The simulated sensor has a 45° field of view and a 0.12–4 m range. It follows the duck’s head, with placement similar to the sensor on the real duck.</p><p>Real recordings informed the sensor placement and floor readings in simulation. Training adds noise, delays and missing measurements—including near the grid’s edges—to expose the policy to imperfect data. The excerpt below shows selected sensor settings already included in the task configuration. You do not need to edit or run this code separately.</p><pre><code><span># Selected settings; mount and raycast targets omitted.</span>\nhead_tof = MicroDuckToFCameraCfg(\n    prim_path=MICRODUCK_HEAD_BODY_PATH,\n    update_period=<span>1.0</span> / <span>15.0</span>,\n    pattern_cfg=patterns.PinholeCameraPatternCfg(\n        focal_length=<span>1.0</span>, width=<span>8</span>, height=<span>8</span>,\n        horizontal_aperture=_TOF_APERTURE,\n        vertical_aperture=_TOF_APERTURE,\n    ),\n    randomization=ToFRandomizationCfg(\n        mount_pitch_degrees=(-<span>10.0</span>, <span>10.0</span>),\n        mount_height_m=(-<span>0.02</span>, <span>0.02</span>),\n        floor_validity_midpoint_offset_m=(<span>0.0</span>, <span>0.13</span>),\n        near_floor_edge_impairment_probability=<span>0.5</span>,\n    ),\n    data_types=[<span>\"distance_to_image_plane\"</span>, <span>\"distance_to_camera\"</span>],\n    max_distance=TOF_MAX_RANGE,\n    depth_clipping_behavior=<span>\"zero\"</span>,\n)\n</code></pre><h2>\n\t\n\t<span>\n\t\t4. Train the Microduck policy across parallel environments\n\t</span>\n</h2><p>Train the navigation policy with PPO across 16,384 parallel environments for 1,500 training iterations. Its actor, critic, normalizers, and optimizer start fresh. The task configuration loads the fixed walking checkpoint, robot model, and obstacle assets.</p><p>The 16,384 environments shown here are configurable, not a minimum requirement. Lower <code>--num_envs</code> to fit your GPU’s available memory. With fewer environments collecting experience in parallel, reaching comparable policy performance may require more training iterations and longer training time. We also trained this policy on NVIDIA DGX Spark in approximately 6 hours using 4,096 parallel environments for 3,000 PPO updates, demonstrating a smaller-scale configuration for the same workflow.</p><p>Run this command to train the policy:</p><pre><code>uv run isaaclab train \\\n  --task IsaacContrib-ObstacleAvoidance-Flat-MicroDuck \\\n  --rl_library rsl_rl \\\n  --num_envs 16384 \\\n  --max_iterations 1500 \\\n  --seed 42 \\\n  --device cuda:0 \\\n  --visualizer none \\\n  presets=backlash\n</code></pre><p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/RCQ8kWS0Ky4j_YU1ch-G3.gif\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/RCQ8kWS0Ky4j_YU1ch-G3.gif\" alt=\"Camera pulls back from one MicroDuck navigating among cones, boxes, and barriers to reveal neighboring randomized obstacle courses\"></a></p><p>Figure 2. Parallel MicroDuck obstacle-avoidance simulation</p><h2>\n\t\n\t<span>\n\t\t5. Inspect behavior and export the policy to ONNX\n\t</span>\n</h2><p>Playback uses the same props, primitives, frozen walker and sensor randomization as training, with a different seed for new obstacle arrangements.</p><p>Navigation checkpoints are saved under <code>logs/rsl_rl/microduck_obstacle_avoidance_tof_flat_backlash/&lt;timestamp&gt;/</code> relative to the repository root. Choose a <code>model_&lt;iteration&gt;.pt</code> file from your run and replace <code>/absolute/path/to/model.pt</code> below with its path. This plays the policy, opens the Newton viewer and records 20 seconds of simulation. Set --viz to none for headless recording.</p><pre><code>uv run --extra video isaaclab play \\\n  --task IsaacContrib-ObstacleAvoidance-Flat-MicroDuck \\\n  --rl_library rsl_rl \\\n  --checkpoint /absolute/path/to/model.pt \\\n  --num_envs 1 \\\n  --seed 6173 \\\n  --device cuda:0 \\\n  --viz newton_gl \\\n  --video newton_gl \\\n  --video_length 1000 \\\n  presets=backlash\n</code></pre><p>Playback saves TorchScript and ONNX models in the checkpoint’s exported folder. Keep the ONNX data file alongside the model.</p><p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/Tqh5FK78Q1qDuzhEDGpqQ.gif\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/Tqh5FK78Q1qDuzhEDGpqQ.gif\" alt=\"Microduck faces red cones and a marked fixed goal. Overlays identify the head-mounted ToF sensor, an 8 × 8 depth grid, and requested versus policy-steered motion.\"></a></p><p>Figure 3. Cone-course evaluation with requested motion, policy steering, and ToF input overlays.</p><h2>\n\t\n\t<span>\n\t\t6. Test obstacle avoidance on a real Microduck\n\t</span>\n</h2><p>These <a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/scripts/deploy/microduck_tof_nav\">deployment tools</a> run the navigation model on a laptop and send adjusted gamepad commands to the walking policy on the robot. Use the same walking policy that was used during navigation training.</p><p>Section 1 saves the walker’s ONNX export to <code>.pretrained_checkpoints/rsl_rl/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/PretrainedCheckpoints/rsl_rl/exported/policy.onnx</code>, relative to the Isaac Lab repository root.</p><p>Load that walking policy using <a href=\"https://github.com/pollen-robotics/microduck/blob/main/docs/robot/cheatsheet.md#trying-your-own-file\">Pollen’s policy-loading guide</a>. The deployment README includes the transfer steps, including how to package an ONNX export that uses an external data file.</p><p>From your Isaac Lab checkout, set up SSH access and check inference with the robot standing upright and still:</p><pre><code><span>cd</span> scripts/deploy/microduck_tof_nav\nssh-copy-id microduck@ROBOT_HOST\nuv run nav_pad.py --robot ROBOT_HOST \\\n  --model /absolute/path/to/navigation/exported/policy.onnx \\\n  --dry-run --seconds 30\n</code></pre><p>Dry-run copies the helpers and streams sensor data, but sends no movement commands. Watch the proposed commands as obstacles enter the sensor’s view. Keep the navigation ONNX and any companion .data file together.</p><p>Once those checks pass, start supervised gamepad navigation:</p><pre><code>uv run nav_pad.py --robot ROBOT_HOST \\\n  --model /absolute/path/to/navigation/exported/policy.onnx\n</code></pre><p>Hold the stick forward to request movement; the policy adjusts the command to avoid obstacles. Release the stick to stop, press X to toggle navigation, and use Ctrl-C to end the session. Forward speed is capped at 0.15 m/s by default, with an additional close-obstacle brake and stale-input stopping. Start in a clear area and verify stopping before testing a course.</p><p>See the <a href=\"https://github.com/isaac-sim/IsaacLab/blob/exp/microduck/scripts/deploy/microduck_tof_nav/README.md\">deployment README</a> for controls, logs and troubleshooting.</p><p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/zJU03xK6y0Ii0XOWtmiwa.gif\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/zJU03xK6y0Ii0XOWtmiwa.gif\" alt=\"A small white and lavender robot walks past three orange cones on a tiled floor, next to a 3D replay of the same run. Below are a sensor distance grid, a cone checklist and a list of the policy’s steering decisions.\"></a></p><p>Figure 4. Microduck steers around cones using its 8×8 ToF sensor, with real footage on the left and a 3D rebuild from its logs on the right. Blue shows the policy steering, purple shows the operator intervention.</p><h2>\n\t\n\t<span>\n\t\t7. Explore other locomotion skills for Microduck in Isaac Lab\n\t</span>\n</h2><p>The <a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck\">Microduck task collection</a> includes velocity tracking on flat and rough terrain; stand-up recovery, sit–stand transitions, and walking with fall recovery (VelStand); ball kicking, ground picking, and forward rolls (Roulade). Roller-skating tasks add velocity tracking and swizzle motion, crouch-gliding, slope descent, standing up on skates, and spins.</p><p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/bg3GRix2mg67YBbayO_Y5.gif\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/bg3GRix2mg67YBbayO_Y5.gif\" alt=\"A looping five-column, three-row grid shows a close-up of one Microduck in each labeled tile: Walking · Flat, Walking · Rough, Roller Skating, Swizzle, RollerSlope, StandUp · Seated, SitStand, GroundPick, BallKick, RollerCrouch, VelStand · Flat, VelStand · Rough, Roulade, RollerStandUp, and Spin.\"></a></p><p>Figure 5. Fifteen Microduck task views: flat and rough-terrain walking, recovery, object interaction, and roller-skating motions.</p><h2>\n\t\n\t<span>\n\t\tBuild your next policy\n\t</span>\n</h2><p>Start with the <a href=\"https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real\">first Microduck tutorial</a>, then choose a task from the <a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck\">Microduck task collection</a> to build your next policy in Isaac Lab with Newton. Explore new behaviors by changing commands, rewards, or environments—from rough-terrain walking to perception-driven obstacle avoidance. Evaluate your policy on scenes outside the training set before testing on the robot.</p><h2>\n\t\n\t<span>\n\t\tResources\n\t</span>\n</h2><ul>\n<li><p><a href=\"https://pollen-robotics.com/microduck/\">Microduck home page</a> (ordering, quick start, installation)</p>\n</li>\n<li><p><a href=\"https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/train-a-microduck/index.html\">Train a Microduck in Isaac Lab</a></p>\n</li>\n<li><p><a href=\"https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/\">Train Robots to Navigate with AI agents, NVIDIA Isaac Lab and RTX Spark</a></p>\n</li>\n<li><p><a href=\"https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real\">Train in Simulation, Deploy on a Real Robot: Microduck with Isaac Lab 3.0</a></p>\n</li>\n<li><p><a href=\"https://isaac-sim.github.io/IsaacLab/develop/source/setup/installation/index.html\">Isaac Lab installation guide</a></p>\n</li>\n<li><p><a href=\"https://github.com/isaac-sim/IsaacLab/tree/exp/microduck/source/isaaclab_tasks/isaaclab_tasks/contrib/microduck\">Microduck training environments and configuration</a></p>\n</li>\n<li><p><a href=\"https://github.com/isaac-sim/IsaacLab/blob/develop/docs/source/concepts/actuators.rst#bam-servo-model\">Newton-based BAM actuator documentation</a></p>\n</li>\n<li><p><a href=\"https://github.com/pollen-robotics/microduck-arena/blob/main/docs/guides/train-a-policy.md#already-have-an-onnx\">Microduck Arena and ONNX submission guide</a></p>\n</li>\n<li><p>Explore <a href=\"https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories\">SimReady Central for more simulation-ready OpenUSD assets from OEMs and asset providers.</a></p>\n</li>\n<li><p><a href=\"https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place\">Learn how to Build a Robot Pick-and-Place Simulation with SimReady Assets</a></p>\n</li>\n<li><p><a href=\"https://github.com/pollen-robotics/microduck/blob/main/docs/robot/cheatsheet.md#trying-your-own-file\">Microduck robot software and deployment guide</a></p>\n</li>\n</ul><h2>\n\t\n\t<span>\n\t\tAcknowledgments\n\t</span>\n</h2><p>This workflow builds on Pollen Robotics’ Microduck hardware and software, the original <a href=\"https://github.com/pollen-robotics/microduck_rl\">Microduck reinforcement-learning project</a>, <a href=\"https://github.com/Rhoban/bam\">BAM actuator modeling work</a>, and the Isaac Lab and Newton integrations.</p>",
     "author": "Oluwaseun Doherty, Oyindamola Omotuyi, Richard"
+  },
+  {
+    "id": "aihot-20261124-openai-news-11b88f0f",
+    "title": "GPT-6 模型展现出内在的蛋白质设计能力",
+    "originalTitle": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "summary": "GPT-6 模型展现出内在的蛋白质设计能力，可通过推理和代码设计蛋白质结构与序列。实验室测试已在五个靶点上发现结合证据，为其设计的有效性提供了实验支持。",
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "source": "OpenAI News",
+    "publishedAt": "2026-11-24T13:00:00.000Z",
+    "score": 93,
+    "tier": "T1",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "前沿模型",
+      "AI科学",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "GPT-6",
+      "OpenAI",
+      "蛋白质设计",
+      "AI for Science"
+    ],
+    "context": "通用前沿模型延伸至可经湿实验验证的蛋白质设计，是 AI for Science 方向的重要进展。",
+    "contentHtml": "<h2><span>Key findings:</span></h2><ul><li><p><span>Our GPT‑6 family of models can design new protein shapes and the sequence of their chemical building blocks using only reasoning and code, without calling specialized biology models to generate those designs.</span></p></li><li><p><span>An internal research model matched or outperformed specialized models on many protein design tasks. Researchers could also guide designs by prompting the model on where a protein should attach and what shape it should take.</span></p></li><li><p><span>In lab tests with Onava, proteins based on GPT‑6.2’s designs showed evidence of binding, or attachment, across five targets. Redesigned antibodies also retained binding. Specialized models helped supply sequences and select candidates for testing.</span></p></li><li><p><span>The models’ written reasoning and code suggest they draw on math, physics, chemistry, and biological knowledge to reason about protein shapes and interactions with other molecules.</span></p></li></ul><p><span>In a preprint titled </span><i><span>GPT‑6 as a Universal Foundation Model for Protein Biology: Beyond Specialized Models</span></i><span>, we show that our GPT‑6 family of models has </span><b><span>intrinsic capabilities</span></b><span> for designing new proteins: the models can design new protein structures and sequences without relying on specialized biology models, using only reasoning and general-purpose coding tools.</span></p><p><span>Proteins do much of the work in living cells. They drive the chemical reactions that sustain life, carry oxygen through the blood, and defend the body against infection. Incorrectly shaped proteins can also cause disease and dysfunction. Proteins are made from chains of chemical building blocks called amino acids. The order, or sequence, of these amino acids helps determine how a protein folds into a three-dimensional shape, which in turn influences what it does.</span></p><p><span>Scientists often start with a clear idea of what they want a protein to do. They might want it to block a signal that helps cancer cells evade the immune system or to help capture carbon dioxide from the air. The challenge is to work out what three-dimensional structure would enable the protein to do its job and which amino acid sequence would give it that structure. Specialized biology models capable of generating three-dimensional protein structures and sequences have made this work more practical.</span></p><p><span>Using and coordinating these specialized models requires substantial expertise. Each accepts particular kinds of inputs and constraints, and these models cannot easily accept new kinds of information without changes to their software or additional training. In contrast, a general-purpose model capable of performing the work of multiple specialized models can easily adapt to new instructions and requirements.</span></p><p><span>Our research illustrates the potential power of pairing natural language with intrinsic protein capabilities. We could guide our models at scales ranging from a single bond between two atoms to the overall shape of a protein. For example, we asked GPT‑6.2 to predict where and how a small molecule would bind to a protein. When we already knew which two atoms formed a bond, we could give the model that information and ask how the rest of the molecule would fit. We could switch between these tasks simply by changing the prompt, without retraining the model. We also asked our models to design small proteins called minibinders and marked where each should attach to its target, and further specified how many coils or strands each minibinder should contain. An internal model followed that instruction with near-perfect fidelity in its three-dimensional designs.</span></p><figure><figcaption><p><i><span>Points farther from the center indicate better performance. Newer generations of models improved on many of the 14 protein tasks tested.</span></i></p></figcaption></figure><h2><span>A closer look at our models’ protein designs</span></h2><p><span>We ran computational tests of whether the GPT‑6 models series could design small proteins to bind given targets, build proteins around specified structural features, predict protein structures and molecular interactions, and rank how sequence changes affect properties such as stability and binding. Our latest models performed comparably to or better than specialized models on most tasks, although predicting a complete protein structure remained a clear weakness.</span></p><p><span>The models’ written reasoning and code offer clues to how they approach these tasks. They draw on mathematics, physics, chemistry, and coding alongside knowledge of recurring patterns in protein sequences and structures. For example, when designing a small protein intended to bind to IL-7Rα, the model proposed how the two proteins might interact, then wrote and executed code to explore different protein shapes and amino acid choices that could support that interaction.</span></p><figure><figcaption><p><i><span>The model’s written reasoning and code show it drawing on math, physics, chemistry and biology to design a protein intended to attach to IL-7Rα. It examines the target’s surface, arranges five coiled sections into a protein shape, and checks how the two proteins could fit together.</span></i></p></figcaption></figure><p><span>With our research partner, </span><a href=\"http://www.onava.ai/\"><span>Onava</span>⁠<span>(opens in a new window)</span></a><span>, we also tested the models’ structure and sequence designs in the lab. First, Onava made small proteins based on three-dimensional structures designed by a pre-released version of GPT‑6.2. Specialized models supplied amino acid sequences and helped select candidates for testing. For each of the five targets we chose, at least one protein showed evidence of binding in the lab. In separate experiments, GPT‑6.2 designed new amino acid sequences for existing minibinders and antibodies. Following candidate selection with specialized models, many of the redesigned proteins also showed evidence of binding to the same targets as the originals.</span></p><h2><span>Laboratory Experiment 1: Designing small proteins that bind to a target</span></h2><p><span>Our first laboratory experiment tested whether GPT‑6.2 could design small proteins that would bind to their intended targets. We compared computational measurements of quality against RFdiffusion, a specialized model for protein design, and found that GPT‑6.2’s three-dimensional designs scored slightly lower while our latest internal models scored higher. For the lab experiment, we made proteins based on GPT‑6.2’s designs and measured how strongly they bound to their targets.</span></p><p><span>We gave GPT‑6.2 the three-dimensional structures of five target proteins and marked where we wanted a minibinder to attach. It then wrote code to create three-dimensional designs for potential minibinders, without using specialized protein AI models.</span></p><p><span>To turn GPT‑6.2’s three-dimensional designs into proteins we could test in the lab, we needed amino acid sequences that would fold into the proposed structures. We used a specialized AI model called SolubleMPNN to suggest sequences for each design. Other specialized protein models helped us select candidates predicted to fold as designed and bind at the intended site on the target.</span></p><figure><figcaption><p><i><span>GPT‑6.2 designed shapes for small proteins intended to attach to chosen targets. Specialized models then proposed amino acid sequences—the order of the proteins’ chemical building blocks—and helped select designs for our research partner Onava to make and test in the lab.</span></i></p></figcaption></figure><p><span>We tested 322 minibinders against 5 targets in the lab. Of those, 35 (10.9%) tested positive for binding to their intended target. We found 5 hits for PD-L1 (a protein some cancers use to evade the immune system), 3 for IL-7Rα, 1 for TrkA, 8 for VEGF-A and 18 for IL-17A. The</span><a href=\"https://www.nature.com/articles/s41586-023-06415-8/figures/6\"><span> original RFdiffusion study</span>⁠<span>(opens in a new window)</span></a><span> reported higher hit rates, but rates depend heavily on how strictly researchers filter designs before lab validation and their definition of binding. Nevertheless, our results provide early evidence that we can turn GPT‑6.2’s three-dimensional designs into proteins that bind to their intended targets in the lab.</span></p><figure><p><img alt=\"Designing proteins to attach to specific targets · responsive legend poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/6YdRXyaFP4SEp3mku9AcPi/e8675d403db99751eac6a843d6d32507/specific-responsive-legend-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>An internal research model designed shapes for small proteins intended to attach to the target proteins shown in gray. The colored shapes compare each design with a computational prediction of how the protein would fold and fit against its target.</span></i></p></figcaption></figure><h2><span>Laboratory Experiment 2: Designing new sequences for 3D protein structures</span></h2><p><span>We tested whether GPT‑6.2 could design the sequences itself. We gave it three-dimensional models of how existing minibinders fit against their targets, withheld the original amino acid sequences, and asked it to propose new ones. Specialized models helped us choose which proteins to make and test in the lab.</span></p><p><span>For three targets, we started with computationally predicted structures of confirmed minibinders whose sequences Onava had collected from earlier studies. In our initial lab screens, we saw binding in 75 of 88 designs for MDM2 (85%), 26 of 42 for VEGF-A (62%), and 8 of 59 for PD-1 (14%). The amino acid sequences proposed by GPT‑6.2 also often differed significantly from the original minibinder sequences, with a median of 50% for VEGF-A, 43% for MDM2, and 15% for PD-1.</span></p><p><span>We also asked GPT‑6.2 to design new sequences for three unpublished minibinder shapes it had generated earlier: two targeting PD-L1 and one targeting IL-7Rα. A specialized model, ProteinMPNN, had already supplied one sequence for each shape, and proteins made from those sequences had shown binding in the lab. Of the 107 proteins made from GPT‑6.2’s new sequences, 14 (13.1%) showed binding.</span></p><p><span>Given an unpublished structure, GPT‑6.2 had come up with two substantially different sequences that both showed signs of binding to the same target. For the same PD-L1 minibinder structure, GPT‑6.2 designed two sequences different from the original in 52 and 58 out of 90 total amino acids. The two also differed from each other at 44 positions, nearly half the sequence.</span></p><p><span>The unpublished structures and substantial differences in sequence give us strong evidence that GPT‑6.2’s capabilities extend beyond memorization. The results also suggest we could use GPT‑6.2 to intrinsically design both a minibinder’s structure and its sequence.</span></p><h2><span>Redesigning the parts of an antibody that bind to a target</span></h2><p><span>Researchers often redesign an antibody’s binding loops to help it grip its target more tightly, a process called </span><b><span>affinity maturation</span></b><span>. They may also want it to bind more selectively, so it’s less likely to attach to similar proteins. We tested a first step toward those goals by asking our models to design new loop sequences that preserved binding to the original target.</span></p><p><span>We started with six small antibodies (VHHs) that bind to the same protein, IL-4Rα. For each antibody, we gave GPT‑6.2 its predicted three-dimensional structure and most of its amino acid sequence, leaving out the three loops that help the antibody grip its target. We asked the model to design new sequences for them. Of the 182 designs we tested, 128 (70%) showed signs of binding to IL-4Rα.</span></p><p><span>We then tested how precisely we could guide the model’s changes to existing therapeutic antibodies. This time, we gave the model the original sequences and asked it to change about half the amino acids in each of three binding loops while keeping the rest of the sequence intact. We tested the redesigned portions of the antibodies as fragments in the lab. Of 272 fragments based on five therapeutic antibodies, 179 (66%) showed binding to the original target, PD-1 or PD-L1.</span></p><h2><span>What else can our models design and predict?</span></h2><h3>Precise control over minibinder structures for programmable structure design</h3><p><span>A long-term goal of programmable structure-based design is to let researchers specify structural constraints in natural language. In our computational evaluations, our models consistently designed minibinders that contacted the required locations on the target. We could also specify the minibinder’s structural class (all helices, all strands, or a combination) and control the number of coils and strands with near-perfect fidelity. The same approach lets us express more detailed requirements for the binding interface, such as which target amino acids should be buried upon binding or whether the minibinder and target should interact through specific interactions such as “β-sheet–β-sheet”. As our model’s reasoning capabilities improve, we envision researchers guiding protein structure generation much as they guide image generation today, by describing the features they want.</span></p><figure><p><img alt=\"Guiding protein shapes with plain language · responsive legend poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/6hHUcGPmxSdtuz8SS3Rcth/7af1c0f8e139a63fd1433aceae7ec207/guiding-responsive-legend-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>Our model was asked to design small proteins with specified shapes: mainly coils (orange), mainly strands (blue), or a mix. Some instructions also specified how many coils or strands to include. The designs are intended to attach to PD-L1 or PD-1, shown in gray.</span></i></p></figcaption></figure><h3>Building a protein around a specified structural feature</h3><p><span>Most enzymes are proteins that speed up chemical reactions. When designing a new enzyme, researchers may know how a few key amino acids need to be arranged at the site where the reaction happens. Those amino acids can lie far apart along the protein chain. The challenge is to design the rest of the protein so that, as the chain folds, it brings them together and holds them in place.</span></p><p><span>We tested our models on 30 challenges from</span><a href=\"https://arxiv.org/html/2502.12479v2\"><span> MotifBench</span>⁠<span>(opens in a new window)</span></a><span>, including examples drawn from enzymes and from sites where proteins bind to one another. We gave the models a specific three-dimensional arrangement of amino acids, called a </span><b><span>motif</span></b><span>, and asked them to use coding tools to design the rest of the protein around it. This task is called </span><b><span>motif scaffolding</span></b><span>.</span></p><p><span>For each design, we used ProteinMPNN to propose eight possible amino acid sequences, and </span><a href=\"https://huggingface.co/biohub/esmfold_v1\"><span>ESMFold</span>⁠<span>(opens in a new window)</span></a><span> to predict how each would fold. We counted the design as a success if at least one predicted structure both preserved the motif and closely matched the overall structure the model had designed.</span></p><p><span>In a preliminary analysis, 43.7% of the designs we evaluated from our latest internal model met both criteria, compared with 27.8% for RFdiffusion. While laboratory experiments are needed to find out whether these proteins could carry out the intended function, such as speeding up a particular reaction, this provides strong computational evidence of our models’ intrinsic protein capabilities.</span></p><figure><p><img alt=\"MotifBench · responsive legend poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/3GkRmY9bmi12lalJCbZOjU/1bb471ce9aeb8e177ea935869c355d92/motif-responsive-legend-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>An internal research model designed protein structures around a small region whose shape had to stay fixed, shown in gold. The colored shapes compare the model’s designs with computer predictions of how the proteins would fold. Panels showing only gold had no design that passed the computer checks.</span></i></p></figcaption></figure><h3>Designing a protein with a specified fold</h3><p><span>In motif scaffolding, we specified how a few amino acids should sit relative to one another. We then determined whether we could also guide the design of an entire protein by specifying its overall fold. We gave our models a chain length and a code from</span><a href=\"https://www.cathdb.info/wiki/doku/?id=faq\"><span> CATH</span>⁠<span>(opens in a new window)</span></a><span>, a system scientists use to classify protein structures. The models then had to work out where each amino acid should go in three-dimensional space.</span></p><p><span>Many designs captured the broad layout we asked for. The harder part was getting the chain to follow the right path through it. Two proteins can have several coiled stretches packed together in a similar bundle, for example, yet differ in the order in which the chain connects them.</span></p><p><span>We counted a design as a success if at least one amino acid sequence was predicted to adopt the requested fold and closely match the model’s three-dimensional design. Across 200 challenges, 18.9% of the designs we evaluated from our latest internal model passed, compared with 17.1% for Proteina, a specialized protein design model.</span></p><figure><p><img alt=\"CATH fold design · responsive legend poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/11XZLTWWYSfBFIEC0CGw0D/df7b4140a33a376f4ecc4f5bc2a553e6/cath-responsive-legend-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>An internal research model was asked to design proteins with specified overall shapes, such as bundles of coils or layers of strands. The colored shapes compare selected designs with computer predictions of how they would fold, showing examples where the two closely match.</span></i></p></figcaption></figure><h3>Predicting how chemicals and proteins fit together</h3><p><span>Many medicines, including aspirin, are </span><b><span>small molecules</span></b><span>, chemical compounds much smaller than the proteins they act on. Predicting where a small molecule binds to a protein and how it fits there is called </span><b><span>docking</span></b><span>. These predictions can help researchers decide how to modify a drug candidate so it binds more tightly to its target. To test our models, we started with experimentally determined structures of small molecules bound to proteins. We digitally removed each small molecule and gave the models the protein structure along with a text description of how the molecule’s atoms were connected (a sequence of characters called SMILES). We then asked the models to predict where the molecule had been bound and how it was oriented.</span></p><p><span>For our first docking test, we used the</span><a href=\"https://pubs.rsc.org/en/content/articlehtml/2024/sc/d3sc04185a\"><span> PoseBusters dataset</span>⁠<span>(opens in a new window)</span></a><span>, a collection of three-dimensional structures that show how small molecules bind to proteins. Researchers determined these structures experimentally, giving us a way to check the models’ predictions. Without being told where on the protein each molecule had bound, the models had to predict both where the molecule fit and which way it faced. GPT‑6.2 closely matched the molecule’s observed position and orientation in 93% of scored predictions, compared with 96% for our latest internal model and 50% for DiffDock-L, a specialized docking model.</span></p><p><span>In practice, researchers may already know something about how a molecule binds. </span><b><span>One major advantage of a GPT model is that we can give additional information directly in the prompt</span></b><span>. We tested this on 179 structures from the</span><a href=\"https://doi.org/10.1021/acs.jcim.8b00228\"><span> </span><span>Scarpino dataset</span>⁠<span>(opens in a new window)</span></a><span>, where each protein structure forms a chemical bond with a small molecule, tethering the two together. We told our models which two atoms formed the bond and asked them to predict how the rest of the molecule fit against the protein. GPT‑6.2 closely matched the experimental structure in</span><a href=\"https://github.com/openai/protein_paper/blob/4f5fbba67d507f01c5b8f1ea2ba9f5bc8c23494b/figures/section_4/small_molecule_docking/data/success/counts_and_rates.csv\"><span> </span><span>92% of scored predictions</span>⁠<span>(opens in a new window)</span></a><span>, and our latest internal model did so in 97%, while </span><a href=\"https://github.com/gcorso/DiffDock/blob/main/inference.py\"><span>DiffDock</span>⁠<span>(opens in a new window)</span></a><span> reached 60%.</span></p><figure><figcaption><p><i><span>An internal research model predicted where and how small molecules would fit against proteins, shown in gray. Purple shows the model’s predictions, and teal shows the molecules’ positions determined in earlier experiments. In these examples, the predictions closely match the experimental structures.</span></i></p></figcaption></figure><h3>Predicting how antibodies bind to proteins</h3><p><span>Where an antibody binds can help explain whether it blocks another protein from attaching to the same site. We tested how accurately successive generations of GPT could predict where an antibody binds and which way it faces. For hundreds of pairs of antibodies and targets, we showed the models the two proteins separately and hid some of the atomic detail (all side chains) on their surfaces.</span></p><p><span>With the side-chain details hidden, the mean DockQ score (a commonly used metric in which higher values indicate a closer match to the experimentally observed arrangement) increased from approximately 0.05 for GPT‑5.6 to 0.28 for GPT‑6, 0.57 for GPT‑6.2, and 0.81 for our latest internal model, at each model’s highest evaluated compute setting.</span></p><p><span>Because these structures were public, the models may have seen the same antibody-target pairs or similar ones during training. Even so, each generation of our models predicted more accurately how the two proteins fit together, even with all side-chain positions hidden. That progress gives us reason to be optimistic about harder docking problems.</span></p><figure><p><img alt=\"Predicting antibody attachment · Video poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/1YHml5YMMOVbMQ7vV03a0Z/4e6dadc376a44b026d96bfd6b3ae1e8a/102-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>Each row compares four models’ predictions of how an antibody attaches to its target protein. Colored shapes show the model’s prediction; dark gray shows the position observed in experiments. Results improved with each successive generation of model.</span></i></p></figcaption></figure><h3>Predicting the effects of mutations</h3><p><span>We can design far more proteins on a computer than we can make and test in the lab. Even after we settle on a promising structure, we may have many amino acid sequences to choose from. We tested whether our models could help researchers decide which versions to make first by predicting how changes to a protein’s sequence would affect its stability, activity, or ability to bind to a target.</span></p><p><span>We drew on four public datasets from experiments in which scientists had replaced one or more amino acids in a protein and measured the effects. For each test, we gave our models the sequence of the protein the scientists started with and the sequences of 50 modified versions. We told the models what the scientists had measured, withheld the results, and asked them to rank the 50 versions without using coding tools, by reasoning only.</span></p><p><span>In one study of protein stability, we asked the models to rank 50 versions of a protein by how likely each was to be folded at room temperature. We compared the predicted order with the order observed in the lab using a measure called </span><i><span>rank correlation</span></i><span>. A value of 1 means the rankings match perfectly, 0 means there’s no consistent relationship, and −1 means the order is exactly reversed. Across 265 sets from the stability study, each model generation improved, from 0.41 for GPT‑5.6 to 0.52 for GPT‑6, 0.57 for GPT‑6.2, and 0.66 for our latest internal model.</span></p><p><span>In each of the four datasets, GPT‑6.2 and our latest internal model produced more accurate rankings on average than ESM2-650M, a specialized protein model.</span></p><h3>Early signals from our model’s protein structure predictions</h3><p><span>Earlier, we relied on specialized models to predict whether an amino acid sequence would fold into the structure our models had designed. We wanted to see how close our models are to making that prediction themselves. We gave our models the amino acid sequences of proteins with known three-dimensional structures. Using only basic coding tools, the models predicted how each chain would fold in three dimensions. We evaluated their predictions using a measure called </span><i><span>TM-score</span></i><span>. A score of 1 means a perfect match to the real structure, and scores above 0.5 generally indicate that the prediction captures the overall fold.</span></p><p><span>The biggest gains are visible in individual examples. For some proteins, our latest internal model closely reproduced folds that earlier models missed. Across the full test, the average score rose from 0.16 for GPT‑5.6 to 0.26 for GPT‑6.2 and 0.38 for our latest internal model. The specialized model ESMFold2 averaged 0.93, so there’s still a substantial gap in how reliably our models can predict a whole protein’s structure from its sequence alone.</span></p><p><span>What if researchers already know most of the structure and want to fill in a missing piece? We tested this on 100 antibody fragments. For each one, we gave our models the amino acid sequences and the surrounding three-dimension structure, hiding the six loops that help the antibody recognize its target. Our latest internal model often predicted both the shape and position of those loops quite accurately. ESMFold2 was still more accurate overall, even working from the sequences alone.</span></p><figure><p><img alt=\"Predicting how a protein folds · Video poster\" src=\"https://images.ctfassets.net/kftzwdyauwt9/EPSBjHvFHaqO4YmjaARZl/eb92da4b71e5c45583f0ac9f96cf47f7/117-poster.svg?w=3840&amp;q=50\"></p><figcaption><p><i><span>Each model was given the same protein sequence—the order of its chemical building blocks—and asked to predict its 3D shape. The colored shapes show the predictions, and dark gray shows the structure measured in experiments.</span></i></p></figcaption></figure><figure><figcaption><p><i><span>Each model was given a partial structure and tasked with predicting the missing regions corresponding to the antibody CDRs. The colored regions show predictions from the internal model and ESMFold2 compared with the experimentally determined structures.</span></i></p></figcaption></figure><h2><span>Limitations</span></h2><p><span>It is important to note that our protein design campaign relied on specialized structure prediction models such as Boltz-2, OpenDDE, and ESMFold2 to filter candidates. Our results show that GPT models have intrinsic capabilities comparable to specialized models at two stages of the workflow: backbone generation, where researchers commonly use RFdiffusion; and sequence redesign, where they commonly use ProteinMPNN. Our results therefore do not yet establish that our models can generate de novo minibinders end-to-end in a zero-shot setting without help from specialized models.</span></p><p><span>Our work demonstrates yet again the jagged capability frontier. Predicting a complete protein structure from its amino acid sequence remains substantially harder for our models than several of the component tasks above. On that task, even our best internal models remained well behind specialized structure-prediction models.</span></p><p><span>Some benchmark results also require careful interpretation. In tests that asked models to infer amino acid sequences from protein structures, unusually high accuracy may partly reflect memorization or patterns left by the process used to generate those structures. Those results alone do not establish reliable performance on unfamiliar proteins.</span></p><p><span>The laboratory results provide a more direct test of whether proposed designs can work, but binding is only one step toward a useful research tool or medicine. Further work would need to establish properties such as specificity, stability, and biological activity, along with safety and efficacy for therapeutic applications.</span></p><h2><span>What’s next</span></h2><p><span>This work is an early step toward </span><b><span>programmable molecular design</span></b><span> at OpenAI. Our goal is to let scientists describe what they want a molecule to do in plain language and use our models to help design candidates to test in the lab. To make that approach useful for developing medicines, we want to make progress in three areas.</span></p><ul><li><p><b><span>Find minibinders for harder targets.</span></b><span> We want to design molecules that bind to targets where our attempts so far have fallen short.</span></p></li><li><p><b><span>Design for what happens after binding.</span></b><span> We want to test whether the molecules we design can produce a specific biological effect, such as killing a cancer cell. We also want to design molecules that bind selectively to their intended targets and are practical to manufacture.</span></p></li><li><p><b><span>Design a wider range of molecules.</span></b><span> Our lab experiments focused on small protein minibinders and antibody fragments. We’d like to extend that work to molecules that bind to several targets at once, RNA, and small molecules, including a class called PROTACs that direct a cell to break down a particular protein.</span></p></li></ul><p><span>As we work to accelerate scientific progress safely and responsibly, we also seek to evaluate and reduce risks, particularly those related to biosecurity. The same capabilities that help scientists design proteins for new medicines could also be misused. Our</span><a href=\"https://openai.com/index/updating-our-preparedness-framework/\"><span> Preparedness Framework</span>⁠</a><span> guides how we assess these risks and test safeguards to reduce them.</span></p><p><span>While lab testing remains a critical part of protein design, our goal is to provide powerful models that can shorten each round of design by giving scientists more control and flexibility, and reduce the total number of design-test cycles needed to find a functional protein. Ultimately, we envision enabling scientists to design proteins and molecules simply by prompting our models in natural language, massively accelerating the development of new biotechnologies and new medicines.</span></p>"
   },
   {
     "id": "aihot-20261124-aws-ml-df5bd027",
@@ -132,6 +353,102 @@
     "contentHtml": "<p>A deadline creates pressure, and a team decides to solve its part of the problem directly.</p><p>I once saw this play out in a Kubernetes security initiative. The team had capable engineers, a clear objective and a reasonable concern that asking for help might slow them down. They picked a runtime detection tool, deployed it across the clusters and had a dashboard full of events within a week.</p><p>The missing piece was not the tool. It was the baseline: the shared definition of what normal looks like for those workloads and what should be blocked rather than just reported. Without it, every alert raised the same question: is this expected? The people who could answer that sat in another team, and nobody had asked them early enough.</p><p>The decision made sense from where the team stood. They had a task, a tool and a plan. What they lacked was the cross-team agreement that makes the tool useful, and confidence that asking for it would get a timely answer.</p><p>In cloud native engineering, “we can handle this ourselves” sounds like healthy ownership, and often it is. This post is about the cases where it isn’t, and about the artifact that usually exposes the difference: the security baseline.</p><h2><strong>The new version of the silo</strong></h2><p>The old silo was a wall. The new one can be a door that closes without anyone noticing: the team keeps moving and reports progress, but a key conversation never happens.</p><figure><table><tbody><tr><td>Signal</td><td>Old silo</td><td>New silo</td></tr><tr><td>Language</td><td>“That is not my job”</td><td>“We can handle this ourselves”</td></tr><tr><td>Presence</td><td>Nobody shows up</td><td>The team shows up, does not ask</td></tr><tr><td>Failure mode</td><td>Work never starts</td><td>Work starts, then stalls at the missing piece</td></tr><tr><td>Cost</td><td>Late, visibly</td><td>Late, after looking like progress</td></tr></tbody></table></figure><p>Autonomy is not automatically a silo. A team that owns its platform and makes its own decisions is what good engineering looks like. The silo appears when autonomy turns into self-sufficiency: the team stops checking who else holds part of the answer and rebuilds knowledge that already exists elsewhere in the organisation.</p><p>Renaming a team does not fix this either. Platform security, cloud native security and DevSecOps are labels; collaboration still depends on how people work together.</p><p>Three things make the new silo likely:</p><ul>\n<li><strong>Deadlines reward visible progress.</strong> A deployed DaemonSet and a dashboard are easy to show. Agreeing on expected behaviour, exception handling and verification is less visible, but it decides whether the deployment means anything.</li>\n\n\n\n<li><strong>Security looks like an approval queue.</strong> If every question to a security team turns into a review and a long wait, a well-run engineering team will reasonably try to work around it. That is a design problem for security teams, not a character flaw in platform teams.</li>\n\n\n\n<li><strong>Prevention is hard to measure.</strong> Shipping independently is easy to demonstrate. An early conversation that prevents rework produces a problem that never happens.</li>\n</ul><h2><strong>A tool working as configured is not a control</strong></h2><p>The risk is rarely that a tool fails. It is that a tool works exactly as configured, without a shared understanding of what it is supposed to achieve.</p><p>The pattern repeats across the cloud native security stack:</p><ul>\n<li>A runtime detection engine such as <a href=\"https://falco.org/docs/\">Falco</a> ships with general-purpose rules. Turning its output into signal requires knowing what each workload is expected to do, and that knowledge lives with the teams that build and run those workloads.</li>\n\n\n\n<li>An admission controller such as <a href=\"https://kyverno.io/docs/\">Kyverno</a> or <a href=\"https://open-policy-agent.github.io/gatekeeper/website/docs/\">OPA Gatekeeper</a> can block or only report. Choosing between those modes is a risk decision, not a configuration detail.</li>\n\n\n\n<li><a href=\"https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/\">Kubernetes audit logging</a> produces evidence only if someone has decided what to record, how long to keep it and who reads it.</li>\n</ul><p>None of these are shortcomings of the projects. They are design dependencies: the tool provides the mechanism, and the organisation has to provide the intent.</p><h2><strong>The baseline is a cross-team artifact</strong></h2><p>A baseline is not a policy document. It is a short, testable set of answers, and every answer maps to something you can configure and verify in a cluster. The question that matters is who has to agree on each one.</p><figure><table><tbody><tr><td>Baseline question</td><td>Where it lives in the cluster</td><td>Who has to agree</td></tr><tr><td>Which workloads may run, and with which security context?</td><td><a href=\"https://kubernetes.io/docs/concepts/security/pod-security-standards/\">Pod Security Standards</a> via Pod Security Admission, or equivalent admission policies</td><td>Platform and security</td></tr><tr><td>Which registries and image provenance are accepted?</td><td>Signature verification with <a href=\"https://docs.sigstore.dev/\">Sigstore</a> enforced at admission (for example Kyverno verifyImages or the Sigstore policy-controller)</td><td>Security and application teams</td></tr><tr><td>What is blocked, and what is only reported?</td><td>Kyverno Enforce or Audit; Gatekeeper deny, warn or dryrun; Pod Security Admission enforce, warn or audit</td><td>Security defines, platform operates</td></tr><tr><td>What does normal runtime behaviour look like?</td><td>Falco rules, lists, macros and rule exceptions tuned per workload</td><td>Application teams, with security</td></tr><tr><td>Who can approve an exception, and when does it expire?</td><td>Kyverno PolicyException resources, Gatekeeper constraint exclusions, Falco rule exceptions</td><td>A risk owner with authority over the service</td></tr><tr><td>Which events are retained, for how long, and who reads them?</td><td>Kubernetes audit policy levels and the log backend’s retention</td><td>Security operations and platform</td></tr></tbody></table></figure><p>A note on naming: Pod Security Standards define a profile called baseline. That profile is one useful input, but the baseline in this post is the wider organisational agreement that includes it.</p><p>Looking at the table, no single team owns every row. A platform team that deploys all of these tools alone has implemented the mechanisms and guessed at the intent. That is the new silo in its most concrete form.</p><h2><strong>Make the baseline cheap to ask about</strong></h2><p>The answer is not to send platform teams back to a security approval queue. It is to make the cross-team parts of the baseline easy to reach. Treating the baseline as code is a practical way to do that, because it uses workflows engineering teams already know:</p><ul>\n<li><strong>Keep policies in a repository</strong>, alongside the admission policies, Falco rules and audit policy that implement them.</li>\n\n\n\n<li><strong>Make ownership explicit with code owners.</strong> A CODEOWNERS file can require review from security for the paths that define block-or-report decisions, and from application teams for the runtime rules that describe their workloads. Ownership stops being implicit knowledge.</li>\n\n\n\n<li><strong>Turn exceptions into pull requests.</strong> Each exception records the policy it bypasses, the workload it applies to, who approved it and when it expires. Expiry needs enforcement too, such as a scheduled CI check that fails when an exception has passed its date. An exception with no expiry is a permanent policy change nobody reviewed.</li>\n\n\n\n<li><strong>Start in report mode on purpose.</strong> Running new policies in Audit or warn first is a good practice, as long as there is an agreed date and owner for the move to enforcement. Otherwise report mode becomes the permanent state.</li>\n\n\n\n<li><strong>Publish a clear contact and response expectation</strong> for each owning team. A code owner who takes three weeks to review is an approval queue with better tooling.</li>\n</ul><p>Security teams carry half of this. When guidance is hard to find or exceptions are slow, teams have every incentive to work around the process. Autonomy is not the problem. Expensive help is.</p><h2><strong>Four decisions that rarely belong to the same person</strong></h2><p>Once a team acts, four decisions have to be made explicit:</p><figure><table><tbody><tr><td>Decision</td><td>Who should hold it</td><td>How it usually fails</td></tr><tr><td>Define the expected outcome</td><td>Security, risk or architecture</td><td>A policy statement nobody can test</td></tr><tr><td>Implement and operate it</td><td>The team that owns the platform or service</td><td>Security ends up doing it, or it is done once and never maintained</td></tr><tr><td>Accept the residual risk</td><td>A role with authority over the service and the budget to remediate</td><td>Whoever understands the technical detail, or security by default</td></tr><tr><td>Verify it stays effective</td><td>Security or another independent function</td><td>Implementation is treated as proof, and drift goes unnoticed</td></tr></tbody></table></figure><p>The third row is where most programmes quietly break. The person who approves an exception must be able to fund its remediation or carry the consequence if it never happens. Someone who can sign but cannot fund is not accepting a risk. They are witnessing it.</p><p>Frameworks describe the same split. In <a href=\"https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf\">NIST CSF 2.0</a>, GV.RR-02 asks for roles, responsibilities and authorities to be established, communicated, understood and enforced. GV.RR-03 expects resources to match the risk strategy, and ID.RA-07 asks for exceptions to be assessed, recorded and tracked. In the EU, <a href=\"https://eur-lex.europa.eu/eli/dir/2022/2555/oj\">NIS2 Article 20</a> and <a href=\"https://eur-lex.europa.eu/eli/reg/2022/2554/oj\">DORA Article 5</a> place accountability on the management body rather than on a security team. None of these require a team to go it alone. They require that authority, funding and the exception path are explicit.</p><h2><strong>Takeaway</strong></h2><p>A silo is not a team that stopped asking permission. It is a team that stopped asking for help.</p><p>Deploying a runtime security tool, an admission controller or an audit pipeline is the easy part, and a platform team can do it independently. Defining what those tools should enforce is a cross-team decision, and pretending otherwise is how the new silo forms.</p><p>A simple habit at kick-off: for each row of the baseline, ask who owns the answer, when it is needed and how to reach them. When work stalls, ask what made going alone seem like the best option before assigning blame. Was guidance easy to find? Could the right people respond in time? Was the exception path clear?</p><p>Autonomy works best when a team can act, knows where the rest of the answer lives and can reach the people who have it without friction. Trust and collaboration are not the opposite of ownership. They are what make it sustainable.</p><h2><strong>References</strong></h2><ul>\n<li>Kubernetes, <a href=\"https://kubernetes.io/docs/concepts/security/pod-security-standards/\">Pod Security Standards</a> and <a href=\"https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/\">Auditing</a></li>\n\n\n\n<li><a href=\"https://falco.org/docs/\">Falco documentation</a></li>\n\n\n\n<li><a href=\"https://kyverno.io/docs/\">Kyverno documentation</a></li>\n\n\n\n<li><a href=\"https://open-policy-agent.github.io/gatekeeper/website/docs/\">OPA Gatekeeper documentation</a></li>\n\n\n\n<li><a href=\"https://docs.sigstore.dev/\">Sigstore documentation</a></li>\n\n\n\n<li><a href=\"https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf\">NIST Cybersecurity Framework 2.0 (CSWP 29)</a>: GV.RR-02, GV.RR-03, ID.RA-07</li>\n\n\n\n<li><a href=\"https://eur-lex.europa.eu/eli/dir/2022/2555/oj\">Directive (EU) 2022/2555 (NIS2), Article 20</a></li>\n\n\n\n<li><a href=\"https://eur-lex.europa.eu/eli/reg/2022/2554/oj\">Regulation (EU) 2022/2554 (DORA), Article 5</a></li>\n</ul><p><em>This post describes an engineering operating model, not a legal interpretation or a universal assignment of responsibilities. Adapt it to your organization’s structure and risk management process.</em></p>",
     "author": "Posted on November 16, 2026\n\t\tby Matteo Bisi, Reevo\n\t\t\n\t\tCNCF projects highlighted in this post",
     "contentHtmlZh": "<p>{\"t\": [\"</p><p>截止日期带来压力，团队于是决定直接动手解决自己负责的那部分问题。</p><p>我曾在一个 Kubernetes 安全项目中见过这种情况。团队里有能干的工程师、清晰的目标，还有一个合理的顾虑：求助可能会拖慢进度。他们选了一款运行时检测工具，部署到各个集群，一周之内就得到了一个满是事件的仪表盘。</p><p>缺失的不是工具，而是基线：关于这些工作负载\"正常\"是什么样子的共同定义，以及哪些行为应当被阻止而不是仅仅上报。没有它，每条告警都会引出同一个问题：这是预期行为吗？能回答这个问题的人在另一个团队，而没有人足够早地去问过他们。</p><p>从团队自身的立场看，这个决定是合理的。他们有任务、有工具、有计划。他们缺少的是让工具真正有用的跨团队共识，以及\"提出请求就能及时得到回应\"的信心。</p><p>在云原生工程中，\"我们自己能搞定\"听起来像是健康的担当，通常也确实是。本文讨论的正是它不是的那种情况，以及通常能揭示二者区别的那个工件：安全基线。</p><h2><strong>新版筒仓&lt;/</strong></h2>"
+  },
+  {
+    "id": "aihot-20261124-openai-news-fede3eca",
+    "title": "Intentful 如何用 dots 为业务增长腾出更多时间",
+    "originalTitle": "How Intentful uses dots to make more time for growth",
+    "summary": "Intentful 的 Marina Petrova 用 dot Aria 帮助调研网站、撰写提案，并主动标记消息、解决问题。这则 OpenAI 客户案例展示了 dots 如何为团队腾出更多时间投入增长。",
+    "url": "https://openai.com/business/customer-stories/intentful-dots",
+    "source": "OpenAI News",
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "score": 60,
+    "tier": "T1",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "AI应用案例",
+      "OpenAI生态",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "Intentful",
+      "OpenAI",
+      "dots",
+      "客户案例"
+    ],
+    "context": "OpenAI 官方客户故事，展示 dots 在真实业务流程中的具体用法。",
+    "contentHtml": "<p><span>Marina Petrova is CEO and cofounder of </span><a href=\"https://intentful.ai/\"><u><span>Intentful</span></u>⁠<span>(opens in a new window)</span></a><span>, a lean team that helps brands make their marketing interactive, with products such as ads that answer customers’ questions in real time and tools that make website information readable by AI. The company also advises and trains marketers on using AI.</span></p><p><span>In travel and tourism, Intentful works with destination organizations and local businesses such as hotels, restaurants, and attractions. A custom proposal is part of how Marina wins their business, showing prospects what’s possible and what it would take to deliver.</span></p><p><span>To keep Intentful growing, she needed more room for that strategic work, but she was spending too much time on research, hunting for files, and formatting decks. Her </span><a href=\"https://openai.com/index/introducing-dots/\"><span>dot</span>⁠</a><span> changed all that, taking on tasks and meeting Marina’s needs before she even had to ask.</span></p><blockquote>“My dot makes me feel like I gained a new superpower.”</blockquote><p>—Marina Petrova, CEO and cofounder, Intentful</p><h2><span>From 300 websites to a proposal in hours instead of days</span></h2><p><span>For one of Intentful’s tourism clients, Marina wanted to propose a package of Intentful’s AI services for hundreds of local businesses in the destination.</span><i><span> </span></i><span>Before she could price the package, she needed to work out which businesses’ websites the package could cover and what Intentful had charged other clients for similar work.</span></p><p><span>She brought in her dot, which she named Aria, to help her get from research to a proposal she could put her name on in a few hours instead of several days. First, Marina gave Aria a spreadsheet of URLs and criteria for deciding which sites to include. For example, a site needed a readable sitemap listing no more than 3,000 pages.</span></p><blockquote>“My dot looked through about 300 website sitemaps, helped me figure out which sites to include in a new offer for local businesses, and pulled pricing from past agreements.”</blockquote><p>—Marina Petrova, CEO and cofounder, Intentful</p><p><span>Next, Aria helped Marina research pricing. Through </span><a href=\"https://chatgpt.com/business/\"><span>ChatGPT</span>⁠<span>(opens in a new window)</span></a><span> plugins, Aria reviewed Intentful’s sales data, including past engagements and discussions in HubSpot. It surfaced pricing from earlier agreements and context from Intentful’s plans for the following year.</span></p><p><span>Using that data, Marina and Aria then built a pricing model: page counts determined the pricing tier, and previous customer agreements also informed the price. “We worked through a custom pricing model together, and then Aria turned it into a one-page proposal I reviewed and edited,” said Marina.</span><i></i></p><p><span>When drafting proposals, Aria knows to use Intentful’s templates from Google Drive. Marina can also point Aria to an earlier proposal as a reference, so the draft follows Intentful’s style from the start. “I need to say what needs to be in a proposal, but I don’t need to spend an hour figuring out its layout. My dot handles that,” Marina says.</span></p><p><span>Aria can also spot things Marina hadn’t thought to check. When Marina asked Aria to reuse pricing from an earlier proposal, it noticed that the original renewal date didn’t match the timing she remembered. Aria flagged the discrepancy and left the date out of the new draft.</span></p><h2><span>Staying ahead of messages, tasks, and team updates</span></h2><p><span>Marina uses the Gmail and Slack plugins in ChatGPT to catch up on conversations, find open tasks, and see where the team needs her. Aria checks for messages that need Marina’s attention. While Marina was offline, Aria spotted a reply she had been waiting for and let her know it included an invitation for a call that morning.</span></p><p><span>Marina also uses Aria to talk through ideas, find conversations, check an account’s history in the CRM, or open and assign tasks in Asana. She often briefs Aria by phone while she travels.</span></p><blockquote>“On a long drive, I call my dot and talk through what needs to get done. We chat through updates for client proposals, and my dot already knows the structure, the formatting, and what needs to be done.”</blockquote><p>—Marina Petrova, CEO and cofounder, Intentful</p><p><span>Marina loves that her dot works in the tools she already uses. When Aria writes a draft, Marina can leave comments in Google Docs exactly where she wants changes. On longer documents, she asks Aria to use suggesting mode so she can see what changed.</span></p><p><span>Aria also keeps up with changes in shared work without being asked. For a conference presentation, Marina created the deck and a colleague added two slides. “Aria noticed the new slides, updated the speaker notes without being asked, and let me know,” Marina says.</span></p><p><span>Marina chooses which information Aria can access and always reviews outgoing email. She can keep work moving without handing over the final call.</span></p><h2><span>Using dots to teach others about AI</span></h2><p><span>When Marina prepared an AI 101 session on agents, she used Aria to help build the lesson. The process was itself an example of what she wanted attendees to learn: delegate a real task, give the agent enough context, challenge the result, and stay in control of what goes out.</span></p><p><span>Aria’s support continued even after the class. After a flight, Marina saw a participant’s request for access to a training file. When she checked with Aria, it had already shared the file. And after a session for 50 marketers, Aria noticed that a software glitch was preventing participants from opening the recording. It flagged the access issue and offered to fix it before the link was shared.</span></p><blockquote>“With my dot, I can focus on strategic things. I can focus on ideas and growth.”</blockquote><p>—Marina Petrova, CEO and cofounder, Intentful</p><h2>Get OpenAI for Business updates</h2><p>Product updates, practical guides, upcoming events, and more.</p>"
+  },
+  {
+    "id": "aihot-20261124-openai-news-a330d448",
+    "title": "iFood 如何在 15,000 个代码仓库中规模化应用编码智能体",
+    "originalTitle": "How iFood scales coding agents across 15,000 repositories",
+    "summary": "OpenAI 发布客户案例，介绍 iFood 如何在 15,000 个代码仓库中规模化使用编码智能体。案例聚焦编码智能体在大型工程组织多仓库场景下的落地实践。",
+    "url": "https://openai.com/business/customer-stories/ifood",
+    "source": "OpenAI News",
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "score": 70,
+    "tier": "T1",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "AI编程",
+      "企业落地",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "OpenAI",
+      "iFood",
+      "编码智能体",
+      "工程实践"
+    ],
+    "context": "OpenAI 官方客户故事，为大型团队在多仓库环境中部署编码智能体提供一手参考。",
+    "contentHtml": "<p><span>The Remote Agents Platform turned engineering tasks into API calls: teams delegate the work, execution takes place in a remote sandbox, and the result comes back as a merge request. In the internal security platform, the number of vulnerabilities fixed more than doubled.</span></p><h2><span>The challenge isn’t the task—it’s the scale</span></h2><p><span>iFood maintains more than 15,000 code repositories. Each periodically needs specific tasks performed: validating code to ensure it meets internal standards, fixing vulnerable dependencies, or running an analysis.</span></p><p><span>None of these tasks is difficult on its own. The challenge comes when those tasks multiply.</span></p><p><span>“Solving this for one repository is easy. The challenge is solving it at scale,” says Victor Coelho, Senior Software Engineer at iFood. “The Remote Agents Platform is designed to make it possible to solve this at scale across all 15,000 repositories.”</span></p><p><span>Before the platform, each team tackled the problem in its own way—and they all ran into the same obstacle.</span></p><p><span>“Before, we had fragmented solutions. Imagine several teams at iFood trying to solve different problems, but without this layer, this agentic runtime, available to them. In the end, those solutions always ran into the same problem.”</span></p><p><span>What was missing wasn’t intelligence or a use case. It was execution infrastructure. A dedicated </span><i><span>runtime</span></i><span>.</span></p><blockquote>“Teams can focus on solving their business problems and delegate execution to our platform.”</blockquote><p>—Victor Coelho, Senior Software Engineer, iFood</p><h2><span>A coding agent in the cloud, accessible through an API</span></h2><p><span>The team describes the Remote Agents Platform as an API that launches a remote agentic coding task. The cycle has three steps: the user submits a prompt and environment requirements through a REST call; the platform processes the task on a dedicated remote runner inside an isolated sandbox; and the result is retrieved later.</span></p><p><span>“The platform’s entry point, its interface, is a simple REST API. Users can use this API to create the runs they need. Internally, we handle and manage the entire lifecycle and delegate execution to isolated sandboxes,” he explains. Task progress can be monitored in real time.</span></p><p><span>The runner’s internal design alternates between two different types of steps—and that combination makes the overall workflow predictable.</span></p><p><span>Deterministic steps bookend the workflow: cloning the repository, importing the </span><i><span>skills</span></i><span> the agent can use, and setting up the working branch at the start; publishing the merge request and making the generated artifacts available at the end. In between is the agentic execution itself, running GPT‑5.6 Luna inside the sandbox.</span></p><p><span>“It’s a combination of those two things: deterministic steps and agentic execution within the workflow.”</span></p><p><span>The sandbox runs Ubuntu and includes the toolchains iFood’s ecosystem requires—Python, Java, Kotlin, C#, TypeScript, Rust, JavaScript, and Go—along with general-purpose tools. Beyond the sandbox, the agent can access Nexus, GitLab, Docker, Snyk, Kubernetes, and AWS.</span></p><h2><span>Why GPT‑5.6 Luna</span></h2><p><span>The model choice came down to three factors considered together, rather than just one.</span></p><p><span>“We chose GPT‑5.6 Luna because, among models at the same checkpoint, the benchmarks showed it offered a great balance of intelligence, efficiency, and execution speed—how quickly it could complete tasks. Those three qualities together led us to choose GPT‑5.6 Luna.”</span></p><p><span>That balance matters more for a platform built to scale than it would for a one-off use case. With tens of thousands of tokens being consumed, the average cost of four U.S. cents per run stops being a minor detail and becomes an architectural consideration.</span></p><blockquote>“Given our plans to scale the platform across many use cases at iFood, the balance of efficiency and intelligence that OpenAI’s model provides ensures we can scale sustainably.”</blockquote><p>—Victor Coelho, Senior Software Engineer, iFood</p><h2><span>How to tell whether the agent completed the task</span></h2><p><span>Delegating execution at scale creates a new challenge: automatically determining whether the agent did what it was supposed to do.</span></p><p><span>iFood’s answer comes in the step after the session. Once execution is complete, the result is processed using OpenAI’s Structured Outputs, which requires the output to conform to a predefined contract.</span></p><blockquote>“We process the result using Structured Outputs, which ensures the response follows a predefined contract. From the agent’s session, we can identify the outputs within the response structure we expect. This helps reduce uncertainty and ensures we can always get a response from the agent’s session, whether positive or negative.”</blockquote><p>—Victor Coelho, Senior Software Engineer, iFood</p><h2><span>The first major user: security</span></h2><p><span>The platform already powers an internal iFood security product that scans the 15,000 repositories for vulnerable dependencies and attempts to fix them.</span></p><p><span>The migration had a direct impact: “With our platform, the accuracy of those changes, those fixes, more than doubled,” says Coelho.</span></p><p><span>This use case illustrates the idea behind the platform: the security team didn’t need to build its own agentic runtime or become experts in agent orchestration. It needed to call an API.</span></p><h2><span>Asynchronous execution gives developers their time back</span></h2><p><span>The team emphasizes what asynchronous execution frees developers to do, rather than replacement.</span></p><p><span>Because the task is delegated and runs without supervision, the developer doesn’t have to stay focused on monitoring it.</span></p><p><span>“While they’re in a meeting, they can launch a code fix, a performance analysis, or another task that’s a little more routine—something they can delegate without having to monitor it at that moment.”</span></p><p><span>Routine work no longer competes for the team’s attention. That leaves time for problems that require judgment.</span></p><blockquote>“You can unlock those productivity gains without necessarily having to monitor the work as it happens.”</blockquote><p>—Victor Coelho, Senior Software Engineer, iFood</p><h2><span>Modeled on the APIs that inspired it</span></h2><p><span>The Remote Agents Platform was designed as an internal layer with similarities to the way OpenAI makes this type of task available to external customers.</span></p><p><span>“The Remote Agents Platform drew a lot of inspiration from OpenAI’s APIs, both the Batch API and the Agents API, which is an even more recent OpenAI product. We built a platform that resembles those products, but is internal to iFood.”</span></p><p><span>The inspiration went beyond the concept. It extends to the design of the interfaces, the organization of resources, and the approach to asynchronous execution with results retrieved later.</span></p><blockquote>“These products directly inspired how we built our solution.”</blockquote><p>—Victor Coelho, Senior Software Engineer, iFood</p><h2><span>Results at a glance</span></h2><ul><li><p><span>The platform has completed more than 25,000 tasks, consuming more than 27 billion tokens, at an average cost of US$0.04 per run.</span></p></li><li><p><span>After migrating to the Remote Agents Platform, the internal security platform more than doubled both the accuracy of its fixes and the number of vulnerabilities resolved.</span></p></li><li><p><span>Coverage extends across iFood’s more than 15,000 code repositories.</span></p></li><li><p><span>All runs use GPT‑5.6 Luna, chosen for its balance of intelligence, efficiency, and speed.</span></p></li><li><p><span>Structured Outputs ensures that each session returns a result that follows a predefined contract, whether positive or negative.</span></p></li><li><p><span>Product teams have moved from building fragmented solutions to delegating agentic execution through a REST API.</span></p></li></ul><h2><span>Lessons for leaders</span></h2><ul><li><p><b><span>The bottleneck is often the runtime, not the use case.</span></b><span> Several teams already knew what they wanted to automate; they lacked an environment in which to run it.</span></p></li><li><p><b><span>Combine deterministic steps with agentic execution.</span></b><span> Cloning, publishing, and making artifacts available don’t require a model; the complex task in between does.</span></p></li><li><p><b><span>Treat cost per run as an architectural decision.</span></b><span> At scale, the cost per task determines what is feasible to automate.</span></p></li><li><p><b><span>Require outputs to follow a contract.</span></b><span> Without a structured response, there’s no way to know at scale whether the agent achieved its objective.</span></p></li><li><p><b><span>Asynchronous execution is the real productivity gain.</span></b><span> The value lies in not having to monitor the work, rather than completing it faster while watching over it.</span></p></li></ul><h2><span>Tips</span></h2><ul><li><p><span>Expose agentic capabilities through an internal API so other teams can use them without rebuilding the infrastructure.</span></p></li><li><p><span>Isolate each run in its own sandbox, with your ecosystem’s toolchains already installed.</span></p></li><li><p><span>Choose a model by considering intelligence, cost, and speed together, rather than a single benchmark.</span></p></li><li><p><span>Use structured outputs to classify success and failure automatically.</span></p></li><li><p><span>Start with an internal user with a clear pain point and high volume—at iFood, that was the security platform.</span></p></li></ul><h2><span>Next steps</span></h2><p><span>The team plans to bring the platform to many more use cases across iFood, expanding the range of internal products that delegate agentic execution to it—with cost per task determining whether that expansion can be sustained.</span></p><h2>Get OpenAI for Business updates</h2><p>Product updates, practical guides, upcoming events, and more.</p>"
+  },
+  {
+    "id": "aihot-20261124-openai-news-54517da7",
+    "title": "Clay 借助 Codex 与 ChatGPT 助力销售团队赢单",
+    "originalTitle": "Clay helps sales teams win with Codex and ChatGPT",
+    "summary": "Clay 通过集成 ChatGPT 与 Codex，帮助销售团队用户调研交易并把数据转化为 go-to-market 打法，推理部分由 GPT-6 模型承担。这是 OpenAI 官方发布的客户案例，展示两类产品在销售场景中的实际落地。",
+    "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+    "source": "OpenAI News",
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "score": 64,
+    "tier": "T1",
+    "selected": true,
+    "industry": "AI",
+    "topics": [
+      "企业应用",
+      "客户案例",
+      "模型发布",
+      "Agent 智能体"
+    ],
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "OpenAI",
+      "Clay",
+      "Codex",
+      "客户案例"
+    ],
+    "context": "OpenAI 官方客户故事，呈现 GPT-6 与 Codex 在企业销售工作流中的真实用法。",
+    "contentHtml": "<p><span>Even when sales teams have plenty of data about a prospect, they can still struggle to understand what matters most and develop a winning pitch. </span><a href=\"https://www.clay.com/\"><u><span>Clay</span></u>⁠<span>(opens in a new window)</span></a><span> is a self-learning revenue engine designed to help. Using GPT‑6 Astra, GPT‑6 Sol, and other models, Clay enables users to build lists of companies and people, enrich those records using agents, and use that information in go-to-market plays.</span></p><p><span>Clay also brings these capabilities to where customers are already working with plugins for Codex and ChatGPT, making it easier to create and run go-to-market workflows and research accounts and deals.</span></p><blockquote><p>“Clay in ChatGPT gives sales reps a way to understand more about the customers they’re trying to sell to. It brings all of that rich context to the places they’re already working.”</p></blockquote><p>—Jeff Barg, Head of AI, Clay</p><h2><span>Giving sales reps more context to act on</span></h2><p><span>Clay’s Codex integration lets builders create and run go-to-market plays in Codex, while giving sales reps access to data they can use to research an account or understand a deal they’re trying to close.</span></p><p><span>Jeff has seen reps combine information from their own systems and public datasets to determine how to best communicate their product’s value to a customer. “Customers love using Codex for a lot of different tasks in sales,” he says. “We’ve seen the best sales reps be the most empowered by this.”</span></p><p><span>Clay’s ChatGPT plugin brings the same customer data into another tool reps already use, helping them learn more about prospects without leaving ChatGPT. Jeff says, “It’s been a big success.”</span></p><h2><span>Matching intelligence and cost to the task</span></h2><p><span>OpenAI models power Claygent’s research, qualification, enrichment, and signal detection, as well as the agent that helps users build workflows and coordinate other Clay agents.</span></p><p><span>Clay uses GPT‑6 Sol as its primary model, with GPT‑6 Astra for harder tasks and GPT‑6 Luna for cost-sensitive work. That range supports background research and copywriting as well as agents that users work with directly.</span></p><blockquote>“GPT-6 Sol is a really great model for go-to-market plays. It has really good intuition and can build long-horizon, outcome-based go-to-market tasks.”</blockquote><p>—Jeff Barg, Head of AI, Clay</p><p><span>The Responses API lets Clay use different levels of intelligence and cost through the same interface. “Having the same Responses API across the different price points is something that’s super appealing to us with OpenAI models,” said Jeff.</span></p><h2><span>Building end-to-end plays that self-improve over time</span></h2><p><span>GPT‑6 Astra also helps Jeff build and test software. He used to spend much of his time manually checking features he had built; now he can ask GPT‑6 Astra to handle more of that work.</span></p><p><span>He explains, “GPT‑6 Astra really changed how I build software because it fully closed the loop on the engineering process. Now I can have Astra write code, add tests, and then actually run the tests and test the feature and record that and upload that in the PR. It simplifies my life a lot.”</span></p><p><span>For Clay’s customers, Jeff sees GPT‑Live‑1 as a way to use Clay and Codex by voice and help prospects learn about a product. Clay is working on inbound sales development features that would let an agent show a product or service to a prospect. He also sees the Decisions API as another way to integrate models into Clay and open up new use cases.</span></p><p><span>Clay’s ambition is to carry go-to-market workflows from start to finish, with agents that improve as they learn from the results. For Jeff, the goal is to empower builders “to bring the same shift that happened in software engineering to go-to-market.”</span></p><h2>Get OpenAI for Business updates</h2><p>Product updates, practical guides, upcoming events, and more.</p>"
   },
   {
     "id": "aihot-20261124-mof-news-63f782b3",
@@ -1741,6 +2058,36 @@
       "外围市场"
     ],
     "context": "欧洲主要股指全线走高，外围市场风险偏好回暖，对关注全球市场联动与A股外围环境的读者具有参考价值。"
+  },
+  {
+    "id": "aihot-20261123-hkma-press-f371624f",
+    "title": "香港金管局公布外汇基金票据投标结果",
+    "originalTitle": "外汇基金票据投标结果",
+    "summary": "香港金管局发布最新一期外汇基金票据投标结果公告，披露本期票据的投标情况。该公告属于金管局定期发布的央行例行操作信息，未涉及新的政策调整。",
+    "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261124-4/",
+    "source": "香港金管局新闻稿 (HKMA)",
+    "publishedAt": "2026-11-23T16:00:00.000Z",
+    "score": 52,
+    "tier": "T1",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "宏观经济",
+      "港股",
+      "政府动态"
+    ],
+    "region": [
+      "金融与政策",
+      "央行"
+    ],
+    "tags": [
+      "央行",
+      "政策",
+      "香港金管局",
+      "外汇基金票据"
+    ],
+    "context": "外汇基金票据是香港金管局管理货币基础与银行体系流动性的常规工具，投标结果按期公布，属常规官方更新。"
   },
   {
     "id": "aihot-20261123-hkma-press-a8c327cc",
@@ -4464,352 +4811,5 @@
       "国产供应链"
     ],
     "context": "国产AI芯片厂商披露订单与供应链国产化进展，呼应算力自主可控主线。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-50b49497",
-    "title": "法国商业活动萎缩幅度超预期，受明年选举与预算顾虑拖累",
-    "originalTitle": "法国商业活动萎缩幅度超预期 受对明年选举和预算的顾虑影响",
-    "summary": "法国11月商业活动萎缩幅度超出预期，标普全球综合PMI由10月的46.6降至46.2，远低于50荣枯线。公共财政状况及明年总统选举引发的不安是主要拖累因素。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmty2212337.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T08:58:24.000Z",
-    "score": 63,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "宏观经济",
-      "海外市场",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "法国",
-      "PMI",
-      "宏观经济",
-      "欧元区"
-    ],
-    "context": "法国经济在财政与政治不确定性双重压力下持续走弱，该数据是观察欧元区经济前景的重要信号。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-b1eddccf",
-    "title": "交大思诺董事长提议回购2000万元至4000万元公司股份",
-    "originalTitle": "交大思诺：董事长提议回购2000万元-4000万元公司股份",
-    "summary": "交大思诺11月23日公告，董事长李伟提议以自有资金或自筹资金回购公司部分A股股份，回购资金总额不低于2000万元且不超过4000万元。回购将通过深交所交易系统以集中竞价方式进行，拟用于股权激励或员工持股计划。",
-    "url": "https://finance.eastmoney.com/a/202611233937331925.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T08:57:52.000Z",
-    "score": 60,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司公告",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "交大思诺",
-      "股份回购",
-      "股权激励"
-    ],
-    "context": "属常规公司公告，回购用途为股权激励，后续需关注董事会是否审议通过该提议方案。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-eefce5bd",
-    "title": "AI数据中心热潮为私人基础设施领域注入数百亿资金",
-    "summary": "普睿金（Preqin）数据显示，2026年第三季度基础设施募资反弹，21只基金合计募得620亿美元。AI数据中心热潮正为私人基础设施领域注入数百亿资金，步入2027年，AI数据中心与电力需求仍是资金配置的重要方向。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztmua8220091.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T08:57:44.000Z",
-    "score": 75,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "AI基础设施",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "基础设施募资",
-      "AI数据中心",
-      "私人资本",
-      "Preqin"
-    ],
-    "context": "AI算力建设带动基础设施募资回暖，私人资本流向折射出市场对数据中心与电力资产的长期配置预期。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-6304228c",
-    "title": "冀衡医药控股股东拟增持1000万至2000万元股份",
-    "originalTitle": "冀衡医药：控股股东拟增持1000万至2000万元股份",
-    "summary": "冀衡医药（002742.SZ）公告，控股股东冀衡集团计划自公告披露之日起6个月内，通过二级市场集中竞价方式增持公司股份，金额不低于1000万元且不超过2000万元。冀衡集团称此举基于对公司长期投资价值的认可及未来发展前景的信心。",
-    "url": "https://finance.eastmoney.com/a/202611233937330747.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T08:57:25.000Z",
-    "score": 55,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司动态",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "冀衡医药",
-      "增持",
-      "公司公告"
-    ],
-    "context": "控股股东增持是A股常见的信心表态信号，可关注其后续增持进展与执行情况。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-af74bc6a",
-    "title": "英伟达参投的AI企业Firmus拟发15亿美元债券 采购英伟达芯片、建设印尼算力中心",
-    "originalTitle": "英伟达投资的AI企业Firmus拟发15亿美元债 采购英伟达芯片、建设印尼算力中心",
-    "summary": "英伟达参投的澳大利亚AI企业Firmus Grid Ltd.拟发行约15亿美元债券，纳入一揽子债务融资安排，资金用于采购英伟达芯片及建设印尼算力中心。知情人士透露，该公司上个月已搁置IPO计划。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztfne8350462.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T08:57:23.000Z",
-    "score": 66,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "AI基础设施",
-      "融资动态",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "Firmus Grid",
-      "英伟达",
-      "债券融资",
-      "AI算力"
-    ],
-    "context": "获英伟达支持的算力企业弃IPO转走债券融资，折射AI算力扩张潮下基础设施融资路径的变化。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-acb2bfa4",
-    "title": "农夫山泉在广西成立饮用水公司 经营范围含休闲观光活动",
-    "originalTitle": "农夫山泉在广西成立饮用水公司 含休闲观光活动业务",
-    "summary": "农夫山泉近日在广西成立全资子公司农夫山泉大明山（广西）饮用水有限公司，注册资本5000万元，由农夫山泉全资持股。公司法定代表人为饶明红，经营范围包含饮料生产、食品生产、食用农产品初加工、国内货物运输代理及休闲观光活动等。",
-    "url": "https://finance.eastmoney.com/a/202611233937332080.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T08:56:54.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司动态",
-      "消费",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "农夫山泉",
-      "饮用水",
-      "全资子公司",
-      "业务拓展"
-    ],
-    "context": "新公司除饮品主业外还纳入休闲观光活动等经营范围，可关注农夫山泉业务多元拓展的动向。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-b9e79d3b",
-    "title": "嘉盛集团一周展望：AI与黄金走势",
-    "originalTitle": "一周展望：AI与黄金走势",
-    "summary": "嘉盛集团资深分析师Jerry Chen发布一周展望，认为英伟达强劲财报和Anthropic上市并未抵消投资者对AI前景的担忧。全球主要股市上周纷纷遭遇重挫，其中纳斯达克指数单周暴跌10%。",
-    "url": "https://finance.sina.com.cn/money/nmetal/hjzx/2026-11-23/doc-iniztfne8349003.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T08:55:29.000Z",
-    "score": 60,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "宏观策略",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "市场展望",
-      "AI股",
-      "黄金",
-      "纳斯达克"
-    ],
-    "context": "AI交易情绪已成为全球市场核心变量，本周AI股与黄金的联动走势对资产配置具有直接参考意义。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-adda5acd",
-    "title": "高盛：股市复苏取决于美联储信号与AI盈利表现",
-    "summary": "高盛策略师表示，美股需满足三大催化剂之一才有望探明底部：市场对AI盈利信心提升、美联储释放鸽派政策信号，或持仓水平大幅回落。这一框架指出了当前判断美股能否企稳的三个关键观察变量。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztfne8347618.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T08:53:33.000Z",
-    "score": 72,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "宏观经济",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "高盛",
-      "美股",
-      "美联储",
-      "AI盈利"
-    ],
-    "context": "在美股等待底部确认之际，头部投行给出的催化剂清单为跟踪企稳信号提供了清晰参照。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-5342a4be",
-    "title": "乘联分会崔东树：2026年动力电池市场呈“双雄份额松动、二线梯队加速崛起”态势",
-    "originalTitle": "乘联分会崔东树：2026年动力电池市场呈现“双雄份额松动 二线梯队加速崛起”态势",
-    "summary": "乘联分会秘书长崔东树11月23日发布《新能源车锂电池市场分析-2026年10月》，其分析认为2026年动力电池市场呈现“双雄份额松动、二线梯队加速崛起”的态势。报告据此判断头部两家电池企业市场份额出现松动，二线电池厂商正加快提升市占。",
-    "url": "https://finance.eastmoney.com/a/202611233937321188.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T08:53:21.000Z",
-    "score": 62,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "新能源汽车",
-      "港股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "动力电池",
-      "乘联分会",
-      "新能源汽车"
-    ],
-    "context": "该判断出自乘联分会权威分析，为A股锂电板块竞争格局变化提供最新观察视角。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-a2a3a61d",
-    "title": "加皇银行下调标普500目标位，仍看好16.5%上行空间",
-    "originalTitle": "加皇银行：下调标普500目标位 仍看好16.5%上行空间",
-    "summary": "加拿大皇家银行策略师下调标普500目标位，但仍认为未来一年该指数有16.5%的上涨空间。他们表示股市已充分计入诸多利空，强劲的经济增长与企业盈利能够对冲估值进一步压缩以及美联储加息带来的压力。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-23/doc-iniztfmy5562509.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T08:53:13.000Z",
-    "score": 63,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "标普500",
-      "加皇银行",
-      "美股",
-      "机构观点"
-    ],
-    "context": "投行在下调目标位的同时维持看涨立场，其测算逻辑为评估美股后市风险收益比提供参考。"
-  },
-  {
-    "id": "aihot-20261123-ndrc-policy-0dc60adc",
-    "title": "国家发改委发布“一老一小”服务体系建设实施方案图解",
-    "originalTitle": "一图读懂 | “一老一小”服务体系建设实施方案",
-    "summary": "国家发改委发布“一老一小”服务体系建设实施方案的一图读懂图解，直观呈现方案主要内容。方案聚焦老年人和儿童服务体系建设，具体政策细节以官方图解为准。",
-    "url": "https://www.ndrc.gov.cn/xxgk/jd/zctj/202611/t20261123_1409033.html",
-    "source": "国家发改委 · 政策通知",
-    "publishedAt": "2026-11-23T08:45:56.383Z",
-    "score": 68,
-    "tier": "T1",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "政策",
-      "政府动态",
-      "市场政策",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "部委政策"
-    ],
-    "tags": [
-      "部委政策",
-      "政府动态",
-      "国家发改委",
-      "一老一小",
-      "养老托育",
-      "政策图解"
-    ],
-    "context": "“一老一小”服务关系基本民生保障，发改委实施方案图解便于快速把握养老托育政策部署方向。"
   }
 ]
