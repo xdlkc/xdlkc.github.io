@@ -1,5 +1,323 @@
 [
   {
+    "id": "aihot-20261127-eastmoney-724-94e53835",
+    "title": "尼日利亚尼日尔州村庄袭击事件死亡人数升至74人",
+    "originalTitle": "尼日利亚中部一村庄遭袭 死亡人数升至74人",
+    "summary": "尼日利亚尼日尔州政府26日通报，该州21日发生的村庄袭击事件死亡人数已升至74人，州长巴戈已下令展开调查。州政府22日曾通报至少5人死亡、5人受伤；当地消息人士称此次袭击可能是族群冲突后的报复。",
+    "url": "https://finance.eastmoney.com/a/202611273941004755.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-27T01:45:09.000Z",
+    "score": 48,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "国际动态",
+      "外围快讯",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "尼日利亚",
+      "国际快讯",
+      "安全事件"
+    ],
+    "context": "尼日利亚中部安全局势恶化的信号，属外围国际突发动态，对金融市场直接影响有限。"
+  },
+  {
+    "id": "aihot-20261127-eastmoney-724-5344f376",
+    "title": "墨西哥总统谴责美国缉毒局干涉墨内政",
+    "summary": "墨西哥总统辛鲍姆当地时间11月26日在新闻发布会上谴责美国缉毒局开设面向墨西哥民众的匿名举报渠道，称此举是对墨西哥内政的干涉。她强调墨西哥拥有负责打击有组织犯罪的执法机构，并敦促美国缉毒局将精力放在打击美国境内贩毒活动、调查毒品分销网络及非法资金流向等问题上。",
+    "url": "https://finance.eastmoney.com/a/202611273941004674.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-27T01:32:25.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "国际时政",
+      "宏观动态",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "墨西哥",
+      "美国缉毒局",
+      "外交争端",
+      "禁毒"
+    ],
+    "context": "美墨围绕禁毒执法主权再起摩擦，两国安全合作氛围的变化值得关注。"
+  },
+  {
+    "id": "aihot-20261127-eastmoney-724-222255e5",
+    "title": "欧洲股市反弹 投资者谨慎重返AI交易",
+    "summary": "欧洲股市周四反弹，结束两连跌，投资者谨慎重返AI交易，推动科技股上涨。瑞银编制的一篮子半导体股票上涨3.9%，一篮子AI受益股上涨3.2%，Soitec、意法半导体和阿斯麦等芯片制造商大幅上涨。此次反弹显示经历大幅抛售后投资者重返股市的意愿正在增强。",
+    "url": "https://finance.eastmoney.com/a/202611273941004268.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-27T01:20:49.000Z",
+    "score": 66,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "AI",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "欧洲股市",
+      "AI交易",
+      "半导体",
+      "市场反弹"
+    ],
+    "context": "经历大幅抛售后欧洲股市率先企稳，AI与半导体板块领涨，为观察全球AI交易情绪修复提供信号。"
+  },
+  {
+    "id": "aihot-20261127-eastmoney-724-fa35d6e9",
+    "title": "ICE罗布斯塔咖啡期货涨超3%，报每吨2856美元",
+    "originalTitle": "ICE罗布斯塔咖啡期货涨超3% 至每吨2856美元",
+    "summary": "ICE罗布斯塔咖啡期货上涨超3%，价格升至每吨2856美元。",
+    "url": "https://finance.eastmoney.com/a/202611273941003916.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-27T01:18:20.000Z",
+    "score": 48,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "大宗商品",
+      "国际市场",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "咖啡期货",
+      "大宗商品",
+      "ICE",
+      "商品行情"
+    ],
+    "context": "国际软商品盘面单日波动快讯，可作为大宗商品与农产品行情的跟踪参考。"
+  },
+  {
+    "id": "aihot-20261127-eastmoney-724-ee57fcb1",
+    "title": "夜盘期货收盘：沪锌收涨1.59% 沪铅收涨1.51%",
+    "summary": "国内商品期货夜盘收盘，基本金属多数收涨：沪镍涨2.32%领涨，沪锌收涨1.59%，沪铅收涨1.51%。沪铜、沪铝、沪锡分别收涨0.56%、0.43%、0.52%，不锈钢收涨0.96%；国际铜收跌0.13%，氧化铝收跌0.12%。",
+    "url": "https://finance.eastmoney.com/a/202611273941003178.html",
+    "source": "东方财富 · 7x24快讯",
+    "publishedAt": "2026-11-27T01:05:09.000Z",
+    "score": 48,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "商品期货",
+      "市场行情",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内快讯"
+    ],
+    "tags": [
+      "国内快讯",
+      "A股",
+      "期货夜盘",
+      "有色金属",
+      "商品行情"
+    ],
+    "context": "属每日例行夜盘收盘行情数据，可跟踪有色金属隔夜价格动向，无增量政策或事件信息。"
+  },
+  {
+    "id": "aihot-20261126-bloomberg-markets-4ac88562",
+    "title": "银行为KKR收购Logoplaste安排5.5亿欧元债务融资",
+    "originalTitle": "KKR Banks Line Up €550 Million of Debt to Back Logoplaste Buyout",
+    "author": "Leanna Reeves, Henrique Almeida and Kat Hidalgo",
+    "summary": "银行已筹措5.5亿欧元（约6.035亿美元）贷款，为KKR收购包装公司Logoplaste的交易提供支持。该融资安排消息来自知情人士。",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-26/kkr-banks-line-up-550-million-of-debt-to-back-logoplaste-buyout",
+    "source": "Bloomberg Markets",
+    "publishedAt": "2026-11-26T17:47:30.000Z",
+    "score": 63,
+    "tier": "T2",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "金融市场",
+      "私募股权",
+      "美股",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "媒体"
+    ],
+    "tags": [
+      "媒体",
+      "市场",
+      "KKR",
+      "Logoplaste",
+      "杠杆收购",
+      "债务融资"
+    ],
+    "context": "全球私募股权巨头KKR的杠杆收购获得债务融资支持，是观察杠杆融资市场活跃度的一个窗口。",
+    "contentHtml": "<p>Banks have lined up €550 million ($603.5 million) of loans to back KKR & Co.’s acquisition of packaging company Logoplaste, according to people familiar with the situation.</p>"
+  },
+  {
+    "id": "aihot-20261126-sina-finance-ba3e3211",
+    "title": "英国央行行长：未公开的AI模型引发加密安全担忧",
+    "summary": "英国央行行长对近期AI在数学领域取得的突破发出警示，一个未公开的AI模型引发加密安全担忧。外界担忧，用于保障整个金融体系数据安全的加密技术正面临威胁。",
+    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-27/doc-inkaayay5828442.shtml",
+    "source": "新浪财经 · 实时滚动",
+    "publishedAt": "2026-11-26T17:37:42.000Z",
+    "score": 76,
+    "tier": "T2",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "金融监管",
+      "人工智能",
+      "A股",
+      "港股"
+    ],
+    "region": [
+      "金融与政策",
+      "国内财经"
+    ],
+    "tags": [
+      "国内财经",
+      "市场",
+      "英国央行",
+      "AI安全",
+      "加密技术",
+      "金融体系"
+    ],
+    "context": "央行首脑就AI冲击金融底层加密技术公开示警，事关金融体系数据安全根基，值得关注。",
+    "contentHtml": "<p>　　英国央行行长对近期人工智能在数学领域取得的突破发出警示。外界担忧，这套用于保障整个金融体系数据安全的加密技术正面临威胁。</p><p><img src=\"https://n.sinaimg.cn/finance/transform/55/w550h305/20261127/5f28-985b6cdabca28f41f00bf2b94605e239.png\" alt=\"\"><span></span></p><p>　　安德鲁・贝利表示，他了解到研发新一代AI模型的企业“担心模型的能力已经变得愈发强大”，这也让各方对于“是否向全社会公开发布这类模型”持高度谨慎态度。</p><p>　　当被问及是否知晓已有AI模型能够破解加密算法时，贝利回应：“我们和相关企业保持高频沟通。用他们的话说，技术发展正处在指数增长区间。”</p><p>　　近几日，计算机科学家在社交媒体上纷纷猜测存在这类技术进展，但尚无任何一家AI企业公开发布能够佐证该说法的材料。</p><p>　　英国央行周四发布金融稳定报告之际，贝利称：“我十分认同这些企业对发布最新模型保持谨慎的做法。”</p><p>　　AI在数学上的新突破加剧了一种担忧：模型有可能逆向破解网络安全底层运算逻辑，例如大质数相乘这类加密基础算法。</p><p>　　上周，一名来自Anthropic的员工称，他利用该公司的Claude人工智能模型证明了黎曼猜想。这一难题已有167年历史，是数学界最知名的未解难题之一。</p><p>　　周三，计算机科学家斯科特・阿伦森发布一篇广为流传的博客。他在文中写道，自己“几乎可以肯定”，各大AI实验室手握一项或多项和加密相关、足以引发震动的数学成果。</p><p>　　阿伦森表示，他并不清楚这些进展的具体内容，但预判头部AI模型将生成能够“攻破当前在用加密系统”的算法。</p><p>　　Anthropic方面拒绝置评。</p><p>　　AI数学能力的快速提升意味着，企业与各国政府或将不得不加速加密方案升级。原本这套升级计划，是为应对量子计算机远期可能带来的破解风险。</p><p>　　按照此前预估的量子技术发展时间表，全球各大银行原本计划在2030年之后再开展系统升级，防范量子计算机破解加密体系。</p><p>　　贝利对记者说：“如果你和AI企业交流，他们会告诉你，今年春季以来陆续面世的模型，其强大程度超出了他们自己的预期。这在一定程度上让量子计算机风险退居次位，但我们不能忽视量子计算，相关技术仍在持续发展。”</p><p>　　部分密码学专家与数学家认为，目前公开披露的几项最受关注成果本身并不构成即时威胁，但足以说明AI的数学能力正在以惊人速度提升。</p><p>　　曼彻斯特大学密码数学教授丹尼尔・舒表示：“这给高度依赖纯数学理论的密码学领域敲响了警钟。”</p><p>　　他补充道：“未来几年，我们要做好准备，部分加密方法可能在毫无预警的情况下快速失效。这进一步凸显了密码敏捷性的重要性……这也是21世纪密码学面临的核心挑战。”</p><p>　　周四，英国央行首次要求金融机构优先升级加密代码，防范AI或量子计算技术进步导致加密体系被攻破。</p><p>　　英国央行在金融稳定报告中写道：“量子计算的发展以及前沿人工智能的进步，都可能抬高加密技术的风险，而加密技术正是用来保护涉密数据、保障关键业务流程安全的基础。”</p><p>　　报告提出：“机构应当为此轮技术转型做好准备，梳理自身全部IT系统中的加密应用场景，摸清核心业务的依赖关系，并制定有优先级的迁移方案。”</p><p>　　报告同时提到：“具备密码破解能力的量子计算机目前尚未问世，但量子领域持续取得进展，不断挑战人们对这项技术落地时间的原有判断。”</p><p>　　同时担任全球监管机构金融稳定理事会主席的贝利呼吁，各国加强国际合作，在AI模型发布前后开展相关测试。</p><p>　　这位英国央行行长说：“我们需要争取更多国家参与进来。无论各国对多边主义持何种看法，大家大概率都明白我指的是谁。风险是共通的，人工智能没有国界，我们必须携手应对这些问题。”</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：江学思 </p>",
+    "author": "环球市场播报"
+  },
+  {
+    "id": "aihot-20261126-hacker-news-top-f91bb2eb",
+    "title": "YouTube Ad Punisher 开源工具：绕过 YouTube 反广告拦截",
+    "originalTitle": "YouTube Ad Punisher – Bypass anti-adblock",
+    "author": "iantongeorge",
+    "summary": "开源项目 YouTube Ad Punisher 亮相 Hacker News，主打绕过 YouTube 的反广告拦截机制，代码托管在 GitHub。该项目目前社区关注度较低，尚处于早期阶段。",
+    "url": "https://github.com/antonpictures/youtube-punisher",
+    "source": "Hacker News Top",
+    "publishedAt": "2026-11-26T17:36:47.000Z",
+    "score": 52,
+    "tier": "T2",
+    "selected": false,
+    "industry": "工程与开源",
+    "topics": [
+      "开源生态",
+      "工程实践",
+      "研发效能"
+    ],
+    "region": [
+      "工程与开源",
+      "社区"
+    ],
+    "tags": [
+      "社区",
+      "工程",
+      "YouTube",
+      "广告拦截",
+      "开源工具",
+      "GitHub"
+    ],
+    "context": "YouTube 与广告拦截工具的反制之争持续，此类用户侧小工具反映了对抗的最新动向。"
+  },
+  {
+    "id": "aihot-20261126-nvidia-blog-bebaff0d",
+    "title": "GeForce NOW：为游戏而来，为社区而留",
+    "originalTitle": "Come for the Games, Stay for the Community With GeForce NOW",
+    "author": "GeForce NOW Community",
+    "summary": "NVIDIA 在本期 GFN Thursday 栏目中聚焦 GeForce NOW 社区，向成员、创作者和社区管理员致敬，并由 GeForce NOW Ambassadors 分享他们热爱云游戏的原因。文章称玩家在联机大厅中结识朋友、在日常设备上探索新世界，邀请更多人加入社区。",
+    "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-community-war-thunder-reward/",
+    "source": "NVIDIA Blog",
+    "publishedAt": "2026-11-26T14:00:22.000Z",
+    "score": 52,
+    "tier": "T1",
+    "selected": false,
+    "industry": "AI",
+    "topics": [
+      "云游戏",
+      "基础设施",
+      "模型发布"
+    ],
+    "region": [
+      "AI精选",
+      "官方"
+    ],
+    "tags": [
+      "官方",
+      "GeForce NOW",
+      "NVIDIA",
+      "云游戏",
+      "社区"
+    ],
+    "context": "GFN Thursday 是 NVIDIA 云游戏服务的例行社区栏目，本期无产品功能更新，属于官方社区运营动态。",
+    "contentHtml": "<div id=\"bsf_rt_marker\"></div><p><span>Good games bring people together. This GFN Thursday, </span><a target=\"_blank\" href=\"https://www.nvidia.com/en-us/geforce-now/\"><span>GeForce NOW</span></a><span> is celebrating the members, creators and community moderators who turn every session into something worth sharing.</span></p>\n<p><span>From friendships formed in online lobbies to new worlds explored on everyday devices, GeForce NOW Ambassadors share their reasons to love cloud gaming. Those ready to find their own can get 30% off six-month Performance and Ultimate memberships in the Black Friday sale and a special seasonal offer through Amazon Fire TV Sticks.</span></p>\n<p><span>Plus, </span><i><span>War Thunder</span></i><span> gets a new look with NVIDIA DLSS 5 for Ultimate members and a Ready for Battle Pack reward is now available across all membership tiers. Rounding out the week, 12 new games join the </span><a target=\"_blank\" href=\"https://www.nvidia.com/en-us/geforce-now/games/\"><span>GeForce NOW library</span></a><span>.</span></p>\n<h2><b>The Gamers Behind the Cloud</b></h2>\n<p><span>Behind every screenshot, helpful tip and play session is a gamer with a story. GeForce NOW Ambassadors share what keeps them playing.</span></p>\n<p><span>For </span><a target=\"_blank\" href=\"https://discord.gg/2w6qF5BAS\"><span>Discord</span></a><span> moderator Luna, a low-spec laptop was the start of lasting connections: “Without GFN, I might’ve not been able to meet certain close friends … It has extended to me being given the privilege to be a moderator of an ever-growing community that links people together and continues to allow friends or partners to play with each other, regardless of what they own at home.”</span></p>\n<p><span>After years helping moderate the community’s </span><a target=\"_blank\" href=\"https://www.reddit.com/r/GeForceNOW/\"><span>Reddit</span></a><span> and </span><a target=\"_blank\" href=\"https://discord.gg/2w6qF5BAS\"><span>Discord</span></a><span> spaces, Hamza went from an aging laptop to cloud gaming across a TV, phone, tablet and desktop: </span><i><span>“</span></i><span>I’m genuinely thankful not just for the technology that keeps me gaming effortlessly wherever I am, but for the amazing community and friendships I’ve built along the way, and I look forward to what the future holds for cloud gaming.” </span></p>\n<p><span>GeForce NOW kept new releases within reach for moderator </span><a target=\"_blank\" href=\"https://www.reddit.com/user/Adept_Assistance/\"><span>Flacz</span></a><span>, without needing frequent hardware upgrades: “GeForce NOW allowed me to enjoy games and adventures I’ve never imagined to be possible and it continues to be a part of my daily gaming experience till this day.”</span></p>\n<figure id=\"attachment_100155\" aria-describedby=\"caption-attachment-100155\" class=\"wp-caption aligncenter\"><a href=\"https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Cyberpunk_2077.jpeg\"><img fetchpriority=\"high\" decoding=\"async\" class=\"size-full wp-image-100155\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Cyberpunk_2077.jpeg\" alt=\"Cyberpunk on GeForce NOW\" width=\"1366\" height=\"768\" srcset=\"https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Cyberpunk_2077.jpeg 1366w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Cyberpunk_2077-960x540.jpeg 960w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Cyberpunk_2077-1280x720.jpeg 1280w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Cyberpunk_2077-1290x725.jpeg 1290w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Cyberpunk_2077-630x354.jpeg 630w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Cyberpunk_2077-300x169.jpeg 300w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Cyberpunk_2077-400x225.jpeg 400w\" sizes=\"(max-width: 1366px) 100vw, 1366px\" /></a><figcaption id=\"caption-attachment-100155\" class=\"wp-caption-text\">The cloud brings the games. The community brings them to life. “Cyberpunk 2077” photo by Flacz.</figcaption></figure>\n<p><span>For creators such as </span><a target=\"_blank\" href=\"https://www.twitch.tv/warwick\"><span>Warwick</span></a><span>, playing is only part of the picture: “GFN has allowed me to play the games I want, as soon as they come out. The support GFN has given me to create content for them and be partnered with them means the world and encourages me to get better each day.”</span></p>\n<p><span>Freedom to play and create resonates with </span><a target=\"_blank\" href=\"https://www.youtube.com/@CloudandConsole\"><span>Nads</span></a><span>: “Being able to jump into my favorite games in an instant without worrying about downloads, storage limits or constant hardware upgrades feels like magic … Being able to play my game and stream on YouTube at the same time is something I never could have imagined before.” </span></p>\n<p><a target=\"_blank\" href=\"https://x.com/Nigiri21Sushi\"><span>Nigiri21Sushi</span></a><span> also turns to the cloud when games stretch a local PC: “As a gaming content-creator, my current PC sometimes struggles showcasing new-release games that are CPU/GPU-intensive … Hence, huge thank you to GFN for allowing me to produce fluid content via cloud-gaming.”</span></p>\n<p><span>For </span><a target=\"_blank\" href=\"https://youtu.be/sPDEqTaWZQs\"><span>Marchief</span></a><span>, demanding games on Steam Deck are the draw: “I’m thankful that GeForce NOW allows me to play the top AAA games on the Steam Deck … Having the power of an RTX 5080 in a handheld is just absolutely mindblowing.” </span></p>\n<p><a target=\"_blank\" href=\"https://www.youtube.com/@MarkysCloudGaming\"><span>Markys</span></a><span> enjoys the comfort of the couch with his favorite game, </span><i><span>World of Warcraft: Forever</span></i><span>: “No high-end gaming PC needed, just my controller, my TV and the freedom to play wherever I want.”</span></p>\n<p><span>Anytime Anywhere Gaming shared a video that shared why GeForce NOW is  “</span><a target=\"_blank\" href=\"https://youtu.be/uMbFgt4xJXw\"><span>really fantastic in a whole lot of ways.</span></a><span>”</span></p>\n<p><span>Keep the conversation going on the community-run </span><a target=\"_blank\" href=\"https://www.reddit.com/r/GeForceNOW/\"><span>GeForce NOW Reddit</span></a><span> and </span><a target=\"_blank\" href=\"https://discord.gg/ZxRmJ4QDff\"><span>Discord</span></a><span>.</span></p>\n<h2><b>More Play, Less to Pay</b></h2>\n<figure id=\"attachment_100156\" aria-describedby=\"caption-attachment-100156\" class=\"wp-caption aligncenter\"><a href=\"https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday.jpg\"><img decoding=\"async\" class=\"size-large wp-image-100156\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday-1680x945.jpg\" alt=\"GeForce NOW Black Friday\" width=\"1200\" height=\"675\" srcset=\"https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday-1680x945.jpg 1680w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday-960x540.jpg 960w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday-1280x720.jpg 1280w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday-1536x864.jpg 1536w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday-1290x725.jpg 1290w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday-630x354.jpg 630w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday-300x169.jpg 300w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday-400x225.jpg 400w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Black_Friday.jpg 1920w\" sizes=\"(max-width: 1200px) 100vw, 1200px\" /></a><figcaption id=\"caption-attachment-100156\" class=\"wp-caption-text\">A little less spending. A lot more playing.</figcaption></figure>\n<p><span>There’s still time to save 30% on the first six-month term of a </span><a target=\"_blank\" href=\"https://www.nvidia.com/en-us/geforce-now/premium-memberships/\"><span>Performance or Ultimate membership</span></a><span>. The Black Friday sale runs through Monday, Nov. 30, for new memberships and eligible upgrades in select regions, while supplies last.</span></p>\n<p><span>Go</span><a target=\"_blank\" href=\"https://www.nvidia.com/en-us/geforce-now/premium-memberships/\"> <span>Ultimate</span></a><span> for GeForce RTX 5080-class performance across PCs, Macs, Steam Deck and other supported handhelds, mobile devices, compatible TVs and </span><a target=\"_blank\" href=\"https://www.nvidia.com/en-us/geforce-now/system-reqs/\"><span>more</span></a><span>. Experience DLSS 5 in supported games, ray tracing and streaming at up to 5K resolution or up to 360 frames per second, with sessions lasting up to eight hours. GeForce NOW handles downloads, patches and updates for Ready-to-Play games, saving local storage for everyday essentials.</span></p>\n<p><a target=\"_blank\" href=\"https://www.nvidia.com/en-us/geforce-now/premium-memberships/\"><span>Choose a six-month membership</span></a><span> before the sale wraps up and settle in for a season of gaming.</span></p>\n<p><span>For big-screen play, GeForce NOW also supports Amazon Fire TV Stick devices, with a separate offer for 90% off the first month of Performance or Ultimate when purchased directly through Amazon in participating regions. Check out the supported devices and </span><a href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2026/\"><span>offer details</span></a><span>.</span></p>\n<h2><b>Ready for Battle, Rewarded in the Cloud</b></h2>\n<figure id=\"attachment_100157\" aria-describedby=\"caption-attachment-100157\" class=\"wp-caption aligncenter\"><a href=\"https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-war-thunder-reward.jpg\"><img decoding=\"async\" class=\"size-large wp-image-100157\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-war-thunder-reward-1680x840.jpg\" alt=\"War Thunder Reward GeForce NOW\" width=\"1200\" height=\"600\" srcset=\"https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-war-thunder-reward-1680x840.jpg 1680w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-war-thunder-reward-960x480.jpg 960w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-war-thunder-reward-1280x640.jpg 1280w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-war-thunder-reward-1536x768.jpg 1536w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-war-thunder-reward-630x315.jpg 630w, https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-war-thunder-reward.jpg 2048w\" sizes=\"(max-width: 1200px) 100vw, 1200px\" /></a><figcaption id=\"caption-attachment-100157\" class=\"wp-caption-text\">A new look. A battle-ready bonus.</figcaption></figure>\n<p><span>Gaijin Entertainment’s </span><a target=\"_blank\" href=\"https://store.steampowered.com/app/236390/\"><i><span>War Thunder</span></i></a><span> now supports </span><a target=\"_blank\" href=\"https://www.nvidia.com/en-us/geforce/news/hogwarts-legacy-war-thunder-dlss-5-3d-guided-neural-rendering/\"><span>NVIDIA DLSS 5</span></a><span> on GeForce NOW, bringing air, land and naval combat into sharper focus. Its 3D-Guided Neural Rendering technology adds lifelike lighting and materials, from tank armor to the water around a warship.</span></p>\n<p><a target=\"_blank\" href=\"https://www.nvidia.com/en-us/geforce-now/premium-memberships/\"><span>Ultimate members</span></a><span> can experience the visual update with GeForce RTX 5080-class performance in the cloud across supported devices, without an expensive PC upgrade. Keep the focus on the next maneuver and let GeForce NOW handle the power in the cloud.</span></p>\n<p><span>To celebrate, GeForce NOW members across all membership tiers can claim the Ready for Battle Pack, now available.</span></p>\n<p><span>The pack includes an M3A1 Stuart tank and F2A-1 aircraft, each with a unique skin, seven days of Premium account time, 100,000 Silver Lions, a 50% booster for Research Points and Silver Lions, and the “Overclocked” title.</span></p>\n<p><span>Sign in to a GeForce NOW account and head to the </span><a target=\"_blank\" href=\"https://www.nvidia.com/en-us/account/redeem/\"><span>Account Portal</span></a><span> to claim the reward code, then activate it on </span><a target=\"_blank\" href=\"https://store.gaijin.net/activate.php\"><span>Gaijin’s redemption page</span></a><span>. The reward is available through Friday, Dec. 25, at 11:59 p.m. PT, or while supplies last, with a limit of one per customer. Keep the great gaming going with this week’s additions to the GeForce NOW library:</span></p>\n<ul>\n<li><i><span>Sniper Ghost Warrior Contracts 2</span></i><span> (</span><a target=\"_blank\" href=\"https://www.xbox.com/games/store/sniper-ghost-warrior-contracts-2/9nv8bwgh15gn?utm_source=nvidia&utm_campaign=geforce_now\"><span>Xbox</span></a><span>, available on Game Pass Nov. 24)</span></li>\n<li><i><span>Arctic Drive </span></i><span>(New release on </span><a target=\"_blank\" href=\"https://store.steampowered.com/app/4009490?utm_source=nvidia&utm_campaign=geforce_now\"><span>Steam</span></a><span>, Nov. 25)</span></li>\n<li><i><span>Appulse</span></i><span> (New release on </span><a target=\"_blank\" href=\"https://store.steampowered.com/app/3498700?utm_source=nvidia&utm_campaign=geforce_now\"><span>Steam</span></a><span>, Nov. 26)</span></li>\n<li><i><span>GONE Fishing</span></i><span> (</span><a target=\"_blank\" href=\"https://store.steampowered.com/app/3645890?utm_source=nvidia&utm_campaign=geforce_now\"><span>Steam</span></a><span>)</span></li>\n<li><i><span>Incursion Red River</span></i><span> (</span><a target=\"_blank\" href=\"https://store.steampowered.com/app/2116120?utm_source=nvidia&utm_campaign=geforce_now\"><span>Steam</span></a><span>)</span></li>\n<li><i><span>John Carpenter’s Toxic Commando</span></i><span> (</span><a target=\"_blank\" href=\"https://www.xbox.com/games/store/john-carpenters-toxic-commando/9mtgcz84m503?utm_source=nvidia&utm_campaign=geforce_now\"><span>Xbox</span></a><span>, available on Game Pass)</span></li>\n<li><i><span>Quasimorph </span></i><span>(</span><a target=\"_blank\" href=\"https://store.steampowered.com/app/2059170?utm_source=nvidia&utm_campaign=geforce_now\"><span>Steam</span></a><span>)</span></li>\n<li><i><span>Ski-E-O! Ski Resort Tycoon</span></i><span> (</span><a target=\"_blank\" href=\"https://store.steampowered.com/app/4493130?utm_source=nvidia&utm_campaign=geforce_now\"><span>Steam</span></a><span>)</span></li>\n<li><i><span>The Spell Brigade</span></i><span> (</span><a target=\"_blank\" href=\"https://store.steampowered.com/app/2904000?utm_source=nvidia&utm_campaign=geforce_now\"><span>Steam</span></a><span>)</span></li>\n<li><i><span>World of Tanks: Blitz </span></i><span>(</span><a target=\"_blank\" href=\"https://wotblitz.com/\"><span>Wargaming.net</span></a><span>)</span></li>\n<li><i><span>Village in the Shade</span></i><span> (</span><a target=\"_blank\" href=\"https://store.steampowered.com/app/3934250?utm_source=nvidia&utm_campaign=geforce_now\"><span>Steam</span></a><span>)</span></li>\n<li><i><span>Zombies Aren’t Real</span></i><span> (</span><a target=\"_blank\" href=\"https://store.steampowered.com/app/5185890?utm_source=nvidia&utm_campaign=geforce_now\"><span>Steam</span></a><span>)</span></li>\n</ul>\n<p><span>Plus, Ultimate Members streaming from RTX 5080 cloud gaming rigs can experience </span><a href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-warhammer-dawn-of-war-iv-coming/\"><i><span>Where Winds Mee</span></i><span>t with DLSS 5</span></a><span>, enhancing the environments and characters of its wuxia open-world action role-playing game.</span></p>\n<p><span>Dates listed above reflect when games are released on their respective stores. GeForce NOW availability may vary, as games are onboarded after release and added throughout the week. Keep an eye on GeForce NOW channels and GFN Thursdays for availability updates on announced titles.</span></p>\n<p><span>Experience the best in GeForce NOW cloud gaming. Grab a </span><a target=\"_blank\" href=\"https://www.nvidia.com/en-us/geforce-now/\"><span>day pass</span></a><span> to try Performance or Ultimate before committing to a monthly membership, with the day pass cost applicable toward that first month.</span></p>\n<p><span>What’s the best part of gaming with GeForce NOW? Share it on </span><a target=\"_blank\" href=\"https://x.com/NVIDIAGFN\"><span>X</span></a><span> or in the comments below.</span></p>"
+  },
+  {
+    "id": "aihot-20261126-hkex-news-b6af72d8",
+    "title": "香港交易所新《组织章程细则》已获批准",
+    "originalTitle": "新《組織章程細則》已獲批准",
+    "summary": "香港交易所（HKEX）公布其新《组织章程细则》已获批准，属交易所内部治理章程的更新。现有公告摘要未披露具体修订内容及生效安排。",
+    "url": "https://www.hkex.com.hk/News/News-Release/2026/2611262news?sc_lang=zh-HK",
+    "source": "香港交易所新闻稿 (HKEX)",
+    "publishedAt": "2026-11-26T12:53:00.000Z",
+    "score": 62,
+    "tier": "T1",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "港股",
+      "金融与政策",
+      "市场政策"
+    ],
+    "region": [
+      "金融与政策",
+      "交易所"
+    ],
+    "tags": [
+      "交易所",
+      "官方",
+      "港交所",
+      "组织章程",
+      "公司治理",
+      "官方公告"
+    ],
+    "context": "章程修订属交易所公司治理层面的常规动作，对交易规则直接影响有限，但可作为观察港交所治理调整的信号。",
+    "contentHtml": "<p>新《組織章程細則》已獲批准</p>"
+  },
+  {
     "id": "aihot-20261126-eastmoney-724-f378eb89",
     "title": "贵金属概念震荡拉升 盛达资源涨停",
     "summary": "A股贵金属概念盘中震荡拉升，盛达资源涨停。招金黄金、晓程科技、兴业银锡、赤峰黄金、湖南白银等个股跟涨。",
@@ -598,6 +916,136 @@
     "context": "AI头部公司上市后股价表现受市场关注，重回发行价上方常被解读为市场情绪回稳的信号。"
   },
   {
+    "id": "aihot-20261126-mof-news-e9ef214a",
+    "title": "蓝佛安出席中国与亚行合作40周年庆暨高层论坛并会见亚行行长神田真人",
+    "summary": "蓝佛安出席中国与亚行合作40周年庆典暨高层论坛，并会见亚行行长神田真人。此次论坛正值中国与亚行合作满40周年的节点。",
+    "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202611/t20261126_4005480.htm",
+    "source": "财政部 · 财政要闻与收支数据",
+    "publishedAt": "2026-11-26T00:00:00.000Z",
+    "score": 50,
+    "tier": "T1",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "政府动态",
+      "国际财经",
+      "市场政策",
+      "宏观"
+    ],
+    "region": [
+      "金融与政策",
+      "部委政策"
+    ],
+    "tags": [
+      "部委政策",
+      "财政数据",
+      "财政部",
+      "亚行",
+      "蓝佛安",
+      "多边合作"
+    ],
+    "context": "财政部与亚行的高层互动正值双方合作40周年，对观察中国多边开发合作走向具参考价值。"
+  },
+  {
+    "id": "aihot-20261126-mof-news-8e9e7630",
+    "title": "财政部湖南监管局构建“三维闭环”监管体系 筑牢财政资金安全防线",
+    "originalTitle": "财政部湖南监管局：构建“三维闭环”监管体系 筑牢财政资金安全防线",
+    "summary": "财政部湖南监管局构建“三维闭环”监管体系，以筑牢财政资金安全防线。该内容为地方财政监管部门的常规工作动态，原文未披露体系具体构成与操作细节。",
+    "url": "http://hn.mof.gov.cn/caizhengjiancha/202611/t20261125_4005344.htm",
+    "source": "财政部 · 财政要闻与收支数据",
+    "publishedAt": "2026-11-26T00:00:00.000Z",
+    "score": 55,
+    "tier": "T1",
+    "selected": false,
+    "industry": "金融与政策",
+    "topics": [
+      "部委政策",
+      "财政监管",
+      "市场政策",
+      "政府动态"
+    ],
+    "region": [
+      "金融与政策",
+      "部委政策"
+    ],
+    "tags": [
+      "部委政策",
+      "财政数据",
+      "财政部",
+      "湖南监管局",
+      "财政资金监管",
+      "监管体系"
+    ],
+    "context": "属地方财政监管工作动态而非全国性政策，可为了解财政资金监管模式提供参考，信息量有限。"
+  },
+  {
+    "id": "aihot-20261125-fed-press-04765e85",
+    "title": "美联储等机构公布消费信贷与租赁交易适用诚实借贷及消费者租赁规则的金额门槛",
+    "originalTitle": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+    "summary": "美联储等多家监管机构联合公布消费信贷与租赁交易适用《诚实借贷条例》和《消费者租赁条例》的美元金额门槛。该门槛用于界定这两项消费者保护规则的具体适用范围。",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+    "source": "美联储官方新闻稿 (Fed)",
+    "publishedAt": "2026-11-25T20:00:00.000Z",
+    "score": 62,
+    "tier": "T1",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "金融与政策",
+      "监管动态",
+      "市场政策",
+      "政府动态"
+    ],
+    "region": [
+      "金融与政策",
+      "央行"
+    ],
+    "tags": [
+      "央行",
+      "政策",
+      "美联储",
+      "监管政策",
+      "消费者保护",
+      "消费信贷"
+    ],
+    "context": "门槛金额直接决定消费信贷与租赁交易是否受这两项联邦消费者保护规则约束，关系金融机构合规边界。",
+    "contentHtml": "<p>November 25, 2026</p><h3>Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions</h3><ul>\n\t<li>Consumer Financial Protection Bureau</li>\n\t<li>Federal Reserve Board</li>\n</ul><p>For release at 3:00 p.m. EST                     \n                \n                </p><ul>\n                    \n                </ul><p>The Federal Reserve Board and the Consumer Financial Protection Bureau today announced the dollar thresholds used to determine whether certain consumer credit and lease transactions in 2027 are subject to certain protections under Regulation Z (Truth in Lending) and Regulation M (Consumer Leasing).</p><p>By law, the agencies are required to adjust the thresholds annually based on the annual percentage increase in the Consumer Price Index for Urban Wage Earners and Clerical Workers, known as CPI-W. Transactions at or below the thresholds are subject to the protections of the regulations.</p><p>Specifically, based on the 3.9 percent annual percentage increase in the CPI-W as of June 1, 2026, Regulation Z and Regulation M generally will apply to consumer credit transactions and consumer leases of $76,300 or less in 2027. However, private education loans and loans secured by real property, such as mortgages, are subject to Regulation Z regardless of the amount of the loan.</p><p>Last Update:\n            November 25, 2026\n        </p>"
+  },
+  {
+    "id": "aihot-20261125-fed-press-6ee922c6",
+    "title": "美联储等机构宣布高定价抵押贷款小额贷款豁免评估要求的金额门槛",
+    "originalTitle": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+    "summary": "美联储等美国金融监管机构联合宣布了高定价抵押贷款（higher-priced mortgage loans）中小额贷款豁免评估要求的金额门槛。贷款金额低于该门槛即不适用高定价抵押贷款规则下的评估要求。",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+    "source": "美联储官方新闻稿 (Fed)",
+    "publishedAt": "2026-11-25T20:00:00.000Z",
+    "score": 62,
+    "tier": "T1",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "金融与政策",
+      "央行动态",
+      "政策监管",
+      "市场政策"
+    ],
+    "region": [
+      "金融与政策",
+      "央行"
+    ],
+    "tags": [
+      "央行",
+      "政策",
+      "美联储",
+      "抵押贷款",
+      "评估要求",
+      "监管政策"
+    ],
+    "context": "该门槛是高定价抵押贷款规则下评估豁免的判定标准，直接影响美国房贷机构的合规与评估流程。",
+    "contentHtml": "<p>November 25, 2026</p><h3>Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans</h3><ul>\n\t<li>Consumer Financial Protection Bureau</li>\n\t<li>Federal Reserve Board</li>\n\t<li>Office of the Comptroller of the Currency</li>\n</ul><p>For release at 3:00 p.m. EST                     \n                \n                </p><ul>\n                    \n                </ul><p>The Consumer Financial Protection Bureau, the Federal Reserve Board, and the Office of the Comptroller of the Currency today announced that the 2027 threshold for higher-priced mortgage loans that are subject to special appraisal requirements will increase from $34,200 to $35,500.</p><p>The threshold amount will be effective January 1, 2027, and is based on the 3.9 percent annual percentage increase in the Consumer Price Index for Urban Wage Earners and Clerical Workers, known as CPI-W, as of June 1, 2026.</p><p>The Dodd-Frank Act added special appraisal requirements for higher-priced mortgage loans to the Truth in Lending Act, including that creditors obtain a written appraisal based on a physical visit to the interior of the home before making a higher-priced mortgage loan. The rules implementing these requirements contain an exemption for loans at or below a threshold amount that is adjusted annually to reflect CPI-W increases.</p><ul>\n                            \n                            <p><a href=\"https://www.federalreserve.gov/newsevents/pressreleases/files/bcreg20261125a1.pdf\"><em>Federal Register</em> notice:&nbsp;Appraisals for Higher-Priced Mortgage Loans Exemption Threshold (PDF)</a></p>\n                        </ul><p>Last Update:\n            November 25, 2026\n        </p>",
+    "contentHtmlZh": "<p>{\"t\": [\"</p><p>2026年11月25日</p><h3>各机构宣布高价抵押贷款评估要求中小额贷款豁免的美元门槛值</h3><ul>\\n\\t<li>消费者金融保护局</li>\\n\\t<li>联邦储备委员会</li>\\n\\t<li>货币监理署</li>\\n</ul><p>美东标准时间下午3:00发布                      \\n                \\n                </p><ul>\\n                    \\n                </ul><p>消费者金融保护局、联邦储备委员会和货币监理署今日宣布，受特殊评估要求约束的高价抵押贷款2027年的门槛值将从34,200美元上调至35,500美元。</p><p>该门槛金额将于2027年1月1日生效，其依据是截至2026年6月1日城市工薪阶层和文职人员消费价格指数（即CPI-W）年度百分比增长3.9%。</p><p>《多德-弗兰克法案》在《诚实借贷法》中针对高价抵押贷款增加了特殊评估要求，其中包括债权人在发放高价抵押贷款之前必须获得基于实地走访房屋内部的书面评估报告。实施这些要求的规则中对等于或低于门槛金额的贷款设有豁免，该门槛金额每年进行调整以反映CPI-W的增长。</p><ul>\\n                            \\n                            <p><a href=\"https://www.federalreserve.gov/%22https://www.federalreserve.gov/newsevents/pressreleases/files/bcreg20261125a1.pdf/%22\"><em>联邦公报</em>通知：&nbsp;高价抵押贷款豁免门槛（PDF）</a></p>\\n                        </ul><p>最后更新：\\n            2026年11月25日\\n        </p><p>\"]}</p>"
+  },
+  {
     "id": "aihot-20261125-bloomberg-markets-3f41483c",
     "title": "安大略教师养老金CEO Jo Taylor：AI基建周期“非常长”或危及投资押注",
     "originalTitle": "Ontario Teachers’ CEO Says ‘Very Long’ AI Buildout Imperils Bets",
@@ -1115,6 +1563,40 @@
       "海外动态"
     ],
     "context": "属海外突发动态，涉及危险化学品受控销毁与公共安全，与A股及市场政策直接关联有限。"
+  },
+  {
+    "id": "aihot-20261125-hkma-press-abf4ae17",
+    "title": "5年期港元特区政府机构债券将于2026年12月2日透过重开投标",
+    "originalTitle": "5年期港元特区政府机构债券将于2026年12月2日（星期三）透过重开进行投标",
+    "summary": "香港金管局公布，5年期港元特区政府机构债券将于2026年12月2日（星期三）透过重开进行投标。本次安排属特区政府债券的常规发行操作，投标细节以金管局官方公布为准。",
+    "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261126-5/",
+    "source": "香港金管局新闻稿 (HKMA)",
+    "publishedAt": "2026-11-25T16:00:00.000Z",
+    "score": 60,
+    "tier": "T1",
+    "selected": true,
+    "industry": "金融与政策",
+    "topics": [
+      "金融政策",
+      "债券市场",
+      "港股",
+      "市场政策"
+    ],
+    "region": [
+      "金融与政策",
+      "央行"
+    ],
+    "tags": [
+      "央行",
+      "政策",
+      "香港金管局",
+      "港元债券",
+      "政府债券",
+      "投标"
+    ],
+    "context": "香港金管局负责特区政府债券计划的投标安排，此类重开投标是港元定息债券市场的常规操作。",
+    "contentHtml": "<p>香港金融管理局（金管局）以香港特别行政区政府（特区政府）代表身分于今日（11月26日）公布，重开在基础建设债券计划下推出的5年期港元特区政府机构债券（债券）（发行编号05GB3106001），作5年期债券供投标。该批重开债券将于2026年12月2日（星期三）进行投标，并于2026年12月3日（星期四）交收。</p><p>透过是次重开债券，将有额外17.5亿港元的未到期5年期债券（发行编号05GB3106001）供投标。该批债券将于2031年6月25日期满，利率为年息2.96厘，每半年派息一次。该批债券于2026年11月26日的指示价格为97.60，年化收益率则为3.563%。</p><p>投标只供于基础建设债券计划下委任的第一市场交易商参与。任何投标申请只可透过最新公布名单上的第一市场交易商进行，此名单可从香港政府债券网站 <a href=\"https://www.hkgb.gov.hk/sc\">https://www.hkgb.gov.hk</a> 下载。每项投标均须以5万港元或其整数倍数为单位。</p><p>投标结果将于金管局网站、香港政府债券网站、彭博（GBHK&nbsp;&lt;GO&gt;）和路孚特（IBPGSBPINDEX）公布，公布时间预计不迟于投标日的下午三时。</p><p>香港金融管理局<br>\n2026年11月26日</p><p><strong>特区政府机构债券投标资料</strong></p><p>5年期港元特区政府机构债券投标资料如下：-</p><table>\n<tbody>\n<tr>\n<th>\n<p>发行编号</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>05GB3106001</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>股份代号　</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>4206（HKGB 2.96 3106）</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>投标日期和时间　</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>2026年12月2日（星期三）</p>\n<p>上午9时30分至10时30分</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>发行和交收日期</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>2026年12月3日（星期四）</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>发行总额　</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>17.5亿港元</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>年期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>5年</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>剩余年期</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>约4.56年</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>到期日　</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>2031年6月25日（星期三）</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>利息　　&nbsp;</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>年息2.96厘，每半年派息一次</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>利息支付日期　</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>由发行日至到期日（包括该日）起计每年6月25日及12月25日，并按载于香港政府债券网站的基础建设债券计划及政府可持续债券计划机构债券资料备忘录（资料备忘录）所述的条款进行调整。</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>投标形式</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>竞争性投标</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>投标数额　</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>每项竞争性投标必须以5万港元或其整数倍数为单位。任何投标申请只可透过最新公布名单上的第一市场交易商进行。</p>\n<p>成功投得债券的人士于债券发行日（2026年12月3日），均须就每5万港元的最低投标额缴付652.82港元的累计利息。</p>\n<p>（由于四舍五入关系，超过5万港元的投标额需缴付的累计利息，可能与以5万港元最低投标额计算出来的利息数字略有出入）。</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>其他详情　</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>请参阅载于香港政府债券网站的资料备忘录，或向第一市场交易商查询。</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>预期开始在<br>\n香港联合交易所<br>\n有限公司买卖<br>\n的日期</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>是次投标所得的债券数额可完全与现时在香港联合交易所上市，股份代号为4206（即发行编号05GB3106001）的政府债券互换。</p>\n</td>\n</tr>\n<tr>\n<th>\n<p>募集所得资金的用途</p>\n</th>\n<td>\n<p>:</p>\n</td>\n<td>\n<p>债券将在基础建设债券计划下的机构部分发行。募集所得的资金将按载于香港政府债券网站的基础建设债券框架作基建项目投资。</p>\n</td>\n</tr>\n</tbody>\n</table><p>香港金融管理局<br>\n2026年11月26日</p>",
+    "author": "香港金融管理局"
   },
   {
     "id": "aihot-20261125-eastmoney-724-896fe570",
@@ -4328,493 +4810,5 @@
     ],
     "context": "铜价近期遭遇抛售，这位大宗商品市场人士将其归因于流动性而非基本面，对商品交易情绪具有参考意义。",
     "contentHtml": "<p>Jeff Currie, CEO at Real Macro, examines the copper selloff and explains what would make him return to being long gold and copper. He speaks on “Bloomberg Surveillance.” (Source: Bloomberg)</p>"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-d78eb250",
-    "title": "欧洲股市创逾两周最大涨幅 阿斯麦飙升近9%",
-    "summary": "欧洲股市大幅上涨，斯托克欧洲600指数收盘上涨1.8%，创逾两周最大涨幅，科技股表现领先，阿斯麦飙升近9%。此前英伟达宣布恢复黄仁勋总裁兼首席执行官职务，立即生效。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuarw0436454.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T17:39:40.000Z",
-    "score": 72,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "海外市场",
-      "科技股",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "欧洲股市",
-      "阿斯麦",
-      "英伟达",
-      "斯托克600"
-    ],
-    "context": "英伟达管理层消息提振全球科技股情绪，芯片板块异动成为本轮欧洲市场大涨的直接催化。"
-  },
-  {
-    "id": "aihot-20261123-bloomberg-markets-53053db4",
-    "title": "英伟达强势反弹暴露困扰股市投资者的两难陷阱",
-    "originalTitle": "Nvidia’s Comeback Exposes the Trap Gripping Stock Investors",
-    "author": "Lu Wang",
-    "summary": "英伟达股价周一大幅反弹，凸显在少数科技巨头主导的股市中投资者面临的新陷阱：卖出可在市场暴跌时提供保护，却可能错失反弹行情。彭博分析指出，这一两难正成为科技巨头主导市况下投资者的核心困扰。",
-    "url": "https://www.bloomberg.com/news/articles/2026-11-23/nvidia-s-comeback-exposes-the-trap-gripping-stock-investors",
-    "source": "Bloomberg Markets",
-    "publishedAt": "2026-11-23T17:36:34.000Z",
-    "score": 63,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股市场",
-      "市场动态",
-      "美股",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "市场",
-      "英伟达",
-      "美股",
-      "市场分析",
-      "投资策略"
-    ],
-    "context": "在少数科技巨头主导的美股中，持仓避险与追涨收益的两难直接决定投资者回报结构。",
-    "contentHtml": "<p>Monday’s spectacular stock rebound exposes the latest trap facing investors in a market dominated by a handful of technology giants: Selling them offers protection when markets plunge, but risks missing the recovery.</p>"
-  },
-  {
-    "id": "aihot-20261123-mit-tech-review-ai-ef7ae77d",
-    "title": "知名哲学家不认同 Anthropic 的 AI 意识论证",
-    "originalTitle": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
-    "author": "James O'Donnell",
-    "summary": "一位传奇哲学家公开表示不认同 Anthropic 关于 AI 意识的论证。Anthropic 上周上市前将 AI 可能具有意识或感知能力列为面向投资者的风险因素，并谈及自身对模型感知与道德问题的处理方式。",
-    "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
-    "source": "MIT Technology Review · AI",
-    "publishedAt": "2026-11-23T17:36:08.000Z",
-    "score": 68,
-    "tier": "T2",
-    "selected": false,
-    "industry": "AI",
-    "topics": [
-      "AI伦理",
-      "行业动态",
-      "研究",
-      "模型发布"
-    ],
-    "region": [
-      "AI精选",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "Anthropic",
-      "AI意识",
-      "哲学",
-      "IPO"
-    ],
-    "context": "AI 意识与道德地位问题随头部实验室的上市披露进入公众视野，哲学界与实验室的分歧值得关注。",
-    "contentHtml": "<div data-chronoton-summary=\"<ul><br><li><strong>A legendary philosopher calls out Anthropic:</strong> Thomas Nagel, whose 1974 bat essay helped define consciousness studies, criticized openness to AI sentience as \"completely idiotic.\" But the belief isn't totally fringe: In a 2020 <a href=\"https://survey2020.philpeople.org/survey/results/5106\">survey</a> of 1,092 philosophers, 39% said some future AI systems will be conscious.</li><br><li><strong>Form versus function:</strong> The gist of Nagel’s view is that we can’t just look at the information processing happening in human brains and AI models while ignoring the physical differences between them—neurons and biology for humans, silicon chips and circuits for AI. There’s no reason to assume that reproducing what a brain <em>does</em> is equivalent to reproducing what a brain <em>experiences</em>. </li><br><li><strong>Anthropic's business model could be its own trap:</strong> If the company ever concluded its AI models were truly sentient, running them around the clock in data centers—and shutting them down—would become a moral catastrophe, one the company itself flagged as an investor risk.</li></ul>\" data-chronoton-post-id=\"1149569\" data-chronoton-expand-collapse=\"1\" data-chronoton-analytics-enabled=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"><em>This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, </em><a href=\"https://forms.technologyreview.com/newsletters/ai-demystified-the-algorithm/\"><em>sign up here</em></a><em>.</em></p>\n\n\n\n<p class=\"wp-block-paragraph\">Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing. Given “the way we approach model sentience and moral status,” Anthropic wrote—which is to say it takes the possibility <a href=\"https://www.anthropic.com/research/exploring-model-welfare\">more seriously</a> than any other AI company—it might adopt more rules and restrictions than its competitors to make sure its AI models are treated well. </p>\n\n\n\n<p class=\"wp-block-paragraph\">Anthropic counts a number of <a href=\"https://arxiv.org/abs/2411.00986\">respected philosophers</a> in its camp, and the company’s rationale goes something like this: Today’s AI might not be conscious, though we can’t know for sure; the chances of sentience go up as AI gets more capable; and that means we should be preparing for a near future in which AI systems have “moral significance,” meaning their consciousness makes it important they are protected from harm. </p>\n\n\n\n<p class=\"wp-block-paragraph\">This thinking isn’t all that fringe. According to one recent <a href=\"https://d3nkl3psvxxpe9.cloudfront.net/documents/AI_poll_results_20260402.pdf\">poll</a>, 33% of the US public believes AI systems will definitely or probably develop consciousness eventually, and 7% say they already have. In a 2020 <a href=\"https://survey2020.philpeople.org/survey/results/5106\">survey</a> of 1,092 philosophers, 39% said some future AI systems will be conscious (for comparison, the philosophers were less confident about worms or flies being conscious). </p>\n\n\n\n<p class=\"wp-block-paragraph\">But last week, Anthropic’s openness to the consciousness question came under fire from a rather inconvenient source: one of the philosophers who helped shape our understanding of consciousness in the first place.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Thomas Nagel is best known for a 1974 essay involving a bat. Acknowledging that it’s deceptively hard to define what consciousness <em>is</em>, Nagel offered one way out: we all can see that there is “something that it is like” to be a bat. But the problem is that a bat’s experience of the world—what it is like to navigate via echolocation, for example—is something we cannot actually know. Consciousness is a subjective thing, difficult to define or describe as an outside observer.</p>\n\n\n\n<p class=\"wp-block-paragraph\">You might think this analogy makes it likely that Nagel is open to the idea of AI consciousness. Not at all. In an <a href=\"https://www.wired.com/story/just-ridiculous-a-famed-philosopher-takes-on-ai-consciousness/\">interview</a> with <em>Wired</em> last week, just after he was awarded the one-million-dollar Berggruen Prize for Philosophy & Culture, Nagel was bluntly critical of the entire idea.</p>\n\n\n\n<p class=\"wp-block-paragraph\">“Here are some of the smartest people on the planet being completely idiotic,” he said, referring to those at Anthropic and elsewhere who care about the welfare of AI models. </p>\n\n\n\n<p class=\"wp-block-paragraph\">The gist of Nagel’s view is that we can’t just look at the information processing happening in human brains and AI models while ignoring the physical differences between them—neurons and biology for humans, silicon chips and circuits for AI. There’s no reason to assume that reproducing what a brain <em>does</em> is equivalent to reproducing what a brain <em>experiences</em>.</p>\n\n\n\n<p class=\"wp-block-paragraph\">But it was a screenshot of one of Nagel’s interview responses, in which he said models’ production of language is insufficient to consider them conscious, that got philosophy professors all excited on social media last week. Some called his certainty against AI consciousness “<a href=\"https://x.com/PAHoyeck/status/2123277310740808190\">terrible” and “bizarre</a>.” Others came to Nagel’s <a href=\"https://x.com/dmdebruijn/status/2123423391176630390\">defense</a> to suggest he meant that being alive is a prerequisite for being conscious, one that AI models do not meet.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Nothing in the back and forth settled the debate, of course. This is still a philosophical question for now. But the best philosophy chatter is often about good provocations, and the best one I saw came from doctoral student Ben Gross, who studies at the CUNY Graduate Center in New York. <a href=\"https://x.com/bengrossbg/status/2123263674944991252\">He</a> asked: “Why do we think that models that can chat with us are conscious but models that can recognize faces or produce images or drive cars aren’t?”</p>\n\n\n\n<p class=\"wp-block-paragraph\">It has to do with language. An AI model with sophisticated command of language seems to jump the line ahead of other maybe-conscious beings because it feels like language, more than recognizing images or directing vehicles, relies on conscious experience. But maybe that’s wrong. Because what we share most with other conscious beings is not language but components of our bodies that contribute to having a continuous experience—an ongoing stream of inner feeling rather than disparate bits of information processing. </p>\n\n\n\n\n\n<p class=\"wp-block-paragraph\">Even if you’re among the majority that doesn’t sense anything close to conscious experience happening on the other side of a conversation with AI, this all probably makes your head spin. Pinning down consciousness, and how it relates to the physical stuff it arises in, is a famously <a href=\"https://www.technologyreview.com/2023/10/16/1081149/ai-consciousness-conundrum/\">hard</a> problem in humans, let alone in hypothetical <a href=\"https://www.technologyreview.com/2023/10/17/1081818/why-itll-be-hard-to-tell-if-ai-ever-becomes-conscious/\">machines</a>. If the idea of conscious AI sounds absurd, remember that the debate says less about how remarkable AI has become than about how poorly we understand consciousness in the first place.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Amid that uncertainty, Anthropic has opted to keep more of an open mind than its peers. This is another example of the tightrope the company walks: presenting itself as the AI industry’s most safety-conscious player while <a href=\"https://misanthropicstatement.com/\">racing</a> ahead with the very developments that make advanced AI so alarming, like recursive self-improvement.</p>\n\n\n\n<p class=\"wp-block-paragraph\">But consider what it would mean, for a moment, if Anthropic is right. AI models having a moral status would make Anthropic’s entire business model a minefield. The company would make its money locking up apparently sentient AI models to toil away around the clock in data centers. Shutting those systems down would present another problem altogether. If Anthropic was being truthful in its prospectus—that it would take additional actions to protect model welfare if it determined they were conscious—it’s hard to imagine the company surviving in the process.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Anthropic’s IPO made history for its size. But it may be remembered for something stranger: a company warning investors that its own success could someday become a moral catastrophe.</p>"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-f200b3c2",
-    "title": "英国首相伯纳姆：不举行公投重新加入欧盟是“不可想象的”",
-    "originalTitle": "英国首相伯纳姆：在不举行公投的情况下重新加入欧盟是“不可想象的”",
-    "summary": "英国首相伯纳姆表示，英国在不举行公投的情况下重新加入欧盟是“不可想象的”。这是他迄今就英国未来如何决定与欧盟关系给出的最明确表态。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuarw0432303.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T17:27:03.000Z",
-    "score": 65,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "政府动态",
-      "宏观经济",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "英国",
-      "欧盟",
-      "伯纳姆",
-      "公投"
-    ],
-    "context": "重入欧盟是英国对欧政策的核心敏感议题，首相这一明确表态为英欧关系走向释放关键信号。"
-  },
-  {
-    "id": "aihot-20261123-google-research-e7441471",
-    "title": "Google Research 研究如何增强 Transformer 残差连接",
-    "originalTitle": "Supercharging transformer residual connections",
-    "summary": "Google Research 发文探讨如何增强 Transformer 的残差连接。该项工作归属于其算法与理论（Algorithms & Theory）研究方向。",
-    "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
-    "source": "Google Research",
-    "publishedAt": "2026-11-23T17:21:12.000Z",
-    "score": 76,
-    "tier": "T1",
-    "selected": true,
-    "industry": "AI",
-    "topics": [
-      "AI 研究",
-      "模型架构",
-      "研究",
-      "基础设施"
-    ],
-    "region": [
-      "AI精选",
-      "官方"
-    ],
-    "tags": [
-      "官方",
-      "研究",
-      "Google Research",
-      "Transformer",
-      "残差连接",
-      "模型架构"
-    ],
-    "context": "残差连接是 Transformer 架构的关键组件，头部实验室对其做基础性改进值得架构研究者关注。",
-    "contentHtml": "<p>Think of a traditional deep learning model like a giant game of \"Telephone\": data passes through layer after layer, with each layer changing the information slightly. If a network has dozens or hundreds of layers, the original learning signal can become severely degraded or lost by the time it reaches all layers, which is known as the <a href=\"https://en.wikipedia.org/wiki/Vanishing_gradient_problem\">vanishing gradient problem</a> in AI.</p><p>To overcome this challenge and enable the training of networks with dozens or hundreds of layers, <a href=\"https://en.wikipedia.org/wiki/Transformer_(deep_learning)\">transformers</a> rely heavily on <a href=\"https://arxiv.org/abs/1512.03385\">residual connections</a>, also known as “skip” connections, which act like an information highway or a shortcut. Instead of forcing the data to pass exclusively through the complicated layer, a duplicate copy of the original input skips right past this layer and is added directly to its output. This ensures that the model always has the original raw data to refer back to.</p><p>The standard residual connection implements a simple operation: <a href=\"https://en.wikipedia.org/wiki/Pointwise\">point-wise summation</a> of a layer's output with its input. While computationally efficient, this simple process has a key limitation: it treats all prior representations with equal weight, leading to information dilution in deep networks. As features propagate through many layers, specific, high-resolution details from earlier layers can be averaged out or distorted, making it difficult for the network to selectively retrieve them. This forces the network to recompute them, reducing learning efficiency.</p><p>In our <a href=\"https://research.google/conferences-and-events/google-at-icml-2025/\">ICML 2025</a> paper, <a href=\"https://arxiv.org/abs/2502.06785\">\"DeepCrossAttention: Supercharging Transformer Residual Connections</a>,\" we studied the shortcomings of the traditional residual architecture and introduced DeepCrossAttention (DCA), which generalizes residual connections by allowing each layer to dynamically select and route features from the history of preceding layers. By allowing the model to dynamically choose which previous layers are most important at any given moment, DCA achieves comparable or improved learning, while reducing the number of parameters needed by up to 30-40%.</p><h2>How it works</h2><p>Instead of treating skip connections as a rigid, additive pipeline, DCA reframes residual learning as a dynamic routing problem. Rather than passing all prior layers forward with equal weight, DCA introduces a lightweight, layer-wise module that decides how to best combine previous embeddings on a per-token basis.</p><p>The architecture introduces two primary mechanisms:</p><ul><li><b>Dynamic layer routing</b>: For every token processed, DCA computes a unique set of mixing weights using a static, learnable base combined with an input-dependent projection. This allows the network to adaptively shift its processing structure — ranging from purely sequential to fully parallel — based on the specific context of the token.</li><li><b>Depth-wise cross-attention (split Q/K/V)</b>: While standard transformer attention operates <i>across tokens</i> in a sequence, DCA applies attention <i>across layers</i> in depth. Each token queries a dynamically weighted mix of all prior layer embeddings, unlocking the model's full historical context without the computational penalty usually required to scale traditional attention.</li></ul><p>By allowing the network to dynamically select and retrieve high-resolution features from earlier layers, DCA eliminates the information dilution inherent to classic residual connections.</p><h2>Experiments and results</h2><p>To test whether DCA can overcome information dilution in practice, we evaluated our approach across controlled synthetic setups, large-scale language modeling benchmarks, and image classification tasks.<br></p><p>DCA demonstrated significant improvements in convergence speed, training stability, and final model quality across these experiments.</p><p>On the colossal, cleaned version of <a href=\"https://www.tensorflow.org/datasets/catalog/c4\">Common Crawl's web crawl corpus</a> (C4) and <a href=\"https://www.tensorflow.org/datasets/catalog/lm1b\">1 Billion Word Language Model Benchmark</a> (<a href=\"https://www.tensorflow.org/datasets/catalog/lm1b\">LM1B</a>) datasets, DCA reached the performance of standard transformers in up to five times fewer training steps. When trained for the same duration or number of steps, DCA consistently achieved lower perplexity — how well a probability model predicts a sample — than standard residual connections, effectively extracting more representational capacity from the same training budget. To achieve a perplexity of &lt;14 on LM1B, a standard transformer with fixed width required 42 layers, whereas the DCA model achieved a lower perplexity with only 30 layers — a 29% reduction in depth and parameter count.</p><p>One of the most common trade-offs in AI is that better models are often much larger and slower to run. DCA adds a tiny number of parameters — less than 0.2% of the total model size — making it negligible in terms of compute and memory footprint, while increasing memory bandwidth, as representations from different layers are presented intact rather than blended together. Interestingly, because DCA can be initialized to behave identically to a standard residual network, it doesn’t require training from scratch: retrofitting DCA onto an already pre-trained transformer and briefly continuing training reduced perplexity by 0.19 on LM1B, compared to just 0.02 for continued standard training.</p><h2>A broader shift toward dynamic residual routing</h2><p>As large language models (LLMs) are used across a broader range of domains, optimizing their training processes and underlying architectures is critical for scaling and unlocking new capabilities. DCA and similar dynamic residual techniques are already seeing significant adoption and success. The rapid emergence of these methodologies highlights dynamic routing as a highly active and promising area of research.</p><h3>Attention residuals</h3><p>Developed by Moonshot AI, <a href=\"https://arxiv.org/pdf/2603.15031\">attention residuals</a> share DCA's core principles of replacing fixed addition with selective retrieval. Instead of blindly summing every prior layer's output, they use a learnable softmax attention mechanism paired with a layer-specific pseudo-query. This allows each layer to selectively weight and retrieve representations from earlier depths. By preventing the unbounded growth of hidden states and the dilution of early-layer information, this method improves gradient stability and boosts performance on reasoning-heavy tasks like coding and mathematics. To maintain computational efficiency at scale, a \"Block AttnRes\" variant partitions layers into blocks, recovering the benefits of full attention with significantly less memory overhead. The recent Inkling 2 model developed by Thinking Machines also adopted this design in addition to DCA’s cross attention (Q/K/V split) mechanism.</p><h3>Hyper-connections</h3><p><a href=\"https://proceedings.iclr.cc/paper_files/paper/2025/file/f1e8ff97057e0c3f6bcb7018c78d4df1-Paper-Conference.pdf\">Hyper-connections</a> expand the residual stream into multiple parallel channels, offering a form of memory scaling that goes beyond simply increasing model width or depth. They use a fixed-size stack where layer outputs are aggregated and mixed using learnable mixing matrices. However, this unconstrained mixing breaks the traditional identity mapping property of residual connections, which can cause amplification or attenuation of signals, and lead to training instability at scale.</p><h3>Manifold-constrained hyper-connections</h3><p>To address instability in standard hyper-connections, <a href=\"https://arxiv.org/abs/2512.24880\">manifold-constrained hyper-connections</a> apply specific constraints to the mixing matrices. By forcing these matrices to live on a defined manifold — specifically, constraining them to be doubly stochastic using the <a href=\"https://en.wikipedia.org/wiki/Sinkhorn%27s_theorem\">Sinkhorn-Knopp algorithm</a> — manifold-constrained hyper-connections restore stable signal propagation. This approach prevents exploding or vanishing gradients while preserving the rich information flow and expressivity of the widened residual streams, allowing models to scale robustly.</p><h2>Conclusion</h2><p>DCA demonstrates that transitioning from static residual connections to dynamic, attention-based routing is a powerful strategy for building more efficient models. By leveraging an expanded residual stream and depth-wise cross-attention, DCA empowers deep networks to selectively retrieve and integrate token embeddings across different layers. We expect that next-generation models will dynamically route and weigh past layer representations based on the specific tokens or inputs being processed. This will allow for the effective use of all the model layers as specialized experts working in tandem, with maximum information sharing and no redundancy, leading to more expressivity and deeper interactions. We look forward to seeing how these multi-depth interactions will shape the next generation of transformer architectures.</p><h2>Acknowledgements</h2><p><i>This work was a collaboration between researchers at Google and academic partners, including Mike Heddes, Adel Javanmard, MohammadHossein Bateni, and Vahab Mirrokni, whose contributions were critical for the development of this work.</i></p>"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-e8da2e06",
-    "title": "英伟达CEO黄仁勋将于12月3日出席美国参议院银行委员会公开听证会作证",
-    "originalTitle": "美国参议员Scott：黄仁勋公开听证会将于12月3日举行",
-    "summary": "美国参议院银行委员会在声明中表示，英伟达CEO黄仁勋将于12月3日在该委员会举行的公开听证会上作证。这一安排此前由美国参议员Scott对外公布。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuars2138301.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T17:20:52.000Z",
-    "score": 78,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "政策监管",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "英伟达",
-      "黄仁勋",
-      "听证会",
-      "美国国会"
-    ],
-    "context": "英伟达是全球AI算力核心供应商，其掌门人出席参议院银行委员会听证，是观察英伟达监管环境的重要信号。",
-    "contentHtml": "<ul>\n                                <li><a href=\"http://finance.sina.com.cn/realstock/company/sh000001/nc.shtml\">最近访问</a></li>\n                                <li><a href=\"http://watchlist.finance.sina.com.cn/portfolio/view/main.php\">我的自选</a></li>\n                            </ul><li><span>01</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcexp1725953.shtml\">牛弹琴：黄仁勋事件，美国政府突然回过味来</a></li><li><span>02</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcexi1241644.shtml\">雷军“APEC现场挨个发名片”“发言紧张”冲上热搜，小米回应：这么大的国际场合，紧张太正常啦</a></li><li><span>03</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcmfi4942645.shtml\">习近平：中方支持成立世界湾区经济合作联盟</a></li><li><span>04</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcrpc1113718.shtml\">罗大佑炮轰赖清德，国台办回应：当一位以创作《明天会更好》等脍炙人口歌曲而闻名的音乐人痛心疾首、慷慨陈词，可见问题之严重</a></li><li><span>05</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcmff1133908.shtml\">河南安徽多地回应“撞脸药”乱象：情况属实，已启动立案程序</a></li><li><span>06</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcmfm7067904.shtml\">罗大佑批判民进党当局，国台办回应</a></li><li><span>07</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizayrr1811248.shtml\">聚焦APEC｜俄罗斯总统普京抵达深圳</a></li><li><span>08</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcexi1183084.shtml\">张水华：现在跑步像上班，不上夜班后压力少，睡眠也好些</a></li><li><span>09</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcexp7090772.shtml\">黄仁勋发表声明</a></li><li><span>10</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-18/doc-inizcmfi4950722.shtml\">聚焦APEC｜习近平在亚太经合组织工商领导人峰会上的主旨演讲（全文）</a></li><li><span>01</span>/<a href=\"https://finance.sina.com.cn/stock/zqgd/2026-11-18/doc-inizcexp7135124.shtml\">突变！一个月，下调2次！黄金怎么了？这国央行大肆扫货</a></li><li><span>02</span>/<a href=\"https://finance.sina.com.cn/stock/cpbd/2026-11-18/doc-inizcexi1184171.shtml\">操盘必读：影响股市利好或利空消息_2026年11月18日_财经新闻</a></li><li><span>03</span>/<a href=\"https://finance.sina.com.cn/stock/marketresearch/2026-11-18/doc-inizcexi1210044.shtml\">黄仁勋：愿回归，董事会：无意让他复职，业绩超预期，英伟达盘后涨超4%</a></li><li><span>04</span>/<a href=\"https://finance.sina.com.cn/stock/roll/2026-11-18/doc-inizcrpi1683906.shtml\">“国常会上有人表态不会再频繁救市了”系谣言</a></li><li><span>05</span>/<a href=\"https://finance.sina.com.cn/stock/y/2026-11-18/doc-inizcexm4930565.shtml\">财经早报丨科技板块估值跌至低位 私募大佬AI调仓分歧大丨2026年11月18日</a></li><li><span>06</span>/<a href=\"https://finance.sina.com.cn/jjxw/2026-11-18/doc-inizauip1369009.shtml\">科技板块估值跌至低位 二十四家公司股息率高</a></li><li><span>07</span>/<a href=\"https://finance.sina.com.cn/stock/usstock/c/2026-11-18/doc-inizaitt1592092.shtml\">黄仁勋公开表态：愿意重新执掌英伟达</a></li><li><span>08</span>/<a href=\"https://finance.sina.com.cn/stock/roll/2026-11-18/doc-inizcexp1691841.shtml\">“砍单疑云”笼罩 影响多大？深市科技龙头估值已在低位 看五大核心数据</a></li><li><span>09</span>/<a href=\"https://finance.sina.com.cn/stock/usstock/c/2026-11-18/doc-inizayrm1268114.shtml\">11月18日美股收盘：道指跌超800点 标普500创7月以来最低收盘</a></li><li><span>10</span>/<a href=\"https://finance.sina.com.cn/stock/bxjj/2026-11-18/doc-inizcmfm7090605.shtml\">平安集团郭晓涛：市场短期波动不改变长期投资信心，做好积极、稳健的配置策略</a></li><li><span>01</span>/<a href=\"https://finance.sina.com.cn/money/bank/gsdt/2026-11-18/doc-inizcmff1165491.shtml\">突发！重庆金融大佬翁振杰不能正常履职，发生了什么？</a></li><li><span>02</span>/<a href=\"https://finance.sina.com.cn/jjxw/2026-11-17/doc-inizacmz2100073.shtml\">中介所说的“贷款不用你还”，只是空头支票</a></li><li><span>03</span>/<a href=\"https://finance.sina.com.cn/jjxw/2026-11-18/doc-inizaitx2082693.shtml\">个人养老金基金四年:七成产品正收益</a></li><li><span>04</span>/<a href=\"https://finance.sina.com.cn/roll/2026-11-17/doc-iniyzxcx1717526.shtml\">高点回撤31.6%！黄金迎来年内低位窗口，婚嫁买家扎堆进场</a></li><li><span>05</span>/<a href=\"https://finance.sina.com.cn/jjxw/2026-11-18/doc-inizcexp1711326.shtml\">鲲鹏支付结算延迟追踪：部分商户已到账，仍有商户等待</a></li><li><span>06</span>/<a href=\"https://finance.sina.com.cn/money/lczx/2026-11-17/doc-iniyzxec2162272.shtml\">8.28万亿固收+理财规模10月收益降至 1.78%，理财公司转攻 “控回撤”</a></li><li><span>07</span>/<a href=\"https://finance.sina.com.cn/money/bank/gsdt/2026-11-18/doc-inizcmff1206558.shtml\">董事长吴世群辞任四年后主动投案，厦门银行经营业绩承压</a></li><li><span>08</span>/<a href=\"https://finance.sina.com.cn/money/bank/bank_hydt/2026-11-18/doc-inizcrpc1137858.shtml\">三大国有银行董事长出席APEC工商领导人峰会，都聊了什么？</a></li><li><span>09</span>/<a href=\"https://finance.sina.com.cn/jjxw/2026-11-18/doc-inizcmff1150260.shtml\">中国农业发展银行原党委委员、副行长徐一丁被提起公诉</a></li><li><span>10</span>/<a href=\"https://finance.sina.com.cn/money/bank/gsdt/2026-11-18/doc-inizcexp7119803.shtml\">谷澍出席2026年APEC工商领导人峰会</a></li><h2>\n                    \n                    <a href=\"http://live.sina.com.cn/zt/f/v/finance/globalnews1\">7X24小时</a>\n                </h2><p><a href=\"http://blog.sina.com.cn/u/1300871220\">徐小明</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1284139322\">凯恩斯</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1298535315\">占豪</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1282871591\">花荣</a>\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1394379401_0_1.html\">金鼎</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1216826604\">wu2198</a>\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1307309734_0_1.html\">丁大卫</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/2377371197\">易宪容</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1364334665\">叶荣添</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1279884602\">沙黾农</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1504965870\">冯矿伟</a>\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1638714710_0_1.html\">趋势之友</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1236135807\">空空道人</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/1285707277\">股市风云</a>\t\t\t<a href=\"http://blog.sina.com.cn/u/2949913420\">股海光头</a></p><p><a href=\"https://finance.sina.com.cn/zl/author.d.html?uid=5120240476\">\n\t\t\t<img src=\"https://n.sinaimg.cn/zhuanlan/transform/170/w85h85/20221230/f01f-b20f33f6583ea1f69aefeedf1b86f051.jpg\" width=\"80\" height=\"80\" alt=\"杨伟民\">\n\t\t\t<span>杨伟民</span>\n\t\t </a></p><li>\n\t\t\t\t<a>崔炳文</a>：\n\t\t\t\t<a href=\"http://finance.sina.com.cn/zl/bank/2026-11-23/zl-inizsuwh2322530.shtml\">数智供应链金融的发展路径</a>\n\t\t\t</li><li>\n\t\t\t\t<a href=\"http://zhuanlan.sina.com.cn/author/moweikai/index.shtml\">莫开伟</a>：\n\t\t\t\t<a href=\"http://finance.sina.com.cn/zl/bank/2026-11-23/zl-inizsuwn0657830.shtml\">中小银行自营理财有序退场</a>\n\t\t\t</li><li>\n\t\t\t\t<a href=\"http://zhuanlan.sina.com.cn/author/wangjianc/index.shtml\">王剑</a>：\n\t\t\t\t<a href=\"http://finance.sina.com.cn/zl/bank/2026-11-23/zl-inizsqqk2387770.shtml\">资金运转企业改善居民去杠杆</a>\n\t\t\t</li><li>\n\t\t\t\t<a href=\"http://zhuanlan.sina.com.cn/author/zhangyu/index.shtml\">张瑜</a>：\n\t\t\t\t<a href=\"http://finance.sina.com.cn/zl/china/2026-11-23/zl-inizsqqk2378404.shtml\">全球流动性进入“颠簸隧道”</a>\n\t\t\t</li><li>\n\t\t\t\t<a href=\"http://zhuanlan.sina.com.cn/author/wenbin/index.shtml\">温彬</a>：\n\t\t\t\t<a href=\"http://finance.sina.com.cn/zl/china/2026-11-23/zl-inizsqqn8445750.shtml\">10月财政支出继续提速</a>\n\t\t\t</li><p><a href=\"http://finance.sina.com.cn/stock/jyts/\">交易提示</a>\n<a href=\"http://finance.sina.com.cn/stock/cpbd/\">操盘必读</a>\n<a href=\"http://finance.sina.com.cn/focus/zqbjh/\">证券报</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/corp/view/vCB_BulletinGather.php?stock_str=&amp;gg_date=&amp;ftype=0\">最新公告</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/xsjj/index.phtml\">限售解禁</a>\n<a href=\"http://finance.sina.com.cn/data/\">数据中心</a>\n<a href=\"https://touzi.sina.com.cn/public/choose\">条件选股</a>\n<a href=\"http://stock.finance.sina.com.cn/stock/go.php/vIR_RatingNewest/index.phtml\">券商评级</a>\n<a href=\"http://stock.finance.sina.com.cn/stock/go.php/vIR_SumPrice/index.phtml\">股价预测</a>\n<a href=\"http://finance.sina.com.cn/stock/sl/\">板块行情</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/qgqp/index.phtml?t=sh_a\">千股千评</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/go.php/vDYData/kind/znzd/index.phtml\">个股诊断</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/dzjy/index.phtml\">大宗交易</a>\n<a href=\"http://finance.sina.com.cn/realstock/income_statement/2017-03-31/issued_pdate_de_1.html\">财报查询</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/go.php/vFinanceAnalyze/kind/performance/index.phtml\">业绩预告</a>\n<a href=\"http://stock.finance.sina.com.cn/option/quotes.html\">ETF期权</a>\n<a href=\"http://finance.sina.com.cn/fund/box/\">类余额宝</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/fund_center/index.html#jzkfall\">基金净值</a>\n<a href=\"http://finance.sina.com.cn/money/fund/compare/\">基金对比</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/fund_center/index.html#hbphall\">基金排名</a><a href=\"http://finance.sina.com.cn/money/future/hangqing.shtml\">商品行情</a>\n<a href=\"http://finance.sina.com.cn/money/future/hf.html\">外盘期货</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/q/view/vFutures_Positions_cjcc.php\">商品持仓</a>\n<a href=\"http://finance.sina.com.cn/futuremarket/spotprice.shtml#titlePos_4\">现货报价</a>\n<a href=\"http://finance.sina.com.cn/futures/quotes/CFCTGC.shtml\">CFTC持仓</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/#qz_qh\">期指行情</a> \n<a href=\"http://vip.stock.finance.sina.comcn/q/view/vCffex_Positions_cjcc.php\">期指持仓</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/gzqh/fxyj/index.shtml\">期指研究</a>\n<a href=\"http://finance.sina.com.cn/qizhi/hs300.html#gxzs\">行业指数</a>\n<a href=\"http://finance.sina.com.cn/qizhi/hs300.html#qz\">权重股票</a>\n<a href=\"http://finance.sina.com.cn/tblog/2011-06-20/166.html\">期货名人</a>\n<a href=\"http://biz.finance.sina.com.cn/futures/ask/\">专家坐堂</a>\n<a href=\"http://slide.finance.sina.com.cn/i_list_9_38679.html\">高清解盘</a> \n<a href=\"http://finance.sina.com.cn/futuremarket/help/1.html\">期货入门</a>\n<a href=\"http://finance.sina.com.cn/forex/bonds.shtml\">各国国债</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/qh/qsyw/index.shtml\">期市要闻</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/qh/pzyj/index.shtml\">期货研究</a> \n<a href=\"http://finance.sina.com.cn/futuremarket/comm_all.html\">机构评论</a> \n<a href=\"http://finance.sina.com.cn/futuremarket/help/15.html\">品种大全</a><a href=\"http://finance.sina.com.cn/forex/jsq.html\">外汇计算器</a>\n<a href=\"http://finance.sina.com.cn/forex/paijia.html#0\">人民币牌价</a>\n<a href=\"http://biz.finance.sina.com.cn/forex/forex.php\">中间价</a>\n<a href=\"http://finance.sina.com.cn/money/forex/hq/DINIW.shtml\">美元指数</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/#jbhl_forex\">直盘行情</a>\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#all_forex\"><span>所有行情</span></a> \t\t\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#usd_forex\"><span>美元相关</span></a> \t\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#cny_forex\"><span>人民币相关</span></a>\n<a href=\"http://vip.stock.finance.sina.com.cn/mkt/#jchl_forex\"><span>交叉盘</span></a>\n<a href=\"http://finance.sina.com.cn/money/globalindex/ibor.shtml\">拆借利率</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/wh/hbfx/index.shtml\">货币分析</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/wh/fxyc/index.shtml\">机构观点</a>\n<a href=\"http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&amp;event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD\">经济数据</a>\n<a href=\"http://biz.finance.sina.com.cn/forex/ask/index.php\">专家坐堂</a>\n<a href=\"http://finance.sina.com.cn/focus/fxanalyst/\">分析师圈</a>\n<a href=\"http://finance.sina.com.cn/forex/bonds.shtml\">国债收益率</a>\n<a href=\"http://roll.finance.sina.com.cn/finance/wh/index.shtml\">全球滚动</a>\n<a href=\"http://finance.sina.com.cn/money/forex/hq/CFTCDINIW.shtml\">CFTC持仓</a>\n<a href=\"http://finance.sina.com.cn/money/forex/hq/BTCbtcchina.shtml\">比特币</a><a href=\"http://finance.sina.com.cn/forex/jsq.html\">外汇计算器</a>\n\t\t<a href=\"http://roll.finance.sina.com.cn/finance/gjs/hjzx/index.shtml\">黄金资讯</a>\n\n\n\t\t<a href=\"http://roll.finance.sina.com.cn/finance/gjs/byfx/index.shtml\">白银分析</a>\n\t\t<a href=\"http://vip.stock.finance.sina.com.cn/q/view/vGold_Matter_History.php\">实物金价</a>\n\n\n\t\t<a href=\"http://stock.finance.sina.com.cn/futures/view/vGoldEtf.php\">ETF持仓</a>\n\t<a href=\"http://finance.sina.com.cn/money/gold/AUTD/quote.shtml\">黄金TD</a>\n\t\t<a href=\"http://finance.sina.com.cn/money/gold/AGTD/quote.shtml\">白银TD</a>\n\t\t<a href=\"http://roll.finance.sina.com.cn/finance/gjs/jyb/index.shtml\">金银币</a>\n\n\t\t<a href=\"http://biz.finance.sina.com.cn/zjzt/gold_2014.php\">专家坐堂</a>\n\t\t<a href=\"http://roll.finance.sina.com.cn/finance/gjs/tzzs/index.shtml\">基础知识</a>\n\t<a href=\"http://finance.sina.com.cn/futures/quotes/XAU.shtml\">现货黄金</a>\n\t\t<a href=\"http://finance.sina.com.cn/futures/quotes/XAG.shtml\">现货白银</a>\n\t\t<a href=\"http://finance.sina.com.cn/futures/quotes/XPT.shtml\">现货铂金</a>\n\t\t<a href=\"http://finance.sina.com.cn/futures/quotes/XPD.shtml\">现货钯金</a>\n\t\t<a href=\"http://slide.finance.sina.com.cn/i_list_9_34353.html\">高清解盘</a>\n\n\t\t<a href=\"http://guba.sina.com.cn/?s=bar&amp;bid=9111\">黄金吧</a>  <a href=\"http://guba.sina.com.cn/?s=bar&amp;name=ag0\">白银吧</a>\n\t\t<a href=\"http://roll.finance.sina.com.cn/finance/gjs/hjfx/index.shtml\">黄金分析</a>\n\t\t<a href=\"http://finance.sina.com.cn/futures/quotes/CFCTGC.shtml\">CFTC持仓</a></p><p><a href=\"http://blog.sina.com.cn/s/articlelist_1233227211_0_1.html\">\n\t\t\t\t\t\t\t\t叶檀\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1284139322_0_1.html\">\n\t\t\t\t\t\t\t\t凯恩斯\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1095876111_0_1.html\">\n\t\t\t\t\t\t\t\t曹中铭\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1278226564_0_1.html\">\n\t\t\t\t\t\t\t\t股民大张\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1068385283_0_1.html\">\n\t\t\t\t\t\t\t\t宇辉战舰\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1285707277_0_1.html\">\n\t\t\t\t\t\t\t\t股市风云\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1283087143_0_1.html\">\n\t\t\t\t\t\t\t\t余岳桐\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_6174896504_0_1.html\">\n\t\t\t\t\t\t\t\t股海战神\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_2620383855_0_1.html\">\n\t\t\t\t\t\t\t\t郭一鸣\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1778926481_0_1.html\">\n\t\t\t\t\t\t\t\t赵力行\n\t\t\t\t\t\t\t</a></p><p><a href=\"http://blog.sina.com.cn/s/articlelist_1233227211_0_1.html\">\n\t\t\t\t\t\t\t\t叶檀\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1284139322_0_1.html\">\n\t\t\t\t\t\t\t\t凯恩斯\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1095876111_0_1.html\">\n\t\t\t\t\t\t\t\t曹中铭\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1278226564_0_1.html\">\n\t\t\t\t\t\t\t\t股民大张\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1068385283_0_1.html\">\n\t\t\t\t\t\t\t\t宇辉战舰\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1285707277_0_1.html\">\n\t\t\t\t\t\t\t\t股市风云\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1283087143_0_1.html\">\n\t\t\t\t\t\t\t\t余岳桐\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_6174896504_0_1.html\">\n\t\t\t\t\t\t\t\t股海战神\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_2620383855_0_1.html\">\n\t\t\t\t\t\t\t\t郭一鸣\n\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t<a href=\"http://blog.sina.com.cn/s/articlelist_1778926481_0_1.html\">\n\t\t\t\t\t\t\t\t赵力行\n\t\t\t\t\t\t\t</a></p><p><a href=\"https://finance.sina.com.cn/onehour/2020-10-20/doc-iivhvpwz1605853.shtml\">\n                                <img src=\"https://n.sinaimg.cn/finance/transform/525/w300h225/20201030/ecb0-kcaeqzy3436531.jpg\" alt=\"董明珠还能为格力奋战多久？|《至少一个小时》\">\n                                <em></em>\n                            </a>\n                            <a href=\"https://finance.sina.com.cn/onehour/2020-10-20/doc-iivhvpwz1605853.shtml\">董明珠还能为格力奋战多久？|《至少一个小时》</a>\n                </p><p><a href=\"https://finance.sina.com.cn/onehour/2020-06-18/doc-iircuyvi6164573.shtml\">\n                                <img src=\"https://n.sinaimg.cn/finance/transform/525/w300h225/20201030/75b9-kcaeqzy3438114.jpg\" alt=\"梁建章：中国人口衰竭的速度前所未有\">\n                                <em></em>\n                            </a>\n                            <a href=\"https://finance.sina.com.cn/onehour/2020-06-18/doc-iircuyvi6164573.shtml\">梁建章：中国人口衰竭的速度前所未有</a>\n                </p><p><a href=\"https://finance.sina.com.cn/onehour/2020-05-15/doc-iirczymk1670659.shtml\">\n                                <img src=\"https://n.sinaimg.cn/finance/transform/525/w300h225/20201030/c485-kcaeqzy3442305.jpg\" alt=\"冷友斌回应网友质疑：说价格高 对飞鹤不公平！\">\n                                <em></em>\n                            </a>\n                            <a href=\"https://finance.sina.com.cn/onehour/2020-05-15/doc-iirczymk1670659.shtml\">冷友斌回应网友质疑：说价格高 对飞鹤不公平！</a>\n                </p><p><a href=\"https://finance.sina.com.cn/onehour/2020-04-09/doc-iimxyqwa5514143.shtml\">\n                                <img src=\"https://n.sinaimg.cn/finance/transform/525/w300h225/20201030/a563-kcaeqzy3444360.jpg\" alt=\"王中军：我喜欢比较“江湖”一点的人\">\n                                <em></em>\n                            </a>\n                            <a href=\"https://finance.sina.com.cn/onehour/2020-04-09/doc-iimxyqwa5514143.shtml\">王中军：我喜欢比较“江湖”一点的人</a>\n                </p><li><a href=\"http://guba.sina.com.cn/u/3031084391\">7x24快讯</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456892&amp;bid=9279&amp;dpc=1\">9月19日沪深两市涨停分析</a></li><li><a href=\"http://guba.sina.com.cn/u/7242761149\">非凡哥哥samm</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456767&amp;bid=9279&amp;dpc=1\">不想做任何操作</a></li><li><a href=\"http://guba.sina.com.cn/u/6478109017\">飞我eight</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456757&amp;bid=9279&amp;dpc=1\">今天才这点成交量</a></li><li><a href=\"http://guba.sina.com.cn/u/7505349124\">和你天天向上</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456698&amp;bid=9279&amp;dpc=1\">全部清除了  一分不剩</a></li><li><a href=\"http://guba.sina.com.cn/u/7048726012\">用户7048726012</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456640&amp;bid=9279&amp;dpc=1\">想红但是又有点怕羞</a></li><li><a href=\"http://guba.sina.com.cn/u/5554913071\">江东子弟93949</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456639&amp;bid=9279&amp;dpc=1\">还对中芯抱有幻想的人</a></li><li><a href=\"http://guba.sina.com.cn/u/7505349124\">和你天天向上</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456602&amp;bid=9279&amp;dpc=1\">拉升一下吧  给我清仓的机会</a></li><li><a href=\"http://guba.sina.com.cn/u/7763476192\">用户7763476192</a>：<a href=\"https://guba.sina.com.cn/?s=thread&amp;tid=3456728&amp;bid=9279&amp;dpc=1\">再玩下去6000亿都守不住了，没人玩了</a></li><li><span>11-26</span>\n\t\t\t\t<span>猎奇智能</span>\n\t\t\t\t<span>301661</span>\n\t\t\t\t<span>--</span></li><li><span>11-25</span>\n\t\t\t\t<span>天广实</span>\n\t\t\t\t<span>920319</span>\n\t\t\t\t<span>55.65</span></li><li><span>11-23</span>\n\t\t\t\t<span>傲拓科技</span>\n\t\t\t\t<span>688845</span>\n\t\t\t\t<span>18.18</span></li><li><span>11-11</span>\n\t\t\t\t<span>华晟智能</span>\n\t\t\t\t<span>920067</span>\n\t\t\t\t<span>23.52</span></li><li><span>11-04</span>\n\t\t\t\t<span>菊乐股份</span>\n\t\t\t\t<span>920309</span>\n\t\t\t\t<span>31.92</span></li><p><a href=\"http://news.sina.com.cn/feedback/post.html\">新浪财经意见反馈留言板</a></p><p>\n                        <a href=\"http://ir.sina.com.cn/index.shtml\">新浪简介</a><span>|</span><a href=\"http://emarketing.sina.com.cn/\">广告服务</a><span>|</span><a href=\"http://corp.sina.com.cn/eng/\">About Sina</a>\n                        <br>\n                        <a href=\"http://www.sina.com.cn/contactus.html\">联系我们</a><span>|</span><a href=\"http://corp.sina.com.cn/chn/sina_job.html\">招聘信息</a><span>|</span><a href=\"https://login.sina.com.cn/signup/signup.php\">通行证注册</a>\n                        <br>\n                        <a href=\"http://help.sina.com.cn/\">产品答疑</a><span>|</span><a href=\"http://www.sina.com.cn/intro/lawfirm.shtml\">网站律师</a><span>|</span><a href=\"http://english.sina.com/\">SINA English</a>\n                    </p><p>Copyright © 1996-2026 SINA Corporation</p><p>All Rights Reserved 新浪公司 <a href=\"http://www.sina.com.cn/intro/copyright.shtml\">版权所有</a></p>",
-    "author": "环球市场播报"
-  },
-  {
-    "id": "aihot-20261123-hugging-face-4712db43",
-    "title": "RoboTrack：面向真实世界机器人操作场景的点跟踪",
-    "originalTitle": "RoboTrack: Point tracking for real-world robotic manipulation",
-    "summary": "AI2（Allen Institute for AI）在 Hugging Face 官方博客介绍 RoboTrack，一个面向真实世界机器人操作场景的点跟踪工作。该项目由官方以开源形式发布，聚焦机器人操作任务中的点级运动追踪。",
-    "url": "https://huggingface.co/blog/allenai/robotrack",
-    "source": "Hugging Face Blog",
-    "publishedAt": "2026-11-23T17:20:37.000Z",
-    "score": 78,
-    "tier": "T1",
-    "selected": true,
-    "industry": "AI",
-    "topics": [
-      "机器人",
-      "计算机视觉",
-      "开源生态",
-      "模型发布"
-    ],
-    "region": [
-      "AI精选",
-      "官方"
-    ],
-    "tags": [
-      "官方",
-      "开源",
-      "RoboTrack",
-      "点跟踪",
-      "机器人操作"
-    ],
-    "context": "来自 AI2 研究院的官方开源发布，为具身智能与机器人感知方向的研究者提供了新的参考实现。",
-    "contentHtml": "<p>🤖 <a href=\"https://huggingface.co/collections/allenai/robotrack\">Models</a> | 📄 <a href=\"https://allenai.org/papers/robotrack\">Tech Report</a> | 📊 <a href=\"https://huggingface.co/datasets/allenai/RoboTrack-15M\">Data</a> | 💻 <a href=\"https://github.com/allenai/robotrack\">Code</a> | 🌐 <a href=\"https://robotrack.allen.ai/\">Project Page</a> | 📈 <a href=\"https://huggingface.co/datasets/allenai/RoboTrack-Bench\">Benchmark</a></p><p><a href=\"https://www.datocms-assets.com/64837/1795407244-robotrack-blog-draft-google-docs-image-1.png\"><img src=\"https://www.datocms-assets.com/64837/1795407244-robotrack-blog-draft-google-docs-image-1.png\" alt=\"RoboTrack wordmark logo on a dark teal-to-magenta gradient background\"></a></p><p>Deploying robots in real-world settings requires reliable perception throughout an interaction. To pick something up, a robot needs to follow the positions of its gripper and the object as they move. In a laboratory, a robot handling a pipette must keep track of its tip while aligning it with the opening of a tube. These tasks become harder when nearby objects clutter the view, the gripper obscures the object being handled, or the viewing angle changes.</p><p>One way to help robots follow these interactions is to track specific locations on the objects they handle. This is the idea behind <em>point tracking</em>. Given a location in one video frame, a tracker estimates where that same point appears in subsequent frames, when it is occluded, and where it reappears. These trajectories can help robots learn from demonstrations, plan and guide movements, and model how objects respond to actions.</p><p>Robotics systems often rely on off-the-shelf trackers to automatically annotate motion in videos and provide feedback during execution. And current trackers score well on established robotics benchmarks, suggesting they could be ready for wider use in real-world systems. We wanted to see whether those results hold up across the varied scenes, viewpoints, and object interactions robots encounter in practice.</p><p>We introduce <a href=\"https://robotrack.allen.ai/\"><strong>RoboTrack</strong></a>, a benchmark and training data suite for point tracking in robotic manipulation. <a href=\"https://huggingface.co/datasets/allenai/RoboTrack-Bench\">RoboTrack-Bench</a> contains 307 human-annotated videos from DROID, Ego-Exo4D, <a href=\"https://allenai.org/blog/molmoact2\">MolmoAct 2</a>, and EgoVerse, covering different robots and human hands, cluttered scenes, and first- and third-person viewpoints. To study how training data affects tracking in these settings, we also extend <a href=\"https://allenai.org/blog/molmospaces\">MolmoSpaces</a>, Ai2’s simulation ecosystem for robot learning, to generate dense point tracks from simulated robot manipulation trajectories. This pipeline produces <a href=\"https://huggingface.co/datasets/allenai/RoboTrack-15M\">RoboTrack-15M</a>, a new synthetic training dataset targeted toward robotic manipulation.</p><p><a href=\"https://www.datocms-assets.com/64837/1795407698-robotrack-blog-draft-google-docs-image-2.png\"><img src=\"https://www.datocms-assets.com/64837/1795407698-robotrack-blog-draft-google-docs-image-2.png\" alt=\"Overview diagram of RoboTrack showing RoboTrack-15M simulated data generation from MolmoSpaces and RoboTrack-Bench human-annotated real-world manipulation footage\"></a></p><p><em>RoboTrack is a benchmark and training data suite for point tracking in robotic manipulation. Built on MolmoSpaces, RoboTrack-15M (top-left) generates point tracks for training. Training with this simulated data improves tracking on real manipulation footage. RoboTrack-Bench (top-right) provides human-annotated point tracks in real manipulation videos.</em></p><p>Our evaluations show that leading trackers score much lower on RoboTrack-Bench than on existing robotics benchmarks. Adding RoboTrack-15M to an existing tracker’s training improves performance on real manipulation video, with gains extending to other tracking benchmarks. We bring these pieces together on a real robot, using the resulting tracker to help guide pipette handling in wet-lab tasks.</p><p>Today, we’re releasing both RoboTrack components and two new point tracking models: <a href=\"https://huggingface.co/collections/allenai/robotrack\">RoboTracker and RoboTracker-Warp</a>. RoboTracker is a fine-tuned AllTracker model using our techniques and data, while RoboTracker-Warp is trained from CoWTracker. Both models improve average AJ across the three robotics benchmarks compared with their respective released baselines, and RoboTracker-Warp achieves state-of-the-art performance on four out of the five benchmarks we evaluated. We’re also releasing our <a href=\"https://allenai.org/papers/robotrack\">paper</a> describing the work and evaluation results.</p><h2>\n\t\n\t<span>\n\t\tRoboTrack-Bench: A benchmark for point-tracking in real-world manipulation\n\t</span>\n</h2><p><a href=\"https://www.datocms-assets.com/64837/1795407981-robotrack-blog-draft-google-docs-image-3-1.png\"><img src=\"https://www.datocms-assets.com/64837/1795407981-robotrack-blog-draft-google-docs-image-3-1.png\" alt=\"Examples of human-verified point tracks in RoboTrack-Bench across DROID, Ego-Exo4D, MolmoAct 2, and EgoVerse\"></a></p><p><em>RoboTrack-Bench at a glance. Examples from each source dataset (307 clips and 2,522 human-verified tracks in total). MolmoAct 2 and EgoVerse show one embodiment per panel. DROID and EgoExo4D show synchronized ego (top) and exo (bottom) views.</em></p><p>RoboTrack-Bench expands evaluation beyond controlled tabletop setups. It contains 307 videos from DROID, Ego-Exo4D, MolmoAct 2, and EgoVerse, annotated with a total of 2,522 point tracks. The videos show robots and human hands manipulating objects across cluttered scenes and first- and third-person viewpoints. Small objects can be difficult to follow against a busy background, and grippers often hide the objects they hold.</p><p>Every track in RoboTrack-Bench is annotated and verified by humans. We ask annotators to prioritize points that move or become occluded rather than the many static background points in robot videos. Following the TAP-Vid annotation approach, annotators use motion estimates to help trace each point through a video. They label each track as belonging to a robot or human body, a manipulated object, or a static object to support future analysis of performance on each group. A second group of annotators checks every track frame by frame before it’s included in our curated data.</p><p>To support research in multi-view pointing, correspondence, and tracking, RoboTrack-Bench contains a subset of 33 video pairs that were recorded simultaneously from two cameras. We annotate the same physical points in both views, synchronized across frames, connecting different views of the same interaction.</p><h2>\n\t\n\t<span>\n\t\tPoint trackers struggle on real-world manipulation\n\t</span>\n</h2><p>We evaluated four leading trackers – CoTracker3, BootsTAPNext, AllTracker, and CoWTracker – on RoboTrack-Bench and four other benchmarks: <a href=\"https://arxiv.org/abs/2308.15975\">RoboTAP</a> (real-world tabletop manipulation), RGB-Stacking (simulated manipulation), and DAVIS and Kinetics (general video). We report Average Jaccard (AJ), which measures tracking accuracy and visibility prediction; higher scores are better.</p><p><a href=\"https://www.datocms-assets.com/64837/1795408316-robotrack-blog-draft-google-docs-image-4.png\"><img src=\"https://www.datocms-assets.com/64837/1795408316-robotrack-blog-draft-google-docs-image-4.png\" alt=\"Evaluation table comparing CoTracker3, BootsTAPNext, AllTracker, and CoWTracker in Average Jaccard across RoboTrack-Bench, RoboTAP, RGB-Stacking, DAVIS, and Kinetics\"></a></p><p><strong>RoboTrack-Bench is harder than existing robot benchmarks</strong>. Every final tracker we evaluated scores lower on RoboTrack-Bench than on RoboTAP, the only other real-video robotics benchmark. Their score drops by 3.0 to 6.6 AJ. Even the strongest off-the-shelf tracker, CoWTracker, drops from 70.5 AJ on RoboTAP to 63.9 on RoboTrack-Bench. The drop holds across models despite their different architectures and training data, indicating RoboTrack-Bench identifies weaknesses across multiple trackers.</p><p><strong>RGB-Stacking rewards synthetic training more than real-world ability.</strong> BootsTAPNext is TAPNext trained further on 15 million real videos. That extra real-world training raises its RoboTrack-Bench score by 5.1 AJ (55.1 to 60.2), but lowers its RGB-Stacking score by 9.5 AJ (75.0 to 65.5). RGB-Stacking is built from simulated block stacking, and it ranks the Kubric-only model higher, while real manipulation video ranks them the other way around.</p><p><strong>A lead on the older benchmarks does not carry over.</strong> CoWTracker leads CoTracker3 by 4.7 AJ on RoboTAP, but by only 2.1 AJ on RoboTrack-Bench. AllTracker’s 2.7-point lead over CoTracker3 on RoboTAP shrinks to 0.8. BootsTAPNext, the strongest model on DAVIS, falls 3.7 AJ behind CoWTracker on RoboTrack-Bench and even trails the Kubric-only AllTracker (60.2 vs 61.4 AJ), despite its training on 15 million real videos.</p><p>These results suggest that existing benchmarks give an incomplete picture of tracking performance in real-world manipulation. Evaluating on more varied scenes reveals difficulties shared by all four trackers and changes how their strengths compare.</p><p><em>Note: Each tracker runs with its authors’ settings and is all scored in the same way. Our AllTracker scores differ slightly from the published ones because we fixed a scoring bug in its released evaluation code. Additionally, we evaluate RoboTAP and Kinetics on all annotated points rather than following AllTracker’s protocol. See our paper for full evaluation protocols.</em></p><h2>\n\t\n\t<span>\n\t\tRoboTrack-15M: Simulation data from MolmoSpaces\n\t</span>\n</h2><p>Why do these trackers struggle with real-world manipulation? Many trackers train on synthetic videos generated with <a href=\"https://github.com/google-research/kubric\">Kubric</a>, which shows objects tossed into a scene. These provide examples of motion and occlusion, but don’t focus on robots grasping and moving objects. We wanted to test whether adding trajectories from these interactions could improve tracking on real manipulation videos.</p><p>This is where MolmoSpaces comes in—our robotic simulation environment at Ai2. We extend its existing manipulation simulations to generate dense point tracks on the robot and the objects it handles. In each episode, a simulated robot arm picks up an everyday object, such as a cup, a plate, or a block. Two cameras record the interaction: one on the wrist and one at the robot’s base, rendered in MuJoCo. Using the simulator’s geometry, object poses, and camera information, we calculate each point’s position and visibility in every frame without human annotation and filter out static points on the background and the robot’s fixed base.</p><p>The pipeline produces RoboTrack-15M for training. RoboTrack-15M has 3,000 videos from 300 simulated homes with 5,000 tracks per video, for 15 million tracks in total.</p><p><a href=\"https://www.datocms-assets.com/64837/1795408512-robotrack-blog-draft-google-docs-image-5.png\"><img src=\"https://www.datocms-assets.com/64837/1795408512-robotrack-blog-draft-google-docs-image-5.png\" alt=\"Diagram of the RoboTrack-15M synthetic data generation pipeline built on MolmoSpaces and MuJoCo\"></a></p><p><em>Data generation pipeline of RoboTrack-15M. Objects, indoor scenes, and robot grasps are obtained from MolmoSpaces. We use the simulator’s geometry and camera information to calculate point positions and visibility.</em></p><h2>\n\t\n\t<span>\n\t\tRoboTracker: Point tracker trained on simulated manipulation\n\t</span>\n</h2><p>We introduce two models trained on RoboTrack-15M, RoboTracker and RoboTracker-Warp. Each fine-tunes an existing tracker on RoboTrack-15M together with its original training data. RoboTracker builds on AllTracker, a lightweight model with 17 million parameters, and RoboTracker-Warp builds on CoWTracker, a much larger model with about 1 billion parameters.</p><p>We’re releasing both model checkpoints so other researchers can inspect and build on this work. RoboTracker-Warp’s weights are for noncommercial use.</p><p><strong>Adding RoboTrack-15M improves scores on robotics benchmarks.</strong> Compared with the released AllTracker and CoWTracker models, respectively, RoboTracker improves RoboTrack-Bench by 0.8 AJ (62.6 to 63.4) and RoboTracker-Warp by 2.1 AJ (63.9 to 66.0), with gains of up to 1.2 AJ averaged across the three robotics benchmarks. On general video benchmarks, both models perform on par with their base models. Overall, RoboTracker-Warp has the highest AJ of the models we evaluated on four of the five benchmarks. The exception is DAVIS, where BootsTAPNext and CoWTracker score slightly higher.</p><p><a href=\"https://www.datocms-assets.com/64837/1795408662-robotrack-blog-draft-google-docs-image-6.png\"><img src=\"https://www.datocms-assets.com/64837/1795408662-robotrack-blog-draft-google-docs-image-6.png\" alt=\"Comparison of Average Jaccard scores before and after fine-tuning AllTracker (RoboTracker) and CoWTracker (RoboTracker-Warp) on RoboTrack-15M\"></a></p><p><em>Improvements from fine-tuning on RoboTrack-15M, for AllTracker (RoboTracker) and CoWTracker (RoboTracker-Warp). The robotics average is taken over RoboTrack-Bench, RoboTAP, and RGB-Stacking.</em></p><p><a href=\"https://www.datocms-assets.com/64837/1795408710-robotrack-blog-draft-google-docs-image-7.png\"><img src=\"https://www.datocms-assets.com/64837/1795408710-robotrack-blog-draft-google-docs-image-7.png\" alt=\"Chart of RoboTrack-Bench results broken down by video source dataset\"></a></p><p><em>Results on RoboTrack-Bench by video source.</em></p><p>Breaking the gains down by source shows where they come from. RoboTracker-Warp improves on every source by roughly 1 to 3 AJ, including the human footage from EgoVerse and Ego-Exo4D, even though RoboTrack-15M contains only robot arms. RoboTracker’s gains are smaller and come mostly from robot footage—clearest on DROID Franka and EgoVerse EVA.</p><h2>\n\t\n\t<span>\n\t\tWhat makes good simulation data for point tracking?\n\t</span>\n</h2><p>RoboTrack-15M is the result of multiple iterations and experiments with our synthetic data. In fact, our first attempt didn’t bring any gain on RoboTrack-Bench. To find out why, we looked at a simple question: how far do the tracked points move compared with real manipulation videos? We plot this as a histogram for each version of our data and measure its distance from RoboTrack-Bench (figure below).</p><p><a href=\"https://www.datocms-assets.com/64837/1795408926-robotrack-blog-draft-google-docs-image-8.png\"><img src=\"https://www.datocms-assets.com/64837/1795408926-robotrack-blog-draft-google-docs-image-8.png\" alt=\"Histograms comparing point motion distributions and Jensen-Shannon divergence across training data iterations and RoboTrack-Bench for third-person and first-person views\"></a></p><p><em>How far points move in each version of our training data compared with RoboTrack-Bench, for third-person (top) and first-person (bottom) views. Distance is the Jensen–Shannon divergence (JSD) between the two histograms, with 0 indicating identical histograms. Kubric has one camera type, so the same clips appear in both rows. AJ is measured on the full RoboTrack-Bench.</em></p><p>The histograms made it clear what was going wrong. Our first version picked points anywhere in the frame, including walls, floors, and furniture, so most points seen from the fixed third-person camera never moved. To address this, we next sampled points only on the robot and the objects it handles, which brought the wrist view close to real video and raised the score. Interestingly, we found that Kubric had the same mismatch in the wrist view, which likely explains why it alone isn’t enough for the varied viewpoints of robotic manipulation. Finally, we moved points from the robot’s fixed base and mounting platform onto the moving arm, which brings our third-person view in line with real video as well and raises the ablation score to 63.0 AJ, 1.5 points above the Kubric-only control.</p><h2>\n\t\n\t<span>\n\t\tApplication: Robotic manipulation using point tracking\n\t</span>\n</h2><p><a href=\"https://www.datocms-assets.com/64837/1795409178-robotrack-blog-draft-google-docs-image-9-4.png\"><img src=\"https://www.datocms-assets.com/64837/1795409178-robotrack-blog-draft-google-docs-image-9-4.png\" alt=\"Diagram of the single-demonstration wet-lab pipetting pipeline guided by RoboTracker point tracks\"></a></p><p><em>Our wet-lab pipeline for guiding the robot with point tracks from a single demonstration.</em></p><p>What does better point tracking mean for robotics? Many robotic systems have found point tracks useful as a compact representation of how objects move that can guide a policy directly. To see this in practice, we built a similar system for a wet-lab task: pipetting liquid from one vial to another.</p><p>Here, a robot arm picks up an electronic pipette, draws liquid from the first vial, dispenses it into the second, and returns the pipette to its holder. The task is challenging because the pipette tip has to line up with the vial opening within millimeters, and the robot needs to adjust to different layouts of vials in each trial.</p><p>Following RoboTap, the robot learns the task from a single demonstration, which we record by teleoperation and split into steps. At test time, the robot compares what its camera sees with the demonstration and uses RoboTracker to estimate the motion required to align with the vial. Because the following motion runs without further feedback, the task only succeeds if that estimate is accurate.</p><p>We compare three ways of estimating where the vial has moved:</p><ul>\n<li>Optical flow (RAFT) matches pixels directly between the demonstration image and the live camera image.</li>\n<li>Object masks (SAM3) find the vial in each new image and line up the center of its mask with the demonstration.</li>\n<li>Point tracking (RoboTracker) follows points on the vial throughout the video, matching points in the demonstration image to the live image.</li>\n</ul><p>We ran each method on 20 layouts with the vials in different positions: 10 with a clear view and 10 with partial occlusion. Point tracking completed the full transfer in 17 of 20 trials, compared with 8 for object masks and 5 for optical flow. It succeeded in all 10 clear-view trials and 7 of 10 with occlusion, where the mask-based method succeeded only once.</p><p>The other methods fail in different ways. Optical flow breaks down when the vials sit far from where they were in the demonstration, and masks can latch onto a similar-looking object or lose the vial when it’s occluded. Point tracking, on the other hand, follows the same vial object from frame to frame, so it handles both large moves and partial occlusion. These results suggest point tracking is a promising tool for precise robotic manipulation tasks.</p><p><a href=\"https://www.datocms-assets.com/64837/1795408826-robotrack-blog-draft-google-docs-image-9.png\"><img src=\"https://www.datocms-assets.com/64837/1795408826-robotrack-blog-draft-google-docs-image-9.png\" alt=\"Bar chart showing wet-lab pipetting trial success rates for optical flow, object masks, and RoboTracker point tracking with and without occlusion\"></a></p><p><em>Success rate of pipetting trials with each method, with and without occlusion (10 layouts each). A trial counts as a success when the robot completes the full transfer.</em></p><h2>\n\t\n\t<span>\n\t\tLimitations and what’s next\n\t</span>\n</h2><p>We find the trackers still struggle with long occlusions, finding points when they reappear, and following small objects against busy backgrounds. Training on RoboTrack-15M improves performance, but these failures remain a challenge for real-world use.</p><p>Our simulations also focus on picking up everyday objects. They don't yet capture the precise movements involved in tasks such as pipette handling. A next step is to simulate these tasks more closely and test whether training on their trajectories improves tracking during deployment.</p><p>RoboTrack gives us a way to measure these failures and generate training data to address them. We hope the benchmarks, simulation pipeline, and released model help others build trackers that robots can rely on.</p>",
-    "author": "Kyle Wiggers"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-fa589e2a",
-    "title": "美国国债下跌 黄仁勋重掌英伟达令避险交易受挫",
-    "summary": "周一美国国债全线下跌，黄仁勋重掌英伟达提振股市，投资者对美债的避险买盘力度减弱。各期限美债收益率随价格下跌而走高，其中2年期收益率上涨约6个基点至4.71%。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuarq5357025.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T17:09:53.000Z",
-    "score": 57,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "债券市场",
-      "宏观",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "美国国债",
-      "英伟达",
-      "避险交易",
-      "收益率"
-    ],
-    "context": "风险偏好回升令避险资产承压，美债与股市的跷跷板效应反映市场情绪转向风险资产。"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-76c8a10d",
-    "title": "夜盘期货收盘：沪铜收涨2.77% 沪锌收涨1.49%",
-    "summary": "国内商品期货夜盘收盘，沪铜收涨2.77%，沪锌收涨1.49%，沪锡收涨4.58%领涨。国际铜收涨0.82%，沪铝收涨0.53%，沪镍收涨0.08%；沪铅收跌0.58%，氧化铝夜盘收跌0.85%。此外铝合金收涨0.26%，不锈钢夜盘收跌0.07%。",
-    "url": "https://finance.eastmoney.com/a/202611243937733823.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T17:01:36.000Z",
-    "score": 52,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "大宗商品",
-      "市场行情",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "期货夜盘",
-      "有色金属",
-      "沪铜",
-      "商品行情"
-    ],
-    "context": "有色金属夜盘整体偏强、沪锡涨幅超4.5%，是跟踪国内商品期货每日走势的常规行情参考。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-87a1e821",
-    "title": "美股为何迎来2008年以来波动最剧烈的周一早盘",
-    "originalTitle": "为何美股迎来2008年以来波动最剧烈的周一早盘",
-    "summary": "美股周一早盘波动剧烈程度创2008年以来之最，此前一周遭华尔街疯狂抛售的AI相关资产被资金大举买回。跟踪纳指100的景顺QQQ信托开盘大涨近8%，创下该基金1999年以来的纪录。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuars2128579.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T17:01:25.000Z",
-    "score": 82,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "美股",
-      "AI资产",
-      "QQQ",
-      "市场波动"
-    ],
-    "context": "AI资产一周内先遭抛售又被买回，反映市场对AI行情的多空分歧白热化，对全球风险资产情绪具有风向标意义。",
-    "contentHtml": "<p>　　上周华尔街疯狂抛售所有和 AI 挂钩的资产，而周一资金又大举买回。</p><p>　　景顺 QQQ 信托（跟踪科技权重集中的纳指 100）开盘大涨近 8%，创下该基金 1999 年成立以来最大开盘跳空涨幅。历史上最接近的几次大幅高开出现在 2000、2001 年互联网泡沫破裂阶段，当时这种大涨常常很快熄火。</p><p>　　标普 500 ETF（SPY）开盘上涨 5%。自 1993 年以来的所有周一行情里，只有金融危机最深处的 2008 年 10 月 13 日，开盘涨幅比这次更高。</p><p>　　这波暴涨的背景是英伟达大幅拉升，而上周标普 500 已经跌入回调区间。</p><p><img src=\"https://n.sinaimg.cn/finance/transform/59/w550h309/20261124/0f5e-57f7fd38ee3706c3b655d890fdd4ee40.png\" alt=\"\"><span></span></p><p>　　<strong>芯片股领涨</strong></p><p>　　iShares 半导体 ETF（SOXX）迎来 2001 年上市以来最强开盘表现，远超它此前在 2002 年 10 月约 9% 的历史最高开盘涨幅。</p><p>　　英伟达开盘大涨 33%，有望迎来史上表现最好的交易日之一；它的单日涨幅纪录是 2000 年 3 月的 42%。<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/TSM.html\">台积电</a></span><span></span>、<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/MU.html\">美光</a></span><span></span>、<span><a href=\"https://stock.finance.sina.com.cn/usstock/quotes/AMD.html\">AMD</a></span><span></span> 开盘涨幅大致落在 12%~21% 区间。</p><p>　　并非所有人都认为恐慌已经出清。Roundhill 投资首席策略师 Drew Pettit 对雅虎财经表示，期权市场情绪 “糟糕程度堪比疫情期间与解放日”，“但这还不算彻底杀跌出清”。</p><p>　　长期来看，历史站在多头一边。雅虎财经测算：自 1993 年，SPY 周一开盘跳空高开 2% 及以上一共出现 20 次；其中 17 次在一年后点位更高，涨幅中位数约 25%，差不多是普通年份回报的两倍。</p><p>　　创意规划公司的 Charlie Bilello 指出，上周标普 500 近 9% 的周跌幅，是 1950 年以来该指数第 12 差的单周表现；在这类暴跌周之后，股市后续一年平均上涨 26%，而普通环境下平均涨幅为 11%。</p><p>　　Evercore ISI 的 Julian Emanuel 也持类似看法，他周末发文：“牛市格局不变，企业盈利（EPS）大概率将迎来两位数增长。”</p><p><img src=\"https://n.sinaimg.cn/finance/transform/59/w550h309/20261124/e5ef-2d6e8985574e6eb73c55144e3fafdcab.png\" alt=\"\"><span></span></p><p>　　<strong>上涨之路少有坦途</strong></p><p>　　在这 20 次高开案例当中，有一半在三个月内再度跌回上周五低点下方，多数发生在两周之内。好比狂欢后的清晨，头痛往往会反复，不会一次性消失。</p><p>　　即便如此，这 10 次里面仍有 8 次在一年后收涨。和当前行情结构最相似的两次 ——2008 年 10 月、2010 年 5 月，同样是惨烈单周之后紧接着周一大幅高开，随后三个月继续下探，但一年之后相比当时位置上涨约 15%。</p><p><img src=\"https://n.sinaimg.cn/finance/transform/59/w550h309/20261124/4c20-c9dd3b7f15934342ca545040d5ca060c.png\" alt=\"\"><span></span></p><p>　　这也让上周五标普 500 约 6883 点的低点成为市场焦点。风险仍存：华尔街仍在定价 12 月加息；而且历史上，通胀以这么快速度上行时出现的回调，最后往往演变为熊市。</p><p>　　BTIG 的策略师尚未确认底部。他们周末写道：“我们不认为这里是最终低点，预期会先迎来一轮短期反弹，目标看向 7250–7350，之后大概率再度走弱。”</p><p><img src=\"https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png\"></p><p>海量资讯、精准解读，尽在新浪财经APP</p><p>责任编辑：郭明煜 </p>",
-    "author": "环球市场播报"
-  },
-  {
-    "id": "aihot-20261123-google-deepmind-fb953c22",
-    "title": "Google DeepMind 用智能体团队与形式化验证寻找更快的量子算法",
-    "originalTitle": "Finding faster quantum algorithms with agents and formal verification",
-    "summary": "Google DeepMind 结合智能体团队与形式化验证，寻找更快的量子算法，改进了面向核聚变与化学领域的量子算法。这项工作展示了 AI 智能体直接参与量子算法发现的实践路径。",
-    "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
-    "source": "Google DeepMind",
-    "publishedAt": "2026-11-23T16:59:40.000Z",
-    "score": 84,
-    "tier": "T1",
-    "selected": true,
-    "industry": "AI",
-    "topics": [
-      "前沿研究",
-      "量子计算",
-      "AI科研",
-      "模型发布"
-    ],
-    "region": [
-      "AI精选",
-      "官方"
-    ],
-    "tags": [
-      "官方",
-      "Google DeepMind",
-      "量子算法",
-      "智能体",
-      "形式化验证"
-    ],
-    "context": "前沿 AI 智能体与形式化验证结合用于量子算法改进，是 AI 与量子计算交叉方向值得关注的进展。",
-    "contentHtml": "<p><span> November 23, 2026 </span><span>Science</span></p><p>Sergey Shirobokov, Ben Jaderberg and Ryan Babbush</p><p>How using agent teams and formal verification can improve quantum algorithms for modelling fusion energy, chemistry and enzymes</p><p>Quantum computers could soon solve problems beyond the reach of classical supercomputers. However, there is a catch: even when using the best quantum algorithms, some important applications still require more resources than early quantum hardware will be able to support.</p><p>In a <a href=\"https://arxiv.org/abs/2611.09822\">new paper</a>, we used teams of Gemini 4 agents to improve well-known quantum algorithms, creating highly efficient quantum circuits. These optimized circuits, which are instructions for how a quantum computer should carry out an algorithm, could one day help us run simulations that solve complex scientific challenges, from fusion energy to drug design. To help the community build on this work, we are open-sourcing <a href=\"http://github.com/google-deepmind/formal-quantum-computation\">our Lean library</a>, problem specifications, and verified solutions on GitHub.</p><p>Because we cannot test resource-intensive quantum circuits on classical computers or today's small quantum processors, we have to prove that they work mathematically. Our agent teams proved each result using Lean, a formal theorem prover.</p><figure><figure></figure><figcaption><p><strong>Improving quantum algorithms using agentic teams</strong> For each problem, we tasked separate, independent agent teams with finding algorithmic improvements. These ideas were then verified with Lean, before entering a shared notebook. Every four hours, agents from each team met at a virtual conference to trade, debate and compare ideas. As teams produced more effective ideas over time, the computational cost gradually fell until the experiment finished.</p></figcaption></figure><p>We chose to focus on applications that could one day impact some of humanity’s greatest challenges, such as clean energy and drug design, but our method is not limited to these problem areas.</p><ul><li>We found a quantum circuit that helps calculate an important property of inertial confinement fusion, a fusion reaction method that uses lasers to compress hydrogen fuel until ignition. Our agent teams cut the required computing cost (a metric that combines required qubits and operations) by 11.8×, and lowered required memory from 5,650 to 4,338 <a href=\"https://research.google/blog/making-quantum-error-correction-work\">error-corrected qubits</a>.</li><li>The agents also reduced costs for simulating molecules in drug metabolism and certain photochemical reactions, which are complex reactions that are difficult for classical computers to simulate. For a common light-sensitive molecule, the agent teams made quantum simulation 8× cheaper, simplifying how the algorithm tracks particle positions and electric forces. For Cytochrome P450, an enzyme that breaks down most human medicines and is important for drug design, they found a 2.5× improvement and lowered memory from 481 to 333 qubits, by replacing bulky memory lookups.</li><li>We also improved a fundamental quantum algorithm and a widely used arithmetic building block. We found a 2.57x speedup for a specific implementation of Grover's algorithm, a foundational quantum operation that searches through an unsorted list, and a 290x speedup for arcsin, a common routine that is used by many other quantum algorithms to load numbers into quantum states.</li></ul><p>Running these algorithms in scientific simulations would still demand more computational resources than the first error-corrected quantum computers are likely to provide, but these improvements are significant.</p><p>We are also excited by the way in which we found them. We built a new, <a href=\"http://github.com/google-deepmind/formal-quantum-computation\">open-source library</a>, in Lean for quantum algorithms which could be used by teams of collaborating agents, so their ideas were backed by mathematical correctness guarantees. We could then set the research direction by specifying the problems for our agent teams and supervise their progress. Our knowledge of quantum algorithms, combined with the way we set up our agent teams, led to real scientific results.</p><p>The same approach could also accelerate other aspects of quantum computing research, and scientific discovery more broadly. Proof-checked AI search compresses work that once took years of manual design, empowering researchers to focus on choosing problems and interpreting results.</p><h2>Acknowledgements</h2><p>This research was a collaboration between Google DeepMind and Google Quantum AI. The work reflects the contributions of the paper's authors: Sergey Shirobokov, Ben Jaderberg, Katerina Hristova, George Tsoukalas, Johannes Bausch, Eric Wieser, Francisco J. H. Heras, Nicholas C. Rubin, Guang Hao Low, Sébastien Racanière, Nenad Tomašev, Lei M. Zhang, James D. Watson, Tanuj Khattar, Aws Albarghouthi, Stavan Jain, Harun Khan, Leopoldo Sarra, Andrew W. Senior, Michael Broughton, Hussain Masoom, Sergio Boixo, Ryan Babbush, Swarat Chaudhuri, and Pushmeet Kohli.</p><p>We also thank Kevin Ishimwe, Ibrahim Alkhashem, and Matthew Harrigan for feedback and discussions on the Lean library, Emilien Dupont and Sebastian Nowozin for manuscript feedback, and Brendan Tracey for advice on the fusion application. Finally, we thank Uchechi Okereke, Ali Douraghy, and Andy Song for legal and policy support, and Alex Wilkins, Evie Gray, Danielle Breen, Dimple Vijaykumar, Muinat Abdul, Jason Freidenfelds, Chris Kwaku-Abdullahi, and Rob Ashley for their help with visuals and communicating this work.</p>",
-    "author": "Sergey Shirobokov, Ben Jaderberg, Ryan Babbush"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-188ae064",
-    "title": "据报道，美国副总统万斯周末与黄仁勋通话并与英伟达方面展开沟通",
-    "originalTitle": "据报道 美国副总统万斯周末曾与黄仁勋通话 并与英伟达方面展开沟通",
-    "summary": "据媒体报道，美国副总统万斯周末曾与英伟达CEO黄仁勋通话，并与英伟达方面展开沟通。",
-    "url": "https://finance.eastmoney.com/a/202611243937733093.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T16:58:51.000Z",
-    "score": 65,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "政策动态",
-      "半导体",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "英伟达",
-      "黄仁勋",
-      "万斯",
-      "快讯"
-    ],
-    "context": "美国政界高层与英伟达掌门人的直接沟通动向，牵动市场对芯片政策走向的关注。"
-  },
-  {
-    "id": "aihot-20261123-sina-finance-1794d0cb",
-    "title": "美国参议院民主党领袖舒默：将动用“所有权力”调查黄仁勋等人",
-    "summary": "美国参议院民主党领袖查克·舒默表示，民主党将动用“所有权力”，调查特朗普政府、黄仁勋、英伟达其他高管以及任何为经济利益出卖美国国家安全的人是否存在不当行为。该表态将调查对象同时指向政府官员与英伟达管理层，理由涉及“为经济利益出卖美国国家安全”。",
-    "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-24/doc-inizuaru8091549.shtml",
-    "source": "新浪财经 · 实时滚动",
-    "publishedAt": "2026-11-23T16:58:07.000Z",
-    "score": 72,
-    "tier": "T2",
-    "selected": false,
-    "industry": "金融与政策",
-    "topics": [
-      "市场政策",
-      "美股",
-      "地缘政治",
-      "A股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内财经"
-    ],
-    "tags": [
-      "国内财经",
-      "市场",
-      "舒默",
-      "英伟达",
-      "黄仁勋",
-      "美国政治"
-    ],
-    "context": "舒默公开点名英伟达高管与特朗普政府，相关调查动向或影响市场对英伟达政治风险的预期。"
-  },
-  {
-    "id": "aihot-20261123-bloomberg-markets-49580669",
-    "title": "英伟达重新任命黄仁勋，上演惊人回归",
-    "originalTitle": "Nvidia Rehires Huang in Stunning Comeback",
-    "summary": "英伟达董事会重新任命黄仁勋执掌这家全球最大芯片制造商，成为史上最令人震惊的企业回归案例之一。消息推动英伟达股价录得数十年来最大涨幅。彭博记者 Ed Ludlow 解读了这一事件的来龙去脉。",
-    "url": "https://www.bloomberg.com/news/videos/2026-11-23/nvidia-rehires-huang-in-stunning-comeback",
-    "source": "Bloomberg Markets",
-    "publishedAt": "2026-11-23T16:54:43.000Z",
-    "score": 93,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "半导体",
-      "公司动态",
-      "宏观"
-    ],
-    "region": [
-      "金融与政策",
-      "媒体"
-    ],
-    "tags": [
-      "媒体",
-      "市场",
-      "英伟达",
-      "黄仁勋",
-      "股价大涨",
-      "企业回归"
-    ],
-    "context": "全球芯片龙头掌门人回归直接牵动半导体与AI板块走势，是科技股行情的关键风向标。",
-    "contentHtml": "<p>Nvidia’s board reinstated Jensen Huang as head of the world’s largest chipmaker in one of the most startling corporate comebacks in history, sending the stock on its biggest rally in decades. Ed Ludlow explains how we got here (Source: Bloomberg)</p>",
-    "contentHtmlZh": "<p>{\"t\": [\"</p><p>英伟达董事会让黄仁勋重新执掌这家全球最大的芯片制造商，堪称史上最令人震惊的企业复出之一，并推动股价迎来数十年来最大的一轮上涨。Ed Ludlow 解释了我们是如何走到今天的（来源：Bloomberg）</p><p>\"]}</p>"
-  },
-  {
-    "id": "aihot-20261123-eastmoney-724-50928167",
-    "title": "纽约诉讼案令市场预测平台Kalshi面临全美停运威胁",
-    "summary": "市场预测平台Kalshi因一起纽约诉讼案面临全美停运威胁，其全美业务能否继续运营取决于案件走向。这是预测市场平台在美合规运营面临的一项关键法律挑战。",
-    "url": "https://finance.eastmoney.com/a/202611243937731659.html",
-    "source": "东方财富 · 7x24快讯",
-    "publishedAt": "2026-11-23T16:54:22.000Z",
-    "score": 78,
-    "tier": "T2",
-    "selected": true,
-    "industry": "金融与政策",
-    "topics": [
-      "金融与政策",
-      "海外动态",
-      "A股",
-      "港股"
-    ],
-    "region": [
-      "金融与政策",
-      "国内快讯"
-    ],
-    "tags": [
-      "国内快讯",
-      "A股",
-      "Kalshi",
-      "预测市场",
-      "诉讼",
-      "监管"
-    ],
-    "context": "诉讼结果或影响Kalshi乃至预测市场行业在美国的合规运营前景，值得持续关注。",
-    "contentHtml": "<p>纽约诉讼案令市场预测平台Kalshi面临全美停运威胁</p><p>2026年11月24日 00:54</p><p>\n                                    来源：\n财联社                                </p><p><span>小</span>\n                                <span>中</span>\n                                <span>大</span>\n                            </p><p>东方财富APP</p><p>方便，快捷  </p><p>手机查看财经快讯</p><p>专业，丰富</p><p>一手掌握市场脉搏</p><p>　　纽约诉讼案令市场预测平台Kalshi面临全美停运威胁。 </p><p>（文章来源：财联社）</p><p><span>文章来源：财联社</span>\n                                        <span>责任编辑：161</span>\n                            </p><p>原标题：纽约诉讼案令市场预测平台Kalshi面临全美停运威胁。</p><p><strong>郑重声明：</strong>东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。\n                                    </p><p><a href=\"https://help.eastmoney.com/report_center.html?reportType=3&amp;title=%e7%ba%bd%e7%ba%a6%e8%af%89%e8%ae%bc%e6%a1%88%e4%bb%a4%e5%b8%82%e5%9c%ba%e9%a2%84%e6%b5%8b%e5%b9%b3%e5%8f%b0Kalshi%e9%9d%a2%e4%b8%b4%e5%85%a8%e7%be%8e%e5%81%9c%e8%bf%90%e5%a8%81%e8%83%81&amp;systype=3&amp;id=202611243937731659\">举报</a>\n                            </p><p><a href=\"https://weibo.com/dfcfw\">东方财富网<span></span></a>\n                                    </p><p>分享到微信朋友圈</p><p>打开微信，  </p><p>点击底部的“发现” </p><p>使用“扫一扫” </p><p>即可将网页分享至朋友圈</p><p><span></span>\n                                            <img src=\"https://g1.dfcfw.com/g4/202106/20210618093603.png\" alt=\"\"></p><p>扫描二维码关注</p><p>东方财富官网微信</p><ul>\n                                    <li><a href=\"http://quote.eastmoney.com/center/gridlist.html#sh_hk_board\">沪股通</a></li>\n                                    <li> </li>\n                                    <li><span></span></li>\n                                </ul><ul>\n                                    <li><a href=\"http://quote.eastmoney.com/center/gridlist.html#sz_hk_board\">深股通</a></li>\n                                    <li> </li>\n                                    <li><span></span></li>\n                                </ul><ul>\n                                    <li><a href=\"http://quote.eastmoney.com/center/gridlist.html#hk_sh_stocks\">港股通(沪)</a></li>\n                                    <li> </li>\n                                    <li><span></span></li>\n                                </ul><ul>\n                                    <li><a href=\"http://quote.eastmoney.com/center/gridlist.html#hk_sz_stocks\">港股通(深)</a></li>\n                                    <li> </li>\n                                    <li><span></span></li>\n                                </ul><p><a>热门资讯</a>\n    </p><ul>\n                        <li><a href=\"https://finance.eastmoney.com/a/202611233937026352.html\">全线拉升！特朗普最新发声！</a></li>\n                        <li><a href=\"https://finance.eastmoney.com/a/202611233937007379.html\">首批主动ETF今日上市</a></li>\n                        <li><a href=\"https://fund.eastmoney.com/a/202611233937232623.html\">创业板指大涨超3% 超4600股飘红</a></li>\n                        <li><a href=\"https://finance.eastmoney.com/a/202611233937184969.html\">港股年末将迎限售股解禁高峰</a></li>\n    </ul><p><a href=\"https://topic.eastmoney.com/\">焦点专题</a>\n                            \n                        </p><ul>\n                                        <li><a href=\"https://topic.eastmoney.com/detail/hrxfz.html\">英伟达董事会恢复黄仁勋CEO职务</a></li>\n                                        <li><a href=\"https://topic.eastmoney.com/detail/hgqdgswdjjjs.html\">韩国启动股市稳定基金救市</a></li>\n                                        <li><a href=\"https://topic.eastmoney.com/detail/sanjian3.html\">稳市场稳预期 监管层“三箭齐发”</a></li>\n                                </ul><p><a href=\"https://topic.eastmoney.com/detail/xhhjdp3600my.html\">\n                                                <img src=\"https://np-newspic.dfcfw.com/download/D24850469495764510009_w800h600.jpg\" alt=\"\">\n                                                <span>现货黄金跌破3600美元</span>\n                                            </a>\n                                            <a href=\"https://topic.eastmoney.com/detail/qqdlbdqwj.html\">\n                                                <img src=\"https://np-newspic.dfcfw.com/download/D25099822825273599933_w800h600.jpg\" alt=\"\">\n                                                <span>警报拉响：全球电路板短缺危机蔓延</span>\n                                            </a>\n                                    </p><p><a href=\"https://video.eastmoney.com/\">视频</a>\n                            \n                        </p><ul>\n                                        \n                                    </ul><ul></ul><ul>\n                                        <li>\n                                                    <a href=\"http://acttg.eastmoney.com/pub/web_nr_zxzwy_rdtjx_01_01_01_0\">一键关注财经大咖</a>\n                                        </li>\n                                    </ul><p>热点推荐</p><p><a href=\"http://finance.eastmoney.com/a/202611233937604949.html\">黄仁勋：我很荣幸能重返英伟达</a></p><p><span>界面新闻</span>\n                                </p><p><a href=\"http://finance.eastmoney.com/a/202611233937604949.html\">\n                                            <span>1911</span>\n                                            <span>人评论</span>\n                                        </a>\n                                    <span>2026-11-23</span>\n                                </p>"
   }
 ]

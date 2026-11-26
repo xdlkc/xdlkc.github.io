@@ -1,7 +1,402 @@
 [
   {
-    "id": "hot-8c27a134",
+    "id": "hot-d71bb340",
     "rank": 1,
+    "title": "英国央行行长：未公开的AI模型引发加密安全担忧",
+    "industry": "金融与政策",
+    "topics": [
+      "金融监管",
+      "人工智能",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 79.5,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T17:37:42.000Z",
+    "summary": "英国央行行长对近期AI在数学领域取得的突破发出警示，一个未公开的AI模型引发加密安全担忧。外界担忧，用于保障整个金融体系数据安全的加密技术正面临威胁。",
+    "items": [
+      {
+        "id": "aihot-20261126-sina-finance-ba3e3211",
+        "title": "英国央行行长：未公开的AI模型引发加密安全担忧",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-26T17:37:42.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-27/doc-inkaayay5828442.shtml",
+        "score": 76
+      }
+    ]
+  },
+  {
+    "id": "hot-7cc611ee",
+    "rank": 2,
+    "title": "欧洲股市反弹 投资者谨慎重返AI交易",
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "AI",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 74.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T01:20:49.000Z",
+    "summary": "欧洲股市周四反弹，结束两连跌，投资者谨慎重返AI交易，推动科技股上涨。瑞银编制的一篮子半导体股票上涨3.9%，一篮子AI受益股上涨3.2%，Soitec、意法半导体和阿斯麦等芯片制造商大幅上涨。此次反弹显示经历大幅抛售后投资者重返股市的意愿正在增强。",
+    "items": [
+      {
+        "id": "aihot-20261127-eastmoney-724-222255e5",
+        "title": "欧洲股市反弹 投资者谨慎重返AI交易",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-27T01:20:49.000Z",
+        "url": "https://finance.eastmoney.com/a/202611273941004268.html",
+        "score": 66
+      }
+    ]
+  },
+  {
+    "id": "hot-0adc0301",
+    "rank": 3,
+    "title": "夜盘期货收盘：沪铜跌超2%，沪锡跌超6%",
+    "industry": "金融与政策",
+    "topics": [
+      "商品市场",
+      "行情动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 74.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T01:05:09.000Z",
+    "summary": "国内商品期货夜盘收盘，沪锡收跌6.47%，国际铜收跌2.53%，沪铜收跌2.24%。沪铝、沪锌、沪铅分别收跌0.62%、1.51%、0.92%，沪镍微涨0.10%，氧化铝收平，不锈钢收涨0.04%。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-20761ed9",
+        "title": "夜盘期货收盘：沪铜跌超2%，沪锡跌超6%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T17:06:26.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263939926825.html",
+        "score": 52
+      },
+      {
+        "id": "aihot-20261127-eastmoney-724-ee57fcb1",
+        "title": "夜盘期货收盘：沪锌收涨1.59% 沪铅收涨1.51%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-27T01:05:09.000Z",
+        "url": "https://finance.eastmoney.com/a/202611273941003178.html",
+        "score": 48
+      }
+    ]
+  },
+  {
+    "id": "hot-edda56be",
+    "rank": 4,
+    "title": "银行为KKR收购Logoplaste安排5.5亿欧元债务融资",
+    "industry": "金融与政策",
+    "topics": [
+      "金融市场",
+      "私募股权",
+      "美股",
+      "宏观"
+    ],
+    "heatScore": 72.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T17:47:30.000Z",
+    "summary": "银行已筹措5.5亿欧元（约6.035亿美元）贷款，为KKR收购包装公司Logoplaste的交易提供支持。该融资安排消息来自知情人士。",
+    "items": [
+      {
+        "id": "aihot-20261126-bloomberg-markets-4ac88562",
+        "title": "银行为KKR收购Logoplaste安排5.5亿欧元债务融资",
+        "source": "Bloomberg Markets",
+        "publishedAt": "2026-11-26T17:47:30.000Z",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-26/kkr-banks-line-up-550-million-of-debt-to-back-logoplaste-buyout",
+        "score": 63
+      }
+    ]
+  },
+  {
+    "id": "hot-e4954a75",
+    "rank": 5,
+    "title": "墨西哥总统谴责美国缉毒局干涉墨内政",
+    "industry": "金融与政策",
+    "topics": [
+      "国际时政",
+      "宏观动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 66.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T01:32:25.000Z",
+    "summary": "墨西哥总统辛鲍姆当地时间11月26日在新闻发布会上谴责美国缉毒局开设面向墨西哥民众的匿名举报渠道，称此举是对墨西哥内政的干涉。她强调墨西哥拥有负责打击有组织犯罪的执法机构，并敦促美国缉毒局将精力放在打击美国境内贩毒活动、调查毒品分销网络及非法资金流向等问题上。",
+    "items": [
+      {
+        "id": "aihot-20261127-eastmoney-724-5344f376",
+        "title": "墨西哥总统谴责美国缉毒局干涉墨内政",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-27T01:32:25.000Z",
+        "url": "https://finance.eastmoney.com/a/202611273941004674.html",
+        "score": 52
+      }
+    ]
+  },
+  {
+    "id": "hot-8a3656ee",
+    "rank": 6,
+    "title": "YouTube Ad Punisher 开源工具：绕过 YouTube 反广告拦截",
+    "industry": "工程与开源",
+    "topics": [
+      "开源生态",
+      "工程实践",
+      "研发效能"
+    ],
+    "heatScore": 65.3,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T17:36:47.000Z",
+    "summary": "开源项目 YouTube Ad Punisher 亮相 Hacker News，主打绕过 YouTube 的反广告拦截机制，代码托管在 GitHub。该项目目前社区关注度较低，尚处于早期阶段。",
+    "items": [
+      {
+        "id": "aihot-20261126-hacker-news-top-f91bb2eb",
+        "title": "YouTube Ad Punisher 开源工具：绕过 YouTube 反广告拦截",
+        "source": "Hacker News Top",
+        "publishedAt": "2026-11-26T17:36:47.000Z",
+        "url": "https://github.com/antonpictures/youtube-punisher",
+        "score": 52
+      }
+    ]
+  },
+  {
+    "id": "hot-6fa9bfbf",
+    "rank": 7,
+    "title": "国星宇航“星算”02组星座入轨 总算力近50POPS 成全球在轨最大算力星座",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "国内快讯",
+      "航天科技",
+      "港股"
+    ],
+    "heatScore": 64,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T10:21:59.000Z",
+    "summary": "国星宇航“星算”计划02组星座入轨后，“星算”计划总算力规模达近50POPS，为目前全球在轨最大算力星座。该组星座由国星宇航于今年10月14日在酒泉卫星发射中心成功发射。",
+    "items": [
+      {
+        "id": "aihot-20261126-eastmoney-724-533420f3",
+        "title": "国星宇航“星算”02组星座入轨 总算力近50POPS 成全球在轨最大算力星座",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-26T10:21:59.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263940434078.html",
+        "score": 75
+      }
+    ]
+  },
+  {
+    "id": "hot-fef38107",
+    "rank": 8,
+    "title": "尼日利亚尼日尔州村庄袭击事件死亡人数升至74人",
+    "industry": "金融与政策",
+    "topics": [
+      "国际动态",
+      "外围快讯",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 63.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T01:45:09.000Z",
+    "summary": "尼日利亚尼日尔州政府26日通报，该州21日发生的村庄袭击事件死亡人数已升至74人，州长巴戈已下令展开调查。州政府22日曾通报至少5人死亡、5人受伤；当地消息人士称此次袭击可能是族群冲突后的报复。",
+    "items": [
+      {
+        "id": "aihot-20261127-eastmoney-724-94e53835",
+        "title": "尼日利亚尼日尔州村庄袭击事件死亡人数升至74人",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-27T01:45:09.000Z",
+        "url": "https://finance.eastmoney.com/a/202611273941004755.html",
+        "score": 48
+      }
+    ]
+  },
+  {
+    "id": "hot-613f52b0",
+    "rank": 9,
+    "title": "ICE罗布斯塔咖啡期货涨超3%，报每吨2856美元",
+    "industry": "金融与政策",
+    "topics": [
+      "大宗商品",
+      "国际市场",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 63.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T01:18:20.000Z",
+    "summary": "ICE罗布斯塔咖啡期货上涨超3%，价格升至每吨2856美元。",
+    "items": [
+      {
+        "id": "aihot-20261127-eastmoney-724-fa35d6e9",
+        "title": "ICE罗布斯塔咖啡期货涨超3%，报每吨2856美元",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-27T01:18:20.000Z",
+        "url": "https://finance.eastmoney.com/a/202611273941003916.html",
+        "score": 48
+      }
+    ]
+  },
+  {
+    "id": "hot-a28750e8",
+    "rank": 10,
+    "title": "香港交易所新《组织章程细则》已获批准",
+    "industry": "金融与政策",
+    "topics": [
+      "港股",
+      "金融与政策",
+      "市场政策"
+    ],
+    "heatScore": 62.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T12:53:00.000Z",
+    "summary": "香港交易所（HKEX）公布其新《组织章程细则》已获批准，属交易所内部治理章程的更新。现有公告摘要未披露具体修订内容及生效安排。",
+    "items": [
+      {
+        "id": "aihot-20261126-hkex-news-b6af72d8",
+        "title": "香港交易所新《组织章程细则》已获批准",
+        "source": "香港交易所新闻稿 (HKEX)",
+        "publishedAt": "2026-11-26T12:53:00.000Z",
+        "url": "https://www.hkex.com.hk/News/News-Release/2026/2611262news?sc_lang=zh-HK",
+        "score": 62
+      }
+    ]
+  },
+  {
+    "id": "hot-6f6b504d",
+    "rank": 11,
+    "title": "GeForce NOW：为游戏而来，为社区而留",
+    "industry": "AI",
+    "topics": [
+      "云游戏",
+      "基础设施",
+      "模型发布"
+    ],
+    "heatScore": 58.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T14:00:22.000Z",
+    "summary": "NVIDIA 在本期 GFN Thursday 栏目中聚焦 GeForce NOW 社区，向成员、创作者和社区管理员致敬，并由 GeForce NOW Ambassadors 分享他们热爱云游戏的原因。文章称玩家在联机大厅中结识朋友、在日常设备上探索新世界，邀请更多人加入社区。",
+    "items": [
+      {
+        "id": "aihot-20261126-nvidia-blog-bebaff0d",
+        "title": "GeForce NOW：为游戏而来，为社区而留",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-26T14:00:22.000Z",
+        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-community-war-thunder-reward/",
+        "score": 52
+      }
+    ]
+  },
+  {
+    "id": "hot-2f3d156b",
+    "rank": 12,
+    "title": "DeepSeek关联公司新增增值电信业务",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "公司动态",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 55.7,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T10:19:02.000Z",
+    "summary": "企查查显示，DeepSeek运营主体杭州深度求索人工智能基础技术研究有限公司近日发生工商变更，经营范围新增第一类、第二类增值电信业务。同日还新增货物进出口、技术进出口、进出口代理，并完成投资人变更与章程备案。该公司成立于2023年，法定代表人为裴湉，由宁波程恩企业管理咨询合伙企业（有限合伙）、梁文锋等共同持股。",
+    "items": [
+      {
+        "id": "aihot-20261126-eastmoney-724-55e5c52e",
+        "title": "DeepSeek关联公司新增增值电信业务",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-26T10:19:02.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263940430841.html",
+        "score": 58
+      }
+    ]
+  },
+  {
+    "id": "hot-9bb41bdc",
+    "rank": 13,
+    "title": "SpaceX百万卫星计划附条件获批，卫星ETF永赢盘中涨超2%",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场快讯",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 54.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T10:22:02.000Z",
+    "summary": "11月26日，A股卫星通信及商业航天板块活跃，卫星ETF永赢（159206）盘中涨超2%。成分股中上海港湾涨超6%、信维通信涨超5%，移远通信、星图测控、富士达、灿勤科技等个股跟涨。",
+    "items": [
+      {
+        "id": "aihot-20261126-eastmoney-724-a4637705",
+        "title": "SpaceX百万卫星计划附条件获批，卫星ETF永赢盘中涨超2%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-26T10:22:02.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263940432576.html",
+        "score": 55
+      }
+    ]
+  },
+  {
+    "id": "hot-f18afb25",
+    "rank": 14,
+    "title": "创业板指涨逾2% 算力硬件领涨",
+    "industry": "金融与政策",
+    "topics": [
+      "A股",
+      "市场行情",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 53,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T10:22:51.000Z",
+    "summary": "A股指数走强，创业板指拉升涨逾2%，沪指涨0.50%，深成指涨1.44%。算力硬件、贵金属、油气、化工、煤炭等方向涨幅居前，沪深京三市上涨个股近4100只。",
+    "items": [
+      {
+        "id": "aihot-20261126-eastmoney-724-87e93535",
+        "title": "创业板指涨逾2% 算力硬件领涨",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-26T10:22:51.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263940434387.html",
+        "score": 52
+      }
+    ]
+  },
+  {
+    "id": "hot-556ae49a",
+    "rank": 15,
+    "title": "贵金属概念震荡拉升 盛达资源涨停",
+    "industry": "金融与政策",
+    "topics": [
+      "A股市场",
+      "A股",
+      "港股",
+      "宏观"
+    ],
+    "heatScore": 52,
+    "sourceCount": 1,
+    "latestAt": "2026-11-26T10:23:28.000Z",
+    "summary": "A股贵金属概念盘中震荡拉升，盛达资源涨停。招金黄金、晓程科技、兴业银锡、赤峰黄金、湖南白银等个股跟涨。",
+    "items": [
+      {
+        "id": "aihot-20261126-eastmoney-724-f378eb89",
+        "title": "贵金属概念震荡拉升 盛达资源涨停",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-26T10:23:28.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263940433731.html",
+        "score": 50
+      }
+    ]
+  },
+  {
+    "id": "hot-d60302f4",
+    "rank": 16,
     "title": "美股三大指数拉升 纳指跌幅收窄至2%",
     "industry": "金融与政策",
     "topics": [
@@ -10,7 +405,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 88.3,
+    "heatScore": 51.5,
     "sourceCount": 1,
     "latestAt": "2026-11-26T01:55:02.000Z",
     "summary": "美股三大指数盘中拉升，纳指跌幅收窄至2%，标普500指数跌1%，恐慌指数VIX回落至30下方。成分股中Anthropic涨2%，此前一度跌近10%；Meta涨超1%。",
@@ -32,14 +427,6 @@
         "score": 50
       },
       {
-        "id": "aihot-20261123-eastmoney-724-0a0e1bec",
-        "title": "英伟达股价涨幅收窄至30%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-23T17:51:39.000Z",
-        "url": "https://finance.eastmoney.com/a/202611243937744415.html",
-        "score": 50
-      },
-      {
         "id": "aihot-20261125-eastmoney-724-1e922c75",
         "title": "SpaceX在FCC授权后跌幅收窄至5%",
         "source": "东方财富 · 7x24快讯",
@@ -50,34 +437,8 @@
     ]
   },
   {
-    "id": "hot-6fa9bfbf",
-    "rank": 2,
-    "title": "国星宇航“星算”02组星座入轨 总算力近50POPS 成全球在轨最大算力星座",
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "国内快讯",
-      "航天科技",
-      "港股"
-    ],
-    "heatScore": 80,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T10:21:59.000Z",
-    "summary": "国星宇航“星算”计划02组星座入轨后，“星算”计划总算力规模达近50POPS，为目前全球在轨最大算力星座。该组星座由国星宇航于今年10月14日在酒泉卫星发射中心成功发射。",
-    "items": [
-      {
-        "id": "aihot-20261126-eastmoney-724-533420f3",
-        "title": "国星宇航“星算”02组星座入轨 总算力近50POPS 成全球在轨最大算力星座",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-26T10:21:59.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263940434078.html",
-        "score": 75
-      }
-    ]
-  },
-  {
     "id": "hot-a94c6e5a",
-    "rank": 3,
+    "rank": 17,
     "title": "混动汽车进口，欧盟设置天花板，中国商务部：希望欧方切实遵守双方共识",
     "industry": "金融与政策",
     "topics": [
@@ -86,7 +447,7 @@
       "汽车产业",
       "宏观"
     ],
-    "heatScore": 78.7,
+    "heatScore": 50.4,
     "sourceCount": 1,
     "latestAt": "2026-11-26T02:06:06.000Z",
     "summary": "欧盟对混动汽车进口设置上限，中国商务部就此回应，希望欧方切实遵守中欧双方已达成的共识。该表态直接关系到中国混动车型对欧出口的政策环境。",
@@ -103,7 +464,7 @@
   },
   {
     "id": "hot-e475be19",
-    "rank": 4,
+    "rank": 18,
     "title": "KK Mart 启动1.12亿美元IPO，此前因马来西亚“袜子风波”延期",
     "industry": "金融与政策",
     "topics": [
@@ -112,7 +473,7 @@
       "消费零售",
       "美股"
     ],
-    "heatScore": 74.5,
+    "heatScore": 47.7,
     "sourceCount": 1,
     "latestAt": "2026-11-26T02:03:11.000Z",
     "summary": "马来西亚连锁便利店 KK Mart Retail Bhd. 启动4.62亿令吉（约1.12亿美元）的股份发售，其此前因宗教争议而延期的IPO计划正式重新推进。公司同时正筹备在全马新增数百家门店。",
@@ -129,7 +490,7 @@
   },
   {
     "id": "hot-dc22831b",
-    "rank": 5,
+    "rank": 19,
     "title": "瑞典央行将接入欧洲央行T2支付结算平台",
     "industry": "金融与政策",
     "topics": [
@@ -138,7 +499,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 73.8,
+    "heatScore": 47.2,
     "sourceCount": 1,
     "latestAt": "2026-11-26T01:44:10.000Z",
     "summary": "瑞典央行已同意将本国RIX-RTGS支付结算系统接入欧洲央行T2平台，目标在2030年2月完成切换。RIX-RTGS系统目前每月处理约70万笔大额支付结算业务，瑞典央行与欧洲央行将共同承担安全、技术开发及欧洲通用标准相关投入。",
@@ -155,7 +516,7 @@
   },
   {
     "id": "hot-dadd2eb8",
-    "rank": 6,
+    "rank": 20,
     "title": "伯恩斯坦：功率半导体增长引擎从汽车切换至AI数据中心，2030年市场规模有望达595亿美元",
     "industry": "金融与政策",
     "topics": [
@@ -164,7 +525,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 73.3,
+    "heatScore": 46.9,
     "sourceCount": 1,
     "latestAt": "2026-11-26T02:02:39.000Z",
     "summary": "伯恩斯坦研判，功率半导体的增长引擎正从汽车市场切换至AI数据中心。该机构预计，到2030年功率半导体市场规模有望达到595亿美元。",
@@ -175,378 +536,6 @@
         "source": "英为财情 · 股市资讯",
         "publishedAt": "2026-11-26T02:02:39.000Z",
         "url": "https://cn.investing.com/news/stock-market-news/article-3687068",
-        "score": 66
-      }
-    ]
-  },
-  {
-    "id": "hot-7c3723cf",
-    "rank": 7,
-    "title": "华尔街防御策略转向金融科技：Wedbush研报覆盖15只股票 重点看好Visa、万事达与Robinhood",
-    "industry": "金融与政策",
-    "topics": [
-      "美股市场",
-      "券商研报",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 72.7,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T02:02:39.000Z",
-    "summary": "Wedbush发布研报一次性覆盖15只金融科技相关股票，重点看好Visa、万事达与Robinhood。该行观点认为华尔街的防御策略正转向金融科技板块。",
-    "items": [
-      {
-        "id": "aihot-20261126-investing-cn-stock-b911a07e",
-        "title": "华尔街防御策略转向金融科技：Wedbush研报覆盖15只股票 重点看好Visa、万事达与Robinhood",
-        "source": "英为财情 · 股市资讯",
-        "publishedAt": "2026-11-26T02:02:39.000Z",
-        "url": "https://cn.investing.com/news/stock-market-news/article-3687067",
-        "score": 65
-      }
-    ]
-  },
-  {
-    "id": "hot-f4ce60ac",
-    "rank": 8,
-    "title": "港股异动：钧达股份(02865)大涨超16%，SpaceX获准部署至多100万颗卫星催化太空算力板块",
-    "industry": "金融与政策",
-    "topics": [
-      "港股",
-      "市场动态",
-      "A股",
-      "美股"
-    ],
-    "heatScore": 72.7,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T02:02:32.000Z",
-    "summary": "港股钧达股份(02865)大涨超16%，太空算力概念迎来重磅催化。此次催化来自SpaceX获准部署至多100万颗卫星的消息。",
-    "items": [
-      {
-        "id": "aihot-20261126-investing-cn-stock-c4d18625",
-        "title": "港股异动：钧达股份(02865)大涨超16%，SpaceX获准部署至多100万颗卫星催化太空算力板块",
-        "source": "英为财情 · 股市资讯",
-        "publishedAt": "2026-11-26T02:02:32.000Z",
-        "url": "https://cn.investing.com/news/stock-market-news/article-3687065",
-        "score": 65
-      }
-    ]
-  },
-  {
-    "id": "hot-660b806b",
-    "rank": 9,
-    "title": "英伟达芯片卖家争相寻找买家",
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "AI硬件",
-      "半导体",
-      "A股"
-    ],
-    "heatScore": 71.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T01:39:14.000Z",
-    "summary": "英伟达GPU卖家正为数千枚先进的B300芯片寻找新买家，大量英伟达GPU涌入转售市场。卖家试图将这批AI硬件转售他处。",
-    "items": [
-      {
-        "id": "aihot-20261126-eastmoney-724-cfd30bd6",
-        "title": "英伟达芯片卖家争相寻找买家",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-26T01:39:14.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263939933368.html",
-        "score": 64
-      }
-    ]
-  },
-  {
-    "id": "hot-5218eb41",
-    "rank": 10,
-    "title": "长光辰芯早盘涨逾8% 预计前10个月净利润同比增长140%至150%",
-    "industry": "金融与政策",
-    "topics": [
-      "港股",
-      "公司业绩",
-      "A股",
-      "美股"
-    ],
-    "heatScore": 71.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T02:08:46.000Z",
-    "summary": "长光辰芯（03277.HK）早盘股价涨逾8%，报37.28港元，因公司初步评估预计截至今年10月31日止十个月净利润同比增长140%至150%。截至发稿涨幅为7.93%，成交额约3808.6万港元。",
-    "items": [
-      {
-        "id": "aihot-20261126-sina-finance-4757038e",
-        "title": "长光辰芯早盘涨逾8% 预计前10个月净利润同比增长140%至150%",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-26T02:08:46.000Z",
-        "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-11-26/doc-inizzmzi9048052.shtml",
-        "score": 62
-      }
-    ]
-  },
-  {
-    "id": "hot-737e2bf4",
-    "rank": 11,
-    "title": "Anthropic股价重回83美元IPO发行价上方",
-    "industry": "金融与政策",
-    "topics": [
-      "美股市场",
-      "人工智能",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 70,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T01:36:03.000Z",
-    "summary": "Anthropic股价重回83美元的IPO发行价上方，最新涨近3%，报84.23美元/股。",
-    "items": [
-      {
-        "id": "aihot-20261126-eastmoney-724-8715b1ec",
-        "title": "Anthropic股价重回83美元IPO发行价上方",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-26T01:36:03.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263939932998.html",
-        "score": 62
-      }
-    ]
-  },
-  {
-    "id": "hot-2f3d156b",
-    "rank": 12,
-    "title": "DeepSeek关联公司新增增值电信业务",
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "公司动态",
-      "港股",
-      "宏观"
-    ],
-    "heatScore": 69.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T10:19:02.000Z",
-    "summary": "企查查显示，DeepSeek运营主体杭州深度求索人工智能基础技术研究有限公司近日发生工商变更，经营范围新增第一类、第二类增值电信业务。同日还新增货物进出口、技术进出口、进出口代理，并完成投资人变更与章程备案。该公司成立于2023年，法定代表人为裴湉，由宁波程恩企业管理咨询合伙企业（有限合伙）、梁文锋等共同持股。",
-    "items": [
-      {
-        "id": "aihot-20261126-eastmoney-724-55e5c52e",
-        "title": "DeepSeek关联公司新增增值电信业务",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-26T10:19:02.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263940430841.html",
-        "score": 58
-      }
-    ]
-  },
-  {
-    "id": "hot-7d1d4689",
-    "rank": 13,
-    "title": "东山精密盘中涨超5% 公司已正式调入港股通",
-    "industry": "金融与政策",
-    "topics": [
-      "港股",
-      "股票市场",
-      "A股",
-      "美股"
-    ],
-    "heatScore": 69.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T02:03:44.000Z",
-    "summary": "东山精密（02384）港股盘中一度涨超5%，公司已正式调入港股通。截至发稿涨幅收窄至2.75%，报76.65港元，成交额2011.66万港元；公司公告显示，2026年11月25日曾斥资人民币1.6亿元回购股份。",
-    "items": [
-      {
-        "id": "aihot-20261126-sina-finance-d546a88d",
-        "title": "东山精密盘中涨超5% 公司已正式调入港股通",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-26T02:03:44.000Z",
-        "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-11-26/doc-inizzmzm1457909.shtml",
-        "score": 60
-      }
-    ]
-  },
-  {
-    "id": "hot-9bb41bdc",
-    "rank": 14,
-    "title": "SpaceX百万卫星计划附条件获批，卫星ETF永赢盘中涨超2%",
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "市场快讯",
-      "港股",
-      "宏观"
-    ],
-    "heatScore": 68,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T10:22:02.000Z",
-    "summary": "11月26日，A股卫星通信及商业航天板块活跃，卫星ETF永赢（159206）盘中涨超2%。成分股中上海港湾涨超6%、信维通信涨超5%，移远通信、星图测控、富士达、灿勤科技等个股跟涨。",
-    "items": [
-      {
-        "id": "aihot-20261126-eastmoney-724-a4637705",
-        "title": "SpaceX百万卫星计划附条件获批，卫星ETF永赢盘中涨超2%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-26T10:22:02.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263940432576.html",
-        "score": 55
-      }
-    ]
-  },
-  {
-    "id": "hot-50cdc0b9",
-    "rank": 15,
-    "title": "道琼斯工业平均指数转涨 此前一度下跌2.2%",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 66.6,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T01:55:47.000Z",
-    "summary": "道琼斯工业平均指数由跌转涨，此前盘中一度下跌2.2%。",
-    "items": [
-      {
-        "id": "aihot-20261126-eastmoney-724-22e0656f",
-        "title": "道琼斯工业平均指数转涨 此前一度下跌2.2%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-26T01:55:47.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263939935519.html",
-        "score": 55
-      }
-    ]
-  },
-  {
-    "id": "hot-f18afb25",
-    "rank": 16,
-    "title": "创业板指涨逾2% 算力硬件领涨",
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "市场行情",
-      "港股",
-      "宏观"
-    ],
-    "heatScore": 66.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T10:22:51.000Z",
-    "summary": "A股指数走强，创业板指拉升涨逾2%，沪指涨0.50%，深成指涨1.44%。算力硬件、贵金属、油气、化工、煤炭等方向涨幅居前，沪深京三市上涨个股近4100只。",
-    "items": [
-      {
-        "id": "aihot-20261126-eastmoney-724-87e93535",
-        "title": "创业板指涨逾2% 算力硬件领涨",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-26T10:22:51.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263940434387.html",
-        "score": 52
-      }
-    ]
-  },
-  {
-    "id": "hot-1b5a734e",
-    "rank": 17,
-    "title": "美国联邦通信委员会授权SpaceX为数据中心部署100万颗卫星",
-    "industry": "金融与政策",
-    "topics": [
-      "政策监管",
-      "科技产业",
-      "商业航天",
-      "A股"
-    ],
-    "heatScore": 66,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T16:46:54.000Z",
-    "summary": "美国联邦通信委员会（FCC）授权SpaceX为数据中心部署100万颗卫星。该授权来自美国核心通信监管机构，部署规模达百万颗量级。",
-    "items": [
-      {
-        "id": "aihot-20261125-eastmoney-724-7901232b",
-        "title": "美国联邦通信委员会授权SpaceX为数据中心部署100万颗卫星",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-25T16:46:54.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263939924956.html",
-        "score": 88
-      }
-    ]
-  },
-  {
-    "id": "hot-e45c63cb",
-    "rank": 18,
-    "title": "港股黄金股早盘涨幅居前 紫金黄金国际涨近6% 灵宝黄金涨近5%",
-    "industry": "金融与政策",
-    "topics": [
-      "港股",
-      "黄金",
-      "市场行情",
-      "A股"
-    ],
-    "heatScore": 65.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T02:06:05.000Z",
-    "summary": "港股黄金股早盘涨幅居前，截至发稿，紫金黄金国际（02259）涨5.99%报1066.10港元，灵宝黄金（03330）涨4.94%报12.96港元。赤峰黄金（06693）涨4.67%，板块整体走强。",
-    "items": [
-      {
-        "id": "aihot-20261126-sina-finance-7e429b14",
-        "title": "港股黄金股早盘涨幅居前 紫金黄金国际涨近6% 灵宝黄金涨近5%",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-26T02:06:05.000Z",
-        "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-11-26/doc-inizzmzn8236642.shtml",
-        "score": 52
-      }
-    ]
-  },
-  {
-    "id": "hot-556ae49a",
-    "rank": 19,
-    "title": "贵金属概念震荡拉升 盛达资源涨停",
-    "industry": "金融与政策",
-    "topics": [
-      "A股市场",
-      "A股",
-      "港股",
-      "宏观"
-    ],
-    "heatScore": 65,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T10:23:28.000Z",
-    "summary": "A股贵金属概念盘中震荡拉升，盛达资源涨停。招金黄金、晓程科技、兴业银锡、赤峰黄金、湖南白银等个股跟涨。",
-    "items": [
-      {
-        "id": "aihot-20261126-eastmoney-724-f378eb89",
-        "title": "贵金属概念震荡拉升 盛达资源涨停",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-26T10:23:28.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263940433731.html",
-        "score": 50
-      }
-    ]
-  },
-  {
-    "id": "hot-262566de",
-    "rank": 20,
-    "title": "美股跌幅扩大 纳斯达克综合指数跌4.32%",
-    "industry": "金融与政策",
-    "topics": [
-      "美股",
-      "市场动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 64.5,
-    "sourceCount": 1,
-    "latestAt": "2026-11-25T14:45:17.000Z",
-    "summary": "美股跌幅扩大，纳斯达克综合指数跌4.32%，标普500指数跌2.94%，道琼斯指数跌2%。三大指数当日同步大幅走低，纳指跌幅居前。",
-    "items": [
-      {
-        "id": "aihot-20261125-eastmoney-724-c0fdb0cf",
-        "title": "美股跌幅扩大 纳斯达克综合指数跌4.32%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-25T14:45:17.000Z",
-        "url": "https://finance.eastmoney.com/a/202611253939883066.html",
-        "score": 80
-      },
-      {
-        "id": "aihot-20261125-eastmoney-724-1a2fb53b",
-        "title": "纳斯达克100指数跌幅扩大至4%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-25T14:36:47.000Z",
-        "url": "https://finance.eastmoney.com/a/202611253939878236.html",
         "score": 66
       }
     ]
