@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26",
+  "updatedAt": "2026-11-27",
   "usdToCny": 7.25,
   "priceSource": "OpenRouter Live API",
   "priceSourceUrl": "https://openrouter.ai/api/v1/models",
