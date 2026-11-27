@@ -1,7 +1,195 @@
 [
   {
-    "id": "hot-7c31b416",
+    "id": "hot-7454fcff",
     "rank": 1,
+    "title": "国务院国资委通报央企专业化整合新进展 项目超1100个",
+    "industry": "金融与政策",
+    "topics": [
+      "国内政策",
+      "A股",
+      "宏观经济",
+      "港股"
+    ],
+    "heatScore": 81.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T01:04:20.000Z",
+    "summary": "国务院国资委27日通报央企专业化整合工作新进展：去年以来各央企共开展整合项目1100余个，涉及资产规模约6.8万亿元。其中战新领域整合项目380余个、占比35%，资产规模2.3万亿元，主要涉及生物医药、人工智能、新能源汽车等领域。国资委同时为下一步央企专业化整合工作做出部署，整合呈现增强核心功能、提高核心竞争力的导向。",
+    "items": [
+      {
+        "id": "aihot-20261128-eastmoney-724-acea1fad",
+        "title": "国务院国资委通报央企专业化整合新进展 项目超1100个",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-28T01:04:20.000Z",
+        "url": "https://finance.eastmoney.com/a/202611283942112929.html",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "hot-e66110d7",
+    "rank": 2,
+    "title": "同步窗口关闭后：Argo CD self-heal 如何跳过迁移钩子",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "工程实践",
+      "开源生态"
+    ],
+    "heatScore": 80.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T17:39:00.328Z",
+    "summary": "Argo CD 的 self-heal 在同步窗口关闭后可能跳过迁移钩子，导致同步显示成功、迁移却未实际执行。文章以一位用户在 deny 同步窗口期间推送发布的真实案例，拆解了同步窗口、self-heal 与钩子执行之间的交互机制。",
+    "items": [
+      {
+        "id": "aihot-20261127-cncf-blog-7829f3b4",
+        "title": "同步窗口关闭后：Argo CD self-heal 如何跳过迁移钩子",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-27T17:39:00.328Z",
+        "url": "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/",
+        "score": 76
+      }
+    ]
+  },
+  {
+    "id": "hot-5ad4e398",
+    "rank": 3,
+    "title": "如何在自己无法掌控的 Kubernetes 环境中支持应用",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "研发效能",
+      "开源生态"
+    ],
+    "heatScore": 79.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T17:39:00.328Z",
+    "summary": "CNCF Blog 发文讲解如何为客户自行运维的 Kubernetes 集群上的应用提供支持，聚焦应用方无法控制部署环境的场景。文章指出难点在于集群配置、升级节奏和周边工具均不受应用方掌控，并给出相应的支持方法。",
+    "items": [
+      {
+        "id": "aihot-20261127-cncf-blog-764e1bed",
+        "title": "如何在自己无法掌控的 Kubernetes 环境中支持应用",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-27T17:39:00.328Z",
+        "url": "https://www.cncf.io/blog/2026/11/19/how-to-support-your-app-on-kubernetes-environments-you-dont-control/",
+        "score": 75
+      }
+    ]
+  },
+  {
+    "id": "hot-a4f5b5f2",
+    "rank": 4,
+    "title": "法国加入荷兰行列 反对美国拟议的出口管制措施",
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "宏观经济",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 75.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T01:08:19.000Z",
+    "summary": "法国加入荷兰行列，反对美国拟议的出口管制措施，荷兰此前已就该措施表明反对立场。美国这一管制方案正面临欧洲多国的联合阻力。",
+    "items": [
+      {
+        "id": "aihot-20261128-eastmoney-724-174750df",
+        "title": "法国加入荷兰行列 反对美国拟议的出口管制措施",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-28T01:08:19.000Z",
+        "url": "https://finance.eastmoney.com/a/202611283942113891.html",
+        "score": 68
+      }
+    ]
+  },
+  {
+    "id": "hot-1ce06309",
+    "rank": 5,
+    "title": "威瑞森正就约60亿美元收购Fidium进行谈判，以扩大宽带业务版图",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "公司并购",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 74,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T01:32:29.000Z",
+    "summary": "威瑞森正就约60亿美元收购Fidium的交易进行谈判，目标是扩大其宽带业务版图。该交易目前仍处于谈判阶段，尚未最终落定。",
+    "items": [
+      {
+        "id": "aihot-20261128-eastmoney-724-c2443f63",
+        "title": "威瑞森正就约60亿美元收购Fidium进行谈判，以扩大宽带业务版图",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-28T01:32:29.000Z",
+        "url": "https://finance.eastmoney.com/a/202611283942115395.html",
+        "score": 65
+      }
+    ]
+  },
+  {
+    "id": "hot-e6164061",
+    "rank": 6,
+    "title": "Anthropic股价拉升翻红 此前一度跌9.5%",
+    "industry": "金融与政策",
+    "topics": [
+      "美股",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 71.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T01:22:58.000Z",
+    "summary": "Anthropic股价盘中拉升翻红，此前一度下跌9.5%。该快讯仅披露这一盘中价格异动，未提及波动原因或公司基本面变化。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-d25fc91c",
+        "title": "Anthropic股价拉升翻红 此前一度跌9.5%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T17:10:30.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263939927284.html",
+        "score": 48
+      },
+      {
+        "id": "aihot-20261128-eastmoney-724-4fd84f75",
+        "title": "英伟达股价翻红，此前盘中一度下跌2%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-28T01:22:58.000Z",
+        "url": "https://finance.eastmoney.com/a/202611283942114050.html",
+        "score": 46
+      }
+    ]
+  },
+  {
+    "id": "hot-5e5ad7b2",
+    "rank": 7,
+    "title": "智利国家铜业公司：前9个月自有铜产量85.3万吨，税前亏损14亿美元",
+    "industry": "金融与政策",
+    "topics": [
+      "大宗商品",
+      "公司财报",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 68.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T01:09:21.000Z",
+    "summary": "智利国家铜业公司公布，今年前9个月自有铜产量为853,000吨。同期公司前9个月税前亏损14亿美元。",
+    "items": [
+      {
+        "id": "aihot-20261128-eastmoney-724-e391dd8d",
+        "title": "智利国家铜业公司：前9个月自有铜产量85.3万吨，税前亏损14亿美元",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-28T01:09:21.000Z",
+        "url": "https://finance.eastmoney.com/a/202611283942113957.html",
+        "score": 56
+      }
+    ]
+  },
+  {
+    "id": "hot-7c31b416",
+    "rank": 8,
     "title": "华为发布辅助驾驶新品牌“星驰”，明年超10款新车搭载",
     "industry": "金融与政策",
     "topics": [
@@ -10,7 +198,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 84.2,
+    "heatScore": 67.8,
     "sourceCount": 1,
     "latestAt": "2026-11-27T10:19:14.000Z",
     "summary": "华为于11月26日晚在乾崑生态大会上发布辅助驾驶新品牌“星驰”，华为高级副总裁、引望公司CEO靳玉志出席发布，预计明年将有超过10款搭载星驰辅助驾驶的新车上市。天眼查信息显示，华为已于2020年至2022年注册多枚“星驰”“华为星驰”商标，国际分类涉及科学仪器、网站服务。",
@@ -27,7 +215,7 @@
   },
   {
     "id": "hot-83aa413a",
-    "rank": 2,
+    "rank": 9,
     "title": "普京：俄需更新2036年前人工智能国家战略",
     "industry": "金融与政策",
     "topics": [
@@ -36,7 +224,7 @@
       "国际动态",
       "A股"
     ],
-    "heatScore": 80.6,
+    "heatScore": 64.9,
     "sourceCount": 1,
     "latestAt": "2026-11-27T10:21:43.000Z",
     "summary": "俄罗斯总统普京26日在莫斯科表示，为争取在人工智能（AI）研发方面获得领先地位，俄罗斯需更新2036年前人工智能国家战略。在支持开发俄罗斯自主AI模型方面，普京提出需落实四项要求。",
@@ -52,34 +240,8 @@
     ]
   },
   {
-    "id": "hot-c13d454a",
-    "rank": 3,
-    "title": "壁仞科技盘中涨超7%，广东鼓励算力中心优先使用国产算力芯片",
-    "industry": "金融与政策",
-    "topics": [
-      "港股",
-      "市场政策",
-      "国内财经",
-      "A股"
-    ],
-    "heatScore": 79.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T02:04:16.000Z",
-    "summary": "广东省政务服务和数据管理局、省发展改革委印发《广东省算力发展“十五五”规划》，鼓励算力中心优先使用国产算力芯片，壁仞科技（06082）盘中一度涨超7%。截至发稿，该股涨4.42%报13.69港元，成交额2.62亿港元。",
-    "items": [
-      {
-        "id": "aihot-20261127-sina-finance-e3d3a1da",
-        "title": "壁仞科技盘中涨超7%，广东鼓励算力中心优先使用国产算力芯片",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-27T02:04:16.000Z",
-        "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-11-27/doc-inkacvhp3236198.shtml",
-        "score": 76
-      }
-    ]
-  },
-  {
     "id": "hot-1e898621",
-    "rank": 4,
+    "rank": 10,
     "title": "小米AI眼镜2代或将于12月中旬上市发布",
     "industry": "金融与政策",
     "topics": [
@@ -88,7 +250,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 77,
+    "heatScore": 61.9,
     "sourceCount": 1,
     "latestAt": "2026-11-27T10:16:55.000Z",
     "summary": "记者获悉，小米AI眼镜2代或将于12月中旬与小米18标准版手机（起售价5699元起）同步发布，并于当天上市开售。小米AI眼镜2代包括Q95Pro、Q95Pro多色版本（电致变色镜片版本，提供四档镜片调节）以及Q95显示版本。",
@@ -104,146 +266,8 @@
     ]
   },
   {
-    "id": "hot-cac3a265",
-    "rank": 5,
-    "title": "日本JERA商谈为Anthropic、Meta等在东京建设数据中心",
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "AI基础设施",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 75.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T02:23:20.000Z",
-    "summary": "日本JERA株式会社全球CEO兼会长可儿行夫透露，JERA正与Anthropic、Meta及其他美国科技公司洽谈，计划在东京附近的发电厂旁建设数据中心。项目目前处于商谈阶段，选址紧邻发电厂。",
-    "items": [
-      {
-        "id": "aihot-20261127-sina-finance-052b99a0",
-        "title": "日本JERA商谈为Anthropic、Meta等在东京建设数据中心",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-27T02:23:20.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-27/doc-inkacvhk7844566.shtml",
-        "score": 68
-      }
-    ]
-  },
-  {
-    "id": "hot-7cc611ee",
-    "rank": 6,
-    "title": "欧洲股市反弹 投资者谨慎重返AI交易",
-    "industry": "金融与政策",
-    "topics": [
-      "市场动态",
-      "AI",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 71.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T01:20:49.000Z",
-    "summary": "欧洲股市周四反弹，结束两连跌，投资者谨慎重返AI交易，推动科技股上涨。瑞银编制的一篮子半导体股票上涨3.9%，一篮子AI受益股上涨3.2%，Soitec、意法半导体和阿斯麦等芯片制造商大幅上涨。此次反弹显示经历大幅抛售后投资者重返股市的意愿正在增强。",
-    "items": [
-      {
-        "id": "aihot-20261127-eastmoney-724-222255e5",
-        "title": "欧洲股市反弹 投资者谨慎重返AI交易",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T01:20:49.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941004268.html",
-        "score": 66
-      }
-    ]
-  },
-  {
-    "id": "hot-0adc0301",
-    "rank": 7,
-    "title": "夜盘期货收盘：沪铜跌超2%，沪锡跌超6%",
-    "industry": "金融与政策",
-    "topics": [
-      "商品市场",
-      "行情动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 71,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T01:05:09.000Z",
-    "summary": "国内商品期货夜盘收盘，沪锡收跌6.47%，国际铜收跌2.53%，沪铜收跌2.24%。沪铝、沪锌、沪铅分别收跌0.62%、1.51%、0.92%，沪镍微涨0.10%，氧化铝收平，不锈钢收涨0.04%。",
-    "items": [
-      {
-        "id": "aihot-20261125-eastmoney-724-20761ed9",
-        "title": "夜盘期货收盘：沪铜跌超2%，沪锡跌超6%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-25T17:06:26.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263939926825.html",
-        "score": 52
-      },
-      {
-        "id": "aihot-20261127-eastmoney-724-ee57fcb1",
-        "title": "夜盘期货收盘：沪锌收涨1.59% 沪铅收涨1.51%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T01:05:09.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941003178.html",
-        "score": 48
-      }
-    ]
-  },
-  {
-    "id": "hot-639b9292",
-    "rank": 8,
-    "title": "马斯克加码“撒钱”：每年再向全美儿童赠送一股SpaceX",
-    "industry": "金融与政策",
-    "topics": [
-      "财经快讯",
-      "公司动态",
-      "宏观",
-      "市场政策"
-    ],
-    "heatScore": 67.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T02:16:32.000Z",
-    "summary": "马斯克再度加码赠股表态，称“两股还不够”，宣布每年向全美儿童再赠送一股SpaceX股票。此举是在其此前面向美国儿童赠股承诺基础上的进一步升级。",
-    "items": [
-      {
-        "id": "aihot-20261127-wscn-global-c5d9ab5d",
-        "title": "马斯克加码“撒钱”：每年再向全美儿童赠送一股SpaceX",
-        "source": "华尔街见闻 · 全球",
-        "publishedAt": "2026-11-27T02:16:32.000Z",
-        "url": "https://wallstreetcn.com/articles/3786816",
-        "score": 55
-      }
-    ]
-  },
-  {
-    "id": "hot-bfc85569",
-    "rank": 9,
-    "title": "巨子生物盘中涨超4% 三位董事拟增持最多1500万港元股份",
-    "industry": "金融与政策",
-    "topics": [
-      "港股市场",
-      "公司公告",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 67.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T02:09:25.000Z",
-    "summary": "巨子生物（02367.HK）盘中一度涨超4%，触发因素为公司公告披露三位董事拟合计增持最多1500万港元股份。截至发稿，股价上涨3.14%报18.06港元，成交额1456.04万港元，该增持计划公告于11月26日发布。",
-    "items": [
-      {
-        "id": "aihot-20261127-sina-finance-063d216d",
-        "title": "巨子生物盘中涨超4% 三位董事拟增持最多1500万港元股份",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-27T02:09:25.000Z",
-        "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-11-27/doc-inkacvhk7831564.shtml",
-        "score": 55
-      }
-    ]
-  },
-  {
     "id": "hot-ecdc6063",
-    "rank": 10,
+    "rank": 11,
     "title": "能源金属板块走高 寒锐钴业涨超10%",
     "industry": "金融与政策",
     "topics": [
@@ -252,7 +276,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 66.2,
+    "heatScore": 53.2,
     "sourceCount": 1,
     "latestAt": "2026-11-27T10:17:00.000Z",
     "summary": "能源金属板块盘中异动走高，寒锐钴业涨超10%领涨。腾远钴业、盛新锂能、华友钴业、融捷股份、永兴材料等个股跟涨。",
@@ -268,32 +292,6 @@
     ]
   },
   {
-    "id": "hot-f99fae9d",
-    "rank": 11,
-    "title": "创业板早盘涨超1%，AI算力掀起涨停潮，半导体产业链反弹；恒科指涨超2%，科网股集体拉升",
-    "industry": "金融与政策",
-    "topics": [
-      "市场行情",
-      "科技股",
-      "宏观",
-      "市场政策"
-    ],
-    "heatScore": 65.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T02:08:31.000Z",
-    "summary": "A股创业板早盘涨超1%，AI算力板块掀起涨停潮，半导体产业链反弹。港股方面，恒生科技指数涨超2%，科网股集体拉升。",
-    "items": [
-      {
-        "id": "aihot-20261127-wscn-global-ac513929",
-        "title": "创业板早盘涨超1%，AI算力掀起涨停潮，半导体产业链反弹；恒科指涨超2%，科网股集体拉升",
-        "source": "华尔街见闻 · 全球",
-        "publishedAt": "2026-11-27T02:08:31.000Z",
-        "url": "https://wallstreetcn.com/articles/3786820",
-        "score": 52
-      }
-    ]
-  },
-  {
     "id": "hot-23b98593",
     "rank": 12,
     "title": "国晟科技成立子公司淮南晞能新能源，经营范围含AI软件开发业务",
@@ -304,7 +302,7 @@
       "港股",
       "宏观"
     ],
-    "heatScore": 65,
+    "heatScore": 52.3,
     "sourceCount": 1,
     "latestAt": "2026-11-27T10:18:20.000Z",
     "summary": "国晟科技近日成立子公司淮南晞能新能源有限公司，经营范围包含人工智能应用软件开发、先进电力电子装置销售、光通信设备销售等。企查查股权穿透显示，该公司由国晟科技全资持股。",
@@ -330,7 +328,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 65,
+    "heatScore": 52.3,
     "sourceCount": 1,
     "latestAt": "2026-11-27T10:17:12.000Z",
     "summary": "伦锌日内涨幅达2%，现报3582.5美元/吨。该条为盘中价格变动的常规快讯，暂无其他配套信息。",
@@ -346,183 +344,216 @@
     ]
   },
   {
-    "id": "hot-c94a1a3e",
+    "id": "hot-c13d454a",
     "rank": 14,
-    "title": "ETF资金日记：资金强力流入沪深300ETF",
-    "industry": "金融与政策",
-    "topics": [
-      "A股市场",
-      "市场资金",
-      "A股",
-      "市场政策"
-    ],
-    "heatScore": 64.4,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T02:16:23.000Z",
-    "summary": "新浪财经ETF资金日记显示，市场资金强力流入沪深300ETF。原文未提供具体流入规模、涉及产品与时间区间的详细数据。",
-    "items": [
-      {
-        "id": "aihot-20261127-gnews-ashare-022127f3",
-        "title": "ETF资金日记：资金强力流入沪深300ETF",
-        "source": "Google News · A股市场",
-        "publishedAt": "2026-11-27T02:16:23.000Z",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4taFpVa29UWEt5WjBBaXVUTDVMR1FPVHNkak9aaXljdkRBcVUzWl9JR1pGWDZ1ZFJ0dDJPZVRLUHRyaVJJcHZ1bl9ERjRTc052aGRPUmlBSktSNkRWTmFsQ3g3RkVSMm13dXk3dGhJT1FTdw?oc=5",
-        "score": 50
-      }
-    ]
-  },
-  {
-    "id": "hot-e8c21d4b",
-    "rank": 15,
-    "title": "港股开盘：恒指高开0.17%，工业板块领涨，宁德时代(03750)涨2.36%",
+    "title": "壁仞科技盘中涨超7%，广东鼓励算力中心优先使用国产算力芯片",
     "industry": "金融与政策",
     "topics": [
       "港股",
-      "市场行情",
-      "宏观"
+      "市场政策",
+      "国内财经",
+      "A股"
     ],
-    "heatScore": 64.2,
+    "heatScore": 51.1,
     "sourceCount": 1,
-    "latestAt": "2026-11-27T02:11:12.000Z",
-    "summary": "港股开盘，恒生指数高开0.17%，工业板块领涨。宁德时代(03750)涨2.36%。",
+    "latestAt": "2026-11-27T02:04:16.000Z",
+    "summary": "广东省政务服务和数据管理局、省发展改革委印发《广东省算力发展“十五五”规划》，鼓励算力中心优先使用国产算力芯片，壁仞科技（06082）盘中一度涨超7%。截至发稿，该股涨4.42%报13.69港元，成交额2.62亿港元。",
     "items": [
       {
-        "id": "aihot-20261127-gnews-hkstock-ced38251",
-        "title": "港股开盘：恒指高开0.17%，工业板块领涨，宁德时代(03750)涨2.36%",
-        "source": "Google News · 港股动态",
-        "publishedAt": "2026-11-27T02:11:12.000Z",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNOUQxWFpYQVE5V3N0RjR6eXloVUNrNEx6NHVodTV1cjdjWXJaVG1ZS1ZrdUpyNkRnVTUwQkh0WkxFRkJvdGY4QWRJRFhFNUlVRDE3b3dwM0xlaWxHVlNxZVFycWduaF8tX0VqWkJQbzVIWjE2MUFLUVBpYTBENzBZM3FzNTRQQzZlSVE?oc=5",
-        "score": 50
-      }
-    ]
-  },
-  {
-    "id": "hot-e4954a75",
-    "rank": 16,
-    "title": "墨西哥总统谴责美国缉毒局干涉墨内政",
-    "industry": "金融与政策",
-    "topics": [
-      "国际时政",
-      "宏观动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 64.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T01:32:25.000Z",
-    "summary": "墨西哥总统辛鲍姆当地时间11月26日在新闻发布会上谴责美国缉毒局开设面向墨西哥民众的匿名举报渠道，称此举是对墨西哥内政的干涉。她强调墨西哥拥有负责打击有组织犯罪的执法机构，并敦促美国缉毒局将精力放在打击美国境内贩毒活动、调查毒品分销网络及非法资金流向等问题上。",
-    "items": [
-      {
-        "id": "aihot-20261127-eastmoney-724-5344f376",
-        "title": "墨西哥总统谴责美国缉毒局干涉墨内政",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T01:32:25.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941004674.html",
-        "score": 52
-      }
-    ]
-  },
-  {
-    "id": "hot-fef38107",
-    "rank": 17,
-    "title": "尼日利亚尼日尔州村庄袭击事件死亡人数升至74人",
-    "industry": "金融与政策",
-    "topics": [
-      "国际动态",
-      "外围快讯",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 62.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T01:45:09.000Z",
-    "summary": "尼日利亚尼日尔州政府26日通报，该州21日发生的村庄袭击事件死亡人数已升至74人，州长巴戈已下令展开调查。州政府22日曾通报至少5人死亡、5人受伤；当地消息人士称此次袭击可能是族群冲突后的报复。",
-    "items": [
-      {
-        "id": "aihot-20261127-eastmoney-724-94e53835",
-        "title": "尼日利亚尼日尔州村庄袭击事件死亡人数升至74人",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T01:45:09.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941004755.html",
-        "score": 48
-      }
-    ]
-  },
-  {
-    "id": "hot-d71bb340",
-    "rank": 18,
-    "title": "英国央行行长：未公开的AI模型引发加密安全担忧",
-    "industry": "金融与政策",
-    "topics": [
-      "金融监管",
-      "人工智能",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 62.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-26T17:37:42.000Z",
-    "summary": "英国央行行长对近期AI在数学领域取得的突破发出警示，一个未公开的AI模型引发加密安全担忧。外界担忧，用于保障整个金融体系数据安全的加密技术正面临威胁。",
-    "items": [
-      {
-        "id": "aihot-20261126-sina-finance-ba3e3211",
-        "title": "英国央行行长：未公开的AI模型引发加密安全担忧",
+        "id": "aihot-20261127-sina-finance-e3d3a1da",
+        "title": "壁仞科技盘中涨超7%，广东鼓励算力中心优先使用国产算力芯片",
         "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-26T17:37:42.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-27/doc-inkaayay5828442.shtml",
+        "publishedAt": "2026-11-27T02:04:16.000Z",
+        "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-11-27/doc-inkacvhp3236198.shtml",
         "score": 76
       }
     ]
   },
   {
-    "id": "hot-613f52b0",
-    "rank": 19,
-    "title": "ICE罗布斯塔咖啡期货涨超3%，报每吨2856美元",
+    "id": "hot-48d8f3da",
+    "rank": 15,
+    "title": "国家统计局：2026年1—10月份全国规模以上工业企业利润增长16.0%",
     "industry": "金融与政策",
     "topics": [
-      "大宗商品",
-      "国际市场",
+      "宏观经济",
+      "政策与政府动态",
+      "宏观",
+      "政府动态"
+    ],
+    "heatScore": 49.6,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T00:00:00.000Z",
+    "summary": "国家统计局公布数据，2026年1—10月份全国规模以上工业企业利润增长16.0%。这一官方宏观数据反映工业企业盈利状况，是观察经济运行的重要指标。",
+    "items": [
+      {
+        "id": "aihot-20261127-stats-gov-cn-11b1cf59",
+        "title": "国家统计局：2026年1—10月份全国规模以上工业企业利润增长16.0%",
+        "source": "国家统计局 · 权威宏观数据",
+        "publishedAt": "2026-11-27T00:00:00.000Z",
+        "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261127_1965949.html",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "hot-aec1f3a5",
+    "rank": 16,
+    "title": "财政部解读《会计改革与发展“十五五”规划》：加强企业会计准则制度建设，提升会计信息质量",
+    "industry": "金融与政策",
+    "topics": [
+      "部委政策",
+      "财政政策",
+      "会计与财报",
+      "市场政策"
+    ],
+    "heatScore": 48.9,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T00:00:00.000Z",
+    "summary": "财政部发布《会计改革与发展“十五五”规划》系列解读第二篇，主题为加强企业会计准则制度建设实施、提升企业会计信息质量。该解读围绕企业会计准则体系的建设与落实展开。",
+    "items": [
+      {
+        "id": "aihot-20261127-mof-news-f808e84b",
+        "title": "财政部解读《会计改革与发展“十五五”规划》：加强企业会计准则制度建设，提升会计信息质量",
+        "source": "财政部 · 财政要闻与收支数据",
+        "publishedAt": "2026-11-27T00:00:00.000Z",
+        "url": "http://kjs.mof.gov.cn/zhengcejiedu/202611/t20261126_4005500.htm",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "hot-cac3a265",
+    "rank": 17,
+    "title": "日本JERA商谈为Anthropic、Meta等在东京建设数据中心",
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "AI基础设施",
       "A股",
       "港股"
     ],
-    "heatScore": 61.5,
+    "heatScore": 48.5,
     "sourceCount": 1,
-    "latestAt": "2026-11-27T01:18:20.000Z",
-    "summary": "ICE罗布斯塔咖啡期货上涨超3%，价格升至每吨2856美元。",
+    "latestAt": "2026-11-27T02:23:20.000Z",
+    "summary": "日本JERA株式会社全球CEO兼会长可儿行夫透露，JERA正与Anthropic、Meta及其他美国科技公司洽谈，计划在东京附近的发电厂旁建设数据中心。项目目前处于商谈阶段，选址紧邻发电厂。",
     "items": [
       {
-        "id": "aihot-20261127-eastmoney-724-fa35d6e9",
-        "title": "ICE罗布斯塔咖啡期货涨超3%，报每吨2856美元",
+        "id": "aihot-20261127-sina-finance-052b99a0",
+        "title": "日本JERA商谈为Anthropic、Meta等在东京建设数据中心",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-27T02:23:20.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-27/doc-inkacvhk7844566.shtml",
+        "score": 68
+      }
+    ]
+  },
+  {
+    "id": "hot-7cc611ee",
+    "rank": 18,
+    "title": "欧洲股市反弹 投资者谨慎重返AI交易",
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "AI",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 46.3,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T01:20:49.000Z",
+    "summary": "欧洲股市周四反弹，结束两连跌，投资者谨慎重返AI交易，推动科技股上涨。瑞银编制的一篮子半导体股票上涨3.9%，一篮子AI受益股上涨3.2%，Soitec、意法半导体和阿斯麦等芯片制造商大幅上涨。此次反弹显示经历大幅抛售后投资者重返股市的意愿正在增强。",
+    "items": [
+      {
+        "id": "aihot-20261127-eastmoney-724-222255e5",
+        "title": "欧洲股市反弹 投资者谨慎重返AI交易",
         "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T01:18:20.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941003916.html",
+        "publishedAt": "2026-11-27T01:20:49.000Z",
+        "url": "https://finance.eastmoney.com/a/202611273941004268.html",
+        "score": 66
+      }
+    ]
+  },
+  {
+    "id": "hot-0adc0301",
+    "rank": 19,
+    "title": "夜盘期货收盘：沪铜跌超2%，沪锡跌超6%",
+    "industry": "金融与政策",
+    "topics": [
+      "商品市场",
+      "行情动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 45.7,
+    "sourceCount": 1,
+    "latestAt": "2026-11-27T01:05:09.000Z",
+    "summary": "国内商品期货夜盘收盘，沪锡收跌6.47%，国际铜收跌2.53%，沪铜收跌2.24%。沪铝、沪锌、沪铅分别收跌0.62%、1.51%、0.92%，沪镍微涨0.10%，氧化铝收平，不锈钢收涨0.04%。",
+    "items": [
+      {
+        "id": "aihot-20261125-eastmoney-724-20761ed9",
+        "title": "夜盘期货收盘：沪铜跌超2%，沪锡跌超6%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-25T17:06:26.000Z",
+        "url": "https://finance.eastmoney.com/a/202611263939926825.html",
+        "score": 52
+      },
+      {
+        "id": "aihot-20261127-eastmoney-724-ee57fcb1",
+        "title": "夜盘期货收盘：沪锌收涨1.59% 沪铅收涨1.51%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-27T01:05:09.000Z",
+        "url": "https://finance.eastmoney.com/a/202611273941003178.html",
         "score": 48
       }
     ]
   },
   {
-    "id": "hot-edda56be",
+    "id": "hot-d3a15978",
     "rank": 20,
-    "title": "银行为KKR收购Logoplaste安排5.5亿欧元债务融资",
+    "title": "5年期人民币特区政府机构债券将于2026年12月3日透过重开进行投标",
     "industry": "金融与政策",
     "topics": [
-      "金融市场",
-      "私募股权",
-      "美股",
-      "宏观"
+      "金融与政策",
+      "债券市场",
+      "港股",
+      "市场政策"
     ],
-    "heatScore": 56.4,
+    "heatScore": 45.6,
     "sourceCount": 1,
-    "latestAt": "2026-11-26T17:47:30.000Z",
-    "summary": "银行已筹措5.5亿欧元（约6.035亿美元）贷款，为KKR收购包装公司Logoplaste的交易提供支持。该融资安排消息来自知情人士。",
+    "latestAt": "2026-11-26T16:00:00.000Z",
+    "summary": "香港金管局公告，5年期人民币特区政府机构债券定于2026年12月3日（星期四）透过重开方式进行投标。本次属特区政府机构债券计划下该期人民币债券的重开发行。",
     "items": [
       {
-        "id": "aihot-20261126-bloomberg-markets-4ac88562",
-        "title": "银行为KKR收购Logoplaste安排5.5亿欧元债务融资",
-        "source": "Bloomberg Markets",
-        "publishedAt": "2026-11-26T17:47:30.000Z",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-26/kkr-banks-line-up-550-million-of-debt-to-back-logoplaste-buyout",
-        "score": 63
+        "id": "aihot-20261126-hkma-press-1d2b10dc",
+        "title": "5年期人民币特区政府机构债券将于2026年12月3日透过重开进行投标",
+        "source": "香港金管局新闻稿 (HKMA)",
+        "publishedAt": "2026-11-26T16:00:00.000Z",
+        "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261127-4/",
+        "score": 62
+      },
+      {
+        "id": "aihot-20261125-hkma-press-fe6e1165",
+        "title": "香港金管局公布1年期人民币特区政府机构债券重开投标结果",
+        "source": "香港金管局新闻稿 (HKMA)",
+        "publishedAt": "2026-11-25T16:00:00.000Z",
+        "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261126-3/",
+        "score": 60
+      },
+      {
+        "id": "aihot-20261125-hkma-press-abf4ae17",
+        "title": "5年期港元特区政府机构债券将于2026年12月2日透过重开投标",
+        "source": "香港金管局新闻稿 (HKMA)",
+        "publishedAt": "2026-11-25T16:00:00.000Z",
+        "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261126-5/",
+        "score": 60
+      },
+      {
+        "id": "aihot-20261125-hkma-press-d2000770",
+        "title": "香港金管局公布7年期人民币特区政府机构债券重开投标结果",
+        "source": "香港金管局新闻稿 (HKMA)",
+        "publishedAt": "2026-11-25T16:00:00.000Z",
+        "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261126-4/",
+        "score": 52
       }
     ]
   }
