@@ -1,7 +1,136 @@
 [
   {
-    "id": "hot-7454fcff",
+    "id": "hot-00038f5d",
     "rank": 1,
+    "title": "NVIDIA 将 OpenShell 捐赠给 CNCF：以开放治理保障 Agentic AI 安全",
+    "industry": "工程与开源",
+    "topics": [
+      "云原生",
+      "开源生态",
+      "AI 安全"
+    ],
+    "heatScore": 84.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T02:09:10.131Z",
+    "summary": "在 KubeCon + CloudNativeCon North America 大会上，CNCF 宣布接收 NVIDIA 捐赠的开源项目 OpenShell 进入沙箱（Sandbox）。OpenShell 是一个开源运行时，用于保障和治理自主 AI 智能体（agentic AI），并依托 CNCF 的开放治理模式发展。",
+    "items": [
+      {
+        "id": "aihot-20261128-cncf-blog-aca02c4b",
+        "title": "NVIDIA 将 OpenShell 捐赠给 CNCF：以开放治理保障 Agentic AI 安全",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-28T02:09:10.131Z",
+        "url": "https://www.cncf.io/blog/2026/11/10/welcoming-openshell-to-the-cncf-open-governance-to-secure-agentic-ai/",
+        "score": 84
+      }
+    ]
+  },
+  {
+    "id": "hot-d48434d8",
+    "rank": 2,
+    "title": "铝市割裂：期货价格下跌，现货遭史诗级逼空，LME紧急出手",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "大宗商品",
+      "宏观",
+      "市场政策"
+    ],
+    "heatScore": 83.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T02:02:42.000Z",
+    "summary": "铝市场出现罕见割裂局面：期货价格下跌的同时，现货市场却遭遇史诗级逼空。伦敦金属交易所（LME）紧急出手应对这一异常行情。",
+    "items": [
+      {
+        "id": "aihot-20261128-wscn-global-5ba4db9c",
+        "title": "铝市割裂：期货价格下跌，现货遭史诗级逼空，LME紧急出手",
+        "source": "华尔街见闻 · 全球",
+        "publishedAt": "2026-11-28T02:02:42.000Z",
+        "url": "https://wallstreetcn.com/articles/3786875",
+        "score": 82
+      }
+    ]
+  },
+  {
+    "id": "hot-47552e43",
+    "rank": 3,
+    "title": "天津出台全国首部文商旅融合发展促进省级地方性法规",
+    "industry": "金融与政策",
+    "topics": [
+      "政策监管",
+      "文旅消费",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 81.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T09:59:00.000Z",
+    "summary": "天津市人大常委会11月27日表决通过《天津市文商旅融合发展促进条例》，自公布之日起施行，系全国首部促进文商旅融合发展的省级地方性法规。条例围绕统筹规划、融合发展、服务保障等作出制度安排，为天津以法治方式促进文商旅融合发展提供重要支撑。",
+    "items": [
+      {
+        "id": "aihot-20261128-eastmoney-724-8ba454e0",
+        "title": "天津出台全国首部文商旅融合发展促进省级地方性法规",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-28T09:59:00.000Z",
+        "url": "https://finance.eastmoney.com/a/202611283942337636.html",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "hot-dcb09566",
+    "rank": 4,
+    "title": "被印度追税12亿美元 大众把奔驰、宝马、起亚写进法庭文件",
+    "industry": "金融与政策",
+    "topics": [
+      "国际财经",
+      "关税政策",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 79.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T09:44:37.000Z",
+    "summary": "大众汽车在与印度政府围绕约12亿美元关税追缴要求的诉讼中，将奔驰、宝马、起亚等同行的零部件进口数据提交给孟买一家法院。据路透社11月28日报道，大众主张生产同类汽车的制造商均采用类似进口模式并按10%税率缴税，印度税务部门不应只对大众追缴更高关税。",
+    "items": [
+      {
+        "id": "aihot-20261128-eastmoney-724-eb23d974",
+        "title": "被印度追税12亿美元 大众把奔驰、宝马、起亚写进法庭文件",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-28T09:44:37.000Z",
+        "url": "https://finance.eastmoney.com/a/202611283942336583.html",
+        "score": 74
+      }
+    ]
+  },
+  {
+    "id": "hot-bf57c2d1",
+    "rank": 5,
+    "title": "英国国防部联系约10万名战略预备役人员，为冷战结束后最大规模动员",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "全球政策",
+      "地缘政治",
+      "宏观"
+    ],
+    "heatScore": 79.1,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T00:41:55.000Z",
+    "summary": "英国国防部联系约10万名战略预备役人员，规模为冷战结束以来最大。这一大范围联络动员涉及英国战略预备役力量，是数十年来罕见的国防动员动作。",
+    "items": [
+      {
+        "id": "aihot-20261128-wscn-global-533b68e1",
+        "title": "英国国防部联系约10万名战略预备役人员，为冷战结束后最大规模动员",
+        "source": "华尔街见闻 · 全球",
+        "publishedAt": "2026-11-28T00:41:55.000Z",
+        "url": "https://wallstreetcn.com/articles/3786885",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "hot-7454fcff",
+    "rank": 6,
     "title": "国务院国资委通报央企专业化整合新进展 项目超1100个",
     "industry": "金融与政策",
     "topics": [
@@ -10,7 +139,7 @@
       "宏观经济",
       "港股"
     ],
-    "heatScore": 81.8,
+    "heatScore": 78.8,
     "sourceCount": 1,
     "latestAt": "2026-11-28T01:04:20.000Z",
     "summary": "国务院国资委27日通报央企专业化整合工作新进展：去年以来各央企共开展整合项目1100余个，涉及资产规模约6.8万亿元。其中战新领域整合项目380余个、占比35%，资产规模2.3万亿元，主要涉及生物医药、人工智能、新能源汽车等领域。国资委同时为下一步央企专业化整合工作做出部署，整合呈现增强核心功能、提高核心竞争力的导向。",
@@ -26,58 +155,34 @@
     ]
   },
   {
-    "id": "hot-e66110d7",
-    "rank": 2,
-    "title": "同步窗口关闭后：Argo CD self-heal 如何跳过迁移钩子",
-    "industry": "工程与开源",
+    "id": "hot-e4797238",
+    "rank": 7,
+    "title": "欧洲央行官员暗示将继续加息，通胀仍居高不下",
+    "industry": "金融与政策",
     "topics": [
-      "云原生",
-      "工程实践",
-      "开源生态"
+      "宏观经济",
+      "央行政策",
+      "A股",
+      "港股"
     ],
-    "heatScore": 80.2,
+    "heatScore": 78.4,
     "sourceCount": 1,
-    "latestAt": "2026-11-27T17:39:00.328Z",
-    "summary": "Argo CD 的 self-heal 在同步窗口关闭后可能跳过迁移钩子，导致同步显示成功、迁移却未实际执行。文章以一位用户在 deny 同步窗口期间推送发布的真实案例，拆解了同步窗口、self-heal 与钩子执行之间的交互机制。",
+    "latestAt": "2026-11-28T01:40:11.000Z",
+    "summary": "欧洲央行官员暗示将继续加息，以应对仍居高不下的通胀。这一表态延续了央行收紧货币政策、压制物价的立场。",
     "items": [
       {
-        "id": "aihot-20261127-cncf-blog-7829f3b4",
-        "title": "同步窗口关闭后：Argo CD self-heal 如何跳过迁移钩子",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-27T17:39:00.328Z",
-        "url": "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/",
-        "score": 76
-      }
-    ]
-  },
-  {
-    "id": "hot-5ad4e398",
-    "rank": 3,
-    "title": "如何在自己无法掌控的 Kubernetes 环境中支持应用",
-    "industry": "工程与开源",
-    "topics": [
-      "云原生",
-      "研发效能",
-      "开源生态"
-    ],
-    "heatScore": 79.6,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T17:39:00.328Z",
-    "summary": "CNCF Blog 发文讲解如何为客户自行运维的 Kubernetes 集群上的应用提供支持，聚焦应用方无法控制部署环境的场景。文章指出难点在于集群配置、升级节奏和周边工具均不受应用方掌控，并给出相应的支持方法。",
-    "items": [
-      {
-        "id": "aihot-20261127-cncf-blog-764e1bed",
-        "title": "如何在自己无法掌控的 Kubernetes 环境中支持应用",
-        "source": "CNCF Blog",
-        "publishedAt": "2026-11-27T17:39:00.328Z",
-        "url": "https://www.cncf.io/blog/2026/11/19/how-to-support-your-app-on-kubernetes-environments-you-dont-control/",
+        "id": "aihot-20261128-investing-cn-stock-cc229935",
+        "title": "欧洲央行官员暗示将继续加息，通胀仍居高不下",
+        "source": "英为财情 · 股市资讯",
+        "publishedAt": "2026-11-28T01:40:11.000Z",
+        "url": "https://cn.investing.com/news/stock-market-news/article-3689772",
         "score": 75
       }
     ]
   },
   {
     "id": "hot-a4f5b5f2",
-    "rank": 4,
+    "rank": 8,
     "title": "法国加入荷兰行列 反对美国拟议的出口管制措施",
     "industry": "金融与政策",
     "topics": [
@@ -86,7 +191,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 75.8,
+    "heatScore": 73.1,
     "sourceCount": 1,
     "latestAt": "2026-11-28T01:08:19.000Z",
     "summary": "法国加入荷兰行列，反对美国拟议的出口管制措施，荷兰此前已就该措施表明反对立场。美国这一管制方案正面临欧洲多国的联合阻力。",
@@ -102,8 +207,60 @@
     ]
   },
   {
+    "id": "hot-0a3e8484",
+    "rank": 9,
+    "title": "海南自贸港封关后药企如何获益？海口海关揭晓三大“密码”",
+    "industry": "金融与政策",
+    "topics": [
+      "市场政策",
+      "A股",
+      "国内快讯",
+      "港股"
+    ],
+    "heatScore": 72.8,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T09:52:43.000Z",
+    "summary": "海口海关关税处副处长辜振成27日揭晓海南自贸港封关后药企获益的三大“密码”：信用监管赋能、便利化监管举措支撑、加工增值政策助力。海南自贸港封关运作即将满一年，自贸港红利正持续赋能生物医药产业。",
+    "items": [
+      {
+        "id": "aihot-20261128-eastmoney-724-dde00521",
+        "title": "海南自贸港封关后药企如何获益？海口海关揭晓三大“密码”",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-28T09:52:43.000Z",
+        "url": "https://finance.eastmoney.com/a/202611283942336754.html",
+        "score": 63
+      }
+    ]
+  },
+  {
+    "id": "hot-d1555bbf",
+    "rank": 10,
+    "title": "中国物流与采购联合会：前10个月物流业总收入12.3万亿元 同比增长4.2%",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "行业数据",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 72.2,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T09:55:12.000Z",
+    "summary": "中国物流与采购联合会28日发布数据，今年1至10月我国物流业总收入达12.3万亿元，同比增长4.2%。同期物流市场呈现规模稳中有进、结构持续向优的态势，供给端积极变革，综合效能和韧性有所增强，国际物流通道高效畅通。",
+    "items": [
+      {
+        "id": "aihot-20261128-eastmoney-724-58d0ffbd",
+        "title": "中国物流与采购联合会：前10个月物流业总收入12.3万亿元 同比增长4.2%",
+        "source": "东方财富 · 7x24快讯",
+        "publishedAt": "2026-11-28T09:55:12.000Z",
+        "url": "https://finance.eastmoney.com/a/202611283942336881.html",
+        "score": 62
+      }
+    ]
+  },
+  {
     "id": "hot-1ce06309",
-    "rank": 5,
+    "rank": 11,
     "title": "威瑞森正就约60亿美元收购Fidium进行谈判，以扩大宽带业务版图",
     "industry": "金融与政策",
     "topics": [
@@ -112,7 +269,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 74,
+    "heatScore": 72.2,
     "sourceCount": 1,
     "latestAt": "2026-11-28T01:32:29.000Z",
     "summary": "威瑞森正就约60亿美元收购Fidium的交易进行谈判，目标是扩大其宽带业务版图。该交易目前仍处于谈判阶段，尚未最终落定。",
@@ -129,7 +286,7 @@
   },
   {
     "id": "hot-e6164061",
-    "rank": 6,
+    "rank": 12,
     "title": "Anthropic股价拉升翻红 此前一度跌9.5%",
     "industry": "金融与政策",
     "topics": [
@@ -138,7 +295,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 71.8,
+    "heatScore": 69.8,
     "sourceCount": 1,
     "latestAt": "2026-11-28T01:22:58.000Z",
     "summary": "Anthropic股价盘中拉升翻红，此前一度下跌9.5%。该快讯仅披露这一盘中价格异动，未提及波动原因或公司基本面变化。",
@@ -162,8 +319,60 @@
     ]
   },
   {
+    "id": "hot-36bb5f30",
+    "rank": 13,
+    "title": "Character Technologies破产案：债权人委员会拟向迪士尼首席技术官发传票",
+    "industry": "金融与政策",
+    "topics": [
+      "市场动态",
+      "公司法务",
+      "AI行业",
+      "A股"
+    ],
+    "heatScore": 69.4,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T00:27:11.000Z",
+    "summary": "Character Technologies的债权人委员会拟向该公司前首席执行官、现任华特迪士尼首席技术官发出传票。与此同时，华特迪士尼正计划从这家娱乐AI初创企业授权部分知识产权。",
+    "items": [
+      {
+        "id": "aihot-20261128-sina-finance-e564a34e",
+        "title": "Character Technologies破产案：债权人委员会拟向迪士尼首席技术官发传票",
+        "source": "新浪财经 · 实时滚动",
+        "publishedAt": "2026-11-28T00:27:11.000Z",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-28/doc-inkaftxm0766920.shtml",
+        "score": 64
+      }
+    ]
+  },
+  {
+    "id": "hot-c8ad0d69",
+    "rank": 14,
+    "title": "Adobe预测：美国\"黑色星期五\"线上销售额有望突破130亿美元",
+    "industry": "金融与政策",
+    "topics": [
+      "宏观经济",
+      "市场动态",
+      "A股",
+      "港股"
+    ],
+    "heatScore": 69.3,
+    "sourceCount": 1,
+    "latestAt": "2026-11-28T00:56:46.000Z",
+    "summary": "Adobe发布预测称，美国\"黑色星期五\"线上销售额有望突破130亿美元。原文仅披露该预测数据，未提供更多细节。",
+    "items": [
+      {
+        "id": "aihot-20261128-investing-cn-stock-eb5e7342",
+        "title": "Adobe预测：美国\"黑色星期五\"线上销售额有望突破130亿美元",
+        "source": "英为财情 · 股市资讯",
+        "publishedAt": "2026-11-28T00:56:46.000Z",
+        "url": "https://cn.investing.com/news/stock-market-news/article-3689761",
+        "score": 62
+      }
+    ]
+  },
+  {
     "id": "hot-5e5ad7b2",
-    "rank": 7,
+    "rank": 15,
     "title": "智利国家铜业公司：前9个月自有铜产量85.3万吨，税前亏损14亿美元",
     "industry": "金融与政策",
     "topics": [
@@ -172,7 +381,7 @@
       "A股",
       "港股"
     ],
-    "heatScore": 68.6,
+    "heatScore": 66.2,
     "sourceCount": 1,
     "latestAt": "2026-11-28T01:09:21.000Z",
     "summary": "智利国家铜业公司公布，今年前9个月自有铜产量为853,000吨。同期公司前9个月税前亏损14亿美元。",
@@ -188,372 +397,129 @@
     ]
   },
   {
-    "id": "hot-7c31b416",
-    "rank": 8,
-    "title": "华为发布辅助驾驶新品牌“星驰”，明年超10款新车搭载",
-    "industry": "金融与政策",
-    "topics": [
-      "智能驾驶",
-      "科技产业动态",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 67.8,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T10:19:14.000Z",
-    "summary": "华为于11月26日晚在乾崑生态大会上发布辅助驾驶新品牌“星驰”，华为高级副总裁、引望公司CEO靳玉志出席发布，预计明年将有超过10款搭载星驰辅助驾驶的新车上市。天眼查信息显示，华为已于2020年至2022年注册多枚“星驰”“华为星驰”商标，国际分类涉及科学仪器、网站服务。",
-    "items": [
-      {
-        "id": "aihot-20261127-eastmoney-724-c1f7e33c",
-        "title": "华为发布辅助驾驶新品牌“星驰”，明年超10款新车搭载",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T10:19:14.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941511777.html",
-        "score": 82
-      }
-    ]
-  },
-  {
-    "id": "hot-83aa413a",
-    "rank": 9,
-    "title": "普京：俄需更新2036年前人工智能国家战略",
-    "industry": "金融与政策",
-    "topics": [
-      "宏观政策",
-      "人工智能",
-      "国际动态",
-      "A股"
-    ],
-    "heatScore": 64.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T10:21:43.000Z",
-    "summary": "俄罗斯总统普京26日在莫斯科表示，为争取在人工智能（AI）研发方面获得领先地位，俄罗斯需更新2036年前人工智能国家战略。在支持开发俄罗斯自主AI模型方面，普京提出需落实四项要求。",
-    "items": [
-      {
-        "id": "aihot-20261127-eastmoney-724-02f86f7a",
-        "title": "普京：俄需更新2036年前人工智能国家战略",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T10:21:43.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941513061.html",
-        "score": 76
-      }
-    ]
-  },
-  {
-    "id": "hot-1e898621",
-    "rank": 10,
-    "title": "小米AI眼镜2代或将于12月中旬上市发布",
-    "industry": "金融与政策",
-    "topics": [
-      "国内快讯",
-      "消费电子",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 61.9,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T10:16:55.000Z",
-    "summary": "记者获悉，小米AI眼镜2代或将于12月中旬与小米18标准版手机（起售价5699元起）同步发布，并于当天上市开售。小米AI眼镜2代包括Q95Pro、Q95Pro多色版本（电致变色镜片版本，提供四档镜片调节）以及Q95显示版本。",
-    "items": [
-      {
-        "id": "aihot-20261127-eastmoney-724-f5fa294b",
-        "title": "小米AI眼镜2代或将于12月中旬上市发布",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T10:16:55.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941511376.html",
-        "score": 70
-      }
-    ]
-  },
-  {
-    "id": "hot-ecdc6063",
-    "rank": 11,
-    "title": "能源金属板块走高 寒锐钴业涨超10%",
-    "industry": "金融与政策",
-    "topics": [
-      "A股",
-      "市场动态",
-      "港股",
-      "宏观"
-    ],
-    "heatScore": 53.2,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T10:17:00.000Z",
-    "summary": "能源金属板块盘中异动走高，寒锐钴业涨超10%领涨。腾远钴业、盛新锂能、华友钴业、融捷股份、永兴材料等个股跟涨。",
-    "items": [
-      {
-        "id": "aihot-20261127-eastmoney-724-ec0ba182",
-        "title": "能源金属板块走高 寒锐钴业涨超10%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T10:17:00.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941513828.html",
-        "score": 52
-      }
-    ]
-  },
-  {
-    "id": "hot-23b98593",
-    "rank": 12,
-    "title": "国晟科技成立子公司淮南晞能新能源，经营范围含AI软件开发业务",
-    "industry": "金融与政策",
-    "topics": [
-      "国内快讯",
-      "A股",
-      "港股",
-      "宏观"
-    ],
-    "heatScore": 52.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T10:18:20.000Z",
-    "summary": "国晟科技近日成立子公司淮南晞能新能源有限公司，经营范围包含人工智能应用软件开发、先进电力电子装置销售、光通信设备销售等。企查查股权穿透显示，该公司由国晟科技全资持股。",
-    "items": [
-      {
-        "id": "aihot-20261127-eastmoney-724-f0a55b50",
-        "title": "国晟科技成立子公司淮南晞能新能源，经营范围含AI软件开发业务",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T10:18:20.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941511557.html",
-        "score": 50
-      }
-    ]
-  },
-  {
-    "id": "hot-043d8f2f",
-    "rank": 13,
-    "title": "伦锌日内涨幅达2%，报3582.5美元/吨",
-    "industry": "金融与政策",
-    "topics": [
-      "商品期货",
-      "有色金属",
-      "A股",
-      "港股"
-    ],
-    "heatScore": 52.3,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T10:17:12.000Z",
-    "summary": "伦锌日内涨幅达2%，现报3582.5美元/吨。该条为盘中价格变动的常规快讯，暂无其他配套信息。",
-    "items": [
-      {
-        "id": "aihot-20261127-eastmoney-724-09d28b40",
-        "title": "伦锌日内涨幅达2%，报3582.5美元/吨",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T10:17:12.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941511928.html",
-        "score": 50
-      }
-    ]
-  },
-  {
-    "id": "hot-c13d454a",
-    "rank": 14,
-    "title": "壁仞科技盘中涨超7%，广东鼓励算力中心优先使用国产算力芯片",
-    "industry": "金融与政策",
-    "topics": [
-      "港股",
-      "市场政策",
-      "国内财经",
-      "A股"
-    ],
-    "heatScore": 51.1,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T02:04:16.000Z",
-    "summary": "广东省政务服务和数据管理局、省发展改革委印发《广东省算力发展“十五五”规划》，鼓励算力中心优先使用国产算力芯片，壁仞科技（06082）盘中一度涨超7%。截至发稿，该股涨4.42%报13.69港元，成交额2.62亿港元。",
-    "items": [
-      {
-        "id": "aihot-20261127-sina-finance-e3d3a1da",
-        "title": "壁仞科技盘中涨超7%，广东鼓励算力中心优先使用国产算力芯片",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-27T02:04:16.000Z",
-        "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-11-27/doc-inkacvhp3236198.shtml",
-        "score": 76
-      }
-    ]
-  },
-  {
-    "id": "hot-48d8f3da",
-    "rank": 15,
-    "title": "国家统计局：2026年1—10月份全国规模以上工业企业利润增长16.0%",
+    "id": "hot-d82b6dfa",
+    "rank": 16,
+    "title": "实际收益率曲线走平，预示美元见顶？",
     "industry": "金融与政策",
     "topics": [
       "宏观经济",
-      "政策与政府动态",
+      "外汇市场",
       "宏观",
-      "政府动态"
-    ],
-    "heatScore": 49.6,
-    "sourceCount": 1,
-    "latestAt": "2026-11-27T00:00:00.000Z",
-    "summary": "国家统计局公布数据，2026年1—10月份全国规模以上工业企业利润增长16.0%。这一官方宏观数据反映工业企业盈利状况，是观察经济运行的重要指标。",
-    "items": [
-      {
-        "id": "aihot-20261127-stats-gov-cn-11b1cf59",
-        "title": "国家统计局：2026年1—10月份全国规模以上工业企业利润增长16.0%",
-        "source": "国家统计局 · 权威宏观数据",
-        "publishedAt": "2026-11-27T00:00:00.000Z",
-        "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261127_1965949.html",
-        "score": 80
-      }
-    ]
-  },
-  {
-    "id": "hot-aec1f3a5",
-    "rank": 16,
-    "title": "财政部解读《会计改革与发展“十五五”规划》：加强企业会计准则制度建设，提升会计信息质量",
-    "industry": "金融与政策",
-    "topics": [
-      "部委政策",
-      "财政政策",
-      "会计与财报",
       "市场政策"
     ],
-    "heatScore": 48.9,
+    "heatScore": 62.6,
     "sourceCount": 1,
-    "latestAt": "2026-11-27T00:00:00.000Z",
-    "summary": "财政部发布《会计改革与发展“十五五”规划》系列解读第二篇，主题为加强企业会计准则制度建设实施、提升企业会计信息质量。该解读围绕企业会计准则体系的建设与落实展开。",
+    "latestAt": "2026-11-28T01:06:03.000Z",
+    "summary": "实际收益率曲线出现走平迹象，有分析提出这一变化或预示美元走势接近见顶。收益率曲线形态由此成为判断美元周期拐点的重要观察信号。",
     "items": [
       {
-        "id": "aihot-20261127-mof-news-f808e84b",
-        "title": "财政部解读《会计改革与发展“十五五”规划》：加强企业会计准则制度建设，提升会计信息质量",
-        "source": "财政部 · 财政要闻与收支数据",
-        "publishedAt": "2026-11-27T00:00:00.000Z",
-        "url": "http://kjs.mof.gov.cn/zhengcejiedu/202611/t20261126_4005500.htm",
-        "score": 78
+        "id": "aihot-20261128-wscn-global-380b6023",
+        "title": "实际收益率曲线走平，预示美元见顶？",
+        "source": "华尔街见闻 · 全球",
+        "publishedAt": "2026-11-28T01:06:03.000Z",
+        "url": "https://wallstreetcn.com/articles/3786886",
+        "score": 50
       }
     ]
   },
   {
-    "id": "hot-cac3a265",
+    "id": "hot-e66110d7",
     "rank": 17,
-    "title": "日本JERA商谈为Anthropic、Meta等在东京建设数据中心",
-    "industry": "金融与政策",
+    "title": "同步窗口关闭后：Argo CD self-heal 如何跳过迁移钩子",
+    "industry": "工程与开源",
     "topics": [
-      "市场动态",
-      "AI基础设施",
-      "A股",
-      "港股"
+      "云原生",
+      "工程实践",
+      "开源生态"
     ],
-    "heatScore": 48.5,
+    "heatScore": 62.6,
     "sourceCount": 1,
-    "latestAt": "2026-11-27T02:23:20.000Z",
-    "summary": "日本JERA株式会社全球CEO兼会长可儿行夫透露，JERA正与Anthropic、Meta及其他美国科技公司洽谈，计划在东京附近的发电厂旁建设数据中心。项目目前处于商谈阶段，选址紧邻发电厂。",
+    "latestAt": "2026-11-27T17:39:00.328Z",
+    "summary": "Argo CD 的 self-heal 在同步窗口关闭后可能跳过迁移钩子，导致同步显示成功、迁移却未实际执行。文章以一位用户在 deny 同步窗口期间推送发布的真实案例，拆解了同步窗口、self-heal 与钩子执行之间的交互机制。",
     "items": [
       {
-        "id": "aihot-20261127-sina-finance-052b99a0",
-        "title": "日本JERA商谈为Anthropic、Meta等在东京建设数据中心",
-        "source": "新浪财经 · 实时滚动",
-        "publishedAt": "2026-11-27T02:23:20.000Z",
-        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-27/doc-inkacvhk7844566.shtml",
-        "score": 68
+        "id": "aihot-20261127-cncf-blog-7829f3b4",
+        "title": "同步窗口关闭后：Argo CD self-heal 如何跳过迁移钩子",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-27T17:39:00.328Z",
+        "url": "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/",
+        "score": 76
       }
     ]
   },
   {
-    "id": "hot-7cc611ee",
+    "id": "hot-5ad4e398",
     "rank": 18,
-    "title": "欧洲股市反弹 投资者谨慎重返AI交易",
-    "industry": "金融与政策",
+    "title": "如何在自己无法掌控的 Kubernetes 环境中支持应用",
+    "industry": "工程与开源",
     "topics": [
-      "市场动态",
-      "AI",
-      "A股",
-      "港股"
+      "云原生",
+      "研发效能",
+      "开源生态"
     ],
-    "heatScore": 46.3,
+    "heatScore": 62.2,
     "sourceCount": 1,
-    "latestAt": "2026-11-27T01:20:49.000Z",
-    "summary": "欧洲股市周四反弹，结束两连跌，投资者谨慎重返AI交易，推动科技股上涨。瑞银编制的一篮子半导体股票上涨3.9%，一篮子AI受益股上涨3.2%，Soitec、意法半导体和阿斯麦等芯片制造商大幅上涨。此次反弹显示经历大幅抛售后投资者重返股市的意愿正在增强。",
+    "latestAt": "2026-11-27T17:39:00.328Z",
+    "summary": "CNCF Blog 发文讲解如何为客户自行运维的 Kubernetes 集群上的应用提供支持，聚焦应用方无法控制部署环境的场景。文章指出难点在于集群配置、升级节奏和周边工具均不受应用方掌控，并给出相应的支持方法。",
     "items": [
       {
-        "id": "aihot-20261127-eastmoney-724-222255e5",
-        "title": "欧洲股市反弹 投资者谨慎重返AI交易",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T01:20:49.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941004268.html",
-        "score": 66
+        "id": "aihot-20261127-cncf-blog-764e1bed",
+        "title": "如何在自己无法掌控的 Kubernetes 环境中支持应用",
+        "source": "CNCF Blog",
+        "publishedAt": "2026-11-27T17:39:00.328Z",
+        "url": "https://www.cncf.io/blog/2026/11/19/how-to-support-your-app-on-kubernetes-environments-you-dont-control/",
+        "score": 75
       }
     ]
   },
   {
-    "id": "hot-0adc0301",
+    "id": "hot-e2eafd56",
     "rank": 19,
-    "title": "夜盘期货收盘：沪铜跌超2%，沪锡跌超6%",
+    "title": "美股反弹，科技股大涨",
     "industry": "金融与政策",
     "topics": [
-      "商品市场",
-      "行情动态",
-      "A股",
-      "港股"
+      "美股",
+      "市场行情",
+      "宏观"
     ],
-    "heatScore": 45.7,
+    "heatScore": 61,
     "sourceCount": 1,
-    "latestAt": "2026-11-27T01:05:09.000Z",
-    "summary": "国内商品期货夜盘收盘，沪锡收跌6.47%，国际铜收跌2.53%，沪铜收跌2.24%。沪铝、沪锌、沪铅分别收跌0.62%、1.51%、0.92%，沪镍微涨0.10%，氧化铝收平，不锈钢收涨0.04%。",
+    "latestAt": "2026-11-28T00:49:00.000Z",
+    "summary": "美股市场整体反弹，科技股大幅上涨。华尔街日报中文网报道了当日美股盘面的这一表现，正文未提供具体指数涨幅或驱动因素。",
     "items": [
       {
-        "id": "aihot-20261125-eastmoney-724-20761ed9",
-        "title": "夜盘期货收盘：沪铜跌超2%，沪锡跌超6%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-25T17:06:26.000Z",
-        "url": "https://finance.eastmoney.com/a/202611263939926825.html",
-        "score": 52
-      },
-      {
-        "id": "aihot-20261127-eastmoney-724-ee57fcb1",
-        "title": "夜盘期货收盘：沪锌收涨1.59% 沪铅收涨1.51%",
-        "source": "东方财富 · 7x24快讯",
-        "publishedAt": "2026-11-27T01:05:09.000Z",
-        "url": "https://finance.eastmoney.com/a/202611273941003178.html",
+        "id": "aihot-20261128-gnews-usstock-59c8dadd",
+        "title": "美股反弹，科技股大涨",
+        "source": "Google News · 美股市场",
+        "publishedAt": "2026-11-28T00:49:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTk1OZ0Vsckt0MzhuVm1JeFdEUjJZSzVWczA3ZFIxVjhfdmRra3JRR3dHel9kYU8zVERnal9fNVlxZnJNdE1hRDBiSUVFVzlscTNZRFd1Y0tSMXlId084NU95cFlZMWlINXdDbEwtbVN2WjcwZy01Sm51TnlMeWs2RlRDcDhUVVZhRmJ6enRaQWQtXzdiaENpNFZiUVMtTEM2azB6N3hfNVJETFFSUHFuOHRhX1ZoY0l0WlBZ?oc=5",
         "score": 48
       }
     ]
   },
   {
-    "id": "hot-d3a15978",
+    "id": "hot-374eb85a",
     "rank": 20,
-    "title": "5年期人民币特区政府机构债券将于2026年12月3日透过重开进行投标",
+    "title": "智通ADR统计 | 11月28日",
     "industry": "金融与政策",
     "topics": [
-      "金融与政策",
-      "债券市场",
-      "港股",
-      "市场政策"
+      "市场数据",
+      "美股",
+      "A股",
+      "港股"
     ],
-    "heatScore": 45.6,
+    "heatScore": 61,
     "sourceCount": 1,
-    "latestAt": "2026-11-26T16:00:00.000Z",
-    "summary": "香港金管局公告，5年期人民币特区政府机构债券定于2026年12月3日（星期四）透过重开方式进行投标。本次属特区政府机构债券计划下该期人民币债券的重开发行。",
+    "latestAt": "2026-11-28T00:11:39.000Z",
+    "summary": "智通财经发布11月28日ADR统计，为每日例行的ADR市场数据汇总更新。本次为常规数据推送，未涉及新的重大市场事件。",
     "items": [
       {
-        "id": "aihot-20261126-hkma-press-1d2b10dc",
-        "title": "5年期人民币特区政府机构债券将于2026年12月3日透过重开进行投标",
-        "source": "香港金管局新闻稿 (HKMA)",
-        "publishedAt": "2026-11-26T16:00:00.000Z",
-        "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261127-4/",
-        "score": 62
-      },
-      {
-        "id": "aihot-20261125-hkma-press-fe6e1165",
-        "title": "香港金管局公布1年期人民币特区政府机构债券重开投标结果",
-        "source": "香港金管局新闻稿 (HKMA)",
-        "publishedAt": "2026-11-25T16:00:00.000Z",
-        "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261126-3/",
-        "score": 60
-      },
-      {
-        "id": "aihot-20261125-hkma-press-abf4ae17",
-        "title": "5年期港元特区政府机构债券将于2026年12月2日透过重开投标",
-        "source": "香港金管局新闻稿 (HKMA)",
-        "publishedAt": "2026-11-25T16:00:00.000Z",
-        "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261126-5/",
-        "score": 60
-      },
-      {
-        "id": "aihot-20261125-hkma-press-d2000770",
-        "title": "香港金管局公布7年期人民币特区政府机构债券重开投标结果",
-        "source": "香港金管局新闻稿 (HKMA)",
-        "publishedAt": "2026-11-25T16:00:00.000Z",
-        "url": "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261126-4/",
-        "score": 52
+        "id": "aihot-20261128-investing-cn-stock-2cd9c0e4",
+        "title": "智通ADR统计 | 11月28日",
+        "source": "英为财情 · 股市资讯",
+        "publishedAt": "2026-11-28T00:11:39.000Z",
+        "url": "https://cn.investing.com/news/stock-market-news/article-3689752",
+        "score": 50
       }
     ]
   }
